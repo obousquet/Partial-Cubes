@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "short_name": "star_equivalence",
+  "name": "Star Characterization Equivalence",
+  "class_id": "#classes/stars",
+  "characterization_ids": [
+    "#characterizations/star_graph",
+    "#characterizations/tree_diameter_at_most_two",
+    "#characterizations/no_square_or_four_vertex_path_pc_minor"
+  ],
+  "hypotheses": "Finite connected graph; the obstruction criterion assumes a partial cube.",
+  "statement": "The star, diameter-two tree, and two-obstruction criteria define the same class.",
+  "status": "established",
+  "proof": "A tree has diameter at most two exactly when all edges meet one center. Avoiding $C_4$ first forces a partial cube to be a tree; a tree with no convex $P_4$ has diameter at most two and hence is a star.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

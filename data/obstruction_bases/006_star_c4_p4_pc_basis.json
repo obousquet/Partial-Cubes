@@ -1,0 +1,18 @@
+{
+  "id": 6,
+  "short_name": "star_c4_p4_pc_basis",
+  "name": "Two-Obstruction PC-Minor Basis for Stars",
+  "target_class_id": "#classes/stars",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/four_cycle",
+    "#obstruction_families/four_vertex_path"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a star if and only if it has no pc-minor isomorphic to $C_4$ or $P_4$; both obstructions are pc-minimal.",
+  "status": "established",
+  "proof": "Avoiding $C_4$ forces the graph to be a tree. A tree with no convex $P_4$ has diameter at most two and is a star. Proper pc-minors of $C_4$ and $P_4$ are stars.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

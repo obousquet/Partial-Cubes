@@ -1,0 +1,16 @@
+{
+  "id": 21,
+  "short_name": "paths_strict_subset_learning_spaces",
+  "name": "Paths Are Strictly Contained in Learning-Space Graphs",
+  "subject_id": "#classes/paths",
+  "object_id": "#classes/learning_space_graphs",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite connected graphs.",
+  "statement": "Paths form a proper subclass of Learning-Space Graphs.",
+  "witness_ids": [
+    "#examples/four_cycle"
+  ],
+  "proof": "Orient $P_n$ as the chain of initial segments of an $(n-1)$-element ordering; this family is accessible and union closed. The full square $Q_2$ is a learning-space graph but is not a path.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

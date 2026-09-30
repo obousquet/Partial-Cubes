@@ -628,6 +628,136 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-33" style="position:relative;">
+
+        <h3><a href="operation_results/paths_projection_closed.html" class="table-title-link">Paths Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paths Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/paths.html">Paths</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a path is a path.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Contracting edges of a path produces a shorter path.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-34" style="position:relative;">
+
+        <h3><a href="operation_results/paths_conditioning_closed.html" class="table-title-link">Paths Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paths Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/paths.html">Paths</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a path is a path.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Each coordinate semicube of a path is one of the two subpaths obtained by deleting its corresponding edge.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-35" style="position:relative;">
+
+        <h3><a href="operation_results/paths_pc_minor_closed.html" class="table-title-link">Paths Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paths Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/paths.html">Paths</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a path is a path.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The projection and conditioning descriptions show closure under the elementary pc-minor operations; equivalently, the class has a forbidden-pc-minor characterization.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-36" style="position:relative;">
+
+        <h3><a href="operation_results/paths_not_cartesian_product_closed.html" class="table-title-link">Paths Are Not Cartesian-Product-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paths Are Not Cartesian-Product-Closed</p>
+<p><strong>Class: </strong><a href="classes/paths.html">Paths</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The Cartesian product of two paths need not be a path.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle.html">Four-Cycle</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Both factors $K_2$ belong to the class, whereas $K_2\square K_2\cong C_4$ does not.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:cartesian-product-dictionary</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-37" style="position:relative;">
+
+        <h3><a href="operation_results/stars_projection_closed.html" class="table-title-link">Stars Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stars Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a star is a star.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Contracting any spoke of $K_{1,n}$ produces $K_{1,n-1}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-38" style="position:relative;">
+
+        <h3><a href="operation_results/stars_conditioning_closed.html" class="table-title-link">Stars Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stars Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a star is a star.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate semicube of a star is either one leaf or the star induced by the center and all other leaves.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-39" style="position:relative;">
+
+        <h3><a href="operation_results/stars_pc_minor_closed.html" class="table-title-link">Stars Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stars Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a star is a star.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The projection and conditioning descriptions show closure under the elementary pc-minor operations; equivalently, the class has a forbidden-pc-minor characterization.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-40" style="position:relative;">
+
+        <h3><a href="operation_results/stars_not_cartesian_product_closed.html" class="table-title-link">Stars Are Not Cartesian-Product-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stars Are Not Cartesian-Product-Closed</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The Cartesian product of two stars need not be a star.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle.html">Four-Cycle</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Both factors $K_2$ belong to the class, whereas $K_2\square K_2\cong C_4$ does not.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:cartesian-product-dictionary</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

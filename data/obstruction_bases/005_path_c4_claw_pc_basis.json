@@ -1,0 +1,18 @@
+{
+  "id": 5,
+  "short_name": "path_c4_claw_pc_basis",
+  "name": "Two-Obstruction PC-Minor Basis for Paths",
+  "target_class_id": "#classes/paths",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/four_cycle",
+    "#obstruction_families/three_leaf_star"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a path if and only if it has no pc-minor isomorphic to $C_4$ or $K_{1,3}$; both obstructions are pc-minimal.",
+  "status": "established",
+  "proof": "Avoiding $C_4$ forces the graph to be a tree. A nonpath tree has a vertex with three incident edges, whose center and three neighbors form a convex $K_{1,3}$. Proper pc-minors of both listed graphs are paths.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors"
+}
