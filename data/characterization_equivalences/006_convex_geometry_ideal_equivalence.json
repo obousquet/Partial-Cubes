@@ -1,0 +1,17 @@
+{
+  "id": 6,
+  "short_name": "convex_geometry_ideal_equivalence",
+  "name": "Convex-Geometry Ideal Equivalence",
+  "class_id": "#classes/convex_geometry_ideals",
+  "characterization_ids": [
+    "#characterizations/convex_geometry_lower_ideal",
+    "#characterizations/upper_ideal_in_learning_space",
+    "#characterizations/one_marker_learning_conditioning"
+  ],
+  "hypotheses": "Finite nonempty set family, up to signed-coordinate equivalence and suppression of constants.",
+  "statement": "Lower ideals of convex geometries, upper ideals of learning spaces, and one-marker conditionings of learning spaces define the same graph class.",
+  "status": "established",
+  "proof": "Set complementation exchanges a convex geometry with a learning space and exchanges its lower ideals with upper ideals. For an upper ideal $\\mathcal C$ of a learning space $\\mathcal L$, the marked family $(\\mathcal L\\times\\{0\\})\\cup(\\mathcal C\\times\\{1\\})$ is accessible and union closed, and its $1$-section is $\\mathcal C$. Conversely, the source theorem reconstructs a largest ambient learning space for every inherited pc-minor satisfying the equivalent source condition.",
+  "references": "\\cite{CCK2026}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:learning-ideal-closure"
+}

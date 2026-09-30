@@ -250,6 +250,88 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-10" style="position:relative;">
+
+        <h3><a href="operation_results/learning_space_conditioning_closure_equals_convex_geometry_ideals.html" class="table-title-link">The Conditioning Closure of Learning Spaces Is the Convex-Geometry Ideal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Conditioning Closure of Learning Spaces Is the Convex-Geometry Ideal Class</p>
+<p><strong>Class: </strong><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to signed-coordinate equivalence and suppression of constants, $\operatorname{Cl}_c(\mathsf{Learn})=\mathsf{Icg}$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Every conditioning of a learning space is an upper ideal in its surviving orientation. Conversely, if $\mathcal C$ is an upper ideal of a learning space $\mathcal L$, then $(\mathcal L\times\{0\})\cup(\mathcal C\times\{1\})$ is a learning space whose conditioning at the marker value $1$ is $\mathcal C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-11" style="position:relative;">
+
+        <h3><a href="operation_results/learning_space_pc_closure_equals_convex_geometry_ideals.html" class="table-title-link">The PC-Minor Closure of Learning Spaces Is the Convex-Geometry Ideal Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The PC-Minor Closure of Learning Spaces Is the Convex-Geometry Ideal Class</p>
+<p><strong>Class: </strong><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to signed-coordinate equivalence and suppression of constants, $\operatorname{Cl}_{pc}(\mathsf{Learn})=\mathsf{Icg}$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projection preserves learning spaces, so every pc-minor is a conditioning of a projected learning space and lies in the conditioning closure. The reverse inclusion holds because every conditioning is a pc-minor. The exact conditioning closure is $\mathsf{Icg}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-12" style="position:relative;">
+
+        <h3><a href="operation_results/convex_geometry_ideals_projection_closed.html" class="table-title-link">Convex-Geometry Ideals Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex-Geometry Ideals Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a convex-geometry ideal graph is again a convex-geometry ideal graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The class is the pc-minor closure of learning spaces. Composing a pc-minor representation with a projection gives another pc-minor of the same learning-space parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-13" style="position:relative;">
+
+        <h3><a href="operation_results/convex_geometry_ideals_conditioning_closed.html" class="table-title-link">Convex-Geometry Ideals Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex-Geometry Ideals Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a convex-geometry ideal graph is again a convex-geometry ideal graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The class is the pc-minor closure of learning spaces. Composing a pc-minor representation with a conditioning gives another pc-minor of the same learning-space parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-14" style="position:relative;">
+
+        <h3><a href="operation_results/convex_geometry_ideals_pc_minor_closed.html" class="table-title-link">Convex-Geometry Ideals Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex-Geometry Ideals Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a convex-geometry ideal graph is again a convex-geometry ideal graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>By the exact closure theorem, $\mathsf{Icg}$ is already the pc-minor closure of learning spaces. A further sequence of projections and conditionings concatenates with the first sequence and stays in the same closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
