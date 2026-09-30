@@ -1,0 +1,14 @@
+{
+  "id": 4,
+  "short_name": "edge_defect",
+  "name": "Edge Defect",
+  "symbol": "\\eta",
+  "definition": "For a finite binary class $C$, let $n_{i,b}(C)$ count its concepts with bit $b$ in coordinate $i$, and let $e(C)$ count pairs at Hamming distance one. The edge defect is $\\eta(C)=\\sum_i\\min\\{n_{i,0}(C),n_{i,1}(C)\\}-e(C)$.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "normalization": "Coordinates are binary; constant coordinates contribute zero.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "Equivalently, this is the minimum over roots of the number of missing cube edges directed toward the root. It is nonincreasing under nonempty pc-minors and vanishes exactly on daisy cubes.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#sec:edge-defect"
+}

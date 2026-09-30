@@ -1,0 +1,16 @@
+{
+  "id": 3,
+  "short_name": "daisy_invariant_equivalence",
+  "name": "Daisy Down-Set and Zero-Defect Equivalence",
+  "class_id": "#classes/daisy_cubes",
+  "characterization_ids": [
+    "#characterizations/rooted_downset_embedding",
+    "#characterizations/zero_daisy_completion_defect",
+    "#characterizations/zero_edge_defect"
+  ],
+  "hypotheses": "Nonempty finite binary class, interpreted up to coordinate permutations and bit complements.",
+  "statement": "A class has a rooted down-set representation if and only if its daisy completion defect vanishes, and if and only if its edge defect vanishes.",
+  "status": "established",
+  "proof": "The equality $\\delta_D(C)=0$ says directly that $C=D_r(C)$ for some root. The equality $\\eta(C)=0$ says that some orientation toward a minimizing root has no missing inward edge; repeated inward steps then show that $C$ is the rooted down-set $D_r(C)$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:daisy-defect-laws; PartialCubes:papers/structural-invariants/main.tex#thm:edge-width"
+}

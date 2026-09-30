@@ -98,6 +98,106 @@
             </div>
             <div class="table-grid">
 
+    <div class="table-card" id="math-1" style="position:relative;">
+
+        <h3><a href="invariants/vc_dimension.html" class="table-title-link">VC Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\dim_{\mathrm{VC}}">
+            \[\dim_{\mathrm{VC}}\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite family $C\subseteq2^X$, $\dim_{\mathrm{VC}}(C)$ is the largest cardinality of a coordinate set $T\subseteq X$ whose trace $C|_T$ is all of $2^T$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The empty coordinate set is shattered by every nonempty family, so every nonempty family has VC dimension at least zero.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>For partial cubes this is also called rank; it is invariant under coordinate permutations and independent bit complements.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-2" style="position:relative;">
+
+        <h3><a href="invariants/ordering_width.html" class="table-title-link">Ordering Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\sigma">
+            \[\sigma\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For an ordering $\pi=(c_1,\ldots,c_m)$ of a nonempty finite binary class $C$, take at step $j$ the inclusion-minimal disagreement sets $\operatorname{diff}(c_j,c_i)$ with earlier concepts, assign the step the largest such cardinality minus one (and zero at the first step), and let $w(\pi)$ be the maximum step cost. Then $\sigma(C)=\min_\pi w(\pi)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The first step has cost zero; constant coordinates are ignored by the value.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The value is invariant under coordinate permutations, bit complements, and adding constant coordinates. Its zero set is the dismantlable ample classes, a class not yet promoted in the database.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#def:width</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/ordering_width_unbounded_on_partial_cubes.html'>Ordering Width Is Unbounded on Partial Cubes</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-3" style="position:relative;">
+
+        <h3><a href="invariants/daisy_completion_defect.html" class="table-title-link">Daisy Completion Defect</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Completion Defect</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\delta_D">
+            \[\delta_D\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For $C\subseteq\{0,1\}^n$ and a root $r$, let $D_r(C)=\bigcup_{c\in C}[r,c]$ in the ambient cube. Then $\delta_D(C)=\min_r(|D_r(C)|-|C|)$, the fewest concepts that must be added on the same coordinates to obtain a daisy cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The minimum ranges over every ambient cube vertex, whether or not it belongs to $C$.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>It is nonincreasing under nonempty pc-minors and vanishes exactly on daisy cubes.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#sec:daisy-completion</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/daisy_completion_zero_on_daisy_cubes.html'>Daisy Completion Defect on Daisy Cubes</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-4" style="position:relative;">
+
+        <h3><a href="invariants/edge_defect.html" class="table-title-link">Edge Defect</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Edge Defect</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\eta">
+            \[\eta\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $C$, let $n_{i,b}(C)$ count its concepts with bit $b$ in coordinate $i$, and let $e(C)$ count pairs at Hamming distance one. The edge defect is $\eta(C)=\sum_i\min\{n_{i,0}(C),n_{i,1}(C)\}-e(C)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>Coordinates are binary; constant coordinates contribute zero.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>Equivalently, this is the minimum over roots of the number of missing cube edges directed toward the root. It is nonincreasing under nonempty pc-minors and vanishes exactly on daisy cubes.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#sec:edge-defect</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/edge_defect_zero_on_daisy_cubes.html'>Edge Defect on Daisy Cubes</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

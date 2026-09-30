@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "batch_id": "005_invariant_foundation",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Seed the invariant tables with VC dimension and three structural invariants, record reviewed class-level values, and connect zero-defect conditions to the daisy-cube characterization.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#sec:vcsetfam",
+    "PartialCubes:papers/structural-invariants/main.tex#def:width",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:daisy-defect-laws",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:edge-width",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:cycle-width"
+  ],
+  "source_files": [
+    {
+      "path": "papers/structural-invariants/main.tex",
+      "sha256": "1d8b01d01353a2641fb9e75789b67d5f722a83c8406a740b5cbf9b3226b32f0e",
+      "snapshot_state": "tracked"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/invariants/001_vc_dimension.json",
+      "sha256": "ca999f7bcf942859460fc3c716d3e47c19d5c3ee29f0b6b43ac96cee202d852f"
+    },
+    {
+      "path": "data/invariants/002_ordering_width.json",
+      "sha256": "7cc8dfdd3b92a6242c1ff947b8ddd65840d66ad18b15e7385e48fc3970911390"
+    },
+    {
+      "path": "data/invariants/003_daisy_completion_defect.json",
+      "sha256": "0c5054ff32ffd335385c60981987bfeafb8957af5cb9224a21db135e05c04541"
+    },
+    {
+      "path": "data/invariants/004_edge_defect.json",
+      "sha256": "6cf02b2c10aa12b7c41ae9724c51e48da34b4a41e3349884a420d7d834643796"
+    },
+    {
+      "path": "data/invariant_values/001_daisy_completion_zero_on_daisy_cubes.json",
+      "sha256": "fc2cba10fb8af0147a1046f56b98d7adfe0652d7c9072d6dd8f919bec690fda3"
+    },
+    {
+      "path": "data/invariant_values/002_edge_defect_zero_on_daisy_cubes.json",
+      "sha256": "5288ff967900c5d43b5a99e66b0d7132b709007a862224e4d80aca32c2b45f22"
+    },
+    {
+      "path": "data/invariant_values/003_ordering_width_unbounded_on_partial_cubes.json",
+      "sha256": "0547c42d870e299bd8ed6d5648f754a23c7a975c35bc10e34efffc7482b3c37c"
+    },
+    {
+      "path": "data/characterizations/004_sauer_bound_equality.json",
+      "sha256": "309fac13aec89321bb58b6b920c72a4285cd9f7d74a508b849ae64959ef9109f"
+    },
+    {
+      "path": "data/characterizations/007_zero_daisy_completion_defect.json",
+      "sha256": "4876046aa9412892da26a20ec35bba911ba485da58df7b718569dfa98cbafef8"
+    },
+    {
+      "path": "data/characterizations/008_zero_edge_defect.json",
+      "sha256": "7ec01f41c06f056822eae669d456a4efb16715e897d293e143029bd0f1303738"
+    },
+    {
+      "path": "data/characterization_equivalences/003_daisy_invariant_equivalence.json",
+      "sha256": "74c2edf50e0e9fbfac58f16f766f30440ae9fd9d8bb884600eab9f68713a6b27"
+    }
+  ],
+  "ownership": {
+    "database": [
+      "normalized invariant definitions and symbols",
+      "class-level exact values and unboundedness statements",
+      "zero-defect daisy characterizations and their concise equivalence proof"
+    ],
+    "latex": [
+      "the structural-invariants paper and its narrative organization",
+      "all detailed theorem proofs, positive-value laws, gluing results, and open questions",
+      "verification appendices and computational evidence"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "64ff8f63aa642da197788a00a4ee18240f1070fcb6675affc8534abe78bcee58",
+    "database_records_after_batch": 34,
+    "promoted_classes": 4,
+    "reserved_classes_remaining": 84
+  },
+  "data_tree_sha256": "865d28fcb1e5683aa1ba41975ff7d8cf69c8a887671ff2932f83a5c4a0873691",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "Most positive-value theorems and the remaining invariants in the structural-invariants paper await separate reviewed batches. The paper, verification artifacts, and prose remain LaTeX-owned and unchanged."
+}

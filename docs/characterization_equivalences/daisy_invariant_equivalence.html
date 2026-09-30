@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,28 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-1" style="position:relative;">
+            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
+    <div class="table-card" id="math-3" style="position:relative;">
 
-        <h3><a href="classes/partial_cubes.html" class="table-title-link">Partial Cubes</a></h3>
+        <h3><a href="characterization_equivalences/daisy_invariant_equivalence.html" class="table-title-link">Daisy Down-Set and Zero-Defect Equivalence</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Partial Cubes</p>
-<strong>Summary:</strong><div class="text-field"><p>Connected graphs that admit an isometric embedding into a hypercube.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/isometric_hypercube_embedding.html">Isometric Hypercube Embedding</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>partial cube graphs</li></ul></p>
-<p><strong>Category:</strong> Core</p>
-<p><strong>Ambient Scope:</strong> All Graphs</p>
-<p><strong>Parameterized:</strong> Unspecified</p>
-<p><strong>P-Closed:</strong> Yes</p>
-<p><strong>C-Closed:</strong> Yes</p>
-<p><strong>PC-Closed:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The initial catalogue statement follows the survey's finite-dimensional Q_n formulation. Any extension to infinite coordinate sets requires a separate scope review.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/isometric_hypercube_embedding.html'>Isometric Hypercube Embedding</a></li><li><a href='characterizations/bipartite_transitive_theta.html'>Bipartite Graph with Transitive Theta Relation</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong><ul class='fields-list'><li><a href='relations/daisy_cubes_subset_partial_cubes.html'>Daisy Cubes Are Partial Cubes</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_projection_closed.html'>Partial Cubes Are Projection-Closed</a></li><li><a href='operation_results/partial_cubes_conditioning_closed.html'>Partial Cubes Are Conditioning-Closed</a></li><li><a href='operation_results/partial_cubes_pc_minor_closed.html'>Partial Cubes Are pc-Minor-Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/ordering_width_unbounded_on_partial_cubes.html'>Ordering Width Is Unbounded on Partial Cubes</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Daisy Down-Set and Zero-Defect Equivalence</p>
+<p><strong>Class: </strong><a href="classes/daisy_cubes.html">Daisy Cubes</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/rooted_downset_embedding.html">Rooted Down-Set Embedding</a></li><li><a href="characterizations/zero_daisy_completion_defect.html">Zero Daisy Completion Defect</a></li><li><a href="characterizations/zero_edge_defect.html">Zero Edge Defect</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Nonempty finite binary class, interpreted up to coordinate permutations and bit complements.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>A class has a rooted down-set representation if and only if its daisy completion defect vanishes, and if and only if its edge defect vanishes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The equality $\delta_D(C)=0$ says directly that $C=D_r(C)$ for some root. The equality $\eta(C)=0$ says that some orientation toward a minimizing root has no missing inward edge; repeated inward steps then show that $C$ is the rooted down-set $D_r(C)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:daisy-defect-laws; PartialCubes:papers/structural-invariants/main.tex?#thm:edge-width</p></div>
 
         </div>
     </div>

@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "short_name": "ordering_width",
+  "name": "Ordering Width",
+  "symbol": "\\sigma",
+  "definition": "For an ordering $\\pi=(c_1,\\ldots,c_m)$ of a nonempty finite binary class $C$, take at step $j$ the inclusion-minimal disagreement sets $\\operatorname{diff}(c_j,c_i)$ with earlier concepts, assign the step the largest such cardinality minus one (and zero at the first step), and let $w(\\pi)$ be the maximum step cost. Then $\\sigma(C)=\\min_\\pi w(\\pi)$.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "normalization": "The first step has cost zero; constant coordinates are ignored by the value.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The value is invariant under coordinate permutations, bit complements, and adding constant coordinates. Its zero set is the dismantlable ample classes, a class not yet promoted in the database.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#def:width"
+}
