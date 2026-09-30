@@ -149,6 +149,57 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-4" style="position:relative;">
+
+        <h3><a href="operation_results/daisy_cubes_projection_closed.html" class="table-title-link">Daisy Cubes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Cubes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/daisy_cubes.html">Daisy Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every coordinate projection of a daisy-cube representation is again a daisy cube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For a down-set $D$, projecting away coordinates preserves downward closure: if a projected set occurs, all of its subsets occur by projecting the corresponding subsets in $D$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#klavvzar2019daisy">[klavvzar2019daisy]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:wang</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-5" style="position:relative;">
+
+        <h3><a href="operation_results/daisy_cubes_conditioning_closed.html" class="table-title-link">Daisy Cubes Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Cubes Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/daisy_cubes.html">Daisy Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a daisy-cube representation is again a daisy cube, after reorienting the retained section when necessary.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For a down-set $D$ and coordinate $x$, the zero-section is a down-set. The one-section, after deleting $x$, is also a down-set because $B\subseteq A$ and $A\cup\{x\}\in D$ imply $B\cup\{x\}\in D$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#klavvzar2019daisy">[klavvzar2019daisy]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:wang</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-6" style="position:relative;">
+
+        <h3><a href="operation_results/daisy_cubes_pc_minor_closed.html" class="table-title-link">Daisy Cubes Are pc-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Cubes Are pc-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/daisy_cubes.html">Daisy Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every pc-minor of a daisy cube is a daisy cube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A pc-minor is a finite sequence of coordinate projections and nonempty coordinate conditionings. Each elementary operation preserves a down-set representation, so their compositions preserve the daisy property.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#klavvzar2019daisy">[klavvzar2019daisy]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:wang</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

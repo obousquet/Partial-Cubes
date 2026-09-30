@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "batch_id": "004_daisy_cube_foundation",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the daisy-cube definition, an expansion characterization, basic class inclusions, and the three minor-operation closure facts.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#def:daisy-cube",
+    "PartialCubes:papers/survey/main.tex#prop:daisy-foundations",
+    "PartialCubes:papers/survey/main.tex#thm:daisy-expansions",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:wang",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#sec:class-position",
+    "published:klavvzar2019daisy#Propositions-2.1--2.2",
+    "published:taranenko2020daisy#Theorem-2.8"
+  ],
+  "source_packet": {
+    "id": "daisy",
+    "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+    "sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+    "fingerprint_matches": true
+  },
+  "records": [
+    {
+      "path": "data/classes/028_daisy_cubes.json",
+      "sha256": "8cbebff02601aa1f627b6dd6dd2c8aee69cc65bddb002300928390ee1e611f4b"
+    },
+    {
+      "path": "data/characterizations/005_rooted_downset_embedding.json",
+      "sha256": "17a19b2de35029cde088fcad3c5f7af5fc15e551ee80d8825bacbf9609bf5de1"
+    },
+    {
+      "path": "data/characterizations/006_downward_closed_expansion_sequence.json",
+      "sha256": "c1d4a8affc367cef52c4d84af01b2bb45d0922cea77a38c1541248eb292c1c75"
+    },
+    {
+      "path": "data/characterization_equivalences/002_daisy_definition_expansion_equivalence.json",
+      "sha256": "b703fe6ef3f72ead3fd2ebde2a9ece0dd60b3b9e5bea8a293458b95afdbe40ef"
+    },
+    {
+      "path": "data/relations/002_daisy_cubes_subset_partial_cubes.json",
+      "sha256": "9a63e7121296cfcecd3402e3b2744faa5b672bd8ea15dcf8dba8dc6faec5bec5"
+    },
+    {
+      "path": "data/relations/003_daisy_cubes_subset_ample.json",
+      "sha256": "c8243ae47cc4c5f9a348bc083ac6353b9b8818c4bf65d1c2d71c4bc04851a816"
+    },
+    {
+      "path": "data/operation_results/004_daisy_cubes_projection_closed.json",
+      "sha256": "bbb1e112f3bcc9a3d4e6ab3e7bea07ef2b9e9c3829643ea5b66f63ffcc50b15e"
+    },
+    {
+      "path": "data/operation_results/005_daisy_cubes_conditioning_closed.json",
+      "sha256": "3f52fefc11befd02dd8f9126e1f80f70197ea3370ee36b798f30974bd8afec16"
+    },
+    {
+      "path": "data/operation_results/006_daisy_cubes_pc_minor_closed.json",
+      "sha256": "131e910d2845f3b1f98e3353d91ad48904cd6b9926b4bbe8caa9ee233959373d"
+    }
+  ],
+  "bibliography": {
+    "path": "data/latex/references.bib",
+    "sha256": "a6b374bf72c1b65ada3eeb69a1ed16fcf722805dabc70e43197ceac96456c09a",
+    "keys_added": [
+      "klavvzar2019daisy",
+      "taranenko2020daisy"
+    ]
+  },
+  "claim_decisions": [
+    {
+      "candidate_id": "minor-closure-daisy-p",
+      "disposition": "#operation_results/daisy_cubes_projection_closed"
+    },
+    {
+      "candidate_id": "minor-closure-daisy-c",
+      "disposition": "#operation_results/daisy_cubes_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-closure-daisy-pc",
+      "disposition": "#operation_results/daisy_cubes_pc_minor_closed"
+    }
+  ],
+  "ownership": {
+    "database": [
+      "normalized daisy-cube definition and expansion characterization",
+      "concise proofs of the partial-cube and ample inclusions",
+      "projection, conditioning, and pc-minor closure records"
+    ],
+    "latex": [
+      "the complete forbidden-pc-minor classification and proof",
+      "root-factor and peripheral-expansion development",
+      "examples, literature comparison, and publication discussion"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "e0ff4b4c7c858b4a5cabda3d85577293cd76d1d490c64c801dc3fdc181e817e1",
+    "database_records_after_batch": 24,
+    "promoted_classes": 4,
+    "reserved_classes_remaining": 84
+  },
+  "data_tree_sha256": "351858cb9ccc581b3c62d4a8220c274d79ef9d435d82f74cae99be808f6f1682",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "The source packet's complete generative obstruction classification remains for a dedicated obstruction-family and obstruction-basis batch. Its full proof stays in LaTeX. No LaTeX consumer was changed."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "short_name": "daisy_cubes_subset_partial_cubes",
+  "name": "Daisy Cubes Are Partial Cubes",
+  "subject_id": "#classes/daisy_cubes",
+  "object_id": "#classes/partial_cubes",
+  "relation_type": "inclusion",
+  "status": "established",
+  "scope": "Finite connected graphs.",
+  "statement": "Every daisy cube is a partial cube.",
+  "proof": "A down-set induces an isometric subgraph of its Boolean cube: if $A$ and $B$ lie in the down-set, first delete the elements of $A\\setminus B$ and then add the elements of $B\\setminus A$ through subsets of $B$. This gives a path of length $|A\\mathbin\\triangle B|$, equal to their Hamming distance.",
+  "references": "\\cite{klavvzar2019daisy} (Proposition 2.1)",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:daisy-foundations"
+}
