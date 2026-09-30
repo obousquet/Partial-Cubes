@@ -1,0 +1,12 @@
+{
+  "id": 21,
+  "short_name": "maximum_projection_closed",
+  "name": "Maximum Classes Are Projection-Closed",
+  "class_id": "#classes/maximum",
+  "operation_id": "#operations/projection",
+  "result_type": "closed_under",
+  "status": "established",
+  "statement": "Every nonempty coordinate projection of a maximum class is maximum at its resulting VC dimension.",
+  "proof": "For a split at one coordinate, write the two shores as $C_i^0,C_i^1$, their union as $U$, and their intersection as $I$. The VC dimensions of $U$ and $I$ are at most $d$ and $d-1$. Since $|C|=|U|+|I|$ and the corresponding Sauer bounds sum to the maximum size of $C$, equality holds in both bounds; in particular $U$ is maximum. Iterate over projected coordinates.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:max-sections"
+}

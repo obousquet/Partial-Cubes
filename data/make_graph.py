@@ -14,6 +14,26 @@ CATEGORY_STYLES = {
     "named_family": ("#6C757D", "#F1F3F5"),
 }
 
+INCLUSION_COLOR = "#475569"
+STRICT_INCLUSION_COLOR = "#1D4ED8"
+
+
+def _closure_style(entry: dict[str, Any]) -> dict[str, Any]:
+    """Encode the three cached closure facts independently on a class node."""
+    p_closed = entry.get("p_closed")
+    c_closed = entry.get("c_closed")
+    pc_closed = entry.get("pc_closed")
+    if not all(isinstance(value, bool) for value in (p_closed, c_closed, pc_closed)):
+        return {"shape": "box", "peripheries": 1, "style": "filled,dotted"}
+    return {
+        # Shape records projection closure.
+        "shape": "box" if p_closed else "ellipse",
+        # Line style records conditioning closure.
+        "style": "filled" if c_closed else "filled,dashed",
+        # A second outline records full pc-minor closure.
+        "peripheries": 2 if pc_closed else 1,
+    }
+
 
 def _class_ref(entry: dict[str, Any]) -> str:
     return f'#classes/{entry["short_name"]}'
@@ -34,15 +54,16 @@ def _nodes(cache) -> tuple[list[dict[str, Any]], dict[str, str]]:
         color, fillcolor = CATEGORY_STYLES.get(
             entry.get("category"), ("#6C757D", "#F8F9FA")
         )
-        nodes.append({
+        node = {
             "id": reference,
             "ref": reference,
             "label": entry.get("graph_label") or entry["name"],
             "type": entry.get("category", "class"),
-            "shape": "box",
             "color": color,
             "fillcolor": fillcolor,
-        })
+        }
+        node.update(_closure_style(entry))
+        nodes.append(node)
     return nodes, aliases
 
 
@@ -129,14 +150,15 @@ def _relation_edges(relations, aliases, reduced):
         status = relation.get("status")
         reference = f'#relations/{relation["short_name"]}'
         if relation["id"] in reduced_ids:
+            strict = relation_type == "strict_inclusion"
             edges.append({
                 "source": source,
                 "target": target,
                 "ref": reference,
-                "label": "strict inclusion" if relation_type == "strict_inclusion" else "inclusion",
-                "color": "#495057",
-                "penwidth": 2 if relation_type == "strict_inclusion" else 1.4,
-                "arrowhead": "vee",
+                "label": "strict inclusion" if strict else "inclusion",
+                "color": STRICT_INCLUSION_COLOR if strict else INCLUSION_COLOR,
+                "penwidth": 2.4 if strict else 1.4,
+                "arrowhead": "normal" if strict else "vee",
             })
         elif status in {"open", "conjectured", "needs_verification"} and relation_type in {
             "inclusion", "strict_inclusion", "comparison"
@@ -182,7 +204,11 @@ def _legend(include_closure=False):
     legend = [
         {
             "type": "edge", "label": "", "text": "Established inclusion",
-            "color": "#495057", "arrowhead": "vee", "penwidth": 2,
+            "color": INCLUSION_COLOR, "arrowhead": "vee", "penwidth": 1.4,
+        },
+        {
+            "type": "edge", "label": "", "text": "Established strict inclusion",
+            "color": STRICT_INCLUSION_COLOR, "arrowhead": "normal", "penwidth": 2.4,
         },
         {
             "type": "edge", "label": "", "text": "Open or conjectured comparison",
@@ -191,6 +217,34 @@ def _legend(include_closure=False):
         {
             "type": "edge", "label": "", "text": "Established negative comparison",
             "color": "#C1121F", "style": "dashed", "arrowhead": "tee",
+        },
+        {
+            "type": "edge", "label": "", "text": "Established equality",
+            "color": "#5A189A", "style": "dotted", "arrowhead": "none", "dir": "both",
+        },
+        {
+            "type": "node", "label": "P", "text": "Rectangular node: P-closed",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC",
+        },
+        {
+            "type": "node", "label": "not P", "text": "Elliptic node: not P-closed",
+            "shape": "ellipse", "color": "#334155", "fillcolor": "#F8FAFC",
+        },
+        {
+            "type": "node", "label": "C", "text": "Solid outline: C-closed",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC",
+        },
+        {
+            "type": "node", "label": "not C", "text": "Dashed outline: not C-closed",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "style": "filled,dashed",
+        },
+        {
+            "type": "node", "label": "PC", "text": "Double outline: PC-closed",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "peripheries": 2,
+        },
+        {
+            "type": "node", "label": "?", "text": "Dotted outline: closure profile incomplete",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "style": "filled,dotted",
         },
     ]
     if include_closure:

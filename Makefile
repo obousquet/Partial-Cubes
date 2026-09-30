@@ -23,6 +23,7 @@ serve: validate
 
 check: build
 	$(PYTHON) scripts/check_generated_site.py --site-dir $(DOCS_DIR)
+	$(PYTHON) scripts/check_graphs.py --data-dir $(DATA_DIR) --site-dir $(DOCS_DIR) --math-database-dir $(MATH_DATABASE_DIR)
 
 migration-freeze:
 	$(PYTHON) $(MIGRATION_DIR)/build_source_manifest.py --latex-root $(LATEX_ROOT)

@@ -1,0 +1,19 @@
+{
+  "id": 2,
+  "short_name": "median_two_obstruction_pc_basis",
+  "name": "Two-Obstruction PC-Minor Basis for Median Graphs",
+  "target_class_id": "#classes/median",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/vertex_deleted_three_cube",
+    "#obstruction_families/six_cycle_median_obstruction"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is median if and only if it has no pc-minor isomorphic to $Q_3^-$ or $C_6$. Both listed graphs are nonmedian and all of their proper pc-minors are median.",
+  "status": "established",
+  "proof": "The avoidance equivalence is the cited two-obstruction theorem. The graph $Q_3^-$ fails majority closure at the three neighbors of its missing vertex, while $C_6$ has triples with no common interval vertex. Their elementary proper projections, conditionings, and $\\Theta$-class contractions are cubes, paths, or four-cycles, hence median; the same then holds for every further proper pc-minor.",
+  "references": "\\cite{ChepoiKnauerMarc20}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:median-characterizations"
+}

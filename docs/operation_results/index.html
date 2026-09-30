@@ -332,6 +332,155 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-15" style="position:relative;">
+
+        <h3><a href="operation_results/median_projection_closed.html" class="table-title-link">Median Graphs Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Median Graphs Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/median.html">Median Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a median graph is again a median graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Represent the median graph by a majority-closed vertex family. Coordinate projection commutes with coordinatewise majority, so its image remains majority closed and therefore median.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:median-characterizations; PartialCubes:papers/minor-atlas/inventory.json#/families/13</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-16" style="position:relative;">
+
+        <h3><a href="operation_results/median_conditioning_closed.html" class="table-title-link">Median Graphs Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Median Graphs Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/median.html">Median Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a median graph is again a median graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate section of a majority-closed family is majority closed because the prescribed coordinate values are preserved by majority. Deleting the resulting constants therefore leaves a median graph.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:median-characterizations; PartialCubes:papers/minor-atlas/inventory.json#/families/13</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-17" style="position:relative;">
+
+        <h3><a href="operation_results/median_pc_minor_closed.html" class="table-title-link">Median Graphs Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Median Graphs Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/median.html">Median Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a median graph is again a median graph.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Every pc-minor is obtained by composing coordinate projections and conditionings, and both operations preserve majority closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:median-characterizations; PartialCubes:papers/minor-atlas/inventory.json#/families/13</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-18" style="position:relative;">
+
+        <h3><a href="operation_results/ample_projection_closed.html" class="table-title-link">Ample Classes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of an ample class is ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Ample partial cubes are exactly the finite partial cubes avoiding the pc-minor family $Q_n^{--}$ for $n\geq3$. An additional projection of an avoiding class still avoids every member of that family.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KnauerMarc20">[KnauerMarc20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:ample-lopsided</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-19" style="position:relative;">
+
+        <h3><a href="operation_results/ample_conditioning_closed.html" class="table-title-link">Ample Classes Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of an ample class is ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Ample partial cubes are exactly the finite partial cubes avoiding the pc-minor family $Q_n^{--}$ for $n\geq3$. An additional conditioning of an avoiding class still avoids every member of that family.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KnauerMarc20">[KnauerMarc20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:ample-lopsided</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-20" style="position:relative;">
+
+        <h3><a href="operation_results/ample_pc_minor_closed.html" class="table-title-link">Ample Classes Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of an ample class is ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The forbidden-pc-minor characterization $\mathsf{Amp}=\mathcal F(\{Q_n^{--}:n\geq3\})$ is hereditary under further pc-minors.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KnauerMarc20">[KnauerMarc20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:ample-lopsided</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-21" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_projection_closed.html" class="table-title-link">Maximum Classes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a maximum class is maximum at its resulting VC dimension.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For a split at one coordinate, write the two shores as $C_i^0,C_i^1$, their union as $U$, and their intersection as $I$. The VC dimensions of $U$ and $I$ are at most $d$ and $d-1$. Since $|C|=|U|+|I|$ and the corresponding Sauer bounds sum to the maximum size of $C$, equality holds in both bounds; in particular $U$ is maximum. Iterate over projected coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:max-sections</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-22" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_not_conditioning_closed.html" class="table-title-link">Maximum Classes Are Not Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes Are Not Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A nonempty coordinate conditioning of a maximum class need not remain maximum.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/maximum_nonmaximum_conditioning.html">A Nonmaximum Conditioning of a Maximum Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>The recorded four-coordinate maximum class has a $z=0$ section with VC dimension two and five members on three active coordinates, whereas a maximum class with those parameters has seven members.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#ex:nonmaximum-maximum-generated-pc-minor</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-23" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_not_pc_minor_closed.html" class="table-title-link">Maximum Classes Are Not PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes Are Not PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A nonempty pc-minor of a maximum class need not remain maximum.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/maximum_nonmaximum_conditioning.html">A Nonmaximum Conditioning of a Maximum Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Coordinate conditioning is an allowed pc-minor operation, and the recorded conditioning of a maximum class is not maximum.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#ex:nonmaximum-maximum-generated-pc-minor</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

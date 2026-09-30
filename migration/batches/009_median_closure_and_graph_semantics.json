@@ -1,0 +1,285 @@
+{
+  "version": 1,
+  "batch_id": "009_median_closure_and_graph_semantics",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the median class with its classical characterizations and two-obstruction pc-minor basis, complete the cached closure profiles of ample and maximum classes, and make the generated Hasse and closure graphs faithfully distinguish their facts.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#thm:median-characterizations",
+    "PartialCubes:papers/survey/main.tex#thm:expansion-hierarchy",
+    "PartialCubes:papers/survey/main.tex#sec:ample-lopsided",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:max-sections",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:learning-ideal-closure",
+    "PartialCubes:papers/minor-atlas/inventory.json#/families/13",
+    "CompressionSchemes:partitionable_yang_complexes.tex#ex:nonmaximum-maximum-generated-pc-minor"
+  ],
+  "source_packets": [
+    {
+      "id": "survey",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "minor-atlas",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+      "inventory_path": "papers/minor-atlas/inventory.json",
+      "inventory_sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0"
+    },
+    {
+      "id": "maxsections",
+      "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+      "sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+      "witness_path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+      "witness_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/classes/005_ample.json",
+      "sha256": "1717073afc284c53455afb0355f140f0308f396a945b26cb363093b68230f4dc"
+    },
+    {
+      "path": "data/classes/046_maximum.json",
+      "sha256": "653191588c06e1c0ce168203404dccabd22a0f6c0e90fc575bff33c1d930dbe7"
+    },
+    {
+      "path": "data/classes/050_median.json",
+      "sha256": "6ac04a16bd00a4036e13ecbe31791e460dbbe627203b0cdb69c084c125631500"
+    },
+    {
+      "path": "data/characterizations/016_unique_triple_median.json",
+      "sha256": "38969a9bf22b0b11b8f7910f38410dd41948aa4858086cf6e9e2b3b7955ebb40"
+    },
+    {
+      "path": "data/characterizations/017_hypercube_retract.json",
+      "sha256": "545f0720583d77c8f4a999c21d67dfe0976c62e5adbff6a3fbfc95c5abb58db5"
+    },
+    {
+      "path": "data/characterizations/018_cat0_cubical_skeleton.json",
+      "sha256": "c0f6397ca462677d58c86abdde52fad147ce16156d75aac4121c7f32fe6e9ff2"
+    },
+    {
+      "path": "data/characterizations/019_no_q3minus_c6_pc_minor.json",
+      "sha256": "c5aa55e07928231c092a70c469e21a379c14f8252eeb730ea5df970dacc3a34b"
+    },
+    {
+      "path": "data/characterizations/020_convex_expansion_sequence.json",
+      "sha256": "51fbfce79204698f44395cb19070d5222f8cf8dc1253975aefdde7769c5bebc2"
+    },
+    {
+      "path": "data/characterizations/021_majority_closed_partial_cube.json",
+      "sha256": "720ad4369760d3baa03e964eb42f425b47db7a0fe282755ae38e66bc8cfba5f2"
+    },
+    {
+      "path": "data/characterization_equivalences/007_median_classical_equivalence.json",
+      "sha256": "13b6132727f5f337c694ec52486fe2e964c1173fef357094ace2b31e8528e0cc"
+    },
+    {
+      "path": "data/relations/008_median_subset_partial_cubes.json",
+      "sha256": "0bb9880d0a9a95e7486f85d21b2c55031563ab2c52e90da659b311e5525845f0"
+    },
+    {
+      "path": "data/relations/009_median_subset_ample.json",
+      "sha256": "23de0864096f251d9b103bf91d6eca372016f3f7ab69a0400da47e7b545fe030"
+    },
+    {
+      "path": "data/relations/010_median_strict_subset_convex_geometry_ideals.json",
+      "sha256": "efea94ee5349af12649ce42e38a7b18701d0fd10bce131512d72b245a0192666"
+    },
+    {
+      "path": "data/operation_results/015_median_projection_closed.json",
+      "sha256": "171dd049c51ff2c8916395a648aa78b70d1b49b67d6f4177b33e8c77e8629ffc"
+    },
+    {
+      "path": "data/operation_results/016_median_conditioning_closed.json",
+      "sha256": "9a7b8ce6b97c3074873352d2aa8b1f6bf4d355239fc944fbbe0f83f961f509f4"
+    },
+    {
+      "path": "data/operation_results/017_median_pc_minor_closed.json",
+      "sha256": "fc41682d6f00ce4a2a741d8ac329d83e310da353a655e09b94042fef4fdebf0f"
+    },
+    {
+      "path": "data/operation_results/018_ample_projection_closed.json",
+      "sha256": "a1687297326799d7a06a1701e4ebc14e84382d2e3676395895ab3b5f058b761a"
+    },
+    {
+      "path": "data/operation_results/019_ample_conditioning_closed.json",
+      "sha256": "ac6483a3d046121ff25196466e133bfeaa5b4d1f49db23e481989e063f2951da"
+    },
+    {
+      "path": "data/operation_results/020_ample_pc_minor_closed.json",
+      "sha256": "48de81b7fc41f813de8433783bfef488587e076e9477003e27f618781e67b046"
+    },
+    {
+      "path": "data/operation_results/021_maximum_projection_closed.json",
+      "sha256": "b900c286431f35bed442a430264d3d0e594464ba52f632bc63f05df5f554a708"
+    },
+    {
+      "path": "data/operation_results/022_maximum_not_conditioning_closed.json",
+      "sha256": "6a9cd06175f537404d52eda8a6300db9f6ebc8ea0e3c4e4911713cc212611fc6"
+    },
+    {
+      "path": "data/operation_results/023_maximum_not_pc_minor_closed.json",
+      "sha256": "3d8ace9a76412435135d5941a222cbf549249d8f5b530ec949be2a1fea276848"
+    },
+    {
+      "path": "data/obstruction_families/003_vertex_deleted_three_cube.json",
+      "sha256": "ce3403ed8cdf8fc0596a72b2b5a6ce55a2988ac7af343f41b0e317330dba012f"
+    },
+    {
+      "path": "data/obstruction_families/004_six_cycle_median_obstruction.json",
+      "sha256": "d8a95a2cec32590426e69789349c82da99d909eaf87499410362caecb78b2420"
+    },
+    {
+      "path": "data/obstruction_bases/002_median_two_obstruction_pc_basis.json",
+      "sha256": "2345fcd71f58b94c02d6aeb99acb892332fcdc5200eae40e3e87fc33b8a16e3c"
+    },
+    {
+      "path": "data/examples/001_six_cycle.json",
+      "sha256": "dfbd2482764008f2ff2c3f511a30c5a908f291dd7d2c848a4931118d48ea48ef"
+    },
+    {
+      "path": "data/examples/004_vertex_deleted_three_cube.json",
+      "sha256": "7ccc70106ffcdef2d5ac946243d90333d5ecd5286978f5b5172ed8d68eb0f7c7"
+    },
+    {
+      "path": "data/examples/005_maximum_nonmaximum_conditioning.json",
+      "sha256": "7d591e218437fee724e9401357d4a2ac317fbe23bc863e2203d2d9f489f49268"
+    }
+  ],
+  "bibliography": {
+    "path": "data/latex/references.bib",
+    "sha256": "88269e2349835cd9dcb0e51525c9d78853ceee6b58b2f6b83bf927b873af7cc3",
+    "keys_added": [
+      "Bandelt84",
+      "chepoi2000graphs",
+      "ChepoiKnauerMarc20",
+      "ImrichKlavzar98"
+    ]
+  },
+  "claim_decisions": [
+    {
+      "candidate_id": "minor-closure-ample-p",
+      "disposition": "#operation_results/ample_projection_closed"
+    },
+    {
+      "candidate_id": "minor-closure-ample-c",
+      "disposition": "#operation_results/ample_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-closure-ample-pc",
+      "disposition": "#operation_results/ample_pc_minor_closed"
+    },
+    {
+      "candidate_id": "minor-c-closure-ample",
+      "disposition": "#operation_results/ample_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-pc-closure-ample",
+      "disposition": "#operation_results/ample_pc_minor_closed"
+    },
+    {
+      "candidate_id": "minor-closure-maximum-p",
+      "disposition": "#operation_results/maximum_projection_closed"
+    },
+    {
+      "candidate_id": "minor-closure-maximum-c",
+      "disposition": "#operation_results/maximum_not_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-closure-maximum-pc",
+      "disposition": "#operation_results/maximum_not_pc_minor_closed"
+    },
+    {
+      "candidate_id": "minor-relation-032",
+      "disposition": "#relations/median_strict_subset_convex_geometry_ideals"
+    },
+    {
+      "candidate_id": "minor-closure-median-p",
+      "disposition": "#operation_results/median_projection_closed"
+    },
+    {
+      "candidate_id": "minor-closure-median-c",
+      "disposition": "#operation_results/median_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-closure-median-pc",
+      "disposition": "#operation_results/median_pc_minor_closed"
+    },
+    {
+      "candidate_id": "minor-obstruction-summary-median",
+      "disposition": "#obstruction_bases/median_two_obstruction_pc_basis"
+    },
+    {
+      "candidate_id": "minor-c-closure-median",
+      "disposition": "#operation_results/median_conditioning_closed"
+    },
+    {
+      "candidate_id": "minor-pc-closure-median",
+      "disposition": "#operation_results/median_pc_minor_closed"
+    }
+  ],
+  "graph_delivery": {
+    "hasse_policy": "Render only nonredundant established inclusion covers; every omitted established inclusion must be reachable through cover arrows.",
+    "edge_encodings": {
+      "inclusion": "thin gray vee arrow",
+      "strict_inclusion": "thick blue triangular arrow",
+      "open_or_conjectured": "dashed orange open arrow",
+      "negative": "dashed red tee arrow",
+      "equality": "dotted purple line",
+      "exact_closure": "dotted blue arrow"
+    },
+    "closure_node_encodings": {
+      "p_closed": "rectangle rather than ellipse",
+      "c_closed": "solid rather than dashed outline",
+      "pc_closed": "double rather than single outline",
+      "incomplete_profile": "dotted outline"
+    },
+    "shared_renderer_commit": "math_database@c7a580b",
+    "parallel_edge_fix": "The shared DOT renderer now uses a non-strict digraph, preserving distinct operation facts with identical endpoints."
+  },
+  "ownership": {
+    "database": [
+      "the normalized median definition and its six equivalent characterizations",
+      "the complete two-obstruction pc-minor basis for finite median graphs",
+      "the median, ample, and maximum closure profiles and concise proof or witness records",
+      "the migrated median inclusion facts and witnesses",
+      "the graph encodings of relation type and cached closure status"
+    ],
+    "latex": [
+      "the full historical source map and proofs of the median equivalences",
+      "the larger class atlas and publication exposition",
+      "the full maximum-section proof and surrounding MaxMin theory",
+      "all prose and artifacts not normalized into database records"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "9e881c890cf955dd85100f79845db5b330655b22d03138e8608b64e0e008d25c",
+    "database_records_after_batch": 89,
+    "promoted_classes": 7,
+    "reserved_classes_remaining": 81
+  },
+  "data_tree_sha256": "10805d36466751b9c0ae39c93a353d37e4040d0e9c84b3929d008744a4c0eb30",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "scripts/check_graphs.py",
+    "math_database unit tests",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "The exact conditioning and pc-minor closure of maximum classes remains queued until MaxMin is promoted as its own class. The ample obstruction-summary candidate remains queued for atomic review. Broader median hierarchy relations stay in the source queues for later class batches. No LaTeX consumer was changed."
+}

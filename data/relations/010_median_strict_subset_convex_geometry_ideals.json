@@ -1,0 +1,17 @@
+{
+  "id": 10,
+  "short_name": "median_strict_subset_convex_geometry_ideals",
+  "name": "Median Graphs Are Strictly Contained in Convex-Geometry Ideals",
+  "subject_id": "#classes/median",
+  "object_id": "#classes/convex_geometry_ideals",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite one-inclusion graphs, up to signed-coordinate equivalence and suppression of constants.",
+  "statement": "Every median graph is a convex-geometry ideal graph, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube"
+  ],
+  "proof": "The inclusion is the convex-geometry representation theorem for median graphs. For strictness, $Q_3^- = Q_3\\setminus\\{111\\}$ becomes the upper ideal $Q_3\\setminus\\{000\\}$ after complementing all coordinates, so it belongs to $\\mathsf{Icg}$; it is not median because the majority of $110,101,011$ is the missing vertex.",
+  "references": "\\cite{CCK2026}",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:learning-ideal-closure"
+}
