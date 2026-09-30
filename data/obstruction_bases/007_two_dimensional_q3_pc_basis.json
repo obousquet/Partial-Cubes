@@ -1,0 +1,18 @@
+{
+  "id": 7,
+  "short_name": "two_dimensional_q3_pc_basis",
+  "name": "Three-Cube PC-Minor Basis for Two-Dimensional Partial Cubes",
+  "target_class_id": "#classes/two_dimensional_partial_cubes",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/three_cube"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube has VC dimension at most two if and only if it has no pc-minor isomorphic to $Q_3$. The obstruction $Q_3$ is pc-minimal outside the class.",
+  "status": "established",
+  "proof": "A shattered triple projects to the full cube $Q_3$, and a $Q_3$ pc-minor shatters three coordinates. A proper pc-minor of $Q_3$ cannot shatter all three coordinates: a proper restriction omits a required cube vertex, while a proper contraction deletes a coordinate. Hence every proper pc-minor has VC dimension at most two.",
+  "references": "\\cite{chepoi2020two}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors"
+}

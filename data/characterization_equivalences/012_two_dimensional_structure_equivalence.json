@@ -1,0 +1,20 @@
+{
+  "id": 12,
+  "short_name": "two_dimensional_structure_equivalence",
+  "name": "Two-Dimensional Partial-Cube Structure Equivalence",
+  "class_id": "#classes/two_dimensional_partial_cubes",
+  "characterization_ids": [
+    "#characterizations/vc_dimension_at_most_two",
+    "#characterizations/no_three_cube_pc_minor",
+    "#characterizations/virtual_tree_hyperplanes",
+    "#characterizations/rank_two_expansion_sequence",
+    "#characterizations/two_dimensional_amalgam_decomposition",
+    "#characterizations/rank_preserving_ample_completion"
+  ],
+  "hypotheses": "Finite partial cube.",
+  "statement": "The VC-bound, forbidden-cube, virtual-hyperplane, expansion, 2d-amalgam, and rank-preserving ample-completion descriptions define the same class.",
+  "status": "established",
+  "proof": "The cube-minor theorem identifies VC dimension at most two with exclusion of $Q_3$. Hyperplane recursion lowers the bound by one and represents the resulting hyperplanes by virtual isometric trees. The structural theorem then constructs exactly these graphs by controlled expansions or 2d-amalgams and supplies an ample completion without increasing VC dimension.",
+  "references": "\\cite{chepoi2020two}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors; PartialCubes:papers/survey/main.tex#thm:hyperplane-vc-recursion; PartialCubes:papers/survey/main.tex#thm:two-dimensional-structure"
+}
