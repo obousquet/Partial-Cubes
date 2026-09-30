@@ -1,0 +1,18 @@
+{
+  "id": 4,
+  "short_name": "tree_c4_pc_basis",
+  "name": "One-Obstruction PC-Minor Basis for Trees",
+  "target_class_id": "#classes/trees",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/four_cycle"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a tree if and only if it has no pc-minor isomorphic to $C_4$; the obstruction is pc-minimal.",
+  "status": "established",
+  "proof": "A tree remains a tree under convex restriction and coordinate contraction. Conversely, a cyclic partial cube contains a convex even cycle, and contracting all but two of its coordinate classes yields $C_4$. Every proper pc-minor of $C_4$ is $K_1$ or $K_2$.",
+  "references": "\\cite{marc2018cycling}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors"
+}

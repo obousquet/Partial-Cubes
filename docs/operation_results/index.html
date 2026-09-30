@@ -562,6 +562,72 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-29" style="position:relative;">
+
+        <h3><a href="operation_results/trees_projection_closed.html" class="table-title-link">Trees Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Trees Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/trees.html">Trees</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a tree is a tree.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Each coordinate of a tree is represented by one edge. Contracting any collection of tree edges preserves connectedness and creates no cycle.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-30" style="position:relative;">
+
+        <h3><a href="operation_results/trees_conditioning_closed.html" class="table-title-link">Trees Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Trees Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/trees.html">Trees</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a tree is a tree.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate semicube of a tree is one component obtained after deleting the corresponding edge, so its induced graph is a subtree. Iterated nonempty conditionings remain subtrees.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-31" style="position:relative;">
+
+        <h3><a href="operation_results/trees_pc_minor_closed.html" class="table-title-link">Trees Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Trees Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/trees.html">Trees</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a tree is a tree.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Convex subgraphs of a tree are subtrees, and contractions of tree edges remain trees. Equivalently, the class is characterized by avoidance of $C_4$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#marc2018cycling">[marc2018cycling]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-32" style="position:relative;">
+
+        <h3><a href="operation_results/trees_not_cartesian_product_closed.html" class="table-title-link">Trees Are Not Cartesian-Product-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Trees Are Not Cartesian-Product-Closed</p>
+<p><strong>Class: </strong><a href="classes/trees.html">Trees</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The Cartesian product of two trees need not be a tree.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle.html">Four-Cycle</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Both factors $K_2$ are trees, whereas $K_2\square K_2\cong C_4$ contains a cycle.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:cartesian-product-dictionary</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

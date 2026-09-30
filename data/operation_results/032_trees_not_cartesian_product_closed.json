@@ -1,0 +1,15 @@
+{
+  "id": 32,
+  "short_name": "trees_not_cartesian_product_closed",
+  "name": "Trees Are Not Cartesian-Product-Closed",
+  "class_id": "#classes/trees",
+  "operation_id": "#operations/cartesian_product",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "The Cartesian product of two trees need not be a tree.",
+  "witness_ids": [
+    "#examples/four_cycle"
+  ],
+  "proof": "Both factors $K_2$ are trees, whereas $K_2\\square K_2\\cong C_4$ contains a cycle.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:cartesian-product-dictionary"
+}

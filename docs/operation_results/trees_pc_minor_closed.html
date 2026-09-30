@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-2" style="position:relative;">
+            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
+    <div class="table-card" id="math-31" style="position:relative;">
 
-        <h3><a href="operations/conditioning.html" class="table-title-link">Coordinate Conditioning</a></h3>
+        <h3><a href="operation_results/trees_pc_minor_closed.html" class="table-title-link">Trees Are PC-Minor-Closed</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate Conditioning</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="H_x^\epsilon">
-            \[H_x^\epsilon\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For H ⊆ 2^X, x ∈ X, and ε ∈ {0,1}, fix the membership value of x and then remove x: H_x^ε = {h ∖ {x} : h ∈ H and 1_{x∈h}=ε} ⊆ 2^{X ∖ {x}}.</p></div>
-<p><strong>Category:</strong> Minor</p>
-<strong>Comments:</strong><div class="text-field"><p>In the one-inclusion graph this is restriction to one coordinate semicube. Iterated nonempty conditionings give cube-face sections; arbitrary convex restrictions may fix several semicubes in succession.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_conditioning_closed.html'>Partial Cubes Are Conditioning-Closed</a></li><li><a href='operation_results/daisy_cubes_conditioning_closed.html'>Daisy Cubes Are Conditioning-Closed</a></li><li><a href='operation_results/learning_spaces_not_conditioning_closed.html'>Learning-Space Graphs Are Not Conditioning-Closed</a></li><li><a href='operation_results/learning_space_conditioning_closure_equals_convex_geometry_ideals.html'>The Conditioning Closure of Learning Spaces Is the Convex-Geometry Ideal Class</a></li><li><a href='operation_results/convex_geometry_ideals_conditioning_closed.html'>Convex-Geometry Ideals Are Conditioning-Closed</a></li><li><a href='operation_results/median_conditioning_closed.html'>Median Graphs Are Conditioning-Closed</a></li><li><a href='operation_results/ample_conditioning_closed.html'>Ample Classes Are Conditioning-Closed</a></li><li><a href='operation_results/maximum_not_conditioning_closed.html'>Maximum Classes Are Not Conditioning-Closed</a></li><li><a href='operation_results/hypercubes_conditioning_closed.html'>Hypercubes Are Conditioning-Closed</a></li><li><a href='operation_results/trees_conditioning_closed.html'>Trees Are Conditioning-Closed</a></li></ul></p></div>
+        <p><strong>Name: </strong>Trees Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/trees.html">Trees</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a tree is a tree.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Convex subgraphs of a tree are subtrees, and contractions of tree edges remain trees. Equivalently, the class is characterized by avoidance of $C_4$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#marc2018cycling">[marc2018cycling]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
 
         </div>
     </div>

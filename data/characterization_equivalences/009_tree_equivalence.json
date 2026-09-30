@@ -1,0 +1,17 @@
+{
+  "id": 9,
+  "short_name": "tree_equivalence",
+  "name": "Tree Characterization Equivalence",
+  "class_id": "#classes/trees",
+  "characterization_ids": [
+    "#characterizations/connected_acyclic_graph",
+    "#characterizations/tree_vc_dimension_at_most_one",
+    "#characterizations/no_four_cycle_pc_minor"
+  ],
+  "hypotheses": "Finite connected graph; the VC-dimension and obstruction criteria assume the graph is a partial cube.",
+  "statement": "Acyclicity, VC dimension at most one, and avoidance of the four-cycle as a pc-minor define the same class inside finite partial cubes.",
+  "status": "established",
+  "proof": "Every tree is a partial cube whose edge classes are singletons. If a partial cube contains a cycle, it contains a convex even cycle; retaining two of its coordinate classes by contraction produces $Q_2$. The cube-minor theorem identifies avoidance of $Q_2$ with VC dimension at most one.",
+  "references": "\\cite{marc2018cycling}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors"
+}

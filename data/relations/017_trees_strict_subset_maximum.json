@@ -1,0 +1,16 @@
+{
+  "id": 17,
+  "short_name": "trees_strict_subset_maximum",
+  "name": "Trees Are Strictly Contained in Maximum Classes",
+  "subject_id": "#classes/trees",
+  "object_id": "#classes/maximum",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite connected graphs.",
+  "statement": "Every finite tree is a maximum class, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/four_cycle"
+  ],
+  "proof": "A nontrivial tree with $m$ edges has $m+1$ vertices and VC dimension one, attaining the Sauer bound $1+m$; $K_1$ is maximum of VC dimension zero. The square $Q_2$ is maximum but is not a tree.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

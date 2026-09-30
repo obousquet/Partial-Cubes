@@ -1,0 +1,153 @@
+{
+  "version": 1,
+  "batch_id": "011_tree_foundation",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote finite trees with their acyclic, VC-dimension, and one-obstruction characterizations; record pc-minor closure, product failure, dimension formulas, strict inclusions, and incomparability with hypercubes.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors",
+    "PartialCubes:papers/survey/main.tex#prop:cartesian-product-dictionary",
+    "PartialCubes:papers/survey/main.tex#sec:median-cellular-peano",
+    "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions",
+    "published:marc2018cycling#Proposition-2.4.1"
+  ],
+  "source_packet": {
+    "id": "survey-tree-package",
+    "path": "papers/survey/main.tex",
+    "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c",
+    "fingerprint_matches": true
+  },
+  "records": [
+    {
+      "path": "data/classes/080_trees.json",
+      "sha256": "3d090a414f9c5cafda88bc251c6ce842cd0df999a57e9cae6f7dc09820ec0786"
+    },
+    {
+      "path": "data/characterizations/026_connected_acyclic_graph.json",
+      "sha256": "34e54ec9e72260178675009240e9515ee854cf215c21ab10482ea7f06ee1e2a6"
+    },
+    {
+      "path": "data/characterizations/027_tree_vc_dimension_at_most_one.json",
+      "sha256": "2bbde9c3fe64dd1c021f0cafc7a91f4d9bff9d5273b572c784a5b3186977bca0"
+    },
+    {
+      "path": "data/characterizations/028_no_four_cycle_pc_minor.json",
+      "sha256": "9e319d16daa43aea24c67b42bf11bec1c288cfd41a0d20b44bf1d835a76406f7"
+    },
+    {
+      "path": "data/characterization_equivalences/009_tree_equivalence.json",
+      "sha256": "0cf76aa05f8a30c3fadee1afa0811cf802c242060c80e071baaec402efcb6290"
+    },
+    {
+      "path": "data/relations/016_trees_strict_subset_median.json",
+      "sha256": "dc2ed24bfa60a5f861a3609934413976f2daf97e22a52dc9fe5f885e2cc504da"
+    },
+    {
+      "path": "data/relations/017_trees_strict_subset_maximum.json",
+      "sha256": "c196eeb7da2ceb5f19cf7e24e3c082fd19ff6bf146e829b39b1a8672bb048d8a"
+    },
+    {
+      "path": "data/relations/018_trees_strict_subset_partial_cubes.json",
+      "sha256": "d87cd41f1301ca32abe7078caf0cd431aa3811ea303e086b86b88f71584adead"
+    },
+    {
+      "path": "data/relations/019_trees_incomparable_hypercubes.json",
+      "sha256": "38da6f7bb5ca2a35947c881227a0eb2daa7bd67ec071101ec8a8689c7bc79aa6"
+    },
+    {
+      "path": "data/operation_results/029_trees_projection_closed.json",
+      "sha256": "b69bb019dfa3e8484ef5549360672cc62fd794ed9778b574d3d4318b5a3be4ba"
+    },
+    {
+      "path": "data/operation_results/030_trees_conditioning_closed.json",
+      "sha256": "327a332ec665011a187ab1ab7252d0b6746b4a0690166f8516b9b5d4a73cab60"
+    },
+    {
+      "path": "data/operation_results/031_trees_pc_minor_closed.json",
+      "sha256": "566a5e01bde606474b0f92dd9c3732c57c4028accaf74db88cbc4d37698e5e62"
+    },
+    {
+      "path": "data/operation_results/032_trees_not_cartesian_product_closed.json",
+      "sha256": "c907c3b029dcf78b58f5811545756e62b0a4cdc1c210c7040ce1a834e2ffe8d7"
+    },
+    {
+      "path": "data/invariant_values/006_tree_vc_dimension.json",
+      "sha256": "50ac74533a5e95c80232636e4560324b48639e4a961a95f9d26d9641fd43c3ab"
+    },
+    {
+      "path": "data/invariant_values/007_tree_isometric_dimension.json",
+      "sha256": "fe340f0921e3f5d57f9a6ac2f7c9c6edac44809c90e46e331913329b1c1b0701"
+    },
+    {
+      "path": "data/obstruction_families/006_four_cycle.json",
+      "sha256": "dd60d868543f61722b69deb3b3fe89c5cce43a1c67c7a666cf4e160d9e55121c"
+    },
+    {
+      "path": "data/obstruction_bases/004_tree_c4_pc_basis.json",
+      "sha256": "73bf682f3d7709d8bdeda4165f15561a5ecddc5a5c9a3fe693595c4d42f24cc3"
+    },
+    {
+      "path": "data/examples/007_four_cycle.json",
+      "sha256": "098697a87d981de7fd027a4166785c99f44cc08323d6812e5e6f38cdc9a678c6"
+    }
+  ],
+  "claim_decisions": [
+    {
+      "candidate_id": "survey-containment-131",
+      "disposition": "#relations/trees_strict_subset_maximum"
+    }
+  ],
+  "direct_source_normalizations": [
+    "#relations/trees_strict_subset_median",
+    "#relations/trees_strict_subset_partial_cubes",
+    "#relations/trees_incomparable_hypercubes",
+    "#operation_results/trees_not_cartesian_product_closed",
+    "#invariant_values/tree_isometric_dimension"
+  ],
+  "ownership": {
+    "database": [
+      "canonical finite-tree identity and equivalent acyclic, VC-one, and C4-avoidance criteria",
+      "C4 as the complete pc-minor obstruction and as the Cartesian-product counterexample",
+      "projection, conditioning, and pc-minor closure of trees and failure of product closure",
+      "tree VC-dimension and isometric-dimension formulas",
+      "strict tree inclusions into median, maximum, and partial-cube classes and incomparability with hypercubes"
+    ],
+    "latex": [
+      "the full proof of the cube-minor theorem and its surrounding low-rank discussion",
+      "the general Cartesian-product dictionary and examples for other classes",
+      "the global class-map narrative and all unnormalized graph-class facts"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "5ca923e41cd1890120c7c0d033a48563ef716df0d5a6e3bd8f12199389d9dde2",
+    "database_records_after_batch": 130,
+    "promoted_classes": 9,
+    "reserved_classes_remaining": 79
+  },
+  "graph_delivery": {
+    "hasse_covers_after_batch": 13,
+    "stored_established_inclusions_after_batch": 18,
+    "closure_map_arrows_after_batch": 16,
+    "negative_comparisons_after_batch": 1
+  },
+  "data_tree_sha256": "817c95f6e1b8de0ea1a43ee58a61f840fcad0757a84e869fb1e6c604e00fd15b",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "The structured inclusions from trees into C4-cactoids, edge-or-even-cycle block partial cubes, squaregraphs, and prism-free almost-median graphs remain queued until those target classes are promoted. The path and star subclasses remain separate future batches. No LaTeX consumer was changed."
+}

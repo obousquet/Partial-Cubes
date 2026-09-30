@@ -1,0 +1,16 @@
+{
+  "id": 18,
+  "short_name": "trees_strict_subset_partial_cubes",
+  "name": "Trees Are Strictly Contained in Partial Cubes",
+  "subject_id": "#classes/trees",
+  "object_id": "#classes/partial_cubes",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite connected graphs.",
+  "statement": "Every finite tree is a partial cube, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/four_cycle"
+  ],
+  "proof": "Root the tree and label a vertex by the set of edges on its root path; symmetric difference then records graph distance. The four-cycle is a partial cube but not a tree.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:vc-cube-minors"
+}
