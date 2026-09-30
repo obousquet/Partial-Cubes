@@ -1,0 +1,16 @@
+{
+  "id": 13,
+  "short_name": "hypercubes_strict_subset_learning_spaces",
+  "name": "Hypercubes Are Strictly Contained in Learning-Space Graphs",
+  "subject_id": "#classes/hypercubes",
+  "object_id": "#classes/learning_space_graphs",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite graphs, using irredundant set-family representations where relevant.",
+  "statement": "Every finite hypercube is a learning-space graph, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/three_vertex_path"
+  ],
+  "proof": "The full powerset is accessible and union closed. The three-set chain representing $P_3$ is also accessible and union closed, but its graph is not a hypercube.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

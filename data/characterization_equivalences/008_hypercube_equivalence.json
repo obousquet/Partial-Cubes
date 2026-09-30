@@ -1,0 +1,18 @@
+{
+  "id": 8,
+  "short_name": "hypercube_equivalence",
+  "name": "Hypercube Characterization Equivalence",
+  "class_id": "#classes/hypercubes",
+  "characterization_ids": [
+    "#characterizations/hypercube_graph",
+    "#characterizations/full_boolean_family",
+    "#characterizations/no_three_vertex_path_pc_minor",
+    "#characterizations/vc_dimension_equals_isometric_dimension"
+  ],
+  "hypotheses": "Finite nonempty connected graph; the obstruction and invariant criteria assume the graph is a partial cube.",
+  "statement": "The cube-graph, full-Boolean-family, one-obstruction, and equality-of-dimensions criteria define the same class.",
+  "status": "established",
+  "proof": "The graph and full-family forms are the same standard model. The one-obstruction equivalence is the cited pc-minor theorem. In an irredundant representation $C\\subseteq2^X$, the isometric dimension is $|X|$ and the VC dimension is at most $|X|$; equality means that $X$ itself is shattered, hence $C=2^X$.",
+  "references": "\\cite{marc2018cycling,chepoi2020two}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#sec:characterizations; PartialCubes:papers/survey/main.tex#sec:partial-cube-basics"
+}

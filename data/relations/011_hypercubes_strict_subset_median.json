@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "short_name": "hypercubes_strict_subset_median",
+  "name": "Hypercubes Are Strictly Contained in Median Graphs",
+  "subject_id": "#classes/hypercubes",
+  "object_id": "#classes/median",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite graphs, using irredundant set-family representations where relevant.",
+  "statement": "Every finite hypercube is median, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/three_vertex_path"
+  ],
+  "proof": "Each triple of binary words has its coordinatewise majority as its unique median. The path $P_3$ is median but has three vertices, so it is not a hypercube.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#sec:median-cellular-peano"
+}

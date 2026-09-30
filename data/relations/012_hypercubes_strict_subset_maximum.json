@@ -1,0 +1,16 @@
+{
+  "id": 12,
+  "short_name": "hypercubes_strict_subset_maximum",
+  "name": "Hypercubes Are Strictly Contained in Maximum Classes",
+  "subject_id": "#classes/hypercubes",
+  "object_id": "#classes/maximum",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite graphs, using irredundant set-family representations where relevant.",
+  "statement": "Every finite hypercube is a maximum class, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/three_vertex_path"
+  ],
+  "proof": "The full family $2^{[n]}$ has VC dimension $n$ and meets its Sauer bound with $2^n$ members. The path $P_3$, represented by the chain $\\{\\varnothing,\\{1\\},\\{1,2\\}\\}$, is maximum of VC dimension one but is not a hypercube.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

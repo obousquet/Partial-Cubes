@@ -481,6 +481,87 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-24" style="position:relative;">
+
+        <h3><a href="operation_results/hypercubes_projection_closed.html" class="table-title-link">Hypercubes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hypercubes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/hypercubes.html">Hypercubes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a hypercube is a hypercube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Deleting any set of coordinates from $2^X$ produces the full family on the remaining coordinates, namely $2^{X\setminus A}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:partial-cube-basics</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-25" style="position:relative;">
+
+        <h3><a href="operation_results/hypercubes_conditioning_closed.html" class="table-title-link">Hypercubes Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hypercubes Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/hypercubes.html">Hypercubes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a hypercube is a hypercube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Fixing coordinates of $2^X$ and suppressing them leaves the full family on the unfixed coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:partial-cube-basics</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-26" style="position:relative;">
+
+        <h3><a href="operation_results/hypercubes_pc_minor_closed.html" class="table-title-link">Hypercubes Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hypercubes Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/hypercubes.html">Hypercubes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a hypercube is a hypercube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Coordinate projections and convex cube-face restrictions both leave full Boolean families on the surviving free coordinates. Equivalently, the class is characterized by avoidance of $P_3$ and is therefore hereditary under pc-minors.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#marc2018cycling">[marc2018cycling]</a> <a href="bibliography.html#chepoi2020two">[chepoi2020two]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:characterizations</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-27" style="position:relative;">
+
+        <h3><a href="operation_results/hypercubes_cartesian_product_closed.html" class="table-title-link">Hypercubes Are Cartesian-Product-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hypercubes Are Cartesian-Product-Closed</p>
+<p><strong>Class: </strong><a href="classes/hypercubes.html">Hypercubes</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The Cartesian product of two hypercubes is a hypercube: $Q_m\square Q_n\cong Q_{m+n}$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Concatenate the binary coordinates of the two factors. A product edge changes exactly one coordinate in exactly one factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:cartesian-product-dictionary</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-28" style="position:relative;">
+
+        <h3><a href="operation_results/partial_cubes_cartesian_product_closed.html" class="table-title-link">Partial Cubes Satisfy the Factorwise Product Theorem</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Cubes Satisfy the Factorwise Product Theorem</p>
+<p><strong>Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For finite connected graphs $G,H$, the product $G\square H$ is a partial cube if and only if both $G$ and $H$ are partial cubes.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Products of irredundant cube embeddings give the forward closure. Conversely, every factor layer is convex in the product, so a partial-cube product has partial-cube factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:cartesian-product-dictionary</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

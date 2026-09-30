@@ -1,0 +1,18 @@
+{
+  "id": 3,
+  "short_name": "hypercube_p3_pc_basis",
+  "name": "One-Obstruction PC-Minor Basis for Hypercubes",
+  "target_class_id": "#classes/hypercubes",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/three_vertex_path"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a hypercube if and only if it has no pc-minor isomorphic to $P_3$; the obstruction is pc-minimal.",
+  "status": "established",
+  "proof": "The avoidance equivalence is the cited one-obstruction theorem. The graph $P_3$ is not a cube, while every proper projection, conditioning, or further pc-minor is $K_1$ or $K_2$, both hypercubes.",
+  "references": "\\cite{marc2018cycling,chepoi2020two}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#sec:characterizations"
+}
