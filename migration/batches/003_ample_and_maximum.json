@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "batch_id": "003_ample_and_maximum",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the finite set-family definitions of ample and maximum classes and the reviewed inclusion from maximum classes to ample classes.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#sec:vcsetfam",
+    "published:BandeltCDK06#Corollary-1-and-Theorem-2"
+  ],
+  "records": [
+    {
+      "path": "data/classes/005_ample.json",
+      "sha256": "bee07d41f89fc16bc94f65291b3d64a719db656fe2ff8befffe9aa0933f5f78a"
+    },
+    {
+      "path": "data/classes/046_maximum.json",
+      "sha256": "c7039b1c58d9d06cfd46f709325198758d030417eba88bfcea9e3f5046878751"
+    },
+    {
+      "path": "data/characterizations/003_shattering_equals_strong_shattering.json",
+      "sha256": "93403638e6f487382d23d56af3371dd1a7f395d49a5759ddda1ef5ab01ce23f4"
+    },
+    {
+      "path": "data/characterizations/004_sauer_bound_equality.json",
+      "sha256": "470c712546f725ff8ace2849de0b0e2d9328ccb11252a47916ed306db6e057fc"
+    },
+    {
+      "path": "data/relations/001_maximum_subset_ample.json",
+      "sha256": "46cf1e286c9988655516e90f02fb4b84b0f735e040ab5044debe91e67f56fd2c"
+    }
+  ],
+  "bibliography": {
+    "path": "data/latex/references.bib",
+    "sha256": "bc5df2c47010167aca7419e45f3a48269896dabc04fd67b7273ca58d2985fdbd",
+    "keys_added": [
+      "BandeltCDK06"
+    ]
+  },
+  "claim_decisions": [
+    {
+      "candidate_id": "survey-containment-056",
+      "disposition": "#relations/maximum_subset_ample",
+      "review_basis": "PartialCubes:papers/survey/main.tex#sec:vcsetfam"
+    }
+  ],
+  "ownership": {
+    "database": [
+      "normalized ample and maximum class definitions",
+      "concise proof that every maximum class is ample",
+      "canonical identifiers and the reviewed hierarchy edge"
+    ],
+    "latex": [
+      "survey exposition of shattering, strong shattering, and VC dimension",
+      "canonical proof context and terminology",
+      "examples, open questions, and paper-specific discussion"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "9c6bacf4f6f3daa49d939a80c6df38b47a7b2594771b4c23e9017692d0269e1e",
+    "database_records_after_batch": 15,
+    "promoted_classes": 3,
+    "reserved_classes_remaining": 85
+  },
+  "data_tree_sha256": "ea813b38deed9fcca4e6efaf03c5699c1b844df72bb8a60722bfb3a2017e59a6",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "Ample and maximum closure claims remain unpromoted. The stale ample source packet must be reconciled before it can support database closure or obstruction records; reverse-inclusion strictness awaits a migrated witness. No LaTeX consumer was changed."
+}

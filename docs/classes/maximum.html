@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Partial Cubes</title>
+        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -33,11 +33,30 @@
     </script>
 
 
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Partial Cubes</h1>
-            <p>Classes, Characterizations, Invariants, and Forbidden Minors</p>
+            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
@@ -55,84 +74,37 @@
             </nav>
         </header>
         <main class="table-container">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-46" style="position:relative;">
 
-    <div class="intro">
-        <p>A structured database of classes of partial cubes and their mathematical relationships.</p>
+        <h3><a href="classes/maximum.html" class="table-title-link">Maximum Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal{M}">
+            \[\mathcal{M}\]
+        </div>
     </div>
-    <div class="tables-grid">
 
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Canonical classes of partial cubes and related ambient objects</p>
-            <p class="record-count">3 records</p>
+<strong>Summary:</strong><div class="text-field"><p>Finite set families that attain the Sauer--Shelah--Perles bound for their VC dimension.</p></div>
+<p><strong>Primary Characterization: </strong><a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a></p>
+<p><strong>Aliases:</strong><ul class='fields-list'><li>VC-maximum classes</li></ul></p>
+<p><strong>Category:</strong> Set Family</p>
+<p><strong>Ambient Scope:</strong> Set Families</p>
+<p><strong>Parameterized:</strong> Unspecified</p>
+<p><strong>P-Closed:</strong> Unspecified</p>
+<p><strong>C-Closed:</strong> Unspecified</p>
+<p><strong>PC-Closed:</strong> Unspecified</p>
+<strong>Comments:</strong><div class="text-field"><p>The VC dimension is determined by the family; this catalogue entry is not a separately parameterized class for each dimension.</p></div>
+<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/sauer_bound_equality.html'>Sauer--Shelah--Perles Bound Equality</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/maximum_subset_ample.html'>Maximum Classes Are Ample</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
+
         </div>
-
-        <div class="table-card">
-            <h3><a href="characterizations/index.html">Characterizations</a></h3>
-            <p>Atomic membership criteria for catalogued classes</p>
-            <p class="record-count">4 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="characterization_equivalences/index.html">Characterization_Equivalences</a></h3>
-            <p>Theorems proving that two or more membership criteria define the same class</p>
-            <p class="record-count">1 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="relations/index.html">Relations</a></h3>
-            <p>Inclusions, equalities, non-containments, incomparabilities, and open comparisons</p>
-            <p class="record-count">1 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="operations/index.html">Operations</a></h3>
-            <p>Operations on partial cubes, set families, and related structures</p>
-            <p class="record-count">3 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="operation_results/index.html">Operation_Results</a></h3>
-            <p>Closure, failure, image, and exact-closure theorems for classes</p>
-            <p class="record-count">3 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="invariants/index.html">Invariants</a></h3>
-            <p>Structural, algebraic, metric, topological, and geometric invariants</p>
-            <p class="record-count">0 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="invariant_values/index.html">Invariant_Values</a></h3>
-            <p>Exact values, formulas, bounds, and ranges on classes and examples</p>
-            <p class="record-count">0 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="obstruction_families/index.html">Obstruction_Families</a></h3>
-            <p>Reusable finite, parameterized, and generative families of forbidden objects</p>
-            <p class="record-count">0 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="obstruction_bases/index.html">Obstruction_Bases</a></h3>
-            <p>Complete, partial, necessary, and sufficient forbidden-minor theorems</p>
-            <p class="record-count">0 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="examples/index.html">Examples</a></h3>
-            <p>Named examples and counterexamples used as theorem witnesses</p>
-            <p class="record-count">0 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="results/index.html">Results</a></h3>
-            <p>Class theorems outside binary relations, operations, and characterization equivalences</p>
-            <p class="record-count">0 records</p>
-        </div>
-
     </div>
 
         </main>
