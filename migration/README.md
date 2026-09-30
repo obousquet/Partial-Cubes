@@ -9,15 +9,25 @@ The generated files are reproducible from the pinned inputs in
 from Batch 001 onward, in the class crosswalk and claim dispositions. A later
 extraction may refresh candidates but must not overwrite those decisions.
 
-Run the first-batch pipeline with:
+Freeze a new explicitly named snapshot, then run the extraction pipeline with:
 
 ```bash
+make migration-freeze
 make migration-extract
 make migration-check
 ```
 
 `LATEX_ROOT` defaults to `~/latex/PartialCubes` and may be overridden on either
-command. The check target is read-only.
+command. Change `snapshot_id` in `config.json` before freezing a later source
+state. `migration-freeze` refuses to overwrite an existing byte archive.
+The check target is read-only.
+
+Clean tracked inputs are recoverable from the repository commit recorded in
+`source_manifest.json`. Every selected modified or untracked input is copied
+byte-for-byte under `snapshots/<snapshot_id>/`. Extractors read the frozen
+version even if the live research workspace changes later. The direct source
+corpus excludes `research/` and `archive/` directories; those artifacts remain
+in the LaTeX repository but cannot silently serve as proof provenance.
 
 The ownership states are:
 

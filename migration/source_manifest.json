@@ -1,6 +1,7 @@
 {
   "version": 1,
   "kind": "migration_source_manifest",
+  "snapshot_id": "2026-09-30-b001",
   "snapshot_date": "2026-09-30",
   "latex_root_logical": "~/latex/PartialCubes",
   "selection_rule": "Configured paper TeX and bibliographies, structured seed files, and every file or PDF named by a minor-atlas source packet.",
@@ -10,7 +11,7 @@
       "relative_to_latex_root": ".",
       "head": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
       "dirty": true,
-      "dirty_path_count": 208,
+      "dirty_path_count": 210,
       "dirty_paths": [
         "M PUBLICATION_INVENTORY.md.html",
         " M forbidden_pc_minor_campaign/LEDGER.md",
@@ -131,6 +132,8 @@
         "?? papers/dismantlable-ample/research/latest_overlap_schedule.py",
         "?? papers/dismantlable-ample/research/noncontained_endpoint_transfer.json",
         "?? papers/dismantlable-ample/research/noncontained_endpoint_transfer.py",
+        "?? papers/dismantlable-ample/research/noncontained_relative_square.json",
+        "?? papers/dismantlable-ample/research/noncontained_relative_square.py",
         "?? papers/dismantlable-ample/research/obstruction_trace_partition_counterexample.json",
         "?? papers/dismantlable-ample/research/obstruction_trace_partition_counterexample.py",
         "?? papers/dismantlable-ample/research/orientation_deadlines.json",
@@ -221,7 +224,7 @@
         "?? papers/minor-atlas/research/coordinate_block_amplification_verification.json",
         "?? papers/minor-atlas/research/verify_coordinate_block_amplification.py"
       ],
-      "manifest_file_count": 81
+      "manifest_file_count": 65
     },
     {
       "name": "YangDim",
@@ -246,7 +249,7 @@
       "relative_to_latex_root": "../ResearchWork",
       "head": "2d85acf5e891da8f59ca6ddbd3ee16a7ea44ca2e",
       "dirty": true,
-      "dirty_path_count": 31,
+      "dirty_path_count": 32,
       "dirty_paths": [
         "M knowledge/workspace.json",
         " M literature/catalog.json",
@@ -270,6 +273,7 @@
         "?? literature/math/internal-damp-classification/results/forced-prefix-rooted-inputs.md",
         "?? literature/math/internal-damp-classification/results/four-edge-face-decomposition.md",
         "?? literature/math/internal-damp-classification/results/noncontained-endpoint-transfer.md",
+        "?? literature/math/internal-damp-classification/results/noncontained-relative-square.md",
         "?? literature/math/internal-damp-classification/results/obstruction-trace-blocks.md",
         "?? literature/math/internal-damp-classification/results/paired-all-endpoints.md",
         "?? literature/math/internal-damp-classification/results/quadratic-orientation-score.md",
@@ -285,7 +289,7 @@
   ],
   "counts": {
     "repositories": 4,
-    "files": 109,
+    "files": 93,
     "missing_references": 0
   },
   "missing_references": [],
@@ -3040,58 +3044,6 @@
     },
     {
       "repository": "PartialCubes",
-      "path": "papers/cover-recursive/archive/cover_recursive_peripheral_complete_basis.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "fe40b5c33cf78b7e2146389f887c552a0b48a83c29eda35752c163c936fb8899",
-      "size_bytes": 30683,
-      "git_state": "tracked",
-      "labels": [
-        "sec:complete-basis",
-        "def:recursive-layer-compatibility",
-        "eq:recursive-layer-common-step",
-        "thm:recursive-layer-compatibility",
-        "eq:recursive-layer-compatibility",
-        "def:critical-incompatible-layer-pair",
-        "eq:critical-incompatible-minors",
-        "thm:complete-recursive-rper-basis",
-        "eq:complete-recursive-rper-basis",
-        "rem:critical-layer-pair-frontier",
-        "def:signed-layer-blockers",
-        "eq:signed-blocker-spectrum",
-        "eq:signed-full-blocker-cover",
-        "lem:signed-blocker-periphery",
-        "eq:signed-blocker-periphery",
-        "thm:hereditary-signed-blocker-basis",
-        "eq:hereditary-signed-blocker-basis",
-        "rem:signed-blocker-atlas-frontier",
-        "lem:p5-signed-blocker-depth-robustness",
-        "eq:p5-depth-special-vertices",
-        "eq:p5-depth-one-punctures",
-        "eq:p5-depth-robustness-profile",
-        "thm:signed-blocker-depth-tower",
-        "eq:signed-blocker-depth-tower",
-        "eq:p5-depth-deletion-contracts",
-        "def:signed-repair-atlas",
-        "eq:signed-repair-antichain",
-        "eq:signed-repair-atlas",
-        "thm:functorial-signed-repair-atlas",
-        "eq:signed-repair-defect-contraction",
-        "eq:signed-repair-support-contraction",
-        "eq:signed-repair-defect-restriction",
-        "eq:signed-repair-support-restriction",
-        "eq:signed-repair-transition-maps",
-        "def:signed-repair-circuit",
-        "eq:signed-repair-return-depth",
-        "eq:signed-repair-e-admissible",
-        "thm:complete-signed-repair-circuit-basis",
-        "eq:complete-signed-repair-circuit-basis",
-        "eq:complete-signed-repair-circuit-basis-global"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
       "path": "papers/cover-recursive/main.pdf",
       "roles": [
         "minor_source_packet:cover:pdf"
@@ -3183,62 +3135,6 @@
         "sec:conclusion",
         "q:complete-basis",
         "app:finite-decompositions"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/cover-recursive/research/component_label_recursion.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "caa66f097e9ce71e17f973aa10d8c6300c0bddd148d5435158bb27f0e0d614bc",
-      "size_bytes": 76105,
-      "git_state": "untracked",
-      "labels": [
-        "eq:lift",
-        "eq:common",
-        "eq:circuit",
-        "thm:circuit",
-        "cor:subspaces",
-        "prop:commute",
-        "thm:generator",
-        "eq:inputs",
-        "eq:admissibility",
-        "thm:positive-generator",
-        "cor:complete-certificate-generator",
-        "thm:canonical-partition",
-        "cor:proper-partition",
-        "thm:structural-generator",
-        "cor:full-generator",
-        "prop:block-overlaps",
-        "prop:one-layer-equivalence",
-        "thm:completion-cover",
-        "prop:overlap-potential",
-        "cor:site-surplus",
-        "eq:cube-code",
-        "thm:cube-code",
-        "eq:weighted-descent-failure",
-        "thm:unsigned-reduction",
-        "cor:minimal-module-counterexample",
-        "thm:cut-cliques"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/cover-recursive/research/root_repair_closure.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "17c0058fc5bcecaa4262fe8a84e88f4f25bcacd8097a25da98a4f36ee7c0af53",
-      "size_bytes": 14882,
-      "git_state": "untracked",
-      "labels": [
-        "eq:availability",
-        "thm:closure",
-        "eq:blocked",
-        "cor:blocked",
-        "prop:filter",
-        "thm:critical"
       ]
     },
     {
@@ -3390,8 +3286,8 @@
       "roles": [
         "minor_source_packet:ample:pdf"
       ],
-      "sha256": "e0b0d23c62b4f1e3eff5324507b50075010cafa86e3f5c794dba1ab69636b6dc",
-      "size_bytes": 2915281,
+      "sha256": "c178d1d159d576a0f9be2f745e764968af88f9386300fd715cc4c1793759feeb",
+      "size_bytes": 2925230,
       "git_state": "modified"
     },
     {
@@ -3410,200 +3306,6 @@
         "eq:damp-introduction-downset",
         "eq:damp-introduction-common-seed",
         "tab:damp-generative-scope"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/ample_filtrations.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "b66986dfa777cae806a9826f8b703b5fb3b8710e77b8f19d3638c10d126105e3",
-      "size_bytes": 99076,
-      "git_state": "untracked",
-      "labels": [
-        "sec:ccmw-dictionary",
-        "eq:representation-nonclashing",
-        "thm:ccmw-dictionary",
-        "thm:minimax",
-        "prop:refine",
-        "eq:interval-edge",
-        "thm:lifting",
-        "cor:switches",
-        "thm:latest",
-        "eq:deadline-edge",
-        "cor:two-orders",
-        "prop:inversion-exchange",
-        "prop:commutation",
-        "thm:orientation-deadlines",
-        "eq:orientation-added-edges",
-        "thm:orientation-gluing",
-        "cor:edge-selections",
-        "cor:orientation-scc",
-        "eq:orientation-selector",
-        "prop:selectors",
-        "thm:gluing-minors",
-        "eq:layer-selector",
-        "thm:strong-descent",
-        "prop:strong-data-uso",
-        "eq:admissible-outgoing",
-        "eq:edge-xor",
-        "thm:strong-profile-formula",
-        "eq:forced-orientation-equality",
-        "prop:forced-collapse",
-        "prop:terminal-attachment",
-        "prop:external-nonlinear",
-        "eq:external-disjunction",
-        "thm:face-replacement",
-        "cor:forbidden-face-exterior",
-        "prop:least-terminal-face"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/component_label_partitions.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "17f3c489ca6cba14d58dc98fa798c2a0abc0482f29450d36a1c8535d0f142188",
-      "size_bytes": 48428,
-      "git_state": "untracked",
-      "labels": [
-        "eq:lift",
-        "prop:corners",
-        "cor:hypergraph",
-        "eq:cube-fibers",
-        "prop:cube-corners",
-        "thm:partitions",
-        "eq:partition-classification",
-        "prop:independent-equalities",
-        "thm:word-trace",
-        "cor:word-minors",
-        "eq:first-negative",
-        "thm:first-negative",
-        "eq:protected",
-        "prop:protected",
-        "cor:protected-growth",
-        "eq:canonical-core",
-        "prop:greatest",
-        "cor:batch",
-        "thm:terminal-generator",
-        "thm:inverse"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/protected_core_delay.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "fdb9ce7b02eb23093c9c1e9cc19997ec18467ca2f18819b5b305933c5cf4ad91",
-      "size_bytes": 15975,
-      "git_state": "untracked",
-      "labels": [
-        "eq:protected",
-        "prop:empty",
-        "thm:batch",
-        "prop:depth",
-        "prop:rooted-growth",
-        "prop:completion"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/relative_wing_square.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "d5388376712b77d331739bcf6a450e3c720a526c4e464097d2fb1fbe2fe734d1",
-      "size_bytes": 23056,
-      "git_state": "untracked",
-      "labels": [
-        "lem:relative",
-        "thm:square",
-        "cor:inverse",
-        "thm:one-sided",
-        "cor:saturation",
-        "prop:retention-failure"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/root_cube_completion.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "03c9c7449fc05cc860f21604a8cd51c757341b38bc92d887c81a4fc1886a0eda",
-      "size_bytes": 27305,
-      "git_state": "untracked",
-      "labels": [
-        "prop:stable",
-        "thm:complete",
-        "prop:downset",
-        "prop:local",
-        "prop:factor-connected",
-        "thm:recover"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/rooted_component_partitions.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "032fbb30d14aebc2365e12515ccf0977d03327d73ba1ba30117b5bb2000e68c3",
-      "size_bytes": 43154,
-      "git_state": "untracked",
-      "labels": [
-        "eq:lift",
-        "eq:frozen",
-        "prop:refutation",
-        "eq:affine",
-        "thm:affine",
-        "cor:colour",
-        "prop:relative-components",
-        "prop:repairs",
-        "cor:tips",
-        "prop:stripping-counterexample",
-        "thm:precedence",
-        "cor:acyclic-selection",
-        "prop:relaxed-core",
-        "prop:minor-times",
-        "prop:cube-lift-gaps",
-        "prop:repair-graph-application"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/uso_structural_audit.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "f03aacdc6082a10b40a3a138eb87db1f0f6128f02fa08ed9209d276c7ee5ae21",
-      "size_bytes": 15072,
-      "git_state": "untracked",
-      "labels": [
-        "prop:relative",
-        "prop:separator",
-        "prop:protected"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/dismantlable-ample/research/vc_excess_block_invariance.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "16fb3ab84209358d67aada045330f1b64913b97cb57bce539479759120bf6eb2",
-      "size_bytes": 7670,
-      "git_state": "tracked",
-      "labels": [
-        "lem:fibre",
-        "lem:recover",
-        "thm:invariance",
-        "cor:amplified",
-        "prop:rtd",
-        "thm:seeds"
       ]
     },
     {
@@ -3630,8 +3332,8 @@
         "minor_source_packet:ample:path",
         "paper_tex"
       ],
-      "sha256": "0991d868ba353b7bbcc3b1ed23964350e435b51ba1e9e59fa9d072ee601b4ea6",
-      "size_bytes": 1957480,
+      "sha256": "f9fe2c566df65e4acf3dbc320d40c0dfb04dd61ee0b2eb5c01d7a8e5c76bcf1c",
+      "size_bytes": 1965194,
       "git_state": "modified",
       "labels": [
         "sec:definitions",
@@ -3744,6 +3446,8 @@
         "eq:damp-paired-all-endpoints",
         "eq:damp-paired-general-corners",
         "eq:damp-paired-rooted-shadow",
+        "thm:damp-noncontained-relative-square",
+        "eq:damp-two-overlap-root-transfer",
         "rem:damp-paired-root-recovery",
         "thm:damp-terminal-cut-vertex",
         "eq:damp-paired-rooted-corners",
@@ -5575,27 +5279,6 @@
     },
     {
       "repository": "PartialCubes",
-      "path": "papers/minor-atlas/research/coordinate_block_amplification.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "d29a59dc82befa4c304755d1d2527ecbb233286fd1b8d541a6e7275fc9ebd73b",
-      "size_bytes": 16326,
-      "git_state": "untracked",
-      "labels": [
-        "eq:block",
-        "eq:shadow",
-        "prop:strong",
-        "thm:rper-block",
-        "eq:parameters",
-        "cor:reduction",
-        "cor:defect",
-        "thm:completion",
-        "eq:completion-bound"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
       "path": "papers/realizability-margin/main.tex",
       "roles": [
         "paper_tex"
@@ -5841,53 +5524,6 @@
         "eq:rectangular-extension",
         "eq:level-sum-width"
       ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/survey/archive/header.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "e49b935b5e05ee66515be004ddef865663f181326ea57c7f4fcd4381f046d049",
-      "size_bytes": 6621,
-      "git_state": "tracked",
-      "labels": [
-        "fig:#4",
-        "$\\name$"
-      ]
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/survey/archive/maingraph.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "d5a5f3c26284db9819d501bfa7e15250a9868834b7a26f56a927ef316d07ed15",
-      "size_bytes": 53242,
-      "git_state": "tracked",
-      "labels": []
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/survey/archive/minors.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "5ae60ab6708df99d0f7ba9b5c5ebf3e0cb06ed7296f65f394277b81cd31cfa7c",
-      "size_bytes": 37430,
-      "git_state": "tracked",
-      "labels": []
-    },
-    {
-      "repository": "PartialCubes",
-      "path": "papers/survey/archive/pcbyrank.tex",
-      "roles": [
-        "paper_tex"
-      ],
-      "sha256": "b3c6c2da3ba2e8f27986f4ed5a2d6232856cbcaee595edb500384308051b7e5d",
-      "size_bytes": 244215,
-      "git_state": "tracked",
-      "labels": []
     },
     {
       "repository": "PartialCubes",

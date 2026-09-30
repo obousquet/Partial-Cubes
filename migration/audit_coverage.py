@@ -27,6 +27,7 @@ TABLES = (
 
 
 def audit(config: dict, generated_dir: Path, data_dir: Path) -> dict:
+    migration_dir = generated_dir.parent
     survey = load_json(generated_dir / "survey_atlas.json")
     minor = load_json(generated_dir / "minor_inventory.json")
     labels = load_json(generated_dir / "latex_labels.json")
@@ -53,10 +54,20 @@ def audit(config: dict, generated_dir: Path, data_dir: Path) -> dict:
         table: len(list((data_dir / table).glob("[0-9]*.json")))
         for table in TABLES
     }
+    crosswalk_path = migration_dir / "class_crosswalk.json"
+    canonical_path = migration_dir / "canonical_classes.json"
+    crosswalk = load_json(crosswalk_path) if crosswalk_path.is_file() else None
+    canonical = load_json(canonical_path) if canonical_path.is_file() else None
+    disposition_counts = (
+        Counter(record["disposition"] for record in crosswalk["occurrences"])
+        if crosswalk
+        else Counter({"unresolved": actual["survey_nodes"] + actual["minor_families"]})
+    )
+    unresolved = disposition_counts.get("unresolved", 0)
     return {
         "version": 1,
         "kind": "migration_coverage",
-        "phase": 0,
+        "phase": 1 if canonical and unresolved == 0 else 0,
         "expected_seed_counts": expected,
         "actual_seed_counts": actual,
         "candidate_totals": {
@@ -68,15 +79,17 @@ def audit(config: dict, generated_dir: Path, data_dir: Path) -> dict:
         "minor_relation_statuses": dict(sorted(relation_statuses.items())),
         "minor_relation_types": dict(sorted(relation_types.items())),
         "source_packet_fingerprints": {
-            "current": actual["minor_sources"] - minor["counts"]["stale_source_packets"],
-            "stale": minor["counts"]["stale_source_packets"],
+            "matching_inventory_fingerprint": actual["minor_sources"] - minor["counts"]["stale_source_packets"],
+            "mismatching_inventory_fingerprint": minor["counts"]["stale_source_packets"],
             "stale_ids": minor["stale_source_packet_ids"],
         },
         "dispositions": {
             "candidate_class_occurrences": actual["survey_nodes"] + actual["minor_families"],
+            "class_occurrences_by_disposition": dict(sorted(disposition_counts.items())),
+            "reviewed_canonical_identities": canonical["count"] if canonical else 0,
             "promoted_classes": database_counts["classes"],
             "excluded_broad_questions": actual["minor_questions"],
-            "unresolved_class_occurrences": actual["survey_nodes"] + actual["minor_families"],
+            "unresolved_class_occurrences": unresolved,
         },
         "database_record_counts": database_counts,
         "gate": "passed",

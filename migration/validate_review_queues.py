@@ -4,10 +4,11 @@
 from __future__ import annotations
 
 import argparse
+import re
 from collections import Counter
 from pathlib import Path
 
-from common import DEFAULT_CONFIG, load_config, load_json
+from common import DEFAULT_CONFIG, load_config, load_json, sha256_file
 
 
 def unique(records: list[dict], field: str, name: str, errors: list[str]) -> None:
@@ -39,6 +40,35 @@ def main() -> int:
     for record in occurrences:
         if record["disposition"] != "unresolved" and not record.get("decision_basis"):
             errors.append(f"Resolved crosswalk occurrence lacks decision_basis: {record['occurrence_id']}")
+
+    canonical = load_json(root / "canonical_classes.json")
+    classes = canonical["classes"]
+    if len(classes) != canonical["count"]:
+        errors.append("Canonical class count does not match classes array")
+    unique(classes, "allocated_id", "canonical class", errors)
+    unique(classes, "short_name", "canonical class", errors)
+    allocated = sorted(record["allocated_id"] for record in classes)
+    if allocated != list(range(1, len(classes) + 1)):
+        errors.append("Canonical class IDs are not contiguous from 1")
+    invalid_short_names = sorted(
+        record["short_name"]
+        for record in classes
+        if not re.fullmatch(r"[a-z][a-z0-9_]*", record["short_name"])
+    )
+    if invalid_short_names:
+        errors.append(f"Invalid canonical short names: {invalid_short_names}")
+    canonical_names = {record["short_name"] for record in classes}
+    missing_identities = sorted(
+        {record["canonical_short_name"] for record in occurrences} - canonical_names
+    )
+    if missing_identities:
+        errors.append(f"Crosswalk references unallocated identities: {missing_identities}")
+    if crosswalk["counts"].get("unresolved") != 0:
+        errors.append(f"Crosswalk still has {crosswalk['counts'].get('unresolved')} unresolved occurrences")
+
+    identity_decisions = load_json(root / "identity_decisions.json")
+    if len(identity_decisions["overlaps"]) != 9:
+        errors.append("Expected nine reviewed overlap decisions")
 
     queue = load_json(root / "claim_queue.json")
     claims = queue["claims"]
@@ -72,6 +102,30 @@ def main() -> int:
     manifest = load_json(root / "source_manifest.json")
     if manifest["missing_references"]:
         errors.append(f"Source manifest has {len(manifest['missing_references'])} missing references")
+    excluded_directories = set(config.get("excluded_source_directories", []))
+    inadmissible_paths = sorted(
+        f"{entry['repository']}:{entry['path']}"
+        for entry in manifest["files"]
+        if excluded_directories.intersection(Path(entry["path"]).parts)
+    )
+    if inadmissible_paths:
+        errors.append(f"Source manifest includes excluded research/archive paths: {inadmissible_paths}")
+    archive = load_json(root / "source_archive.json")
+    archived_keys = {(entry["repository"], entry["path"]) for entry in archive["files"]}
+    required_archive_keys = {
+        (entry["repository"], entry["path"])
+        for entry in manifest["files"]
+        if entry["git_state"] != "tracked"
+    }
+    if archived_keys != required_archive_keys:
+        errors.append(
+            f"Dirty source archive mismatch; missing={sorted(required_archive_keys - archived_keys)}, "
+            f"extra={sorted(archived_keys - required_archive_keys)}"
+        )
+    for entry in archive["files"]:
+        archive_path = root / entry["archive_path"]
+        if not archive_path.is_file() or sha256_file(archive_path) != entry["sha256"]:
+            errors.append(f"Dirty source archive is missing or corrupt: {entry['archive_path']}")
 
     if errors:
         print("Migration review queue validation failed:")
@@ -79,7 +133,8 @@ def main() -> int:
             print(f"- {error}")
         return 1
     print(
-        f"Validated {len(occurrences)} class occurrences, {len(claims)} claim candidates, "
+        f"Validated {len(occurrences)} class occurrences into {len(classes)} identities, "
+        f"{len(claims)} claim candidates, "
         f"{len(conflicts['items'])} conflicts, and {len(papers)} LaTeX documents."
     )
     return 0

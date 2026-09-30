@@ -199,6 +199,14 @@ accepted. Each migration batch records the manifest digest it used. Later
 source edits then produce drift reports rather than silently changing database
 meaning.
 
+For recoverability, a clean tracked file is pinned by repository commit and
+path. Every selected modified or untracked file is also copied byte-for-byte
+into the migration snapshot before extraction. Extractors read the frozen
+bytes, so an active research process may continue editing the live workspace
+without changing an in-progress batch. Direct proof-source selection excludes
+`research/` and `archive/` trees unless a later review deliberately promotes a
+specific artifact.
+
 Use portable locators of these forms:
 
 ```text

@@ -1,0 +1,262 @@
+\paragraph{Coordinate expansions and their signed clauses.}
+The cardinality test in
+Theorem~\ref{thm:damp-fixed-shadow-signed-clutter} parametrizes all ample
+realizations at once.  Fixing a contraction and a reduction gives
+a complementary constructive description: the remaining choices are
+independent labels on connected components.  The following theorem identifies
+those labels with the new bits of the signed clauses.  Its conclusion concerns ampleness. In the USO formulation, membership in
+$\Damp$ asks whether the constructed support admits any acyclic USO;
+forbiddenness additionally asks for independent acyclic USOs on all proper
+pc-minors. A labeling alone supplies neither orientation nor those witnesses.
+Fixing a restriction and reduction representation map is a more constrained
+extension problem than choosing the support labels. The completion theory
+in the \href{research/ample_filtrations.pdf}{representation-map writeup}
+treats that additional prescribed data. Its fixed-map criteria do not
+replace the existential conditions in the present support classification.
+
+\begin{theorem}[Component labels and expansion signs]
+\label{thm:damp-component-expansion-signs}
+Let $\varnothing\ne C\subseteq A\subseteq Q_F$ be ample, let $e\notin F$,
+and let $K_1,\ldots,K_k$ be the connected components of the graph induced
+by $A\setminus C$.  For $b=(b_1,\ldots,b_k)\in\{0,1\}^k$, put
+\[
+ X_b=(C\times\{0,1\})\ \cup\
+       \bigcup_{i=1}^k(K_i\times\{b_i\}).
+\]
+Then $X_b$ is ample, and
+\begin{equation}
+ \operatorname{Sh}(X_b)=\operatorname{Sh}(A)
+       \cup\{T\cup\{e\}:T\in\operatorname{Sh}(C)\}.
+ \label{eq:damp-component-expansion-shadow}
+\end{equation}
+Conversely, these are exactly the ample families on $F\cup\{e\}$ whose
+contraction in $e$ is $A$ and whose reduction in $e$ is $C$.
+The labels are recovered uniquely.
+
+Write $\mathcal I=\mathcal N(\operatorname{Sh}(C))\cap
+\operatorname{Sh}(A)$.  For $T\in\mathcal I$, let $\tau_T\in Q_T$
+be the unique trace missing from $C|_T$.  The nonempty fiber
+\[
+ A(T,\tau_T)=\{x\in A:x|_T=\tau_T\}
+\]
+lies in a unique component $K_{i(T)}$.  The signed minimal nonfaces of
+$X_b$ are exactly
+\begin{enumerate}
+ \item the signed minimal nonfaces of $A$, on supports not containing $e$;
+ \item for each $T\in\mathcal I$, the support $T\cup\{e\}$ with missing
+       trace $(\tau_T,1-b_{i(T)})$.
+\end{enumerate}
+Every component occurs as some $i(T)$.  Thus, with these supports, old
+clauses, and traces $\tau_T$ fixed, a choice of new-coordinate bits is
+admissible for the shadow in \eqref{eq:damp-component-expansion-shadow}
+if and only if its bits agree whenever $i(T)=i(U)$.  There are exactly
+$2^k$ such choices.  If $A=C$, the component list and $\mathcal I$ are
+empty and the construction is $A\times\{0,1\}$.
+\end{theorem}
+
+\begin{proof}
+We first prove ampleness directly by comparing shattered and strongly
+shattered supports.  We use that complements and face sections of ample
+families are ample, and that nonempty ample families are connected
+\cite[Theorem~2 and Lemma~1]{Lawrence83}.
+
+Let $Q$ be any cube contained in $A$.  The family $C\cap Q$ is ample
+inside $Q$, so its complement $Q\setminus C$, when nonempty, is connected.
+Consequently it belongs to one $K_i$.  The entire cube $Q$ therefore
+occurs in at least one layer of $X_b$.  A support $T\subseteq F$ is
+shattered by $X_b$ exactly when it is shattered by its contraction $A$;
+since $A$ is ample, the preceding cube argument shows that it is also
+strongly shattered by $X_b$.
+
+A support $T\cup\{e\}$ is strongly shattered by $X_b$ exactly when $T$
+is strongly shattered by $C$.  If $T$ is shattered by $C$, both layers
+already realize every $T$-trace.  Conversely, suppose $T$ is not shattered
+by $C$.  If it is not shattered by $A$, it cannot give a shattered support
+of $X_b$.  Otherwise choose a trace $q$ missing from $C|_T$.  The nonempty
+face section $A(T,q)$ is connected and avoids $C$, so it lies in one
+component $K_i$.  Only layer $b_i$ realizes $q$; hence $T\cup\{e\}$ is
+not shattered.  This proves \eqref{eq:damp-component-expansion-shadow}
+and equality with the strongly shattered supports, proving ampleness.
+
+For the converse, let $X$ have the stated contraction and reduction.  Every member of $C$ has both lifts, and every member of
+$A\setminus C$ has a unique lift.  Two adjacent vertices of
+$A\setminus C$ cannot have different lift values: their two lifts would
+form an antipodal pair in a square face, with the other two vertices
+absent.  Such a face section is not ample.  Thus lift values are constant
+on each $K_i$, which gives $X=X_b$ and uniqueness.
+
+The minimal nonfaces of the shadow in
+\eqref{eq:damp-component-expansion-shadow} which avoid $e$ are exactly
+those of $\operatorname{Sh}(A)$.  A minimal nonface containing $e$ has
+the form $T\cup\{e\}$, where $T$ is shattered by $A$, is not shattered
+by $C$, and every proper subset of $T$ is shattered by $C$.  These are
+precisely the members of $\mathcal I$.  The unique missing trace
+$\tau_T$ exists by Theorem~\ref{thm:damp-fixed-shadow-signed-clutter}.
+Its fiber in $A$ is a nonempty connected face section outside $C$.
+Only its component's layer realizes that trace, giving the stated sign.
+
+To see that every component occurs, take $x\in A\setminus C$.
+The signed-clause presentation of $C$ supplies a minimal nonface $T$ of
+$\operatorname{Sh}(C)$ with $x|_T=\tau_T$.  All proper subsets of $T$
+are shattered by both $C$ and $A$.  If $T$ were not shattered by $A$,
+the two projections $C|_T\subseteq A|_T$ would both have
+$2^{|T|}-1$ members.  They would be equal, contradicting the presence
+of $x|_T$ in $A|_T$.  Hence $T\in\mathcal I$ and $x\in A(T,\tau_T)$.
+
+Finally, bits constant on each component's clause group produce $X_b$
+and are admissible by the construction.  Conversely, any admissible
+signing with the displayed fixed data defines an ample family $Y$ with
+that shadow.  The old clauses imply that its contraction $A'$ is
+contained in $A$.  Every point in its reduction avoids each
+$(T,\tau_T)$ for $T\in\mathcal I$, because otherwise one of its two
+lifts is forbidden.  Every minimal nonface of $\operatorname{Sh}(C)$
+outside $\mathcal I$ is a minimal nonface of $\operatorname{Sh}(A)$;
+the two projections have the same unique missing trace, by the preceding
+cardinality argument.  Thus the old clauses and these additional
+conditions imply all clauses defining $C$, so $C'\subseteq C$.  Since
+\[
+ |Y|=|A'|+|C'|=|A|+|C|,
+\]
+both inclusions are equalities.  The converse already proved identifies
+$Y=X_b$ and forces equality of the bits within each clause group.
+\end{proof}
+
+The theorem gives an intrinsic recursion for ample families: choose nested
+ample families on fewer coordinates and label their complementary components.
+Fixed coordinates may be added separately.  Every active coordinate of a
+nonempty ample family has a nonempty reduction, by connectedness,
+so the converse supplies exhaustive recovery.  This construction of the
+ambient ample class does not identify the forbidden labelings.
+
+\begin{corollary}[Constructing realizations in a fixed coordinate order]
+\label{cor:damp-component-reflection-generation}
+Fix a simplicial complex $\Sigma\subseteq2^F$ and an ordering
+$e_1,\ldots,e_n$ of $F$.  Start with the down-set
+\[
+ D_\Sigma=\{x\in Q_F:\{f:x_f=1\}\in\Sigma\}.
+\]
+At stage $j$, form the contraction $A$ and reduction $C$ in
+$e_j$ of the current family.  Its unique lifts outside $C$ are all in
+layer zero.  Independently choose a label for every component of
+$A\setminus C$ and apply the construction of
+Theorem~\ref{thm:damp-component-expansion-signs}.  If $C$ is empty,
+$e_j$ is constant and the choice is simply to retain or reflect that
+constant coordinate.  After these $n$ stages, the possible outputs are
+exactly all ample families with shadow $\Sigma$.
+
+For the prescribed coordinate order, every output determines its entire
+sequence of intermediate families and component choices uniquely.  In
+particular, the graph joining two realizations when one component is
+reflected in one coordinate is connected; reflection of a constant
+coordinate is included as a move.
+\end{corollary}
+
+\begin{proof}
+Define $D_e(H)$ by moving every unique lift in coordinate $e$ to layer
+zero and retaining every double lift.  The theorem shows that $D_e(H)$
+is ample with the same shadow and that its signed-clause presentation
+is obtained by setting the $e$-bit to one in every clause containing $e$.
+Other bits are unchanged.  For a constant coordinate the same assertion
+holds for its singleton clause, and the operation is a coordinate
+reflection or the identity.
+
+Consequently the $D_e$ commute.  Applying every one of them makes every
+clause the all-one trace, which gives exactly $D_\Sigma$.  This is the
+signed-clause form of simultaneous shift normalization.  A family for
+which all clause bits in coordinate $e$ are one is downward closed in
+$e$: changing that coordinate from one to zero cannot create a forbidden
+trace.  Thus all unique lifts at a stage involving an as-yet unprocessed
+coordinate lie in layer zero, as asserted.
+
+Reversing the normalization steps, in the prescribed order, reconstructs
+any target realization by the component choices in the theorem.  Each
+individual component may be reflected separately; all intervening families
+are ample with the same shadow.  Conversely, every choice allowed by the
+recipe preserves those two properties.  If $H$ is the final output,
+the intermediate family after stage $j$ is
+\[
+ D_{e_{j+1}}\cdots D_{e_n}(H).
+\]
+Its signed clauses retain exactly the final bits in processed coordinates
+and have all-one bits in the remaining coordinates.  These intermediate
+families are therefore uniquely determined, as are their recovered
+component labels.  Reversing a path to $D_\Sigma$ proves connectivity.
+\end{proof}
+
+\begin{proposition}[Alternative repairs in component labelings]
+\label{prop:damp-component-label-repair-disjunction}
+Let $C\subseteq S\subseteq Q_F$ be nonempty ample families, with $C$
+corner-peelable and $S$ not corner-peelable.  Choose distinct points
+$a_1,\ldots,a_r$ outside $S$, where $r\ge1$, and put
+$R=\{a_1,\ldots,a_r\}$.  Assume:
+\begin{enumerate}
+ \item $A=S\cup R$ is ample;
+ \item each $\{a_i\}$ is a connected component of $A\setminus C$;
+ \item every $S\cup\{a_i\}$ is corner-peelable.
+\end{enumerate}
+In the expansion of Theorem~\ref{thm:damp-component-expansion-signs}, give
+all components contained in $S\setminus C$ label zero and give
+$\{a_i\}$ label $\varepsilon_i$.  Then
+\[
+ X_{\varepsilon}\in\Damp
+ \quad\Longleftrightarrow\quad
+ \varepsilon_i=0\text{ for at least one }i.
+\]
+If all $\varepsilon_i=1$, the nonpeelable family $S$ is a proper section
+of $X_{\varepsilon}$, so this negative expansion is not a forbidden minor.
+\end{proposition}
+
+\begin{proof}
+Every family $S\cup U$, with $U\subseteq R$, is a component interpolant
+between $C$ and $A$.  It is ample: assign its selected components one
+label and the others the opposite label in
+Theorem~\ref{thm:damp-component-expansion-signs}, and take the appropriate
+section.  Thus deleting any available $a_i$ preserves ampleness and is a
+corner deletion.  If $U\ne\varnothing$, delete all but one of its members
+and finish with the given peeling of $S\cup\{a_i\}$.  In particular,
+$A$ and every such $S\cup U$ are corner-peelable.
+
+Suppose some $\varepsilon_i=0$, and let $U$ consist of these tips.
+Delete the unique lifts of the tips with label one.  At each step the
+remaining family is an ample expansion over a component interpolant
+$S\cup U'$ and the same $C$, by the theorem, so each deletion is a
+corner deletion.  The remainder is the peripheral expansion with base
+$S\cup U$ and site $C$.  Both peel, and
+Proposition~\ref{prop:damp-exact-expansion-product-tests} completes its
+peeling.  If instead all labels are one, the zero section is exactly
+$S$; minor closure of corner peelability proves the negative assertion
+and also excludes pc-minimality.
+\end{proof}
+
+\begin{remark}[Ample sign choices and peelable sign choices differ]
+\label{ex:damp-component-signs-nonlinear-peeling}
+The fixed 291-concept cornerless family $S$ has two independent repairing
+tips $91$ and $157$, with incident supports $102$ and $390$ in binary
+encoding.  Let $C$ be the union of their punctured incident four-cubes.
+The fixed replay verifies that $|C|=26$, that $C$ peels, and that
+$A=S\cup\{91,157\}$ is ample and peels.  Its complement of $C$ has
+components of orders $265,1,1$, the last two being the tips.
+
+There are twelve new-coordinate clauses: ten belong to the first component
+and one to each tip.  All eight component labelings give ample expansions
+of order $319$.  Precisely six peel.  With the first component labelled
+zero, the labelings $(0,1,0)$ and $(0,0,1)$ peel, whereas their
+coordinatewise maximum $(0,1,1)$ does not.  Thus the equality constraints
+describing admissible expansion signs do not describe the peelable subset.
+The negative examples have the proper nonpeelable section $S$, as the
+proposition requires; they do not test a criterion restricted to families
+whose proper minors all peel.
+
+The independent checker \path{verify_component_expansion_signs.py} also
+tests all $2244$ nested nonempty ample pairs through $Q_3$ and all $9656$
+new-clause bit assignments.  Exactly $5384$ assignments satisfy the
+component equalities and the asserted shadow formula.  It also normalizes
+these small families in every coordinate order and replays the inverse
+component reflections.  The fixed larger
+example is checked by full positive orders and a cornerless proper-section
+certificate, without a peeling search for negative answers.  Inputs,
+orders, signs and scope are in
+\path{component_expansion_signs_verification.json}.  These finite checks
+support the examples and the implementation; the universal claims use
+the preceding proofs.
+\end{remark}

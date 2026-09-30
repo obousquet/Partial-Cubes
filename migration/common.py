@@ -50,6 +50,10 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
+def sha256_bytes(content: bytes) -> str:
+    return hashlib.sha256(content).hexdigest()
+
+
 def run_git(root: Path, *args: str, check: bool = True) -> str:
     result = subprocess.run(
         ["git", "-C", str(root), *args],
@@ -122,3 +126,87 @@ def logical_repo_path(path: Path, repositories: dict[str, Path]) -> tuple[str, s
 
 def resolve_source_path(latex_root: Path, source_path: str) -> Path:
     return (latex_root / source_path).resolve()
+
+
+class SourceSnapshot:
+    """Read a pinned file from the live tree, byte archive, or recorded Git tree."""
+
+    def __init__(
+        self,
+        latex_root: Path,
+        config: dict[str, Any],
+        manifest_path: Path | None = None,
+        archive_index_path: Path | None = None,
+    ) -> None:
+        self.latex_root = latex_root.resolve()
+        self.config = config
+        self.repositories = {"PartialCubes": self.latex_root}
+        self.repositories.update(
+            {
+                name: (self.latex_root / relative).resolve()
+                for name, relative in config["external_repositories"].items()
+            }
+        )
+        self.manifest_path = manifest_path or MIGRATION_DIR / "source_manifest.json"
+        self.manifest = load_json(self.manifest_path) if self.manifest_path.is_file() else None
+        self.entries = {}
+        self.heads = {}
+        if self.manifest:
+            self.entries = {
+                (entry["repository"], entry["path"]): entry
+                for entry in self.manifest["files"]
+            }
+            self.heads = {
+                entry["name"]: entry["head"]
+                for entry in self.manifest["repositories"]
+            }
+        archive_path = archive_index_path or MIGRATION_DIR / "source_archive.json"
+        self.archive_index = load_json(archive_path) if archive_path.is_file() else None
+        self.archives = {}
+        if self.archive_index:
+            self.archives = {
+                (entry["repository"], entry["path"]): MIGRATION_DIR / entry["archive_path"]
+                for entry in self.archive_index["files"]
+            }
+
+    def key(self, path: Path) -> tuple[str, str]:
+        return logical_repo_path(path, self.repositories)
+
+    def read_bytes(self, path: Path) -> bytes:
+        path = path.resolve()
+        if not self.manifest:
+            return path.read_bytes()
+        key = self.key(path)
+        entry = self.entries.get(key)
+        if not entry:
+            raise FileNotFoundError(f"Path is not in the frozen source manifest: {key[0]}:{key[1]}")
+        if path.is_file():
+            live = path.read_bytes()
+            if sha256_bytes(live) == entry["sha256"]:
+                return live
+        archive = self.archives.get(key)
+        if archive and archive.is_file():
+            content = archive.read_bytes()
+            if sha256_bytes(content) == entry["sha256"]:
+                return content
+        if entry["git_state"] == "tracked":
+            result = subprocess.run(
+                ["git", "-C", str(self.repositories[key[0]]), "show", f"{self.heads[key[0]]}:{key[1]}"],
+                check=False,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+            )
+            if result.returncode == 0 and sha256_bytes(result.stdout) == entry["sha256"]:
+                return result.stdout
+        raise RuntimeError(f"Frozen source is not recoverable: {key[0]}:{key[1]}")
+
+    def read_text(self, path: Path) -> str:
+        return self.read_bytes(path).decode("utf-8", errors="replace")
+
+    def recorded_sha256(self, path: Path) -> str:
+        if not self.manifest:
+            return sha256_file(path)
+        key = self.key(path.resolve())
+        if key not in self.entries:
+            raise FileNotFoundError(f"Path is not in the frozen source manifest: {key[0]}:{key[1]}")
+        return self.entries[key]["sha256"]

@@ -8,7 +8,7 @@ import re
 from collections import defaultdict
 from pathlib import Path
 
-from common import DEFAULT_CONFIG, emit_json, load_config, sha256_text
+from common import DEFAULT_CONFIG, SourceSnapshot, emit_json, load_config, sha256_text
 
 
 ENTRY_START_RE = re.compile(r"@(?P<type>[A-Za-z]+)\s*(?P<open>[{(])", re.MULTILINE)
@@ -90,12 +90,12 @@ def normalize_eprint(value: str | None) -> str | None:
     return re.sub(r"v\d+$", "", value.lower().strip())
 
 
-def audit(latex_root: Path, config: dict) -> dict:
+def audit(latex_root: Path, config: dict, snapshot: SourceSnapshot) -> dict:
     occurrences = []
     source_counts = {}
     for relative in config["bibliographies"]:
         path = latex_root / relative
-        entries = bib_entries(path.read_text(encoding="utf-8", errors="replace"))
+        entries = bib_entries(snapshot.read_text(path))
         source_counts[relative] = len(entries)
         for entry in entries:
             doi = normalize_doi(field(entry["body"], "doi"))
@@ -186,7 +186,8 @@ def main() -> int:
     args = parser.parse_args()
     config = load_config(args.config)
     latex_root = (args.latex_root or Path(config["latex_repository"]).expanduser()).resolve()
-    emit_json(audit(latex_root, config), args.output.resolve(), args.check)
+    snapshot = SourceSnapshot(latex_root, config)
+    emit_json(audit(latex_root, config, snapshot), args.output.resolve(), args.check)
     return 0
 
 

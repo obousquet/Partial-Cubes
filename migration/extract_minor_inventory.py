@@ -4,20 +4,22 @@
 from __future__ import annotations
 
 import argparse
+import json
 from pathlib import Path
 
-from common import DEFAULT_CONFIG, emit_json, load_config, load_json, resolve_source_path, sha256_file
+from common import DEFAULT_CONFIG, SourceSnapshot, emit_json, load_config, resolve_source_path
 
 
-def fingerprint(path: Path, expected: str | None) -> dict:
-    if not path.is_file():
+def fingerprint(path: Path, expected: str | None, snapshot: SourceSnapshot) -> dict:
+    try:
+        actual = snapshot.recorded_sha256(path)
+    except (FileNotFoundError, ValueError):
         return {
             "exists": False,
             "expected_sha256": expected,
             "actual_sha256": None,
             "matches": False,
         }
-    actual = sha256_file(path)
     return {
         "exists": True,
         "expected_sha256": expected,
@@ -26,10 +28,10 @@ def fingerprint(path: Path, expected: str | None) -> dict:
     }
 
 
-def extract(latex_root: Path, config: dict) -> dict:
+def extract(latex_root: Path, config: dict, snapshot: SourceSnapshot) -> dict:
     inventory_rel = config["structured_sources"]["minor_inventory"]
     inventory_path = latex_root / inventory_rel
-    raw = load_json(inventory_path)
+    raw = json.loads(snapshot.read_text(inventory_path))
     expected = config["expected_counts"]
     for key, expected_key in (
         ("families", "minor_families"),
@@ -67,13 +69,13 @@ def extract(latex_root: Path, config: dict) -> dict:
     for index, record in enumerate(raw["sources"]):
         candidate = dict(record)
         source_path = resolve_source_path(latex_root, record["path"])
-        candidate["fingerprint_check"] = fingerprint(source_path, record.get("sha256"))
+        candidate["fingerprint_check"] = fingerprint(source_path, record.get("sha256"), snapshot)
         label_checks = {}
         for label, label_source in record.get("label_sources", {}).items():
             label_path = resolve_source_path(latex_root, label_source["path"])
             label_checks[label] = {
                 "path": label_source["path"],
-                **fingerprint(label_path, label_source.get("sha256")),
+                **fingerprint(label_path, label_source.get("sha256"), snapshot),
             }
         candidate["label_fingerprint_checks"] = label_checks
         candidate["source_locator"] = f"PartialCubes:{inventory_rel}#/sources/{index}"
@@ -103,7 +105,7 @@ def extract(latex_root: Path, config: dict) -> dict:
         "kind": "minor_inventory_candidates",
         "source": {
             "path": inventory_rel,
-            "sha256": sha256_file(inventory_path),
+            "sha256": snapshot.recorded_sha256(inventory_path),
             "title": raw.get("title"),
             "date": raw.get("date"),
             "scope": raw.get("scope"),
@@ -138,7 +140,8 @@ def main() -> int:
     args = parser.parse_args()
     config = load_config(args.config)
     latex_root = (args.latex_root or Path(config["latex_repository"]).expanduser()).resolve()
-    emit_json(extract(latex_root, config), args.output.resolve(), args.check)
+    snapshot = SourceSnapshot(latex_root, config)
+    emit_json(extract(latex_root, config, snapshot), args.output.resolve(), args.check)
     return 0
 
 

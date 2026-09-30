@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "batch": "001_canonical_crosswalk",
+  "rule": "These decisions identify catalogue objects only. They do not promote either source formulation as an established characterization; model-equivalence claims require later proof-bearing records.",
+  "overlaps": [
+    {
+      "canonical_short_name": "ample",
+      "survey_occurrence": "survey:ample",
+      "minor_occurrence": "minor:ample",
+      "basis": "The sources use the same id and the names ample/lopsided and Ample classes. The survey defines ample through equality of shattering and strong shattering; the minor row uses symbol Amp.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#definition:Shadow-maximum-and-ample",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/0"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "daisy_cubes",
+      "survey_occurrence": "survey:daisy",
+      "minor_occurrence": "minor:daisy",
+      "basis": "Both sources call the class Daisy cubes and the minor row uses symbol Daisy.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#def:daisy-cube",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/14"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "learning_space_graphs",
+      "survey_occurrence": "survey:learning",
+      "minor_occurrence": "minor:learning",
+      "basis": "Both sources name learning-space graphs; the survey explicitly identifies these with antimatroid graphs and the minor row uses symbol Learn.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#def:antimatroid-learning-space",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/16"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "maximum",
+      "survey_occurrence": "survey:maximum",
+      "minor_occurrence": "minor:maximum",
+      "basis": "The sources use the same id and the names VC-maximum and Maximum classes; the minor row uses symbol Max.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#definition:Shadow-maximum-and-ample",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/2"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "median",
+      "survey_occurrence": "survey:median",
+      "minor_occurrence": "minor:median",
+      "basis": "The sources use the same id and median name; the minor row uses symbol Med and the survey treats the graph realization.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/figures/class_inclusion_atlas.tex#node:median",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/13"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "tree_like_partial_cubes",
+      "survey_occurrence": "survey:treelike",
+      "minor_occurrence": "minor:treelike",
+      "basis": "The sources use the same id and tree-like name; the minor row says Sequential tree-like partial cubes and uses symbol TreeLike.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#definition:Tree-like-partial-cube",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/17"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "dismantlable_ample",
+      "survey_occurrence": "survey:damp",
+      "minor_occurrence": "minor:peelable",
+      "basis": "The survey names dismantlable ample classes with symbol D_amp; the minor row names corner-peelable ample classes with the same Damp symbol. The survey definition makes dismantlability the existence of a corner peeling.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#def:dismantlable-ample",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/7"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "cover_recursive_peripheral",
+      "survey_occurrence": "survey:rper",
+      "minor_occurrence": "minor:cover",
+      "basis": "The survey uses R_per for cover-recursively peripheral partial cubes; the minor row names Convex-treelike classes (peripheral recursion) and uses the same Rper symbol.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/main.tex#def:sequential-recursive-expansion-classes",
+        "PartialCubes:papers/survey/main.tex#thm:cover-recursive-peripheral-characterization",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/15"
+      ],
+      "requires_later_equivalence_record": true
+    },
+    {
+      "canonical_short_name": "realizable_ample",
+      "survey_occurrence": "survey:realample",
+      "minor_occurrence": "minor:realizable",
+      "basis": "The sources use the names realizable ample classes and Geometrically realizable ample classes; the minor row uses symbol RAmp.",
+      "definition_locators": [
+        "PartialCubes:papers/survey/figures/class_inclusion_atlas.tex#node:realample",
+        "PartialCubes:papers/minor-atlas/inventory.json#/families/6"
+      ],
+      "requires_later_equivalence_record": true
+    }
+  ],
+  "parameterized_decisions": [
+    {
+      "canonical_short_name": "yang_decomposition_level_k",
+      "member_occurrences": [
+        "minor:d1",
+        "minor:d2"
+      ],
+      "parameter": "positive integer k",
+      "basis": "D1 and D2 are fixed levels of the same decomposition hierarchy."
+    },
+    {
+      "canonical_short_name": "maximum_parent_decomposition_level_k",
+      "canonical_occurrence": "minor:parent-levels",
+      "parameter": "integer k >= 0",
+      "basis": "The source row already represents the P_k hierarchy as one parameterized family."
+    },
+    {
+      "canonical_short_name": "maximum_section_auxiliary_level_k",
+      "canonical_occurrence": "minor:auxiliary-levels",
+      "member_occurrences": [
+        "minor:m1",
+        "minor:m2"
+      ],
+      "parameter": "integer k >= 0 with displayed coordinates retained",
+      "basis": "M1 and M2 are fixed levels of the M_k auxiliary-coordinate hierarchy."
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "batch_id": "001_canonical_crosswalk",
+  "phase": 1,
+  "status": "complete_unpromoted",
+  "purpose": "Resolve structured class occurrences into stable canonical identities and reserve IDs without promoting definitionless class records.",
+  "snapshot": {
+    "snapshot_id": "2026-09-30-b001",
+    "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+    "source_archive_sha256": "8463f8bc94b9a3f11502d902479a7c111787768163386f571ceaa34d25f284b9",
+    "repositories": 4,
+    "selected_files": 93,
+    "byte_archived_dirty_files": 7,
+    "byte_archived_size": 5598924,
+    "excluded_direct_source_directories": [
+      "archive",
+      "research"
+    ]
+  },
+  "crosswalk": {
+    "path": "migration/class_crosswalk.json",
+    "sha256": "cfc2ecefd9c2ab6188a599fc2eb7742966ef4efe4b89629871dd3e80559db4aa",
+    "source_occurrences": 100,
+    "canonical_occurrences": 87,
+    "same_as_occurrences": 9,
+    "parameterized_member_occurrences": 4,
+    "unresolved_occurrences": 0
+  },
+  "canonical_allocation": {
+    "path": "migration/canonical_classes.json",
+    "sha256": "9c9200aa7803553006c256f94d060df7749c61919782b05d880c3e9b97c9520c",
+    "reserved_identities": 88,
+    "allocated_id_range": "1-88",
+    "promotion_state": "latex",
+    "definition_state": "awaiting_primary_characterization"
+  },
+  "identity_decisions": {
+    "path": "migration/identity_decisions.json",
+    "sha256": "c8710a35982372fce7fdeddf4de995ba9f94cbae5c4518c0155606970b14db44",
+    "atlas_overlaps": 9,
+    "parameterized_hierarchies": [
+      "yang_decomposition_level_k",
+      "maximum_parent_decomposition_level_k",
+      "maximum_section_auxiliary_level_k"
+    ],
+    "rule": "Identity decisions do not establish characterization equivalences."
+  },
+  "source_findings": {
+    "admissible_tex_files": 49,
+    "indexed_labels": 2663,
+    "stale_minor_source_packets": [
+      "ample",
+      "cover"
+    ],
+    "promotion_blockers": [
+      "source-packet-ample-fingerprint-drift",
+      "source-packet-cover-fingerprint-drift"
+    ]
+  },
+  "database_effect": {
+    "records_added": 0,
+    "reason": "The schema requires every class to have a reviewed primary characterization; Batch 001 reviews identity only.",
+    "ownership_state": "latex"
+  },
+  "latex_effect": {
+    "files_modified": 0,
+    "preservation": "Dirty selected inputs were copied into the database migration snapshot; the live LaTeX workspace was not changed."
+  },
+  "artifacts": [
+    {
+      "path": "migration/coverage.json",
+      "sha256": "80e7e93ff086d83a67a3c1098df701ddd76e13d28983498515645b215e95d850"
+    },
+    {
+      "path": "migration/conflicts.json",
+      "sha256": "83b3357bfd54dadb72fd3a4b62b3e7842434f30e8596aacefa49e7a9cb2b7556"
+    },
+    {
+      "path": "migration/claim_queue.json",
+      "sha256": "ead2e9d82b8caa44cdc0b530107a1a7e725372bece003776b9afe0f5b723b770"
+    },
+    {
+      "path": "migration/generated/latex_labels.json",
+      "sha256": "46a7704e8b13f610c4b22588b6f503cec1c159006593ca64371c2bfcfc157d60"
+    }
+  ],
+  "validation": [
+    "make migration-check",
+    "python3 scripts/validate_data.py --data-dir data",
+    "python3 scripts/check_generated_site.py --site-dir docs",
+    "python3 -m py_compile migration/*.py",
+    "git diff --check"
+  ],
+  "next_batch_gate": "Select a small pilot subset and review a primary characterization for each class before creating any data/classes record."
+}

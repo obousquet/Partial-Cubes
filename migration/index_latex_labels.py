@@ -8,7 +8,7 @@ import re
 from collections import Counter
 from pathlib import Path
 
-from common import DEFAULT_CONFIG, emit_json, load_config, sha256_file
+from common import DEFAULT_CONFIG, SourceSnapshot, emit_json, load_config
 
 
 TOKEN_RE = re.compile(
@@ -19,8 +19,8 @@ TOKEN_RE = re.compile(
 )
 
 
-def index_file(path: Path, latex_root: Path) -> dict:
-    text = path.read_text(encoding="utf-8", errors="replace")
+def index_file(path: Path, latex_root: Path, snapshot: SourceSnapshot) -> dict:
+    text = snapshot.read_text(path)
     environments: list[str] = []
     current_section: dict[str, str] | None = None
     labels = []
@@ -50,20 +50,29 @@ def index_file(path: Path, latex_root: Path) -> dict:
             )
     return {
         "path": path.relative_to(latex_root).as_posix(),
-        "sha256": sha256_file(path),
+        "sha256": snapshot.recorded_sha256(path),
         "labels": labels,
     }
 
 
-def extract(latex_root: Path, config: dict) -> dict:
-    paper_root = latex_root / "papers"
-    configured = set(config["paper_workspaces"])
-    files = [
-        path
-        for path in sorted(paper_root.glob("**/*.tex"))
-        if path.relative_to(paper_root).parts[0] in configured
-    ]
-    indexed = [index_file(path, latex_root) for path in files]
+def extract(latex_root: Path, config: dict, snapshot: SourceSnapshot) -> dict:
+    if snapshot.manifest:
+        files = [
+            snapshot.repositories[entry["repository"]] / entry["path"]
+            for entry in snapshot.manifest["files"]
+            if "paper_tex" in entry["roles"] and Path(entry["path"]).suffix == ".tex"
+        ]
+    else:
+        paper_root = latex_root / "papers"
+        configured = set(config["paper_workspaces"])
+        excluded = set(config.get("excluded_source_directories", []))
+        files = [
+            path
+            for path in sorted(paper_root.glob("**/*.tex"))
+            if path.relative_to(paper_root).parts[0] in configured
+            and not excluded.intersection(path.relative_to(paper_root).parts[1:-1])
+        ]
+    indexed = [index_file(path, latex_root, snapshot) for path in sorted(files)]
     all_labels = [
         {"path": entry["path"], **label}
         for entry in indexed
@@ -83,7 +92,7 @@ def extract(latex_root: Path, config: dict) -> dict:
     return {
         "version": 1,
         "kind": "latex_label_index",
-        "scope": "Configured paper workspaces; archive TeX is retained and indexed.",
+        "scope": "Current TeX in configured paper workspaces; research/ and archive/ trees are excluded from admissible proof-source indexing.",
         "counts": {
             "tex_files": len(indexed),
             "labels": len(all_labels),
@@ -108,7 +117,8 @@ def main() -> int:
     args = parser.parse_args()
     config = load_config(args.config)
     latex_root = (args.latex_root or Path(config["latex_repository"]).expanduser()).resolve()
-    emit_json(extract(latex_root, config), args.output.resolve(), args.check)
+    snapshot = SourceSnapshot(latex_root, config)
+    emit_json(extract(latex_root, config, snapshot), args.output.resolve(), args.check)
     return 0
 
 

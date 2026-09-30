@@ -4,10 +4,11 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 from pathlib import Path
 
-from common import DEFAULT_CONFIG, emit_json, line_number, load_config, load_json, sha256_file
+from common import DEFAULT_CONFIG, SourceSnapshot, emit_json, line_number, load_config
 
 
 NODE_RE = re.compile(
@@ -22,14 +23,14 @@ def compact_tex(text: str) -> str:
     return re.sub(r"\s+", " ", text.strip())
 
 
-def extract(latex_root: Path, config: dict) -> dict:
+def extract(latex_root: Path, config: dict, snapshot: SourceSnapshot) -> dict:
     sources = config["structured_sources"]
     atlas_rel = sources["survey_atlas"]
     containments_rel = sources["survey_containments"]
     atlas_path = latex_root / atlas_rel
     containments_path = latex_root / containments_rel
 
-    source_data = load_json(containments_path)
+    source_data = json.loads(snapshot.read_text(containments_path))
     containments = source_data["containments"]
     endpoints = {
         record[key]
@@ -37,7 +38,7 @@ def extract(latex_root: Path, config: dict) -> dict:
         for key in ("subclass", "superclass")
     }
 
-    atlas_text = atlas_path.read_text(encoding="utf-8")
+    atlas_text = snapshot.read_text(atlas_path)
     parsed_nodes: dict[str, dict] = {}
     presentation_nodes: list[str] = []
     for match in NODE_RE.finditer(atlas_text):
@@ -90,9 +91,9 @@ def extract(latex_root: Path, config: dict) -> dict:
         "kind": "survey_atlas_candidates",
         "source": {
             "atlas": atlas_rel,
-            "atlas_sha256": sha256_file(atlas_path),
+            "atlas_sha256": snapshot.recorded_sha256(atlas_path),
             "containments": containments_rel,
-            "containments_sha256": sha256_file(containments_path),
+            "containments_sha256": snapshot.recorded_sha256(containments_path),
             "schema_version": source_data.get("schema_version"),
             "description": source_data.get("description"),
         },
@@ -120,7 +121,8 @@ def main() -> int:
     args = parser.parse_args()
     config = load_config(args.config)
     latex_root = (args.latex_root or Path(config["latex_repository"]).expanduser()).resolve()
-    emit_json(extract(latex_root, config), args.output.resolve(), args.check)
+    snapshot = SourceSnapshot(latex_root, config)
+    emit_json(extract(latex_root, config, snapshot), args.output.resolve(), args.check)
     return 0
 
 

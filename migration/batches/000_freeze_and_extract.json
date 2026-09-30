@@ -3,6 +3,8 @@
   "batch_id": "000_freeze_and_extract",
   "phase": 0,
   "status": "complete_unpromoted",
+  "artifact_commit": "720ab87b8d91b2586bca7116c4b8b810308b58e3",
+  "superseded_by_snapshot": "2026-09-30-b001",
   "purpose": "Freeze exact source inputs and create read-only candidate inventories without adding public database records.",
   "snapshot_date": "2026-09-30",
   "source_manifest": {
@@ -91,6 +93,6 @@
   ],
   "review": {
     "mathematical_claims_reviewed": 0,
-    "note": "This infrastructure batch records candidates and blockers. Mathematical promotion begins with the canonical crosswalk batch."
+    "note": "This infrastructure batch records candidates and blockers. Its generated artifacts are resolved at artifact_commit. No mathematical record was promoted; the later b001 snapshot adds byte archives for dirty inputs before canonical review."
   }
 }

@@ -1,0 +1,565 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs}
+\usepackage{booktabs,microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,
+  citecolor=green!45!black,urlcolor=blue!55!black]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{problem}[theorem]{Problem}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Damp}{\mathcal D_{\mathrm{amp}}}
+\newcommand{\Ample}{\mathcal A}
+\newcommand{\Obs}{\operatorname{Obs}_{\mathrm{pc}}}
+
+\title{Forbidden pc-Minors for Corner-Peelable Ample Partial Cubes}
+\author{Olivier Bousquet}
+\date{}
+
+\hypersetup{
+  pdftitle={Forbidden pc-Minors for Corner-Peelable Ample Partial Cubes},
+  pdfauthor={Olivier Bousquet}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study the forbidden partial-cube minors of corner-peelable ample
+concept classes.  The nonample members are exactly the cubes with one
+antipodal pair removed.  For the ample members, we give exact recognition
+criteria and partial structural constructions. Using CCMW's equivalence
+between corner peelings and acyclic unique-sink orientations, we interpret
+rooted factors as prescribed-sink obstructions and separator gluing as
+compatibility of outgoing boundary directions. Every ample obstruction
+has a unique forbidden graph three-core, and finite labelled square
+attachment data reconstruct all extensions of that core.  Obstructions
+with a cut vertex have exactly two rooted factors; separating edges
+admit an exact decomposition into two or three pieces. A finite-certificate
+construction realizes three pieces in a $1237$-concept obstruction whose
+nonempty-coordinate reductions all peel. Product attachments
+convert peeling down to a prescribed ample subfamily into ordinary peeling
+and transfer minimal relative failures to forbidden pc-minors. Replacing one
+coordinate by a block, with its forbidden signs repeated across the block,
+preserves forbiddenness and constructs obstructions with arbitrarily many
+maximal reduction descent supports.  Compressing repeated signed-clause
+columns gives a canonical reduced forbidden class with positive integer
+multiplicities on its coordinates.  Graph pruning and column compression
+alternate canonically; their inverse stages recover every obstruction from
+a forbidden base of minimum degree at least three with distinct columns.
+Every nonempty corner-peelable ample family occurs as a coordinate face of such a
+base, even with isometric dimension minus VC dimension fixed at nine.
+A further
+construction replicates resolving additions to a fixed forbidden seed
+over a layer cube.  For cornerless seeds, its terminal members are
+parameterized by partitions of the signed layer facets.  Explicit
+terminal examples show that this construction is not exhaustive, and
+another infinite family rules out generation solely by corner deletions
+from cubes.  The least cardinality of an ample obstruction lies between
+\(64\) and \(267\).  A complete intrinsic generative classification
+remains open: the missing ingredients lie in the intrinsic construction
+and admissibility of these reduced forbidden bases and their factors.
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.}
+Partial cube, pc-minor, ample class, corner peeling, unique-sink orientation,
+representation map, Yang complex,
+simplicial ball, shellability, Alexander duality, linear quotients.
+
+\setcounter{tocdepth}{2}
+\tableofcontents
+\clearpage
+
+\section{Introduction}
+\label{sec:damp-introduction}
+
+A family of binary words \emph{shatters} a set of coordinates when its
+projection onto those coordinates contains every binary pattern.
+The family is \emph{ample} when each shattered set of coordinates also
+supports a full cube inside the family.  These classes, also called
+lopsided systems, were introduced
+by Lawrence and developed from combinatorial and metric viewpoints
+\cite{Lawrence83,BandeltCDK06}.  Join two words when they differ in one
+coordinate.  The resulting graph is a partial cube: its graph distances
+are exactly the Hamming distances between the words.
+
+A vertex is a \emph{corner} if it belongs to a unique maximal cube.
+A \emph{corner peeling} successively deletes corners until the family
+is empty.  Reversing such a deletion order gives an ordering whose
+nonempty prefixes are ample
+\cite[Proposition~4.2]{ChalopiChepoiMoran22}.  We write \(\Damp\)
+for the corner-peelable ample families.  The term \emph{dismantlable}
+is also used for these families; it refers here to corner deletion,
+rather than domination of vertices in an arbitrary graph.  Hall's
+maximum class of VC dimension three has no corner and shows that an
+ample class need not belong to \(\Damp\)
+\cite[Theorem~4.5]{ChalopiChepoiMoran22}.
+
+\subsection{The classification problem}
+
+Partial-cube minors, or \emph{pc-minors}, combine convex restrictions
+with contractions of coordinate classes \cite{KnauerMarc20}.  For
+\(X\subseteq Q_E=\{0,1\}^E\), let \(\rho_e^iX\) be the section
+with coordinate \(e\) fixed to \(i\), and let \(\pi_eX\) be the
+projection deleting coordinate \(e\).  Constant coordinates are removed
+from sections.  The class \(\Damp\) is pc-minor closed, so it is
+determined by the basis
+\[
+ \Obs(\Damp)=\{O:O\notin\Damp,\;
+       \text{every proper pc-minor of }O\text{ lies in }\Damp\}.
+\]
+Our aim is to understand the structure of this basis and give explicit
+constructions of its members.
+
+The nonample part is completely classified:
+Proposition~\ref{prop:nonample-layer} identifies it as
+\(\{Q_n\setminus\{x,\bar x\}:n\ge3\}\), where \(\bar x\)
+is the antipode of \(x\).  For the ample part, pc-minor closure gives
+the exact recognition criterion
+\begin{equation}
+ \begin{split}
+ O\in\Obs(\Damp)\quad\Longleftrightarrow\quad
+ &O\notin\Damp,\\[-2pt]
+ &\rho_e^0O,\rho_e^1O,\pi_eO\in\Damp
+       \quad(e\in E),
+ \end{split}
+ \label{eq:damp-introduction-recognition}
+\end{equation}
+for an ample family embedded with every coordinate active, meaning that
+it occurs on an edge.
+Equivalent algebraic and topological forms use linear quotients and
+Yang-complex shellability
+(Theorem~\ref{thm:damp-descendant-free-parametrization} and
+Corollary~\ref{cor:damp-descendant-free-yang-ball-parametrization}).
+Signed minimal nonfaces give a Boolean formulation
+(Theorem~\ref{thm:damp-fixed-shadow-signed-clutter}).
+
+An intrinsic generative description asks for more: finite structural
+parameters, conditions specifying which parameters are admissible, a
+construction that always produces an obstruction, and recovery of every
+obstruction from such data.  The parameters may have arbitrary finite
+size, and recursive constructions are allowed.  A bounded catalogue is
+unnecessary.  For example, a down-set of arbitrary size can serve as a
+structural parameter, as in the
+\href{daisy_pc_minors.pdf}{companion classification for daisy cubes}.
+For the present problem, a construction that assumes an arbitrary
+forbidden seed still leaves that seed to be classified.  Likewise,
+replacing the tests in \eqref{eq:damp-introduction-recognition} by
+equivalent shelling or ordering conditions gives a recognition theorem
+without supplying the desired structural inputs.
+
+\subsection{Acyclic USOs and the organization of the results}
+\label{sec:damp-intro-uso}
+
+CCMW identify corner-peelable ample classes with those admitting an acyclic
+unique-sink orientation (USO) \cite[Proposition~6.12]{ChalopiChepoiMoran22}.
+For an ample class a USO requires both a unique sink on each contained cube
+and containment of the cube spanned by each vertex's outgoing directions.
+Its out-map records those directions and is a representation map
+\cite[Theorems~6.1 and~6.8]{ChalopiChepoiMoran22}.
+Section~\ref{sec:damp-uso-boundaries} gives the precise definitions.
+
+This organizes the structural results by the information they preserve.
+Canonical graph and signed-column reductions act on the support itself.
+Rooted factors and separator constructions instead prescribe boundary data
+on acyclic USOs of positive pieces. Peeling to a root means realizing it
+as a sink. Peeling to a positive subfamily means extending its acyclic USO
+with all boundary edges pointing inward
+(Proposition~\ref{prop:damp-relative-uso-extension}). At a separating cube,
+a boundary vertex can have outgoing exclusive directions in at most one
+piece, because two would require an absent mixed square
+(Proposition~\ref{prop:damp-uso-cube-gluing}). This single condition explains
+the separator bound and the five boundary conditions used at an edge.
+
+Negative certificates must exclude every acyclic USO. Protected missing
+cubes do so by forcing a directed cycle in every possible USO
+(Proposition~\ref{prop:damp-protected-uso-cycle}). One cyclic orientation
+alone does not certify nonpeelability, and the existence of acyclic USOs
+on proper minors does not make arbitrary inherited maps acyclic.
+For retained targets that are themselves nonpeelable, relative peeling
+requires only acyclicity outside the target; its full scope is preserved
+in the deletion statements below.
+
+\subsection{Canonical reduction and explicit constructions}
+
+\paragraph{A unique core and all its square attachments.}
+The strongest reduction applying to every ample obstruction is
+Theorem~\ref{thm:damp-three-core}.  Repeatedly delete vertices of
+degree less than three.  Each deletion is a degree-two corner deletion
+that preserves forbidden-minor status.  The result is the unique graph
+three-core \(K\), the largest induced subgraph of minimum degree at
+least three.  It is nonempty, ample, and forbidden, and has the same
+active coordinates as the original family.
+
+The inverse operation is explicit.  Given an ample family, choose a
+missing word and two coordinates such that the other three vertices
+of its square are present and the coordinate pair is not shattered.
+Adjoining that word is an ample square completion.  Over a forbidden
+base, it preserves forbidden-minor status.  More generally, it preserves
+the possibility of peeling to every retained subset of the base
+(Proposition~\ref{prop:damp-rank-two-extension-invariance}).
+To see the operation at
+the smallest scale, \(\{00,01,10\}\) acquires its missing word
+\(11\) using the coordinate pair \(\{1,2\}\); the three present
+words specify the entire addition.
+
+Theorem~\ref{thm:damp-square-attachment-data} turns a sequence of
+these operations into finite structural data: abstract new vertices,
+a coordinate pair and three targets for each vertex, and an acyclic
+dependency digraph.  Coordinate consistency and injectivity determine
+the new words; distinct pairs absent from the core's shattered sets
+ensure that every addition is valid.  The data are recovered uniquely
+from the resulting family, up to renaming the abstract new vertices.
+Thus construction and recovery of \emph{all attachments} are settled.
+The unresolved input is precisely which ample three-cores are forbidden.
+Such a core can itself have corners.
+
+\paragraph{Rooted factors and gluing.}
+Say that \(A\) \emph{peels to \(a\)} when it has a corner peeling
+ending at \(a\).  A rooted pair \((A,a)\) has the factor property
+needed here exactly when
+\begin{enumerate}
+ \item \(A\) is ample and corner-peelable;
+ \item no acyclic USO of \(A\) has sink \(a\);
+ \item every proper pc-minor obtained while retaining the root, or
+       its image under contraction, admits an acyclic USO with that sink.
+\end{enumerate}
+These are the \emph{rooted factors} used below.
+Theorem~\ref{thm:damp-cut-vertex-obstructions} says that gluing any
+two such factors at their roots gives a forbidden pc-minor.  Every
+ample obstruction with a cut vertex arises this way.  It has exactly
+two blocks and a unique cut vertex, so the factors are recovered
+uniquely up to interchange.  This is a complete decomposition of that
+branch, with an explicitly unresolved rooted-factor input.
+
+The same inputs yield two-connected examples.  Put rooted factors
+\(Y,C\) on disjoint coordinate sets, with common root \(0\), choose
+an edge \(\{0,v\}\) of \(Y\), and choose a nonempty down-set
+\(L\subseteq C\).  Here down-set means that replacing any ones by
+zeros keeps a word in \(L\).  The family
+\begin{equation}
+ X=Y\cup C\cup(v+L)
+ \label{eq:damp-introduction-downset}
+\end{equation}
+is forbidden, and is two-connected exactly when \(|L|>1\)
+(Theorem~\ref{thm:damp-rooted-downset-completion}).  All unused
+coordinates are zero, and \(v+L\) is the translated copy of \(L\)
+across the chosen edge.  The marked coordinate blocks and edge recover
+\(Y,C,L\).  The down-set is a structural parameter; the rooted
+factors still satisfy the three recognition conditions above.
+
+There is also exact recovery at a separating edge, meaning an edge
+whose two endpoints form a vertex cut.  Its union with each component
+outside the edge gives a canonical convex piece.  There are two or
+three pieces, and Theorem~\ref{thm:damp-edge-separator-obstructions}
+gives necessary and sufficient gluing conditions.  These use five attainable out-map conditions: an inward boundary at the
+edge, either endpoint as sink, and either endpoint having just the common
+edge as its outgoing edge. Equivalently, these specify retention of the
+edge, its possible final endpoints, and its possible first endpoint
+deletions as leaves.  Proposition~\ref{prop:damp-edge-boundary-transfer} realizes the boundary
+profile $(0,1,1,0,0)$ from rooted inputs: both endpoint sinks are attainable,
+but neither leaf exit nor edge retention is possible. Thus sink feasibility
+alone cannot replace the five conditions. Theorem~\ref{thm:damp-three-piece-boundary-equivalence}
+reduces existence of a three-piece forbidden union exactly to existence
+of a positive piece failing edge retention but admitting both an endpoint
+sink and an endpoint leaf exit. No minor-minimality assumption on that
+witness is needed; both boundary properties survive edge-retaining minors.
+Proposition~\ref{prop:damp-repair-face-rooted-factor} first gives a uniform
+construction from a rooted factor, one repairing addition, and a proper
+face containing the acquired cube. If that face omits a root neighbour,
+the output is another rooted factor, with all proper rooted minor tests
+automatically satisfied. A $308$-concept example results. The operation
+has a recoverable shore presentation but is not closed under direct iteration;
+Remark~\ref{rem:damp-repair-face-recovery} distinguishes this limitation
+from coverage by the earlier ample-addition construction.
+Theorem~\ref{thm:damp-three-piece-witness} supplies the other outcome with
+profile $(0,1,0,1,0)$ on $330$ concepts, certified by explicit orders.
+Gluing it, its reversal, and the $581$-concept piece gives a forbidden
+$1237$-concept class with three components outside the edge. Thus the bound
+of three is attained. All its nonempty-coordinate reductions peel, so this
+example also belongs to the seed side of reduction descent.
+A complementary backward step is given by
+Proposition~\ref{prop:damp-combined-rooted-descent}: an ordinarily positive
+nonroot-corner deletion followed by rooted minor minimalization reaches a
+smaller rooted factor. If a proper minor is needed, it preserves an endpoint
+repair on a face of the deleted corner cube. Iteration ends at factors whose
+root is the unique source in every acyclic USO; whether these can have other
+geometric corners remains a separate question. Corollary~\ref{cor:damp-joint-rooted-ordinary-descent}
+bypasses that question by allowing a rooted deletion to enter the ordinary
+nonpeelable branch. Its terminal inputs are rooted factors with a unique
+geometric corner and cornerless ample forbidden pc-minors. Negative-minor
+selection and admissible inverse expansions still prevent an intrinsic
+forward generation theorem.
+Compatibility between two pieces matters:
+even in a forbidden three-core, an elementary minor can peel through
+their interaction although one changed piece still fails to peel to
+the shared edge (Remark~\ref{ex:damp-coupled-edge-minors-1162}).
+
+The separator branch is also detectable from shattered pairs.  Its
+crossing graph has one vertex per active coordinate and joins the
+shattered pairs.  Disconnection detects cut vertices; after ruling those
+out, a cut vertex of the crossing graph detects separating edges in
+that direction.  Contracting the direction recovers all such edges.
+If deleting that crossing-graph vertex leaves two components, there is
+one separating edge and a unique pair of convex factors
+(Proposition~\ref{prop:damp-crossing-separator-recovery} and
+Corollary~\ref{cor:damp-shadow-edge-factorization}).  Thus the
+remaining branch has a two-connected crossing graph; the peeling
+properties of the recovered factors still require intrinsic criteria.
+
+In the separator branch, descent through nonpeelable reductions
+also has a canonical endpoint: there is at most one descent coordinate,
+and after that one step all further reductions peel
+(Theorem~\ref{thm:damp-separator-strong-descent}).  A nonpeelable
+carrier must retain every remaining coordinate, so its direction is
+adjacent to all others in the crossing graph.  Failure of two-connectivity
+permits at most one such direction.  Whether its carrier actually peels
+is still a separate condition.  Square attachments leave every
+nonpeelable reduction unchanged as an embedded family
+(Proposition~\ref{prop:damp-square-attachments-fixed-carriers}).
+Hence the same conclusion holds whenever the canonical three-core has
+a separator, even if the full obstruction has none.
+
+\paragraph{Replacing coordinates by blocks.}
+There is also a construction that applies to every ample forbidden input,
+without choosing resolving additions.  Replace a coordinate \(z\) by a
+nonempty block \(E\).  Keep its two sections at the constant words
+\(0_E,1_E\), and put their union in every nonconstant section.
+Theorem~\ref{thm:damp-coordinate-block-replacement} proves that the result
+is forbidden exactly when the original family is forbidden.  On signed
+minimal nonfaces, the rule simply replaces \(z\) by all of \(E\),
+repeating its forbidden sign.  The two constant sections recover the input.
+For \(|E|\ge2\), the output is its own graph three-core and has a
+two-connected crossing graph.  If the input has no nonpeelable proper
+reduction, the maximal descent supports are exactly
+\(E\setminus\{e\}\), \(e\in E\), and every endpoint is the original
+family with one coordinate renamed
+(Corollary~\ref{cor:damp-coordinate-block-descent}).  Thus descent supports
+need not be unique even though these examples share one terminal
+isomorphism type.
+
+The operation also has canonical unmarked recovery.  Group coordinates
+whose columns in the signed minimal-nonface presentation agree up to sign,
+and compress each group to one coordinate.  Ampleness forces the section
+pattern required by the construction, and the reduced family is again
+forbidden.  Theorem~\ref{thm:damp-canonical-signed-column-reduction}
+proves that this gives an exact parametrization by reduced forbidden inputs
+with distinct columns up to sign and arbitrary positive coordinate
+multiplicities.  The description of these reduced inputs remains open.
+
+The two canonical reductions also fit together.  Repeated columns force
+minimum degree at least three, so graph pruning and column compression
+are never available simultaneously in a forbidden class.  Exhaust one
+type, then the other, until neither applies.
+Theorem~\ref{thm:damp-alternating-reductions} proves that the resulting
+base and all intermediate phases are canonical.  There are at most
+\(2d-5\) phases for VC dimension \(d\), and the difference between
+isometric dimension and VC dimension is unchanged.  Conversely, alternate
+nonempty square attachment data and nontrivial coordinate multiplicities
+over any forbidden base with minimum degree at least three and distinct
+columns.  These are exactly the recovered construction stages; no further
+compatibility tests are required.  Intrinsic admissibility of the final
+forbidden bases remains the unresolved input.
+
+This input does not become finite at a fixed value of the dimension
+difference.  Theorem~\ref{thm:damp-reduced-base-universality} constructs,
+from any nonempty ample family \(K\), a nonpeelable family \(X_K\)
+with minimum degree at least four, distinct columns, complete crossing
+graph, and dimension difference nine, such that
+\[
+ X_K\in\Obs(\Damp)\quad\Longleftrightarrow\quad K\in\Damp.
+\]
+The input \(K\) is recovered as a proper coordinate face.  Thus all
+corner-peelable ample families still occur inside reduced forbidden
+bases.  Taking \(K\) to be a cube supplies an explicit infinite family
+of these bases; it does not classify all of them.
+The construction also preserves every input clause change at fixed
+shadow.  Proposition~\ref{prop:damp-clause-transport-minimality} uses
+this to show that changing one sign bit can destroy pc-minimality while
+both outputs remain nonpeelable and satisfy the reduction stopping
+conditions.  Intrinsic sign admissibility for ampleness therefore does
+not supply the missing minimality criterion.
+
+\paragraph{Replicated repairs and signed-facet partitions.}
+Let \(S\subseteq Q_F\) be an ample forbidden seed.  Choose a set
+\(T\) of distinct missing words \(a\), such that every
+\(S\cup\{a\}\) is corner-peelable and their acquired shattered
+supports \(P_a\) are pairwise distinct.  On a disjoint nonempty
+coordinate set \(E\), choose nonempty proper ample families
+\(R_a\subsetneq Q_E\).  Form
+\begin{equation}
+ X=(S\times Q_E)\cup\bigcup_{a\in T}(\{a\}\times R_a).
+ \label{eq:damp-introduction-common-seed}
+\end{equation}
+Theorem~\ref{thm:damp-common-seed-cover-classification} says that
+\(X\) is forbidden exactly when each \(R_a\) is corner-peelable
+and every signed facet \(\{t:t_e=i\}\) of the layer cube is
+contained in at least one \(R_a\).  Fixing all layer coordinates
+and intersecting the resulting sections recovers \(S\); the other
+old words and their occurrences recover the tips and their families.
+
+Call an obstruction \emph{terminal} when no corner deletion leaves
+another forbidden pc-minor.  For a cornerless seed, the terminal
+members of \eqref{eq:damp-introduction-common-seed} have a completely
+structural description of their layer data.  Choose a surjection
+\[
+ \lambda:E\times\{0,1\}\longrightarrow T,
+ \qquad \lambda(e,0)\ne\lambda(e,1),
+\]
+and set
+\[
+ R_a=\bigcup_{\lambda(e,i)=a}\{t\in Q_E:t_e=i\}.
+\]
+These conditions suffice, every terminal member in this class has this
+form, and the marked sections recover \(\lambda\)
+(Theorem~\ref{thm:damp-terminal-common-seed-facet-partitions}).
+With two tips, the two families are cubes punctured at antipodal words.
+This gives an explicit infinite family of order
+\((|S|+2)2^{|E|}-2\) over every eligible two-tip seed.
+The seed's forbiddenness and the resolving property of its tips remain
+input conditions.
+
+\begin{table}[tbp]
+\centering
+\small
+\begin{tabular}{@{}p{.21\linewidth}p{.36\linewidth}p{.35\linewidth}@{}}
+\toprule
+Construction & What construction and recovery settle & Remaining input or coverage \\
+\midrule
+Alternating graph and column reductions &
+Canonical reduced base; all square attachment and coordinate-block stages have intrinsic parameters and unique recovery. &
+Forbidden bases of minimum degree at least three with distinct signed columns. \\
+\addlinespace
+Gluing at a cut vertex or separating edge &
+Canonical factors and exact gluing conditions for every obstruction with the specified separator. &
+Attainable sink and boundary out-map conditions of the factors; coverage outside these separator classes. \\
+\addlinespace
+Down-set completion &
+Uniform obstruction transfer and recovery of the marked data in \eqref{eq:damp-introduction-downset}. &
+The two rooted factors. \\
+\addlinespace
+Signed-facet assembly &
+All terminal layer data over a cornerless seed with eligible tips. &
+The seed and resolving tips; this construction is not exhaustive. \\
+\bottomrule
+\end{tabular}
+\caption{Scope of the structural results.  Each row distinguishes the
+parameters already constructed intrinsically from the remaining problem.}
+\label{tab:damp-generative-scope}
+\end{table}
+
+\subsection{What remains to be classified}
+
+Table~\ref{tab:damp-generative-scope} separates two outstanding tasks.
+For the separator branches, the precise question is which boundary out-maps
+can be realized by acyclic USOs of the factors, and how to construct and
+recover supports for which the required conditions fail. This does not
+replace structural generation by a search over orientations.
+First, the primitive cores, rooted factors, and resolving tips need
+structural admissibility conditions that imply their required peeling
+properties.  Second, the construction classes need to cover all
+forbidden cores.  The all-obstruction three-core reduction settles the
+attachment part of the second task, but its core input is still the
+original obstruction problem with a minimum-degree restriction.
+
+Several examples delimit these tasks.  A terminal obstruction with
+\(1158\) concepts and a cut vertex lies outside the replicated-repair
+class; another terminal example of the same order is two-connected
+and also has no such presentation
+(Theorem~\ref{thm:damp-terminal-cut-vertex} and
+Proposition~\ref{prop:damp-terminal-edge-amalgam}).  Thus the missing
+coverage cannot be supplied merely by allowing cut vertices or by
+restricting attention to two-connected terminal families.  Nor can all
+obstructions be generated by corner deletions from cubes:
+Corollary~\ref{cor:damp-nonpeelable-complement-obstructions} gives
+an infinite family with nonpeelable cube complements, which exclude
+such a descent.  Changing signs while preserving the shadow cannot always produce a
+cornerless core either: a two-connected \(1162\)-concept three-core
+has a shadow forcing at least three corners in every ample realization
+(Corollary~\ref{cor:damp-three-core-shadow-forces-corners}).
+These examples restrict proposed constructions; they do not establish
+impossibility of an intrinsic classification using other finite parameters.
+
+Nor can the one-hole construction of cornerless ample classes be
+converted to a forbidden-minor construction merely by selecting its
+pc-minimal outputs.  A \(580\)-concept cornerless graph three-core has
+a corner in every nonempty proper pc-minor, yet its unique forbidden
+minor has \(292\) concepts and one corner
+(Corollary~\ref{cor:damp-cornerless-minor-minimal-not-forbidden}).
+The proper-minor peeling conditions therefore retain information that
+corner existence, even in all proper minors, does not supply.
+
+The contrast with daisy cubes also concerns decomposition.  Their
+peripheral coordinates expose a down-set structure from which a
+generative description can be recovered.  Every ample obstruction
+here is periphery-free
+(Proposition~\ref{prop:damp-periphery-free}), so that starting
+decomposition is unavailable.  A complete description needs a
+structural replacement for the primitive cores and factors.
+
+\subsection{Bounds, verification, and a guide to the proofs}
+
+Let \(m_{\mathrm{amp}}\) be the least number of concepts in an ample
+forbidden pc-minor.  The current bounds are
+\[
+ 64\le m_{\mathrm{amp}}\le267
+ \qquad\text{(Theorem~\ref{prop:damp-minimum-order-profile}).}
+\]
+The upper bound comes from an explicit family of order \(267\)
+(Proposition~\ref{prop:damp-order-267-obstruction}), obtained by iterating
+the contract-and-lift step that turns Hall's class into the
+\(291\)-concept family of
+Proposition~\ref{prop:damp-hall-order-291-obstruction}; the lower
+bound combines structural reductions with finite exclusions.  Each
+computationally supported result identifies its construction or proof
+certificate and its checking procedure.  Uniform construction theorems
+are proved symbolically; checks of fixed inputs or examples are stated
+with their actual scope.  These bounds are a separate extremal result
+and do not imply that the structural classification is nearly complete.
+
+For the generative results, start with the USO and relative-extension
+dictionary in Section~\ref{sec:damp-uso-boundaries}, then the basic operations and
+local extension results in
+Section~\ref{sec:damp-local-extension-foundations}.  Continue through
+the cut-vertex and separating-edge theorems to
+Section~\ref{sec:damp-canonical-attachments}, which gives the full
+three-core and square-attachment proof chain before the specialized
+rooted constructions.  Their dependency is explicit: the cut-vertex
+theorem excludes degree-two cut vertices in an obstruction;
+periphery-freeness excludes leaves; and square-deletion invariance
+preserves forbidden-minor status.  These facts yield the canonical core,
+and the square attachment data invert every such deletion.  The down-set construction extends the
+rooted-factor examples, while the replicated-repair and signed-facet
+theorems in Section~\ref{sec:damp-two-repair} describe the separate
+layered construction.
+
+For recognition, Section~\ref{sec:damp} gives the algebraic and
+Yang-complex criteria.  Section~\ref{sec:damp-cores} describes
+critical-core extensions, and Section~\ref{sec:damp-extensions}
+develops signed minimal nonfaces and one-concept additions.
+Section~\ref{sec:damp-examples} contains the fixed witnesses and the
+minimum-order argument.  Appendix
+\ref{app:damp-five-coordinate-relative-peeling} supplies the relative
+peeling theorem used in the lower bound.  The detailed proofs and
+finite certificates remain available independently of this overview;
+the complete intrinsic generative classification remains open.
+
+\input{forbidden_pc_minor_campaign/paper_sections/dismantlable_ample_classification}
+
+\bibliographystyle{alpha}
+\bibliography{main}
+
+\end{document}

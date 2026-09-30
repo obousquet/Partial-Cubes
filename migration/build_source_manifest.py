@@ -32,8 +32,13 @@ def repositories_for(latex_root: Path, config: dict) -> dict[str, Path]:
 def collect_paths(latex_root: Path, config: dict) -> tuple[dict[Path, set[str]], list[dict]]:
     paths: dict[Path, set[str]] = defaultdict(set)
     configured_papers = set(config["paper_workspaces"])
+    excluded_directories = set(config.get("excluded_source_directories", []))
     for path in sorted((latex_root / "papers").glob("**/*.tex")):
-        if path.relative_to(latex_root / "papers").parts[0] in configured_papers:
+        relative_parts = path.relative_to(latex_root / "papers").parts
+        if (
+            relative_parts[0] in configured_papers
+            and not excluded_directories.intersection(relative_parts[1:-1])
+        ):
             paths[path.resolve()].add("paper_tex")
     for relative in config["bibliographies"]:
         paths[(latex_root / relative).resolve()].add("bibliography")
@@ -119,6 +124,7 @@ def build(latex_root: Path, config: dict) -> dict:
     return {
         "version": 1,
         "kind": "migration_source_manifest",
+        "snapshot_id": config["snapshot_id"],
         "snapshot_date": config["snapshot_date"],
         "latex_root_logical": "~/latex/PartialCubes",
         "selection_rule": "Configured paper TeX and bibliographies, structured seed files, and every file or PDF named by a minor-atlas source packet.",
