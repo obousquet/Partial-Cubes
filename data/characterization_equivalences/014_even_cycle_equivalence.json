@@ -1,0 +1,16 @@
+{
+  "id": 14,
+  "short_name": "even_cycle_equivalence",
+  "name": "Even-Cycle Equivalence",
+  "class_id": "#classes/even_cycles",
+  "characterization_ids": [
+    "#characterizations/even_cycle_graph",
+    "#characterizations/connected_two_regular_bipartite_graph",
+    "#characterizations/dihedral_mirror_graph"
+  ],
+  "hypotheses": "Finite simple connected graph.",
+  "statement": "The even-cycle, connected two-regular bipartite, and dihedral mirror-graph descriptions define the same family.",
+  "status": "established",
+  "proof": "Every finite connected two-regular graph is a cycle, and bipartiteness makes its length even. The rank-two Coxeter arrangement of type $I_2(d)$ has $2d$ chambers cyclically adjacent, so its mirror graph is $C_{2d}$; conversely every $C_{2d}$ has this realization.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions"
+}

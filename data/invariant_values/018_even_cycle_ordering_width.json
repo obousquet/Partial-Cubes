@@ -1,0 +1,15 @@
+{
+  "id": 18,
+  "short_name": "even_cycle_ordering_width",
+  "name": "Ordering Width of an Even Cycle",
+  "invariant_id": "#invariants/ordering_width",
+  "class_id": "#classes/even_cycles",
+  "quantifier": "all_members",
+  "value_type": "formula",
+  "value": "$\\left\\lceil d/2\\right\\rceil-1$",
+  "parameters": "For $C_{2d}$ with $d\\geq2$.",
+  "scope": "Ordering width $\\sigma$ under the database definition.",
+  "status": "established",
+  "proof": "The lower bound follows by taking the first prefix whose cyclic gaps all have length below $d$ and applying the first-two predecessor bound to the two new gaps. For the upper bound, order one semicircle consecutively, insert the midpoint of the remaining gap, and then finish arbitrarily; every minimal predecessor disagreement then has size at most $\\lceil d/2\\rceil$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:cycle-width"
+}

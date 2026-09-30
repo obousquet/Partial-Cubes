@@ -373,6 +373,64 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-16" style="position:relative;">
+
+        <h3><a href="invariant_values/even_cycle_vc_dimension.html" class="table-title-link">VC Dimension of an Even Cycle</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of an Even Cycle</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Class: </strong><a href="classes/even_cycles.html">Even Cycles</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>2</p>
+<strong>Parameters:</strong><div class="text-field"><p>For $C_{2d}$ with $d\geq2$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Canonical partial-cube embedding.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every even cycle is two-dimensional. It is not a tree, so the cube-minor characterization of VC dimension at most one forces its VC dimension to be exactly two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chepoi2020two">[chepoi2020two]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors; PartialCubes:papers/survey/main.tex?#thm:two-dimensional-structure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-17" style="position:relative;">
+
+        <h3><a href="invariant_values/even_cycle_isometric_dimension.html" class="table-title-link">Isometric Dimension of an Even Cycle</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Isometric Dimension of an Even Cycle</p>
+<p><strong>Invariant: </strong><a href="invariants/isometric_dimension.html">Isometric Dimension</a></p>
+<p><strong>Class: </strong><a href="classes/even_cycles.html">Even Cycles</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>d</p>
+<strong>Parameters:</strong><div class="text-field"><p>For $C_{2d}$ with $d\geq2$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Canonical irredundant hypercube embedding.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Opposite edges form one $\Theta$-class, and the $2d$ cycle edges therefore split into exactly $d$ classes. The canonical embedding flips each coordinate once on each semicircle.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#sec:cycles</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-18" style="position:relative;">
+
+        <h3><a href="invariant_values/even_cycle_ordering_width.html" class="table-title-link">Ordering Width of an Even Cycle</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width of an Even Cycle</p>
+<p><strong>Invariant: </strong><a href="invariants/ordering_width.html">Ordering Width</a></p>
+<p><strong>Class: </strong><a href="classes/even_cycles.html">Even Cycles</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\left\lceil d/2\right\rceil-1$</p>
+<strong>Parameters:</strong><div class="text-field"><p>For $C_{2d}$ with $d\geq2$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Ordering width $\sigma$ under the database definition.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The lower bound follows by taking the first prefix whose cyclic gaps all have length below $d$ and applying the first-two predecessor bound to the two new gaps. For the upper bound, order one semicircle consecutively, insert the midpoint of the remaining gap, and then finish arbitrarily; every minimal predecessor disagreement then has size at most $\lceil d/2\rceil$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:cycle-width</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
