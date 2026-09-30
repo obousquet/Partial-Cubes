@@ -1,0 +1,334 @@
+/* Modern colorful button styles */
+button, input[type="submit"], input[type="button"] {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6em 1.4em;
+    font-size: 1.08em;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(102,126,234,0.08);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    margin: 0.3em 0.2em;
+    outline: none;
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    box-shadow: 0 4px 16px rgba(118,75,162,0.18);
+    transform: translateY(-2px) scale(1.04);
+}
+button:active, input[type="submit"]:active, input[type="button"]:active {
+    background: #4f3cc9;
+    color: #fff;
+    transform: scale(0.98);
+}
+/* Math Database Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+main {
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.table-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.table-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.table-card h3 a {
+    color: #667eea;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.table-card h3 a:hover {
+    color: #764ba2;
+}
+
+.record-count {
+    color: #666;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+/* Table-specific styles */
+.table-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.table-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.table-card:hover {
+    transform: translateY(-3px);
+}
+
+.table-display {
+    background: #f8f9fa;
+    padding: 1.0rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    border-left: 4px solid #667eea;
+}
+
+.latex-equation {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.table-details {
+    margin-top: 1rem;
+}
+
+.fields {
+    margin-top: 1rem;
+}
+
+.fields-list {
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.fields-list li {
+    margin-bottom: 0.3rem;
+}
+
+/* Contextual parameter lists must not make a refuted formula look asserted. */
+.relationship-status-badge {
+    display: inline-block;
+    margin-left: 0.35rem;
+    padding: 0.08rem 0.4rem;
+    border-radius: 999px;
+    font-size: 0.74em;
+    font-weight: 700;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.relationship-status-badge.relationship-status-refuted {
+    color: #8b1e1e;
+    background: #ffe5e5;
+}
+
+.relationship-status-badge.relationship-status-conjectured,
+.relationship-status-badge.relationship-status-open,
+.relationship-status-badge.relationship-status-needs-verification {
+    color: #765700;
+    background: #fff3c4;
+}
+
+.relationship-list-refuted {
+    border-left: 3px solid #d96b6b;
+    padding-left: 1rem;
+}
+
+.text-field {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid #28a745;
+}
+
+.table-description {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Relationship indexes group statements by epistemic status. */
+.relationship-status-section {
+    margin: 2.5rem 0;
+}
+
+.relationship-status-section > h2 {
+    margin-bottom: 0.25rem;
+}
+
+.relationship-status-section > p {
+    margin-top: 0;
+    color: #666;
+}
+
+.relationship-status-refuted {
+    padding: 1.25rem;
+    border: 1px solid #e6a0a0;
+    border-radius: 10px;
+    background: #fff5f5;
+}
+
+.relationship-status-refuted > h2 {
+    color: #a33;
+}
+
+.relationship-status-other {
+    padding: 1.25rem;
+    border: 1px solid #e7c66c;
+    border-radius: 10px;
+    background: #fffdf2;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+    margin-top: 3rem;
+}
+
+.back-link-light {
+    color: #aaa;
+    font-size: 0.95em;
+    background: none;
+    border: none;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.back-link-light a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.back-link-light a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.add-entry-link {
+    margin-bottom: 2rem;
+    text-align: right;
+}
+.add-entry-link a {
+    color: #28a745;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+.add-entry-link a:hover {
+    color: #155724;
+    text-decoration: underline;
+}
+
+.edit-entry-link {
+    margin-bottom: 1.5rem;
+    text-align: right;
+}
+.edit-entry-link a {
+    color: #007bff;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.2s;
+}
+.edit-entry-link a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.delete-entry-btn {
+    color: #dc3545;
+    background: white;
+}
+.delete-entry-btn:hover {
+    background: #dc3545;
+    color: white;
+}
+.table-card {
+    position: relative;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .table-card {
+        padding: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    nav a {
+        margin: 0 0.5rem;
+        padding: 0.3rem 0.8rem;
+    }
+}

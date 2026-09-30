@@ -17,8 +17,8 @@ place so the existing mathematical material can be migrated record by record.
   checks beyond the editor's field schemas.
 - `sync/` records the ownership boundary with `~/latex/PartialCubes` and
   generates database-owned LaTeX catalogue fragments.
-- `docs/` is generated locally and ignored. GitHub Actions rebuilds it and
-  deploys it to GitHub Pages.
+- `docs/` is the generated static site committed on `main`. GitHub Pages
+  publishes it from the `/docs` folder, matching Combinatorial-Parameters.
 
 ## Shared renderer
 
@@ -33,6 +33,8 @@ make serve
 
 The local server is then available at <http://localhost:8080>. Override the
 renderer location with `MATH_DATABASE_DIR=/path/to/math_database` when needed.
+Run `make check` before committing database changes, then commit the regenerated
+`docs/` tree together with the source records.
 
 ## Data conventions
 
