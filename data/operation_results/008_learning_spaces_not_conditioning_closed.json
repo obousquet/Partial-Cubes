@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "short_name": "learning_spaces_not_conditioning_closed",
+  "name": "Learning-Space Graphs Are Not Conditioning-Closed",
+  "class_id": "#classes/learning_space_graphs",
+  "operation_id": "#operations/conditioning",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "A nonempty coordinate conditioning of a learning-space graph need not be a learning-space graph.",
+  "witness_ids": [
+    "#examples/learning_space_star_conditioning"
+  ],
+  "proof": "The recorded accessible union-closed family is a learning space, but conditioning on item $1$ yields $K_{1,3}$. No choice of a root makes the three-leaf star's rooted orientation closed, because two outgoing edges at its center would require a missing square.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+}

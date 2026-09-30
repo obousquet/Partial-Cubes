@@ -1,0 +1,17 @@
+{
+  "id": 5,
+  "short_name": "learning_space_classical_equivalence",
+  "name": "Classical Learning-Space Equivalence",
+  "class_id": "#classes/learning_space_graphs",
+  "characterization_ids": [
+    "#characterizations/accessible_union_closed_family",
+    "#characterizations/union_closed_well_graded_family",
+    "#characterizations/closed_rooted_orientation"
+  ],
+  "hypotheses": "Finite nonempty set family, or finite connected graph in the orientation formulation.",
+  "statement": "Finite antimatroids and finite learning spaces are the same set systems, and their one-inclusion graphs are exactly the partial cubes admitting a closed rooted orientation.",
+  "status": "established",
+  "proof": "Accessibility supplies deletion chains to the empty set. Unioning such chains with another feasible set produces tight paths, proving well-gradedness. Conversely, the first step of a tight path to the empty set proves accessibility. Under the partial-cube dictionary, union closure is equivalent to commutation of every pair of positive effective tokens, which is the closed rooted orientation condition.",
+  "references": "\\cite{EppsteinFalmagneUzun09,EppsteinFalmagne08media}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:antimatroid-learning-space-equivalence; PartialCubes:papers/survey/main.tex#thm:closed-orientation-learning-space"
+}

@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "batch_id": "007_learning_space_foundation",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the classical learning-space characterizations, their inclusion in partial cubes, and the exact projection-versus-conditioning closure profile with its explicit counterexample.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#def:antimatroid-learning-space",
+    "PartialCubes:papers/survey/main.tex#prop:antimatroid-learning-space-equivalence",
+    "PartialCubes:papers/survey/main.tex#thm:closed-orientation-learning-space",
+    "PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+  ],
+  "source_packet": {
+    "id": "learning",
+    "path": "papers/learning-spaces/main.tex",
+    "sha256": "456e1fecaf9ca5106822d4b4d3e9ff4a2359dd4ae752143ead7e4707e22e2db8",
+    "claim_source_path": "papers/learning-spaces/sections/minor_operations.tex",
+    "claim_source_sha256": "512f3837690c299f944d6378dd53273a733699fb5e94a65cb471ad77f50a9351",
+    "fingerprint_matches": true
+  },
+  "records": [
+    {
+      "path": "data/classes/043_learning_space_graphs.json",
+      "sha256": "4be27c2c12ce1a2d39f8a8fc2eca17954ade1ffab63735291196751adcd8e978"
+    },
+    {
+      "path": "data/characterizations/010_accessible_union_closed_family.json",
+      "sha256": "f23f2c3cb6429883ee2839f2400e24297bebb1477385246ea2aed5426a607666"
+    },
+    {
+      "path": "data/characterizations/011_union_closed_well_graded_family.json",
+      "sha256": "e89511ec7c8a34925d0ea11172ec554e0ed0ddd8b1bf766d874e5284c656e6f6"
+    },
+    {
+      "path": "data/characterizations/012_closed_rooted_orientation.json",
+      "sha256": "8f47c76fe8e2f683a3f8916e00d73b49b7153d179d91e208dc74ff7bd685d43c"
+    },
+    {
+      "path": "data/characterization_equivalences/005_learning_space_classical_equivalence.json",
+      "sha256": "00fd0b1b4a1b3764ab4cbe556b89f451b176eb051dbeef55e87a0debd43d7e1f"
+    },
+    {
+      "path": "data/relations/004_learning_spaces_subset_partial_cubes.json",
+      "sha256": "bc53d2e4fe59d6f0a0503732bef04d9088f902752aa0e02ffee4464ec690a160"
+    },
+    {
+      "path": "data/examples/003_learning_space_star_conditioning.json",
+      "sha256": "84fd03fb57d7067ff3c49858bf7c86ebc296ee693e0438833cd2cab52cacf7f6"
+    },
+    {
+      "path": "data/operation_results/007_learning_spaces_projection_closed.json",
+      "sha256": "b2a45e65d500989af010dc1735c1f51ab97f19ddd51e411f9ae6d5c380e33b80"
+    },
+    {
+      "path": "data/operation_results/008_learning_spaces_not_conditioning_closed.json",
+      "sha256": "94df009f96e31ba8db69977ae25d86a9343f8ca5435af9bf007b89f181bbfb02"
+    },
+    {
+      "path": "data/operation_results/009_learning_spaces_not_pc_minor_closed.json",
+      "sha256": "242ba868a07f40879d364dfdf7150748dcb9561f702f28c2422f513aa32de003"
+    }
+  ],
+  "bibliography": {
+    "path": "data/latex/references.bib",
+    "sha256": "01985a94e3ae262d434e9b76038e1fbce9011017a9ced4683458430d9e6f2e37",
+    "keys_added": [
+      "EppsteinFalmagne08media",
+      "EppsteinFalmagneUzun09"
+    ]
+  },
+  "claim_decisions": [
+    {
+      "candidate_id": "minor-closure-learning-p",
+      "disposition": "#operation_results/learning_spaces_projection_closed",
+      "review_basis": "PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+    },
+    {
+      "candidate_id": "minor-closure-learning-c",
+      "disposition": "#operation_results/learning_spaces_not_conditioning_closed",
+      "review_basis": "PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+    },
+    {
+      "candidate_id": "minor-closure-learning-pc",
+      "disposition": "#operation_results/learning_spaces_not_pc_minor_closed",
+      "review_basis": "PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+    }
+  ],
+  "ownership": {
+    "database": [
+      "normalized classical characterizations and their equivalence",
+      "the inclusion in partial cubes",
+      "the exact projection, conditioning, and pc-minor closure profile with its witness"
+    ],
+    "latex": [
+      "the full learning-space paper and proofs",
+      "root-loss and orientation theory",
+      "obstruction construction families and open completeness questions"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "930682b1406760f01f89ae48de05a14f5effbccfa8f42241bfc6cf6e73251fd1",
+    "database_records_after_batch": 51,
+    "promoted_classes": 5,
+    "reserved_classes_remaining": 83
+  },
+  "data_tree_sha256": "8b064fd8206b8f9f86b9d3468b8b1168e81c4fe64b4f9cb74b96c5c8af7168c3",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "The obstruction summary still needs atomic family decomposition. The exact closure class represented by convex-geometry ideals remains for a dedicated batch. The full theory stays in the LaTeX papers, and no LaTeX consumer was changed."
+}
