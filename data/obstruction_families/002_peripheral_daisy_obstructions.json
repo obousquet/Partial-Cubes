@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "short_name": "peripheral_daisy_obstructions",
+  "name": "Peripheral Daisy Obstructions",
+  "symbol": "O(P,R,A;\\mathcal W)",
+  "description_type": "generative",
+  "definition": "Choose disjoint finite sets $P,R$ with $P\\ne\\varnothing$, a down-set $\\mathcal W\\subseteq2^R$, and a set $A\\subseteq R$ such that $A$ and $R\\setminus A$ are distinct inclusion-maximal members of $\\mathcal W$. Form $O(P,R,A;\\mathcal W)=(2^P\\times\\mathcal W)\\setminus\\{(P,A),(\\varnothing,R\\setminus A)\\}$.",
+  "parameters": "The displayed tuple must satisfy the down-set, nonempty cube-factor, complementary-maximal-pair, and irredundancy conditions in the coordinate normal-form theorem.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "Every daisy obstruction with a peripheral coordinate has this form. Once a peripheral coordinate and reduced roots are fixed, the parameters are uniquely recoverable; distinct presentations may still describe isomorphic graphs.",
+  "recognition": "A certificate gives $(P,R,A,\\mathcal W)$ and verifies downward closure, complementary inclusion-maximality, and the two deleted vertices. Equivalently, delete a suitably maximal ambient-antipodal pair from a daisy cube with at least two roots.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:peripheral-normal-form",
+  "comments": "The single-root factor $\\mathcal W$ may vary; this is a complete generative family rather than a finite list."
+}

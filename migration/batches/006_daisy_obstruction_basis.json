@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "batch_id": "006_daisy_obstruction_basis",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the complete pc-minimal obstruction theorem for daisy cubes as two reusable obstruction families, a basis record, a characterization, and concrete first examples.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:periphery-free",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:peripheral-normal-form",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:complete-basis",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:intrinsic-antipodal-deletion",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#ex:one-coordinate"
+  ],
+  "source_packet": {
+    "id": "daisy",
+    "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+    "sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+    "fingerprint_matches": true
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/001_antipodally_punctured_hypercubes.json",
+      "sha256": "7b3d802fca3737549145ad85cdbfa34f8760bebbec5d33476314d85c442ddaff"
+    },
+    {
+      "path": "data/obstruction_families/002_peripheral_daisy_obstructions.json",
+      "sha256": "36f64329dc8c8faff25fd14a81121979d25f024dc176e36dedb5a3bf851f45a0"
+    },
+    {
+      "path": "data/obstruction_bases/001_daisy_complete_pc_basis.json",
+      "sha256": "90220f7b5bf8c9ceba6ac9b3e72ac2d1c26155d1f394829b00f31b102f62ab34"
+    },
+    {
+      "path": "data/characterizations/009_no_daisy_obstruction_pc_minor.json",
+      "sha256": "da67395c9f36a2aad9eeeaf18016f1610f3f9db34660c274976448689577bbd0"
+    },
+    {
+      "path": "data/characterization_equivalences/004_daisy_forbidden_minor_equivalence.json",
+      "sha256": "0ebcdb046e39e4558a1a84b059987d683de054b6b942545ae8fe5870eb147673"
+    },
+    {
+      "path": "data/examples/001_six_cycle.json",
+      "sha256": "8caf61ea22904e2d52d50d8b9f91caffd6d0fdfa5432126db8c4ee4d7bc370e0"
+    },
+    {
+      "path": "data/examples/002_four_vertex_path.json",
+      "sha256": "12da368c3575992918e57db7e70abc332e35a042d30e7978f5b04c3f4eaf2844"
+    }
+  ],
+  "claim_decisions": [
+    {
+      "candidate_id": "minor-obstruction-summary-daisy",
+      "disposition": "#obstruction_bases/daisy_complete_pc_basis",
+      "review_basis": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:complete-basis"
+    }
+  ],
+  "ownership": {
+    "database": [
+      "normalized obstruction-family membership descriptions",
+      "the complete avoidance theorem and pc-minimality claim",
+      "the forbidden-minor characterization and first concrete examples"
+    ],
+    "latex": [
+      "the complete dimension-free classification proof",
+      "root-factor reconstruction and uniqueness arguments",
+      "publication comparison, additional examples, and research context"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "e4e5537981bc4c8a9fae14fc887109449ea6a263b78a247763d68adc33667dce",
+    "database_records_after_batch": 41,
+    "promoted_classes": 4,
+    "reserved_classes_remaining": 84
+  },
+  "data_tree_sha256": "b19e5ab8778d6ae738f116c18e929e207972b4bbca50d1e074ff46c678f0d94c",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "The full proof, intrinsic and coordinate reconstruction details, publication comparison, and remaining examples stay in the LaTeX paper. No LaTeX consumer was changed."
+}

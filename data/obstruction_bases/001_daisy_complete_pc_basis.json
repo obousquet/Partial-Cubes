@@ -1,0 +1,19 @@
+{
+  "id": 1,
+  "short_name": "daisy_complete_pc_basis",
+  "name": "Complete Forbidden pc-Minor Basis for Daisy Cubes",
+  "target_class_id": "#classes/daisy_cubes",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/antipodally_punctured_hypercubes",
+    "#obstruction_families/peripheral_daisy_obstructions"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a daisy cube if and only if none of its pc-minors is isomorphic to an antipodally punctured hypercube $Q_n^{--}$ with $n\\geq3$ or to a graph $O(P,R,A;\\mathcal W)$ satisfying the peripheral normal-form hypotheses. Every listed graph is non-daisy and all of its proper pc-minors are daisy cubes.",
+  "status": "established",
+  "proof": "Daisy cubes are pc-minor-closed. A pc-minimal non-daisy graph either has no peripheral coordinate, in which case it is $Q_n^{--}$, or has a peripheral coordinate, in which case the coordinate normal-form theorem gives $O(P,R,A;\\mathcal W)$. The two source theorems also prove that every generated graph is a partial cube, is not daisy, and has only daisy proper elementary pc-minors.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:complete-basis",
+  "comments": "The equivalent intrinsic description deletes a suitably maximal ambient-antipodal pair from a daisy cube with more than one root. The full dimension-free proof remains in the LaTeX paper."
+}

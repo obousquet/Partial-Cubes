@@ -74,54 +74,7 @@
             </nav>
         </header>
         <main class="table-container">
-
-    <div style="margin-bottom: 1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; flex-wrap: wrap;">
-        <div style="flex: 1;">
-            <input type="text" id="search-box" placeholder="Search by name..." style="width: 100%; max-width: 400px; padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px;" oninput="filterCards()">
-        </div>
-        <div style="display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;">
-
-            <div style="display: flex; gap: 0.5em; align-items: center;">
-                <label style="margin-right: 0.5em;">View:</label>
-                <button id="compact-toggle" class="btn btn-primary" onclick="toggleCompactMode()">Compact</button>
-            </div>
-            <div style="display: flex; gap: 0.5em; align-items: center;">
-                <label style="margin-right: 0.5em;">Sort by:</label>
-                <button class="btn btn-primary" onclick="sortCards('id')">ID</button>
-                <button class="btn btn-primary" onclick="sortCards('name')">Name</button>
-            </div>
-        </div>
-    </div>
-
-            <div class="table-description">
-                <p>Reusable finite, parameterized, and generative families of forbidden objects</p>
-            </div>
-            <div class="table-grid">
-
-    <div class="table-card" id="math-1" style="position:relative;">
-
-        <h3><a href="obstruction_families/antipodally_punctured_hypercubes.html" class="table-title-link">Antipodally Punctured Hypercubes</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Antipodally Punctured Hypercubes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\{Q_n^{--}:n\geq3\}">
-            \[\{Q_n^{--}:n\geq3\}\]
-        </div>
-    </div>
-
-<p><strong>Description Type:</strong> Parameterized</p>
-<strong>Definition:</strong><div class="text-field"><p>For $n\geq3$, choose an antipodal pair $x,\overline{x}$ in $Q_n$ and take the subgraph induced by $V(Q_n)\setminus\{x,\overline{x}\}$. Its isomorphism type is denoted $Q_n^{--}$.</p></div>
-<strong>Parameters:</strong><div class="text-field"><p>Integer $n\geq3$; all choices of the deleted antipodal pair are equivalent under cube automorphisms.</p></div>
-<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<strong>Canonical Form:</strong><div class="text-field"><p>Up to partial-cube isomorphism there is one member $Q_n^{--}$ in each dimension $n\geq3$.</p></div>
-<strong>Recognition:</strong><div class="text-field"><p>A certificate is an irredundant $n$-cube embedding whose complement consists of two ambient-antipodal vertices.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:periphery-free</p></div>
-<strong>Comments:</strong><div class="text-field"><p>These are exactly the daisy obstructions with no peripheral coordinate and the non-ample members of the complete daisy basis.</p></div>
-
-        </div>
-    </div>
-
+            <div class="back-link-light"><a href="obstruction_families/index.html">&larr; Back to Obstruction_Families Table</a></div>
     <div class="table-card" id="math-2" style="position:relative;">
 
         <h3><a href="obstruction_families/peripheral_daisy_obstructions.html" class="table-title-link">Peripheral Daisy Obstructions</a></h3>
@@ -146,76 +99,10 @@
         </div>
     </div>
 
-            </div>
-
         </main>
         <footer>
             <p>Generated from a source-backed mathematical catalogue</p>
         </footer>
-
-    <script>
-    let isCompactMode = false;
-
-    function sortCards(sortBy) {
-        document.querySelectorAll('.table-grid').forEach(grid => {
-            const cards = Array.from(grid.querySelectorAll('.table-card'));
-            cards.sort((a, b) => {
-                if (sortBy === 'id') {
-                    const idA = parseInt(a.id.replace('math-', '')) || 0;
-                    const idB = parseInt(b.id.replace('math-', '')) || 0;
-                    return idA - idB;
-                } else if (sortBy === 'name') {
-                    const nameA = (a.querySelector('h3 a') || a.querySelector('h3')).textContent.toLowerCase();
-                    const nameB = (b.querySelector('h3 a') || b.querySelector('h3')).textContent.toLowerCase();
-                    return nameA.localeCompare(nameB);
-                }
-                return 0;
-            });
-            grid.innerHTML = '';
-            cards.forEach(card => grid.appendChild(card));
-        });
-    }
-
-    function filterCards() {
-        const searchTerm = document.getElementById('search-box').value.toLowerCase();
-        const cards = document.querySelectorAll('.table-grid .table-card');
-
-        cards.forEach(card => {
-            const name = (card.querySelector('h3 a') || card.querySelector('h3')).textContent.toLowerCase();
-            if (name.includes(searchTerm)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-
-    function toggleCompactMode() {
-        isCompactMode = !isCompactMode;
-        const toggleBtn = document.getElementById('compact-toggle');
-        const cards = document.querySelectorAll('.table-card');
-
-        cards.forEach(card => {
-            // Find all fields with reference type (they contain 'fields-list' ul elements within paragraphs)
-            const details = card.querySelector('.table-details');
-            if (details) {
-                const ref_fields = details.querySelectorAll('.reference-field');
-                ref_fields.forEach(p => {
-                    // Check if this paragraph contains a list (likely a reference field)
-                    if (p.querySelector('ul.fields-list')) {
-                        if (isCompactMode) {
-                            p.style.display = 'none';
-                        } else {
-                            p.style.display = '';
-                        }
-                    }
-                });
-            }
-        });
-
-        toggleBtn.textContent = isCompactMode ? 'Normal' : 'Compact';
-    }
-    </script>
 
     </body>
     </html>
