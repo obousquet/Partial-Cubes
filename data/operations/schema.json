@@ -1,0 +1,26 @@
+{
+  "table_name": "operations",
+  "title": "Operations",
+  "description": "Operations on partial cubes, set families, and related structures",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Operation name", "required": true, "rendered": true},
+    {"name": "symbol", "type": "latex", "label": "Symbol", "description": "Bare TeX notation", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "arity", "type": "integer", "label": "Arity", "description": "Number of object inputs", "required": true, "rendered": true},
+    {"name": "definition", "type": "text", "label": "Definition", "description": "Formal definition", "required": true, "rendered": true},
+    {"name": "category", "type": "enum", "label": "Category", "description": "Operation category", "required": false, "rendered": true, "enum": [
+      {"value": "minor", "display_name": "Minor"},
+      {"value": "product", "display_name": "Product"},
+      {"value": "expansion", "display_name": "Expansion"},
+      {"value": "complement", "display_name": "Complement"},
+      {"value": "reduction", "display_name": "Reduction"},
+      {"value": "gluing", "display_name": "Gluing"},
+      {"value": "other", "display_name": "Other"}
+    ]},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Scope and conventions", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Source", "description": "Stable local path and label or exact source locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "related_results", "type": "reference", "label": "Operation Results", "description": "Closure and image theorems using this operation", "required": false, "rendered": true, "table": "operation_results", "column": "operation_id"}
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "table_name": "examples",
+  "title": "Examples",
+  "description": "Named examples and counterexamples used as theorem witnesses",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Display name", "required": true, "rendered": true},
+    {"name": "symbol", "type": "latex", "label": "Symbol", "description": "Bare TeX symbol", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "object_type", "type": "enum", "label": "Object Type", "description": "Kind of mathematical object", "required": true, "rendered": true, "enum": [
+      {"value": "graph", "display_name": "Graph"},
+      {"value": "set_family", "display_name": "Set Family"},
+      {"value": "sign_system", "display_name": "Sign System"},
+      {"value": "family", "display_name": "Family"},
+      {"value": "construction", "display_name": "Construction"}
+    ]},
+    {"name": "definition", "type": "text", "label": "Definition", "description": "Reproducible mathematical description", "required": true, "rendered": true},
+    {"name": "parameters", "type": "text", "label": "Parameters", "description": "Family parameters and valid range", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "properties", "type": "text", "label": "Properties", "description": "Concise verified properties", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or construction locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "verification", "type": "text", "label": "Verification", "description": "Script or certificate pointer", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "obstruction_family_ids", "type": "array", "label": "Obstruction Families", "description": "Families containing this object", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "invariant_values", "type": "reference", "label": "Invariant Values", "description": "Invariant values recorded on this object", "required": false, "rendered": true, "table": "invariant_values", "column": "example_id", "reverse": true}
+  ]
+}

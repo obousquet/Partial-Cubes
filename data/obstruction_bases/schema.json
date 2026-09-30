@@ -1,0 +1,40 @@
+{
+  "table_name": "obstruction_bases",
+  "title": "Obstruction Bases",
+  "description": "Complete, partial, necessary, and sufficient forbidden-minor theorems",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Basis theorem title", "required": true, "rendered": true},
+    {"name": "target_class_id", "type": "string", "label": "Target Class", "description": "Class characterized by avoidance", "required": true, "rendered": true},
+    {"name": "ambient_class_id", "type": "string", "label": "Ambient Class", "description": "Universe in which avoidance is asserted", "required": true, "rendered": true},
+    {"name": "minor_operation_id", "type": "string", "label": "Minor Operation", "description": "Containment or minor operation", "required": true, "rendered": true},
+    {"name": "obstruction_family_ids", "type": "array", "label": "Obstruction Families", "description": "One or more forbidden families", "required": true, "rendered": true},
+    {"name": "basis_claim", "type": "enum", "label": "Basis Claim", "description": "Logical strength of the avoidance claim", "required": true, "rendered": true, "enum": [
+      {"value": "complete", "display_name": "Complete"},
+      {"value": "partial", "display_name": "Partial"},
+      {"value": "necessary", "display_name": "Necessary"},
+      {"value": "sufficient", "display_name": "Sufficient"}
+    ]},
+    {"name": "minimality", "type": "enum", "label": "Minimality", "description": "Minimality notion for the obstructions", "required": true, "rendered": true, "enum": [
+      {"value": "pc_minimal", "display_name": "pc-minimal"},
+      {"value": "p_minimal", "display_name": "p-minimal"},
+      {"value": "c_minimal", "display_name": "c-minimal"},
+      {"value": "convex_minimal", "display_name": "Convex-minimal"},
+      {"value": "none", "display_name": "None asserted"}
+    ]},
+    {"name": "statement", "type": "text", "label": "Statement", "description": "Exact avoidance theorem and qualifications", "required": true, "rendered": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Gaps, alternate bases, or uniqueness notes", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "characterizations", "type": "reference", "label": "Characterizations", "description": "Characterizations normalized by this basis", "required": false, "rendered": true, "table": "characterizations", "column": "obstruction_basis_id", "reverse": true}
+  ]
+}

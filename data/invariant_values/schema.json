@@ -1,0 +1,44 @@
+{
+  "table_name": "invariant_values",
+  "title": "Invariant Values",
+  "description": "Exact values, formulas, bounds, and ranges on classes and examples",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Record title", "required": true, "rendered": true},
+    {"name": "invariant_id", "type": "string", "label": "Invariant", "description": "Invariant being evaluated", "required": true, "rendered": true},
+    {"name": "class_id", "type": "string", "label": "Class", "description": "Subject family", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "example_id", "type": "string", "label": "Example", "description": "Subject named object", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "quantifier", "type": "enum", "label": "Quantifier", "description": "How the claim ranges over the subject", "required": true, "rendered": true, "enum": [
+      {"value": "individual", "display_name": "Individual Object"},
+      {"value": "all_members", "display_name": "All Members"},
+      {"value": "some_member", "display_name": "Some Member"},
+      {"value": "supremum", "display_name": "Supremum"},
+      {"value": "infimum", "display_name": "Infimum"},
+      {"value": "attained_range", "display_name": "Attained Range"}
+    ]},
+    {"name": "value_type", "type": "enum", "label": "Value Type", "description": "Kind of value claim", "required": true, "rendered": true, "enum": [
+      {"value": "exact", "display_name": "Exact"},
+      {"value": "formula", "display_name": "Formula"},
+      {"value": "lower_bound", "display_name": "Lower Bound"},
+      {"value": "upper_bound", "display_name": "Upper Bound"},
+      {"value": "range", "display_name": "Range"},
+      {"value": "unbounded", "display_name": "Unbounded"},
+      {"value": "unknown", "display_name": "Unknown"}
+    ]},
+    {"name": "value", "type": "string", "label": "Value", "description": "Exact value, formula, bound, or range", "required": true, "rendered": true},
+    {"name": "parameters", "type": "text", "label": "Parameters", "description": "Parameter range and dependence", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "scope", "type": "text", "label": "Scope", "description": "Ambient assumptions, field, and normalization", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "verification", "type": "text", "label": "Verification", "description": "Script or certificate pointer", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

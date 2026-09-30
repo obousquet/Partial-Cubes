@@ -1,0 +1,50 @@
+{
+  "table_name": "characterizations",
+  "title": "Characterizations",
+  "description": "Atomic membership criteria for catalogued classes",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Characterization name", "required": true, "rendered": true},
+    {"name": "class_id", "type": "string", "label": "Class", "description": "Class characterized by this predicate", "required": true, "rendered": true},
+    {"name": "characterization_type", "type": "enum", "label": "Type", "description": "Kind of membership criterion", "required": true, "rendered": true, "enum": [
+      {"value": "definitional", "display_name": "Definitional"},
+      {"value": "intrinsic_metric", "display_name": "Intrinsic Metric"},
+      {"value": "set_system", "display_name": "Set System"},
+      {"value": "medium", "display_name": "Medium"},
+      {"value": "sign_vector", "display_name": "Sign Vector"},
+      {"value": "complex", "display_name": "Complex"},
+      {"value": "orientation", "display_name": "Orientation"},
+      {"value": "expansion", "display_name": "Expansion"},
+      {"value": "recursive", "display_name": "Recursive"},
+      {"value": "generative", "display_name": "Generative"},
+      {"value": "invariant_condition", "display_name": "Invariant Condition"},
+      {"value": "forbidden_minor", "display_name": "Forbidden Minor"},
+      {"value": "algorithmic", "display_name": "Algorithmic"},
+      {"value": "other", "display_name": "Other"}
+    ]},
+    {"name": "model_type", "type": "enum", "label": "Model", "description": "Mathematical language used by the predicate", "required": false, "rendered": true, "hide_when_empty": true, "enum": [
+      {"value": "graph", "display_name": "Graph"},
+      {"value": "set_family", "display_name": "Set Family"},
+      {"value": "medium", "display_name": "Medium"},
+      {"value": "sign_system", "display_name": "Sign System"},
+      {"value": "complex", "display_name": "Complex"},
+      {"value": "mixed", "display_name": "Mixed"}
+    ]},
+    {"name": "statement", "type": "text", "label": "Criterion", "description": "Predicate imposed on a candidate object", "required": true, "rendered": true},
+    {"name": "hypotheses", "type": "text", "label": "Hypotheses", "description": "Ambient assumptions and parameter range", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "invariant_ids", "type": "array", "label": "Invariants", "description": "Invariants used by the criterion", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "obstruction_basis_id", "type": "string", "label": "Obstruction Basis", "description": "Structured obstruction-basis record", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "recognition_complexity", "type": "text", "label": "Recognition Complexity", "description": "Complexity when the criterion is algorithmic", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Terminology and scope notes", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

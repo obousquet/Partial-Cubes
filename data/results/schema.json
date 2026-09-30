@@ -1,0 +1,34 @@
+{
+  "table_name": "results",
+  "title": "Results",
+  "description": "Class theorems outside binary relations, operations, and characterization equivalences",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Result title", "required": true, "rendered": true},
+    {"name": "class_ids", "type": "array", "label": "Classes", "description": "Principal class subjects", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "invariant_ids", "type": "array", "label": "Invariants", "description": "Related invariants", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "operation_ids", "type": "array", "label": "Operations", "description": "Related operations", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "result_type", "type": "enum", "label": "Result Type", "description": "Kind of theorem", "required": true, "rendered": true, "enum": [
+      {"value": "recognition", "display_name": "Recognition"},
+      {"value": "algorithm", "display_name": "Algorithm"},
+      {"value": "construction", "display_name": "Construction"},
+      {"value": "implication", "display_name": "Implication"},
+      {"value": "invariant_law", "display_name": "Invariant Law"},
+      {"value": "other", "display_name": "Other"}
+    ]},
+    {"name": "statement", "type": "text", "label": "Statement", "description": "Precise mathematical statement", "required": true, "rendered": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "witness_ids", "type": "array", "label": "Witnesses", "description": "Named examples or counterexamples", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Scope notes", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

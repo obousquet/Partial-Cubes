@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "purpose": "Declares authority for information shared by the database website and the PartialCubes LaTeX workspace.",
+  "owners": {
+    "class_catalogue": {
+      "authority": "database",
+      "source": "data/classes/*.json and data/characterizations/*.json",
+      "latex_output": "includes/generated/class_definitions.tex"
+    },
+    "class_relationships": {
+      "authority": "database",
+      "source": "data/relations/*.json"
+    },
+    "operation_results": {
+      "authority": "database",
+      "source": "data/operations/*.json and data/operation_results/*.json"
+    },
+    "invariants_and_values": {
+      "authority": "database",
+      "source": "data/invariants/*.json and data/invariant_values/*.json"
+    },
+    "forbidden_minor_catalogue": {
+      "authority": "database",
+      "source": "data/obstruction_families/*.json and data/obstruction_bases/*.json"
+    },
+    "bibliography": {
+      "authority": "database",
+      "source": "data/latex/references.bib",
+      "latex_output": "includes/generated/references.bib"
+    },
+    "survey_narrative_and_full_proofs": {
+      "authority": "latex",
+      "source": "~/latex/PartialCubes/papers/**/*.tex"
+    },
+    "open_questions_and_campaign_state": {
+      "authority": "latex",
+      "source": "~/latex/PartialCubes papers, ledgers, dashboards, and research notes"
+    }
+  }
+}

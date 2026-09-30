@@ -1,0 +1,35 @@
+{
+  "table_name": "relations",
+  "title": "Class Relations",
+  "description": "Inclusions, equalities, non-containments, incomparabilities, and open comparisons",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Human-readable title", "required": true, "rendered": true},
+    {"name": "subject_id", "type": "string", "label": "Subject", "description": "Source class", "required": true, "rendered": true},
+    {"name": "object_id", "type": "string", "label": "Object", "description": "Target class", "required": true, "rendered": true},
+    {"name": "relation_type", "type": "enum", "label": "Relation", "description": "Mathematical relation type", "required": true, "rendered": true, "enum": [
+      {"value": "inclusion", "display_name": "Inclusion"},
+      {"value": "strict_inclusion", "display_name": "Strict Inclusion"},
+      {"value": "equality", "display_name": "Equality"},
+      {"value": "noncontainment", "display_name": "Non-Containment"},
+      {"value": "incomparable", "display_name": "Incomparable"},
+      {"value": "overlap", "display_name": "Overlap"},
+      {"value": "comparison", "display_name": "Open Comparison"}
+    ]},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "scope", "type": "text", "label": "Scope", "description": "Ambient and parameter qualifications", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "statement", "type": "text", "label": "Statement", "description": "Precise formulation beyond the typed endpoints", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "witness_ids", "type": "array", "label": "Witnesses", "description": "Strictness or separation witnesses", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Curatorial notes", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

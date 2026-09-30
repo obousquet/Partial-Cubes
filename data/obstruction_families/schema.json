@@ -1,0 +1,28 @@
+{
+  "table_name": "obstruction_families",
+  "title": "Obstruction Families",
+  "description": "Reusable finite, parameterized, and generative families of forbidden objects",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Family name", "required": true, "rendered": true},
+    {"name": "symbol", "type": "latex", "label": "Symbol", "description": "Bare TeX symbol", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "description_type", "type": "enum", "label": "Description Type", "description": "How membership in the family is specified", "required": true, "rendered": true, "enum": [
+      {"value": "finite", "display_name": "Finite"},
+      {"value": "parameterized", "display_name": "Parameterized"},
+      {"value": "generative", "display_name": "Generative"},
+      {"value": "recursive", "display_name": "Recursive"},
+      {"value": "predicate", "display_name": "Predicate"},
+      {"value": "mixed", "display_name": "Mixed"}
+    ]},
+    {"name": "definition", "type": "text", "label": "Definition", "description": "Membership definition or complete construction", "required": true, "rendered": true},
+    {"name": "parameters", "type": "text", "label": "Parameters", "description": "Parameter space and identifications", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "ambient_class_id", "type": "string", "label": "Ambient Class", "description": "Containing universe", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "catalogued_class_id", "type": "string", "label": "Catalogued Class", "description": "Equivalent class record, when applicable", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "canonical_form", "type": "text", "label": "Canonical Form", "description": "Normal form and uniqueness statement", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "recognition", "type": "text", "label": "Recognition", "description": "Membership test or certificate format", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Limitations and alternate parameterizations", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

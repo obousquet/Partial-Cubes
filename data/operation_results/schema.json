@@ -1,0 +1,33 @@
+{
+  "table_name": "operation_results",
+  "title": "Operation Results",
+  "description": "Closure, failure, image, and exact-closure theorems for classes",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Result title", "required": true, "rendered": true},
+    {"name": "class_id", "type": "string", "label": "Class", "description": "Subject class", "required": true, "rendered": true},
+    {"name": "operation_id", "type": "string", "label": "Operation", "description": "Operation applied to the class", "required": true, "rendered": true},
+    {"name": "result_type", "type": "enum", "label": "Result Type", "description": "Kind of closure or image statement", "required": true, "rendered": true, "enum": [
+      {"value": "closed_under", "display_name": "Closed Under"},
+      {"value": "not_closed_under", "display_name": "Not Closed Under"},
+      {"value": "closure_equals", "display_name": "Closure Equals"},
+      {"value": "image_contained_in", "display_name": "Image Contained In"},
+      {"value": "image_contains", "display_name": "Image Contains"},
+      {"value": "preserves_between", "display_name": "Preserves Between"}
+    ]},
+    {"name": "target_class_id", "type": "string", "label": "Target Class", "description": "Exact or bounding output class", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "statement", "type": "text", "label": "Statement", "description": "Quantifiers and qualifications", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "witness_ids", "type": "array", "label": "Witnesses", "description": "Failure or strictness examples", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "table_name": "characterization_equivalences",
+  "title": "Characterization Equivalences",
+  "description": "Theorems proving that two or more membership criteria define the same class",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Equivalence theorem title", "required": true, "rendered": true},
+    {"name": "class_id", "type": "string", "label": "Class", "description": "Common class target", "required": true, "rendered": true},
+    {"name": "characterization_ids", "type": "array", "label": "Equivalent Characterizations", "description": "At least two characterization references", "required": true, "rendered": true},
+    {"name": "hypotheses", "type": "text", "label": "Hypotheses", "description": "Common ambient assumptions", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "statement", "type": "text", "label": "Statement", "description": "Refinement of the mutual-equivalence assertion", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "proof", "type": "text", "label": "Proof", "description": "Concise database-owned proof", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Proof Source", "description": "Stable local path and label or exact theorem locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Direction-specific qualifications", "required": false, "rendered": true, "hide_when_empty": true}
+  ]
+}

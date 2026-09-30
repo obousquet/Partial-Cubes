@@ -1,0 +1,44 @@
+{
+  "table_name": "classes",
+  "title": "Classes",
+  "description": "Canonical classes of partial cubes and related ambient objects",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Canonical display name", "required": true, "rendered": true},
+    {"name": "symbol", "type": "latex", "label": "Symbol", "description": "Bare TeX symbol", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "summary", "type": "text", "label": "Summary", "description": "Concise description of the class", "required": true, "rendered": true},
+    {"name": "primary_characterization_id", "type": "string", "label": "Primary Characterization", "description": "Reference to the catalogue definition", "required": true, "rendered": true},
+    {"name": "graph_label", "type": "string", "label": "Graph Label", "description": "Concise hierarchy label", "required": false, "rendered": false},
+    {"name": "aliases", "type": "array", "label": "Aliases", "description": "Alternate searchable names", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "category", "type": "enum", "label": "Category", "description": "Editorial and graph category", "required": true, "rendered": true, "enum": [
+      {"value": "core", "display_name": "Core"},
+      {"value": "metric_cubical", "display_name": "Metric and Cubical"},
+      {"value": "expansion_boundary", "display_name": "Expansion and Boundary"},
+      {"value": "set_family", "display_name": "Set Family"},
+      {"value": "sign_vector_com", "display_name": "Sign Vector and COM"},
+      {"value": "symmetry", "display_name": "Symmetry"},
+      {"value": "named_family", "display_name": "Named Family"}
+    ]},
+    {"name": "ambient_scope", "type": "enum", "label": "Ambient Scope", "description": "Universe in which the class is interpreted", "required": true, "rendered": true, "enum": [
+      {"value": "partial_cubes", "display_name": "Partial Cubes"},
+      {"value": "bipartite_graphs", "display_name": "Bipartite Graphs"},
+      {"value": "all_graphs", "display_name": "All Graphs"},
+      {"value": "set_families", "display_name": "Set Families"},
+      {"value": "mixed", "display_name": "Mixed Dictionary"}
+    ]},
+    {"name": "parameterized", "type": "boolean", "label": "Parameterized", "description": "Whether the entry denotes a parameterized family", "required": false, "rendered": true},
+    {"name": "parameters", "type": "text", "label": "Parameters", "description": "Formal parameter conventions", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "p_closed", "type": "boolean", "label": "P-Closed", "description": "Cached established projection-closure status", "required": false, "rendered": true},
+    {"name": "c_closed", "type": "boolean", "label": "C-Closed", "description": "Cached established conditioning-closure status", "required": false, "rendered": true},
+    {"name": "pc_closed", "type": "boolean", "label": "PC-Closed", "description": "Cached established pc-minor-closure status", "required": false, "rendered": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Scope qualifications and catalogue notes", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "latex_label", "type": "string", "label": "LaTeX Label", "description": "Stable generated-definition label override", "required": false, "rendered": false},
+    {"name": "related_characterizations", "type": "reference", "label": "Characterizations", "description": "Criteria for this class", "required": false, "rendered": true, "table": "characterizations", "column": "class_id"},
+    {"name": "related_relations_as_subject", "type": "reference", "label": "Outgoing Relations", "description": "Relations with this class as subject", "required": false, "rendered": true, "table": "relations", "column": "subject_id"},
+    {"name": "related_relations_as_object", "type": "reference", "label": "Incoming Relations", "description": "Relations with this class as object", "required": false, "rendered": true, "table": "relations", "column": "object_id"},
+    {"name": "related_operation_results", "type": "reference", "label": "Operation Results", "description": "Closure and image theorems", "required": false, "rendered": true, "table": "operation_results", "column": "class_id"},
+    {"name": "related_invariant_values", "type": "reference", "label": "Invariant Values", "description": "Known invariant values and bounds", "required": false, "rendered": true, "table": "invariant_values", "column": "class_id"},
+    {"name": "related_obstruction_bases", "type": "reference", "label": "Obstruction Bases", "description": "Forbidden-minor bases for this class", "required": false, "rendered": true, "table": "obstruction_bases", "column": "target_class_id"}
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "table_name": "invariants",
+  "title": "Invariants",
+  "description": "Structural, algebraic, metric, topological, and geometric invariants",
+  "columns": [
+    {"name": "id", "type": "integer", "label": "ID", "description": "Stable numeric identifier", "required": true, "rendered": false},
+    {"name": "short_name", "type": "string", "label": "Short Name", "description": "Stable cross-reference key", "required": true, "rendered": false},
+    {"name": "name", "type": "string", "label": "Name", "description": "Invariant name", "required": true, "rendered": true},
+    {"name": "symbol", "type": "latex", "label": "Symbol", "description": "Bare TeX symbol", "required": true, "rendered": true},
+    {"name": "definition", "type": "text", "label": "Definition", "description": "Formal definition on one object", "required": true, "rendered": true},
+    {"name": "status", "type": "enum", "label": "Status", "description": "Epistemic status of the recorded definition", "required": true, "rendered": true, "enum": [
+      {"value": "established", "display_name": "Established"},
+      {"value": "conjectured", "display_name": "Conjectured"},
+      {"value": "open", "display_name": "Open"},
+      {"value": "needs_verification", "display_name": "Needs Verification"},
+      {"value": "refuted", "display_name": "Refuted"}
+    ]},
+    {"name": "domain_class_id", "type": "string", "label": "Domain", "description": "Broadest catalogued domain class", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "codomain", "type": "string", "label": "Codomain", "description": "Integers, reals, vectors, tables, or another codomain", "required": true, "rendered": true},
+    {"name": "parameters", "type": "text", "label": "Parameters", "description": "Field, root, order, or auxiliary choices", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "normalization", "type": "text", "label": "Normalization", "description": "Conventions needed for comparable values", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "category", "type": "enum", "label": "Category", "description": "Invariant category", "required": false, "rendered": true, "enum": [
+      {"value": "combinatorial", "display_name": "Combinatorial"},
+      {"value": "metric", "display_name": "Metric"},
+      {"value": "algebraic", "display_name": "Algebraic"},
+      {"value": "topological", "display_name": "Topological"},
+      {"value": "geometric", "display_name": "Geometric"},
+      {"value": "algorithmic", "display_name": "Algorithmic"}
+    ]},
+    {"name": "isomorphism_invariant", "type": "boolean", "label": "Isomorphism Invariant", "description": "Whether the quantity descends to the intended object isomorphism", "required": false, "rendered": true},
+    {"name": "comments", "type": "text", "label": "Comments", "description": "Scope and known limitations", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "references", "type": "text", "label": "References", "description": "BibTeX citations and published references", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "proof_source", "type": "text", "label": "Source", "description": "Stable local path and label or exact source locator", "required": false, "rendered": true, "hide_when_empty": true},
+    {"name": "related_values", "type": "reference", "label": "Values", "description": "Known values, formulas, and bounds", "required": false, "rendered": true, "table": "invariant_values", "column": "invariant_id"}
+  ]
+}

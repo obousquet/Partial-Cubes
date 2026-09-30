@@ -1,0 +1,29 @@
+{
+  "title": "Partial Cubes",
+  "header": "Partial Cubes Database",
+  "subtitle": "Classes, Characterizations, Invariants, and Forbidden Minors",
+  "description": "A structured database of classes of partial cubes and their mathematical relationships.",
+  "footer": "Generated from a source-backed mathematical catalogue",
+  "homepage": "https://github.com/obousquet/Partial-Cubes/",
+  "deploy_url": "https://obousquet.github.io/Partial-Cubes/",
+  "graphs": [
+    {
+      "name": "Class Hierarchy",
+      "short_name": "class-hierarchy",
+      "description": "Established inclusions with open and negative comparison overlays",
+      "module": "data/make_graph.py",
+      "function": "generate_class_hierarchy"
+    },
+    {
+      "name": "Minor and Closure Map",
+      "short_name": "minor-closure",
+      "description": "Class comparisons and exact closure results for projection, conditioning, and pc-minors",
+      "module": "data/make_graph.py",
+      "function": "generate_minor_closure_map"
+    }
+  ],
+  "bibliography": {
+    "title": "Bibliography",
+    "bibfile": "latex/references.bib"
+  }
+}
