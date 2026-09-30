@@ -1,0 +1,2779 @@
+{
+  "version": 1,
+  "kind": "minor_inventory_candidates",
+  "source": {
+    "path": "papers/minor-atlas/inventory.json",
+    "sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0",
+    "title": "Projection, conditioning, and the ample-class landscape",
+    "date": "2026-09-25",
+    "scope": "A cross-repository mathematical map, not a new obstruction classification or a submission-readiness audit of every paper.",
+    "conventions": "p deletes coordinates by existential projection; c fixes coordinates and removes them; pc allows both. Nonempty classes, signed coordinate equivalence, and suppression of constant coordinates are used in graph comparisons."
+  },
+  "counts": {
+    "family_candidates": 24,
+    "relation_candidates": 48,
+    "source_packets": 33,
+    "excluded_questions": 13,
+    "stale_source_packets": 2
+  },
+  "stale_source_packet_ids": [
+    "ample",
+    "cover"
+  ],
+  "families": [
+    {
+      "id": "ample",
+      "name": "Ample classes",
+      "symbol": "Amp",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Amp",
+      "pc_closure": "Amp",
+      "basis": "Among partial cubes: Q_n minus two antipodes, n ≥ 3. Conditioning-minimal non-ampleness: uniform-OM tope classes, with the rank-one qualification.",
+      "assessment": "Published pc basis; c-classification in YangDim. The p-only basis is not inventoried here.",
+      "sources": [
+        "mna",
+        "maxmin"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/0",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "minimal-nonample",
+      "name": "Minimal non-ample classes (under conditioning)",
+      "symbol": "N = Obs_c(Amp)",
+      "p": "no",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "N plus its proper conditionings (all ample)",
+      "pc_closure": "N plus its ample pc-minors; ample part not classified here",
+      "basis": "This family is itself the c-obstruction basis of Amp, outside Amp. With at least three concepts: non-free simple uniform-oriented-matroid tope classes. Two-concept cases are antipodal pairs on at least two coordinates.",
+      "assessment": "YangDim already gives the combinatorial classification as well as the algebraic theory. Projection yields either a cube or another member of N; every one-coordinate conditioning is maximum. A possible PartialCubes study concerns compatible maximum halves and coordinate extensions.",
+      "sources": [
+        "mna"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/1",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "maximum",
+      "name": "Maximum classes",
+      "symbol": "Max",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "MaxMin",
+      "pc_closure": "MaxMin",
+      "basis": "The source family is p-closed. Its c or pc closure has an obstruction problem distinct from recognition of Max itself.",
+      "assessment": "P(Max) = Max; C(Max) = PC(Max) = MaxMin. Within ample classes, projection-minimal nonmaximum classes are precisely cube complements of rank-one maximum trees with at least one active and one constant coordinate. Each needs exactly one auxiliary for a maximum parent; see the maximum-projection complex in the note.",
+      "sources": [
+        "maxsections",
+        "maxmin",
+        "maximum-projection-complex"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/2",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "maxmin",
+      "name": "Maximum-generated classes",
+      "symbol": "MaxMin",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "MaxMin",
+      "pc_closure": "MaxMin",
+      "basis": "Nonample pc obstructions are exactly Q_n minus two antipodes; the remaining ample obstruction family may be empty. Nonample c obstructions are all minimal non-ample classes.",
+      "assessment": "Existential generation by sections of arbitrary finite maximum parents is exact; MaxMin = Amp is open. Includes all learning spaces, their conditionings, and daisy cubes; the general R_per and Damp inclusions remain open. The two further intermediate inclusions D₁ ⊆ MaxMin and B ⊆ MaxMin are also open; the reverse inclusions fail. More precisely, RAmp ⊊ P_D ⊊ MaxMin ⊆ Ext ⊆ Rep, where P_D uses dismantlable maximum parents and Ext is universal cube extension. No strictness of MaxMin ⊆ Ext is known.",
+      "sources": [
+        "maxsections",
+        "maxmin",
+        "geometry",
+        "maxparents",
+        "decomposition-levels",
+        "decomposition-closures",
+        "maxmin-neighbors"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/3",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "peelable-parent",
+      "name": "Sections of dismantlable maximum parents",
+      "symbol": "P_D",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "P_D",
+      "pc_closure": "P_D",
+      "basis": "A class belongs when it is a coordinate section of a finite maximum class that admits a corner peeling. Auxiliary dimension and parent rank are unrestricted. No intrinsic obstruction basis is supplied.",
+      "assessment": "RAmp ⊊ P_D ⊊ MaxMin and P_D ⊆ Damp. Sections, projections and full reductions preserve P_D, as do reflections, relabeling and constant-coordinate changes. Complement closure fails; arbitrary product closure is unestablished. Products with every tree-parity threshold, every rank-one maximum tree and every rank-(n−2) maximum class preserve a supplied parent decomposition level. The tree construction includes Hamming balls and bounded-change classes. For these maximum factors, least parent ranks add exactly. The proof uses a common nested-coordinate recursion for a complete maximum sequence; not every peripheral maximum parent is asserted to admit one. Hall’s maximum complement lies in P_D outside RAmp, B and D₁, while Hall’s cornerless maximum class lies outside P_D. Maximum face avoidance and cube addition can preserve each decomposition level D_k; this does not prove every dismantlable ample class has such a parent. Minimum-section deletions of maximum classes have dismantlable maximum parents when both original and deleted classes are dismantlable, with the same rank and optimal auxiliary count at that rank. D_k inputs give D_max(k,r−1) parents; this does not prove intrinsic-level replacement.",
+      "sources": [
+        "maxmin-neighbors",
+        "decomposition-closures",
+        "maxparents",
+        "structural-targets",
+        "nested-flag-products",
+        "tree-parity-flags",
+        "dismantlable-deletion-parents"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/4",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "cube-extension",
+      "name": "Ample classes with universal cube extension",
+      "symbol": "Ext",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Ext",
+      "pc_closure": "Ext",
+      "basis": "Ext is local notation for the existing universal cube-extension property: C has a representation map and every such map extends to the full displayed cube. Equivalently, both C and its cube complement have representation maps, with empty sides allowed; equivalently, C is a forward-invariant set of some cube unique-sink orientation.",
+      "assessment": "MaxMin ⊆ Ext ⊆ Rep and B ⊊ Ext. Hall’s cornerless maximum class proves the latter strictness. Ext is closed under sections, projections, full reductions, cube complementation and Cartesian products. Projection uses the quotient orientation obtained from coordinate-edge sinks. Neither MaxMin ⊊ Ext nor Ext = Rep is established. Proving that one representation map has no extension to the full visible cube would exclude every maximum parent; failure of one proposed extension does not suffice. Such an obstruction would also refute the ample representation-map conjecture; it cannot exclude the existing complementary test H_E, already in B.",
+      "sources": [
+        "maxmin",
+        "maxmin-neighbors",
+        "orientation-classes"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/5",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "realizable",
+      "name": "Geometrically realizable ample classes",
+      "symbol": "RAmp",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "RAmp",
+      "pc_closure": "RAmp",
+      "basis": "Geometric construction by affine hyperplanes inside an open convex set; pc-obstruction basis not inventoried in this pass.",
+      "assessment": "RAmp is contained in B and MaxMin, and therefore in Damp. Cube-complement closure and realizable corner peeling give the inclusion into B. Geometric realizability here is stronger than weak-convexity representations of arbitrary ample classes. Learning spaces and daisy cubes are explicitly realized subclasses. The maximum parent may be chosen dismantlable, giving the strict inclusion RAmp ⊊ P_D. Regular odd-polygon tangent arrangements have realizable maximum complements outside every prescribed finite D_k. Thus recursive decomposition level is unbounded even within RAmp.",
+      "sources": [
+        "geometry",
+        "km",
+        "maxparents",
+        "cckgeometry",
+        "maxmin-neighbors",
+        "polygon-decomposition",
+        "structural-targets"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/6",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "peelable",
+      "name": "Corner-peelable ample classes",
+      "symbol": "Damp",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Damp",
+      "pc_closure": "Damp",
+      "basis": "Relative-attachment generation and structural reductions are proved; an intrinsic complete pc-obstruction generator remains open.",
+      "assessment": "Closed theorem packages exist. The working minimum-cardinality interval is 64–267 (ample-corners Theorem D); that is a separate quantitative question.",
+      "sources": [
+        "ample",
+        "gluing",
+        "learning"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/7",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "d1",
+      "name": "Ample classes with one-decomposable Yang complexes",
+      "symbol": "D₁",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "D₁",
+      "pc_closure": "D₁",
+      "basis": "The Yang complex is pure one-decomposable: the recursive shedding faces have at most two vertices. Equivalently, use the attachment recursion with coordinate blocks of size at most two. An intrinsic pc-obstruction basis is not supplied here.",
+      "assessment": "Rper is strictly contained in D₁, which is strictly contained in Damp. Every ample class of VC dimension at most two is in D₁. D₁ is also closed under full reductions and Cartesian products. Whether D₁ is contained in MaxMin is open. Hall’s maximum complement lies outside D₁, so MaxMin is not contained in D₁. B is not contained in D₁: the realizable nonagon complement is a 466-word maximum witness. D₁ ⊆ B remains open. Cube-complement closure fails for D₁ and every finite D_k with k ≥ 1; realizable maximum classes have unbounded decomposition level. The inclusion D₁ ⊊ D₂ is strict, witnessed by the 99-word realizable maximum heptagon complement.",
+      "sources": [
+        "decomposition-levels",
+        "decomposition-closures",
+        "polygon-decomposition"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/8",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "d2",
+      "name": "Ample classes with two-decomposable Yang complexes",
+      "symbol": "D₂",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "D₂",
+      "pc_closure": "D₂",
+      "basis": "The Yang complex is pure two-decomposable: recursive shedding faces have at most three vertices. Equivalently, the attachment C=A∪(S×{p}) uses 1≤|J|≤3, A[p]=∅, and S contained in every other J-shore, with A and S recursively in D₂. An intrinsic pc-obstruction basis is not supplied here.",
+      "assessment": "D₁ ⊊ D₂ ⊊ Damp. More generally every consecutive inclusion D_k ⊊ D_(k+1) is strict, witnessed by the realizable maximum complement of the (2k+5)-gon tangent arrangement, whose exact decomposition level is k+1. The 99-word rank-four heptagon complement has level two; the 466-word rank-six nonagon complement has level three. Each level is closed under projection, conditioning, full reductions and Cartesian products. D₂ is not complement closed. The primary comparison remains D₁ ⊆ B, which is open.",
+      "sources": [
+        "decomposition-levels",
+        "decomposition-closures",
+        "polygon-decomposition"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/9",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "both-peelable",
+      "name": "Ample classes with both complementary sides corner-peelable",
+      "symbol": "B = {C : C and Q_X ∖ C are in Damp}",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "B",
+      "pc_closure": "B",
+      "basis": "Both the class and its complement in the displayed coordinate cube admit corner peelings; the empty complement is permitted. This is cube complementation, not graph complementation. An intrinsic pc-obstruction basis is not supplied here.",
+      "assessment": "Rper is strictly contained in B, which is strictly contained in Damp. B is closed under cube complementation and full reductions. Projection closure follows because the complement of a projection is the full reduction of the complement; Damp is reduction closed by the decomposition-level theorem. Whether B is contained in MaxMin is open. Hall’s cornerless maximum class and its dismantlable maximum complement both lie outside B, so MaxMin is not contained in B. B is not contained in D₁, witnessed by the realizable nonagon complement; D₁ ⊆ B remains open. More generally B is not contained in any fixed D_k. B is also closed under Cartesian products, by its characterization as a forward-invariant shore of an acyclic unique-sink cube orientation. RAmp is a strict subclass of B and is contained in MaxMin; the non-realizable peripheral class E26 witnesses strictness. B is strictly contained in Ext, with Hall’s cornerless maximum class witnessing strictness.",
+      "sources": [
+        "decomposition-levels",
+        "decomposition-closures",
+        "orientation-classes",
+        "maxparents",
+        "km",
+        "maxmin-neighbors",
+        "polygon-decomposition",
+        "structural-targets"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/10",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "represented",
+      "name": "Ample classes with representation maps",
+      "symbol": "Rep",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Rep",
+      "pc_closure": "Rep",
+      "basis": "Contains MaxMin and Damp. Nonample pc obstructions are the ample-class basis; possible additional ample obstructions remain unknown.",
+      "assessment": "Universal Rep = Amp is open; MaxMin = Amp would imply it. Ext records the additional requirement that the cube complement also admit a representation map; whether ordinary representation already implies this requirement is open. Deleting a corner with at most two incident directions preserves representability by a constructive repair of any supplied map; higher-dimensional corners are not settled.",
+      "sources": [
+        "maxmin",
+        "ccmw",
+        "maxmin-neighbors",
+        "small-corner-map-repair"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/11",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "fractionally-represented",
+      "name": "Fractionally representable ample classes",
+      "symbol": "Frac",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Frac",
+      "pc_closure": "Frac",
+      "basis": "Defined by nonnegative weights on facet-topped Yang intervals covering every face, including the empty face, with total weight one. No complete intrinsic obstruction basis is known; Frac = Amp is equivalent to equality of their pc-obstruction sets.",
+      "assessment": "Rep ⊆ Frac ⊆ Amp; both equalities remain open. Fractional feasibility already forces ampleness. Projection, conditioning and nonempty coordinate reduction preserve feasibility. These are fractional Yang partitions, not fractional decoder laws. No representation map or associated compression scheme follows without an integrality argument.",
+      "sources": [
+        "fractional-yang"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/12",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "median",
+      "name": "Median classes",
+      "symbol": "Med",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Med",
+      "pc_closure": "Med",
+      "basis": "Standard median recognition is available; its operation-specific obstruction bases are not reproduced by this inventory.",
+      "assessment": "Contained in Rper and RAmp. This row records preservation, not a new classification claim. Median classes are strictly contained in the learning-space minor closure (convex-geometry ideals), by CCK Corollary 25.",
+      "sources": [
+        "cover",
+        "geometry",
+        "structural-targets"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/13",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "daisy",
+      "name": "Daisy cubes",
+      "symbol": "Daisy",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Daisy",
+      "pc_closure": "Daisy",
+      "basis": "Complete generative pc basis with both soundness and exhaustive recovery, rather than a finite list.",
+      "assessment": "Contained in R_per and RAmp, hence MaxMin, by the explicit downset realization. The complete obstruction classification remains the benchmark; its publication comparison needs a current-source update.",
+      "sources": [
+        "daisy",
+        "cover",
+        "maxparents"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/14",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "cover",
+      "name": "Convex-treelike classes (peripheral recursion)",
+      "symbol": "Rper",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Rper",
+      "pc_closure": "Rper",
+      "basis": "Complete four-state coordinate criterion and repair test for pc-obstruction membership; a simpler intrinsic generator is still desirable.",
+      "assessment": "Polat (2012) introduced this class and its convex-subgraph characterization. Rper is also the largest pc-closed subclass of TreeLike; the full Polat comparison is complete; the rooted-wedge and coordinate-minor results are distinguished from prior work. Both learning spaces and daisy cubes lie in R_per intersect RAmp; R_per subset MaxMin remains open. The strict intermediate classes D₁ and B both lie between Rper and Damp. Rper and RAmp are incomparable: E26 is peripheral and non-realizable, while the realizable pentagon class is not peripheral.",
+      "sources": [
+        "cover",
+        "maxparents",
+        "decomposition-levels",
+        "decomposition-closures",
+        "structural-targets"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/15",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "learning",
+      "name": "Learning-space graphs",
+      "symbol": "Learn",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "Convex-geometry ideals, up to signed coordinates",
+      "pc_closure": "Convex-geometry ideals, up to signed coordinates",
+      "basis": "p-minimal nonmembers are the appropriate basis for the original class. Infinite construction families are proved; completeness remains open.",
+      "assessment": "Its c-closure and pc-closure are exactly convex-geometry ideals up to signed coordinates. A canonical learning-space extension and one new marker give every member. The closure lies in R_per intersect RAmp, hence MaxMin, and has Euclidean full coefficient spaces. Conditioning can lose all learning roots.",
+      "sources": [
+        "learning",
+        "maxparents",
+        "cckgeometry",
+        "coefficient-scaling"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/16",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "treelike",
+      "name": "Sequential tree-like partial cubes",
+      "symbol": "TreeLike",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "PCube",
+      "pc_closure": "PCube",
+      "basis": "Every finite partial cube is a conditioning of a tree-like partial cube. Thus its pc closure has no excluded partial cubes.",
+      "assessment": "TreeLike is not contained in Amp. Its hereditary core, rather than its closure, is Rper.",
+      "sources": [
+        "cover"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/17",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "learning-closure",
+      "name": "Convex-geometry ideals (learning-space pc closure)",
+      "symbol": "Icg = C(Learn) = PC(Learn)",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "Icg",
+      "pc_closure": "Icg",
+      "basis": "Exact generator: upper ideal in a learning space, followed by coordinate reflection; one marker conditioning suffices. A forbidden-minor basis is not classified here.",
+      "assessment": "Exactly the zero set of the small-scale source invariant after minimizing over union-closed orientations. The canonical accessible extension is the largest ambient learning space. Full coefficient spaces are Euclidean. The ideal class and its qualitative realizability are established CCK terminology/results. Its inclusion into Rper is strict, witnessed by the non-realizable peripheral class E26. It strictly contains median classes and daisy cubes.",
+      "sources": [
+        "coefficient-scaling",
+        "cckgeometry",
+        "maxparents",
+        "structural-targets"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/18",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "parent-levels",
+      "name": "Sections of maximum parents at decomposition level k",
+      "symbol": "P_k (k ≥ 0)",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "P_k",
+      "pc_closure": "P_k",
+      "basis": "C belongs to P_k exactly when it is a c-minor of a maximum class in D_k. Parent rank and auxiliary coordinates are unrestricted.",
+      "assessment": "P_k ⊆ D_k ∩ MaxMin; P_k ⊊ P_{k+1}, and their union is P_D. Least parent depth λ is at least intrinsic depth κ, with equality on maximum classes. P_0 is complement closed; no positive level is. At each level feasible parent ranks form an upward interval. Adding m cube factors preserves λ and adds m to least parent rank. Parent replacement at the intrinsic depth and arbitrary product closure remain open. Minimum-section deletions of maximum classes have dismantlable maximum parents when both original and deleted classes are dismantlable, with the same rank and optimal auxiliary count at that rank. D_k inputs give D_max(k,r−1) parents; this does not prove intrinsic-level replacement. Every prescribed corner deletion of a peripheral maximum class lies in P_0∩M_1, with same-rank peripheral parent and unchanged projection. Ample one-vertex extensions of peripheral maxima also lie in P_0.",
+      "sources": [
+        "parent-depth",
+        "polygon-decomposition",
+        "maxmin-neighbors",
+        "dismantlable-deletion-parents",
+        "peripheral-corner-parents"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/19",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "co-peelable",
+      "name": "Ample classes with dismantlable complement",
+      "symbol": "coDamp",
+      "p": "yes",
+      "c": "yes",
+      "pc": "yes",
+      "c_closure": "coDamp",
+      "pc_closure": "coDamp",
+      "basis": "C is ample and its complement in the displayed cube is dismantlable; the empty complement is allowed. B = Damp ∩ coDamp.",
+      "assessment": "B ⊊ coDamp ⊊ Amp. Hall H and its complement K show Damp and coDamp are incomparable. The MaxMin class H × K lies outside their union. coDamp ⊆ Rep is equivalent to Damp ⊆ Ext, a weaker target than Damp ⊆ MaxMin; both remain open. Sections, projections, full reductions and constant changes preserve coDamp. Nested gluing and products with B also preserve coDamp; arbitrary product closure remains unproved.",
+      "sources": [
+        "complement-dismantlability",
+        "maxmin-neighbors",
+        "decomposition-closures"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/20",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "auxiliary-levels",
+      "name": "Maximum sections with at most k conditioned coordinates",
+      "symbol": "M_k (displayed coordinates)",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "MaxMin",
+      "pc_closure": "MaxMin",
+      "basis": "A displayed class C belongs to M_k exactly when it is obtained from a maximum class by conditioning exactly k coordinates; padding makes this equivalent to at most k. Constant visible coordinates must be retained for this entry.",
+      "assessment": "M_0 = Max; every M_k ⊊ M_{k+1}; union M_k = MaxMin. The class (Q2 minus11) × Q_m has minimum auxiliary count exactly m. Projection, full reduction and displayed-cube complementation preserve each level, but conditioning and adding free or constant coordinates need not. For a proper target, minimum auxiliaries ≥ VC(C)+VC(C^c)+1−n. With k auxiliaries, parent rank is between VC(C) and VC(C)+k. This entry explicitly overrides the atlas’s usual suppression of constants.",
+      "sources": [
+        "auxiliary-hierarchy",
+        "structural-targets",
+        "maxparents"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/21",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "m1",
+      "name": "Maximum sections with at most 1 conditioned coordinate",
+      "symbol": "M₁",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "MaxMin",
+      "pc_closure": "MaxMin",
+      "basis": "A displayed class belongs to M₁ exactly when it is obtained from a maximum class by conditioning at most 1 coordinates; padding permits exactly 1. Visible constant coordinates are retained.",
+      "assessment": "M₁ is the fixed k=1 level of M₀ = Max ⊊ M₁ ⊊ M₂ ⊊ ⋯, whose union is MaxMin. Projection, full reduction and displayed-cube complementation preserve this level; conditioning and pc-minors do not. The class (Q₂ minus 11) × Q_1 has minimum auxiliary count 1, while the analogous class with Q_2 lies outside this level. Visible constants are retained, overriding the usual atlas convention.",
+      "sources": [
+        "auxiliary-hierarchy"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/22",
+      "migration_state": "candidate"
+    },
+    {
+      "id": "m2",
+      "name": "Maximum sections with at most 2 conditioned coordinates",
+      "symbol": "M₂",
+      "p": "yes",
+      "c": "no",
+      "pc": "no",
+      "c_closure": "MaxMin",
+      "pc_closure": "MaxMin",
+      "basis": "A displayed class belongs to M₂ exactly when it is obtained from a maximum class by conditioning at most 2 coordinates; padding permits exactly 2. Visible constant coordinates are retained.",
+      "assessment": "M₂ is the fixed k=2 level of M₀ = Max ⊊ M₁ ⊊ M₂ ⊊ ⋯, whose union is MaxMin. Projection, full reduction and displayed-cube complementation preserve this level; conditioning and pc-minors do not. The class (Q₂ minus 11) × Q_2 has minimum auxiliary count 2, while the analogous class with Q_3 lies outside this level. Visible constants are retained, overriding the usual atlas convention.",
+      "sources": [
+        "auxiliary-hierarchy"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/families/23",
+      "migration_state": "candidate"
+    }
+  ],
+  "relations": [
+    {
+      "source": "represented",
+      "target": "ample",
+      "status": "proved",
+      "reference": "maxmin",
+      "diagram": false,
+      "candidate_id": "minor-relation-001",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/0",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "peelable",
+      "target": "represented",
+      "status": "proved",
+      "reference": "ccmw",
+      "strict": true,
+      "strict_witness": "Hall's maximum class is representable but not dismantlable.",
+      "candidate_id": "minor-relation-002",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/1",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "maxmin",
+      "target": "represented",
+      "status": "proved",
+      "reference": "maxmin",
+      "candidate_id": "minor-relation-003",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/2",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "realizable",
+      "target": "maxmin",
+      "status": "proved",
+      "reference": "geometry",
+      "strict": true,
+      "strict_witness": "Hall's cornerless maximum class is not realizable, since realizable ample classes are dismantlable.",
+      "candidate_id": "minor-relation-004",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/3",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "maximum",
+      "target": "maxmin",
+      "status": "proved",
+      "reference": "maxsections",
+      "strict": true,
+      "strict_witness": "The verified five-word nonmaximum section of the eleven-word maximum parent.",
+      "diagram": false,
+      "candidate_id": "minor-relation-005",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/4",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "median",
+      "target": "cover",
+      "status": "proved",
+      "reference": "cover",
+      "strict": true,
+      "strict_witness": "The downset Q3 minus111 is peripheral but not median: the majority of110,101,011 is absent.",
+      "candidate_id": "minor-relation-006",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/5",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "median",
+      "target": "realizable",
+      "status": "proved",
+      "reference": "geometry",
+      "strict": true,
+      "strict_witness": "The downset Q3 minus111 is realizable but fails majority closure.",
+      "candidate_id": "minor-relation-007",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/6",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "daisy",
+      "target": "cover",
+      "status": "proved",
+      "reference": "cover",
+      "strict": true,
+      "strict_witness": "The three-direction four-vertex path is median and hence peripheral. It has no vertex of degree3, required at the root of any reoriented downset using all three coordinates.",
+      "candidate_id": "minor-relation-008",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/7",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "peelable",
+      "target": "maxmin",
+      "status": "open",
+      "reference": "maxmin",
+      "candidate_id": "minor-relation-009",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/8",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "daisy",
+      "target": "realizable",
+      "status": "proved",
+      "reference": "maxparents",
+      "strict": true,
+      "strict_witness": "The three-direction four-vertex path is realizable (median), but cannot be a reoriented downset by its maximum degree2.",
+      "candidate_id": "minor-relation-010",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/9",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "learning",
+      "target": "learning-closure",
+      "status": "proved",
+      "reference": "coefficient-scaling",
+      "strict": true,
+      "strict_witness": "The verified three-leaf-star conditioning belongs to the minor closure but has no union-closed root.",
+      "candidate_id": "minor-relation-011",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/10",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "learning-closure",
+      "target": "cover",
+      "status": "proved",
+      "reference": "structural-targets",
+      "strict": true,
+      "strict_witness": "The non-realizable peripheral class E26 from824 and its verified recursive parent from855.",
+      "candidate_id": "minor-relation-012",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/11",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "learning-closure",
+      "target": "realizable",
+      "status": "proved",
+      "reference": "coefficient-scaling",
+      "strict": true,
+      "strict_witness": "The17-concept realizable example outside convex-geometry ideals described in the atlas.",
+      "candidate_id": "minor-relation-013",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/12",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "cover",
+      "target": "d1",
+      "status": "proved",
+      "reference": "decomposition-levels",
+      "strict": true,
+      "candidate_id": "minor-relation-014",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/13",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "cover",
+      "target": "both-peelable",
+      "status": "proved",
+      "reference": "decomposition-levels",
+      "strict": true,
+      "candidate_id": "minor-relation-015",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/14",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "d1",
+      "target": "peelable",
+      "status": "proved",
+      "reference": "decomposition-closures",
+      "strict": true,
+      "diagram": false,
+      "candidate_id": "minor-relation-016",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/15",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "both-peelable",
+      "target": "peelable",
+      "status": "proved",
+      "reference": "decomposition-levels",
+      "strict": true,
+      "candidate_id": "minor-relation-017",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/16",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "d1",
+      "target": "maxmin",
+      "status": "open",
+      "reference": "decomposition-levels",
+      "diagram": false,
+      "candidate_id": "minor-relation-018",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/17",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "both-peelable",
+      "target": "maxmin",
+      "status": "open",
+      "reference": "decomposition-levels",
+      "diagram": false,
+      "candidate_id": "minor-relation-019",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/18",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "realizable",
+      "target": "both-peelable",
+      "status": "proved",
+      "reference": "structural-targets",
+      "additional_references": [
+        "km"
+      ],
+      "strict": true,
+      "strict_witness": "The non-realizable peripheral class E26 from824 and its verified recursive parent from855.",
+      "candidate_id": "minor-relation-020",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/19",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "realizable",
+      "target": "peelable-parent",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "strict": true,
+      "candidate_id": "minor-relation-021",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/20",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "peelable-parent",
+      "target": "maxmin",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "strict": true,
+      "candidate_id": "minor-relation-022",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/21",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "peelable-parent",
+      "target": "peelable",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "candidate_id": "minor-relation-023",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/22",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "maxmin",
+      "target": "cube-extension",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "candidate_id": "minor-relation-024",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/23",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "cube-extension",
+      "target": "represented",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "candidate_id": "minor-relation-025",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/24",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "both-peelable",
+      "target": "cube-extension",
+      "status": "proved",
+      "reference": "maxmin-neighbors",
+      "diagram": false,
+      "strict": true,
+      "candidate_id": "minor-relation-026",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/25",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "d1",
+      "target": "d2",
+      "status": "proved",
+      "reference": "polygon-decomposition",
+      "strict": true,
+      "candidate_id": "minor-relation-027",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/26",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "d2",
+      "target": "peelable",
+      "status": "proved",
+      "reference": "polygon-decomposition",
+      "strict": true,
+      "candidate_id": "minor-relation-028",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/27",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "d1",
+      "target": "both-peelable",
+      "status": "open",
+      "reference": "decomposition-levels",
+      "candidate_id": "minor-relation-029",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/28",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "maxmin",
+      "target": "peelable",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "ccmw",
+      "witness": "Hall's cornerless maximum class.",
+      "diagram": true,
+      "candidate_id": "minor-relation-030",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/29",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "both-peelable",
+      "target": "d1",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "polygon-decomposition",
+      "witness": "The seven-coordinate polygon complement C7 has exact decomposition level2.",
+      "diagram": true,
+      "candidate_id": "minor-relation-031",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/30",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "median",
+      "target": "learning-closure",
+      "status": "proved",
+      "reference": "structural-targets",
+      "strict": true,
+      "strict_witness": "Q3 minus111 is a downset but not median.",
+      "diagram": false,
+      "candidate_id": "minor-relation-032",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/31",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "daisy",
+      "target": "learning-closure",
+      "status": "proved",
+      "reference": "structural-targets",
+      "strict": true,
+      "strict_witness": "The three-direction four-vertex median path cannot be a signed downset, since it has maximum degree two.",
+      "diagram": false,
+      "candidate_id": "minor-relation-033",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/32",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "cover",
+      "target": "realizable",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "structural-targets",
+      "witness": "The non-realizable peripheral class E26.",
+      "diagram": false,
+      "candidate_id": "minor-relation-034",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/33",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "realizable",
+      "target": "cover",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "structural-targets",
+      "witness": "The realizable pentagon class has decomposition level one.",
+      "diagram": false,
+      "candidate_id": "minor-relation-035",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/34",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "parent-levels",
+      "target": "peelable-parent",
+      "status": "proved",
+      "reference": "parent-depth",
+      "strict": true,
+      "diagram": false,
+      "strict_witness": "Higher-depth polygon maximum",
+      "candidate_id": "minor-relation-036",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/35",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "parent-levels",
+      "target": "maxmin",
+      "status": "proved",
+      "reference": "parent-depth",
+      "strict": true,
+      "diagram": false,
+      "strict_witness": "Hall maximum",
+      "candidate_id": "minor-relation-037",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/36",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "both-peelable",
+      "target": "co-peelable",
+      "status": "proved",
+      "reference": "complement-dismantlability",
+      "strict": true,
+      "diagram": true,
+      "strict_witness": "Hall maximum H",
+      "candidate_id": "minor-relation-038",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/37",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "co-peelable",
+      "target": "ample",
+      "status": "proved",
+      "reference": "complement-dismantlability",
+      "strict": true,
+      "diagram": true,
+      "strict_witness": "Hall complement K",
+      "candidate_id": "minor-relation-039",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/38",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "co-peelable",
+      "target": "represented",
+      "status": "open",
+      "reference": "complement-dismantlability",
+      "diagram": true,
+      "candidate_id": "minor-relation-040",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/39",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "co-peelable",
+      "target": "peelable",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "complement-dismantlability",
+      "witness": "Hall maximum H",
+      "diagram": true,
+      "candidate_id": "minor-relation-041",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/40",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "peelable",
+      "target": "co-peelable",
+      "status": "proved",
+      "relation": "noncontainment",
+      "reference": "complement-dismantlability",
+      "witness": "Hall complement K",
+      "diagram": true,
+      "candidate_id": "minor-relation-042",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/41",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "auxiliary-levels",
+      "target": "maxmin",
+      "status": "proved",
+      "strict": true,
+      "strict_witness": "The active class (Q2 minus11) × Q_{k+1} has minimum auxiliary count k+1.",
+      "reference": "auxiliary-hierarchy",
+      "diagram": false,
+      "candidate_id": "minor-relation-043",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/42",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "maximum",
+      "target": "m1",
+      "status": "proved",
+      "reference": "auxiliary-hierarchy",
+      "strict": true,
+      "diagram": true,
+      "strict_witness": "(Q₂ minus 11) × Q_1 has minimum auxiliary count exactly 1.",
+      "candidate_id": "minor-relation-044",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/43",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "m1",
+      "target": "m2",
+      "status": "proved",
+      "reference": "auxiliary-hierarchy",
+      "strict": true,
+      "diagram": true,
+      "strict_witness": "(Q₂ minus 11) × Q_2 has minimum auxiliary count exactly 2.",
+      "candidate_id": "minor-relation-045",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/44",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "m2",
+      "target": "maxmin",
+      "status": "proved",
+      "reference": "auxiliary-hierarchy",
+      "strict": true,
+      "diagram": true,
+      "strict_witness": "(Q₂ minus 11) × Q_3 has minimum auxiliary count exactly 3.",
+      "candidate_id": "minor-relation-046",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/45",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "represented",
+      "target": "fractionally-represented",
+      "status": "proved",
+      "reference": "fractional-yang",
+      "strict": false,
+      "candidate_id": "minor-relation-047",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/46",
+      "migration_state": "candidate"
+    },
+    {
+      "source": "fractionally-represented",
+      "target": "ample",
+      "status": "proved",
+      "reference": "fractional-yang",
+      "strict": false,
+      "candidate_id": "minor-relation-048",
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/relations/47",
+      "migration_state": "candidate"
+    }
+  ],
+  "sources": [
+    {
+      "id": "daisy",
+      "title": "Daisy cubes",
+      "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+      "pdf": "papers/daisy-cubes/main.pdf",
+      "labels": [
+        "thm:peripheral-normal-form",
+        "cor:complete-basis"
+      ],
+      "label_sources": {
+        "thm:peripheral-normal-form": {
+          "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+          "sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b"
+        },
+        "cor:complete-basis": {
+          "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+          "sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b"
+        }
+      },
+      "sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+      "status": "Complete generative pc-obstruction description; closest to submission, with final author preparation pending.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+        "actual_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "thm:peripheral-normal-form": {
+          "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+          "exists": true,
+          "expected_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+          "actual_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+          "matches": true
+        },
+        "cor:complete-basis": {
+          "path": "papers/daisy-cubes/sections/daisy_pc_minors_body.tex",
+          "exists": true,
+          "expected_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+          "actual_sha256": "a39c9324f1f7b6fc797eca5b684eaee1eaafd81b87b23725f2f9d86fcedf794b",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/0"
+    },
+    {
+      "id": "cover",
+      "title": "Convex-Treelike Partial Cubes: Peripheral Recursion and Forbidden Minors",
+      "path": "papers/cover-recursive/main.tex",
+      "pdf": "papers/cover-recursive/main.pdf",
+      "labels": [
+        "thm:characterization",
+        "thm:convex-characterization",
+        "thm:coordinate-state-basis"
+      ],
+      "label_sources": {
+        "thm:characterization": {
+          "path": "papers/cover-recursive/main.tex",
+          "sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410"
+        },
+        "thm:convex-characterization": {
+          "path": "papers/cover-recursive/main.tex",
+          "sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410"
+        },
+        "thm:coordinate-state-basis": {
+          "path": "papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex",
+          "sha256": "fb439bfaffbf88e9efa387bc9fab6cc0b81d7e765d0dfa4a9e0537c301f6cb3f"
+        }
+      },
+      "sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410",
+      "status": "Integrated internal review complete; independent reading remains",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410",
+        "actual_sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e",
+        "matches": false
+      },
+      "label_fingerprint_checks": {
+        "thm:characterization": {
+          "path": "papers/cover-recursive/main.tex",
+          "exists": true,
+          "expected_sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410",
+          "actual_sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e",
+          "matches": false
+        },
+        "thm:convex-characterization": {
+          "path": "papers/cover-recursive/main.tex",
+          "exists": true,
+          "expected_sha256": "7bbf2a15e46a0c5a2c20a2fa88fb7e7ed9f46e1263fb4dd985d434f2283cf410",
+          "actual_sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e",
+          "matches": false
+        },
+        "thm:coordinate-state-basis": {
+          "path": "papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex",
+          "exists": true,
+          "expected_sha256": "fb439bfaffbf88e9efa387bc9fab6cc0b81d7e765d0dfa4a9e0537c301f6cb3f",
+          "actual_sha256": "fb439bfaffbf88e9efa387bc9fab6cc0b81d7e765d0dfa4a9e0537c301f6cb3f",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/1"
+    },
+    {
+      "id": "gluing",
+      "title": "Gluing shellings and corner peelings",
+      "path": "papers/gluing/main.tex",
+      "pdf": "papers/gluing/main.pdf",
+      "labels": [
+        "thm:simplicial-composition",
+        "thm:attachment",
+        "thm:minor-transfer"
+      ],
+      "label_sources": {
+        "thm:simplicial-composition": {
+          "path": "papers/gluing/main.tex",
+          "sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c"
+        },
+        "thm:attachment": {
+          "path": "papers/gluing/main.tex",
+          "sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c"
+        },
+        "thm:minor-transfer": {
+          "path": "papers/gluing/main.tex",
+          "sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c"
+        }
+      },
+      "sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+      "status": "Exposition, jargon, and internal proof review completed; refreshed portable evidence. Independent scholarly review and submission preflight pending.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+        "actual_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "thm:simplicial-composition": {
+          "path": "papers/gluing/main.tex",
+          "exists": true,
+          "expected_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "actual_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "matches": true
+        },
+        "thm:attachment": {
+          "path": "papers/gluing/main.tex",
+          "exists": true,
+          "expected_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "actual_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "matches": true
+        },
+        "thm:minor-transfer": {
+          "path": "papers/gluing/main.tex",
+          "exists": true,
+          "expected_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "actual_sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/2"
+    },
+    {
+      "id": "ample",
+      "title": "Corner-peelable ample campaign",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "pdf": "papers/dismantlable-ample/main.pdf",
+      "labels": [],
+      "label_sources": {},
+      "sha256": "6ad0b6e4007e0376058f9d14dab0a6da713b9d52ea5cc29578498e50d652de3a",
+      "status": "Structural results proved; complete intrinsic pc-obstruction generation open. The focused extraction is the ample-corners paper (Theorems A-D, 64 <= m_amp <= 267); its internal review is not done.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "6ad0b6e4007e0376058f9d14dab0a6da713b9d52ea5cc29578498e50d652de3a",
+        "actual_sha256": "0991d868ba353b7bbcc3b1ed23964350e435b51ba1e9e59fa9d072ee601b4ea6",
+        "matches": false
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/3"
+    },
+    {
+      "id": "ample-corners",
+      "title": "Corners of small ample classes",
+      "path": "papers/ample-corners/main.tex",
+      "pdf": "papers/ample-corners/main.pdf",
+      "labels": [
+        "thm:A",
+        "thm:B",
+        "thm:C",
+        "thm:D",
+        "prop:record-complex",
+        "lem:facet-cubes"
+      ],
+      "label_sources": {
+        "thm:A": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        },
+        "thm:B": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        },
+        "thm:C": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        },
+        "thm:D": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        },
+        "prop:record-complex": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        },
+        "lem:facet-cubes": {
+          "path": "papers/ample-corners/main.tex",
+          "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b"
+        }
+      },
+      "sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+      "status": "Theorems A-C computer-assisted with DRAT certificates (not rechecked in cleanup); Theorem D and the record complex verified by direct counting (rerun 2026-09-25). 64 <= c_min = m_amp <= 267. Searches below 267 are answer-only. Internal review not done.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+        "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "thm:A": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        },
+        "thm:B": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        },
+        "thm:C": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        },
+        "thm:D": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        },
+        "prop:record-complex": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        },
+        "lem:facet-cubes": {
+          "path": "papers/ample-corners/main.tex",
+          "exists": true,
+          "expected_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "actual_sha256": "630484892aa810af8874d8b16a2cbfbb1246d2e13e7705511c6f8a6b5249069b",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/4"
+    },
+    {
+      "id": "learning",
+      "title": "Learning-space roots, restrictions and contraction obstructions",
+      "path": "papers/learning-spaces/main.tex",
+      "pdf": "papers/learning-spaces/main.pdf",
+      "labels": [
+        "prop:learning-space-minor-profile",
+        "prop:learning-space-rooted-union-restrictions",
+        "prop:dismantlable-ample-position"
+      ],
+      "label_sources": {
+        "prop:learning-space-minor-profile": {
+          "path": "papers/learning-spaces/sections/minor_operations.tex",
+          "sha256": "512f3837690c299f944d6378dd53273a733699fb5e94a65cb471ad77f50a9351"
+        },
+        "prop:learning-space-rooted-union-restrictions": {
+          "path": "papers/learning-spaces/sections/rooted_union.tex",
+          "sha256": "2f21c660443fea31b8d0dbe70b66fb653fe69acb52dfd8002aded4b8db4b2a5c"
+        },
+        "prop:dismantlable-ample-position": {
+          "path": "papers/survey/main.tex",
+          "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+        }
+      },
+      "sha256": "456e1fecaf9ca5106822d4b4d3e9ff4a2359dd4ae752143ead7e4707e22e2db8",
+      "status": "Standalone 13-page article extracted and internally reviewed September 13. Nine proof inputs are shared with the survey. Broader priority comparison and independent reading remain. The dismantlable-position input remains in the survey.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "456e1fecaf9ca5106822d4b4d3e9ff4a2359dd4ae752143ead7e4707e22e2db8",
+        "actual_sha256": "456e1fecaf9ca5106822d4b4d3e9ff4a2359dd4ae752143ead7e4707e22e2db8",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:learning-space-minor-profile": {
+          "path": "papers/learning-spaces/sections/minor_operations.tex",
+          "exists": true,
+          "expected_sha256": "512f3837690c299f944d6378dd53273a733699fb5e94a65cb471ad77f50a9351",
+          "actual_sha256": "512f3837690c299f944d6378dd53273a733699fb5e94a65cb471ad77f50a9351",
+          "matches": true
+        },
+        "prop:learning-space-rooted-union-restrictions": {
+          "path": "papers/learning-spaces/sections/rooted_union.tex",
+          "exists": true,
+          "expected_sha256": "2f21c660443fea31b8d0dbe70b66fb653fe69acb52dfd8002aded4b8db4b2a5c",
+          "actual_sha256": "2f21c660443fea31b8d0dbe70b66fb653fe69acb52dfd8002aded4b8db4b2a5c",
+          "matches": true
+        },
+        "prop:dismantlable-ample-position": {
+          "path": "papers/survey/main.tex",
+          "exists": true,
+          "expected_sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c",
+          "actual_sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/5"
+    },
+    {
+      "id": "mna",
+      "title": "Minimal non-ample concept classes",
+      "path": "../YangDim/minimal_nonample_classes.tex",
+      "pdf": "../YangDim/minimal_nonample_classes.pdf",
+      "labels": [
+        "thm:mna-uom",
+        "thm:structure",
+        "def:mna",
+        "thm:buchsbaum-boundary",
+        "rem:rank-one",
+        "thm:prescribed-dual-realization"
+      ],
+      "label_sources": {
+        "thm:mna-uom": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+        },
+        "thm:structure": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+        },
+        "def:mna": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+        },
+        "thm:buchsbaum-boundary": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+        },
+        "rem:rank-one": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+        },
+        "thm:prescribed-dual-realization": {
+          "path": "../YangDim/sections/minimal_nonample_classes/prescribed_dual_realization.tex",
+          "sha256": "9fd32c47a848669758814fed38f088001344eff26ca4a7c3375473a497a3d3a8"
+        }
+      },
+      "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+      "status": "YangDim is the source for the existing combinatorial/UOM classification, projection and maximum-half theorems, and algebraic consequences. A complementary combinatorial construction study in PartialCubes is a scoped research direction, not a second queued paper. September 13 imported-statement comparison: see SOURCE_SYNC_REVIEW.md; unrelated source additions are not reviewed by the atlas. Prescribed-dual existence (thm:prescribed-dual-realization, companion Theorem 8.1) is owned by the integrated input; it does not classify arbitrary frontiers. The research master cites these owners (MNA_STRUCTURE_BRIDGE_MASTER_IMPLEMENTATION.md).",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+        "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "thm:mna-uom": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "exists": true,
+          "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "matches": true
+        },
+        "thm:structure": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "exists": true,
+          "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "matches": true
+        },
+        "def:mna": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "exists": true,
+          "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "matches": true
+        },
+        "thm:buchsbaum-boundary": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "exists": true,
+          "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "matches": true
+        },
+        "rem:rank-one": {
+          "path": "../YangDim/minimal_nonample_classes.tex",
+          "exists": true,
+          "expected_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "actual_sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943",
+          "matches": true
+        },
+        "thm:prescribed-dual-realization": {
+          "path": "../YangDim/sections/minimal_nonample_classes/prescribed_dual_realization.tex",
+          "exists": true,
+          "expected_sha256": "9fd32c47a848669758814fed38f088001344eff26ca4a7c3375473a497a3d3a8",
+          "actual_sha256": "9fd32c47a848669758814fed38f088001344eff26ca4a7c3375473a497a3d3a8",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/6"
+    },
+    {
+      "id": "maxmin",
+      "title": "Partitionability and maximum ancestry",
+      "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+      "pdf": "../CompressionSchemes/partitionable_yang_complexes.pdf",
+      "labels": [
+        "def:maximum-generated-pc-minor-class",
+        "prop:yang-partitionability-pc-minor-closed",
+        "prop:maximum-generated-forbidden-pc-minors",
+        "def:universal-cube-extension",
+        "lem:universal-cube-extension-complement",
+        "thm:universal-cube-extension-cartesian-product"
+      ],
+      "label_sources": {
+        "def:maximum-generated-pc-minor-class": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "prop:yang-partitionability-pc-minor-closed": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "prop:maximum-generated-forbidden-pc-minors": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "def:universal-cube-extension": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "lem:universal-cube-extension-complement": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "thm:universal-cube-extension-cartesian-product": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        }
+      },
+      "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+      "status": "The three existing maximum-ancestry/minor statements and the universal cube-extension definition, complementary-shore criterion and product theorem were reread before refreshing this fingerprint. Ext is local atlas notation for that existing property. This scoped check is not an audit of the whole manuscript. September 19 source synchronization: imported statement/proof comparison recorded in SOURCE_SYNC_REVIEW.md. No audit of unrelated source additions is claimed. September 21: root prose now records the integrated eight-core repair and remaining nine-support review. All root formal statement/proof blocks, including these six imports, compare unchanged before this file fingerprint refresh; no new certification of the full manuscript. September 25: the only source change since the previous fingerprint is a presentation fix inside lem:relative-anchor-leaf-loss-opposite-petal-row (CompressionSchemes d3fcadc; CORRECTIONS_LEDGER), outside the six imported labels; those statements are byte-identical, so the fingerprint was refreshed.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+        "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "def:maximum-generated-pc-minor-class": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "prop:yang-partitionability-pc-minor-closed": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "prop:maximum-generated-forbidden-pc-minors": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "def:universal-cube-extension": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "lem:universal-cube-extension-complement": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "thm:universal-cube-extension-cartesian-product": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/7"
+    },
+    {
+      "id": "maxsections",
+      "title": "Maximum minors as sections",
+      "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+      "pdf": "../CompressionSchemes/partitionable_yang_complexes.pdf",
+      "labels": [
+        "prop:round806-maxmin-sections",
+        "cor:round806-maxmin-complement-reduction"
+      ],
+      "label_sources": {
+        "prop:round806-maxmin-sections": {
+          "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+          "sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d"
+        },
+        "cor:round806-maxmin-complement-reduction": {
+          "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+          "sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d"
+        }
+      },
+      "sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+      "status": "Proved source module included in the partitionability manuscript; not a separate promised paper. September 19 source synchronization: imported statement/proof comparison recorded in SOURCE_SYNC_REVIEW.md. No audit of unrelated source additions is claimed.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+        "actual_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:round806-maxmin-sections": {
+          "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+          "exists": true,
+          "expected_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+          "actual_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+          "matches": true
+        },
+        "cor:round806-maxmin-complement-reduction": {
+          "path": "../CompressionSchemes/drafts/round806_maximum_sections.tex",
+          "exists": true,
+          "expected_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+          "actual_sha256": "3513dbd1ebc7aabd13f91ded3f9060a522f9feee9c8045c471264d6670e3fc9d",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/8"
+    },
+    {
+      "id": "geometry",
+      "title": "Realizable ample classes have maximum parents",
+      "path": "../CompressionSchemes/drafts/median_maximum_minor_note.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "sha256": "8b7ec008308e5ae498be5e932698f36041c9d20c8414dd13a5e6486a68995acf",
+      "status": "Direct proof note, including median realizations and bounded generic perturbation. No independent novelty or submission assessment here.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "8b7ec008308e5ae498be5e932698f36041c9d20c8414dd13a5e6486a68995acf",
+        "actual_sha256": "8b7ec008308e5ae498be5e932698f36041c9d20c8414dd13a5e6486a68995acf",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/9"
+    },
+    {
+      "id": "ccmw",
+      "title": "Compression and corner peelings: primary source",
+      "path": "literature/chalopinchepoimoranwarmuth2022compression/source.txt",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "sha256": "fa8d619a221fa7c60bc7d04785e67bba301817bd01b4618f6838977edda35997",
+      "status": "Published input: maximum representation maps, corner peelings, and a cornerless maximum class.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "fa8d619a221fa7c60bc7d04785e67bba301817bd01b4618f6838977edda35997",
+        "actual_sha256": "fa8d619a221fa7c60bc7d04785e67bba301817bd01b4618f6838977edda35997",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/10"
+    },
+    {
+      "id": "km",
+      "title": "Corners and simpliciality: primary source",
+      "path": "literature/knauermarc2023corners/source.txt",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "sha256": "48626aa614d5604cf2e4d81bc582690f40a750d8a0150837ce774948e7c7933f",
+      "status": "Published input: realizable COMs peel; for ample classes the corners are single vertices (Propositions 5.3 and 5.5).",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "48626aa614d5604cf2e4d81bc582690f40a750d8a0150837ce774948e7c7933f",
+        "actual_sha256": "48626aa614d5604cf2e4d81bc582690f40a750d8a0150837ce774948e7c7933f",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/11"
+    },
+    {
+      "id": "maxparents",
+      "title": "Maximum parents and complement closure of convex realizability",
+      "path": "../CompressionSchemes/maximum_parent_methods.tex",
+      "pdf": "../CompressionSchemes/maximum_parent_methods.pdf",
+      "labels": [
+        "lem:strict-realization",
+        "thm:learning-maxmin",
+        "prop:realizable-complement",
+        "sec:downset-realization",
+        "thm:monotone-parameters"
+      ],
+      "label_sources": {
+        "lem:strict-realization": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+        },
+        "thm:learning-maxmin": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+        },
+        "prop:realizable-complement": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+        },
+        "sec:downset-realization": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+        },
+        "thm:monotone-parameters": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+        }
+      },
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+      "status": "The qualitative downset corollary is consolidated under the exact monotone-shore theorem; its explicit convex realization remains separately identified. Strict-realization, learning-space and realizable-complement blocks are unchanged; SOURCE_SYNC_REVIEW.md records their source comparisons and attribution. RESULTS_INDEX.md maps the retained proof owners; SPLIT_REPRESENTATION_AUDIT.md records scoped reviews of parent parameters, relative extension, joining and substitution, realizability and determinantal obstructions, boundary criteria, chain bounds and top-rank results. Core/upward extension now share the maximum-sequence owner. Relative-descent duality and its conditional implication to ample extension are reviewed, including endpoint contracts; relative descent itself remains open. Codimension-two duality, fibre lifting, distinct-direction trees and the connected face-exit lemma have scoped reviews. Rooted lifting, maximum-class rooted trees and conditional minimal-failure restrictions are reviewed. Deletion criteria, reduction links and the Hall-product refutation are reviewed; the failed deletion route is consolidated under its counterexample. Arbitrary-shore gluing and one-vertex closure contracts are reviewed; simultaneous nested parents retain shared-mark requirements. Two-fibre classification and marked complement symmetry are reviewed, with the latter generalized to t controls. Uniform oriented-matroid halfspace/fiber imports and their local maximum-parent deduction are reviewed, including rank-one and unmarked cases. MAXIMUM_PARENT_RECONCILIATION.md enumerates 120 numbered environments: all 120 have scoped audit associations, including open formulations. Unnumbered claims and cross-paper ownership remain to reconcile. This is coverage tracking, not whole-manuscript certification. General R_per/Damp-to-MaxMin remains open; no external priority certification is claimed.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+        "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "lem:strict-realization": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "exists": true,
+          "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "matches": true
+        },
+        "thm:learning-maxmin": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "exists": true,
+          "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "matches": true
+        },
+        "prop:realizable-complement": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "exists": true,
+          "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "matches": true
+        },
+        "sec:downset-realization": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "exists": true,
+          "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "matches": true
+        },
+        "thm:monotone-parameters": {
+          "path": "../CompressionSchemes/maximum_parent_methods.tex",
+          "exists": true,
+          "expected_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "actual_sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/12"
+    },
+    {
+      "id": "cckgeometry",
+      "title": "Chalopin–Chepoi–Knauer: qualitative convex realizability",
+      "path": "../ResearchWork/literature/math/chalopinchepoiknauer2025geometry/source.txt",
+      "pdf": "../ResearchWork/literature/math/chalopinchepoiknauer2025geometry/original.pdf",
+      "labels": [],
+      "label_sources": {},
+      "sha256": "9235425ee456fbe8d365181198206346efc1d3f7dbb68c373f36a67d707ac75c",
+      "status": "Theorem 26 in arXiv v2 and Section 2.5 conventions checked. Qualitative coordinate-hyperplane realization of convex geometries and ideals is prior work; learning spaces follow after complementation on active coordinates.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "9235425ee456fbe8d365181198206346efc1d3f7dbb68c373f36a67d707ac75c",
+        "actual_sha256": "9235425ee456fbe8d365181198206346efc1d3f7dbb68c373f36a67d707ac75c",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/13"
+    },
+    {
+      "id": "coefficient-scaling",
+      "title": "Coefficient scaling and learning-space minor closure",
+      "path": "papers/coefficient-topology/COEFFICIENT_SCALING_INTERVALS.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "sha256": "c41b1f7f2558b43a41a6d0b0540aa763b864feaa7b530f249ad47b306a78df07",
+      "status": "Theorems 1–3: exact scaling intervals; minor-monotone side indicators; canonical learning extension and one-marker construction identify the learning-space pc closure with convex-geometry ideals. Full coefficient spaces of this class are Euclidean. Independent priority/review remains.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "c41b1f7f2558b43a41a6d0b0540aa763b864feaa7b530f249ad47b306a78df07",
+        "actual_sha256": "c41b1f7f2558b43a41a6d0b0540aa763b864feaa7b530f249ad47b306a78df07",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/14"
+    },
+    {
+      "id": "decomposition-levels",
+      "title": "Recursive classes between peripheral and ample classes",
+      "path": "../CompressionSchemes/drafts/round926_structural_milestones.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "statement_locations": [
+        "Definitions and the hierarchy, equation (1): D_k and Rper = D₀.",
+        "An equivalent attachment recursion, equation (2).",
+        "A strict example beyond peripheral classes: P₅ and the VC-sensitive decomposition bound.",
+        "A second intermediate class and the remaining question, equation (4): B and its strict inclusions."
+      ],
+      "sha256": "6f160105b4642c40596124af7963a0ee550c5630a476a085da2d75470ee28ce3",
+      "status": "Proved structural hierarchy and recursive descriptions. Neither D₁ ⊆ MaxMin nor B ⊆ MaxMin is proved. The later polygon theorem disproves B ⊆ D₁; D₁ ⊆ B remains open. This supporting note is not a separate submission.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "6f160105b4642c40596124af7963a0ee550c5630a476a085da2d75470ee28ce3",
+        "actual_sha256": "6f160105b4642c40596124af7963a0ee550c5630a476a085da2d75470ee28ce3",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/15"
+    },
+    {
+      "id": "decomposition-closures",
+      "title": "A strict intermediate class and closure properties",
+      "path": "../CompressionSchemes/drafts/round927_structure.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "statement_locations": [
+        "Hall’s complement cannot begin a first-level decomposition, equation (2): D₁ is properly contained in Damp.",
+        "Coordinate operations and products, equations (4)–(9): closure of every D_k under sections, projections, full reductions and products.",
+        "Complementation: a firm boundary and an open first level."
+      ],
+      "sha256": "c56aecdeefd2f4b320552480a42eafedcafbf3c45aa6a56bad87cfe87abe53da",
+      "status": "Proved closure laws and the Hall-complement separation. Since Damp is the union of the D_k, its reduction closure follows; together with complement identities this proves the stated p/c/pc and reduction closure of B. Its historical first-level question is partially resolved by the atlas polygon theorem: B is not contained in D₁, while D₁ ⊆ B remains open. The imported source itself is retained unchanged.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "c56aecdeefd2f4b320552480a42eafedcafbf3c45aa6a56bad87cfe87abe53da",
+        "actual_sha256": "c56aecdeefd2f4b320552480a42eafedcafbf3c45aa6a56bad87cfe87abe53da",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/16"
+    },
+    {
+      "id": "orientation-classes",
+      "title": "Both complementary shores peelable: the acyclic cube-orientation characterization",
+      "path": "../CompressionSchemes/drafts/round853_uso_lift_operation_audit.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "statement_locations": [
+        "Precisely what an acyclic starting orientation supplies, proposition and proof (lines 72–84): B is the class of forward-invariant shores of cube AUSOs."
+      ],
+      "sha256": "157020667316c937eee9838dc50c4c6d6b3cfe3d6afa30ab332810d0b7c328a7",
+      "status": "Proved characterization for nonempty proper shores; constants are handled separately. Taking products of the witnessing acyclic unique-sink orientations proves product closure of B. This does not supply a maximum parent.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "157020667316c937eee9838dc50c4c6d6b3cfe3d6afa30ab332810d0b7c328a7",
+        "actual_sha256": "157020667316c937eee9838dc50c4c6d6b3cfe3d6afa30ab332810d0b7c328a7",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/17"
+    },
+    {
+      "id": "peeling-width",
+      "title": "Orientation and peeling width",
+      "path": "papers/minor-atlas/main.tex",
+      "pdf": "papers/minor-atlas/main.pdf",
+      "labels": [
+        "prop:uso-dictionary",
+        "eq:peeling-width",
+        "prop:peeling-width-ends",
+        "prop:width-minor-closed",
+        "prop:hall-width",
+        "prop:tight-sets",
+        "ex:width-counting-pitfalls"
+      ],
+      "label_sources": {
+        "prop:uso-dictionary": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:peeling-width": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:peeling-width-ends": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:width-minor-closed": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:hall-width": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:tight-sets": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "ex:width-counting-pitfalls": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+      "status": "USO dictionary imported from CCMW (Thm 6.8, Prop 6.12); nu pc-minor monotone (Prop 6.14(3) in-map; SCC lifting checked). Corrected ample-preserving deletion test and chi recurrence (verified exhaustively through dimension three, 3,766 cases). Retained Hall bounds 2 <= chi <= nu <= 12; exact-width values withdrawn pending a replayable certificate (PEELING_WIDTH_AUDIT.md).",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+        "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:uso-dictionary": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:peeling-width": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:peeling-width-ends": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:width-minor-closed": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:hall-width": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:tight-sets": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "ex:width-counting-pitfalls": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/18"
+    },
+    {
+      "id": "maxmin-neighbors",
+      "title": "Subclasses and superclasses of maximum minors",
+      "path": "../CompressionSchemes/drafts/round976_maxmin_neighbors.md",
+      "pdf": null,
+      "labels": [],
+      "label_sources": {},
+      "statement_locations": [
+        "Definitions and the comparison, equations (1)–(2): P_D, existing universal cube extension, and Hall strictness witnesses.",
+        "Maximum extensions preserve recursive decompositions, proposition and proof: D_k-preserving maximum face avoidance, cube addition and complete nested sequences.",
+        "Closure of the two comparison families: P_D coordinate operations and constant stability; Ext quotient-USO projection proof, complement, reduction and product closure.",
+        "What this changes for the conjecture: exact construction and all-rank obstruction contracts, and why the existing H_E test is not excluded."
+      ],
+      "sha256": "ef5a6c93852d9f34f45da6663351b946c9fadec6ea09f64c096461721ad5c026",
+      "status": "Independent proof audit passed for the new preservation and closure arguments. P_D product closure and the relevant converse maximum-parent inclusions remain open. No previously uncovered ample class receives a parent, and no non-MaxMin ample class is proved.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "ef5a6c93852d9f34f45da6663351b946c9fadec6ea09f64c096461721ad5c026",
+        "actual_sha256": "ef5a6c93852d9f34f45da6663351b946c9fadec6ea09f64c096461721ad5c026",
+        "matches": true
+      },
+      "label_fingerprint_checks": {},
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/19"
+    },
+    {
+      "id": "polygon-decomposition",
+      "title": "Exact decomposition levels of tangent-polygon complements",
+      "path": "papers/minor-atlas/main.tex",
+      "pdf": "papers/minor-atlas/main.pdf",
+      "labels": [
+        "prop:polygon-decomposition",
+        "eq:dominant-complement-shore",
+        "lem:interval-endpoint-cubes",
+        "eq:exact-polygon-level",
+        "eq:polygon-section-removal",
+        "ex:nonagon-decomposition"
+      ],
+      "label_sources": {
+        "prop:polygon-decomposition": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:dominant-complement-shore": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "lem:interval-endpoint-cubes": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:exact-polygon-level": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:polygon-section-removal": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "ex:nonagon-decomposition": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+      "status": "Full analytic proof in the atlas: κ(C_(2m+1))=m−1 and κ(H_(2m+1))=1 for m≥2. The sharp first-face lower bound and explicit sequence of zero-section removals give every consecutive strict inclusion D_k ⊊ D_(k+1), with realizable maximum witnesses. Every positive finite level fails complement closure. D₁ ⊆ B remains open. The C₇ certificate is supporting finite evidence, not a dependency of the general proof. September 19 source synchronization: imported statement/proof comparison recorded in SOURCE_SYNC_REVIEW.md. No audit of unrelated source additions is claimed.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+        "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:polygon-decomposition": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:dominant-complement-shore": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "lem:interval-endpoint-cubes": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:exact-polygon-level": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:polygon-section-removal": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "ex:nonagon-decomposition": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/20"
+    },
+    {
+      "id": "structural-targets",
+      "title": "Strict subclass comparisons and maximum parents with free coordinates",
+      "path": "../CompressionSchemes/drafts/round984_structural_targets.md",
+      "pdf": null,
+      "labels": [
+        "ex:e26-strictness",
+        "prop:parent-free-coordinates"
+      ],
+      "label_sources": {
+        "ex:e26-strictness": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:parent-free-coordinates": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "bd0bb59618d4be3fb811b22617d87af15cc7fce39b4a39c9c4060fcf29f39acb",
+      "status": "Two strictness consequences of existing E26; existing median-ideal inclusion; proved cube-product preservation of parent decomposition level. Arbitrary P_D product closure and D1 subset B remain open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "bd0bb59618d4be3fb811b22617d87af15cc7fce39b4a39c9c4060fcf29f39acb",
+        "actual_sha256": "bd0bb59618d4be3fb811b22617d87af15cc7fce39b4a39c9c4060fcf29f39acb",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "ex:e26-strictness": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:parent-free-coordinates": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/21"
+    },
+    {
+      "id": "nested-flag-products",
+      "title": "Product parents from a common nested-coordinate recursion",
+      "path": "../CompressionSchemes/drafts/round986_nested_flag_products.md",
+      "pdf": null,
+      "labels": [
+        "prop:parent-nested-products"
+      ],
+      "label_sources": {
+        "prop:parent-nested-products": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "14854016072d9e73dd4fac5c7fd52639874c3f8f2a0693d47c13a8431cdc2763",
+      "status": "Independently reviewed preservation under delays and product construction, including optimal rank for certified maximum factors. Hamming balls and bounded-change flags supply two unbounded factor families. Arbitrary P_D products remain open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "14854016072d9e73dd4fac5c7fd52639874c3f8f2a0693d47c13a8431cdc2763",
+        "actual_sha256": "14854016072d9e73dd4fac5c7fd52639874c3f8f2a0693d47c13a8431cdc2763",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:parent-nested-products": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/22"
+    },
+    {
+      "id": "tree-parity-flags",
+      "title": "Maximum sequences from tree incidence parities",
+      "path": "../CompressionSchemes/drafts/round987_tree_parity_flags.md",
+      "pdf": null,
+      "labels": [
+        "prop:tree-parity-flags"
+      ],
+      "label_sources": {
+        "prop:tree-parity-flags": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "5fe3b45f972120c8e1de40ebc82cc3806c36d4d40ecf1474d9d3ec50b3a0189a",
+      "status": "Independently reviewed: all tree-parity thresholds are maximum with a common recursion; covers all rank-one and rank-(n−2) maximum factors. Prescribed consecutive-pair extension is refuted on four coordinates. Single peripheral-class flag existence remains open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "5fe3b45f972120c8e1de40ebc82cc3806c36d4d40ecf1474d9d3ec50b3a0189a",
+        "actual_sha256": "5fe3b45f972120c8e1de40ebc82cc3806c36d4d40ecf1474d9d3ec50b3a0189a",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:tree-parity-flags": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/23"
+    },
+    {
+      "id": "parent-depth",
+      "title": "Maximum-parent decomposition depth and feasible ranks",
+      "path": "../CompressionSchemes/drafts/round993_parent_hierarchy.md",
+      "pdf": null,
+      "labels": [
+        "prop:parent-depth-hierarchy",
+        "eq:parent-depth-cube",
+        "fig:parent-hierarchy-construction"
+      ],
+      "label_sources": {
+        "prop:parent-depth-hierarchy": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:parent-depth-cube": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "fig:parent-hierarchy-construction": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "d45655ceabf40389dd8621c1b4076da77723000a80245ce4645d5a36889a6045",
+      "status": "Structural deductions reviewed September 20 in PARENT_DEPTH_AUDIT.md: attachment closure, same-level maximum sequences, constants, rank padding and cube-factor bounds. Dictionary and polygon inputs retain separate verification obligations. General parent replacement and complementary representation remain open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "d45655ceabf40389dd8621c1b4076da77723000a80245ce4645d5a36889a6045",
+        "actual_sha256": "d45655ceabf40389dd8621c1b4076da77723000a80245ce4645d5a36889a6045",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:parent-depth-hierarchy": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:parent-depth-cube": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "fig:parent-hierarchy-construction": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/24"
+    },
+    {
+      "id": "complement-dismantlability",
+      "title": "Complementary dismantlability and representation",
+      "path": "../CompressionSchemes/drafts/round993_complement_dismantlability.md",
+      "pdf": null,
+      "labels": [
+        "prop:complement-dismantlable",
+        "prop:complement-dismantlable-product",
+        "lem:corner-representation-deletion"
+      ],
+      "label_sources": {
+        "prop:complement-dismantlable": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "prop:complement-dismantlable-product": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "lem:corner-representation-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "93f677b33ea77d99d9a53990135cd9a24d14e7eaf72c97679b5e7d5ab26341e2",
+      "status": "Proved structural comparisons; general parent replacement and complementary representation remain open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "93f677b33ea77d99d9a53990135cd9a24d14e7eaf72c97679b5e7d5ab26341e2",
+        "actual_sha256": "93f677b33ea77d99d9a53990135cd9a24d14e7eaf72c97679b5e7d5ab26341e2",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:complement-dismantlable": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "prop:complement-dismantlable-product": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "lem:corner-representation-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/25"
+    },
+    {
+      "id": "auxiliary-hierarchy",
+      "title": "Hierarchy by the number of conditioned coordinates",
+      "path": "../CompressionSchemes/drafts/round994_auxiliary_hierarchy.md",
+      "pdf": null,
+      "labels": [
+        "prop:auxiliary-hierarchy",
+        "eq:auxiliary-complement-bound",
+        "eq:auxiliary-constant-example"
+      ],
+      "label_sources": {
+        "prop:auxiliary-hierarchy": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:auxiliary-complement-bound": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:auxiliary-constant-example": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "cd89562a6909bef7adb12b687d5d2793fdb42281aabd61e97363d99645704677",
+      "status": "Strict hierarchy with explicit witnesses, derived from established parent constructions. Requires displayed coordinates, including constants; it is not a graph invariant under constant suppression.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "cd89562a6909bef7adb12b687d5d2793fdb42281aabd61e97363d99645704677",
+        "actual_sha256": "cd89562a6909bef7adb12b687d5d2793fdb42281aabd61e97363d99645704677",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:auxiliary-hierarchy": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:auxiliary-complement-bound": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:auxiliary-constant-example": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/26"
+    },
+    {
+      "id": "maximum-projection-complex",
+      "title": "Maximum projections and projection-minimal nonmaximum ample classes",
+      "path": "../CompressionSchemes/drafts/round995_maximum_projection_complex.md",
+      "pdf": null,
+      "labels": [
+        "prop:maximum-projection-complex",
+        "eq:maximum-projection-skeleton",
+        "eq:maximum-projection-obstruction"
+      ],
+      "label_sources": {
+        "prop:maximum-projection-complex": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:maximum-projection-skeleton": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "eq:maximum-projection-obstruction": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "d030ea251bfa1736da3b70cd2b5d93209932dde856278232e9abdc72e6c60660",
+      "status": "General proof reviewed September 20: skeleton criterion, projection-minimal nonmaximum classification and explicit one-auxiliary parents; see MAXIMUM_PROJECTION_AUDIT.md. Exhaustive checks through Q4 support the proof and retain constant coordinates. This is not an obstruction to maximum ancestry; all classified projections lie in M1.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "d030ea251bfa1736da3b70cd2b5d93209932dde856278232e9abdc72e6c60660",
+        "actual_sha256": "d030ea251bfa1736da3b70cd2b5d93209932dde856278232e9abdc72e6c60660",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:maximum-projection-complex": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:maximum-projection-skeleton": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "eq:maximum-projection-obstruction": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/27"
+    },
+    {
+      "id": "small-corner-map-repair",
+      "title": "Representation-map repair at corners with at most two directions",
+      "path": "../CompressionSchemes/drafts/round996_corner_map_reselection.md",
+      "pdf": null,
+      "labels": [
+        "prop:small-corner-map-repair"
+      ],
+      "label_sources": {
+        "prop:small-corner-map-repair": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "ca2ce884164eb1c98071f008117e6988d5b073915b8d9034e7ecfd39e4ce54c1",
+      "status": "Independently proved: at most three safe label swaps expose the corner, so deletion preserves representability. Ambient VC dimension unrestricted. Higher-dimensional corners and Damp ⊆ Ext remain open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "ca2ce884164eb1c98071f008117e6988d5b073915b8d9034e7ecfd39e4ce54c1",
+        "actual_sha256": "ca2ce884164eb1c98071f008117e6988d5b073915b8d9034e7ecfd39e4ce54c1",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:small-corner-map-repair": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/28"
+    },
+    {
+      "id": "dismantlable-deletion-parents",
+      "title": "Compatible predecessors and dismantlable minimum-section deletion parents",
+      "path": "../CompressionSchemes/drafts/round999_monotone_predecessors.md",
+      "pdf": null,
+      "labels": [
+        "prop:monotone-predecessors",
+        "thm:dismantlable-minimum-deletion"
+      ],
+      "label_sources": {
+        "prop:monotone-predecessors": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        },
+        "thm:dismantlable-minimum-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "7c6335b7b524cd1b88f637a75c11e89bbb267839d2bd11b4b734127a964019d9",
+      "status": "Independently reviewed proof: fixed-order avoidance preserves inclusions and intersections; minimum-section deletion preserves dismantlable maximum parents when both original maximum class and target are dismantlable. Original peripheral-level preservation remains open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "7c6335b7b524cd1b88f637a75c11e89bbb267839d2bd11b4b734127a964019d9",
+        "actual_sha256": "7c6335b7b524cd1b88f637a75c11e89bbb267839d2bd11b4b734127a964019d9",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:monotone-predecessors": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        },
+        "thm:dismantlable-minimum-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/29"
+    },
+    {
+      "id": "peripheral-corner-parents",
+      "title": "Peripheral maximum parents after every prescribed corner deletion",
+      "path": "../CompressionSchemes/drafts/round1000_peripheral_corner_parents.md",
+      "pdf": null,
+      "labels": [
+        "prop:peripheral-corner-parent"
+      ],
+      "label_sources": {
+        "prop:peripheral-corner-parent": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "e67cc6e2de9f7dd4e544d0317f2b5e9f3081be49a7ffbc3abd90c9a70863c2fb",
+      "status": "Independently reviewed proof: every prescribed corner deletion of a peripheral maximum class has a peripheral same-rank parent with one auxiliary and unchanged projection. Complements give ample one-vertex extensions. General peripheral parent existence remains open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "e67cc6e2de9f7dd4e544d0317f2b5e9f3081be49a7ffbc3abd90c9a70863c2fb",
+        "actual_sha256": "e67cc6e2de9f7dd4e544d0317f2b5e9f3081be49a7ffbc3abd90c9a70863c2fb",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:peripheral-corner-parent": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/30"
+    },
+    {
+      "id": "peripheral-minimum-deletion",
+      "title": "Peripheral deletion of a smallest coordinate section",
+      "path": "../CompressionSchemes/drafts/round1001_minimum_section.md",
+      "pdf": null,
+      "labels": [
+        "prop:peripheral-minimum-deletion"
+      ],
+      "label_sources": {
+        "prop:peripheral-minimum-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+        }
+      },
+      "sha256": "6c321061c8f01e76443685ab28cb968e198c4a66d82951ba3153f7019e61f8c7",
+      "status": "Proved: deletion is peripheral and has a dismantlable maximum parent with optimal fixed-rank auxiliary count. Peripheral parent existence for positive-rank minima remains open.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "6c321061c8f01e76443685ab28cb968e198c4a66d82951ba3153f7019e61f8c7",
+        "actual_sha256": "6c321061c8f01e76443685ab28cb968e198c4a66d82951ba3153f7019e61f8c7",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "prop:peripheral-minimum-deletion": {
+          "path": "papers/minor-atlas/main.tex",
+          "exists": true,
+          "expected_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "actual_sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/31"
+    },
+    {
+      "id": "fractional-yang",
+      "title": "Fractional Yang partitionability: recognition and minor descent",
+      "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+      "pdf": "../CompressionSchemes/partitionable_yang_complexes.pdf",
+      "labels": [
+        "thm:fractional-yang-ample",
+        "prop:fractional-coordinate-projection-descent",
+        "cor:fractional-partitionability-pc-minor-closed",
+        "cor:yang-partitionability-forbidden-pc-minors"
+      ],
+      "label_sources": {
+        "thm:fractional-yang-ample": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "prop:fractional-coordinate-projection-descent": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "cor:fractional-partitionability-pc-minor-closed": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        },
+        "cor:yang-partitionability-forbidden-pc-minors": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+        }
+      },
+      "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+      "status": "Scoped source check September 23, 2026: recognition, coordinate descent, pc closure and forbidden-minor equivalence. Foundation and descent audits are linked in FRACTIONAL_REPRESENTABILITY_MAP.md. No whole-manuscript certification.",
+      "fingerprint_check": {
+        "exists": true,
+        "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+        "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+        "matches": true
+      },
+      "label_fingerprint_checks": {
+        "thm:fractional-yang-ample": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "prop:fractional-coordinate-projection-descent": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "cor:fractional-partitionability-pc-minor-closed": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        },
+        "cor:yang-partitionability-forbidden-pc-minors": {
+          "path": "../CompressionSchemes/partitionable_yang_complexes.tex",
+          "exists": true,
+          "expected_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "actual_sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb",
+          "matches": true
+        }
+      },
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/sources/32"
+    }
+  ],
+  "questions": [
+    {
+      "id": "maximum-ancestry",
+      "kind": "Open theorem",
+      "title": "Does MaxMin equal Amp?",
+      "description": "Equivalently: is every finite ample class a coordinate section of a finite maximum class? Auxiliary dimension and parent VC dimension are unrestricted.",
+      "sources": [
+        "maxsections",
+        "maxmin"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/0",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "peeling-ancestry",
+      "kind": "Open comparison",
+      "title": "Is every corner-peelable ample class in MaxMin?",
+      "description": "RAmp lies in both classes. The reverse inclusion fails because a maximum class can have no corner. A general rank-free corner transfer would address this comparison. The intermediate R_per inclusion remains open. Learning spaces and daisy cubes, including the learning-space conditioning closure, are now proved subclasses of MaxMin.",
+      "sources": [
+        "maxsections",
+        "maxmin",
+        "geometry",
+        "ccmw",
+        "maxparents"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/1",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "intermediate-ancestry",
+      "kind": "Open comparisons",
+      "title": "Is D₁ contained in B?",
+      "description": "Both strict chains through Rper and Damp are proved. B ⊆ D₁ is false: a realizable maximum class on nine coordinates has 466 words and no first one-decomposition face. D₁ ⊆ B, D₁ ⊆ MaxMin and B ⊆ MaxMin remain open. For every k ≥ 1, D_k is properly contained in Damp and is not complement closed; every successive D_k inclusion is strict, with exact polygon witnesses. The comparison D₁ ⊊ D₂ is settled by the heptagon complement, so it is not an additional open route.",
+      "sources": [
+        "decomposition-levels",
+        "decomposition-closures",
+        "maxparents",
+        "polygon-decomposition"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/2",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "peeling-obstructions",
+      "kind": "Open generator",
+      "title": "Generate all ample pc-minimal failures of corner peeling.",
+      "description": "Seek intrinsic admissible input data with soundness and exhaustive recovery, as in the daisy paper. Relative attachments are a tool; they do not yet certify that every obstruction arises that way.",
+      "sources": [
+        "ample",
+        "gluing",
+        "daisy"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/3",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "representation",
+      "kind": "Open theorem",
+      "title": "Does every ample class admit a representation map?",
+      "description": "MaxMin and Damp are sufficient classes. The larger representation-map class must not be identified with either one without proof.",
+      "sources": [
+        "maxmin",
+        "ccmw"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/4",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "operation-bases",
+      "kind": "Inventory gap",
+      "title": "Audit p-only and c-only bases alongside the pc bases.",
+      "description": "Some cells may already be settled in the literature. Record the ambient universe, signs and root convention, properness, exact source, and whether the result is a recognizer or a generator before declaring a mathematical gap.",
+      "sources": [
+        "mna",
+        "daisy",
+        "cover",
+        "learning"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/5",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "relative-theory",
+      "kind": "Tool-development question",
+      "title": "Make gluing and parent constructions compatible with minors of pairs.",
+      "description": "Track a pair (A,K), its induced projections and conditionings, and which order data survive. A useful general transfer theorem should apply beyond one obstruction family.",
+      "sources": [
+        "gluing",
+        "maxmin"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/6",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "minimal-nonample-constructions",
+      "kind": "Combinatorial theory-development direction",
+      "title": "Construct and extend minimal non-ample classes through compatible maximum halves.",
+      "description": "For a maximum A of VC dimension d on n coordinates with 0<d<n-1, the double (A × {0}) ∪ (antipode(A) × {1}) is c-minimal non-ample exactly when A has a one-fixed-sign uniform-oriented-matroid parent (MNA classification), hence exactly when A∩antipode(A) and its outside complement are minimal non-ample of VC dimensions d and n-d-1 (CompressionSchemes cor:round662-maximum-one-fixed-parent-intrinsic-test). The three-leaf star fails this test. What remains is a construction calculus: coordinate extensions and recovery, compared with uniform-oriented-matroid extension theory before claiming novelty.",
+      "sources": [
+        "mna"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/7",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "dismantlable-parents",
+      "kind": "Open construction comparison",
+      "title": "Does every dismantlable ample class have a dismantlable maximum parent?",
+      "description": "The equality P_D = Damp would imply Damp ⊆ MaxMin. The proved D_k-preserving face-avoidance and cube-addition operations retain supplied decomposition certificates. They do not establish a general parent construction, gluing theorem, or product closure for P_D.",
+      "sources": [
+        "maxmin-neighbors"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/8",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "extension-ancestry",
+      "kind": "Open comparison and obstruction contract",
+      "title": "Does universal cube extension suffice for maximum ancestry?",
+      "description": "MaxMin ⊆ Ext is proved; the reverse inclusion remains open. A representation map that admits no full-cube extension would certify nonmembership in Ext and hence exclude parents of every rank and auxiliary dimension. This requires ruling out every full-cube extension of that map, not just a supplied orientation or a bounded parent profile. This stronger obstruction would also disprove universal ample representation; it cannot apply to the current H_E test, which already lies in B.",
+      "sources": [
+        "maxmin-neighbors",
+        "maxmin"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/9",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "parent-depth-replacement",
+      "kind": "Open comparison",
+      "title": "Can a maximum parent match the decomposition depth of its section?",
+      "description": "Is P_k = D_k ∩ MaxMin for every k? This includes replacing an existing parent, not just proving MaxMin membership. Equality holds on maximum inputs. No nonmaximum strict finite gap between intrinsic depth and least parent depth is established here.",
+      "sources": [
+        "parent-depth"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/10",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "complement-representation",
+      "kind": "Open comparison",
+      "title": "Does a dismantlable complement guarantee a representation map?",
+      "description": "coDamp ⊆ Rep is equivalent to Damp ⊆ Ext. Earlier failures of retaining prescribed labels do not disprove existential reselection of a representation map. This is weaker than constructing a maximum parent.",
+      "sources": [
+        "complement-dismantlability"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/11",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    },
+    {
+      "id": "fractional-representability",
+      "kind": "Open equalities",
+      "title": "Does Rep = Frac = Amp?",
+      "description": "Separate fractional existence (Frac = Amp) from integrality (Rep = Frac). A fractional Yang partition need not be an exhibited mixture of representation maps; no separation inside the Yang family is established.",
+      "sources": [
+        "fractional-yang"
+      ],
+      "source_locator": "PartialCubes:papers/minor-atlas/inventory.json#/questions/12",
+      "migration_disposition": "excluded_broad_question",
+      "disposition_reason": "Broad research questions remain prose in the LaTeX workspace."
+    }
+  ],
+  "boundary_study": {
+    "title": "Minimal non-ample classes: two viewpoints, one family",
+    "definition": "N = Obs_c(Amp): non-ample classes whose every proper nonempty conditioning is ample. They sit outside Amp, rather than below it in the inclusion diagram.",
+    "algebraic": "YangDim identifies them with Yang complexes that are Buchsbaum but not Cohen–Macaulay. Literal links express the ample conditionings; the manuscript also develops homology and monomial resolutions.",
+    "combinatorial": "With at least three concepts, they are irredundant antipodal partial cubes that are not cubes and whose proper convex antipodal subgraphs are cubes, equivalently non-free simple uniform-oriented-matroid tope classes. This classification is already proved in YangDim.",
+    "direction": "A possible study in PartialCubes would develop compatibility and extension rules for maximum coordinate halves, with soundness and recovery. The three-leaf-star example shows that two maximum antipodal halves alone are insufficient. Its exact scope and novelty require an extension-theory audit.",
+    "scope_path": "papers/minor-atlas/MINIMAL_NONAMPLE_DIRECTIONS.md.html"
+  }
+}

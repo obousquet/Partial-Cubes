@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "batch_id": "000_freeze_and_extract",
+  "phase": 0,
+  "status": "complete_unpromoted",
+  "purpose": "Freeze exact source inputs and create read-only candidate inventories without adding public database records.",
+  "snapshot_date": "2026-09-30",
+  "source_manifest": {
+    "path": "migration/source_manifest.json",
+    "sha256": "06bc9e8734919d5e0a5d9c48073fc1693c1cf499c9432c48740442df0b550c94",
+    "repositories": 4,
+    "files": 109,
+    "missing_references": 0
+  },
+  "candidate_inventory": {
+    "survey_classes": 76,
+    "survey_containments": 134,
+    "minor_families": 24,
+    "minor_relations": 48,
+    "closure_cells": 72,
+    "minor_source_packets": 33,
+    "excluded_broad_questions": 13,
+    "latex_labels": 2842,
+    "bibliography_occurrences": 238,
+    "class_crosswalk_occurrences": 100,
+    "claim_candidates": 326
+  },
+  "artifacts": [
+    {
+      "path": "migration/generated/survey_atlas.json",
+      "sha256": "4f08f45e1cd03c138f2e55abcfcf18cf28878b08862b55f6d14b68977294e33e"
+    },
+    {
+      "path": "migration/generated/minor_inventory.json",
+      "sha256": "8c251c20ef12f8540521b7116c2fa37482c3e81dd0efbde84b40e763e10a3608"
+    },
+    {
+      "path": "migration/generated/latex_labels.json",
+      "sha256": "10bd65a824c46b18f528de775f1debb6c278dbb21e641c0f99130ec813a28e78"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "1df045cd90c7678ed64fff1b4a3dec7be8e388aafeac2b0dd39dedf3facb60a4"
+    },
+    {
+      "path": "migration/class_crosswalk.json",
+      "sha256": "986793030c9f3185256077eadc73f0bb0f332dc71ceb053c38dbb3019a8a39a3"
+    },
+    {
+      "path": "migration/claim_queue.json",
+      "sha256": "ead2e9d82b8caa44cdc0b530107a1a7e725372bece003776b9afe0f5b723b770"
+    }
+  ],
+  "promotion_blockers": [
+    {
+      "id": "source-packet-cover-fingerprint-drift",
+      "effect": "Claims using the cover source packet cannot be promoted until its labeled source delta is reviewed."
+    },
+    {
+      "id": "source-packet-ample-fingerprint-drift",
+      "effect": "Claims using the ample source packet cannot be promoted until its focused source delta is reviewed."
+    }
+  ],
+  "bibliography_findings": {
+    "unique_keys": 219,
+    "repeated_keys": 19,
+    "conflicting_keys": 0,
+    "duplicate_identity_groups": 24
+  },
+  "database_effect": {
+    "records_added": 0,
+    "data_tree_sha256": "ae4accf0617528ece07e0daa7fe2227952df058fc3b6fda0509c262ca936bf43",
+    "ownership_state": "latex"
+  },
+  "latex_effect": {
+    "files_modified": 0,
+    "documents_inventoried": 12,
+    "potential_generated_consumers": [
+      "survey"
+    ]
+  },
+  "validation": [
+    "make migration-check",
+    "python3 scripts/validate_data.py --data-dir data",
+    "python3 scripts/check_generated_site.py --site-dir docs",
+    "git diff --check"
+  ],
+  "review": {
+    "mathematical_claims_reviewed": 0,
+    "note": "This infrastructure batch records candidates and blockers. Mathematical promotion begins with the canonical crosswalk batch."
+  }
+}
