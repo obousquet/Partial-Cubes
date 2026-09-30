@@ -57,9 +57,13 @@ See [SCHEMA_PROPOSAL.md](SCHEMA_PROPOSAL.md) for the design rationale and
 
 ## LaTeX synchronization
 
-The database owns structured catalogue entries and the bibliography. The LaTeX
-repository owns exposition, full paper proofs, and research ledgers. Generate a
-catalogue fragment explicitly, for example:
+The database owns accepted, normalized catalogue entries and their shared
+bibliography. Unmigrated content remains LaTeX-owned. The LaTeX repository
+continues to own every paper as a scholarly artifact, including exposition,
+paper-specific statements, notation, full proofs, diagrams, and research
+ledgers. Only a manuscript deliberately selected as an active catalogue
+consumer imports generated fragments; stable theorem papers may remain
+unchanged. Generate a catalogue fragment explicitly, for example:
 
 ```bash
 python3 sync/generate_latex_catalog.py \
@@ -68,3 +72,6 @@ python3 sync/generate_latex_catalog.py \
 ```
 
 Use `--check` to detect drift without writing the output.
+
+See [MIGRATION_PLAN.md](MIGRATION_PLAN.md) for the record-by-record migration,
+preservation checks, and two-repository handoff.

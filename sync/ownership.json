@@ -1,40 +1,79 @@
 {
-  "version": 1,
-  "purpose": "Declares authority for information shared by the database website and the PartialCubes LaTeX workspace.",
+  "version": 2,
+  "purpose": "Declares the single authoritative representation for information shared by the Partial Cubes database and LaTeX workspace while preserving each paper as a scholarly artifact.",
+  "migration": {
+    "policy": "record_scoped",
+    "states": ["latex", "shadowed", "database"],
+    "default_state": "latex",
+    "promotion_rule": "A normalized fact becomes database-owned only after its reviewed batch and any selected LaTeX consumer pass preservation and build checks.",
+    "preservation_rule": "Only blocks explicitly classified as generated_catalogue may be replaced. Paper-specific statements, full proofs, narrative, notation, diagrams, and document organization remain in LaTeX."
+  },
   "owners": {
     "class_catalogue": {
       "authority": "database",
+      "scope": "accepted records only; unmigrated class material remains LaTeX-owned",
+      "source": "data/classes/*.json",
+      "latex_output": "includes/generated/class_table.tex",
+      "generator": "sync/generate_latex_catalog.py --section class-table",
+      "status": "Class identity, aliases, category, scope, catalogue summary, and derived closure summaries have one structured source."
+    },
+    "class_characterizations": {
+      "authority": "database",
+      "scope": "accepted records only; paper-local formulations remain part of their source artifacts",
       "source": "data/classes/*.json and data/characterizations/*.json",
-      "latex_output": "includes/generated/class_definitions.tex"
+      "latex_output": "includes/generated/class_definitions.tex",
+      "generator": "sync/generate_latex_catalog.py --section class-definitions",
+      "status": "The database owns canonical catalogue criteria. A selected active survey may import them; archival theorem papers need not be rewritten."
     },
-    "class_relationships": {
+    "structured_claims": {
       "authority": "database",
-      "source": "data/relations/*.json"
+      "scope": "accepted normalized catalogue facts",
+      "source": "data/characterization_equivalences/*.json, data/relations/*.json, data/operation_results/*.json, data/invariant_values/*.json, data/obstruction_bases/*.json, and data/results/*.json",
+      "latex_output": null,
+      "status": "The website and graphs derive from these typed facts. Add a generated LaTeX view only for a named consumer."
     },
-    "operation_results": {
+    "catalogue_objects": {
       "authority": "database",
-      "source": "data/operations/*.json and data/operation_results/*.json"
+      "scope": "accepted normalized catalogue entries",
+      "source": "data/operations/*.json, data/invariants/*.json, data/obstruction_families/*.json, and data/examples/*.json",
+      "latex_output": null
     },
-    "invariants_and_values": {
+    "concise_catalogue_proofs": {
       "authority": "database",
-      "source": "data/invariants/*.json and data/invariant_values/*.json"
+      "source": "proof fields in database claim records",
+      "latex_output": null,
+      "status": "A concise proof may be generated for a deliberate consumer in the future. It does not replace a paper's canonical full proof."
     },
-    "forbidden_minor_catalogue": {
-      "authority": "database",
-      "source": "data/obstruction_families/*.json and data/obstruction_bases/*.json"
+    "canonical_full_proofs": {
+      "authority": "latex",
+      "source": "~/latex/PartialCubes/papers/**/*.tex, addressed by stable LaTeX labels",
+      "database_pointer": "proof_source and references fields in database claim records",
+      "status": "The database owns the normalized fact; the source paper owns its full proof and paper-specific theorem formulation."
     },
     "bibliography": {
       "authority": "database",
+      "scope": "shared references required by accepted database records and generated catalogue material",
       "source": "data/latex/references.bib",
-      "latex_output": "includes/generated/references.bib"
+      "latex_output": "includes/generated/references.bib",
+      "generator": "sync/generate_latex_catalog.py --section bibliography",
+      "status": "Paper-only bibliography entries may remain in local LaTeX bibliographies."
     },
-    "survey_narrative_and_full_proofs": {
+    "paper_artifacts": {
       "authority": "latex",
-      "source": "~/latex/PartialCubes/papers/**/*.tex"
+      "source": "~/latex/PartialCubes/papers/**/*.tex and their local assets",
+      "database_output": null,
+      "status": "Narrative, motivation, historical discussion, paper-specific statements, notation, full proofs, diagrams, examples in context, and document organization remain authored LaTeX."
+    },
+    "survey_diagram_presentation": {
+      "authority": "latex",
+      "source": "the survey's authored TikZ and explanatory hierarchy",
+      "database_output": "docs/ graph views derived independently from accepted structured facts"
     },
     "open_questions_and_campaign_state": {
       "authority": "latex",
-      "source": "~/latex/PartialCubes papers, ledgers, dashboards, and research notes"
+      "source": "~/latex/PartialCubes papers, ledgers, dashboards, and research notes",
+      "database_output": null,
+      "status": "Only a precise catalogue claim is promoted. The broader programme and working state stay in LaTeX."
     }
   }
 }
