@@ -7,7 +7,7 @@
         <base href="https://obousquet.github.io/Partial-Cubes/">
         <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
-        
+
     <style>
     .nav-menu { display:inline-block; position:relative; margin-left:1em; }
     .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
@@ -31,8 +31,8 @@
         }
     });
     </script>
-    
-        
+
+
         <script>
             window.MathJax = {
                 tex: {
@@ -56,7 +56,7 @@
     <body>
         <header>
             <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
-            
+
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
@@ -65,22 +65,22 @@
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
         </div>
-    
+
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
             <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
         </div>
-    
+
             </nav>
         </header>
         <main class="table-container">
-            
+
     <div style="margin-bottom: 1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; flex-wrap: wrap;">
         <div style="flex: 1;">
             <input type="text" id="search-box" placeholder="Search by name..." style="width: 100%; max-width: 400px; padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px;" oninput="filterCards()">
         </div>
         <div style="display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;">
-            
+
             <div style="display: flex; gap: 0.5em; align-items: center;">
                 <label style="margin-right: 0.5em;">View:</label>
                 <button id="compact-toggle" class="btn btn-primary" onclick="toggleCompactMode()">Compact</button>
@@ -92,22 +92,89 @@
             </div>
         </div>
     </div>
-    
+
             <div class="table-description">
                 <p>Operations on partial cubes, set families, and related structures</p>
             </div>
             <div class="table-grid">
-                
+
+    <div class="table-card" id="math-3" style="position:relative;">
+
+        <h3><a href="operations/pc_minor.html" class="table-title-link">Partial-Cube Minor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial-Cube Minor</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\preceq_{\rm pc}">
+            \[\preceq_{\rm pc}\]
+        </div>
+    </div>
+
+<p><strong>Arity:</strong> 1</p>
+<strong>Definition:</strong><div class="text-field"><p>A pc-minor of a partial cube G is obtained by a finite sequence of restrictions to nonempty convex subgraphs and contractions of Θ-classes, where contracting a Θ-class simultaneously identifies the endpoints of all its edges and takes the underlying simple quotient graph.</p></div>
+<p><strong>Category:</strong> Minor</p>
+<strong>Comments:</strong><div class="text-field"><p>The elementary coordinate operations are restriction to a semicube and contraction of a Θ-class. This notion is different from an ordinary graph minor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#KnauerMarc20">[KnauerMarc20]</a> (Section 2.1)</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:pc-minor</p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_pc_minor_closed.html'>Partial Cubes Are pc-Minor-Closed</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-1" style="position:relative;">
+
+        <h3><a href="operations/projection.html" class="table-title-link">Coordinate Projection</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate Projection</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\pi_A">
+            \[\pi_A\]
+        </div>
+    </div>
+
+<p><strong>Arity:</strong> 1</p>
+<strong>Definition:</strong><div class="text-field"><p>For H ⊆ 2^X and A ⊆ X, the projection deleting A is π_A(H) = {h ∖ A : h ∈ H} ⊆ 2^{X ∖ A}. For A={x}, it is the union H_x^0 ∪ H_x^1 of the two x-sections.</p></div>
+<p><strong>Category:</strong> Minor</p>
+<strong>Comments:</strong><div class="text-field"><p>On the one-inclusion graph of a partial cube, deleting one coordinate contracts its entire Θ-class. This is ordinary coordinate projection, distinct from strong projection.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_projection_closed.html'>Partial Cubes Are Projection-Closed</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-2" style="position:relative;">
+
+        <h3><a href="operations/conditioning.html" class="table-title-link">Coordinate Conditioning</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate Conditioning</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_x^\epsilon">
+            \[H_x^\epsilon\]
+        </div>
+    </div>
+
+<p><strong>Arity:</strong> 1</p>
+<strong>Definition:</strong><div class="text-field"><p>For H ⊆ 2^X, x ∈ X, and ε ∈ {0,1}, fix the membership value of x and then remove x: H_x^ε = {h ∖ {x} : h ∈ H and 1_{x∈h}=ε} ⊆ 2^{X ∖ {x}}.</p></div>
+<p><strong>Category:</strong> Minor</p>
+<strong>Comments:</strong><div class="text-field"><p>In the one-inclusion graph this is restriction to one coordinate semicube. Iterated nonempty conditionings give cube-face sections; arbitrary convex restrictions may fix several semicubes in succession.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_conditioning_closed.html'>Partial Cubes Are Conditioning-Closed</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
-    
+
         </main>
         <footer>
             <p>Generated from a source-backed mathematical catalogue</p>
         </footer>
-        
+
     <script>
     let isCompactMode = false;
-    
+
     function sortCards(sortBy) {
         document.querySelectorAll('.table-grid').forEach(grid => {
             const cards = Array.from(grid.querySelectorAll('.table-card'));
@@ -127,11 +194,11 @@
             cards.forEach(card => grid.appendChild(card));
         });
     }
-    
+
     function filterCards() {
         const searchTerm = document.getElementById('search-box').value.toLowerCase();
         const cards = document.querySelectorAll('.table-grid .table-card');
-        
+
         cards.forEach(card => {
             const name = (card.querySelector('h3 a') || card.querySelector('h3')).textContent.toLowerCase();
             if (name.includes(searchTerm)) {
@@ -141,12 +208,12 @@
             }
         });
     }
-    
+
     function toggleCompactMode() {
         isCompactMode = !isCompactMode;
         const toggleBtn = document.getElementById('compact-toggle');
         const cards = document.querySelectorAll('.table-card');
-        
+
         cards.forEach(card => {
             // Find all fields with reference type (they contain 'fields-list' ul elements within paragraphs)
             const details = card.querySelector('.table-details');
@@ -164,11 +231,10 @@
                 });
             }
         });
-        
+
         toggleBtn.textContent = isCompactMode ? 'Normal' : 'Compact';
     }
     </script>
-    
+
     </body>
     </html>
-    

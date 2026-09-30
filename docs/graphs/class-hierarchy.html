@@ -7,7 +7,7 @@
         <base href="https://obousquet.github.io/Partial-Cubes/">
         <title>Class Hierarchy</title>
         <link rel="stylesheet" href="styles.css">
-        
+
     <style>
     .nav-menu { display:inline-block; position:relative; margin-left:1em; }
     .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
@@ -31,8 +31,8 @@
         }
     });
     </script>
-    
-        
+
+
         <script>
             window.MathJax = {
                 tex: {
@@ -53,12 +53,12 @@
         </script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="stylesheet" href="styles/graph.css?v=ecc75bff9b52" />
-    
+
     </head>
     <body>
         <header>
             <h1>Class Hierarchy</h1>
-            
+
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
@@ -67,16 +67,16 @@
             <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
             <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
         </div>
-    
+
         <div class="nav-menu">
             <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
             <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
         </div>
-    
+
             </nav>
         </header>
         <main class="table-container">
-            
+
     <div id='graph-container-main' class='graph-container-main'>
         <button id='legend-button' onclick='document.getElementById("legend-modal").style.display="block"' style='position:absolute; top:10px; left:10px; z-index:100; padding:0.5em 1em; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer; font-size:1em;'>📊 Legend</button>
         <div id='graph'></div>
@@ -104,23 +104,23 @@
             <button onclick='document.getElementById("legend-modal").style.display="none"' style='margin:1em auto;display:block;'>Close</button>
         </div>
     </div>
-    
+
         </main>
         <footer>
             <p>Generated from a source-backed mathematical catalogue</p>
         </footer>
-        
+
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/d3.min.js"></script>
     <script src="js/hpcc.min.js"></script>
     <script src="js/d3-graphviz.js"></script>
     <script src="js/graph-readability.js?v=a951fa6249d8"></script>
     <script>
-    const nodeCards = {};
+    const nodeCards = {"#classes/partial_cubes": "\n    <div class=\"table-card\" id=\"math-1\" style=\"position:relative;\">\n        \n        <h3><a href=\"classes/partial_cubes.html\" class=\"table-title-link\">Partial Cubes</a></h3>\n        <div class=\"table-details\">\n        <p><strong>Name: </strong>Partial Cubes</p>\n<strong>Summary:</strong><div class=\"text-field\"><p>Connected graphs that admit an isometric embedding into a hypercube.</p></div>\n<p><strong>Primary Characterization: </strong><a href=\"characterizations/isometric_hypercube_embedding.html\">Isometric Hypercube Embedding</a></p>\n<p><strong>Aliases:</strong><ul class='fields-list'><li>partial cube graphs</li></ul></p>\n<p><strong>Category:</strong> Core</p>\n<p><strong>Ambient Scope:</strong> All Graphs</p>\n<p><strong>Parameterized:</strong> Unspecified</p>\n<p><strong>P-Closed:</strong> Yes</p>\n<p><strong>C-Closed:</strong> Yes</p>\n<p><strong>PC-Closed:</strong> Yes</p>\n<strong>Comments:</strong><div class=\"text-field\"><p>The initial catalogue statement follows the survey's finite-dimensional Q_n formulation. Any extension to infinite coordinate sets requires a separate scope review.</p></div>\n<div class=\"reference-field\"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/isometric_hypercube_embedding.html'>Isometric Hypercube Embedding</a></li><li><a href='characterizations/bipartite_transitive_theta.html'>Bipartite Graph with Transitive Theta Relation</a></li></ul></p></div>\n<div class=\"reference-field\"><p><strong>Outgoing Relations:</strong> <em>None</em></p></div>\n<div class=\"reference-field\"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>\n<div class=\"reference-field\"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_projection_closed.html'>Partial Cubes Are Projection-Closed</a></li><li><a href='operation_results/partial_cubes_conditioning_closed.html'>Partial Cubes Are Conditioning-Closed</a></li><li><a href='operation_results/partial_cubes_pc_minor_closed.html'>Partial Cubes Are pc-Minor-Closed</a></li></ul></p></div>\n<div class=\"reference-field\"><p><strong>Invariant Values:</strong> <em>None</em></p></div>\n<div class=\"reference-field\"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>\n\n        </div>\n    </div>\n    "};
     const edgeCards = {};
     const edgeGeometry = [];
     const legendItems = [{"index": 0, "type": "edge", "text": "Established inclusion", "dot_src": "digraph \"\" { graph [bgcolor=transparent, margin=0]; node [label=\"\\N\", penwidth=1.8]; edge [arrowhead=vee]; \"src\" [shape=point, width=0.08, height=0.08]; \"dst\" [shape=point, width=0.08, height=0.08]; \"src\" -> \"dst\" [color=\"#495057\", arrowhead=vee, penwidth=2, minlen=3]; {rank=same; \"src\"; \"dst\";} }"}, {"index": 1, "type": "edge", "text": "Open or conjectured comparison", "dot_src": "digraph \"\" { graph [bgcolor=transparent, margin=0]; node [label=\"\\N\", penwidth=1.8]; edge [arrowhead=vee]; \"src\" [shape=point, width=0.08, height=0.08]; \"dst\" [shape=point, width=0.08, height=0.08]; \"src\" -> \"dst\" [color=\"#D97706\", arrowhead=open, style=dashed, penwidth=1.5, minlen=3]; {rank=same; \"src\"; \"dst\";} }"}, {"index": 2, "type": "edge", "text": "Established negative comparison", "dot_src": "digraph \"\" { graph [bgcolor=transparent, margin=0]; node [label=\"\\N\", penwidth=1.8]; edge [arrowhead=vee]; \"src\" [shape=point, width=0.08, height=0.08]; \"dst\" [shape=point, width=0.08, height=0.08]; \"src\" -> \"dst\" [color=\"#C1121F\", arrowhead=tee, style=dashed, penwidth=1.5, minlen=3]; {rank=same; \"src\"; \"dst\";} }"}];
-    const graphNodes = [];
+    const graphNodes = [{"id": "#classes/partial_cubes", "ref": "#classes/partial_cubes", "label": "Partial cubes", "type": "core", "shape": "box", "color": "#355070", "fillcolor": "#E7EEF5", "rank": 0}];
     const graphClusters = [];
     function normalizeLatex(latex) {
         // The catalogue has historically accepted both bare TeX and TeX
@@ -311,7 +311,7 @@
             .width(width)
             .height(height)
             .fit(true)
-            .renderDot(`strict digraph "" {graph [bgcolor=transparent, rankdir=TB, newrank=true, remincross=true, splines=line, ranksep=1.1, nodesep=0.35, mclimit=4]; node [label="\N", penwidth=1.8]; edge [arrowhead=vee]; }`)
+            .renderDot(`strict digraph "" {graph [bgcolor=transparent, rankdir=TB, newrank=true, remincross=true, splines=line, nodesep=0.35, mclimit=4, ranksep=1.1]; node [label="\N", penwidth=1.8]; edge [arrowhead=vee]; "#classes/partial_cubes" [label="Partial cubes", color="#355070", fillcolor="#E7EEF5", style=filled, shape=box]; {rank=same; "#classes/partial_cubes";} }`)
             .on('end', function() {
                 console.log('Main graph rendering complete');
                 GraphReadability.place(document.querySelector('#graph svg'), graphNodes, edgeGeometry,
@@ -323,7 +323,7 @@
                     if (!node_id) {
                         node_id = d3.select(this).select('text').text();
                     }
-                    
+
                     if (document.getElementById('graph-focus-mode').checked) {
                         GraphReadability.focus(node_id);
                         return;
@@ -345,18 +345,18 @@
                     showEdgeCard(edgeIdx);
                 });
             });
-        
+
         // Render legend table when legend button is clicked
         let legendRendered = false;
         document.getElementById('legend-button').addEventListener('click', function() {
             if (!legendRendered) {
                 const legendTable = document.getElementById('legend-table');
-                
+
                 // Create table rows for each legend item
                 legendItems.forEach(function(item, idx) {
                     const row = document.createElement('tr');
                     row.style.borderBottom = '1px solid #eee';
-                    
+
                     // SVG cell
                     const svgCell = document.createElement('td');
                     svgCell.style.padding = '5px';
@@ -367,18 +367,18 @@
                     svgDiv.style.width = '100%';
                     svgDiv.style.height = '40px';
                     svgCell.appendChild(svgDiv);
-                    
+
                     // Text cell
                     const textCell = document.createElement('td');
                     textCell.style.padding = '5px';
                     textCell.style.verticalAlign = 'middle';
                     textCell.style.fontSize = '0.9em';
                     textCell.textContent = item.text;
-                    
+
                     row.appendChild(svgCell);
                     row.appendChild(textCell);
                     legendTable.appendChild(row);
-                    
+
                     // Render the individual graph for this item (without worker to avoid conflicts)
                     d3.select('#legend-item-' + idx)
                         .graphviz({useWorker: false})
@@ -387,27 +387,26 @@
                         .fit(true)
                         .renderDot(item.dot_src);
                 });
-                
+
                 legendRendered = true;
             }
         });
-        
+
         // Close modals when clicking outside
         document.addEventListener('mousedown', function(e) {
             var nodeModal = document.getElementById('node-modal');
             var legendModal = document.getElementById('legend-modal');
-            
+
             if (nodeModal.style.display === 'block' && !nodeModal.contains(e.target)) {
                 nodeModal.style.display = 'none';
             }
-            
+
             if (legendModal.style.display === 'block' && !legendModal.contains(e.target)) {
                 legendModal.style.display = 'none';
             }
         });
     });
     </script>
-    
+
     </body>
     </html>
-    

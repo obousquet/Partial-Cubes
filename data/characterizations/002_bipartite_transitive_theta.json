@@ -1,0 +1,14 @@
+{
+  "id": 2,
+  "short_name": "bipartite_transitive_theta",
+  "name": "Bipartite Graph with Transitive Theta Relation",
+  "class_id": "#classes/partial_cubes",
+  "characterization_type": "intrinsic_metric",
+  "model_type": "graph",
+  "statement": "A connected graph $G$ belongs to the class exactly when $G$ is bipartite and the Djoković–Winkler relation $\\Theta$ on $E(G)$ is transitive.",
+  "hypotheses": "Connected graph. For edges $xy$ and $uv$, the relation is defined by $xy\\mathrel{\\Theta}uv$ when $d_G(x,u)+d_G(y,v)\\ne d_G(x,v)+d_G(y,u)$.",
+  "status": "established",
+  "references": "\\cite{BandeltChepoi08survey} (Theorem 8.3)",
+  "proof_source": "PartialCubes:papers/survey/main.tex#sec:partial-cube-basics",
+  "comments": "This criterion is intrinsic: it does not assume a chosen hypercube embedding."
+}

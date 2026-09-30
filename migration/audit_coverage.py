@@ -67,7 +67,7 @@ def audit(config: dict, generated_dir: Path, data_dir: Path) -> dict:
     return {
         "version": 1,
         "kind": "migration_coverage",
-        "phase": 1 if canonical and unresolved == 0 else 0,
+        "phase": 2 if database_counts["classes"] else 1 if canonical and unresolved == 0 else 0,
         "expected_seed_counts": expected,
         "actual_seed_counts": actual,
         "candidate_totals": {

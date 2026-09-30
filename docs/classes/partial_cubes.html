@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Inclusions, equalities, non-containments, incomparabilities, and open comparisons - Partial Cubes</title>
+        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Inclusions, equalities, non-containments, incomparabilities, and open comparisons - Partial Cubes</h1>
+            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,100 +74,36 @@
             </nav>
         </header>
         <main class="table-container">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-1" style="position:relative;">
 
-    <div style="margin-bottom: 1em; display: flex; justify-content: space-between; align-items: center; gap: 1em; flex-wrap: wrap;">
-        <div style="flex: 1;">
-            <input type="text" id="search-box" placeholder="Search by name..." style="width: 100%; max-width: 400px; padding: 0.5em; font-size: 1em; border: 1px solid #ccc; border-radius: 4px;" oninput="filterCards()">
-        </div>
-        <div style="display: flex; gap: 0.5em; align-items: center; flex-wrap: wrap;">
+        <h3><a href="classes/partial_cubes.html" class="table-title-link">Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Cubes</p>
+<strong>Summary:</strong><div class="text-field"><p>Connected graphs that admit an isometric embedding into a hypercube.</p></div>
+<p><strong>Primary Characterization: </strong><a href="characterizations/isometric_hypercube_embedding.html">Isometric Hypercube Embedding</a></p>
+<p><strong>Aliases:</strong><ul class='fields-list'><li>partial cube graphs</li></ul></p>
+<p><strong>Category:</strong> Core</p>
+<p><strong>Ambient Scope:</strong> All Graphs</p>
+<p><strong>Parameterized:</strong> Unspecified</p>
+<p><strong>P-Closed:</strong> Yes</p>
+<p><strong>C-Closed:</strong> Yes</p>
+<p><strong>PC-Closed:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The initial catalogue statement follows the survey's finite-dimensional Q_n formulation. Any extension to infinite coordinate sets requires a separate scope review.</p></div>
+<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/isometric_hypercube_embedding.html'>Isometric Hypercube Embedding</a></li><li><a href='characterizations/bipartite_transitive_theta.html'>Bipartite Graph with Transitive Theta Relation</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Outgoing Relations:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/partial_cubes_projection_closed.html'>Partial Cubes Are Projection-Closed</a></li><li><a href='operation_results/partial_cubes_conditioning_closed.html'>Partial Cubes Are Conditioning-Closed</a></li><li><a href='operation_results/partial_cubes_pc_minor_closed.html'>Partial Cubes Are pc-Minor-Closed</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
 
-            <div style="display: flex; gap: 0.5em; align-items: center;">
-                <label style="margin-right: 0.5em;">View:</label>
-                <button id="compact-toggle" class="btn btn-primary" onclick="toggleCompactMode()">Compact</button>
-            </div>
-            <div style="display: flex; gap: 0.5em; align-items: center;">
-                <label style="margin-right: 0.5em;">Sort by:</label>
-                <button class="btn btn-primary" onclick="sortCards('id')">ID</button>
-                <button class="btn btn-primary" onclick="sortCards('name')">Name</button>
-            </div>
         </div>
     </div>
-
-            <div class="table-description">
-                <p>Inclusions, equalities, non-containments, incomparabilities, and open comparisons</p>
-            </div>
-            <div class="table-grid">
-
-            </div>
 
         </main>
         <footer>
             <p>Generated from a source-backed mathematical catalogue</p>
         </footer>
-
-    <script>
-    let isCompactMode = false;
-
-    function sortCards(sortBy) {
-        document.querySelectorAll('.table-grid').forEach(grid => {
-            const cards = Array.from(grid.querySelectorAll('.table-card'));
-            cards.sort((a, b) => {
-                if (sortBy === 'id') {
-                    const idA = parseInt(a.id.replace('math-', '')) || 0;
-                    const idB = parseInt(b.id.replace('math-', '')) || 0;
-                    return idA - idB;
-                } else if (sortBy === 'name') {
-                    const nameA = (a.querySelector('h3 a') || a.querySelector('h3')).textContent.toLowerCase();
-                    const nameB = (b.querySelector('h3 a') || b.querySelector('h3')).textContent.toLowerCase();
-                    return nameA.localeCompare(nameB);
-                }
-                return 0;
-            });
-            grid.innerHTML = '';
-            cards.forEach(card => grid.appendChild(card));
-        });
-    }
-
-    function filterCards() {
-        const searchTerm = document.getElementById('search-box').value.toLowerCase();
-        const cards = document.querySelectorAll('.table-grid .table-card');
-
-        cards.forEach(card => {
-            const name = (card.querySelector('h3 a') || card.querySelector('h3')).textContent.toLowerCase();
-            if (name.includes(searchTerm)) {
-                card.style.display = '';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-
-    function toggleCompactMode() {
-        isCompactMode = !isCompactMode;
-        const toggleBtn = document.getElementById('compact-toggle');
-        const cards = document.querySelectorAll('.table-card');
-
-        cards.forEach(card => {
-            // Find all fields with reference type (they contain 'fields-list' ul elements within paragraphs)
-            const details = card.querySelector('.table-details');
-            if (details) {
-                const ref_fields = details.querySelectorAll('.reference-field');
-                ref_fields.forEach(p => {
-                    // Check if this paragraph contains a list (likely a reference field)
-                    if (p.querySelector('ul.fields-list')) {
-                        if (isCompactMode) {
-                            p.style.display = 'none';
-                        } else {
-                            p.style.display = '';
-                        }
-                    }
-                });
-            }
-        });
-
-        toggleBtn.textContent = isCompactMode ? 'Normal' : 'Compact';
-    }
-    </script>
 
     </body>
     </html>

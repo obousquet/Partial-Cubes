@@ -15,6 +15,7 @@ build: validate
 		--data_dir $(DATA_DIR) \
 		--output_dir $(DOCS_DIR) \
 		--deploy true
+	$(PYTHON) scripts/normalize_generated_site.py --site-dir $(DOCS_DIR)
 	touch $(DOCS_DIR)/.nojekyll
 
 serve: validate

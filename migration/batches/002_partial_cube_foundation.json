@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "batch_id": "002_partial_cube_foundation",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote the foundational partial-cube definition, its classical intrinsic characterization, and the three minor operations with closure facts.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#sec:partial-cube-basics",
+    "PartialCubes:papers/survey/main.tex#sec:vcsetfam",
+    "PartialCubes:papers/survey/main.tex#def:pc-minor",
+    "published:BandeltChepoi08survey#Theorem-8.3",
+    "published:KnauerMarc20#Section-2.1"
+  ],
+  "records": [
+    {
+      "path": "data/classes/001_partial_cubes.json",
+      "sha256": "00de6b51ee054b10d95f675727e09fc83d968e4a770fb46926fadca5b285adc5"
+    },
+    {
+      "path": "data/characterizations/001_isometric_hypercube_embedding.json",
+      "sha256": "6aed34bcfdcbb512d3938d305174a2d0c185e50638bda967a0dafed965a91551"
+    },
+    {
+      "path": "data/characterizations/002_bipartite_transitive_theta.json",
+      "sha256": "32bcda6a2f96cf2d89e84da7752d7fbad472067076bfb296637bf80ec6bcd7f5"
+    },
+    {
+      "path": "data/characterization_equivalences/001_partial_cube_classical_equivalence.json",
+      "sha256": "095cb4b0dd3f5a4a68f3ba283ef9e8413132f6c92b1174cd63498f7d1d3890f5"
+    },
+    {
+      "path": "data/operations/001_projection.json",
+      "sha256": "d37836e874b3c2d8fd3a755e33945dc463b4e56046fa0f43e8283868fc00dae2"
+    },
+    {
+      "path": "data/operations/002_conditioning.json",
+      "sha256": "2494c85b8651d66739d45c382decb8dddbe88e099523f100801c0806bebf23c3"
+    },
+    {
+      "path": "data/operations/003_pc_minor.json",
+      "sha256": "3fc8ae9fe06510ad224b4fa589d861c8d9f91195c9d1ad0d7b9c0dac864ecd70"
+    },
+    {
+      "path": "data/operation_results/001_partial_cubes_projection_closed.json",
+      "sha256": "38515460bd80b129a8c8d18efe49ccce182a1b8693f5c44619b10f9a5b242f81"
+    },
+    {
+      "path": "data/operation_results/002_partial_cubes_conditioning_closed.json",
+      "sha256": "dfc05bf4c105a296912c79836c80ef6d33d26bc4aa3f9b35c4c1424d13282611"
+    },
+    {
+      "path": "data/operation_results/003_partial_cubes_pc_minor_closed.json",
+      "sha256": "936a44e181dde92f77bedea270f9b48a7408a73d4a84f386bc191039f88dd0bb"
+    }
+  ],
+  "bibliography": {
+    "path": "data/latex/references.bib",
+    "sha256": "5f057ccb425d08909ed609b381108bcd3760b645c35a8fc4ca46b15b065fb1ce",
+    "keys_added": [
+      "BandeltChepoi08survey",
+      "KnauerMarc20"
+    ]
+  },
+  "ownership": {
+    "database": [
+      "normalized partial-cube definition",
+      "intrinsic characterization and equivalence fact",
+      "projection, conditioning, and pc-minor definitions",
+      "concise closure proofs"
+    ],
+    "latex": [
+      "survey exposition and coordinate dictionary",
+      "canonical published and survey proofs",
+      "paper-specific notation and surrounding examples"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "7b814b3e8f3d8eb04901df918a8ff071d1268d294bbdd9ac3c7cd5a72341d68e",
+    "database_records_after_batch": 10,
+    "promoted_classes": 1,
+    "reserved_classes_remaining": 87
+  },
+  "data_tree_sha256": "4a3b4bd7c71b3a64b9ff54bc0d7519f35950da466c4173b76c62115925b3c3e3",
+  "generated_outputs": [
+    "committed docs/ website",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "make check",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "No LaTeX consumer was changed. The survey remains authoritative for its existing prose until a later preservation-checked handoff batch."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 2,
+  "short_name": "conditioning",
+  "name": "Coordinate Conditioning",
+  "symbol": "H_x^\\epsilon",
+  "arity": 1,
+  "definition": "For H ⊆ 2^X, x ∈ X, and ε ∈ {0,1}, fix the membership value of x and then remove x: H_x^ε = {h ∖ {x} : h ∈ H and 1_{x∈h}=ε} ⊆ 2^{X ∖ {x}}.",
+  "category": "minor",
+  "comments": "In the one-inclusion graph this is restriction to one coordinate semicube. Iterated nonempty conditionings give cube-face sections; arbitrary convex restrictions may fix several semicubes in succession.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#sec:vcsetfam"
+}

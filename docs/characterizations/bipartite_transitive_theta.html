@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Bibliography</title>
+        <title>Atomic membership criteria for catalogued classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -33,10 +33,29 @@
     </script>
 
 
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Bibliography</h1>
+            <h1>Atomic membership criteria for catalogued classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -55,16 +74,23 @@
             </nav>
         </header>
         <main class="table-container">
+            <div class="back-link-light"><a href="characterizations/index.html">&larr; Back to Characterizations Table</a></div>
+    <div class="table-card" id="math-2" style="position:relative;">
 
-    <div class='bibliography-list'>
-    <div class='bib-entry' id='BandeltChepoi08survey'><a class='bib-hash' href='bibliography.html#BandeltChepoi08survey' style='float:left; font-size:0.95em; color:#667eea;'>🔗</a>&nbsp;Hans-J<span class="bibtex-protected">ü</span>rgen Bandelt and Victor Chepoi.
-Metric graph theory and geometry: a survey.
-In <em>Surveys on Discrete and Computational Geometry: Twenty Years Later</em>, volume 453 of Contemp. Math., pages 49–86.
-Amer. Math. Soc., 2008.
-<a href="https://doi.org/10.1090/conm/453/08795">doi:10.1090/conm/453/08795</a>.</div><div class='bib-entry' id='KnauerMarc20'><a class='bib-hash' href='bibliography.html#KnauerMarc20' style='float:left; font-size:0.95em; color:#667eea;'>🔗</a>&nbsp;Kolja Knauer and Tilen Marc.
-On tope graphs of complexes of oriented matroids.
-<em>Discrete &amp; Computational Geometry</em>, 63:377–417, 2020.
-<a href="https://doi.org/10.1007/s00454-019-00111-z">doi:10.1007/s00454-019-00111-z</a>.</div>
+        <h3><a href="characterizations/bipartite_transitive_theta.html" class="table-title-link">Bipartite Graph with Transitive Theta Relation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Bipartite Graph with Transitive Theta Relation</p>
+<p><strong>Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Type:</strong> Intrinsic Metric</p>
+<p><strong>Model:</strong> Graph</p>
+<strong>Criterion:</strong><div class="text-field"><p>A connected graph $G$ belongs to the class exactly when $G$ is bipartite and the Djoković–Winkler relation $\Theta$ on $E(G)$ is transitive.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Connected graph. For edges $xy$ and $uv$, the relation is defined by $xy\mathrel{\Theta}uv$ when $d_G(x,u)+d_G(y,v)\ne d_G(x,v)+d_G(y,u)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltChepoi08survey">[BandeltChepoi08survey]</a> (Theorem 8.3)</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:partial-cube-basics</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This criterion is intrinsic: it does not assume a chosen hypercube embedding.</p></div>
+
+        </div>
     </div>
 
         </main>

@@ -70,6 +70,25 @@ def main() -> int:
     if len(identity_decisions["overlaps"]) != 9:
         errors.append("Expected nine reviewed overlap decisions")
 
+    data_class_dir = root.parent / "data" / "classes"
+    database_classes = {
+        record["short_name"]: record
+        for path in data_class_dir.glob("[0-9]*.json")
+        for record in [load_json(path)]
+    }
+    allocated_classes = {record["short_name"]: record for record in classes}
+    unexpected_database_classes = sorted(set(database_classes) - set(allocated_classes))
+    if unexpected_database_classes:
+        errors.append(f"Database classes lack reserved identities: {unexpected_database_classes}")
+    for short_name, database_record in database_classes.items():
+        allocation = allocated_classes[short_name]
+        if allocation["allocated_id"] != database_record["id"]:
+            errors.append(f"Allocated ID mismatch for database class {short_name}")
+        if allocation.get("promotion_state") != "database":
+            errors.append(f"Database class is not marked promoted in allocation: {short_name}")
+        if allocation.get("database_record") != f"#classes/{short_name}":
+            errors.append(f"Database pointer is missing from allocation: {short_name}")
+
     queue = load_json(root / "claim_queue.json")
     claims = queue["claims"]
     unique(claims, "candidate_id", "claim", errors)
