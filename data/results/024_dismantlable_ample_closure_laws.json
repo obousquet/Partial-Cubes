@@ -1,0 +1,26 @@
+{
+  "id": 24,
+  "short_name": "dismantlable_ample_closure_laws",
+  "name": "Dismantlable-Ample Closure Laws",
+  "result_type": "invariant_law",
+  "statement": "Dismantlable ample classes are closed under nonempty convex restrictions, coordinate projections, pc-minors, strong projections, Cartesian products, cube symmetries, and specified peripheral expansions whose base and site are dismantlable ample. They are not closed under arbitrary induced or isometric subgraphs or under ambient-family complement.",
+  "status": "established",
+  "proof": "Ample-prefix orders restrict to coordinate faces and project by first appearance. Product vertices ordered by the sum of factor-order indices give isometric prefixes. For a peripheral expansion, concatenate a base order with a site order in the new layer. Conversely, factors, bases, and sites arise as convex restrictions or contractions. The cube $Q_3$ contains the isometric induced $C_6$, which is not ample; Hall's class and its dismantlable complement disprove complement closure.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:dismantlable-ample-closure",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product",
+    "#operations/peripheral_expansion"
+  ],
+  "witness_ids": [
+    "#examples/three_cube",
+    "#examples/six_cycle",
+    "#examples/hall_maximum_class"
+  ]
+}

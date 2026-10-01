@@ -1,0 +1,16 @@
+{
+  "id": 39,
+  "short_name": "median_strict_subset_dismantlable_ample",
+  "name": "Median Graphs Are Strictly Dismantlable Ample",
+  "subject_id": "#classes/median",
+  "object_id": "#classes/dismantlable_ample",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite median partial cubes.",
+  "statement": "Every finite median graph is dismantlable ample, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube"
+  ],
+  "proof": "Median classes have ordering width zero, hence are dismantlable ample. The vertex-deleted three-cube is ample of VC dimension two and therefore dismantlable ample, but its three maximal vertices have missing coordinatewise majority and it is not median.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:dismantlable-ample-position; PartialCubes:papers/structural-invariants/main.tex#thm:median-width"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 17,
+  "short_name": "dismantlable_ample_equivalence",
+  "name": "Dismantlable-Ample Characterization Equivalence",
+  "class_id": "#classes/dismantlable_ample",
+  "characterization_ids": [
+    "#characterizations/ample_prefix_ordering",
+    "#characterizations/prefix_isometric_ordering",
+    "#characterizations/corner_peeling_order",
+    "#characterizations/acyclic_unique_sink_orientation",
+    "#characterizations/zero_ordering_width"
+  ],
+  "hypotheses": "Finite nonempty binary family and its one-inclusion graph.",
+  "statement": "Ample-prefix orders, prefix-isometric orders, reverse corner-peeling orders, acyclic unique-sink orientations, and zero ordering width define the same class.",
+  "status": "established",
+  "proof": "For an isometric family, the first four order and orientation formulations are equivalent by the corner-peeling correspondence. An order has width zero precisely when every minimal predecessor disagreement is a singleton; the linear-quotients and Alexander-dual shelling dictionary identifies these orders with the same ample-prefix orders.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#def:dismantlable-ample; PartialCubes:papers/structural-invariants/main.tex#prop:zero"
+}

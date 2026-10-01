@@ -1,0 +1,20 @@
+{
+  "id": 9,
+  "short_name": "dismantlable_ample_known_pc_obstructions",
+  "name": "Known pc-Minimal Obstructions to Dismantlable Ampleness",
+  "target_class_id": "#classes/dismantlable_ample",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/antipodally_punctured_hypercubes",
+    "#obstruction_families/hall_maximum_class_obstruction"
+  ],
+  "basis_claim": "partial",
+  "minimality": "pc_minimal",
+  "statement": "Every $Q_n^{--}$ for $n\\geq3$ and Hall's class $C_H$ is pc-minimal outside the dismantlable ample class. Moreover, the $Q_n^{--}$ are exactly all nonample members of the complete excluded basis. The remaining ample pc-minimal obstructions are not classified.",
+  "status": "established",
+  "proof": "Each $Q_n^{--}$ is nonample, while every elementary restriction is $Q_{n-1}^-$ and every elementary contraction is $Q_{n-1}$, both dismantlable ample. Any nonample pc-minimal failure contains some $Q_n^{--}$ by the ample-class obstruction theorem and therefore equals it. Hall's class has no corner, while the exact verifier supplies corner peelings for every elementary restriction and contraction; pc-minor closure then handles all proper minors.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:dismantlable-ample-obstructions",
+  "comments": "The complete ample obstruction family is open. The current exact size bound excludes additional ample failures on at most fourteen vertices."
+}

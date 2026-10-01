@@ -118,6 +118,7 @@
         <h3><a href="results/ordering_width_zero_characterization.html" class="table-title-link">Zero Ordering Width Characterization</a></h3>
         <div class="table-details">
         <p><strong>Name: </strong>Zero Ordering Width Characterization</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
 <p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
 <p><strong>Result Type:</strong> Recognition</p>
 <strong>Statement:</strong><div class="text-field"><p>$\sigma(C)=0$ if and only if $C$ is dismantlable ample, equivalently its concepts admit an order in which every nonempty prefix is ample.</p></div>
@@ -473,6 +474,43 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Every piece is a conditioning of the union, giving the lower bound. Order a piece with largest $\kappa_i$ first, then append the outside concepts of each other piece after the base $D$. The gate of a current concept into $D$ has disagreement contained in every cross-piece disagreement, so cross-piece predecessors add no new minimal supports. Each appended piece costs at most the maximum of its absolute width and $\kappa_i$, leaving only the second largest attachment penalty.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-24" style="position:relative;">
+
+        <h3><a href="results/dismantlable_ample_closure_laws.html" class="table-title-link">Dismantlable-Ample Closure Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable-Ample Closure Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Dismantlable ample classes are closed under nonempty convex restrictions, coordinate projections, pc-minors, strong projections, Cartesian products, cube symmetries, and specified peripheral expansions whose base and site are dismantlable ample. They are not closed under arbitrary induced or isometric subgraphs or under ambient-family complement.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Ample-prefix orders restrict to coordinate faces and project by first appearance. Product vertices ordered by the sum of factor-order indices give isometric prefixes. For a peripheral expansion, concatenate a base order with a site order in the new layer. Conversely, factors, bases, and sites arise as convex restrictions or contractions. The cube $Q_3$ contains the isometric induced $C_6$, which is not ample; Hall's class and its dismantlable complement disprove complement closure.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/three_cube.html">Three-Cube</a></li><li><a href="examples/six_cycle.html">Six-Cycle</a></li><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-25" style="position:relative;">
+
+        <h3><a href="results/dismantlable_ample_obstruction_frontier.html" class="table-title-link">Dismantlable-Ample Obstruction Frontier</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable-Ample Obstruction Frontier</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The nonample pc-minimal obstructions to dismantlable ampleness are exactly $Q_n^{--}$ for $n\geq3$. Hall's 299-concept maximum class is an additional ample pc-minimal obstruction. No ample partial cube on at most fourteen vertices fails to be dismantlable ample; consequently the minimum order of an ample obstruction lies between 15 and 299 inclusive.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The ample-class forbidden-minor theorem and pc-minimality force every nonample obstruction to equal a contained $Q_n^{--}$. Elementary minors verify minimality of those graphs. Hall's absence of corners is published, and exact corner-peeling certificates for its 36 elementary pc-minors prove its minimality. An exhaustive cube-isomorphism census through order fourteen, completed by the low-excess structural lemma in high isometric dimension, gives the lower bound.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:dismantlable-ample-obstructions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The complete ample obstruction family remains open; this record states the proved frontier only.</p></div>
 
         </div>
     </div>

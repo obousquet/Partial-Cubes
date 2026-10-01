@@ -964,6 +964,87 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-53" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_projection_closed.html" class="table-title-link">Dismantlable Ample Classes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Classes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a finite dismantlable ample class is dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Order distinct projected concepts by the first time they appear in an ample-prefix order. Each resulting prefix is the projection of an ample prefix and is therefore ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-54" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_conditioning_closed.html" class="table-title-link">Dismantlable Ample Classes Are Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Classes Are Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning, and more generally every nonempty convex restriction, of a finite dismantlable ample class is dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Intersect an ample-prefix order with the coordinate face defining the restriction. Every surviving nonempty prefix is the corresponding section of an ample class and remains ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-55" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_pc_minor_closed.html" class="table-title-link">Dismantlable Ample Classes Are PC-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Classes Are PC-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a finite dismantlable ample partial cube is dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Convex restrictions preserve ample-prefix orders by intersection, and contractions preserve them by ordering projected concepts at first appearance. Iterating these two operations proves the claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-56" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_cartesian_product_closed.html" class="table-title-link">Dismantlable Ample Classes Satisfy the Factorwise Product Theorem</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Classes Satisfy the Factorwise Product Theorem</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For finite partial cubes $G_1,G_2$, the product $G_1\square G_2$ is dismantlable ample if and only if both factors are dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Given prefix-isometric orders of the factors, order product vertices by nondecreasing sum of their two order indices. Factor geodesics stay in every prefix, proving sufficiency. Each factor is a convex coordinate face of the product, so pc-minor closure proves necessity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-57" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_peripheral_expansion.html" class="table-title-link">Dismantlable Ample Peripheral-Expansion Theorem</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Peripheral-Expansion Theorem</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For an isometric site $S\subseteq B$, the specified peripheral expansion $P=(B\times\{0\})\cup(S\times\{1\})$ is dismantlable ample if and only if both $B$ and $S$ are dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Concatenate a prefix-isometric order of the lower copy of $B$ with one of the upper copy of $S$; lower, upper, and cross-layer pairs all have shortest paths inside every prefix. Conversely, $B$ is a contraction and $S$ a semicube restriction of $P$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
