@@ -1,0 +1,18 @@
+{
+  "id": 12,
+  "short_name": "hypercellular_single_obstruction_pc_basis",
+  "name": "Single-Obstruction PC-Minor Basis for Hypercellular Graphs",
+  "target_class_id": "#classes/hypercellular_partial_cubes",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/vertex_deleted_three_cube"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is hypercellular if and only if it has no pc-minor isomorphic to $Q_3^-$.",
+  "status": "established",
+  "proof": "This is the defining forbidden-minor clause of the hypercellular characterization theorem; $Q_3^-$ is itself nonhypercellular and its proper pc-minors avoid it.",
+  "references": "\\cite{ChepoiKnauerMarc20}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:hypercellular-characterizations"
+}
