@@ -1,0 +1,14 @@
+{
+  "id": 15,
+  "short_name": "coefficient_ratio",
+  "name": "Separator Coefficient Ratio",
+  "symbol": "\\tau",
+  "definition": "For positive separator coefficients $a_{p,i}$ and positive witness magnitudes $z_{c,i}$, take for every concept and minimal missing pattern the ratio of the weighted terms where the concept agrees with the missing pattern to the weighted terms where it disagrees. Let $R_C(a,z)$ be the maximum of these ratios, $T_C(a)=\\inf_{z>0}R_C(a,z)$, and $\\tau(C)=\\inf_{a>0}T_C(a)$.",
+  "status": "established",
+  "codomain": "Real interval $[0,\\max(0,|E|-1)]$",
+  "normalization": "Coefficient rows may be normalized to sum one because row and witness rescaling leave every ratio unchanged. Empty numerators and the empty maximum are zero.",
+  "category": "geometric",
+  "isomorphism_invariant": false,
+  "comments": "Defined for every nonempty positioned binary class. The infima need not be attained. The threshold $\\tau<1$ characterizes realizable ampleness; $\\tau=0$ has a strict tropical term-dominance characterization.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#eq:ratio-invariant"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 48,
+  "short_name": "coefficient_ratio_zero_gap",
+  "name": "Coefficient-Ratio Zero Criterion and Gap",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [],
+  "result_type": "invariant_law",
+  "statement": "$\\tau(C)=0$ exactly when shared coefficient and witness exponents satisfy strict term dominance in every concept-pattern comparison. Otherwise $\\tau(C)\\ge1/g(C)$, hence every positive value on $n$ coordinates is at least $1/\\max(1,n-1)$.",
+  "status": "established",
+  "proof": "A ratio below $1/g(C)$ forces the largest favorable exponent to exceed the largest unfavorable exponent after logarithms. Conversely, exponentially dilating any strict dominance certificate drives every ratio to zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-zero"
+}

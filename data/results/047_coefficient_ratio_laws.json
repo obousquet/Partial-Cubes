@@ -1,0 +1,20 @@
+{
+  "id": 47,
+  "short_name": "coefficient_ratio_laws",
+  "name": "Coefficient-Ratio Minor, Product, and Realizability Laws",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "$\\tau$ is invariant under cube symmetries, nonincreasing under every nonempty pc-minor, and satisfies $\\tau(C\\times H)=\\max\\{\\tau(C),\\tau(H)\\}$. Moreover $\\tau(C)<1$ exactly when $C$ is realizable ample.",
+  "status": "established",
+  "proof": "Projection restricts rows and lifted magnitudes. Conditioning deletes only unfavorable numerator terms from an original representative row. Product missing patterns lie in one factor. Finally, ratio below one is exactly strict separator feasibility.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-laws"
+}

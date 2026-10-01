@@ -1,0 +1,18 @@
+{
+  "id": 55,
+  "short_name": "coefficient_space_disjunctive_product",
+  "name": "Coefficient Spaces Under Disjunctive Product",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/disjunctive_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For nonempty proper classes, $\\mathcal A(C\\vee H)\\simeq\\mathcal A(C)\\times\\mathcal A(H)$ and $\\min(1,\\tau(C\\vee H))=\\max\\{\\min(1,\\tau(C)),\\min(1,\\tau(H))\\}$.",
+  "status": "established",
+  "proof": "The complement of the disjunctive product is $C^c\\times H^c$. Apply stable complement duality and the Cartesian-product laws.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/duality.tex#eq:disjunctive-product; PartialCubes:papers/coefficient-topology/duality.tex#cor:ratio-further-operations"
+}

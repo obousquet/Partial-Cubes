@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "batch_id": "022_coefficient_topology_core",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize the separator coefficient space and ratio invariant, exact row reduction and its homotopy theorem, product and complement laws, specified pc-minor maps, and partial-trace and disjunctive products.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/setup.tex#thm:positive",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#thm:shared-row-reduction",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#thm:coefficient-topology",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#prop:coefficient-product",
+    "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-laws",
+    "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-zero",
+    "PartialCubes:papers/coefficient-topology/duality.tex#thm:complement-topology",
+    "PartialCubes:papers/coefficient-topology/duality.tex#thm:minor-maps",
+    "PartialCubes:papers/coefficient-topology/duality.tex#thm:partial-trace"
+  ],
+  "source_packets": [
+    {
+      "id": "coefficient-topology-main",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/main.tex",
+      "sha256": "614635404cb9453beec3139cd5e07f8e71a85232d2ad0834997fb23cf02b0c43"
+    },
+    {
+      "id": "coefficient-space-setup",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/setup.tex",
+      "sha256": "5889b64bd7a77f670419d873f8c61461093b53c63adc0fc14a5b001677e11e3c"
+    },
+    {
+      "id": "exact-reduction",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/coefficient_spaces.tex",
+      "sha256": "73e98a43234ba37a30219d3421603d29b715cdb6c07d71566b30c2adf34154c3"
+    },
+    {
+      "id": "ratio-invariant",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/ratio_invariant.tex",
+      "sha256": "a48877133971424ba6272c197a6a120b7fe655ce6757429ba8f256c4d5ea6bfa"
+    },
+    {
+      "id": "complement-and-operation-duality",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/duality.tex",
+      "sha256": "82828518c8139168b2f406e22b31cf3361fff8f3f6d03397299f4bf1896f3033"
+    },
+    {
+      "id": "coefficient-topology-build-review",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/build_review.json",
+      "sha256": "9f9527e556ff6527389466068384145556796e9096116205a34e618e4a013e22"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized definitions and theorem facts in this batch. The 82-page manuscript retains full homotopies, selectors, radial trivializations, examples, literature comparison, and all open questions.",
+    "recoverability": "Exact source hashes and the migration source manifest preserve provenance. No LaTeX source was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "database-coefficient-topology-core-verifier",
+      "path": "scripts/verify_coefficient_topology_core.py",
+      "sha256": "27a8840a1ae174a54b9de875afb8cd76d5c6d216d8537be44901feace12864e9",
+      "assertions": "Small exact row identities, sixteen Cartesian product row checks, antipodal ratio endpoint, singleton partial trace, and source build label/hash integrity."
+    },
+    {
+      "id": "coefficient-topology-core-report",
+      "path": "data/examples/assets/coefficient_topology_core_verification.json",
+      "sha256": "f7c52d49a52ad4678623bae8b2ab92de601ee4167696ffae187ea0a7fa755bce",
+      "assertions": "Compact database-owned exact replay output."
+    },
+    {
+      "id": "coefficient-topology-build-review",
+      "path": "data/examples/assets/coefficient_topology_build_review.json",
+      "sha256": "9f9527e556ff6527389466068384145556796e9096116205a34e618e4a013e22",
+      "assertions": "Preserved source report for the clean 82-page, eighteen-source-file build and evidence hashes."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/020_realizable_ample_equivalence.json",
+      "sha256": "81e2fb10c5986190e99e5b3da1326393ec69ebcbc24eb1fd1fdf2e4ba44397cb"
+    },
+    {
+      "path": "data/characterizations/067_nonempty_coefficient_space.json",
+      "sha256": "b9a24b4e06b22ce41f5c8c67624c1024d7305fa7ab9bd920638f0f8051ce8978"
+    },
+    {
+      "path": "data/examples/assets/coefficient_topology_build_review.json",
+      "sha256": "9f9527e556ff6527389466068384145556796e9096116205a34e618e4a013e22"
+    },
+    {
+      "path": "data/examples/assets/coefficient_topology_core_verification.json",
+      "sha256": "f7c52d49a52ad4678623bae8b2ab92de601ee4167696ffae187ea0a7fa755bce"
+    },
+    {
+      "path": "data/invariant_values/043_hypercube_coefficient_space.json",
+      "sha256": "7ddefc04abc276ac8192859201bd93d7c84ac14beb37c648380cd8da79fac6a2"
+    },
+    {
+      "path": "data/invariant_values/044_hypercube_coefficient_ratio.json",
+      "sha256": "6e665608b5e3375e634c88d316957bc95bde9507f9acbfb7165c20e792ee5b96"
+    },
+    {
+      "path": "data/invariant_values/045_daisy_coefficient_ratio.json",
+      "sha256": "780ea7c2e557ef6a059599bd089232bcf4f9b486746248ec4b7b1f2b34203ddf"
+    },
+    {
+      "path": "data/invariant_values/046_square_antipodal_pair_coefficient_ratio.json",
+      "sha256": "a644a16dbaab1e0c3d2564464dd85822678f3a4cda4e910d5994842d43948260"
+    },
+    {
+      "path": "data/invariants/014_coefficient_space.json",
+      "sha256": "cc17e8fadaba6bfce4520abcda95c8bef39499f6c39f7abc370ba237093da818"
+    },
+    {
+      "path": "data/invariants/015_coefficient_ratio.json",
+      "sha256": "3696e2392a90b27ff8c774be64b736677794c1618f9e83debfa5f1d9248fde1c"
+    },
+    {
+      "path": "data/operations/012_universal_projection.json",
+      "sha256": "92cd95bcb136af1c007012157ebadefbeca032b3009423f9f725bb89b60d47f2"
+    },
+    {
+      "path": "data/operations/013_disjunctive_product.json",
+      "sha256": "7bc35bb14094b41183f4cb6264545656c91eee4adf0b6bc3e5e5e26df01a6f69"
+    },
+    {
+      "path": "data/operations/014_partial_trace.json",
+      "sha256": "6b95ad5cc7290553b12d63db12ac451b6e07720d888e74df1f68a74a4c6d7140"
+    },
+    {
+      "path": "data/results/046_coefficient_space_realizability.json",
+      "sha256": "5d126b4e4d96f34e1bd6ae6568a6b92aa5bea0f450cde0d75915eb26c867bbad"
+    },
+    {
+      "path": "data/results/047_coefficient_ratio_laws.json",
+      "sha256": "ae1f57dff48d91ca00008994d8575629dcdfbdbf1ca207c5102ae6f44c7bdc03"
+    },
+    {
+      "path": "data/results/048_coefficient_ratio_zero_gap.json",
+      "sha256": "18c960bf3a9dfb7fba3bba66b2ae222090fce5b77540161ce422b8785c25132a"
+    },
+    {
+      "path": "data/results/049_exact_coefficient_row_reduction.json",
+      "sha256": "ad64af5593d77d96bdb7f817570821e683b8e0a798b43dba7e48d514012b836f"
+    },
+    {
+      "path": "data/results/050_coefficient_reduction_topology.json",
+      "sha256": "295294cbdc0100ae6491270f8005ccf315c68ad24a037cc31ed1f58779f51a55"
+    },
+    {
+      "path": "data/results/051_coefficient_space_product.json",
+      "sha256": "f7370c203743f93a53597623dfe2c4b92a91676b2893ac907620b89f6fb35a51"
+    },
+    {
+      "path": "data/results/052_coefficient_space_complement_duality.json",
+      "sha256": "fcadb06d7048776453544e556ca73db52c65c40b69abeac5bcfa532428ca0a86"
+    },
+    {
+      "path": "data/results/053_coefficient_space_pc_minor_maps.json",
+      "sha256": "fdc52bf6c28a984939c9f883412f8fdad07973d1b117175052739f4d5d31e6d1"
+    },
+    {
+      "path": "data/results/054_coefficient_space_partial_trace_product.json",
+      "sha256": "4820d33103f39ec456d049b79fef602cf937d7b19fc35a5fb96e67cc743077f2"
+    },
+    {
+      "path": "data/results/055_coefficient_space_disjunctive_product.json",
+      "sha256": "a938091b8318c7438afe35ae0769405ba673bd3dd99855417dd3e795a8ec5331"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "b9c9a1400b09cbdddb742dca678453e3a6b2bac0d95bb726d24b7d115ab77a13"
+    },
+    {
+      "path": "scripts/verify_coefficient_topology_core.py",
+      "sha256": "27a8840a1ae174a54b9de875afb8cd76d5c6d216d8537be44901feace12864e9"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 407 records.",
+    "website": "Normalized 423 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "28 Hasse covers represent 45 stored inclusions; 41 closure-map arrows rendered.",
+    "migration": "100 class occurrences reconciled; source snapshot recoverable; review queues valid."
+  },
+  "deferred": [
+    "Learning-space coefficient domains and their Euclidean topology.",
+    "Union-closed spectral formulas and optimized thresholds.",
+    "Graph arrangement and sphere-family constructions.",
+    "Two-control pc-minimal nonrealizable families.",
+    "Relative gluing, entropy duality, and finite nerve models."
+  ]
+}

@@ -846,6 +846,176 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-46" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_realizability.html" class="table-title-link">Coefficient-Space Realizability Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Space Realizability Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The coefficient space $\mathcal A(C)$ is nonempty exactly when $C$ is ample and affine-convex realizable. In that case it contains rational rows with rational strict witnesses, and an open polyhedral cone realizes $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A feasible row family defines the cone cut out by its strict separator inequalities. Conversely, separate a convex realization from each minimal missing cylinder; minimality makes every supported coefficient positive. Convex projection proves ampleness, and strict rational approximation supplies rational data.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#thm:positive</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-47" style="position:relative;">
+
+        <h3><a href="results/coefficient_ratio_laws.html" class="table-title-link">Coefficient-Ratio Minor, Product, and Realizability Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Ratio Minor, Product, and Realizability Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\tau$ is invariant under cube symmetries, nonincreasing under every nonempty pc-minor, and satisfies $\tau(C\times H)=\max\{\tau(C),\tau(H)\}$. Moreover $\tau(C)<1$ exactly when $C$ is realizable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection restricts rows and lifted magnitudes. Conditioning deletes only unfavorable numerator terms from an original representative row. Product missing patterns lie in one factor. Finally, ratio below one is exactly strict separator feasibility.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/ratio_invariant.tex?#thm:ratio-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-48" style="position:relative;">
+
+        <h3><a href="results/coefficient_ratio_zero_gap.html" class="table-title-link">Coefficient-Ratio Zero Criterion and Gap</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Ratio Zero Criterion and Gap</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\tau(C)=0$ exactly when shared coefficient and witness exponents satisfy strict term dominance in every concept-pattern comparison. Otherwise $\tau(C)\ge1/g(C)$, hence every positive value on $n$ coordinates is at least $1/\max(1,n-1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A ratio below $1/g(C)$ forces the largest favorable exponent to exceed the largest unfavorable exponent after logarithms. Conversely, exponentially dilating any strict dominance certificate drives every ratio to zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/ratio_invariant.tex?#thm:ratio-zero</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-49" style="position:relative;">
+
+        <h3><a href="results/exact_coefficient_row_reduction.html" class="table-title-link">Exact Coefficient-Row Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Coefficient-Row Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>The iterative shared-row reduction projects $\mathcal A(C)$ exactly onto the terminal relation $E_K$: prescribed terminal coefficients extend if and only if they satisfy its surviving local systems. Rational terminal data with rational local witnesses reconstruct rational full coefficients and a positive rational margin certificate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Rows unique to one local system can be added independently, while positive-front deletion preserves feasibility for fixed coefficients. Alternating these exact steps reaches a greatest fixed point, and reversing them reconstructs every eliminated row and witness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#thm:shared-row-reduction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-50" style="position:relative;">
+
+        <h3><a href="results/coefficient_reduction_topology.html" class="table-title-link">Topology of Exact Coefficient Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Topology of Exact Coefficient Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>The exact reduction projection $\mathcal A(C)\to E_K$ is a homotopy equivalence with a continuous section, and every nonempty fiber is contractible. If all terminal local systems clear, the full coefficient space and every prescribed-row extension fiber are contractible.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Minimum-norm witnesses vary continuously. Each unique-occurrence row deletion has an explicit continuous section and two convex interpolation homotopies; unused simplex factors contract linearly. Compose these maps through the reduction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#thm:coefficient-topology</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-51" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_product.html" class="table-title-link">Coefficient Spaces Multiply Under Cartesian Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces Multiply Under Cartesian Products</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\mathcal A(C\times D)\cong\mathcal A(C)\times\mathcal A(D)$ for nonempty classes on disjoint coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every minimal missing product pattern lies wholly in one factor. Factor rows and witnesses concatenate, while product witnesses restricted at a fixed concept of the other factor prove the converse.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#prop:coefficient-product</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-52" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_complement_duality.html" class="table-title-link">Stable Complement Duality of Coefficient Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stable Complement Duality of Coefficient Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty proper $C$ and $0<t\le1$, the threshold spaces satisfy $\mathcal A_t(C)\times\mathbb R^{d_{C^c}}\cong\mathcal A_t(C^c)\times\mathbb R^{d_C}$ and hence are homotopy equivalent. Therefore $\min(1,\tau(C))=\min(1,\tau(C^c))$; below one the values are equal.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A symmetric bilinear relation projects exactly onto both threshold coefficient spaces. Minimum-norm centers and radial trivializations identify it with each space times the corresponding Euclidean fiber.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:complement-topology; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-complement</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-53" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_pc_minor_maps.html" class="table-title-link">Coefficient-Space Maps for Specified PC-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Space Maps for Specified PC-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every specified nonempty pc-minor induces a continuous coefficient-space map by restricting and normalizing chosen representative rows. Its homotopy class is independent of those choices, and composition of specified minors agrees up to homotopy.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A target missing pattern extends with the fixed coordinates and contains an original minimal missing representative. Fixed-coordinate terms are unfavorable, so deleting them preserves strict separation. Straight interpolation compares representative choices.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:minor-maps</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-54" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_partial_trace_product.html" class="table-title-link">Coefficient Spaces of Partial Traces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces of Partial Traces</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/partial_trace.html">Partial-Trace Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>The lifted missing patterns are exactly the old patterns together with zero masks on their released support coordinates, and $\mathcal A(T_I(C))\cong\mathcal A(C)\times(0,\infty)^{r_I(C)}$. The mask-zero map is the first projection and strongly deformation retracts onto a section.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Old-coordinate row ratios recover precisely a coefficient family for $C$; every new mask-to-old coefficient ratio is free. Explicit witnesses use small negative values on unreleased masks and large positive values on released masks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:partial-trace</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-55" style="position:relative;">
+
+        <h3><a href="results/coefficient_space_disjunctive_product.html" class="table-title-link">Coefficient Spaces Under Disjunctive Product</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces Under Disjunctive Product</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/disjunctive_product.html">Disjunctive Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty proper classes, $\mathcal A(C\vee H)\simeq\mathcal A(C)\times\mathcal A(H)$ and $\min(1,\tau(C\vee H))=\max\{\min(1,\tau(C)),\min(1,\tau(H))\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The complement of the disjunctive product is $C^c\times H^c$. Apply stable complement duality and the Cartesian-product laws.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#eq:disjunctive-product; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-further-operations</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

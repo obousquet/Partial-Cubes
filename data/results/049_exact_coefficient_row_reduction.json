@@ -1,0 +1,15 @@
+{
+  "id": 49,
+  "short_name": "exact_coefficient_row_reduction",
+  "name": "Exact Coefficient-Row Reduction",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [],
+  "result_type": "algorithm",
+  "statement": "The iterative shared-row reduction projects $\\mathcal A(C)$ exactly onto the terminal relation $E_K$: prescribed terminal coefficients extend if and only if they satisfy its surviving local systems. Rational terminal data with rational local witnesses reconstruct rational full coefficients and a positive rational margin certificate.",
+  "status": "established",
+  "proof": "Rows unique to one local system can be added independently, while positive-front deletion preserves feasibility for fixed coefficients. Alternating these exact steps reaches a greatest fixed point, and reversing them reconstructs every eliminated row and witness.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#thm:shared-row-reduction"
+}
