@@ -1070,6 +1070,50 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-45" style="position:relative;">
+
+        <h3><a href="examples/hamming_ball_minimum_section_deletion.html" class="table-title-link">Minimum-Section Deletion from a Rank-Three Hamming Ball</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum-Section Deletion from a Rank-Three Hamming Ball</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="B_5(0,3)\setminus S">
+            \[B_5(0,3)\setminus S\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $M$ be the rank-three Hamming ball about $00000$, and fix two coordinates to $11$. Its four-word section $S$ is the rank-one Hamming ball on the other three coordinates. Delete these four words.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The residual class has 22 words. The fixed section is contained in all other sections on the two-coordinate block. The deletion theorem constructs a rank-three maximum parent on seven coordinates with 64 words, and exactly two auxiliaries are necessary among rank-three parents.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:minimum-section-deletion</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_minimum_section_deletions.py; data/examples/assets/minimum_section_deletions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-46" style="position:relative;">
+
+        <h3><a href="examples/seven_cube_forest_section_deletion.html" class="table-title-link">Three-Section Forest Deletion in the Seven-Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Three-Section Forest Deletion in the Seven-Cube</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{117}">
+            \[C_{117}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Remove the monotone eight-word coordinate path from $Q_7$, obtaining a rank-five maximum class. Delete its singleton minimum sections on blocks $\{3,4,5,6,7\}$, $\{1,4,5,6,7\}$, and $\{1,2,3,4,5\}$ with patterns $00000$, $10000$, and $11111$ respectively.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The deleted words are $0100000$, $1010000$, and $1111101$. The first two patterns agree and each disagrees with the third, so the disagreement graph is a path. The residual class is ample with 117 words. The forest construction gives a rank-five maximum parent on ten coordinates with 638 words.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:forest-minimum-deletion</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_minimum_section_deletions.py; data/examples/assets/minimum_section_deletions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

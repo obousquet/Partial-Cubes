@@ -1,0 +1,12 @@
+{
+  "id": 127,
+  "short_name": "downset_filter_rank_preservation",
+  "name": "Rank-Preserving Downset Filtering",
+  "class_ids": ["#classes/ample", "#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/downset_filter"],
+  "result_type": "invariant_law",
+  "statement": "If nonempty $C$ is downward closed in $U$ and $D\\subseteq\\{0,1\\}^U$ is a nonempty downset, then $F=C|_D$ is nonempty and $\\operatorname{Sh}(F)=\\{T\\in\\operatorname{Sh}(C):T\\cap U\\in D\\}$. Ampleness is preserved. If $C$ has a rank-$r$ parent with $m$ auxiliaries, then $F$ has one of rank $r$ with at most $m+\\sum_{J\\in\\mathcal N(D)}\\max(0,r+1-|J|)$ auxiliaries; in particular the least parent rank cannot increase.",
+  "status": "established",
+  "proof": "Downward closure identifies the section at the characteristic word of $B\\subseteq U$ with the private shattering data over $B$, giving the exact support formula and, by counting ample sections, ampleness. Standardize the supplied parent in all constrained coordinates so every minimal forbidden support of $D$ becomes a compatible all-one minimum section. Compatible minimum-section deletion removes those patterns while retaining the old mark, rank, and stated auxiliary bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-filter"
+}

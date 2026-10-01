@@ -1,0 +1,11 @@
+{
+  "id": 124,
+  "short_name": "one_missing_block_parent_criterion",
+  "name": "Exact Parent Criterion for One Missing Shattering Block",
+  "class_ids": ["#classes/ample", "#classes/maximum_generated_classes"],
+  "result_type": "recognition",
+  "statement": "Suppose ample $C\\subseteq\\{0,1\\}^X$ has $\\operatorname{Sh}(C)=\\{T:|T|\\le r,\\ J\\nsubseteq T\\}$ for $1\\le|J|=q\\le r<|X|$. There is one absent $J$-pattern $p$. With $I=\\bigcap_{t\\ne p}C[t]$, the following are equivalent: $C$ has a rank-$r$ maximum parent; $C$ lies in a rank-$r$ maximum class on $X$; and $I$ contains a maximum rank-$(r-q)$ class. Every envelope is $C\\cup(S\\times\\{p\\})$ for such an $S$. When these hold, the least parent rank is $r$ and the least auxiliary count is $r+1-q$, even allowing larger ranks.",
+  "status": "established",
+  "proof": "Projection after deleting any coordinate of $J$ is already maximum, forcing every new envelope word to occur at the single missing pattern $p$ and its private part to lie in $I$. Shattered supports containing $J$ are then exactly $J\\cup T$ with $T$ shattered by the added section. The envelope is maximum precisely when that section is maximum of rank $r-q$. Minimum-section deletion supplies a parent, while VC dimension and the missing-pattern witness bound prove simultaneous optimality.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:one-missing-block"
+}

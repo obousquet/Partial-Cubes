@@ -1,0 +1,12 @@
+{
+  "id": 123,
+  "short_name": "minimum_section_deletion_parent",
+  "name": "Optimal Fixed-Rank Parent after Deleting a Minimum Section",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "Let $M$ be maximum of rank $r$, let $J$ have size $q$ with $1\\le q\\le r$, and suppose the section $S=M[p]$ is contained in every other $J$-section, equivalently $S=\\partial_JM$. Deleting all words of $M$ with $J$-pattern $p$ yields a class with a rank-$r$ maximum parent using exactly $r+1-q$ auxiliaries, and no rank-$r$ parent retaining the original visible coordinates uses fewer.",
+  "status": "established",
+  "proof": "Choose a decreasing maximum sequence inside the minimum section. At each step construct a rank-$(r-1)$ maximum subclass of the current parent whose marked $J$-section is the next sequence level, then exchange the removed layer between two heights of one new auxiliary. The union and intersection of the shores have ranks $r$ and $r-1$, and a missing-trace argument gives the VC bound. After $r-q+1$ steps the marked section is empty. Conversely the absent pattern consisting of $p$ and the auxiliary mark needs at least $r+1$ coordinates in a rank-$r$ maximum class, so at least $r+1-q$ auxiliaries are necessary.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:minimum-section-deletion",
+  "witness_ids": ["#examples/hamming_ball_minimum_section_deletion"]
+}

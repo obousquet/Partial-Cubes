@@ -1,0 +1,11 @@
+{
+  "id": 45,
+  "short_name": "hamming_ball_minimum_section_deletion",
+  "name": "Minimum-Section Deletion from a Rank-Three Hamming Ball",
+  "symbol": "B_5(0,3)\\setminus S",
+  "object_type": "set_family",
+  "definition": "Let $M$ be the rank-three Hamming ball about $00000$, and fix two coordinates to $11$. Its four-word section $S$ is the rank-one Hamming ball on the other three coordinates. Delete these four words.",
+  "properties": "The residual class has 22 words. The fixed section is contained in all other sections on the two-coordinate block. The deletion theorem constructs a rank-three maximum parent on seven coordinates with 64 words, and exactly two auxiliaries are necessary among rank-three parents.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:minimum-section-deletion",
+  "verification": "scripts/verify_minimum_section_deletions.py; data/examples/assets/minimum_section_deletions_database_verification.json"
+}

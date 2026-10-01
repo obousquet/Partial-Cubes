@@ -2156,6 +2156,100 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-122" style="position:relative;">
+
+        <h3><a href="results/face_avoidance_and_cube_addition.html" class="table-title-link">Sharp Face Avoidance and Cube Addition for Maximum Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sharp Face Avoidance and Cube Addition for Maximum Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If $H$ is maximum of rank $r\ge1$, a maximum rank-$(r-1)$ subclass avoiding a prescribed section on a fixed block $D$ exists exactly when $|D|\ge r$. Dually, if $M$ is maximum of rank $R<|Z|$, a maximum rank-$(R+1)$ class containing $M$ and any positioned $t$-cube exists exactly when $t\le R+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Necessity for avoidance follows because the $D$-reduction of a rank-$(r-1)$ maximum class is nonempty when $|D|<r$. For sufficiency, reduce one fixed coordinate, recursively choose a lower-rank avoiding subclass, and lift the reduction on the opposite shore and the subclass on the prescribed shore; Pascal gives maximumity. Complementation turns avoidance of the fixed face of a positioned cube into the cube-addition statement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:avoidance; CompressionSchemes:maximum_parent_methods.tex?#cor:cube-addition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-123" style="position:relative;">
+
+        <h3><a href="results/minimum_section_deletion_parent.html" class="table-title-link">Optimal Fixed-Rank Parent after Deleting a Minimum Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Optimal Fixed-Rank Parent after Deleting a Minimum Section</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $M$ be maximum of rank $r$, let $J$ have size $q$ with $1\le q\le r$, and suppose the section $S=M[p]$ is contained in every other $J$-section, equivalently $S=\partial_JM$. Deleting all words of $M$ with $J$-pattern $p$ yields a class with a rank-$r$ maximum parent using exactly $r+1-q$ auxiliaries, and no rank-$r$ parent retaining the original visible coordinates uses fewer.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose a decreasing maximum sequence inside the minimum section. At each step construct a rank-$(r-1)$ maximum subclass of the current parent whose marked $J$-section is the next sequence level, then exchange the removed layer between two heights of one new auxiliary. The union and intersection of the shores have ranks $r$ and $r-1$, and a missing-trace argument gives the VC bound. After $r-q+1$ steps the marked section is empty. Conversely the absent pattern consisting of $p$ and the auxiliary mark needs at least $r+1$ coordinates in a rank-$r$ maximum class, so at least $r+1-q$ auxiliaries are necessary.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:minimum-section-deletion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hamming_ball_minimum_section_deletion.html">Minimum-Section Deletion from a Rank-Three Hamming Ball</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-124" style="position:relative;">
+
+        <h3><a href="results/one_missing_block_parent_criterion.html" class="table-title-link">Exact Parent Criterion for One Missing Shattering Block</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Parent Criterion for One Missing Shattering Block</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose ample $C\subseteq\{0,1\}^X$ has $\operatorname{Sh}(C)=\{T:|T|\le r,\ J\nsubseteq T\}$ for $1\le|J|=q\le r<|X|$. There is one absent $J$-pattern $p$. With $I=\bigcap_{t\ne p}C[t]$, the following are equivalent: $C$ has a rank-$r$ maximum parent; $C$ lies in a rank-$r$ maximum class on $X$; and $I$ contains a maximum rank-$(r-q)$ class. Every envelope is $C\cup(S\times\{p\})$ for such an $S$. When these hold, the least parent rank is $r$ and the least auxiliary count is $r+1-q$, even allowing larger ranks.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection after deleting any coordinate of $J$ is already maximum, forcing every new envelope word to occur at the single missing pattern $p$ and its private part to lie in $I$. Shattered supports containing $J$ are then exactly $J\cup T$ with $T$ shattered by the added section. The envelope is maximum precisely when that section is maximum of rank $r-q$. Minimum-section deletion supplies a parent, while VC dimension and the missing-pattern witness bound prove simultaneous optimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:one-missing-block</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-125" style="position:relative;">
+
+        <h3><a href="results/compatible_minimum_section_deletion.html" class="table-title-link">Deleting Compatible Minimum Sections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Deleting Compatible Minimum Sections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In a supplied rank-$r$ maximum class, let $M[b_i]=\partial_{B_i}M$ be designated minimum sections whose patterns agree on every overlap. Deleting all words matching any designated pattern has a rank-$r$ maximum parent using at most $\sum_i\max(r+1-|B_i|,0)$ auxiliaries. Blocks may be processed in any order; unprocessed minimum properties and any disjoint old mark are preserved.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Compatibility gives a common pattern and nonemptiness of the residual class. Inductively choose a maximum predecessor that retains all protected minimum properties. The one-section deletion lift then lowers the target marked section by one rank while keeping every compatible protected minimum at both heights. Repeating empties one designated section in $r+1-|B_i|$ steps and leaves the remaining hypotheses intact.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:compatible-minimum-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-126" style="position:relative;">
+
+        <h3><a href="results/forest_minimum_section_deletion.html" class="table-title-link">Deleting a Forest of Minimum Sections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Deleting a Forest of Minimum Sections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $M\subsetneq\{0,1\}^X$ be maximum of rank $r$ and let $M[p_i]=\partial_{B_i}M$ be minimum sections. After deleting every word matching some $p_i$, the residual $C$ is nonempty and ample with $\operatorname{Sh}(C)=\{T:|T|\le r,\ B_i\nsubseteq T\text{ for all }i\}$. Join two patterns when they disagree on their overlap. If this disagreement graph is a forest, $C$ has a rank-$r$ parent with at most $\sum_i\max(r+1-|B_i|,0)$ auxiliaries, preserving any disjoint old mark.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Incompatible minimum patterns have union support at least $r+2$ and their deleted sections are disjoint. Inclusion--exclusion matches the residual word count with the displayed support family, so the sandwich theorem gives ampleness and exact shattering. For the parent, repeatedly choose a leaf of the disagreement forest. A modified predecessor construction preserves all compatible minima and the leaf's sole possible incompatible neighbor. The single-section lift deletes the leaf in the stated number of steps without changing the disagreement graph; induction over leaves completes the construction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:forest-minimum-deletion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/seven_cube_forest_section_deletion.html">Three-Section Forest Deletion in the Seven-Cube</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The shattering formula does not require the forest hypothesis. Cyclic disagreement families are not covered by the parent construction. Properness of the supplied maximum class is essential.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-127" style="position:relative;">
+
+        <h3><a href="results/downset_filter_rank_preservation.html" class="table-title-link">Rank-Preserving Downset Filtering</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rank-Preserving Downset Filtering</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/downset_filter.html">Downset Filter</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If nonempty $C$ is downward closed in $U$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, then $F=C|_D$ is nonempty and $\operatorname{Sh}(F)=\{T\in\operatorname{Sh}(C):T\cap U\in D\}$. Ampleness is preserved. If $C$ has a rank-$r$ parent with $m$ auxiliaries, then $F$ has one of rank $r$ with at most $m+\sum_{J\in\mathcal N(D)}\max(0,r+1-|J|)$ auxiliaries; in particular the least parent rank cannot increase.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Downward closure identifies the section at the characteristic word of $B\subseteq U$ with the private shattering data over $B$, giving the exact support formula and, by counting ample sections, ampleness. Standardize the supplied parent in all constrained coordinates so every minimal forbidden support of $D$ becomes a compatible all-one minimum section. Compatible minimum-section deletion removes those patterns while retaining the old mark, rank, and stated auxiliary bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,11 @@
+{
+  "id": 125,
+  "short_name": "compatible_minimum_section_deletion",
+  "name": "Deleting Compatible Minimum Sections",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "In a supplied rank-$r$ maximum class, let $M[b_i]=\\partial_{B_i}M$ be designated minimum sections whose patterns agree on every overlap. Deleting all words matching any designated pattern has a rank-$r$ maximum parent using at most $\\sum_i\\max(r+1-|B_i|,0)$ auxiliaries. Blocks may be processed in any order; unprocessed minimum properties and any disjoint old mark are preserved.",
+  "status": "established",
+  "proof": "Compatibility gives a common pattern and nonemptiness of the residual class. Inductively choose a maximum predecessor that retains all protected minimum properties. The one-section deletion lift then lowers the target marked section by one rank while keeping every compatible protected minimum at both heights. Repeating empties one designated section in $r+1-|B_i|$ steps and leaves the remaining hypotheses intact.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:compatible-minimum-deletion"
+}

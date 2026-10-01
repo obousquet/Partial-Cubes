@@ -1,14 +1,17 @@
 {
   "id": 7,
   "short_name": "ample_subset_partial_cubes",
-  "name": "Ample Classes Are Partial Cubes",
+  "name": "Ample Classes Are Strictly Partial Cubes",
   "subject_id": "#classes/ample",
   "object_id": "#classes/partial_cubes",
-  "relation_type": "inclusion",
+  "relation_type": "strict_inclusion",
   "status": "established",
   "scope": "Finite ample set families and their one-inclusion graphs.",
-  "statement": "The one-inclusion graph of every finite ample class is a partial cube.",
-  "proof": "One equivalent form of ampleness states that every strong projection has an isometric one-inclusion graph. Applying this to the class itself shows that graph distance equals Hamming distance on every pair of its members, so its one-inclusion graph embeds isometrically in the ambient hypercube.",
+  "statement": "The one-inclusion graph of every finite ample class is a partial cube, and the inclusion is strict.",
+  "witness_ids": [
+    "#examples/six_cycle"
+  ],
+  "proof": "One equivalent form of ampleness states that every strong projection has an isometric one-inclusion graph. Applying this to the class itself shows that graph distance equals Hamming distance on every pair of its members, so its one-inclusion graph embeds isometrically in the ambient hypercube. Strictness is witnessed by the six-cycle $C_6$: it is a partial cube, but it is not ample.",
   "references": "\\cite{BandeltCDK06}",
   "proof_source": "PartialCubes:papers/survey/main.tex#sec:ample-lopsided"
 }

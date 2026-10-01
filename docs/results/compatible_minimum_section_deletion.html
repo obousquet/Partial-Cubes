@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,36 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-46" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-125" style="position:relative;">
 
-        <h3><a href="classes/maximum.html" class="table-title-link">Maximum Classes</a></h3>
+        <h3><a href="results/compatible_minimum_section_deletion.html" class="table-title-link">Deleting Compatible Minimum Sections</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Maximum Classes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal{M}">
-            \[\mathcal{M}\]
-        </div>
-    </div>
-
-<strong>Summary:</strong><div class="text-field"><p>Finite set families that attain the Sauer--Shelah--Perles bound for their VC dimension.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>VC-maximum classes</li></ul></p>
-<p><strong>Category:</strong> Set Family</p>
-<p><strong>Ambient Scope:</strong> Set Families</p>
-<p><strong>Parameterized:</strong> Unspecified</p>
-<p><strong>P-Closed:</strong> Yes</p>
-<p><strong>C-Closed:</strong> No</p>
-<p><strong>PC-Closed:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>The VC dimension is determined by the family; this catalogue entry is not a separately parameterized class for each dimension.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/sauer_bound_equality.html'>Sauer--Shelah--Perles Bound Equality</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/maximum_subset_ample.html'>Maximum Classes Are Ample</a></li><li><a href='relations/maximum_strict_subset_maximum_generated.html'>Maximum Classes Are Strictly Maximum-Generated</a></li><li><a href='relations/maximum_strict_subset_auxiliary_level_one.html'>Maximum Classes Are Strictly One-Auxiliary Sections</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong><ul class='fields-list'><li><a href='relations/hypercubes_strict_subset_maximum.html'>Hypercubes Are Strictly Contained in Maximum Classes</a></li><li><a href='relations/trees_strict_subset_maximum.html'>Trees Are Strictly Contained in Maximum Classes</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_projection_closed.html'>Maximum Classes Are Projection-Closed</a></li><li><a href='operation_results/maximum_not_conditioning_closed.html'>Maximum Classes Are Not Conditioning-Closed</a></li><li><a href='operation_results/maximum_not_pc_minor_closed.html'>Maximum Classes Are Not PC-Minor-Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/majority_defect_unbounded_on_maximum_rank_two.html'>Majority Completion Defect on Rank-Two Maximum Classes</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/majority_defect_unbounded_on_rank_two_maximum.html'>Majority Defect Is Unbounded on Rank-Two Maximum Classes</a></li><li><a href='results/exact_positive_spectral_maximum_value.html'>Exact Positive Spectral Value on a Maximum Class</a></li><li><a href='results/sharp_maximum_coordinate_interval.html'>Sharp Finite Coordinate Capacity in a Maximum Class</a></li><li><a href='results/face_avoidance_and_cube_addition.html'>Sharp Face Avoidance and Cube Addition for Maximum Classes</a></li></ul></p></div>
+        <p><strong>Name: </strong>Deleting Compatible Minimum Sections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In a supplied rank-$r$ maximum class, let $M[b_i]=\partial_{B_i}M$ be designated minimum sections whose patterns agree on every overlap. Deleting all words matching any designated pattern has a rank-$r$ maximum parent using at most $\sum_i\max(r+1-|B_i|,0)$ auxiliaries. Blocks may be processed in any order; unprocessed minimum properties and any disjoint old mark are preserved.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Compatibility gives a common pattern and nonemptiness of the residual class. Inductively choose a maximum predecessor that retains all protected minimum properties. The one-section deletion lift then lowers the target marked section by one rank while keeping every compatible protected minimum at both heights. Repeating empties one designated section in $r+1-|B_i|$ steps and leaves the remaining hypotheses intact.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:compatible-minimum-deletion</p></div>
 
         </div>
     </div>

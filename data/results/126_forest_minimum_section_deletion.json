@@ -1,0 +1,13 @@
+{
+  "id": 126,
+  "short_name": "forest_minimum_section_deletion",
+  "name": "Deleting a Forest of Minimum Sections",
+  "class_ids": ["#classes/ample", "#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "Let $M\\subsetneq\\{0,1\\}^X$ be maximum of rank $r$ and let $M[p_i]=\\partial_{B_i}M$ be minimum sections. After deleting every word matching some $p_i$, the residual $C$ is nonempty and ample with $\\operatorname{Sh}(C)=\\{T:|T|\\le r,\\ B_i\\nsubseteq T\\text{ for all }i\\}$. Join two patterns when they disagree on their overlap. If this disagreement graph is a forest, $C$ has a rank-$r$ parent with at most $\\sum_i\\max(r+1-|B_i|,0)$ auxiliaries, preserving any disjoint old mark.",
+  "status": "established",
+  "proof": "Incompatible minimum patterns have union support at least $r+2$ and their deleted sections are disjoint. Inclusion--exclusion matches the residual word count with the displayed support family, so the sandwich theorem gives ampleness and exact shattering. For the parent, repeatedly choose a leaf of the disagreement forest. A modified predecessor construction preserves all compatible minima and the leaf's sole possible incompatible neighbor. The single-section lift deletes the leaf in the stated number of steps without changing the disagreement graph; induction over leaves completes the construction.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:forest-minimum-deletion",
+  "witness_ids": ["#examples/seven_cube_forest_section_deletion"],
+  "comments": "The shattering formula does not require the forest hypothesis. Cyclic disagreement families are not covered by the parent construction. Properness of the supplied maximum class is essential."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 46,
+  "short_name": "seven_cube_forest_section_deletion",
+  "name": "Three-Section Forest Deletion in the Seven-Cube",
+  "symbol": "C_{117}",
+  "object_type": "set_family",
+  "definition": "Remove the monotone eight-word coordinate path from $Q_7$, obtaining a rank-five maximum class. Delete its singleton minimum sections on blocks $\\{3,4,5,6,7\\}$, $\\{1,4,5,6,7\\}$, and $\\{1,2,3,4,5\\}$ with patterns $00000$, $10000$, and $11111$ respectively.",
+  "properties": "The deleted words are $0100000$, $1010000$, and $1111101$. The first two patterns agree and each disagrees with the third, so the disagreement graph is a path. The residual class is ample with 117 words. The forest construction gives a rank-five maximum parent on ten coordinates with 638 words.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:forest-minimum-deletion",
+  "verification": "scripts/verify_minimum_section_deletions.py; data/examples/assets/minimum_section_deletions_database_verification.json"
+}
