@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "batch_id": "084_complete_structural_invariants",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the final algebraic and shattering claims from frozen structural-invariants main.tex: unrestricted shattering on daisy cubes, Yang-coordinate Tor and Alexander-dual Betti formulas, homogeneous polarization of signed missing-pattern ideals, and the individual-pair regularity criterion. This completes the labeled-result migration for the structural-invariants workspace.",
+  "source_refs": [
+    "PartialCubes:papers/structural-invariants/main.tex#prop:shattering",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:betti-blindness",
+    "PartialCubes:papers/structural-invariants/main.tex#cor:dual-betti-blindness",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:missing-polarization",
+    "PartialCubes:papers/structural-invariants/main.tex#cor:individual-pairs",
+    "PartialCubes:papers/structural-invariants/main.tex#ex:hexagon-pair-witness"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-invariants-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/structural-invariants/main.tex",
+      "sha256": "1d8b01d01353a2641fb9e75789b67d5f722a83c8406a740b5cbf9b3226b32f0e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized formulas, characterizations, equivalences, invariant definitions, examples, and concise proofs. The LaTeX manuscript retains the full commutative-algebra arguments, exposition, motivation, and open questions.",
+    "recoverability": "The clean source manuscript is pinned by repository commit and SHA-256 hash, and every promoted fact has an exact proposition, corollary, theorem, or example locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Existing database records were extended only where the frozen manuscript supplies a more precise proof locator or witness."
+  },
+  "records": [
+    {"path": "data/invariants/040_yang_coordinate_tor_algebra.json", "sha256": "49b04a81ad092e9ad90f8d38cf725e93a373d85e3252568bb46413968e5766ff"},
+    {"path": "data/invariants/041_alexander_dual_coordinate_betti_table.json", "sha256": "a0503226a59e8902c66d7d2b972ecf11be058bb62886ec24745fdfed36c0c65e"},
+    {"path": "data/characterizations/176_individual_paired_differences_regular.json", "sha256": "76bf0fc10dea8f6738bfe0331862b4dbdba022ab0775b5c427e7fea901134420"},
+    {"path": "data/characterizations/177_polar_equals_factor_complex.json", "sha256": "b7ff04b11c58a7714f44382aeb987f98f8ba07765f393618f4766f78d1201c0e"},
+    {"path": "data/characterization_equivalences/030_ample_individual_pair_factor_equivalence.json", "sha256": "8c41e28aa291336ac2f2439efdf41c1d82e71bffd9e576223ad370590148afa6"},
+    {"path": "data/characterizations/085_signed_ideal_homogeneous_polarization.json", "sha256": "29b91122fa72df4705497ceb45b91f73e0b4095d0ee92b2a520913a9414d241e"},
+    {"path": "data/characterization_equivalences/023_ample_signed_algebra_equivalence.json", "sha256": "445243829abfc1e1d38167393c1358359d7dd95a5677c3573c69ad36665a7715"},
+    {"path": "data/results/275_shattered_complex_unrestricted_on_daisy_cubes.json", "sha256": "f4b80e09f87a32a4178686b185115b3a5c640309923292b18ac8159f1485d7b2"},
+    {"path": "data/results/276_yang_coordinate_tor_depends_only_on_shattering.json", "sha256": "1cba155a65c8ded2600274f3bcb1f33cc4a7d35484bb732b15e99995e7c8a6fd"},
+    {"path": "data/results/277_ample_alexander_dual_coordinate_betti_formula.json", "sha256": "ccc5f5369e84673aa9a4a6ab1bed4ba27a3e384aa9480067d37c7b3c9bae4059"},
+    {"path": "data/results/278_signed_missing_pattern_polarization_theorem.json", "sha256": "b406ac3f7d798d6106d930e504567614687e34ddede5259860f0e40096188c00"},
+    {"path": "data/examples/001_six_cycle.json", "sha256": "d70d2104065f9a77b5b8884d7b1e9c0f55a7b7cf8ac2515b47b30cf591166c67"},
+    {"path": "migration/coverage.json", "sha256": "4448bca327397122a7ce33e16af828efa2af0a76677401a3682f156e2c11960e"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "0890073233467de334492b738667b3f379580c5c1fd396fcd281befc5acfcf91"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1494 records.",
+    "website": "Normalized 1510 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. All 51 structural-invariants labels are covered; overall workspace-aware coverage is 341 of 1016 unique labels."
+  },
+  "deferred": [
+    "The minor-atlas, survey, and dismantlable-ample workspaces retain uncovered labeled results and remain scheduled for later batches.",
+    "Open questions remain prose in the LaTeX sources under the agreed ownership policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

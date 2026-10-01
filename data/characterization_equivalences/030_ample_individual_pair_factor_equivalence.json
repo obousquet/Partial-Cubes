@@ -1,0 +1,16 @@
+{
+  "id": 30,
+  "short_name": "ample_individual_pair_factor_equivalence",
+  "name": "Ample, Individual-Pair, and Factor-Complex Equivalence",
+  "class_id": "#classes/ample",
+  "characterization_ids": [
+    "#characterizations/shattering_equals_strong_shattering",
+    "#characterizations/individual_paired_differences_regular",
+    "#characterizations/polar_equals_factor_complex"
+  ],
+  "hypotheses": "Finite nonempty binary class; the nonzero-divisor condition holds over every coefficient field.",
+  "statement": "A class is ample exactly when every paired literal difference is individually regular on its original signed-pattern ring, and exactly when its polar and factor complexes coincide. Thus individual regularity already implies that all paired differences form a regular sequence in every order.",
+  "status": "established",
+  "proof": "Ample classes have full paired-difference regularity, hence each difference is regular when placed first. Conversely, if every difference is individually regular, a facet of the polar complex cannot omit both literals of any coordinate: maximality would create a monomial annihilated by that paired difference. Its doubled and single coordinates therefore describe a contained coordinate cube, so every polar facet lies in the factor complex. If the two complexes coincide, the two literals over every shattered support form a polar face and hence lie in a contained-cube face, proving strong shattering. Equality of shattering and strong shattering is ampleness.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#cor:individual-pairs"
+}

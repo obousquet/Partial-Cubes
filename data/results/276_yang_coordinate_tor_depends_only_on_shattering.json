@@ -1,0 +1,18 @@
+{
+  "id": 276,
+  "short_name": "yang_coordinate_tor_depends_only_on_shattering",
+  "name": "Coordinate-Graded Yang Homology Depends Only on Shattering",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/daisy_cubes",
+    "#classes/maximum_generated_classes"
+  ],
+  "invariant_ids": [
+    "#invariants/yang_coordinate_tor_algebra"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty ample $C\\subseteq\\{0,1\\}^n$ and field $k$, $\\operatorname{Tor}^{S}_*(k[\\Delta_C],k)\\cong\\operatorname{Tor}^{T}_*(A_{\\operatorname{Sh}(C)},k)$ as homological, coordinate-graded algebras, where $A_\\Gamma=T/(z_i^2,z_U:U\\notin\\Gamma)$. Hence all coordinate-graded Betti numbers and Tor multiplication, even for every coordinate projection, cannot distinguish a hypothetical ample class outside MaxMin from all classes inside MaxMin.",
+  "status": "established",
+  "proof": "The literal differences $x_{i,1}-x_{i,0}$ form a regular sequence on the ample Yang ring and quotient it to $A_{\\operatorname{Sh}(C)}$. A change of Koszul generators splits the complex on all literal variables into the Koszul complex on these regular differences and the complex on one literal per coordinate. Augmenting the regular factor is a multiplicative, coordinate-graded quasi-isomorphism and leaves the Koszul complex computing the displayed Tor algebra. The daisy class $D=\\operatorname{Sh}(C)$ is realizable ample and therefore in MaxMin; it and all corresponding projections have the same shattered supports as $C$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:betti-blindness"
+}

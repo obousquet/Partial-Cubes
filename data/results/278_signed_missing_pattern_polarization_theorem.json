@@ -1,0 +1,19 @@
+{
+  "id": 278,
+  "short_name": "signed_missing_pattern_polarization_theorem",
+  "name": "Signed Missing-Pattern Polarization Characterizes Ampleness",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum_generated_classes"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "For a nonempty binary class $C$ over any field, ampleness is equivalent to the paired differences $x_{i,1}-x_{i,0}$ forming a regular sequence on the signed minimally-missing-pattern ring $S/Q_C$ in some coordinate order, and equivalently in every order. In that case $Q_C$ is a two-fold polarization of the Stanley--Reisner ideal of $\\operatorname{Sh}(C)$. The condition is preserved by projection and nonempty conditioning and cannot separate ample classes from maximum sections.",
+  "status": "established",
+  "proof": "For an ample class, after any earlier pair identifications a monomial annihilated by the next paired difference would encode a shattered set in a nonempty conditioning but forbid both values of the next coordinate. A contained cube for that shattered set fixes one of those values and contradicts the annihilation, proving regularity in every order. Conversely, identifying all pairs sends $Q_C$ to the Stanley--Reisner ideal of $\\operatorname{Sh}(C)$. The multigraded Hilbert-series identity for a regular sequence equates the coefficient of $t_1\\cdots t_n$ on the two sides; those coefficients are $|C|$ and $|\\operatorname{Sh}(C)|$. Equality is ampleness by the Sandwich theorem.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:missing-polarization",
+  "comments": "The homogeneous differences differ from the affine forms $x_{i,0}+x_{i,1}-1$, which are regular for every neural ideal. The theorem does not claim that $S/Q_C$ is Cohen--Macaulay. The same Koszul reduction makes the coordinate-graded Tor algebra of $S/Q_C$ depend only on the shattered complex."
+}

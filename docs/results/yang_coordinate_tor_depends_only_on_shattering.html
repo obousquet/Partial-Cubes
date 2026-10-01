@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,20 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
-    <div class="table-card" id="math-23" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-276" style="position:relative;">
 
-        <h3><a href="characterization_equivalences/ample_signed_algebra_equivalence.html" class="table-title-link">Ample Signed-Ideal and Yang-Complex Equivalence</a></h3>
+        <h3><a href="results/yang_coordinate_tor_depends_only_on_shattering.html" class="table-title-link">Coordinate-Graded Yang Homology Depends Only on Shattering</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Ample Signed-Ideal and Yang-Complex Equivalence</p>
-<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a></li><li><a href="characterizations/signed_ideal_homogeneous_polarization.html">Signed-Ideal Homogeneous Polarization</a></li><li><a href="characterizations/cohen_macaulay_yang_complex.html">Cohen--Macaulay Yang Complex</a></li></ul></p>
-<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty binary class over any coefficient field.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Shattering extremality is equivalent to regularity of all paired literal differences on the signed missing-pattern ideal, and equivalently to Cohen--Macaulayness of the labeled Yang complex.</p></div>
+        <p><strong>Name: </strong>Coordinate-Graded Yang Homology Depends Only on Shattering</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_coordinate_tor_algebra.html">Coordinate-Graded Yang Tor Algebra</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty ample $C\subseteq\{0,1\}^n$ and field $k$, $\operatorname{Tor}^{S}_*(k[\Delta_C],k)\cong\operatorname{Tor}^{T}_*(A_{\operatorname{Sh}(C)},k)$ as homological, coordinate-graded algebras, where $A_\Gamma=T/(z_i^2,z_U:U\notin\Gamma)$. Hence all coordinate-graded Betti numbers and Tor multiplication, even for every coordinate projection, cannot distinguish a hypothetical ample class outside MaxMin from all classes inside MaxMin.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>The homogeneous polarization theorem identifies ampleness with regularity of the paired differences and depolarizes the signed ideal to the Stanley--Reisner ideal of the shattered-support complex. The Yang correspondence identifies the same ample condition with Cohen--Macaulayness of the Yang complex, whose Stanley--Reisner ideal is the signed missing-pattern ideal plus the inconsistent literal pairs.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:missing-polarization; CompressionSchemes:maximum_parent_methods.tex?#thm:homogeneous; CompressionSchemes:maximum_parent_methods.tex?#sec:algebra</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The literal differences $x_{i,1}-x_{i,0}$ form a regular sequence on the ample Yang ring and quotient it to $A_{\operatorname{Sh}(C)}$. A change of Koszul generators splits the complex on all literal variables into the Koszul complex on these regular differences and the complex on one literal per coordinate. Augmenting the regular factor is a multiplicative, coordinate-graded quasi-isomorphism and leaves the Koszul complex computing the displayed Tor algebra. The daisy class $D=\operatorname{Sh}(C)$ is realizable ample and therefore in MaxMin; it and all corresponding projections have the same shattered supports as $C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:betti-blindness</p></div>
 
         </div>
     </div>

@@ -75,19 +75,18 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
-    <div class="table-card" id="math-23" style="position:relative;">
+    <div class="table-card" id="math-30" style="position:relative;">
 
-        <h3><a href="characterization_equivalences/ample_signed_algebra_equivalence.html" class="table-title-link">Ample Signed-Ideal and Yang-Complex Equivalence</a></h3>
+        <h3><a href="characterization_equivalences/ample_individual_pair_factor_equivalence.html" class="table-title-link">Ample, Individual-Pair, and Factor-Complex Equivalence</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Ample Signed-Ideal and Yang-Complex Equivalence</p>
+        <p><strong>Name: </strong>Ample, Individual-Pair, and Factor-Complex Equivalence</p>
 <p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a></li><li><a href="characterizations/signed_ideal_homogeneous_polarization.html">Signed-Ideal Homogeneous Polarization</a></li><li><a href="characterizations/cohen_macaulay_yang_complex.html">Cohen--Macaulay Yang Complex</a></li></ul></p>
-<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty binary class over any coefficient field.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Shattering extremality is equivalent to regularity of all paired literal differences on the signed missing-pattern ideal, and equivalently to Cohen--Macaulayness of the labeled Yang complex.</p></div>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a></li><li><a href="characterizations/individual_paired_differences_regular.html">Individual Paired Differences Are Nonzero Divisors</a></li><li><a href="characterizations/polar_equals_factor_complex.html">Polar Complex Equals Factor Complex</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty binary class; the nonzero-divisor condition holds over every coefficient field.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>A class is ample exactly when every paired literal difference is individually regular on its original signed-pattern ring, and exactly when its polar and factor complexes coincide. Thus individual regularity already implies that all paired differences form a regular sequence in every order.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>The homogeneous polarization theorem identifies ampleness with regularity of the paired differences and depolarizes the signed ideal to the Stanley--Reisner ideal of the shattered-support complex. The Yang correspondence identifies the same ample condition with Cohen--Macaulayness of the Yang complex, whose Stanley--Reisner ideal is the signed missing-pattern ideal plus the inconsistent literal pairs.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:missing-polarization; CompressionSchemes:maximum_parent_methods.tex?#thm:homogeneous; CompressionSchemes:maximum_parent_methods.tex?#sec:algebra</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Ample classes have full paired-difference regularity, hence each difference is regular when placed first. Conversely, if every difference is individually regular, a facet of the polar complex cannot omit both literals of any coordinate: maximality would create a monomial annihilated by that paired difference. Its doubled and single coordinates therefore describe a contained coordinate cube, so every polar facet lies in the factor complex. If the two complexes coincide, the two literals over every shattered support form a polar face and hence lie in a contained-cube face, proving strong shattering. Equality of shattering and strong shattering is ampleness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#cor:individual-pairs</p></div>
 
         </div>
     </div>

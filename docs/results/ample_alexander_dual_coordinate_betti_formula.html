@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,20 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
-    <div class="table-card" id="math-23" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-277" style="position:relative;">
 
-        <h3><a href="characterization_equivalences/ample_signed_algebra_equivalence.html" class="table-title-link">Ample Signed-Ideal and Yang-Complex Equivalence</a></h3>
+        <h3><a href="results/ample_alexander_dual_coordinate_betti_formula.html" class="table-title-link">Coordinate-Graded Betti Formula for Ample Alexander Duals</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Ample Signed-Ideal and Yang-Complex Equivalence</p>
-<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a></li><li><a href="characterizations/signed_ideal_homogeneous_polarization.html">Signed-Ideal Homogeneous Polarization</a></li><li><a href="characterizations/cohen_macaulay_yang_complex.html">Cohen--Macaulay Yang Complex</a></li></ul></p>
-<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty binary class over any coefficient field.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Shattering extremality is equivalent to regularity of all paired literal differences on the signed missing-pattern ideal, and equivalently to Cohen--Macaulayness of the labeled Yang complex.</p></div>
+        <p><strong>Name: </strong>Coordinate-Graded Betti Formula for Ample Alexander Duals</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/alexander_dual_coordinate_betti_table.html">Coordinate-Graded Alexander-Dual Betti Table</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C$ is ample and $U\subseteq[n]$, then $\beta^S_{p,\mathbf1+\mathbf1_U}(J_C)=|\{V\in\operatorname{Sh}(C):U\subseteq V\}|$ for $p=|U|$ and is zero otherwise; all other coordinate-graded Betti numbers vanish. Consequently $\beta_p(J_C)=\sum_{V\in\operatorname{Sh}(C)}\binom{|V|}{p}$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>The homogeneous polarization theorem identifies ampleness with regularity of the paired differences and depolarizes the signed ideal to the Stanley--Reisner ideal of the shattered-support complex. The Yang correspondence identifies the same ample condition with Cohen--Macaulayness of the Yang complex, whose Stanley--Reisner ideal is the signed missing-pattern ideal plus the inconsistent literal pairs.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:missing-polarization; CompressionSchemes:maximum_parent_methods.tex?#thm:homogeneous; CompressionSchemes:maximum_parent_methods.tex?#sec:algebra</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The linear cellular resolution of the Alexander-dual ideal of an ample class has one step-$p$ basis element for each contained $p$-cube. A cube with direction set $U$ has coordinate degree $\mathbf1+\mathbf1_U$. Iterated two-section counting shows that the number of contained cubes in directions $U$ equals the number of shattered supports containing $U$: ampleness and the Sandwich theorem identify the shattered complex of each section intersection. Summing the multigraded formula over $U$ yields the total Betti number.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#cor:dual-betti-blindness</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Thus the ordinary Betti table, projective dimension, and regularity also depend only on the shattered complex. The conclusion does not cover the fully signed literal grading or maps among conditioned classes.</p></div>
 
         </div>
     </div>

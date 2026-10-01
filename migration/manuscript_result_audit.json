@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 335,
-    "uncovered": 681,
-    "proof_source_records": 1371
+    "covered": 341,
+    "uncovered": 675,
+    "proof_source_records": 1380
   },
   "by_workspace": {
     "ample-corners": {
@@ -48,9 +48,8 @@
       "total": 19
     },
     "structural-invariants": {
-      "covered": 45,
-      "total": 51,
-      "uncovered": 6
+      "covered": 51,
+      "total": 51
     },
     "survey": {
       "covered": 73,
@@ -14014,7 +14013,7 @@
       "label": "cor:dual-betti-blindness",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14024,7 +14023,10 @@
           "line": 1611
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/041_alexander_dual_coordinate_betti_table.json",
+        "data/results/277_ample_alexander_dual_coordinate_betti_formula.json"
+      ]
     },
     {
       "label": "cor:fixed-outer-substitution",
@@ -14048,7 +14050,7 @@
       "label": "cor:individual-pairs",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14058,7 +14060,11 @@
           "line": 1797
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/030_ample_individual_pair_factor_equivalence.json",
+        "data/characterizations/176_individual_paired_differences_regular.json",
+        "data/characterizations/177_polar_equals_factor_complex.json"
+      ]
     },
     {
       "label": "cor:peripheral",
@@ -14125,7 +14131,7 @@
       "label": "ex:hexagon-pair-witness",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14135,7 +14141,9 @@
           "line": 1833
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/001_six_cycle.json"
+      ]
     },
     {
       "label": "ex:pair",
@@ -14270,7 +14278,7 @@
       "label": "prop:betti-blindness",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14280,7 +14288,10 @@
           "line": 1547
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/040_yang_coordinate_tor_algebra.json",
+        "data/results/276_yang_coordinate_tor_depends_only_on_shattering.json"
+      ]
     },
     {
       "label": "prop:completion-depth-limit",
@@ -14515,7 +14526,7 @@
       "label": "prop:shattering",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14525,7 +14536,9 @@
           "line": 1499
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/275_shattered_complex_unrestricted_on_daisy_cubes.json"
+      ]
     },
     {
       "label": "prop:two-section-prefix-failure",
@@ -14787,7 +14800,7 @@
       "label": "thm:missing-polarization",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14797,7 +14810,11 @@
           "line": 1687
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/023_ample_signed_algebra_equivalence.json",
+        "data/characterizations/085_signed_ideal_homogeneous_polarization.json",
+        "data/results/278_signed_missing_pattern_polarization_theorem.json"
+      ]
     },
     {
       "label": "thm:prefix-slope",

@@ -1,0 +1,15 @@
+{
+  "id": 275,
+  "short_name": "shattered_complex_unrestricted_on_daisy_cubes",
+  "name": "Shattered Complexes Are Unrestricted on Daisy Cubes",
+  "class_ids": [
+    "#classes/daisy_cubes",
+    "#classes/ample"
+  ],
+  "result_type": "construction",
+  "statement": "Every finite simplicial complex $\\Gamma\\subseteq2^{[n]}$ containing the empty set is the shattered-set complex of a daisy cube. Consequently, no invariant that factors only through $\\operatorname{Sh}(C)$ can characterize, among ample classes, a proper subclass containing every daisy cube.",
+  "status": "established",
+  "proof": "Regard $D=\\Gamma$ itself as a down-closed concept class. Every $S\\in\\Gamma$ is shattered because all its subsets lie in $D$, while a shattered $S$ is contained in some $T\\in D$ and hence lies in $\\Gamma$ by downward closure. Thus $\\operatorname{Sh}(D)=\\Gamma$ and $|D|=|\\operatorname{Sh}(D)|$, so $D$ is ample and daisy. For any ample class outside a proposed proper subclass, the daisy $\\operatorname{Sh}(C)$ lies inside the subclass and has identical shattered-set data.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:shattering",
+  "comments": "In particular, the canonical Artinian reduction determined by the shattered complex cannot detect dismantlability. This does not limit the full labelled Yang ring or its fully signed resolution."
+}
