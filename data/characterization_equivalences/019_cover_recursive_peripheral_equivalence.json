@@ -1,0 +1,20 @@
+{
+  "id": 19,
+  "short_name": "cover_recursive_peripheral_equivalence",
+  "name": "Convex-Treelike Characterization Equivalence",
+  "class_id": "#classes/cover_recursive_peripheral",
+  "characterization_ids": [
+    "#characterizations/cover_recursive_peripheral_construction",
+    "#characterizations/peripheral_expansion_tree",
+    "#characterizations/every_convex_subgraph_has_periphery",
+    "#characterizations/every_pc_minor_has_periphery",
+    "#characterizations/every_pc_minor_tree_like",
+    "#characterizations/no_periphery_free_pc_minor"
+  ],
+  "hypotheses": "Finite partial cube.",
+  "statement": "The two-child peripheral recursion, peripheral-expansion trees, convex-subgraph periphery, pc-minor periphery, tree-likeness of every pc-minor, and avoidance of the complete periphery-free basis define the same class.",
+  "status": "established",
+  "proof": "Unfolding the recursive definition gives the binary tree certificate. Convex-subgraph closure and induction show that the recursive class is exactly the class whose nontrivial convex subgraphs have a periphery. Closure under coordinate contraction upgrades this to all pc-minors. A finite descent then replaces all periphery-free pc-minors by their pc-minimal members.",
+  "references": "\\cite{Polat12treelike}",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:expansion-tree; PartialCubes:papers/cover-recursive/main.tex#thm:convex-characterization; PartialCubes:papers/cover-recursive/main.tex#thm:characterization; PartialCubes:papers/cover-recursive/main.tex#cor:forbidden-form"
+}

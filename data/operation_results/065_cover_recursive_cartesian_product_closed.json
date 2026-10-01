@@ -1,0 +1,13 @@
+{
+  "id": 65,
+  "short_name": "cover_recursive_cartesian_product_closed",
+  "name": "Convex-Treelike Product Theorem",
+  "class_id": "#classes/cover_recursive_peripheral",
+  "operation_id": "#operations/cartesian_product",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/cover_recursive_peripheral",
+  "status": "established",
+  "statement": "For finite partial cubes $G,H$, the product $G\\square H$ belongs to $\\mathcal R_{\\mathrm{per}}$ if and only if both factors do.",
+  "proof": "Each factor is a convex subgraph of the product. Conversely, recursively expand one factor while holding the other fixed, then induct on the two peripheral expansion trees.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#lem:pcminor-closure; PartialCubes:papers/cover-recursive/main.tex#prop:closure"
+}

@@ -1,0 +1,336 @@
+{
+  "version": 1,
+  "batch_id": "019_cover_recursive_peripheral_foundation",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote convex-treelike (cover-recursively peripheral) partial cubes with equivalent hereditary characterizations, exact p/c/pc closure, the complete two-family pc-minor basis, hierarchy witnesses, and the pentagonal obstruction with compact exact census evidence.",
+  "source_refs": [
+    "PartialCubes:papers/cover-recursive/main.tex#def:sequential-recursive",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:expansion-tree",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:convex-characterization",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:characterization",
+    "PartialCubes:papers/cover-recursive/main.tex#cor:forbidden-form",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:position",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:pentagonal",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:global-minimality",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex#thm:coordinate-state-basis"
+  ],
+  "source_packets": [
+    {
+      "id": "cover-recursive-manuscript",
+      "path": "papers/cover-recursive/main.tex",
+      "sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e"
+    },
+    {
+      "id": "coordinate-state-basis",
+      "path": "papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex",
+      "sha256": "fb439bfaffbf88e9efa387bc9fab6cc0b81d7e765d0dfa4a9e0537c301f6cb3f"
+    },
+    {
+      "id": "small-census",
+      "path": "papers/cover-recursive/evidence/census_small_verification.json",
+      "sha256": "0c37193716a4b698abd1ba169ad24596041764bd3b1beda1a7ecb3cfcb87d5b9"
+    },
+    {
+      "id": "dimension-six-census",
+      "path": "papers/cover-recursive/evidence/census_six_verification.json",
+      "sha256": "0989417f079ddac428eb974f877b7bca64054d1922ede863f4a606f366b58d1d"
+    },
+    {
+      "id": "census-record-audit",
+      "path": "papers/cover-recursive/evidence/census_record_verification.json",
+      "sha256": "a72bb9370da78bda8eabd0eda0f017857c2a9db9d9697b065d2be3378fc4794a"
+    },
+    {
+      "id": "census-coverage-audit",
+      "path": "papers/cover-recursive/evidence/census_audit_summary.json",
+      "sha256": "38071a599a6c13e3e61fd49559ef97e8ca3b50284d5ddb4d3f04ca844aadf70a"
+    }
+  ],
+  "source_preservation": {
+    "manuscript_git_state": "modified in PartialCubes at migration freeze",
+    "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/papers/cover-recursive/main.tex",
+    "byte_archive_sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e",
+    "note": "The current manuscript bytes equal the frozen archive; the batch extracts normalized facts without changing or replacing the LaTeX artifact."
+  },
+  "verification_packets": [
+    {
+      "id": "database-cover-recursive-verifier",
+      "path": "scripts/verify_cover_recursive.py",
+      "sha256": "3c436dea92305e82f7d4220b16f2005d05bb81037f0804a2a4fa614fd4a14404",
+      "assertions": "Exact P5 metric, shattering, periphery, and fifteen-minor replay plus integrity checks of the compact census reports."
+    },
+    {
+      "id": "cover-recursive-verification",
+      "path": "data/examples/assets/cover_recursive_verification.json",
+      "sha256": "fca403a8eafa9475821022c7d1405fcc6be87204e3b6b7a65a55d32bc3a7c536",
+      "assertions": "P5 is a sixteen-word ample partial cube of VC dimension two and isometric dimension five, is periphery-free, and has all fifteen elementary pc-minors in Rper."
+    },
+    {
+      "id": "cover-recursive-census-small",
+      "path": "data/examples/assets/cover_recursive_census_small.json",
+      "sha256": "0c37193716a4b698abd1ba169ad24596041764bd3b1beda1a7ecb3cfcb87d5b9",
+      "assertions": "Exact dimensions-zero-through-five census summary: 14,259 dimension-five representatives, 3,115 periphery-free, and one additional minimal type through order twenty-one."
+    },
+    {
+      "id": "cover-recursive-census-six",
+      "path": "data/examples/assets/cover_recursive_census_six.json",
+      "sha256": "0989417f079ddac428eb974f877b7bca64054d1922ede863f4a606f366b58d1d",
+      "assertions": "Exact dimension-six continuation tied by hash to the small census."
+    },
+    {
+      "id": "cover-recursive-census-record",
+      "path": "data/examples/assets/cover_recursive_census_record.json",
+      "sha256": "a72bb9370da78bda8eabd0eda0f017857c2a9db9d9697b065d2be3378fc4794a",
+      "assertions": "Stored higher-dimensional census-chain integrity report."
+    },
+    {
+      "id": "cover-recursive-census-audit",
+      "path": "data/examples/assets/cover_recursive_census_audit.json",
+      "sha256": "38071a599a6c13e3e61fd49559ef97e8ca3b50284d5ddb4d3f04ca844aadf70a",
+      "assertions": "Coverage contract records the order-sixteen minimum and replayed periphery-free layers seven through twelve."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/019_cover_recursive_peripheral_equivalence.json",
+      "sha256": "d5ff23afaadda1c0523d43a5422ad09aba761833ef4a7b170c574e981626d8b5"
+    },
+    {
+      "path": "data/characterizations/058_cover_recursive_peripheral_construction.json",
+      "sha256": "6e709f8b2c030106dbba1f4ed73a8a7d6a6cba32652f4b1d8e1d2257b2b26e27"
+    },
+    {
+      "path": "data/characterizations/059_peripheral_expansion_tree.json",
+      "sha256": "7b1a11ad0c84af7ba1ef9c1ba20c56262e1e5364abf43cdc5f40bbc3cfa00475"
+    },
+    {
+      "path": "data/characterizations/060_every_convex_subgraph_has_periphery.json",
+      "sha256": "d35ef4cc8e5a8ef6adec6fae3e93fcf82665cca60eaf6ed053ab1a4a089c6b62"
+    },
+    {
+      "path": "data/characterizations/061_every_pc_minor_has_periphery.json",
+      "sha256": "6e9d515dc12d724da4fca749ae5a0d2331f771ad5885bda77f6fe84c73e9c79e"
+    },
+    {
+      "path": "data/characterizations/062_every_pc_minor_tree_like.json",
+      "sha256": "bef2de98b8d88dfd0a7789a69f80d7b44e663df54e9d2db0dcf3fafe197c9ed6"
+    },
+    {
+      "path": "data/characterizations/063_no_periphery_free_pc_minor.json",
+      "sha256": "39759021ffd829e7f0ac86dc9609f79bcd0fdf8e74ed126115f3c93a4df1b6ea"
+    },
+    {
+      "path": "data/classes/026_cover_recursive_peripheral.json",
+      "sha256": "fca2ed7980351ef432343e8d77ebf6200d96ff0b76dd0479fce73ad893427e60"
+    },
+    {
+      "path": "data/examples/018_peripheral_square_with_edge.json",
+      "sha256": "c509d9298c7da6c23561a91ad07ce95ab83211691c7e6ecf497cdb29037c4b65"
+    },
+    {
+      "path": "data/examples/019_tree_like_bad_site_expansion.json",
+      "sha256": "3e666f9fb014d839114ec47e781c3e64ee3cfa57f8adcd8e064cdbf07f930d17"
+    },
+    {
+      "path": "data/examples/020_pentagonal_obstruction.json",
+      "sha256": "3140b9a17316940c6378e0fe21654e2a7961dc01f18a3c44e24c02d8f2fd6b8b"
+    },
+    {
+      "path": "data/examples/assets/cover_recursive_census_audit.json",
+      "sha256": "38071a599a6c13e3e61fd49559ef97e8ca3b50284d5ddb4d3f04ca844aadf70a"
+    },
+    {
+      "path": "data/examples/assets/cover_recursive_census_record.json",
+      "sha256": "a72bb9370da78bda8eabd0eda0f017857c2a9db9d9697b065d2be3378fc4794a"
+    },
+    {
+      "path": "data/examples/assets/cover_recursive_census_six.json",
+      "sha256": "0989417f079ddac428eb974f877b7bca64054d1922ede863f4a606f366b58d1d"
+    },
+    {
+      "path": "data/examples/assets/cover_recursive_census_small.json",
+      "sha256": "0c37193716a4b698abd1ba169ad24596041764bd3b1beda1a7ecb3cfcb87d5b9"
+    },
+    {
+      "path": "data/examples/assets/cover_recursive_verification.json",
+      "sha256": "fca403a8eafa9475821022c7d1405fcc6be87204e3b6b7a65a55d32bc3a7c536"
+    },
+    {
+      "path": "data/invariant_values/038_pentagonal_obstruction_vc_dimension.json",
+      "sha256": "8186499d87a3b1c31b7caaf1701e4676af8319a8cd1c816ba21fec187f2c9ce2"
+    },
+    {
+      "path": "data/invariant_values/039_pentagonal_obstruction_isometric_dimension.json",
+      "sha256": "b4709ea06c45041ed28169e6afff3c0f61e466c3bd0a4b7c0f4e32d849b3035c"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "b90c7698abfc2442f7d40729a3490ebc4314aaf0944f6da23daec28e5b85002d"
+    },
+    {
+      "path": "data/obstruction_bases/010_cover_recursive_peripheral_complete_pc_basis.json",
+      "sha256": "63ffc1ad506cf3f5d6127b08cd774739f577789ab30761deab1397bc8f620d3a"
+    },
+    {
+      "path": "data/obstruction_families/001_antipodally_punctured_hypercubes.json",
+      "sha256": "4f4996acff41aaadcc6cc8204532a0cc80a11156483eb7fdf8ef106aa517d3f0"
+    },
+    {
+      "path": "data/obstruction_families/011_ample_pc_minimal_periphery_free.json",
+      "sha256": "2ab0b1ade953553292b395a0aa08c080836bab27a6608fd6ae3031370f4a2873"
+    },
+    {
+      "path": "data/operation_results/062_cover_recursive_projection_closed.json",
+      "sha256": "5f4f49323063d2a6952de013947655a085b9c4fc2bc085eb9ff6da6a042711ed"
+    },
+    {
+      "path": "data/operation_results/063_cover_recursive_conditioning_closed.json",
+      "sha256": "d2e82f39d761613fcf29db789eb6432e9ca614c8739144706bd3b88ae1e47fe1"
+    },
+    {
+      "path": "data/operation_results/064_cover_recursive_pc_minor_closed.json",
+      "sha256": "f5ae971fdf2bf05a457ff69fbcec6788729f4731074683811a3a2fcdfb8f9f40"
+    },
+    {
+      "path": "data/operation_results/065_cover_recursive_cartesian_product_closed.json",
+      "sha256": "be41a5d434b3eec361e2ed59be930c3d940e7d5184a66c4570e1c15d8ef59bc8"
+    },
+    {
+      "path": "data/operation_results/066_cover_recursive_peripheral_expansion.json",
+      "sha256": "e5b0c72a1c9abeee5b8b29300d8ff7f88e9c65cadf0e6c708023360b7816ea7a"
+    },
+    {
+      "path": "data/relations/047_median_strict_subset_cover_recursive.json",
+      "sha256": "3bed6bfb295a9365fdda821e33c36e64c63d0a7f99482cc9885b431dd9a05c12"
+    },
+    {
+      "path": "data/relations/048_daisy_strict_subset_cover_recursive.json",
+      "sha256": "437cc414b6ff4a0623567661ed41d9c69781ecdb12c5fce50e0938137162d413"
+    },
+    {
+      "path": "data/relations/049_cover_recursive_strict_subset_dismantlable_ample.json",
+      "sha256": "5dcebecbb20b2b02e6efcb3b6cf80e4df229599b1bde537d1829089c3afd4255"
+    },
+    {
+      "path": "data/results/030_every_peripheral_coordinate_admissible.json",
+      "sha256": "a6f857d72f24c343c62c3a2c2de59d3b8e6f9b90bb3301cfc7db79e5b78a155e"
+    },
+    {
+      "path": "data/results/031_cover_recursive_obstruction_structure.json",
+      "sha256": "cdc9905a97d7e2658cba0517889207d2a6a5704fa931c4044781ab3e9a6e47a7"
+    },
+    {
+      "path": "data/results/032_cover_recursive_coordinate_state_basis.json",
+      "sha256": "62333d76487623dd4d31a95a2293a2d305c4578bfd36f16806ca9085b1cfc2b2"
+    },
+    {
+      "path": "data/results/033_cover_recursive_structural_consequences.json",
+      "sha256": "8d048a6ff2b1998267b200a3313d4000532dd17b642930490a35552ebea672d5"
+    },
+    {
+      "path": "data/results/034_pentagonal_obstruction_global_minimality.json",
+      "sha256": "4d909a2903a0859d07ee60a338b2b49d91118bee28678a7195493b38c4bc8427"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "057cebf4aea106eed37b1c8d351fbb199ec69f7b5465b6beeaab03084b2631d9"
+    },
+    {
+      "path": "migration/class_crosswalk.json",
+      "sha256": "1f1eab3b039d139dee99792e1064ea3918ffa2f9e8960018e8c2978760d26e01"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c39b2b1e569836bee87f0b8bf605b0bf3ce1d2ec80c753d65ecdad4413f2d3c2"
+    },
+    {
+      "path": "scripts/verify_cover_recursive.py",
+      "sha256": "3c436dea92305e82f7d4220b16f2005d05bb81037f0804a2a4fa614fd4a14404"
+    }
+  ],
+  "claim_decisions": [
+    {
+      "claim": "Cover-recursively peripheral and ordinary tree-like partial cubes are the same class.",
+      "decision": "Rejected. Ordinary tree-like construction recurses only on contraction bases. Rper recurses on both the base and duplicated site; the bad-site expansion has a C6 site and separates them."
+    },
+    {
+      "claim": "The forbidden basis can be represented only by the punctured cubes.",
+      "decision": "Rejected. Those are exactly the nonample obstructions. The ample pc-minimal periphery-free family is a second exact family and contains P5."
+    },
+    {
+      "claim": "The complete ample obstruction family should be presented as a finite list.",
+      "decision": "Not asserted. It receives an exact coordinate-state predicate; named infinite subfamilies and deeper repair theorems remain in the source manuscript for later batches."
+    },
+    {
+      "claim": "The P5 census reports independently replay the full enumeration.",
+      "decision": "Qualified. The database-owned verifier replays P5 and validates compact report hashes and counts. Full candidate generation and large raw archives remain LaTeX-owned."
+    }
+  ],
+  "direct_source_normalizations": [
+    "#classes/cover_recursive_peripheral",
+    "#characterization_equivalences/cover_recursive_peripheral_equivalence",
+    "#obstruction_bases/cover_recursive_peripheral_complete_pc_basis",
+    "#obstruction_families/ample_pc_minimal_periphery_free",
+    "#examples/pentagonal_obstruction",
+    "#results/cover_recursive_coordinate_state_basis",
+    "#results/pentagonal_obstruction_global_minimality"
+  ],
+  "renderer_dependency": {
+    "repository": "math_database",
+    "commit": "b48b206",
+    "purpose": "Reverse-reference arrays, Hasse transitive reduction, closure node styling, and generated row/detail pages."
+  },
+  "ownership": {
+    "database": [
+      "canonical Rper identity, aliases, definition, and six equivalent membership criteria",
+      "p/c/pc closure flags and proof-bearing projection, conditioning, pc-minor, product, and peripheral-expansion records",
+      "strict median and daisy lower inclusions and strict dismantlable-ample upper inclusion with exact witnesses",
+      "complete pc-minimal obstruction basis split into punctured cubes and the ample periphery-free family",
+      "coordinate-state recognition theorem and structural consequences",
+      "exact P5 definition, invariant values, elementary-minor replay, and compact census evidence"
+    ],
+    "latex": [
+      "full proof exposition, diagrams, historical comparison with tree-like partial cubes, and notation development",
+      "large raw enumeration archives, generation programs, exhaustiveness narrative, and research audit trail",
+      "the explicit later obstruction families, repair-antichain theory, rooted wedges, gated amalgams, and open questions",
+      "paper-specific theorem ordering, scholarly framing, and all material that cannot be regenerated from database records"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "c39b2b1e569836bee87f0b8bf605b0bf3ce1d2ec80c753d65ecdad4413f2d3c2",
+    "database_records_after_batch": 349,
+    "promoted_classes": 17,
+    "reserved_classes_remaining": 71
+  },
+  "graph_delivery": {
+    "hasse_covers_after_batch": 25,
+    "stored_established_inclusions_after_batch": 40,
+    "closure_map_arrows_after_batch": 36,
+    "negative_comparisons_after_batch": 9
+  },
+  "data_tree_sha256": "2068afc35d15dd12b3fa069e184ce886d5cf351b4677bd7041772a21dd754e68",
+  "generated_outputs": [
+    "committed docs/ website with 365 HTML pages and the new class, characterization, basis, operation, example, invariant, relation, and theorem pages",
+    "Hasse hierarchy with direct median and daisy covers below convex-treelike and a direct convex-treelike cover below dismantlable ample",
+    "minor/closure graph with the established p/c/pc profile and operation arrows",
+    "generated class-table, class-definitions, and bibliography LaTeX previews"
+  ],
+  "validation": [
+    "scripts/validate_data.py (349 records)",
+    "scripts/verify_cover_recursive.py exact replay and compact-census audit",
+    "make check",
+    "all 365 generated HTML pages have valid local href/src targets",
+    "Hasse check: 25 covers represent 40 stored established inclusions",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "batch record/source/coverage/data-tree hash audit",
+    "git diff --check"
+  ],
+  "deferred": "Seventy-one reserved canonical classes remain. The next focused batch should promote realizable ample classes and their margin/coefficient-space package; later Rper batches can normalize the explicit cyclic, step-two, Hall-derived, wedge, and amalgam obstruction subfamilies without displacing the complete predicate basis."
+}

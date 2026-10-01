@@ -1,0 +1,16 @@
+{
+  "id": 48,
+  "short_name": "daisy_strict_subset_cover_recursive",
+  "name": "Daisy Cubes Are Strictly Convex-Treelike",
+  "subject_id": "#classes/daisy_cubes",
+  "object_id": "#classes/cover_recursive_peripheral",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite partial cubes.",
+  "statement": "Every daisy cube is cover-recursively peripheral, and the four-vertex path is cover-recursively peripheral but is not a daisy cube in any cube orientation.",
+  "witness_ids": [
+    "#examples/four_vertex_path"
+  ],
+  "proof": "Sections and projections of a down-set are down-sets, and every nonconstant coordinate of a down-set is peripheral. Thus every nontrivial pc-minor has a periphery. In $P_4$, the middle coordinate is not peripheral, whereas every coordinate of a daisy cube is peripheral.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:position"
+}

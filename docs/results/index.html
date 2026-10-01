@@ -581,6 +581,84 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-30" style="position:relative;">
+
+        <h3><a href="results/every_peripheral_coordinate_admissible.html" class="table-title-link">Every Peripheral Coordinate Is Admissible</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Peripheral Coordinate Is Admissible</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>In a member of $\mathcal R_{\mathrm{per}}$, every peripheral coordinate may be chosen at the root of a peripheral-expansion tree, and choices may be made independently at later nodes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The contraction base and duplicated site are the two convex semicubes. Convex-subgraph closure puts both in the class, so expansion trees for them can be attached below the chosen root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#cor:every-periphery-admissible</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-31" style="position:relative;">
+
+        <h3><a href="results/cover_recursive_obstruction_structure.html" class="table-title-link">Structure of Convex-Treelike Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Structure of Convex-Treelike Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Every pc-minimal obstruction to $\mathcal R_{\mathrm{per}}$ is either an antipodally punctured hypercube $Q_n^{--}$ or an ample partial cube. Every such obstruction is prime with respect to Cartesian product.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The ample forbidden-minor theorem forces any nonample minimal obstruction to equal a contained $Q_n^{--}$. A nontrivial product has both factors as proper convex pc-minors; product closure would then put the product in the class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:obstruction-structure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-32" style="position:relative;">
+
+        <h3><a href="results/cover_recursive_coordinate_state_basis.html" class="table-title-link">Coordinate-State Recognition of the Complete Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate-State Recognition of the Complete Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>An irredundant finite partial cube $O$ with at least two vertices is a pc-minimal obstruction exactly when the original family has no peripheral coordinate and every feasible nonidentity full minor state with at least two vertices exposes a peripheral coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Full states encode every sequence of restrictions and contractions, up to deletion of constant coordinates. The two conditions therefore say exactly that $O$ is periphery-free and every proper nontrivial pc-minor belongs to $\mathcal R_{\mathrm{per}}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex?#thm:coordinate-state-basis</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-33" style="position:relative;">
+
+        <h3><a href="results/cover_recursive_structural_consequences.html" class="table-title-link">Structural Consequences of Peripheral Recursion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Structural Consequences of Peripheral Recursion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every member of $\mathcal R_{\mathrm{per}}$ is tree-like, ample, dismantlable ample, almost-median, and proper semi-median. Its maximal-cube intersection graph is dismantlable, its alternating cube count is one, and its cubical complex is collapsible and contractible. A regular member is a hypercube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class implications follow inductively from the two-child peripheral decomposition. The enumerative and topological conclusions are inherited from ampleness and corner peeling; regular tree-like partial cubes are hypercubes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:position; PartialCubes:papers/cover-recursive/main.tex?#prop:inherited-properties</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/pentagonal_obstruction.html">Pentagonal Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-34" style="position:relative;">
+
+        <h3><a href="results/pentagonal_obstruction_global_minimality.html" class="table-title-link">Global Minimality of the Pentagonal Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Global Minimality of the Pentagonal Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The pentagonal obstruction has the smallest isometric dimension among the ample members of the complete basis, is the unique additional obstruction of dimension five and order at most twenty-one, and no additional obstruction has fewer than sixteen vertices.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Exact coordinate-isomorphism enumeration excludes additional types through dimension four. In dimension five through order twenty-one it produces 14,259 partial-cube representatives and 3,115 periphery-free representatives, with $\mathcal P_5$ the unique additional minimal type. Exact searches in dimensions six through twelve exclude ample periphery-free families below order sixteen; the low-excess lemma and the dimension/order bound cover all remaining dimensions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:global-minimality</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/pentagonal_obstruction.html">Pentagonal Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The database preserves the compact exact census reports and verifies their declared counts; the full raw enumeration archive remains in the LaTeX research repository.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

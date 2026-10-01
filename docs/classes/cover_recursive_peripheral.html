@@ -1,0 +1,117 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
+    <div class="table-card" id="math-26" style="position:relative;">
+
+        <h3><a href="classes/cover_recursive_peripheral.html" class="table-title-link">Convex-Treelike Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex-Treelike Partial Cubes</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal R_{\mathrm{per}}">
+            \[\mathcal R_{\mathrm{per}}\]
+        </div>
+    </div>
+
+<strong>Summary:</strong><div class="text-field"><p>Finite partial cubes obtained recursively by peripheral expansions whose contraction base and duplicated isometric site both satisfy the same rule.</p></div>
+<p><strong>Primary Characterization: </strong><a href="characterizations/cover_recursive_peripheral_construction.html">Cover-Recursive Peripheral Construction</a></p>
+<p><strong>Aliases:</strong><ul class='fields-list'><li>cover-recursively peripheral partial cubes</li><li>peripheral-recursive partial cubes</li><li>Rper</li></ul></p>
+<p><strong>Category:</strong> Expansion and Boundary</p>
+<p><strong>Ambient Scope:</strong> Partial Cubes</p>
+<p><strong>Parameterized:</strong> Unspecified</p>
+<p><strong>P-Closed:</strong> Yes</p>
+<p><strong>C-Closed:</strong> Yes</p>
+<p><strong>PC-Closed:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>This is Polat’s finite convex-treelike class. The recursion has two children at every peripheral expansion: both the contraction base and the duplicated site must recur. It is therefore smaller than the standard sequential tree-like class.</p></div>
+<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/cover_recursive_peripheral_construction.html'>Cover-Recursive Peripheral Construction</a></li><li><a href='characterizations/peripheral_expansion_tree.html'>Peripheral Expansion Tree</a></li><li><a href='characterizations/every_convex_subgraph_has_periphery.html'>Convex-Subgraph Periphery Characterization</a></li><li><a href='characterizations/every_pc_minor_has_periphery.html'>pc-Minor Periphery Characterization</a></li><li><a href='characterizations/every_pc_minor_tree_like.html'>Tree-Like pc-Minor Characterization</a></li><li><a href='characterizations/no_periphery_free_pc_minor.html'>Periphery-Free Forbidden-Minor Characterization</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/cover_recursive_strict_subset_dismantlable_ample.html'>Convex-Treelike Classes Are Strictly Dismantlable Ample</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Incoming Relations:</strong><ul class='fields-list'><li><a href='relations/median_strict_subset_cover_recursive.html'>Median Graphs Are Strictly Convex-Treelike</a></li><li><a href='relations/daisy_strict_subset_cover_recursive.html'>Daisy Cubes Are Strictly Convex-Treelike</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/cover_recursive_projection_closed.html'>Convex-Treelike Classes Are Projection-Closed</a></li><li><a href='operation_results/cover_recursive_conditioning_closed.html'>Convex-Treelike Classes Are Conditioning-Closed</a></li><li><a href='operation_results/cover_recursive_pc_minor_closed.html'>Convex-Treelike Classes Are pc-Minor-Closed</a></li><li><a href='operation_results/cover_recursive_cartesian_product_closed.html'>Convex-Treelike Product Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Obstruction Bases:</strong><ul class='fields-list'><li><a href='obstruction_bases/cover_recursive_peripheral_complete_pc_basis.html'>Complete pc-Minor Basis for Convex-Treelike Partial Cubes</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/every_peripheral_coordinate_admissible.html'>Every Peripheral Coordinate Is Admissible</a></li><li><a href='results/cover_recursive_obstruction_structure.html'>Structure of Convex-Treelike Obstructions</a></li><li><a href='results/cover_recursive_coordinate_state_basis.html'>Coordinate-State Recognition of the Complete Basis</a></li><li><a href='results/cover_recursive_structural_consequences.html'>Structural Consequences of Peripheral Recursion</a></li><li><a href='results/pentagonal_obstruction_global_minimality.html'>Global Minimality of the Pentagonal Obstruction</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>

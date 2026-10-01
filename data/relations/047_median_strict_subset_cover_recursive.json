@@ -1,0 +1,17 @@
+{
+  "id": 47,
+  "short_name": "median_strict_subset_cover_recursive",
+  "name": "Median Graphs Are Strictly Convex-Treelike",
+  "subject_id": "#classes/median",
+  "object_id": "#classes/cover_recursive_peripheral",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite partial cubes.",
+  "statement": "Every finite median graph is cover-recursively peripheral, and the vertex-deleted three-cube is cover-recursively peripheral but not median.",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube"
+  ],
+  "proof": "Mulder’s peripheral median expansion recursively supplies median bases and convex median sites. The graph $Q_3^-$ is the peripheral expansion of $Q_2$ along a three-vertex path, while the three neighbors of its missing vertex have no median.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:position",
+  "references": "\\cite{Gologranc14treehamming}"
+}

@@ -1,0 +1,20 @@
+{
+  "id": 10,
+  "short_name": "cover_recursive_peripheral_complete_pc_basis",
+  "name": "Complete pc-Minor Basis for Convex-Treelike Partial Cubes",
+  "target_class_id": "#classes/cover_recursive_peripheral",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/antipodally_punctured_hypercubes",
+    "#obstruction_families/ample_pc_minimal_periphery_free"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube belongs to $\\mathcal R_{\\mathrm{per}}$ if and only if it has no pc-minor in $\\{Q_n^{--}:n\\geq3\\}\\cup\\mathcal O_{\\mathrm{per}}^{\\mathrm{amp}}$. These are precisely all pc-minimal nontrivial periphery-free partial cubes.",
+  "status": "established",
+  "proof": "A graph lies outside $\\mathcal R_{\\mathrm{per}}$ exactly when it has a nontrivial periphery-free pc-minor; finite descent yields a pc-minimal one. If such an obstruction is nonample, the complete ample-class basis supplies a pc-minor $Q_n^{--}$, and minimality forces equality. Every remaining obstruction is ample.",
+  "references": "\\cite{KnauerMarc20}",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#cor:forbidden-form; PartialCubes:papers/cover-recursive/main.tex#prop:punctured-cubes; PartialCubes:papers/cover-recursive/main.tex#prop:obstruction-structure",
+  "comments": "The basis is infinite. The ample part has an exact coordinate-state predicate and many explicit members, but no finite parametrization is claimed."
+}
