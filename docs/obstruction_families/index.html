@@ -633,6 +633,78 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-24" style="position:relative;">
+
+        <h3><a href="obstruction_families/punctured_triangle_cap_contraction_obstructions.html" class="table-title-link">Punctured-Triangle Cap Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Triangle Cap Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,\epsilon},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,\epsilon},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,c\}\mathbin{\dot\cup}W$ with $|W|\ge2$, and let $\mathcal L_\triangle=\{\{a\},\{b\},\{a,b\},\{a,c\},\{b,c\},\{a,b,c\}\}$. For $\epsilon\in\{b,c\}$ put $A_\epsilon=\{a,\epsilon\}$ and delete $\mathcal L_\triangle\cup\{A_\epsilon\cup S:S\subseteq W\}$ from $2^X$. Attach a new pendant coordinate $f$ at the empty endpoint of the resulting base.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$, $|W|\ge2$, and $\epsilon\in\{b,c\}$. The pendant family has $2^d-2^{|W|}-4$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The two variants cap one of the two punctured-triangle edges incident with $a$; exchanging the local labels accounts for their evident symmetries.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies a valid base root ($\{c\}$ for $\epsilon=c$, or $\{a,b,c,w\}$ for any $w\in W$ when $\epsilon=b$), the exact holes at $\varnothing$ and $X$, and repair sets $\{a,b,c\}$ and $W$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-punctured-triangle-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-25" style="position:relative;">
+
+        <h3><a href="obstruction_families/punctured_triangle_corner_cap_contraction_obstructions.html" class="table-title-link">Punctured-Triangle Corner-Cap Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Triangle Corner-Cap Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,cx},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,cx},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,c,x\}\mathbin{\dot\cup}Z$ with $Z\ne\varnothing$, and let $\mathcal L_\triangle=\{\{a\},\{b\},\{a,b\},\{a,c\},\{b,c\},\{a,b,c\}\}$. Delete $\mathcal L_\triangle$, the corner $\{a,x\}$, and the cap $\{\{a,c,x\}\cup S:S\subseteq Z\}$ from $2^X$. Attach a new pendant coordinate $f$ at the empty endpoint of the resulting base.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$ and $Z\ne\varnothing$. The pendant family has $2^d-2^{|Z|}-6$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The local punctured triangle is decorated by the missing corner $\{a,x\}$ and the cap anchored at $\{a,c,x\}$ over the nonempty support $Z$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies the valid base root $\{a,b,c,x\}$, the exact holes at $\varnothing$ and $X$, and repair sets $\{a,b,c,x\}$ and $Z$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-punctured-triangle-corner-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-26" style="position:relative;">
+
+        <h3><a href="obstruction_families/punctured_triangle_top_cap_contraction_obstructions.html" class="table-title-link">Punctured-Triangle Top-Cap Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Triangle Top-Cap Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,abc},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\triangle,abc},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,c,x\}\mathbin{\dot\cup}W$ with $W\ne\varnothing$, and let $\mathcal L_\triangle=\{\{a\},\{b\},\{a,b\},\{a,c\},\{b,c\},\{a,b,c\}\}$. Delete $\mathcal L_\triangle$, the fixed states $\{a,x\}$ and $\{a,c,x\}$, and the top cap $\{\{a,b,c\}\cup S:S\subseteq W\}$ from $2^X$. Attach a new pendant coordinate $f$ at the empty endpoint of the resulting base.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$ and $W\ne\varnothing$. The pendant family has $2^d-2^{|W|}-6$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The cap is anchored at the three-coordinate top $\{a,b,c\}$ of the punctured triangle, while the coordinate $x$ supplies the two fixed local decorations.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies the valid base root $\{a,b,c,x\}$, the exact holes at $\varnothing$ and $X$, and repair sets $\{a,b,c,x\}$ and $W$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-punctured-triangle-abc-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

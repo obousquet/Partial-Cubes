@@ -1,0 +1,17 @@
+{
+  "id": 180,
+  "short_name": "punctured_triangle_cap_obstructions",
+  "name": "Punctured-Triangle Cap Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=\\{a,b,c\\}\\mathbin{\\dot\\cup}W$ with $|W|\\ge2$. Delete the six-state punctured triangle $\\mathcal L_\\triangle$ and the cap $\\{A_\\epsilon\\cup S:S\\subseteq W\\}$ for $A_\\epsilon=\\{a,\\epsilon\\}$ and $\\epsilon\\in\\{b,c\\}$. The complement is a learning space. Its endpoint repair sets are $\\{a,b,c\\}$ and $W$, so its empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-2^{|W|}-4$.",
+  "status": "established",
+  "proof": "For the two cap variants, translation by the stated valid root decomposes the missing states into families hereditary in a distinguished anchor; direct deletion proves accessibility. Rooted-union and intersection witnesses give the exact endpoint holes. Their repair sets cover $X$, and the critical-antipodal pendant criterion gives contraction-minimality. Inclusion-exclusion between the local family and cap gives the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-cap-pendant-obstructions"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 181,
+  "short_name": "punctured_triangle_corner_cap_obstructions",
+  "name": "Punctured-Triangle Corner-Cap Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=\\{a,b,c,x\\}\\mathbin{\\dot\\cup}Z$ with $Z\\ne\\varnothing$. Delete the punctured triangle $\\mathcal L_\\triangle$, $\\{a,x\\}$, and every $\\{a,c,x\\}\\cup S$ for $S\\subseteq Z$. The complement is a learning space rooted at $\\{a,b,c,x\\}$. Its endpoint repair sets are $\\{a,b,c,x\\}$ and $Z$, so its empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-2^{|Z|}-6$.",
+  "status": "established",
+  "proof": "Translation by $\\{a,b,c,x\\}$ splits the missing family into two anchor-hereditary blocks and one local state, proving union closure; a complete deletion argument proves accessibility. Explicit union and intersection witnesses determine the endpoint holes. Their repair sets cover all coordinates, so the critical-antipodal pendant criterion applies; the three disjoint deleted blocks give the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-corner-cap-pendant-obstructions"
+}

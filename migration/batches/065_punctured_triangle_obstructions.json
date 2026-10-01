@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "batch_id": "065_punctured_triangle_obstructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote the punctured-triangle edge-cap, corner-cap, and top-cap families of contraction-minimal nonlearning partial cubes from the active survey.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-cap-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-corner-cap-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-abc-cap-pendant-obstructions"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized family definitions, parameter restrictions, valid-root and endpoint certificates, repair sets, exact orders, contraction-minimality claims, and concise proofs. The survey retains the complete translated-state accessibility arguments, all rooted-union and intersection witnesses, notation, and comparison among the families.",
+    "recoverability": "The exact source hash and proposition locators preserve the complete scholarly context.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/024_punctured_triangle_cap_contraction_obstructions.json",
+      "sha256": "51dcd6a20d3c70f003cbca702ed9be4c9d9159a818a0819bf047268eb7fc8082"
+    },
+    {
+      "path": "data/obstruction_families/025_punctured_triangle_corner_cap_contraction_obstructions.json",
+      "sha256": "99a3eb526cbd0b2247336c0fd490a4a7c2b480b50aaacbb32b2af740c3976b99"
+    },
+    {
+      "path": "data/obstruction_families/026_punctured_triangle_top_cap_contraction_obstructions.json",
+      "sha256": "3714d3a35663c02737a583124087483c49bb0f98d0ae88afd74dced61b74b392"
+    },
+    {
+      "path": "data/results/180_punctured_triangle_cap_obstructions.json",
+      "sha256": "4ed0f09b1ef70027754ccc24f081aa954aa10453bb0c2a3af81d65fd85c0c152"
+    },
+    {
+      "path": "data/results/181_punctured_triangle_corner_cap_obstructions.json",
+      "sha256": "b2360beda8d3dd2c4f03233ba2bee292487e0e3748fe5ac31d6c0571c72beeb1"
+    },
+    {
+      "path": "data/results/182_punctured_triangle_top_cap_obstructions.json",
+      "sha256": "7d7d8e9aae39179b8108e466391162cea91729fe9c5a897a1c1d4fcd0599fb62"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "bc0adbae2e1dbc73a192c04209d988bdf3b95cc0383d7e679796fc2a02dedb32"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1335 records.",
+    "website": "Normalized 1351 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All extractors, source-preservation checks, bibliography and coverage audits, class-status audits, and review-queue validation pass."
+  },
+  "deferred": [
+    "These records assert contraction-minimality only; they make no pc-minimality or completeness claim because learning-space graphs are not closed under convex restrictions.",
+    "The subsequent root-regaining restriction examples and structural results remain candidates for separate promotion."
+  ]
+}

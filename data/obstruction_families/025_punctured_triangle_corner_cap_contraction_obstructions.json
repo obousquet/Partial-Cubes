@@ -1,0 +1,14 @@
+{
+  "id": 25,
+  "short_name": "punctured_triangle_corner_cap_contraction_obstructions",
+  "name": "Punctured-Triangle Corner-Cap Contraction Obstructions",
+  "symbol": "\\{\\operatorname{Pend}_f(\\mathcal K_d^{\\triangle,cx},\\varnothing)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $X=\\{a,b,c,x\\}\\mathbin{\\dot\\cup}Z$ with $Z\\ne\\varnothing$, and let $\\mathcal L_\\triangle=\\{\\{a\\},\\{b\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},\\{a,b,c\\}\\}$. Delete $\\mathcal L_\\triangle$, the corner $\\{a,x\\}$, and the cap $\\{\\{a,c,x\\}\\cup S:S\\subseteq Z\\}$ from $2^X$. Attach a new pendant coordinate $f$ at the empty endpoint of the resulting base.",
+  "parameters": "$d=|X|\\ge5$ and $Z\\ne\\varnothing$. The pendant family has $2^d-2^{|Z|}-6$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The local punctured triangle is decorated by the missing corner $\\{a,x\\}$ and the cap anchored at $\\{a,c,x\\}$ over the nonempty support $Z$.",
+  "recognition": "A construction certificate verifies the valid base root $\\{a,b,c,x\\}$, the exact holes at $\\varnothing$ and $X$, and repair sets $\\{a,b,c,x\\}$ and $Z$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-corner-cap-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 24,
+  "short_name": "punctured_triangle_cap_contraction_obstructions",
+  "name": "Punctured-Triangle Cap Contraction Obstructions",
+  "symbol": "\\{\\operatorname{Pend}_f(\\mathcal K_d^{\\triangle,\\epsilon},\\varnothing)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $X=\\{a,b,c\\}\\mathbin{\\dot\\cup}W$ with $|W|\\ge2$, and let $\\mathcal L_\\triangle=\\{\\{a\\},\\{b\\},\\{a,b\\},\\{a,c\\},\\{b,c\\},\\{a,b,c\\}\\}$. For $\\epsilon\\in\\{b,c\\}$ put $A_\\epsilon=\\{a,\\epsilon\\}$ and delete $\\mathcal L_\\triangle\\cup\\{A_\\epsilon\\cup S:S\\subseteq W\\}$ from $2^X$. Attach a new pendant coordinate $f$ at the empty endpoint of the resulting base.",
+  "parameters": "$d=|X|\\ge5$, $|W|\\ge2$, and $\\epsilon\\in\\{b,c\\}$. The pendant family has $2^d-2^{|W|}-4$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The two variants cap one of the two punctured-triangle edges incident with $a$; exchanging the local labels accounts for their evident symmetries.",
+  "recognition": "A construction certificate verifies a valid base root ($\\{c\\}$ for $\\epsilon=c$, or $\\{a,b,c,w\\}$ for any $w\\in W$ when $\\epsilon=b$), the exact holes at $\\varnothing$ and $X$, and repair sets $\\{a,b,c\\}$ and $W$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-punctured-triangle-cap-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}
