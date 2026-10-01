@@ -1,0 +1,19 @@
+{
+  "id": 272,
+  "short_name": "exact_root_gluing_width",
+  "name": "Exact Root-Gluing Width",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/one_point_amalgam"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let rooted classes $A_i\\subseteq\\{0,1\\}^{F_i}$ contain zero on pairwise disjoint coordinate blocks and set $X=\\bigcup_iA_i$. Then $\\sigma(X;\\{0\\})=\\max_i\\sigma(A_i;\\{0\\})$ and $\\sigma(X)=\\min_k\\max(\\{\\sigma(A_k)\\}\\cup\\{\\sigma(A_i;\\{0\\}):i\\ne k\\})$. In particular, two or more copies of one rooted class $A$ have width exactly $\\sigma(A;\\{0\\})$.",
+  "status": "established",
+  "proof": "Apply bounded common-section composition with the singleton section $D=\\{0\\}$. The selected subset is empty or a singleton. The empty choice cannot improve on a singleton choice because $\\sigma(A_k)\\leq\\sigma(A_k;\\{0\\})$, yielding both exact formulas.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:root-gluing",
+  "comments": "Root doubling realizes every prescribed-root width as an absolute width with at most twice as many concepts. Since root gluings preserve ample classes and partial cubes, absolute and prescribed-root widths have the same attainable ranges within each of those two families."
+}

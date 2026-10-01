@@ -1,0 +1,12 @@
+{
+  "id": 103,
+  "short_name": "edge_section_width_attachment_pair",
+  "name": "Endpoint-Sensitive Edge Attachments",
+  "symbol": "(A,B_u,B_v;D)",
+  "object_type": "construction",
+  "definition": "Let $R\\subseteq\\{0,1\\}^{12}$ be the rooted 289-vertex ample factor with root $u=0$ and distinguished neighbor $v=2$. Set $A=R$, $D=\\{u,v\\}$, and on a disjoint private copy of the coordinates define $B_r=(D\\times\\{0\\})\\cup(\\{r\\}\\times R)$ for $r\\in\\{u,v\\}$.",
+  "parameters": "$|A|=289$ and $|B_u|=|B_v|=290$; the two gluings have 577 concepts each after identifying the common edge.",
+  "properties": "Both attachments are dismantlable ample and are exchanged by reflecting the shared coordinate. They have identical absolute and common-edge prescribed widths, yet gluing to $A$ at $u$ has positive width $s=\\sigma(R;\\{u\\})$ and gluing at $v$ has width zero.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:section-width-limit",
+  "verification": "PartialCubes:papers/gluing/supplement/verify_gated_relative_tests.py; PartialCubes:papers/gluing/supplement/expected/gated_relative_tests_verification.json"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 269,
+  "short_name": "majority_completion_of_nested_extension",
+  "name": "Majority Completion of a Nested Extension",
+  "invariant_ids": [
+    "#invariants/majority_completion_defect"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure",
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For $\\emptyset\\ne S\\subseteq B\\subseteq\\{0,1\\}^n$, let $F(S)$ be the smallest ambient coordinate face containing $S$, put $E(B,S)=(B\\times\\{0\\})\\cup(S\\times\\{1\\})$, and write $H=\\operatorname{med}(B)$. Then $\\operatorname{med}(E(B,S))=(H\\times\\{0\\})\\cup((H\\cap F(S))\\times\\{1\\})$, and $\\delta_{\\mathrm{med}}(E(B,S))=\\delta_{\\mathrm{med}}(B)+\\delta_{\\mathrm{med}}(S)+|\\operatorname{med}(B)\\cap F(S)|-|\\operatorname{med}(S)|$. The last term is nonnegative.",
+  "status": "established",
+  "proof": "The pairwise patterns on old coordinates are exactly those of $B$, forcing the old word into $H$. At new-coordinate value zero, mixed pairs impose only the unary projections of $B$; at value one, they impose the unary projections of $S$, which cut out $F(S)$. Majority terms from $S$ lie in $H$ and preserve every coordinate constant on $S$, so $\\operatorname{med}(S)\\subseteq H\\cap F(S)$. Counting the two layers and subtracting $|B|+|S|$ gives the defect formula.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:median-extension",
+  "comments": "If $B$ and $S$ are isometric median classes, the extension is median exactly when $S=B\\cap F(S)$. The formula also applies to nonmedian and disconnected inputs."
+}

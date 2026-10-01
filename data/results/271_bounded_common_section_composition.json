@@ -1,0 +1,19 @@
+{
+  "id": 271,
+  "short_name": "bounded_common_section_composition",
+  "name": "Bounded Common-Section Composition",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/conditioning"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For common-section pieces $A_1,\\ldots,A_m$ over $D$, let $X_I=\\bigcup_{i\\in I}A_i$, $X_\\emptyset=D$, $N=|D|$, and $r_i=\\sigma(A_i;D)$. Then $\\sigma(X;D)=\\max_i r_i$, $\\sigma(X)=\\min_{|I|\\leq N}\\max(\\{\\sigma(X_I)\\}\\cup\\{r_i:i\\notin I\\})$, and $\\sigma(X)=\\max_{|J|\\leq N+1}\\sigma(X_J)$. For $m$ disjoint private copies of one piece $A$, $\\sigma(X^{(m)})=\\sigma(A;D)$ whenever $m\\geq|D|+1$.",
+  "status": "established",
+  "proof": "Putting $D$ first and appending optimal local outside orders proves the relative formula, because every cross-piece disagreement contains the gate disagreement. For an arbitrary global order, mark for each $d\\in D$ the piece containing the first word projected to $d$; at most $|D|$ pieces are marked. In every unmarked piece, moving all of $D$ first preserves the width: a newly minimal gate support is bounded using the earlier marked word over the same projection. This proves the minimization formula. A threshold argument then shows that some subunion of at most $|D|+1$ pieces realizes the full width. Identical copies give the final identity.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:bounded-gluing",
+  "comments": "Every threshold failure is witnessed by at most $|D|+1$ pieces of the displayed decomposition; this does not bound the cardinality of an intrinsic forbidden pc-minor. The gluing preserves ampleness and the partial-cube property when all pieces have it."
+}

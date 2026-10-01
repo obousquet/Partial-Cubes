@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 329,
-    "uncovered": 687,
-    "proof_source_records": 1359
+    "covered": 335,
+    "uncovered": 681,
+    "proof_source_records": 1371
   },
   "by_workspace": {
     "ample-corners": {
@@ -48,9 +48,9 @@
       "total": 19
     },
     "structural-invariants": {
-      "covered": 39,
+      "covered": 45,
       "total": 51,
-      "uncovered": 12
+      "uncovered": 6
     },
     "survey": {
       "covered": 73,
@@ -14064,7 +14064,7 @@
       "label": "cor:peripheral",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14074,7 +14074,9 @@
           "line": 1098
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/270_nested_one_coordinate_extension_width.json"
+      ]
     },
     {
       "label": "ex:cube-asymmetry",
@@ -14101,7 +14103,7 @@
       "label": "ex:hall-completion",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14111,7 +14113,13 @@
           "line": 2229
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/102_hall_complement.json",
+        "data/invariant_values/122_hall_complement_ordering_width.json",
+        "data/invariant_values/123_hall_complement_cube_completion_width.json",
+        "data/invariant_values/124_hall_complement_vc_dimension.json",
+        "data/results/274_hall_complement_filtration_obstruction.json"
+      ]
     },
     {
       "label": "ex:hexagon-pair-witness",
@@ -14433,7 +14441,7 @@
       "label": "prop:median-extension",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14443,7 +14451,9 @@
           "line": 963
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/269_majority_completion_of_nested_extension.json"
+      ]
     },
     {
       "label": "prop:median-laws",
@@ -14486,7 +14496,7 @@
       "label": "prop:section-width-limit",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14496,7 +14506,10 @@
           "line": 1309
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/103_edge_section_width_attachment_pair.json",
+        "data/results/273_edge_section_width_data_are_insufficient.json"
+      ]
     },
     {
       "label": "prop:shattering",
@@ -14578,7 +14591,7 @@
       "label": "thm:bounded-gluing",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14588,7 +14601,10 @@
           "line": 1125
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/290_partial_cubes_common_section_gluing_closed.json",
+        "data/results/271_bounded_common_section_composition.json"
+      ]
     },
     {
       "label": "thm:completion-width",
@@ -14859,7 +14875,7 @@
       "label": "thm:root-gluing",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14869,7 +14885,9 @@
           "line": 1254
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/272_exact_root_gluing_width.json"
+      ]
     },
     {
       "label": "thm:slope-laws",

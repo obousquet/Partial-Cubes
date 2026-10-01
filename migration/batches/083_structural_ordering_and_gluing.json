@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "batch_id": "083_structural_ordering_and_gluing",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the remaining ordering and gluing claims from frozen structural-invariants main.tex: nested majority completion, nested extensions, bounded common-section composition, exact root gluing, the edge-section scalar limitation, and Hall-complement completion.",
+  "source_refs": [
+    "PartialCubes:papers/structural-invariants/main.tex#prop:median-extension",
+    "PartialCubes:papers/structural-invariants/main.tex#cor:peripheral",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:bounded-gluing",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:root-gluing",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:section-width-limit",
+    "PartialCubes:papers/structural-invariants/main.tex#ex:hall-completion"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-invariants-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/structural-invariants/main.tex",
+      "sha256": "1d8b01d01353a2641fb9e75789b67d5f722a83c8406a740b5cbf9b3226b32f0e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized formulas, construction data, exact invariant values, closure facts, and concise proofs. The LaTeX manuscript retains the detailed global-order arguments, motivation, comparisons, and open questions.",
+    "recoverability": "The clean source manuscript is pinned by repository commit and SHA-256 hash, and every promoted fact has an exact proposition, corollary, theorem, or example locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Existing database-owned Hall data and frozen gluing certificates are reused by reference."
+  },
+  "records": [
+    {"path": "data/operation_results/290_partial_cubes_common_section_gluing_closed.json", "sha256": "bde16852eac5ef783b6e0dd818211bc6f97bbd57f2172a1a7056d4b5073be2c6"},
+    {"path": "data/results/269_majority_completion_of_nested_extension.json", "sha256": "93fd07737190da44f30838c7ec927df025cf2f302cfa6bff3ce6c4ec2c2242ca"},
+    {"path": "data/results/270_nested_one_coordinate_extension_width.json", "sha256": "a0bddd0b84ea531f623d02f8490fcb2bab80733450cbea02722a0fa1d4a7160b"},
+    {"path": "data/results/271_bounded_common_section_composition.json", "sha256": "02ee5bbbe95b38ba0a819d984f3cb561b8d2853756463f1da1708f707e33b2b3"},
+    {"path": "data/results/272_exact_root_gluing_width.json", "sha256": "90a5d742365f253017422d35521a5990cc308e84a77245d486d0d61f81ad5167"},
+    {"path": "data/results/273_edge_section_width_data_are_insufficient.json", "sha256": "a518ba38027f4e1d0fb2f1039d65c608aaee7307f57bfa36fb808f059b9d1b2b"},
+    {"path": "data/results/274_hall_complement_filtration_obstruction.json", "sha256": "933a6dc7803201897bb95dd1dc347277089e37c89a12e37f93ed4819fe2ecda9"},
+    {"path": "data/examples/102_hall_complement.json", "sha256": "10d201521e97268ac7f726c51c956e32ae80b19a25eac16fdc9382d8ceadbe7b"},
+    {"path": "data/examples/103_edge_section_width_attachment_pair.json", "sha256": "3b6367d2004f671578b73ef7b9085112a333cb6790b528714998ed7bd6fc441c"},
+    {"path": "data/invariant_values/122_hall_complement_ordering_width.json", "sha256": "626e868d59e128606e40edb807bce534bb7d03e8ce4300726069d7429ade12c8"},
+    {"path": "data/invariant_values/123_hall_complement_cube_completion_width.json", "sha256": "818f9759b27b3481e2c21aabc6b02acca9d00bdeb955003aa5449f5626b85425"},
+    {"path": "data/invariant_values/124_hall_complement_vc_dimension.json", "sha256": "0c5499995a4d86841bee1b21aff5d54ec029b55396cb51793ef087e3e277621e"},
+    {"path": "migration/coverage.json", "sha256": "c463040aa527d3b443ec5b5dd15d9adb336f4cba682dd88c08709d607e9f68e6"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "4324efe086830b62f54174ad0f769b09156d55afea175fc44e66b0a208a5883b"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1485 records.",
+    "website": "Normalized 1501 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The 6 ordering and gluing labels in this batch are covered; structural-invariants coverage is now 45 of 51 labels and overall workspace-aware coverage is 335 of 1016 labels."
+  },
+  "deferred": [
+    "The final 6 structural-invariants labels concern shattering, Betti-blindness, polarization, and their examples and are assigned to the next batch.",
+    "Open boundedness and compact-behavior questions remain prose in the LaTeX source under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

@@ -4537,6 +4537,110 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-269" style="position:relative;">
+
+        <h3><a href="results/majority_completion_of_nested_extension.html" class="table-title-link">Majority Completion of a Nested Extension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Completion of a Nested Extension</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/majority_completion_defect.html">Majority Completion Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For $\emptyset\ne S\subseteq B\subseteq\{0,1\}^n$, let $F(S)$ be the smallest ambient coordinate face containing $S$, put $E(B,S)=(B\times\{0\})\cup(S\times\{1\})$, and write $H=\operatorname{med}(B)$. Then $\operatorname{med}(E(B,S))=(H\times\{0\})\cup((H\cap F(S))\times\{1\})$, and $\delta_{\mathrm{med}}(E(B,S))=\delta_{\mathrm{med}}(B)+\delta_{\mathrm{med}}(S)+|\operatorname{med}(B)\cap F(S)|-|\operatorname{med}(S)|$. The last term is nonnegative.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The pairwise patterns on old coordinates are exactly those of $B$, forcing the old word into $H$. At new-coordinate value zero, mixed pairs impose only the unary projections of $B$; at value one, they impose the unary projections of $S$, which cut out $F(S)$. Majority terms from $S$ lie in $H$ and preserve every coordinate constant on $S$, so $\operatorname{med}(S)\subseteq H\cap F(S)$. Counting the two layers and subtracting $|B|+|S|$ gives the defect formula.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:median-extension</p></div>
+<strong>Comments:</strong><div class="text-field"><p>If $B$ and $S$ are isometric median classes, the extension is median exactly when $S=B\cap F(S)$. The formula also applies to nonmedian and disconnected inputs.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-270" style="position:relative;">
+
+        <h3><a href="results/nested_one_coordinate_extension_width.html" class="table-title-link">Exact Width of a Nested One-Coordinate Extension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Width of a Nested One-Coordinate Extension</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For $\emptyset\ne B\subseteq A\subseteq\{0,1\}^E$ and $Y=(A\times\{0\})\cup(B\times\{1\})$, one has $\sigma(Y)=\max\{\sigma(A),\sigma(B)\}$. If $B=\emptyset$, the constant-coordinate copy of $A$ has width $\sigma(A)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Both fibers are coordinate conditionings of $Y$, giving the lower bound. Order the lower $A$ layer optimally and then the upper $B$ layer optimally. At an upper word $(b,1)$ its gate $(b,0)$ is already present, so every disagreement with the lower layer contains the singleton new-coordinate disagreement; the other minimal disagreements are precisely those from the chosen order of $B$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#cor:peripheral</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-271" style="position:relative;">
+
+        <h3><a href="results/bounded_common_section_composition.html" class="table-title-link">Bounded Common-Section Composition</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Bounded Common-Section Composition</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For common-section pieces $A_1,\ldots,A_m$ over $D$, let $X_I=\bigcup_{i\in I}A_i$, $X_\emptyset=D$, $N=|D|$, and $r_i=\sigma(A_i;D)$. Then $\sigma(X;D)=\max_i r_i$, $\sigma(X)=\min_{|I|\leq N}\max(\{\sigma(X_I)\}\cup\{r_i:i\notin I\})$, and $\sigma(X)=\max_{|J|\leq N+1}\sigma(X_J)$. For $m$ disjoint private copies of one piece $A$, $\sigma(X^{(m)})=\sigma(A;D)$ whenever $m\geq|D|+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Putting $D$ first and appending optimal local outside orders proves the relative formula, because every cross-piece disagreement contains the gate disagreement. For an arbitrary global order, mark for each $d\in D$ the piece containing the first word projected to $d$; at most $|D|$ pieces are marked. In every unmarked piece, moving all of $D$ first preserves the width: a newly minimal gate support is bounded using the earlier marked word over the same projection. This proves the minimization formula. A threshold argument then shows that some subunion of at most $|D|+1$ pieces realizes the full width. Identical copies give the final identity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:bounded-gluing</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every threshold failure is witnessed by at most $|D|+1$ pieces of the displayed decomposition; this does not bound the cardinality of an intrinsic forbidden pc-minor. The gluing preserves ampleness and the partial-cube property when all pieces have it.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-272" style="position:relative;">
+
+        <h3><a href="results/exact_root_gluing_width.html" class="table-title-link">Exact Root-Gluing Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Root-Gluing Width</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let rooted classes $A_i\subseteq\{0,1\}^{F_i}$ contain zero on pairwise disjoint coordinate blocks and set $X=\bigcup_iA_i$. Then $\sigma(X;\{0\})=\max_i\sigma(A_i;\{0\})$ and $\sigma(X)=\min_k\max(\{\sigma(A_k)\}\cup\{\sigma(A_i;\{0\}):i\ne k\})$. In particular, two or more copies of one rooted class $A$ have width exactly $\sigma(A;\{0\})$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply bounded common-section composition with the singleton section $D=\{0\}$. The selected subset is empty or a singleton. The empty choice cannot improve on a singleton choice because $\sigma(A_k)\leq\sigma(A_k;\{0\})$, yielding both exact formulas.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:root-gluing</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Root doubling realizes every prescribed-root width as an absolute width with at most twice as many concepts. Since root gluings preserve ample classes and partial cubes, absolute and prescribed-root widths have the same attainable ranges within each of those two families.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-273" style="position:relative;">
+
+        <h3><a href="results/edge_section_width_data_are_insufficient.html" class="table-title-link">Two Scalar Widths Do Not Determine Edge Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Scalar Widths Do Not Determine Edge Gluing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There are dismantlable ample pieces $A,B_u,B_v$ over one common edge $D$ such that $\sigma(B_u)=\sigma(B_v)=0$ and $\sigma(B_u;D)=\sigma(B_v;D)=s>0$, while $\sigma(A\cup B_u)=s$ and $\sigma(A\cup B_v)=0$. Moreover $\sigma(A;D)>0$, and reflecting the shared coordinate exchanges $B_u$ and $B_v$ while preserving $D$ setwise.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Take $A=R$, the rooted 289-vertex ample factor with only corner $u=0$ and a peeling ending at its neighbor $v=2$, and let $D=\{u,v\}$. Attach a private copy of $R$ at either endpoint to form $B_r=(D\times\{0\})\cup(\{r\}\times R)$. Both $B_r$ peel and have width zero, while paired conditioning and an explicit $D$-first order give the common positive value $\sigma(B_r;D)=s=\sigma(R;\{u\})$. Exact root gluing gives width $s$ when the second copy is attached at $u$ and width zero when it is attached at $v$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:section-width-limit</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/edge_section_width_attachment_pair.html">Endpoint-Sensitive Edge Attachments</a></li><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The failure comes from the pieces' placement relative to the labelled common edge. Any quantitative composition rule for larger sections needs more information than absolute and prescribed-section widths, even after adjoining invariants unchanged by a reflection of the piece.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-274" style="position:relative;">
+
+        <h3><a href="results/hall_complement_filtration_obstruction.html" class="table-title-link">Hall's Complement Obstructs Zero-Width Complete Filtrations</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hall's Complement Obstructs Zero-Width Complete Filtrations</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/cube_completion_width.html">Cube-Completion Width</a></li><li><a href="invariants/filtration_width.html">Filtration Width</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H=C_H$ be Hall's 299-concept maximum class in $\{0,1\}^{12}$ and $K=H^{\mathrm c}$. Then $K$ is a dismantlable maximum class of rank eight and $1\leq\sigma_{\square}(K)\leq3$. Every nested filtration starting at $K$ and ending at the full cube has width between one and three, independently of its intermediate stages. Hence no complete maximum sequence containing $K$ admits a zero-width order compatible with all levels.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The published nonextendable shelling makes $K$ dismantlable, while its complement $H$ has no corner and is not dismantlable. The cube-completion zero criterion gives the lower bound. Since $H$ is ample of VC dimension three, its largest coordinate cube has dimension three, and the cubical extension theorem gives the upper bound. Adding intermediate prescribed stages cannot lower the requirement to complete $K$, while every continuation after an optimal order of $K$ has added-step cost at most three.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#ex:hall-completion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_complement.html">Complement of Hall's Maximum Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>Both $H$ and $K$ are already maximum, so positive completion width does not exclude membership in MaxMin. Reverse filling gives $\sigma_{\square}(H)=\sigma(H)$; this differs from the ordinary Hall-width interval $1$ through $7$.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

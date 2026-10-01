@@ -1,0 +1,26 @@
+{
+  "id": 273,
+  "short_name": "edge_section_width_data_are_insufficient",
+  "name": "Two Scalar Widths Do Not Determine Edge Gluing",
+  "class_ids": [
+    "#classes/dismantlable_ample",
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "construction",
+  "statement": "There are dismantlable ample pieces $A,B_u,B_v$ over one common edge $D$ such that $\\sigma(B_u)=\\sigma(B_v)=0$ and $\\sigma(B_u;D)=\\sigma(B_v;D)=s>0$, while $\\sigma(A\\cup B_u)=s$ and $\\sigma(A\\cup B_v)=0$. Moreover $\\sigma(A;D)>0$, and reflecting the shared coordinate exchanges $B_u$ and $B_v$ while preserving $D$ setwise.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/edge_section_width_attachment_pair",
+    "#examples/rooted_289_vertex_peeling_factor"
+  ],
+  "proof": "Take $A=R$, the rooted 289-vertex ample factor with only corner $u=0$ and a peeling ending at its neighbor $v=2$, and let $D=\\{u,v\\}$. Attach a private copy of $R$ at either endpoint to form $B_r=(D\\times\\{0\\})\\cup(\\{r\\}\\times R)$. Both $B_r$ peel and have width zero, while paired conditioning and an explicit $D$-first order give the common positive value $\\sigma(B_r;D)=s=\\sigma(R;\\{u\\})$. Exact root gluing gives width $s$ when the second copy is attached at $u$ and width zero when it is attached at $v$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:section-width-limit",
+  "comments": "The failure comes from the pieces' placement relative to the labelled common edge. Any quantitative composition rule for larger sections needs more information than absolute and prescribed-section widths, even after adjoining invariants unchanged by a reflection of the piece."
+}

@@ -1,0 +1,16 @@
+{
+  "id": 270,
+  "short_name": "nested_one_coordinate_extension_width",
+  "name": "Exact Width of a Nested One-Coordinate Extension",
+  "invariant_ids": [
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For $\\emptyset\\ne B\\subseteq A\\subseteq\\{0,1\\}^E$ and $Y=(A\\times\\{0\\})\\cup(B\\times\\{1\\})$, one has $\\sigma(Y)=\\max\\{\\sigma(A),\\sigma(B)\\}$. If $B=\\emptyset$, the constant-coordinate copy of $A$ has width $\\sigma(A)$.",
+  "status": "established",
+  "proof": "Both fibers are coordinate conditionings of $Y$, giving the lower bound. Order the lower $A$ layer optimally and then the upper $B$ layer optimally. At an upper word $(b,1)$ its gate $(b,0)$ is already present, so every disagreement with the lower layer contains the singleton new-coordinate disagreement; the other minimal disagreements are precisely those from the chosen order of $B$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#cor:peripheral"
+}

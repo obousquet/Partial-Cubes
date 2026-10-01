@@ -2163,6 +2163,51 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-102" style="position:relative;">
+
+        <h3><a href="examples/hall_complement.html" class="table-title-link">Complement of Hall's Maximum Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complement of Hall's Maximum Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="K=\{0,1\}^{12}\setminus C_H">
+            \[K=\{0,1\}^{12}\setminus C_H\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The cube complement of the database-owned 299-concept Hall maximum class $C_H\subseteq\{0,1\}^{12}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$K$ is a dismantlable maximum class of rank eight. Its cube-completion width lies between one and three because $K$ is dismantlable, its complement is not, and the largest coordinate cube in the rank-three ample complement has dimension three.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#ex:hall-completion</p></div>
+<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/hall_maximum_class.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/hall_complement_ordering_width.html'>Ordering Width of Hall's Complement</a></li><li><a href='invariant_values/hall_complement_cube_completion_width.html'>Cube-Completion Width of Hall's Complement</a></li><li><a href='invariant_values/hall_complement_vc_dimension.html'>VC Dimension of Hall's Complement</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-103" style="position:relative;">
+
+        <h3><a href="examples/edge_section_width_attachment_pair.html" class="table-title-link">Endpoint-Sensitive Edge Attachments</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Endpoint-Sensitive Edge Attachments</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="(A,B_u,B_v;D)">
+            \[(A,B_u,B_v;D)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $R\subseteq\{0,1\}^{12}$ be the rooted 289-vertex ample factor with root $u=0$ and distinguished neighbor $v=2$. Set $A=R$, $D=\{u,v\}$, and on a disjoint private copy of the coordinates define $B_r=(D\times\{0\})\cup(\{r\}\times R)$ for $r\in\{u,v\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|A|=289$ and $|B_u|=|B_v|=290$; the two gluings have 577 concepts each after identifying the common edge.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both attachments are dismantlable ample and are exchanged by reflecting the shared coordinate. They have identical absolute and common-edge prescribed widths, yet gluing to $A$ at $u$ has positive width $s=\sigma(R;\{u\})$ and gluing at $v$ has width zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:section-width-limit</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/gluing/supplement/verify_gated_relative_tests.py; PartialCubes:papers/gluing/supplement/expected/gated_relative_tests_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,13 @@
+{
+  "id": 290,
+  "short_name": "partial_cubes_common_section_gluing_closed",
+  "name": "Partial Cubes Are Closed under Projecting Common-Section Gluing",
+  "class_id": "#classes/partial_cubes",
+  "operation_id": "#operations/common_section_gluing",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/partial_cubes",
+  "status": "established",
+  "statement": "Let partial-cube pieces $A_i\\subseteq\\{0,1\\}^{E\\sqcup F_i}$ have disjoint private coordinate blocks, contain the same nonempty zero section $D$, and project onto exactly $D$ in the shared coordinates. Their embedded union is a partial cube.",
+  "proof": "Within one piece its isometric paths remain available. Between points in different pieces, travel from each endpoint to its Hamming gate in $D$ and join the two gates by a shortest path in $D$. Private supports lie in disjoint coordinate blocks and the shared segment realizes exactly the remaining shared-coordinate disagreement, so the concatenated length equals the ambient Hamming distance.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:bounded-gluing"
+}

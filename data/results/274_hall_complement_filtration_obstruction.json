@@ -1,0 +1,23 @@
+{
+  "id": 274,
+  "short_name": "hall_complement_filtration_obstruction",
+  "name": "Hall's Complement Obstructs Zero-Width Complete Filtrations",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/cube_completion_width",
+    "#invariants/filtration_width"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H=C_H$ be Hall's 299-concept maximum class in $\\{0,1\\}^{12}$ and $K=H^{\\mathrm c}$. Then $K$ is a dismantlable maximum class of rank eight and $1\\leq\\sigma_{\\square}(K)\\leq3$. Every nested filtration starting at $K$ and ending at the full cube has width between one and three, independently of its intermediate stages. Hence no complete maximum sequence containing $K$ admits a zero-width order compatible with all levels.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/hall_complement"
+  ],
+  "proof": "The published nonextendable shelling makes $K$ dismantlable, while its complement $H$ has no corner and is not dismantlable. The cube-completion zero criterion gives the lower bound. Since $H$ is ample of VC dimension three, its largest coordinate cube has dimension three, and the cubical extension theorem gives the upper bound. Adding intermediate prescribed stages cannot lower the requirement to complete $K$, while every continuation after an optimal order of $K$ has added-step cost at most three.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#ex:hall-completion",
+  "comments": "Both $H$ and $K$ are already maximum, so positive completion width does not exclude membership in MaxMin. Reverse filling gives $\\sigma_{\\square}(H)=\\sigma(H)$; this differs from the ordinary Hall-width interval $1$ through $7$."
+}
