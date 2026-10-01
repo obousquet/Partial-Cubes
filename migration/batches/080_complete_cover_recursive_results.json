@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "batch_id": "080_complete_cover_recursive_results",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete frozen-manuscript coverage for cover-recursive peripheral partial cubes with the deletion normal form, exact two-layer periphery and forbidden-basis criteria, minimal repair hypergraphs, the static repair formula, and the descendant-free complete basis.",
+  "source_refs": [
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex#prop:deletion-normal-form",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#lem:two-layer-periphery",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#thm:complete-rper-basis",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#ex:repair-hypergraph",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#lem:static-repair-formula",
+    "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#thm:static-repair-basis"
+  ],
+  "source_packets": [
+    {
+      "id": "cover-recursive-coordinate-basis",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex",
+      "sha256": "fb439bfaffbf88e9efa387bc9fab6cc0b81d7e765d0dfa4a9e0537c301f6cb3f"
+    },
+    {
+      "id": "cover-recursive-repair-basis",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex",
+      "sha256": "bfc6e3d1917b0a82dfe7b7b95b65a9fef33c5c856a3f8a53d120802dbf8cdc05"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the complete normalized obstruction-basis statements, repair-antichain definitions, exact recognition laws, example, and concise proofs. The LaTeX repository retains the full derivations, exposition, and coordinate-state discussion.",
+    "recoverability": "The two clean source sections are pinned by repository commit and SHA-256 hash, and every promoted fact has an exact theorem, lemma, proposition, or example locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/obstruction_bases/010_cover_recursive_peripheral_complete_pc_basis.json", "sha256": "f8b660b15dc7bcd41662865136555075e706439ef30d14c9ebd38fe559f8fe35"},
+    {"path": "data/obstruction_families/011_ample_pc_minimal_periphery_free.json", "sha256": "1d0ab3184f84132ef7aaa0bf9e053f250065085c076d22f2fb9d412acf086454"},
+    {"path": "data/examples/098_six_cycle_repair_hypergraph.json", "sha256": "bc28e6f1704ac36a99adfce6de6008dd4f41e14e261fd2abc1578a515421a86d"},
+    {"path": "data/results/248_cover_recursive_obstruction_deletion_normal_form.json", "sha256": "dcc4c93890f1f35f13f3943a31208eb8abce03672991c67ef86ec6283d339d38"},
+    {"path": "data/results/249_two_layer_periphery_criterion.json", "sha256": "fc9f6ff7f7ac0794ffc0c70664cf153b348737f103a545c7795530dab8246d29"},
+    {"path": "data/results/250_complete_two_layer_cover_recursive_obstruction_basis.json", "sha256": "ba7e00c69fd28cdde14bc336f8288933096a550486aacef3f48c0ddaa280a176"},
+    {"path": "data/results/251_static_repair_antichain_formula.json", "sha256": "31df0d6b8bbbbb29778393c138551d4026827ec495ebdb4cafa49eb370d94f3c"},
+    {"path": "data/results/252_static_repair_basis_for_ample_cover_recursive_obstructions.json", "sha256": "32c1ac4d0b623da2563f983e4c8c2d03292043e1e7bae0dfd4ab6c379fdb3a54"},
+    {"path": "migration/coverage.json", "sha256": "92f8c00bb2b49c63816ac8d7f750ceba8a9ca318ae9200a844c532fd755f98c1"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "62ec92886b1c6bdf1d0f135ecbed7f4ae0b48e0c13e52c6c256c4a4bae38464e"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1441 records.",
+    "website": "Normalized 1457 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The frozen cover-recursive workspace now has all 42 of 42 theorem-like labels covered; overall workspace-aware coverage is 313 of 1016 labels."
+  },
+  "deferred": [
+    "The repair criteria are exact but can require inspection of all four-state assignments; no smaller intrinsic parametrization is asserted by the source.",
+    "Exploratory research added to the live cover-recursive checkout after the frozen snapshot requires a separately reviewed snapshot refresh."
+  ]
+}

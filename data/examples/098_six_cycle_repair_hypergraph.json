@@ -1,0 +1,10 @@
+{
+  "id": 98,
+  "short_name": "six_cycle_repair_hypergraph",
+  "name": "Repair Hypergraph of a Six-Cycle Containment",
+  "symbol": "\\mathcal H_O(e,1;11)",
+  "object_type": "construction",
+  "definition": "Write the six-cycle as the two-layer lift of $A=\\{01,10,11\\}$ and $B=\\{00,01,10\\}$ over outer coordinate $e$. For the failed containment $A\\subseteq B$, the unique defect is $u=11$.",
+  "properties": "The differences from the three possible mates in $B$ have supports $\\{1,2\\}$, $\\{1\\}$, and $\\{2\\}$, so the minimal repair hypergraph is $\\mathcal H_O(e,1;11)=\\{\\{1\\},\\{2\\}\\}$. Contracting either layer coordinate repairs the containment. Fixing one to zero removes the defect; fixing it to one preserves that orientation's defect when the other coordinate remains, but the reverse outer containment then holds.",
+  "proof_source": "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#ex:repair-hypergraph"
+}

@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 307,
-    "uncovered": 709,
-    "proof_source_records": 1321
+    "covered": 313,
+    "uncovered": 703,
+    "proof_source_records": 1327
   },
   "by_workspace": {
     "ample-corners": {
@@ -19,9 +19,8 @@
       "total": 74
     },
     "cover-recursive": {
-      "covered": 36,
-      "total": 42,
-      "uncovered": 6
+      "covered": 42,
+      "total": 42
     },
     "daisy-cubes": {
       "covered": 14,
@@ -2050,7 +2049,7 @@
       "label": "ex:repair-hypergraph",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2060,7 +2059,9 @@
           "line": 228
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/098_six_cycle_repair_hypergraph.json"
+      ]
     },
     {
       "label": "ex:rooted-path",
@@ -2198,7 +2199,7 @@
       "label": "lem:static-repair-formula",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2208,7 +2209,9 @@
           "line": 256
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/251_static_repair_antichain_formula.json"
+      ]
     },
     {
       "label": "lem:step-two-deletion",
@@ -2232,7 +2235,7 @@
       "label": "lem:two-layer-periphery",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2242,7 +2245,9 @@
           "line": 32
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/249_two_layer_periphery_criterion.json"
+      ]
     },
     {
       "label": "prop:closure",
@@ -2270,7 +2275,7 @@
       "label": "prop:deletion-normal-form",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2280,7 +2285,9 @@
           "line": 112
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/248_cover_recursive_obstruction_deletion_normal_form.json"
+      ]
     },
     {
       "label": "prop:gated-reduction",
@@ -2515,7 +2522,7 @@
       "label": "thm:complete-rper-basis",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2525,7 +2532,11 @@
           "line": 85
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_bases/010_cover_recursive_peripheral_complete_pc_basis.json",
+        "data/obstruction_families/011_ample_pc_minimal_periphery_free.json",
+        "data/results/250_complete_two_layer_cover_recursive_obstruction_basis.json"
+      ]
     },
     {
       "label": "thm:convex-characterization",
@@ -2680,7 +2691,7 @@
       "label": "thm:static-repair-basis",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2690,7 +2701,11 @@
           "line": 317
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_bases/010_cover_recursive_peripheral_complete_pc_basis.json",
+        "data/obstruction_families/011_ample_pc_minimal_periphery_free.json",
+        "data/results/252_static_repair_basis_for_ample_cover_recursive_obstructions.json"
+      ]
     },
     {
       "label": "thm:step-two",

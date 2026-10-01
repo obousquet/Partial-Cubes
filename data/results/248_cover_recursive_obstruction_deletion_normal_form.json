@@ -1,0 +1,17 @@
+{
+  "id": 248,
+  "short_name": "cover_recursive_obstruction_deletion_normal_form",
+  "name": "Deletion Normal Form for Cover-Recursive Obstructions",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $O$ be a forbidden pc-minor for the cover-recursively peripheral class, let $e$ be a coordinate, orient it by $b$, and put $D=O_e^b\\setminus O_e^{1-b}$. Add to the opposite semicube the missing mates $\\{(x,1-b):x\\in D\\}$ to obtain $G$. Then $G$ is a cover-recursively peripheral expansion of $O/e$ along $O_e^b$, coordinate $e$ is peripheral in $G$, and $O$ is recovered by deleting exactly those added vertices, each of which has its $e$-neighbor in $G$.",
+  "status": "established",
+  "proof": "The completed opposite section is $O_e^{1-b}\\cup D=O_e^0\\cup O_e^1=O/e$, while the unchanged $b$-section is $O_e^b\\subseteq O/e$. Hence $G=((O/e)\\times\\{1-b\\})\\cup(O_e^b\\times\\{b\\})$. The base and site are proper pc-minors of $O$, so both belong to the cover-recursive class; their permitted peripheral expansion is $G$. Deleting the newly supplied mates returns $O$.",
+  "proof_source": "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex#prop:deletion-normal-form"
+}

@@ -4186,6 +4186,86 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-248" style="position:relative;">
+
+        <h3><a href="results/cover_recursive_obstruction_deletion_normal_form.html" class="table-title-link">Deletion Normal Form for Cover-Recursive Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Deletion Normal Form for Cover-Recursive Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $O$ be a forbidden pc-minor for the cover-recursively peripheral class, let $e$ be a coordinate, orient it by $b$, and put $D=O_e^b\setminus O_e^{1-b}$. Add to the opposite semicube the missing mates $\{(x,1-b):x\in D\}$ to obtain $G$. Then $G$ is a cover-recursively peripheral expansion of $O/e$ along $O_e^b$, coordinate $e$ is peripheral in $G$, and $O$ is recovered by deleting exactly those added vertices, each of which has its $e$-neighbor in $G$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The completed opposite section is $O_e^{1-b}\cup D=O_e^0\cup O_e^1=O/e$, while the unchanged $b$-section is $O_e^b\subseteq O/e$. Hence $G=((O/e)\times\{1-b\})\cup(O_e^b\times\{b\})$. The base and site are proper pc-minors of $O$, so both belong to the cover-recursive class; their permitted peripheral expansion is $G$. Deleting the newly supplied mates returns $O$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex?#prop:deletion-normal-form</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-249" style="position:relative;">
+
+        <h3><a href="results/two_layer_periphery_criterion.html" class="table-title-link">Exact Two-Layer Periphery Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Two-Layer Periphery Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/periphery_free_partial_cubes.html">Periphery-Free Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $O=\Lambda(A,B)=(A\times\{0\})\cup(B\times\{1\})$ be an irredundant partial cube with layer coordinates $E$. For a family $X$, define $\mathcal D_X(p,b)=X_p^{1-b}\setminus X_p^b$. Then $O$ is periphery-free exactly when $A$ and $B$ are incomparable and $\mathcal D_A(p,b)\cup\mathcal D_B(p,b)$ is nonempty for every $p\in E$ and both $b\in\{0,1\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The outer coordinate is peripheral in one orientation exactly when one layer contains the other. For a layer coordinate $p$, an oriented section containment holds in the complete lift exactly when it holds in both layers, which is equivalent to both corresponding defect sets being empty. These exhaust all coordinates and orientations.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#lem:two-layer-periphery</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-250" style="position:relative;">
+
+        <h3><a href="results/complete_two_layer_cover_recursive_obstruction_basis.html" class="table-title-link">Complete Two-Layer Basis for Cover-Recursive Peripheral Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complete Two-Layer Basis for Cover-Recursive Peripheral Partial Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An irredundant ample two-layer partial cube $O=\Lambda(A,B)$ is a forbidden pc-minor for the cover-recursively peripheral class exactly when: $A$, $B$, and $A\cup B$ belong to that class; the layers are incomparable and together witness both orientations of every surviving layer coordinate; and no proper simultaneous descendant of $(A,B)$ obtained by common layer-coordinate restrictions and contractions retains those two nonperipherality conditions. Together with the antipodally punctured cubes $Q_n^{--}$, these lifts form the complete forbidden pc-minor basis. Every coordinate of an ample obstruction may serve as the outer coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For an ample obstruction, the two sections and contraction at any chosen coordinate are proper pc-minors and lie in the class, while periphery-freeness gives the two-layer defect conditions. Every proper simultaneous descendant is another proper minor and must expose a periphery. Conversely, operations using the outer coordinate land in a minor of $A$, $B$, or $A\cup B$. A descendant retaining the outer coordinate either has an empty or nested layer, giving an immediate recursive construction, or condition three supplies a peripheral layer coordinate; induction on the surviving coordinates puts both children in the class. Thus every proper minor lies in the class while the original lift does not.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#thm:complete-rper-basis</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-251" style="position:relative;">
+
+        <h3><a href="results/static_repair_antichain_formula.html" class="table-title-link">Static Repair-Antichain Formula</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Static Repair-Antichain Formula</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For an oriented defect $u\in\mathcal D_O(p,b)$, let $\mathcal H_O(p,b;u)$ be the antichain of inclusion-minimal difference supports between $u$ and possible mates in the base section. Under a layer minor state $\sigma$, the projected defect survives exactly when it matches every fixed coordinate and no repair support in $\mathcal H_O(p,b;u)$ is contained in the contracted coordinates. Hence $\sigma$ preserves nonperipherality of every displayed coordinate in both orientations exactly when each such orientation has a surviving original defect. A proper simultaneous descendant remains periphery-free exactly when a non-all-retained state with this property exists.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A surviving defect cannot acquire a projected mate: such a mate would differ only in contracted coordinates and contain a minimal repair support there. Conversely, if the projected section has a defect, any preimage survives the fixed coordinates, and a repair support contained in the contractions would project a mate, a contradiction. Apply this equivalence to both orientations of the outer coordinate and every retained layer coordinate. Commutation of distinct-coordinate operations identifies the normalized simultaneous descendants with these states, after redundant constant coordinates are contracted.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#lem:static-repair-formula</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/six_cycle_repair_hypergraph.html">Repair Hypergraph of a Six-Cycle Containment</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-252" style="position:relative;">
+
+        <h3><a href="results/static_repair_basis_for_ample_cover_recursive_obstructions.html" class="table-title-link">Static Repair Basis for Ample Cover-Recursive Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Static Repair Basis for Ample Cover-Recursive Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to partial-cube isomorphism, the ample forbidden pc-minors for the cover-recursively peripheral class are exactly the lifts $O=\Lambda(A,B)$ such that $O$ is ample, $A$, $B$, and $A\cup B$ belong to the class, and the all-retained layer state is the unique state preserving an original defect in both orientations of every displayed coordinate. Every coordinate of an ample obstruction can be chosen as the outer coordinate. Adding the antipodally punctured cubes gives the complete basis.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The all-retained state has surviving defects in every orientation exactly when $O$ is periphery-free. By the static repair formula, uniqueness of this state is equivalent to the absence of a proper simultaneous descendant satisfying the two-layer nonperipherality criterion. The three displayed conditions are therefore precisely the conditions of the complete two-layer basis theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#thm:static-repair-basis</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

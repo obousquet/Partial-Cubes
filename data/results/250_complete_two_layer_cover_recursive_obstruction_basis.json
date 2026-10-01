@@ -1,0 +1,19 @@
+{
+  "id": 250,
+  "short_name": "complete_two_layer_cover_recursive_obstruction_basis",
+  "name": "Complete Two-Layer Basis for Cover-Recursive Peripheral Partial Cubes",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "An irredundant ample two-layer partial cube $O=\\Lambda(A,B)$ is a forbidden pc-minor for the cover-recursively peripheral class exactly when: $A$, $B$, and $A\\cup B$ belong to that class; the layers are incomparable and together witness both orientations of every surviving layer coordinate; and no proper simultaneous descendant of $(A,B)$ obtained by common layer-coordinate restrictions and contractions retains those two nonperipherality conditions. Together with the antipodally punctured cubes $Q_n^{--}$, these lifts form the complete forbidden pc-minor basis. Every coordinate of an ample obstruction may serve as the outer coordinate.",
+  "status": "established",
+  "proof": "For an ample obstruction, the two sections and contraction at any chosen coordinate are proper pc-minors and lie in the class, while periphery-freeness gives the two-layer defect conditions. Every proper simultaneous descendant is another proper minor and must expose a periphery. Conversely, operations using the outer coordinate land in a minor of $A$, $B$, or $A\\cup B$. A descendant retaining the outer coordinate either has an empty or nested layer, giving an immediate recursive construction, or condition three supplies a peripheral layer coordinate; induction on the surviving coordinates puts both children in the class. Thus every proper minor lies in the class while the original lift does not.",
+  "proof_source": "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#thm:complete-rper-basis"
+}

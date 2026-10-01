@@ -1,0 +1,14 @@
+{
+  "id": 249,
+  "short_name": "two_layer_periphery_criterion",
+  "name": "Exact Two-Layer Periphery Criterion",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/periphery_free_partial_cubes"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $O=\\Lambda(A,B)=(A\\times\\{0\\})\\cup(B\\times\\{1\\})$ be an irredundant partial cube with layer coordinates $E$. For a family $X$, define $\\mathcal D_X(p,b)=X_p^{1-b}\\setminus X_p^b$. Then $O$ is periphery-free exactly when $A$ and $B$ are incomparable and $\\mathcal D_A(p,b)\\cup\\mathcal D_B(p,b)$ is nonempty for every $p\\in E$ and both $b\\in\\{0,1\\}$.",
+  "status": "established",
+  "proof": "The outer coordinate is peripheral in one orientation exactly when one layer contains the other. For a layer coordinate $p$, an oriented section containment holds in the complete lift exactly when it holds in both layers, which is equivalent to both corresponding defect sets being empty. These exhaust all coordinates and orientations.",
+  "proof_source": "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#lem:two-layer-periphery"
+}

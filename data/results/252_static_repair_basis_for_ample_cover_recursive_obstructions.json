@@ -1,0 +1,19 @@
+{
+  "id": 252,
+  "short_name": "static_repair_basis_for_ample_cover_recursive_obstructions",
+  "name": "Static Repair Basis for Ample Cover-Recursive Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "algorithm",
+  "statement": "Up to partial-cube isomorphism, the ample forbidden pc-minors for the cover-recursively peripheral class are exactly the lifts $O=\\Lambda(A,B)$ such that $O$ is ample, $A$, $B$, and $A\\cup B$ belong to the class, and the all-retained layer state is the unique state preserving an original defect in both orientations of every displayed coordinate. Every coordinate of an ample obstruction can be chosen as the outer coordinate. Adding the antipodally punctured cubes gives the complete basis.",
+  "status": "established",
+  "proof": "The all-retained state has surviving defects in every orientation exactly when $O$ is periphery-free. By the static repair formula, uniqueness of this state is equivalent to the absence of a proper simultaneous descendant satisfying the two-layer nonperipherality criterion. The three displayed conditions are therefore precisely the conditions of the complete two-layer basis theorem.",
+  "proof_source": "PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex#thm:static-repair-basis"
+}

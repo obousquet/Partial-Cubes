@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Reusable finite, parameterized, and generative families of forbidden objects - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Reusable finite, parameterized, and generative families of forbidden objects - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="obstruction_families/index.html">&larr; Back to Obstruction_Families Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-252" style="position:relative;">
 
-        <h3><a href="obstruction_families/ample_pc_minimal_periphery_free.html" class="table-title-link">Ample pc-Minimal Periphery-Free Partial Cubes</a></h3>
+        <h3><a href="results/static_repair_basis_for_ample_cover_recursive_obstructions.html" class="table-title-link">Static Repair Basis for Ample Cover-Recursive Obstructions</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Ample pc-Minimal Periphery-Free Partial Cubes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal O_{\mathrm{per}}^{\mathrm{amp}}">
-            \[\mathcal O_{\mathrm{per}}^{\mathrm{amp}}\]
-        </div>
-    </div>
-
-<p><strong>Description Type:</strong> Predicate</p>
-<strong>Definition:</strong><div class="text-field"><p>The finite ample partial cubes $O$ with no peripheral coordinate for which every proper pc-minor has a peripheral coordinate in every nontrivial pc-minor, equivalently every proper pc-minor belongs to $\mathcal R_{\mathrm{per}}$.</p></div>
-<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<strong>Canonical Form:</strong><div class="text-field"><p>Members are considered up to cube isomorphism. Together with the antipodally punctured hypercubes, these are all pc-minimal obstructions to $\mathcal R_{\mathrm{per}}$.</p></div>
-<strong>Recognition:</strong><div class="text-field"><p>For an irredundant family on $X$, inspect every feasible state $\tau:X\to\{\mathsf K,\mathsf C,0,1\}$. The original state must be periphery-free and every other nontrivial state must expose a peripheral coordinate. Equivalently, at any chosen outer coordinate, the two layers and their union belong to $\mathcal R_{\mathrm{per}}$, while the all-retained layer state is the unique state in which every displayed coordinate retains defects in both orientations. The latter condition is computable from the minimal repair antichains. A direct implementation uses at most $4^{|X|}$ states.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_basis.tex?#thm:coordinate-state-basis; PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#thm:complete-rper-basis; PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#thm:static-repair-basis; PartialCubes:papers/cover-recursive/main.tex?#prop:obstruction-structure</p></div>
-<strong>Comments:</strong><div class="text-field"><p>This family is exact but not reduced to a finite list. It includes the pentagonal obstruction and several infinite explicit subfamilies retained in the source paper.</p></div>
+        <p><strong>Name: </strong>Static Repair Basis for Ample Cover-Recursive Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to partial-cube isomorphism, the ample forbidden pc-minors for the cover-recursively peripheral class are exactly the lifts $O=\Lambda(A,B)$ such that $O$ is ample, $A$, $B$, and $A\cup B$ belong to the class, and the all-retained layer state is the unique state preserving an original defect in both orientations of every displayed coordinate. Every coordinate of an ample obstruction can be chosen as the outer coordinate. Adding the antipodally punctured cubes gives the complete basis.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The all-retained state has surviving defects in every orientation exactly when $O$ is periphery-free. By the static repair formula, uniqueness of this state is equivalent to the absence of a proper simultaneous descendant satisfying the two-layer nonperipherality criterion. The three displayed conditions are therefore precisely the conditions of the complete two-layer basis theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/sections/cover_recursive_peripheral_repair.tex?#thm:static-repair-basis</p></div>
 
         </div>
     </div>
