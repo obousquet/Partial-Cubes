@@ -1,0 +1,24 @@
+{
+  "id": 156,
+  "short_name": "known_obstruction_face_prime_split",
+  "name": "Face-Prime Split of Four Known Peripheral Obstructions",
+  "class_ids": [
+    "#classes/cubical_face_prime",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/proper_gated_two_cover_count",
+    "#invariants/cubical_face_decomposition_count"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Among the four audited additional obstructions, $\\mathcal P_5$ and $\\mathcal H_{22}$ are gated-prime and cubical-face-prime, while $\\mathcal W_8$ and $\\mathcal S_{18}$ have respectively 16 and 1 proper gated two-covers and 7 and 1 cubical face decompositions.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/pentagonal_obstruction",
+    "#examples/maximum_face_prime_h22",
+    "#examples/rooted_wedge_obstruction_w8",
+    "#examples/square_amalgam_obstruction_s18"
+  ],
+  "proof": "The verifier exhausts all coordinate faces, checks the gate identity, tests every intersecting proper two-cover, and independently enumerates normalized full-cube face-sum descriptors.",
+  "proof_source": "PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex#prop:known-obstruction-face-split"
+}

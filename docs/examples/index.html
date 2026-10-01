@@ -517,12 +517,12 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>On the cyclic ground set $[5]$, take the empty set, all five singletons, the five edges of $C_5$, and the five complements of those edges. In low-bit integer encoding the family is $\{0,1,2,3,4,6,7,8,12,14,16,17,19,24,25,28\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>A sixteen-vertex realizable maximum and ample class of VC dimension two and isometric dimension five. It is the sign-pattern class of the five tangent lines of a regular pentagon. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\mathcal R_{\mathrm{per}}$. Thus it witnesses both $\mathcal R_{\mathrm{per}}\subsetneq\mathcal D_{\mathrm{amp}}$ and $\mathcal R_{\mathrm{amp}}\nsubseteq\mathcal R_{\mathrm{per}}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>A sixteen-vertex realizable maximum and ample class of VC dimension two and isometric dimension five. It is the sign-pattern class of the five tangent lines of a regular pentagon. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\mathcal R_{\mathrm{per}}$. Thus it witnesses both $\mathcal R_{\mathrm{per}}\subsetneq\mathcal D_{\mathrm{amp}}$ and $\mathcal R_{\mathrm{amp}}\nsubseteq\mathcal R_{\mathrm{per}}$. It is cubical-face-prime and gated-prime: it has 56 proper gated coordinate faces but no proper gated two-cover.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:pentagonal; CompressionSchemes:drafts/round982_exact_polygon_depth.md?#definitions-and-theorem</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_cover_recursive.py; data/examples/assets/cover_recursive_verification.json; data/examples/assets/cover_recursive_census_small.json; data/examples/assets/cover_recursive_census_record.json; data/examples/assets/realizable_ample_verification.json</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/ample_pc_minimal_periphery_free.html">Ample pc-Minimal Periphery-Free Partial Cubes</a></li></ul></p>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/pentagonal_obstruction_vc_dimension.html'>VC Dimension of the Pentagonal Obstruction</a></li><li><a href='invariant_values/pentagonal_obstruction_isometric_dimension.html'>Isometric Dimension of the Pentagonal Obstruction</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/pentagonal_obstruction_vc_dimension.html'>VC Dimension of the Pentagonal Obstruction</a></li><li><a href='invariant_values/pentagonal_obstruction_isometric_dimension.html'>Isometric Dimension of the Pentagonal Obstruction</a></li><li><a href='invariant_values/pentagonal_obstruction_gated_two_covers.html'>Proper Gated Two-Covers of the Pentagonal Obstruction</a></li><li><a href='invariant_values/pentagonal_obstruction_cubical_face_decompositions.html'>Cubical Face Decompositions of the Pentagonal Obstruction</a></li></ul></p></div>
 
         </div>
     </div>
@@ -1544,7 +1544,7 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>$\{0000,0100,1000,1100,0001,0010,0011\}\subseteq\{0,1\}^4$, the union of two coordinate squares meeting only at $0000$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It lies in the maximum tree-amalgam closure and is ample of VC dimension two. It is not maximum: it has seven concepts, whereas the Sauer bound on four active coordinates is eleven.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It lies in the maximum tree-amalgam closure and is ample of VC dimension two. It is not maximum: it has seven concepts, whereas the Sauer bound on four active coordinates is eleven. It is not cubical-face-prime, since its two square factors strictly contain their common one-vertex cube face.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam; CompressionSchemes:partitionable_yang_complexes.tex?#cor:nondismantlable-factor-tree-family</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -1568,6 +1568,72 @@
 <strong>Properties:</strong><div class="text-field"><p>It is a cubic vertex-transitive partial cube. Projecting or conditioning the coordinate of the $K_2$ factor gives $C_6$, which is 2-regular and therefore is not cubic.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:cubic-vertex-transitive; PartialCubes:papers/survey/main.tex?#prop:edge-critical-profile</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-70" style="position:relative;">
+
+        <h3><a href="examples/maximum_face_prime_h22.html" class="table-title-link">Maximum Face-Prime Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Face-Prime Obstruction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal H_{22}">
+            \[\mathcal H_{22}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The displayed class in $Q_6$ whose low-bit vertex-incidence mask is <code>0x1111bf00b0b1b080</code>; bit $j$ records the word with integer encoding $j$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>A 22-vertex maximum VC-dimension-two obstruction to the cover-recursively peripheral class. It is gated-prime and cubical-face-prime: it has 77 proper gated coordinate faces but no proper gated two-cover.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
+<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_face_prime_h22_gated_two_covers.html'>Proper Gated Two-Covers of H22</a></li><li><a href='invariant_values/maximum_face_prime_h22_cubical_face_decompositions.html'>Cubical Face Decompositions of H22</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-71" style="position:relative;">
+
+        <h3><a href="examples/rooted_wedge_obstruction_w8.html" class="table-title-link">Rooted-Wedge Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted-Wedge Obstruction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal W_8">
+            \[\mathcal W_8\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The displayed class in $Q_8$ whose low-bit vertex-incidence mask is <code>0x100010001000100010001000000010001000000010001000000000000fdb1</code>; bit $j$ records the word with integer encoding $j$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>A 21-vertex VC-dimension-two obstruction to the cover-recursively peripheral class. It has sixteen proper gated two-covers and seven cubical face decompositions: one over a vertex, four over an edge, and two over a square.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
+<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/rooted_wedge_w8_gated_two_covers.html'>Proper Gated Two-Covers of W8</a></li><li><a href='invariant_values/rooted_wedge_w8_cubical_face_decompositions.html'>Cubical Face Decompositions of W8</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-72" style="position:relative;">
+
+        <h3><a href="examples/square_amalgam_obstruction_s18.html" class="table-title-link">Square-Amalgam Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square-Amalgam Obstruction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal S_{18}">
+            \[\mathcal S_{18}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The displayed class in $Q_6$ whose low-bit vertex-incidence mask is <code>0xdf1b101000111011</code>; bit $j$ records the word with integer encoding $j$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>An 18-vertex VC-dimension-two obstruction to the cover-recursively peripheral class. Its unique proper gated two-cover is a square sum of two eleven-vertex factors and is face-critical.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
+<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/square_amalgam_s18_gated_two_covers.html'>Proper Gated Two-Covers of S18</a></li><li><a href='invariant_values/square_amalgam_s18_cubical_face_decompositions.html'>Cubical Face Decompositions of S18</a></li></ul></p></div>
 
         </div>
     </div>
