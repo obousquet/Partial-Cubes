@@ -1,0 +1,17 @@
+{
+  "id": 167,
+  "short_name": "learning_space_local_minimal_nonmembers",
+  "name": "Two PC-Minimal Nonlearning Graphs Do Not Form a Forbidden Basis",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "other",
+  "statement": "The three-leaf star $K_{1,3}$ and the six-cycle $C_6$ are pc-minor-minimal partial cubes that are not learning-space graphs. They cannot form forbidden pc-minors for the class because learning-space graphs are not pc-minor closed and can contain $K_{1,3}$ as a pc-minor.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/learning_space_star_conditioning",
+    "#examples/six_cycle"
+  ],
+  "proof": "Every proper pc-minor of the star is a path. Every one-step restriction of $C_6$ is a path and every contraction is $C_4$. All are learning-space graphs. The catalogued conditioning construction realizes the star inside a learning-space graph.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/convex_restrictions.tex#prop:learning-space-defect-hitting; PartialCubes:papers/learning-spaces/sections/minor_operations.tex#prop:learning-space-minor-profile"
+}

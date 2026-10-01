@@ -1,0 +1,14 @@
+{
+  "id": 15,
+  "short_name": "critical_pendant_chain_contraction_obstructions",
+  "name": "Critical-Pendant Chain Contraction Obstructions",
+  "symbol": "\\{\\mathcal J_{d+1,j}^{\\epsilon}\\}",
+  "description_type": "parameterized",
+  "definition": "On $X_d=\\{a,b_1,\\ldots,b_{d-1}\\}$, combine the prefix chain $C_i=\\{b_1,\\ldots,b_i\\}$ with the full $a=1$ fiber except $\\{a,b_j\\}$, optionally add $\\{b_2\\}$, and attach a new pendant coordinate above this base as in the source formula.",
+  "parameters": "$d\\ge4$, $2\\le j\\le d-1$, and $\\epsilon\\in\\{0,1\\}$, with $\\epsilon=1$ permitted only for $j\\ge3$. The family has $d+1$ active coordinates and $2^{d-1}+d+\\epsilon$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The source parameters record the missing fiber state, its location along the chain, and the optional extra state; no completeness claim for all contraction-minimal nonlearning partial cubes is made.",
+  "recognition": "A construction certificate verifies the chain and punctured fiber, the two explicit endpoint defects, and root repair after every coordinate contraction.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/chain_family.tex#prop:learning-space-critical-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. The twelve-state member is an illustrative instance, not a minimum-order theorem."
+}

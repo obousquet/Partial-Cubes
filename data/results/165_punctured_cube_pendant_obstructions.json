@@ -1,0 +1,16 @@
+{
+  "id": 165,
+  "short_name": "punctured_cube_pendant_obstructions",
+  "name": "Punctured-Cube Pendant Contraction Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "construction",
+  "statement": "For $d\\ge4$, delete a singleton state $W$ from $2^X$. If $2\\le|A\\triangle W|\\le d-2$, then $A$ and its complement are invalid roots but every coordinate projection repairs both. The associated pendant extension $\\mathcal R_{d+1}(W,A)$ is a contraction-minimal nonlearning partial cube of order $2^d$, with pointed type determined by $|A\\triangle W|$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/punctured_cube_pendant_d4"
+  ],
+  "proof": "A once-punctured cube is union closed when its missing state has size at most one, so its valid roots are exactly the present neighbors of $W$. The distance bounds invalidate both complementary endpoints, while every projection fills the unique hole. Apply the critical-pair obstruction theorem.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/punctured_cube_family.tex#prop:learning-space-punctured-cube-pendant-obstructions"
+}

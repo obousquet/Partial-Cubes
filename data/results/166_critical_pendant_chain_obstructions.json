@@ -1,0 +1,16 @@
+{
+  "id": 166,
+  "short_name": "critical_pendant_chain_obstructions",
+  "name": "Chain-and-Punctured-Fiber Contraction Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "construction",
+  "statement": "For $d\\ge4$, $2\\le j\\le d-1$, and $\\epsilon\\in\\{0,1\\}$ with $\\epsilon=1$ only for $j\\ge3$, the source construction $\\mathcal J_{d+1,j}^{\\epsilon}$ is a contraction-minimal nonlearning partial cube on $d+1$ active coordinates with $2^{d-1}+d+\\epsilon$ states.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/critical_pendant_twelve_state"
+  ],
+  "proof": "The base combines a maximal chain with a singly punctured full fiber and an optional state; direct union and accessibility checks make it a learning space. Its complementary endpoints have explicit defects, but every coordinate projection repairs at least one endpoint. The critical-pair theorem gives contraction minimality.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/chain_family.tex#prop:learning-space-critical-pendant-obstructions"
+}

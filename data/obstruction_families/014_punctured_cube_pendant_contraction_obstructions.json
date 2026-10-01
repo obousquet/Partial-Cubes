@@ -1,0 +1,14 @@
+{
+  "id": 14,
+  "short_name": "punctured_cube_pendant_contraction_obstructions",
+  "name": "Punctured-Cube Pendant Contraction Obstructions",
+  "symbol": "\\{\\mathcal R_{d+1}(W,A)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $|X|=d\\ge4$, let $W\\subseteq X$ be a singleton, choose $A\\subseteq X$ with $2\\le|A\\triangle W|\\le d-2$, and introduce $e\\notin X$. Set $\\mathcal K_d^-(W)=2^X\\setminus\\{W\\}$ and $\\mathcal R_{d+1}(W,A)=\\{A\\}\\cup\\{K\\cup\\{e\\}:K\\in\\mathcal K_d^-(W)\\}$.",
+  "parameters": "$d\\ge4$ and Hamming distance $2\\le t=|A\\triangle W|\\le d-2$; the family has $d+1$ active coordinates and $2^d$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "Up to cube isometries fixing the missing singleton $W$, the pointed base type is determined by $t=|A\\triangle W|$.",
+  "recognition": "A construction certificate supplies the missing singleton, the complementary critical root pair, and the pendant coordinate. Every one-coordinate contraction is then checked by the root-repair criterion.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/punctured_cube_family.tex#prop:learning-space-punctured-cube-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. This does not assert pc-minimality because learning-space graphs are not closed under convex restrictions."
+}

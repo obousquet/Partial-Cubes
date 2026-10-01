@@ -393,6 +393,54 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-14" style="position:relative;">
+
+        <h3><a href="obstruction_families/punctured_cube_pendant_contraction_obstructions.html" class="table-title-link">Punctured-Cube Pendant Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Cube Pendant Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal R_{d+1}(W,A)\}">
+            \[\{\mathcal R_{d+1}(W,A)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $|X|=d\ge4$, let $W\subseteq X$ be a singleton, choose $A\subseteq X$ with $2\le|A\triangle W|\le d-2$, and introduce $e\notin X$. Set $\mathcal K_d^-(W)=2^X\setminus\{W\}$ and $\mathcal R_{d+1}(W,A)=\{A\}\cup\{K\cup\{e\}:K\in\mathcal K_d^-(W)\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d\ge4$ and Hamming distance $2\le t=|A\triangle W|\le d-2$; the family has $d+1$ active coordinates and $2^d$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Up to cube isometries fixing the missing singleton $W$, the pointed base type is determined by $t=|A\triangle W|$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate supplies the missing singleton, the complementary critical root pair, and the pendant coordinate. Every one-coordinate contraction is then checked by the root-repair criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/punctured_cube_family.tex?#prop:learning-space-punctured-cube-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. This does not assert pc-minimality because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-15" style="position:relative;">
+
+        <h3><a href="obstruction_families/critical_pendant_chain_contraction_obstructions.html" class="table-title-link">Critical-Pendant Chain Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Critical-Pendant Chain Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal J_{d+1,j}^{\epsilon}\}">
+            \[\{\mathcal J_{d+1,j}^{\epsilon}\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>On $X_d=\{a,b_1,\ldots,b_{d-1}\}$, combine the prefix chain $C_i=\{b_1,\ldots,b_i\}$ with the full $a=1$ fiber except $\{a,b_j\}$, optionally add $\{b_2\}$, and attach a new pendant coordinate above this base as in the source formula.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d\ge4$, $2\le j\le d-1$, and $\epsilon\in\{0,1\}$, with $\epsilon=1$ permitted only for $j\ge3$. The family has $d+1$ active coordinates and $2^{d-1}+d+\epsilon$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The source parameters record the missing fiber state, its location along the chain, and the optional extra state; no completeness claim for all contraction-minimal nonlearning partial cubes is made.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies the chain and punctured fiber, the two explicit endpoint defects, and root repair after every coordinate contraction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/chain_family.tex?#prop:learning-space-critical-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. The twelve-state member is an illustrative instance, not a minimum-order theorem.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,14 @@
+{
+  "id": 160,
+  "short_name": "learning_space_defect_hitting_criterion",
+  "name": "Defect-Hitting Criterion for Convex Learning-Space Restrictions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "result_type": "recognition",
+  "statement": "For a finite partial cube $G$, a vertex $r$, and a convex subgraph $C$ containing $r$, the vertex $r$ is a valid root of $C$ exactly when $C$ contains no complete fork of an $r$-defect of $G$. Consequently $C$ is a learning-space graph exactly when it contains a $C$-antipodal pair $r,\\bar r$ and every $r$-defect fork loses a vertex outside $C$. For a semicube, every retained defect centered inside must use the boundary $\\Theta$-class.",
+  "status": "established",
+  "proof": "Orient every coordinate away from $r$. A failure of closedness is exactly a pair of outgoing incident edges without their square. Convexity ensures that any parent square whose fork remains in $C$ also remains entirely in $C$. A valid root supplies an opposite state by taking the union of states containing every active coordinate after translating the root to empty.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/convex_restrictions.tex#prop:learning-space-defect-hitting"
+}

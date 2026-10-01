@@ -2767,6 +2767,144 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-159" style="position:relative;">
+
+        <h3><a href="results/learning_space_rooted_union_test.html" class="table-title-link">Rooted-Union Test for Learning-Space Roots</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted-Union Test for Learning-Space Roots</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal H\subseteq2^X$ be finite, nonempty, and well graded, and let $R\in\mathcal H$. Then $R$ is a valid learning-space root exactly when $\mathcal H\triangle R$ is union closed, equivalently when $B\sqcup_R C\in\mathcal H$ for every $B,C\in\mathcal H$, where rooted union takes coordinatewise maximum outside $R$ and minimum on $R$. Every convex restriction containing a valid parent root is again a learning-space graph.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Symmetric difference by $R$ is a cube isometry sending $R$ to the empty state and transporting ordinary union to rooted union. The antimatroid characterization then gives the equivalence. Convexity preserves the squares required by a closed rooted orientation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/rooted_union.tex?#prop:learning-space-rooted-union-restrictions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-160" style="position:relative;">
+
+        <h3><a href="results/learning_space_defect_hitting_criterion.html" class="table-title-link">Defect-Hitting Criterion for Convex Learning-Space Restrictions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Defect-Hitting Criterion for Convex Learning-Space Restrictions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite partial cube $G$, a vertex $r$, and a convex subgraph $C$ containing $r$, the vertex $r$ is a valid root of $C$ exactly when $C$ contains no complete fork of an $r$-defect of $G$. Consequently $C$ is a learning-space graph exactly when it contains a $C$-antipodal pair $r,\bar r$ and every $r$-defect fork loses a vertex outside $C$. For a semicube, every retained defect centered inside must use the boundary $\Theta$-class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Orient every coordinate away from $r$. A failure of closedness is exactly a pair of outgoing incident edges without their square. Convexity ensures that any parent square whose fork remains in $C$ also remains entirely in $C$. A valid root supplies an opposite state by taking the union of states containing every active coordinate after translating the root to empty.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/convex_restrictions.tex?#prop:learning-space-defect-hitting</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-161" style="position:relative;">
+
+        <h3><a href="results/learning_space_two_link_recursion.html" class="table-title-link">Two-Link Recursion for Learning-Space Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Link Recursion for Learning-Space Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For $\mathcal H=\mathcal H_0\cup\{A\cup\{e\}:A\in\mathcal H_1\}$ with nonempty links on $Y$, union closure is equivalent to union closure of both links plus $\mathcal H_0\vee\mathcal H_1\subseteq\mathcal H_1$. Well-gradedness is equivalent to well-gradedness of both links plus $\mathcal H_0\cap\mathcal H_1\cap[A,B]_\square\ne\varnothing$ for every cross pair. Translating the links gives exact lower- and upper-root tests; with all coordinates active, an antipodal pair exists exactly when some $A\in\mathcal H_0$ has $Y\setminus A\in\mathcal H_1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Within-side unions and tight paths reduce to the corresponding link. A cross union must land in the upper link. A cross geodesic changes $e$ exactly once at a shared state in the Boolean interval, and conversely such a state concatenates two tight link paths. The root clauses follow by translating and applying the rooted-union test.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/coordinate_recursion.tex?#prop:learning-space-two-link-recursion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-162" style="position:relative;">
+
+        <h3><a href="results/learning_space_root_hole_repair.html" class="table-title-link">Root Holes, Contraction Repair, and Punctured Subcubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Root Holes, Contraction Repair, and Punctured Subcubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite well-graded family and present state $R$, deletion of coordinate $e$ makes the projected state a valid root exactly when every missing rooted union has its $e$-neighbor present. If the family is also union closed and a missing state $W$ has present neighbors in every coordinate of $C$, then the entire coordinate $C$-subcube through $W$, except $W$ itself, is present; hence the family has at least $2^{|C|}-1$ states.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Rooted union commutes with coordinate deletion, while a missing state appears after deletion precisely when its coordinate neighbor is present. Pairwise neighbor states force all two-coordinate flips by well-gradedness, and union closure then generates every nonempty flip set.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/root_holes.tex?#prop:learning-space-root-hole-contraction-repair</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-163" style="position:relative;">
+
+        <h3><a href="results/learning_space_pendant_antipode_extension.html" class="table-title-link">Pendant-Antipode Extension Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Pendant-Antipode Extension Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal K\subseteq2^Y$ be irredundant, well graded, and union closed with complementary states $A,Y\setminus A$. The pendant extension $\mathcal H_A=\{A\}\cup\{B\cup\{e\}:B\in\mathcal K\}$ is irredundant, well graded, and union closed, has a unique antipodal pair, and is a learning-space graph exactly when one endpoint of the base complementary pair is a valid root. When $A$ is a singleton and $\varnothing\in\mathcal K$, $\mathcal H_A$ is itself a positive semicube of an explicit learning-space parent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-link recursion applies with singleton lower link and base upper link. Its antipodal test leaves only the displayed complementary endpoints, so the translated root tests reduce exactly to validity of those two base roots. A second two-link construction with a square lower link supplies the explicit parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/pendant_attachment.tex?#prop:learning-space-pendant-antipode-extension</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-164" style="position:relative;">
+
+        <h3><a href="results/learning_space_critical_pair_obstruction.html" class="table-title-link">Critical Antipodal Pairs Give Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Critical Antipodal Pairs Give Contraction Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If a learning-space base has a complementary pair whose two endpoints are invalid roots, while after every coordinate deletion at least one projected endpoint becomes valid, then its pendant-antipode extension is a contraction-minimal nonlearning partial cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The pendant extension is nonlearning by the endpoint criterion. Contracting the pendant coordinate recovers the learning base. Every other contraction commutes with the construction and has a valid projected endpoint, so it is learning.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/critical_pair.tex?#cor:learning-space-critical-antipodal-pendant</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-165" style="position:relative;">
+
+        <h3><a href="results/punctured_cube_pendant_obstructions.html" class="table-title-link">Punctured-Cube Pendant Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Cube Pendant Contraction Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $d\ge4$, delete a singleton state $W$ from $2^X$. If $2\le|A\triangle W|\le d-2$, then $A$ and its complement are invalid roots but every coordinate projection repairs both. The associated pendant extension $\mathcal R_{d+1}(W,A)$ is a contraction-minimal nonlearning partial cube of order $2^d$, with pointed type determined by $|A\triangle W|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A once-punctured cube is union closed when its missing state has size at most one, so its valid roots are exactly the present neighbors of $W$. The distance bounds invalidate both complementary endpoints, while every projection fills the unique hole. Apply the critical-pair obstruction theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/punctured_cube_family.tex?#prop:learning-space-punctured-cube-pendant-obstructions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/punctured_cube_pendant_d4.html">Five-Coordinate Punctured-Cube Pendant Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-166" style="position:relative;">
+
+        <h3><a href="results/critical_pendant_chain_obstructions.html" class="table-title-link">Chain-and-Punctured-Fiber Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Chain-and-Punctured-Fiber Contraction Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $d\ge4$, $2\le j\le d-1$, and $\epsilon\in\{0,1\}$ with $\epsilon=1$ only for $j\ge3$, the source construction $\mathcal J_{d+1,j}^{\epsilon}$ is a contraction-minimal nonlearning partial cube on $d+1$ active coordinates with $2^{d-1}+d+\epsilon$ states.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The base combines a maximal chain with a singly punctured full fiber and an optional state; direct union and accessibility checks make it a learning space. Its complementary endpoints have explicit defects, but every coordinate projection repairs at least one endpoint. The critical-pair theorem gives contraction minimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/chain_family.tex?#prop:learning-space-critical-pendant-obstructions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/critical_pendant_twelve_state.html">Twelve-State Critical-Pendant Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-167" style="position:relative;">
+
+        <h3><a href="results/learning_space_local_minimal_nonmembers.html" class="table-title-link">Two PC-Minimal Nonlearning Graphs Do Not Form a Forbidden Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two PC-Minimal Nonlearning Graphs Do Not Form a Forbidden Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>The three-leaf star $K_{1,3}$ and the six-cycle $C_6$ are pc-minor-minimal partial cubes that are not learning-space graphs. They cannot form forbidden pc-minors for the class because learning-space graphs are not pc-minor closed and can contain $K_{1,3}$ as a pc-minor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every proper pc-minor of the star is a path. Every one-step restriction of $C_6$ is a path and every contraction is $C_4$. All are learning-space graphs. The catalogued conditioning construction realizes the star inside a learning-space graph.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/convex_restrictions.tex?#prop:learning-space-defect-hitting; PartialCubes:papers/learning-spaces/sections/minor_operations.tex?#prop:learning-space-minor-profile</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/learning_space_star_conditioning.html">Learning-Space Conditioning to a Three-Leaf Star</a></li><li><a href="examples/six_cycle.html">Six-Cycle</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

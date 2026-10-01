@@ -1,0 +1,13 @@
+{
+  "id": 159,
+  "short_name": "learning_space_rooted_union_test",
+  "name": "Rooted-Union Test for Learning-Space Roots",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\mathcal H\\subseteq2^X$ be finite, nonempty, and well graded, and let $R\\in\\mathcal H$. Then $R$ is a valid learning-space root exactly when $\\mathcal H\\triangle R$ is union closed, equivalently when $B\\sqcup_R C\\in\\mathcal H$ for every $B,C\\in\\mathcal H$, where rooted union takes coordinatewise maximum outside $R$ and minimum on $R$. Every convex restriction containing a valid parent root is again a learning-space graph.",
+  "status": "established",
+  "proof": "Symmetric difference by $R$ is a cube isometry sending $R$ to the empty state and transporting ordinary union to rooted union. The antimatroid characterization then gives the equivalence. Convexity preserves the squares required by a closed rooted orientation.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/rooted_union.tex#prop:learning-space-rooted-union-restrictions"
+}

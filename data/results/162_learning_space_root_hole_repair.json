@@ -1,0 +1,13 @@
+{
+  "id": 162,
+  "short_name": "learning_space_root_hole_repair",
+  "name": "Root Holes, Contraction Repair, and Punctured Subcubes",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a finite well-graded family and present state $R$, deletion of coordinate $e$ makes the projected state a valid root exactly when every missing rooted union has its $e$-neighbor present. If the family is also union closed and a missing state $W$ has present neighbors in every coordinate of $C$, then the entire coordinate $C$-subcube through $W$, except $W$ itself, is present; hence the family has at least $2^{|C|}-1$ states.",
+  "status": "established",
+  "proof": "Rooted union commutes with coordinate deletion, while a missing state appears after deletion precisely when its coordinate neighbor is present. Pairwise neighbor states force all two-coordinate flips by well-gradedness, and union closure then generates every nonempty flip set.",
+  "proof_source": "PartialCubes:papers/learning-spaces/sections/root_holes.tex#prop:learning-space-root-hole-contraction-repair"
+}
