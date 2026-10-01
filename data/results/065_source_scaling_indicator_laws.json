@@ -1,0 +1,27 @@
+{
+  "id": 65,
+  "short_name": "source_scaling_indicator_laws",
+  "name": "Source-Scaling Indicator Laws",
+  "class_ids": [
+    "#classes/convex_geometry_ideals"
+  ],
+  "invariant_ids": [
+    "#invariants/small_scale_source_indicator",
+    "#invariants/large_scale_source_indicator",
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In a fixed union-closed orientation, $\\varepsilon_0=0$ exactly when every ambient normalized row array has a feasible sufficiently small common-scaling tail, and $\\varepsilon_\\infty=0$ exactly when every ambient normalized row array has a feasible sufficiently large tail; in either case the existence of one such tail suffices and $\\mathcal A(C)\\cong\\mathbb R^{d_C}$. The reflected minima $\\eta_b$ are nonincreasing under nonempty pc-minors and satisfy $\\eta_b(C\\times D)=\\max\\{\\eta_b(C),\\eta_b(D)\\}$ for $b\\in\\{0,\\infty\\}$.",
+  "status": "established",
+  "proof": "Empty retained positive systems work for every array, while a uniformly small ratio array obstructs every nonempty retained system. Acyclic negative systems admit witnesses by reverse topological order, while a directed cycle is obstructed by ratios larger than one. Specified-minor coefficient maps commute with common scaling, and source systems of a product are disjoint unions of the factor systems.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-indicators",
+  "witness_ids": [
+    "#examples/nonlinear_source_domain_class",
+    "#examples/five_coordinate_path_learning_space",
+    "#examples/three_leaf_star"
+  ]
+}

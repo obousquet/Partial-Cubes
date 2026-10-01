@@ -1,0 +1,15 @@
+{
+  "id": 16,
+  "short_name": "small_scale_source_indicator",
+  "name": "Small-Scale Source Indicator",
+  "symbol": "\\eta_0(C)",
+  "definition": "For every coordinate reflection $\\rho$ for which $C\\triangle\\rho$ is union closed, let $\\varepsilon_0(C\\triangle\\rho)$ be one when some graph source has a nonempty retained positive separator system and zero otherwise. Then $\\eta_0(C)$ is the minimum of these values; the minimum of the empty set is $+\\infty$.",
+  "status": "established",
+  "domain_class_id": "#classes/partial_cubes",
+  "codomain": "\\{0,1,+\\infty\\}",
+  "normalization": "Minimize over all union-closed coordinate reflections; constant coordinates may be suppressed.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The value is invariant under coordinate permutations and reflections. On partial cubes this descends to abstract graph isomorphism because irredundant hypercube embeddings are unique up to those operations.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-indicators"
+}

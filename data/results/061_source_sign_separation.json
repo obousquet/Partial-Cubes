@@ -1,0 +1,13 @@
+{
+  "id": 61,
+  "short_name": "source_sign_separation",
+  "name": "Separation of Source-Witness Signs",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "construction",
+  "statement": "For a nonempty union-closed class, a source witness exists exactly when its positive and negative source cones are both nonempty. If $U_C$ and $V_C$ require these respective cones at every graph source, then $\\mathcal A(C)\\cong(U_C\\cap V_C)\\times(0,\\infty)^{d_-}$. The set $U_C$ is nonempty, open, and upward closed; $V_C$ is nonempty, open, and downward closed; and $\\log V_C$ is convex.",
+  "status": "established",
+  "proof": "Restricting a full witness to its positive and negative coordinates gives the two cone systems. Conversely, combine cone witnesses as $(h,-\\lambda v)$ and choose a sufficiently small positive $\\lambda$ to satisfy every original row. Monotonicity follows directly from the inequalities, and logarithms express the negative conditions as convex exponential sublevel inequalities whose projection is convex.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:source-signs"
+}

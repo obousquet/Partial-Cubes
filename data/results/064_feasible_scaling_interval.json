@@ -1,0 +1,13 @@
+{
+  "id": 64,
+  "short_name": "feasible_scaling_interval",
+  "name": "Feasible Common-Scaling Interval",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Split logarithmic positive-row ratios as $z+t\\mathbf1$ with $z$ in the zero-sum hyperplane. The feasible scales form $(\\ell_C(z),u_C(z))$; finite endpoints are 1-Lipschitz in the sup norm and $u_C$ is concave. With $B_C=\\{z:\\ell_C(z)<u_C(z)\\}$, one has $\\mathcal A(C)\\cong B_C\\times\\mathbb R^{1+d_-}$. If either endpoint is infinite, or there are no positive-row ratios, then $\\mathcal A(C)\\cong\\mathbb R^{d_C}$.",
+  "status": "established",
+  "proof": "Upward and downward closure make each diagonal fiber an interval. Coordinatewise comparison gives the Lipschitz bounds, convexity of $\\log V_C$ gives concavity of the upper endpoint, and an explicit logistic coordinate trivializes every finite interval over $B_C$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-interval"
+}

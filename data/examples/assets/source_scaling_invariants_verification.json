@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "source_reports": {
+    "source_sign_decomposition_source.json": "1763edd706a6fb3bfd29937b7775ea706d6f1634ee8f637c731293f3f3db6f1d",
+    "coefficient_scaling_source.json": "64301e4cf6102bf6e1c7187fe97d60767bc398f6fdaa5b2e82323aeb56c0beae"
+  },
+  "source_sign_replay": {
+    "counts": {
+      "retained_certificates_replayed": 2057,
+      "positive_core_extensions": 1921,
+      "split_systems": 2057,
+      "joined_witnesses": 1804,
+      "retained_row_families": 561,
+      "example_orthant_decisions": 2754,
+      "example_arrays": 162,
+      "example_constructed_witnesses": 2448
+    },
+    "minimal_patterns": 10,
+    "endpoint_statuses": {
+      "left": true,
+      "right": true,
+      "geometric_midpoint": false
+    }
+  },
+  "scaling_replay": {
+    "counts": {
+      "marker_learning_parents": 107,
+      "small_tail_witnesses": 390,
+      "large_tail_witnesses": 379,
+      "retained_classes": 141,
+      "elementary_minor_type_checks": 1159,
+      "minor_row_equivariance_checks": 3038,
+      "deleted_positive_root_rows": 184,
+      "fixed_tail_witnesses": 33,
+      "ray_class_decisions": 12,
+      "product_type_checks": 4
+    },
+    "reflection_calibrations": {
+      "gain17": [
+        1,
+        0
+      ],
+      "path_learning5": [
+        0,
+        1
+      ],
+      "daisy_star": [
+        0,
+        0
+      ]
+    },
+    "fixed_tail_witnesses_replayed": 33,
+    "mixed_ray_decisions_replayed": 6
+  },
+  "scope": "Exact replay of the 17-state endpoint witnesses and midpoint dual, fixed-tail witnesses, reflected indicator calibrations, and mixed-ray decisions. Corpus-wide counts are integrity-checked; universal topology and operation laws use the written proofs.",
+  "script_sha256": "68bd991447e059898445192a25df6ae78dd32fde7c065ee5ee6d54f673c0b009"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 25,
+  "short_name": "five_coordinate_path_learning_space",
+  "name": "Five-Coordinate Path Learning Space",
+  "symbol": "L_{\\mathrm{path},5}",
+  "object_type": "set_family",
+  "definition": "On coordinates $0,\\ldots,4$, in low-bit integer encoding take $L_{\\mathrm{path},5}=\\{0,1,3,7,15,16,17,19,23,24,25,27,28,29,30,31\\}$.",
+  "properties": "This family is accessible and union closed, hence a learning space. Its reflected source indicators are $(\\eta_0,\\eta_\\infty)=(0,1)$, showing that the two indicators can differ in the opposite direction from the seventeen-state nonlinear example.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-indicators",
+  "verification": "scripts/verify_source_scaling_invariants.py; data/examples/assets/source_scaling_invariants_verification.json; data/examples/assets/coefficient_scaling_source.json"
+}

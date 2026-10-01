@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,29 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-1" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-62" style="position:relative;">
 
-        <h3><a href="invariants/vc_dimension.html" class="table-title-link">VC Dimension</a></h3>
+        <h3><a href="results/positive_support_deletion.html" class="table-title-link">Positive-Support Deletion Criterion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>VC Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\dim_{\mathrm{VC}}">
-            \[\dim_{\mathrm{VC}}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a finite family $C\subseteq2^X$, $\dim_{\mathrm{VC}}(C)$ is the largest cardinality of a coordinate set $T\subseteq X$ whose trace $C|_T$ is all of $2^T$.</p></div>
+        <p><strong>Name: </strong>Positive-Support Deletion Criterion</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Repeatedly delete a coordinate occurring on no remaining left side of a positive source system and delete every row whose right side meets it. The original system is feasible exactly when the retained system is feasible, and a retained witness extends continuously and rationally at rational inputs. If every retained row has a singleton right side, then the logarithmic coefficient domain is open and convex; when nonempty, $\mathcal A(C)\cong\mathbb R^{d_C}$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers</p>
-<strong>Normalization:</strong><div class="text-field"><p>The empty coordinate set is shattered by every nonempty family, so every nonempty family has VC dimension at least zero.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>For partial cubes this is also called rank; it is invariant under coordinate permutations and independent bit complements.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/hypercube_vc_dimension.html'>VC Dimension of a Hypercube</a></li><li><a href='invariant_values/tree_vc_dimension.html'>VC Dimension of a Tree</a></li><li><a href='invariant_values/path_vc_dimension.html'>VC Dimension of a Path</a></li><li><a href='invariant_values/star_vc_dimension.html'>VC Dimension of a Star</a></li><li><a href='invariant_values/two_dimensional_vc_dimension.html'>VC Dimension on Two-Dimensional Partial Cubes</a></li><li><a href='invariant_values/ample_rank_two_vc_dimension.html'>VC Dimension on Rank-Two Ample Classes</a></li><li><a href='invariant_values/even_cycle_vc_dimension.html'>VC Dimension of an Even Cycle</a></li><li><a href='invariant_values/pentagonal_obstruction_vc_dimension.html'>VC Dimension of the Pentagonal Obstruction</a></li><li><a href='invariant_values/nonlinear_source_vc_dimension.html'>VC Dimension of the Nonlinear Source-Domain Class</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/majority_defect_unbounded_on_rank_two_maximum.html'>Majority Defect Is Unbounded on Rank-Two Maximum Classes</a></li><li><a href='results/nonlinear_source_domain.html'>A Nonconvex Logarithmic Coefficient Domain in VC Dimension Two</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Restore deleted coordinate groups in reverse order, assigning each a value larger than the finitely many ratios required by rows removed at that step. For singleton right sides, logarithms turn every retained positive inequality into a linear strict inequality; combining these with the convex negative inequalities and projecting preserves convexity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#lem:positive-support-deletion</p></div>
 
         </div>
     </div>

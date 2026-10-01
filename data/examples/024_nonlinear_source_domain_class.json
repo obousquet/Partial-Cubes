@@ -1,0 +1,11 @@
+{
+  "id": 24,
+  "short_name": "nonlinear_source_domain_class",
+  "name": "Seventeen-State Nonlinear Source-Domain Class",
+  "symbol": "C_{17}",
+  "object_type": "set_family",
+  "definition": "On coordinates $0,\\ldots,5$, encode a subset by the sum of its powers of two and take $C_{17}=\\{7,15,30,31,35,39,45,47,50,51,55,57,58,59,61,62,63\\}$. Its ten minimal missing patterns have all-negative supports $01,13,04,124,15,25,035$ and positive-root/negative-support pairs $(2;03),(3;24),(4;35)$.",
+  "properties": "It is union closed, ample, and has VC dimension two. Writing its three positive rows as $x_2<\\alpha x_0+a x_3$, $x_3<b x_2+c x_4$, and $x_4<d x_3+\\beta x_5$, coefficient feasibility is exactly $ab+cd>1$; the other ratios are arbitrary. Thus $\\mathcal A(C_{17})\\cong\\mathbb R^{15}$ although its logarithmic ratio domain is not convex. Its source indicators are $(\\eta_0,\\eta_\\infty)=(1,0)$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#ex:nonlinear-source-domain",
+  "verification": "scripts/verify_source_scaling_invariants.py; data/examples/assets/source_scaling_invariants_verification.json; data/examples/assets/source_sign_decomposition_source.json; data/examples/assets/coefficient_scaling_source.json"
+}

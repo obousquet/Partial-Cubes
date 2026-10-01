@@ -1,0 +1,13 @@
+{
+  "id": 62,
+  "short_name": "positive_support_deletion",
+  "name": "Positive-Support Deletion Criterion",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "algorithm",
+  "statement": "Repeatedly delete a coordinate occurring on no remaining left side of a positive source system and delete every row whose right side meets it. The original system is feasible exactly when the retained system is feasible, and a retained witness extends continuously and rationally at rational inputs. If every retained row has a singleton right side, then the logarithmic coefficient domain is open and convex; when nonempty, $\\mathcal A(C)\\cong\\mathbb R^{d_C}$.",
+  "status": "established",
+  "proof": "Restore deleted coordinate groups in reverse order, assigning each a value larger than the finitely many ratios required by rows removed at that step. For singleton right sides, logarithms turn every retained positive inequality into a linear strict inequality; combining these with the convex negative inequalities and projecting preserves convexity.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#lem:positive-support-deletion"
+}

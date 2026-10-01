@@ -1,0 +1,15 @@
+{
+  "id": 58,
+  "short_name": "nonlinear_source_coefficient_space",
+  "name": "Coefficient Space of the Nonlinear Source-Domain Class",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/nonlinear_source_domain_class",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "\\{(a,b,c,d,\\ldots):ab+cd>1\\}\\cong\\mathbb R^{15}",
+  "scope": "The displayed $a,b,c,d$ are four positive-row ratios; the remaining eleven ratios are free.",
+  "status": "established",
+  "proof": "Only the retained positive system at source 30 constrains the ratios. Summing through its three inequalities gives necessity of $ab+cd>1$, and an explicit witness gives sufficiency. The coordinates $(ab+cd,ab/(ab+cd),a,c)$ identify the constrained factor with $(1,\\infty)\\times(0,1)\\times(0,\\infty)^2$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#ex:nonlinear-source-domain",
+  "verification": "scripts/verify_source_scaling_invariants.py; data/examples/assets/source_scaling_invariants_verification.json"
+}

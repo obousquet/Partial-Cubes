@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "batch_id": "025_source_scaling_indicators",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize source-sign separation, positive-support deletion, the nonlinear seventeen-state coefficient domain, feasible common-scaling intervals, the reflected small- and large-scale source indicators, their pc-minor and product laws, and the eta_0 characterization of convex-geometry ideals.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:source-signs",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#lem:positive-support-deletion",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#ex:nonlinear-source-domain",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-interval",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-indicators",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:learning-ideal-closure"
+  ],
+  "source_packets": [
+    {
+      "id": "union-closed-source-and-scaling-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/union_closed_families.tex",
+      "sha256": "2ba2a68df2d2a0e0c3a5ccc28f02c365182fbc1c5f5db417ad88dc569a9bf948"
+    },
+    {
+      "id": "source-sign-exact-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/source_sign_decomposition_verification.json",
+      "sha256": "1763edd706a6fb3bfd29937b7775ea706d6f1634ee8f637c731293f3f3db6f1d"
+    },
+    {
+      "id": "coefficient-scaling-exact-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/coefficient_scaling_verification.json",
+      "sha256": "64301e4cf6102bf6e1c7187fe97d60767bc398f6fdaa5b2e82323aeb56c0beae"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariant definitions, class characterization, values, examples, theorem statements, concise proofs, and replay verifier. The LaTeX paper retains the full constructive proofs, detailed cone tables, scaling derivations, contextual discussion, and open questions.",
+    "recoverability": "Both source evidence reports are copied byte-for-byte into database assets, exact source and record hashes are retained here, the frozen 93-file source snapshot remains recoverable, and no LaTeX source was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "database-source-scaling-verifier",
+      "path": "scripts/verify_source_scaling_invariants.py",
+      "sha256": "68bd991447e059898445192a25df6ae78dd32fde7c065ee5ee6d54f673c0b009",
+      "assertions": "Replays the seventeen-state endpoint witnesses and midpoint dual, all 33 fixed-tail witnesses, all reflected indicator calibrations, and six mixed-ray decisions; integrity-checks the complete source-report counts."
+    },
+    {
+      "id": "source-scaling-replay-report",
+      "path": "data/examples/assets/source_scaling_invariants_verification.json",
+      "sha256": "94594f245b03fe02e2665f09da7f94e1929a0dcab0a0cbe50d2c7d0598a30055",
+      "assertions": "Passed exact replay with 2,057 retained certificates, 1,921 positive-core extensions, 2,754 orthant decisions, 2,448 constructed witnesses, 3,038 minor-row equivariance checks, and the three reflected calibration examples."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/006_convex_geometry_ideal_equivalence.json",
+      "sha256": "783d803346b2d5be63d32f62a2888dc1fd4669077e430fa2d71d583805f31d8f"
+    },
+    {
+      "path": "data/characterizations/081_zero_small_scale_source_indicator.json",
+      "sha256": "18976152049423c429df3ae11e5d32a8ed6f0cca14931866795366c3e2a47734"
+    },
+    {
+      "path": "data/examples/024_nonlinear_source_domain_class.json",
+      "sha256": "89bafe0635d81f2fcebd9c9c8e0a97184065378c7904abc9b8bfed7e9adaa533"
+    },
+    {
+      "path": "data/examples/025_five_coordinate_path_learning_space.json",
+      "sha256": "9e322e878bca9faf3f34b067b381552aa270da04d125aac213b83373b69b0bdf"
+    },
+    {
+      "path": "data/examples/assets/coefficient_scaling_source.json",
+      "sha256": "64301e4cf6102bf6e1c7187fe97d60767bc398f6fdaa5b2e82323aeb56c0beae"
+    },
+    {
+      "path": "data/examples/assets/source_scaling_invariants_verification.json",
+      "sha256": "94594f245b03fe02e2665f09da7f94e1929a0dcab0a0cbe50d2c7d0598a30055"
+    },
+    {
+      "path": "data/examples/assets/source_sign_decomposition_source.json",
+      "sha256": "1763edd706a6fb3bfd29937b7775ea706d6f1634ee8f637c731293f3f3db6f1d"
+    },
+    {
+      "path": "data/invariant_values/051_convex_geometry_ideal_small_scale_indicator.json",
+      "sha256": "954acff5c6910e7f6d016deb26816708eb62ba656ea9d62b9f40431f6199b728"
+    },
+    {
+      "path": "data/invariant_values/052_nonlinear_source_small_scale_indicator.json",
+      "sha256": "e08c690e01a199a9947eb45057d41319c09b5b86cfe087e0e920f3450fcc3f57"
+    },
+    {
+      "path": "data/invariant_values/053_nonlinear_source_large_scale_indicator.json",
+      "sha256": "8d969a6d2cdf22da953bc5bad91c7e022b7a04f1725578742bca0074cc865e58"
+    },
+    {
+      "path": "data/invariant_values/054_path_learning_small_scale_indicator.json",
+      "sha256": "21cc03425e3540c0f120ec3564f69e26ed1e81863d1673d07886025c6ab7d5a6"
+    },
+    {
+      "path": "data/invariant_values/055_path_learning_large_scale_indicator.json",
+      "sha256": "5f7aea8c08549644dfa82cbd726958b38055ee2d25014f6b60a2d40122e11152"
+    },
+    {
+      "path": "data/invariant_values/056_three_leaf_star_small_scale_indicator.json",
+      "sha256": "6650dd4bb0e33d09ef63ac348cd4753f907da3d6eb169857c71af0e726a33d19"
+    },
+    {
+      "path": "data/invariant_values/057_three_leaf_star_large_scale_indicator.json",
+      "sha256": "1aa1973309b898ab17a11737b38c9fcdab86000a0205acf9ea4d1442806439d7"
+    },
+    {
+      "path": "data/invariant_values/058_nonlinear_source_coefficient_space.json",
+      "sha256": "9aaaffee0b47e5845db59431be6b4b7814ca61a488a4b1c18fbb5ba24d4a243e"
+    },
+    {
+      "path": "data/invariant_values/059_nonlinear_source_vc_dimension.json",
+      "sha256": "39d5164a655706cd00fcb51df543d9a8faff6b3c9e8bcd00da4aca28c5d5f13c"
+    },
+    {
+      "path": "data/invariants/016_small_scale_source_indicator.json",
+      "sha256": "2ac67be3f8964d3aaaee8e1da41dbb98dd9e53e7a1621adcbe9d0d3b0f7a99f3"
+    },
+    {
+      "path": "data/invariants/017_large_scale_source_indicator.json",
+      "sha256": "b63c51eb01b4951de83e19dfb28122f208c141c76e75cdf24574612a311dd8ac"
+    },
+    {
+      "path": "data/results/060_learning_space_minor_closure_coefficient_theorem.json",
+      "sha256": "54b5cbbc5ce28c02e6041766670244b9fba386446c28c0bba3da60a6d172ac40"
+    },
+    {
+      "path": "data/results/061_source_sign_separation.json",
+      "sha256": "668c23de7a6c87decaad40758696f617e9ce971d90939ab249871c14810e1473"
+    },
+    {
+      "path": "data/results/062_positive_support_deletion.json",
+      "sha256": "7490b36ca58b492c7eef2bb4ee3c27e228f80145d89d5b643e90de0bc4f25578"
+    },
+    {
+      "path": "data/results/063_nonlinear_source_domain.json",
+      "sha256": "5d38d0a7646e7baa08e6b4f05ad51aebe077a6cfa30d7ad9063f560aa789b3de"
+    },
+    {
+      "path": "data/results/064_feasible_scaling_interval.json",
+      "sha256": "9ed7946284a23e0ccd4281d3166b43c8f952f6df8fb957fd2a3ef29370512208"
+    },
+    {
+      "path": "data/results/065_source_scaling_indicator_laws.json",
+      "sha256": "27ab9a67999de8f3cd258dbed48daf9a31f6dc3461887d62cbc87ee25e4fbcff"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "3cbf2c8efd0adb22d47500086047baa30a72988fd5397a1b84425e2ac5fd17fc"
+    },
+    {
+      "path": "scripts/verify_source_scaling_invariants.py",
+      "sha256": "68bd991447e059898445192a25df6ae78dd32fde7c065ee5ee6d54f673c0b009"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 538 records.",
+    "exact_replay": "All source-sign and scaling certificate checks passed.",
+    "website": "Normalized 554 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "46 Hasse covers represent 74 stored inclusions; all 22 minor-atlas Ample-family nodes and 67 closure-map arrows remain covered.",
+    "migration": "100 class occurrences reconcile into 91 identities; 326 claim candidates and review queues validate; the 93-file source snapshot remains recoverable."
+  },
+  "deferred": [
+    "Union-closed spectral formulas and optimized thresholds.",
+    "Graph-arrangement and sphere-family constructions.",
+    "Two-control pc-minimal nonrealizable families."
+  ]
+}
