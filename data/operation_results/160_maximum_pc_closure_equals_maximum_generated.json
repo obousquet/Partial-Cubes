@@ -1,0 +1,13 @@
+{
+  "id": 160,
+  "short_name": "maximum_pc_closure_equals_maximum_generated",
+  "name": "The pc-Minor Closure of Maximum Classes Is MaxMin",
+  "class_id": "#classes/maximum",
+  "operation_id": "#operations/pc_minor",
+  "result_type": "closure_equals",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "$\\operatorname{Cl}_{pc}(\\mathsf{Max})=\\mathsf{MaxMin}$ for finite displayed binary classes.",
+  "proof": "Maximum classes are projection-closed, so any pc-minor is a conditioning of a maximum projection and belongs to MaxMin. Every conditioning is a pc-minor, so the conditioning-closure equality gives the reverse inclusion.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:max-sections"
+}

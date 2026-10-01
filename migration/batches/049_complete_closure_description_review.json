@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "batch_id": "049_complete_closure_description_review",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete atomic normalization of all forty-eight minor-atlas closure descriptions: link twenty-eight exact self-closure descriptions to existing records and add the exact MaxMin closure hulls of Maximum, M_k, M_1, and M_2.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/main.tex#prop:max-sections",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:auxiliary-hierarchy",
+    "PartialCubes:papers/minor-atlas/inventory.json#/families"
+  ],
+  "source_packets": [
+    {
+      "id": "minor-atlas-inventory",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/inventory.json",
+      "sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0"
+    },
+    {
+      "id": "minor-atlas-manuscript",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "0325153bfdc73053da4c048371b82a753cf4b8eda0e5095917aa595a4afa569d"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the atomic closure-equality theorems and review pointers. PartialCubes and the cited sibling manuscripts retain their full constructions, hierarchy proofs, examples, certificates, and open problems.",
+    "recoverability": "The frozen inventory and exact manuscript hash preserve the composite source assertions; each queue item now resolves to a proof-bearing operation-result record.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/operation_results/159_maximum_conditioning_closure_equals_maximum_generated.json",
+      "sha256": "08de5d8357b8ff7ce254fe5cc62c7ad8da377830c1687947b9d78d617d9150fd"
+    },
+    {
+      "path": "data/operation_results/160_maximum_pc_closure_equals_maximum_generated.json",
+      "sha256": "9ef7ff98c4a95bb42483a9d236b1af2450ef28396f9ac817994cdb102865a09c"
+    },
+    {
+      "path": "data/operation_results/161_maximum_auxiliary_level_conditioning_closure_equals_maximum_generated.json",
+      "sha256": "12d73eb2615f3bef6a1659ad84448b61dc206bdd68d1e2becc74a4e2f3a4801e"
+    },
+    {
+      "path": "data/operation_results/162_maximum_auxiliary_level_pc_closure_equals_maximum_generated.json",
+      "sha256": "314aa1d0211449004d53e22660261d0391b65d53cfb71aeea703269f2cb81ec0"
+    },
+    {
+      "path": "data/operation_results/163_maximum_auxiliary_level_one_conditioning_closure_equals_maximum_generated.json",
+      "sha256": "33b795e4b17d550500400ec627d9a7f89d7e05ce52be4adac5783cb79d15a5fa"
+    },
+    {
+      "path": "data/operation_results/164_maximum_auxiliary_level_one_pc_closure_equals_maximum_generated.json",
+      "sha256": "b688b3b1d67f61e7ec9d46661b376c2cd66df1b78ebc6b8709ff1e9f4ce18ed8"
+    },
+    {
+      "path": "data/operation_results/165_maximum_auxiliary_level_two_conditioning_closure_equals_maximum_generated.json",
+      "sha256": "98c7670898463ee6837726d8bd16241a9e62b122e9ab7098b334dd373f005637"
+    },
+    {
+      "path": "data/operation_results/166_maximum_auxiliary_level_two_pc_closure_equals_maximum_generated.json",
+      "sha256": "6a5227180353044c9c70a5156dd9ed23e70cb7bb7b6f406300d35fbadab8af53"
+    },
+    {
+      "path": "migration/claim_queue.json",
+      "sha256": "cde4c09a3c06262eb40785154766a4bdff05494c2cabd8e78347e996ca1cd391"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "4a8784d0e65b2c157e4daa7a526ff01372f4a3cf8360c5971ac0d1530cc598a0"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1035 records.",
+    "closure_review": "All 48 extracted closure descriptions are promoted to proof-bearing database records.",
+    "website": "Normalized 1051 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "158 Hasse covers represent 201 stored inclusions; all 22 minor-atlas Ample-family nodes and 190 closure-map arrows remain covered.",
+    "migration": "The source extracts, bibliography audit, source manifest, coverage report, canonical allocations, and review queues are current."
+  },
+  "deferred": [
+    "Twenty composite obstruction summaries still require atomic normalization.",
+    "Repository-wide discovery of class identities outside the existing survey/minor-atlas allocation.",
+    "Lower-priority theorem detail from maximum_parent_methods beyond the closure identities normalized here."
+  ]
+}

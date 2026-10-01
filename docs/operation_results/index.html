@@ -2700,6 +2700,142 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-159" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_conditioning_closure_equals_maximum_generated.html" class="table-title-link">The Conditioning Closure of Maximum Classes Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Conditioning Closure of Maximum Classes Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_c(\mathsf{Max})=\mathsf{MaxMin}$ for finite displayed binary classes.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A MaxMin certificate is precisely a maximum class with finitely many auxiliary coordinates fixed to one word, hence an iterated conditioning. Conversely, every conditioning of a maximum class is by definition a maximum-generated class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:max-sections</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-160" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_pc_closure_equals_maximum_generated.html" class="table-title-link">The pc-Minor Closure of Maximum Classes Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The pc-Minor Closure of Maximum Classes Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_{pc}(\mathsf{Max})=\mathsf{MaxMin}$ for finite displayed binary classes.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Maximum classes are projection-closed, so any pc-minor is a conditioning of a maximum projection and belongs to MaxMin. Every conditioning is a pc-minor, so the conditioning-closure equality gives the reverse inclusion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:max-sections</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-161" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_conditioning_closure_equals_maximum_generated.html" class="table-title-link">Every Fixed Auxiliary Level Has Conditioning Closure MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Fixed Auxiliary Level Has Conditioning Closure MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_k.html">Maximum-Section Auxiliary-Level Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For every fixed integer $k\geq0$, $\operatorname{Cl}_c(\mathsf M_k)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning $j$ visible coordinates sends $\mathsf M_k$ into $\mathsf M_{k+j}\subseteq\mathsf{MaxMin}$. Conversely, $\mathsf M_0=\mathsf{Max}\subseteq\mathsf M_k$, and every MaxMin class is a conditioning of a maximum class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-162" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_pc_closure_equals_maximum_generated.html" class="table-title-link">Every Fixed Auxiliary Level Has pc-Minor Closure MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Fixed Auxiliary Level Has pc-Minor Closure MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_k.html">Maximum-Section Auxiliary-Level Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For every fixed integer $k\geq0$, $\operatorname{Cl}_{pc}(\mathsf M_k)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Each level is projection-closed, and conditioning moves only to a higher auxiliary level, so every pc-minor belongs to MaxMin. Since $\mathsf{Max}=\mathsf M_0\subseteq\mathsf M_k$, the pc-minor closure contains the pc-minor closure MaxMin of maximum classes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-163" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_one_conditioning_closure_equals_maximum_generated.html" class="table-title-link">The Conditioning Closure of One-Auxiliary Sections Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Conditioning Closure of One-Auxiliary Sections Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_one.html">One-Auxiliary Maximum Sections</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_c(\mathsf M_1)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>This is the $k=1$ case of the fixed-level closure theorem: conditioning moves to higher auxiliary levels, while $\mathsf M_1$ contains every maximum class and hence generates every maximum section.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-164" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_one_pc_closure_equals_maximum_generated.html" class="table-title-link">The pc-Minor Closure of One-Auxiliary Sections Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The pc-Minor Closure of One-Auxiliary Sections Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_one.html">One-Auxiliary Maximum Sections</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_{pc}(\mathsf M_1)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>This is the $k=1$ case of the fixed-level pc-minor closure theorem; projections stay within the level, and arbitrary conditionings generate all maximum sections.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-165" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_two_conditioning_closure_equals_maximum_generated.html" class="table-title-link">The Conditioning Closure of Two-Auxiliary Sections Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Conditioning Closure of Two-Auxiliary Sections Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_two.html">Two-Auxiliary Maximum Sections</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_c(\mathsf M_2)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>This is the $k=2$ case of the fixed-level closure theorem: conditioning moves to higher auxiliary levels, while $\mathsf M_2$ contains every maximum class and hence generates every maximum section.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-166" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_auxiliary_level_two_pc_closure_equals_maximum_generated.html" class="table-title-link">The pc-Minor Closure of Two-Auxiliary Sections Is MaxMin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The pc-Minor Closure of Two-Auxiliary Sections Is MaxMin</p>
+<p><strong>Class: </strong><a href="classes/maximum_section_auxiliary_level_two.html">Two-Auxiliary Maximum Sections</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{Cl}_{pc}(\mathsf M_2)=\mathsf{MaxMin}$ under the displayed-coordinate convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>This is the $k=2$ case of the fixed-level pc-minor closure theorem; projections stay within the level, and arbitrary conditionings generate all maximum sections.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:auxiliary-hierarchy</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,13 @@
+{
+  "id": 162,
+  "short_name": "maximum_auxiliary_level_pc_closure_equals_maximum_generated",
+  "name": "Every Fixed Auxiliary Level Has pc-Minor Closure MaxMin",
+  "class_id": "#classes/maximum_section_auxiliary_level_k",
+  "operation_id": "#operations/pc_minor",
+  "result_type": "closure_equals",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "For every fixed integer $k\\geq0$, $\\operatorname{Cl}_{pc}(\\mathsf M_k)=\\mathsf{MaxMin}$ under the displayed-coordinate convention.",
+  "proof": "Each level is projection-closed, and conditioning moves only to a higher auxiliary level, so every pc-minor belongs to MaxMin. Since $\\mathsf{Max}=\\mathsf M_0\\subseteq\\mathsf M_k$, the pc-minor closure contains the pc-minor closure MaxMin of maximum classes.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:auxiliary-hierarchy"
+}

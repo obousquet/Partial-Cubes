@@ -1,0 +1,13 @@
+{
+  "id": 161,
+  "short_name": "maximum_auxiliary_level_conditioning_closure_equals_maximum_generated",
+  "name": "Every Fixed Auxiliary Level Has Conditioning Closure MaxMin",
+  "class_id": "#classes/maximum_section_auxiliary_level_k",
+  "operation_id": "#operations/conditioning",
+  "result_type": "closure_equals",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "For every fixed integer $k\\geq0$, $\\operatorname{Cl}_c(\\mathsf M_k)=\\mathsf{MaxMin}$ under the displayed-coordinate convention.",
+  "proof": "Conditioning $j$ visible coordinates sends $\\mathsf M_k$ into $\\mathsf M_{k+j}\\subseteq\\mathsf{MaxMin}$. Conversely, $\\mathsf M_0=\\mathsf{Max}\\subseteq\\mathsf M_k$, and every MaxMin class is a conditioning of a maximum class.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:auxiliary-hierarchy"
+}
