@@ -1,0 +1,17 @@
+{
+  "id": 107,
+  "short_name": "coordinate_tree_fiber_product_formula",
+  "name": "Coordinate-Tree Fiber Products of Ample Classes",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let ample $C\\subseteq\\{0,1\\}^{X\\sqcup Y}$ and $D\\subseteq\\{0,1\\}^{X\\sqcup Z}$ have shared projections contained in one coordinate tree $T$. Write $C_x,D_x$ for vertex fibers and $C_e,D_e$ for the intersections across a tree edge $e$ in direction $i(e)$. Then $E=C\\times_XD$ is ample, and its shattered supports are exactly the $U\\cup V$ shattered by some $C_x,D_x$, together with the $\\{i(e)\\}\\cup U\\cup V$ shattered by some $C_e,D_e$. Hence $\\operatorname{VC}(E)$ is the maximum of $\\operatorname{VC}(C_x)+\\operatorname{VC}(D_x)$ and $1+\\operatorname{VC}(C_e)+\\operatorname{VC}(D_e)$ over nonempty factors.",
+  "status": "established",
+  "proof": "For each private pattern, the shared words realizing it form a connected subtree because they are projections of ample sections. Pairwise-intersecting subtrees of a finite tree have a common vertex, giving every shattered private support a positioned product cube over one vertex. A shattered support containing a shared coordinate must use the unique tree edge in that direction in both factors, so its private parts lie in the two edge fibers. No two shared directions are shattered by a coordinate tree. The converse cubes and the VC formula follow directly.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:tree-product-ample",
+  "comments": "The maximum-parent analogue for arbitrary coordinate-tree projections remains open. The tree hypothesis cannot be replaced by a common median projection."
+}

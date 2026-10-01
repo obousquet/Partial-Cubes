@@ -1,0 +1,15 @@
+{
+  "id": 121,
+  "short_name": "ample_arbitrary_coordinate_fiber_product_not_closed",
+  "name": "Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products",
+  "class_id": "#classes/ample",
+  "operation_id": "#operations/coordinate_fiber_product",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "Allowing two or more shared coordinates destroys general closure: two maximum classes can have a nonample coordinate fiber product.",
+  "witness_ids": [
+    "#examples/matched_maximum_paths_nonample"
+  ],
+  "proof": "On the same two shared coordinates, the maximum paths $\\{00,10,11\\}$ and $\\{00,01,11\\}$ have coordinate fiber product equal to their intersection $\\{00,11\\}$. That class shatters both singleton coordinates but contains no edge, so it is not ample.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#rem:coordinate-product-scope"
+}

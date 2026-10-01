@@ -1,0 +1,17 @@
+{
+  "id": 111,
+  "short_name": "two_large_missing_patterns_realization",
+  "name": "Convex Realization with at Most Two Large Missing Patterns",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/maximum_generated_classes"
+  ],
+  "result_type": "construction",
+  "statement": "If a nonempty ample class $C\\subseteq\\{0,1\\}^n$ has at most two minimally missing patterns with support size at least three, then it is the strict coordinate-sign class of the interior of a bounded full-dimensional convex polytope. All missing-pattern separator coefficients may have unit magnitude. For $n\\geq1$, $C$ has a maximum parent of rank $n$ using at most $|\\mathcal M(C)|+2n$ auxiliary coordinates; constants are allowed and the zero-coordinate singleton needs none.",
+  "status": "established",
+  "proof": "After reflecting a chosen concept to zero, binary missing patterns define an acyclic implication order on coordinate magnitudes. Each large missing support is an antichain. With one large pattern, increasing magnitudes on an upper set makes its form negative. With two, the missing-pattern elimination identity supplies either one upper set decreasing both forms or two upper sets that can be adjusted successively without undoing the first inequality. The resulting strict witnesses use the same unit signed forms for every concept. Scaling finitely many witnesses and intersecting their strict halfspaces with a box gives the bounded realization; the signed-separator parent construction gives the rank and auxiliary bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:two-large-patterns",
+  "witness_ids": [
+    "#examples/agreeing_blocks_ample_class"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": 109,
+  "short_name": "cumulative_path_fiber_parents",
+  "name": "Consecutive Parents for Cumulative Path Fibers",
+  "class_ids": [
+    "#classes/maximum_generated_classes"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Let a maximum-generated class project onto the path $00,10,11$ and have nonempty private fibers $C_0,C_1,C_2$. On one extension of the private coordinates there are nested maximum classes of three consecutive ranks with one common marked section equal respectively to $C_0$, $C_0\\cup C_1$, and $C_0\\cup C_1\\cup C_2$. The cumulative chain starting from $C_2$ has another such certificate, which need not be compatible with the first.",
+  "status": "established",
+  "proof": "Attach two controls encoding the implications $p=1\\Rightarrow a=0$ and $q=1\\Rightarrow b=0$; one-coordinate product closure supplies a maximum parent after projecting away the original path controls. Adjoin a constant marked coordinate and take a maximum parent. Its projection, one-coordinate reduction followed by projection, and two-coordinate full reduction are nested maximum classes. Properness and a full control square force their ranks to be three consecutive values, while commuting the operations with the common mark yields the three cumulative unions.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:path-cumulative-parents"
+}

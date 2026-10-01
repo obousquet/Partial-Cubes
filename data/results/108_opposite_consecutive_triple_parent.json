@@ -1,0 +1,19 @@
+{
+  "id": 108,
+  "short_name": "opposite_consecutive_triple_parent",
+  "name": "Maximum Parent for Opposite Consecutive Triples",
+  "class_ids": [
+    "#classes/maximum_generated_classes"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Let $A_0\\subseteq A_1\\subseteq A_2$ be maximum of ranks $r,r+1,r+2$ and $B_0\\subseteq B_1\\subseteq B_2$ maximum of ranks $s,s+1,s+2$ on disjoint private blocks. The three path fibers $A_0\\times B_2$ at $00$, $A_1\\times B_1$ at $10$, and $A_2\\times B_0$ at $11$ have a maximum parent of rank $r+s+2$ with at most $r+s+1$ auxiliary coordinates. With common private marks of sizes $t_X,t_Y$, the same rank is retained with at most $\\max(r,t_X)+\\max(s,t_Y)+1$ auxiliaries.",
+  "status": "established",
+  "proof": "Extend both triples to maximum sequences and pad their marked faces so entry levels on each face are exactly the three consecutive ranks. Over a pair of entry levels attach one of an explicit full cube, punctured cube, one of two three-edge paths, a singleton, or the empty class on three control coordinates. These control fibers nest with increasing levels. Vandermonde gives the rank-$(r+s+2)$ Sauer cardinality, while missing traces in the two private sequences bound the VC dimension. Fixing the final auxiliary control recovers precisely the three path fibers.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:path-triple-parent",
+  "witness_ids": [
+    "#examples/opposite_triple_nonperipheral_class"
+  ]
+}

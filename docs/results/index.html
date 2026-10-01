@@ -1910,6 +1910,106 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-107" style="position:relative;">
+
+        <h3><a href="results/coordinate_tree_fiber_product_formula.html" class="table-title-link">Coordinate-Tree Fiber Products of Ample Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate-Tree Fiber Products of Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $C\subseteq\{0,1\}^{X\sqcup Y}$ and $D\subseteq\{0,1\}^{X\sqcup Z}$ have shared projections contained in one coordinate tree $T$. Write $C_x,D_x$ for vertex fibers and $C_e,D_e$ for the intersections across a tree edge $e$ in direction $i(e)$. Then $E=C\times_XD$ is ample, and its shattered supports are exactly the $U\cup V$ shattered by some $C_x,D_x$, together with the $\{i(e)\}\cup U\cup V$ shattered by some $C_e,D_e$. Hence $\operatorname{VC}(E)$ is the maximum of $\operatorname{VC}(C_x)+\operatorname{VC}(D_x)$ and $1+\operatorname{VC}(C_e)+\operatorname{VC}(D_e)$ over nonempty factors.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each private pattern, the shared words realizing it form a connected subtree because they are projections of ample sections. Pairwise-intersecting subtrees of a finite tree have a common vertex, giving every shattered private support a positioned product cube over one vertex. A shattered support containing a shared coordinate must use the unique tree edge in that direction in both factors, so its private parts lie in the two edge fibers. No two shared directions are shattered by a coordinate tree. The converse cubes and the VC formula follow directly.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:tree-product-ample</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The maximum-parent analogue for arbitrary coordinate-tree projections remains open. The tree hypothesis cannot be replaced by a common median projection.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-108" style="position:relative;">
+
+        <h3><a href="results/opposite_consecutive_triple_parent.html" class="table-title-link">Maximum Parent for Opposite Consecutive Triples</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Parent for Opposite Consecutive Triples</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A_0\subseteq A_1\subseteq A_2$ be maximum of ranks $r,r+1,r+2$ and $B_0\subseteq B_1\subseteq B_2$ maximum of ranks $s,s+1,s+2$ on disjoint private blocks. The three path fibers $A_0\times B_2$ at $00$, $A_1\times B_1$ at $10$, and $A_2\times B_0$ at $11$ have a maximum parent of rank $r+s+2$ with at most $r+s+1$ auxiliary coordinates. With common private marks of sizes $t_X,t_Y$, the same rank is retained with at most $\max(r,t_X)+\max(s,t_Y)+1$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Extend both triples to maximum sequences and pad their marked faces so entry levels on each face are exactly the three consecutive ranks. Over a pair of entry levels attach one of an explicit full cube, punctured cube, one of two three-edge paths, a singleton, or the empty class on three control coordinates. These control fibers nest with increasing levels. Vandermonde gives the rank-$(r+s+2)$ Sauer cardinality, while missing traces in the two private sequences bound the VC dimension. Fixing the final auxiliary control recovers precisely the three path fibers.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:path-triple-parent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/opposite_triple_nonperipheral_class.html">Opposite-Triple Nonperipheral Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-109" style="position:relative;">
+
+        <h3><a href="results/cumulative_path_fiber_parents.html" class="table-title-link">Consecutive Parents for Cumulative Path Fibers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Consecutive Parents for Cumulative Path Fibers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a maximum-generated class project onto the path $00,10,11$ and have nonempty private fibers $C_0,C_1,C_2$. On one extension of the private coordinates there are nested maximum classes of three consecutive ranks with one common marked section equal respectively to $C_0$, $C_0\cup C_1$, and $C_0\cup C_1\cup C_2$. The cumulative chain starting from $C_2$ has another such certificate, which need not be compatible with the first.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Attach two controls encoding the implications $p=1\Rightarrow a=0$ and $q=1\Rightarrow b=0$; one-coordinate product closure supplies a maximum parent after projecting away the original path controls. Adjoin a constant marked coordinate and take a maximum parent. Its projection, one-coordinate reduction followed by projection, and two-coordinate full reduction are nested maximum classes. Properness and a full control square force their ranks to be three consecutive values, while commuting the operations with the common mark yields the three cumulative unions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:path-cumulative-parents</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-110" style="position:relative;">
+
+        <h3><a href="results/monotone_path_fiber_product_closure.html" class="table-title-link">Maximum-Generated Closure for Monotone Path Fibers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Closure for Monotone Path Fibers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let two maximum-generated classes on disjoint private blocks share the path $00,10,11$. If each triple of private fibers is nested in either path orientation, their coordinate fiber product over the path is maximum-generated. The orientations may agree or be opposite, and consecutive fibers may coincide.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For opposite orientations, cumulative-path certificates turn the visible nested fibers into marked sections of actual opposite consecutive maximum triples, to which the triple-parent construction applies. For equal orientations, first use one-coordinate product closure over one path coordinate and then projection--reduction gluing to install the remaining lowest fiber. Equal visible fibers do not affect the consecutive ranks of the ambient certificates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:monotone-path-product</p></div>
+<strong>Comments:</strong><div class="text-field"><p>General path gluing remains open because the two cumulative certificates need not be simultaneous.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-111" style="position:relative;">
+
+        <h3><a href="results/two_large_missing_patterns_realization.html" class="table-title-link">Convex Realization with at Most Two Large Missing Patterns</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex Realization with at Most Two Large Missing Patterns</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty ample class $C\subseteq\{0,1\}^n$ has at most two minimally missing patterns with support size at least three, then it is the strict coordinate-sign class of the interior of a bounded full-dimensional convex polytope. All missing-pattern separator coefficients may have unit magnitude. For $n\geq1$, $C$ has a maximum parent of rank $n$ using at most $|\mathcal M(C)|+2n$ auxiliary coordinates; constants are allowed and the zero-coordinate singleton needs none.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After reflecting a chosen concept to zero, binary missing patterns define an acyclic implication order on coordinate magnitudes. Each large missing support is an antichain. With one large pattern, increasing magnitudes on an upper set makes its form negative. With two, the missing-pattern elimination identity supplies either one upper set decreasing both forms or two upper sets that can be adjusted successively without undoing the first inequality. The resulting strict witnesses use the same unit signed forms for every concept. Scaling finitely many witnesses and intersecting their strict halfspaces with a box gives the bounded realization; the signed-separator parent construction gives the rank and auxiliary bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:two-large-patterns</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/agreeing_blocks_ample_class.html">Agreeing-Blocks Ample Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-112" style="position:relative;">
+
+        <h3><a href="results/agreeing_large_missing_patterns_realization.html" class="table-title-link">Convex Realization for Agreeing Large Missing Patterns</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex Realization for Agreeing Large Missing Patterns</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If every two minimally missing patterns of support size at least three agree wherever their supports intersect, then a nonempty ample $C\subseteq\{0,1\}^n$ is the strict coordinate-sign class of the interior of a bounded full-dimensional convex polytope. This holds for any prescribed positive missing-pattern coefficients. For $n\geq1$, $C$ has a rank-$n$ maximum parent using at most $|\mathcal M(C)|+2n$ auxiliaries, with the same constant-coordinate conventions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Reflect one concept to zero and satisfy the binary implication inequalities by topological recursion. Induct on the selected large patterns. Choose a reachability-maximal coordinate carrying a negative coefficient and increase a weighted upper-set direction. Agreement and the missing-pattern elimination identity show that this direction meets exactly those remaining large supports containing that coordinate, where it strictly decreases their forms, and leaves all others unchanged. This constructs common signed separator forms for every concept. A bounding box yields the polytope and the signed-separator construction yields the maximum parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:agreeing-large-patterns</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/agreeing_blocks_ample_class.html">Agreeing-Blocks Ample Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The hypothesis need not make any coordinate reflection intersection-closed; the agreeing-blocks example separates these notions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

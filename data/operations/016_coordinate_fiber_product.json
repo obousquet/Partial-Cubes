@@ -1,0 +1,11 @@
+{
+  "id": 16,
+  "short_name": "coordinate_fiber_product",
+  "name": "Coordinate Fiber Product",
+  "symbol": "\\times_{\\{0,1\\}^X}",
+  "arity": 2,
+  "definition": "For $C\\subseteq\\{0,1\\}^{X\\sqcup Y}$ and $D\\subseteq\\{0,1\\}^{X\\sqcup Z}$ with pairwise disjoint $X,Y,Z$, their coordinate fiber product is $C\\times_XD=\\{(x,y,z):(x,y)\\in C,\\ (x,z)\\in D\\}$. Equivalently, duplicate the shared coordinates $X$ in the two factors and retain exactly the pairs whose two copies agree.",
+  "category": "product",
+  "comments": "The output may be empty. For $|X|=1$ this is the one-coordinate product. For larger shared blocks, ampleness can fail even for maximum inputs; coordinate-tree projections and monotone path fibers provide positive special cases.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#sec:coordinate-product"
+}

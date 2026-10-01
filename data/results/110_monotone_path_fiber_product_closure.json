@@ -1,0 +1,17 @@
+{
+  "id": 110,
+  "short_name": "monotone_path_fiber_product_closure",
+  "name": "Maximum-Generated Closure for Monotone Path Fibers",
+  "class_ids": [
+    "#classes/maximum_generated_classes"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Let two maximum-generated classes on disjoint private blocks share the path $00,10,11$. If each triple of private fibers is nested in either path orientation, their coordinate fiber product over the path is maximum-generated. The orientations may agree or be opposite, and consecutive fibers may coincide.",
+  "status": "established",
+  "proof": "For opposite orientations, cumulative-path certificates turn the visible nested fibers into marked sections of actual opposite consecutive maximum triples, to which the triple-parent construction applies. For equal orientations, first use one-coordinate product closure over one path coordinate and then projection--reduction gluing to install the remaining lowest fiber. Equal visible fibers do not affect the consecutive ranks of the ambient certificates.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:monotone-path-product",
+  "comments": "General path gluing remains open because the two cumulative certificates need not be simultaneous."
+}

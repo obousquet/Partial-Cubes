@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-16" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-111" style="position:relative;">
 
-        <h3><a href="examples/agreeing_blocks_ample_class.html" class="table-title-link">Agreeing-Blocks Ample Class</a></h3>
+        <h3><a href="results/two_large_missing_patterns_realization.html" class="table-title-link">Convex Realization with at Most Two Large Missing Patterns</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Agreeing-Blocks Ample Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C_{\mathrm{ab}}">
-            \[C_{\mathrm{ab}}\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $D=\{0,1\}^3\setminus\{111\}$ and $s=110$. On two disjoint three-coordinate blocks take $C_{\mathrm{ab}}=(D\times\{s\})\cup(\{s\}\times D)$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It has thirteen concepts and exactly eleven minimally missing patterns: the two all-one block triples and nine mixed pairs. The two large patterns have disjoint supports, so the class is geometrically realizable, ample, maximum-generated, and dismantlable ample. No coordinate reflection is intersection-closed. Its Horn-renaming defect is exactly one, so no coordinate reflection is a conditional antimatroid.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a>-calibration-inside-realizable-ample-classes; CompressionSchemes:maximum_parent_methods.tex?#ex:agreeing-nonintersection</p></div>
-<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/horn_renaming_verification.json; scripts/verify_maximum_parent_products.py; data/examples/assets/maximum_parent_products_database_verification.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/agreeing_blocks_horn_renaming_defect.html'>Horn-Renaming Defect of the Agreeing-Blocks Class</a></li></ul></p></div>
+        <p><strong>Name: </strong>Convex Realization with at Most Two Large Missing Patterns</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty ample class $C\subseteq\{0,1\}^n$ has at most two minimally missing patterns with support size at least three, then it is the strict coordinate-sign class of the interior of a bounded full-dimensional convex polytope. All missing-pattern separator coefficients may have unit magnitude. For $n\geq1$, $C$ has a maximum parent of rank $n$ using at most $|\mathcal M(C)|+2n$ auxiliary coordinates; constants are allowed and the zero-coordinate singleton needs none.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After reflecting a chosen concept to zero, binary missing patterns define an acyclic implication order on coordinate magnitudes. Each large missing support is an antichain. With one large pattern, increasing magnitudes on an upper set makes its form negative. With two, the missing-pattern elimination identity supplies either one upper set decreasing both forms or two upper sets that can be adjusted successively without undoing the first inequality. The resulting strict witnesses use the same unit signed forms for every concept. Scaling finitely many witnesses and intersecting their strict halfspaces with a box gives the bounded realization; the signed-separator parent construction gives the rank and auxiliary bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:two-large-patterns</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/agreeing_blocks_ample_class.html">Agreeing-Blocks Ample Class</a></li></ul></p>
 
         </div>
     </div>

@@ -1,0 +1,11 @@
+{
+  "id": 40,
+  "short_name": "matched_maximum_paths_nonample",
+  "name": "Matched Maximum Paths with Nonample Product",
+  "symbol": "P_{\\nearrow}\\times_{Q_2}P_{\\searrow}",
+  "object_type": "set_family",
+  "definition": "On the same two shared coordinates take the maximum paths $P_{\\nearrow}=\\{00,10,11\\}$ and $P_{\\searrow}=\\{00,01,11\\}$. With no private coordinates, their coordinate fiber product is their intersection $\\{00,11\\}$.",
+  "properties": "Both inputs are rank-one maximum and ample. The two-word output shatters each singleton coordinate but contains no one-dimensional cube, so it is not ample. This shows that the one-coordinate product theorem cannot be extended to arbitrary shared blocks.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#rem:coordinate-product-scope",
+  "verification": "scripts/verify_maximum_parent_products.py; data/examples/assets/maximum_parent_products_database_verification.json"
+}

@@ -431,9 +431,9 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>Let $D=\{0,1\}^3\setminus\{111\}$ and $s=110$. On two disjoint three-coordinate blocks take $C_{\mathrm{ab}}=(D\times\{s\})\cup(\{s\}\times D)$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It has thirteen concepts, is geometrically realizable and ample, belongs to the maximum-generated class, and is dismantlable ample. Its Horn-renaming defect is exactly one, so no coordinate reflection is a conditional antimatroid.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a>-calibration-inside-realizable-ample-classes</p></div>
-<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/horn_renaming_verification.json</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It has thirteen concepts and exactly eleven minimally missing patterns: the two all-one block triples and nine mixed pairs. The two large patterns have disjoint supports, so the class is geometrically realizable, ample, maximum-generated, and dismantlable ample. No coordinate reflection is intersection-closed. Its Horn-renaming defect is exactly one, so no coordinate reflection is a conditional antimatroid.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a>-calibration-inside-realizable-ample-classes; CompressionSchemes:maximum_parent_methods.tex?#ex:agreeing-nonintersection</p></div>
+<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/horn_renaming_verification.json; scripts/verify_maximum_parent_products.py; data/examples/assets/maximum_parent_products_database_verification.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/agreeing_blocks_horn_renaming_defect.html'>Horn-Renaming Defect of the Agreeing-Blocks Class</a></li></ul></p></div>
 
         </div>
@@ -932,6 +932,51 @@
 <strong>Properties:</strong><div class="text-field"><p>Its optimized maximum is $1/\sqrt2$, attained at $a=b=1$ and $c=\sqrt2$. In the entropy dual, a favorable split $(p,1-p)$ on the first comparison forces row masses $(1/2,p/2,(1-p)/2)$ and gives value $-H(p,1-p)/2$, minimized at $p=1/2$ to $-\log2/2$. Either deterministic favorable choice instead gives value zero.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#ex:entropy-branching</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_entropy_gluing.py; data/examples/assets/entropy_gluing_database_verification.json; data/examples/assets/entropy_balance_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-39" style="position:relative;">
+
+        <h3><a href="examples/opposite_triple_nonperipheral_class.html" class="table-title-link">Opposite-Triple Nonperipheral Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite-Triple Nonperipheral Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="E_{30}">
+            \[E_{30}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On each of two disjoint three-coordinate blocks let $A_0=B_0=\{000\}$, $A_1=B_1=\{000,100,101,111\}$, and $A_2=B_2=\{0,1\}^3\setminus\{001\}$. Add path coordinates $(a,b)$ and take fibers $A_0\times B_2$ at $00$, $A_1\times B_1$ at $10$, and $A_2\times B_0$ at $11$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The class has 30 words on eight coordinates, is ample of VC dimension two, and has an explicit rank-two maximum parent with 46 words on nine coordinates. It is dismantlable because every two-dimensional ample class is dismantlable. No coordinate has nested shores, so it is not recursively peripheral.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:path-nonperipheral</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_products.py; data/examples/assets/maximum_parent_products_database_verification.json; data/examples/assets/maximum_parent_reconciliation_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-40" style="position:relative;">
+
+        <h3><a href="examples/matched_maximum_paths_nonample.html" class="table-title-link">Matched Maximum Paths with Nonample Product</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Matched Maximum Paths with Nonample Product</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="P_{\nearrow}\times_{Q_2}P_{\searrow}">
+            \[P_{\nearrow}\times_{Q_2}P_{\searrow}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On the same two shared coordinates take the maximum paths $P_{\nearrow}=\{00,10,11\}$ and $P_{\searrow}=\{00,01,11\}$. With no private coordinates, their coordinate fiber product is their intersection $\{00,11\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both inputs are rank-one maximum and ample. The two-word output shatters each singleton coordinate but contains no one-dimensional cube, so it is not ample. This shows that the one-coordinate product theorem cannot be extended to arbitrary shared blocks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#rem:coordinate-product-scope</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_products.py; data/examples/assets/maximum_parent_products_database_verification.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>

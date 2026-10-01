@@ -2029,6 +2029,55 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-119" style="position:relative;">
+
+        <h3><a href="operation_results/ample_one_coordinate_fiber_product_closed.html" class="table-title-link">Ample Classes Are Closed Under One-Coordinate Fiber Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are Closed Under One-Coordinate Fiber Products</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If two ample binary classes have exactly one shared coordinate and otherwise disjoint coordinate sets, then their coordinate fiber product is ample, including the empty output convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A shattered private support sees a union of two rectangles, one at each shared-coordinate height. An elementary rectangle classification shows that either one same-height product realizes the support or one factor realizes it at both heights while the other realizes it across the shared coordinate. Positioned cubes in the ample factor sections then combine. A support containing the shared coordinate is handled by combining the corresponding positioned cubes in both factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:coordinate-product</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-120" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_one_coordinate_fiber_product_closed.html" class="table-title-link">Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If two maximum-generated classes have exactly one shared coordinate and otherwise disjoint coordinate sets, then every nonempty coordinate fiber product is maximum-generated.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Prepare independent maximum parents so their marked reductions, one-height layers, and outside words occupy prescribed consecutive maximum-sequence levels. On the product of their private extensions, add the shared coordinate and one control coordinate. Explicit four-, three-, one-, and zero-point control fibers depend on the two entry levels and required heights. Vandermonde and Pascal identities give the Sauer cardinality at the sum rank, and missing traces rule out every support one larger. Fixing the two original marks and the new control recovers the fiber product.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:coordinate-product</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-121" style="position:relative;">
+
+        <h3><a href="operation_results/ample_arbitrary_coordinate_fiber_product_not_closed.html" class="table-title-link">Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Allowing two or more shared coordinates destroys general closure: two maximum classes can have a nonample coordinate fiber product.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/matched_maximum_paths_nonample.html">Matched Maximum Paths with Nonample Product</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>On the same two shared coordinates, the maximum paths $\{00,10,11\}$ and $\{00,01,11\}$ have coordinate fiber product equal to their intersection $\{00,11\}$. That class shatters both singleton coordinates but contains no edge, so it is not ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#rem:coordinate-product-scope</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

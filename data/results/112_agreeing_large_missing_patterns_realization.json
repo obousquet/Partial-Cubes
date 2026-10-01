@@ -1,0 +1,18 @@
+{
+  "id": 112,
+  "short_name": "agreeing_large_missing_patterns_realization",
+  "name": "Convex Realization for Agreeing Large Missing Patterns",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/maximum_generated_classes"
+  ],
+  "result_type": "construction",
+  "statement": "If every two minimally missing patterns of support size at least three agree wherever their supports intersect, then a nonempty ample $C\\subseteq\\{0,1\\}^n$ is the strict coordinate-sign class of the interior of a bounded full-dimensional convex polytope. This holds for any prescribed positive missing-pattern coefficients. For $n\\geq1$, $C$ has a rank-$n$ maximum parent using at most $|\\mathcal M(C)|+2n$ auxiliaries, with the same constant-coordinate conventions.",
+  "status": "established",
+  "proof": "Reflect one concept to zero and satisfy the binary implication inequalities by topological recursion. Induct on the selected large patterns. Choose a reachability-maximal coordinate carrying a negative coefficient and increase a weighted upper-set direction. Agreement and the missing-pattern elimination identity show that this direction meets exactly those remaining large supports containing that coordinate, where it strictly decreases their forms, and leaves all others unchanged. This constructs common signed separator forms for every concept. A bounding box yields the polytope and the signed-separator construction yields the maximum parent.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:agreeing-large-patterns",
+  "witness_ids": [
+    "#examples/agreeing_blocks_ample_class"
+  ],
+  "comments": "The hypothesis need not make any coordinate reflection intersection-closed; the agreeing-blocks example separates these notions."
+}
