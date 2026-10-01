@@ -1,0 +1,22 @@
+{
+  "id": 101,
+  "short_name": "relative_nerve_gluing",
+  "name": "Coefficient-Space Gluing from Relative Face Domains",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "algorithm",
+  "statement": "For privately downward pieces with common zero section, suppose protected two-row reduction applies to every piece. Form candidate vertices by choosing one determinant selection per piece. A set of candidates is a face exactly when the corresponding projected face domains from all pieces have a common shared parameter. The coefficient space of the union is homotopy equivalent to the realization of this finite gluing complex, and every face test is exact homogeneous rational linear feasibility in the shared logarithms alone.",
+  "status": "established",
+  "proof": "The parameter-preserving reductions give sections and homotopies on the strict fiber product, reducing it to tuples of selected linear systems with one shared parameter. These tuples form an open convex cover indexed by candidate selections. An intersection is nonempty precisely when all projected piece domains meet at a common parameter; the remaining private variables are then independent. The good-cover theorem yields the gluing nerve, and exact coefficient-space gluing adds only contractible open-simplex factors. Rational dual forms reduce the common-domain test to exact strict linear feasibility.",
+  "references": "\\cite{BKRR2025,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_nerve.tex#thm:relative-nerve-gluing",
+  "witness_ids": [
+    "#examples/four_cycle_relative_gluing_model"
+  ],
+  "comments": "All face domains are required. Singleton domains or their union do not determine common fibers. For the four-cycle model the nerve has $f$-vector $(14,48,48,12)$ and $\\mathbb F_2$ Betti vector $(1,0,1,0)$."
+}

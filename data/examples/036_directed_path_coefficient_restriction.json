@@ -1,0 +1,12 @@
+{
+  "id": 36,
+  "short_name": "directed_path_coefficient_restriction",
+  "name": "Three-Vertex Directed-Path Coefficient Restriction",
+  "symbol": "\\mathcal A(B)\\to\\mathcal A(D)",
+  "object_type": "construction",
+  "definition": "In the oriented bipartite-graph construction, take the directed path $P:v_0\\to v_1\\to v_2$. Let $B=C(P)$ and let $D=C(\\{v_0,v_2\\})$ be the zero section obtained by removing the private middle vertex. Restrict the coefficient rows of $B$ to the three rows of $D$.",
+  "properties": "$B$ has 31 concepts and $D$ has 22. Both coefficient spaces are contractible and the restriction is an open surjection, but its fibers vary across two monomial walls: the fiber has two contractible components when both endpoint log differences are nonpositive and is contractible otherwise.",
+  "references": "\\cite{GluingEvidence,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_gluing.tex#prop:path-fiber-types",
+  "verification": "scripts/verify_relative_gluing.py; data/examples/assets/relative_gluing_database_verification.json; data/examples/assets/relative_gluing_source.json; data/examples/assets/relative_nerve_source.json"
+}

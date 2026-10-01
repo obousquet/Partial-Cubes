@@ -1,0 +1,12 @@
+{
+  "id": 37,
+  "short_name": "four_cycle_relative_gluing_model",
+  "name": "Four-Cycle Relative Gluing Model",
+  "symbol": "C_4=B\\cup_D E_4",
+  "object_type": "construction",
+  "definition": "Split the consistently directed four-cycle into its two length-two directed paths. Their oriented bipartite-graph classes are 31-concept pieces with the same 22-concept endpoint section $D$; embed them with disjoint private middle coordinates and glue along $D$.",
+  "properties": "The union has 40 concepts. Protected two-row reductions give four selections per piece, 16 candidate selection pairs, 14 actual nerve vertices, and gluing-nerve $f$-vector $(14,48,48,12)$ with $\\mathbb F_2$ Betti vector $(1,0,1,0)$, hence the expected $S^2$ homology. The exact coefficient-space theorem identifies the union with the strict pullback times one open interval.",
+  "references": "\\cite{GluingEvidence,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_nerve.tex#thm:relative-nerve-gluing",
+  "verification": "scripts/verify_relative_gluing.py; data/examples/assets/relative_gluing_database_verification.json; data/examples/assets/relative_gluing_source.json; data/examples/assets/relative_nerve_source.json"
+}

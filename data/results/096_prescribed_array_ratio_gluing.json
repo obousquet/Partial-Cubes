@@ -1,0 +1,22 @@
+{
+  "id": 96,
+  "short_name": "prescribed_array_ratio_gluing",
+  "name": "Prescribed-Array Ratio Gluing",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Under the privately downward common-section hypotheses, fix arbitrary positive normalized piece arrays $a^j$ that agree on the section rows, and arbitrary positive cross-block rows. The resulting union array satisfies $T_X(a)=\\max_jT_{C_j}(a^j)$. If $F_j(b)$ is the infimum of $T_{C_j}$ among arrays restricting to the positive section array $b$, then $\\tau(X)=\\inf_b\\max_jF_j(b)$. No attainment or realizability hypothesis is required.",
+  "status": "established",
+  "proof": "Conditioning the union to a piece gives the lower bound. For every threshold above all piece values, rescale piece witnesses by a sufficiently small common factor and put $-1$ outside the occupied private block. Piece and section ratios are unchanged, whereas every unoccupied-piece or cross-block row gains a fixed favorable private contribution and only a vanishing unfavorable shared contribution. Let the threshold decrease to the maximum. At fixed section data the remaining rows are independent, so taking their infima and then optimizing over the shared array gives the second formula.",
+  "references": "\\cite{GluingEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_gluing.tex#thm:ratio-gluing",
+  "witness_ids": [
+    "#examples/four_cycle_relative_gluing_model"
+  ],
+  "comments": "The functions $F_j$ retain compatibility information that the scalar values $\\tau(C_j)$ discard."
+}

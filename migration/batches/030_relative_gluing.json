@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "batch_id": "030_relative_gluing",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize exact separator coefficient-space gluing, prescribed-array ratio gluing, sphere-valued strict pullbacks, the complete three-vertex path fiber classification, exact protected-row parameter domains, the uniform relative nerve, and finite relative-nerve composition for gluing.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/relative_gluing.tex#thm:exact-space-gluing",
+    "PartialCubes:papers/coefficient-topology/relative_gluing.tex#thm:ratio-gluing",
+    "PartialCubes:papers/coefficient-topology/relative_gluing.tex#thm:sphere-pullbacks",
+    "PartialCubes:papers/coefficient-topology/relative_gluing.tex#prop:path-fiber-types",
+    "PartialCubes:papers/coefficient-topology/relative_nerve.tex#lem:relative-domains",
+    "PartialCubes:papers/coefficient-topology/relative_nerve.tex#thm:uniform-relative-nerve",
+    "PartialCubes:papers/coefficient-topology/relative_nerve.tex#thm:relative-nerve-gluing"
+  ],
+  "source_packets": [
+    {
+      "id": "relative-gluing-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/relative_gluing.tex",
+      "sha256": "5d33a08c4bc08197b1f1efb2627b6de3d4eac118d00da1a95b984cfa838a27a4"
+    },
+    {
+      "id": "relative-nerve-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/relative_nerve.tex",
+      "sha256": "498956d2c3ad8b358fa000ede3846f59ec2ee6ac2388d6bbfeedb2c28f1fe7c0"
+    },
+    {
+      "id": "relative-gluing-proof-note",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/RELATIVE_GLUING_TOPOLOGY.md",
+      "sha256": "866a77b44cde78105f4b8b11933246d5b89d02417c4275697a3728860ba4c0a0"
+    },
+    {
+      "id": "relative-nerve-proof-note",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/RELATIVE_NERVE_THEORY.md",
+      "sha256": "5c0183805eea170d471b7aab8f0b2ce5c927d8f139efd1749aa84b25fb75d0da"
+    },
+    {
+      "id": "relative-integration-review",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/RELATIVE_INTEGRATION_REVIEW.md",
+      "sha256": "b830a54934abc790c65e92cba31199c3e786427b45cda6000b61e3841dc42d1c"
+    },
+    {
+      "id": "relative-gluing-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/relative_gluing_verification.json",
+      "sha256": "3cfa616232553c034f4bcbbf676f4079554d1049c02952b92a45999d0789bcf7"
+    },
+    {
+      "id": "relative-nerve-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/relative_nerve_verification.json",
+      "sha256": "379f430bef7a6abf0d9a370c45cef8267caf8b9f026ae98543b4ef2efa8bf5fc"
+    },
+    {
+      "id": "relative-integration-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/relative_integration_review.json",
+      "sha256": "848ede4769e5dd8943a3c08c93c9bc31409d259a3941a241c02e8f607a08227e"
+    },
+    {
+      "id": "relative-gluing-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/verify_relative_gluing.py",
+      "sha256": "370f80d8f3a5e499268809be459dd9d5b360ffd6ef7b45c66e55b8480ef4e31e"
+    },
+    {
+      "id": "relative-nerve-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/verify_relative_nerve.py",
+      "sha256": "c7fad317bb8648ad9d338a79fcb0c4df1fff785fa4e80c14c2096454bf4a1d17"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized theorem statements, concise proofs, named constructions, bibliography, exact source reports, and independent replay. The LaTeX repository retains the long row-classification proof, full parameter-elimination derivation, path tables, historical research notes, source comparison, exposition, and manuscript layout.",
+    "recoverability": "The three exact source reports are copied byte-for-byte; theory, proof-note, integration-review, source-verifier, promoted-record, and database-verifier hashes are retained here; the frozen source snapshot remains recoverable.",
+    "sibling_reconciliation": "CompressionSchemes and YangDim use algebraic or maximum-parent fiber products with different objects and conclusions. No stronger or conflicting separator coefficient-space theorem was found, so those facts remain in their existing owners for separate migration batches.",
+    "mutation": "No source file in PartialCubes, CompressionSchemes, YangDim, or ResearchTools was modified by this batch."
+  },
+  "verification_packets": [
+    {
+      "id": "relative-gluing-source-report",
+      "path": "data/examples/assets/relative_gluing_source.json",
+      "sha256": "3cfa616232553c034f4bcbbf676f4079554d1049c02952b92a45999d0789bcf7",
+      "assertions": "Retains two cycle gluings, full-cube and zero-coordinate boundary cases, three prescribed path fibers, seven exact rational margin certificates, dependency hashes, and scope limitations byte-for-byte."
+    },
+    {
+      "id": "relative-nerve-source-report",
+      "path": "data/examples/assets/relative_nerve_source.json",
+      "sha256": "379f430bef7a6abf0d9a370c45cef8267caf8b9f026ae98543b4ef2efa8bf5fc",
+      "assertions": "Retains both protected path models, 30 exact face-domain certificates, four oriented wall forms, all nine sign cells, and the complete four-cycle gluing nerve byte-for-byte."
+    },
+    {
+      "id": "relative-integration-source-report",
+      "path": "data/examples/assets/relative_integration_source.json",
+      "sha256": "848ede4769e5dd8943a3c08c93c9bc31409d259a3941a241c02e8f607a08227e",
+      "assertions": "Retains the integration and source-preservation audit, including all 61 prior labels and proof-environment counts, byte-for-byte."
+    },
+    {
+      "id": "database-relative-gluing-verifier",
+      "path": "scripts/verify_relative_gluing.py",
+      "sha256": "581c1b5af8a1e1b6b5cb9f8efdb2e5e3224745012b66177eb24475a6689e1a36",
+      "assertions": "Independently checks every separator inequality in all seven certificates, recomputes normalized kernel vertices and all 30 parameter domains, replays nine wall cells, and reconstructs all 122 gluing-nerve faces and boundary ranks."
+    },
+    {
+      "id": "relative-gluing-database-replay",
+      "path": "data/examples/assets/relative_gluing_database_verification.json",
+      "sha256": "da8b2062bcf2a2e939227794d29f144bb5276a3e2663c41451755d3ad3dc6af6",
+      "assertions": "Passed 196 concept certificates, 83 missing rows, 3,510 separator comparisons, 30 domain eliminations, nine sign cells, and the 14-vertex, 122-face four-cycle nerve with Betti vector (1,0,1,0)."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/036_directed_path_coefficient_restriction.json",
+      "sha256": "4024cbde437f49b3f04a0807cc8532f41a173aa71cb3e6cfcc3fd6283c6d244d"
+    },
+    {
+      "path": "data/examples/037_four_cycle_relative_gluing_model.json",
+      "sha256": "8c7cc5c9743b4c8d60bd21ba96d90d7e1f32fc944908e054554a8b29401fbec2"
+    },
+    {
+      "path": "data/examples/assets/relative_gluing_database_verification.json",
+      "sha256": "da8b2062bcf2a2e939227794d29f144bb5276a3e2663c41451755d3ad3dc6af6"
+    },
+    {
+      "path": "data/examples/assets/relative_gluing_source.json",
+      "sha256": "3cfa616232553c034f4bcbbf676f4079554d1049c02952b92a45999d0789bcf7"
+    },
+    {
+      "path": "data/examples/assets/relative_integration_source.json",
+      "sha256": "848ede4769e5dd8943a3c08c93c9bc31409d259a3941a241c02e8f607a08227e"
+    },
+    {
+      "path": "data/examples/assets/relative_nerve_source.json",
+      "sha256": "379f430bef7a6abf0d9a370c45cef8267caf8b9f026ae98543b4ef2efa8bf5fc"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "bfe5b0e23f8c5d11f32375258b65910faf21050df3c12df7d028282654f5c26a"
+    },
+    {
+      "path": "data/results/095_exact_coefficient_space_gluing.json",
+      "sha256": "10c4acbd6d7c8ba9e617e0ec2e6315a0889155954ef6f4cb71ee7008a7643e1f"
+    },
+    {
+      "path": "data/results/096_prescribed_array_ratio_gluing.json",
+      "sha256": "a6485fe18a34ca250e81fb2cf8ce45ecc70f5140f2e54595bc2f6ae745bcfb69"
+    },
+    {
+      "path": "data/results/097_sphere_pullbacks_fixed_convex_section.json",
+      "sha256": "0a5df1141847de85fd7740aa85c0c2db41cead628acacc6d1a652d9b4cf46c44"
+    },
+    {
+      "path": "data/results/098_three_vertex_path_fiber_types.json",
+      "sha256": "94046fbad0eee3ba6683fb322ace7e04a7bb6b4788b0bbda7944268580845d4d"
+    },
+    {
+      "path": "data/results/099_exact_relative_parameter_domains.json",
+      "sha256": "1c51adb76d6b5623b5495d2127afe3bc5cea3ce5e1f48536067371cc9fff2f15"
+    },
+    {
+      "path": "data/results/100_uniform_relative_nerve.json",
+      "sha256": "5ecd7e5bc017907d83a4f5551805585030b19c8b91ef28720eec2ec82429d0af"
+    },
+    {
+      "path": "data/results/101_relative_nerve_gluing.json",
+      "sha256": "daba75eb74518f467e67c9adfaa49ad9d759d90fe867b1e7b5c6d6e4a6480f50"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "742a615df712b65dc89524ae623375b7582a06ea593f60e920ab36cfef9690ee"
+    },
+    {
+      "path": "scripts/verify_relative_gluing.py",
+      "sha256": "581c1b5af8a1e1b6b5cb9f8efdb2e5e3224745012b66177eb24475a6689e1a36"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 635 records.",
+    "exact_replay": "All retained source hashes, seven rational coefficient certificates, 30 exact relative domains, nine parameter cells, and 122 gluing-nerve faces passed independently.",
+    "website": "Normalized 651 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 75 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Entropy-balance duality, composition, forest maximum laws, and incompatible zero-valued gluings.",
+    "Maximum-parent theorems for agreeing large patterns and path/tree coordinate fiber products from CompressionSchemes."
+  ]
+}

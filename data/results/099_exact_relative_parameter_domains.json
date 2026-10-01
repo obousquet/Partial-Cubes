@@ -1,0 +1,20 @@
+{
+  "id": 99,
+  "short_name": "exact_relative_parameter_domains",
+  "name": "Exact Relative Parameter Domains",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [],
+  "result_type": "algorithm",
+  "statement": "Protect a prescribed row set $J$ in exact coefficient reduction and assume every terminal local system has at most two rows. For a nonempty set $F$ of determinant selections, write its pooled strict logarithmic system as $A_Fy+B_Fx>0$. If $V_F$ is the vertex set of $\\{\\lambda\\ge0:A_F^T\\lambda=0,\\ \\mathbf1^T\\lambda=1\\}$, then the exact parameter domain is $P_F=\\{x:(\\lambda^TB_F)x>0\\text{ for every }\\lambda\\in V_F\\}$. It is an open rational polyhedral cone, possibly empty or full, and its face tests become exact monomial inequalities in the positive coefficients.",
+  "status": "established",
+  "proof": "Feasibility implies every nonnegative vector annihilating $A_F$ evaluates positively on $B_Fx$. If the system is infeasible, strict separation of the affine space $B_Fx+\\operatorname{im}A_F$ from the positive orthant supplies a nonzero such vector with nonpositive evaluation. Normalize it to coefficient sum one. Every point of the normalized rational polytope is a convex combination of finitely many rational vertices, obtained by repeatedly shrinking dependent positive supports, so testing the vertices is necessary and sufficient.",
+  "references": "\\cite{BV2004,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_nerve.tex#lem:relative-domains",
+  "witness_ids": [
+    "#examples/directed_path_coefficient_restriction"
+  ],
+  "comments": "An empty vertex list means the full domain; an identically zero form means the empty domain. Anchor changes act by invertible integer linear transformations of log-ratio coordinates."
+}

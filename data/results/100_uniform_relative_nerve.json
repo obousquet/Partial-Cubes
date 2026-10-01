@@ -1,0 +1,20 @@
+{
+  "id": 100,
+  "short_name": "uniform_relative_nerve",
+  "name": "Uniform Relative Nerve for Prescribed Coefficients",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [],
+  "result_type": "recognition",
+  "statement": "Under protected exact reduction with at most two terminal rows per local system, the fiber of prescribed-row restriction at log parameter $x$ is homotopy equivalent to the finite complex $\\mathcal N_x$ whose nonempty faces $F$ satisfy $x\\in P_F$. The restriction image is the union of the singleton domains. A finite rational central hyperplane arrangement has constant labeled complex, and hence constant fiber homotopy type, on every relatively open sign cell, including lower-dimensional cells.",
+  "status": "established",
+  "proof": "The parameter-preserving reduction identifies each fiber with a union of finitely many open convex sets indexed by determinant selections. Their nonempty intersections are exactly the domains $P_F$, so the open good-cover nerve theorem gives the fiber equivalence. The finitely many rational dual forms defining all $P_F$ have constant strict-sign truth values on each sign cell, making the entire labeled nerve constant there.",
+  "references": "\\cite{BKRR2025,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_nerve.tex#thm:uniform-relative-nerve",
+  "witness_ids": [
+    "#examples/directed_path_coefficient_restriction"
+  ],
+  "comments": "The theorem asserts fiber homotopy types, not local triviality or homeomorphism of fibers. The face domains retain more information than a list of Betti numbers."
+}

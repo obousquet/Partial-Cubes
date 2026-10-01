@@ -1,0 +1,22 @@
+{
+  "id": 98,
+  "short_name": "three_vertex_path_fiber_types",
+  "name": "Fibers of the Three-Vertex Directed Path",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "For the restriction $f:\\mathcal A(B)\\to\\mathcal A(D)$ from the three-vertex directed-path class to its endpoint section, write $\\delta=z_2-z_0\\in\\mathbb R^2$ for the difference of the endpoint log positions. The fiber $f^{-1}(a)$ has two contractible components when $\\delta_1\\le0$ and $\\delta_2\\le0$, and is contractible otherwise. The two walls are $a_{v_2,i}a_{v_0,3}=a_{v_0,i}a_{v_2,3}$ for $i=1,2$.",
+  "status": "established",
+  "proof": "Protected-row reduction identifies the fiber with $\\mathbb R\\times W$, where an intermediate point $w$ must make one of two control increments positive on each directed edge. The four choices cover $W$ by open convex sets. If both endpoint differences are nonpositive, only the two opposite choices survive and are disjoint. With one positive difference their nerve is a path, and with both positive all four sets meet. The open good-cover theorem gives the stated component and contractibility alternatives.",
+  "references": "\\cite{BKRR2025,GluingEvidence,RelativeEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_gluing.tex#prop:path-fiber-types",
+  "witness_ids": [
+    "#examples/directed_path_coefficient_restriction"
+  ],
+  "comments": "These are fibers between contractible total and base spaces; the disconnected fibers do not imply that the full coefficient space is disconnected."
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,23 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-8" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-98" style="position:relative;">
 
-        <h3><a href="operations/common_section_gluing.html" class="table-title-link">Common-Section Gluing</a></h3>
+        <h3><a href="results/three_vertex_path_fiber_types.html" class="table-title-link">Fibers of the Three-Vertex Directed Path</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Common-Section Gluing</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\bigcup_D">
-            \[\bigcup_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $D\subseteq\{0,1\}^E$ be nonempty and let $F_1,F_2$ be disjoint private coordinate sets. Pieces $A_i\subseteq\{0,1\}^{E\sqcup F_i}$ satisfy $D\times\{0_{F_i}\}\subseteq A_i$ and $\pi_E(A_i)=D$. Embed each piece on $E\sqcup F_1\sqcup F_2$ by setting the other private block to zero, and take their union.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Comments:</strong><div class="text-field"><p>The paper uses the simultaneous finite-arity version with pairwise disjoint private blocks. Distinct pieces meet exactly in the common coordinate section $D$; the projection requirement is essential for the invariant laws.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#eq:piece</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_common_section_gluing_closed.html'>Realizable Ample Classes Are Not Closed Under Gated Common-Section Gluing</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/betti_numbers_under_common_section_gluing.html'>Betti Numbers under Common-Section Gluing</a></li><li><a href='results/interval_gap_first_syzygy_laws.html'>Interval Gaps and First Syzygies</a></li><li><a href='results/quantitative_common_section_gluing.html'>Quantitative Common-Section Gluing Bound</a></li><li><a href='results/horn_renaming_defect_vertex_gluing.html'>Exact Horn-Renaming Defect Under Rooted Vertex Gluing</a></li><li><a href='results/separation_margin_cube_union_bound.html'>Separation Margin Under Union Along a Cube</a></li><li><a href='results/section_row_compatibility.html'>Section-Row Compatibility Criterion</a></li><li><a href='results/section_cycle_ratio_criterion.html'>Cycle-Ratio Criterion for Section Rows</a></li><li><a href='results/forest_section_gluing_bound.html'>Forest-Section Gluing Bound</a></li><li><a href='results/robust_section_gluing_bound.html'>Robust Cycle-Agreement Gluing Bound</a></li><li><a href='results/extendable_cycle_ratio_spaces_open.html'>Extendable Cycle-Ratio Spaces Are Open</a></li><li><a href='results/exact_coefficient_space_gluing.html'>Exact Coefficient-Space Gluing</a></li><li><a href='results/prescribed_array_ratio_gluing.html'>Prescribed-Array Ratio Gluing</a></li><li><a href='results/sphere_pullbacks_fixed_convex_section.html'>Sphere Pullbacks over a Fixed Convex Section</a></li><li><a href='results/relative_nerve_gluing.html'>Coefficient-Space Gluing from Relative Face Domains</a></li></ul></p></div>
+        <p><strong>Name: </strong>Fibers of the Three-Vertex Directed Path</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For the restriction $f:\mathcal A(B)\to\mathcal A(D)$ from the three-vertex directed-path class to its endpoint section, write $\delta=z_2-z_0\in\mathbb R^2$ for the difference of the endpoint log positions. The fiber $f^{-1}(a)$ has two contractible components when $\delta_1\le0$ and $\delta_2\le0$, and is contractible otherwise. The two walls are $a_{v_2,i}a_{v_0,3}=a_{v_0,i}a_{v_2,3}$ for $i=1,2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Protected-row reduction identifies the fiber with $\mathbb R\times W$, where an intermediate point $w$ must make one of two control increments positive on each directed edge. The four choices cover $W$ by open convex sets. If both endpoint differences are nonpositive, only the two opposite choices survive and are disjoint. With one positive difference their nerve is a path, and with both positive all four sets meet. The open good-cover theorem gives the stated component and contractibility alternatives.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BKRR2025">[BKRR2025]</a> <a href="bibliography.html#GluingEvidence">[GluingEvidence]</a> <a href="bibliography.html#RelativeEvidence">[RelativeEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_gluing.tex?#prop:path-fiber-types</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/directed_path_coefficient_restriction.html">Three-Vertex Directed-Path Coefficient Restriction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>These are fibers between contractible total and base spaces; the disconnected fibers do not imply that the full coefficient space is disconnected.</p></div>
 
         </div>
     </div>

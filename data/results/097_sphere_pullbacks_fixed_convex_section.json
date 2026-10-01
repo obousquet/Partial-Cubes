@@ -1,0 +1,26 @@
+{
+  "id": 97,
+  "short_name": "sphere_pullbacks_fixed_convex_section",
+  "name": "Sphere Pullbacks over a Fixed Convex Section",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "construction",
+  "statement": "There are fixed contractible coefficient spaces $\\mathcal A(B)$ and $\\mathcal A(D)$ and, for every even $m\\ge4$, a contractible $\\mathcal A(E_m)$ with open surjections $f:\\mathcal A(B)\\to\\mathcal A(D)$ and $g_m:\\mathcal A(E_m)\\to\\mathcal A(D)$ whose strict fiber product is homotopy equivalent to $S^{m-2}$. The section $D$ has 22 concepts and $\\mathcal A(D)=\\Delta_3^\\circ\\times\\Delta_3^\\circ\\times\\Delta_1^\\circ$; $B$ has 31 concepts and is independent of $m$.",
+  "status": "established",
+  "proof": "Split the directed even-cycle construction into a fixed length-two path and its complementary path, meeting in the two endpoints. Acyclicity makes both path coefficient spaces contractible, while exact coefficient-space gluing identifies the cycle space with their strict pullback times $(0,1)^{m-3}$. The cycle-space computation has sphere type $S^{m-2}$. Prescribed endpoint rows extend along either path by choosing intermediate log positions with a positive increment on one control, proving both restriction maps surjective; they are open coordinate projections of relatively open sets.",
+  "references": "\\cite{GC2024,GluingEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/relative_gluing.tex#thm:sphere-pullbacks",
+  "witness_ids": [
+    "#examples/even_cycle_sphere_family",
+    "#examples/directed_path_coefficient_restriction",
+    "#examples/four_cycle_relative_gluing_model"
+  ],
+  "comments": "The ordinary homotopy pullback is contractible because the base is convex, so its comparison with the strict pullback is not a homotopy equivalence. Objectwise homotopy types and extension images therefore do not determine coefficient-space gluing."
+}

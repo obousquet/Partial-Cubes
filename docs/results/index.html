@@ -1672,6 +1672,146 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-95" style="position:relative;">
+
+        <h3><a href="results/exact_coefficient_space_gluing.html" class="table-title-link">Exact Coefficient-Space Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Coefficient-Space Gluing</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty pieces $C_j\subseteq\{0,1\}^{S\sqcup I_j}$ be downward closed in their pairwise disjoint private blocks and have the same zero section $D\subseteq\{0,1\}^S$. If $X$ is their common-section union and $q=\sum_{j<\ell}|V_j||V_\ell|$ counts pairs of active private coordinates in distinct blocks, then $\mathcal A(X)\cong\{(a^j):a^j\in\mathcal A(C_j),\ r_1(a^1)=\cdots=r_k(a^k)\}\times(\Delta_1^\circ)^q$. The homeomorphism commutes with restriction, so every fixed-section fiber is the product of the piece fibers and the same open-simplex factors. Empty spaces and fibers are included; rational inputs yield an explicit rational positive-margin certificate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Private downward closure partitions the minimal missing patterns into the common section rows, the nonsection rows belonging to one piece, and positive pairs crossing two active private blocks. Necessity follows by restriction. For sufficiency, scale all supplied piece witnesses by a common $\varepsilon$ and put $-1$ on coordinates outside the occupied block. Choosing $\varepsilon$ below half the smallest private row mass and cross-row coefficient clears every unoccupied-piece and cross-block row while preserving all piece and section inequalities. The row partition is a coordinate identification of the ambient simplex products and therefore gives the stated homeomorphism and its fixed-fiber version.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Margin">[Margin]</a> <a href="bibliography.html#GluingEvidence">[GluingEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_gluing.tex?#thm:exact-space-gluing</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle_relative_gluing_model.html">Four-Cycle Relative Gluing Model</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is the privately downward finite-arity form of common-section gluing. It records literal agreement of section rows; homotopy types of the pieces alone do not determine the pullback.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-96" style="position:relative;">
+
+        <h3><a href="results/prescribed_array_ratio_gluing.html" class="table-title-link">Prescribed-Array Ratio Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prescribed-Array Ratio Gluing</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the privately downward common-section hypotheses, fix arbitrary positive normalized piece arrays $a^j$ that agree on the section rows, and arbitrary positive cross-block rows. The resulting union array satisfies $T_X(a)=\max_jT_{C_j}(a^j)$. If $F_j(b)$ is the infimum of $T_{C_j}$ among arrays restricting to the positive section array $b$, then $\tau(X)=\inf_b\max_jF_j(b)$. No attainment or realizability hypothesis is required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning the union to a piece gives the lower bound. For every threshold above all piece values, rescale piece witnesses by a sufficiently small common factor and put $-1$ outside the occupied private block. Piece and section ratios are unchanged, whereas every unoccupied-piece or cross-block row gains a fixed favorable private contribution and only a vanishing unfavorable shared contribution. Let the threshold decrease to the maximum. At fixed section data the remaining rows are independent, so taking their infima and then optimizing over the shared array gives the second formula.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#GluingEvidence">[GluingEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_gluing.tex?#thm:ratio-gluing</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle_relative_gluing_model.html">Four-Cycle Relative Gluing Model</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The functions $F_j$ retain compatibility information that the scalar values $\tau(C_j)$ discard.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-97" style="position:relative;">
+
+        <h3><a href="results/sphere_pullbacks_fixed_convex_section.html" class="table-title-link">Sphere Pullbacks over a Fixed Convex Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sphere Pullbacks over a Fixed Convex Section</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There are fixed contractible coefficient spaces $\mathcal A(B)$ and $\mathcal A(D)$ and, for every even $m\ge4$, a contractible $\mathcal A(E_m)$ with open surjections $f:\mathcal A(B)\to\mathcal A(D)$ and $g_m:\mathcal A(E_m)\to\mathcal A(D)$ whose strict fiber product is homotopy equivalent to $S^{m-2}$. The section $D$ has 22 concepts and $\mathcal A(D)=\Delta_3^\circ\times\Delta_3^\circ\times\Delta_1^\circ$; $B$ has 31 concepts and is independent of $m$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Split the directed even-cycle construction into a fixed length-two path and its complementary path, meeting in the two endpoints. Acyclicity makes both path coefficient spaces contractible, while exact coefficient-space gluing identifies the cycle space with their strict pullback times $(0,1)^{m-3}$. The cycle-space computation has sphere type $S^{m-2}$. Prescribed endpoint rows extend along either path by choosing intermediate log positions with a positive increment on one control, proving both restriction maps surjective; they are open coordinate projections of relatively open sets.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#GC2024">[GC2024]</a> <a href="bibliography.html#GluingEvidence">[GluingEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_gluing.tex?#thm:sphere-pullbacks</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/even_cycle_sphere_family.html">Even-Cycle Coefficient-Sphere Family</a></li><li><a href="examples/directed_path_coefficient_restriction.html">Three-Vertex Directed-Path Coefficient Restriction</a></li><li><a href="examples/four_cycle_relative_gluing_model.html">Four-Cycle Relative Gluing Model</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The ordinary homotopy pullback is contractible because the base is convex, so its comparison with the strict pullback is not a homotopy equivalence. Objectwise homotopy types and extension images therefore do not determine coefficient-space gluing.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-98" style="position:relative;">
+
+        <h3><a href="results/three_vertex_path_fiber_types.html" class="table-title-link">Fibers of the Three-Vertex Directed Path</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fibers of the Three-Vertex Directed Path</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For the restriction $f:\mathcal A(B)\to\mathcal A(D)$ from the three-vertex directed-path class to its endpoint section, write $\delta=z_2-z_0\in\mathbb R^2$ for the difference of the endpoint log positions. The fiber $f^{-1}(a)$ has two contractible components when $\delta_1\le0$ and $\delta_2\le0$, and is contractible otherwise. The two walls are $a_{v_2,i}a_{v_0,3}=a_{v_0,i}a_{v_2,3}$ for $i=1,2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Protected-row reduction identifies the fiber with $\mathbb R\times W$, where an intermediate point $w$ must make one of two control increments positive on each directed edge. The four choices cover $W$ by open convex sets. If both endpoint differences are nonpositive, only the two opposite choices survive and are disjoint. With one positive difference their nerve is a path, and with both positive all four sets meet. The open good-cover theorem gives the stated component and contractibility alternatives.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BKRR2025">[BKRR2025]</a> <a href="bibliography.html#GluingEvidence">[GluingEvidence]</a> <a href="bibliography.html#RelativeEvidence">[RelativeEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_gluing.tex?#prop:path-fiber-types</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/directed_path_coefficient_restriction.html">Three-Vertex Directed-Path Coefficient Restriction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>These are fibers between contractible total and base spaces; the disconnected fibers do not imply that the full coefficient space is disconnected.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-99" style="position:relative;">
+
+        <h3><a href="results/exact_relative_parameter_domains.html" class="table-title-link">Exact Relative Parameter Domains</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Relative Parameter Domains</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Protect a prescribed row set $J$ in exact coefficient reduction and assume every terminal local system has at most two rows. For a nonempty set $F$ of determinant selections, write its pooled strict logarithmic system as $A_Fy+B_Fx>0$. If $V_F$ is the vertex set of $\{\lambda\ge0:A_F^T\lambda=0,\ \mathbf1^T\lambda=1\}$, then the exact parameter domain is $P_F=\{x:(\lambda^TB_F)x>0\text{ for every }\lambda\in V_F\}$. It is an open rational polyhedral cone, possibly empty or full, and its face tests become exact monomial inequalities in the positive coefficients.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Feasibility implies every nonnegative vector annihilating $A_F$ evaluates positively on $B_Fx$. If the system is infeasible, strict separation of the affine space $B_Fx+\operatorname{im}A_F$ from the positive orthant supplies a nonzero such vector with nonpositive evaluation. Normalize it to coefficient sum one. Every point of the normalized rational polytope is a convex combination of finitely many rational vertices, obtained by repeatedly shrinking dependent positive supports, so testing the vertices is necessary and sufficient.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BV2004">[BV2004]</a> <a href="bibliography.html#RelativeEvidence">[RelativeEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_nerve.tex?#lem:relative-domains</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/directed_path_coefficient_restriction.html">Three-Vertex Directed-Path Coefficient Restriction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>An empty vertex list means the full domain; an identically zero form means the empty domain. Anchor changes act by invertible integer linear transformations of log-ratio coordinates.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-100" style="position:relative;">
+
+        <h3><a href="results/uniform_relative_nerve.html" class="table-title-link">Uniform Relative Nerve for Prescribed Coefficients</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Uniform Relative Nerve for Prescribed Coefficients</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Under protected exact reduction with at most two terminal rows per local system, the fiber of prescribed-row restriction at log parameter $x$ is homotopy equivalent to the finite complex $\mathcal N_x$ whose nonempty faces $F$ satisfy $x\in P_F$. The restriction image is the union of the singleton domains. A finite rational central hyperplane arrangement has constant labeled complex, and hence constant fiber homotopy type, on every relatively open sign cell, including lower-dimensional cells.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The parameter-preserving reduction identifies each fiber with a union of finitely many open convex sets indexed by determinant selections. Their nonempty intersections are exactly the domains $P_F$, so the open good-cover nerve theorem gives the fiber equivalence. The finitely many rational dual forms defining all $P_F$ have constant strict-sign truth values on each sign cell, making the entire labeled nerve constant there.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BKRR2025">[BKRR2025]</a> <a href="bibliography.html#RelativeEvidence">[RelativeEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_nerve.tex?#thm:uniform-relative-nerve</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/directed_path_coefficient_restriction.html">Three-Vertex Directed-Path Coefficient Restriction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The theorem asserts fiber homotopy types, not local triviality or homeomorphism of fibers. The face domains retain more information than a list of Betti numbers.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-101" style="position:relative;">
+
+        <h3><a href="results/relative_nerve_gluing.html" class="table-title-link">Coefficient-Space Gluing from Relative Face Domains</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Space Gluing from Relative Face Domains</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For privately downward pieces with common zero section, suppose protected two-row reduction applies to every piece. Form candidate vertices by choosing one determinant selection per piece. A set of candidates is a face exactly when the corresponding projected face domains from all pieces have a common shared parameter. The coefficient space of the union is homotopy equivalent to the realization of this finite gluing complex, and every face test is exact homogeneous rational linear feasibility in the shared logarithms alone.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The parameter-preserving reductions give sections and homotopies on the strict fiber product, reducing it to tuples of selected linear systems with one shared parameter. These tuples form an open convex cover indexed by candidate selections. An intersection is nonempty precisely when all projected piece domains meet at a common parameter; the remaining private variables are then independent. The good-cover theorem yields the gluing nerve, and exact coefficient-space gluing adds only contractible open-simplex factors. Rational dual forms reduce the common-domain test to exact strict linear feasibility.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BKRR2025">[BKRR2025]</a> <a href="bibliography.html#RelativeEvidence">[RelativeEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/relative_nerve.tex?#thm:relative-nerve-gluing</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_cycle_relative_gluing_model.html">Four-Cycle Relative Gluing Model</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>All face domains are required. Singleton domains or their union do not determine common fibers. For the four-cycle model the nerve has $f$-vector $(14,48,48,12)$ and $\mathbb F_2$ Betti vector $(1,0,1,0)$.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
