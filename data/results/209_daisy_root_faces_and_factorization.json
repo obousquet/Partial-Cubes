@@ -1,0 +1,16 @@
+{
+  "id": 209,
+  "short_name": "daisy_root_faces_and_factorization",
+  "name": "Root Faces and Canonical Cube Factors of Daisy Cubes",
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "recognition",
+  "statement": "If $K\\subseteq2^E$ is a nonempty down-set, then its roots are exactly $2^{\\operatorname{Free}(K)}$. Hence two reoriented nonempty down-sets $K$ and $\\delta\\triangle L$ admit a common root exactly when $\\delta\\subseteq\\operatorname{Free}(K)\\cup\\operatorname{Free}(L)$. More generally, every nonempty daisy representation $D$ has a unique root $r_0$ disjoint from $F=\\operatorname{Free}(D)$ and a unique nonempty single-root down-set $U$ on $E\\setminus F$ such that $D=r_0\\triangle(2^F\\times U)$; its full root set is $r_0\\triangle2^F$.",
+  "status": "established",
+  "proof": "Toggling a free coordinate preserves a down-set. Conversely, if a coordinate belongs to a translating root, downward closure before and after translation forces both values to occur together, so that coordinate is free. The common-root condition is intersection of the two Boolean root faces. Factoring membership over all free coordinates yields $2^F\\times U$; removing the free part from any root gives the unique distinguished root and leaves $U$ with no free coordinate and only the empty root.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:root-face; PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:root-factor-decomposition"
+}

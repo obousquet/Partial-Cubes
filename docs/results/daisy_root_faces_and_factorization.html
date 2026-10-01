@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-209" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="results/daisy_root_faces_and_factorization.html" class="table-title-link">Root Faces and Canonical Cube Factors of Daisy Cubes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li><li><a href='results/intrinsic_daisy_antipodal_deletion_basis.html'>Intrinsic Antipodal-Deletion Basis for Daisy Cubes</a></li></ul></p></div>
+        <p><strong>Name: </strong>Root Faces and Canonical Cube Factors of Daisy Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>If $K\subseteq2^E$ is a nonempty down-set, then its roots are exactly $2^{\operatorname{Free}(K)}$. Hence two reoriented nonempty down-sets $K$ and $\delta\triangle L$ admit a common root exactly when $\delta\subseteq\operatorname{Free}(K)\cup\operatorname{Free}(L)$. More generally, every nonempty daisy representation $D$ has a unique root $r_0$ disjoint from $F=\operatorname{Free}(D)$ and a unique nonempty single-root down-set $U$ on $E\setminus F$ such that $D=r_0\triangle(2^F\times U)$; its full root set is $r_0\triangle2^F$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Toggling a free coordinate preserves a down-set. Conversely, if a coordinate belongs to a translating root, downward closure before and after translation forces both values to occur together, so that coordinate is free. The common-root condition is intersection of the two Boolean root faces. Factoring membership over all free coordinates yields $2^F\times U$; removing the free part from any root gives the unique distinguished root and leaves $U$ with no free coordinate and only the empty root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#lem:root-face; PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#cor:root-factor-decomposition</p></div>
 
         </div>
     </div>

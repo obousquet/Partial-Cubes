@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-213" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="results/intrinsic_daisy_antipodal_deletion_basis.html" class="table-title-link">Intrinsic Antipodal-Deletion Basis for Daisy Cubes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li><li><a href='results/intrinsic_daisy_antipodal_deletion_basis.html'>Intrinsic Antipodal-Deletion Basis for Daisy Cubes</a></li></ul></p></div>
+        <p><strong>Name: </strong>Intrinsic Antipodal-Deletion Basis for Daisy Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D$ be an irredundant daisy cube of isometric dimension at least three with at least two roots. If ambient-antipodal vertices $x,y$ are each maximal from some root, then $D\setminus\{x,y\}$ is pc-minimal outside the daisy cubes. Conversely, every forbidden pc-minor for daisy cubes arises this way. The witnessing roots are unique and differ exactly on $\operatorname{Free}(D)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the canonical factorization $D=2^F\times U$ with $U$ single-root. Maximality from a root makes the $F$-part of each deleted vertex opposite that root and makes their complementary $U$-parts maximal. If $U$ is trivial the deletion is $Q_{|F|}^{--}$; otherwise it is the peripheral normal form. The complete coordinate basis gives the converse, and the factor calculation yields the two unique opposite roots.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:intrinsic-antipodal-deletion</p></div>
 
         </div>
     </div>

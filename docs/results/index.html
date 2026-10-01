@@ -3549,6 +3549,102 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-209" style="position:relative;">
+
+        <h3><a href="results/daisy_root_faces_and_factorization.html" class="table-title-link">Root Faces and Canonical Cube Factors of Daisy Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Root Faces and Canonical Cube Factors of Daisy Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>If $K\subseteq2^E$ is a nonempty down-set, then its roots are exactly $2^{\operatorname{Free}(K)}$. Hence two reoriented nonempty down-sets $K$ and $\delta\triangle L$ admit a common root exactly when $\delta\subseteq\operatorname{Free}(K)\cup\operatorname{Free}(L)$. More generally, every nonempty daisy representation $D$ has a unique root $r_0$ disjoint from $F=\operatorname{Free}(D)$ and a unique nonempty single-root down-set $U$ on $E\setminus F$ such that $D=r_0\triangle(2^F\times U)$; its full root set is $r_0\triangle2^F$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Toggling a free coordinate preserves a down-set. Conversely, if a coordinate belongs to a translating root, downward closure before and after translation forces both values to occur together, so that coordinate is free. The common-root condition is intersection of the two Boolean root faces. Factoring membership over all free coordinates yields $2^F\times U$; removing the free part from any root gives the unique distinguished root and leaves $U$ with no free coordinate and only the empty root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#lem:root-face; PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#cor:root-factor-decomposition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-210" style="position:relative;">
+
+        <h3><a href="results/peripheral_daisy_expansion_minors.html" class="table-title-link">Elementary Minors of a Peripheral Daisy Expansion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Elementary Minors of a Peripheral Daisy Expansion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty down-sets $K,L\subseteq2^E$ with $\delta\triangle L\subseteq K$, the peripheral expansion $C(K,L,\delta)$ is a daisy cube exactly when $\delta\subseteq\operatorname{Free}(K)\cup\operatorname{Free}(L)$. Restriction in an old coordinate $i$ gives $C(K_i^b,L_i^{b\oplus\mathbf1_{i\in\delta}},\delta\setminus\{i\})$, contraction gives $C(K_i^0,L_i^0,\delta\setminus\{i\})$, and the new-coordinate restrictions and contraction are respectively $K$, $\delta\triangle L$, and $K$ after suppressing constants.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The expansion is daisy precisely when one reorientation makes both layers down-sets, which is the common-root criterion. Taking an old-coordinate section tracks whether its bit is flipped by $\delta$; projection of a down-set equals its zero section because its one section is contained there. The new-coordinate formulas follow directly from the two-layer construction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#lem:expansion-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-211" style="position:relative;">
+
+        <h3><a href="results/daisy_antipodal_rigidity.html" class="table-title-link">Antipodal Rigidity from Daisy Restrictions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipodal Rigidity from Daisy Restrictions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X\subseteq2^E$ be an irredundant partial-cube representation. If every elementary coordinate restriction is a daisy cube and no coordinate of $X$ is peripheral, then $X$ is invariant under the global cube antipode $x\mapsto E\setminus x$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each coordinate, choose boundary vertices on both sides. Any agreement in another coordinate would survive in a restriction having two-sided boundary, impossible for a daisy cube, so the boundary vertices are antipodal and unique. Membership changes across an edge exactly when it changes across the antipodal edge. The xor of membership at antipodal vertices is therefore constant on the connected ambient cube, and the selected antipodal pair makes it zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#lem:antipodal-rigidity</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-212" style="position:relative;">
+
+        <h3><a href="results/peripheral_daisy_common_deletion_link_form.html" class="table-title-link">Common Deletion--Link Form of a Peripheral Daisy Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Common Deletion--Link Form of a Peripheral Daisy Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In a reduced-root peripheral obstruction $C(K,L,P)$, put $N=E\setminus P$. There is one set $A\subseteq N$ such that for every $p\in P$, the deletion--link differences are singletons $\Delta_p(K)=\{(P\setminus\{p\})\cup A\}$ and $\Delta_p(L)=\{(P\setminus\{p\})\cup(N\setminus A)\}$. Thus every incompatible root coordinate sees the same complementary outside part.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Minimality makes every old-coordinate restriction and contraction root-compatible. For each $p$, these constraints fix every other coordinate on both nonempty deletion--link differences, with all other root coordinates equal to one and the outside coordinates complementary, so both differences are singletons. Comparing the top $P$-sections of the down-set $K$ then forces the outside singleton part to be independent of $p$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#lem:common-form</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-213" style="position:relative;">
+
+        <h3><a href="results/intrinsic_daisy_antipodal_deletion_basis.html" class="table-title-link">Intrinsic Antipodal-Deletion Basis for Daisy Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Intrinsic Antipodal-Deletion Basis for Daisy Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D$ be an irredundant daisy cube of isometric dimension at least three with at least two roots. If ambient-antipodal vertices $x,y$ are each maximal from some root, then $D\setminus\{x,y\}$ is pc-minimal outside the daisy cubes. Conversely, every forbidden pc-minor for daisy cubes arises this way. The witnessing roots are unique and differ exactly on $\operatorname{Free}(D)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the canonical factorization $D=2^F\times U$ with $U$ single-root. Maximality from a root makes the $F$-part of each deleted vertex opposite that root and makes their complementary $U$-parts maximal. If $U$ is trivial the deletion is $Q_{|F|}^{--}$; otherwise it is the peripheral normal form. The complete coordinate basis gives the converse, and the factor calculation yields the two unique opposite roots.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:intrinsic-antipodal-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-214" style="position:relative;">
+
+        <h3><a href="results/ample_daisy_obstruction_split.html" class="table-title-link">Ample and Nonample Daisy Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample and Nonample Daisy Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A forbidden pc-minor for daisy cubes is nonample exactly when it is an antipodally punctured hypercube $Q_n^{--}$ for some $n\ge3$. Every obstruction in the peripheral coordinate normal form is ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The $Q_n^{--}$ are precisely the forbidden pc-minors for ampleness. If a daisy obstruction were nonample, it would contain some $Q_n^{--}$ as a pc-minor; since that minor is itself nondaisy, pc-minimality forces equality with the whole obstruction. All remaining members of the complete daisy basis are therefore ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#cor:ample-daisy-obstructions</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

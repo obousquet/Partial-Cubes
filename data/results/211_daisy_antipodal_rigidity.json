@@ -1,0 +1,17 @@
+{
+  "id": 211,
+  "short_name": "daisy_antipodal_rigidity",
+  "name": "Antipodal Rigidity from Daisy Restrictions",
+  "class_ids": [
+    "#classes/daisy_cubes",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X\\subseteq2^E$ be an irredundant partial-cube representation. If every elementary coordinate restriction is a daisy cube and no coordinate of $X$ is peripheral, then $X$ is invariant under the global cube antipode $x\\mapsto E\\setminus x$.",
+  "status": "established",
+  "proof": "For each coordinate, choose boundary vertices on both sides. Any agreement in another coordinate would survive in a restriction having two-sided boundary, impossible for a daisy cube, so the boundary vertices are antipodal and unique. Membership changes across an edge exactly when it changes across the antipodal edge. The xor of membership at antipodal vertices is therefore constant on the connected ambient cube, and the selected antipodal pair makes it zero.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:antipodal-rigidity"
+}

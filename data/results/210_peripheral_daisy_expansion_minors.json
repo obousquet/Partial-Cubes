@@ -1,0 +1,18 @@
+{
+  "id": 210,
+  "short_name": "peripheral_daisy_expansion_minors",
+  "name": "Elementary Minors of a Peripheral Daisy Expansion",
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/projection",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "For nonempty down-sets $K,L\\subseteq2^E$ with $\\delta\\triangle L\\subseteq K$, the peripheral expansion $C(K,L,\\delta)$ is a daisy cube exactly when $\\delta\\subseteq\\operatorname{Free}(K)\\cup\\operatorname{Free}(L)$. Restriction in an old coordinate $i$ gives $C(K_i^b,L_i^{b\\oplus\\mathbf1_{i\\in\\delta}},\\delta\\setminus\\{i\\})$, contraction gives $C(K_i^0,L_i^0,\\delta\\setminus\\{i\\})$, and the new-coordinate restrictions and contraction are respectively $K$, $\\delta\\triangle L$, and $K$ after suppressing constants.",
+  "status": "established",
+  "proof": "The expansion is daisy precisely when one reorientation makes both layers down-sets, which is the common-root criterion. Taking an old-coordinate section tracks whether its bit is flipped by $\\delta$; projection of a down-set equals its zero section because its one section is contained there. The new-coordinate formulas follow directly from the two-layer construction.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:expansion-minors"
+}

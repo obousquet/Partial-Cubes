@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "batch_id": "073_daisy_cube_completion",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete theorem-label coverage of the daisy-cubes manuscript with root faces, canonical cube factors, peripheral-expansion minors, antipodal rigidity, the common deletion-link form, the intrinsic obstruction basis, the ample/nonample split, and two nonproduct examples.",
+  "source_refs": [
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:root-face",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:root-factor-decomposition",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:expansion-minors",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:antipodal-rigidity",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:common-form",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:intrinsic-antipodal-deletion",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#cor:ample-daisy-obstructions",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#ex:small-ample-obstructions",
+    "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#ex:dimension-five-host-chain"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized structural and obstruction statements, exact examples, and concise proofs. The manuscript retains the full deletion-link reconstruction, coordinate case analysis, figures, and comparison with earlier product-host classifications.",
+    "recoverability": "Every promoted fact has an exact labelled source locator in the preserved manuscript snapshot.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/results/209_daisy_root_faces_and_factorization.json", "sha256": "72b033cd40e02c2fe86e3a57a28e9bc3b856c5e02f1e1a1378364f83fbcfe94b"},
+    {"path": "data/results/210_peripheral_daisy_expansion_minors.json", "sha256": "68110280a5ec581177d02fc71b8f8650261025de8027f8cb72fcb526dd8d66cc"},
+    {"path": "data/results/211_daisy_antipodal_rigidity.json", "sha256": "b9a62a93e041e95193a9575ed3b74a1979e363d16054e58ef25036227ed32215"},
+    {"path": "data/results/212_peripheral_daisy_common_deletion_link_form.json", "sha256": "86702e443a1f77bd1b4dd12f67796f9773963d5887bcddc50d91743514e4f6e6"},
+    {"path": "data/results/213_intrinsic_daisy_antipodal_deletion_basis.json", "sha256": "acdedf828ad8579aa7064cb0a7e0c24e13f3613959f1113a4b0ef23ba176ebeb"},
+    {"path": "data/results/214_ample_daisy_obstruction_split.json", "sha256": "382e8f07ba9d66b095ec5e74491a1e59d3dc7fc928d96bd9d422603a8c77de51"},
+    {"path": "data/examples/087_eight_vertex_ample_daisy_obstruction.json", "sha256": "a39a46792fb391ad79c5787785634a97b051a7330a11d222d60106a4192a8e3d"},
+    {"path": "data/examples/088_dimension_five_daisy_host_chain.json", "sha256": "06d18daf17eefa01fe2cdc278abbfb3c674a8d427809c7a04bfe9f7a5eef04f7"},
+    {"path": "migration/coverage.json", "sha256": "cd2e84372cc9ce1d217673cc15a55def2f7703658c10595e7488f530750ac75b"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "90e1a144e07907d81e2a8843d038bbcf82eeb48b735fd966791a524710691305"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1386 records.",
+    "website": "Normalized 1402 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; the manuscript-result audit now reports daisy-cubes at 14 of 14 unique theorem-like labels covered."
+  },
+  "deferred": [
+    "The manuscript's full figures and coordinate reconstruction details remain in LaTeX; the normalized database owns their reusable theorem and example content."
+  ]
+}

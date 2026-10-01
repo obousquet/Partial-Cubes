@@ -1,0 +1,17 @@
+{
+  "id": 212,
+  "short_name": "peripheral_daisy_common_deletion_link_form",
+  "name": "Common Deletion--Link Form of a Peripheral Daisy Obstruction",
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "In a reduced-root peripheral obstruction $C(K,L,P)$, put $N=E\\setminus P$. There is one set $A\\subseteq N$ such that for every $p\\in P$, the deletion--link differences are singletons $\\Delta_p(K)=\\{(P\\setminus\\{p\\})\\cup A\\}$ and $\\Delta_p(L)=\\{(P\\setminus\\{p\\})\\cup(N\\setminus A)\\}$. Thus every incompatible root coordinate sees the same complementary outside part.",
+  "status": "established",
+  "proof": "Minimality makes every old-coordinate restriction and contraction root-compatible. For each $p$, these constraints fix every other coordinate on both nonempty deletion--link differences, with all other root coordinates equal to one and the outside coordinates complementary, so both differences are singletons. Comparing the top $P$-sections of the down-set $K$ then forces the outside singleton part to be independent of $p$.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#lem:common-form"
+}

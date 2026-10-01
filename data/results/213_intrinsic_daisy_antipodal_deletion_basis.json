@@ -1,0 +1,17 @@
+{
+  "id": 213,
+  "short_name": "intrinsic_daisy_antipodal_deletion_basis",
+  "name": "Intrinsic Antipodal-Deletion Basis for Daisy Cubes",
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $D$ be an irredundant daisy cube of isometric dimension at least three with at least two roots. If ambient-antipodal vertices $x,y$ are each maximal from some root, then $D\\setminus\\{x,y\\}$ is pc-minimal outside the daisy cubes. Conversely, every forbidden pc-minor for daisy cubes arises this way. The witnessing roots are unique and differ exactly on $\\operatorname{Free}(D)$.",
+  "status": "established",
+  "proof": "Use the canonical factorization $D=2^F\\times U$ with $U$ single-root. Maximality from a root makes the $F$-part of each deleted vertex opposite that root and makes their complementary $U$-parts maximal. If $U$ is trivial the deletion is $Q_{|F|}^{--}$; otherwise it is the peripheral normal form. The complete coordinate basis gives the converse, and the factor calculation yields the two unique opposite roots.",
+  "proof_source": "PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex#thm:intrinsic-antipodal-deletion"
+}
