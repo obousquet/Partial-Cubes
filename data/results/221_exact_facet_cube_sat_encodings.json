@@ -1,0 +1,15 @@
+{
+  "id": 221,
+  "short_name": "exact_facet_cube_sat_encodings",
+  "name": "Exact Facet-Cube SAT Encodings",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "The formula $F_{n,d}$ is satisfiable exactly when there is a nonempty cornerless ample class on $n$ active coordinates with VC dimension $d$; its variables recover the shattered complex, the unique facet cubes, and the vertex set. When the complex is fixed to all supports of size at most $d$, the reduced formula $M_{n,d}$ is satisfiable exactly when there is a cornerless maximum class of VC dimension $d$ on $[n]$.",
+  "status": "established",
+  "proof": "A model chooses a down-set, exactly one placed cube for each facet, and their covered union. Missing-trace clauses prevent the union from shattering anything outside the down-set, so the facet-cube converse theorem makes it ample with the selected shattered complex. Double-coverage clauses are exactly cornerlessness. Conversely, the shattered complex, unique facet cubes, vertex set, and one absent trace for every unshattered support of any admissible class satisfy all clauses. Fixing the down-set to all supports of size at most $d$ gives the maximum specialization.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#thm:encoding; PartialCubes:papers/ample-corners/main.tex#prop:maximum-encoding"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 225,
+  "short_name": "optimal_hall_contraction_lift_orders",
+  "name": "Optimal Cornerless Lift Orders over Hall Contractions",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Every cornerless ample one-coordinate lift of a single or double contraction of Hall's class has at least 291 concepts. For the single contraction $C_H/e$, the least order is exactly 291 when $e\\le7$ and exactly 295 when $e\\ge8$. Explicit VC-dimension-three lifts attain each bound, and therefore $c_{\\min}=m_{\\mathrm{amp}}\\le291$.",
+  "status": "established",
+  "proof": "Every such lift has all base coordinates active, and its new coordinate must be active because every Hall contraction has a corner. Exactness of $L_{B,N}$ converts a hypothetical lift of order at most 290 into a satisfying assignment, contradicted by the checked certificates for all 12 single and 66 double contractions. Additional checked certificates exclude order at most 294 for the last two twin-pair contraction types. The listed classes directly attain orders 291 and 295; twin contractions transfer them to the odd coordinates.",
+  "references": "\\cite{BousquetDampReader}",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#thm:C; PartialCubes:papers/ample-corners/main.tex#prop:291; PartialCubes:papers/ample-corners/evidence/hall_lifts/",
+  "witness_ids": [
+    "#examples/optimal_hall_contraction_lifts"
+  ],
+  "comments": "The lower bounds are computer-assisted unsatisfiability results with recorded formula and proof digests and checker verdicts. The upper-bound witnesses are independently checked directly from their listed vertex sets."
+}

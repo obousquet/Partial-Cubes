@@ -1,0 +1,17 @@
+{
+  "id": 224,
+  "short_name": "small_ample_classes_have_corners",
+  "name": "Small Ample Classes Have Corners",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "implication",
+  "statement": "Every nonempty ample class on at most seven coordinates has a corner and therefore has a complete corner peeling. Every maximum class on at most eight coordinates has a corner. Consequently, a cornerless ample class on eight active coordinates has no peripheral coordinate and no nontrivial Cartesian product decomposition.",
+  "status": "established",
+  "proof": "The exact formulas $F_{n,d}$ with lex leaders are certified unsatisfiable for all 15 cases $3\\le d\\le n\\le7$; the structural dimension bound handles smaller VC dimensions. Repeated corner deletion preserves ampleness, giving a complete peeling. For maximum classes on eight coordinates, the four possible cornerless dimensions $3\\le d\\le6$ are excluded by checked $M_{8,d}$ certificates. Peripheral or product descent from a cornerless eight-coordinate class would produce a cornerless ample class on at most seven coordinates, contradicting the first result.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#thm:A; PartialCubes:papers/ample-corners/main.tex#thm:B; PartialCubes:papers/ample-corners/main.tex#cor:seven-peelable; PartialCubes:papers/ample-corners/evidence/maximum_classes/; PartialCubes:papers/ample-corners/evidence/ample_n7/; PartialCubes:papers/ample-corners/evidence/ample_small/",
+  "comments": "This is computer-assisted. The mathematical reductions use the exact encodings and the local structural lemmas. The explicit CNF digests, DRAT proofs or proof digests, and checker logs remain in the cited evidence directories."
+}

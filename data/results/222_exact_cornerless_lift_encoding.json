@@ -1,0 +1,17 @@
+{
+  "id": 222,
+  "short_name": "exact_cornerless_lift_encoding",
+  "name": "Exact Encoding of Bounded Cornerless Lifts",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "For a fixed Boolean class $B$, a new coordinate $z$, and an integer $N$, the formula $L_{B,N}$ is satisfiable exactly when $B$ has a cornerless ample lift $Y\\subseteq B\\times\\{0,1\\}$ of order at most $N$, with all old coordinates and $z$ active and with projection along $z$ equal to $B$.",
+  "status": "established",
+  "proof": "Restricting the general facet-cube encoding to vertices and cubes inside $B\\times\\{0,1\\}$ preserves exactness because every facet cube of a lift lies there. Requiring at least one copy of every $b\\in B$ makes the projection contain $B$, while the ambient restriction gives the reverse inclusion. A totalizer imposes the order bound, and the remaining clauses retain exact ampleness, activity, and cornerlessness.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#prop:lift-encoding"
+}

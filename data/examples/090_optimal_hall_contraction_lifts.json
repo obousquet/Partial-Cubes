@@ -1,0 +1,12 @@
+{
+  "id": 90,
+  "short_name": "optimal_hall_contraction_lifts",
+  "name": "Optimal Cornerless Lifts of Hall Contractions",
+  "symbol": "Y_e",
+  "object_type": "family",
+  "definition": "For each even coordinate $e\\in\\{0,2,4,6,8,10\\}$ of Hall's class $C_H$, the files in `papers/ample-corners/evidence/hall_lifts/` list a twelve-coordinate class $Y_e$ whose last-coordinate contraction is $C_H/e$.",
+  "parameters": "$|Y_e|=291$ for $e\\in\\{0,2,4,6\\}$ and $|Y_e|=295$ for $e\\in\\{8,10\\}$; the equal twin contractions supply the corresponding odd coordinates.",
+  "properties": "Every $Y_e$ is cornerless and ample, has VC dimension three, and uses all twelve coordinates. Direct verification checks the vertex count, shattered and strongly shattered complexes, absence of corners, activity, and the displayed contraction. Together with checked unsatisfiability certificates, these examples attain the least possible lift order: 291 for coordinates 0 through 7 and 295 for coordinates 8 through 11.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#prop:291; PartialCubes:papers/ample-corners/evidence/hall_lifts/",
+  "verification": "PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py"
+}

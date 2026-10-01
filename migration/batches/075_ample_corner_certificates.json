@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "batch_id": "075_ample_corner_certificates",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete theorem-label coverage of the frozen ample-corners manuscript with exact facet-cube SAT encodings, sound cube-symmetry reduction, certified small-coordinate corner results, optimal Hall-contraction lifts, and the shattered complex of the 267-concept record.",
+  "source_refs": [
+    "PartialCubes:papers/ample-corners/main.tex#thm:encoding",
+    "PartialCubes:papers/ample-corners/main.tex#prop:maximum-encoding",
+    "PartialCubes:papers/ample-corners/main.tex#prop:lift-encoding",
+    "PartialCubes:papers/ample-corners/main.tex#prop:lex-sound",
+    "PartialCubes:papers/ample-corners/main.tex#thm:A",
+    "PartialCubes:papers/ample-corners/main.tex#thm:B",
+    "PartialCubes:papers/ample-corners/main.tex#cor:seven-peelable",
+    "PartialCubes:papers/ample-corners/main.tex#thm:C",
+    "PartialCubes:papers/ample-corners/main.tex#prop:291",
+    "PartialCubes:papers/ample-corners/main.tex#prop:record-complex"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized mathematical statements, proof reductions, witness descriptions, and certificate conclusions. The LaTeX repository retains the large CNFs, DRAT proofs, logs, exact vertex lists, generator scripts, and full computational narrative.",
+    "recoverability": "Every promoted theorem has an exact labelled locator in the frozen source snapshot, while database records point to the preserved evidence directories and independent verifiers for non-recreatable computational artifacts.",
+    "mutation": "No source file or evidence artifact in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/062_cornerless_ample_267.json", "sha256": "525a9528554a32d564fb1c663e331ef968e99cdb178acdf4e7dc3ca268bb4006"},
+    {"path": "data/examples/090_optimal_hall_contraction_lifts.json", "sha256": "3748763bde3d55094df806fffa6fdc02df22fdb8e9d1fbc028ad705b5a64d2e3"},
+    {"path": "data/results/221_exact_facet_cube_sat_encodings.json", "sha256": "d49f22db8b0c88e754774d2add687ec7f5109dc10047271107f0568d2d6f052b"},
+    {"path": "data/results/222_exact_cornerless_lift_encoding.json", "sha256": "bb467fde70ddb481f524aa58392a298483454004b43cf5930edfc11332945ea1"},
+    {"path": "data/results/223_cube_symmetry_lex_leaders_are_sound.json", "sha256": "969e70007c6e6d59ef2dbf5c5ec720ce131f50d212b5e815ec3c8d055fe1b4a2"},
+    {"path": "data/results/224_small_ample_classes_have_corners.json", "sha256": "df408b84cf877b75582785e96e2186d29e2777c731286ea5b3ed6f82c5c7ad57"},
+    {"path": "data/results/225_optimal_hall_contraction_lift_orders.json", "sha256": "48443ccca4f6a43f3ffcb78edc327868d3f7fd65b4555fb469bcfd0e1de087b5"},
+    {"path": "data/results/226_cornerless_267_shattered_complex.json", "sha256": "73730abca79758fd00e74829cb8110291ae6f1c1d752bc54e31ad99e96fc7af4"},
+    {"path": "migration/coverage.json", "sha256": "5a5e2676aa066f22366a2cdbeef36f16551a5ec2296e7a79f63c8ebba8b2e543"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "189b0861c3b18c7a442229676c4c55caa44e0bd68f32f60053b47385c7cd47d6"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1401 records.",
+    "website": "Normalized 1417 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; ample-corners now has 24 of 24 unique theorem-like labels covered in the frozen source snapshot."
+  },
+  "deferred": [
+    "Large formulas, DRAT proofs, checker logs, exact vertex sets, and exploratory lineage remain scholarly artifacts in the LaTeX repository and are referenced rather than duplicated in the database.",
+    "Research added to the live ample-corners tree after the frozen snapshot is outside this batch and must enter through a reviewed snapshot refresh."
+  ]
+}

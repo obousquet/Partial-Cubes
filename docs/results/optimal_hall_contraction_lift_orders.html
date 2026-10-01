@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-62" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-225" style="position:relative;">
 
-        <h3><a href="examples/cornerless_ample_267.html" class="table-title-link">The 267-Concept Cornerless Ample Class</a></h3>
+        <h3><a href="results/optimal_hall_contraction_lift_orders.html" class="table-title-link">Optimal Cornerless Lift Orders over Hall Contractions</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>The 267-Concept Cornerless Ample Class</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="Y_{267}">
-            \[Y_{267}\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>The twelve-coordinate class encoded exactly in <code>papers/ample-corners/evidence/descent/record.json</code>.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is cornerless and ample, has VC dimension three and 267 concepts, and is not maximum because the Sauer bound at $(n,d)=(12,3)$ is 299. Its shattered complex consists of the empty set, all 12 singletons, all 66 pairs, and the 188 triples that are not even transversals of the three four-coordinate groups. These 188 triples support its facet cubes. Every coordinate contraction has 208 concepts, and the class has no nonidentity cube automorphism.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#thm:D; PartialCubes:papers/ample-corners/main.tex?#prop:record-complex; PartialCubes:papers/ample-corners/evidence/descent/record.json</p></div>
-<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py; PartialCubes:papers/ample-corners/scripts/explore_ample_267_structure.py</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Optimal Cornerless Lift Orders over Hall Contractions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Every cornerless ample one-coordinate lift of a single or double contraction of Hall's class has at least 291 concepts. For the single contraction $C_H/e$, the least order is exactly 291 when $e\le7$ and exactly 295 when $e\ge8$. Explicit VC-dimension-three lifts attain each bound, and therefore $c_{\min}=m_{\mathrm{amp}}\le291$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every such lift has all base coordinates active, and its new coordinate must be active because every Hall contraction has a corner. Exactness of $L_{B,N}$ converts a hypothetical lift of order at most 290 into a satisfying assignment, contradicted by the checked certificates for all 12 single and 66 double contractions. Additional checked certificates exclude order at most 294 for the last two twin-pair contraction types. The listed classes directly attain orders 291 and 295; twin contractions transfer them to the odd coordinates.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetDampReader">[BousquetDampReader]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#thm:C; PartialCubes:papers/ample-corners/main.tex?#prop:291; PartialCubes:papers/ample-corners/evidence/hall_lifts/</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/optimal_hall_contraction_lifts.html">Optimal Cornerless Lifts of Hall Contractions</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The lower bounds are computer-assisted unsatisfiability results with recorded formula and proof digests and checker verdicts. The upper-bound witnesses are independently checked directly from their listed vertex sets.</p></div>
 
         </div>
     </div>

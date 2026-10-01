@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,36 +74,26 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-100" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-90" style="position:relative;">
 
-        <h3><a href="classes/cornerless_ample.html" class="table-title-link">Cornerless Ample Classes</a></h3>
+        <h3><a href="examples/optimal_hall_contraction_lifts.html" class="table-title-link">Optimal Cornerless Lifts of Hall Contractions</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Cornerless Ample Classes</p>
+        <p><strong>Name: </strong>Optimal Cornerless Lifts of Hall Contractions</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\mathsf{CornerlessAmp}">
-            \[\mathsf{CornerlessAmp}\]
+        <div class="latex-equation" data-latex="Y_e">
+            \[Y_e\]
         </div>
     </div>
 
-<strong>Summary:</strong><div class="text-field"><p>Finite nonempty ample classes in which no concept belongs to a unique maximal cube.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/ample_without_corners.html">Ample with No Corner</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>ample classes with no corner</li></ul></p>
-<p><strong>Category:</strong> Set Family</p>
-<p><strong>Ambient Scope:</strong> Set Families</p>
-<p><strong>Parameterized:</strong> Unspecified</p>
-<p><strong>Projection Closure:</strong> Not Closed</p>
-<p><strong>Conditioning Closure:</strong> Not Yet Assessed</p>
-<p><strong>PC-Minor Closure:</strong> Not Closed</p>
-<strong>Comments:</strong><div class="text-field"><p>A corner is a vertex contained in exactly one maximal cube. Cornerlessness is a property of the whole class and is not inherited by contractions.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/ample_without_corners.html'>Ample with No Corner</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/cornerless_ample_strict_subset_ample.html'>Cornerless Ample Classes Are Strictly Ample</a></li><li><a href='relations/cornerless_ample_incomparable_maximum.html'>Cornerless Ample and Maximum Classes Are Incomparable</a></li><li><a href='relations/cornerless_ample_incomparable_dismantlable_ample.html'>Cornerless and Dismantlable Ample Classes Are Disjoint</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/cornerless_ample_not_projection_closed.html'>Cornerless Ample Classes Are Not Projection-Closed</a></li><li><a href='operation_results/cornerless_ample_not_pc_minor_closed.html'>Cornerless Ample Classes Are Not PC-Minor-Closed</a></li></ul></p></div>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For each even coordinate $e\in\{0,2,4,6,8,10\}$ of Hall's class $C_H$, the files in <code>papers/ample-corners/evidence/hall_lifts/</code> list a twelve-coordinate class $Y_e$ whose last-coordinate contraction is $C_H/e$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|Y_e|=291$ for $e\in\{0,2,4,6\}$ and $|Y_e|=295$ for $e\in\{8,10\}$; the equal twin contractions supply the corresponding odd coordinates.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Every $Y_e$ is cornerless and ample, has VC dimension three, and uses all twelve coordinates. Direct verification checks the vertex count, shattered and strongly shattered complexes, absence of corners, activity, and the displayed contraction. Together with checked unsatisfiability certificates, these examples attain the least possible lift order: 291 for coordinates 0 through 7 and 295 for coordinates 8 through 11.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:291; PartialCubes:papers/ample-corners/evidence/hall_lifts/</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/ample_facet_cube_theorem.html'>Facet-Cube Structure of Ample Classes</a></li><li><a href='results/local_corner_criterion.html'>Local Corner Criterion</a></li><li><a href='results/cornerless_ample_dimension_bounds.html'>Dimension Bounds for Cornerless Ample Classes</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/product_corner_factorization.html'>Corners Factor through Cartesian Products</a></li><li><a href='results/cornerless_minimum_equals_damp_obstruction_minimum.html'>Cornerless Minimum Equals the Dismantlable-Ample Obstruction Minimum</a></li><li><a href='results/exact_facet_cube_sat_encodings.html'>Exact Facet-Cube SAT Encodings</a></li><li><a href='results/exact_cornerless_lift_encoding.html'>Exact Encoding of Bounded Cornerless Lifts</a></li><li><a href='results/cube_symmetry_lex_leaders_are_sound.html'>Cube-Symmetry Lex Leaders Preserve SAT Satisfiability</a></li><li><a href='results/small_ample_classes_have_corners.html'>Small Ample Classes Have Corners</a></li><li><a href='results/optimal_hall_contraction_lift_orders.html'>Optimal Cornerless Lift Orders over Hall Contractions</a></li><li><a href='results/cornerless_267_shattered_complex.html'>Shattered Complex of the 267-Concept Cornerless Class</a></li></ul></p></div>
 
         </div>
     </div>

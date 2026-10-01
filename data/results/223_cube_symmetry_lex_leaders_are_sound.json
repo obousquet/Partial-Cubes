@@ -1,0 +1,15 @@
+{
+  "id": 223,
+  "short_name": "cube_symmetry_lex_leaders_are_sound",
+  "name": "Cube-Symmetry Lex Leaders Preserve SAT Satisfiability",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "algorithm",
+  "statement": "Adding lexicographic leader constraints for adjacent coordinate transpositions and single-coordinate reflections to $F_{n,d}$ or $M_{n,d}$ preserves satisfiability.",
+  "status": "established",
+  "proof": "Cube automorphisms preserve every encoded property and permute the facet-cube indicator vector equivariantly. In the finite orbit of any admissible class, choose the class with lexicographically least indicator vector. It is no larger than its image under every cube automorphism, hence satisfies all generator lex-leader constraints, while the exact encoding supplies the remaining variables.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#prop:lex-sound"
+}

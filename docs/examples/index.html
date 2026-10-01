@@ -1423,9 +1423,9 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>The twelve-coordinate class encoded exactly in <code>papers/ample-corners/evidence/descent/record.json</code>.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is cornerless and ample, has VC dimension three and 267 concepts, and is not maximum because the Sauer bound at $(n,d)=(12,3)$ is 299.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#thm:D; PartialCubes:papers/ample-corners/evidence/descent/record.json</p></div>
-<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is cornerless and ample, has VC dimension three and 267 concepts, and is not maximum because the Sauer bound at $(n,d)=(12,3)$ is 299. Its shattered complex consists of the empty set, all 12 singletons, all 66 pairs, and the 188 triples that are not even transversals of the three four-coordinate groups. These 188 triples support its facet cubes. Every coordinate contraction has 208 concepts, and the class has no nonidentity cube automorphism.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#thm:D; PartialCubes:papers/ample-corners/main.tex?#prop:record-complex; PartialCubes:papers/ample-corners/evidence/descent/record.json</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py; PartialCubes:papers/ample-corners/scripts/explore_ample_267_structure.py</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
@@ -1917,6 +1917,29 @@
 <strong>Definition:</strong><div class="text-field"><p>On $Q_3$, take the union $U=\{000,100\}\cup\{101,111\}\cup\{010,011\}$ of one placed edge for each singleton facet of $\Sigma=\{\varnothing,\{1\},\{2\},\{3\}\}$.</p></div>
 <strong>Properties:</strong><div class="text-field"><p>The union has six vertices but shatters every coordinate pair, so $|\operatorname{Sh}(U)|=7>|U|=6$ and $U$ is not ample. It shows why arbitrary placements of one cube per facet need the additional condition that their union shatter no support outside the prescribed down-set.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#ex:non-ample-union</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-90" style="position:relative;">
+
+        <h3><a href="examples/optimal_hall_contraction_lifts.html" class="table-title-link">Optimal Cornerless Lifts of Hall Contractions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Optimal Cornerless Lifts of Hall Contractions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="Y_e">
+            \[Y_e\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For each even coordinate $e\in\{0,2,4,6,8,10\}$ of Hall's class $C_H$, the files in <code>papers/ample-corners/evidence/hall_lifts/</code> list a twelve-coordinate class $Y_e$ whose last-coordinate contraction is $C_H/e$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|Y_e|=291$ for $e\in\{0,2,4,6\}$ and $|Y_e|=295$ for $e\in\{8,10\}$; the equal twin contractions supply the corresponding odd coordinates.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Every $Y_e$ is cornerless and ample, has VC dimension three, and uses all twelve coordinates. Direct verification checks the vertex count, shattered and strongly shattered complexes, absence of corners, activity, and the displayed contraction. Together with checked unsatisfiability certificates, these examples attain the least possible lift order: 291 for coordinates 0 through 7 and 295 for coordinates 8 through 11.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:291; PartialCubes:papers/ample-corners/evidence/hall_lifts/</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_ample_corners_data.py</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
