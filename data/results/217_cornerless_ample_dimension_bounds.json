@@ -1,0 +1,21 @@
+{
+  "id": 217,
+  "short_name": "cornerless_ample_dimension_bounds",
+  "name": "Dimension Bounds for Cornerless Ample Classes",
+  "class_ids": [
+    "#classes/cornerless_ample",
+    "#classes/maximum"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If a nonempty cornerless ample class has VC dimension $d$ and $n$ active coordinates, then $3\\le d\\le n-1$. If it is maximum, then $3\\le d\\le n-2$.",
+  "status": "established",
+  "proof": "Ample classes of VC dimension at most two are corner peelable and therefore have a corner. At $d=n$, ampleness forces the full cube, whose vertices are corners. A maximum class with $d=n-1$ has $2^n-1$ vertices and is a cube with one vertex deleted; its corners are the neighbours of the missing vertex.",
+  "references": "\\cite[Proposition~4.11]{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:small-vc",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube"
+  ]
+}

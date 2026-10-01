@@ -1,0 +1,19 @@
+{
+  "id": 215,
+  "short_name": "ample_facet_cube_theorem",
+  "name": "Facet-Cube Structure of Ample Classes",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Every facet of the shattered complex of a nonempty ample class supports exactly one contained cube. These facet cubes are exactly the maximal cubes, their union is the class, and a vertex is a corner exactly when it lies in one facet cube. Consequently the class is cornerless exactly when every vertex lies in at least two facet cubes. Conversely, choosing one placed cube for each facet of a down-set $\\Sigma$ produces an ample class with shattered complex $\\Sigma$ whenever their union shatters no support outside $\\Sigma$.",
+  "status": "established",
+  "proof": "For a facet $S$, the reduction $C^S$ is ample and has only the empty strongly shattered support, so Sandwich equality makes it a singleton and gives the unique placement. A maximal cube has an isolated placement in its reduction; connectedness of nonempty ample reductions forces that reduction to be a singleton, so its support is a facet. Every vertex lies in a maximal cube, giving the corner criterion. In the converse direction, the chosen cubes give $\\Sigma\\subseteq\\operatorname{sstr}(U)$ while the hypothesis gives $\\operatorname{str}(U)\\subseteq\\Sigma$; the Sandwich inequalities force equality throughout.",
+  "references": "\\cite{BandeltCDK06,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:facet-cubes; PartialCubes:papers/ample-corners/main.tex#cor:cornerless-cover",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube",
+    "#examples/nonample_union_of_facet_edges"
+  ]
+}

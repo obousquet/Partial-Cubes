@@ -1,0 +1,13 @@
+{
+  "id": 216,
+  "short_name": "local_corner_criterion",
+  "name": "Local Corner Criterion",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "For any Boolean class $C$ and vertex $v\\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$.",
+  "status": "established",
+  "proof": "Every cube through $v$ uses only incident directions. If their full span is present, it contains every cube through $v$ and is the unique maximal one. Conversely, when $v$ has a unique maximal cube, every incident edge extends into that cube, so its support contains every incident direction and it equals the full span.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:local-corner"
+}

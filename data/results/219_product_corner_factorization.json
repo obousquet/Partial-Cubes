@@ -1,0 +1,16 @@
+{
+  "id": 219,
+  "short_name": "product_corner_factorization",
+  "name": "Corners Factor through Cartesian Products",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For nonempty Boolean classes $A$ and $B$ on disjoint coordinate sets, the maximal cubes of $A\\times B$ are exactly the products of maximal cubes of the factors. A vertex $(a,b)$ is a corner exactly when both $a$ and $b$ are corners. Hence a cornerless product has a cornerless factor; for ample factors that factor is again ample.",
+  "status": "established",
+  "proof": "Every cube in the product factors uniquely over the two coordinate blocks, and it is maximal exactly when both factor cubes are maximal. The number of maximal cubes through $(a,b)$ is therefore the product of the corresponding two counts, which equals one exactly when both counts equal one. Ampleness also factors through Cartesian products.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:products"
+}

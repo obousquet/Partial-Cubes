@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "batch_id": "074_ample_corner_structure",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the reusable structural core of the ample-corners manuscript: Sandwich equality, full reductions, the two running examples, facet cubes, local corners, dimensional bounds, peripheral and product descent, and the equality of the two minimum obstruction orders.",
+  "source_refs": [
+    "PartialCubes:papers/ample-corners/main.tex#thm:sandwich",
+    "PartialCubes:papers/ample-corners/main.tex#thm:reductions",
+    "PartialCubes:papers/ample-corners/main.tex#ex:codim-one",
+    "PartialCubes:papers/ample-corners/main.tex#ex:non-ample-union",
+    "PartialCubes:papers/ample-corners/main.tex#lem:facet-cubes",
+    "PartialCubes:papers/ample-corners/main.tex#cor:cornerless-cover",
+    "PartialCubes:papers/ample-corners/main.tex#lem:local-corner",
+    "PartialCubes:papers/ample-corners/main.tex#lem:small-vc",
+    "PartialCubes:papers/ample-corners/main.tex#lem:peripheral",
+    "PartialCubes:papers/ample-corners/main.tex#lem:products",
+    "PartialCubes:papers/ample-corners/main.tex#prop:cmin-equals-mamp"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized statements, examples, concise proofs, and bibliography entries. The manuscript retains the full exposition, notation development, clause formulations, and proof details.",
+    "recoverability": "Every promoted fact has an exact labelled locator in the frozen, recoverable 2026-09-30 source snapshot. Live changes in the LaTeX checkout remain isolated from this batch.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/004_vertex_deleted_three_cube.json", "sha256": "58a591255d7d1767ed5d1d33b7e39738b569c632aec74d6de7ca90a399b0834e"},
+    {"path": "data/examples/089_nonample_union_of_facet_edges.json", "sha256": "838f81deeb28ed2dc31a8bf762f85e7d5bb1755affa04dddb906a9e3fd81f60e"},
+    {"path": "data/latex/references.bib", "sha256": "11087abe913e6ef3e5934f1a29114d1cfbca5ce46e5e04cdc0b94f3dc4f41744"},
+    {"path": "data/operation_results/285_ample_full_reduction_closed.json", "sha256": "ccfa32d783d3683beca774530574150a8b1a5b806fb5fdaeb195a8141bead2cf"},
+    {"path": "data/results/197_vc_sandwich_and_sauer_bounds.json", "sha256": "88407702c2dcd33ee73f8c8aff11707c656d7c5492aca569be3cc08bc7966281"},
+    {"path": "data/results/215_ample_facet_cube_theorem.json", "sha256": "e0b1c18db21fae1759aee59edc9d7731f81ad07718f8f23870942f03fef821cf"},
+    {"path": "data/results/216_local_corner_criterion.json", "sha256": "5470ae711055d03ba312a63b16734ac924031e5de58e0ff9d9720f5fcffd9bd3"},
+    {"path": "data/results/217_cornerless_ample_dimension_bounds.json", "sha256": "a87a125ccf039fd61c4c7cd86517f7d8df5df962ebc777da97c8dd828934dabe"},
+    {"path": "data/results/218_peripheral_corner_descent.json", "sha256": "3c0074a060b75b72f37ec610f51d7d535a13ce4936637d3ab8f3055a69eb4f99"},
+    {"path": "data/results/219_product_corner_factorization.json", "sha256": "f1ab5e56f5468725da1f07c8fc4e8cad95e9990a9bca4d913105c42df9de76aa"},
+    {"path": "data/results/220_cornerless_minimum_equals_damp_obstruction_minimum.json", "sha256": "d55d7c29cf01f0a26dac03c75e59a7315c3809796c119247610dcf8753b135b1"},
+    {"path": "migration/bibliography_queue.json", "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"},
+    {"path": "migration/coverage.json", "sha256": "c7f2f0040f5fcd8a72edd378de2681695d5b7142a1aad669bb48d32041cf6202"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "b256959b5748bcfae671332dde5c6fa9e2f3ab6cd00aa349f5329c972568cdab"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1394 records.",
+    "website": "Normalized 1410 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; ample-corners coverage increased from 3 of 24 to 14 of 24 theorem-like labels."
+  },
+  "deferred": [
+    "The ten remaining frozen-snapshot labels concern the exact SAT encodings, symmetry-breaking proof, finite certificate results, Hall lifts, and descent record complex; they form the next batch.",
+    "Newer live ample-corners research beyond the frozen source snapshot requires a separately reviewed snapshot refresh before migration."
+  ]
+}

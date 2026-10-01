@@ -1,0 +1,21 @@
+{
+  "id": 220,
+  "short_name": "cornerless_minimum_equals_damp_obstruction_minimum",
+  "name": "Cornerless Minimum Equals the Dismantlable-Ample Obstruction Minimum",
+  "class_ids": [
+    "#classes/cornerless_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "The least order $c_{\\min}$ of a nonempty cornerless ample class equals the least order $m_{\\mathrm{amp}}$ of an ample forbidden pc-minor for the dismantlable ample classes. More precisely, every such forbidden pc-minor contains a nonempty cornerless ample subclass, and every nonempty cornerless ample class has such a forbidden pc-minor of order at most its own.",
+  "status": "established",
+  "proof": "Starting from an ample forbidden pc-minor, repeatedly delete corners. Corner deletion preserves ampleness, and the process cannot empty the class because that would be a corner peeling; it therefore ends in a nonempty cornerless ample subclass. Conversely, a cornerless ample class is not dismantlable. Choose a smallest pc-minor of it that is still not dismantlable. Every proper pc-minor has fewer vertices and is dismantlable by minimality, while ample pc-minor closure keeps the chosen class ample, so it is a forbidden pc-minor of no larger order.",
+  "references": "\\cite{ChalopiChepoiMoran22,BousquetDampReader}",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#prop:cmin-equals-mamp",
+  "witness_ids": [
+    "#examples/cornerless_ample_267"
+  ]
+}

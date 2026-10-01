@@ -1,0 +1,17 @@
+{
+  "id": 218,
+  "short_name": "peripheral_corner_descent",
+  "name": "Cornerlessness Descends through Peripheral Coordinates",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "statement": "Write an ample class with an active peripheral coordinate as $C=(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ with $\\varnothing\\ne S\\subseteq B$. Then $S$ is ample, and $(s,1)$ is a corner of $C$ exactly when $s$ is a corner of $S$. In particular, a cornerless $C$ has a nonempty cornerless ample reduction $S$ on one fewer coordinate.",
+  "status": "established",
+  "proof": "The site $S$ is the full reduction in the peripheral coordinate and is ample. Every cube through $(s,1)$ extends across that coordinate because its lower copy lies in $B$. Thus the maximal cubes through $(s,1)$ are precisely $Q\\times\\{0,1\\}$ for maximal cubes $Q$ of $S$ through $s$, preserving their number and hence the corner condition.",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:peripheral"
+}

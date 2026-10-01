@@ -3373,10 +3373,11 @@
         <p><strong>Name: </strong>Sandwich and Sauer--Shelah Bounds</p>
 <p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
 <p><strong>Result Type:</strong> Invariant Law</p>
-<strong>Statement:</strong><div class="text-field"><p>For every finite Boolean class $H\subseteq\{0,1\}^X$, the strongly shattered and shattered complexes satisfy $|\operatorname{sstr}(H)|\le|H|\le|\operatorname{str}(H)|$. Consequently, if $|X|=n$ and $\operatorname{VCdim}(H)=d$, then $|H|\le\sum_{i=0}^d\binom ni$. The cardinality bound is sharp, attained by $\binom{X}{\le d}$.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>For every finite Boolean class $H\subseteq\{0,1\}^X$, the strongly shattered and shattered complexes satisfy $|\operatorname{sstr}(H)|\le|H|\le|\operatorname{str}(H)|$. Equality in either sandwich inequality holds exactly when $H$ is ample. Consequently, if $|X|=n$ and $\operatorname{VCdim}(H)=d$, then $|H|\le\sum_{i=0}^d\binom ni$. The cardinality bound is sharp, attained by $\binom{X}{\le d}$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Bollobas89">[Bollobas89]</a> <a href="bibliography.html#Bollobas95">[Bollobas95]</a> <a href="bibliography.html#Moran2012">[Moran2012]</a> <a href="bibliography.html#Sauer1972Density">[Sauer1972Density]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-bounds</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The Sandwich inequalities compare a family with the supports of its contained cubes and with all supports whose traces are complete. Equality forces the two support families to coincide, which is precisely ampleness; conversely ampleness makes both inequalities equalities. Bounding the shattered complex by all subsets of size at most the VC dimension gives the Sauer--Shelah estimate.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Bollobas89">[Bollobas89]</a> <a href="bibliography.html#Bollobas95">[Bollobas95]</a> <a href="bibliography.html#Anstee2002">[Anstee2002]</a> <a href="bibliography.html#BandeltCDK06">[BandeltCDK06]</a> <a href="bibliography.html#Moran2012">[Moran2012]</a> <a href="bibliography.html#Sauer1972Density">[Sauer1972Density]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-bounds; PartialCubes:papers/ample-corners/main.tex?#thm:sandwich</p></div>
 
         </div>
     </div>
@@ -3641,6 +3642,106 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>The $Q_n^{--}$ are precisely the forbidden pc-minors for ampleness. If a daisy obstruction were nonample, it would contain some $Q_n^{--}$ as a pc-minor; since that minor is itself nondaisy, pc-minimality forces equality with the whole obstruction. All remaining members of the complete daisy basis are therefore ample.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#cor:ample-daisy-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-215" style="position:relative;">
+
+        <h3><a href="results/ample_facet_cube_theorem.html" class="table-title-link">Facet-Cube Structure of Ample Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Facet-Cube Structure of Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Every facet of the shattered complex of a nonempty ample class supports exactly one contained cube. These facet cubes are exactly the maximal cubes, their union is the class, and a vertex is a corner exactly when it lies in one facet cube. Consequently the class is cornerless exactly when every vertex lies in at least two facet cubes. Conversely, choosing one placed cube for each facet of a down-set $\Sigma$ produces an ample class with shattered complex $\Sigma$ whenever their union shatters no support outside $\Sigma$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a facet $S$, the reduction $C^S$ is ample and has only the empty strongly shattered support, so Sandwich equality makes it a singleton and gives the unique placement. A maximal cube has an isolated placement in its reduction; connectedness of nonempty ample reductions forces that reduction to be a singleton, so its support is a facet. Every vertex lies in a maximal cube, giving the corner criterion. In the converse direction, the chosen cubes give $\Sigma\subseteq\operatorname{sstr}(U)$ while the hypothesis gives $\operatorname{str}(U)\subseteq\Sigma$; the Sandwich inequalities force equality throughout.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltCDK06">[BandeltCDK06]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:facet-cubes; PartialCubes:papers/ample-corners/main.tex?#cor:cornerless-cover</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vertex_deleted_three_cube.html">Vertex-Deleted Three-Cube</a></li><li><a href="examples/nonample_union_of_facet_edges.html">A Non-Ample Union of Chosen Facet Edges</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-216" style="position:relative;">
+
+        <h3><a href="results/local_corner_criterion.html" class="table-title-link">Local Corner Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Corner Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For any Boolean class $C$ and vertex $v\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cube through $v$ uses only incident directions. If their full span is present, it contains every cube through $v$ and is the unique maximal one. Conversely, when $v$ has a unique maximal cube, every incident edge extends into that cube, so its support contains every incident direction and it equals the full span.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:local-corner</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-217" style="position:relative;">
+
+        <h3><a href="results/cornerless_ample_dimension_bounds.html" class="table-title-link">Dimension Bounds for Cornerless Ample Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dimension Bounds for Cornerless Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty cornerless ample class has VC dimension $d$ and $n$ active coordinates, then $3\le d\le n-1$. If it is maximum, then $3\le d\le n-2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Ample classes of VC dimension at most two are corner peelable and therefore have a corner. At $d=n$, ampleness forces the full cube, whose vertices are corners. A maximum class with $d=n-1$ has $2^n-1$ vertices and is a cube with one vertex deleted; its corners are the neighbours of the missing vertex.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Proposition~4.11]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:small-vc</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vertex_deleted_three_cube.html">Vertex-Deleted Three-Cube</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-218" style="position:relative;">
+
+        <h3><a href="results/peripheral_corner_descent.html" class="table-title-link">Cornerlessness Descends through Peripheral Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cornerlessness Descends through Peripheral Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Write an ample class with an active peripheral coordinate as $C=(B\times\{0\})\cup(S\times\{1\})$ with $\varnothing\ne S\subseteq B$. Then $S$ is ample, and $(s,1)$ is a corner of $C$ exactly when $s$ is a corner of $S$. In particular, a cornerless $C$ has a nonempty cornerless ample reduction $S$ on one fewer coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The site $S$ is the full reduction in the peripheral coordinate and is ample. Every cube through $(s,1)$ extends across that coordinate because its lower copy lies in $B$. Thus the maximal cubes through $(s,1)$ are precisely $Q\times\{0,1\}$ for maximal cubes $Q$ of $S$ through $s$, preserving their number and hence the corner condition.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:peripheral</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-219" style="position:relative;">
+
+        <h3><a href="results/product_corner_factorization.html" class="table-title-link">Corners Factor through Cartesian Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corners Factor through Cartesian Products</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty Boolean classes $A$ and $B$ on disjoint coordinate sets, the maximal cubes of $A\times B$ are exactly the products of maximal cubes of the factors. A vertex $(a,b)$ is a corner exactly when both $a$ and $b$ are corners. Hence a cornerless product has a cornerless factor; for ample factors that factor is again ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cube in the product factors uniquely over the two coordinate blocks, and it is maximal exactly when both factor cubes are maximal. The number of maximal cubes through $(a,b)$ is therefore the product of the corresponding two counts, which equals one exactly when both counts equal one. Ampleness also factors through Cartesian products.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:products</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-220" style="position:relative;">
+
+        <h3><a href="results/cornerless_minimum_equals_damp_obstruction_minimum.html" class="table-title-link">Cornerless Minimum Equals the Dismantlable-Ample Obstruction Minimum</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cornerless Minimum Equals the Dismantlable-Ample Obstruction Minimum</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>The least order $c_{\min}$ of a nonempty cornerless ample class equals the least order $m_{\mathrm{amp}}$ of an ample forbidden pc-minor for the dismantlable ample classes. More precisely, every such forbidden pc-minor contains a nonempty cornerless ample subclass, and every nonempty cornerless ample class has such a forbidden pc-minor of order at most its own.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Starting from an ample forbidden pc-minor, repeatedly delete corners. Corner deletion preserves ampleness, and the process cannot empty the class because that would be a corner peeling; it therefore ends in a nonempty cornerless ample subclass. Conversely, a cornerless ample class is not dismantlable. Choose a smallest pc-minor of it that is still not dismantlable. Every proper pc-minor has fewer vertices and is dismantlable by minimality, while ample pc-minor closure keeps the chosen class ample, so it is a forbidden pc-minor of no larger order.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#BousquetDampReader">[BousquetDampReader]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:cmin-equals-mamp</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cornerless_ample_267.html">The 267-Concept Cornerless Ample Class</a></li></ul></p>
 
         </div>
     </div>

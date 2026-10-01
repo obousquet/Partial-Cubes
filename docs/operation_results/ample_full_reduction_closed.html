@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
+    <div class="table-card" id="math-285" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="operation_results/ample_full_reduction_closed.html" class="table-title-link">Ample Classes Are Full-Reduction Closed</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li></ul></p></div>
+        <p><strong>Name: </strong>Ample Classes Are Full-Reduction Closed</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/full_reduction.html">Full Reduction</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ample class $C\subseteq Q_E$ and any coordinate set $T\subseteq E$, the full reduction $C^T$ consisting of placements of the $T$-cubes contained in $C$ is ample. Whenever $C^T$ is nonempty, its one-inclusion graph is connected.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A support $U\subseteq E\setminus T$ is strongly shattered by $C^T$ exactly when $U\cup T$ is strongly shattered by $C$. Reduction closure for ample classes therefore preserves equality of shattered and strongly shattered supports. Every nonempty ample class is a partial cube and hence connected in its one-inclusion graph.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorems~3.1 and~3.2]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#thm:reductions</p></div>
 
         </div>
     </div>
