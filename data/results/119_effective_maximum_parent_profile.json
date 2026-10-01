@@ -1,0 +1,13 @@
+{
+  "id": 119,
+  "short_name": "effective_maximum_parent_profile",
+  "name": "Effective Maximum-Parent Profile from One Parent",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile", "#invariants/minimum_maximum_parent_rank", "#invariants/minimum_maximum_parent_auxiliaries"],
+  "result_type": "algorithm",
+  "statement": "Given a nonempty proper finite class and one maximum parent with profile $(r_0,s_0)$, a finite procedure computes every coordinatewise minimal point of $\\mathcal F(C)$ and a parent certificate for each. It therefore computes the least parent rank, least complementary rank, and least auxiliary count.",
+  "status": "established",
+  "proof": "The profile is upward closed by nested maximum lifts, and its minimal points form a finite antichain. Use the fixed-rank auxiliary bound to decide and find the least feasible point in every row $r<r_0$. Apply the same procedure to the complement to find the least point in every column $s<s_0$. Add the supplied point and discard dominated entries. Any other minimal point must lie in one of those rows or columns, because otherwise the supplied point dominates it.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:effective-parent-profiles",
+  "comments": "This is a termination theorem, not an efficiency bound. Without one supplied feasible parent it does not decide unrestricted nonmembership."
+}

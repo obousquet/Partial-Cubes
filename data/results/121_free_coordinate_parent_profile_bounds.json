@@ -1,0 +1,13 @@
+{
+  "id": 121,
+  "short_name": "free_coordinate_parent_profile_bounds",
+  "name": "Maximum-Parent Profile Bounds under Free Coordinates",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile", "#invariants/minimum_maximum_parent_rank", "#invariants/minimum_maximum_parent_auxiliaries"],
+  "result_type": "invariant_law",
+  "statement": "For $D_t=C\\times\\{0,1\\}^t$, $\\mathcal F(C)+(t,t)\\subseteq\\mathcal F(D_t)\\subseteq\\bigcap_{u=0}^t(\\mathcal F(C)+(u,t-u))$. Hence $h(D_t)=h(C)+t$, $h(D_t^c)=h(C^c)+t$, and $a(C)\\le a(D_t)\\le a(C)+t$. If $\\mathcal F(C)$ has one minimal point, the first inclusion is equality and $a(D_t)=a(C)+t$.",
+  "status": "established",
+  "proof": "A two-control lift from a predecessor-parent-successor triple adds one free visible coordinate and one auxiliary while raising both parent ranks. Conversely, from any parent of $D_t$, fully reduce any $u$ free coordinates and project the other $t-u$; the resulting parent of $C$ has profile shifted by $(u,t-u)$. The exact least-rank and auxiliary bounds follow. A unique minimal original profile forces the translated quadrant.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:free-coordinate-profiles",
+  "comments": "A parent can be symmetrized without changing parameters exactly when it arises from a nested chain of consecutive-rank maximum parents with one common marked section; numerical profile feasibility alone does not supply that chain."
+}

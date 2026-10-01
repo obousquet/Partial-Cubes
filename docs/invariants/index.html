@@ -627,6 +627,87 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-21" style="position:relative;">
+
+        <h3><a href="invariants/maximum_parent_profile.html" class="table-title-link">Maximum-Parent Profile</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Profile</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal F(C)">
+            \[\mathcal F(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper positioned binary class $C\subsetneq\{0,1\}^X$, let $\mathcal F(C)$ be the set of pairs $(r,s)\in\mathbb N_0^2$ for which $C$ is a marked coordinate section of a proper maximum class of rank $r$ on exactly $r+s+1$ coordinates. Equivalently, $s$ is the rank of the complementary maximum class and the auxiliary count is $r+s+1-|X|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Upward-closed subsets of $\mathbb N_0^2$</p>
+<strong>Normalization:</strong><div class="text-field"><p>Visible coordinates, including constants, remain part of the positioned class. The invariant is recorded here for nonempty proper maximum-generated classes.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>Complementation transposes the profile. Its finite antichain of coordinatewise minimal points determines the entire profile.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fixed_rank_maximum_parent_bounds.html'>Finite Auxiliary Bounds at a Prescribed Parent Rank</a></li><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-22" style="position:relative;">
+
+        <h3><a href="invariants/minimum_maximum_parent_rank.html" class="table-title-link">Minimum Maximum-Parent Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Maximum-Parent Rank</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="h(C)">
+            \[h(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper maximum-generated class $C$, $h(C)=\min\{r:(r,s)\in\mathcal F(C)\text{ for some }s\}$ is the least rank of a maximum class having $C$ as a coordinate section.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The visible positioned coordinate set is retained; auxiliary coordinates alone may be added.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>Always at least the VC dimension. Constant visible coordinates can affect related auxiliary costs even when the one-inclusion graph is unchanged.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-23" style="position:relative;">
+
+        <h3><a href="invariants/minimum_maximum_parent_auxiliaries.html" class="table-title-link">Minimum Maximum-Parent Auxiliary Count</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Maximum-Parent Auxiliary Count</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="a(C)">
+            \[a(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper maximum-generated class $C\subseteq\{0,1\}^X$, set $a(C)=\min\{r+s+1-|X|:(r,s)\in\mathcal F(C)\}$, the fewest additional coordinates in any maximum parent whose marked section is $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The original positioned coordinates are visible and are not counted as auxiliaries.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>The minimum need not a priori occur at the least parent rank and least complementary rank simultaneously; the profile records this tradeoff.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_minimum_auxiliaries.html'>Minimum Auxiliary Count of the Optimal Monotone Example</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

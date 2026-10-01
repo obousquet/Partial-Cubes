@@ -1,0 +1,11 @@
+{
+  "id": 44,
+  "short_name": "shared_parent_witness_coordinate",
+  "name": "Two Missing Patterns Sharing One Parent Witness Coordinate",
+  "symbol": "C=\\{00\\}\\subset M\\subset Q_3",
+  "object_type": "construction",
+  "definition": "On visible coordinates $x,y$ and auxiliary coordinate $a$, let $M=\\{000,100,010,001\\}$ in coordinate order $(x,y,a)$ and take its marked section $C=M[a=1]=\\{00\\}$.",
+  "properties": "$M$ is maximum of rank one. The two minimally missing visible patterns $x=1$ and $y=1$ have parent witnesses $(x,a)=(1,1)$ and $(y,a)=(1,1)$. Thus $B_1(C)=2$, while the union of their auxiliary supports has size one; the fixed-rank theorem is an upper bound and does not require distinct auxiliary coordinates.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#ex:shared",
+  "verification": "scripts/verify_maximum_parent_profiles.py; data/examples/assets/maximum_parent_profiles_database_verification.json"
+}

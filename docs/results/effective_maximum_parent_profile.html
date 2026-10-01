@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-41" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-119" style="position:relative;">
 
-        <h3><a href="examples/monotone_optimal_parent.html" class="table-title-link">Downset with Simultaneously Optimal Parent Parameters</a></h3>
+        <h3><a href="results/effective_maximum_parent_profile.html" class="table-title-link">Effective Maximum-Parent Profile from One Parent</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset with Simultaneously Optimal Parent Parameters</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C_{8}\subset Q_4">
-            \[C_{8}\subset Q_4\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>In binary integer notation on weights $1,2,4,8$, take $C=\{0,1,2,3,4,5,6,8\}$: every proper subset of $\{1,2,3\}$ together with the singleton $\{4\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>Its VC dimension and least minimal-nonface size are both two, so its minimum parent rank is two and its minimum auxiliary count is one. With auxiliary weight 16, the 16-word class $M=C\cup\{16+x:x\in\{0,1,2,4,8,9,10,12\}\}$ is an explicit rank-two maximum parent attaining both minima.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
-<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_auxiliaries.html'>Minimum Auxiliary Count of the Optimal Monotone Example</a></li></ul></p></div>
+        <p><strong>Name: </strong>Effective Maximum-Parent Profile from One Parent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Given a nonempty proper finite class and one maximum parent with profile $(r_0,s_0)$, a finite procedure computes every coordinatewise minimal point of $\mathcal F(C)$ and a parent certificate for each. It therefore computes the least parent rank, least complementary rank, and least auxiliary count.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The profile is upward closed by nested maximum lifts, and its minimal points form a finite antichain. Use the fixed-rank auxiliary bound to decide and find the least feasible point in every row $r<r_0$. Apply the same procedure to the complement to find the least point in every column $s<s_0$. Add the supplied point and discard dominated entries. Any other minimal point must lie in one of those rows or columns, because otherwise the supplied point dominates it.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is a termination theorem, not an efficiency bound. Without one supplied feasible parent it does not decide unrestricted nonmembership.</p></div>
 
         </div>
     </div>

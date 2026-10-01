@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-41" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-118" style="position:relative;">
 
-        <h3><a href="examples/monotone_optimal_parent.html" class="table-title-link">Downset with Simultaneously Optimal Parent Parameters</a></h3>
+        <h3><a href="results/fixed_rank_maximum_parent_bounds.html" class="table-title-link">Finite Auxiliary Bounds at a Prescribed Parent Rank</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset with Simultaneously Optimal Parent Parameters</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C_{8}\subset Q_4">
-            \[C_{8}\subset Q_4\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>In binary integer notation on weights $1,2,4,8$, take $C=\{0,1,2,3,4,5,6,8\}$: every proper subset of $\{1,2,3\}$ together with the singleton $\{4\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>Its VC dimension and least minimal-nonface size are both two, so its minimum parent rank is two and its minimum auxiliary count is one. With auxiliary weight 16, the 16-word class $M=C\cup\{16+x:x\in\{0,1,2,4,8,9,10,12\}\}$ is an explicit rank-two maximum parent attaining both minima.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
-<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_auxiliaries.html'>Minimum Auxiliary Count of the Optimal Monotone Example</a></li></ul></p></div>
+        <p><strong>Name: </strong>Finite Auxiliary Bounds at a Prescribed Parent Rank</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne C\subsetneq\{0,1\}^X$ and fix $r\ge0$. If a minimally missing pattern has support larger than $r+1$, no rank-$r$ maximum parent exists. Otherwise put $B_r(C)=\sum_{p\in\mathcal M(C)}(r+1-|\operatorname{supp}p|)$ and $D_r(C)=(r+1)|\{0,1\}^X\setminus C|-e_\partial(C)$. If a rank-$r$ parent exists then $D_r(C)\ge0$, and some rank-$r$ parent with the same visible labels and section uses at most $\min(B_r(C),D_r(C))$ auxiliaries. Consequently existence at any specified rank is decidable by finite enumeration.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every minimal missing visible pattern extends, together with part of the auxiliary mark, to the unique missing pattern on an $(r+1)$-support of the maximum parent. Retaining the union of these auxiliary supports preserves every forbidden visible word and hence the exact section, giving $B_r$. Alternatively choose one parent witness per absent full word. Every boundary coordinate toward $C$ must occur visibly in that witness, leaving at most $r+1-d_C(x)$ auxiliary entries; summing gives $D_r$. These finite bounds reduce rank-$r$ existence to enumerating finitely many marked maximum classes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:bound; CompressionSchemes:maximum_parent_methods.tex?#cor:decision</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/shared_parent_witness_coordinate.html">Two Missing Patterns Sharing One Parent Witness Coordinate</a></li></ul></p>
 
         </div>
     </div>

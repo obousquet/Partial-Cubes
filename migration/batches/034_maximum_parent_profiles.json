@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "batch_id": "034_maximum_parent_profiles",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Introduce maximum-parent profile invariants and normalize fixed-rank auxiliary bounds, finite decision, effective profile optimization, and constant/free-coordinate profile laws.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#lem:uniform",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:bound",
+    "CompressionSchemes:maximum_parent_methods.tex#ex:shared",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:decision",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:effective-parent-profiles",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:constant-profile",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:free-coordinate-profiles",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:free-block-normal-form"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariants, exact example values, theorem statements, concise proofs, and finite replay. CompressionSchemes retains full witness-selection proofs, enumeration algorithms, profile-frontier derivations, chain normal form, scope qualifications, and exposition.",
+    "recoverability": "The current manuscript hash and reconciliation packet from Batch 032 retain the exact promoted statement hashes and audit locations.",
+    "mutation": "No source file in CompressionSchemes or any sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains exact source and statement hashes for all promoted profile results."
+    },
+    {
+      "id": "database-maximum-parent-profiles-verifier",
+      "path": "scripts/verify_maximum_parent_profiles.py",
+      "sha256": "8c28e80040d9487a91f48a49719d56537566e2a998a1dffd896863dc36f38ef9",
+      "assertions": "Enumerates uniform missing patterns for every maximum Q3 class and checks fixed bounds, exact example profile, and coordinate formulas."
+    },
+    {
+      "id": "maximum-parent-profiles-database-replay",
+      "path": "data/examples/assets/maximum_parent_profiles_database_verification.json",
+      "sha256": "13840f4223756b73ff472d7da658289a10b9dd62c89c4ff50b39c3cd90456465",
+      "assertions": "Passed 48 maximum Q3 classes, 128 uniform patterns, the shared-witness 2-versus-1 calibration, five profile boundary points, and 11 coordinate calibrations."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/044_shared_parent_witness_coordinate.json",
+      "sha256": "f6aaf02a347ad09cb941d77adac1e546f31e1bb6fa7db38736789b74c8468fdd"
+    },
+    {
+      "path": "data/examples/assets/maximum_parent_profiles_database_verification.json",
+      "sha256": "13840f4223756b73ff472d7da658289a10b9dd62c89c4ff50b39c3cd90456465"
+    },
+    {
+      "path": "data/invariants/021_maximum_parent_profile.json",
+      "sha256": "34f6421d964d77e24e54d43e3cc0313251d221473ed7459db5e50b10fb865430"
+    },
+    {
+      "path": "data/invariants/022_minimum_maximum_parent_rank.json",
+      "sha256": "d0a8d14b2afca5a2e59adc38fc1b7b97249dda05033840268de0bbda0461cac5"
+    },
+    {
+      "path": "data/invariants/023_minimum_maximum_parent_auxiliaries.json",
+      "sha256": "0a09564f482259e08ce3bc29fda0f75a0cf96515ea5ca77f24cbe564a8b6af4e"
+    },
+    {
+      "path": "data/invariant_values/093_monotone_optimal_parent_profile.json",
+      "sha256": "84320872ac8ed4aa84dcbe58c346ab0e34de93107239106d08718dcc794b3f87"
+    },
+    {
+      "path": "data/invariant_values/094_monotone_optimal_minimum_parent_rank.json",
+      "sha256": "9ebbf1dc1655b251f40d922b788342d9d2fd40bd298350ea90e2b13ddb7287f5"
+    },
+    {
+      "path": "data/invariant_values/095_monotone_optimal_minimum_auxiliaries.json",
+      "sha256": "3c898fa4d5f934abb1ed77706617f3400425a618258be521c5c1b1e4ad232c83"
+    },
+    {
+      "path": "data/results/118_fixed_rank_maximum_parent_bounds.json",
+      "sha256": "a9189510791a9423ad61d850a4f3b7921ad9db14c8cdc6b96e348314bb8ca003"
+    },
+    {
+      "path": "data/results/119_effective_maximum_parent_profile.json",
+      "sha256": "453f7b7b6440050ea1872e3e148438a716a4c7d1709bae6f01cf731a28cdce8e"
+    },
+    {
+      "path": "data/results/120_constant_coordinate_parent_profile.json",
+      "sha256": "c7575e0ee9ece9cb4bfef88aa7e06df152e4c44c9ec04a91e5989e4b5bb16899"
+    },
+    {
+      "path": "data/results/121_free_coordinate_parent_profile_bounds.json",
+      "sha256": "7f87e511467ff5fc35b430d81e1e80821fbda06ad7ad32926e79d9e5b5857f08"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "b41e86f0cf19288af36a79e5685a7eefc34b9da915fabd34f737226cedb856c5"
+    },
+    {
+      "path": "scripts/verify_maximum_parent_profiles.py",
+      "sha256": "8c28e80040d9487a91f48a49719d56537566e2a998a1dffd896863dc36f38ef9"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 679 records.",
+    "exact_replay": "All required source labels and bounded uniform-pattern, fixed-bound, profile, and coordinate checks passed.",
+    "website": "Normalized 695 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 78 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Product and asymptotic auxiliary-profile laws.",
+    "Face avoidance, minimum-section deletion, compatible/forest deletion, and monotone filtering.",
+    "Remaining maximum-parent, YangDim algebraic, and PartialCubes facts."
+  ]
+}

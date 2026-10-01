@@ -1,0 +1,13 @@
+{
+  "id": 118,
+  "short_name": "fixed_rank_maximum_parent_bounds",
+  "name": "Finite Auxiliary Bounds at a Prescribed Parent Rank",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile"],
+  "result_type": "algorithm",
+  "statement": "Let $\\varnothing\\ne C\\subsetneq\\{0,1\\}^X$ and fix $r\\ge0$. If a minimally missing pattern has support larger than $r+1$, no rank-$r$ maximum parent exists. Otherwise put $B_r(C)=\\sum_{p\\in\\mathcal M(C)}(r+1-|\\operatorname{supp}p|)$ and $D_r(C)=(r+1)|\\{0,1\\}^X\\setminus C|-e_\\partial(C)$. If a rank-$r$ parent exists then $D_r(C)\\ge0$, and some rank-$r$ parent with the same visible labels and section uses at most $\\min(B_r(C),D_r(C))$ auxiliaries. Consequently existence at any specified rank is decidable by finite enumeration.",
+  "status": "established",
+  "proof": "Every minimal missing visible pattern extends, together with part of the auxiliary mark, to the unique missing pattern on an $(r+1)$-support of the maximum parent. Retaining the union of these auxiliary supports preserves every forbidden visible word and hence the exact section, giving $B_r$. Alternatively choose one parent witness per absent full word. Every boundary coordinate toward $C$ must occur visibly in that witness, leaving at most $r+1-d_C(x)$ auxiliary entries; summing gives $D_r$. These finite bounds reduce rank-$r$ existence to enumerating finitely many marked maximum classes.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:bound; CompressionSchemes:maximum_parent_methods.tex#cor:decision",
+  "witness_ids": ["#examples/shared_parent_witness_coordinate"]
+}

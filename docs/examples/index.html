@@ -999,7 +999,7 @@
 <strong>Properties:</strong><div class="text-field"><p>Its VC dimension and least minimal-nonface size are both two, so its minimum parent rank is two and its minimum auxiliary count is one. With auxiliary weight 16, the 16-word class $M=C\cup\{16+x:x\in\{0,1,2,4,8,9,10,12\}\}$ is an explicit rank-two maximum parent attaining both minima.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li><li><a href='invariant_values/monotone_optimal_minimum_auxiliaries.html'>Minimum Auxiliary Count of the Optimal Monotone Example</a></li></ul></p></div>
 
         </div>
     </div>
@@ -1043,6 +1043,28 @@
 <strong>Properties:</strong><div class="text-field"><p>The four visible square sections have sizes $4,9,4,1$, so the completed class has 18 words on six coordinates. The explicit construction gives a rank-three maximum parent with $\sum_{i=0}^3\binom8i=93$ words on eight coordinates.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:square-triple-parent</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-44" style="position:relative;">
+
+        <h3><a href="examples/shared_parent_witness_coordinate.html" class="table-title-link">Two Missing Patterns Sharing One Parent Witness Coordinate</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Missing Patterns Sharing One Parent Witness Coordinate</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C=\{00\}\subset M\subset Q_3">
+            \[C=\{00\}\subset M\subset Q_3\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>On visible coordinates $x,y$ and auxiliary coordinate $a$, let $M=\{000,100,010,001\}$ in coordinate order $(x,y,a)$ and take its marked section $C=M[a=1]=\{00\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$M$ is maximum of rank one. The two minimally missing visible patterns $x=1$ and $y=1$ have parent witnesses $(x,a)=(1,1)$ and $(y,a)=(1,1)$. Thus $B_1(C)=2$, while the union of their auxiliary supports has size one; the fixed-rank theorem is an upper bound and does not require distinct auxiliary coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:shared</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_profiles.py; data/examples/assets/maximum_parent_profiles_database_verification.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>

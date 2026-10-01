@@ -1784,6 +1784,60 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-93" style="position:relative;">
+
+        <h3><a href="invariant_values/monotone_optimal_parent_profile.html" class="table-title-link">Maximum-Parent Profile of the Optimal Monotone Example</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Profile of the Optimal Monotone Example</p>
+<p><strong>Invariant: </strong><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></p>
+<p><strong>Example: </strong><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>$\{(r,s)\in\mathbb N_0^2:r\ge2,\ s\ge2\}$</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact two-monotone-shore theorem gives $r\ge d=2$ and auxiliary count $m\ge r+1-s_{\min}=r-1$. Since the visible dimension is four and complementary parent rank equals $4+m-r-1$, this is exactly $s\ge2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-parameters; CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_profiles.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-94" style="position:relative;">
+
+        <h3><a href="invariant_values/monotone_optimal_minimum_parent_rank.html" class="table-title-link">Minimum Parent Rank of the Optimal Monotone Example</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Parent Rank of the Optimal Monotone Example</p>
+<p><strong>Invariant: </strong><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></p>
+<p><strong>Example: </strong><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>2</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Its VC dimension is two, giving the lower bound, and the recorded explicit parent has rank two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_profiles.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-95" style="position:relative;">
+
+        <h3><a href="invariant_values/monotone_optimal_minimum_auxiliaries.html" class="table-title-link">Minimum Auxiliary Count of the Optimal Monotone Example</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Auxiliary Count of the Optimal Monotone Example</p>
+<p><strong>Invariant: </strong><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></p>
+<p><strong>Example: </strong><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>1</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A missing pattern of size two requires at least one auxiliary in any rank-two parent, and the explicit five-coordinate parent attains one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_profiles.py</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

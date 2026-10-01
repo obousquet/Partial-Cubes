@@ -1,0 +1,14 @@
+{
+  "id": 93,
+  "short_name": "monotone_optimal_parent_profile",
+  "name": "Maximum-Parent Profile of the Optimal Monotone Example",
+  "invariant_id": "#invariants/maximum_parent_profile",
+  "example_id": "#examples/monotone_optimal_parent",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "$\\{(r,s)\\in\\mathbb N_0^2:r\\ge2,\\ s\\ge2\\}$",
+  "status": "established",
+  "proof": "The exact two-monotone-shore theorem gives $r\\ge d=2$ and auxiliary count $m\\ge r+1-s_{\\min}=r-1$. Since the visible dimension is four and complementary parent rank equals $4+m-r-1$, this is exactly $s\\ge2$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-parameters; CompressionSchemes:maximum_parent_methods.tex#ex:monotone-optimal-parent",
+  "verification": "scripts/verify_maximum_parent_profiles.py"
+}

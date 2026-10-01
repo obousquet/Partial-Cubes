@@ -2089,6 +2089,73 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-118" style="position:relative;">
+
+        <h3><a href="results/fixed_rank_maximum_parent_bounds.html" class="table-title-link">Finite Auxiliary Bounds at a Prescribed Parent Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Auxiliary Bounds at a Prescribed Parent Rank</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne C\subsetneq\{0,1\}^X$ and fix $r\ge0$. If a minimally missing pattern has support larger than $r+1$, no rank-$r$ maximum parent exists. Otherwise put $B_r(C)=\sum_{p\in\mathcal M(C)}(r+1-|\operatorname{supp}p|)$ and $D_r(C)=(r+1)|\{0,1\}^X\setminus C|-e_\partial(C)$. If a rank-$r$ parent exists then $D_r(C)\ge0$, and some rank-$r$ parent with the same visible labels and section uses at most $\min(B_r(C),D_r(C))$ auxiliaries. Consequently existence at any specified rank is decidable by finite enumeration.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every minimal missing visible pattern extends, together with part of the auxiliary mark, to the unique missing pattern on an $(r+1)$-support of the maximum parent. Retaining the union of these auxiliary supports preserves every forbidden visible word and hence the exact section, giving $B_r$. Alternatively choose one parent witness per absent full word. Every boundary coordinate toward $C$ must occur visibly in that witness, leaving at most $r+1-d_C(x)$ auxiliary entries; summing gives $D_r$. These finite bounds reduce rank-$r$ existence to enumerating finitely many marked maximum classes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:bound; CompressionSchemes:maximum_parent_methods.tex?#cor:decision</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/shared_parent_witness_coordinate.html">Two Missing Patterns Sharing One Parent Witness Coordinate</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-119" style="position:relative;">
+
+        <h3><a href="results/effective_maximum_parent_profile.html" class="table-title-link">Effective Maximum-Parent Profile from One Parent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Effective Maximum-Parent Profile from One Parent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Given a nonempty proper finite class and one maximum parent with profile $(r_0,s_0)$, a finite procedure computes every coordinatewise minimal point of $\mathcal F(C)$ and a parent certificate for each. It therefore computes the least parent rank, least complementary rank, and least auxiliary count.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The profile is upward closed by nested maximum lifts, and its minimal points form a finite antichain. Use the fixed-rank auxiliary bound to decide and find the least feasible point in every row $r<r_0$. Apply the same procedure to the complement to find the least point in every column $s<s_0$. Add the supplied point and discard dominated entries. Any other minimal point must lie in one of those rows or columns, because otherwise the supplied point dominates it.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is a termination theorem, not an efficiency bound. Without one supplied feasible parent it does not decide unrestricted nonmembership.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-120" style="position:relative;">
+
+        <h3><a href="results/constant_coordinate_parent_profile.html" class="table-title-link">Maximum-Parent Profiles under Constant Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Profiles under Constant Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty proper $C\subsetneq\{0,1\}^X$, $|X|=n$, and $t\ge1$, one has $\mathcal F(C\times\{0\}^t)=\{(r,s):s\ge n+t-1,\ (r,s-t)\in\mathcal F(C)\}$. Its minimal frontier is obtained from $(r,u)$ by $(r,\max(u+t,n+t-1))$ and deleting dominated points. Moreover $a(C\times\{0\}^t)=\min_{(r,u)\in\mathcal F(C)}\max\{r,r+u+1-n\}$, independent of positive $t$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projecting constant visible coordinates from a parent gives necessity, while the complementary target contains an $(n+t-1)$-cube. Conversely, after raising the complementary rank if needed, use face avoidance to choose a rank-one-lower maximum subclass avoiding the mark and lift it beneath the parent at the new constant coordinate. This preserves rank and auxiliary count while raising complementary rank by one; iterate and translate the frontier formula.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:constant-profile</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-121" style="position:relative;">
+
+        <h3><a href="results/free_coordinate_parent_profile_bounds.html" class="table-title-link">Maximum-Parent Profile Bounds under Free Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Profile Bounds under Free Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For $D_t=C\times\{0,1\}^t$, $\mathcal F(C)+(t,t)\subseteq\mathcal F(D_t)\subseteq\bigcap_{u=0}^t(\mathcal F(C)+(u,t-u))$. Hence $h(D_t)=h(C)+t$, $h(D_t^c)=h(C^c)+t$, and $a(C)\le a(D_t)\le a(C)+t$. If $\mathcal F(C)$ has one minimal point, the first inclusion is equality and $a(D_t)=a(C)+t$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A two-control lift from a predecessor-parent-successor triple adds one free visible coordinate and one auxiliary while raising both parent ranks. Conversely, from any parent of $D_t$, fully reduce any $u$ free coordinates and project the other $t-u$; the resulting parent of $C$ has profile shifted by $(u,t-u)$. The exact least-rank and auxiliary bounds follow. A unique minimal original profile forces the translated quadrant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:free-coordinate-profiles</p></div>
+<strong>Comments:</strong><div class="text-field"><p>A parent can be symmetrized without changing parameters exactly when it arises from a nested chain of consecutive-rank maximum parents with one common marked section; numerical profile feasibility alone does not supply that chain.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,12 @@
+{
+  "id": 120,
+  "short_name": "constant_coordinate_parent_profile",
+  "name": "Maximum-Parent Profiles under Constant Coordinates",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile", "#invariants/minimum_maximum_parent_auxiliaries"],
+  "result_type": "invariant_law",
+  "statement": "For nonempty proper $C\\subsetneq\\{0,1\\}^X$, $|X|=n$, and $t\\ge1$, one has $\\mathcal F(C\\times\\{0\\}^t)=\\{(r,s):s\\ge n+t-1,\\ (r,s-t)\\in\\mathcal F(C)\\}$. Its minimal frontier is obtained from $(r,u)$ by $(r,\\max(u+t,n+t-1))$ and deleting dominated points. Moreover $a(C\\times\\{0\\}^t)=\\min_{(r,u)\\in\\mathcal F(C)}\\max\\{r,r+u+1-n\\}$, independent of positive $t$.",
+  "status": "established",
+  "proof": "Projecting constant visible coordinates from a parent gives necessity, while the complementary target contains an $(n+t-1)$-cube. Conversely, after raising the complementary rank if needed, use face avoidance to choose a rank-one-lower maximum subclass avoiding the mark and lift it beneath the parent at the new constant coordinate. This preserves rank and auxiliary count while raising complementary rank by one; iterate and translate the frontier formula.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:constant-profile"
+}
