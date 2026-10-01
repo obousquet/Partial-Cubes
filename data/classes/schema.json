@@ -160,7 +160,7 @@
       "label": "P-Closed",
       "description": "Cached established projection-closure status",
       "required": false,
-      "rendered": true
+      "rendered": false
     },
     {
       "name": "c_closed",
@@ -168,7 +168,7 @@
       "label": "C-Closed",
       "description": "Cached established conditioning-closure status",
       "required": false,
-      "rendered": true
+      "rendered": false
     },
     {
       "name": "pc_closed",
@@ -176,7 +176,52 @@
       "label": "PC-Closed",
       "description": "Cached established pc-minor-closure status",
       "required": false,
-      "rendered": true
+      "rendered": false
+    },
+    {
+      "name": "p_closure_status",
+      "type": "enum",
+      "label": "Projection Closure",
+      "description": "Complete epistemic status of projection closure; established claims are backed by Operation Results",
+      "required": true,
+      "rendered": true,
+      "enum": [
+        {"value": "closed", "display_name": "Closed"},
+        {"value": "not_closed", "display_name": "Not Closed"},
+        {"value": "open", "display_name": "Open"},
+        {"value": "not_assessed", "display_name": "Not Yet Assessed"},
+        {"value": "not_applicable", "display_name": "Not Applicable"}
+      ]
+    },
+    {
+      "name": "c_closure_status",
+      "type": "enum",
+      "label": "Conditioning Closure",
+      "description": "Complete epistemic status of conditioning closure; established claims are backed by Operation Results",
+      "required": true,
+      "rendered": true,
+      "enum": [
+        {"value": "closed", "display_name": "Closed"},
+        {"value": "not_closed", "display_name": "Not Closed"},
+        {"value": "open", "display_name": "Open"},
+        {"value": "not_assessed", "display_name": "Not Yet Assessed"},
+        {"value": "not_applicable", "display_name": "Not Applicable"}
+      ]
+    },
+    {
+      "name": "pc_closure_status",
+      "type": "enum",
+      "label": "PC-Minor Closure",
+      "description": "Complete epistemic status of pc-minor closure; established claims are backed by Operation Results",
+      "required": true,
+      "rendered": true,
+      "enum": [
+        {"value": "closed", "display_name": "Closed"},
+        {"value": "not_closed", "display_name": "Not Closed"},
+        {"value": "open", "display_name": "Open"},
+        {"value": "not_assessed", "display_name": "Not Yet Assessed"},
+        {"value": "not_applicable", "display_name": "Not Applicable"}
+      ]
     },
     {
       "name": "comments",

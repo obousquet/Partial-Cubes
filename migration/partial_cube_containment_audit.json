@@ -1,0 +1,1494 @@
+{
+  "version": 1,
+  "kind": "partial_cube_containment_audit",
+  "generated_at": "2026-10-01",
+  "counts": {
+    "reference_class": 1,
+    "contained": 101,
+    "superclass": 1,
+    "not_contained": 7,
+    "unresolved": 0
+  },
+  "unresolved_class_ids": [],
+  "classes": [
+    {
+      "class_id": "#classes/partial_cubes",
+      "disposition": "reference_class"
+    },
+    {
+      "class_id": "#classes/bipartite_graphs",
+      "disposition": "superclass",
+      "class_path": [
+        "#classes/partial_cubes",
+        "#classes/bipartite_graphs"
+      ],
+      "relation_path": [
+        "#relations/partial_cubes_strict_subset_bipartite_graphs"
+      ]
+    },
+    {
+      "class_id": "#classes/acc_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/acc_graphs",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/acc_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/almost_median_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/almost_median_partial_cubes",
+        "#classes/sequential_isometric_partial_cubes",
+        "#classes/tiled_partial_cubes",
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/almost_median_subset_sequential_isometric",
+        "#relations/sequential_isometric_subset_tiled",
+        "#relations/tiled_subset_semi_median",
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/ample_rank_at_most_two",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/ample_rank_at_most_two",
+        "#classes/two_dimensional_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/ample_rank_two_strict_subset_two_dimensional",
+        "#relations/two_dimensional_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/antipodal_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/antipodal_partial_cubes",
+        "#classes/complete_crossing_graph_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/antipodal_strict_subset_complete_crossing",
+        "#relations/complete_crossing_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/aom_tope_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/aom_tope_graphs",
+        "#classes/shellable_coms",
+        "#classes/pure_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/aom_subset_shellable_coms",
+        "#relations/shellable_coms_strict_subset_pure_coms",
+        "#relations/pure_coms_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/arrangement_factorizable_varchenko_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/benzenoid_systems",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/benzenoid_systems",
+        "#classes/planar_partial_cubes",
+        "#classes/partial_cubes_rank_at_most_r",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/benzenoid_subset_planar",
+        "#relations/planar_subset_bounded_rank",
+        "#relations/bounded_rank_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/both_sides_dismantlable_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/both_sides_dismantlable_ample",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/both_sides_strict_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/bubble_sort_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/bubble_sort_graphs",
+        "#classes/mirror_graphs",
+        "#classes/cayley_partial_cubes",
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/bubble_sort_strict_subset_mirror_graphs",
+        "#relations/mirror_graphs_subset_cayley_partial_cubes",
+        "#relations/cayley_subset_vertex_transitive",
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/c4_cactoids",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/c4_cactoids",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/c4_cactoids_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/c4_trees",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/c4_trees",
+        "#classes/c4_cactoids",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/c4_trees_strict_subset_c4_cactoids",
+        "#relations/c4_cactoids_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/cayley_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/cayley_partial_cubes",
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/cayley_subset_vertex_transitive",
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/cellular_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/cellular_partial_cubes",
+        "#classes/tree_zone_partial_cubes",
+        "#classes/two_dimensional_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/cellular_subset_tree_zone",
+        "#relations/tree_zone_subset_two_dimensional",
+        "#relations/two_dimensional_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/com_tope_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/complete_crossing_graph_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/complete_crossing_graph_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/complete_crossing_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/complete_tau_graph_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/complete_tau_graph_partial_cubes",
+        "#classes/complete_theta_graph_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/complete_tau_strict_subset_complete_theta",
+        "#relations/complete_theta_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/complete_theta_graph_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/complete_theta_graph_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/complete_theta_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/conditional_antimatroids",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/conditional_antimatroids",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/conditional_antimatroids_strict_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/conditioning_minimal_non_ample",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/conditioning_minimal_non_ample_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/connected_resonance_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/connected_resonance_graphs",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/connected_resonance_graphs_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/convex_geometry_ideals",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/convex_geometry_ideals",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/convex_geometry_ideals_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/corner_peelable_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/corner_peelable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/corner_peelable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/cover_recursive_peripheral",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/cover_recursive_peripheral",
+        "#classes/tree_like_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/cover_recursive_strict_subset_tree_like",
+        "#relations/tree_like_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/cubic_vertex_transitive_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/cubic_vertex_transitive_partial_cubes",
+        "#classes/edge_critical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/cubic_vertex_transitive_strict_subset_edge_critical",
+        "#relations/edge_critical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/daisy_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/daisy_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/daisy_cubes_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/daisy_resonance_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/daisy_resonance_graphs",
+        "#classes/daisy_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/daisy_resonance_graphs_subset_daisy_cubes",
+        "#relations/daisy_cubes_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/diametrical_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/dismantlable_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/dismantlable_complement_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/dismantlable_complement_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/dismantlable_complement_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/dismantlable_maximum_parent_sections",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/dismantlable_maximum_parent_sections",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/dismantlable_maximum_parent_sections_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/distance_balanced_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/distance_balanced_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/distance_balanced_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/edge_critical_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/edge_critical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/edge_critical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/edge_even_cycle_block_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/edge_even_cycle_block_partial_cubes",
+        "#classes/planar_partial_cubes",
+        "#classes/partial_cubes_rank_at_most_r",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/edge_even_blocks_strict_subset_planar",
+        "#relations/planar_subset_bounded_rank",
+        "#relations/bounded_rank_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/even_cycles",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/even_cycles",
+        "#classes/two_dimensional_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/even_cycles_strict_subset_two_dimensional",
+        "#relations/two_dimensional_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/fibonacci_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/fibonacci_cubes",
+        "#classes/isometric_word_avoidance_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/fibonacci_cubes_subset_word_avoidance_cubes",
+        "#relations/word_avoidance_cubes_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/fractionally_representable_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/fractionally_representable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/fractionally_representable_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/hypercellular_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/hypercellular_partial_cubes",
+        "#classes/corner_peelable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/hypercellular_subset_corner_peelable",
+        "#relations/corner_peelable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/hypercubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/hypercubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/hypercubes_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/isometric_word_avoidance_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/isometric_word_avoidance_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/word_avoidance_cubes_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/learning_space_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/learning_space_graphs",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/learning_spaces_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/locally_realizable_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/locally_realizable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/locally_realizable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/lucas_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/lucas_cubes",
+        "#classes/simplex_graphs",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/lucas_cubes_subset_simplex_graphs",
+        "#relations/simplex_graphs_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_generated_classes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_parent_decomposition_level_k",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_parent_decomposition_level_k",
+        "#classes/dismantlable_maximum_parent_sections",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_parent_level_k_strict_subset_dismantlable_maximum_parent_sections",
+        "#relations/dismantlable_maximum_parent_sections_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_section_auxiliary_level_k",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_section_auxiliary_level_k",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_section_auxiliary_level_k_strict_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/median",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/middle_levels_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/middle_levels_graphs",
+        "#classes/two_arc_transitive_partial_cubes",
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/middle_levels_strict_subset_two_arc_transitive",
+        "#relations/two_arc_transitive_subset_vertex_transitive",
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/mirror_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/mirror_graphs",
+        "#classes/cayley_partial_cubes",
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/mirror_graphs_subset_cayley_partial_cubes",
+        "#relations/cayley_subset_vertex_transitive",
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/netlike_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/netlike_partial_cubes",
+        "#classes/peano_partial_cubes",
+        "#classes/pasch_partial_cubes",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/netlike_subset_peano",
+        "#relations/peano_strict_subset_pasch",
+        "#relations/pasch_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/om_tope_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/om_tope_graphs",
+        "#classes/antipodal_partial_cubes",
+        "#classes/complete_crossing_graph_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/om_subset_antipodal",
+        "#relations/antipodal_strict_subset_complete_crossing",
+        "#relations/complete_crossing_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/opposite_semicube_helly_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/opposite_semicube_helly_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/opposite_helly_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/opposite_semicube_isomorphic_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/opposite_semicube_isomorphic_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/opposite_isomorphic_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/partial_cubes_rank_at_most_r",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/partial_cubes_rank_at_most_r",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/bounded_rank_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/pasch_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/pasch_partial_cubes",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/pasch_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/paths",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/paths",
+        "#classes/trees",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/paths_strict_subset_trees",
+        "#relations/trees_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/peano_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/peano_partial_cubes",
+        "#classes/pasch_partial_cubes",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/peano_strict_subset_pasch",
+        "#relations/pasch_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/planar_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/planar_partial_cubes",
+        "#classes/partial_cubes_rank_at_most_r",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/planar_subset_bounded_rank",
+        "#relations/bounded_rank_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/polat_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/polat_partial_cubes",
+        "#classes/hypercellular_partial_cubes",
+        "#classes/corner_peelable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/polat_subset_hypercellular",
+        "#relations/hypercellular_subset_corner_peelable",
+        "#relations/corner_peelable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/prism_free_almost_median_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/prism_free_almost_median_partial_cubes",
+        "#classes/almost_median_partial_cubes",
+        "#classes/sequential_isometric_partial_cubes",
+        "#classes/tiled_partial_cubes",
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/prism_free_strict_subset_almost_median",
+        "#relations/almost_median_subset_sequential_isometric",
+        "#relations/sequential_isometric_subset_tiled",
+        "#relations/tiled_subset_semi_median",
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/proper_semi_median_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/proper_semi_median_partial_cubes",
+        "#classes/tiled_partial_cubes",
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/proper_semi_median_subset_tiled",
+        "#relations/tiled_subset_semi_median",
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/pure_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/pure_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/pure_coms_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/quasi_hypertori",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/quasi_hypertori",
+        "#classes/hypercellular_partial_cubes",
+        "#classes/corner_peelable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/quasi_hypertori_strict_subset_hypercellular",
+        "#relations/hypercellular_subset_corner_peelable",
+        "#relations/corner_peelable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/realizable_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/realizable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/realizable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/realizable_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/realizable_coms",
+        "#classes/corner_peelable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/realizable_coms_subset_corner_peelable",
+        "#relations/corner_peelable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/regular_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/regular_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/regular_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/representation_map_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/semi_median_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/sequential_isometric_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/sequential_isometric_partial_cubes",
+        "#classes/tiled_partial_cubes",
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/sequential_isometric_subset_tiled",
+        "#relations/tiled_subset_semi_median",
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/shellable_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/shellable_coms",
+        "#classes/pure_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/shellable_coms_strict_subset_pure_coms",
+        "#relations/pure_coms_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/simplex_graphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/simplex_graphs",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/simplex_graphs_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/squaregraphs",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/squaregraphs",
+        "#classes/median",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/squaregraphs_strict_subset_median",
+        "#relations/median_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/stars",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/stars",
+        "#classes/trees",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/stars_strict_subset_trees",
+        "#relations/trees_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/tiled_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/tiled_partial_cubes",
+        "#classes/semi_median_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/tiled_subset_semi_median",
+        "#relations/semi_median_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/tree_like_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/tree_like_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/tree_like_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/tree_zone_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/tree_zone_partial_cubes",
+        "#classes/two_dimensional_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/tree_zone_subset_two_dimensional",
+        "#relations/two_dimensional_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/trees",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/trees",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/trees_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/two_arc_transitive_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/two_arc_transitive_partial_cubes",
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/two_arc_transitive_subset_vertex_transitive",
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/two_dimensional_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/two_dimensional_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/two_dimensional_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/universal_cube_extension_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/universal_cube_extension_ample",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/universal_cube_extension_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/vertex_deleted_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/vertex_deleted_cubes",
+        "#classes/daisy_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/vertex_deleted_cubes_subset_daisy_cubes",
+        "#relations/daisy_cubes_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/vertex_transitive_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/vertex_transitive_partial_cubes",
+        "#classes/diametrical_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/vertex_transitive_subset_diametrical",
+        "#relations/diametrical_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/well_embedded_zone_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/well_embedded_zone_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/well_embedded_zones_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/yang_decomposition_level_one",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/yang_decomposition_level_one",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/yang_level_one_strict_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/zonotopally_realizable_coms",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/zonotopally_realizable_coms",
+        "#classes/locally_realizable_coms",
+        "#classes/com_tope_graphs",
+        "#classes/arrangement_factorizable_varchenko_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/zonotopally_realizable_subset_locally_realizable",
+        "#relations/locally_realizable_subset_com",
+        "#relations/com_strict_subset_varchenko_factorizable",
+        "#relations/varchenko_factorizable_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/yang_decomposition_level_two",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/yang_decomposition_level_two",
+        "#classes/dismantlable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/yang_level_two_strict_subset_dismantlable_ample",
+        "#relations/dismantlable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_section_auxiliary_level_one",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_section_auxiliary_level_one",
+        "#classes/maximum_section_auxiliary_level_two",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/auxiliary_level_one_strict_subset_auxiliary_level_two",
+        "#relations/auxiliary_level_two_strict_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_section_auxiliary_level_two",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_section_auxiliary_level_two",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/auxiliary_level_two_strict_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/strict_dominance",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/strict_dominance",
+        "#classes/realizable_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/strict_dominance_strict_subset_realizable_ample",
+        "#relations/realizable_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/universal_substitution_tests",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/universal_substitution_tests",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/universal_substitution_tests_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/spread_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/spread_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/spread_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/vc_saturated",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/vc_saturated_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/shattering_saturated",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/shattering_saturated_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/littlestone_maximal",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/littlestone_maximal_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/thicket_maximum",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/thicket_maximum_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/periphery_free_partial_cubes",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/periphery_free_partial_cubes",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/periphery_free_strict_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/cornerless_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/cornerless_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/cornerless_ample_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/littlestone_cardinality_equality",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/littlestone_cardinality_equality",
+        "#classes/maximum",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/littlestone_cardinality_equality_strict_subset_maximum",
+        "#relations/maximum_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/tree_support_extremal",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/tree_support_extremal",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/tree_support_extremal_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/tree_support_saturated",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/tree_support_saturated_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/labeled_tree_saturated",
+      "disposition": "not_contained",
+      "negative_relation_ids": [
+        "#relations/labeled_tree_saturated_not_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/diameter_optimal_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/diameter_optimal_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/diameter_optimal_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_degree_optimal_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_degree_optimal_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_degree_optimal_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/weakly_spread_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/weakly_spread_ample",
+        "#classes/diameter_optimal_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/weakly_spread_strict_subset_diameter_optimal",
+        "#relations/diameter_optimal_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/pc_degree_optimal_ample",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/pc_degree_optimal_ample",
+        "#classes/maximum_degree_optimal_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/pc_degree_optimal_strict_subset_maximum_degree_optimal",
+        "#relations/maximum_degree_optimal_strict_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/uniform_oriented_matroid_fibers",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/uniform_oriented_matroid_fibers",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/uniform_oriented_matroid_fibers_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    },
+    {
+      "class_id": "#classes/maximum_tree_amalgam_closure",
+      "disposition": "contained",
+      "class_path": [
+        "#classes/maximum_tree_amalgam_closure",
+        "#classes/maximum_generated_classes",
+        "#classes/representation_map_ample",
+        "#classes/ample",
+        "#classes/partial_cubes"
+      ],
+      "relation_path": [
+        "#relations/maximum_tree_amalgam_closure_subset_maximum_generated",
+        "#relations/maximum_generated_subset_representation_map_ample",
+        "#relations/representation_map_subset_ample",
+        "#relations/ample_subset_partial_cubes"
+      ]
+    }
+  ]
+}

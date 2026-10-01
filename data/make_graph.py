@@ -19,19 +19,17 @@ STRICT_INCLUSION_COLOR = "#1D4ED8"
 
 
 def _closure_style(entry: dict[str, Any]) -> dict[str, Any]:
-    """Encode the three cached closure facts independently on a class node."""
-    p_closed = entry.get("p_closed")
-    c_closed = entry.get("c_closed")
-    pc_closed = entry.get("pc_closed")
-    if not all(isinstance(value, bool) for value in (p_closed, c_closed, pc_closed)):
-        return {"shape": "box", "peripheries": 1, "style": "filled,dotted"}
+    """Encode the three closure statuses independently on a class node."""
+    p_status = entry["p_closure_status"]
+    c_status = entry["c_closure_status"]
+    pc_status = entry["pc_closure_status"]
     return {
         # Shape records projection closure.
-        "shape": "box" if p_closed else "ellipse",
+        "shape": "box" if p_status == "closed" else "ellipse" if p_status == "not_closed" else "hexagon",
         # Line style records conditioning closure.
-        "style": "filled" if c_closed else "filled,dashed",
-        # A second outline records full pc-minor closure.
-        "peripheries": 2 if pc_closed else 1,
+        "style": "filled" if c_status == "closed" else "filled,dashed" if c_status == "not_closed" else "filled,dotted",
+        # A second outline records full pc-minor closure; three marks unresolved/N/A.
+        "peripheries": 2 if pc_status == "closed" else 1 if pc_status == "not_closed" else 3,
     }
 
 
@@ -243,8 +241,16 @@ def _legend(include_closure=False):
             "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "peripheries": 2,
         },
         {
-            "type": "node", "label": "?", "text": "Dotted outline: closure profile incomplete",
+            "type": "node", "label": "P?", "text": "Hexagonal node: P closure open, unassessed, or N/A",
+            "shape": "hexagon", "color": "#334155", "fillcolor": "#F8FAFC",
+        },
+        {
+            "type": "node", "label": "C?", "text": "Dotted outline: C closure open, unassessed, or N/A",
             "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "style": "filled,dotted",
+        },
+        {
+            "type": "node", "label": "PC?", "text": "Triple outline: PC closure open, unassessed, or N/A",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "peripheries": 3,
         },
     ]
     if include_closure:

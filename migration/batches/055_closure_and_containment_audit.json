@@ -1,0 +1,918 @@
+{
+  "version": 1,
+  "batch_id": "055_closure_and_containment_audit",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Give every class an explicit projection/conditioning/pc-minor epistemic status, promote source-backed closure theorems and counterexamples, audit every class position relative to Partial Cubes, and encode unresolved closure coordinates independently in the hierarchy graph.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#sec:low-rank-minors",
+    "PartialCubes:papers/survey/main.tex#sec:planar-squaregraphs",
+    "PartialCubes:papers/survey/main.tex#thm:pasch-obstructions",
+    "PartialCubes:papers/survey/main.tex#thm:peano-equivalences",
+    "PartialCubes:papers/survey/main.tex#thm:polat-mcp",
+    "PartialCubes:papers/survey/main.tex#fig:class-inclusion-atlas",
+    "PartialCubes:papers/vc-littlestone/main.tex#sec:sequential-levels",
+    "YangDim:sections/spread_ample_classes/03_spread_definition.tex#ques:spread-projections-automatic"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey-closure",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partialcubes-vc-littlestone-closure",
+      "repository": "PartialCubes",
+      "path": "papers/vc-littlestone/main.tex",
+      "sha256": "b3583d2f856a31fbf08958637bc7cbee332e913fde4a27f782ccae4ed601b6e8"
+    },
+    {
+      "id": "yangdim-spread-closure",
+      "repository": "YangDim",
+      "path": "sections/spread_ample_classes/03_spread_definition.tex",
+      "sha256": "307b10baf540317c67ed4cbb5debd05cf915fa5eac0f07cfdf381469858edcd2"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized closure statuses, operation facts, containment comparisons, witnesses, and the generated audit. The source manuscripts retain full proofs, definitions, classifications, and surrounding discussion.",
+    "recoverability": "Exact source hashes and theorem locators preserve provenance. Not-assessed is explicitly separated from mathematically open and from established false.",
+    "mutation": "No source file in PartialCubes, YangDim, CompressionSchemes, or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "Makefile",
+      "sha256": "1838d5e00696eaefde63c687e8783356407c85dfbb26c3ca735a84d7908ca679"
+    },
+    {
+      "path": "data/classes/001_partial_cubes.json",
+      "sha256": "d7f9ee54b2912e18186881cb14c337796e1f7d15cee0e8c47e036a2f94b09aa6"
+    },
+    {
+      "path": "data/classes/002_bipartite_graphs.json",
+      "sha256": "c4dd7c1a324400a44456970daa7229bd1fd61e4c99d60b8dead730b38d48b90d"
+    },
+    {
+      "path": "data/classes/003_acc_graphs.json",
+      "sha256": "afdf4046b6442a3b5b7f2a68bb34add22188ed20e7a17da79d249679ef0042c5"
+    },
+    {
+      "path": "data/classes/004_almost_median_partial_cubes.json",
+      "sha256": "14cf0562b22c11e7ff73aeb8decb5800311856eeb382e2a64df294b5678eeded"
+    },
+    {
+      "path": "data/classes/005_ample.json",
+      "sha256": "8f4f5d5023d314656751385b513c70e3804f5113d5ac6c5b35d69a1bc80f56a2"
+    },
+    {
+      "path": "data/classes/006_ample_rank_at_most_two.json",
+      "sha256": "a61af966d4d0cd18cc541d55441b65b8a15c0f773aed58da70e352635aac9a8c"
+    },
+    {
+      "path": "data/classes/007_antipodal_partial_cubes.json",
+      "sha256": "c40bca23ddc88a9ee95108eeb06c269329c77d8bfe30c7cb7c439c5d07eac10e"
+    },
+    {
+      "path": "data/classes/008_aom_tope_graphs.json",
+      "sha256": "f2e692a40e82e47580a85bac0e1c04a1c046637e08d8921ec1bbafa386d885c2"
+    },
+    {
+      "path": "data/classes/009_arrangement_factorizable_varchenko_partial_cubes.json",
+      "sha256": "df5536a134a56328dec2f9ca505aa7d62bc22c148abb04a1ad769e36da6af27c"
+    },
+    {
+      "path": "data/classes/010_benzenoid_systems.json",
+      "sha256": "4318b8b41b1b9449121d0269f8a693487f5b462e68d5767b79dc579df4df32de"
+    },
+    {
+      "path": "data/classes/011_both_sides_dismantlable_ample.json",
+      "sha256": "04163f2eac0b8b6c8b53d7023dd00ad319346f1fe3e53c869398fa0a5fccaad1"
+    },
+    {
+      "path": "data/classes/012_bubble_sort_graphs.json",
+      "sha256": "cd24050b7af235e049d1d52221c92238fb872be0775a02c29a38f39a3cf00506"
+    },
+    {
+      "path": "data/classes/013_c4_cactoids.json",
+      "sha256": "19e151a0340f4a5d10194493274f5fb37e1ef912e92e775a14fbd7cc890e7ff7"
+    },
+    {
+      "path": "data/classes/014_c4_trees.json",
+      "sha256": "5b7e9a59b51681d6d16a9cb6e1268d7931e8f30657642a5200343327e5b7b959"
+    },
+    {
+      "path": "data/classes/015_cayley_partial_cubes.json",
+      "sha256": "daab1d77aafab9904b19dc5bc35f76557ab612a6ea6384f44fceae60c6009434"
+    },
+    {
+      "path": "data/classes/016_cellular_partial_cubes.json",
+      "sha256": "5b0ade71ef5d829c9f5d0835305da0a8d0a97970889b2f3e2c1ecf3a20719c42"
+    },
+    {
+      "path": "data/classes/017_com_tope_graphs.json",
+      "sha256": "ba2cb277545093988fab7fefe71ea2c3091d56633de5c5603a4fa214075a6d3a"
+    },
+    {
+      "path": "data/classes/018_complete_crossing_graph_partial_cubes.json",
+      "sha256": "dca57b1bbf9c1a2083ecdbdf9fa122c3d89d3254670a811dbec7875241f0a659"
+    },
+    {
+      "path": "data/classes/019_complete_tau_graph_partial_cubes.json",
+      "sha256": "d561c9b6d2722744ba287fddbc5448ae3a16aa834ac2300ae8679789ee327346"
+    },
+    {
+      "path": "data/classes/020_complete_theta_graph_partial_cubes.json",
+      "sha256": "b1674b92d480715336a744fb76cdeba19ad196c8d729670a9f9b7655c14439e4"
+    },
+    {
+      "path": "data/classes/021_conditional_antimatroids.json",
+      "sha256": "c871aa895e26589fabda2a11270bb6336f0a430d5c330113acf8449c146a84ec"
+    },
+    {
+      "path": "data/classes/022_conditioning_minimal_non_ample.json",
+      "sha256": "c56282384de3c0f179316225cd5ac94b35b8961fc6227971dad2b86edcb8ad5d"
+    },
+    {
+      "path": "data/classes/023_connected_resonance_graphs.json",
+      "sha256": "ba75a1144d9a8ef1c2bbcced097220f6bd5dc6a96562165a388e2b32d9279bcb"
+    },
+    {
+      "path": "data/classes/024_convex_geometry_ideals.json",
+      "sha256": "9c9908e4b82180e51ad98e0ed3acced0d3fb1a62f484d411b2c86cc634ac313c"
+    },
+    {
+      "path": "data/classes/025_corner_peelable_coms.json",
+      "sha256": "f70d8a1af91720344c8ab27469ae2bdb6f6f862ead39b6245eb39a481d29f824"
+    },
+    {
+      "path": "data/classes/026_cover_recursive_peripheral.json",
+      "sha256": "7a9176fd72026e37636ed82950084067007c2f0f5e5fa8b8589e7be68fd540ad"
+    },
+    {
+      "path": "data/classes/027_cubic_vertex_transitive_partial_cubes.json",
+      "sha256": "08db278eab5d545d13bc5026fd91e0a2f812d872c705af5eae8b153d5a27bac9"
+    },
+    {
+      "path": "data/classes/028_daisy_cubes.json",
+      "sha256": "33cd19f89dde20b418f2c05b00b5fb33c278e37c2fc2e5c5721e6b351b1f164f"
+    },
+    {
+      "path": "data/classes/029_daisy_resonance_graphs.json",
+      "sha256": "3daf25461e7a4d2678fd244ecb5ae758fb8a50171b5272339bc006bfa1b00e98"
+    },
+    {
+      "path": "data/classes/030_diametrical_partial_cubes.json",
+      "sha256": "e7ef67bb72659ec99662dd350f77057f6706331301834a19fb906a03e7cfaade"
+    },
+    {
+      "path": "data/classes/031_dismantlable_ample.json",
+      "sha256": "0243b4a459cdf240546e72ce593a3945b975e621ed9e7871d48db05b07a67354"
+    },
+    {
+      "path": "data/classes/032_dismantlable_complement_ample.json",
+      "sha256": "cd31720d7ca025eba8496bfa88d114a2c61c4dd1819c80c19c388105f989957b"
+    },
+    {
+      "path": "data/classes/033_dismantlable_maximum_parent_sections.json",
+      "sha256": "475dd881fcaf9589256e1da452947d4def73264729fc59aeaada0f7349c8afe5"
+    },
+    {
+      "path": "data/classes/034_distance_balanced_partial_cubes.json",
+      "sha256": "36de92dca118823d6696ce7d6ca42da718ec643df403ac67e3416e5dcfc49df9"
+    },
+    {
+      "path": "data/classes/035_edge_critical_partial_cubes.json",
+      "sha256": "afbd7f8b5e6218b326ed7224a35d8a640f7be1f2174a718b959dd9985780a421"
+    },
+    {
+      "path": "data/classes/036_edge_even_cycle_block_partial_cubes.json",
+      "sha256": "42e194c767c1717229977757ec31f8ebbe598933380e7bf8c0a25fb17678d3b9"
+    },
+    {
+      "path": "data/classes/037_even_cycles.json",
+      "sha256": "1bf82ced5e94e6ff31593289cc1a950dce0f3973aad3a401fd2bc4a119af6da7"
+    },
+    {
+      "path": "data/classes/038_fibonacci_cubes.json",
+      "sha256": "b505f053bc180a8ddc3262cfbfdd7d020fd77bec6ffea69b1b2e10630895ba10"
+    },
+    {
+      "path": "data/classes/039_fractionally_representable_ample.json",
+      "sha256": "6e3ba124d7aca3975037584cb3ac9dd3de7a341c20bb3ee18821c4368786832c"
+    },
+    {
+      "path": "data/classes/040_hypercellular_partial_cubes.json",
+      "sha256": "0912f066ba63c6bdb9f1454a5da027d1fde2813d78a469b83aa3e30399f26a1a"
+    },
+    {
+      "path": "data/classes/041_hypercubes.json",
+      "sha256": "a5b7ea2442c1acf5aeb188500a28bcd6979a126af123b6809cdf4744691265b8"
+    },
+    {
+      "path": "data/classes/042_isometric_word_avoidance_cubes.json",
+      "sha256": "e187b65e680179d8c4d516442714d582804d60374c8a3157a84bb9e4bfed87a7"
+    },
+    {
+      "path": "data/classes/043_learning_space_graphs.json",
+      "sha256": "fcd6a7b46bfc05f99255556df782e28f157771b213ef5fe895a0a6174a7aa231"
+    },
+    {
+      "path": "data/classes/044_locally_realizable_coms.json",
+      "sha256": "ec0f6d8fbb799201244c636c39e9285a5e48b63da90702ff019ef57b4ca918c0"
+    },
+    {
+      "path": "data/classes/045_lucas_cubes.json",
+      "sha256": "52a77535846e7a922bc90d763443990a6974cc7cab08311af7fd8fc2e505c04a"
+    },
+    {
+      "path": "data/classes/046_maximum.json",
+      "sha256": "ab14f1ce0d397a38f5ecabb01784efe3f2d11c681c8ca78b37df14db700d0750"
+    },
+    {
+      "path": "data/classes/047_maximum_generated_classes.json",
+      "sha256": "32abd82fdcba9986c10433175b322e68593ab29117588a628b13e82d68b233e6"
+    },
+    {
+      "path": "data/classes/048_maximum_parent_decomposition_level_k.json",
+      "sha256": "52e9a0dcb09af5f32cda633fed3b23a0c97ff4519c5c18eb63017ba6d9fce094"
+    },
+    {
+      "path": "data/classes/049_maximum_section_auxiliary_level_k.json",
+      "sha256": "fab0abba41816700d0fdf12050a1f54d5c3c77a7d344962e81c8ad1cad35646d"
+    },
+    {
+      "path": "data/classes/050_median.json",
+      "sha256": "1012dc6411df668741de4769e73210d6425cecea29b80a97b068392a0efbdb03"
+    },
+    {
+      "path": "data/classes/051_middle_levels_graphs.json",
+      "sha256": "2bfeb56c4f03ecaa644894eb3445a4d45f7ba2c9fa20b4e262c12a1fcb94ce6a"
+    },
+    {
+      "path": "data/classes/052_mirror_graphs.json",
+      "sha256": "ec5234857c72b2ab7dd05cd4025d8f9018146be2a3ba74a27a6436d106865213"
+    },
+    {
+      "path": "data/classes/053_netlike_partial_cubes.json",
+      "sha256": "de1c5d74510b967c55bd196f7576e2ae4290fc7775abc01ab120be0cd6955105"
+    },
+    {
+      "path": "data/classes/054_om_tope_graphs.json",
+      "sha256": "6867cf1b199334e174aef3b28d49aa1ce028d9411598eceb8c7a3442bf058f3f"
+    },
+    {
+      "path": "data/classes/055_opposite_semicube_helly_partial_cubes.json",
+      "sha256": "a5af8225541355170bad5ddede0cf77b63543da26d68bdfc5e082820ec669758"
+    },
+    {
+      "path": "data/classes/056_opposite_semicube_isomorphic_partial_cubes.json",
+      "sha256": "2e988bd396cff553ed30e08255f7db1ebe973d376d54c95300bc538780df21f7"
+    },
+    {
+      "path": "data/classes/057_partial_cubes_rank_at_most_r.json",
+      "sha256": "f1a798d1dec80c14569fd9c56b4a4956e3cd84fac7805535ea59f7177f84fa80"
+    },
+    {
+      "path": "data/classes/058_pasch_partial_cubes.json",
+      "sha256": "bbfe7fa0f4b9bef3b7f99ee26b0ba2a92ef485f1dcebbf6fd02c1adcbc208cf6"
+    },
+    {
+      "path": "data/classes/059_paths.json",
+      "sha256": "ddae0a3a0301aff82bd9584fedc3b2996918a94d13cf1afb6f3459c53e62746b"
+    },
+    {
+      "path": "data/classes/060_peano_partial_cubes.json",
+      "sha256": "18ae3917850a272ff07fce1df697b5547bf85ce95cb8344e3b9a7b7ffb48fea3"
+    },
+    {
+      "path": "data/classes/061_planar_partial_cubes.json",
+      "sha256": "89b81d0dcb8956d3cbce4a4bc538d4ce8de2361059474a8dc3364d989ffe08da"
+    },
+    {
+      "path": "data/classes/062_polat_partial_cubes.json",
+      "sha256": "5a8b0e1713a026b24f127b121842f8bb5ad4855d5e8824e9b6fd72a930b65d19"
+    },
+    {
+      "path": "data/classes/063_prism_free_almost_median_partial_cubes.json",
+      "sha256": "aa0109ed43f2055756d9c261fac29a8d46bac2f5aebba8e5370cdbc8835ae694"
+    },
+    {
+      "path": "data/classes/064_proper_semi_median_partial_cubes.json",
+      "sha256": "d60263411c28f5004f7fcb04c5a76f13442032064d88087978494134c3d2770b"
+    },
+    {
+      "path": "data/classes/065_pure_coms.json",
+      "sha256": "df0b65bd87ac0b30a15d5ff7c6fd2acc82db6c00d902f918c5b3886997b3c6e1"
+    },
+    {
+      "path": "data/classes/066_quasi_hypertori.json",
+      "sha256": "c786fd01ac12cb11fe8dc070c1d86addcc8ddcca2e8e63ec6f4ac9c67ef8a074"
+    },
+    {
+      "path": "data/classes/067_realizable_ample.json",
+      "sha256": "30c95c5ce835fb7c8b55fbf4792e54c10311adf4e6e68577e9846bf0e7e3e342"
+    },
+    {
+      "path": "data/classes/068_realizable_coms.json",
+      "sha256": "283b1f25cd4641efb0f2da52e552342696220b790f4f71f0c684d531ce6a859f"
+    },
+    {
+      "path": "data/classes/069_regular_partial_cubes.json",
+      "sha256": "222a59a14cb9358a66334ff72ddbb306c24cd2eacf61b17d638f733ee01a5f6c"
+    },
+    {
+      "path": "data/classes/070_representation_map_ample.json",
+      "sha256": "e0ada620ece05c9dc40cd5fb6fc0d07b7680380eb9c18e85b0d3635bf107e79a"
+    },
+    {
+      "path": "data/classes/071_semi_median_partial_cubes.json",
+      "sha256": "9bdc93608b55af4e1584e88b7dd59323076dfd6d426c82ba9b41cc528ecc1f13"
+    },
+    {
+      "path": "data/classes/072_sequential_isometric_partial_cubes.json",
+      "sha256": "180de87f47df4cf0392d4b86d9fe240af33c558e167a4fd525e7b7154889246e"
+    },
+    {
+      "path": "data/classes/073_shellable_coms.json",
+      "sha256": "3ad2d1f0dc39ff175e725f4d71d256443ba070a8a242ec3b92ed96dbec64864b"
+    },
+    {
+      "path": "data/classes/074_simplex_graphs.json",
+      "sha256": "7aff732da6056c1aebe17c25d47d5d56a10bdb7dfe5e220dee77b41dc9d460fb"
+    },
+    {
+      "path": "data/classes/075_squaregraphs.json",
+      "sha256": "627315d8070afa2096ac80593446fd4ca81c2cb96c6a383759d58be2773152e9"
+    },
+    {
+      "path": "data/classes/076_stars.json",
+      "sha256": "49eff10d55fe41d4d4e363052cff97d2ad851da867c81a796ba51d5d2ca1e839"
+    },
+    {
+      "path": "data/classes/077_tiled_partial_cubes.json",
+      "sha256": "9a1a1f2fa99ebb74d8f9f0f49a6b32a6c188beb73f2dda2d860745e729735bc5"
+    },
+    {
+      "path": "data/classes/078_tree_like_partial_cubes.json",
+      "sha256": "432596966534330484dcb12d243e75e26f776513323272ff3853cf50d8d7d161"
+    },
+    {
+      "path": "data/classes/079_tree_zone_partial_cubes.json",
+      "sha256": "6e590efe73c4a4babcc881c968d52f4ec5bf156f6f2bfddc92ef4f434d2b7d81"
+    },
+    {
+      "path": "data/classes/080_trees.json",
+      "sha256": "8c846b2ddf7cd0149f18d170d5f4513ea3c53d297d57c2386922592f28590243"
+    },
+    {
+      "path": "data/classes/081_two_arc_transitive_partial_cubes.json",
+      "sha256": "bd513943cb03fbf710fff0c61097bda7c755d4c70e79853b0cda6d4a44e7cb7b"
+    },
+    {
+      "path": "data/classes/082_two_dimensional_partial_cubes.json",
+      "sha256": "c075b8c3a2bfa74b7d5cef09dc5174695488fbaff61dd270fa4f920d7307ade6"
+    },
+    {
+      "path": "data/classes/083_universal_cube_extension_ample.json",
+      "sha256": "607ac813ddf28d5051483b8b60bf7b56830780c5b770f4e47283f95beb3283b3"
+    },
+    {
+      "path": "data/classes/084_vertex_deleted_cubes.json",
+      "sha256": "a5dedc27a8c49efb52023ffa9634bdf37e6bb6b275525b05cff900991a0dcd7c"
+    },
+    {
+      "path": "data/classes/085_vertex_transitive_partial_cubes.json",
+      "sha256": "3fc232cc2546e7137f7ea8f27c55a1cfc7c5e9d88f3723dfded4b4390c6af427"
+    },
+    {
+      "path": "data/classes/086_well_embedded_zone_partial_cubes.json",
+      "sha256": "d81640d76741fe04b7541e21acdb59e5e9df168eca915744cf0a8d4af4ce6e5b"
+    },
+    {
+      "path": "data/classes/087_yang_decomposition_level_one.json",
+      "sha256": "3f8f2e5470907f11afc13566d5aac152b5e624bac0a8cf0550758205f2143f1e"
+    },
+    {
+      "path": "data/classes/088_zonotopally_realizable_coms.json",
+      "sha256": "95c6730a4de8ca2d0f0829853b2ab11d2f06413e7e1a4c696b7659dd5634c192"
+    },
+    {
+      "path": "data/classes/089_yang_decomposition_level_two.json",
+      "sha256": "faf9919c53e553bc92519be9affb312838902420cfc3201da66e2c08ecc3f259"
+    },
+    {
+      "path": "data/classes/090_maximum_section_auxiliary_level_one.json",
+      "sha256": "b5cbe55e214a3e875bf5d3e246da3736eccb4a2cbc31a757e8bc3ef67f92aced"
+    },
+    {
+      "path": "data/classes/091_maximum_section_auxiliary_level_two.json",
+      "sha256": "498343d0383645f045da7124793e4b08c765b4e9de51c5bb1cc7a781dd7b0066"
+    },
+    {
+      "path": "data/classes/092_strict_dominance.json",
+      "sha256": "ef0a8273223cc04eae1965425bdbb93b4ff4556334979a9b110a24d266a94e1f"
+    },
+    {
+      "path": "data/classes/093_universal_substitution_tests.json",
+      "sha256": "e90bb8df4c3946a9c216dd5fa11cde7f98dd511d5ac2b93e0e4e1f33b48da7cf"
+    },
+    {
+      "path": "data/classes/094_spread_ample.json",
+      "sha256": "1895ad14f44466dd61faeed55ce6ed451ca783d67499574bbf225660ae9c21a4"
+    },
+    {
+      "path": "data/classes/095_vc_saturated.json",
+      "sha256": "3097e82d29a2c0b0ed533ce6edb2fdc995b352b6a9eb2cf5b0ab22e109381829"
+    },
+    {
+      "path": "data/classes/096_shattering_saturated.json",
+      "sha256": "b373ff903b9bb5a6cbc275e95d685f19750c28ba890ed07b5cb38c0b6b6ce611"
+    },
+    {
+      "path": "data/classes/097_littlestone_maximal.json",
+      "sha256": "3b34fcec848d9cee8ced741b291fb295ecd4fb7260fc438e89b542d36bc7997d"
+    },
+    {
+      "path": "data/classes/098_thicket_maximum.json",
+      "sha256": "356a5e272258b13163d77d26839215f34b76a55bf29f18d81f17b271e4aa67d1"
+    },
+    {
+      "path": "data/classes/099_periphery_free_partial_cubes.json",
+      "sha256": "63da994681c2e2ece5c8011f1d746d3a8413be776c721bcf7f209fc7e6d13315"
+    },
+    {
+      "path": "data/classes/100_cornerless_ample.json",
+      "sha256": "bbfc607869624c97c969178ccae44ab37b68220d329220092e725edd9b4d984c"
+    },
+    {
+      "path": "data/classes/101_littlestone_cardinality_equality.json",
+      "sha256": "3cb034226fe80a33458a3649682cbc20fba4ee4bf9b02b595490d04fff658eaf"
+    },
+    {
+      "path": "data/classes/102_tree_support_extremal.json",
+      "sha256": "4ade3e9741426da112f92149e97d87a2deb0bfecb9a56c33cfc5493152745b39"
+    },
+    {
+      "path": "data/classes/103_tree_support_saturated.json",
+      "sha256": "c8604cd87cb3f5e701535ded90eae1ee92a8a95ddac4c28957579b0537bf0320"
+    },
+    {
+      "path": "data/classes/104_labeled_tree_saturated.json",
+      "sha256": "f14d097dc7db78e81b562f820032cbe95b7bf396f706a9ee33a17074a09d19f9"
+    },
+    {
+      "path": "data/classes/105_diameter_optimal_ample.json",
+      "sha256": "5625ceb4c42b38f6c9d0fdd7b4acb7c6c04894574ff27a6760051a6519c35b4d"
+    },
+    {
+      "path": "data/classes/106_maximum_degree_optimal_ample.json",
+      "sha256": "8db49516850032f874746d813695d8b5929a01d69d338945ad522b2df92353ee"
+    },
+    {
+      "path": "data/classes/107_weakly_spread_ample.json",
+      "sha256": "8e59d440455aef5e79fdff6e9aca2fa5224788626781d66c0e177b31e285da1d"
+    },
+    {
+      "path": "data/classes/108_pc_degree_optimal_ample.json",
+      "sha256": "c158c8db6796366160f14874f7d77116c135c36ceaabc4131e1f8a7a0f801be0"
+    },
+    {
+      "path": "data/classes/109_uniform_oriented_matroid_fibers.json",
+      "sha256": "1df41d99b93c335dad824dfdafe5b249b79e8a6b6c69d5a2ee61c1b77951eb4b"
+    },
+    {
+      "path": "data/classes/110_maximum_tree_amalgam_closure.json",
+      "sha256": "af6ff677f7a773bc759d851a5fad9fc7250c50db9ea27214360335ce8584fb2e"
+    },
+    {
+      "path": "data/classes/schema.json",
+      "sha256": "d3f0d0c13a446b4399b687b982d8e810d0d527d107834f207531bac9dd61c6e9"
+    },
+    {
+      "path": "data/examples/001_six_cycle.json",
+      "sha256": "c94604150d622a2de0052e18dfdf3ac60aec18fb95f4df4dffdec99f1d696ba6"
+    },
+    {
+      "path": "data/examples/004_vertex_deleted_three_cube.json",
+      "sha256": "d495fe819fd59693f1822dca8a88e0782cf05639e028890e2785baa27e24dcc8"
+    },
+    {
+      "path": "data/examples/011_antipodal_pair_family.json",
+      "sha256": "413b46496544610b0c2cea2cae3237fe9848c480023af90144b158e3d2b0a021"
+    },
+    {
+      "path": "data/examples/055_vc_implication_h2.json",
+      "sha256": "1c1bab5526d0ce8806a93e3b88c484c45a294a0630c8c8200462b1bd0d43cf95"
+    },
+    {
+      "path": "data/examples/057_littlestone_maximal_triple.json",
+      "sha256": "5ad9ac1ede8a7d6b31076712a5585ab37e37c722981b9f47aa8b52bcda3bb82e"
+    },
+    {
+      "path": "data/examples/069_six_cycle_prism.json",
+      "sha256": "8fbdc243efefe8a8592fbb835cf37da2036fbe3440310ffbb2c13c0cc015ec95"
+    },
+    {
+      "path": "data/make_graph.py",
+      "sha256": "4841c8d24b0d0fb4485eaaa0c77c39c049337c0ebe69405ca0e891976c89672f"
+    },
+    {
+      "path": "data/operation_results/193_tree_support_extremal_conditioning_open.json",
+      "sha256": "72a6fccc23569b3d8d8ec5378e1673ea1852c8a33eb3d89b942785b1b8d528f0"
+    },
+    {
+      "path": "data/operation_results/194_tree_support_extremal_pc_minor_open.json",
+      "sha256": "e3673530c73eeb4ff00e2045d2c6fd3a80b1b0e499e7692ffebfb2f6749aaa14"
+    },
+    {
+      "path": "data/operation_results/195_tree_support_saturated_projection_open.json",
+      "sha256": "01fa03a36a7ca684fe85b29cca54c252c32b71a027dac587b450dd6579919a2e"
+    },
+    {
+      "path": "data/operation_results/196_tree_support_saturated_conditioning_open.json",
+      "sha256": "a2580574fd704aa044366b17ac16f04e2f3e98c9e68f0793efb2844614520481"
+    },
+    {
+      "path": "data/operation_results/197_tree_support_saturated_pc_minor_open.json",
+      "sha256": "72c2aaad10a970af8a6fc7e81c483f41f228b555092b2988c5bb94124933e9b5"
+    },
+    {
+      "path": "data/operation_results/198_labeled_tree_saturated_projection_open.json",
+      "sha256": "54b2155222da24daaac43a19debbd3414d524aa7cc9d9ec7783e046cfbbdec39"
+    },
+    {
+      "path": "data/operation_results/199_labeled_tree_saturated_conditioning_open.json",
+      "sha256": "e54f621621754cc0275464ec07948b566470bfe2ad7852dced0774386fc72d0d"
+    },
+    {
+      "path": "data/operation_results/200_labeled_tree_saturated_pc_minor_open.json",
+      "sha256": "f85bea9c95d57aa82833ff8b865e1145265780b2dc5b5593f0bae8638e4d8c6f"
+    },
+    {
+      "path": "data/operation_results/201_weakly_spread_ample_projection_open.json",
+      "sha256": "ddc12772dbfd8a92b36ebbcff30b3801c9dd05a9d033b7b14388578f71bf73e9"
+    },
+    {
+      "path": "data/operation_results/202_weakly_spread_ample_pc_minor_open.json",
+      "sha256": "755ff951e55ac8d43652b2d8c57c574ac617ce33e7e5f29b1c03a8775c27947e"
+    },
+    {
+      "path": "data/operation_results/203_almost_median_partial_cubes_projection_closed.json",
+      "sha256": "dc434af9b292b8a0d2d0dfc963fc43d8b3c8bfd477f7679b7bee0d70945e248e"
+    },
+    {
+      "path": "data/operation_results/204_almost_median_partial_cubes_conditioning_closed.json",
+      "sha256": "232ce88157a3b6a0daa222d3a96b2bd3c66c674ced778acfbb12f471dd721b8b"
+    },
+    {
+      "path": "data/operation_results/205_almost_median_partial_cubes_pc_minor_closed.json",
+      "sha256": "af052c22328dec8cb000f88ea16d700008d24d887f66940204ff67f889bb7bd2"
+    },
+    {
+      "path": "data/operation_results/206_cellular_partial_cubes_projection_closed.json",
+      "sha256": "d7f024846feae15a4777eb290192a661ceba4554a36416e43308a2bca0b0bfe1"
+    },
+    {
+      "path": "data/operation_results/207_cellular_partial_cubes_conditioning_closed.json",
+      "sha256": "b7391b914ceab5dc0e118a3a272ae2e25963a58f7328792e4af680baeea0d197"
+    },
+    {
+      "path": "data/operation_results/208_cellular_partial_cubes_pc_minor_closed.json",
+      "sha256": "1dc8e2ecf8b94fac72b8074e1b9e5129f54c0aaca24d075ad4290e70d54449ad"
+    },
+    {
+      "path": "data/operation_results/209_com_tope_graphs_projection_closed.json",
+      "sha256": "a41415d3dad4beb5d8431edbd84cbc2c28fa7b38e37dbe82a1dc53cff100b1f0"
+    },
+    {
+      "path": "data/operation_results/210_com_tope_graphs_conditioning_closed.json",
+      "sha256": "e0a5fb9b3e92057ecccb6332fa5ff4a666c7c18fe3185f2998a6d35cf5818073"
+    },
+    {
+      "path": "data/operation_results/211_com_tope_graphs_pc_minor_closed.json",
+      "sha256": "57880d5a568ea5e0e03c9b577ed3103e2a720595fdbc7dbfa3274b91fbf81136"
+    },
+    {
+      "path": "data/operation_results/212_edge_even_cycle_block_partial_cubes_projection_closed.json",
+      "sha256": "ba5bb54d4f17f4e6b6a8a1e379af555f61da7b9192d6a852c7272cb0a17d6ea8"
+    },
+    {
+      "path": "data/operation_results/213_edge_even_cycle_block_partial_cubes_conditioning_closed.json",
+      "sha256": "cb858f8222dabe6081872d51a15bb8ce49a353612a2312e96e6b75e070516e06"
+    },
+    {
+      "path": "data/operation_results/214_edge_even_cycle_block_partial_cubes_pc_minor_closed.json",
+      "sha256": "28095a41ae94469a741bbe0e84064043014cb1398086276b0a5f131e89e095bc"
+    },
+    {
+      "path": "data/operation_results/215_hypercellular_partial_cubes_projection_closed.json",
+      "sha256": "dac28bc9cfb9dbf00e8ee05cdb10b63a9fc2ae3a1d128d0f87a32308633968cd"
+    },
+    {
+      "path": "data/operation_results/216_hypercellular_partial_cubes_conditioning_closed.json",
+      "sha256": "f87e089223136f5c03375f08e883309ead1b348fc94406e3bd14ca6e9e0fceba"
+    },
+    {
+      "path": "data/operation_results/217_hypercellular_partial_cubes_pc_minor_closed.json",
+      "sha256": "5be4da82037e12d8d89287b3d2629735dfeda0da334f77ecddee7c617f939916"
+    },
+    {
+      "path": "data/operation_results/218_partial_cubes_rank_at_most_r_projection_closed.json",
+      "sha256": "693a76d16d63dc01a1b3f83085e80ac64b77e1b8dab592a23d50a178a74d46e3"
+    },
+    {
+      "path": "data/operation_results/219_partial_cubes_rank_at_most_r_conditioning_closed.json",
+      "sha256": "d652ea56577584b3578c9db2d12afa94582d71ef156af2c064033865769d19f6"
+    },
+    {
+      "path": "data/operation_results/220_partial_cubes_rank_at_most_r_pc_minor_closed.json",
+      "sha256": "3d987a1442efa34869419a8365cce29a8aecf00793d8fd8a54325e075f9195f9"
+    },
+    {
+      "path": "data/operation_results/221_pasch_partial_cubes_projection_closed.json",
+      "sha256": "02c6f5338d968c2d48985ee066d64826218e5687537b868797e9fd459448da94"
+    },
+    {
+      "path": "data/operation_results/222_pasch_partial_cubes_conditioning_closed.json",
+      "sha256": "a0857973ea41aa6b171b36b279e3054847b1bbb905cc303ee69acb650abafa91"
+    },
+    {
+      "path": "data/operation_results/223_pasch_partial_cubes_pc_minor_closed.json",
+      "sha256": "e34b2c5499d3d441db2d7f9741120b0c9b538d19beccb23715c4c96435f3f9a9"
+    },
+    {
+      "path": "data/operation_results/224_planar_partial_cubes_projection_closed.json",
+      "sha256": "ddd9b26ec4e3eed23c549ecf4408b49e9b3e739c980b8bdf9c3c3e643a63da7b"
+    },
+    {
+      "path": "data/operation_results/225_planar_partial_cubes_conditioning_closed.json",
+      "sha256": "c6abd80d4da41a1b8067ff5c309ea1c99c8e5bcd3a2976284299d138e23e11ef"
+    },
+    {
+      "path": "data/operation_results/226_planar_partial_cubes_pc_minor_closed.json",
+      "sha256": "a51c7f7e1863114920953f754f2244c18bf2b9c9b6f625d6e8b4b58bb8e3b1da"
+    },
+    {
+      "path": "data/operation_results/227_polat_partial_cubes_projection_closed.json",
+      "sha256": "955475b71a974068640fd705cc540603cb6289d1efa2a7b9ba5eee49ad2bb55f"
+    },
+    {
+      "path": "data/operation_results/228_polat_partial_cubes_conditioning_closed.json",
+      "sha256": "7ded57df367dd6a805398f8520884698b41dc04d6b905d00149b869ba1256817"
+    },
+    {
+      "path": "data/operation_results/229_polat_partial_cubes_pc_minor_closed.json",
+      "sha256": "e7186e830868146149e11a6535dce0a81f76e39849a912c90555b90743c986aa"
+    },
+    {
+      "path": "data/operation_results/230_simplex_graphs_projection_closed.json",
+      "sha256": "78ae2235a8d0f9dc0ea7de8e89b14d6d59b6ae2f46f7f9a8eb71f4658068ad03"
+    },
+    {
+      "path": "data/operation_results/231_simplex_graphs_conditioning_closed.json",
+      "sha256": "6e90428e51afbf3db8929ff67b4377dcf0549171d0473191175cba2ca8f9ac79"
+    },
+    {
+      "path": "data/operation_results/232_simplex_graphs_pc_minor_closed.json",
+      "sha256": "bb1a4dcdd0e4b658eaaef4a80bb5b609b4b23c262026cc8263201f702bba6cab"
+    },
+    {
+      "path": "data/operation_results/233_tree_zone_partial_cubes_projection_closed.json",
+      "sha256": "ebb839ae921becdef686f5ed631d240e5cc8aec73b7dee0abba02ca3afc966aa"
+    },
+    {
+      "path": "data/operation_results/234_tree_zone_partial_cubes_conditioning_closed.json",
+      "sha256": "897e1b2edf3c1e07b25409f6e8d728986a2e0808d95e72223df4326861889959"
+    },
+    {
+      "path": "data/operation_results/235_tree_zone_partial_cubes_pc_minor_closed.json",
+      "sha256": "27486716d30de83627f157027cfbf75097af7d415b2d911befa19be14b5e5ad8"
+    },
+    {
+      "path": "data/operation_results/236_well_embedded_zone_partial_cubes_projection_closed.json",
+      "sha256": "13d4bcb2fbc8737b4f26b26c920b017379ba587104e2b797549f77de8a38aa72"
+    },
+    {
+      "path": "data/operation_results/237_well_embedded_zone_partial_cubes_conditioning_closed.json",
+      "sha256": "37fc4ebf744461c974bd436a36079798f4b8e2a0fa72e0c25e295cf108630929"
+    },
+    {
+      "path": "data/operation_results/238_well_embedded_zone_partial_cubes_pc_minor_closed.json",
+      "sha256": "9cd250b6e3bc1c2879644c139be319e4c9a9f4972492237f4cb21fb70a07c783"
+    },
+    {
+      "path": "data/operation_results/239_peano_partial_cubes_projection_not_closed.json",
+      "sha256": "d6a121b7661e4f0ea91e7b62708bc56d756fc43ed6948ec58bbd777ea7b173c3"
+    },
+    {
+      "path": "data/operation_results/240_peano_partial_cubes_conditioning_closed.json",
+      "sha256": "373b8723799e591359cb1b4bae17bbe41dc88e4489651c022193acb75078cded"
+    },
+    {
+      "path": "data/operation_results/241_peano_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "40137bae55fb7819f3250b1f2712e9122b08d7151b5a9fdd21369722064234e7"
+    },
+    {
+      "path": "data/operation_results/242_netlike_partial_cubes_projection_not_closed.json",
+      "sha256": "c9c79cc1449bfbbb1be8dcbd2392c9b93b9a59ebc208f6e979bb8bf3f74d2027"
+    },
+    {
+      "path": "data/operation_results/243_netlike_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "441677570ab93e423faab4020dffd3a6a1636c8b584971d03cc967918067bff1"
+    },
+    {
+      "path": "data/operation_results/244_antipodal_partial_cubes_conditioning_not_closed.json",
+      "sha256": "9b058161412ed2008c5f50917c8251ea7c6317915d5e948147985b1580741ace"
+    },
+    {
+      "path": "data/operation_results/245_antipodal_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "7e14bda365fd2eae3740e705e091975d5e146646f0cabc096efc49cb9b7ee202"
+    },
+    {
+      "path": "data/operation_results/246_benzenoid_systems_conditioning_not_closed.json",
+      "sha256": "05ed7973e54fe5d6292f12ea47b53e9bfaad0da440d8da5b677fc27a482c5900"
+    },
+    {
+      "path": "data/operation_results/247_benzenoid_systems_pc_minor_not_closed.json",
+      "sha256": "7d7955df835573a9d522c1d6ccb73b268093f88bfb548867de3f17ffe1df49e2"
+    },
+    {
+      "path": "data/operation_results/248_bubble_sort_graphs_conditioning_not_closed.json",
+      "sha256": "de66c5d52b8d0d6bef4fe1a58bdb7e59e60f82117865f61b55b8d3dd12e4b175"
+    },
+    {
+      "path": "data/operation_results/249_bubble_sort_graphs_pc_minor_not_closed.json",
+      "sha256": "62e6c75716cf62023149291d801310bd669e472e74e2e192f9b71c94af728cf8"
+    },
+    {
+      "path": "data/operation_results/250_cayley_partial_cubes_conditioning_not_closed.json",
+      "sha256": "aad06981a6317f922507c83c974bd0c7acc119dfdd64e4934a806141e6c46a82"
+    },
+    {
+      "path": "data/operation_results/251_cayley_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "02e2271759aeb03236be82821115522f44a3cfee5701811b8b262f58c4a10758"
+    },
+    {
+      "path": "data/operation_results/252_complete_crossing_graph_partial_cubes_conditioning_not_closed.json",
+      "sha256": "03878c232dc1cee521214cbe40c5470a90d607f5cb058b6ff41776aa2a3e0a4d"
+    },
+    {
+      "path": "data/operation_results/253_complete_crossing_graph_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "d064d884fa63e7f2a986d406b438567f87198d44d9b29bce848b4049e5999629"
+    },
+    {
+      "path": "data/operation_results/254_diametrical_partial_cubes_conditioning_not_closed.json",
+      "sha256": "b4d60b8aac7bc98680fa5140e8bc32ee61616b579a65502f9555b8e9d26a0f22"
+    },
+    {
+      "path": "data/operation_results/255_diametrical_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "b974e7215c67e645362b223a3684cee166c9a57c6bfb164c721c99536a19cac1"
+    },
+    {
+      "path": "data/operation_results/256_distance_balanced_partial_cubes_conditioning_not_closed.json",
+      "sha256": "1ed9cbd0c3d38955e1466d1fcfb04b8274ff1136addea3ef49ddc193809f3184"
+    },
+    {
+      "path": "data/operation_results/257_distance_balanced_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "a7fb3d88b88e0c159c2a5fe1a34bdf57207ce1adb60be2fc515f8b8b4d31f268"
+    },
+    {
+      "path": "data/operation_results/258_middle_levels_graphs_conditioning_not_closed.json",
+      "sha256": "18d0388ed12a1b8d6941e76d1e9b604eccfd8ae22855955e3ca2bf56d61b90bf"
+    },
+    {
+      "path": "data/operation_results/259_middle_levels_graphs_pc_minor_not_closed.json",
+      "sha256": "2011df28db6bb67ed9f2a1e107ed9c6c4a1d57d3d32a85ff9864ad7d3481fadb"
+    },
+    {
+      "path": "data/operation_results/260_mirror_graphs_conditioning_not_closed.json",
+      "sha256": "6edaf411341baf48b6190c6c261c07bde9be3fc20468813f75e8e141f6714d9d"
+    },
+    {
+      "path": "data/operation_results/261_mirror_graphs_pc_minor_not_closed.json",
+      "sha256": "043fa1f709ca377329f95452ae8c607322fdf5bce8046a575305614d28747702"
+    },
+    {
+      "path": "data/operation_results/262_quasi_hypertori_conditioning_not_closed.json",
+      "sha256": "6878310b8cfb13dad2ab6fca5b0dc30f1177ddd916470b7ab10e0af454fb7346"
+    },
+    {
+      "path": "data/operation_results/263_quasi_hypertori_pc_minor_not_closed.json",
+      "sha256": "c7fcf8e54830ba1a0b0f43f85a203ee71a88fb040d9ec4b0c7c2c8ec1023bb3c"
+    },
+    {
+      "path": "data/operation_results/264_regular_partial_cubes_conditioning_not_closed.json",
+      "sha256": "f491a2a009ac3143aeabdbdb0c44fa8a2d07d735afdad5e178deb1859549f229"
+    },
+    {
+      "path": "data/operation_results/265_regular_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "899f449cc6e5926e92bb1bf251d321bf21c3a9fb630ddb88c301eca6ec2c155d"
+    },
+    {
+      "path": "data/operation_results/266_two_arc_transitive_partial_cubes_conditioning_not_closed.json",
+      "sha256": "0b9274dda6dc8fdcb391541aec4cf6c6c2350852c05dacd6639b19a21ec7ed87"
+    },
+    {
+      "path": "data/operation_results/267_two_arc_transitive_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "4992b5751d2ee35b116dd99f50caa517db09b09d077e46a164ac927bb955e672"
+    },
+    {
+      "path": "data/operation_results/268_vertex_transitive_partial_cubes_conditioning_not_closed.json",
+      "sha256": "dcceae175f33f9bc868bb8b2fd47c933c46d258ff68f786931c1d06ca96c272b"
+    },
+    {
+      "path": "data/operation_results/269_vertex_transitive_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "df0cb6a93225e9027bdafa6ea50c8610b54be08a2752e35ebd306451dc2d134e"
+    },
+    {
+      "path": "data/operation_results/270_cubic_vertex_transitive_partial_cubes_projection_not_closed.json",
+      "sha256": "549d3ac145be2fcc53625ced56322df344976669c8cd820766e9ef08f056c977"
+    },
+    {
+      "path": "data/operation_results/271_cubic_vertex_transitive_partial_cubes_conditioning_not_closed.json",
+      "sha256": "a66ac72a5802207be8957fd80e268a5665c127b86fe749c7317d7eb6b9e7c100"
+    },
+    {
+      "path": "data/operation_results/272_cubic_vertex_transitive_partial_cubes_pc_minor_not_closed.json",
+      "sha256": "fb2a9d7e41c990f33765300205d36c13c07219c8e6a737c0756780399af7e7ed"
+    },
+    {
+      "path": "data/operation_results/273_vertex_deleted_cubes_projection_not_closed.json",
+      "sha256": "b109b70d79f1bad27f084c032b8cfff96a776d91a65ea07b53dab28a69e4e6da"
+    },
+    {
+      "path": "data/operation_results/274_vertex_deleted_cubes_conditioning_not_closed.json",
+      "sha256": "dbc472b358d206b1326ec4a5ebf14a11f058de0a5c121415da245f1eca4d19a3"
+    },
+    {
+      "path": "data/operation_results/275_vertex_deleted_cubes_pc_minor_not_closed.json",
+      "sha256": "30d52f8fab677aa284665517231f7fdc8973e592b59412a2f3fad328ecefa38e"
+    },
+    {
+      "path": "data/relations/255_conditioning_minimal_non_ample_not_subset_partial_cubes.json",
+      "sha256": "2d235eb3aeb6cacafca743c4e26bb153fb644d55ab4d4947d8fdffbd3dfadef6"
+    },
+    {
+      "path": "data/relations/256_vc_saturated_not_subset_partial_cubes.json",
+      "sha256": "2574ff3e71b3b1cc306be9f2d37b2f170f31a2073f404b1e78f005dee0f42aa6"
+    },
+    {
+      "path": "data/relations/257_shattering_saturated_not_subset_partial_cubes.json",
+      "sha256": "6fe9869257dc2b413b0831843b671c02c9a280661e1c6c1064e1b3c03070941c"
+    },
+    {
+      "path": "data/relations/258_littlestone_maximal_not_subset_partial_cubes.json",
+      "sha256": "a3d9efc2268379ab12cc1cf0127cbb44198d374ea513378ae0796dcdcd637fc6"
+    },
+    {
+      "path": "data/relations/259_thicket_maximum_not_subset_partial_cubes.json",
+      "sha256": "77e71213b1c57862547194c8599d32825330b71b1f8d5cb463e6141b44aaf15d"
+    },
+    {
+      "path": "data/relations/260_tree_support_saturated_not_subset_partial_cubes.json",
+      "sha256": "329b4ec84b9e1ffad0b0af6a853052c51f86553a1f22654ce238b57f6d61b6b6"
+    },
+    {
+      "path": "data/relations/261_labeled_tree_saturated_not_subset_partial_cubes.json",
+      "sha256": "6a8c118e1e2253a1eeb81393e7e02366721a315e5a657c3b6e38d9366081d752"
+    },
+    {
+      "path": "migration/audit_class_statuses.py",
+      "sha256": "9de91d24bfb3bff51ba54c64aee67659d9df2c952fd9a8987ab4a2a4e57e4c2f"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "acd66a7c9c626a21242bd44e863a15fdcc88df02bdf976c38f5294c793a21a21"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "e5ce50a60518deac8ae35993d2cf0d2ee8e5f40c9d421dfc66946196a211df93"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "552099bfa0920f740561e4866df21803a6268bdf9e4f8972a13a3ebcd5e59412"
+    },
+    {
+      "path": "scripts/check_graphs.py",
+      "sha256": "386e139c17f97be3c7efc4decb0ef7f3f3f53c0d8e614591f329b86d9be1bbb1"
+    },
+    {
+      "path": "scripts/validate_data.py",
+      "sha256": "d477f42d8086c541b186d4e7b9300715d6517a9350d639320d2ae9492d25fcb1"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1243 records.",
+    "website": "Normalized 1259 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "179 Hasse covers represent 223 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 110 classes have an audited position relative to Partial Cubes; 227 closure-map arrows render.",
+    "closure_audit": "Every class has p/c/pc status. Counts are P: 49 closed, 11 not closed, 3 open, 46 not assessed, 1 not applicable; C: 44 closed, 27 not closed, 3 open, 35 not assessed, 1 not applicable; PC: 42 closed, 31 not closed, 4 open, 32 not assessed, 1 not applicable.",
+    "containment_audit": "101 proper class nodes have established paths into Partial Cubes, Partial Cubes is the reference node, Bipartite Graphs is an established superclass, seven set-family notions have established noncontainment witnesses, and zero nodes are unresolved.",
+    "migration": "All source extracts, source preservation checks, coverage reports, class-status audits, and review queues pass."
+  },
+  "deferred": [
+    "Research the 32 classes for which all three closure coordinates remain not assessed; the database now distinguishes these from open and negative results.",
+    "Research the remaining partially assessed closure profiles, especially netlike, spread-comparison, and adaptive-shattering classes.",
+    "Continue promoting remaining class identities and facts from sibling repositories under the persistent database-completion goal."
+  ]
+}

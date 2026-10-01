@@ -112,7 +112,7 @@
 
 <p><strong>Object Type:</strong> Graph</p>
 <strong>Definition:</strong><div class="text-field"><p>The cycle on six vertices, equivalently $Q_3$ with one antipodal pair of vertices deleted.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is $Q_3^{--}$, the first antipodally punctured hypercube. It is a two-dimensional partial cube, but it is neither ample, a daisy cube, nor a median graph; every proper pc-minor is ample, daisy, and median. It is periphery-free.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is $Q_3^{--}$, the first antipodally punctured hypercube. It is a two-dimensional partial cube, but it is neither ample, a daisy cube, nor a median graph; every proper pc-minor is ample, daisy, and median. It is periphery-free. In the standard embedding $\{000,001,011,111,110,100\}$, conditioning the first coordinate to zero gives $P_3$ after removing the fixed coordinate.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:periphery-free; PartialCubes:papers/cover-recursive/main.tex?#def:peripheral-coordinate</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/antipodally_punctured_hypercubes.html">Antipodally Punctured Hypercubes</a></li><li><a href="obstruction_families/six_cycle_median_obstruction.html">Six-Cycle Median Obstruction</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
@@ -170,7 +170,7 @@
 
 <p><strong>Object Type:</strong> Graph</p>
 <strong>Definition:</strong><div class="text-field"><p>The subgraph of $Q_3$ induced by $\{0,1\}^3\setminus\{111\}$; every choice of the deleted cube vertex is isomorphic to this one.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is a partial cube, a daisy cube, an ample class, a spread ample class, and a convex-geometry ideal, but it is not a hypercube or median: the coordinatewise majority of $110,101,011$ is the missing vertex $111$. Every proper pc-minor is median.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is a partial cube, a daisy cube, an ample class, a spread ample class, and a convex-geometry ideal, but it is not a hypercube or median: the coordinatewise majority of $110,101,011$ is the missing vertex $111$. Every proper pc-minor is median. Deleting any displayed coordinate by projection gives the full square $Q_2$, and conditioning on the side opposite the missing vertex also gives $Q_2$; neither is a vertex-deleted cube $Q_n^-$ with $n\ge2$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChepoiKnauerMarc20">[ChepoiKnauerMarc20]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:median-characterizations; YangDim:sections/spread_ample_classes/04_examples.tex?#prop:spread-q3-minus</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/vertex_deleted_three_cube.html">Vertex-Deleted Three-Cube</a></li></ul></p>
@@ -320,7 +320,7 @@
 <p><strong>Object Type:</strong> Family</p>
 <strong>Definition:</strong><div class="text-field"><p>For each integer $n\geq1$, the two-word class consisting of the two antipodal vertices of $Q_n$.</p></div>
 <strong>Parameters:</strong><div class="text-field"><p>Integer $n\geq1$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>Its ordering width is $n-1$. Its optimal daisy completion adds $2^{\lfloor n/2\rfloor}+2^{\lceil n/2\rceil}-3$ concepts, attaining the sharp completion bound. For $n>1$ its one-inclusion graph is disconnected, so it is not a partial cube.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Its ordering width is $n-1$. Its optimal daisy completion adds $2^{\lfloor n/2\rfloor}+2^{\lceil n/2\rceil}-3$ concepts, attaining the sharp completion bound. For $n>1$ its one-inclusion graph is disconnected, so it is not a partial cube. For $n\ge2$ its one-inclusion graph has two isolated vertices, so this family also witnesses that conditioning-minimal non-ample classes need not be partial cubes.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#ex:pair; PartialCubes:papers/structural-invariants/main.tex?#thm:completion-width</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/antipodal_pair_resolution_slope.html'>Resolution Slope of an Antipodal Pair</a></li><li><a href='invariant_values/antipodal_pair_rounded_slope_defect.html'>Rounded Resolution-Slope Defect of an Antipodal Pair</a></li><li><a href='invariant_values/antipodal_pair_interval_gap.html'>Interval Gap of an Antipodal Pair</a></li><li><a href='invariant_values/antipodal_pair_ordering_width.html'>Ordering Width of an Antipodal Pair</a></li><li><a href='invariant_values/square_antipodal_pair_coefficient_ratio.html'>Coefficient Ratio of the Square Antipodal Pair</a></li></ul></p></div>
 
@@ -1282,7 +1282,7 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>$H_2=\{0000,0001,0010,0011,0100,0101,0110,1011,1101,1110\}\subseteq\{0,1\}^4$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It has VC dimension two, is VC-saturated and shattering-saturated, and is neither ample nor maximum. Its last-coordinate one-section is not shattering-saturated.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It has VC dimension two, is VC-saturated and shattering-saturated, and is neither ample nor maximum. Its last-coordinate one-section is not shattering-saturated. Its one-inclusion graph is not isometric: $1011$ and $1101$ have Hamming distance two but graph distance four, so it is not a partial cube in the displayed embedding.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#eq:vc-saturated-witness; PartialCubes:papers/vc-littlestone/main.tex?#app:closure-witnesses</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -1325,7 +1325,7 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>$H'=\{000,011,100\}\subseteq\{0,1\}^3$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is Littlestone-maximal of dimension one, but is not $(3,1)$-thicket-maximum because its thicket shatter value is three rather than four.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is Littlestone-maximal of dimension one, but is not $(3,1)$-thicket-maximum because its thicket shatter value is three rather than four. It is also $(1,1)$-thicket-maximum, tree-support-saturated, and labeled-tree-saturated. Its one-inclusion graph is disconnected (the word $011$ is isolated), so it is not a partial cube.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:bhaskar-walker</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -1546,6 +1546,27 @@
 <strong>Definition:</strong><div class="text-field"><p>$\{0000,0100,1000,1100,0001,0010,0011\}\subseteq\{0,1\}^4$, the union of two coordinate squares meeting only at $0000$.</p></div>
 <strong>Properties:</strong><div class="text-field"><p>It lies in the maximum tree-amalgam closure and is ample of VC dimension two. It is not maximum: it has seven concepts, whereas the Sauer bound on four active coordinates is eleven.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam; CompressionSchemes:partitionable_yang_complexes.tex?#cor:nondismantlable-factor-tree-family</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-69" style="position:relative;">
+
+        <h3><a href="examples/six_cycle_prism.html" class="table-title-link">Six-Cycle Prism</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Six-Cycle Prism</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="K_2\square C_6">
+            \[K_2\square C_6\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Graph</p>
+<strong>Definition:</strong><div class="text-field"><p>The Cartesian product of one edge and the six-cycle.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is a cubic vertex-transitive partial cube. Projecting or conditioning the coordinate of the $K_2$ factor gives $C_6$, which is 2-regular and therefore is not cubic.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:cubic-vertex-transitive; PartialCubes:papers/survey/main.tex?#prop:edge-critical-profile</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>

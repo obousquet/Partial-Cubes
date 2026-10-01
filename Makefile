@@ -35,6 +35,7 @@ migration-extract:
 	$(PYTHON) $(MIGRATION_DIR)/index_latex_labels.py --latex-root $(LATEX_ROOT)
 	$(PYTHON) $(MIGRATION_DIR)/audit_bibliography.py --latex-root $(LATEX_ROOT)
 	$(PYTHON) $(MIGRATION_DIR)/audit_coverage.py --data-dir $(DATA_DIR)
+	$(PYTHON) $(MIGRATION_DIR)/audit_class_statuses.py --data-dir $(DATA_DIR) --migration-dir $(MIGRATION_DIR)
 
 migration-init-queues:
 	$(PYTHON) $(MIGRATION_DIR)/initialize_review_queues.py
@@ -46,6 +47,7 @@ migration-check:
 	$(PYTHON) $(MIGRATION_DIR)/check_source_manifest.py --latex-root $(LATEX_ROOT)
 	$(PYTHON) $(MIGRATION_DIR)/audit_bibliography.py --latex-root $(LATEX_ROOT) --check
 	$(PYTHON) $(MIGRATION_DIR)/audit_coverage.py --data-dir $(DATA_DIR) --check
+	$(PYTHON) $(MIGRATION_DIR)/audit_class_statuses.py --data-dir $(DATA_DIR) --migration-dir $(MIGRATION_DIR) --check
 	$(PYTHON) $(MIGRATION_DIR)/validate_review_queues.py
 
 clean:

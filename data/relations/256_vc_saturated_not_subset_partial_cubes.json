@@ -1,0 +1,16 @@
+{
+  "id": 256,
+  "short_name": "vc_saturated_not_subset_partial_cubes",
+  "name": "VC-Saturated Classes Need Not Be Partial Cubes",
+  "subject_id": "#classes/vc_saturated",
+  "object_id": "#classes/partial_cubes",
+  "relation_type": "noncontainment",
+  "status": "established",
+  "scope": "Finite displayed Boolean classes, compared through their one-inclusion graphs.",
+  "statement": "Not every member of vc-saturated classes is a partial cube.",
+  "witness_ids": [
+    "#examples/vc_implication_h2"
+  ],
+  "proof": "$H_2$ is VC-saturated, but two of its concepts have Hamming distance two and one-inclusion-graph distance four, so its displayed graph is not isometric.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#eq:vc-saturated-witness"
+}

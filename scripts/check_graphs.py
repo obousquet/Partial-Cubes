@@ -147,6 +147,31 @@ def main() -> int:
                 f"minor-atlas Ample subclass lacks Hasse reachability to Ample: {mapping['source_id']}"
             )
 
+    # Every class must now have an explicit position relative to Partial Cubes:
+    # below it, above it, or accompanied by an established negative comparison.
+    partial_cubes_ref = "#classes/partial_cubes"
+    negative_to_partial_cubes = {
+        aliases.get(relation.get("subject_id"))
+        for relation in relations
+        if relation.get("status") == "established"
+        and relation.get("relation_type") in {"noncontainment", "incomparable"}
+        and aliases.get(relation.get("object_id")) == partial_cubes_ref
+    }
+    positioned_relative_to_partial_cubes = 0
+    for entry in classes:
+        reference = f'#classes/{entry["short_name"]}'
+        if (
+            reference == partial_cubes_ref
+            or has_path(reference, partial_cubes_ref, adjacency)
+            or has_path(partial_cubes_ref, reference, adjacency)
+            or reference in negative_to_partial_cubes
+        ):
+            positioned_relative_to_partial_cubes += 1
+        else:
+            errors.append(
+                f"class lacks an audited position relative to Partial Cubes: {entry['short_name']}"
+            )
+
     closure = make_graph.generate_minor_closure_map(cache)
     closure_refs = {edge.get("ref") for edge in closure["edges"]}
     for result in cache.get_table_entries("operation_results"):
@@ -175,7 +200,8 @@ def main() -> int:
     print(
         f"Graph check passed: {len(cover_pairs)} Hasse covers represent "
         f"{len(established)} stored inclusions; {len(mapped_atlas_ids)} minor-atlas Ample-family "
-        f"nodes covered; {len(closure['edges'])} closure-map arrows rendered."
+        f"nodes covered; all {positioned_relative_to_partial_cubes} classes positioned relative "
+        f"to Partial Cubes; {len(closure['edges'])} closure-map arrows rendered."
     )
     return 0
 

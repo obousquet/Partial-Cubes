@@ -405,6 +405,11 @@ class Validator:
 
     def validate_closure_summaries(self) -> None:
         operation_to_field = {"projection": "p_closed", "conditioning": "c_closed", "pc_minor": "pc_closed"}
+        field_to_status = {
+            "p_closed": "p_closure_status",
+            "c_closed": "c_closure_status",
+            "pc_closed": "pc_closure_status",
+        }
         authoritative: dict[tuple[int, str], set[bool]] = defaultdict(set)
         for result in self.records["operation_results"]:
             if result.get("status") != "established" or result.get("result_type") not in {"closed_under", "not_closed_under"}:
@@ -420,6 +425,7 @@ class Validator:
             path = self.files[("classes", class_record["id"])]
             for field in operation_to_field.values():
                 facts = authoritative[(class_record["id"], field)]
+                status = class_record.get(field_to_status[field])
                 if len(facts) > 1:
                     self.error(f"{path}: contradictory established operation results for {field}")
                 elif field in class_record and class_record[field] is not None:
@@ -427,8 +433,13 @@ class Validator:
                         self.error(f"{path}: cached {field} has no established operation result")
                     elif class_record[field] not in facts:
                         self.error(f"{path}: cached {field} disagrees with its operation result")
+                    expected_status = "closed" if class_record[field] else "not_closed"
+                    if status != expected_status:
+                        self.error(f"{path}: {field_to_status[field]} disagrees with cached {field}")
                 elif facts:
                     self.error(f"{path}: established operation result is not cached in {field}")
+                elif status in {"closed", "not_closed"}:
+                    self.error(f"{path}: established status {status!r} has no operation result or Boolean cache")
 
             p = class_record.get("p_closed")
             c = class_record.get("c_closed")

@@ -1,0 +1,16 @@
+{
+  "id": 260,
+  "short_name": "tree_support_saturated_not_subset_partial_cubes",
+  "name": "Tree-Support-Saturated Classes Need Not Be Partial Cubes",
+  "subject_id": "#classes/tree_support_saturated",
+  "object_id": "#classes/partial_cubes",
+  "relation_type": "noncontainment",
+  "status": "established",
+  "scope": "Finite displayed Boolean classes, compared through their one-inclusion graphs.",
+  "statement": "Not every member of tree-support-saturated classes is a partial cube.",
+  "witness_ids": [
+    "#examples/littlestone_maximal_triple"
+  ],
+  "proof": "The only tree supports of $H'$ have size at most one. Every missing concept raises its Littlestone dimension from one to two, creating a new support of size at least two; hence $H'$ is tree-support-saturated, while its one-inclusion graph is disconnected.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#thm:sequential-relationships"
+}
