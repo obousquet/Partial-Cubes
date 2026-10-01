@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "batch_id": "066_learning_space_contraction_and_antipodal_results",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote three infinite contraction-obstruction families, the infinite-basis theorem, the semicube counterexamples to antipodal sufficiency, and the sharp dimension-three antipodal recognition criterion for learning-space graphs.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-infinite-contraction-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-antipodal-restriction-counterexamples",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-low-dimensional-antipodes"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized family definitions, parameter ranges, contraction images, obstruction and recognition statements, sharpness witness, and concise proofs. The survey retains all tight-path arguments, root-by-root union-closure failures, accessibility constructions, and the detailed low-dimensional case proof.",
+    "recoverability": "The exact source hash and proposition locators preserve the complete scholarly context.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/027_truncated_cube_contraction_obstructions.json",
+      "sha256": "b173d10ef727ae29e282e725b57bcf3e290195606b881b5eb4d111f3de053479"
+    },
+    {
+      "path": "data/obstruction_families/028_two_vertex_deleted_cube_contraction_obstructions.json",
+      "sha256": "529ab20ce147f4ba9fb4486b7b4a24cd2c341864a8c9d33a6e612131d8690ccd"
+    },
+    {
+      "path": "data/obstruction_families/029_antipode_neighborhood_deleted_cube_contraction_obstructions.json",
+      "sha256": "8cf00d14cda8c2f7d7125cf9a67c66b2d887b5faf72cbb27a8780a6db0a28015"
+    },
+    {
+      "path": "data/results/183_infinite_learning_space_contraction_obstructions.json",
+      "sha256": "c331dc7dff0490e9dc127b95b2e460a7066620436eda5b5c42b96e625108af42"
+    },
+    {
+      "path": "data/results/184_antipodal_pairs_do_not_certify_safe_restrictions.json",
+      "sha256": "f89f62726c6215da7d32ccc9aa5ad04348e51efffd001a195d16dbf2a3deab8c"
+    },
+    {
+      "path": "data/results/185_low_dimensional_learning_space_antipodal_criterion.json",
+      "sha256": "5f54cccd15fc669b41aee2c37a9bb772942554fbe5b86c397ab90a23e51f5360"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "431c2cd66600e22967f80eb12891f19ff74e664ab6f07a173ff7ad555b784aed"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1341 records.",
+    "website": "Normalized 1357 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All extractors, source-preservation checks, bibliography and coverage audits, class-status audits, and review-queue validation pass."
+  },
+  "deferred": [
+    "The twelve-state antipodal-link-descent counterexample has an example record but its full link census remains to be promoted as a result.",
+    "The dimension-four antipodal trichotomy and the subsequent all-dimensional structural families remain to be promoted separately."
+  ]
+}

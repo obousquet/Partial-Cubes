@@ -705,6 +705,78 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-27" style="position:relative;">
+
+        <h3><a href="obstruction_families/truncated_cube_contraction_obstructions.html" class="table-title-link">Truncated-Cube Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Truncated-Cube Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal T_d:d\ge3\}">
+            \[\{\mathcal T_d:d\ge3\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>$\mathcal T_d=\{A\subseteq[d]:|A|\le d-2\}$, the subfamily of the $d$-cube obtained by deleting the top vertex and all $d$ of its neighbors.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d\ge3$. It has $2^d-d-1$ states and isometric dimension $d$.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Equivalently, retain exactly the Boolean layers of ranks at most $d-2$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>The displayed set-family representation certifies the family. Every coordinate contraction is $Q_{d-1}$ with its top vertex deleted.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-infinite-contraction-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. The member $\mathcal T_3$ is the three-leaf star $K_{1,3}$, and $\mathcal T_4$ has eleven vertices.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-28" style="position:relative;">
+
+        <h3><a href="obstruction_families/two_vertex_deleted_cube_contraction_obstructions.html" class="table-title-link">Distant Two-Vertex-Deleted Cube Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Distant Two-Vertex-Deleted Cube Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal S_{d,t}:d\ge3,\ 3\le t\le d\}">
+            \[\{\mathcal S_{d,t}:d\ge3,\ 3\le t\le d\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>$\mathcal S_{d,t}=2^{[d]}\setminus\{\varnothing,[t]\}$; thus two cube vertices at Hamming distance $t$ are deleted.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d\ge3$ and $3\le t\le d$. It has $2^d-2$ states and isometric dimension $d$.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Cube automorphisms make the distance $t$ between the two deleted vertices the only parameter.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A deleted-pair certificate records two absent vertices at distance at least three. Projection along every coordinate restores a full $(d-1)$-cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-infinite-contraction-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. The member $\mathcal S_{3,3}$ is $C_6$, while $\mathcal S_{4,3}$ and $\mathcal S_{4,4}=Q_4^{--}$ are the two fourteen-vertex dimension-four representatives.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-29" style="position:relative;">
+
+        <h3><a href="obstruction_families/antipode_neighborhood_deleted_cube_contraction_obstructions.html" class="table-title-link">Antipode-Neighborhood-Deleted Cube Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipode-Neighborhood-Deleted Cube Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal U_{d,r}:d\ge4,\ 0\le r\le d\}">
+            \[\{\mathcal U_{d,r}:d\ge4,\ 0\le r\le d\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>$\mathcal U_{d,r}=2^{[d]}\setminus(\{\varnothing,[d]\}\cup\{[d]\setminus\{i\}:1\le i\le r\})$: delete two antipodes and $r$ selected neighbors of the top antipode.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d\ge4$ and $0\le r\le d$. It has $2^d-r-2$ states and isometric dimension $d$.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Cube automorphisms make the number $r$ of deleted co-singletons the only parameter once the antipodal deleted pair is fixed.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A deleted-state certificate identifies the antipodal pair and the $r$ deleted neighbors at one endpoint. Contracting a selected neighbor coordinate gives $Q_{d-1}$ with one vertex deleted; contracting any other coordinate gives $Q_{d-1}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-infinite-contraction-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. For $d=4$, the five values $0\le r\le4$ are the five local-closedness representatives described in the survey.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

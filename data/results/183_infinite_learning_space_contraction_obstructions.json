@@ -1,0 +1,17 @@
+{
+  "id": 183,
+  "short_name": "infinite_learning_space_contraction_obstructions",
+  "name": "Learning-Space Graphs Have Infinitely Many Contraction-Minimal Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "For every $d\\ge3$, the truncated cube $\\mathcal T_d$ and every distant two-vertex-deleted cube $\\mathcal S_{d,t}$, $3\\le t\\le d$, are contraction-minimal nonlearning partial cubes. For every $d\\ge4$ and $0\\le r\\le d$, the antipode-neighborhood-deleted cube $\\mathcal U_{d,r}$ is also contraction-minimal nonlearning. Hence the contraction-minimal obstruction family for learning-space graphs is infinite and has unbounded isometric dimension.",
+  "status": "established",
+  "proof": "Each displayed set family is well graded. The rooted-union test excludes every possible root: translated missing sets contain a present partition witnessing failure of union closure. A contraction of $\\mathcal T_d$ is a one-vertex-deleted cube; every contraction of $\\mathcal S_{d,t}$ is a cube; and a contraction of $\\mathcal U_{d,r}$ is either a cube or a one-vertex-deleted cube. These images are learning-space graphs, proving contraction-minimality.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-infinite-contraction-obstructions"
+}

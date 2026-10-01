@@ -1,0 +1,14 @@
+{
+  "id": 28,
+  "short_name": "two_vertex_deleted_cube_contraction_obstructions",
+  "name": "Distant Two-Vertex-Deleted Cube Contraction Obstructions",
+  "symbol": "\\{\\mathcal S_{d,t}:d\\ge3,\\ 3\\le t\\le d\\}",
+  "description_type": "parameterized",
+  "definition": "$\\mathcal S_{d,t}=2^{[d]}\\setminus\\{\\varnothing,[t]\\}$; thus two cube vertices at Hamming distance $t$ are deleted.",
+  "parameters": "$d\\ge3$ and $3\\le t\\le d$. It has $2^d-2$ states and isometric dimension $d$.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "Cube automorphisms make the distance $t$ between the two deleted vertices the only parameter.",
+  "recognition": "A deleted-pair certificate records two absent vertices at distance at least three. Projection along every coordinate restores a full $(d-1)$-cube.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-infinite-contraction-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. The member $\\mathcal S_{3,3}$ is $C_6$, while $\\mathcal S_{4,3}$ and $\\mathcal S_{4,4}=Q_4^{--}$ are the two fourteen-vertex dimension-four representatives."
+}

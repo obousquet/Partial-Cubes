@@ -1,0 +1,14 @@
+{
+  "id": 185,
+  "short_name": "low_dimensional_learning_space_antipodal_criterion",
+  "name": "Low-Dimensional Antipodal Criterion for Learning-Space Graphs",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $G$ be a finite partial cube of isometric dimension at most three whose medium admits a closed orientation. Then $G$ is a learning-space graph if and only if $G$ contains an antipodal pair. Consequently, a finite convex subgraph $C$ of a learning-space graph with $\\operatorname{idim}(C)\\le3$ is a learning-space graph exactly when it contains a $C$-antipodal pair. The dimension bound is sharp: the semicube $\\mathcal F_4\\subseteq\\mathcal P_4$ is a dimension-four counterexample.",
+  "status": "established",
+  "proof": "A learning-space graph has an antipodal pair by the defect-hitting theorem. Conversely, a closed orientation gives a well-graded union-closed positive-content family. In dimensions at most three, an antipodal pair forces either the empty state to be present or a translation by one member to be union closed; the rooted-union criterion then supplies a valid root. Convex restrictions inherit a closed parent orientation, while $\\mathcal F_4$ proves sharpness.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-low-dimensional-antipodes"
+}

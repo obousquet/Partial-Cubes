@@ -1,0 +1,14 @@
+{
+  "id": 29,
+  "short_name": "antipode_neighborhood_deleted_cube_contraction_obstructions",
+  "name": "Antipode-Neighborhood-Deleted Cube Contraction Obstructions",
+  "symbol": "\\{\\mathcal U_{d,r}:d\\ge4,\\ 0\\le r\\le d\\}",
+  "description_type": "parameterized",
+  "definition": "$\\mathcal U_{d,r}=2^{[d]}\\setminus(\\{\\varnothing,[d]\\}\\cup\\{[d]\\setminus\\{i\\}:1\\le i\\le r\\})$: delete two antipodes and $r$ selected neighbors of the top antipode.",
+  "parameters": "$d\\ge4$ and $0\\le r\\le d$. It has $2^d-r-2$ states and isometric dimension $d$.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "Cube automorphisms make the number $r$ of deleted co-singletons the only parameter once the antipodal deleted pair is fixed.",
+  "recognition": "A deleted-state certificate identifies the antipodal pair and the $r$ deleted neighbors at one endpoint. Contracting a selected neighbor coordinate gives $Q_{d-1}$ with one vertex deleted; contracting any other coordinate gives $Q_{d-1}$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-infinite-contraction-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. For $d=4$, the five values $0\\le r\\le4$ are the five local-closedness representatives described in the survey."
+}

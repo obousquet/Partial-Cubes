@@ -3145,6 +3145,52 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-183" style="position:relative;">
+
+        <h3><a href="results/infinite_learning_space_contraction_obstructions.html" class="table-title-link">Learning-Space Graphs Have Infinitely Many Contraction-Minimal Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Learning-Space Graphs Have Infinitely Many Contraction-Minimal Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $d\ge3$, the truncated cube $\mathcal T_d$ and every distant two-vertex-deleted cube $\mathcal S_{d,t}$, $3\le t\le d$, are contraction-minimal nonlearning partial cubes. For every $d\ge4$ and $0\le r\le d$, the antipode-neighborhood-deleted cube $\mathcal U_{d,r}$ is also contraction-minimal nonlearning. Hence the contraction-minimal obstruction family for learning-space graphs is infinite and has unbounded isometric dimension.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each displayed set family is well graded. The rooted-union test excludes every possible root: translated missing sets contain a present partition witnessing failure of union closure. A contraction of $\mathcal T_d$ is a one-vertex-deleted cube; every contraction of $\mathcal S_{d,t}$ is a cube; and a contraction of $\mathcal U_{d,r}$ is either a cube or a one-vertex-deleted cube. These images are learning-space graphs, proving contraction-minimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-infinite-contraction-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-184" style="position:relative;">
+
+        <h3><a href="results/antipodal_pairs_do_not_certify_safe_restrictions.html" class="table-title-link">Antipodal Pairs Do Not Certify a Safe Convex Restriction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipodal Pairs Do Not Certify a Safe Convex Restriction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $d\ge4$ there is a learning space $\mathcal P_d$ of isometric dimension $d+1$ whose positive semicube in a coordinate $e$ induces a nonlearning partial cube $\mathcal F_d$ of isometric dimension $d$, even though $\mathcal F_d$ contains the antipodal pairs $\{i\},X\setminus\{i\}$ for every $i\ne a$. Thus antipodality alone does not make a convex restriction of a learning-space graph safe.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The restriction $\mathcal F_d$ is a translate of $\mathcal T_d$, so it is well graded, union closed in its displayed orientation, and has no valid root. Adding the empty state produces a union-closed well-graded family $\mathcal B_d$. Stacking $\mathcal B_d$ below a positive $e$-fiber equal to $\mathcal F_d$ gives the union-closed well-graded parent $\mathcal P_d$. The stated complementary pairs avoid all deleted states of $\mathcal F_d$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-antipodal-restriction-counterexamples</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-185" style="position:relative;">
+
+        <h3><a href="results/low_dimensional_learning_space_antipodal_criterion.html" class="table-title-link">Low-Dimensional Antipodal Criterion for Learning-Space Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Low-Dimensional Antipodal Criterion for Learning-Space Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a finite partial cube of isometric dimension at most three whose medium admits a closed orientation. Then $G$ is a learning-space graph if and only if $G$ contains an antipodal pair. Consequently, a finite convex subgraph $C$ of a learning-space graph with $\operatorname{idim}(C)\le3$ is a learning-space graph exactly when it contains a $C$-antipodal pair. The dimension bound is sharp: the semicube $\mathcal F_4\subseteq\mathcal P_4$ is a dimension-four counterexample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A learning-space graph has an antipodal pair by the defect-hitting theorem. Conversely, a closed orientation gives a well-graded union-closed positive-content family. In dimensions at most three, an antipodal pair forces either the empty state to be present or a translation by one member to be union closed; the rooted-union criterion then supplies a valid root. Convex restrictions inherit a closed parent orientation, while $\mathcal F_4$ proves sharpness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-low-dimensional-antipodes</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

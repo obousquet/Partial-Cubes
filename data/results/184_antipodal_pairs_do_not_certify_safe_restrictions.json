@@ -1,0 +1,14 @@
+{
+  "id": 184,
+  "short_name": "antipodal_pairs_do_not_certify_safe_restrictions",
+  "name": "Antipodal Pairs Do Not Certify a Safe Convex Restriction",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "result_type": "construction",
+  "statement": "For every $d\\ge4$ there is a learning space $\\mathcal P_d$ of isometric dimension $d+1$ whose positive semicube in a coordinate $e$ induces a nonlearning partial cube $\\mathcal F_d$ of isometric dimension $d$, even though $\\mathcal F_d$ contains the antipodal pairs $\\{i\\},X\\setminus\\{i\\}$ for every $i\\ne a$. Thus antipodality alone does not make a convex restriction of a learning-space graph safe.",
+  "status": "established",
+  "proof": "The restriction $\\mathcal F_d$ is a translate of $\\mathcal T_d$, so it is well graded, union closed in its displayed orientation, and has no valid root. Adding the empty state produces a union-closed well-graded family $\\mathcal B_d$. Stacking $\\mathcal B_d$ below a positive $e$-fiber equal to $\\mathcal F_d$ gives the union-closed well-graded parent $\\mathcal P_d$. The stated complementary pairs avoid all deleted states of $\\mathcal F_d$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-antipodal-restriction-counterexamples"
+}
