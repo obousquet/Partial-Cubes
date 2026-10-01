@@ -5,10 +5,10 @@
   "symbol": "\\mathcal P_5",
   "object_type": "set_family",
   "definition": "On the cyclic ground set $[5]$, take the empty set, all five singletons, the five edges of $C_5$, and the five complements of those edges. In low-bit integer encoding the family is $\\{0,1,2,3,4,6,7,8,12,14,16,17,19,24,25,28\\}$.",
-  "properties": "A sixteen-vertex maximum and ample class of VC dimension two and isometric dimension five. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\\mathcal R_{\\mathrm{per}}$. Thus it is an ample pc-minimal obstruction and witnesses $\\mathcal R_{\\mathrm{per}}\\subsetneq\\mathcal D_{\\mathrm{amp}}$.",
+  "properties": "A sixteen-vertex realizable maximum and ample class of VC dimension two and isometric dimension five. It is the sign-pattern class of the five tangent lines of a regular pentagon. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\\mathcal R_{\\mathrm{per}}$. Thus it witnesses both $\\mathcal R_{\\mathrm{per}}\\subsetneq\\mathcal D_{\\mathrm{amp}}$ and $\\mathcal R_{\\mathrm{amp}}\\nsubseteq\\mathcal R_{\\mathrm{per}}$.",
   "references": "\\cite{ChalopiChepoiMoran22}",
-  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:pentagonal",
-  "verification": "scripts/verify_cover_recursive.py; data/examples/assets/cover_recursive_verification.json; data/examples/assets/cover_recursive_census_small.json; data/examples/assets/cover_recursive_census_record.json",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:pentagonal; CompressionSchemes:drafts/round982_exact_polygon_depth.md#definitions-and-theorem",
+  "verification": "scripts/verify_cover_recursive.py; data/examples/assets/cover_recursive_verification.json; data/examples/assets/cover_recursive_census_small.json; data/examples/assets/cover_recursive_census_record.json; data/examples/assets/realizable_ample_verification.json",
   "obstruction_family_ids": [
     "#obstruction_families/ample_pc_minimal_periphery_free"
   ]

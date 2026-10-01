@@ -1,0 +1,17 @@
+{
+  "id": 39,
+  "short_name": "separation_margin_fixed_row_formula",
+  "name": "Fixed-Row Separation Formula",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [],
+  "result_type": "invariant_law",
+  "statement": "For fixed normalized separator rows $A$, $\\delta_A(c)=\\min(1,\\min_v N_c(v)/(1+P_c(v)))$ over probability vectors on the rows, and $\\mu(C)=\\max_A\\min_c\\delta_A(c)$. The fixed-row value is zero exactly when a convex combination of signed rows lies in the closed orthant of $c$.",
+  "status": "established",
+  "proof": "Convex separation converts feasibility of a box witness into all nonnegative weighted row inequalities. Coordinatewise minimization gives $tP_c(v)-N_c(v)$ and hence the ratio formula; compactness gives attainment.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#prop:dual"
+}

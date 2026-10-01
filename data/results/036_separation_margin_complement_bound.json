@@ -1,0 +1,19 @@
+{
+  "id": 36,
+  "short_name": "separation_margin_complement_bound",
+  "name": "Separation-Margin Complement Bound",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/cube_complement"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For proper nonempty $C$ with nonempty cube complement $C^{\\mathrm c}$, $\\mu(C^{\\mathrm c})\\ge\\mu(C)/(2r(C^{\\mathrm c})-\\mu(C))$. The bound is sharp for positioned cubes.",
+  "status": "established",
+  "proof": "Average certificate witnesses over the positioned cubes complementary to minimal missing patterns, then exchange the resulting cube data with separator rows. Normalization loses exactly the displayed factor.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#thm:complement"
+}

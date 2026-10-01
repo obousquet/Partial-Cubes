@@ -517,12 +517,35 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>On the cyclic ground set $[5]$, take the empty set, all five singletons, the five edges of $C_5$, and the five complements of those edges. In low-bit integer encoding the family is $\{0,1,2,3,4,6,7,8,12,14,16,17,19,24,25,28\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>A sixteen-vertex maximum and ample class of VC dimension two and isometric dimension five. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\mathcal R_{\mathrm{per}}$. Thus it is an ample pc-minimal obstruction and witnesses $\mathcal R_{\mathrm{per}}\subsetneq\mathcal D_{\mathrm{amp}}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>A sixteen-vertex realizable maximum and ample class of VC dimension two and isometric dimension five. It is the sign-pattern class of the five tangent lines of a regular pentagon. It has a corner peeling but no peripheral coordinate; every elementary pc-minor belongs to $\mathcal R_{\mathrm{per}}$. Thus it witnesses both $\mathcal R_{\mathrm{per}}\subsetneq\mathcal D_{\mathrm{amp}}$ and $\mathcal R_{\mathrm{amp}}\nsubseteq\mathcal R_{\mathrm{per}}$.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:pentagonal</p></div>
-<strong>Verification:</strong><div class="text-field"><p>scripts/verify_cover_recursive.py; data/examples/assets/cover_recursive_verification.json; data/examples/assets/cover_recursive_census_small.json; data/examples/assets/cover_recursive_census_record.json</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:pentagonal; CompressionSchemes:drafts/round982_exact_polygon_depth.md?#definitions-and-theorem</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_cover_recursive.py; data/examples/assets/cover_recursive_verification.json; data/examples/assets/cover_recursive_census_small.json; data/examples/assets/cover_recursive_census_record.json; data/examples/assets/realizable_ample_verification.json</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/ample_pc_minimal_periphery_free.html">Ample pc-Minimal Periphery-Free Partial Cubes</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/pentagonal_obstruction_vc_dimension.html'>VC Dimension of the Pentagonal Obstruction</a></li><li><a href='invariant_values/pentagonal_obstruction_isometric_dimension.html'>Isometric Dimension of the Pentagonal Obstruction</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-21" style="position:relative;">
+
+        <h3><a href="examples/four_section_nonrealizable_class.html" class="table-title-link">Four-Section Nonrealizable Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four-Section Nonrealizable Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="E_{26}">
+            \[E_{26}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $(a_1,a_2,b_1,b_2,i,j)$ in low-bit order, take the 26 words encoded by $\{0,1,2,3,16,17,18,19,20,22,24,25,28,32,33,34,35,36,37,40,42,44,48,52,56,60\}$. Equivalently, over an empty base all four $(i,j)$ labels occur; over a nonempty subset of $\{a_1,a_2\}$ all except $11$ occur; over a nonempty subset of $\{b_1,b_2\}$ all except $00$ occur; the four mixed pairs carry alternating singleton labels; all other fibers are empty.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is an ample partial cube of VC dimension three, belongs to the convex-treelike class and hence is dismantlable, but has no affine-convex realization. It has a verified maximum parent of rank four on eight coordinates.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetFourSections">[BousquetFourSections]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:drafts/round824_four_downset_sections.md; CompressionSchemes:drafts/round984_structural_targets.md?#the-peripheral-side-e26</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_realizable_ample.py; data/examples/assets/realizable_ample_verification.json; data/examples/assets/e26_parent_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

@@ -1,0 +1,275 @@
+{
+  "version": 1,
+  "batch_id": "020_realizable_ample_foundation",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote realizable ample classes through affine-convex and positive separation-margin characterizations; record p/c/pc, product, complement, and full-reduction closure; normalize the first quantitative margin laws; and establish hierarchy comparisons using exact E26 and pentagonal witnesses.",
+  "source_refs": [
+    "PartialCubes:papers/realizability-margin/main.tex#def:margin",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:positive",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:minor-product",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:complement",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:daisy",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:chain",
+    "PartialCubes:papers/realizability-margin/main.tex#prop:dual",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:realizable-pattern-bound",
+    "CompressionSchemes:drafts/round824_four_downset_sections.md",
+    "CompressionSchemes:drafts/round984_structural_targets.md",
+    "CompressionSchemes:drafts/round982_exact_polygon_depth.md"
+  ],
+  "source_packets": [
+    {
+      "id": "separation-margin-manuscript",
+      "repository": "PartialCubes",
+      "path": "papers/realizability-margin/main.tex",
+      "sha256": "e64b5a05dea27881821d6f2a880c6572a459fd79a3e196ae7c177b8e96ff7705"
+    },
+    {
+      "id": "section-gluing-supplement",
+      "repository": "PartialCubes",
+      "path": "papers/realizability-margin/section_gluing.tex",
+      "sha256": "cb2c13f99ad20ad7810c683c27da699b03a9fcc486491b881ed4f23bff51e1cb"
+    },
+    {
+      "id": "separation-margin-build-review",
+      "repository": "PartialCubes",
+      "path": "papers/realizability-margin/build_review.json",
+      "sha256": "e8e5991ccfcac02aae140dc133dc74d6be883762838b27a79e7b39dbe19d5d7a"
+    },
+    {
+      "id": "four-section-proof",
+      "repository": "CompressionSchemes",
+      "path": "drafts/round824_four_downset_sections.md",
+      "sha256": "a4e834d783511527d3ae3177362c7ee93e6bd5ffc44befe7e297023d49cc2efe"
+    },
+    {
+      "id": "structural-comparisons",
+      "repository": "CompressionSchemes",
+      "path": "drafts/round984_structural_targets.md",
+      "sha256": "bd0bb59618d4be3fb811b22617d87af15cc7fce39b4a39c9c4060fcf29f39acb"
+    },
+    {
+      "id": "polygon-realization",
+      "repository": "CompressionSchemes",
+      "path": "drafts/round982_exact_polygon_depth.md",
+      "sha256": "d8d2abc711c6d8c913faf96a633dea522b7ceeaa6ea49b0bbddfa7e95be9d3cc"
+    },
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "e26-parent-report",
+      "repository": "CompressionSchemes",
+      "path": "experiments/round824_four_sections_parent/verification.json",
+      "sha256": "7383b30e71e4254768dc0558994ee20a4801c46863f413c325410cb955696856"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database now owns the normalized class, characterization, relation, closure, invariant, and theorem facts in this batch. The complete manuscripts, long proofs, gluing development, coefficient-space discussion, diagrams, and research history remain owned by their LaTeX repositories.",
+    "recoverability": "migration/source_manifest.json and the batch source hashes identify the exact source bytes; check_source_manifest confirms that the frozen migration snapshot remains recoverable.",
+    "mutation": "No source file in PartialCubes or CompressionSchemes was modified by this batch."
+  },
+  "verification_packets": [
+    {
+      "id": "database-realizable-ample-verifier",
+      "path": "scripts/verify_realizable_ample.py",
+      "sha256": "6ba190760f66f6bb4fe7faabe9df35a5e17ea6e13f83ee95661d97d8bf51950e",
+      "assertions": "Exact E26 order, ampleness, partial-cube metric and peripheral recursion; copied maximum-parent certificate integrity; P5 equality with the regular tangent-pentagon interval class and failure of peripheral recursion."
+    },
+    {
+      "id": "realizable-ample-verification",
+      "path": "data/examples/assets/realizable_ample_verification.json",
+      "sha256": "40164425e680e5568586860b44e7500667c802c08e1afd4f919e603190879348",
+      "assertions": "Compact replay output for E26, P5, and all nineteen nonempty downsets of Q3."
+    },
+    {
+      "id": "e26-parent-verification",
+      "path": "data/examples/assets/e26_parent_verification.json",
+      "sha256": "7383b30e71e4254768dc0558994ee20a4801c46863f413c325410cb955696856",
+      "assertions": "Source-owned exact report for the 163-word rank-four maximum parent and exact E26 section."
+    },
+    {
+      "id": "separation-margin-build-review",
+      "path": "data/examples/assets/separation_margin_build_review.json",
+      "sha256": "e8e5991ccfcac02aae140dc133dc74d6be883762838b27a79e7b39dbe19d5d7a",
+      "assertions": "Preserved source report for the clean 24-page manuscript build, labels, citations, source hashes, and evidence-script hash checks; review scope is explicitly internal."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/020_realizable_ample_equivalence.json",
+      "sha256": "167a81dc7030a538d973c81def8286d2c1880d96a0c0c2c81183637e48360960"
+    },
+    {
+      "path": "data/characterizations/064_affine_convex_realizable_ample.json",
+      "sha256": "e38e961f954fdd603832252bff80054665d90ce5e819248ef4129b2e4a3261c9"
+    },
+    {
+      "path": "data/characterizations/065_positive_separation_margin.json",
+      "sha256": "84ef3a46f61667fcb09a4c98f01b008d8396ff8adfe22894125805cd4e1dbc3f"
+    },
+    {
+      "path": "data/characterizations/066_positive_minimal_pattern_separator.json",
+      "sha256": "2dd61a36c9e744c4012edd49dd7b8e0dddc537d4a25e0ab4a9f01c40daa5dbf1"
+    },
+    {
+      "path": "data/classes/067_realizable_ample.json",
+      "sha256": "c2a840ace70cc0cc05e76a89b64fa913b1c2c03516c9a5a470b64c3077be1c95"
+    },
+    {
+      "path": "data/examples/020_pentagonal_obstruction.json",
+      "sha256": "a3215d61e92fc3a2ade73aaceebbd72596996f6f9d84b8cd18d0ecfc36096b87"
+    },
+    {
+      "path": "data/examples/021_four_section_nonrealizable_class.json",
+      "sha256": "3f4437b3d3c50fc4a42eaa1d9de98ec5aad84998d38ac9a2016902daeb3914c4"
+    },
+    {
+      "path": "data/examples/assets/e26_parent_verification.json",
+      "sha256": "7383b30e71e4254768dc0558994ee20a4801c46863f413c325410cb955696856"
+    },
+    {
+      "path": "data/examples/assets/realizable_ample_verification.json",
+      "sha256": "40164425e680e5568586860b44e7500667c802c08e1afd4f919e603190879348"
+    },
+    {
+      "path": "data/examples/assets/separation_margin_build_review.json",
+      "sha256": "e8e5991ccfcac02aae140dc133dc74d6be883762838b27a79e7b39dbe19d5d7a"
+    },
+    {
+      "path": "data/invariant_values/040_separation_margin_positive_on_realizable_ample.json",
+      "sha256": "b924c41b95b6b4f1ac2c509bedd40162ce638cb69d298547cbf024eb64270e4e"
+    },
+    {
+      "path": "data/invariant_values/041_full_cube_separation_margin.json",
+      "sha256": "574395513d8484956959db669126f38bc89172813ad9cd660f4a7551a655068c"
+    },
+    {
+      "path": "data/invariant_values/042_daisy_separation_margin.json",
+      "sha256": "c1a2c87ca6518817092cc55554fa596cb0346e0793884a8575526d30a049c71b"
+    },
+    {
+      "path": "data/invariants/013_separation_margin.json",
+      "sha256": "4d4bf676c2f9a67359394daa85ad9033783632bc00fef5b2e14667cc98f831bb"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "0dd6fd86cd6a3e3d59c10f8c01ea82c61c9b0aee80acc6159f636408b91ca39e"
+    },
+    {
+      "path": "data/operation_results/067_realizable_ample_projection_closed.json",
+      "sha256": "df2321265dbff6225fac51bbe43161113347ffb90ce2b9bcda8bdc10125223fe"
+    },
+    {
+      "path": "data/operation_results/068_realizable_ample_conditioning_closed.json",
+      "sha256": "8ae1b64db14c2741daa2a8ccf16046b3033203f87929b6c45f31d1e0bf337781"
+    },
+    {
+      "path": "data/operation_results/069_realizable_ample_pc_minor_closed.json",
+      "sha256": "f1b83fc914e52fdb7104b5b1660922478db444cb656ce357ea8bf968963ead6a"
+    },
+    {
+      "path": "data/operation_results/070_realizable_ample_cartesian_product_closed.json",
+      "sha256": "fe3e811b0e272e734c6293503f7c84292240308594f15c284dd649d909e1fc44"
+    },
+    {
+      "path": "data/operation_results/071_realizable_ample_complement_closed.json",
+      "sha256": "29aacef93c668cb9560d9b2f8b8f2aa398ddedb6b056c7738eef6a166dfc85c6"
+    },
+    {
+      "path": "data/operation_results/072_realizable_ample_full_reduction_closed.json",
+      "sha256": "9679a7cc0bed7c7cd8919f9ea291898a77ce0fea07e745f77dbeda25eb1aa00a"
+    },
+    {
+      "path": "data/operations/010_cube_complement.json",
+      "sha256": "a6e5ce3194f63556d6cfcdd9d5c257c7a7bf4a1709a9b9cbc592d4a4d74fad92"
+    },
+    {
+      "path": "data/operations/011_full_reduction.json",
+      "sha256": "2453a60d5dc9ed83720ce9e4891af93454ec95a34df82a4eef7ce5bcbd31eab9"
+    },
+    {
+      "path": "data/relations/050_median_strict_subset_realizable_ample.json",
+      "sha256": "8c7f824a0638b2c75f36cbe18d0192285f6632dfe07bded06ccd166e33369066"
+    },
+    {
+      "path": "data/relations/051_daisy_strict_subset_realizable_ample.json",
+      "sha256": "5d22cca9659ee467b470d6d1bad5f98aff57f9635f870e648966e840feb1f2e3"
+    },
+    {
+      "path": "data/relations/052_convex_geometry_ideals_strict_subset_realizable_ample.json",
+      "sha256": "6cd6482acc662fb9072dd5fb757718012f5c1d064b7b8fe571b488999c25a11c"
+    },
+    {
+      "path": "data/relations/053_realizable_ample_strict_subset_dismantlable_ample.json",
+      "sha256": "c5c38505abcba75a2132a4406add38be5d9b77b156552cd790a868f499a9553a"
+    },
+    {
+      "path": "data/relations/054_realizable_ample_strict_subset_ample.json",
+      "sha256": "4be07648dbae79658add5362e066d0bbc5ba40faef4ffe38aaf04f5479619066"
+    },
+    {
+      "path": "data/relations/055_conditional_antimatroids_incomparable_realizable_ample.json",
+      "sha256": "bcb48ebe97f133bbcc23dd4bcb1cd7708ae59d86a151305c04b3d7eb35606fbf"
+    },
+    {
+      "path": "data/relations/056_cover_recursive_incomparable_realizable_ample.json",
+      "sha256": "00e8d434b47137e5b1f10f88dc69d2c7093d99f04d22f16c04ec29982810cdac"
+    },
+    {
+      "path": "data/results/035_separation_margin_minor_product_laws.json",
+      "sha256": "82a3ae2c21d9b4ecb70299a919419f41f01ecb58e20d0e282bbb080632b63f9f"
+    },
+    {
+      "path": "data/results/036_separation_margin_complement_bound.json",
+      "sha256": "d0e9d3484fa4415edabeeb3d524fe5d8c1d15e8b983a804d5aff266214d8d391"
+    },
+    {
+      "path": "data/results/037_separation_margin_cube_union_bound.json",
+      "sha256": "acfb1c756701d8f01e85163d93c00efe4e49d7ba08a436a08128b66824fce69e"
+    },
+    {
+      "path": "data/results/038_separation_margin_nested_halfspace_bound.json",
+      "sha256": "223725badf3ef5e0384c5be62553fab8ecaaadd492a24d32ed9cc6cd13b9c32b"
+    },
+    {
+      "path": "data/results/039_separation_margin_fixed_row_formula.json",
+      "sha256": "5d7ed36cf16aaf5327fe3b319bb610b31504285815cc6a4abea67a607c838f47"
+    },
+    {
+      "path": "data/results/040_realizable_ample_maximum_parent.json",
+      "sha256": "c1a31720fb47ef33dbe104d15c68d3c47b7738c00c49d1b3918ed41e1ec473a6"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "101b7f13d10933d34c6e8c5f6453f810814e3e1d881a0ca9c65faa5e9bae2669"
+    },
+    {
+      "path": "migration/class_crosswalk.json",
+      "sha256": "ce24d4afad21e8ea4dffb3cdff9729ec910dc240d7f5cce6a950a3d3954f14d0"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "96b5a2421feaa17bd23b602157fe952ceccf563a3e782a1da3f706697afa0ec7"
+    },
+    {
+      "path": "scripts/verify_realizable_ample.py",
+      "sha256": "6ba190760f66f6bb4fe7faabe9df35a5e17ea6e13f83ee95661d97d8bf51950e"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 380 records.",
+    "website": "Generated and normalized 396 HTML files; 12 tables and 2 graph views pass the site checker.",
+    "graphs": "28 Hasse covers represent 45 stored inclusions; 41 closure-map arrows rendered.",
+    "migration": "100 occurrences reconciled into 88 identities; 18 classes promoted; source snapshot recoverable."
+  },
+  "deferred": [
+    "The common-section coefficient compatibility, forest, robust-cycle, and incompatible-gated-union theorems will be normalized as a separate gluing batch.",
+    "The companion coefficient-space topology programme remains in its LaTeX owner and will be migrated in later topology-focused batches.",
+    "Maximum-generated, both-peelable, bounded-decomposition, and related ambient classes are not promoted here; the maximum-parent theorem is recorded without inventing premature class endpoints."
+  ]
+}

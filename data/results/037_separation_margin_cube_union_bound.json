@@ -1,0 +1,19 @@
+{
+  "id": 37,
+  "short_name": "separation_margin_cube_union_bound",
+  "name": "Separation Margin Under Union Along a Cube",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If realizable ample pieces share a full cube and otherwise use disjoint private coordinate blocks, their embedded union has margin between $t^2/(1+2t)$ and $t$, where $t$ is the least piece margin; the lower bound is sharp for unions of single-edge pieces.",
+  "status": "established",
+  "proof": "Average each piece certificate on the common cube, shrink occupied-piece witnesses, and use the averaged witnesses on all other private blocks. Piece rows and cross-block two-positive rows then have common slack $t^2/(1+2t)$.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#thm:root"
+}

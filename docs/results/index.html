@@ -659,6 +659,108 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-35" style="position:relative;">
+
+        <h3><a href="results/separation_margin_minor_product_laws.html" class="table-title-link">Separation-Margin Minor and Product Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Separation-Margin Minor and Product Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Cube symmetries and constant-coordinate extensions preserve $\mu$. Every nonempty pc-minor $D$ of $C$ satisfies $\mu(D)\ge\mu(C)$, and $\mu(C\times D)=\min\{\mu(C),\mu(D)\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restriction and renormalization transport certificates through projections and conditionings. Product minimal missing patterns lie in one factor, so factor certificates concatenate; factor projections prove the reverse bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:minor-product</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-36" style="position:relative;">
+
+        <h3><a href="results/separation_margin_complement_bound.html" class="table-title-link">Separation-Margin Complement Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Separation-Margin Complement Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For proper nonempty $C$ with nonempty cube complement $C^{\mathrm c}$, $\mu(C^{\mathrm c})\ge\mu(C)/(2r(C^{\mathrm c})-\mu(C))$. The bound is sharp for positioned cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Average certificate witnesses over the positioned cubes complementary to minimal missing patterns, then exchange the resulting cube data with separator rows. Normalization loses exactly the displayed factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:complement</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-37" style="position:relative;">
+
+        <h3><a href="results/separation_margin_cube_union_bound.html" class="table-title-link">Separation Margin Under Union Along a Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Separation Margin Under Union Along a Cube</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If realizable ample pieces share a full cube and otherwise use disjoint private coordinate blocks, their embedded union has margin between $t^2/(1+2t)$ and $t$, where $t$ is the least piece margin; the lower bound is sharp for unions of single-edge pieces.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Average each piece certificate on the common cube, shrink occupied-piece witnesses, and use the averaged witnesses on all other private blocks. Piece rows and cross-block two-positive rows then have common slack $t^2/(1+2t)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:root</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-38" style="position:relative;">
+
+        <h3><a href="results/separation_margin_nested_halfspace_bound.html" class="table-title-link">Nested-Halfspace Margin Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nested-Halfspace Margin Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If a pc-minor has $h$ nested coordinate halfspaces, then $\mu(C)\le U_h=2/(h+\sqrt{h^2+4(h-1)})\le1/h$. For the threshold path $T_h$, $1/(2h-1)\le\mu(T_h)\le U_h$ although every minimal missing support has size two.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Two endpoint witnesses and the chain of adjacent missing-pattern rows give a tridiagonal system. Positivity of its determinant yields the upper bound; uniform half-half rows and explicit geometric witnesses give the threshold lower bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:chain</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-39" style="position:relative;">
+
+        <h3><a href="results/separation_margin_fixed_row_formula.html" class="table-title-link">Fixed-Row Separation Formula</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fixed-Row Separation Formula</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For fixed normalized separator rows $A$, $\delta_A(c)=\min(1,\min_v N_c(v)/(1+P_c(v)))$ over probability vectors on the rows, and $\mu(C)=\max_A\min_c\delta_A(c)$. The fixed-row value is zero exactly when a convex combination of signed rows lies in the closed orthant of $c$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Convex separation converts feasibility of a box witness into all nonnegative weighted row inequalities. Coordinatewise minimization gives $tP_c(v)-N_c(v)$ and hence the ratio formula; compactness gives attainment.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#prop:dual</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-40" style="position:relative;">
+
+        <h3><a href="results/realizable_ample_maximum_parent.html" class="table-title-link">Every Realizable Ample Class Has a Maximum Parent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Realizable Ample Class Has a Maximum Parent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite nonempty realizable ample class on $n$ coordinates occurs as a coordinate section of a finite maximum class of rank $n$; an explicit construction uses at most $q+2n$ auxiliary coordinates when $q$ is the number of minimal missing patterns.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use positive rational strict separators for the minimal missing patterns. Homogenize their rational coefficients into integer multiplicities, encode the signed inequalities by auxiliary threshold coordinates, and extend the resulting sequence to a maximum class. Fixing the auxiliary mark recovers the original class exactly.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:realizable-pattern-bound</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

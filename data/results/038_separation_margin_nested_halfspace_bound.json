@@ -1,0 +1,17 @@
+{
+  "id": 38,
+  "short_name": "separation_margin_nested_halfspace_bound",
+  "name": "Nested-Halfspace Margin Bound",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [],
+  "result_type": "invariant_law",
+  "statement": "If a pc-minor has $h$ nested coordinate halfspaces, then $\\mu(C)\\le U_h=2/(h+\\sqrt{h^2+4(h-1)})\\le1/h$. For the threshold path $T_h$, $1/(2h-1)\\le\\mu(T_h)\\le U_h$ although every minimal missing support has size two.",
+  "status": "established",
+  "proof": "Two endpoint witnesses and the chain of adjacent missing-pattern rows give a tridiagonal system. Positivity of its determinant yields the upper bound; uniform half-half rows and explicit geometric witnesses give the threshold lower bound.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#thm:chain"
+}

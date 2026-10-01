@@ -1,0 +1,22 @@
+{
+  "id": 35,
+  "short_name": "separation_margin_minor_product_laws",
+  "name": "Separation-Margin Minor and Product Laws",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Cube symmetries and constant-coordinate extensions preserve $\\mu$. Every nonempty pc-minor $D$ of $C$ satisfies $\\mu(D)\\ge\\mu(C)$, and $\\mu(C\\times D)=\\min\\{\\mu(C),\\mu(D)\\}$.",
+  "status": "established",
+  "proof": "Restriction and renormalization transport certificates through projections and conditionings. Product minimal missing patterns lie in one factor, so factor certificates concatenate; factor projections prove the reverse bound.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#thm:minor-product"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 13,
+  "short_name": "separation_margin",
+  "name": "Separation Margin",
+  "symbol": "\\mu",
+  "definition": "For nonempty $C\\subseteq\\{0,1\\}^n$, let $\\mathcal M(C)$ be its minimal missing partial patterns. A $t$-certificate chooses $x^c\\in\\mathbb R^n$ for each $c\\in C$ and coefficients $a_{p,i}\\ge0$ summing to one on each $\\operatorname{supp}p$, subject to $t\\le(2c_i-1)x_i^c\\le1$ and $\\sum_i a_{p,i}\\epsilon_{p,i}x_i^c\\le-t$ for every $p,c$. Then $\\mu(C)$ is the largest feasible $t\\in[0,1]$.",
+  "status": "established",
+  "codomain": "Real interval $[0,1]$",
+  "normalization": "Separator rows have $\\ell_1$ norm one, witnesses have $\\ell_\\infty$ norm at most one, and the full cube, including the zero-dimensional cube, has margin one.",
+  "category": "geometric",
+  "isomorphism_invariant": true,
+  "comments": "Defined for every nonempty binary class. Positivity is exactly affine-convex realizability plus ampleness; no class of all binary set families has yet been promoted as a database endpoint.",
+  "references": "\\cite{Lawrence1983}",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#def:margin"
+}
