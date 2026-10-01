@@ -1177,6 +1177,119 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-66" style="position:relative;">
+
+        <h3><a href="results/strict_source_spectral_criteria.html" class="table-title-link">Strict Source-System Spectral Criteria</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Strict Source-System Spectral Criteria</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $R_i$ be finite families of nonnegative rows. A positive system $h_i<mh$ for every $m\in R_i$ is feasible exactly when the minimum spectral radius over all nonempty closed row choices is greater than one. A negative system $v_i>mv$ is feasible exactly when the maximum spectral radius over all full row choices is less than one. Empty row families impose no inequality; the empty positive minimum is $\infty$ and an empty negative system has threshold zero.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A feasible vector and a nonnegative left Perron vector give necessity. If a strict system is infeasible, the strict linear alternative produces nonnegative row weights. Rowwise averaging and a resolvent perturbation select a closed positive choice of radius at most one, while rowwise maximization against a right Perron vector selects a full negative choice of radius at least one.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~1 and Corollary~1]{Kozyakin2016}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#lem:strict-spectral</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-67" style="position:relative;">
+
+        <h3><a href="results/source_spectral_scaling_laws.html" class="table-title-link">Source-Spectral Scaling, Minor, and Product Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Source-Spectral Scaling, Minor, and Product Laws</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For rooted ratios $q$ on a nonempty union-closed class, a coefficient array is feasible exactly when $\beta_C(q)<1<\alpha_C(q)$, and its feasible common scales are $1/\alpha_C(q)<\lambda<1/\beta_C(q)$. Every specified nonempty pc-minor row map satisfies $\alpha_N(q')\ge\alpha_C(q)$ and $\beta_N(q')\le\beta_C(q)$, even for infeasible ambient arrays. Products satisfy $\alpha_{C\times D}=\min(\alpha_C,\alpha_D)$ and $\beta_{C\times D}=\max(\beta_C,\beta_D)$. Finite thresholds are continuous, homogeneous, and log-Lipschitz, with scaling endpoints $\ell_C=-\log\alpha_C$ and $u_C=-\log\beta_C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The strict spectral criteria applied at every graph source give feasibility and uniform scaling. Positive and negative source witnesses propagate separately along allowed additions. Projection and conditioning restrict those systems without worsening either side, and their representative-row maps commute with scaling. Product source systems split into factor blocks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#thm:spectral-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-68" style="position:relative;">
+
+        <h3><a href="results/coefficient_ratio_spectral_identity.html" class="table-title-link">Coefficient-Ratio and Source-Spectral Identity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Ratio and Source-Spectral Identity</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty union-closed class and fixed rooted ratios $q$, the threshold of a coefficient array is $T_C(a)=\max\{1/\alpha_C(q),\beta_C(q)\}$. Consequently $\tau(C)^2=d_{\mathrm{sp}}(C)$. All union-closed reflections have the same optimized source-spectral value, and whenever one exists $\delta_{\mathrm{sp}}(C)=\tau(C)^2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At ratio threshold $t$, the separated positive and negative source systems are feasible exactly when $\alpha>1/t$ and $\beta<t$. Uniformly scaling $q$ reduces the optimization to $\inf_{\lambda>0}\max\{1/(\lambda\alpha),\lambda\beta\}=\sqrt{\beta/\alpha}$, including zero and infinite endpoint conventions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#thm:ratio-spectral</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-69" style="position:relative;">
+
+        <h3><a href="results/optimized_source_spectral_laws.html" class="table-title-link">Optimized Source-Spectral Invariant Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Optimized Source-Spectral Invariant Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li><li><a href="invariants/small_scale_source_indicator.html">Small-Scale Source Indicator</a></li><li><a href="invariants/large_scale_source_indicator.html">Large-Scale Source Indicator</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\delta_{\mathrm{sp}}$ is invariant under coordinate permutations and reflections, is nonincreasing under nonempty pc-minors, and satisfies $\delta_{\mathrm{sp}}(C\times D)=\max\{\delta_{\mathrm{sp}}(C),\delta_{\mathrm{sp}}(D)\}$. Among classes admitting a union-closed orientation, $\delta_{\mathrm{sp}}<1$ exactly characterizes convex realizability. Either $\eta_0=0$ or $\eta_\infty=0$ implies $\delta_{\mathrm{sp}}=0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>On the union-closed-orientation domain, the identity $\delta_{\mathrm{sp}}=\tau^2$ transfers cube symmetry, minor, product, and realizability laws from $\tau$. Outside that domain both the orientation minimum and the corresponding factor obstruction have value infinity. A zero one-sided indicator makes respectively $\alpha=\infty$ or $\beta=0$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#thm:optimized-spectral</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-70" style="position:relative;">
+
+        <h3><a href="results/source_spectral_zero_gap.html" class="table-title-link">Source-Spectral Zero Criterion and Gap</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Source-Spectral Zero Criterion and Gap</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty union-closed class, let $k(C)$ be the largest number of present right-side terms in a positive source row, with minimum convention one. Then $d_{\mathrm{sp}}(C)=0$ exactly when some shared array has $\beta_C/\alpha_C<1/k(C)$, and exactly when the class has a strict term-dominance certificate. Hence $d_{\mathrm{sp}}=0$ or $d_{\mathrm{sp}}\ge1/k(C)$. For a class on $n$ coordinates admitting a union-closed orientation, $\delta_{\mathrm{sp}}=0$ exactly when strict term dominance holds, and every nonzero value is at least $1/\max(1,n-1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A spectral ratio below $1/k$ permits a common scale at which positive sums divided by $k$ and negative sums are feasible; a largest positive term then dominates. Conversely, raise every coefficient and witness magnitude in a strict dominance certificate to a common power. Favorable maxima grow by $A^t$ while each unfavorable sum is at most a fixed row-size factor times $B^t$, with $A>1>B>0$, driving $\beta/\alpha$ to zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#thm:spectral-zero</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-71" style="position:relative;">
+
+        <h3><a href="results/exact_positive_spectral_maximum_value.html" class="table-title-link">Exact Positive Spectral Value on a Maximum Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Positive Spectral Value on a Maximum Class</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The sixteen-state maximum class $C_\ast$ satisfies $\delta_{\mathrm{sp}}(C_\ast)=1/\sqrt2$ and $\tau(C_\ast)=2^{-1/4}$. Thus it is convex-realizable but has no strict term-dominance certificate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Two negative source cycles force $\beta\ge\max(\sqrt{ab},\sqrt{cd})$, while a positive closed path choice forces $\alpha\le\sqrt{ab+cd}$, giving the lower bound $1/\sqrt2$. A rational array has $\alpha^2=9/8$ and $\beta^2=9/16$, attaining it. Every nontrivial reflection has a missing pattern with at least two positive literals, so the displayed orientation is the only union-closed one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#prop:spectral-maximum</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/spectral_maximum_class.html">Sixteen-State Spectral Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-72" style="position:relative;">
+
+        <h3><a href="results/unattained_zero_spectral_infimum.html" class="table-title-link">A Zero Source-Spectral Infimum Need Not Be Attained</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Zero Source-Spectral Infimum Need Not Be Attained</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/optimized_source_spectral_ratio.html">Optimized Source-Spectral Ratio</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $C_{17}\times L_{\mathrm{path},5}$, the fixed displayed union-closed orientation has $d_{\mathrm{sp}}=0$, but no finite positive rooted-ratio array attains zero. In particular the coefficient and source-spectral infima need not be attained.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At unit ratios the first factor has $(\alpha,\beta)=(\sqrt2,0)$ and the second has $(\infty,\sqrt2)$. Scaling their ratios by $2^t$ and $2^{-t}$ makes the product ratio $4^{-t}\to0$. Every finite array retains the first factor's closed positive subsystem and the second factor's negative two-cycle, so its product ratio remains positive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/spectral_invariant.tex?#sec:spectral-maximum-example</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nonattained_zero_spectral_product.html">Nonattained Zero Source-Spectral Product</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

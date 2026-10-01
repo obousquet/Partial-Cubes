@@ -1,0 +1,14 @@
+{
+  "id": 68,
+  "short_name": "nonattained_product_spectral_ratio",
+  "name": "Source-Spectral Ratio of the Nonattained Product",
+  "invariant_id": "#invariants/optimized_source_spectral_ratio",
+  "example_id": "#examples/nonattained_zero_spectral_product",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "0",
+  "status": "established",
+  "proof": "At reciprocal factor scales $2^t$ and $2^{-t}$, the product ratio is $4^{-t}$ and tends to zero. Every finite positive array retains finite $\\alpha$ from the first factor and positive $\\beta$ from the second, so the infimum is not attained in this orientation.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#sec:spectral-maximum-example",
+  "verification": "scripts/verify_spectral_invariant.py; data/examples/assets/spectral_invariant_verification.json"
+}

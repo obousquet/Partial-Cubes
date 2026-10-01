@@ -1,0 +1,14 @@
+{
+  "id": 18,
+  "short_name": "optimized_source_spectral_ratio",
+  "name": "Optimized Source-Spectral Ratio",
+  "symbol": "\\delta_{\\mathrm{sp}}(C)",
+  "definition": "For a union-closed orientation of a nonempty binary class and shared positive rooted ratios $q$, let $\\alpha_C(q)$ be the minimum spectral radius over all nonempty closed positive source-row choices and let $\\beta_C(q)$ be the maximum spectral radius over all full negative source-row choices. Put $d_{\\mathrm{sp}}(C)=\\inf_{q>0}\\beta_C(q)/\\alpha_C(q)$, with $\\beta/\\infty=0$, and define $\\delta_{\\mathrm{sp}}(C)$ as the minimum of $d_{\\mathrm{sp}}$ over union-closed coordinate reflections; an empty minimum is $+\\infty$.",
+  "status": "established",
+  "codomain": "Extended nonnegative reals $[0,+\\infty]$",
+  "normalization": "Rows are divided by their positive-root coefficient before forming the matrices. A missing positive closed choice gives $\\alpha=\\infty$; an empty negative system gives $\\beta=0$.",
+  "category": "algebraic",
+  "isomorphism_invariant": false,
+  "comments": "Invariant under coordinate permutations and reflections. If a union-closed orientation exists, then $\\delta_{\\mathrm{sp}}(C)=\\tau(C)^2$; without one the value is $+\\infty$ and has no realizability interpretation. The optimizing coefficient infimum need not be attained.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#eq:spectral-thresholds; PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:optimized-spectral"
+}

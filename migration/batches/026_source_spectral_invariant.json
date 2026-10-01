@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "batch_id": "026_source_spectral_invariant",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize the strict source-matrix criteria, spectral scaling thresholds, pc-minor and product laws, the optimized reflected source-spectral ratio, its identity with the square of the coefficient ratio, its zero criterion and gap, the exact positive maximum-class value, and a zero infimum that is not attained.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#lem:strict-spectral",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:spectral-laws",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:ratio-spectral",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:optimized-spectral",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:spectral-zero",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#prop:spectral-maximum",
+    "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#sec:spectral-maximum-example"
+  ],
+  "source_packets": [
+    {
+      "id": "source-spectral-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/spectral_invariant.tex",
+      "sha256": "5053f5468bee071f4a8c4e01e299da121906938ee11b5dd37b4a0548078be2e5"
+    },
+    {
+      "id": "source-spectra-exact-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/source_spectra_verification.json",
+      "sha256": "34e5314a95d07b7e6076e6e607279aafa26d8e3a512c5cd0cf1ab180f2b8090e"
+    },
+    {
+      "id": "source-spectra-cold-replay",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/source_spectra_replay.json",
+      "sha256": "3760725ffe999b305088357afcad13621cde72b910f8f4952a14f24a55262cc9"
+    },
+    {
+      "id": "spectral-zero-exact-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/spectral_zero_verification.json",
+      "sha256": "b9ed2a7cd3f66d5e1328d68448f2e5c8cbf5d9fd0c0e22ff1419b2562498ceb8"
+    },
+    {
+      "id": "spectral-zero-cold-replay",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/spectral_zero_replay.json",
+      "sha256": "9dfbe5fc320be3811fa6e132928a2e91478473f154e5c4dab1a5457937b2613a"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariant, exact values, named constructions, theorem statements, concise proofs, and replay verifier. The LaTeX paper retains the full Perron and strict-alternative arguments, all source-matrix derivations, detailed coefficient tables, literature discussion, and research context.",
+    "recoverability": "All four verification and cold-replay reports are copied byte-for-byte into database assets, source and record hashes are retained here, the frozen source snapshot remains recoverable, and no LaTeX source was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "database-source-spectral-verifier",
+      "path": "scripts/verify_spectral_invariant.py",
+      "sha256": "7a98167a2e116ad666bcf0d79079bfb825a205a4f76d79496dcd17dc841b884d",
+      "assertions": "Recomputes both exact maximum-class spectral extrema and the unique union-closed orientation; replays all 47 strict-dominance witnesses, four nonattainment calibrations, and two balanced obstructions; integrity-checks the full source reports and cold-replay hashes."
+    },
+    {
+      "id": "source-spectral-replay-report",
+      "path": "data/examples/assets/spectral_invariant_verification.json",
+      "sha256": "d7749fb029078d11726550ffac87bdca6cf2244bc63cbe8fbee892945ce16dff",
+      "assertions": "Passed exact finite replay with 329 policy matrices, 196 full-orthant decisions, 192 minor maps, 384 separate-side implications, and product ratios 1/4 through 1/256."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/invariants/015_coefficient_ratio.json",
+      "sha256": "d9e2cf78cb2db314e75c1cc846135ab41ecf5ae9bed6be7793644350ec8839a8"
+    },
+    {
+      "path": "data/invariants/018_optimized_source_spectral_ratio.json",
+      "sha256": "160a0dafdb1c3275b0579703b70a1ea73e2ffb46ce63e824306829c663b45e74"
+    },
+    {
+      "path": "data/examples/026_spectral_maximum_class.json",
+      "sha256": "252e34f83cbc649b72d59a01dcdd975eaa1804ca05d116c0b78bec29ba4d5c53"
+    },
+    {
+      "path": "data/examples/027_nonattained_zero_spectral_product.json",
+      "sha256": "3ec6e73ba35884e2a3ed3a9470287c3b5888d41275673a9708a60377af8eb7b0"
+    },
+    {
+      "path": "data/examples/assets/source_spectra_replay_source.json",
+      "sha256": "3760725ffe999b305088357afcad13621cde72b910f8f4952a14f24a55262cc9"
+    },
+    {
+      "path": "data/examples/assets/source_spectra_source.json",
+      "sha256": "34e5314a95d07b7e6076e6e607279aafa26d8e3a512c5cd0cf1ab180f2b8090e"
+    },
+    {
+      "path": "data/examples/assets/spectral_invariant_verification.json",
+      "sha256": "d7749fb029078d11726550ffac87bdca6cf2244bc63cbe8fbee892945ce16dff"
+    },
+    {
+      "path": "data/examples/assets/spectral_zero_replay_source.json",
+      "sha256": "9dfbe5fc320be3811fa6e132928a2e91478473f154e5c4dab1a5457937b2613a"
+    },
+    {
+      "path": "data/examples/assets/spectral_zero_source.json",
+      "sha256": "b9ed2a7cd3f66d5e1328d68448f2e5c8cbf5d9fd0c0e22ff1419b2562498ceb8"
+    },
+    {
+      "path": "data/invariant_values/060_convex_geometry_ideal_spectral_ratio.json",
+      "sha256": "beda225af880fbdf5af0c47d960ca18cd1d14240586523b4ac7936b53853f925"
+    },
+    {
+      "path": "data/invariant_values/061_convex_geometry_ideal_coefficient_ratio.json",
+      "sha256": "ac6b91c544d049a04f6988c392eecee9ca18200ebed01967509396f65a8ef4a6"
+    },
+    {
+      "path": "data/invariant_values/062_nonlinear_source_spectral_ratio.json",
+      "sha256": "686a65057ae34c126aa7dbe4eecedc87cfe7c0668e75288033de16c6e83eff95"
+    },
+    {
+      "path": "data/invariant_values/063_nonlinear_source_coefficient_ratio.json",
+      "sha256": "1b9d3cbd8c3ddf565c465415e59a04996c1c9161fb0b015231774ea6753d8396"
+    },
+    {
+      "path": "data/invariant_values/064_path_learning_spectral_ratio.json",
+      "sha256": "33923e39215fc58182a21f9a04d46f8d108b4d01e21eeb30c0054a1a13aa72aa"
+    },
+    {
+      "path": "data/invariant_values/065_spectral_maximum_source_spectral_ratio.json",
+      "sha256": "dc8240c4360b2c64919a5d2baa7ca39b772e57cc6203259e54dfcd1098c5ec93"
+    },
+    {
+      "path": "data/invariant_values/066_spectral_maximum_coefficient_ratio.json",
+      "sha256": "daae6fd59569176c1c87c0f5ed493a11695c71af7423202f9a66be099236a0c1"
+    },
+    {
+      "path": "data/invariant_values/067_spectral_maximum_vc_dimension.json",
+      "sha256": "7f2bbc2b40361e848cb10f04b5bad584dec67d65785450fbf79c1b724530d872"
+    },
+    {
+      "path": "data/invariant_values/068_nonattained_product_spectral_ratio.json",
+      "sha256": "73c58f1d5fbc350a4adb43d86087a81bf44af71f4dd186621587b0c9ff60d8f9"
+    },
+    {
+      "path": "data/invariant_values/069_nonattained_product_coefficient_ratio.json",
+      "sha256": "2d3c3902be574ebe563d8bba0bdc7856f7bc308277d8f3d6a08b0553b388299e"
+    },
+    {
+      "path": "data/results/066_strict_source_spectral_criteria.json",
+      "sha256": "d348971922c28c3cd8ddd13e7bb854c6de35d0c33bce85285c6b3d0a98df36d8"
+    },
+    {
+      "path": "data/results/067_source_spectral_scaling_laws.json",
+      "sha256": "55d8c5611a45c5414bff68cf4437ccc97b682032d76b612101b20b4dfe168b0e"
+    },
+    {
+      "path": "data/results/068_coefficient_ratio_spectral_identity.json",
+      "sha256": "4d7806c3c5de6acf64e26d78f7db21b7f213c6f6dd4582acc56779beed9c3a42"
+    },
+    {
+      "path": "data/results/069_optimized_source_spectral_laws.json",
+      "sha256": "88aae0d7689fe40f2ac1015399ab4a51a4f43ada789351a290a46b577104d143"
+    },
+    {
+      "path": "data/results/070_source_spectral_zero_gap.json",
+      "sha256": "20e2c2dde3175b5c025598d5171cb2f00f50f5846ed6ed266e3d25f88195db76"
+    },
+    {
+      "path": "data/results/071_exact_positive_spectral_maximum_value.json",
+      "sha256": "2212c7f35abbee06de6963cb88811631234f28c996d5c8139164b6fc8fc6a6a8"
+    },
+    {
+      "path": "data/results/072_unattained_zero_spectral_infimum.json",
+      "sha256": "435bacfc5162d94f4a19b1c0b57bf28385b57a101db328a35c52fef31098c7a7"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c800ef24f83bdea02c417f3528449e39e598c7783ab04ffaaa5bd2d49674d982"
+    },
+    {
+      "path": "scripts/verify_spectral_invariant.py",
+      "sha256": "7a98167a2e116ad666bcf0d79079bfb825a205a4f76d79496dcd17dc841b884d"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 558 records.",
+    "exact_replay": "Both maximum-class extrema, the unique orientation, 47 dominance witnesses, four product calibrations, and two balanced obstructions passed.",
+    "website": "Normalized 574 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "46 Hasse covers represent 74 stored inclusions; all 22 minor-atlas Ample-family nodes and 67 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Graph-arrangement complements and sphere-family constructions.",
+    "Two-control order-cone spaces and pc-minimal nonrealizable cycles.",
+    "Coordinate-interval and Boolean-substitution invariants.",
+    "Relative nerve and exact coefficient-space gluing results."
+  ]
+}

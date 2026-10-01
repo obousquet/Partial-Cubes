@@ -1,0 +1,20 @@
+{
+  "id": 67,
+  "short_name": "source_spectral_scaling_laws",
+  "name": "Source-Spectral Scaling, Minor, and Product Laws",
+  "invariant_ids": [
+    "#invariants/optimized_source_spectral_ratio",
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For rooted ratios $q$ on a nonempty union-closed class, a coefficient array is feasible exactly when $\\beta_C(q)<1<\\alpha_C(q)$, and its feasible common scales are $1/\\alpha_C(q)<\\lambda<1/\\beta_C(q)$. Every specified nonempty pc-minor row map satisfies $\\alpha_N(q')\\ge\\alpha_C(q)$ and $\\beta_N(q')\\le\\beta_C(q)$, even for infeasible ambient arrays. Products satisfy $\\alpha_{C\\times D}=\\min(\\alpha_C,\\alpha_D)$ and $\\beta_{C\\times D}=\\max(\\beta_C,\\beta_D)$. Finite thresholds are continuous, homogeneous, and log-Lipschitz, with scaling endpoints $\\ell_C=-\\log\\alpha_C$ and $u_C=-\\log\\beta_C$.",
+  "status": "established",
+  "proof": "The strict spectral criteria applied at every graph source give feasibility and uniform scaling. Positive and negative source witnesses propagate separately along allowed additions. Projection and conditioning restrict those systems without worsening either side, and their representative-row maps commute with scaling. Product source systems split into factor blocks.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:spectral-laws"
+}

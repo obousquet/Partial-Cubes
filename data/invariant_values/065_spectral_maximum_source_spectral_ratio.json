@@ -1,0 +1,14 @@
+{
+  "id": 65,
+  "short_name": "spectral_maximum_source_spectral_ratio",
+  "name": "Source-Spectral Ratio of the Sixteen-State Maximum Class",
+  "invariant_id": "#invariants/optimized_source_spectral_ratio",
+  "example_id": "#examples/spectral_maximum_class",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "1/\\sqrt2",
+  "status": "established",
+  "proof": "Every array has $\\beta/\\alpha\\ge\\sqrt{\\max(ab,cd)/(ab+cd)}\\ge1/\\sqrt2$. The displayed rational array has $\\alpha^2=9/8$ and $\\beta^2=9/16$, attaining equality; this is the unique union-closed orientation.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#prop:spectral-maximum",
+  "verification": "scripts/verify_spectral_invariant.py; data/examples/assets/spectral_invariant_verification.json"
+}

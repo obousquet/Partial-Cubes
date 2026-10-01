@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "source_reports": {
+    "source_spectra_source.json": "34e5314a95d07b7e6076e6e607279aafa26d8e3a512c5cd0cf1ab180f2b8090e",
+    "source_spectra_replay_source.json": "3760725ffe999b305088357afcad13621cde72b910f8f4952a14f24a55262cc9",
+    "spectral_zero_source.json": "b9ed2a7cd3f66d5e1328d68448f2e5c8cbf5d9fd0c0e22ff1419b2562498ceb8",
+    "spectral_zero_replay_source.json": "9dfbe5fc320be3811fa6e132928a2e91478473f154e5c4dab1a5457937b2613a"
+  },
+  "source_spectra_replay": {
+    "counts": {
+      "abstract_side_tests": 24,
+      "policy_matrices": 329,
+      "source_side_tests": 80,
+      "full_orthant_decisions": 196,
+      "minor_array_maps": 192,
+      "separate_side_implications": 384,
+      "nonvacuous_minor_side_implications": 276,
+      "minor_maps_from_infeasible_arrays": 108,
+      "block_product_side_tests": 12
+    },
+    "maximum16_sources": [
+      1,
+      14,
+      16
+    ],
+    "maximum16_union_closed_reflections": [
+      0
+    ],
+    "maximum16_extrema": [
+      {
+        "positive": true,
+        "squared_extremum": "9/8",
+        "matrices": 15,
+        "comparison_counts": {
+          "1": 14,
+          "0": 1
+        }
+      },
+      {
+        "positive": false,
+        "squared_extremum": "9/16",
+        "matrices": 9,
+        "comparison_counts": {
+          "-1": 7,
+          "0": 2
+        }
+      }
+    ]
+  },
+  "spectral_zero_replay": {
+    "counts": {
+      "full_dominance_witnesses": 47,
+      "power_calibrations": 4,
+      "balanced_obstructions": 2
+    },
+    "dominance_witnesses_replayed": 47,
+    "product_ratios": [
+      "1/4",
+      "1/16",
+      "1/64",
+      "1/256"
+    ]
+  },
+  "scope": "Exact replay of the maximum-class spectral extrema, its unique union-closed orientation, all 47 strict-dominance witnesses, four nonattainment calibrations, and both balanced obstructions. Complete source-report counts and cold-replay hashes are integrity-checked; universal laws use the written proofs.",
+  "script_sha256": "7a98167a2e116ad666bcf0d79079bfb825a205a4f76d79496dcd17dc841b884d"
+}

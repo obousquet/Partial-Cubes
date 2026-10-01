@@ -1,0 +1,14 @@
+{
+  "id": 66,
+  "short_name": "strict_source_spectral_criteria",
+  "name": "Strict Source-System Spectral Criteria",
+  "invariant_ids": [
+    "#invariants/optimized_source_spectral_ratio"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $R_i$ be finite families of nonnegative rows. A positive system $h_i<mh$ for every $m\\in R_i$ is feasible exactly when the minimum spectral radius over all nonempty closed row choices is greater than one. A negative system $v_i>mv$ is feasible exactly when the maximum spectral radius over all full row choices is less than one. Empty row families impose no inequality; the empty positive minimum is $\\infty$ and an empty negative system has threshold zero.",
+  "status": "established",
+  "proof": "A feasible vector and a nonnegative left Perron vector give necessity. If a strict system is infeasible, the strict linear alternative produces nonnegative row weights. Rowwise averaging and a resolvent perturbation select a closed positive choice of radius at most one, while rowwise maximization against a right Perron vector selects a full negative choice of radius at least one.",
+  "references": "\\cite[Theorem~1 and Corollary~1]{Kozyakin2016}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#lem:strict-spectral"
+}

@@ -1,0 +1,20 @@
+{
+  "id": 72,
+  "short_name": "unattained_zero_spectral_infimum",
+  "name": "A Zero Source-Spectral Infimum Need Not Be Attained",
+  "invariant_ids": [
+    "#invariants/optimized_source_spectral_ratio",
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "construction",
+  "statement": "For $C_{17}\\times L_{\\mathrm{path},5}$, the fixed displayed union-closed orientation has $d_{\\mathrm{sp}}=0$, but no finite positive rooted-ratio array attains zero. In particular the coefficient and source-spectral infima need not be attained.",
+  "status": "established",
+  "proof": "At unit ratios the first factor has $(\\alpha,\\beta)=(\\sqrt2,0)$ and the second has $(\\infty,\\sqrt2)$. Scaling their ratios by $2^t$ and $2^{-t}$ makes the product ratio $4^{-t}\\to0$. Every finite array retains the first factor's closed positive subsystem and the second factor's negative two-cycle, so its product ratio remains positive.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#sec:spectral-maximum-example",
+  "witness_ids": [
+    "#examples/nonattained_zero_spectral_product"
+  ]
+}

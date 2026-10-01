@@ -1,0 +1,21 @@
+{
+  "id": 71,
+  "short_name": "exact_positive_spectral_maximum_value",
+  "name": "Exact Positive Spectral Value on a Maximum Class",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/optimized_source_spectral_ratio",
+    "#invariants/coefficient_ratio"
+  ],
+  "result_type": "construction",
+  "statement": "The sixteen-state maximum class $C_\\ast$ satisfies $\\delta_{\\mathrm{sp}}(C_\\ast)=1/\\sqrt2$ and $\\tau(C_\\ast)=2^{-1/4}$. Thus it is convex-realizable but has no strict term-dominance certificate.",
+  "status": "established",
+  "proof": "Two negative source cycles force $\\beta\\ge\\max(\\sqrt{ab},\\sqrt{cd})$, while a positive closed path choice forces $\\alpha\\le\\sqrt{ab+cd}$, giving the lower bound $1/\\sqrt2$. A rational array has $\\alpha^2=9/8$ and $\\beta^2=9/16$, attaining it. Every nontrivial reflection has a missing pattern with at least two positive literals, so the displayed orientation is the only union-closed one.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#prop:spectral-maximum",
+  "witness_ids": [
+    "#examples/spectral_maximum_class"
+  ]
+}

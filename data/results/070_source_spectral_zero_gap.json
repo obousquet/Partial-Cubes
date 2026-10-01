@@ -1,0 +1,14 @@
+{
+  "id": 70,
+  "short_name": "source_spectral_zero_gap",
+  "name": "Source-Spectral Zero Criterion and Gap",
+  "invariant_ids": [
+    "#invariants/optimized_source_spectral_ratio",
+    "#invariants/coefficient_ratio"
+  ],
+  "result_type": "recognition",
+  "statement": "For a nonempty union-closed class, let $k(C)$ be the largest number of present right-side terms in a positive source row, with minimum convention one. Then $d_{\\mathrm{sp}}(C)=0$ exactly when some shared array has $\\beta_C/\\alpha_C<1/k(C)$, and exactly when the class has a strict term-dominance certificate. Hence $d_{\\mathrm{sp}}=0$ or $d_{\\mathrm{sp}}\\ge1/k(C)$. For a class on $n$ coordinates admitting a union-closed orientation, $\\delta_{\\mathrm{sp}}=0$ exactly when strict term dominance holds, and every nonzero value is at least $1/\\max(1,n-1)$.",
+  "status": "established",
+  "proof": "A spectral ratio below $1/k$ permits a common scale at which positive sums divided by $k$ and negative sums are feasible; a largest positive term then dominates. Conversely, raise every coefficient and witness magnitude in a strict dominance certificate to a common power. Favorable maxima grow by $A^t$ while each unfavorable sum is at most a fixed row-size factor times $B^t$, with $A>1>B>0$, driving $\\beta/\\alpha$ to zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/spectral_invariant.tex#thm:spectral-zero"
+}
