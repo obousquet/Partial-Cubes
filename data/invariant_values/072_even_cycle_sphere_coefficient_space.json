@@ -1,0 +1,15 @@
+{
+  "id": 72,
+  "short_name": "even_cycle_sphere_coefficient_space",
+  "name": "Coefficient Spaces of the Even-Cycle Sphere Family",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/even_cycle_sphere_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "S^{m-2}\\times\\mathbb R^{d_m-m+2}",
+  "parameters": "Even $m\\ge4$ and $d_m=8m+\\binom m2$.",
+  "status": "established",
+  "proof": "Cycle increments lie in two zero-sum hyperplanes and obey $\\max(x_j,y_j)>0$. The change $d=x-y$, $s=x+y$ identifies this space with $(H_m\\setminus\\{0\\})\\times\\Delta_{m-1}^{\\circ}$ times Euclidean factors.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#thm:sphere-family",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json"
+}

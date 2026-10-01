@@ -1,0 +1,22 @@
+{
+  "id": 75,
+  "short_name": "spheres_at_vc_dimension_three",
+  "name": "All Even Sphere Dimensions at VC Dimension Three",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "construction",
+  "statement": "For every even $m\\ge4$, there is a convex-realizable, dismantlable ample, finite convex-treelike class $C_m$ with $8m+8$ concepts, VC dimension three, coefficient dimension $d_m=8m+\\binom m2$, and $\\mathcal A(C_m)\\cong S^{m-2}\\times\\mathbb R^{d_m-m+2}$. Its integral homology has Betti polynomial $1+z^{m-2}$.",
+  "status": "established",
+  "proof": "Apply the oriented bipartite construction to a consistently directed even cycle. Zero-sum edge increments reduce the directed domain to $(H_m\\setminus\\{0\\})\\times\\Delta_{m-1}^{\\circ}$ times Euclidean factors, and polar coordinates produce the sphere.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#thm:sphere-family",
+  "witness_ids": [
+    "#examples/even_cycle_sphere_family"
+  ]
+}

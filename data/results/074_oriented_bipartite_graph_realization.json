@@ -1,0 +1,25 @@
+{
+  "id": 74,
+  "short_name": "oriented_bipartite_graph_realization",
+  "name": "Oriented Bipartite Graphs Realize Directed Coordinate Spaces",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "construction",
+  "statement": "For every finite oriented simple bipartite graph $G$, the class $C(G)$ is convex-realizable, dismantlable ample, finite convex-treelike, and has VC dimension three. With $\\mathcal Z(G)=\\{z:\\max_i(z_{w,i}-z_{v,i})>0\\text{ for every }v\\to w\\}$, one has $\\mathcal A(C(G))\\cong\\mathcal Z(G)\\times\\mathbb R^{d_G-2|V(G)|}$. Conditioning away private vertices gives the construction on the induced subgraph.",
+  "status": "established",
+  "proof": "Decreasing ample control fibers prove ampleness and give an ample-prefix order. Adding vertex fibers and their pendant edge concepts yields the finite convex-treelike recursion. The complete missing-pattern calculation and private-coordinate product reduce each edge concept to its directed coordinate inequality; explicit integer positions give rational realizability.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#prop:graph-realization",
+  "witness_ids": [
+    "#examples/oriented_bipartite_graph_class_family"
+  ]
+}

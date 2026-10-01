@@ -1,0 +1,19 @@
+{
+  "id": 83,
+  "short_name": "union_graph_conditioning_functoriality",
+  "name": "Conditioning Functoriality of the Union-Closed Digraph Construction",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "construction",
+  "statement": "Every subgraph with inherited arcs is obtained from $C_{\\mathrm{uc}}(G)$ by conditioning removed vertex coordinates and their incident feedback coordinates to one. Deleting an arc alone conditions its two feedback coordinates to one. The induced coefficient map forgets exactly the rows involving those coordinates, although it need not be surjective on feasible spaces.",
+  "status": "established",
+  "proof": "In the unreflected decreasing-fiber model, these conditionings remove precisely the private supports belonging to deleted vertices or arcs. The remaining minimal patterns are exactly those of the smaller construction, so the standard specified-minor row restriction is literal row deletion.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#sec:union-graph-spaces",
+  "witness_ids": [
+    "#examples/union_closed_digraph_class_family"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 75,
+  "short_name": "union_closed_sphere_coefficient_space",
+  "name": "Coefficient Spaces of the Union-Closed Sphere Family",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/union_closed_sphere_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "S^{m-2}\\times\\mathbb R^{d_m-m+2}",
+  "parameters": "$m\\ge2$ and $d_m=26m+\\binom{3m}{2}$.",
+  "status": "established",
+  "proof": "For a directed cycle the arrangement removes precisely the full diagonal from $\\mathbb R^m$. Splitting off that diagonal and using polar coordinates gives $B_G\\cong S^{m-2}\\times\\mathbb R^2$; the general union-graph product supplies the remaining Euclidean factors.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-spheres",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json"
+}

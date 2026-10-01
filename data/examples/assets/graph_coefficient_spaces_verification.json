@@ -1,0 +1,95 @@
+{
+  "status": "passed",
+  "source_reports": {
+    "coefficient_cycle_spheres_source.json": "f40c7f6b05ddda3e6d3bf428aae9fe759cf48d50750dd4a015e82abdfb72cc07",
+    "private_coordinate_products_source.json": "a343ddd8db2ea017c8e12ea9b2cbc60f7e389538a6580ece8a9d612074eb9deb",
+    "cycle_arrangement_source.json": "543c67bb436721d05ee251144ef6f5cea84bc1e9bfa64081b7914f13b70e9e93",
+    "union_closed_graph_spaces_source.json": "0e0abadbc376a55468f3f23c6932229e675a5cc050568436434e5e7af3b45ceb"
+  },
+  "sphere_replay": {
+    "cases": [
+      {
+        "cycle_length": 4,
+        "coordinates": 7,
+        "concepts": 40,
+        "patterns": 18,
+        "coefficient_dimension": 38
+      },
+      {
+        "cycle_length": 6,
+        "coordinates": 9,
+        "concepts": 56,
+        "patterns": 33,
+        "coefficient_dimension": 63
+      }
+    ],
+    "separator_witnesses_replayed": 96,
+    "m4_nerve": {
+      "f_vector": [
+        14,
+        48,
+        48,
+        12
+      ],
+      "boundary_ranks": [
+        0,
+        13,
+        35,
+        12,
+        0
+      ],
+      "betti_F2": [
+        1,
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  "private_coordinate_replay": {
+    "counts": {
+      "full_reconstructed_witnesses": 786,
+      "private_array_changes": 12,
+      "radial_inverse_checks": 20
+    },
+    "radial_sections_replayed": 4
+  },
+  "arrangement_replay": {
+    "digraph_cases": 21,
+    "parameters_replayed": 2305,
+    "feasible_centers_replayed": 2275,
+    "reported_radial_inverse_checks": 9100
+  },
+  "union_closed_replay": {
+    "counts": {
+      "complete_pattern_lists": 2,
+      "arc_conditioning_checks": 5,
+      "full_orthant_decisions": 536,
+      "full_array_decisions": 7,
+      "feasible_arrays": 4,
+      "infeasible_arrays": 3,
+      "rational_section_checks": 4
+    },
+    "structures": [
+      {
+        "vertices": 2,
+        "arcs": 2,
+        "coordinates": 9,
+        "concepts": 68,
+        "patterns": 35,
+        "coefficient_dimension": 67
+      },
+      {
+        "vertices": 3,
+        "arcs": 3,
+        "coordinates": 12,
+        "concepts": 98,
+        "patterns": 66,
+        "coefficient_dimension": 114
+      }
+    ],
+    "feasible_array_witnesses_replayed": 332
+  },
+  "scope": "Exact replay of the m=4,6 sphere certificates and nerve homology, 2,305 arrangement parameters and centers, four feedback sections, both union-closed structures, and 332 feasible-array witnesses. Complete report counts are checked; general product and topology theorems use the written proofs.",
+  "script_sha256": "42d0f2dd9e83c33ca257b2079fa8baff2f52bcba555a7681f11a66ae3e7dbe15"
+}

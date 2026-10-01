@@ -683,6 +683,143 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-28" style="position:relative;">
+
+        <h3><a href="examples/oriented_bipartite_graph_class_family.html" class="table-title-link">Oriented Bipartite-Graph Class Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Oriented Bipartite-Graph Class Construction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C(G)">
+            \[C(G)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For a finite oriented simple bipartite graph $G$, use one private coordinate per vertex and three controls. At private support $T$, allow all eight control words if $T=\varnothing$; all but $+++$ or $---$, according to the vertex side, if $T=\{v\}$; the singleton $++-$ or $--+$ prescribed by the orientation if $T$ is an edge; and no words otherwise.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Finite simple bipartite graph with one orientation per edge; the empty graph is allowed by the convention $C(\varnothing)=\{0,1\}^3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>If $m=|V(G)|$ and $e=|E(G)|$, then $|C(G)|=8+7m+e$, its VC dimension is three, and it is convex-realizable, dismantlable ample, and finite convex-treelike. Conditioning private coordinates outside an induced subgraph $H$ to zero gives $C(H)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#prop:graph-realization</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/coefficient_cycle_spheres_source.json; data/examples/assets/private_coordinate_products_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/oriented_bipartite_graph_coefficient_space.html'>Coefficient Space of the Oriented Bipartite-Graph Construction</a></li><li><a href='invariant_values/oriented_bipartite_graph_vc_dimension.html'>VC Dimension of the Oriented Bipartite-Graph Construction</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-29" style="position:relative;">
+
+        <h3><a href="examples/even_cycle_sphere_family.html" class="table-title-link">Even-Cycle Coefficient-Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Even-Cycle Coefficient-Sphere Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_m">
+            \[C_m\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Apply the oriented bipartite-graph construction $C(G)$ to a consistently directed cycle of even length $m\ge4$, alternating the two bipartition corners.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Even integer $m\ge4$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The class has $m+3$ coordinates, $8m+8$ concepts, VC dimension three, coefficient dimension $d_m=8m+\binom m2$, and coefficient space $S^{m-2}\times\mathbb R^{d_m-m+2}$. It is convex-realizable, dismantlable ample, and finite convex-treelike. Its integral homology is that of $S^{m-2}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#thm:sphere-family</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/coefficient_cycle_spheres_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/even_cycle_sphere_coefficient_space.html'>Coefficient Spaces of the Even-Cycle Sphere Family</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-30" style="position:relative;">
+
+        <h3><a href="examples/interacting_cycle_arrangement_class.html" class="table-title-link">Interacting-Cycle Arrangement Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interacting-Cycle Arrangement Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{\mathrm{int}}">
+            \[C_{\mathrm{int}}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the oriented bipartite-graph construction on vertices $u,v,a,b,c$ with arcs $u\to a\to v$, $v\to b\to u$, and $v\to c\to u$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>This is a 49-concept convex-realizable ample class on eight coordinates with coefficient dimension 55. Its two minimal directed-cycle supports give diagonal subspaces meeting in the full diagonal, and its coefficient space has homotopy type $S^2\vee S^2\vee S^2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#sec:graph-connectivity</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/cycle_arrangement_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/interacting_cycle_coefficient_space.html'>Coefficient Space of the Interacting-Cycle Class</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-31" style="position:relative;">
+
+        <h3><a href="examples/union_closed_digraph_class_family.html" class="table-title-link">Union-Closed Directed-Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Union-Closed Directed-Graph Construction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{\mathrm{uc}}(G)">
+            \[C_{\mathrm{uc}}(G)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For a finite loopless digraph $G$, use three controls, one private coordinate per vertex, and two feedback coordinates $a_e,b_e$ per arc. Before complementing all coordinates, the decreasing control fibers are: the full cube at empty support; the cube minus $011$ at a vertex; $c_1\le c_2$ at $a_e$; $c_1\le c_3$ at $b_e$; both inequalities at $\{a_e,b_e\}$; $\{000\}$ when the source vertex is joined to any nonempty feedback support of its arc; $\{111\}$ for the target; and empty otherwise.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Finite loopless directed graph without repeated arcs; opposite arcs are allowed.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>For $m$ vertices and $e$ arcs, it is union closed, convex-realizable, dismantlable ample, and finite convex-treelike, with $m+2e+3$ coordinates and $8+7m+23e$ concepts. Its VC dimension is four when $e>0$ and three when $e=0$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#thm:union-graph-space</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/union_closed_graph_spaces_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/union_closed_digraph_coefficient_space.html'>Coefficient Space of the Union-Closed Digraph Construction</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-32" style="position:relative;">
+
+        <h3><a href="examples/union_closed_sphere_family.html" class="table-title-link">Union-Closed Coefficient-Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Union-Closed Coefficient-Sphere Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="U_m">
+            \[U_m\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Apply the union-closed directed-graph construction to a directed $m$-cycle, using the two opposite arcs when $m=2$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Integer $m\ge2$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The class has $3m+3$ coordinates, $30m+8$ concepts, VC dimension four, and coefficient space $S^{m-2}\times\mathbb R^{d_m-m+2}$, where $d_m=26m+\binom{3m}{2}$. It is union closed, realizable, dismantlable ample, and finite convex-treelike. Both reflected source indicators equal one. In particular $U_2$ has 68 concepts and two coefficient-space components $\mathbb R^{67}$, while $U_3$ has 98 concepts and coefficient space $S^1\times\mathbb R^{113}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-spheres</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/union_closed_graph_spaces_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/union_closed_sphere_coefficient_space.html'>Coefficient Spaces of the Union-Closed Sphere Family</a></li><li><a href='invariant_values/union_closed_sphere_vc_dimension.html'>VC Dimension of the Union-Closed Sphere Family</a></li><li><a href='invariant_values/union_closed_sphere_small_scale_indicator.html'>Small-Scale Indicator of the Union-Closed Sphere Family</a></li><li><a href='invariant_values/union_closed_sphere_large_scale_indicator.html'>Large-Scale Indicator of the Union-Closed Sphere Family</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-33" style="position:relative;">
+
+        <h3><a href="examples/bidirected_graph_component_family.html" class="table-title-link">Bidirected-Graph Component Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Bidirected-Graph Component Construction</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{\mathrm{uc}}(\overleftrightarrow H)">
+            \[C_{\mathrm{uc}}(\overleftrightarrow H)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For a finite simple graph $H$, replace every edge by its two opposite arcs and apply the union-closed directed-graph construction.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Finite simple graph $H$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Its coefficient-space components are indexed by the acyclic orientations of $H$, and every component is Euclidean of full coefficient dimension. For $H=K_m$ there are exactly $m!$ components, so component counts are unbounded among union-closed realizable finite convex-treelike classes of VC dimension four.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-components</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/cycle_arrangement_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/bidirected_graph_coefficient_space.html'>Coefficient Space of the Bidirected-Graph Construction</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

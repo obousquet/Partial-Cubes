@@ -1,0 +1,13 @@
+{
+  "id": 78,
+  "short_name": "directed_girth_connectivity",
+  "name": "Coefficient-Space Connectivity from Directed Girth",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If a finite loopless digraph has directed girth $g$, then $\\mathcal Z(G)$ is $(g-3)$-connected; it is contractible when $G$ is acyclic. Every coefficient space from the oriented simple bipartite construction is simply connected, and the $(g-3)$ bound is attained on consistently directed even cycles.",
+  "status": "established",
+  "proof": "Every removed cycle diagonal has codimension at least $g-1$. General position cones sphere maps away from a finite union of linear subspaces of that codimension. The arrangement product transfers the bound, and one directed cycle leaves the complement of the full diagonal, with sphere type $S^{g-2}$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_arrangements.tex#cor:directed-girth"
+}

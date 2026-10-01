@@ -1,0 +1,12 @@
+{
+  "id": 32,
+  "short_name": "union_closed_sphere_family",
+  "name": "Union-Closed Coefficient-Sphere Family",
+  "symbol": "U_m",
+  "object_type": "family",
+  "definition": "Apply the union-closed directed-graph construction to a directed $m$-cycle, using the two opposite arcs when $m=2$.",
+  "parameters": "Integer $m\\ge2$.",
+  "properties": "The class has $3m+3$ coordinates, $30m+8$ concepts, VC dimension four, and coefficient space $S^{m-2}\\times\\mathbb R^{d_m-m+2}$, where $d_m=26m+\\binom{3m}{2}$. It is union closed, realizable, dismantlable ample, and finite convex-treelike. Both reflected source indicators equal one. In particular $U_2$ has 68 concepts and two coefficient-space components $\\mathbb R^{67}$, while $U_3$ has 98 concepts and coefficient space $S^1\\times\\mathbb R^{113}$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-spheres",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/union_closed_graph_spaces_source.json"
+}

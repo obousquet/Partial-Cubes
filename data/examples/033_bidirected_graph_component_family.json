@@ -1,0 +1,12 @@
+{
+  "id": 33,
+  "short_name": "bidirected_graph_component_family",
+  "name": "Bidirected-Graph Component Construction",
+  "symbol": "C_{\\mathrm{uc}}(\\overleftrightarrow H)",
+  "object_type": "family",
+  "definition": "For a finite simple graph $H$, replace every edge by its two opposite arcs and apply the union-closed directed-graph construction.",
+  "parameters": "Finite simple graph $H$.",
+  "properties": "Its coefficient-space components are indexed by the acyclic orientations of $H$, and every component is Euclidean of full coefficient dimension. For $H=K_m$ there are exactly $m!$ components, so component counts are unbounded among union-closed realizable finite convex-treelike classes of VC dimension four.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-components",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/cycle_arrangement_source.json"
+}

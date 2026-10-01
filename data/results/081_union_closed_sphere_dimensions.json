@@ -1,0 +1,24 @@
+{
+  "id": 81,
+  "short_name": "union_closed_sphere_dimensions",
+  "name": "All Sphere Dimensions in Union-Closed Coefficient Spaces",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension",
+    "#invariants/small_scale_source_indicator",
+    "#invariants/large_scale_source_indicator"
+  ],
+  "result_type": "construction",
+  "statement": "For every $m\\ge2$ there is a union-closed realizable finite convex-treelike class $U_m$ with $30m+8$ concepts, VC dimension four, and $\\mathcal A(U_m)\\cong S^{m-2}\\times\\mathbb R^{d_m-m+2}$. Both $\\eta_0(U_m)$ and $\\eta_\\infty(U_m)$ equal one. In particular $U_2$ has two Euclidean components and $U_3$ has a circle factor.",
+  "status": "established",
+  "proof": "Use the arbitrary-digraph construction on a directed cycle. Its arrangement complement is the complement of the full diagonal, hence $S^{m-2}\\times\\mathbb R^2$. Union closure makes both side indicators finite, while either zero would force a Euclidean coefficient space and contradict the sphere factor.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-spheres",
+  "witness_ids": [
+    "#examples/union_closed_sphere_family"
+  ]
+}

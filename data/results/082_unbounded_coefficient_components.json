@@ -1,0 +1,22 @@
+{
+  "id": 82,
+  "short_name": "unbounded_coefficient_components",
+  "name": "Unbounded Coefficient-Space Component Counts at VC Dimension Four",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "construction",
+  "statement": "For a finite simple graph $H$, apply the union-closed construction after replacing each edge by opposite arcs. The coefficient-space components are indexed by acyclic orientations of $H$, and each is homeomorphic to $\\mathbb R^{d_C}$. Taking $H=K_m$ gives exactly $m!$ components, so component counts are unbounded at VC dimension four.",
+  "status": "established",
+  "proof": "The minimal directed cycles are the opposite-arc two-cycles, so the arrangement is the graphical diagonal arrangement $d_v=d_w$. Each complement component orients every edge by increasing coordinate value; these are exactly the nonempty convex regions indexed by acyclic orientations.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-components",
+  "witness_ids": [
+    "#examples/bidirected_graph_component_family"
+  ]
+}

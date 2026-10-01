@@ -1,0 +1,12 @@
+{
+  "id": 31,
+  "short_name": "union_closed_digraph_class_family",
+  "name": "Union-Closed Directed-Graph Construction",
+  "symbol": "C_{\\mathrm{uc}}(G)",
+  "object_type": "family",
+  "definition": "For a finite loopless digraph $G$, use three controls, one private coordinate per vertex, and two feedback coordinates $a_e,b_e$ per arc. Before complementing all coordinates, the decreasing control fibers are: the full cube at empty support; the cube minus $011$ at a vertex; $c_1\\le c_2$ at $a_e$; $c_1\\le c_3$ at $b_e$; both inequalities at $\\{a_e,b_e\\}$; $\\{000\\}$ when the source vertex is joined to any nonempty feedback support of its arc; $\\{111\\}$ for the target; and empty otherwise.",
+  "parameters": "Finite loopless directed graph without repeated arcs; opposite arcs are allowed.",
+  "properties": "For $m$ vertices and $e$ arcs, it is union closed, convex-realizable, dismantlable ample, and finite convex-treelike, with $m+2e+3$ coordinates and $8+7m+23e$ concepts. Its VC dimension is four when $e>0$ and three when $e=0$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#thm:union-graph-space",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/union_closed_graph_spaces_source.json"
+}

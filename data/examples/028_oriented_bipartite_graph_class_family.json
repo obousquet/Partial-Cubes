@@ -1,0 +1,12 @@
+{
+  "id": 28,
+  "short_name": "oriented_bipartite_graph_class_family",
+  "name": "Oriented Bipartite-Graph Class Construction",
+  "symbol": "C(G)",
+  "object_type": "family",
+  "definition": "For a finite oriented simple bipartite graph $G$, use one private coordinate per vertex and three controls. At private support $T$, allow all eight control words if $T=\\varnothing$; all but $+++$ or $---$, according to the vertex side, if $T=\\{v\\}$; the singleton $++-$ or $--+$ prescribed by the orientation if $T$ is an edge; and no words otherwise.",
+  "parameters": "Finite simple bipartite graph with one orientation per edge; the empty graph is allowed by the convention $C(\\varnothing)=\\{0,1\\}^3$.",
+  "properties": "If $m=|V(G)|$ and $e=|E(G)|$, then $|C(G)|=8+7m+e$, its VC dimension is three, and it is convex-realizable, dismantlable ample, and finite convex-treelike. Conditioning private coordinates outside an induced subgraph $H$ to zero gives $C(H)$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#prop:graph-realization",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/coefficient_cycle_spheres_source.json; data/examples/assets/private_coordinate_products_source.json"
+}

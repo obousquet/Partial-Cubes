@@ -1359,6 +1359,189 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-70" style="position:relative;">
+
+        <h3><a href="invariant_values/oriented_bipartite_graph_coefficient_space.html" class="table-title-link">Coefficient Space of the Oriented Bipartite-Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Oriented Bipartite-Graph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/oriented_bipartite_graph_class_family.html">Oriented Bipartite-Graph Class Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>B_G\times\mathbb R^{d_G-|V(G)|}</p>
+<strong>Parameters:</strong><div class="text-field"><p>$d_G=3|V(G)|+6|E(G)|+\binom{|V(G)|}{2}-|E(G)|$; $B_G$ is the complement of the diagonal subspaces indexed by inclusion-minimal directed-cycle supports.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Private-coordinate elimination reduces the coefficient space to directed two-coordinate inequalities. Their difference map has base $B_G$ and explicit Euclidean fibers; all omitted coefficient ratios are free.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#prop:graph-realization; PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#cor:graph-arrangement-map</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-71" style="position:relative;">
+
+        <h3><a href="invariant_values/oriented_bipartite_graph_vc_dimension.html" class="table-title-link">VC Dimension of the Oriented Bipartite-Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Oriented Bipartite-Graph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Example: </strong><a href="examples/oriented_bipartite_graph_class_family.html">Oriented Bipartite-Graph Class Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>3</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every nonempty oriented simple bipartite graph; the vertex-free convention is the three-cube and has the same value.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For decreasing fibers, shattering reduces to shattering in the top control fiber. Empty private support contributes three, singleton support contributes at most three, and an edge support contributes two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#prop:graph-realization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-72" style="position:relative;">
+
+        <h3><a href="invariant_values/even_cycle_sphere_coefficient_space.html" class="table-title-link">Coefficient Spaces of the Even-Cycle Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces of the Even-Cycle Sphere Family</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/even_cycle_sphere_family.html">Even-Cycle Coefficient-Sphere Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>S^{m-2}\times\mathbb R^{d_m-m+2}</p>
+<strong>Parameters:</strong><div class="text-field"><p>Even $m\ge4$ and $d_m=8m+\binom m2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Cycle increments lie in two zero-sum hyperplanes and obey $\max(x_j,y_j)>0$. The change $d=x-y$, $s=x+y$ identifies this space with $(H_m\setminus\{0\})\times\Delta_{m-1}^{\circ}$ times Euclidean factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#thm:sphere-family</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-73" style="position:relative;">
+
+        <h3><a href="invariant_values/interacting_cycle_coefficient_space.html" class="table-title-link">Coefficient Space of the Interacting-Cycle Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Interacting-Cycle Class</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/interacting_cycle_arrangement_class.html">Interacting-Cycle Arrangement Class</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\mathcal A(C_{\mathrm{int}})\simeq S^2\vee S^2\vee S^2</p>
+<strong>Scope:</strong><div class="text-field"><p>Homotopy equivalence; the full homeomorphism is $B_G\times\mathbb R^{50}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Modulo the full diagonal, the two cycle diagonals become distinct lines in $\mathbb R^4$. Their complement retracts radially to $S^3$ minus four points, equivalently $\mathbb R^3$ minus three points, which has the stated wedge homotopy type.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#sec:graph-connectivity</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-74" style="position:relative;">
+
+        <h3><a href="invariant_values/union_closed_digraph_coefficient_space.html" class="table-title-link">Coefficient Space of the Union-Closed Digraph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Union-Closed Digraph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/union_closed_digraph_class_family.html">Union-Closed Directed-Graph Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\mathcal Z(G)\times\mathbb R^{d-2m}\cong B_G\times\mathbb R^{d-m}</p>
+<strong>Parameters:</strong><div class="text-field"><p>$m=|V(G)|$, $e=|E(G)|$, $M=m+2e$, $N=\binom M2-5e$, and $d=3m+28e+N$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The full coefficient criterion is $A_vP_e+B_vQ_e>1>A_wP_e+B_wQ_e$ on every arc. Each feedback halfplane intersection has a continuous rational center and radial Euclidean fiber. Logarithmic vertex coordinates give $\mathcal Z(G)$, and the cycle-arrangement product gives $B_G$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#thm:union-graph-space</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-75" style="position:relative;">
+
+        <h3><a href="invariant_values/union_closed_sphere_coefficient_space.html" class="table-title-link">Coefficient Spaces of the Union-Closed Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces of the Union-Closed Sphere Family</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/union_closed_sphere_family.html">Union-Closed Coefficient-Sphere Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>S^{m-2}\times\mathbb R^{d_m-m+2}</p>
+<strong>Parameters:</strong><div class="text-field"><p>$m\ge2$ and $d_m=26m+\binom{3m}{2}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a directed cycle the arrangement removes precisely the full diagonal from $\mathbb R^m$. Splitting off that diagonal and using polar coordinates gives $B_G\cong S^{m-2}\times\mathbb R^2$; the general union-graph product supplies the remaining Euclidean factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-spheres</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-76" style="position:relative;">
+
+        <h3><a href="invariant_values/union_closed_sphere_vc_dimension.html" class="table-title-link">VC Dimension of the Union-Closed Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Union-Closed Sphere Family</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Example: </strong><a href="examples/union_closed_sphere_family.html">Union-Closed Coefficient-Sphere Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>4</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every integer $m\ge2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A shared feedback pair has control-fiber VC dimension two, giving total dimension four with its two private coordinates. Every other fiber-support contribution is at most four.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#thm:union-graph-space</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-77" style="position:relative;">
+
+        <h3><a href="invariant_values/union_closed_sphere_small_scale_indicator.html" class="table-title-link">Small-Scale Indicator of the Union-Closed Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small-Scale Indicator of the Union-Closed Sphere Family</p>
+<p><strong>Invariant: </strong><a href="invariants/small_scale_source_indicator.html">Small-Scale Source Indicator</a></p>
+<p><strong>Example: </strong><a href="examples/union_closed_sphere_family.html">Union-Closed Coefficient-Sphere Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>1</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every integer $m\ge2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Union closure makes the value finite. A zero value would force the full coefficient space to be Euclidean, contrary to its nontrivial sphere factor, including the disconnected $S^0$ case.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-spheres</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-78" style="position:relative;">
+
+        <h3><a href="invariant_values/union_closed_sphere_large_scale_indicator.html" class="table-title-link">Large-Scale Indicator of the Union-Closed Sphere Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Large-Scale Indicator of the Union-Closed Sphere Family</p>
+<p><strong>Invariant: </strong><a href="invariants/large_scale_source_indicator.html">Large-Scale Source Indicator</a></p>
+<p><strong>Example: </strong><a href="examples/union_closed_sphere_family.html">Union-Closed Coefficient-Sphere Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>1</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every integer $m\ge2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Union closure makes the value finite. A zero value would force the full coefficient space to be Euclidean, contrary to its nontrivial sphere factor, including the disconnected $S^0$ case.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-spheres</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-79" style="position:relative;">
+
+        <h3><a href="invariant_values/bidirected_graph_coefficient_space.html" class="table-title-link">Coefficient Space of the Bidirected-Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Bidirected-Graph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/bidirected_graph_component_family.html">Bidirected-Graph Component Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\bigsqcup_{\omega\in\operatorname{AO}(H)}\mathbb R^{d_C}</p>
+<strong>Parameters:</strong><div class="text-field"><p>$\operatorname{AO}(H)$ is the set of acyclic orientations of $H$; for $H=K_m$ it has size $m!$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Opposite arcs make the minimal cycle arrangements exactly the edge equalities $d_v=d_w$. Each component fixes an acyclic orientation by increasing $d$; conversely every acyclic orientation defines a nonempty open convex component.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-components</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

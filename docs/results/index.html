@@ -1290,6 +1290,188 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-73" style="position:relative;">
+
+        <h3><a href="results/private_coordinate_product.html" class="table-title-link">Private-Coordinate Product for Coefficient Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Private-Coordinate Product for Coefficient Spaces</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let the coordinates split as private $I$ and controls $J$, and let a nonempty class $D$ be downward closed in its private coordinates. Normalize every missing row on its control entries and let $\mathcal B(D)$ be the common control-array feasibility domain. Then $\mathcal A(D)\cong\mathcal B(D)\times(0,\infty)^f$, where $f=\sum_{p:J_p\ne\varnothing}|I_p|+\sum_{p:J_p=\varnothing}(|I_p|-1)$. Every private ratio is free, and full witnesses reconstruct continuously and rationally at rational inputs. No ampleness assumption is required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restriction to controls is necessary because every active private contribution is nonnegative. Conversely, make active private coordinates uniformly small and inactive ones uniformly large using finite extrema; this satisfies retained and discarded rows separately. Explicit ratio coordinates split off every private coefficient.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/private_coordinates.tex?#thm:private-coordinate-product</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-74" style="position:relative;">
+
+        <h3><a href="results/oriented_bipartite_graph_realization.html" class="table-title-link">Oriented Bipartite Graphs Realize Directed Coordinate Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Oriented Bipartite Graphs Realize Directed Coordinate Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite oriented simple bipartite graph $G$, the class $C(G)$ is convex-realizable, dismantlable ample, finite convex-treelike, and has VC dimension three. With $\mathcal Z(G)=\{z:\max_i(z_{w,i}-z_{v,i})>0\text{ for every }v\to w\}$, one has $\mathcal A(C(G))\cong\mathcal Z(G)\times\mathbb R^{d_G-2|V(G)|}$. Conditioning away private vertices gives the construction on the induced subgraph.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Decreasing ample control fibers prove ampleness and give an ample-prefix order. Adding vertex fibers and their pendant edge concepts yields the finite convex-treelike recursion. The complete missing-pattern calculation and private-coordinate product reduce each edge concept to its directed coordinate inequality; explicit integer positions give rational realizability.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#prop:graph-realization</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/oriented_bipartite_graph_class_family.html">Oriented Bipartite-Graph Class Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-75" style="position:relative;">
+
+        <h3><a href="results/spheres_at_vc_dimension_three.html" class="table-title-link">All Even Sphere Dimensions at VC Dimension Three</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>All Even Sphere Dimensions at VC Dimension Three</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every even $m\ge4$, there is a convex-realizable, dismantlable ample, finite convex-treelike class $C_m$ with $8m+8$ concepts, VC dimension three, coefficient dimension $d_m=8m+\binom m2$, and $\mathcal A(C_m)\cong S^{m-2}\times\mathbb R^{d_m-m+2}$. Its integral homology has Betti polynomial $1+z^{m-2}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply the oriented bipartite construction to a consistently directed even cycle. Zero-sum edge increments reduce the directed domain to $(H_m\setminus\{0\})\times\Delta_{m-1}^{\circ}$ times Euclidean factors, and polar coordinates produce the sphere.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_spaces.tex?#thm:sphere-family</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/even_cycle_sphere_family.html">Even-Cycle Coefficient-Sphere Family</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-76" style="position:relative;">
+
+        <h3><a href="results/cycle_arrangement_product.html" class="table-title-link">Directed Coordinate Spaces Are Products over Cycle Arrangements</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Directed Coordinate Spaces Are Products over Cycle Arrangements</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite loopless digraph $G$, let $B_G$ be the complement in $\mathbb R^{V(G)}$ of every diagonal on an inclusion-minimal directed-cycle vertex set. The difference map $q(x,y)=x-y$ from $\mathcal Z(G)$ is surjective and fits an explicit homeomorphism $\mathcal Z(G)\cong B_G\times\mathbb R^{V(G)}$. It has a continuous rationality-preserving section and a fiberwise strong deformation retraction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After changing to difference and sum coordinates, each fiber is a strict difference-constraint system. It is feasible exactly when no directed cycle has constant difference coordinate. Shortest-path minima give a continuous center, and a positively homogeneous gauge gives mutually inverse radial maps between the fiber and Euclidean space.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Definition~2.2]{MW2012}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#thm:cycle-arrangement</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-77" style="position:relative;">
+
+        <h3><a href="results/graph_arrangement_coefficient_map.html" class="table-title-link">Coefficient Map to the Directed-Cycle Arrangement Complement</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Map to the Directed-Cycle Arrangement Complement</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the oriented bipartite class $C(G)$, the map retaining $d_v=\log(a_{v,1}/a_{v,2})$ is a surjection $\mathcal A(C(G))\to B_G$ with a continuous section, contractible fibers, and a fiber-preserving homotopy to the section. In fact $\mathcal A(C(G))\cong B_G\times\mathbb R^{d_G-|V(G)|}$, so the directed-cycle hypergraph determines its coefficient-space homotopy type.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The graph realization retains both control-ratio coordinates at every vertex. Composing that product with the directed-space arrangement product leaves exactly the displayed difference coordinate and a Euclidean factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#cor:graph-arrangement-map</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/oriented_bipartite_graph_class_family.html">Oriented Bipartite-Graph Class Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-78" style="position:relative;">
+
+        <h3><a href="results/directed_girth_connectivity.html" class="table-title-link">Coefficient-Space Connectivity from Directed Girth</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient-Space Connectivity from Directed Girth</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If a finite loopless digraph has directed girth $g$, then $\mathcal Z(G)$ is $(g-3)$-connected; it is contractible when $G$ is acyclic. Every coefficient space from the oriented simple bipartite construction is simply connected, and the $(g-3)$ bound is attained on consistently directed even cycles.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every removed cycle diagonal has codimension at least $g-1$. General position cones sphere maps away from a finite union of linear subspaces of that codimension. The arrangement product transfers the bound, and one directed cycle leaves the complement of the full diagonal, with sphere type $S^{g-2}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#cor:directed-girth</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-79" style="position:relative;">
+
+        <h3><a href="results/interacting_cycle_wedge_space.html" class="table-title-link">An Interacting-Cycle Wedge Coefficient Space</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Interacting-Cycle Wedge Coefficient Space</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 49-concept convex-realizable ample class on eight coordinates whose coefficient space has homotopy type $S^2\vee S^2\vee S^2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Two four-vertex directed-cycle diagonals meet in the full diagonal. Modulo it they are two distinct lines in $\mathbb R^4$; radial retraction gives $S^3$ minus four points, equivalently a wedge of three two-spheres.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/graph_arrangements.tex?#sec:graph-connectivity</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/interacting_cycle_arrangement_class.html">Interacting-Cycle Arrangement Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-80" style="position:relative;">
+
+        <h3><a href="results/union_closed_digraph_coefficient_model.html" class="table-title-link">Full Coefficient Model for Arbitrary Directed Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full Coefficient Model for Arbitrary Directed Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite loopless digraph $G$, the class $C_{\mathrm{uc}}(G)$ is union closed, convex-realizable, dismantlable ample, and finite convex-treelike. Its prescribed coefficient arrays are feasible exactly when $A_vP_e+B_vQ_e>1>A_wP_e+B_wQ_e$ for every arc $e=v\to w$; all other ratios are free. It has $8+7m+23e$ concepts, VC dimension four for $e>0$, and $\mathcal A(C_{\mathrm{uc}}(G))\cong\mathcal Z(G)\times\mathbb R^{d-2m}\cong B_G\times\mathbb R^{d-m}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Complementing decreasing intersection-closed fibers gives union closure; the fiber dictionary proves ampleness and the peripheral recursion. Private-coordinate elimination leaves vertex and feedback rows. Each feedback halfplane intersection has an explicit continuous center and radial Euclidean parametrization, while logarithmic vertex ratios give the directed coordinate inequalities.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#thm:union-graph-space</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/union_closed_digraph_class_family.html">Union-Closed Directed-Graph Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-81" style="position:relative;">
+
+        <h3><a href="results/union_closed_sphere_dimensions.html" class="table-title-link">All Sphere Dimensions in Union-Closed Coefficient Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>All Sphere Dimensions in Union-Closed Coefficient Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/small_scale_source_indicator.html">Small-Scale Source Indicator</a></li><li><a href="invariants/large_scale_source_indicator.html">Large-Scale Source Indicator</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $m\ge2$ there is a union-closed realizable finite convex-treelike class $U_m$ with $30m+8$ concepts, VC dimension four, and $\mathcal A(U_m)\cong S^{m-2}\times\mathbb R^{d_m-m+2}$. Both $\eta_0(U_m)$ and $\eta_\infty(U_m)$ equal one. In particular $U_2$ has two Euclidean components and $U_3$ has a circle factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the arbitrary-digraph construction on a directed cycle. Its arrangement complement is the complement of the full diagonal, hence $S^{m-2}\times\mathbb R^2$. Union closure makes both side indicators finite, while either zero would force a Euclidean coefficient space and contradict the sphere factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-spheres</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/union_closed_sphere_family.html">Union-Closed Coefficient-Sphere Family</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-82" style="position:relative;">
+
+        <h3><a href="results/unbounded_coefficient_components.html" class="table-title-link">Unbounded Coefficient-Space Component Counts at VC Dimension Four</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unbounded Coefficient-Space Component Counts at VC Dimension Four</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite simple graph $H$, apply the union-closed construction after replacing each edge by opposite arcs. The coefficient-space components are indexed by acyclic orientations of $H$, and each is homeomorphic to $\mathbb R^{d_C}$. Taking $H=K_m$ gives exactly $m!$ components, so component counts are unbounded at VC dimension four.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The minimal directed cycles are the opposite-arc two-cycles, so the arrangement is the graphical diagonal arrangement $d_v=d_w$. Each complement component orients every edge by increasing coordinate value; these are exactly the nonempty convex regions indexed by acyclic orientations.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#cor:union-graph-components</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/bidirected_graph_component_family.html">Bidirected-Graph Component Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-83" style="position:relative;">
+
+        <h3><a href="results/union_graph_conditioning_functoriality.html" class="table-title-link">Conditioning Functoriality of the Union-Closed Digraph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Conditioning Functoriality of the Union-Closed Digraph Construction</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every subgraph with inherited arcs is obtained from $C_{\mathrm{uc}}(G)$ by conditioning removed vertex coordinates and their incident feedback coordinates to one. Deleting an arc alone conditions its two feedback coordinates to one. The induced coefficient map forgets exactly the rows involving those coordinates, although it need not be surjective on feasible spaces.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In the unreflected decreasing-fiber model, these conditionings remove precisely the private supports belonging to deleted vertices or arcs. The remaining minimal patterns are exactly those of the smaller construction, so the standard specified-minor row restriction is literal row deletion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_graph_spaces.tex?#sec:union-graph-spaces</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/union_closed_digraph_class_family.html">Union-Closed Directed-Graph Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

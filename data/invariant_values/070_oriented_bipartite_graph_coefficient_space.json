@@ -1,0 +1,14 @@
+{
+  "id": 70,
+  "short_name": "oriented_bipartite_graph_coefficient_space",
+  "name": "Coefficient Space of the Oriented Bipartite-Graph Construction",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/oriented_bipartite_graph_class_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "B_G\\times\\mathbb R^{d_G-|V(G)|}",
+  "parameters": "$d_G=3|V(G)|+6|E(G)|+\\binom{|V(G)|}{2}-|E(G)|$; $B_G$ is the complement of the diagonal subspaces indexed by inclusion-minimal directed-cycle supports.",
+  "status": "established",
+  "proof": "Private-coordinate elimination reduces the coefficient space to directed two-coordinate inequalities. Their difference map has base $B_G$ and explicit Euclidean fibers; all omitted coefficient ratios are free.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#prop:graph-realization; PartialCubes:papers/coefficient-topology/graph_arrangements.tex#cor:graph-arrangement-map"
+}

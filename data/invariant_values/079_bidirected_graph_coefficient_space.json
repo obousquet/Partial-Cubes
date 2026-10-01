@@ -1,0 +1,14 @@
+{
+  "id": 79,
+  "short_name": "bidirected_graph_coefficient_space",
+  "name": "Coefficient Space of the Bidirected-Graph Construction",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/bidirected_graph_component_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "\\bigsqcup_{\\omega\\in\\operatorname{AO}(H)}\\mathbb R^{d_C}",
+  "parameters": "$\\operatorname{AO}(H)$ is the set of acyclic orientations of $H$; for $H=K_m$ it has size $m!$.",
+  "status": "established",
+  "proof": "Opposite arcs make the minimal cycle arrangements exactly the edge equalities $d_v=d_w$. Each component fixes an acyclic orientation by increasing $d$; conversely every acyclic orientation defines a nonempty open convex component.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#cor:union-graph-components"
+}

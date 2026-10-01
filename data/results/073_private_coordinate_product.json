@@ -1,0 +1,13 @@
+{
+  "id": 73,
+  "short_name": "private_coordinate_product",
+  "name": "Private-Coordinate Product for Coefficient Spaces",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "construction",
+  "statement": "Let the coordinates split as private $I$ and controls $J$, and let a nonempty class $D$ be downward closed in its private coordinates. Normalize every missing row on its control entries and let $\\mathcal B(D)$ be the common control-array feasibility domain. Then $\\mathcal A(D)\\cong\\mathcal B(D)\\times(0,\\infty)^f$, where $f=\\sum_{p:J_p\\ne\\varnothing}|I_p|+\\sum_{p:J_p=\\varnothing}(|I_p|-1)$. Every private ratio is free, and full witnesses reconstruct continuously and rationally at rational inputs. No ampleness assumption is required.",
+  "status": "established",
+  "proof": "Restriction to controls is necessary because every active private contribution is nonnegative. Conversely, make active private coordinates uniformly small and inactive ones uniformly large using finite extrema; this satisfies retained and discarded rows separately. Explicit ratio coordinates split off every private coefficient.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/private_coordinates.tex#thm:private-coordinate-product"
+}

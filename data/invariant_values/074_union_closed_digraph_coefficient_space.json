@@ -1,0 +1,15 @@
+{
+  "id": 74,
+  "short_name": "union_closed_digraph_coefficient_space",
+  "name": "Coefficient Space of the Union-Closed Digraph Construction",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/union_closed_digraph_class_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "\\mathcal Z(G)\\times\\mathbb R^{d-2m}\\cong B_G\\times\\mathbb R^{d-m}",
+  "parameters": "$m=|V(G)|$, $e=|E(G)|$, $M=m+2e$, $N=\\binom M2-5e$, and $d=3m+28e+N$.",
+  "status": "established",
+  "proof": "The full coefficient criterion is $A_vP_e+B_vQ_e>1>A_wP_e+B_wQ_e$ on every arc. Each feedback halfplane intersection has a continuous rational center and radial Euclidean fiber. Logarithmic vertex coordinates give $\\mathcal Z(G)$, and the cycle-arrangement product gives $B_G$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#thm:union-graph-space",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json"
+}

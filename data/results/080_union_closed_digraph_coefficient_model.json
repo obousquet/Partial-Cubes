@@ -1,0 +1,22 @@
+{
+  "id": 80,
+  "short_name": "union_closed_digraph_coefficient_model",
+  "name": "Full Coefficient Model for Arbitrary Directed Graphs",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "construction",
+  "statement": "For every finite loopless digraph $G$, the class $C_{\\mathrm{uc}}(G)$ is union closed, convex-realizable, dismantlable ample, and finite convex-treelike. Its prescribed coefficient arrays are feasible exactly when $A_vP_e+B_vQ_e>1>A_wP_e+B_wQ_e$ for every arc $e=v\\to w$; all other ratios are free. It has $8+7m+23e$ concepts, VC dimension four for $e>0$, and $\\mathcal A(C_{\\mathrm{uc}}(G))\\cong\\mathcal Z(G)\\times\\mathbb R^{d-2m}\\cong B_G\\times\\mathbb R^{d-m}$.",
+  "status": "established",
+  "proof": "Complementing decreasing intersection-closed fibers gives union closure; the fiber dictionary proves ampleness and the peripheral recursion. Private-coordinate elimination leaves vertex and feedback rows. Each feedback halfplane intersection has an explicit continuous center and radial Euclidean parametrization, while logarithmic vertex ratios give the directed coordinate inequalities.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_graph_spaces.tex#thm:union-graph-space",
+  "witness_ids": [
+    "#examples/union_closed_digraph_class_family"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": 29,
+  "short_name": "even_cycle_sphere_family",
+  "name": "Even-Cycle Coefficient-Sphere Family",
+  "symbol": "C_m",
+  "object_type": "family",
+  "definition": "Apply the oriented bipartite-graph construction $C(G)$ to a consistently directed cycle of even length $m\\ge4$, alternating the two bipartition corners.",
+  "parameters": "Even integer $m\\ge4$.",
+  "properties": "The class has $m+3$ coordinates, $8m+8$ concepts, VC dimension three, coefficient dimension $d_m=8m+\\binom m2$, and coefficient space $S^{m-2}\\times\\mathbb R^{d_m-m+2}$. It is convex-realizable, dismantlable ample, and finite convex-treelike. Its integral homology is that of $S^{m-2}$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/graph_spaces.tex#thm:sphere-family",
+  "verification": "scripts/verify_graph_coefficient_spaces.py; data/examples/assets/graph_coefficient_spaces_verification.json; data/examples/assets/coefficient_cycle_spheres_source.json"
+}
