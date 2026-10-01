@@ -1,0 +1,14 @@
+{
+  "id": 33,
+  "short_name": "cyclic_arc_cover_recursive_obstructions",
+  "name": "Cyclic-Arc Cover-Recursive Obstructions",
+  "symbol": "\\{\\mathcal A_n:n\\ge5\\}",
+  "description_type": "parameterized",
+  "definition": "On coordinates $\\mathbb Z_n$, let $[a,a+\\ell)$ be the cyclic arc of length $\\ell$ and define $\\mathcal A_n=\\{\\varnothing\\}\\cup\\{[a,a+\\ell):a\\in\\mathbb Z_n,1\\le\\ell\\le3\\}$.",
+  "parameters": "$n\\ge5$. The family has $3n+1$ vertices, isometric dimension $n$, and VC dimension two; $\\mathcal A_5$ is the pentagonal obstruction $\\mathcal P_5$.",
+  "ambient_class_id": "#classes/dismantlable_ample",
+  "canonical_form": "Coordinates carry their cyclic order, with rotations and reflections inducing the dihedral symmetries of the construction.",
+  "recognition": "The nonempty concepts are exactly the cyclic intervals of lengths one, two, or three. Each coordinate has incomparable zero and one sections. Every elementary restriction or contraction has an explicit cover-recursive peripheral decomposition through path-interval families.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:cyclic-arcs",
+  "comments": "Every member is an ample pc-minimal obstruction to the cover-recursively peripheral class and hence is distinct from the nonample antipodally punctured cubes."
+}

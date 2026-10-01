@@ -1,0 +1,14 @@
+{
+  "id": 34,
+  "short_name": "step_two_cover_recursive_obstructions",
+  "name": "Step-Two Cover-Recursive Obstructions",
+  "symbol": "\\{\\mathcal F_n:n\\ge9\\text{ odd}\\}",
+  "description_type": "parameterized",
+  "definition": "On coordinates $\\mathbb Z_n$, call a nonempty set short when it has at most three elements contained in a cyclic arc of length four. Call it long when, for some $a$, it contains $\\{a,a+2,a+4\\}$, is contained in $[a,a+5)$, and has at most four elements. Then $\\mathcal F_n$ consists of the empty set and all short or long sets.",
+  "parameters": "$n\\ge9$ odd. The family has $10n+1$ vertices, isometric dimension $n$, and VC dimension three.",
+  "ambient_class_id": "#classes/dismantlable_ample",
+  "canonical_form": "The ten nonempty translation types are represented by $\\{0\\}$, $\\{0,1\\}$, $\\{0,2\\}$, $\\{0,3\\}$, $\\{0,1,2\\}$, $\\{0,1,3\\}$, $\\{0,2,3\\}$, $\\{0,2,4\\}$, $\\{0,1,2,4\\}$, and $\\{0,2,3,4\\}$.",
+  "recognition": "Each coordinate has a one-sided defect of three vertices inducing a path. Elementary minors admit recursive peripheral decompositions that advance through the remaining cyclic coordinates in steps of two; oddness makes this traversal exhaustive.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:step-two",
+  "comments": "Every member is an ample pc-minimal obstruction to the cover-recursively peripheral class and is not an antipodally punctured cube."
+}

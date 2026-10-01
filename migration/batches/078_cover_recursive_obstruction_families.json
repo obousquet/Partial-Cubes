@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "batch_id": "078_cover_recursive_obstruction_families",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the explicit infinite obstruction families and low-excess structure from the frozen cover-recursive manuscript, reconcile its small coordinate models and exact H22 and S18 examples, and record the sharpness of its class-position bounds.",
+  "source_refs": [
+    "PartialCubes:papers/cover-recursive/main.tex#thm:intro-characterization",
+    "PartialCubes:papers/cover-recursive/main.tex#ex:small-models",
+    "PartialCubes:papers/cover-recursive/main.tex#cor:position-sharp",
+    "PartialCubes:papers/cover-recursive/main.tex#lem:path-intervals",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:cyclic-arcs",
+    "PartialCubes:papers/cover-recursive/main.tex#lem:step-two-deletion",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:step-two",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:square-amalgam-obstruction",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:hall-obstruction",
+    "PartialCubes:papers/cover-recursive/main.tex#lem:low-excess"
+  ],
+  "source_packets": [
+    {
+      "id": "cover-recursive-frozen-manuscript",
+      "repository": "PartialCubes",
+      "snapshot": "2026-09-30-b001",
+      "path": "papers/cover-recursive/main.tex",
+      "sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the parameterized family definitions, exact theorem statements, concise proofs, normalized examples, and certificate conclusions. The manuscript and evidence files retain the full decompositions, enumeration narrative, and large computational certificates.",
+    "recoverability": "All ten promoted labels are pinned to the byte-archived frozen manuscript. Existing database evidence assets continue to preserve the H22 and S18 computational checks.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/characterization_equivalences/019_cover_recursive_peripheral_equivalence.json", "sha256": "93bb6cc12a853f91c1f2aa6611a73a51d21a260a1f0af75c034ed7e4912fcc07"},
+    {"path": "data/examples/001_six_cycle.json", "sha256": "e9494b42497a58110f24ae41206697cfb0641e3d105f6f971d5bde557783acb7"},
+    {"path": "data/examples/002_four_vertex_path.json", "sha256": "563d0c0cd137a5f416a7554d25531725998d285b818ed248fa5f1ccda5ac3772"},
+    {"path": "data/examples/009_three_cube.json", "sha256": "27aed955c8365e0882174e21aa11788f57fffabc435bcbe713c31e2ba8e7e47b"},
+    {"path": "data/examples/070_maximum_face_prime_h22.json", "sha256": "3c198eff1320b66505712efca82c948dc4874bdfac3f01cf7b466bb27cc14826"},
+    {"path": "data/examples/072_square_amalgam_obstruction_s18.json", "sha256": "c69e19c78ffabee4a71f51b11fa87e08fdae639bbcbbf0688d4e48d3dea40d28"},
+    {"path": "data/obstruction_families/033_cyclic_arc_cover_recursive_obstructions.json", "sha256": "1a15d1a16085c6f663d597849c87399586ec2a5eb67f8878f91cbab2bb6fd186"},
+    {"path": "data/obstruction_families/034_step_two_cover_recursive_obstructions.json", "sha256": "4868e7f7a037fa41561785d7b6c7af34551f154e2d0573a3eb6d68b79432c1b4"},
+    {"path": "data/results/237_path_interval_families_are_cover_recursive.json", "sha256": "02c8f978d13c422b21b8f02ad53b606c6006806dd11f542320df9faf1837f657"},
+    {"path": "data/results/238_cyclic_arc_obstruction_parameters.json", "sha256": "15f32c51630547b05f33e96ec2fda217a4c06e23be3d622ac1e4cbc3000069a5"},
+    {"path": "data/results/239_step_two_deletion_rule.json", "sha256": "d92e2040baf6e8b6d4c84495bdff47f03236d1e944e19e109af9bffff6ef017c"},
+    {"path": "data/results/240_step_two_obstruction_parameters.json", "sha256": "e9ba8582bf59590d9a0c2c094e7c6305ae106e5cabf89c00d88a36b96a4d6441"},
+    {"path": "data/results/241_cover_recursive_position_is_sharp.json", "sha256": "e8435ce870d422f2a5bfdb949c2a4b017986a3a1ab720a677fa8a250c4e4d846"},
+    {"path": "data/results/242_low_excess_partial_cube_structure.json", "sha256": "db4713622fbc6d770f80fff7e2c79d01cc453df92cb50af879be2d8d2e63fa48"},
+    {"path": "migration/coverage.json", "sha256": "8af55a77b9e6c5a6719caefcffb42abbc4f404edcbc488911156734bde9f2d6b"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "0cd52d420c3232b952c5e87726b547ea80856950084cd2d3545df992b8ac1942"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1426 records.",
+    "website": "Normalized 1442 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. Cover-recursive coverage increased from 17 of 42 to 27 of 42 theorem-like labels; overall workspace-aware coverage is 298 of 1016 labels."
+  },
+  "deferred": [
+    "The remaining fifteen cover-recursive labels form two coherent groups: the rooted-wedge theory and the complete two-layer repair basis.",
+    "Full finite enumeration records and recursive decomposition certificates remain in their preserved source and evidence artifacts."
+  ]
+}

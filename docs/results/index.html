@@ -4007,6 +4007,99 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-237" style="position:relative;">
+
+        <h3><a href="results/path_interval_families_are_cover_recursive.html" class="table-title-link">Bounded Path-Interval Families Are Cover-Recursive</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Bounded Path-Interval Families Are Cover-Recursive</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $m\ge0$, let $\mathcal J_m$ consist of the empty set and every interval of length at most three in the path on $[m]$. Then $\mathcal J_m$ is cover-recursively peripheral.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct on $m$. The concepts containing the last coordinate $m$ become $\varnothing$, $\{m-1\}$, and $\{m-2,m-1\}$ after deleting it, when defined, and all lie in the zero section. Thus the one-semicube is peripheral. Its contraction base is $\mathcal J_{m-1}$ and its duplicated site is a path on at most three vertices; both belong to the class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#lem:path-intervals</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-238" style="position:relative;">
+
+        <h3><a href="results/cyclic_arc_obstruction_parameters.html" class="table-title-link">Exact Parameters and Minimality of Cyclic-Arc Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Parameters and Minimality of Cyclic-Arc Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $n\ge5$, $\mathcal A_n$ is an ample partial cube with $3n+1$ vertices, VC dimension two, and isometric dimension $n$. It is periphery-free, while every proper pc-minor is cover-recursively peripheral. Hence $\mathcal A_n$ is an ample forbidden pc-minor for the cover-recursively peripheral class; $\mathcal A_5=\mathcal P_5$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The shattered supports are the empty set, all $n$ singletons, and exactly the $2n$ coordinate pairs at cyclic distance one or two; explicit edges and squares strongly shatter all of them, while no triple is shattered. Opposing witnesses make the two projected sections incomparable in every coordinate. A zero section is the path-interval family $\mathcal J_{n-1}$; a one section peels by two pendant deletions to a square; and the contraction has a peripheral step with path site and base $\mathcal J_{n-2}$. Rotation handles every coordinate, proving pc-minimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:cyclic-arcs</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-239" style="position:relative;">
+
+        <h3><a href="results/step_two_deletion_rule.html" class="table-title-link">Deletion Rule for Short and Long Cyclic Sets</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Deletion Rule for Short and Long Cyclic Sets</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $n\ge9$, $S\in\mathcal F_n$, and $x\in S$. Then $S\setminus\{x\}$ remains in $\mathcal F_n$ unless $S$ is long and $x$ is its midpoint. In that exceptional case the deletion is outside $\mathcal F_n$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every nonempty subset of a short set is short. A long set has compulsory points $a,a+2,a+4$: deleting an optional point leaves it long, and deleting either endpoint leaves at most three points in an arc of length four. Deleting the midpoint leaves both endpoints but omits the midpoint; its unique arc of length five shows it is neither short nor long.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#lem:step-two-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-240" style="position:relative;">
+
+        <h3><a href="results/step_two_obstruction_parameters.html" class="table-title-link">Exact Parameters and Minimality of Step-Two Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Parameters and Minimality of Step-Two Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every odd $n\ge9$, $\mathcal F_n$ is an ample partial cube with $10n+1$ vertices, VC dimension three, and isometric dimension $n$. It is periphery-free, while every proper pc-minor is cover-recursively peripheral. In each coordinate one oriented section defect consists of three vertices inducing a path.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The shattered complex contains the empty set, $n$ singletons, $4n$ pair orbits, and $5n$ triple orbits, all with explicit positioned cubes; the forbidden alternating triple prevents higher shattering, so the count equals $10n+1$. The deletion rule makes the one-sided defect exactly a three-vertex path and a distant singleton witnesses the opposite noncontainment. For an elementary minor, a fixed 27-vertex one-section has a recursive peripheral decomposition. The zero section and contraction peel coordinates in the order $2,4,6,\ldots$ with duplicated sites that are pc-minors of that one-section. Oddness makes step two traverse every remaining coordinate; rotation handles all starting coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:step-two</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-241" style="position:relative;">
+
+        <h3><a href="results/cover_recursive_position_is_sharp.html" class="table-title-link">Sharpness of the Cover-Recursive Position Bounds</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sharpness of the Cover-Recursive Position Bounds</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></li><li><a href="classes/proper_semi_median_partial_cubes.html">Proper Semi-Median Partial Cubes</a></li><li><a href="classes/almost_median_partial_cubes.html">Almost-Median Partial Cubes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>The cover-recursively peripheral class is a strict subclass both of the intersection of tree-like and proper semi-median partial cubes and of the intersection of tree-like, almost-median, ample, and corner-peelable partial cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Expand $Q_5$ peripherally along the pentagonal obstruction $\mathcal P_5$. The output is tree-like; the isometric ample site and cube base make it almost-median, ample, corner-peelable, and proper semi-median. Its copied site is a convex semicube isomorphic to $\mathcal P_5$. Convex heredity would force this obstruction into the cover-recursive class if the expanded graph belonged to it, so it witnesses both strict containments.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#cor:position-sharp</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/pentagonal_obstruction.html">Pentagonal Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-242" style="position:relative;">
+
+        <h3><a href="results/low_excess_partial_cube_structure.html" class="table-title-link">Structure of Partial Cubes with At Most Two Excess Vertices</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Structure of Partial Cubes with At Most Two Excess Vertices</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A connected partial cube of isometric dimension $d$ has at least $d+1$ vertices. Equality holds exactly in the tree case. If it has $d+2$ vertices, it is unicyclic and its unique cycle is a square. Consequently every nontrivial partial cube with at most $d+2$ vertices has a peripheral coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Reverse a complete sequence of $d$ coordinate contractions and let $s_i$ be the order of the site duplicated by expansion $i$. Then $|V|=1+\sum_i s_i$ and the excess over $d+1$ is $\sum_i(s_i-1)$. Zero excess makes every new coordinate a bridge and yields a tree. Excess one permits exactly one two-vertex site; it is an edge in the preceding tree, its duplication creates one square, and all later singleton-site expansions attach bridges. A leaf edge is peripheral, while every coordinate of a bare square is peripheral.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#lem:low-excess</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

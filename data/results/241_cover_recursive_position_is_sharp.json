@@ -1,0 +1,21 @@
+{
+  "id": 241,
+  "short_name": "cover_recursive_position_is_sharp",
+  "name": "Sharpness of the Cover-Recursive Position Bounds",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral",
+    "#classes/tree_like_partial_cubes",
+    "#classes/proper_semi_median_partial_cubes",
+    "#classes/almost_median_partial_cubes",
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "implication",
+  "statement": "The cover-recursively peripheral class is a strict subclass both of the intersection of tree-like and proper semi-median partial cubes and of the intersection of tree-like, almost-median, ample, and corner-peelable partial cubes.",
+  "status": "established",
+  "proof": "Expand $Q_5$ peripherally along the pentagonal obstruction $\\mathcal P_5$. The output is tree-like; the isometric ample site and cube base make it almost-median, ample, corner-peelable, and proper semi-median. Its copied site is a convex semicube isomorphic to $\\mathcal P_5$. Convex heredity would force this obstruction into the cover-recursive class if the expanded graph belonged to it, so it witnesses both strict containments.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#cor:position-sharp",
+  "witness_ids": [
+    "#examples/pentagonal_obstruction"
+  ]
+}

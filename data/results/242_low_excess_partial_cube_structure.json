@@ -1,0 +1,14 @@
+{
+  "id": 242,
+  "short_name": "low_excess_partial_cube_structure",
+  "name": "Structure of Partial Cubes with At Most Two Excess Vertices",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/trees"
+  ],
+  "result_type": "recognition",
+  "statement": "A connected partial cube of isometric dimension $d$ has at least $d+1$ vertices. Equality holds exactly in the tree case. If it has $d+2$ vertices, it is unicyclic and its unique cycle is a square. Consequently every nontrivial partial cube with at most $d+2$ vertices has a peripheral coordinate.",
+  "status": "established",
+  "proof": "Reverse a complete sequence of $d$ coordinate contractions and let $s_i$ be the order of the site duplicated by expansion $i$. Then $|V|=1+\\sum_i s_i$ and the excess over $d+1$ is $\\sum_i(s_i-1)$. Zero excess makes every new coordinate a bridge and yields a tree. Excess one permits exactly one two-vertex site; it is an edge in the preceding tree, its duplication creates one square, and all later singleton-site expansions attach bridges. A leaf edge is peripheral, while every coordinate of a bare square is peripheral.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#lem:low-excess"
+}

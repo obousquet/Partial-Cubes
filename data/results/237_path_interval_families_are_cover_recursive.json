@@ -1,0 +1,13 @@
+{
+  "id": 237,
+  "short_name": "path_interval_families_are_cover_recursive",
+  "name": "Bounded Path-Interval Families Are Cover-Recursive",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral"
+  ],
+  "result_type": "construction",
+  "statement": "For $m\\ge0$, let $\\mathcal J_m$ consist of the empty set and every interval of length at most three in the path on $[m]$. Then $\\mathcal J_m$ is cover-recursively peripheral.",
+  "status": "established",
+  "proof": "Induct on $m$. The concepts containing the last coordinate $m$ become $\\varnothing$, $\\{m-1\\}$, and $\\{m-2,m-1\\}$ after deleting it, when defined, and all lie in the zero section. Thus the one-semicube is peripheral. Its contraction base is $\\mathcal J_{m-1}$ and its duplicated site is a path on at most three vertices; both belong to the class.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#lem:path-intervals"
+}

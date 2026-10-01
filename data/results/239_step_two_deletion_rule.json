@@ -1,0 +1,13 @@
+{
+  "id": 239,
+  "short_name": "step_two_deletion_rule",
+  "name": "Deletion Rule for Short and Long Cyclic Sets",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $n\\ge9$, $S\\in\\mathcal F_n$, and $x\\in S$. Then $S\\setminus\\{x\\}$ remains in $\\mathcal F_n$ unless $S$ is long and $x$ is its midpoint. In that exceptional case the deletion is outside $\\mathcal F_n$.",
+  "status": "established",
+  "proof": "Every nonempty subset of a short set is short. A long set has compulsory points $a,a+2,a+4$: deleting an optional point leaves it long, and deleting either endpoint leaves at most three points in an arc of length four. Deleting the midpoint leaves both endpoints but omits the midpoint; its unique arc of length five shows it is neither short nor long.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#lem:step-two-deletion"
+}

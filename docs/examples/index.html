@@ -113,7 +113,7 @@
 <p><strong>Object Type:</strong> Graph</p>
 <strong>Definition:</strong><div class="text-field"><p>The cycle on six vertices, equivalently $Q_3$ with one antipodal pair of vertices deleted.</p></div>
 <strong>Properties:</strong><div class="text-field"><p>It is $Q_3^{--}$, the first antipodally punctured hypercube. It is a two-dimensional partial cube, but it is neither ample, a daisy cube, nor a median graph; every proper pc-minor is ample, daisy, and median. It is periphery-free. In the standard embedding $\{000,001,011,111,110,100\}$, conditioning the first coordinate to zero gives $P_3$ after removing the fixed coordinate.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:periphery-free; PartialCubes:papers/cover-recursive/main.tex?#def:peripheral-coordinate</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#thm:periphery-free; PartialCubes:papers/cover-recursive/main.tex?#ex:small-models; PartialCubes:papers/cover-recursive/main.tex?#def:peripheral-coordinate</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/antipodally_punctured_hypercubes.html">Antipodally Punctured Hypercubes</a></li><li><a href="obstruction_families/six_cycle_median_obstruction.html">Six-Cycle Median Obstruction</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -135,7 +135,7 @@
 <p><strong>Object Type:</strong> Graph</p>
 <strong>Definition:</strong><div class="text-field"><p>Take $P=\{p\}$, $R=\{q,e\}$, $A=\{q\}$, and $\mathcal W=\{\varnothing,\{q\},\{e\}\}$ in the construction $O(P,R,A;\mathcal W)$.</p></div>
 <strong>Properties:</strong><div class="text-field"><p>The resulting graph is $P_4$. It is a path, tree, median graph, maximum class, and learning-space graph. It is neither a star nor a daisy cube, and every proper pc-minor is a path and a star.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#ex:one-coordinate</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/daisy-cubes/sections/daisy_pc_minors_body.tex?#ex:one-coordinate; PartialCubes:papers/cover-recursive/main.tex?#ex:small-models</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/peripheral_daisy_obstructions.html">Peripheral Daisy Obstructions</a></li><li><a href="obstruction_families/four_vertex_path.html">Four-Vertex-Path Obstruction</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -277,7 +277,7 @@
 <strong>Definition:</strong><div class="text-field"><p>The graph on all binary triples, with two triples adjacent when they differ in one coordinate.</p></div>
 <strong>Properties:</strong><div class="text-field"><p>It is a hypercube, median graph, maximum class, ample class, and partial cube. Its VC dimension and isometric dimension are both three, so it is not a two-dimensional partial cube and is not an ample class of rank at most two. Every proper pc-minor has VC dimension at most two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#chepoi2020two">[chepoi2020two]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors; PartialCubes:papers/cover-recursive/main.tex?#ex:small-models</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/three_cube.html">Three-Cube</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
@@ -1586,8 +1586,8 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>The displayed class in $Q_6$ whose low-bit vertex-incidence mask is <code>0x1111bf00b0b1b080</code>; bit $j$ records the word with integer encoding $j$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>A 22-vertex maximum VC-dimension-two obstruction to the cover-recursively peripheral class. It is gated-prime and cubical-face-prime: it has 77 proper gated coordinate faces but no proper gated two-cover.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
+<strong>Properties:</strong><div class="text-field"><p>A 22-vertex maximum VC-dimension-two ample partial cube that is periphery-free and pc-minimal outside the cover-recursively peripheral class. It is obtained by six displayed restrictions of Hall's 299-concept class. It is gated-prime and cubical-face-prime: it has 77 proper gated coordinate faces but no proper gated two-cover.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:hall-obstruction; PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
 <strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_face_prime_h22_gated_two_covers.html'>Proper Gated Two-Covers of H22</a></li><li><a href='invariant_values/maximum_face_prime_h22_cubical_face_decompositions.html'>Cubical Face Decompositions of H22</a></li></ul></p></div>
 
@@ -1630,8 +1630,8 @@
 
 <p><strong>Object Type:</strong> Set Family</p>
 <strong>Definition:</strong><div class="text-field"><p>The displayed class in $Q_6$ whose low-bit vertex-incidence mask is <code>0xdf1b101000111011</code>; bit $j$ records the word with integer encoding $j$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>An 18-vertex VC-dimension-two obstruction to the cover-recursively peripheral class. Its unique proper gated two-cover is a square sum of two eleven-vertex factors and is face-critical.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
+<strong>Properties:</strong><div class="text-field"><p>An 18-vertex ample VC-dimension-two partial cube that is pc-minimal outside the cover-recursively peripheral class. It has no cut vertex and is the gated amalgam of two copies of the eleven-vertex rooted factor $\mathcal L_4$ along a maximal square. Up to cube isomorphism it is the unique ample periphery-free partial cube of isometric dimension six and order at most eighteen. Its unique proper gated two-cover is this square sum, and it is face-critical.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:square-amalgam-obstruction; PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
 <strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/square_amalgam_s18_gated_two_covers.html'>Proper Gated Two-Covers of S18</a></li><li><a href='invariant_values/square_amalgam_s18_cubical_face_decompositions.html'>Cubical Face Decompositions of S18</a></li></ul></p></div>
 

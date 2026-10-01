@@ -1,0 +1,18 @@
+{
+  "id": 240,
+  "short_name": "step_two_obstruction_parameters",
+  "name": "Exact Parameters and Minimality of Step-Two Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every odd $n\\ge9$, $\\mathcal F_n$ is an ample partial cube with $10n+1$ vertices, VC dimension three, and isometric dimension $n$. It is periphery-free, while every proper pc-minor is cover-recursively peripheral. In each coordinate one oriented section defect consists of three vertices inducing a path.",
+  "status": "established",
+  "proof": "The shattered complex contains the empty set, $n$ singletons, $4n$ pair orbits, and $5n$ triple orbits, all with explicit positioned cubes; the forbidden alternating triple prevents higher shattering, so the count equals $10n+1$. The deletion rule makes the one-sided defect exactly a three-vertex path and a distant singleton witnesses the opposite noncontainment. For an elementary minor, a fixed 27-vertex one-section has a recursive peripheral decomposition. The zero section and contraction peel coordinates in the order $2,4,6,\\ldots$ with duplicated sites that are pc-minors of that one-section. Oddness makes step two traverse every remaining coordinate; rotation handles all starting coordinates.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:step-two"
+}

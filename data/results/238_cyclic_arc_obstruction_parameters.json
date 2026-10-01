@@ -1,0 +1,18 @@
+{
+  "id": 238,
+  "short_name": "cyclic_arc_obstruction_parameters",
+  "name": "Exact Parameters and Minimality of Cyclic-Arc Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every $n\\ge5$, $\\mathcal A_n$ is an ample partial cube with $3n+1$ vertices, VC dimension two, and isometric dimension $n$. It is periphery-free, while every proper pc-minor is cover-recursively peripheral. Hence $\\mathcal A_n$ is an ample forbidden pc-minor for the cover-recursively peripheral class; $\\mathcal A_5=\\mathcal P_5$.",
+  "status": "established",
+  "proof": "The shattered supports are the empty set, all $n$ singletons, and exactly the $2n$ coordinate pairs at cyclic distance one or two; explicit edges and squares strongly shatter all of them, while no triple is shattered. Opposing witnesses make the two projected sections incomparable in every coordinate. A zero section is the path-interval family $\\mathcal J_{n-1}$; a one section peels by two pendant deletions to a square; and the contraction has a peripheral step with path site and base $\\mathcal J_{n-2}$. Rotation handles every coordinate, proving pc-minimality.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:cyclic-arcs"
+}

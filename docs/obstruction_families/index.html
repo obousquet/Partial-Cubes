@@ -849,6 +849,54 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-33" style="position:relative;">
+
+        <h3><a href="obstruction_families/cyclic_arc_cover_recursive_obstructions.html" class="table-title-link">Cyclic-Arc Cover-Recursive Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cyclic-Arc Cover-Recursive Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal A_n:n\ge5\}">
+            \[\{\mathcal A_n:n\ge5\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $\mathbb Z_n$, let $[a,a+\ell)$ be the cyclic arc of length $\ell$ and define $\mathcal A_n=\{\varnothing\}\cup\{[a,a+\ell):a\in\mathbb Z_n,1\le\ell\le3\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$n\ge5$. The family has $3n+1$ vertices, isometric dimension $n$, and VC dimension two; $\mathcal A_5$ is the pentagonal obstruction $\mathcal P_5$.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Coordinates carry their cyclic order, with rotations and reflections inducing the dihedral symmetries of the construction.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>The nonempty concepts are exactly the cyclic intervals of lengths one, two, or three. Each coordinate has incomparable zero and one sections. Every elementary restriction or contraction has an explicit cover-recursive peripheral decomposition through path-interval families.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:cyclic-arcs</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is an ample pc-minimal obstruction to the cover-recursively peripheral class and hence is distinct from the nonample antipodally punctured cubes.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-34" style="position:relative;">
+
+        <h3><a href="obstruction_families/step_two_cover_recursive_obstructions.html" class="table-title-link">Step-Two Cover-Recursive Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Step-Two Cover-Recursive Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal F_n:n\ge9\text{ odd}\}">
+            \[\{\mathcal F_n:n\ge9\text{ odd}\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $\mathbb Z_n$, call a nonempty set short when it has at most three elements contained in a cyclic arc of length four. Call it long when, for some $a$, it contains $\{a,a+2,a+4\}$, is contained in $[a,a+5)$, and has at most four elements. Then $\mathcal F_n$ consists of the empty set and all short or long sets.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$n\ge9$ odd. The family has $10n+1$ vertices, isometric dimension $n$, and VC dimension three.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The ten nonempty translation types are represented by $\{0\}$, $\{0,1\}$, $\{0,2\}$, $\{0,3\}$, $\{0,1,2\}$, $\{0,1,3\}$, $\{0,2,3\}$, $\{0,2,4\}$, $\{0,1,2,4\}$, and $\{0,2,3,4\}$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>Each coordinate has a one-sided defect of three vertices inducing a path. Elementary minors admit recursive peripheral decompositions that advance through the remaining cyclic coordinates in steps of two; oddness makes this traversal exhaustive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:step-two</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is an ample pc-minimal obstruction to the cover-recursively peripheral class and is not an antipodally punctured cube.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

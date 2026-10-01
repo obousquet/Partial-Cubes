@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 288,
-    "uncovered": 728,
-    "proof_source_records": 1304
+    "covered": 298,
+    "uncovered": 718,
+    "proof_source_records": 1312
   },
   "by_workspace": {
     "ample-corners": {
@@ -19,9 +19,9 @@
       "total": 74
     },
     "cover-recursive": {
-      "covered": 17,
+      "covered": 27,
       "total": 42,
-      "uncovered": 25
+      "uncovered": 15
     },
     "daisy-cubes": {
       "covered": 14,
@@ -1978,7 +1978,7 @@
       "label": "cor:position-sharp",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -1988,7 +1988,9 @@
           "line": 1189
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/241_cover_recursive_position_is_sharp.json"
+      ]
     },
     {
       "label": "cor:rooted-convex",
@@ -2076,7 +2078,7 @@
       "label": "ex:small-models",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2086,7 +2088,11 @@
           "line": 395
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/001_six_cycle.json",
+        "data/examples/002_four_vertex_path.json",
+        "data/examples/009_three_cube.json"
+      ]
     },
     {
       "label": "ex:tree-like-not-recursive",
@@ -2110,7 +2116,7 @@
       "label": "lem:low-excess",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2120,13 +2126,15 @@
           "line": 1840
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/242_low_excess_partial_cube_structure.json"
+      ]
     },
     {
       "label": "lem:path-intervals",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2136,7 +2144,9 @@
           "line": 1253
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/237_path_interval_families_are_cover_recursive.json"
+      ]
     },
     {
       "label": "lem:pcminor-closure",
@@ -2196,7 +2206,7 @@
       "label": "lem:step-two-deletion",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2206,7 +2216,9 @@
           "line": 1405
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/239_step_two_deletion_rule.json"
+      ]
     },
     {
       "label": "lem:two-layer-periphery",
@@ -2282,7 +2294,7 @@
       "label": "prop:hall-obstruction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2292,7 +2304,9 @@
           "line": 1800
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/070_maximum_face_prime_h22.json"
+      ]
     },
     {
       "label": "prop:inherited-properties",
@@ -2444,7 +2458,7 @@
       "label": "prop:square-amalgam-obstruction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2454,7 +2468,9 @@
           "line": 1738
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/072_square_amalgam_obstruction_s18.json"
+      ]
     },
     {
       "label": "thm:characterization",
@@ -2534,7 +2550,7 @@
       "label": "thm:cyclic-arcs",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2544,7 +2560,10 @@
           "line": 1270
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_families/033_cyclic_arc_cover_recursive_obstructions.json",
+        "data/results/238_cyclic_arc_obstruction_parameters.json"
+      ]
     },
     {
       "label": "thm:expansion-tree",
@@ -2587,7 +2606,7 @@
       "label": "thm:intro-characterization",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2597,7 +2616,9 @@
           "line": 130
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/019_cover_recursive_peripheral_equivalence.json"
+      ]
     },
     {
       "label": "thm:no-bounded-depth",
@@ -2653,7 +2674,7 @@
       "label": "thm:step-two",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2663,7 +2684,10 @@
           "line": 1422
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_families/034_step_two_cover_recursive_obstructions.json",
+        "data/results/240_step_two_obstruction_parameters.json"
+      ]
     },
     {
       "label": "cor:ample-daisy-obstructions",
