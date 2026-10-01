@@ -75,18 +75,19 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
-    <div class="table-card" id="math-54" style="position:relative;">
+    <div class="table-card" id="math-286" style="position:relative;">
 
-        <h3><a href="operation_results/dismantlable_ample_conditioning_closed.html" class="table-title-link">Dismantlable Ample Classes Are Conditioning-Closed</a></h3>
+        <h3><a href="operation_results/ample_common_section_gluing_closed.html" class="table-title-link">Ample Classes Are Closed under Projecting Common-Section Gluing</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Dismantlable Ample Classes Are Conditioning-Closed</p>
-<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
-<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+        <p><strong>Name: </strong>Ample Classes Are Closed under Projecting Common-Section Gluing</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/common_section_gluing.html">Common-Section Gluing</a></p>
 <p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
 <p><strong>Status:</strong> Established</p>
-<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning, and more generally every nonempty convex restriction, of a finite dismantlable ample class is dismantlable ample.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Intersect an ample-prefix order with the coordinate face defining the restriction. Every surviving nonempty prefix is the corresponding section of an ample class and remains ample.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure; PartialCubes:papers/gluing/main.tex?#cor:restriction</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Let ample pieces $A_i\subseteq Q_{E\sqcup F_i}$ have pairwise disjoint private coordinate blocks, contain the same zero section $D$, and project onto exactly $D$ in the shared coordinates. Their embedded union $A_1\oplus_D\cdots\oplus_D A_m$ is ample. Moreover, projection to the common coordinates is the Hamming gate onto $D$ in each piece; when every shared coordinate varies on $D$, the gate property conversely forces the projection condition.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A support shattered by the union cannot meet two private blocks, since the trace assigning one in each such block is absent. It therefore lies in one shared-plus-private coordinate block, where the union projects to the corresponding ample piece; that piece supplies a positioned cube. The gate identity separates shared and private Hamming contributions. Conversely, disagreement between a proposed gate and the projected word in a varying shared coordinate makes the coordinatewise triangle inequality strict for a suitable point of $D$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#prop:gluing</p></div>
 
         </div>
     </div>

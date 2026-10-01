@@ -1,0 +1,17 @@
+{
+  "id": 227,
+  "short_name": "simplicial_shelling_record_composition",
+  "name": "Composition Law for Simplicial Shelling Records",
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "construction",
+  "statement": "For pure simplicial pieces over a common pure base $\\Gamma$, with pairwise disjoint private vertices and one distinguished facet over each base facet, a global shelling record $(\\pi,S)$ exists exactly when every piece has a local record $(\\pi,S_i)$ with the same distinguished-facet order and the active sets $S_i$ are pairwise disjoint; then $S=\\bigcup_iS_i$. Any chosen compatible local shellings can be interleaved while preserving every local order. When the base has one empty facet, this says that the polyhedral-join assembly is shellable exactly when every factor is shellable and all but at most one can start at its chosen facet.",
+  "status": "established",
+  "proof": "For compatible records, interleave local blocks between successive distinguished facets. Any earlier facet from another piece has its intersection with the current facet covered by an already inserted distinguished facet; simultaneous activity would be the only obstruction. Conversely, links in the fixed private blocks recover all local shellings. If two pieces were active at one base facet, a codimension-two link in the prefix would be a disconnected union of two stars, contradicting shellability. The one-facet base specializes activity to whether the chosen facet occurs first.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#thm:simplicial-composition; PartialCubes:papers/gluing/main.tex#cor:prescribed-first-facet",
+  "witness_ids": [
+    "#examples/two_path_shelling_conflict",
+    "#examples/simplicial_shelling_composition_example"
+  ]
+}

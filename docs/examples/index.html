@@ -1945,6 +1945,48 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-91" style="position:relative;">
+
+        <h3><a href="examples/two_path_shelling_conflict.html" class="table-title-link">Two-Path Shelling Compatibility Conflict</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Path Shelling Compatibility Conflict</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $K_1=\langle ab,bc\rangle$ and $K_2=\langle de,ef\rangle$ be paths on disjoint vertices, distinguished at $ab$ and $de$. Their assembly has facets $F_1=bcde$, $F_0=abde$, and $F_2=abef$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The local shellings $(bc,ab)$ and $(de,ef)$ combine as $(F_1,F_0,F_2)$. The equally valid local choices $(bc,ab)$ and $(ef,de)$ cannot be preserved by any global shelling: they force $F_1,F_2$ before $F_0$, although $F_1\cap F_2$ is only an edge rather than a ridge. This is the smallest illustration of conflicting active records.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#ex:two-path-shellings</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-92" style="position:relative;">
+
+        <h3><a href="examples/simplicial_shelling_composition_example.html" class="table-title-link">Tetrahedral-Boundary Shelling Composition</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tetrahedral-Boundary Shelling Composition</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Take the common base $\Gamma$ to be the boundary of a tetrahedron and two pieces $\Delta_i=\Gamma*\langle\{a_i\},\{b_i\}\rangle$ with distinguished private vertex $a_i$ in each disjoint private block.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Each piece has eight four-vertex facets and their assembly has twelve five-vertex facets. Its full shelling-record set is obtained by matching the two local base-facet orders and requiring disjoint active sets. Variants with a three-edge star base or three private vertices show that the theorem does not require ridge degree two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#ex:simplicial-composition</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-93" style="position:relative;">
+
+        <h3><a href="examples/two_squares_common_edge_peeling_records.html" class="table-title-link">Two Squares Glued along a Common Edge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Squares Glued along a Common Edge</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>In $Q_3$, take $A=\{000,100,010,110\}$ and $B=\{000,100,001,101\}$ with common edge $D=\{000,100\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>For either order of $D$, each square realizes all four active subsets of the two common vertices. The local orders $(010,110,000,100)$ and $(000,100,001,101)$ have disjoint active sets and combine into a global peeling. If both local orders begin $(000,100)$, they conflict: the common vertex $000$ has two private neighbours but the mixed vertex $011$ needed for its incident cube is absent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#ex:square</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

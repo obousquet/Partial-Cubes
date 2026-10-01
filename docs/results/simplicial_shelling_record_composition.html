@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,19 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
-    <div class="table-card" id="math-54" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-227" style="position:relative;">
 
-        <h3><a href="operation_results/dismantlable_ample_conditioning_closed.html" class="table-title-link">Dismantlable Ample Classes Are Conditioning-Closed</a></h3>
+        <h3><a href="results/simplicial_shelling_record_composition.html" class="table-title-link">Composition Law for Simplicial Shelling Records</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Dismantlable Ample Classes Are Conditioning-Closed</p>
-<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
-<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
-<p><strong>Result Type:</strong> Closed Under</p>
+        <p><strong>Name: </strong>Composition Law for Simplicial Shelling Records</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For pure simplicial pieces over a common pure base $\Gamma$, with pairwise disjoint private vertices and one distinguished facet over each base facet, a global shelling record $(\pi,S)$ exists exactly when every piece has a local record $(\pi,S_i)$ with the same distinguished-facet order and the active sets $S_i$ are pairwise disjoint; then $S=\bigcup_iS_i$. Any chosen compatible local shellings can be interleaved while preserving every local order. When the base has one empty facet, this says that the polyhedral-join assembly is shellable exactly when every factor is shellable and all but at most one can start at its chosen facet.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning, and more generally every nonempty convex restriction, of a finite dismantlable ample class is dismantlable ample.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Intersect an ample-prefix order with the coordinate face defining the restriction. Every surviving nonempty prefix is the corresponding section of an ample class and remains ample.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure; PartialCubes:papers/gluing/main.tex?#cor:restriction</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For compatible records, interleave local blocks between successive distinguished facets. Any earlier facet from another piece has its intersection with the current facet covered by an already inserted distinguished facet; simultaneous activity would be the only obstruction. Conversely, links in the fixed private blocks recover all local shellings. If two pieces were active at one base facet, a codimension-two link in the prefix would be a disconnected union of two stars, contradicting shellability. The one-facet base specializes activity to whether the chosen facet occurs first.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:simplicial-composition; PartialCubes:papers/gluing/main.tex?#cor:prescribed-first-facet</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_path_shelling_conflict.html">Two-Path Shelling Compatibility Conflict</a></li><li><a href="examples/simplicial_shelling_composition_example.html">Tetrahedral-Boundary Shelling Composition</a></li></ul></p>
 
         </div>
     </div>

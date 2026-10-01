@@ -1,0 +1,9 @@
+{
+  "id": 91,
+  "short_name": "two_path_shelling_conflict",
+  "name": "Two-Path Shelling Compatibility Conflict",
+  "object_type": "construction",
+  "definition": "Let $K_1=\\langle ab,bc\\rangle$ and $K_2=\\langle de,ef\\rangle$ be paths on disjoint vertices, distinguished at $ab$ and $de$. Their assembly has facets $F_1=bcde$, $F_0=abde$, and $F_2=abef$.",
+  "properties": "The local shellings $(bc,ab)$ and $(de,ef)$ combine as $(F_1,F_0,F_2)$. The equally valid local choices $(bc,ab)$ and $(ef,de)$ cannot be preserved by any global shelling: they force $F_1,F_2$ before $F_0$, although $F_1\\cap F_2$ is only an edge rather than a ridge. This is the smallest illustration of conflicting active records.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#ex:two-path-shellings"
+}

@@ -5,7 +5,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -58,8 +57,23 @@ def workspace(path: str) -> str:
     return parts[0] if parts else "unknown"
 
 
+def locator_workspace(locator: str, label: str) -> str | None:
+    """Return the PartialCubes paper workspace named by an exact locator."""
+    source, separator, anchor = locator.strip().rpartition("#")
+    if not separator or anchor != label or not source.startswith("PartialCubes:"):
+        return None
+    return workspace(source.split(":", 1)[1])
+
+
+def source_covers(source: dict, claim_workspace: str, label: str) -> bool:
+    return any(
+        locator_workspace(locator, label) == claim_workspace
+        for locator in source["proof_source"].split(";")
+    )
+
+
 def audit(label_index: dict, data_dir: Path) -> dict:
-    grouped: dict[str, list[dict]] = defaultdict(list)
+    grouped: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for file_entry in label_index["files"]:
         for label in file_entry["labels"]:
             if (
@@ -70,7 +84,7 @@ def audit(label_index: dict, data_dir: Path) -> dict:
                     in RESULT_ENVIRONMENTS
                 )
             ):
-                grouped[label["label"]].append(
+                grouped[(workspace(file_entry["path"]), label["label"])].append(
                     {
                         "path": file_entry["path"],
                         "line": label["line"],
@@ -82,14 +96,13 @@ def audit(label_index: dict, data_dir: Path) -> dict:
     sources = proof_sources(data_dir)
     claims = []
     workspace_counts: dict[str, Counter] = defaultdict(Counter)
-    for label, occurrences in sorted(grouped.items()):
-        pattern = re.compile(r"#" + re.escape(label) + r"(?![A-Za-z0-9:_.-])")
+    for (claim_workspace, label), occurrences in sorted(grouped.items()):
         covered_by = [
             source["path"]
             for source in sources
-            if pattern.search(source["proof_source"])
+            if source_covers(source, claim_workspace, label)
         ]
-        workspaces = sorted({workspace(item["path"]) for item in occurrences})
+        workspaces = [claim_workspace]
         status = "covered" if covered_by else "uncovered"
         for name in workspaces:
             workspace_counts[name]["total"] += 1
@@ -113,7 +126,7 @@ def audit(label_index: dict, data_dir: Path) -> dict:
     return {
         "version": 1,
         "kind": "manuscript_result_audit",
-        "scope": "Unique theorem-, proposition-, corollary-, lemma-, example-, conjecture-, and problem-like labels in the preserved current paper sources. Coverage requires an exact #label locator in a database proof_source field; open questions are excluded.",
+        "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, example-, conjecture-, and problem-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed and open questions are excluded.",
         "counts": {
             "unique_result_labels": len(claims),
             "label_occurrences": sum(len(claim["occurrences"]) for claim in claims),

@@ -1,0 +1,19 @@
+{
+  "id": 229,
+  "short_name": "corner_peeling_record_composition",
+  "name": "Composition Law for Corner-Peeling Records",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "For arbitrary Boolean pieces over a common section $D$, record a complete corner peeling by its induced order $\\pi$ on $D$ and by the common vertices that still have a private neighbour when deleted. A global peeling has record $(\\pi,S)$ exactly when every piece has a record $(\\pi,S_i)$ with pairwise disjoint active sets, in which case $S=\\bigcup_iS_i$. Thus the union peels exactly when compatible local records exist; ampleness is not required.",
+  "status": "established",
+  "proof": "Restricting a global peeling to each coordinate section gives local peelings with one common order. Two pieces cannot both be active at a common vertex because their private directions would require an absent mixed square in its incident corner cube. Conversely, synchronize compatible local peelings at successive common vertices. Private deletions see only their local piece, and at a common deletion all private incident directions occur in at most one local state, whose corner cube certifies the global deletion.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#thm:composition",
+  "witness_ids": [
+    "#examples/two_squares_common_edge_peeling_records"
+  ]
+}

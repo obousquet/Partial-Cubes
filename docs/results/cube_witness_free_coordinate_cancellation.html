@@ -82,10 +82,10 @@
         <p><strong>Name: </strong>Canceling the Free Coordinates of a Positioned Cube</p>
 <p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
 <p><strong>Result Type:</strong> Construction</p>
-<strong>Statement:</strong><div class="text-field"><p>Suppose a positioned cube fixing the signs of a partial pattern $q$ is contained in a convex-realizable Boolean class $C$, and fix a feasible normalized coefficient array. Then there is a strictly separated witness vector with the prescribed signs on the fixed support of $q$ and zeros on every free cube coordinate.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Suppose one sign-compatible vector with coordinate magnitudes in $[t,1]$ is given for every word in a positioned cube fixing a partial pattern $q$, where $0<t\le1$. A convex combination of the vectors has zeros on every free cube coordinate and signed magnitudes in $[t,1]$ on the fixed support. It preserves every linear inequality common to the input vectors; rational inputs admit a construction by $2^d-1$ rational pair averages, where $d$ is the cube dimension.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Choose strict witnesses for all cube vertices. Pair vertices opposite in one free coordinate and take a positive convex combination that cancels that coordinate. Fixed signs and all strict linear separator inequalities survive. Repeat over the free coordinates; previously canceled coordinates remain zero.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average; PartialCubes:papers/realizability-margin/main.tex?#lem:average</p></div>
 
         </div>
     </div>

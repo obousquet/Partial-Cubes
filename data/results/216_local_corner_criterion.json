@@ -6,8 +6,8 @@
     "#classes/cornerless_ample"
   ],
   "result_type": "recognition",
-  "statement": "For any Boolean class $C$ and vertex $v\\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$.",
+  "statement": "For any Boolean class $C$ and vertex $v\\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$. If a corner belongs to a coordinate face, it remains a corner in the induced section on that face.",
   "status": "established",
   "proof": "Every cube through $v$ uses only incident directions. If their full span is present, it contains every cube through $v$ and is the unique maximal one. Conversely, when $v$ has a unique maximal cube, every incident edge extends into that cube, so its support contains every incident direction and it equals the full span.",
-  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:local-corner"
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#lem:local-corner; PartialCubes:papers/gluing/main.tex#lem:corner"
 }

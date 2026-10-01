@@ -1,0 +1,13 @@
+{
+  "id": 228,
+  "short_name": "simplicial_attachment_relative_shellability_test",
+  "name": "Attachment Test for Relative Shellability",
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\Delta$ be a finite pure complex of nonnegative dimension in which every ridge belongs to at most two facets, and let $\\Gamma$ be a nonempty facet-generated subcomplex. If $\\Lambda$ is pure and shellable but no shelling starts at a chosen facet $\\rho$, then $\\Theta=(\\Delta*\\langle\\rho\\rangle)\\cup(\\Gamma*\\Lambda)$ is shellable exactly when $\\Gamma$ is shellable and $(\\Delta,\\Gamma)$ is relatively shellable.",
+  "status": "established",
+  "proof": "Shellings of $\\Gamma$, $\\Lambda$, and the relative pair concatenate to give sufficiency. Conversely, the links of $\\rho$ and of any other facet of $\\Lambda$ recover shellings of $\\Delta$ and $\\Gamma$. Because $\\rho$ cannot start a shelling of $\\Lambda$, every $\\Gamma$ facet precedes each ridge-adjacent outside facet: otherwise a codimension-two prefix link is disconnected, with the missing mixed edge as its only possible bridge. Non-ridge-sharing consecutive facets commute, so all $\\Gamma$ facets can be moved first; the remaining order is relative.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#thm:shelling-attachment"
+}

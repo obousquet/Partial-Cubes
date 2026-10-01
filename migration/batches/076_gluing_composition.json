@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "batch_id": "076_gluing_composition",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the common-section gluing theorem and the first reusable shelling and corner-peeling composition results, while making theorem-label coverage workspace-aware so equal labels in unrelated manuscripts cannot produce false coverage.",
+  "source_refs": [
+    "PartialCubes:papers/gluing/main.tex#prop:gluing",
+    "PartialCubes:papers/gluing/main.tex#ex:two-path-shellings",
+    "PartialCubes:papers/gluing/main.tex#thm:simplicial-composition",
+    "PartialCubes:papers/gluing/main.tex#cor:prescribed-first-facet",
+    "PartialCubes:papers/gluing/main.tex#ex:simplicial-composition",
+    "PartialCubes:papers/gluing/main.tex#thm:shelling-attachment",
+    "PartialCubes:papers/gluing/main.tex#thm:composition",
+    "PartialCubes:papers/gluing/main.tex#ex:square",
+    "PartialCubes:papers/gluing/main.tex#prop:relative-shelling-dictionary"
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized closure, composition, compatibility, and relative-shellability statements with concise proofs and examples. The LaTeX manuscript retains the full definitions, proofs, figures, and motivating exposition.",
+    "recoverability": "Each promoted result has an exact label in the frozen source snapshot. The coverage audit now matches labels within their manuscript workspace, while still collapsing copied source files inside that workspace.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/characterization_equivalences/005_learning_space_classical_equivalence.json", "sha256": "c0b72ceec2cd51f5b1365dad8eb3cc8b9facce122c1b5b90555841c12f5f232d"},
+    {"path": "data/examples/091_two_path_shelling_conflict.json", "sha256": "c72f6ba9bb64c2b02444ac725eef41d80b53bc23cb76e07e52cdf121152d52e1"},
+    {"path": "data/examples/092_simplicial_shelling_composition_example.json", "sha256": "f3c05a2d85310fae5ee1c3be7609b28bab62504fce46430c5aeb31f4dc3fbc01"},
+    {"path": "data/examples/093_two_squares_common_edge_peeling_records.json", "sha256": "e898daba9633002f12e342d66c19a9a7bb5b481b3b0dd99a514497f690a373c0"},
+    {"path": "data/operation_results/054_dismantlable_ample_conditioning_closed.json", "sha256": "239e168b79b92a1d3c46521a4f1656ae9f1ae472daf81e8c6db020d258be4d14"},
+    {"path": "data/operation_results/286_ample_common_section_gluing_closed.json", "sha256": "4022cde21352b14326c2825681525108181b1dd8f558b721d3cb6610dd01e7eb"},
+    {"path": "data/results/203_cube_witness_free_coordinate_cancellation.json", "sha256": "89aa50e154fc8fea81a27eef32195967f2b17271a40bb4bd8d4641d78c5f41bc"},
+    {"path": "data/results/216_local_corner_criterion.json", "sha256": "7063ef033dbd8ec78403d4ceffa01d55141a1cb094b0ef3d50f8c33404e55260"},
+    {"path": "data/results/227_simplicial_shelling_record_composition.json", "sha256": "bd8718cb0538e517b69b529b1a0ecfffd50cc3682452069efb05a76aff6988bb"},
+    {"path": "data/results/228_simplicial_attachment_relative_shellability_test.json", "sha256": "e9abc5a1ce81e4970d85239258a5aba1faee2a07fa54932be32742715c5cc882"},
+    {"path": "data/results/229_corner_peeling_record_composition.json", "sha256": "c6d592a1c01f5d12a1b0a688d1def31574771b3f5eec4d6193711b54f926b593"},
+    {"path": "data/results/230_relative_shelling_corner_peeling_dictionary.json", "sha256": "451af68865bc3a373214eb09a071e0a18737510cfb4a39105e7e691909c59375"},
+    {"path": "migration/audit_manuscript_results.py", "sha256": "d13436dfa18976b57874352798e48c78ce5245ebe908e68132589c8f949c0614"},
+    {"path": "migration/coverage.json", "sha256": "6c5b65e0e8059c0bd0b0a566cdebde565ed55279db707df35d14b43e4aef422d"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "3b19765135334d7ea23cabbd41b901d8c7441b9e57589cb115e94539838476a7"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1409 records.",
+    "website": "Normalized 1425 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. Workspace-aware auditing finds 279 of 1016 theorem-like labels covered overall; gluing coverage is 11 of 20, and learning-spaces and realizability-margin remain complete."
+  },
+  "deferred": [
+    "Nine gluing labels remain for the relative-peeling attachment, behavior-monoid, minor-transfer, and record-collapse results.",
+    "Full proofs and construction details remain in the preserved LaTeX manuscript."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": 230,
+  "short_name": "relative_shelling_corner_peeling_dictionary",
+  "name": "Relative Shelling--Corner Peeling Dictionary",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "For nonempty ample families $K\\subseteq A\\subseteq Q_E$, $A$ corner-peels down to $K$ exactly when the signed-facet pair $(\\mathcal S_E(A),\\mathcal S_E(K))$ is relatively shellable. The orders correspond by reversal.",
+  "status": "established",
+  "proof": "In a relative shelling, the ridge criterion for adding the signed facet of $v$ says that for every old vertex $b$, some old neighbour $u$ of $v$ begins a Hamming geodesic to $b$. Isometry of the ample old family makes the enlarged family isometric, hence ample, and $v$ is a corner. Induction gives a reversed peeling. Conversely, corner deletion preserves ampleness; shortest paths from the restored corner to every old vertex begin with a neighbour satisfying the ridge criterion.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#prop:relative-shelling-dictionary"
+}

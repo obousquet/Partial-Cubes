@@ -1,0 +1,13 @@
+{
+  "id": 286,
+  "short_name": "ample_common_section_gluing_closed",
+  "name": "Ample Classes Are Closed under Projecting Common-Section Gluing",
+  "class_id": "#classes/ample",
+  "operation_id": "#operations/common_section_gluing",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/ample",
+  "status": "established",
+  "statement": "Let ample pieces $A_i\\subseteq Q_{E\\sqcup F_i}$ have pairwise disjoint private coordinate blocks, contain the same zero section $D$, and project onto exactly $D$ in the shared coordinates. Their embedded union $A_1\\oplus_D\\cdots\\oplus_D A_m$ is ample. Moreover, projection to the common coordinates is the Hamming gate onto $D$ in each piece; when every shared coordinate varies on $D$, the gate property conversely forces the projection condition.",
+  "proof": "A support shattered by the union cannot meet two private blocks, since the trace assigning one in each such block is absent. It therefore lies in one shared-plus-private coordinate block, where the union projects to the corresponding ample piece; that piece supplies a positioned cube. The gate identity separates shared and private Hamming contributions. Conversely, disagreement between a proposed gate and the projected word in a varying shared coordinate makes the coordinatewise triangle inequality strict for a suitable point of $D$.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#prop:gluing"
+}

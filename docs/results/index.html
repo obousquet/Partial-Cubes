@@ -3466,10 +3466,10 @@
         <p><strong>Name: </strong>Canceling the Free Coordinates of a Positioned Cube</p>
 <p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
 <p><strong>Result Type:</strong> Construction</p>
-<strong>Statement:</strong><div class="text-field"><p>Suppose a positioned cube fixing the signs of a partial pattern $q$ is contained in a convex-realizable Boolean class $C$, and fix a feasible normalized coefficient array. Then there is a strictly separated witness vector with the prescribed signs on the fixed support of $q$ and zeros on every free cube coordinate.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Suppose one sign-compatible vector with coordinate magnitudes in $[t,1]$ is given for every word in a positioned cube fixing a partial pattern $q$, where $0<t\le1$. A convex combination of the vectors has zeros on every free cube coordinate and signed magnitudes in $[t,1]$ on the fixed support. It preserves every linear inequality common to the input vectors; rational inputs admit a construction by $2^d-1$ rational pair averages, where $d$ is the cube dimension.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Choose strict witnesses for all cube vertices. Pair vertices opposite in one free coordinate and take a positive convex combination that cancels that coordinate. Fixed signs and all strict linear separator inequalities survive. Repeat over the free coordinates; previously canceled coordinates remain zero.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average; PartialCubes:papers/realizability-margin/main.tex?#lem:average</p></div>
 
         </div>
     </div>
@@ -3670,10 +3670,10 @@
         <p><strong>Name: </strong>Local Corner Criterion</p>
 <p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
 <p><strong>Result Type:</strong> Recognition</p>
-<strong>Statement:</strong><div class="text-field"><p>For any Boolean class $C$ and vertex $v\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>For any Boolean class $C$ and vertex $v\in C$, let $I_C(v)$ be the coordinates of the neighbours of $v$ in $C$. Then $v$ is a corner exactly when the cube spanned by $v$ in all directions $I_C(v)$ is contained in $C$. If a corner belongs to a coordinate face, it remains a corner in the induced section on that face.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Every cube through $v$ uses only incident directions. If their full span is present, it contains every cube through $v$ and is the unique maximal one. Conversely, when $v$ has a unique maximal cube, every incident edge extends into that cube, so its support contains every incident direction and it equals the full span.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:local-corner</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#lem:local-corner; PartialCubes:papers/gluing/main.tex?#lem:corner</p></div>
 
         </div>
     </div>
@@ -3840,6 +3840,69 @@
 <strong>Proof:</strong><div class="text-field"><p>Direct enumeration gives the displayed shattered complex and trivial automorphism group. Its size is $1+12+66+188=267$, agreeing with the ample class order. Each coordinate belongs to 47 admitted triples, so its full reduction has $1+11+47=59$ concepts and the contraction has $267-59=208$. Every pair extends to an admitted triple, so the 188 triples are precisely the facets and therefore support the facet cubes.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:record-complex; PartialCubes:papers/ample-corners/evidence/descent/record.json</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cornerless_ample_267.html">The 267-Concept Cornerless Ample Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-227" style="position:relative;">
+
+        <h3><a href="results/simplicial_shelling_record_composition.html" class="table-title-link">Composition Law for Simplicial Shelling Records</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Composition Law for Simplicial Shelling Records</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For pure simplicial pieces over a common pure base $\Gamma$, with pairwise disjoint private vertices and one distinguished facet over each base facet, a global shelling record $(\pi,S)$ exists exactly when every piece has a local record $(\pi,S_i)$ with the same distinguished-facet order and the active sets $S_i$ are pairwise disjoint; then $S=\bigcup_iS_i$. Any chosen compatible local shellings can be interleaved while preserving every local order. When the base has one empty facet, this says that the polyhedral-join assembly is shellable exactly when every factor is shellable and all but at most one can start at its chosen facet.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For compatible records, interleave local blocks between successive distinguished facets. Any earlier facet from another piece has its intersection with the current facet covered by an already inserted distinguished facet; simultaneous activity would be the only obstruction. Conversely, links in the fixed private blocks recover all local shellings. If two pieces were active at one base facet, a codimension-two link in the prefix would be a disconnected union of two stars, contradicting shellability. The one-facet base specializes activity to whether the chosen facet occurs first.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:simplicial-composition; PartialCubes:papers/gluing/main.tex?#cor:prescribed-first-facet</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_path_shelling_conflict.html">Two-Path Shelling Compatibility Conflict</a></li><li><a href="examples/simplicial_shelling_composition_example.html">Tetrahedral-Boundary Shelling Composition</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-228" style="position:relative;">
+
+        <h3><a href="results/simplicial_attachment_relative_shellability_test.html" class="table-title-link">Attachment Test for Relative Shellability</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Attachment Test for Relative Shellability</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\Delta$ be a finite pure complex of nonnegative dimension in which every ridge belongs to at most two facets, and let $\Gamma$ be a nonempty facet-generated subcomplex. If $\Lambda$ is pure and shellable but no shelling starts at a chosen facet $\rho$, then $\Theta=(\Delta*\langle\rho\rangle)\cup(\Gamma*\Lambda)$ is shellable exactly when $\Gamma$ is shellable and $(\Delta,\Gamma)$ is relatively shellable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Shellings of $\Gamma$, $\Lambda$, and the relative pair concatenate to give sufficiency. Conversely, the links of $\rho$ and of any other facet of $\Lambda$ recover shellings of $\Delta$ and $\Gamma$. Because $\rho$ cannot start a shelling of $\Lambda$, every $\Gamma$ facet precedes each ridge-adjacent outside facet: otherwise a codimension-two prefix link is disconnected, with the missing mixed edge as its only possible bridge. Non-ridge-sharing consecutive facets commute, so all $\Gamma$ facets can be moved first; the remaining order is relative.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:shelling-attachment</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-229" style="position:relative;">
+
+        <h3><a href="results/corner_peeling_record_composition.html" class="table-title-link">Composition Law for Corner-Peeling Records</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Composition Law for Corner-Peeling Records</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For arbitrary Boolean pieces over a common section $D$, record a complete corner peeling by its induced order $\pi$ on $D$ and by the common vertices that still have a private neighbour when deleted. A global peeling has record $(\pi,S)$ exactly when every piece has a record $(\pi,S_i)$ with pairwise disjoint active sets, in which case $S=\bigcup_iS_i$. Thus the union peels exactly when compatible local records exist; ampleness is not required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restricting a global peeling to each coordinate section gives local peelings with one common order. Two pieces cannot both be active at a common vertex because their private directions would require an absent mixed square in its incident corner cube. Conversely, synchronize compatible local peelings at successive common vertices. Private deletions see only their local piece, and at a common deletion all private incident directions occur in at most one local state, whose corner cube certifies the global deletion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:composition</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_squares_common_edge_peeling_records.html">Two Squares Glued along a Common Edge</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-230" style="position:relative;">
+
+        <h3><a href="results/relative_shelling_corner_peeling_dictionary.html" class="table-title-link">Relative Shelling--Corner Peeling Dictionary</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Shelling--Corner Peeling Dictionary</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty ample families $K\subseteq A\subseteq Q_E$, $A$ corner-peels down to $K$ exactly when the signed-facet pair $(\mathcal S_E(A),\mathcal S_E(K))$ is relatively shellable. The orders correspond by reversal.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In a relative shelling, the ridge criterion for adding the signed facet of $v$ says that for every old vertex $b$, some old neighbour $u$ of $v$ begins a Hamming geodesic to $b$. Isometry of the ample old family makes the enlarged family isometric, hence ample, and $v$ is a corner. Induction gives a reversed peeling. Conversely, corner deletion preserves ampleness; shortest paths from the restored corner to every old vertex begin with a neighbour satisfying the ridge criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#prop:relative-shelling-dictionary</p></div>
 
         </div>
     </div>
