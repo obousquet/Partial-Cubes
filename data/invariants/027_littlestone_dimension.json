@@ -1,0 +1,14 @@
+{
+  "id": 27,
+  "short_name": "littlestone_dimension",
+  "name": "Littlestone Dimension",
+  "symbol": "\\operatorname{Ldim}",
+  "definition": "For a finite Boolean class $H\\subseteq\\{0,1\\}^X$, $\\operatorname{Ldim}(H)$ is the largest height of a complete binary decision tree whose internal nodes are labeled by coordinates of $X$ and for which every root-to-leaf answer sequence is realized by a concept of $H$.",
+  "status": "established",
+  "codomain": "Nonnegative integers for nonempty finite classes",
+  "normalization": "A nonempty class has Littlestone dimension zero exactly when it is a singleton; the empty class is conventionally assigned dimension $-1$ when needed.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "This adaptive shattering dimension differs from VC dimension, which uses a fixed coordinate set.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#sec:littlestone"
+}

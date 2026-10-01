@@ -1,15 +1,18 @@
 {
   "id": 1,
-  "short_name": "maximum_subset_ample",
-  "name": "Maximum Classes Are Ample",
+  "short_name": "maximum_strict_subset_ample",
+  "name": "Maximum Classes Are Strictly Ample",
   "subject_id": "#classes/maximum",
   "object_id": "#classes/ample",
-  "relation_type": "inclusion",
+  "relation_type": "strict_inclusion",
   "status": "established",
   "scope": "Finite set families.",
-  "statement": "Every maximum class is ample.",
+  "statement": "Every maximum class is ample, and the containment is strict.",
   "proof": "Let $H\\subseteq2^X$ have VC dimension $d$. If $H$ is maximum, then $|H|=\\sum_{i=0}^{d}\\binom{|X|}{i}$. Every shattered set has size at most $d$, so $|\\operatorname{str}(H)|\\leq\\sum_{i=0}^{d}\\binom{|X|}{i}$. The sandwich inequality $|H|\\leq|\\operatorname{str}(H)|$ therefore holds with equality, which is equivalent to ampleness.",
   "references": "\\cite{BandeltCDK06}",
   "proof_source": "PartialCubes:papers/survey/main.tex#sec:vcsetfam",
-  "comments": "The survey also states that the reverse inclusion fails; strictness will be promoted when a witness record is migrated."
+  "comments": "The two-word witness records strictness on its displayed two-coordinate ground set.",
+  "witness_ids": [
+    "#examples/vc_implication_h1"
+  ]
 }

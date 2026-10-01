@@ -1,0 +1,16 @@
+{
+  "id": 223,
+  "short_name": "vc_saturated_strict_subset_shattering_saturated",
+  "name": "VC-Saturated Classes Are Strictly Shattering-Saturated",
+  "subject_id": "#classes/vc_saturated",
+  "object_id": "#classes/shattering_saturated",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite Boolean concept classes.",
+  "statement": "Every VC-saturated class is shattering-saturated, and the containment is strict.",
+  "witness_ids": [
+    "#examples/vc_implication_h1"
+  ],
+  "proof": "If adding a concept raises VC dimension, it necessarily adds a shattered set. The class $H_1$ is shattering-saturated but not VC-saturated.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#thm:vc-implications"
+}

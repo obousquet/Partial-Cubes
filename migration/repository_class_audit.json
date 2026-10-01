@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "kind": "repository_class_discovery_audit",
+  "reviewed_at": "2026-10-01",
+  "purpose": "Track named class identities found outside the original survey and minor-atlas crosswalk, including candidates that should not enter the main unpointed class graph.",
+  "repositories": [
+    {
+      "name": "PartialCubes",
+      "scope": "Active paper workspaces listed in migration/config.json.",
+      "status": "active_review"
+    },
+    {
+      "name": "YangDim",
+      "scope": "Spread-ample and main Yang-complex sections.",
+      "status": "active_review"
+    },
+    {
+      "name": "CompressionSchemes",
+      "scope": "Current partitionable Yang-complex manuscript plus selected drafts.",
+      "status": "active_review"
+    },
+    {
+      "name": "ResearchWork",
+      "scope": "Broad literature and notes; search results require source-status triage.",
+      "status": "backlog"
+    }
+  ],
+  "candidates": [
+    {
+      "short_name": "vc_saturated",
+      "repository": "PartialCubes",
+      "source": "papers/vc-littlestone/main.tex#sec:vc-classes",
+      "status": "promoted",
+      "reason": "Explicit definition, implication theorem, closure theorem, and witnesses."
+    },
+    {
+      "short_name": "shattering_saturated",
+      "repository": "PartialCubes",
+      "source": "papers/vc-littlestone/main.tex#sec:vc-classes",
+      "status": "promoted",
+      "reason": "Explicit definition, implication theorem, closure theorem, and witnesses."
+    },
+    {
+      "short_name": "littlestone_maximal",
+      "repository": "PartialCubes",
+      "source": "papers/vc-littlestone/main.tex#sec:bhaskar-walker",
+      "status": "promoted",
+      "reason": "Explicit parameterized class definition and separation witnesses."
+    },
+    {
+      "short_name": "thicket_maximum",
+      "repository": "PartialCubes",
+      "source": "papers/vc-littlestone/main.tex#sec:bhaskar-walker",
+      "status": "promoted",
+      "reason": "Explicit horizon-parameterized class definition and separation witnesses."
+    },
+    {
+      "short_name": "periphery_free_partial_cubes",
+      "repository": "PartialCubes",
+      "source": "papers/cover-recursive/main.tex",
+      "status": "promote_next",
+      "reason": "Explicit unpointed class used as an obstruction ambient."
+    },
+    {
+      "short_name": "root_avoiding_peripheral",
+      "repository": "PartialCubes",
+      "source": "papers/cover-recursive/main.tex#def:rooted",
+      "status": "excluded_different_universe",
+      "reason": "A class of pointed partial cubes; the current hierarchy graph has unpointed objects."
+    },
+    {
+      "short_name": "cubical_face_prime",
+      "repository": "PartialCubes",
+      "source": "forbidden_pc_minor_campaign/obstruction_reductions.tex#def:cubical-face-prime",
+      "status": "pending_source_review",
+      "reason": "Explicit class, but located in a campaign workspace outside the configured active-paper corpus."
+    },
+    {
+      "short_name": "diameter_optimal_ample",
+      "repository": "YangDim",
+      "source": "sections/spread_ample_classes/03_spread_definition.tex#def:spread-global-objectives",
+      "status": "promote_next",
+      "reason": "Explicit comparison class for spread ampleness."
+    },
+    {
+      "short_name": "maximum_degree_optimal_ample",
+      "repository": "YangDim",
+      "source": "sections/spread_ample_classes/03_spread_definition.tex#def:spread-global-objectives",
+      "status": "promote_next",
+      "reason": "Explicit comparison class with proved incomparability data."
+    },
+    {
+      "short_name": "weakly_spread_ample",
+      "repository": "YangDim",
+      "source": "sections/spread_ample_classes/03_spread_definition.tex#def:spread-ample",
+      "status": "promote_next",
+      "reason": "Explicit hereditary comparison class; relation to spread ample remains partly open."
+    },
+    {
+      "short_name": "pc_degree_optimal_ample",
+      "repository": "YangDim",
+      "source": "sections/spread_ample_classes/03_spread_definition.tex#def:spread-degree-comparison",
+      "status": "promote_next",
+      "reason": "Explicit hereditary degree-optimal class and conjectural equivalent of spread ampleness."
+    },
+    {
+      "short_name": "matroid_concept_classes",
+      "repository": "YangDim",
+      "source": "sections/main/05_algebraic_results.tex#def:matroid_class",
+      "status": "pending_relation_review",
+      "reason": "Named family; its correct ambient and established hierarchy relations still need review."
+    },
+    {
+      "short_name": "uniform_oriented_matroid_fibers",
+      "repository": "CompressionSchemes",
+      "source": "partitionable_yang_complexes.tex#def:uniform-oriented-matroid-fiber-class",
+      "status": "promote_next",
+      "reason": "Explicit pc-minor-closed class with an equivalent conditioning characterization and established hierarchy inclusions."
+    },
+    {
+      "short_name": "tree_product_amalgam_maximum_closure",
+      "repository": "CompressionSchemes",
+      "source": "partitionable_yang_complexes.tex#cor:maximum-class-tree-amalgams",
+      "status": "promote_next",
+      "reason": "Explicit smallest closure of maximum classes under products and one-point amalgams."
+    },
+    {
+      "short_name": "pseudogeometric_maximum",
+      "repository": "CompressionSchemes",
+      "source": "drafts/round663_track4_multifixed_recursion.tex",
+      "status": "pending_source_review",
+      "reason": "Defined in a draft; confirm stable definition in the current manuscript before promotion."
+    },
+    {
+      "short_name": "maximum_flag_fibers",
+      "repository": "CompressionSchemes",
+      "source": "drafts/round663_track4_multifixed_recursion.tex",
+      "status": "pending_source_review",
+      "reason": "Draft-only named class from a later-refuted characterization route."
+    }
+  ],
+  "ownership": {
+    "database": "Canonical class identities, definitions, relations, closure facts, witnesses, and concise proofs after promotion.",
+    "latex": "Full manuscript exposition, proof narratives, notation, figures, and open questions.",
+    "policy": "Discovery does not modify sibling repositories. A candidate is promoted only after its definition and graph relations are checked against an active or explicitly accepted source."
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": 222,
+  "short_name": "maximum_strict_subset_vc_saturated",
+  "name": "Maximum Classes Are Strictly VC-Saturated",
+  "subject_id": "#classes/maximum",
+  "object_id": "#classes/vc_saturated",
+  "relation_type": "strict_inclusion",
+  "status": "established",
+  "scope": "Finite Boolean concept classes.",
+  "statement": "Every maximum class is VC-saturated, and the containment is strict.",
+  "witness_ids": [
+    "#examples/vc_implication_h2"
+  ],
+  "proof": "Adding a concept to a maximum class without increasing its VC dimension would exceed the Sauer bound. The class $H_2$ is VC-saturated of VC dimension two but has ten concepts rather than the maximum eleven.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#thm:vc-implications"
+}

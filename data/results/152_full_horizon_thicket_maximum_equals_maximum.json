@@ -1,0 +1,18 @@
+{
+  "id": 152,
+  "short_name": "full_horizon_thicket_maximum_equals_maximum",
+  "name": "Full-Horizon Thicket Equality Is the Maximum-Class Equality",
+  "class_ids": [
+    "#classes/thicket_maximum",
+    "#classes/maximum"
+  ],
+  "invariant_ids": [
+    "#invariants/littlestone_dimension",
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "implication",
+  "statement": "If $H\\subseteq\\{0,1\\}^X$, $|X|=n$, and $\\operatorname{Ldim}(H)\\le d$, then $H$ is $(n,d)$-thicket-maximum exactly when $|H|=\\sum_{i=0}^d\\binom{n}{i}$; in this case $H$ is a maximum class and $\\operatorname{Ldim}(H)=d$.",
+  "status": "established",
+  "proof": "Querying every coordinate in a fixed order distinguishes all concepts, so $\\rho_H(n)=|H|$. Equality with the thicket Sauer bound is therefore exactly the ordinary Sauer cardinality equality. The sequential comparison theorem then forces Littlestone dimension $d$.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#sec:bhaskar-walker"
+}

@@ -2,7 +2,7 @@
   "version": 1,
   "kind": "canonical_class_id_allocation",
   "batch": "001_canonical_crosswalk",
-  "count": 94,
+  "count": 98,
   "allocation_rule": "partial_cubes and bipartite_graphs first, followed by canonical short name; IDs are reserved and must not be reused",
   "classes": [
     {
@@ -1323,6 +1323,62 @@
       "definition_state": "primary_characterization_promoted",
       "promotion_state": "database",
       "database_record": "#classes/spread_ample"
+    },
+    {
+      "allocated_id": 95,
+      "short_name": "vc_saturated",
+      "name": "VC-Saturated Classes",
+      "source_occurrence_ids": [
+        "vc-littlestone:vc_saturated"
+      ],
+      "parameterized": false,
+      "parameters": null,
+      "identity_state": "reviewed",
+      "definition_state": "primary_characterization_promoted",
+      "promotion_state": "database",
+      "database_record": "#classes/vc_saturated"
+    },
+    {
+      "allocated_id": 96,
+      "short_name": "shattering_saturated",
+      "name": "Shattering-Saturated Classes",
+      "source_occurrence_ids": [
+        "vc-littlestone:shattering_saturated"
+      ],
+      "parameterized": false,
+      "parameters": null,
+      "identity_state": "reviewed",
+      "definition_state": "primary_characterization_promoted",
+      "promotion_state": "database",
+      "database_record": "#classes/shattering_saturated"
+    },
+    {
+      "allocated_id": 97,
+      "short_name": "littlestone_maximal",
+      "name": "Littlestone-Maximal Classes",
+      "source_occurrence_ids": [
+        "vc-littlestone:littlestone_maximal"
+      ],
+      "parameterized": true,
+      "parameters": "Dimension d = Ldim(H).",
+      "identity_state": "reviewed",
+      "definition_state": "primary_characterization_promoted",
+      "promotion_state": "database",
+      "database_record": "#classes/littlestone_maximal"
+    },
+    {
+      "allocated_id": 98,
+      "short_name": "thicket_maximum",
+      "name": "Fixed-Horizon Thicket-Maximum Classes",
+      "source_occurrence_ids": [
+        "vc-littlestone:thicket_maximum"
+      ],
+      "parameterized": true,
+      "parameters": "Horizon t and Littlestone bound d, under the hypothesis Ldim(H) <= d.",
+      "identity_state": "reviewed",
+      "definition_state": "primary_characterization_promoted",
+      "promotion_state": "database",
+      "database_record": "#classes/thicket_maximum"
     }
   ]
 }

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Inclusions, equalities, non-containments, incomparabilities, and open comparisons - Partial Cubes</title>
+        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Inclusions, equalities, non-containments, incomparabilities, and open comparisons - Partial Cubes</h1>
+            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,22 +74,29 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="relations/index.html">&larr; Back to Relations Table</a></div>
-    <div class="table-card" id="math-1" style="position:relative;">
+            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
+    <div class="table-card" id="math-27" style="position:relative;">
 
-        <h3><a href="relations/maximum_subset_ample.html" class="table-title-link">Maximum Classes Are Ample</a></h3>
+        <h3><a href="invariants/littlestone_dimension.html" class="table-title-link">Littlestone Dimension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Maximum Classes Are Ample</p>
-<p><strong>Subject: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
-<p><strong>Object: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Relation:</strong> Inclusion</p>
+        <p><strong>Name: </strong>Littlestone Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\operatorname{Ldim}">
+            \[\operatorname{Ldim}\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite Boolean class $H\subseteq\{0,1\}^X$, $\operatorname{Ldim}(H)$ is the largest height of a complete binary decision tree whose internal nodes are labeled by coordinates of $X$ and for which every root-to-leaf answer sequence is realized by a concept of $H$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Scope:</strong><div class="text-field"><p>Finite set families.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Every maximum class is ample.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Let $H\subseteq2^X$ have VC dimension $d$. If $H$ is maximum, then $|H|=\sum_{i=0}^{d}\binom{|X|}{i}$. Every shattered set has size at most $d$, so $|\operatorname{str}(H)|\leq\sum_{i=0}^{d}\binom{|X|}{i}$. The sandwich inequality $|H|\leq|\operatorname{str}(H)|$ therefore holds with equality, which is equivalent to ampleness.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltCDK06">[BandeltCDK06]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
-<strong>Comments:</strong><div class="text-field"><p>The survey also states that the reverse inclusion fails; strictness will be promoted when a witness record is migrated.</p></div>
+<p><strong>Codomain: </strong>Nonnegative integers for nonempty finite classes</p>
+<strong>Normalization:</strong><div class="text-field"><p>A nonempty class has Littlestone dimension zero exactly when it is a singleton; the empty class is conventionally assigned dimension $-1$ when needed.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>This adaptive shattering dimension differs from VC dimension, which uses a fixed coordinate set.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:littlestone</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/full_horizon_thicket_maximum_equals_maximum.html'>Full-Horizon Thicket Equality Is the Maximum-Class Equality</a></li></ul></p></div>
 
         </div>
     </div>

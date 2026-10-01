@@ -1247,6 +1247,147 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-54" style="position:relative;">
+
+        <h3><a href="examples/vc_implication_h1.html" class="table-title-link">Two-Word VC Implication Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Word VC Implication Witness</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_1">
+            \[H_1\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$H_1=\{00,01\}\subseteq\{0,1\}^2$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is ample and shattering-saturated, but neither maximum nor VC-saturated.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-implications</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-55" style="position:relative;">
+
+        <h3><a href="examples/vc_implication_h2.html" class="table-title-link">Ten-Word VC-Saturated Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ten-Word VC-Saturated Witness</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_2">
+            \[H_2\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$H_2=\{0000,0001,0010,0011,0100,0101,0110,1011,1101,1110\}\subseteq\{0,1\}^4$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It has VC dimension two, is VC-saturated and shattering-saturated, and is neither ample nor maximum. Its last-coordinate one-section is not shattering-saturated.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#eq:vc-saturated-witness; PartialCubes:papers/vc-littlestone/main.tex?#app:closure-witnesses</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-56" style="position:relative;">
+
+        <h3><a href="examples/singleton_thicket_family.html" class="table-title-link">Singleton Thicket-Growth Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Singleton Thicket-Growth Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_t">
+            \[H_t\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$H_t=\{\varnothing,\{1\},\ldots,\{t\}\}\subseteq2^{[t]\cup\{z\}}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Integer horizon $t\ge1$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is $(t,1)$-thicket-maximum but is not Littlestone-maximal, since adjoining $\{z\}$ preserves Littlestone dimension one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:bhaskar-walker</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-57" style="position:relative;">
+
+        <h3><a href="examples/littlestone_maximal_triple.html" class="table-title-link">Three-Word Littlestone-Maximal Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Three-Word Littlestone-Maximal Witness</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H&#x27;">
+            \[H&#x27;\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$H'=\{000,011,100\}\subseteq\{0,1\}^3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is Littlestone-maximal of dimension one, but is not $(3,1)$-thicket-maximum because its thicket shatter value is three rather than four.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:bhaskar-walker</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-58" style="position:relative;">
+
+        <h3><a href="examples/vc_saturated_projection_witness.html" class="table-title-link">VC-Saturated Projection Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC-Saturated Projection Witness</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_{\mathrm{pv}}">
+            \[H_{\mathrm{pv}}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$\{00000,00001,00101,01001,01101,01111,10101,10110,10111,11001,11010,11011,11101,11111\}\subseteq\{0,1\}^5$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is VC-saturated. Deleting the middle coordinate yields a VC-dimension-two class that remains of VC dimension two after adding $1000$, so the projection is not VC-saturated.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#app:closure-witnesses</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-59" style="position:relative;">
+
+        <h3><a href="examples/shattering_saturated_projection_witness.html" class="table-title-link">Shattering-Saturated Projection Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering-Saturated Projection Witness</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="H_{\mathrm{ps}}">
+            \[H_{\mathrm{ps}}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$\{00000,00001,00010,00011,00100,00101,00110,00111,01000,01001,01010,01011,01100,01101,01111,10101,10110,10111,11001,11010,11011,11101,11111\}\subseteq\{0,1\}^5$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is shattering-saturated. Deleting its fourth coordinate gives a class to which $1110$ can be added without changing the shattering complex.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#app:closure-witnesses</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-60" style="position:relative;">
+
+        <h3><a href="examples/maximum_conditioning_witness.html" class="table-title-link">Maximum Conditioning Witness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Conditioning Witness</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>$H=\{000,001,010,101\}\subseteq\{0,1\}^3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is maximum, hence VC-saturated. Conditioning the last coordinate to zero gives $\{00,01\}$, which is neither maximum nor VC-saturated.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#app:closure-witnesses</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

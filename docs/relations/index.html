@@ -98,25 +98,6 @@
             </div>
             <div class="table-grid">
 
-    <div class="table-card" id="math-1" style="position:relative;">
-
-        <h3><a href="relations/maximum_subset_ample.html" class="table-title-link">Maximum Classes Are Ample</a></h3>
-        <div class="table-details">
-        <p><strong>Name: </strong>Maximum Classes Are Ample</p>
-<p><strong>Subject: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
-<p><strong>Object: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Relation:</strong> Inclusion</p>
-<p><strong>Status:</strong> Established</p>
-<strong>Scope:</strong><div class="text-field"><p>Finite set families.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Every maximum class is ample.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Let $H\subseteq2^X$ have VC dimension $d$. If $H$ is maximum, then $|H|=\sum_{i=0}^{d}\binom{|X|}{i}$. Every shattered set has size at most $d$, so $|\operatorname{str}(H)|\leq\sum_{i=0}^{d}\binom{|X|}{i}$. The sandwich inequality $|H|\leq|\operatorname{str}(H)|$ therefore holds with equality, which is equivalent to ampleness.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltCDK06">[BandeltCDK06]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
-<strong>Comments:</strong><div class="text-field"><p>The survey also states that the reverse inclusion fails; strictness will be promoted when a witness record is migrated.</p></div>
-
-        </div>
-    </div>
-
     <div class="table-card" id="math-2" style="position:relative;">
 
         <h3><a href="relations/daisy_cubes_subset_partial_cubes.html" class="table-title-link">Daisy Cubes Are Partial Cubes</a></h3>
@@ -3921,6 +3902,116 @@
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vertex_deleted_three_cube.html">Vertex-Deleted Three-Cube</a></li></ul></p>
 <strong>Proof:</strong><div class="text-field"><p>Every pc-minor of a cube is a cube, whose antipodal vertices realize the full active-coordinate diameter. The vertex-deleted cube $Q_3^-$ is spread ample but is not a hypercube.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/spread_ample_classes/04_examples.tex?#prop:spread-q3-minus</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-222" style="position:relative;">
+
+        <h3><a href="relations/maximum_strict_subset_vc_saturated.html" class="table-title-link">Maximum Classes Are Strictly VC-Saturated</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes Are Strictly VC-Saturated</p>
+<p><strong>Subject: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Object: </strong><a href="classes/vc_saturated.html">VC-Saturated Classes</a></p>
+<p><strong>Relation:</strong> Strict Inclusion</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite Boolean concept classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Every maximum class is VC-saturated, and the containment is strict.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vc_implication_h2.html">Ten-Word VC-Saturated Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Adding a concept to a maximum class without increasing its VC dimension would exceed the Sauer bound. The class $H_2$ is VC-saturated of VC dimension two but has ten concepts rather than the maximum eleven.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-implications</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-223" style="position:relative;">
+
+        <h3><a href="relations/vc_saturated_strict_subset_shattering_saturated.html" class="table-title-link">VC-Saturated Classes Are Strictly Shattering-Saturated</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC-Saturated Classes Are Strictly Shattering-Saturated</p>
+<p><strong>Subject: </strong><a href="classes/vc_saturated.html">VC-Saturated Classes</a></p>
+<p><strong>Object: </strong><a href="classes/shattering_saturated.html">Shattering-Saturated Classes</a></p>
+<p><strong>Relation:</strong> Strict Inclusion</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite Boolean concept classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Every VC-saturated class is shattering-saturated, and the containment is strict.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vc_implication_h1.html">Two-Word VC Implication Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>If adding a concept raises VC dimension, it necessarily adds a shattered set. The class $H_1$ is shattering-saturated but not VC-saturated.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-implications</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-224" style="position:relative;">
+
+        <h3><a href="relations/ample_strict_subset_shattering_saturated.html" class="table-title-link">Ample Classes Are Strictly Shattering-Saturated</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Classes Are Strictly Shattering-Saturated</p>
+<p><strong>Subject: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Object: </strong><a href="classes/shattering_saturated.html">Shattering-Saturated Classes</a></p>
+<p><strong>Relation:</strong> Strict Inclusion</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite Boolean concept classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Every ample class is shattering-saturated, and the containment is strict.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vc_implication_h2.html">Ten-Word VC-Saturated Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>For an ample class, the upper Sandwich inequality forces the addition of one concept to enlarge the shattering complex. The class $H_2$ is shattering-saturated but not ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-implications</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-225" style="position:relative;">
+
+        <h3><a href="relations/vc_saturated_incomparable_ample.html" class="table-title-link">VC-Saturated and Ample Classes Are Incomparable</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC-Saturated and Ample Classes Are Incomparable</p>
+<p><strong>Subject: </strong><a href="classes/vc_saturated.html">VC-Saturated Classes</a></p>
+<p><strong>Object: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Relation:</strong> Incomparable</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite Boolean concept classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Neither VC-saturated classes nor ample classes contain the other.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vc_implication_h1.html">Two-Word VC Implication Witness</a></li><li><a href="examples/vc_implication_h2.html">Ten-Word VC-Saturated Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>$H_1$ is ample but not VC-saturated, while $H_2$ is VC-saturated but not ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-implications</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-226" style="position:relative;">
+
+        <h3><a href="relations/thicket_maximum_incomparable_littlestone_maximal.html" class="table-title-link">Fixed-Horizon Thicket Maximum and Littlestone Maximality Are Incomparable</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fixed-Horizon Thicket Maximum and Littlestone Maximality Are Incomparable</p>
+<p><strong>Subject: </strong><a href="classes/thicket_maximum.html">Fixed-Horizon Thicket-Maximum Classes</a></p>
+<p><strong>Object: </strong><a href="classes/littlestone_maximal.html">Littlestone-Maximal Classes</a></p>
+<p><strong>Relation:</strong> Incomparable</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>At fixed positive horizon and Littlestone bound; the displayed reverse witness uses $(t,d)=(3,1)$.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Attaining maximum thicket growth at one fixed horizon neither implies nor follows from inclusion-maximality at the same Littlestone dimension.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/singleton_thicket_family.html">Singleton Thicket-Growth Family</a></li><li><a href="examples/littlestone_maximal_triple.html">Three-Word Littlestone-Maximal Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>$H_t$ attains the $(t,1)$ thicket bound but accepts an extra concept without raising Littlestone dimension. Conversely, $\{000,011,100\}$ is Littlestone-maximal of dimension one but has only three leaves at horizon three, below the bound four.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:bhaskar-walker</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-1" style="position:relative;">
+
+        <h3><a href="relations/maximum_strict_subset_ample.html" class="table-title-link">Maximum Classes Are Strictly Ample</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Classes Are Strictly Ample</p>
+<p><strong>Subject: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Object: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Relation:</strong> Strict Inclusion</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite set families.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Every maximum class is ample, and the containment is strict.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vc_implication_h1.html">Two-Word VC Implication Witness</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Let $H\subseteq2^X$ have VC dimension $d$. If $H$ is maximum, then $|H|=\sum_{i=0}^{d}\binom{|X|}{i}$. Every shattered set has size at most $d$, so $|\operatorname{str}(H)|\leq\sum_{i=0}^{d}\binom{|X|}{i}$. The sandwich inequality $|H|\leq|\operatorname{str}(H)|$ therefore holds with equality, which is equivalent to ampleness.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltCDK06">[BandeltCDK06]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:vcsetfam</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The two-word witness records strictness on its displayed two-coordinate ground set.</p></div>
 
         </div>
     </div>

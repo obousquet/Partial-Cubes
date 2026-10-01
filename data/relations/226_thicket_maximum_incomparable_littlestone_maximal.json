@@ -1,0 +1,17 @@
+{
+  "id": 226,
+  "short_name": "thicket_maximum_incomparable_littlestone_maximal",
+  "name": "Fixed-Horizon Thicket Maximum and Littlestone Maximality Are Incomparable",
+  "subject_id": "#classes/thicket_maximum",
+  "object_id": "#classes/littlestone_maximal",
+  "relation_type": "incomparable",
+  "status": "established",
+  "scope": "At fixed positive horizon and Littlestone bound; the displayed reverse witness uses $(t,d)=(3,1)$.",
+  "statement": "Attaining maximum thicket growth at one fixed horizon neither implies nor follows from inclusion-maximality at the same Littlestone dimension.",
+  "witness_ids": [
+    "#examples/singleton_thicket_family",
+    "#examples/littlestone_maximal_triple"
+  ],
+  "proof": "$H_t$ attains the $(t,1)$ thicket bound but accepts an extra concept without raising Littlestone dimension. Conversely, $\\{000,011,100\\}$ is Littlestone-maximal of dimension one but has only three leaves at horizon three, below the bound four.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#sec:bhaskar-walker"
+}
