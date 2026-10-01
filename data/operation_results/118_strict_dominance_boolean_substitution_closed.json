@@ -1,0 +1,13 @@
+{
+  "id": 118,
+  "short_name": "strict_dominance_boolean_substitution_closed",
+  "name": "Strict-Dominance Classes Are Closed Under Boolean Substitution",
+  "class_id": "#classes/strict_dominance",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "closed_under",
+  "status": "established",
+  "statement": "If the nonempty outer class $C$ and test $T$ both have $\\tau=0$, then every nonempty Boolean substitution $C\\circ_iT$ has $\\tau=0$, including equal outer sections and constant tests.",
+  "proof": "For a proper nonconstant test and unequal outer sections, the exact defect law gives $d_{\\rm dom}(C\\circ_iT)=\\max\\{d_{\\rm dom}(C),d_{\\rm dom}(T)\\}=0$. Equal sections reduce to a product with a cube; an empty or full test reduces to an outer section times a cube. Minor and product closure handle these boundary cases.",
+  "references": "\\cite{IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#thm:zero-substitution"
+}

@@ -1,0 +1,23 @@
+{
+  "id": 92,
+  "short_name": "zero_ratio_geometric_substitution",
+  "name": "Geometric Substitution from Zero Coefficient Ratio",
+  "class_ids": [
+    "#classes/strict_dominance",
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coordinate_interval_capacity",
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "implication",
+  "statement": "If $\\tau(C)=0$ and the test $T$ is convex-realizable, then every nonempty substitution $C\\circ_iT$ is convex-realizable, including empty and full tests.",
+  "status": "established",
+  "proof": "The interval comparison gives $W_i(C)=+\\infty$. A single outer cone can therefore absorb the finitely many control ratios required by separator cones for $T$ and its complement. Coupling two copies of the outer height with the inner control inequalities yields an open convex projection whose sign patterns are exactly the substitution. Constant tests reduce to a section times a cube.",
+  "references": "\\cite{GeometricIntervalCriterion,IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#cor:zero-geometric-substitution",
+  "comments": "This does not prove that all realizable ample classes are closed under substitution."
+}

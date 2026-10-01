@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "batch_id": "029_interval_substitution",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote coordinate interval capacity, the strict-dominance class, dominance defect, Boolean substitution, their exact operation laws, the sharp maximum-class calibration, certificate completion, and the zero-ratio substitution theorem from the coefficient-topology manuscript and its exact evidence packets.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#thm:interval-comparison",
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#prop:interval-laws",
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#prop:interval-maximum",
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#cor:zero-geometric-substitution",
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#lem:strict-certificate-completion",
+    "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#thm:zero-substitution",
+    "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-zero",
+    "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-laws",
+    "PartialCubes:papers/coefficient-topology/duality.tex#cor:ratio-complement"
+  ],
+  "source_packets": [
+    {
+      "id": "coordinate-substitution-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/coordinate_substitution.tex",
+      "sha256": "6b22e8aee0c585e885a9a2e5f5f7fb1069f8ed1016ed3e2e32f2fc13a50050b3"
+    },
+    {
+      "id": "coordinate-interval-report",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/coordinate_interval_verification.json",
+      "sha256": "013e97f53f5d17724854c00ec1b223974af75e85ca7afb6160fc3431b5435823"
+    },
+    {
+      "id": "coordinate-interval-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/verify_coordinate_intervals.py",
+      "sha256": "18eb839e798ff46ff69588ee055fa9771a809c3bf739dae00eb3fa11e43b263d"
+    },
+    {
+      "id": "dominance-substitution-report",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/dominance_substitution_verification.json",
+      "sha256": "bf9044a8701bb363dadfd61130a1c907febf1fcd20fd7f37620c12b9fc7f1da0"
+    },
+    {
+      "id": "dominance-substitution-replay",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/dominance_substitution_replay.json",
+      "sha256": "db801a02dc5a2414f02a22ea7fcc976086a875bc2b33badb5e7c4a8bd02a88db"
+    },
+    {
+      "id": "dominance-substitution-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/verify_dominance_substitution.py",
+      "sha256": "359c9234f22e54137188e7392fa3b5ad90d34e1220e193a602830c1543df4756"
+    },
+    {
+      "id": "interval-substitution-integration-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/interval_substitution_integration_verification.json",
+      "sha256": "6e7cb7636f17788bab736bb2f744439b4e1f7e23de2d7cd8694ce83accf71c5a"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized class, invariant, operation, closure, equivalence, theorem, proof-summary, exact value, bibliography, and replay records in this batch. The LaTeX artifacts retain the full geometric construction, elimination proof, endpoint calculations, coupling discussion, manuscript integration, attribution, and narrative context.",
+    "recoverability": "Four exact source reports are copied byte-for-byte into database assets; this manifest retains the theory, source-verifier, report, replay, integration, promoted-record, and database-verifier hashes; the frozen source snapshot remains recoverable.",
+    "mutation": "No source file in PartialCubes or any sibling LaTeX repository was modified by this batch."
+  },
+  "verification_packets": [
+    {
+      "id": "coordinate-interval-source-report",
+      "path": "data/examples/assets/coordinate_interval_source.json",
+      "sha256": "013e97f53f5d17724854c00ec1b223974af75e85ca7afb6160fc3431b5435823",
+      "assertions": "Retains all exact rational centers, coordinate endpoints, row checks, missing-pattern data, dependency fingerprints, and scope notes byte-for-byte."
+    },
+    {
+      "id": "dominance-substitution-source-report",
+      "path": "data/examples/assets/dominance_substitution_source.json",
+      "sha256": "bf9044a8701bb363dadfd61130a1c907febf1fcd20fd7f37620c12b9fc7f1da0",
+      "assertions": "Retains five selected Boolean-substitution constructions, exact witnesses, minimal rows, comparisons, and source fingerprints byte-for-byte."
+    },
+    {
+      "id": "dominance-substitution-source-replay",
+      "path": "data/examples/assets/dominance_substitution_replay_source.json",
+      "sha256": "db801a02dc5a2414f02a22ea7fcc976086a875bc2b33badb5e7c4a8bd02a88db",
+      "assertions": "Retains the standalone source replay verdict and exact aggregate counts byte-for-byte."
+    },
+    {
+      "id": "interval-substitution-integration-report",
+      "path": "data/examples/assets/interval_substitution_integration_source.json",
+      "sha256": "6e7cb7636f17788bab736bb2f744439b4e1f7e23de2d7cd8694ce83accf71c5a",
+      "assertions": "Retains manuscript integration counts, dependency hashes, and prior-label preservation checks byte-for-byte."
+    },
+    {
+      "id": "database-interval-substitution-verifier",
+      "path": "scripts/verify_interval_substitution.py",
+      "sha256": "004cd87ee43106c9a572ed556778eb788148149e7597b2ceadf1490fd98c0af1",
+      "assertions": "Independently checks source-asset hashes, all exact rational center and endpoint inequalities, five substitution constructions and extensions, standalone replay agreement, and manuscript integration counts."
+    },
+    {
+      "id": "interval-substitution-database-replay",
+      "path": "data/examples/assets/interval_substitution_verification.json",
+      "sha256": "1645a7958dca7abba50a7a51858dab8202ad6d134290845263f74d82b53be1c2",
+      "assertions": "Passed 16 centers, 160 endpoints, 1,600 endpoint-row checks, 10 missing patterns, five substitution cases, 7,500 output or extended comparisons, standalone replay agreement, and 212 preserved labels."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/021_strict_dominance_equivalence.json",
+      "sha256": "5d57edc6dd37775ab3fc033db9e5d8a27b3aac18ab00bbfc7295c997eb1bbbe0"
+    },
+    {
+      "path": "data/characterizations/082_zero_coefficient_ratio.json",
+      "sha256": "16d640a151717a37ff146f30b4e88023b0eb42ce3763b0d1854a664fed8de98b"
+    },
+    {
+      "path": "data/characterizations/083_strict_term_dominance_certificate.json",
+      "sha256": "d3fb11f2dc54b104a0111cd255a218adc96bd754994f901306ea86c8358ae56f"
+    },
+    {
+      "path": "data/classes/092_strict_dominance.json",
+      "sha256": "eac04c6c8e93367b48c4a8b050fb2c426650ba55fe9277f2e30e14139f1598b0"
+    },
+    {
+      "path": "data/examples/assets/coordinate_interval_source.json",
+      "sha256": "013e97f53f5d17724854c00ec1b223974af75e85ca7afb6160fc3431b5435823"
+    },
+    {
+      "path": "data/examples/assets/dominance_substitution_replay_source.json",
+      "sha256": "db801a02dc5a2414f02a22ea7fcc976086a875bc2b33badb5e7c4a8bd02a88db"
+    },
+    {
+      "path": "data/examples/assets/dominance_substitution_source.json",
+      "sha256": "bf9044a8701bb363dadfd61130a1c907febf1fcd20fd7f37620c12b9fc7f1da0"
+    },
+    {
+      "path": "data/examples/assets/interval_substitution_integration_source.json",
+      "sha256": "6e7cb7636f17788bab736bb2f744439b4e1f7e23de2d7cd8694ce83accf71c5a"
+    },
+    {
+      "path": "data/examples/assets/interval_substitution_verification.json",
+      "sha256": "1645a7958dca7abba50a7a51858dab8202ad6d134290845263f74d82b53be1c2"
+    },
+    {
+      "path": "data/invariant_values/087_spectral_maximum_coordinate_interval_capacity.json",
+      "sha256": "190489d2b40188d6ffc696762bf346943dcfafa2b25fa7d21ca598ee7a8f2c6a"
+    },
+    {
+      "path": "data/invariant_values/088_spectral_maximum_dominance_defect.json",
+      "sha256": "a3b3bc2ad7dc3b450b5bfca10e53c5d2d5be881a91fff89e4e83c035c4f62581"
+    },
+    {
+      "path": "data/invariant_values/089_strict_dominance_coefficient_ratio.json",
+      "sha256": "ceb4ea361c65a8127c6de39c14a0228a150a6f19ad40cbc2c0a0b80183319c32"
+    },
+    {
+      "path": "data/invariant_values/090_strict_dominance_defect.json",
+      "sha256": "81abe175ce79dafb3d3d66fbab79d25628bca5ae763b7ca9f39fb3e4944c2dea"
+    },
+    {
+      "path": "data/invariant_values/091_strict_dominance_coordinate_interval_capacity.json",
+      "sha256": "e577cf7c575638babb95533f150263c324d6e105fa94c5c8c664403cd50271e3"
+    },
+    {
+      "path": "data/invariants/019_coordinate_interval_capacity.json",
+      "sha256": "88a339c50c4da7957979e042c53e415495484a9542f7caf951de49e81455acdb"
+    },
+    {
+      "path": "data/invariants/020_dominance_defect.json",
+      "sha256": "909955e4c75077dab33dfb1692310a3adce6dc37e8df86982161939d5f92f861"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "0c752e34b6ab3f73f80af6437e6e381c7ea8127ebb18f64f8f10cf03c4c6df56"
+    },
+    {
+      "path": "data/operation_results/113_strict_dominance_projection_closed.json",
+      "sha256": "bfc7fe158dd15ef00d29a95222070fe9ddcf1c66f0a03af61e7a882f2e7337f5"
+    },
+    {
+      "path": "data/operation_results/114_strict_dominance_conditioning_closed.json",
+      "sha256": "93e84e6db81f20fa93c0de4db81aa86e9db269acf759a762189c64f71e5e59c0"
+    },
+    {
+      "path": "data/operation_results/115_strict_dominance_pc_minor_closed.json",
+      "sha256": "088ed57a000c7205c03a5923b2b1563f2eb99a99fc30425b5af9659c5b3b38de"
+    },
+    {
+      "path": "data/operation_results/116_strict_dominance_product_closed.json",
+      "sha256": "fa2776f7393e7ddf055aed11ce44d7ec7c9300ae5c1814a31f4bcd9be871fe78"
+    },
+    {
+      "path": "data/operation_results/117_strict_dominance_complement_closed.json",
+      "sha256": "edc59ab36ccc7dd3d005d990098623ac3c3288f7a137f1832b4d51ac53b580af"
+    },
+    {
+      "path": "data/operation_results/118_strict_dominance_boolean_substitution_closed.json",
+      "sha256": "407438c0f7714fb21be9fc72de3947d39613e1dc8000fbc720358b8ecb3a06a3"
+    },
+    {
+      "path": "data/operations/015_boolean_substitution.json",
+      "sha256": "7f96c3edbfff0eff8c098a76ea9601f7cadb83809100b8a61069c244b3b3dbec"
+    },
+    {
+      "path": "data/relations/094_strict_dominance_strict_subset_realizable_ample.json",
+      "sha256": "41247ecb34544c38de7820fd19e96355fc31656546e6a0c99e82594aad0a137b"
+    },
+    {
+      "path": "data/results/089_coordinate_interval_comparison.json",
+      "sha256": "0b63cef801c41c632583b02e946ce3ef105e0c61b50a2eaf404c65c82d6d8204"
+    },
+    {
+      "path": "data/results/090_coordinate_interval_operation_laws.json",
+      "sha256": "1ee2fba423d12b0e266ec3aa67cdb9838a287ff50cdf273c9813f69d18e7b316"
+    },
+    {
+      "path": "data/results/091_sharp_maximum_coordinate_interval.json",
+      "sha256": "eb21dc38fb59956cf80a2e468e90effeee10579873c037c73b40e56f24b08dca"
+    },
+    {
+      "path": "data/results/092_zero_ratio_geometric_substitution.json",
+      "sha256": "c07ed7bb49298ac6264f3f069f3ba6abe7745d5c99c6aa28d6d32b2b6f86a37a"
+    },
+    {
+      "path": "data/results/093_strict_certificate_completion.json",
+      "sha256": "75380838af59959c36c2076ed8202aba01f6f5e43350c79234b91a7be487da66"
+    },
+    {
+      "path": "data/results/094_boolean_substitution_dominance_law.json",
+      "sha256": "8b9ea71b31aeb4a481e8174501ae8e37020e575d6f4d114ef15179a4c2a3dd5a"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "f1530e24a7255b977a7642e28e1d67d3ac75bef273e5ea08806cd38bfd4679a2"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "3e1388e661e4bcb562f8e73df6de20bd3013117662ee9f945bc25bdb1baa3396"
+    },
+    {
+      "path": "scripts/verify_interval_substitution.py",
+      "sha256": "004cd87ee43106c9a572ed556778eb788148149e7597b2ceadf1490fd98c0af1"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 626 records.",
+    "exact_replay": "All copied source hashes, exact rational interval checks, substitution constructions, standalone replay totals, and manuscript integration counts passed independently.",
+    "website": "Normalized 642 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 75 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered.",
+    "migration": "Validated 100 class occurrences into 92 reserved identities, 326 claim candidates, 2 conflicts, and 12 LaTeX documents."
+  },
+  "deferred": [
+    "Relative nerve and exact coefficient-space gluing results.",
+    "Entropy-balance gluing formulas."
+  ]
+}

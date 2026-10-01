@@ -1,0 +1,20 @@
+{
+  "id": 90,
+  "short_name": "coordinate_interval_operation_laws",
+  "name": "Coordinate Interval Minor and Product Laws",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coordinate_interval_capacity"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Signed coordinate symmetries transport $W_i$ with the distinguished coordinate. If a nonempty pc-minor $H$ of $C$ retains $i$, then $W_i(H)\\ge W_i(C)$. For nonempty convex-realizable classes on disjoint coordinates, $W_i(C\\times F)=W_i(C)$ when $i$ belongs to $C$.",
+  "status": "established",
+  "proof": "Restricting a realization to the conditioned orthants and projecting preserves every retained-coordinate interval; an exclusive minor word has an exclusive lift. Product projection gives one inequality, while a product realization with a fixed witness in the second factor preserves all intervals and gives the reverse inequality.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#prop:interval-laws"
+}

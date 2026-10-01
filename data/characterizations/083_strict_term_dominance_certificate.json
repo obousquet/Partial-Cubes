@@ -1,0 +1,17 @@
+{
+  "id": 83,
+  "short_name": "strict_term_dominance_certificate",
+  "name": "Strict Term-Dominance Certificate",
+  "class_id": "#classes/strict_dominance",
+  "characterization_type": "other",
+  "model_type": "sign_system",
+  "statement": "There are shared real row weights $\\lambda_{p,i}$ for every minimal missing pattern $p$ and word-dependent real witness weights $w_i^c$ such that, for every concept $c$ and pattern $p$, the largest favorable term $\\lambda_{p,i}+w_i^c$ is strictly larger than the largest unfavorable term.",
+  "hypotheses": "Finite nonempty binary class; an empty unfavorable maximum is $-\\infty$.",
+  "status": "established",
+  "invariant_ids": [
+    "#invariants/coefficient_ratio",
+    "#invariants/dominance_defect"
+  ],
+  "proof_source": "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-zero",
+  "comments": "The weights are logarithmic exponents shared across all concepts. This is stronger than ordinary feasibility of one separator array."
+}

@@ -1,0 +1,22 @@
+{
+  "id": 94,
+  "short_name": "boolean_substitution_dominance_law",
+  "name": "Exact Dominance-Defect Law under Boolean Substitution",
+  "class_ids": [
+    "#classes/strict_dominance"
+  ],
+  "invariant_ids": [
+    "#invariants/dominance_defect",
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If $T$ is proper and nonempty and the outer sections satisfy $C_0\\ne C_1$, then $d_{\\rm dom}(C\\circ_iT)=\\max\\{d_{\\rm dom}(C),d_{\\rm dom}(T)\\}$. If $C_0=C_1=B$, the output is $B\\times\\{0,1\\}^Y$ and has defect $d_{\\rm dom}(B)=d_{\\rm dom}(C)$. For a full or empty test, a nonempty output has the defect of $C_0$ or $C_1$, respectively.",
+  "status": "established",
+  "proof": "When both inputs have zero defect, combine their strict dominance certificates in a two-control extension, scale the outer gaps beyond the bounded inner control weights, use a common outside witness at shared heights, and complete the redundant rows by strict resolution. Projection gives the substitution and preserves zero defect. Conversely, a crossing test edge recovers $C$ as a minor, while a word in $C_0\\triangle C_1$ recovers $T$ or its complement; minor monotonicity gives both reverse inequalities. Boundary cases are products and sections.",
+  "references": "\\cite{IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#thm:zero-substitution",
+  "comments": "No positive-value formula for $\\tau$ and no general realizable-ample substitution closure is claimed."
+}

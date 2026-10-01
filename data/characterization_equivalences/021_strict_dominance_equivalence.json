@@ -1,0 +1,15 @@
+{
+  "id": 21,
+  "short_name": "strict_dominance_equivalence",
+  "name": "Strict-Dominance Characterization Equivalence",
+  "class_id": "#classes/strict_dominance",
+  "characterization_ids": [
+    "#characterizations/zero_coefficient_ratio",
+    "#characterizations/strict_term_dominance_certificate"
+  ],
+  "hypotheses": "Finite nonempty binary class.",
+  "statement": "Vanishing separator coefficient ratio, zero dominance defect, and existence of a shared strict term-dominance certificate are equivalent.",
+  "status": "established",
+  "proof": "If the ratio is smaller than the reciprocal of the largest unfavorable side, logarithmic magnitudes force some favorable term to dominate every unfavorable term. Conversely, exponentiating a strict dominance certificate by a common scale makes every unfavorable-to-favorable sum ratio tend to zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/ratio_invariant.tex#thm:ratio-zero"
+}

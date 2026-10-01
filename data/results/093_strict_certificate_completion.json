@@ -1,0 +1,15 @@
+{
+  "id": 93,
+  "short_name": "strict_certificate_completion",
+  "name": "Completion of Strict Dominance Certificates",
+  "invariant_ids": [
+    "#invariants/coefficient_ratio",
+    "#invariants/dominance_defect"
+  ],
+  "result_type": "algorithm",
+  "statement": "A strict term-dominance certificate for any finite forbidden-pattern description of a nonempty binary class extends to its actual minimal missing patterns without changing the witness vectors. Rational or integer row weights remain rational or integer. Consequently the class has $\\tau=0$.",
+  "status": "established",
+  "proof": "Eliminate coordinates by Davis--Putnam resolution. After normalizing each pivot weight to zero, merge compatible outside entries by their maximum. At either pivot bit the two original strict comparisons imply the resolvent comparison. Exact Boolean elimination ensures that each minimal missing pattern appears after eliminating its outside coordinates; retaining one derivation per pattern completes the shared certificate.",
+  "references": "\\cite{DavisPutnam1960,AllamigeonEtAl2014,AkianEtAl2025}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#lem:strict-certificate-completion"
+}

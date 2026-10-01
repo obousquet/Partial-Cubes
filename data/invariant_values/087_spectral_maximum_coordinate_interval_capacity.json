@@ -1,0 +1,16 @@
+{
+  "id": 87,
+  "short_name": "spectral_maximum_coordinate_interval_capacity",
+  "name": "Coordinate Interval Capacity of the Spectral Maximum Class",
+  "invariant_id": "#invariants/coordinate_interval_capacity",
+  "example_id": "#examples/spectral_maximum_class",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "W_2(C_\\ast)=\\sqrt2",
+  "scope": "Coordinate $2$ in the stored five-coordinate encoding; the equality is between suprema and does not assert attainment.",
+  "status": "established",
+  "proof": "For every realizing cone, three rooted rows and the exclusive words $14,16,1$ give $W_2\\le\\min\\{s+t,1/s,1/t\\}\\le\\sqrt2$. The interval comparison and $\\tau(C_\\ast)=2^{-1/4}$ give the matching lower bound.",
+  "references": "\\cite{IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#prop:interval-maximum",
+  "verification": "scripts/verify_interval_substitution.py; data/examples/assets/coordinate_interval_source.json; data/examples/assets/interval_substitution_verification.json"
+}

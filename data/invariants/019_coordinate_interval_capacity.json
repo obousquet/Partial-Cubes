@@ -1,0 +1,16 @@
+{
+  "id": 19,
+  "short_name": "coordinate_interval_capacity",
+  "name": "Coordinate Interval Capacity",
+  "symbol": "W_i(C)",
+  "definition": "For a convex realization $U$ of $C$ and a concept $c$ exclusive at coordinate $i$, let $w_i(U,c)$ be the supremum of $H/L$ over fixed-outside-coordinate segments with signed $i$-magnitude ranging from $L$ to $H$ inside $U$. Let $W_i(U)$ be the minimum over exclusive concepts and let $W_i(C)$ be the supremum over all convex realizations. The empty minimum is $+\\infty$.",
+  "status": "established",
+  "domain_class_id": "#classes/realizable_ample",
+  "codomain": "Extended real interval $(1,+\\infty]$",
+  "parameters": "A distinguished coordinate or, intrinsically, a distinguished $\\Theta$-class.",
+  "normalization": "Only coordinate $i$ varies along each interval; all other real coordinates remain fixed. All exclusive concepts use one common realization, though their outside vectors may differ.",
+  "category": "geometric",
+  "isomorphism_invariant": true,
+  "comments": "The value is invariant under signed coordinate permutations when the distinguished coordinate is transported. It does not assert simultaneous variation of several coordinates.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#eq:interval-ratio"
+}

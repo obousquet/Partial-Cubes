@@ -1,0 +1,23 @@
+{
+  "id": 89,
+  "short_name": "coordinate_interval_comparison",
+  "name": "Coordinate Interval Comparison",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/strict_dominance"
+  ],
+  "invariant_ids": [
+    "#invariants/coordinate_interval_capacity",
+    "#invariants/coefficient_ratio"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty convex-realizable class $C$ and coordinate $i$, $W_i(C)\\ge\\tau(C)^{-2}$, with $0^{-2}=+\\infty$. More precisely, for every $1<r<1/\\tau(C)$ one cone realization and one positive center per concept support every individual coordinate interval with magnitude endpoints $z_i^c/r$ and $rz_i^c$ while all other magnitudes remain fixed.",
+  "status": "established",
+  "proof": "Choose coefficients and witness magnitudes with unfavorable-to-favorable ratio below $1/r$. Changing one magnitude by a factor in $[1/r,r]$ multiplies any comparison ratio by at most $r$, whether that term lies in the numerator, denominator, or neither. Every resulting ratio stays below one, and the endpoint magnitude ratio is $r^2$. Let $r$ approach $1/\\tau(C)$.",
+  "references": "\\cite{IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#thm:interval-comparison",
+  "witness_ids": [
+    "#examples/spectral_maximum_class"
+  ],
+  "comments": "The intervals vary one coordinate at a time; no simultaneous box is claimed, and the infimum defining $\\tau$ need not be attained."
+}

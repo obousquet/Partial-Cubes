@@ -1,0 +1,23 @@
+{
+  "id": 91,
+  "short_name": "sharp_maximum_coordinate_interval",
+  "name": "Sharp Finite Coordinate Capacity in a Maximum Class",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coordinate_interval_capacity",
+    "#invariants/coefficient_ratio"
+  ],
+  "result_type": "construction",
+  "statement": "The sixteen-state maximum class $C_\\ast$ satisfies $W_2(C_\\ast)=\\sqrt2=\\tau(C_\\ast)^{-2}$. Thus even a realizable maximum class need not admit arbitrarily large coordinate intervals in every realization choice.",
+  "status": "established",
+  "proof": "Three separator rows and three coordinate-2-exclusive concepts bound every realizing cone by $W_2\\le\\min\\{s+t,1/s,1/t\\}\\le\\sqrt2$. The general interval comparison and the exact value $\\tau(C_\\ast)=2^{-1/4}$ give equality.",
+  "references": "\\cite{IntervalSubstitutionEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coordinate_substitution.tex#prop:interval-maximum",
+  "witness_ids": [
+    "#examples/spectral_maximum_class"
+  ],
+  "comments": "This refutes universal interval widening; the interval criterion remains sufficient rather than necessary for geometric substitution."
+}
