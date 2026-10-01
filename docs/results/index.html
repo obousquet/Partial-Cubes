@@ -3191,6 +3191,117 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-186" style="position:relative;">
+
+        <h3><a href="results/dimension_four_learning_space_antipodal_trichotomy.html" class="table-title-link">Dimension-Four Antipodal Trichotomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dimension-Four Antipodal Trichotomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a finite partial cube of isometric dimension four whose medium admits a closed orientation. If $G$ has an antipodal pair but is not a learning-space graph, then $G$ is isomorphic to exactly one of $\mathcal V_4$, $\mathcal Z_4$, and $\mathcal T_4$. Equivalently, a convex subgraph $C$ of a learning-space graph with $\operatorname{idim}(C)\le4$ is learning exactly when it has a $C$-antipodal pair and is not one of these three exceptions. The six possible closed oriented normal forms collapse to those three underlying graphs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A closed orientation gives a well-graded union-closed positive-content family without the empty state. Classifying it by the number of present singletons leaves six rootless oriented normal forms. Coordinate translations and permutations identify three with $\mathcal V_4$, two with $\mathcal T_4$, and one with $\mathcal Z_4$; all other cases admit an explicit translated root. Convex restrictions inherit the closed orientation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-dimension-four-antipodes</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-187" style="position:relative;">
+
+        <h3><a href="results/eleven_state_contraction_reduction.html" class="table-title-link">Eleven-State Contraction Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Eleven-State Contraction Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a closed-orientable, five-dimensional partial cube with an antipodal pair, no learning-space root, and at most eleven vertices. If some $\Theta$-class contraction is nonlearning, then $G$ has eleven vertices and is exactly one of three graphs: $\mathcal V_4$ with a pendant at an antipodal endpoint, or $\mathcal Z_4$ with a pendant at a degree-two or degree-three antipodal endpoint. Conversely, all three graphs satisfy these properties.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The contracted antipodal graph is one of $\mathcal V_4,\mathcal Z_4,\mathcal T_4$ by the dimension-four trichotomy. Vertex counting excludes $\mathcal T_4$ and forces a singleton contracted edge class over a ten-vertex core. Since both remaining cores are 2-connected, the inverse expansion must attach a pendant at an antipodal endpoint. Their automorphism orbits give exactly the three stated types; the pendant-antipode construction proves the converse.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-eleven-state-contraction-reduction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-188" style="position:relative;">
+
+        <h3><a href="results/four_coordinate_endpoint_root_bound.html" class="table-title-link">Sharp Endpoint-Root Bound in Four Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sharp Endpoint-Root Bound in Four Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal H\subseteq2^X$ be well graded, let its graph be a learning-space graph, and suppose $|X|=4$ and $A,X\setminus A\in\mathcal H$. If $|\mathcal H|\le10$, then at least one endpoint of this complementary pair is a valid learning-space root. The bound is sharp: the eleven-state learning space $\mathcal L_{11}$ contains the antipodal pair $1,234$, neither of whose endpoints is valid.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Translate by an arbitrary valid root to obtain an accessible union-closed family. If neither complementary endpoint is valid, each has a rooted square defect. Separating complementary pair sizes $(1,3)$ and $(2,2)$ and counting the states forced by accessibility and union closure gives at least eleven states. Direct defects at roots $1$ and $234$ verify sharpness for $\mathcal L_{11}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-four-coordinate-endpoint-root</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/endpoint_root_sharpness_l11.html">Eleven-State Endpoint-Root Sharpness Example</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-189" style="position:relative;">
+
+        <h3><a href="results/five_coordinate_endpoint_cover.html" class="table-title-link">Five-Coordinate Endpoint-Cover Reformulation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Five-Coordinate Endpoint-Cover Reformulation</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal H\subseteq2^X$ be irredundant, well graded, and union closed, with $|X|=5$, $|\mathcal H|\le11$, and complementary members $A,X\setminus A$. For each coordinate $e$, the contraction $\pi_e(\mathcal H)$ is a learning-space graph exactly when one projected endpoint is a valid root. Therefore all five contractions are learning exactly when the two endpoint repair sets satisfy $\mathcal C_A(\mathcal H)\cup\mathcal C_{X\setminus A}(\mathcal H)=X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each contraction has at most ten states and retains a complementary pair on four coordinates. The sharp endpoint-root bound makes learning equivalent to validity of a projected endpoint. Applying the root-hole contraction-repair criterion coordinate by coordinate turns these alternatives into the displayed union of repair sets.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#cor:learning-space-five-coordinate-endpoint-cover</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-190" style="position:relative;">
+
+        <h3><a href="results/two_by_three_endpoint_cover_obstruction.html" class="table-title-link">Two-by-Three Endpoint-Cover Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-by-Three Endpoint-Cover Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X=P\mathbin{\dot\cup}Q$ with $|P|=2$ and $|Q|=3$, and let $\mathcal H\subseteq2^X$ be union closed and well graded, with at most eleven states, no empty state, and a complementary pair $A,B$. There cannot simultaneously be an absent state whose two $P$-neighbors are present and lie in the required $A$-outward directions, and an absent state whose three $Q$-neighbors are present and has at least two required $B$-outward directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two holes force punctured coordinate subcubes inside $\mathcal H$. Union closure, the endpoint directions, absence of the two holes, and the order bound reduce the possibilities to fourteen symmetry orbits. Ten order-eleven cases violate well-gradedness directly. In each of the four order-ten cases, no single additional state can repair all missing tight paths.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#lem:learning-space-two-three-endpoint-cover</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-191" style="position:relative;">
+
+        <h3><a href="results/small_learning_space_contraction_descent.html" class="table-title-link">Small Contraction Descent and the Eleven-State Minimum</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small Contraction Descent and the Eleven-State Minimum</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a closed-orientable, five-dimensional partial cube containing an antipodal pair. If $G$ is nonlearning and has at most eleven vertices, then some $\Theta$-class contraction remains nonlearning. Consequently $G$ has exactly eleven vertices and is one of the three pendant extensions of $\mathcal V_4$ or $\mathcal Z_4$ described by the contraction-reduction theorem. The bound is sharp: the twelve-state obstruction $\mathcal H_\star$ has all five contractions learning.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If all contractions were learning, the endpoint-cover theorem would make the two repair sets cover five directions. Repair sets of size at least four force too many states; the $(3,3)$ pattern forces at least twelve; and the remaining disjoint $(2,3)$ pattern is excluded by the two-by-three endpoint-cover lemma. The eleven-state contraction reduction then yields the three types, while $\mathcal H_\star$ proves sharpness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:learning-space-small-contraction-descent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/critical_pendant_twelve_state.html">Twelve-State Critical-Pendant Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-192" style="position:relative;">
+
+        <h3><a href="results/root_hole_contraction_obstructions.html" class="table-title-link">Three Root-Hole Contraction-Obstruction Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Three Root-Hole Contraction-Obstruction Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $d\ge4$, the families $\mathcal V_d$, $\mathcal W_d$, and $\mathcal Z_d$ are contraction-minimal nonlearning partial cubes. In dimension four they give representatives 4.2, 4.1, and 4.3, respectively. Together with $\mathcal T_d$, $\mathcal S_{d,t}$, and $\mathcal U_{d,r}$, their dimension-four members account for all ten contraction-minimal nonmembers in the computational catalogue; this finite completeness statement does not assert that the six schemes exhaust higher dimensions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two truncated families are downsets, while the three-fiber family has explicit tight paths through its full base cube, so all are partial cubes. Rooted-union witnesses exclude every candidate root. Their contractions are cubes with one or two suitable vertices deleted, explicit union-closed lower-layer translates, or $P_3\square Q_{d-3}$, all learning-space graphs. Hence each family is contraction minimal.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-root-hole-obstructions</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

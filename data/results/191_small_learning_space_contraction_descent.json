@@ -1,0 +1,20 @@
+{
+  "id": 191,
+  "short_name": "small_learning_space_contraction_descent",
+  "name": "Small Contraction Descent and the Eleven-State Minimum",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $G$ be a closed-orientable, five-dimensional partial cube containing an antipodal pair. If $G$ is nonlearning and has at most eleven vertices, then some $\\Theta$-class contraction remains nonlearning. Consequently $G$ has exactly eleven vertices and is one of the three pendant extensions of $\\mathcal V_4$ or $\\mathcal Z_4$ described by the contraction-reduction theorem. The bound is sharp: the twelve-state obstruction $\\mathcal H_\\star$ has all five contractions learning.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/critical_pendant_twelve_state"
+  ],
+  "proof": "If all contractions were learning, the endpoint-cover theorem would make the two repair sets cover five directions. Repair sets of size at least four force too many states; the $(3,3)$ pattern forces at least twelve; and the remaining disjoint $(2,3)$ pattern is excluded by the two-by-three endpoint-cover lemma. The eleven-state contraction reduction then yields the three types, while $\\mathcal H_\\star$ proves sharpness.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:learning-space-small-contraction-descent"
+}

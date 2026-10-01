@@ -1,0 +1,16 @@
+{
+  "id": 188,
+  "short_name": "four_coordinate_endpoint_root_bound",
+  "name": "Sharp Endpoint-Root Bound in Four Coordinates",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\mathcal H\\subseteq2^X$ be well graded, let its graph be a learning-space graph, and suppose $|X|=4$ and $A,X\\setminus A\\in\\mathcal H$. If $|\\mathcal H|\\le10$, then at least one endpoint of this complementary pair is a valid learning-space root. The bound is sharp: the eleven-state learning space $\\mathcal L_{11}$ contains the antipodal pair $1,234$, neither of whose endpoints is valid.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/endpoint_root_sharpness_l11"
+  ],
+  "proof": "Translate by an arbitrary valid root to obtain an accessible union-closed family. If neither complementary endpoint is valid, each has a rooted square defect. Separating complementary pair sizes $(1,3)$ and $(2,2)$ and counting the states forced by accessibility and union closure gives at least eleven states. Direct defects at roots $1$ and $234$ verify sharpness for $\\mathcal L_{11}$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-four-coordinate-endpoint-root"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 187,
+  "short_name": "eleven_state_contraction_reduction",
+  "name": "Eleven-State Contraction Reduction",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $G$ be a closed-orientable, five-dimensional partial cube with an antipodal pair, no learning-space root, and at most eleven vertices. If some $\\Theta$-class contraction is nonlearning, then $G$ has eleven vertices and is exactly one of three graphs: $\\mathcal V_4$ with a pendant at an antipodal endpoint, or $\\mathcal Z_4$ with a pendant at a degree-two or degree-three antipodal endpoint. Conversely, all three graphs satisfy these properties.",
+  "status": "established",
+  "proof": "The contracted antipodal graph is one of $\\mathcal V_4,\\mathcal Z_4,\\mathcal T_4$ by the dimension-four trichotomy. Vertex counting excludes $\\mathcal T_4$ and forces a singleton contracted edge class over a ten-vertex core. Since both remaining cores are 2-connected, the inverse expansion must attach a pendant at an antipodal endpoint. Their automorphism orbits give exactly the three stated types; the pendant-antipode construction proves the converse.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-eleven-state-contraction-reduction"
+}

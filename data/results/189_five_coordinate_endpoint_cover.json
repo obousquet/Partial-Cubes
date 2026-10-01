@@ -1,0 +1,17 @@
+{
+  "id": 189,
+  "short_name": "five_coordinate_endpoint_cover",
+  "name": "Five-Coordinate Endpoint-Cover Reformulation",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\mathcal H\\subseteq2^X$ be irredundant, well graded, and union closed, with $|X|=5$, $|\\mathcal H|\\le11$, and complementary members $A,X\\setminus A$. For each coordinate $e$, the contraction $\\pi_e(\\mathcal H)$ is a learning-space graph exactly when one projected endpoint is a valid root. Therefore all five contractions are learning exactly when the two endpoint repair sets satisfy $\\mathcal C_A(\\mathcal H)\\cup\\mathcal C_{X\\setminus A}(\\mathcal H)=X$.",
+  "status": "established",
+  "proof": "Each contraction has at most ten states and retains a complementary pair on four coordinates. The sharp endpoint-root bound makes learning equivalent to validity of a projected endpoint. Applying the root-hole contraction-repair criterion coordinate by coordinate turns these alternatives into the displayed union of repair sets.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#cor:learning-space-five-coordinate-endpoint-cover"
+}
