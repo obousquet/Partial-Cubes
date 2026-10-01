@@ -1,0 +1,19 @@
+{
+  "id": 171,
+  "short_name": "uom_fibers_and_minimal_nonample_parents",
+  "name": "UOM Fibers Are Proper Conditionings of Minimal-Non-Ample Parents",
+  "class_ids": [
+    "#classes/uniform_oriented_matroid_fibers",
+    "#classes/connected_conditioning_minimal_non_ample",
+    "#classes/conditioning_minimal_non_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "UOMFib consists exactly of the finite cubes and, after fixed coordinates are suppressed, the nonempty classes obtained by fixing at least one coordinate of a conditioning-minimal non-ample parent. Apart from the parallel rank-one case, those parents are precisely the connected conditioning-minimal non-ample classes, equivalently the full tope sets of non-free simple uniform oriented matroids.",
+  "status": "established",
+  "proof": "The minimal-non-ample classification identifies every nontrivial simple parent with a non-free uniform-oriented-matroid tope set, and its proper conditionings are exactly its nonempty topal fibers. Conversely, a noncube UOM fiber comes from a non-free uniform oriented matroid of rank at least two, whose full tope set is such a parent. Rank-one fibers are singletons and the definition includes all cubes separately.",
+  "proof_source": "CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure; YangDim:minimal_nonample_classes.tex#thm:mna-uom",
+  "comments": "This is a parent-to-fiber construction, not a class inclusion: the full connected parents are non-ample, whereas every UOMFib member is ample."
+}

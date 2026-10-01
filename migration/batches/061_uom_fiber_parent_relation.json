@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "batch_id": "061_uom_fiber_parent_relation",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Record the exact parent-to-fiber relationship between connected conditioning-minimal non-ample classes and UOMFib without asserting a false class inclusion.",
+  "source_refs": [
+    "CompressionSchemes:partitionable_yang_complexes.tex#def:uniform-oriented-matroid-fiber-class",
+    "CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure",
+    "YangDim:minimal_nonample_classes.tex#thm:mna-uom"
+  ],
+  "source_packets": [
+    {
+      "id": "compression-partitionable-yang-complexes",
+      "repository": "CompressionSchemes",
+      "path": "partitionable_yang_complexes.tex",
+      "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+    },
+    {
+      "id": "yangdim-minimal-nonample-classes",
+      "repository": "YangDim",
+      "path": "minimal_nonample_classes.tex",
+      "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized parent/fiber theorem, the conditioning-image record, and cross-linked scope notes. The source manuscripts retain the complete oriented-matroid proofs and broader Lawrence-conjecture program.",
+    "recoverability": "Exact hashes and theorem locators preserve both sides of the cross-repository result.",
+    "mutation": "No sibling-repository source was modified."
+  },
+  "records": [
+    {
+      "path": "data/classes/109_uniform_oriented_matroid_fibers.json",
+      "sha256": "4a000dd1105b3eb2ff9d439e4466786140b5905226e0e60c5cef3c26e816883a"
+    },
+    {
+      "path": "data/classes/114_connected_conditioning_minimal_non_ample.json",
+      "sha256": "351efbb45bcd57d742f763ff0c8e65efb69e3135e7032f5ce831b781ca0f42ab"
+    },
+    {
+      "path": "data/operation_results/283_connected_mna_conditionings_land_in_uom_fibers.json",
+      "sha256": "a116e003d62582f2275d380add709e924a08e9358c015f7932d53bc9564760a5"
+    },
+    {
+      "path": "data/results/171_uom_fibers_and_minimal_nonample_parents.json",
+      "sha256": "77e363c52fbb726904d42c557f2804d8aecce7c4747d135cfcc64534624c467c"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "8fc4cf258221dd045edde0ebac72af4de58a281eb59ed3007d894cbbfdf492a3"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "ff20afaf5ea2c3d7e7d332728212791f54cfc12fff71ae49320d5ea24aa069df"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "286c5eb98125846a904aca7c2ec34f72b363746bb475e8d5cdc0b42f295ed576"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1313 records.",
+    "website": "Normalized 1329 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 114 classes remain positioned relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All source preservation, coverage, class-status, and review-queue checks pass."
+  },
+  "deferred": [
+    "The hierarchy graph intentionally has no containment edge between the two classes: connected c-minimal parents are non-ample, while UOMFib members are ample. The operation result and theorem pages record the generative relationship."
+  ]
+}
