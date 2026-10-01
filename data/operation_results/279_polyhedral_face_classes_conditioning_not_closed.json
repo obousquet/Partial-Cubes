@@ -1,0 +1,15 @@
+{
+  "id": 279,
+  "short_name": "polyhedral_face_classes_conditioning_not_closed",
+  "name": "Polyhedral Face Classes Are Not Conditioning-Closed",
+  "class_id": "#classes/polyhedral_face_classes",
+  "operation_id": "#operations/conditioning",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "A nonempty coordinate conditioning of a polyhedral face class need not be a polyhedral face class.",
+  "witness_ids": [
+    "#examples/square_face_class"
+  ],
+  "proof": "Conditioning the square face class at vertex 1 to one yields $\\{\\varnothing,\\{2\\},\\{4\\},\\{2,3,4\\}\\}$. A face with vertex set $\\{2,3,4\\}$ requires all three singleton vertex faces, but $\\{3\\}$ is absent.",
+  "proof_source": "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_hd"
+}

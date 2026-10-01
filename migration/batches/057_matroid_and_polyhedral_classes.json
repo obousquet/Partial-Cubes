@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "batch_id": "057_matroid_and_polyhedral_classes",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote the two canonical intersection-closed families in YangDim: matroid flat classes and polyhedral face classes, together with their dimension laws, closure profiles, and explicit non-partial-cube witnesses.",
+  "source_refs": [
+    "YangDim:sections/main/05_algebraic_results.tex#def:matroid_class",
+    "YangDim:sections/main/05_algebraic_results.tex#cor:matroid_hd_eq_vc",
+    "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_betti",
+    "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_hd",
+    "YangDim:sections/main/06_dictionary_applications_learning.tex#thm:matroid_intdeg"
+  ],
+  "source_packets": [
+    {
+      "id": "yangdim-algebraic-results",
+      "repository": "YangDim",
+      "path": "sections/main/05_algebraic_results.tex",
+      "sha256": "bd87de392f7a2078b11509e8d6497f207649a611a84e6dcd348537c35fc8d77a"
+    },
+    {
+      "id": "yangdim-dictionary-applications",
+      "repository": "YangDim",
+      "path": "sections/main/06_dictionary_applications_learning.tex",
+      "sha256": "67468bbbb38970c4378248c0d14b685adc41ca57c4a850dfaddb488d634b5b77"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the canonical class identities, definitions, hierarchy placement, closure facts, witnesses, invariant definitions, and concise dimension theorems. YangDim retains the full algebraic setup, proofs, Betti formulas, examples, corrections to the literature, and open questions.",
+    "recoverability": "Exact source hashes and theorem locators preserve the scholarly context of every promoted fact.",
+    "mutation": "No source file in YangDim or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/characterizations/172_matroid_flat_family.json", "sha256": "3027a972def083c7f2fb27e7dea49cc21b5bc7cef7517e62a4fc34c126b8cb30"},
+    {"path": "data/characterizations/173_polyhedral_face_family.json", "sha256": "c28f0f85e2b6a52a0974256bb151b7ccec110e8b262e4f7f46c1b379f64b9005"},
+    {"path": "data/classes/112_matroid_flat_classes.json", "sha256": "992ecbe2a48ac0f86f560bae077512516061093b8d2f235a209c766b38f0ebfd"},
+    {"path": "data/classes/113_polyhedral_face_classes.json", "sha256": "bd5f7b4f7065181338cec0cd3e734f7ea05aadbbb8c8b29f7ac3273d9527643e"},
+    {"path": "data/examples/073_uniform_rank_one_flat_class.json", "sha256": "d2892f59518694f12a2377f6100b7aecc50aa93c0c5e6e8b84360a2b6acae5b8"},
+    {"path": "data/examples/074_square_face_class.json", "sha256": "553cdd49e75cee89573535e0408db6a8e55c1e65ce37c6e45f97e147700fc2be"},
+    {"path": "data/invariant_values/112_matroid_flat_vc_equals_rank.json", "sha256": "c096bdcbd36da42c3b58a7bfe2c0ba41975d817c34f00b617b3f6185b3fd1012"},
+    {"path": "data/invariant_values/113_matroid_flat_yang_equals_rank.json", "sha256": "cf5eb024d1fa86ecf9fcd28645c8712dec732ae011f9115894650aa22cc3c3b0"},
+    {"path": "data/invariant_values/114_matroid_flat_interpolation_equals_rank.json", "sha256": "4e6e6bb3e7b80ca279777ad803103177b6ae2e48d4aa1dd7b1ed62bd15aed0e3"},
+    {"path": "data/invariant_values/115_polyhedral_face_yang_dimension.json", "sha256": "db2589c778e8e2c2ec26a69c0ec13e7101b8dc6fcd260cab861f4ca5b20bd47c"},
+    {"path": "data/invariants/032_yang_dimension.json", "sha256": "012330f0cb7c626781064d37c104e83af4834ee7563ef1696bd63eb19646311a"},
+    {"path": "data/invariants/033_interpolation_degree.json", "sha256": "c1c76428977cf9721d6d641343d34b3ddbf777fcbd4e73f11c5bd67c5fa05d29"},
+    {"path": "data/operation_results/276_matroid_flat_classes_projection_closed.json", "sha256": "afba8fd32be39ff1dd6763074601ba24bc03d6c5e0ad431669e72a10fae0afde"},
+    {"path": "data/operation_results/277_matroid_flat_classes_conditioning_not_closed.json", "sha256": "b0803a79ea13dd1892bdfef3a7fb9c672e0c7f8d769e3332a0e230f0dae363a0"},
+    {"path": "data/operation_results/278_polyhedral_face_classes_projection_not_closed.json", "sha256": "9a5925d5b34d107b229dd690daae5c0151365883de7e3d110878d4292da6860f"},
+    {"path": "data/operation_results/279_polyhedral_face_classes_conditioning_not_closed.json", "sha256": "748595953c61ffb5c48eb2f48e83d83a2a6a0007f36ef1ac39bb63043176498f"},
+    {"path": "data/relations/264_hypercubes_strict_subset_matroid_flat_classes.json", "sha256": "7405157503de26f16682f0fbff408ec5d76b57a96b33c983f035a10c0493275f"},
+    {"path": "data/relations/265_matroid_flat_classes_not_subset_partial_cubes.json", "sha256": "fbd1107da888c9912df34e65b2c8b11638f815e4ddbe6e15ab156308653cdd89"},
+    {"path": "data/relations/266_hypercubes_strict_subset_polyhedral_face_classes.json", "sha256": "2876173478cdc69d63d72ffc464a120a4df94a11276b0f79a05a7232b9fb32a6"},
+    {"path": "data/relations/267_polyhedral_face_classes_not_subset_partial_cubes.json", "sha256": "e87a481dff06325117689f06873198a811383153b6b40e6353c3ee94e3f835a0"},
+    {"path": "data/results/157_matroid_flat_class_dimension_equalities.json", "sha256": "e3ab2e9863c1af0c82b486b30668f839e19087414e114ab8751cd355fb2a215d"},
+    {"path": "data/results/158_polyhedral_face_class_dimension_law.json", "sha256": "33b1446624e518ced7f600697039af251f47228deea3f626e282966a65939cea"},
+    {"path": "migration/canonical_classes.json", "sha256": "773ef7f886c2eddbc5f2479cc6da27873dd68a29a3b62c14ae7a69e0cd4785fd"},
+    {"path": "migration/closure_status_audit.json", "sha256": "60b471c323c3fa2bca406935b14d094c83819018a79507dc64fd31a2eb194bae"},
+    {"path": "migration/coverage.json", "sha256": "b3a36c9d58d378a76938d6f1674980906223b3d94bc5bb10ee03b9afe8b6b0f1"},
+    {"path": "migration/partial_cube_containment_audit.json", "sha256": "a6622948891760990e81e900c4c6f9f81c886a05cb2461fe5eff42b9f940e79e"},
+    {"path": "migration/repository_class_audit.json", "sha256": "4859f3260898f5c1449b62fdd23e184e8bca4e0978eb97eda149585aaf14ccd1"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1284 records.",
+    "website": "Normalized 1300 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "182 Hasse covers represent 227 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 113 classes have an audited position relative to Partial Cubes; 232 closure-map arrows render.",
+    "containment_audit": "102 proper class nodes have established paths into Partial Cubes, Partial Cubes is the reference node, Bipartite Graphs is an established superclass, nine set-family notions have established noncontainment witnesses, and zero nodes are unresolved.",
+    "migration": "All source extracts, source preservation checks, coverage reports, class-status audits, and review queues pass."
+  },
+  "deferred": [
+    "PC-minor closure is not applicable to these families as whole classes because they include disconnected one-inclusion graphs.",
+    "The broader class of arbitrary intersection-closed concept families has not been promoted because its cube-symmetry convention and useful graph placement need a separate design decision.",
+    "Continue reviewing stable named families in active sibling-repository manuscripts before considering draft-only CompressionSchemes notions."
+  ]
+}

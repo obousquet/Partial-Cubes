@@ -2733,6 +2733,40 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-157" style="position:relative;">
+
+        <h3><a href="results/matroid_flat_class_dimension_equalities.html" class="table-title-link">Dimension Equalities for Matroid Flat Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dimension Equalities for Matroid Flat Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/yang_dimension.html">Yang Dimension</a></li><li><a href="invariants/interpolation_degree.html">Interpolation Degree</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite matroid $M$ of rank $r$, over every coefficient field, $\operatorname{intdeg}(\mathcal H_M)=\operatorname{VC}(\mathcal H_M)=\operatorname{hd}(\mathcal H_M)=r$; the shattered coordinate sets are exactly the independent sets of $M$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Independence is equivalent to shattering by flats. Interval Cohen--Macaulayness of the geometric lattice gives the Yang-dimension upper bound, and minimum generators of flats are bases of restrictions, giving interpolation degree $r$.</p></div>
+<strong>References:</strong><div class="text-field"><p>chen2019free</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:matroid_hd_eq_vc; YangDim:sections/main/06_dictionary_applications_learning.tex?#thm:matroid_intdeg</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-158" style="position:relative;">
+
+        <h3><a href="results/polyhedral_face_class_dimension_law.html" class="table-title-link">Dimension Law for Polyhedral Face Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dimension Law for Polyhedral Face Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/polyhedral_face_classes.html">Polyhedral Face Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/yang_dimension.html">Yang Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If a finite polyhedral cell complex $X$ has at least one vertex and dimension $D$, then $\operatorname{hd}(\mathcal H_X)=D+1$. Moreover $\operatorname{VC}(\mathcal H_X)=D+1$ exactly when $X$ has a $D$-dimensional simplex.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Face intervals have the homology of the appropriate face-figure spheres, so the empty-to-top-cell interval gives projective dimension $D+1$. Shattering $D+1$ vertices forces them to be the vertices of a simplex cell, and a simplex cell visibly shatters its vertices.</p></div>
+<strong>References:</strong><div class="text-field"><p>chen2019free</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:polyhedral_hd</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

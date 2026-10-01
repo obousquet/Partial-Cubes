@@ -1,0 +1,18 @@
+{
+  "id": 158,
+  "short_name": "polyhedral_face_class_dimension_law",
+  "name": "Dimension Law for Polyhedral Face Classes",
+  "class_ids": [
+    "#classes/polyhedral_face_classes"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/yang_dimension"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If a finite polyhedral cell complex $X$ has at least one vertex and dimension $D$, then $\\operatorname{hd}(\\mathcal H_X)=D+1$. Moreover $\\operatorname{VC}(\\mathcal H_X)=D+1$ exactly when $X$ has a $D$-dimensional simplex.",
+  "status": "established",
+  "proof": "Face intervals have the homology of the appropriate face-figure spheres, so the empty-to-top-cell interval gives projective dimension $D+1$. Shattering $D+1$ vertices forces them to be the vertices of a simplex cell, and a simplex cell visibly shatters its vertices.",
+  "references": "chen2019free",
+  "proof_source": "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_hd"
+}

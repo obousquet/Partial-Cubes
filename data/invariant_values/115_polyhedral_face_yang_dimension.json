@@ -1,0 +1,15 @@
+{
+  "id": 115,
+  "short_name": "polyhedral_face_yang_dimension",
+  "name": "Yang Dimension of Polyhedral Face Classes",
+  "invariant_id": "#invariants/yang_dimension",
+  "class_id": "#classes/polyhedral_face_classes",
+  "quantifier": "all_members",
+  "value_type": "formula",
+  "value": "$\\dim X+1$",
+  "parameters": "$X$ has at least one vertex; for $X=\\{\\varnothing\\}$ the value is zero.",
+  "scope": "Over every coefficient field.",
+  "status": "established",
+  "proof": "The interval from the empty face to a top-dimensional cell contributes homological degree $\\dim X+1$, and no face interval has larger rank.",
+  "proof_source": "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_hd"
+}

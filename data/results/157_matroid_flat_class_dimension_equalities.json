@@ -1,0 +1,19 @@
+{
+  "id": 157,
+  "short_name": "matroid_flat_class_dimension_equalities",
+  "name": "Dimension Equalities for Matroid Flat Classes",
+  "class_ids": [
+    "#classes/matroid_flat_classes"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/yang_dimension",
+    "#invariants/interpolation_degree"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every finite matroid $M$ of rank $r$, over every coefficient field, $\\operatorname{intdeg}(\\mathcal H_M)=\\operatorname{VC}(\\mathcal H_M)=\\operatorname{hd}(\\mathcal H_M)=r$; the shattered coordinate sets are exactly the independent sets of $M$.",
+  "status": "established",
+  "proof": "Independence is equivalent to shattering by flats. Interval Cohen--Macaulayness of the geometric lattice gives the Yang-dimension upper bound, and minimum generators of flats are bases of restrictions, giving interpolation degree $r$.",
+  "references": "chen2019free",
+  "proof_source": "YangDim:sections/main/05_algebraic_results.tex#cor:matroid_hd_eq_vc; YangDim:sections/main/06_dictionary_applications_learning.tex#thm:matroid_intdeg"
+}

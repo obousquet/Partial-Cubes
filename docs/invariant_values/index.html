@@ -2128,6 +2128,82 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-112" style="position:relative;">
+
+        <h3><a href="invariant_values/matroid_flat_vc_equals_rank.html" class="table-title-link">VC Dimension of Matroid Flat Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of Matroid Flat Classes</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\operatorname{rank}(M)$</p>
+<strong>Parameters:</strong><div class="text-field"><p>$M$ is the defining finite matroid.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Every coefficient field; the value is combinatorial.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate set is shattered by the flat family exactly when it is independent in the matroid.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:matroid_hd_eq_vc</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-113" style="position:relative;">
+
+        <h3><a href="invariant_values/matroid_flat_yang_equals_rank.html" class="table-title-link">Yang Dimension of Matroid Flat Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Dimension of Matroid Flat Classes</p>
+<p><strong>Invariant: </strong><a href="invariants/yang_dimension.html">Yang Dimension</a></p>
+<p><strong>Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\operatorname{rank}(M)$</p>
+<strong>Parameters:</strong><div class="text-field"><p>$M$ is the defining finite matroid.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Over every coefficient field.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The flat lattice is interval Cohen--Macaulay, so the interval Betti formula bounds projective dimension by its rank; the shattered independent sets give the matching lower bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:matroid_hd_eq_vc</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-114" style="position:relative;">
+
+        <h3><a href="invariant_values/matroid_flat_interpolation_equals_rank.html" class="table-title-link">Interpolation Degree of Matroid Flat Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interpolation Degree of Matroid Flat Classes</p>
+<p><strong>Invariant: </strong><a href="invariants/interpolation_degree.html">Interpolation Degree</a></p>
+<p><strong>Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\operatorname{rank}(M)$</p>
+<strong>Parameters:</strong><div class="text-field"><p>$M$ is the defining finite matroid.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Over every coefficient field.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A minimum generator of a flat is a basis of the corresponding restriction; the largest minimum generator size is the matroid rank.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/06_dictionary_applications_learning.tex?#thm:matroid_intdeg</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-115" style="position:relative;">
+
+        <h3><a href="invariant_values/polyhedral_face_yang_dimension.html" class="table-title-link">Yang Dimension of Polyhedral Face Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Dimension of Polyhedral Face Classes</p>
+<p><strong>Invariant: </strong><a href="invariants/yang_dimension.html">Yang Dimension</a></p>
+<p><strong>Class: </strong><a href="classes/polyhedral_face_classes.html">Polyhedral Face Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\dim X+1$</p>
+<strong>Parameters:</strong><div class="text-field"><p>$X$ has at least one vertex; for $X=\{\varnothing\}$ the value is zero.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Over every coefficient field.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The interval from the empty face to a top-dimensional cell contributes homological degree $\dim X+1$, and no face interval has larger rank.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:polyhedral_hd</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

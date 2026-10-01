@@ -4613,6 +4613,74 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-276" style="position:relative;">
+
+        <h3><a href="operation_results/matroid_flat_classes_projection_closed.html" class="table-title-link">Matroid Flat Classes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Matroid Flat Classes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every coordinate projection of a finite matroid flat class is the flat class of the corresponding matroid restriction.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For $S\subseteq X$, the flats of $M|S$ are exactly the sets $F\cap S$ with $F$ a flat of $M$, which are precisely the traces of the flat family on $S$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#def:matroid_class</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-277" style="position:relative;">
+
+        <h3><a href="operation_results/matroid_flat_classes_conditioning_not_closed.html" class="table-title-link">Matroid Flat Classes Are Not Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Matroid Flat Classes Are Not Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/matroid_flat_classes.html">Matroid Flat Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A nonempty coordinate conditioning of a matroid flat class need not be a matroid flat class.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/uniform_rank_one_flat_class.html">Flat Class of $U_{1,2}$</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning $\{00,11\}$ at the first coordinate to zero gives $\{0\}$ on a one-element ground set. Every matroid ground set is itself a flat, so a flat family on that ground set must contain $\{1\}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#def:matroid_class</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-278" style="position:relative;">
+
+        <h3><a href="operation_results/polyhedral_face_classes_projection_not_closed.html" class="table-title-link">Polyhedral Face Classes Are Not Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Polyhedral Face Classes Are Not Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/polyhedral_face_classes.html">Polyhedral Face Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A coordinate projection of a polyhedral face class need not be a polyhedral face class.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/square_face_class.html">Square Face Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Projecting the square face class to vertices $1,2,3$ produces the concept $123$ but omits $13$. A polytope with exactly the vertices $1,2,3$ is a triangle and must have $13$ as a face.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:polyhedral_hd</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-279" style="position:relative;">
+
+        <h3><a href="operation_results/polyhedral_face_classes_conditioning_not_closed.html" class="table-title-link">Polyhedral Face Classes Are Not Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Polyhedral Face Classes Are Not Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/polyhedral_face_classes.html">Polyhedral Face Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A nonempty coordinate conditioning of a polyhedral face class need not be a polyhedral face class.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/square_face_class.html">Square Face Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning the square face class at vertex 1 to one yields $\{\varnothing,\{2\},\{4\},\{2,3,4\}\}$. A face with vertex set $\{2,3,4\}$ requires all three singleton vertex faces, but $\{3\}$ is absent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/main/05_algebraic_results.tex?#cor:polyhedral_hd</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

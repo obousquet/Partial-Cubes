@@ -1,0 +1,15 @@
+{
+  "id": 278,
+  "short_name": "polyhedral_face_classes_projection_not_closed",
+  "name": "Polyhedral Face Classes Are Not Projection-Closed",
+  "class_id": "#classes/polyhedral_face_classes",
+  "operation_id": "#operations/projection",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "A coordinate projection of a polyhedral face class need not be a polyhedral face class.",
+  "witness_ids": [
+    "#examples/square_face_class"
+  ],
+  "proof": "Projecting the square face class to vertices $1,2,3$ produces the concept $123$ but omits $13$. A polytope with exactly the vertices $1,2,3$ is a triangle and must have $13$ as a face.",
+  "proof_source": "YangDim:sections/main/05_algebraic_results.tex#cor:polyhedral_hd"
+}
