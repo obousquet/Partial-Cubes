@@ -253,8 +253,8 @@
 
 <p><strong>Object Type:</strong> Graph</p>
 <strong>Definition:</strong><div class="text-field"><p>The tree with one degree-three center and three leaves.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It is a star, tree, median graph, maximum class, and daisy cube, but it is not a path. Every proper pc-minor is a path.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is a star, tree, median graph, maximum class, ample class, and daisy cube, but it is not a path or spread ample. Every proper pc-minor is a path. Its diameter is two, whereas a four-vertex path is an ample shift variant with the same shattering complex and diameter three.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors; YangDim:sections/spread_ample_classes/04_examples.tex?#sec:spread-examples</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/three_leaf_star.html">Three-Leaf-Star Obstruction</a></li></ul></p>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/three_leaf_star_coefficient_space.html'>Coefficient Space of the Three-Leaf Star</a></li><li><a href='invariant_values/three_leaf_star_small_scale_indicator.html'>Small-Scale Indicator of the Three-Leaf Star</a></li><li><a href='invariant_values/three_leaf_star_large_scale_indicator.html'>Large-Scale Indicator of the Three-Leaf Star</a></li></ul></p></div>
 
@@ -1222,6 +1222,27 @@
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-corner-deletion</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_geometric_substitution.py; data/examples/assets/geometric_substitution_database_verification.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/realizable_corner_extension_vc_dimension.html'>VC Dimension of the Realizable Corner Extension</a></li><li><a href='invariant_values/realizable_corner_extension_separation_margin.html'>Positive Separation Margin of the Realizable Corner Extension</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-53" style="position:relative;">
+
+        <h3><a href="examples/opposite_pendant_class.html" class="table-title-link">Opposite-Pendant Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite-Pendant Class</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{\mathrm{opp}}">
+            \[C_{\mathrm{opp}}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>In coordinate order $x_3x_2x_1x_0$, the six-word class $\{0000,0001,0010,0011,0101,1010\}$: a square on $x_0,x_1$ with pendant vertices attached at opposite corners in directions $x_2,x_3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is ample and spread ample, has diameter four, and is not maximum. It witnesses that spread ample and maximum classes are incomparable.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:sections/spread_ample_classes/04_examples.tex?#prop:spread-square-two-vertices</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

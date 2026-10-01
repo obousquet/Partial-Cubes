@@ -1,0 +1,18 @@
+{
+  "id": 13,
+  "short_name": "spread_ample_pc_basis",
+  "name": "Formal pc-Minor Basis for Spread Ample Classes",
+  "target_class_id": "#classes/spread_ample",
+  "ambient_class_id": "#classes/ample",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/minimal_nonspread_ample"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite ample class is spread ample if and only if none of its pc-minors is isomorphic to a member of $\\mathcal B_{\\mathrm{spr}}$, the family of all pc-minor-minimal non-spread ample classes.",
+  "status": "established",
+  "proof": "Spread ampleness is inherited by pc-minors. If a finite ample class is not spread, repeatedly take a proper non-spread pc-minor; each step removes a coordinate, so the process terminates at a pc-minimal non-spread ample class.",
+  "proof_source": "YangDim:sections/spread_ample_classes/06_minimal_obstructions.tex#prop:spread-forbidden-minors-formal",
+  "comments": "Completeness is formal: this record does not assert that the obstruction family has a finite or explicit classification."
+}
