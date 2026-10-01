@@ -465,6 +465,102 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-17" style="position:relative;">
+
+        <h3><a href="obstruction_families/full_cap_crossed_subcube_contraction_obstructions.html" class="table-title-link">Full-Cap Crossed-Subcube Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full-Cap Crossed-Subcube Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal Y_{d+1}^{\mathrm{cap},\epsilon}(U,V;p,q)\}">
+            \[\{\mathcal Y_{d+1}^{\mathrm{cap},\epsilon}(U,V;p,q)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>On $X=\{a,b,p,q\}\mathbin{\dot\cup}U\mathbin{\dot\cup}V$, start with the crossed base having $\alpha=1,\beta=0$. Delete in addition the full cap $\mathcal P_0(U)=\{\{a,b,p\}\cup S:S\subseteq U\}$ when $\epsilon=0$, or $\mathcal P_1(U)=\{\{a,p,q\}\cup S:S\subseteq U\}$ when $\epsilon=1$. Attach a new pendant coordinate above the retained base, with lone lower endpoint $R=\{b,p\}\cup V$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge4$ and $\epsilon\in\{0,1\}$; require $V\ne\varnothing$ when $\epsilon=0$. The pendant family has $2^d-4\cdot2^{|U|}-2\cdot2^{|V|}+2$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The source gives exact rooted-union hole sets and complementary repair sets; the extra condition $V\ne\varnothing$ in the zero-cap case is essential to the construction.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-18" style="position:relative;">
+
+        <h3><a href="obstruction_families/decorated_singleton_aq_contraction_obstructions.html" class="table-title-link">Decorated Singleton-$aq$ Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Decorated Singleton-$aq$ Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal Y_{d+1}^{aq;\rho,\sigma}(u,V;p,q)\}">
+            \[\{\mathcal Y_{d+1}^{aq;\rho,\sigma}(u,V;p,q)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Take the crossed base with $U=\{u\}$, $\alpha=1$, and $\beta=0$. Delete $\{a,q\}$ and, according to $\rho,\sigma\in\{0,1\}$, optionally delete $\{a,b,q\}$ and $\{a,p,q\}$. Attach a new pendant coordinate above the remaining base, retaining the lone lower endpoint $R=\{b,p\}\cup V$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$U=\{u\}$, $V$ arbitrary, and $\rho,\sigma\in\{0,1\}$. The pendant family has $2^d-2^{|V|+1}-5-\rho-\sigma$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Exchanging the crossed wings gives the symmetric formulation with $V$ a singleton and the two corresponding optional states.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-singleton-aq-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-19" style="position:relative;">
+
+        <h3><a href="obstruction_families/double_half_wing_crossed_subcube_contraction_obstructions.html" class="table-title-link">Double-Half-Wing Crossed-Subcube Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Double-Half-Wing Crossed-Subcube Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal Y_{d+1}^{\mathrm{dh}}(V;p,q)\}">
+            \[\{\mathcal Y_{d+1}^{\mathrm{dh}}(V;p,q)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>On $X=\{a,b,p,q\}\mathbin{\dot\cup}V$, take the crossed base with $U=\varnothing$ and $\alpha=\beta=1$, delete the additional state $\{a,b,p\}$, and attach a new pendant coordinate above the base with lone lower endpoint $R=\{b,p\}\cup V$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$V\ne\varnothing$ and $d=|X|\ge5$. The pendant family has $2^d-3\cdot2^{|V|}-2$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The nonempty-$V$ hypothesis is sharp: when $V$ is empty, the displayed endpoint $R$ becomes a valid root.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-double-half-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-20" style="position:relative;">
+
+        <h3><a href="obstruction_families/collared_crossed_subcube_cap_contraction_obstructions.html" class="table-title-link">Collared Crossed-Subcube Cap Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Collared Crossed-Subcube Cap Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal Y_{d+1}^{\mathrm{col}}(W,z;p,q)\}">
+            \[\{\mathcal Y_{d+1}^{\mathrm{col}}(W,z;p,q)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,p,q,z\}\mathbin{\dot\cup}W$, set $U=W\mathbin{\dot\cup}\{z\}$ and $V=\varnothing$, and start with the crossed base having $\alpha=1,\beta=0$. Delete the collared cap $\{\{a,b,p,z\}\cup S:S\subseteq W\}$ and attach a new pendant coordinate above the base with lone lower endpoint $R=\{b,p\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$. The pendant family has $2^d-7\cdot2^{d-5}$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>Exchanging the two crossed wings gives the symmetric collared cap based on $\{a,b,q,z\}$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-collared-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

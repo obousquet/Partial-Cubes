@@ -1,0 +1,14 @@
+{
+  "id": 19,
+  "short_name": "double_half_wing_crossed_subcube_contraction_obstructions",
+  "name": "Double-Half-Wing Crossed-Subcube Contraction Obstructions",
+  "symbol": "\\{\\mathcal Y_{d+1}^{\\mathrm{dh}}(V;p,q)\\}",
+  "description_type": "parameterized",
+  "definition": "On $X=\\{a,b,p,q\\}\\mathbin{\\dot\\cup}V$, take the crossed base with $U=\\varnothing$ and $\\alpha=\\beta=1$, delete the additional state $\\{a,b,p\\}$, and attach a new pendant coordinate above the base with lone lower endpoint $R=\\{b,p\\}\\cup V$.",
+  "parameters": "$V\\ne\\varnothing$ and $d=|X|\\ge5$. The pendant family has $2^d-3\\cdot2^{|V|}-2$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The nonempty-$V$ hypothesis is sharp: when $V$ is empty, the displayed endpoint $R$ becomes a valid root.",
+  "recognition": "A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-double-half-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}

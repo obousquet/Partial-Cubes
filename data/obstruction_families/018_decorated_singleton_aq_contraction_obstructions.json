@@ -1,0 +1,14 @@
+{
+  "id": 18,
+  "short_name": "decorated_singleton_aq_contraction_obstructions",
+  "name": "Decorated Singleton-$aq$ Contraction Obstructions",
+  "symbol": "\\{\\mathcal Y_{d+1}^{aq;\\rho,\\sigma}(u,V;p,q)\\}",
+  "description_type": "parameterized",
+  "definition": "Take the crossed base with $U=\\{u\\}$, $\\alpha=1$, and $\\beta=0$. Delete $\\{a,q\\}$ and, according to $\\rho,\\sigma\\in\\{0,1\\}$, optionally delete $\\{a,b,q\\}$ and $\\{a,p,q\\}$. Attach a new pendant coordinate above the remaining base, retaining the lone lower endpoint $R=\\{b,p\\}\\cup V$.",
+  "parameters": "$U=\\{u\\}$, $V$ arbitrary, and $\\rho,\\sigma\\in\\{0,1\\}$. The pendant family has $2^d-2^{|V|+1}-5-\\rho-\\sigma$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "Exchanging the crossed wings gives the symmetric formulation with $V$ a singleton and the two corresponding optional states.",
+  "recognition": "A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-singleton-aq-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}

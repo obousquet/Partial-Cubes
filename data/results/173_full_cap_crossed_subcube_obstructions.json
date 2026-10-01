@@ -1,0 +1,17 @@
+{
+  "id": 173,
+  "short_name": "full_cap_crossed_subcube_obstructions",
+  "name": "Full-Cap Crossed-Subcube Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "For the crossed base with $\\alpha=1,\\beta=0$, adjoining either full $U$-cap $\\mathcal P_\\epsilon(U)$ leaves a learning space, provided $V\\ne\\varnothing$ when $\\epsilon=0$. The complementary endpoints $R=\\{b,p\\}\\cup V$ and $\\bar R=\\{a,q\\}\\cup U$ are invalid roots with repair sets $\\{a\\}\\cup V\\cup(\\{q\\}\text{ if }\\epsilon=0)$ and $\\{b,p,q\\}\\cup U$. Their pendant extension is contraction-minimal nonlearning of order $2^d-4\\cdot2^{|U|}-2\\cdot2^{|V|}+2$.",
+  "status": "established",
+  "proof": "For the zero cap, the deleted first wing and cap form one anchored subcube, making union closure and accessibility direct; the one cap is handled after translation. Exact rooted-union witnesses determine both hole sets, the neighbor test gives the displayed repair sets, and their union is all of $X$. Inclusion-exclusion gives the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-cap-pendant-obstructions"
+}

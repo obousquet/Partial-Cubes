@@ -1,0 +1,17 @@
+{
+  "id": 175,
+  "short_name": "double_half_wing_crossed_subcube_obstructions",
+  "name": "Double-Half-Wing Crossed-Subcube Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $V\\ne\\varnothing$, take $U=\\varnothing$ and $\\alpha=\\beta=1$ in the crossed construction, and additionally delete $\\{a,b,p\\}$. The base remains a learning space. For endpoints $R=\\{b,p\\}\\cup V$ and $\\bar R=\\{a,q\\}$, the repair sets are $\\{a,q\\}\\cup V$ and $\\{b,p\\}$. The pendant extension is contraction-minimal nonlearning of order $2^d-3\\cdot2^{|V|}-2$. If $V=\\varnothing$, $R$ is valid, so the hypothesis is sharp.",
+  "status": "established",
+  "proof": "Hereditary deletion of the additional state preserves union closure and accessibility. Three explicit rooted-union witnesses give the first endpoint holes; the second wing remains the exact other hole set. The new hole preserves the first repair set, the second is unchanged, and together they cover $X$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-double-half-pendant-obstructions"
+}

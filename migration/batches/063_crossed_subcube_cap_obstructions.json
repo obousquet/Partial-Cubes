@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "batch_id": "063_crossed_subcube_cap_obstructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote four further parameterized families of contraction-minimal nonlearning partial cubes built from crossed subcubes: the full-cap, decorated singleton-aq, double-half-wing, and collared-cap families.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-cap-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-singleton-aq-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-double-half-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-collared-cap-pendant-obstructions"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized family definitions, parameter restrictions, orders, repair certificates, contraction-minimality claims, and concise proofs. The survey retains the complete proofs, construction narrative, notation, figures, and comparison among the continuation families.",
+    "recoverability": "The exact source hash and proposition locators preserve the complete scholarly context.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/017_full_cap_crossed_subcube_contraction_obstructions.json",
+      "sha256": "7394cd2abb462ee445c3e75fbd13a658992c96655da7bdd314eff7637c944c0e"
+    },
+    {
+      "path": "data/obstruction_families/018_decorated_singleton_aq_contraction_obstructions.json",
+      "sha256": "33015603a6b2eab0f65f42345e5a7f81c11ed05ffdad268522b3a2f0556550c0"
+    },
+    {
+      "path": "data/obstruction_families/019_double_half_wing_crossed_subcube_contraction_obstructions.json",
+      "sha256": "57582263a95d8eef092c966dfae075421f9785e925d68cfa48843ad5159ac8cf"
+    },
+    {
+      "path": "data/obstruction_families/020_collared_crossed_subcube_cap_contraction_obstructions.json",
+      "sha256": "5333f1a1bd224b82cf1e08eb34aa6ce7b2532c896d57ed24052543aa4e95c7e7"
+    },
+    {
+      "path": "data/results/173_full_cap_crossed_subcube_obstructions.json",
+      "sha256": "555ba3abaa88ffe9fd2b6185c6f69fc267abf27b7aa6ec27c0c9ef240ea993ea"
+    },
+    {
+      "path": "data/results/174_decorated_singleton_aq_obstructions.json",
+      "sha256": "03425c9a5fd95ec3cb76efc8404d9b6aa85c89cd25b34bfe5eb5114ef9c3ad70"
+    },
+    {
+      "path": "data/results/175_double_half_wing_crossed_subcube_obstructions.json",
+      "sha256": "be8f666ac3d0b84415b7a892e0ac973f187c9379c084d6ba19a758e5163bc50f"
+    },
+    {
+      "path": "data/results/176_collared_crossed_subcube_cap_obstructions.json",
+      "sha256": "4e113069673466eb35ab606af69e6f3265474eac76cfc7792db0e1e75a4b890f"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "30297a3dc52e489fb9591c593409a6379b310fa33c92918726adc20da4f627a0"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1323 records.",
+    "website": "Normalized 1339 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All extractors, source-preservation checks, bibliography and coverage audits, class-status audits, and review-queue validation pass."
+  },
+  "deferred": [
+    "These records assert contraction-minimality only; they make no pc-minimality or completeness claim because learning-space graphs are not closed under convex restrictions.",
+    "The subcube-scaffold, staircase q-cap, and punctured-triangle continuation families remain queued for exact promotion."
+  ]
+}

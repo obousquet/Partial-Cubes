@@ -1,0 +1,17 @@
+{
+  "id": 174,
+  "short_name": "decorated_singleton_aq_obstructions",
+  "name": "Decorated Singleton-$aq$ Crossed-Subcube Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "When $U=\\{u\\}$, delete $\\{a,q\\}$ from the $(\\alpha,\\beta)=(1,0)$ crossed base and optionally delete $\\{a,b,q\\}$ and $\\{a,p,q\\}$ with flags $\\rho,\\sigma$. The result remains a learning space. Its complementary endpoints have repair sets $\\{a\\}\\cup V$ and $\\{b,u,p,q\\}$, so the pendant extension is contraction-minimal nonlearning of order $2^d-2^{|V|+1}-5-\\rho-\\sigma$.",
+  "status": "established",
+  "proof": "The added missing states are hereditary below their $a$ anchor, preserving union closure, and the crossed-base accessibility proof survives. Explicit rooted-union witnesses add exactly the decorated holes. Intersecting their neighbor directions gives the displayed repair sets, which cover every coordinate.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-singleton-aq-pendant-obstructions"
+}

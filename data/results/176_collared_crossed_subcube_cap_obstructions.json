@@ -1,0 +1,17 @@
+{
+  "id": 176,
+  "short_name": "collared_crossed_subcube_cap_obstructions",
+  "name": "Collared Crossed-Subcube Cap Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=\\{a,b,p,q,z\\}\\mathbin{\\dot\\cup}W$, $U=W\\mathbin{\\dot\\cup}\\{z\\}$, and $V=\\varnothing$. Adding the collared deleted cap $\\{\\{a,b,p,z\\}\\cup S:S\\subseteq W\\}$ to the $(1,0)$ crossed base leaves a learning space rooted at $\\{a,b,p\\}$. The endpoints $R=\\{b,p\\}$ and $\\bar R=\\{a,q\\}\\cup U$ have repair sets $\\{a,q\\}$ and $X\\setminus\\{a\\}$. The pendant extension is contraction-minimal nonlearning of order $2^d-7\\cdot2^{d-5}$.",
+  "status": "established",
+  "proof": "After translating by the displayed valid root, every missing block is hereditary in an anchor coordinate, and a casewise deletion proves accessibility. Rooted-union witnesses give the full first hole set and the sole second-endpoint hole. The repair sets cover $X$, and counting the two wings plus the disjoint cap yields the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-collared-cap-pendant-obstructions"
+}

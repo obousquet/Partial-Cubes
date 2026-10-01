@@ -1,0 +1,14 @@
+{
+  "id": 17,
+  "short_name": "full_cap_crossed_subcube_contraction_obstructions",
+  "name": "Full-Cap Crossed-Subcube Contraction Obstructions",
+  "symbol": "\\{\\mathcal Y_{d+1}^{\\mathrm{cap},\\epsilon}(U,V;p,q)\\}",
+  "description_type": "parameterized",
+  "definition": "On $X=\\{a,b,p,q\\}\\mathbin{\\dot\\cup}U\\mathbin{\\dot\\cup}V$, start with the crossed base having $\\alpha=1,\\beta=0$. Delete in addition the full cap $\\mathcal P_0(U)=\\{\\{a,b,p\\}\\cup S:S\\subseteq U\\}$ when $\\epsilon=0$, or $\\mathcal P_1(U)=\\{\\{a,p,q\\}\\cup S:S\\subseteq U\\}$ when $\\epsilon=1$. Attach a new pendant coordinate above the retained base, with lone lower endpoint $R=\\{b,p\\}\\cup V$.",
+  "parameters": "$d=|X|\\ge4$ and $\\epsilon\\in\\{0,1\\}$; require $V\\ne\\varnothing$ when $\\epsilon=0$. The pendant family has $2^d-4\\cdot2^{|U|}-2\\cdot2^{|V|}+2$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The source gives exact rooted-union hole sets and complementary repair sets; the extra condition $V\\ne\\varnothing$ in the zero-cap case is essential to the construction.",
+  "recognition": "A construction certificate lists the deleted crossed wings and decoration, verifies the exact rooted-union hole sets at the complementary endpoints, and checks that their contraction-repair sets cover every base coordinate.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-cap-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}
