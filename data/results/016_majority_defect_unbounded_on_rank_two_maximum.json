@@ -1,0 +1,24 @@
+{
+  "id": 16,
+  "short_name": "majority_defect_unbounded_on_rank_two_maximum",
+  "name": "Majority Defect Is Unbounded on Rank-Two Maximum Classes",
+  "result_type": "invariant_law",
+  "statement": "The majority completion defect is unbounded on maximum classes of VC dimension two: for $L_{n,2}=\\{S\\subseteq[n]:|S|\\leq2\\}$, $\\delta_{\\mathrm{med}}(L_{n,2})=2^n-1-n-\\binom n2$.",
+  "status": "established",
+  "proof": "Every unary and binary pattern occurs in $L_{n,2}$, so the binary-pattern theorem makes its majority closure the whole cube. Subtracting the maximum-class size $1+n+\\binom n2$ gives the formula.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:median-width",
+  "invariant_ids": [
+    "#invariants/majority_completion_defect",
+    "#invariants/vc_dimension"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure"
+  ],
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/ample_rank_at_most_two"
+  ],
+  "witness_ids": [
+    "#examples/weight_at_most_two_family"
+  ]
+}

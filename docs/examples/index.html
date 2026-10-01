@@ -305,6 +305,72 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-11" style="position:relative;">
+
+        <h3><a href="examples/antipodal_pair_family.html" class="table-title-link">Antipodal Pair Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipodal Pair Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="A_n=\{0^n,1^n\}">
+            \[A_n=\{0^n,1^n\}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For each integer $n\geq1$, the two-word class consisting of the two antipodal vertices of $Q_n$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Integer $n\geq1$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Its ordering width is $n-1$. Its optimal daisy completion adds $2^{\lfloor n/2\rfloor}+2^{\lceil n/2\rceil}-3$ concepts, attaining the sharp completion bound. For $n>1$ its one-inclusion graph is disconnected, so it is not a partial cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#ex:pair; PartialCubes:papers/structural-invariants/main.tex?#thm:completion-width</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-12" style="position:relative;">
+
+        <h3><a href="examples/disjoint_two_support_family.html" class="table-title-link">Disjoint Two-Support Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Disjoint Two-Support Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="E_k">
+            \[E_k\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Partition $[2k]$ into pairs $B_1,\ldots,B_k$ and take the $k$ concepts whose supports are the individual blocks $B_i$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Integer $k\geq2$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It has ordering width three, Yang depth defect $k+1$ over every field, and daisy completion defect at most $2k+1$. Thus an exponential lower bound on daisy defect in terms of Yang depth fails for general concept classes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:completion-depth-limit</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-13" style="position:relative;">
+
+        <h3><a href="examples/weight_at_most_two_family.html" class="table-title-link">Weight-at-Most-Two Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Weight-at-Most-Two Family</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="L_{n,2}">
+            \[L_{n,2}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The binary class consisting of all supports in $[n]$ of cardinality at most two.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Integer $n\geq3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is a maximum daisy class of VC dimension two and ordering width zero. Its majority closure is the full cube $Q_n$, so its majority completion defect is $2^n-1-n-\binom n2$, which is unbounded with $n$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:median-width</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

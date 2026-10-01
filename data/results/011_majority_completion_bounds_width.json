@@ -1,0 +1,22 @@
+{
+  "id": 11,
+  "short_name": "majority_completion_bounds_width",
+  "name": "Majority Completion Bounds Ordering Width",
+  "result_type": "invariant_law",
+  "statement": "If the one-inclusion graph of $C$ is connected, then $\\operatorname{med}(C)$ is an isometric median superclass of width zero, $\\sigma(C)\\leq\\delta_{\\mathrm{med}}(C)$, and the defect is the minimum number of additions needed for an isometric median superclass. On partial cubes it vanishes exactly on median graphs.",
+  "status": "established",
+  "proof": "Majority closure preserves connectedness. Ordering its concepts by distance from a chosen root gives only singleton minimal predecessor disagreements, so it is isometric, median, and width zero. Deletion stability gives the inequality; every median superclass must contain all iterated coordinatewise majorities.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:median-width",
+  "invariant_ids": [
+    "#invariants/majority_completion_defect",
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure",
+    "#operations/concept_deletion"
+  ],
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/median"
+  ]
+}

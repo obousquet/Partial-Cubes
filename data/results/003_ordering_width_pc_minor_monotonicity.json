@@ -1,0 +1,19 @@
+{
+  "id": 3,
+  "short_name": "ordering_width_pc_minor_monotonicity",
+  "name": "Ordering Width Decreases Under PC-Minors",
+  "result_type": "invariant_law",
+  "statement": "Every nonempty pc-minor $M$ of $C$ satisfies $\\sigma(M)\\leq\\sigma(C)$. For paired projection or conditioning of $(C,I)$ to a nonempty pair $(M,L)$, one also has $\\sigma(M;L)\\leq\\sigma(C;I)$.",
+  "status": "established",
+  "proof": "Under conditioning, restrict an order; any surviving minimal disagreement was already minimal. Under projection, order distinct images by first occurrence and lift each minimal projected disagreement to an original one of at least the same size. Prescribed initial subsets remain first under the paired construction.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:minors",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ]
+}

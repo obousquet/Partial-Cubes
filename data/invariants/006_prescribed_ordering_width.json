@@ -1,0 +1,14 @@
+{
+  "id": 6,
+  "short_name": "prescribed_ordering_width",
+  "name": "Prescribed-Subset Ordering Width",
+  "symbol": "\\sigma(C;I)",
+  "definition": "For a nonempty subset $I\\subseteq C$, minimize the ordinary ordering width over all orders of $C$ whose first $|I|$ concepts are exactly the members of $I$; their internal ordering is also optimized and its cost is included.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "parameters": "A finite nonempty binary class $C$ and nonempty prescribed initial subset $I\\subseteq C$.",
+  "normalization": "No order within $I$ is prescribed; $\\sigma(C;C)=\\sigma(C)$ and $\\sigma(C;I)\\geq\\max\\{\\sigma(C),\\sigma(I)\\}$.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#def:width"
+}

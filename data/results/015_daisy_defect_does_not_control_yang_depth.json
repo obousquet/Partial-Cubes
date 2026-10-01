@@ -1,0 +1,19 @@
+{
+  "id": 15,
+  "short_name": "daisy_defect_does_not_control_yang_depth",
+  "name": "Daisy Defect Does Not Exponentially Control Yang Depth",
+  "result_type": "invariant_law",
+  "statement": "There is no universal exponential lower bound on daisy completion defect in terms of Yang depth: the classes $E_k$ satisfy $\\sigma(E_k)=3$, $\\delta_{\\mathrm{CM},K}(E_k)=k+1$, and $\\delta_D(E_k)\\leq2k+1$.",
+  "status": "established",
+  "proof": "The concepts have disjoint two-element supports, so pairwise disagreements have size four. Their downward completion adds the empty support and all singletons. The higher-agreement complexes are simplex skeleta, with the boundary at the terminal rank giving depth defect $k+1$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:completion-depth-limit",
+  "invariant_ids": [
+    "#invariants/daisy_completion_defect",
+    "#invariants/yang_depth_defect",
+    "#invariants/ordering_width"
+  ],
+  "witness_ids": [
+    "#examples/disjoint_two_support_family"
+  ],
+  "comments": "These witnesses are disconnected and are not partial cubes for $k>1$."
+}

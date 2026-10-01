@@ -1,0 +1,20 @@
+{
+  "id": 10,
+  "short_name": "majority_completion_laws",
+  "name": "Majority Completion Laws",
+  "result_type": "invariant_law",
+  "statement": "Majority closure commutes with projection and Cartesian product and satisfies $\\operatorname{med}(C[\\tau])\\subseteq\\operatorname{med}(C)[\\tau]$. Its defect decreases under nonempty pc-minors and its completed size is multiplicative on products.",
+  "status": "established",
+  "proof": "Majority terms commute with projections and preserve fixed coordinates. Closing the product one factor at a time proves exact product commutation. Missing completed concepts after projection or conditioning inject into those before the operation.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:median-laws",
+  "invariant_ids": [
+    "#invariants/majority_completion_defect"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure",
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ]
+}

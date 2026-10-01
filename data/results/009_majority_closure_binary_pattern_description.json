@@ -1,0 +1,17 @@
+{
+  "id": 9,
+  "short_name": "majority_closure_binary_pattern_description",
+  "name": "Binary-Pattern Description of Majority Closure",
+  "result_type": "recognition",
+  "statement": "$\\operatorname{med}(C)$ consists exactly of the binary words whose restriction to every coordinate set of size at most two occurs in the corresponding projection of $C$.",
+  "status": "established",
+  "proof": "Every binary class on at most two coordinates is majority closed. Conversely, a minimally missing pattern of a majority-closed class cannot involve three coordinates: majoritying three witnesses, each omitting one selected coordinate, would realize it.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#lem:majority-patterns",
+  "invariant_ids": [
+    "#invariants/majority_completion_defect"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure",
+    "#operations/projection"
+  ]
+}

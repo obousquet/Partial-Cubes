@@ -1,0 +1,17 @@
+{
+  "id": 8,
+  "short_name": "ordering_width_deletion_stability",
+  "name": "Ordering Width Under Concept Deletion",
+  "result_type": "invariant_law",
+  "statement": "If $\\varnothing\\ne C\\subseteq B$ and $k=|B\\setminus C|$, then $\\sigma(C)+1\\leq(k+1)(\\sigma(B)+1)$. The analogous prescribed-subset inequality also holds, and equality occurs for every pair of nonnegative values $k$ and $\\sigma(B)$.",
+  "status": "established",
+  "proof": "A width-$t$ order connects each coordinate-face trace of each prefix by steps of length at most $t+1$. After deleting $k$ concepts, a minimal predecessor disagreement can be crossed by at most $k+1$ such steps. Block-path endpoint examples attain equality.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:deletion-width",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ]
+}

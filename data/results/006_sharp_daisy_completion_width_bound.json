@@ -1,0 +1,20 @@
+{
+  "id": 6,
+  "short_name": "sharp_daisy_completion_width_bound",
+  "name": "Sharp Daisy-Completion Bound for Ordering Width",
+  "result_type": "invariant_law",
+  "statement": "For every finite nonempty $C$, $\\delta_D(C)\\geq 2^{\\lfloor(\\sigma(C)+1)/2\\rfloor}+2^{\\lceil(\\sigma(C)+1)/2\\rceil}-3$, and equality is attained at every nonnegative ordering width.",
+  "status": "established",
+  "proof": "At a maximum-cost predecessor disagreement, the two cube intervals from the intersection of the two supports contain only their endpoints from $C$. Counting their missing vertices and balancing their dimensions gives the bound. The antipodal pair family attains equality.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:completion-width",
+  "invariant_ids": [
+    "#invariants/daisy_completion_defect",
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/rooted_daisy_completion"
+  ],
+  "witness_ids": [
+    "#examples/antipodal_pair_family"
+  ]
+}

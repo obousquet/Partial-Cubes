@@ -1,0 +1,24 @@
+{
+  "id": 14,
+  "short_name": "cycle_width_depth_separation",
+  "name": "Cycle Separation of Ordering Width and Yang Depth",
+  "result_type": "invariant_law",
+  "statement": "Ordering width is unbounded on partial cubes. For every $s\\geq1$, $\\sigma(C_6^{\\times s})=1$ while $\\delta_{\\mathrm{CM},k}(C_6^{\\times s})=s$; thus Yang depth is not bounded by ordering width even on partial cubes.",
+  "status": "established",
+  "proof": "Ordering width takes the maximum under products, whereas Yang depth defect adds. Since $C_6$ has both values one, its Cartesian powers give the separation. The exact even-cycle formula separately makes ordering width unbounded.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#cor:cycle-comparison",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/yang_depth_defect"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/even_cycles"
+  ],
+  "witness_ids": [
+    "#examples/six_cycle"
+  ]
+}

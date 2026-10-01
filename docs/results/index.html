@@ -98,6 +98,270 @@
             </div>
             <div class="table-grid">
 
+    <div class="table-card" id="math-1" style="position:relative;">
+
+        <h3><a href="results/first_two_face_formula.html" class="table-title-link">First-Two Face Formula</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>First-Two Face Formula</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For any order $\pi$ of a finite nonempty class, its width is the maximum of $d_H(a_F,b_F)-1$ over coordinate faces $F$ containing at least two concepts, where $a_F,b_F$ are the first two concepts of $C\cap F$ in the order, together with zero.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A minimal predecessor disagreement $\operatorname{diff}(c,b)$ means that $b,c$ are the first two concepts in their ambient interval face. Conversely, if $a_F,b_F$ are first in a face, an earlier proper subdisagreement would supply a concept of that face before $b_F$. These two correspondences preserve the disagreement size.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:first-two</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-2" style="position:relative;">
+
+        <h3><a href="results/ordering_width_zero_characterization.html" class="table-title-link">Zero Ordering Width Characterization</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Zero Ordering Width Characterization</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>$\sigma(C)=0$ if and only if $C$ is dismantlable ample, equivalently its concepts admit an order in which every nonempty prefix is ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Minimal predecessor disagreements are the supports of minimal colon generators of the Alexander-dual Yang ideal. Width zero is therefore linear quotients. Alexander duality identifies this with shellability, and the established shelling dictionary identifies the relevant shelling orders with ample-prefix orders.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:zero</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-3" style="position:relative;">
+
+        <h3><a href="results/ordering_width_pc_minor_monotonicity.html" class="table-title-link">Ordering Width Decreases Under PC-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width Decreases Under PC-Minors</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor $M$ of $C$ satisfies $\sigma(M)\leq\sigma(C)$. For paired projection or conditioning of $(C,I)$ to a nonempty pair $(M,L)$, one also has $\sigma(M;L)\leq\sigma(C;I)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Under conditioning, restrict an order; any surviving minimal disagreement was already minimal. Under projection, order distinct images by first occurrence and lift each minimal projected disagreement to an original one of at least the same size. Prescribed initial subsets remain first under the paired construction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-4" style="position:relative;">
+
+        <h3><a href="results/ordering_width_product_maximum.html" class="table-title-link">Ordering Width Takes Maxima on Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width Takes Maxima on Products</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty $I\subseteq C$ and $J\subseteq D$, $\sigma(C\times D)=\max\{\sigma(C),\sigma(D)\}$ and $\sigma(C\times D;I\times J)=\max\{\sigma(C;I),\sigma(D;J)\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning a product to a concept of either factor gives the other factor, proving the lower bounds by minor monotonicity. For the upper bounds, use optimal factor orders and list the product by rows; minimal predecessor disagreements then occur purely in one factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:products</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-5" style="position:relative;">
+
+        <h3><a href="results/daisy_completion_defect_laws.html" class="table-title-link">Daisy Completion Defect Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Completion Defect Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/daisy_completion_defect.html">Daisy Completion Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/rooted_daisy_completion.html">Rooted Daisy Completion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\delta_D$ vanishes exactly on daisy cubes, is nonincreasing under nonempty pc-minors, and satisfies $|C\times E|+\delta_D(C\times E)=(|C|+\delta_D(C))(|E|+\delta_D(E))$ on disjoint coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection and conditioning map missing points of a rooted completion injectively into missing points before the operation. Rooted completion commutes with Cartesian products, and the two positive completion sizes minimize independently.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:daisy-defect-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-6" style="position:relative;">
+
+        <h3><a href="results/sharp_daisy_completion_width_bound.html" class="table-title-link">Sharp Daisy-Completion Bound for Ordering Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sharp Daisy-Completion Bound for Ordering Width</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/daisy_completion_defect.html">Daisy Completion Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/rooted_daisy_completion.html">Rooted Daisy Completion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite nonempty $C$, $\delta_D(C)\geq 2^{\lfloor(\sigma(C)+1)/2\rfloor}+2^{\lceil(\sigma(C)+1)/2\rceil}-3$, and equality is attained at every nonnegative ordering width.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At a maximum-cost predecessor disagreement, the two cube intervals from the intersection of the two supports contain only their endpoints from $C$. Counting their missing vertices and balancing their dimensions gives the bound. The antipodal pair family attains equality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:completion-width</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/antipodal_pair_family.html">Antipodal Pair Family</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-7" style="position:relative;">
+
+        <h3><a href="results/edge_defect_width_bound.html" class="table-title-link">Edge Defect Laws and Ordering-Width Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Edge Defect Laws and Ordering-Width Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_defect.html">Edge Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\eta$ is nonnegative, vanishes exactly on daisy cubes, decreases under nonempty pc-minors, satisfies $\eta(C\times E)=|E|\eta(C)+|C|\eta(E)$, and bounds ordering width by $\sigma(C)\leq\max\{\eta(C)-1,0\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a root $r$, the corresponding count is the number of missing cube edges directed toward $r$; minimizing chooses coordinatewise majority values. A distance-from-root order injects all but one coordinate of each minimal predecessor disagreement into distinct missing directed edges.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:edge-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-8" style="position:relative;">
+
+        <h3><a href="results/ordering_width_deletion_stability.html" class="table-title-link">Ordering Width Under Concept Deletion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width Under Concept Deletion</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $\varnothing\ne C\subseteq B$ and $k=|B\setminus C|$, then $\sigma(C)+1\leq(k+1)(\sigma(B)+1)$. The analogous prescribed-subset inequality also holds, and equality occurs for every pair of nonnegative values $k$ and $\sigma(B)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A width-$t$ order connects each coordinate-face trace of each prefix by steps of length at most $t+1$. After deleting $k$ concepts, a minimal predecessor disagreement can be crossed by at most $k+1$ such steps. Block-path endpoint examples attain equality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-9" style="position:relative;">
+
+        <h3><a href="results/majority_closure_binary_pattern_description.html" class="table-title-link">Binary-Pattern Description of Majority Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Binary-Pattern Description of Majority Closure</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/majority_completion_defect.html">Majority Completion Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>$\operatorname{med}(C)$ consists exactly of the binary words whose restriction to every coordinate set of size at most two occurs in the corresponding projection of $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every binary class on at most two coordinates is majority closed. Conversely, a minimally missing pattern of a majority-closed class cannot involve three coordinates: majoritying three witnesses, each omitting one selected coordinate, would realize it.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#lem:majority-patterns</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-10" style="position:relative;">
+
+        <h3><a href="results/majority_completion_laws.html" class="table-title-link">Majority Completion Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Completion Laws</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/majority_completion_defect.html">Majority Completion Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Majority closure commutes with projection and Cartesian product and satisfies $\operatorname{med}(C[\tau])\subseteq\operatorname{med}(C)[\tau]$. Its defect decreases under nonempty pc-minors and its completed size is multiplicative on products.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Majority terms commute with projections and preserve fixed coordinates. Closing the product one factor at a time proves exact product commutation. Missing completed concepts after projection or conditioning inject into those before the operation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:median-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-11" style="position:relative;">
+
+        <h3><a href="results/majority_completion_bounds_width.html" class="table-title-link">Majority Completion Bounds Ordering Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Completion Bounds Ordering Width</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/majority_completion_defect.html">Majority Completion Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If the one-inclusion graph of $C$ is connected, then $\operatorname{med}(C)$ is an isometric median superclass of width zero, $\sigma(C)\leq\delta_{\mathrm{med}}(C)$, and the defect is the minimum number of additions needed for an isometric median superclass. On partial cubes it vanishes exactly on median graphs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Majority closure preserves connectedness. Ordering its concepts by distance from a chosen root gives only singleton minimal predecessor disagreements, so it is isometric, median, and width zero. Deletion stability gives the inequality; every median superclass must contain all iterated coordinatewise majorities.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:median-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-12" style="position:relative;">
+
+        <h3><a href="results/yang_depth_zero_and_product_law.html" class="table-title-link">Yang Depth Zero Set and Product Law</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Depth Zero Set and Product Law</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_depth_defect.html">Yang Depth Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>$\delta_{\mathrm{CM},k}(C)=0$ exactly for ample classes. On disjoint coordinate sets, $\delta_{\mathrm{CM},k}(C\times D)=\delta_{\mathrm{CM},k}(C)+\delta_{\mathrm{CM},k}(D)$, and adding a constant coordinate preserves the defect.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The first assertion is the ample–Cohen–Macaulay correspondence. Yang complexes of products are joins, so their Stanley–Reisner rings tensor and both dimension and depth add. A constant coordinate cones the complex.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#eq:depth</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-13" style="position:relative;">
+
+        <h3><a href="results/even_cycle_yang_depth_formula.html" class="table-title-link">Yang Depth of Even Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Depth of Even Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/even_cycles.html">Even Cycles</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_depth_defect.html">Yang Depth Defect</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $d\geq2$ and every field $k$, $\delta_{\mathrm{CM},k}(C_{2d})=d-2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The agreement complex on subsets varying in at most $r<d$ coordinates is the nerve of the cyclic arcs of length $r$, hence is homotopy equivalent to a circle for $1\leq r<d$. Substitution in the higher-agreement depth formula gives the maximum $d-2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:cycle-depth</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-14" style="position:relative;">
+
+        <h3><a href="results/cycle_width_depth_separation.html" class="table-title-link">Cycle Separation of Ordering Width and Yang Depth</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cycle Separation of Ordering Width and Yang Depth</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/even_cycles.html">Even Cycles</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/yang_depth_defect.html">Yang Depth Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Ordering width is unbounded on partial cubes. For every $s\geq1$, $\sigma(C_6^{\times s})=1$ while $\delta_{\mathrm{CM},k}(C_6^{\times s})=s$; thus Yang depth is not bounded by ordering width even on partial cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Ordering width takes the maximum under products, whereas Yang depth defect adds. Since $C_6$ has both values one, its Cartesian powers give the separation. The exact even-cycle formula separately makes ordering width unbounded.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#cor:cycle-comparison</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/six_cycle.html">Six-Cycle</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-15" style="position:relative;">
+
+        <h3><a href="results/daisy_defect_does_not_control_yang_depth.html" class="table-title-link">Daisy Defect Does Not Exponentially Control Yang Depth</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Defect Does Not Exponentially Control Yang Depth</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/daisy_completion_defect.html">Daisy Completion Defect</a></li><li><a href="invariants/yang_depth_defect.html">Yang Depth Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>There is no universal exponential lower bound on daisy completion defect in terms of Yang depth: the classes $E_k$ satisfy $\sigma(E_k)=3$, $\delta_{\mathrm{CM},K}(E_k)=k+1$, and $\delta_D(E_k)\leq2k+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The concepts have disjoint two-element supports, so pairwise disagreements have size four. Their downward completion adds the empty support and all singletons. The higher-agreement complexes are simplex skeleta, with the boundary at the terminal rank giving depth defect $k+1$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:completion-depth-limit</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/disjoint_two_support_family.html">Disjoint Two-Support Family</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>These witnesses are disconnected and are not partial cubes for $k>1$.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-16" style="position:relative;">
+
+        <h3><a href="results/majority_defect_unbounded_on_rank_two_maximum.html" class="table-title-link">Majority Defect Is Unbounded on Rank-Two Maximum Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Majority Defect Is Unbounded on Rank-Two Maximum Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/ample_rank_at_most_two.html">Ample Classes of Rank at Most Two</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/majority_completion_defect.html">Majority Completion Defect</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>The majority completion defect is unbounded on maximum classes of VC dimension two: for $L_{n,2}=\{S\subseteq[n]:|S|\leq2\}$, $\delta_{\mathrm{med}}(L_{n,2})=2^n-1-n-\binom n2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every unary and binary pattern occurs in $L_{n,2}$, so the binary-pattern theorem makes its majority closure the whole cube. Subtracting the maximum-class size $1+n+\binom n2$ gives the formula.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:median-width</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/weight_at_most_two_family.html">Weight-at-Most-Two Family</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

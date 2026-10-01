@@ -1,0 +1,17 @@
+{
+  "id": 4,
+  "short_name": "ordering_width_product_maximum",
+  "name": "Ordering Width Takes Maxima on Products",
+  "result_type": "invariant_law",
+  "statement": "For nonempty $I\\subseteq C$ and $J\\subseteq D$, $\\sigma(C\\times D)=\\max\\{\\sigma(C),\\sigma(D)\\}$ and $\\sigma(C\\times D;I\\times J)=\\max\\{\\sigma(C;I),\\sigma(D;J)\\}$.",
+  "status": "established",
+  "proof": "Conditioning a product to a concept of either factor gives the other factor, proving the lower bounds by minor monotonicity. For the upper bounds, use optimal factor orders and list the product by rows; minimal predecessor disagreements then occur purely in one factor.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:products",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ]
+}

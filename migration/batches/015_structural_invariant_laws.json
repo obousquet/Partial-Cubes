@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "batch_id": "015_structural_invariant_laws",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Establish the Results table as the database home for general invariant theorems and migrate the foundational ordering-width, completion-defect, and Yang-depth laws from the structural-invariants paper.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/structural-invariants/main.tex#def:width",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:minors",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:products",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:completion-width",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:edge-width",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:deletion-width",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:median-laws",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:median-width",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:cycle-depth",
+    "PartialCubes:papers/structural-invariants/main.tex#cor:cycle-comparison",
+    "YangDim:main.bib#BousquetAmpleCM26",
+    "YangDim:main.bib#BousquetYangDictionary26"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-invariant-laws",
+      "path": "papers/structural-invariants/main.tex",
+      "sha256": "1d8b01d01353a2641fb9e75789b67d5f722a83c8406a740b5cbf9b3226b32f0e"
+    },
+    {
+      "id": "yangdim-bibliography",
+      "path": "../YangDim/main.bib",
+      "sha256": "e0c488e0f65f5a146302a6275917aec47a7fc0ea1315b7f6e2e0a5705fc9bb2b"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/classes/schema.json",
+      "sha256": "28cf4ba98937a41d62bdf5a00dd0254f10573e6b96fb95007ffa5a4dc4cee1a4"
+    },
+    {
+      "path": "data/invariants/schema.json",
+      "sha256": "b9fffa9d94455e1f658b667c644a2e950c23c268665958b5d8057f5618bc1f91"
+    },
+    {
+      "path": "data/operations/schema.json",
+      "sha256": "082e2b59c3e0e4998a9ad095a5b05a7d778badb3ba948784a759c4210a91da9e"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "af72140b49ea610ab4dd2210919abb82572ae8efab8faefae8bedda6622461f5"
+    },
+    {
+      "path": "data/operations/005_concept_deletion.json",
+      "sha256": "109ae578bc0232cb1fbb6b45f036be2ca51faf6725b06e0201b4a7bcf76f9de7"
+    },
+    {
+      "path": "data/operations/006_majority_closure.json",
+      "sha256": "2ec8e3adcd5b6cd88f558ae09e4410001d6febd4a0935800126676ee3788d021"
+    },
+    {
+      "path": "data/operations/007_rooted_daisy_completion.json",
+      "sha256": "f55598870807fcb0268c0491a54ae5e1e2e1ded6a9215d0587ea4ab2a9852a0e"
+    },
+    {
+      "path": "data/invariants/006_prescribed_ordering_width.json",
+      "sha256": "61e6e2f90af50922a3b3fdc008f00482e3a111dbf4fdd5cd065acc0f493ecd8e"
+    },
+    {
+      "path": "data/invariants/007_yang_depth_defect.json",
+      "sha256": "ce25ba1647998000caac869722c7c87e670f33acf1d894a6d36e9ac247407f14"
+    },
+    {
+      "path": "data/invariants/008_majority_completion_defect.json",
+      "sha256": "39adbddf0d5e611b253df01b61be4571cc4d0948bb65778ea49c0b2ede80589d"
+    },
+    {
+      "path": "data/examples/011_antipodal_pair_family.json",
+      "sha256": "8a1e83faba8bb39f107e90696efa19406176266e5df72c2eaf2fe7725fe50664"
+    },
+    {
+      "path": "data/examples/012_disjoint_two_support_family.json",
+      "sha256": "e0d04b8af38641c676f43405751f240b24c7e5830c75ab226047d6ed6cc36fc9"
+    },
+    {
+      "path": "data/examples/013_weight_at_most_two_family.json",
+      "sha256": "75f0be2dc9d7a3a9cca3dca5384825ed6b8a4bd3d83db11a0c1d524385a4c3ec"
+    },
+    {
+      "path": "data/results/001_first_two_face_formula.json",
+      "sha256": "e7f7cdb2d071e824100c4beef9800e36d857f10548f9ad456ba8d1b1f25c601a"
+    },
+    {
+      "path": "data/results/002_ordering_width_zero_characterization.json",
+      "sha256": "e5f8be2934c7ec0a7b75b7a7ff3ee383ced6cb91794836b93e0b094005e4a339"
+    },
+    {
+      "path": "data/results/003_ordering_width_pc_minor_monotonicity.json",
+      "sha256": "422f5f3aef4c737eefa01a834c7c27eefb09baca4e8db20f7461b0b20c6fc2f9"
+    },
+    {
+      "path": "data/results/004_ordering_width_product_maximum.json",
+      "sha256": "da48df370272c651d1c54e15178ead2580754d6a326da06a857c38b1585077b1"
+    },
+    {
+      "path": "data/results/005_daisy_completion_defect_laws.json",
+      "sha256": "bed391c28483f62c920569c13e130cbb2c68a6d5efb2926f215d006e2ef3d571"
+    },
+    {
+      "path": "data/results/006_sharp_daisy_completion_width_bound.json",
+      "sha256": "beaa06023846e5833510b4b8b7c781bca48be5d331cd69386bdc07e146fbaae3"
+    },
+    {
+      "path": "data/results/007_edge_defect_width_bound.json",
+      "sha256": "97aa5f3e369bd6e25a7311620028b699c3ede4b3c9d0d1f40b8a1b8603c772c7"
+    },
+    {
+      "path": "data/results/008_ordering_width_deletion_stability.json",
+      "sha256": "cbf8bf0bb39e343db7191c60775b5cd191e0d6352b43b24b6adf384de981e40c"
+    },
+    {
+      "path": "data/results/009_majority_closure_binary_pattern_description.json",
+      "sha256": "8b104bd7f82568f0292733b3e15f988183419c6f4c9980343432a18bd4f5876d"
+    },
+    {
+      "path": "data/results/010_majority_completion_laws.json",
+      "sha256": "46b7df7048aede879adadc3908f744542fda95ead0506010246cbf614a522904"
+    },
+    {
+      "path": "data/results/011_majority_completion_bounds_width.json",
+      "sha256": "12fe717590a0c9e6349d8fd838f21840dfd41c35fbcc38eef36b2c900a30dab4"
+    },
+    {
+      "path": "data/results/012_yang_depth_zero_and_product_law.json",
+      "sha256": "919b15dc1811765f25da38c8e23ce046bc80435adc8ed05d66768d6e0fed357e"
+    },
+    {
+      "path": "data/results/013_even_cycle_yang_depth_formula.json",
+      "sha256": "c64e12f606536e426191e92690b0011fe5a051c0a680727982bda35ced540521"
+    },
+    {
+      "path": "data/results/014_cycle_width_depth_separation.json",
+      "sha256": "d16bf2b20af7cc6468d44b2ee614b3b6b8eecd37fe8972a6df16c5e56a3bad46"
+    },
+    {
+      "path": "data/results/015_daisy_defect_does_not_control_yang_depth.json",
+      "sha256": "422bfba28be5f1bf5326ddeacad625ca39eed15672db0fcb7a4e89e8619c30d7"
+    },
+    {
+      "path": "data/results/016_majority_defect_unbounded_on_rank_two_maximum.json",
+      "sha256": "75e679e8eb2c02c678c63d1eb85899708f6c6a75f5f4dbb510486ae9a78e3591"
+    },
+    {
+      "path": "data/invariant_values/019_yang_depth_zero_on_ample.json",
+      "sha256": "19d3f3bddfa43b7c119161edc8108281fb770a8acc7de7a4a192b994a14f4d10"
+    },
+    {
+      "path": "data/invariant_values/020_majority_completion_zero_on_median.json",
+      "sha256": "089c507e9951561bb1e9f6e1f152b5449823af506b599357b12fd68e191ed833"
+    },
+    {
+      "path": "data/invariant_values/021_ordering_width_zero_on_median.json",
+      "sha256": "877a6b0cc9722c66c911676471c5311c3b68a5eaa91e91b50731264d75e34f53"
+    },
+    {
+      "path": "data/invariant_values/022_even_cycle_yang_depth.json",
+      "sha256": "90ea27b500abacc2aaa6885c9ea353c673c1ef28ca6f8b2ee8769a1012f8de10"
+    },
+    {
+      "path": "data/invariant_values/023_majority_defect_unbounded_on_maximum_rank_two.json",
+      "sha256": "46fcf1720d033dc75ed1ce3514360c3036f371e0563f16857b70bd76225fab08"
+    }
+  ],
+  "claim_decisions": [],
+  "direct_source_normalizations": [
+    "#results/first_two_face_formula",
+    "#results/ordering_width_zero_characterization",
+    "#results/ordering_width_pc_minor_monotonicity",
+    "#results/ordering_width_product_maximum",
+    "#results/daisy_completion_defect_laws",
+    "#results/sharp_daisy_completion_width_bound",
+    "#results/edge_defect_width_bound",
+    "#results/ordering_width_deletion_stability",
+    "#results/majority_closure_binary_pattern_description",
+    "#results/majority_completion_laws",
+    "#results/majority_completion_bounds_width",
+    "#results/yang_depth_zero_and_product_law",
+    "#results/even_cycle_yang_depth_formula",
+    "#results/cycle_width_depth_separation",
+    "#results/daisy_defect_does_not_control_yang_depth",
+    "#results/majority_defect_unbounded_on_rank_two_maximum"
+  ],
+  "renderer_dependency": {
+    "repository": "math_database",
+    "commit": "b48b206",
+    "purpose": "Reverse-reference matching through result class_ids, invariant_ids, and operation_ids arrays."
+  },
+  "ownership": {
+    "database": [
+      "formal definitions of prescribed ordering width, Yang depth defect, and majority completion defect",
+      "concept deletion, majority closure, and rooted daisy completion operations",
+      "sixteen theorem statements with concise database-owned proofs",
+      "exact zero values and cycle formulas plus unbounded majority defect on rank-two maximum classes",
+      "three reusable witness families",
+      "reverse theorem links on class, invariant, and operation records"
+    ],
+    "latex": [
+      "full paper proofs, motivation, narrative order, and literature comparisons",
+      "the later gluing, substitution, polarization, Betti, slope, and prefix-homology theorems not yet promoted",
+      "open problems and field-dependence discussion beyond the recorded statements"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "62b421786e92fd1a6b9bff6c08a4f6698fe9ac798cd4fb3b74f4147ccf48a2c6",
+    "database_records_after_batch": 245,
+    "promoted_classes": 14,
+    "reserved_classes_remaining": 74
+  },
+  "graph_delivery": {
+    "hasse_covers_after_batch": 22,
+    "stored_established_inclusions_after_batch": 27,
+    "closure_map_arrows_after_batch": 33,
+    "negative_comparisons_after_batch": 9
+  },
+  "data_tree_sha256": "47e9323bb6086c9f2364e314f8fa4edcb8eb0534a5f54238035c6c88ac5f9315",
+  "generated_outputs": [
+    "committed docs/ website with populated Results table",
+    "reverse theorem links from classes, invariants, and operations",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "math_database: python3 -m unittest test_reference_list_matching.py",
+    "make check",
+    "all generated local href targets exist",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "git diff --check"
+  ],
+  "deferred": "Resolution slope, prefix homology, section gluing, prescribed extensions, Boolean substitution, polarization, and detailed Betti laws remain for subsequent invariant batches. The dismantlable-ample zero-set class will receive its own class-foundation batch."
+}

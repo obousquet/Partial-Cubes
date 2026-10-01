@@ -1,0 +1,23 @@
+{
+  "id": 7,
+  "short_name": "edge_defect_width_bound",
+  "name": "Edge Defect Laws and Ordering-Width Bound",
+  "result_type": "invariant_law",
+  "statement": "$\\eta$ is nonnegative, vanishes exactly on daisy cubes, decreases under nonempty pc-minors, satisfies $\\eta(C\\times E)=|E|\\eta(C)+|C|\\eta(E)$, and bounds ordering width by $\\sigma(C)\\leq\\max\\{\\eta(C)-1,0\\}$.",
+  "status": "established",
+  "proof": "For a root $r$, the corresponding count is the number of missing cube edges directed toward $r$; minimizing chooses coordinatewise majority values. A distance-from-root order injects all but one coordinate of each minimal predecessor disagreement into distinct missing directed edges.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:edge-width",
+  "invariant_ids": [
+    "#invariants/edge_defect",
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ]
+}
