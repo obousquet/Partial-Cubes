@@ -1,0 +1,13 @@
+{
+  "id": 148,
+  "short_name": "monotone_substitution_parent_bound",
+  "name": "Quantitative Parent Bound for Monotone Substitution",
+  "class_ids": ["#classes/maximum_generated_classes", "#classes/universal_substitution_tests"],
+  "invariant_ids": ["#invariants/minimum_maximum_parent_rank"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "construction",
+  "statement": "Let a nonconstant monotone Boolean function on $k$ coordinates have $a$ inclusion-minimal one-supports forcing value one and $b$ inclusion-minimal zero-coordinate sets forcing value zero. A supplied rank-$r$ parent with $m$ auxiliaries yields a substituted parent of rank at most $r+k$ with at most $m+a+b+2k+2$ auxiliaries. For a proper supplied parent the constructed rank is exactly $r+k$ and retains its mark.",
+  "status": "established",
+  "proof": "The $a+b$ minimal supports define homogeneous guards for the zero set and its complement, while two control forms create the three sections of $H_T$. After normalizing the control gap, strict-realization completion gives $H_T$ a rank-$(k+1)$ parent with at most $a+b+2k+2$ auxiliaries. The fixed-test criterion extracts $s=k$ and composes this interval with the supplied outer parent.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-substitution"
+}

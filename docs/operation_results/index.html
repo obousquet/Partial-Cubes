@@ -2296,6 +2296,176 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-135" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_projection_closed.html" class="table-title-link">Universal Tests Are Projection Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Projection Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a universal substitution test is universal.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Starting with a parent of $H_T$, projection--reduction gluing first records the projection and reduction of one test coordinate in a downward-closed auxiliary control. A second block gluing identifies the controls and produces exactly $H_{\pi T}$. The three-section criterion proves universality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-136" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_conditioning_closed.html" class="table-title-link">Universal Tests Are Conditioning Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Conditioning Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate section of a universal substitution test is universal.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Fixing a test-coordinate pattern commutes with the three-section construction: $H_T[\tau]=H_{T[\tau]}$. Section closure of maximum-generated classes and the three-section criterion give the result.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-137" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_pc_minor_closed.html" class="table-title-link">Universal Tests Are PC-Minor Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are PC-Minor Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty partial-cube minor obtained through coordinate sections and coordinate contractions of a universal test is universal.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Coordinate sections preserve universality directly. Coordinate contraction is represented in the set-family model by projection together with removal of the contracted coordinate, and projection preserves universality by the two-stage gluing construction. Iterate these elementary minor operations.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-138" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_full_reduction_closed.html" class="table-title-link">Universal Tests Are Full-Reduction Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Full-Reduction Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/full_reduction.html">Full Reduction</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty full reduction of a universal substitution test is universal.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Universality is closed under fixed-cube complementation and projection, while $\partial_iT=(\pi_i(T^{\mathrm c}))^{\mathrm c}$. Applying these two closures proves the claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-139" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_complement_closed.html" class="table-title-link">Universal Tests Are Complement Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Complement Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/cube_complement.html">Cube Complement</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The complement in the fixed cube of a universal substitution test is universal, with the source's empty/full constant convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The control transformation $(u,v)\mapsto(1-v,1-u)$ is a cube automorphism sending $H_T$ to $H_{T^{\mathrm c}}$. Maximum-generatedness and hence the three-section criterion are invariant under this transformation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-140" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_cartesian_product_closed.html" class="table-title-link">Universal Tests Are Cartesian-Product Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Cartesian-Product Closed</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/cartesian_product.html">Cartesian Product</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>The Cartesian product of universal tests on disjoint coordinate sets is universal.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The two-coordinate singleton $\{00\}$ is a universal monotone test. Substituting the two factors into its two coordinates yields their Cartesian product, and universal tests are closed under composition on disjoint coordinate sets.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-141" style="position:relative;">
+
+        <h3><a href="operation_results/universal_tests_boolean_substitution_closed.html" class="table-title-link">Universal Tests Are Closed under Disjoint Boolean Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universal Tests Are Closed under Disjoint Boolean Substitution</p>
+<p><strong>Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Operation: </strong><a href="operations/boolean_substitution.html">Boolean Substitution</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If $T\in\mathcal U_{X\sqcup\{i\}}$ and $S\in\mathcal U_Y$ on disjoint new coordinates, then $(T[i=0]\times S)\cup(T[i=1]\times S^{\mathrm c})$ is universal. Empty outputs use the source's constant-test convention.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Substitute $T$ into an arbitrary represented outer class and then substitute $S$ into the surviving coordinate $i$. Universality preserves maximum-generatedness at each stage, and associativity of the set construction identifies the final class with substitution by the composite test.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:universal-test-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-142" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_conjunction_substitution.html" class="table-title-link">Maximum-Generated Classes and Conjunction Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Classes and Conjunction Substitution</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/boolean_substitution.html">Boolean Substitution</a></p>
+<p><strong>Result Type:</strong> Preserves Between</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Replacing one coordinate by conjunction of two fresh coordinates preserves and reflects membership in $\mathsf{MaxMin}$. A supplied rank-$r$ parent with $m$ auxiliaries yields a rank-$(r+1)$ parent with at most $m+1$ auxiliaries, and finite minimum parent rank satisfies $h(C)\le h(C^\wedge)\le h(C)+1$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Two rank-one control fibers have marked sections equal to the three-word conjunction-zero fiber and the singleton conjunction-one fiber. Insert them into a level-sum parent with the fiber-replacement theorem; the unique old heights are constant on the required components. Fixing one new input to one recovers the original class as a section, proving reflection and the lower rank bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:and-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-143" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_monotone_substitution.html" class="table-title-link">Maximum-Generated Classes and Monotone Boolean Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Classes and Monotone Boolean Substitution</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/boolean_substitution.html">Boolean Substitution</a></p>
+<p><strong>Result Type:</strong> Preserves Between</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonconstant coordinatewise monotone Boolean function, substitution preserves and reflects membership in $\mathsf{MaxMin}$, including functions whose formulas repeat variables. Input-coordinate reflections extend this to unate functions; constant tests reduce to a section times a cube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The zero set of a monotone function is a downset. Minimal one-supports outside it and minimal zero-supports outside its complement define a strict convex cone realizing the associated three-section class. A maximum parent follows from strict realization, and the fixed-test criterion gives preservation. Restricting the test to an edge on which the function changes recovers the input class as a section, proving reflection.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-144" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_realizable_test_substitution.html" class="table-title-link">Realizable Ample Tests Preserve Maximum-Generatedness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Realizable Ample Tests Preserve Maximum-Generatedness</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/boolean_substitution.html">Boolean Substitution</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Substitution by any realizable ample test preserves $\mathsf{MaxMin}$. For a proper test on $k$ coordinates, if $q_0$ and $q_1$ are the numbers of minimal signed missing patterns of the test and its complement, a proper rank-$r$ input parent with $m$ auxiliaries yields rank $r+k$ with at most $m+q_0+q_1+2k+2$ auxiliaries.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Independent strict signed separators for the test and its complement, joined by two control forms, realize exactly the associated three-section class. Normalizing the controls and applying strict-realization completion gives a rank-$(k+1)$ parent with the stated auxiliary cost. The fixed-test criterion then supplies the substituted parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:complementary-realizations</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

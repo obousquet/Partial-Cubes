@@ -1,0 +1,15 @@
+{
+  "id": 24,
+  "short_name": "universal_substitution_equivalence",
+  "name": "Universal Substitution-Test Equivalence",
+  "class_id": "#classes/universal_substitution_tests",
+  "characterization_ids": [
+    "#characterizations/universal_substitution_property",
+    "#characterizations/three_section_test_class"
+  ],
+  "hypotheses": "Finite binary tests; nonempty proper tests use the fiber criterion, while constants reduce to sections times cubes.",
+  "statement": "The universal quantifier over all represented outer classes is equivalent to checking the single three-section class $H_T$.",
+  "status": "established",
+  "proof": "A maximum parent of $H_T$ yields four consecutive maximum classes whose marked sections are empty, $T$, its complement, and the full cube. The fiber-replacement theorem inserts the appropriate middle class over every unique-height fiber of any supplied maximum parent, proving universal substitution. Conversely, substituting $T$ into the rank-one three-edge path with shores $\\{00,01\\}$ and $\\{01,11\\}$ produces $H_T$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:substitution-test"
+}

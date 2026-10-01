@@ -1,0 +1,12 @@
+{
+  "id": 147,
+  "short_name": "fixed_test_substitution_criterion",
+  "name": "Fixed-Test Criterion for Universal Substitution",
+  "class_ids": ["#classes/universal_substitution_tests", "#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "recognition",
+  "statement": "For a nonempty proper test $T\\subsetneq Q^Y$, universality is equivalent to the existence, on $Y$ plus auxiliaries and with one common mark, of maximum classes $L,N_0,N_1,U$ of ranks $s-1,s,s,s+1$ satisfying $L\\subseteq N_0,N_1\\subseteq U$ and marked sections $\\varnothing,T,T^{\\mathrm c},Q^Y$. A rank-$R$ parent of $H_T$ supplies these with $s=R-1$. Given this interval and a proper rank-$r$ parent of the outer class with $m$ auxiliaries, substitution has a rank-$(r+s)$ parent with the old auxiliaries plus those of the interval.",
+  "status": "established",
+  "proof": "Projecting and fully reducing a parent of the three-section class in its two controls extracts the four consecutive maximum classes and their marked sections. Conversely, extend one nested side of the interval and the projection/reduction pair of the outer parent to maximum sequences. A level sum followed by componentwise replacement of the middle fiber by $N_0$ or $N_1$ gives the required maximum parent and retains both marks.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:substitution-test"
+}

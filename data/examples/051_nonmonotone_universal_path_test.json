@@ -1,0 +1,11 @@
+{
+  "id": 51,
+  "short_name": "nonmonotone_universal_path_test",
+  "name": "Nonmonotone Universal Four-Word Path Test",
+  "symbol": "T_{\\mathrm{path}}",
+  "object_type": "set_family",
+  "definition": "In coordinate order $(1,2,3)$, take $T=\\{000,100,110,111\\}$ and $T^{\\mathrm c}=\\{001,010,011,101\\}$.",
+  "properties": "The cones $z_1>z_2>z_3$ and $z_3>-z_2>z_1$ realize $T$ and its complement, so $T$ is a realizable ample and hence universal substitution test. Its cube graph is a four-vertex path, so no coordinate reflection makes it a rank-one downset on all three coordinates; such a downset has the three-star graph. Thus realizable substitution covers tests beyond the monotone and unate cases.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:complementary-realizations",
+  "verification": "scripts/verify_substitution_tests.py; data/examples/assets/substitution_tests_database_verification.json"
+}

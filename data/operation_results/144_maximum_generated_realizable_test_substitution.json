@@ -1,0 +1,13 @@
+{
+  "id": 144,
+  "short_name": "maximum_generated_realizable_test_substitution",
+  "name": "Realizable Ample Tests Preserve Maximum-Generatedness",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "Substitution by any realizable ample test preserves $\\mathsf{MaxMin}$. For a proper test on $k$ coordinates, if $q_0$ and $q_1$ are the numbers of minimal signed missing patterns of the test and its complement, a proper rank-$r$ input parent with $m$ auxiliaries yields rank $r+k$ with at most $m+q_0+q_1+2k+2$ auxiliaries.",
+  "proof": "Independent strict signed separators for the test and its complement, joined by two control forms, realize exactly the associated three-section class. Normalizing the controls and applying strict-realization completion gives a rank-$(k+1)$ parent with the stated auxiliary cost. The fixed-test criterion then supplies the substituted parent.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:complementary-realizations"
+}

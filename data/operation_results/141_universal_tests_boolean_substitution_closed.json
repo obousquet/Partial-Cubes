@@ -1,0 +1,13 @@
+{
+  "id": 141,
+  "short_name": "universal_tests_boolean_substitution_closed",
+  "name": "Universal Tests Are Closed under Disjoint Boolean Substitution",
+  "class_id": "#classes/universal_substitution_tests",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/universal_substitution_tests",
+  "status": "established",
+  "statement": "If $T\\in\\mathcal U_{X\\sqcup\\{i\\}}$ and $S\\in\\mathcal U_Y$ on disjoint new coordinates, then $(T[i=0]\\times S)\\cup(T[i=1]\\times S^{\\mathrm c})$ is universal. Empty outputs use the source's constant-test convention.",
+  "proof": "Substitute $T$ into an arbitrary represented outer class and then substitute $S$ into the surviving coordinate $i$. Universality preserves maximum-generatedness at each stage, and associativity of the set construction identifies the final class with substitution by the composite test.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:universal-test-closure"
+}

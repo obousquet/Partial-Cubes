@@ -1,0 +1,13 @@
+{
+  "id": 146,
+  "short_name": "conjunction_shattering_and_sharp_costs",
+  "name": "Shattering Formula and Sharp Costs for Conjunction Substitution",
+  "class_ids": ["#classes/maximum", "#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/vc_dimension", "#invariants/minimum_maximum_parent_rank"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "invariant_law",
+  "statement": "Let $A=C[i=0]$, $B=C[i=1]$, replace $i$ by conjunction on $k\\ge2$ fresh coordinates $Z$, and call the result $D$. For $S\\subseteq X,T\\subseteq Z$, $S\\sqcup T$ is shattered by $D$ exactly when: $S\\in\\operatorname{Sh}(A\\cup B)$ for $T=\\varnothing$; $S\\in\\operatorname{Sh}(A)$ for $0<|T|<k$; and $S\\sqcup\\{i\\}\\in\\operatorname{Sh}(C)$ for $T=Z$. If $C$ is maximum of rank $r\\ge1$, then $\\operatorname{VC}(D)=h(D)=r+k-1$. For $r\\le n-2$, every parent uses at least $k-1$ auxiliaries and the bound is attained. If $r=n$, the exact count is zero. If $r=n-1$ and $C=Q^n\\setminus\\{v\\}$, it is zero for $v_i=1$ and $k-1$ for $v_i=0$.",
+  "status": "established",
+  "proof": "Empty, proper, and full subsets of the conjunction coordinates respectively see the old projection, force old value zero, or distinguish both old values, yielding the three shattering cases. A full reduction supplies an $(r-1)$-cube times the new cube, attaining VC dimension $r+k-1$, while iterated conjunction gives a parent at that rank with $k-1$ auxiliaries. A minimally missing old pattern lifts to support $R+1$ in any rank-$R$ parent and forces the matching auxiliary lower bound; direct inspection handles the two top-rank boundaries.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:and-shattering"
+}

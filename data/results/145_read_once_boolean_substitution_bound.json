@@ -1,0 +1,13 @@
+{
+  "id": 145,
+  "short_name": "read_once_boolean_substitution_bound",
+  "name": "Read-Once Boolean Substitution Bound",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/minimum_maximum_parent_rank"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "construction",
+  "statement": "Let a Boolean formula use binary AND and OR, possibly negated literals, with every leaf coordinate occurring exactly once. If the input has a maximum parent of rank $r$ with $m$ auxiliaries and the formula has $g$ binary gates, the substituted class has a maximum parent of rank $r+g$ with at most $m+g$ auxiliaries.",
+  "status": "established",
+  "proof": "Coordinate reflections implement literal negations and turn disjunction into conjunction by De Morgan duality. Expand the read-once tree from its root and apply the one-gate conjunction construction at each binary gate. Disjoint subtrees ensure that no coordinate identification is needed, and each step adds one to both rank and the auxiliary upper bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:read-once-substitution"
+}

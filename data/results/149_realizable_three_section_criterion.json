@@ -1,0 +1,13 @@
+{
+  "id": 149,
+  "short_name": "realizable_three_section_criterion",
+  "name": "Realizable Three-Section Criterion",
+  "class_ids": ["#classes/realizable_ample", "#classes/universal_substitution_tests"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "recognition",
+  "statement": "For a nonempty proper ample test $T\\subsetneq Q^Y$, the associated three-section class $H_T$ is the strict sign class of affine forms on an open convex set exactly when $T$ is. Consequently every realizable ample test is universal. If $k=|Y|$ and $q_0,q_1$ count the minimal signed missing patterns of $T,T^{\\mathrm c}$, respectively, $H_T$ has a rank-$(k+1)$ parent with at most $q_0+q_1+2k+2$ auxiliaries.",
+  "status": "established",
+  "proof": "A realization of $H_T$ restricts to its control sections and realizes $T$. Conversely, take independent strict signed separators for $T$ and its complement. Couple the first system to the upper control and the second to the lower control, together with an inequality excluding control word $10$. The resulting cone realizes precisely the three allowed sections. Normalize the control gap, add strict guard margins and a bounding box, and apply strict-realization completion.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:complementary-realizations",
+  "witness_ids": ["#examples/nonmonotone_universal_path_test"]
+}

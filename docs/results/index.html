@@ -2538,6 +2538,90 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-145" style="position:relative;">
+
+        <h3><a href="results/read_once_boolean_substitution_bound.html" class="table-title-link">Read-Once Boolean Substitution Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Read-Once Boolean Substitution Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a Boolean formula use binary AND and OR, possibly negated literals, with every leaf coordinate occurring exactly once. If the input has a maximum parent of rank $r$ with $m$ auxiliaries and the formula has $g$ binary gates, the substituted class has a maximum parent of rank $r+g$ with at most $m+g$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Coordinate reflections implement literal negations and turn disjunction into conjunction by De Morgan duality. Expand the read-once tree from its root and apply the one-gate conjunction construction at each binary gate. Disjoint subtrees ensure that no coordinate identification is needed, and each step adds one to both rank and the auxiliary upper bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:read-once-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-146" style="position:relative;">
+
+        <h3><a href="results/conjunction_shattering_and_sharp_costs.html" class="table-title-link">Shattering Formula and Sharp Costs for Conjunction Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering Formula and Sharp Costs for Conjunction Substitution</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A=C[i=0]$, $B=C[i=1]$, replace $i$ by conjunction on $k\ge2$ fresh coordinates $Z$, and call the result $D$. For $S\subseteq X,T\subseteq Z$, $S\sqcup T$ is shattered by $D$ exactly when: $S\in\operatorname{Sh}(A\cup B)$ for $T=\varnothing$; $S\in\operatorname{Sh}(A)$ for $0<|T|<k$; and $S\sqcup\{i\}\in\operatorname{Sh}(C)$ for $T=Z$. If $C$ is maximum of rank $r\ge1$, then $\operatorname{VC}(D)=h(D)=r+k-1$. For $r\le n-2$, every parent uses at least $k-1$ auxiliaries and the bound is attained. If $r=n$, the exact count is zero. If $r=n-1$ and $C=Q^n\setminus\{v\}$, it is zero for $v_i=1$ and $k-1$ for $v_i=0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Empty, proper, and full subsets of the conjunction coordinates respectively see the old projection, force old value zero, or distinguish both old values, yielding the three shattering cases. A full reduction supplies an $(r-1)$-cube times the new cube, attaining VC dimension $r+k-1$, while iterated conjunction gives a parent at that rank with $k-1$ auxiliaries. A minimally missing old pattern lifts to support $R+1$ in any rank-$R$ parent and forces the matching auxiliary lower bound; direct inspection handles the two top-rank boundaries.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:and-shattering</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-147" style="position:relative;">
+
+        <h3><a href="results/fixed_test_substitution_criterion.html" class="table-title-link">Fixed-Test Criterion for Universal Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fixed-Test Criterion for Universal Substitution</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty proper test $T\subsetneq Q^Y$, universality is equivalent to the existence, on $Y$ plus auxiliaries and with one common mark, of maximum classes $L,N_0,N_1,U$ of ranks $s-1,s,s,s+1$ satisfying $L\subseteq N_0,N_1\subseteq U$ and marked sections $\varnothing,T,T^{\mathrm c},Q^Y$. A rank-$R$ parent of $H_T$ supplies these with $s=R-1$. Given this interval and a proper rank-$r$ parent of the outer class with $m$ auxiliaries, substitution has a rank-$(r+s)$ parent with the old auxiliaries plus those of the interval.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projecting and fully reducing a parent of the three-section class in its two controls extracts the four consecutive maximum classes and their marked sections. Conversely, extend one nested side of the interval and the projection/reduction pair of the outer parent to maximum sequences. A level sum followed by componentwise replacement of the middle fiber by $N_0$ or $N_1$ gives the required maximum parent and retains both marks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:substitution-test</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-148" style="position:relative;">
+
+        <h3><a href="results/monotone_substitution_parent_bound.html" class="table-title-link">Quantitative Parent Bound for Monotone Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Quantitative Parent Bound for Monotone Substitution</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li><li><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a nonconstant monotone Boolean function on $k$ coordinates have $a$ inclusion-minimal one-supports forcing value one and $b$ inclusion-minimal zero-coordinate sets forcing value zero. A supplied rank-$r$ parent with $m$ auxiliaries yields a substituted parent of rank at most $r+k$ with at most $m+a+b+2k+2$ auxiliaries. For a proper supplied parent the constructed rank is exactly $r+k$ and retains its mark.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The $a+b$ minimal supports define homogeneous guards for the zero set and its complement, while two control forms create the three sections of $H_T$. After normalizing the control gap, strict-realization completion gives $H_T$ a rank-$(k+1)$ parent with at most $a+b+2k+2$ auxiliaries. The fixed-test criterion extracts $s=k$ and composes this interval with the supplied outer parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-149" style="position:relative;">
+
+        <h3><a href="results/realizable_three_section_criterion.html" class="table-title-link">Realizable Three-Section Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Realizable Three-Section Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/universal_substitution_tests.html">Universal Substitution Tests</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty proper ample test $T\subsetneq Q^Y$, the associated three-section class $H_T$ is the strict sign class of affine forms on an open convex set exactly when $T$ is. Consequently every realizable ample test is universal. If $k=|Y|$ and $q_0,q_1$ count the minimal signed missing patterns of $T,T^{\mathrm c}$, respectively, $H_T$ has a rank-$(k+1)$ parent with at most $q_0+q_1+2k+2$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A realization of $H_T$ restricts to its control sections and realizes $T$. Conversely, take independent strict signed separators for $T$ and its complement. Couple the first system to the upper control and the second to the lower control, together with an inequality excluding control word $10$. The resulting cone realizes precisely the three allowed sections. Normalize the control gap, add strict guard margins and a bounding box, and apply strict-realization completion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:complementary-realizations</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nonmonotone_universal_path_test.html">Nonmonotone Universal Four-Word Path Test</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

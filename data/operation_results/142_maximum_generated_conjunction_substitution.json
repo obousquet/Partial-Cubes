@@ -1,0 +1,13 @@
+{
+  "id": 142,
+  "short_name": "maximum_generated_conjunction_substitution",
+  "name": "Maximum-Generated Classes and Conjunction Substitution",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "Replacing one coordinate by conjunction of two fresh coordinates preserves and reflects membership in $\\mathsf{MaxMin}$. A supplied rank-$r$ parent with $m$ auxiliaries yields a rank-$(r+1)$ parent with at most $m+1$ auxiliaries, and finite minimum parent rank satisfies $h(C)\\le h(C^\\wedge)\\le h(C)+1$.",
+  "proof": "Two rank-one control fibers have marked sections equal to the three-word conjunction-zero fiber and the singleton conjunction-one fiber. Insert them into a level-sum parent with the fiber-replacement theorem; the unique old heights are constant on the required components. Fixing one new input to one recovers the original class as a section, proving reflection and the lower rank bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:and-substitution"
+}

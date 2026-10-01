@@ -1,0 +1,185 @@
+{
+  "version": 1,
+  "batch_id": "040_substitution_tests",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Catalogue universal substitution tests and normalize conjunction, read-once, monotone, unate, and realizable-test substitution theorems, their sharp parent bounds, the fixed-test criterion, closure laws, and a nonmonotone universal example.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#thm:and-substitution",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:read-once-substitution",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:and-shattering",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:substitution-test",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-substitution",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:complementary-realizations",
+    "CompressionSchemes:maximum_parent_methods.tex#def:universal-tests",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:universal-test-closure",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:geometric-test-closure"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "statement_sha256": {
+        "thm:and-substitution": "f2e7326d6c5959b1ebe4de69b4a3c285e0f877d0a1d3e9ad7c7bdaef6758d4c9",
+        "cor:read-once-substitution": "7b517638c585b862fed9b44a8a2e2d6b4d7250a7801686b57edb3cba262f397d",
+        "prop:and-shattering": "369180c649a3e6db9cb3ac118f0f894f2f42477866b8fa023de7cf8d938c6d83",
+        "prop:substitution-test": "37e9f416b3a0e8d0de806e8faaf4470cfb5c016bc8e9f423f4206f5b22cf30f0",
+        "thm:monotone-substitution": "d0d79c3bbecad0ddcc43687f568636407bf3257ac9762201ff171372e74a7d2e",
+        "prop:complementary-realizations": "9fca599a51eef0b8c86add63ac30816b085269e97617e5961d372368a6a9284c",
+        "def:universal-tests": "dadc676214f66d5ed7401be6c57a2de2ad60eab98d1b2360828eae1bb72fb2d4",
+        "prop:universal-test-closure": "ea2a3f7ac84eb53bd633024e2d6bce0a4de61b8c61214444c0052735cf83e1ac",
+        "prop:geometric-test-closure": "7e78db90f6e40b11a1a95403dc3a341427c58480bce71f0e12bf60f300e261c0"
+      }
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized universal-test class, equivalent criteria, inclusions, closure laws, quantitative substitution statements, concise proofs, example, and finite replay. CompressionSchemes retains the full fiber constructions, cone and polytope arguments, two-stage projection gluing, limitations, and manuscript exposition.",
+    "recoverability": "The manuscript and reconciliation hashes retain every promoted statement and all surrounding proof material that is not representable in the database schema.",
+    "mutation": "No source file in CompressionSchemes or another sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains exact source and statement hashes for conjunction, read-once and monotone substitution, fixed and realizable test criteria, and universal-test closure."
+    },
+    {
+      "id": "database-substitution-test-verifier",
+      "path": "scripts/verify_substitution_tests.py",
+      "sha256": "a731928671d26a78485fef7cc449a8790e2dfc18997545cf122fca3b3fc1ebd0",
+      "assertions": "Exhausts small conjunction shattering laws, monotone test cones, the nonmonotone path, and structural identities for the three-section construction."
+    },
+    {
+      "id": "substitution-test-database-replay",
+      "path": "data/examples/assets/substitution_tests_database_verification.json",
+      "sha256": "5694b2351439ff9321432e77faf45033ef773bc70915bda25b082f10e6796644",
+      "assertions": "Passed 510 conjunction shattering instances, 82 maximum-rank instances, 16 boundary cases, all 18 nonconstant monotone Q3 tests, 8 nonmonotonicity reflections, and 276 universal-test identity families."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/classes/093_universal_substitution_tests.json",
+      "sha256": "71cfc8bba66949c2aabfafd5e0c2b572df44e70296b773d184c426fa3ee9c797"
+    },
+    {
+      "path": "data/characterizations/087_universal_substitution_property.json",
+      "sha256": "f7c0805fac86bff83059399a50a8e919f97312589d16a1752939f1d7cd038ba6"
+    },
+    {
+      "path": "data/characterizations/088_three_section_test_class.json",
+      "sha256": "a78397ea787edd04bc79bcba7cd23a1165b351379ec20dcfb98c98b2764be3ad"
+    },
+    {
+      "path": "data/characterization_equivalences/024_universal_substitution_equivalence.json",
+      "sha256": "5d4092e650e53be10a60cc52aba167c276277ec20e5bcf09aafff1aa941b4e95"
+    },
+    {
+      "path": "data/relations/098_realizable_ample_subset_universal_substitution_tests.json",
+      "sha256": "b2a1a59f73e489fd578fabf3cc5755acb18af5aaac6964eb8e1fa9b0cc26e4fa"
+    },
+    {
+      "path": "data/relations/099_universal_substitution_tests_subset_maximum_generated.json",
+      "sha256": "9de88e61666ff0388324a5ea9a1d51b53677c3d53999d6f1fee0f1d452d7dcc3"
+    },
+    {
+      "path": "data/operation_results/135_universal_tests_projection_closed.json",
+      "sha256": "d02d19e37ace395afc30817a380d9973376000d3bb40323a019bc204af5652f2"
+    },
+    {
+      "path": "data/operation_results/136_universal_tests_conditioning_closed.json",
+      "sha256": "26a2abc110de4ad1e5b31971554241a5cf6eb896c097a62a6be9402a417a828d"
+    },
+    {
+      "path": "data/operation_results/137_universal_tests_pc_minor_closed.json",
+      "sha256": "2025465f83525b5c489199f6577c952db9b77be17f89f663bf4b3fcf4a6ca927"
+    },
+    {
+      "path": "data/operation_results/138_universal_tests_full_reduction_closed.json",
+      "sha256": "3fd09e3f291b04d63a6a49cf64463f90a3ef746ba2678da22a61110fdef9a654"
+    },
+    {
+      "path": "data/operation_results/139_universal_tests_complement_closed.json",
+      "sha256": "ab923e241085a455f744817120a1977f8fcb2944c5d3515db330163895dc1279"
+    },
+    {
+      "path": "data/operation_results/140_universal_tests_cartesian_product_closed.json",
+      "sha256": "ce084ab18e533f3f85b4c44833efd8d4a1edb110b572d8ba38f3509d58698faa"
+    },
+    {
+      "path": "data/operation_results/141_universal_tests_boolean_substitution_closed.json",
+      "sha256": "286a703b31d39c08a6a9cbb751b75ee800b4f5eb8274ebda9f1ca1b7f2b5fca5"
+    },
+    {
+      "path": "data/operation_results/142_maximum_generated_conjunction_substitution.json",
+      "sha256": "dc1705f68bcea81e2f7a20cd53ee065c4726e1e516bebcac21d9dee7c227f9e9"
+    },
+    {
+      "path": "data/operation_results/143_maximum_generated_monotone_substitution.json",
+      "sha256": "209bddd8320e2c52b283e848b3e5471e77a3f4f1e931525e9238dfef8ee82140"
+    },
+    {
+      "path": "data/operation_results/144_maximum_generated_realizable_test_substitution.json",
+      "sha256": "7cb4312665585140728cf3b4d5eda771645aa543cbae04a3ac4c914f32f0fd94"
+    },
+    {
+      "path": "data/results/145_read_once_boolean_substitution_bound.json",
+      "sha256": "2a882a4ebecda847d6c57c12889224ddc6b7e1c0f3c0dfed37ba73b4c73c0c9c"
+    },
+    {
+      "path": "data/results/146_conjunction_shattering_and_sharp_costs.json",
+      "sha256": "47b73d763423790c78b903bca9ebef3755b16746032593b1e60adcb90544c6e4"
+    },
+    {
+      "path": "data/results/147_fixed_test_substitution_criterion.json",
+      "sha256": "184630b1cfe62a4ac7ec71c52eb2be9aedb25533d98ba2e0c8b52ad8f66fb83f"
+    },
+    {
+      "path": "data/results/148_monotone_substitution_parent_bound.json",
+      "sha256": "dfa60fe4ac0ae703d6335df283f1c8505c7b0d1be91ac97f7aff7aafb7003968"
+    },
+    {
+      "path": "data/results/149_realizable_three_section_criterion.json",
+      "sha256": "9e905deb2b8b78b20d51ec72b9d66900f69e76ea5db42d9e97e5447f8e799c1e"
+    },
+    {
+      "path": "data/examples/051_nonmonotone_universal_path_test.json",
+      "sha256": "0ed0358a506f46fdf39a22b6575aa4177b39677f3f6ebf745408deb755493982"
+    },
+    {
+      "path": "data/examples/assets/substitution_tests_database_verification.json",
+      "sha256": "5694b2351439ff9321432e77faf45033ef773bc70915bda25b082f10e6796644"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "60ba513447c7e39b07a379c6cf4b931c7dcdf028c24aa4db806aba5083933dce"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c377be8ad6240c610617f0835f32455c7913dbd7df85cafdc01d6b35bde78d88"
+    },
+    {
+      "path": "scripts/verify_substitution_tests.py",
+      "sha256": "a731928671d26a78485fef7cc449a8790e2dfc18997545cf122fca3b3fc1ebd0"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 753 records.",
+    "exact_replay": "All required source labels and exhaustive conjunction, cone-witness, path-test, and universal-identity checks passed.",
+    "website": "Normalized 769 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "49 Hasse covers represent 80 stored inclusions; all 22 minor-atlas Ample-family nodes and 70 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "The open question whether every maximum-generated test is universal remains prose in the LaTeX source.",
+    "Remaining maximum-parent, YangDim algebraic, and PartialCubes facts."
+  ]
+}

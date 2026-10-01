@@ -1,0 +1,13 @@
+{
+  "id": 143,
+  "short_name": "maximum_generated_monotone_substitution",
+  "name": "Maximum-Generated Classes and Monotone Boolean Substitution",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "For every nonconstant coordinatewise monotone Boolean function, substitution preserves and reflects membership in $\\mathsf{MaxMin}$, including functions whose formulas repeat variables. Input-coordinate reflections extend this to unate functions; constant tests reduce to a section times a cube.",
+  "proof": "The zero set of a monotone function is a downset. Minimal one-supports outside it and minimal zero-supports outside its complement define a strict convex cone realizing the associated three-section class. A maximum parent follows from strict realization, and the fixed-test criterion gives preservation. Restricting the test to an edge on which the function changes recovers the input class as a section, proving reflection.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-substitution"
+}
