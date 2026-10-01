@@ -1,0 +1,17 @@
+{
+  "id": 295,
+  "short_name": "compatible_face_avoidance_operator",
+  "name": "Face-Avoiding Maximum Predecessors Preserve Intersections",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "For an ordered coordinate list $D$ and pattern $\\tau$, the recursively defined face-avoidance operator $L_{D,\\tau}$ satisfies $L(C)\\subseteq C$, $L(C)[\\tau]=\\varnothing$, and $L(C\\cap E)=L(C)\\cap L(E)$. Hence it preserves inclusions. On a maximum class of rank $0\\le r\\le|D|$ it produces a maximum rank-$(r-1)$ class, allowing formal rank $-1$ for the empty output. Nonempty outputs preserve every decomposition level $\\mathcal D_k$ and dismantlability.",
+  "status": "established",
+  "proof": "Induction on the ordered list uses full reduction for the larger shore and recursively nests the avoiding shore. Both lifts remain in the input, the two shores avoid the target pattern in complementary ways, and full reduction commutes with intersection. Pascal's identity gives the predecessor cardinality and the two shore ranks exclude a shattered support of size $r$. Full reduction and nested expansion preserve the decomposition level.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:monotone-predecessors"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 302,
+  "short_name": "small_corner_representation_map_repair",
+  "name": "Representation Maps Can Be Repaired at Corners of Dimension at Most Two",
+  "class_ids": [
+    "#classes/representation_map_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let $D$ be ample with a representation map and let $v$ be a corner with support $J$, $|J|\\le2$. At most three adjacent label exchanges inside the corner cube produce a representation map assigning $J$ to $v$, without changing labels outside that cube. Consequently deleting $v$ preserves existence of a representation map, with no bound on the VC dimension of $D$.",
+  "status": "established",
+  "proof": "A safe exchange swaps adjacent labels $A$ and $A\\cup\\{i\\}$; the support bijection is unchanged and any supposed new clash would already have been an old clash. The owner of $J$ lies inside the corner cube, and incoming neighbors carry no directions outside $J$. For a one-edge corner one exchange suffices. For a square corner, the four possible positions and labels reduce by a case table to at most three safe exchanges. The corner-deletion representation criterion then applies.",
+  "references": "\\cite[Corollary~6.7 and Theorem~6.8]{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:small-corner-map-repair"
+}

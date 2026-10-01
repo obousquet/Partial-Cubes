@@ -1,0 +1,18 @@
+{
+  "id": 296,
+  "short_name": "dismantlable_minimum_section_deletion_parent",
+  "name": "Minimum-Section Deletions Have Controlled Dismantlable Parents",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/dismantlable_ample",
+    "#classes/dismantlable_maximum_parent_sections"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "Let $M$ be maximum of rank $r$, and let a pattern $p$ on a $q$-coordinate block, $1\\le q\\le r$, have the smallest section $M[p]=\\partial_JM=S$. Put $C=M\\setminus(S\\times\\{p\\})$. If $M,C\\in\\mathcal D_k$, then $C$ has a rank-$r$ maximum parent in $\\mathcal D_{\\max(k,r-1)}$ with exactly $r+1-q$ auxiliaries, optimal among rank-$r$ parents. If both inputs are dismantlable, then $C$ has a dismantlable maximum parent.",
+  "status": "established",
+  "proof": "Choose a compatible maximum predecessor of the minimum section and run the prescribed-section recursion, which keeps both the predecessor and its punctured form in level $\\max(k,r-1)$. One auxiliary replacement lowers the marked minimum rank by one while retaining a level-bounded decomposition of both the parent and its deleted section. After $r-q+1$ repetitions the marked minimum is empty and the zero mark recovers $C$. The fixed-rank auxiliary lower bound from the minimum-section theorem proves optimality.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#thm:dismantlable-minimum-deletion"
+}

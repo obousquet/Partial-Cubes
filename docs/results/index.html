@@ -4934,6 +4934,187 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-293" style="position:relative;">
+
+        <h3><a href="results/maximum_projection_complex_structure.html" class="table-title-link">Maximum Projections Are Determined by the Shattered Complex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Projections Are Determined by the Shattered Complex</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_section_auxiliary_level_one.html">One-Auxiliary Maximum Sections</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_projection_complex.html">Maximum-Projection Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\Delta=\operatorname{Sh}(C)$. A coordinate set $S$ belongs to $\operatorname{MP}(C)$ exactly when $\Delta|_S$ consists of all subsets of $S$ of size at most some $d_S$. A set $S$ of size $m$ is a minimal nonface exactly when $\Delta|_S$ contains every set of size at most $m-2$ and a nonempty proper subfamily of the $(m-1)$-sets. Every corresponding bad projection needs exactly one auxiliary conditioned coordinate in a maximum parent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection preserves ampleness and restricts the shattered complex, so the Sauer equality gives the skeleton criterion. Exchange-connectivity of equal-size subsets shows that a minimal nonuniform restriction can mix presence and absence only in codimension one, yielding the minimal-nonface form. Complement duality turns such a projection into a rank-one maximum coordinate tree with both active and constant coordinates. Adding one auxiliary path yields a rank-one maximum parent of the complement; complementing gives the required one-auxiliary parent, while nonmaximumity excludes zero auxiliaries.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:maximum-projection-complex</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-294" style="position:relative;">
+
+        <h3><a href="results/maximum_parent_decomposition_depth_hierarchy.html" class="table-title-link">Maximum-Parent Decomposition Depth and Feasible Ranks</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Decomposition Depth and Feasible Ranks</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_parent_decomposition_level_k.html">Maximum-Parent Decomposition-Level Classes</a></li><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/decomposition_level.html">Yang Decomposition Level</a></li><li><a href="invariants/maximum_parent_decomposition_depth.html">Maximum-Parent Decomposition Depth</a></li><li><a href="invariants/level_bounded_minimum_parent_rank.html">Level-Bounded Minimum Maximum-Parent Rank</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $k$, the sections $\mathcal P_k$ of maximum parents in $\mathcal D_k$ satisfy $\mathcal P_k\subseteq\mathcal D_k\cap\mathsf{MaxMin}$, $\mathcal P_k\subsetneq\mathcal P_{k+1}$, and $\bigcup_k\mathcal P_k=\mathcal P_D$. They are closed under nonempty sections, projections, and full reductions and are constant-coordinate invariant. Only $\mathcal P_0$ is complement closed. Moreover $\kappa(C)\le\lambda(C)$, with equality on maximum classes. When finite, feasible parent ranks at level $k$ are exactly all ranks at least $h_k(C)$; $h_k$ decreases with $k$ and stabilizes to $h_D(C)$ by $k\ge\max\{h_D(C)-1,0\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Section closure of each decomposition level gives the base inclusions and intrinsic-depth inequality; maximum classes are their own parents. Odd polygon complements give every strict level. Marks commute with projection, conditioning, and reduction, while the fixed-level constant-coordinate construction preserves the parent level. Complement closure holds at level zero and fails at every higher level by the complementary polygon pair. A nested successor construction raises parent rank one step without changing its level, giving the feasible-rank ray. Every rank-$r$ dismantlable class lies in $\mathcal D_{r-1}$, which gives stabilization at a least-rank dismantlable parent.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:parent-depth-hierarchy</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/odd_tangent_polygon_complements.html">Odd Tangent-Polygon Classes and Complements</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-295" style="position:relative;">
+
+        <h3><a href="results/compatible_face_avoidance_operator.html" class="table-title-link">Face-Avoiding Maximum Predecessors Preserve Intersections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Face-Avoiding Maximum Predecessors Preserve Intersections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ordered coordinate list $D$ and pattern $\tau$, the recursively defined face-avoidance operator $L_{D,\tau}$ satisfies $L(C)\subseteq C$, $L(C)[\tau]=\varnothing$, and $L(C\cap E)=L(C)\cap L(E)$. Hence it preserves inclusions. On a maximum class of rank $0\le r\le|D|$ it produces a maximum rank-$(r-1)$ class, allowing formal rank $-1$ for the empty output. Nonempty outputs preserve every decomposition level $\mathcal D_k$ and dismantlability.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induction on the ordered list uses full reduction for the larger shore and recursively nests the avoiding shore. Both lifts remain in the input, the two shores avoid the target pattern in complementary ways, and full reduction commutes with intersection. Pascal's identity gives the predecessor cardinality and the two shore ranks exclude a shattered support of size $r$. Full reduction and nested expansion preserve the decomposition level.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:monotone-predecessors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-296" style="position:relative;">
+
+        <h3><a href="results/dismantlable_minimum_section_deletion_parent.html" class="table-title-link">Minimum-Section Deletions Have Controlled Dismantlable Parents</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum-Section Deletions Have Controlled Dismantlable Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $M$ be maximum of rank $r$, and let a pattern $p$ on a $q$-coordinate block, $1\le q\le r$, have the smallest section $M[p]=\partial_JM=S$. Put $C=M\setminus(S\times\{p\})$. If $M,C\in\mathcal D_k$, then $C$ has a rank-$r$ maximum parent in $\mathcal D_{\max(k,r-1)}$ with exactly $r+1-q$ auxiliaries, optimal among rank-$r$ parents. If both inputs are dismantlable, then $C$ has a dismantlable maximum parent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose a compatible maximum predecessor of the minimum section and run the prescribed-section recursion, which keeps both the predecessor and its punctured form in level $\max(k,r-1)$. One auxiliary replacement lowers the marked minimum rank by one while retaining a level-bounded decomposition of both the parent and its deleted section. After $r-q+1$ repetitions the marked minimum is empty and the zero mark recovers $C$. The fixed-rank auxiliary lower bound from the minimum-section theorem proves optimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#thm:dismantlable-minimum-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-297" style="position:relative;">
+
+        <h3><a href="results/peripheral_minimum_section_deletion.html" class="table-title-link">Peripheral Classes Survive Minimum-Section Deletion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Peripheral Classes Survive Minimum-Section Deletion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the smallest-section hypotheses for a rank-$r$ maximum class and a $q$-coordinate pattern, if the maximum class is recursively peripheral then deleting that whole smallest section remains recursively peripheral. The deletion has a rank-$r$ maximum parent in $\mathcal D_{r-1}$ with the optimal $r+1-q$ auxiliaries and therefore lies in $\mathcal R_{\mathrm{per}}\cap\mathcal P_D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct through a nested peripheral split. When the split coordinate lies in the deleted block, rank comparison forces the pattern into the smaller shore, where induction applies. Otherwise both shores inherit the same smallest-section identity; delete in both and retain their nesting. Apply the controlled dismantlable-parent theorem at level zero for the parent and auxiliary assertions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:peripheral-minimum-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-298" style="position:relative;">
+
+        <h3><a href="results/peripheral_corner_deletion_parent.html" class="table-title-link">Every Corner Deletion of a Peripheral Maximum Class Has a Peripheral Parent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Corner Deletion of a Peripheral Maximum Class Has a Peripheral Parent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_parent_decomposition_level_k.html">Maximum-Parent Decomposition-Level Classes</a></li><li><a href="classes/maximum_section_auxiliary_level_one.html">One-Auxiliary Maximum Sections</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $M$ be a recursively peripheral maximum class of positive rank $r$ and $v$ any corner. Then $M\setminus\{v\}$ is recursively peripheral and has a recursively peripheral rank-$r$ maximum parent $N$ on one auxiliary coordinate $a$, with $\pi_XN=M$ and $N[a=0]=M\setminus\{v\}$. Thus the deletion belongs to $\mathcal P_0\cap\mathcal M_1$; for proper $M$, rank $r$ and one auxiliary are optimal.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Order the corner support so the compatible face-avoiding predecessor respects a nested peripheral split of $M$. If the split coordinate is outside the corner support, apply induction in the large shore and monotonicity in the small shore. If it belongs to the support, the corner lies in the smaller shore; put that coordinate first and apply induction there. The resulting shores stay nested and peripheral. The standard one-corner parent supplies the required projection and section; nonmaximumity of a proper deletion proves optimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:peripheral-corner-parent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-299" style="position:relative;">
+
+        <h3><a href="results/complement_dismantlability_structure.html" class="table-title-link">Structure of Dismantlable-Complement Ample Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Structure of Dismantlable-Complement Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_complement_ample.html">Dismantlable-Complement Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/both_sides_dismantlable_ample.html">Both-Sides Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li><li><a href="classes/universal_cube_extension_ample.html">Universal Cube-Extension Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>The dismantlable-complement class $\mathsf{coDamp}$ is closed under nonempty sections, projections, full reductions, and constant-coordinate changes. It is incomparable with dismantlable ample classes, while $\mathcal B\subsetneq\mathsf{coDamp}\subsetneq\mathcal A$, and $\mathsf{MaxMin}$ is not contained in their union. The open inclusions $\mathcal D_{\mathrm{amp}}\subseteq\mathsf{Ext}$ and $\mathsf{coDamp}\subseteq\mathsf{Rep}$ are equivalent; likewise $\mathcal D_{\mathrm{amp}}\subseteq\mathsf{MaxMin}$ and $\mathsf{coDamp}\subseteq\mathsf{MaxMin}$ are equivalent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Complementation commutes with sections and exchanges projection with full reduction, so dismantlable closure laws transfer. Hall's class and its dismantlable complement witness both directions of incomparability. Their product is maximum-generated, while it and its complement each have a nondismantlable Hall section, proving the stronger noncontainment. The universal-extension complementary-shore criterion gives the first equivalence; complement closure of maximum ancestry gives the second.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:complement-dismantlable</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li><li><a href="examples/hall_complement.html">Complement of Hall's Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-300" style="position:relative;">
+
+        <h3><a href="results/complement_dismantlability_product_rule.html" class="table-title-link">Both-Sides Dismantlability Preserves a coDamp Product</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Both-Sides Dismantlability Preserves a coDamp Product</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_complement_ample.html">Dismantlable-Complement Ample Classes</a></li><li><a href="classes/both_sides_dismantlable_ample.html">Both-Sides Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C\in\mathsf{coDamp}$ and $D\in\mathcal B$ use disjoint coordinates, then $C\times D\in\mathsf{coDamp}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Writing $P=C^c$ and $Q=D^c$, the product complement is $(P\times\{0,1\}^Y)\cup(\{0,1\}^X\times Q)$. Follow a corner deletion of $P$ one row at a time; within the row of its next corner, use the relative deletion from the full $Y$-cube down to $Q$ supplied by the dismantling of $D$. Each deleted vertex has the product of its two corner cubes present. The terminal class is the dismantlable product of a full cube with $Q$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:complement-dismantlable-product</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This does not prove that the entire dismantlable-complement class is product closed; the second factor must itself and its complement be dismantlable.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-301" style="position:relative;">
+
+        <h3><a href="results/corner_deletion_representation_criterion.html" class="table-title-link">Representation Criterion after Deleting a Corner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation Criterion after Deleting a Corner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $E$ be ample and let $v$ be a corner whose incident directions form its support $T$. Then $E\setminus\{v\}$ has a representation map exactly when $E$ has a representation map assigning the label $T$ to $v$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting the corner removes exactly $T$ from the shattered family, so a map with $r(v)=T$ restricts immediately. Conversely, extend a representation map of the deletion by $v\mapsto T$. No other concept agrees with $v$ on $T$: an isometric path to one would have to leave $v$ in a direction outside its corner support. Thus $T$ separates $v$ from every old concept and all new nonclashing conditions hold.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#lem:corner-representation-deletion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-302" style="position:relative;">
+
+        <h3><a href="results/small_corner_representation_map_repair.html" class="table-title-link">Representation Maps Can Be Repaired at Corners of Dimension at Most Two</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation Maps Can Be Repaired at Corners of Dimension at Most Two</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D$ be ample with a representation map and let $v$ be a corner with support $J$, $|J|\le2$. At most three adjacent label exchanges inside the corner cube produce a representation map assigning $J$ to $v$, without changing labels outside that cube. Consequently deleting $v$ preserves existence of a representation map, with no bound on the VC dimension of $D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A safe exchange swaps adjacent labels $A$ and $A\cup\{i\}$; the support bijection is unchanged and any supposed new clash would already have been an old clash. The owner of $J$ lies inside the corner cube, and incoming neighbors carry no directions outside $J$. For a one-edge corner one exchange suffices. For a square corner, the four possible positions and labels reduce by a case table to at most three safe exchanges. The corner-deletion representation criterion then applies.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Corollary~6.7 and Theorem~6.8]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:small-corner-map-repair</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-303" style="position:relative;">
+
+        <h3><a href="results/learning_spaces_daisy_cubes_and_maximum_ancestry.html" class="table-title-link">Learning Spaces and Daisy Cubes Are Peripheral, Realizable, and Maximum-Generated</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Learning Spaces and Daisy Cubes Are Peripheral, Realizable, and Maximum-Generated</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite learning-space graph and every daisy cube belongs to the intersection of recursively peripheral and realizable ample classes, hence is maximum-generated. Moreover $\operatorname{Cl}_{pc}(\mathsf{Learn})=\operatorname{Cl}_c(\mathsf{Learn})\subseteq\mathcal R_{\mathrm{per}}\cap\mathcal R_{\mathrm{amp}}$. A learning space on $n\ge1$ coordinates with $q$ inclusion-minimal missing consistent partial labelings has a rank-$n$ maximum parent with at most $q+2n$ auxiliaries; the zero-coordinate singleton needs none.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Strict coordinate inequalities realize downsets and learning spaces on an open convex domain; a bounded perturbation and generic arrangement give the quantitative maximum parent. Recursive accessibility supplies a feasible singleton whose two sections are nested learning spaces, proving peripheral membership by induction. Learning spaces are projection closed, so the pc-closure reduces to conditioning closure; minor closure of peripheral and realizable ample classes gives the containment.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:learning-daisy-maxmin</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

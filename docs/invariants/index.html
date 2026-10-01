@@ -676,7 +676,7 @@
 <strong>Comments:</strong><div class="text-field"><p>Always at least the VC dimension. Constant visible coordinates can affect related auxiliary costs even when the one-inclusion graph is unchanged.</p></div>
 <strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/read_once_boolean_substitution_bound.html'>Read-Once Boolean Substitution Bound</a></li><li><a href='results/conjunction_shattering_and_sharp_costs.html'>Shattering Formula and Sharp Costs for Conjunction Substitution</a></li><li><a href='results/monotone_substitution_parent_bound.html'>Quantitative Parent Bound for Monotone Substitution</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/read_once_boolean_substitution_bound.html'>Read-Once Boolean Substitution Bound</a></li><li><a href='results/conjunction_shattering_and_sharp_costs.html'>Shattering Formula and Sharp Costs for Conjunction Substitution</a></li><li><a href='results/monotone_substitution_parent_bound.html'>Quantitative Parent Bound for Monotone Substitution</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li></ul></p></div>
 
         </div>
     </div>
@@ -1262,7 +1262,88 @@
 <strong>Comments:</strong><div class="text-field"><p>The invariant measures decomposition complexity of the class itself. The separate parent-depth hierarchy minimizes a decomposition bound over maximum parents.</p></div>
 <strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#sec:polygon-decomposition</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/odd_tangent_polygon_decomposition_level.html'>Decomposition Level of Odd Tangent-Polygon Sign Classes</a></li><li><a href='invariant_values/odd_tangent_polygon_complement_decomposition_level.html'>Decomposition Level of Odd Tangent-Polygon Complements</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/odd_polygon_exact_decomposition_hierarchy.html'>Odd Polygon Complements Separate Every Decomposition Level</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/odd_polygon_exact_decomposition_hierarchy.html'>Odd Polygon Complements Separate Every Decomposition Level</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-45" style="position:relative;">
+
+        <h3><a href="invariants/maximum_projection_complex.html" class="table-title-link">Maximum-Projection Complex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Projection Complex</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\operatorname{MP}(C)">
+            \[\operatorname{MP}(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty ample class $C\subseteq\{0,1\}^X$, $\operatorname{MP}(C)=\{S\subseteq X:C|_S\text{ is maximum at its own VC dimension}\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Codomain: </strong>Simplicial complexes on the displayed coordinate set</p>
+<strong>Normalization:</strong><div class="text-field"><p>Displayed constant coordinates are retained. Every singleton belongs to the complex, and the full simplex occurs exactly when $C$ itself is maximum.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>This records maximum projections, not inclusion-maximal shattered supports. It is determined by the ordinary shattered complex for ample inputs and therefore cannot alone obstruct maximum ancestry.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:maximum-projection-complex</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_projection_complex_structure.html'>Maximum Projections Are Determined by the Shattered Complex</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-46" style="position:relative;">
+
+        <h3><a href="invariants/maximum_parent_decomposition_depth.html" class="table-title-link">Maximum-Parent Decomposition Depth</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Parent Decomposition Depth</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\lambda">
+            \[\lambda\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite binary class $C$, $\lambda(C)$ is the least $k$ for which $C$ is a nonempty coordinate section of a maximum class in Yang decomposition level $\mathcal D_k$; set $\lambda(C)=\infty$ when no such parent exists.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers together with infinity</p>
+<strong>Normalization:</strong><div class="text-field"><p>There is no bound on the parent rank or number of auxiliary coordinates. Adding or suppressing constant visible coordinates does not change the value.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>Intrinsic decomposition level satisfies $\kappa(C)\le\lambda(C)$. Equality holds when $C$ is itself maximum.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:parent-depth-hierarchy</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-47" style="position:relative;">
+
+        <h3><a href="invariants/level_bounded_minimum_parent_rank.html" class="table-title-link">Level-Bounded Minimum Maximum-Parent Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Level-Bounded Minimum Maximum-Parent Rank</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="h_k">
+            \[h_k\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a class $C$ and $k\ge0$, $h_k(C)$ is the least rank of a maximum parent of $C$ belonging to $\mathcal D_k$, with value infinity if no such parent exists. Write $h_D(C)$ for the least rank over dismantlable maximum parents.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers together with infinity</p>
+<strong>Parameters:</strong><div class="text-field"><p>Nonnegative decomposition-level bound $k$; the comparison value $h_D$ removes the fixed-level bound.</p></div>
+<strong>Normalization:</strong><div class="text-field"><p>Parent rank is its VC dimension; auxiliary coordinates and the marked section are otherwise unrestricted.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:parent-depth-hierarchy</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li></ul></p></div>
 
         </div>
     </div>

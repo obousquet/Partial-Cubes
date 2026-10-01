@@ -1,0 +1,18 @@
+{
+  "id": 293,
+  "short_name": "maximum_projection_complex_structure",
+  "name": "Maximum Projections Are Determined by the Shattered Complex",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/maximum_section_auxiliary_level_one"
+  ],
+  "invariant_ids": [
+    "#invariants/maximum_projection_complex"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\Delta=\\operatorname{Sh}(C)$. A coordinate set $S$ belongs to $\\operatorname{MP}(C)$ exactly when $\\Delta|_S$ consists of all subsets of $S$ of size at most some $d_S$. A set $S$ of size $m$ is a minimal nonface exactly when $\\Delta|_S$ contains every set of size at most $m-2$ and a nonempty proper subfamily of the $(m-1)$-sets. Every corresponding bad projection needs exactly one auxiliary conditioned coordinate in a maximum parent.",
+  "status": "established",
+  "proof": "Projection preserves ampleness and restricts the shattered complex, so the Sauer equality gives the skeleton criterion. Exchange-connectivity of equal-size subsets shows that a minimal nonuniform restriction can mix presence and absence only in codimension one, yielding the minimal-nonface form. Complement duality turns such a projection into a rank-one maximum coordinate tree with both active and constant coordinates. Adding one auxiliary path yields a rank-one maximum parent of the complement; complementing gives the required one-auxiliary parent, while nonmaximumity excludes zero auxiliaries.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:maximum-projection-complex"
+}

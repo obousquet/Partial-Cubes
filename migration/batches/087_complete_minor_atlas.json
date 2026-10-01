@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "batch_id": "087_complete_minor_atlas",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the final labeled results from the frozen minor-atlas manuscript: the maximum-projection complex, maximum-parent decomposition depth and feasible ranks, compatible face avoidance, controlled minimum-section and corner-deletion parents, complementary dismantlability, low-dimensional representation-map repair, learning-space and daisy maximum ancestry, and the ambient obstruction examples.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/main.tex#prop:maximum-projection-complex",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:parent-depth-hierarchy",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:monotone-predecessors",
+    "PartialCubes:papers/minor-atlas/main.tex#thm:dismantlable-minimum-deletion",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:peripheral-minimum-deletion",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:peripheral-corner-parent",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:complement-dismantlable",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:complement-dismantlable-product",
+    "PartialCubes:papers/minor-atlas/main.tex#lem:corner-representation-deletion",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:small-corner-map-repair",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:learning-daisy-maxmin",
+    "PartialCubes:papers/minor-atlas/main.tex#ex:cycle",
+    "PartialCubes:papers/minor-atlas/main.tex#ex:ambient",
+    "PartialCubes:papers/minor-atlas/main.tex#ex:maximum-halves"
+  ],
+  "source_packets": [
+    {
+      "id": "minor-atlas-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariant definitions, theorem statements, formulas, closure and hierarchy facts, concise proofs, and reusable examples. The LaTeX manuscript retains the full inductive constructions, case tables, literature discussion, figures, and open comparisons.",
+    "recoverability": "The source manuscript is read from the frozen repository commit, matches the manifest SHA-256 hash, and every migrated claim has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Live post-snapshot drift remains isolated from this migration."
+  },
+  "records": [
+    {"path": "data/invariants/045_maximum_projection_complex.json", "sha256": "4f021ffdec94fb76f8bd7dfa630db0ba35a14ff34dc51d14ef7cdc18f262749e"},
+    {"path": "data/invariants/046_maximum_parent_decomposition_depth.json", "sha256": "37df6e62c38017f7d9492cd50f5023085d4563c81df6bd54a61235bac12d1bb5"},
+    {"path": "data/invariants/047_level_bounded_minimum_parent_rank.json", "sha256": "63177e85b31eecfd215e4abe3796ac787e3fecb8e36f40721f5fd5bd5c0ce07e"},
+    {"path": "data/results/293_maximum_projection_complex_structure.json", "sha256": "bad304b21c66ab1cdcc01ddb014aa4b8cb1618e4322676b43c3780779463ced4"},
+    {"path": "data/results/294_maximum_parent_decomposition_depth_hierarchy.json", "sha256": "5c270a7536453f6304e3c936d958ad369ec889ee0b8929ca73d82fe718b3a2cc"},
+    {"path": "data/results/295_compatible_face_avoidance_operator.json", "sha256": "e826117f75351775cf1bbd19ad6b2d260d57f4e4175ad8d6ddac2847385b074b"},
+    {"path": "data/results/296_dismantlable_minimum_section_deletion_parent.json", "sha256": "70ae0a66b3551b936f579c2c722f0efba7def8d5f764cde785c0a1fdb1c59bbe"},
+    {"path": "data/results/297_peripheral_minimum_section_deletion.json", "sha256": "fca6142ff0e98e9002b7b3bcfdfed31a015cb3fabb30360ca8bfca31f3666879"},
+    {"path": "data/results/298_peripheral_corner_deletion_parent.json", "sha256": "8ae36921498932be0c465ef095375c83e7031b239681c4e1df1ccfa503383ad6"},
+    {"path": "data/results/299_complement_dismantlability_structure.json", "sha256": "6919e2836cf38d2257de4bce1b4e0f3d281ba75636ab7d55a3890b460525c6c8"},
+    {"path": "data/results/300_complement_dismantlability_product_rule.json", "sha256": "4a2765dbb2b9b9f5fbe8de3c2c77950dc53ca2b7927f70aeff86eea5484df935"},
+    {"path": "data/results/301_corner_deletion_representation_criterion.json", "sha256": "c93a8a7431a2c3d4c1a8cea4d1649214742d3e64c220c9924d7362a7f2da7f1a"},
+    {"path": "data/results/302_small_corner_representation_map_repair.json", "sha256": "7205e5791488be6ffddab181bbcbd25840706e839316b7268c4946e9517c52c8"},
+    {"path": "data/results/303_learning_spaces_daisy_cubes_and_maximum_ancestry.json", "sha256": "622155037c9e98981195ff103d19b21836828c59bc498f80b102582f79187144"},
+    {"path": "data/examples/106_incompatible_antipodal_maximum_halves.json", "sha256": "ad52b370bc053904f918634d86a5bbd4f3508fd5b5658417de62eff1d2e81faf"},
+    {"path": "data/examples/010_eight_cycle.json", "sha256": "dd7fc677bca2cd3fa519d75c196067ad266b48bf13dcdd100515c30e88e95627"},
+    {"path": "data/examples/011_antipodal_pair_family.json", "sha256": "1c61ab911e4b62b26ed69b6a9eff7327db122704a910f158a5d27a128ca9ccd3"},
+    {"path": "migration/coverage.json", "sha256": "e875dcc6d31e82ec645c7fa1db7938be935363f64b10a6224b7e50e34c46da3f"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "03f557f4f12e822f012e84c9f29c516ba2e6bf6f61a874846ea8cce52a2b641c"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1533 records.",
+    "website": "Normalized 1549 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers the final 14 minor-atlas labels, completing that workspace at 37 of 37 and raising overall workspace-aware coverage from 359 to 373 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 58 uncovered labeled results and is the next PartialCubes source priority.",
+    "The dismantlable-ample workspace retains 585 uncovered labeled research claims and requires larger staged migration.",
+    "Open comparisons and research directions remain prose in the LaTeX source under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

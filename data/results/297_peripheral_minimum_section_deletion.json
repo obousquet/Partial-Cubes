@@ -1,0 +1,17 @@
+{
+  "id": 297,
+  "short_name": "peripheral_minimum_section_deletion",
+  "name": "Peripheral Classes Survive Minimum-Section Deletion",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral",
+    "#classes/dismantlable_maximum_parent_sections"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Under the smallest-section hypotheses for a rank-$r$ maximum class and a $q$-coordinate pattern, if the maximum class is recursively peripheral then deleting that whole smallest section remains recursively peripheral. The deletion has a rank-$r$ maximum parent in $\\mathcal D_{r-1}$ with the optimal $r+1-q$ auxiliaries and therefore lies in $\\mathcal R_{\\mathrm{per}}\\cap\\mathcal P_D$.",
+  "status": "established",
+  "proof": "Induct through a nested peripheral split. When the split coordinate lies in the deleted block, rank comparison forces the pattern into the smaller shore, where induction applies. Otherwise both shores inherit the same smallest-section identity; delete in both and retain their nesting. Apply the controlled dismantlable-parent theorem at level zero for the parent and auxiliary assertions.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:peripheral-minimum-deletion"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 300,
+  "short_name": "complement_dismantlability_product_rule",
+  "name": "Both-Sides Dismantlability Preserves a coDamp Product",
+  "class_ids": [
+    "#classes/dismantlable_complement_ample",
+    "#classes/both_sides_dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "implication",
+  "statement": "If $C\\in\\mathsf{coDamp}$ and $D\\in\\mathcal B$ use disjoint coordinates, then $C\\times D\\in\\mathsf{coDamp}$.",
+  "status": "established",
+  "proof": "Writing $P=C^c$ and $Q=D^c$, the product complement is $(P\\times\\{0,1\\}^Y)\\cup(\\{0,1\\}^X\\times Q)$. Follow a corner deletion of $P$ one row at a time; within the row of its next corner, use the relative deletion from the full $Y$-cube down to $Q$ supplied by the dismantling of $D$. Each deleted vertex has the product of its two corner cubes present. The terminal class is the dismantlable product of a full cube with $Q$.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:complement-dismantlable-product",
+  "comments": "This does not prove that the entire dismantlable-complement class is product closed; the second factor must itself and its complement be dismantlable."
+}

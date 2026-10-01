@@ -1,0 +1,22 @@
+{
+  "id": 303,
+  "short_name": "learning_spaces_daisy_cubes_and_maximum_ancestry",
+  "name": "Learning Spaces and Daisy Cubes Are Peripheral, Realizable, and Maximum-Generated",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/daisy_cubes",
+    "#classes/cover_recursive_peripheral",
+    "#classes/realizable_ample",
+    "#classes/maximum_generated_classes"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Every finite learning-space graph and every daisy cube belongs to the intersection of recursively peripheral and realizable ample classes, hence is maximum-generated. Moreover $\\operatorname{Cl}_{pc}(\\mathsf{Learn})=\\operatorname{Cl}_c(\\mathsf{Learn})\\subseteq\\mathcal R_{\\mathrm{per}}\\cap\\mathcal R_{\\mathrm{amp}}$. A learning space on $n\\ge1$ coordinates with $q$ inclusion-minimal missing consistent partial labelings has a rank-$n$ maximum parent with at most $q+2n$ auxiliaries; the zero-coordinate singleton needs none.",
+  "status": "established",
+  "proof": "Strict coordinate inequalities realize downsets and learning spaces on an open convex domain; a bounded perturbation and generic arrangement give the quantitative maximum parent. Recursive accessibility supplies a feasible singleton whose two sections are nested learning spaces, proving peripheral membership by induction. Learning spaces are projection closed, so the pc-closure reduces to conditioning closure; minor closure of peripheral and realizable ample classes gives the containment.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:learning-daisy-maxmin"
+}

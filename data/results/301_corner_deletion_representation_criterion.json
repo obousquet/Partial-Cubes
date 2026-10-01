@@ -1,0 +1,17 @@
+{
+  "id": 301,
+  "short_name": "corner_deletion_representation_criterion",
+  "name": "Representation Criterion after Deleting a Corner",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/representation_map_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $E$ be ample and let $v$ be a corner whose incident directions form its support $T$. Then $E\\setminus\\{v\\}$ has a representation map exactly when $E$ has a representation map assigning the label $T$ to $v$.",
+  "status": "established",
+  "proof": "Deleting the corner removes exactly $T$ from the shattered family, so a map with $r(v)=T$ restricts immediately. Conversely, extend a representation map of the deletion by $v\\mapsto T$. No other concept agrees with $v$ on $T$: an isometric path to one would have to leave $v$ in a direction outside its corner support. Thus $T$ separates $v$ from every old concept and all new nonclashing conditions hold.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#lem:corner-representation-deletion"
+}

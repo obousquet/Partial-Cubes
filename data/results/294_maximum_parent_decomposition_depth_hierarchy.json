@@ -1,0 +1,31 @@
+{
+  "id": 294,
+  "short_name": "maximum_parent_decomposition_depth_hierarchy",
+  "name": "Maximum-Parent Decomposition Depth and Feasible Ranks",
+  "class_ids": [
+    "#classes/maximum_parent_decomposition_level_k",
+    "#classes/dismantlable_maximum_parent_sections",
+    "#classes/dismantlable_ample",
+    "#classes/maximum_generated_classes"
+  ],
+  "invariant_ids": [
+    "#invariants/decomposition_level",
+    "#invariants/maximum_parent_decomposition_depth",
+    "#invariants/level_bounded_minimum_parent_rank",
+    "#invariants/minimum_maximum_parent_rank"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/cube_complement"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every $k$, the sections $\\mathcal P_k$ of maximum parents in $\\mathcal D_k$ satisfy $\\mathcal P_k\\subseteq\\mathcal D_k\\cap\\mathsf{MaxMin}$, $\\mathcal P_k\\subsetneq\\mathcal P_{k+1}$, and $\\bigcup_k\\mathcal P_k=\\mathcal P_D$. They are closed under nonempty sections, projections, and full reductions and are constant-coordinate invariant. Only $\\mathcal P_0$ is complement closed. Moreover $\\kappa(C)\\le\\lambda(C)$, with equality on maximum classes. When finite, feasible parent ranks at level $k$ are exactly all ranks at least $h_k(C)$; $h_k$ decreases with $k$ and stabilizes to $h_D(C)$ by $k\\ge\\max\\{h_D(C)-1,0\\}$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/odd_tangent_polygon_complements"
+  ],
+  "proof": "Section closure of each decomposition level gives the base inclusions and intrinsic-depth inequality; maximum classes are their own parents. Odd polygon complements give every strict level. Marks commute with projection, conditioning, and reduction, while the fixed-level constant-coordinate construction preserves the parent level. Complement closure holds at level zero and fails at every higher level by the complementary polygon pair. A nested successor construction raises parent rank one step without changing its level, giving the feasible-rank ray. Every rank-$r$ dismantlable class lies in $\\mathcal D_{r-1}$, which gives stabilization at a least-rank dismantlable parent.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:parent-depth-hierarchy"
+}

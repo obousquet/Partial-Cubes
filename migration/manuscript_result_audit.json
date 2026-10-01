@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 359,
-    "uncovered": 657,
-    "proof_source_records": 1404
+    "covered": 373,
+    "uncovered": 643,
+    "proof_source_records": 1419
   },
   "by_workspace": {
     "ample-corners": {
@@ -39,9 +39,8 @@
       "total": 12
     },
     "minor-atlas": {
-      "covered": 23,
-      "total": 37,
-      "uncovered": 14
+      "covered": 37,
+      "total": 37
     },
     "realizability-margin": {
       "covered": 19,
@@ -13027,7 +13026,7 @@
       "label": "ex:ambient",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13037,13 +13036,15 @@
           "line": 2682
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/011_antipodal_pair_family.json"
+      ]
     },
     {
       "label": "ex:cycle",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13053,7 +13054,9 @@
           "line": 2667
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/010_eight_cycle.json"
+      ]
     },
     {
       "label": "ex:e26-strictness",
@@ -13077,7 +13080,7 @@
       "label": "ex:maximum-halves",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13087,7 +13090,9 @@
           "line": 2729
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/106_incompatible_antipodal_maximum_halves.json"
+      ]
     },
     {
       "label": "ex:nonagon-decomposition",
@@ -13129,7 +13134,7 @@
       "label": "lem:corner-representation-deletion",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13139,7 +13144,9 @@
           "line": 2275
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/301_corner_deletion_representation_criterion.json"
+      ]
     },
     {
       "label": "lem:interval-endpoint-cubes",
@@ -13186,7 +13193,7 @@
       "label": "prop:complement-dismantlable",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13196,13 +13203,15 @@
           "line": 2166
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/299_complement_dismantlability_structure.json"
+      ]
     },
     {
       "label": "prop:complement-dismantlable-product",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13212,7 +13221,9 @@
           "line": 2237
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/300_complement_dismantlability_product_rule.json"
+      ]
     },
     {
       "label": "prop:decomposable-maximum-sequences",
@@ -13272,7 +13283,7 @@
       "label": "prop:learning-daisy-maxmin",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13282,7 +13293,9 @@
           "line": 2373
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/303_learning_spaces_daisy_cubes_and_maximum_ancestry.json"
+      ]
     },
     {
       "label": "prop:learning-ideal-closure",
@@ -13327,7 +13340,7 @@
       "label": "prop:maximum-projection-complex",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13337,7 +13350,10 @@
           "line": 1615
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/045_maximum_projection_complex.json",
+        "data/results/293_maximum_projection_complex_structure.json"
+      ]
     },
     {
       "label": "prop:maxmin-neighbors",
@@ -13361,7 +13377,7 @@
       "label": "prop:monotone-predecessors",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13371,7 +13387,9 @@
           "line": 1898
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/295_compatible_face_avoidance_operator.json"
+      ]
     },
     {
       "label": "prop:normal-form",
@@ -13413,7 +13431,7 @@
       "label": "prop:parent-depth-hierarchy",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13423,7 +13441,11 @@
           "line": 1739
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/046_maximum_parent_decomposition_depth.json",
+        "data/invariants/047_level_bounded_minimum_parent_rank.json",
+        "data/results/294_maximum_parent_decomposition_depth_hierarchy.json"
+      ]
     },
     {
       "label": "prop:parent-free-coordinates",
@@ -13483,7 +13505,7 @@
       "label": "prop:peripheral-corner-parent",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13493,13 +13515,15 @@
           "line": 2065
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/298_peripheral_corner_deletion_parent.json"
+      ]
     },
     {
       "label": "prop:peripheral-minimum-deletion",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13509,7 +13533,9 @@
           "line": 2015
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/297_peripheral_minimum_section_deletion.json"
+      ]
     },
     {
       "label": "prop:polygon-decomposition",
@@ -13536,7 +13562,7 @@
       "label": "prop:small-corner-map-repair",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13546,7 +13572,9 @@
           "line": 2303
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/302_small_corner_representation_map_repair.json"
+      ]
     },
     {
       "label": "prop:source-component",
@@ -13665,7 +13693,7 @@
       "label": "thm:dismantlable-minimum-deletion",
       "prefix": "thm",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13675,7 +13703,9 @@
           "line": 1940
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/296_dismantlable_minimum_section_deletion_parent.json"
+      ]
     },
     {
       "label": "cor:fixed-support",

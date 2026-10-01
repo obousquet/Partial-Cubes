@@ -1,0 +1,28 @@
+{
+  "id": 299,
+  "short_name": "complement_dismantlability_structure",
+  "name": "Structure of Dismantlable-Complement Ample Classes",
+  "class_ids": [
+    "#classes/dismantlable_complement_ample",
+    "#classes/dismantlable_ample",
+    "#classes/both_sides_dismantlable_ample",
+    "#classes/ample",
+    "#classes/maximum_generated_classes",
+    "#classes/universal_cube_extension_ample",
+    "#classes/representation_map_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "statement": "The dismantlable-complement class $\\mathsf{coDamp}$ is closed under nonempty sections, projections, full reductions, and constant-coordinate changes. It is incomparable with dismantlable ample classes, while $\\mathcal B\\subsetneq\\mathsf{coDamp}\\subsetneq\\mathcal A$, and $\\mathsf{MaxMin}$ is not contained in their union. The open inclusions $\\mathcal D_{\\mathrm{amp}}\\subseteq\\mathsf{Ext}$ and $\\mathsf{coDamp}\\subseteq\\mathsf{Rep}$ are equivalent; likewise $\\mathcal D_{\\mathrm{amp}}\\subseteq\\mathsf{MaxMin}$ and $\\mathsf{coDamp}\\subseteq\\mathsf{MaxMin}$ are equivalent.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/hall_maximum_class",
+    "#examples/hall_complement"
+  ],
+  "proof": "Complementation commutes with sections and exchanges projection with full reduction, so dismantlable closure laws transfer. Hall's class and its dismantlable complement witness both directions of incomparability. Their product is maximum-generated, while it and its complement each have a nondismantlable Hall section, proving the stronger noncontainment. The universal-extension complementary-shore criterion gives the first equivalence; complement closure of maximum ancestry gives the second.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:complement-dismantlable"
+}
