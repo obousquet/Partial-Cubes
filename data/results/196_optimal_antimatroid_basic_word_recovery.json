@@ -1,0 +1,14 @@
+{
+  "id": 196,
+  "short_name": "optimal_antimatroid_basic_word_recovery",
+  "name": "Optimal Recovery of a Promised Antimatroid Basic Word",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let an antimatroid be represented by monotone Boolean precedence formulas of total length $N$, and suppose an unknown total order $\\pi$ is promised to be one of its basic words. With an oracle that compares two ground-set elements, $\\pi$ can be recovered in $O(N+\\log|\\operatorname{BW}(\\mathcal A)|)$ time using $O(\\log|\\operatorname{BW}(\\mathcal A)|)$ comparisons. Thus the information-theoretic comparison bound is attained; the result does not claim that the entire state graph can be listed in this time.",
+  "status": "established",
+  "proof": "This is the cited optimal antimatroid-sorting theorem for the precedence-formula representation.",
+  "references": "\\cite{Berendsohn25antimatroid}",
+  "proof_source": "PartialCubes:papers/survey/main.tex immediately following #thm:learning-space-algorithms"
+}

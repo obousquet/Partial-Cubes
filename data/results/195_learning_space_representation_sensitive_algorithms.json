@@ -1,0 +1,14 @@
+{
+  "id": 195,
+  "short_name": "learning_space_representation_sensitive_algorithms",
+  "name": "Representation-Sensitive Recognition and Completion for Learning Spaces",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "algorithm",
+  "statement": "For an explicit medium with $n$ states, $m$ transitions, and $\\tau$ token pairs, a given orientation can be tested for closedness in $O(m\\log n)$ time with a violating state and token pair, and a closed orientation can be found or ruled out in $O(m\\tau)$ time. For a listed candidate base $\\mathcal B$, with $b=|\\mathcal B|$ and total member size $s$, one can decide in $O(bs)$ time whether it is the base of a learning space: exactly when $\\varnothing\\in\\mathcal B$ and every nonempty member has exactly one endpoint. A minimal well-graded extension of an arbitrary listed family is constructible in polynomial time, while deciding whether all listed input members can remain base members of some learning space is NP-complete.",
+  "status": "established",
+  "proof": "These are the cited medium-orientation, base-recognition, and extension theorems. Trying each of the $n$ states as a root and testing the induced orientation yields the derived $O(nm\\log n)$ recognition bound for learning-space graphs represented as explicit finite media. Minimal extension means inclusion-minimal, not minimum cardinality.",
+  "references": "\\cite{EppsteinFalmagne08media,EppsteinFalmagneUzun09}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:learning-space-algorithms"
+}

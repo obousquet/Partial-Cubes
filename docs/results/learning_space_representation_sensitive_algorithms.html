@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-76" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-195" style="position:relative;">
 
-        <h3><a href="examples/critical_pendant_twelve_state.html" class="table-title-link">Twelve-State Critical-Pendant Obstruction</a></h3>
+        <h3><a href="results/learning_space_representation_sensitive_algorithms.html" class="table-title-link">Representation-Sensitive Recognition and Completion for Learning Spaces</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Twelve-State Critical-Pendant Obstruction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal J_{5,3}^{0}">
-            \[\mathcal J_{5,3}^{0}\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>Use the chain-and-punctured-fiber construction with $d=4$, $j=3$, and $\epsilon=0$: the base on $\{a,b_1,b_2,b_3\}$ contains all prefixes of $b_1b_2b_3$ and every $a$-state except $\{a,b_3\}$, and a new coordinate is attached above the base with the lone lower state $\{a\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It has $2^3+4=12$ states on five active coordinates and is contraction-minimal nonlearning. All five one-coordinate contractions are learning-space graphs, but none of its ten one-coordinate links is simultaneously antipodal and nonlearning. It is the sharpness witness for eleven-state contraction descent and refutes antipodal link descent even for a semicube of a learning-space graph.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/chain_family.tex?#prop:learning-space-critical-pendant-obstructions; PartialCubes:papers/survey/main.tex?#ex:learning-space-antipodal-link-descent</p></div>
-<p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/critical_pendant_chain_contraction_obstructions.html">Critical-Pendant Chain Contraction Obstructions</a></li></ul></p>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Representation-Sensitive Recognition and Completion for Learning Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For an explicit medium with $n$ states, $m$ transitions, and $\tau$ token pairs, a given orientation can be tested for closedness in $O(m\log n)$ time with a violating state and token pair, and a closed orientation can be found or ruled out in $O(m\tau)$ time. For a listed candidate base $\mathcal B$, with $b=|\mathcal B|$ and total member size $s$, one can decide in $O(bs)$ time whether it is the base of a learning space: exactly when $\varnothing\in\mathcal B$ and every nonempty member has exactly one endpoint. A minimal well-graded extension of an arbitrary listed family is constructible in polynomial time, while deciding whether all listed input members can remain base members of some learning space is NP-complete.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>These are the cited medium-orientation, base-recognition, and extension theorems. Trying each of the $n$ states as a root and testing the induced orientation yields the derived $O(nm\log n)$ recognition bound for learning-space graphs represented as explicit finite media. Minimal extension means inclusion-minimal, not minimum cardinality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#EppsteinFalmagne08media">[EppsteinFalmagne08media]</a> <a href="bibliography.html#EppsteinFalmagneUzun09">[EppsteinFalmagneUzun09]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:learning-space-algorithms</p></div>
 
         </div>
     </div>

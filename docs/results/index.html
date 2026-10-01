@@ -3302,6 +3302,70 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-193" style="position:relative;">
+
+        <h3><a href="results/antipodal_link_descent_counterexample.html" class="table-title-link">Antipodal Link Descent Fails</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipodal Link Descent Fails</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The twelve-state, five-dimensional family $\mathcal H_\star=\mathcal J_{5,3}^0$ is a contraction-minimal nonlearning partial cube with a unique antipodal pair and is a semicube of a learning-space graph. Nevertheless, none of its ten one-coordinate links is both antipodal and nonlearning. Hence a nonlearning antipodal family need not have a smaller link with both properties.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Direct rooted-union witnesses invalidate both complementary endpoint roots, while the critical-antipodal pendant theorem gives contraction minimality and embeds the family as a positive semicube of a learning space. Exhausting the two links in each coordinate shows that every link containing an antipodal pair has a valid root; the source records their dimensions, orders, antipodal-pair counts, and valid-root counts.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#ex:learning-space-antipodal-link-descent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/critical_pendant_twelve_state.html">Twelve-State Critical-Pendant Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-194" style="position:relative;">
+
+        <h3><a href="results/dimension_five_critical_pair_census.html" class="table-title-link">Dimension-Five Critical-Pair Census Through Nine Deletions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dimension-Five Critical-Pair Census Through Nine Deletions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix the endpoint pair $\{0^5,1^5\}$ in $Q_5$ and quotient deleted subsets of the other thirty vertices by the order-$240$ setwise stabilizer. Through nine deletions, the exhaustive computation covers $22{,}964{,}086$ labelled deletion sets in $106{,}312$ orbits. The numbers of critical-learning orbits at deletion sizes one through nine are $1,0,0,0,1,3,7,5,7$. Every hit through nine deletions belongs to one of the proved parametric continuation families in the database; there is no unclassified hit through that cutoff. This is a finite census, not a classification at ten deletions or in higher dimension.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The verifier enumerates every orbit under coordinate permutations and simultaneous complement, asserts that orbit sizes sum to the labelled count, and tests exact endpoint holes, contraction-repair sets, well-gradedness, and existence of a valid root before matching proved parametric families. The symbolic all-dimensional claims come from the individual obstruction theorems rather than extrapolation from the computation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#q:learning-space-contraction-restrictions (finite enumeration and reproducibility paragraphs)</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Verified by papers/learning-spaces/scripts/explore_learning_space_pc_minors.py --max-dimension 0 --dimension-five-small-deletion-audit 9 in the preserved PartialCubes source repository. The next deletion layer alone has $\binom{30}{10}=30{,}045{,}015$ labelled sets.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-195" style="position:relative;">
+
+        <h3><a href="results/learning_space_representation_sensitive_algorithms.html" class="table-title-link">Representation-Sensitive Recognition and Completion for Learning Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation-Sensitive Recognition and Completion for Learning Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For an explicit medium with $n$ states, $m$ transitions, and $\tau$ token pairs, a given orientation can be tested for closedness in $O(m\log n)$ time with a violating state and token pair, and a closed orientation can be found or ruled out in $O(m\tau)$ time. For a listed candidate base $\mathcal B$, with $b=|\mathcal B|$ and total member size $s$, one can decide in $O(bs)$ time whether it is the base of a learning space: exactly when $\varnothing\in\mathcal B$ and every nonempty member has exactly one endpoint. A minimal well-graded extension of an arbitrary listed family is constructible in polynomial time, while deciding whether all listed input members can remain base members of some learning space is NP-complete.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>These are the cited medium-orientation, base-recognition, and extension theorems. Trying each of the $n$ states as a root and testing the induced orientation yields the derived $O(nm\log n)$ recognition bound for learning-space graphs represented as explicit finite media. Minimal extension means inclusion-minimal, not minimum cardinality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#EppsteinFalmagne08media">[EppsteinFalmagne08media]</a> <a href="bibliography.html#EppsteinFalmagneUzun09">[EppsteinFalmagneUzun09]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:learning-space-algorithms</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-196" style="position:relative;">
+
+        <h3><a href="results/optimal_antimatroid_basic_word_recovery.html" class="table-title-link">Optimal Recovery of a Promised Antimatroid Basic Word</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Optimal Recovery of a Promised Antimatroid Basic Word</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an antimatroid be represented by monotone Boolean precedence formulas of total length $N$, and suppose an unknown total order $\pi$ is promised to be one of its basic words. With an oracle that compares two ground-set elements, $\pi$ can be recovered in $O(N+\log|\operatorname{BW}(\mathcal A)|)$ time using $O(\log|\operatorname{BW}(\mathcal A)|)$ comparisons. Thus the information-theoretic comparison bound is attained; the result does not claim that the entire state graph can be listed in this time.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>This is the cited optimal antimatroid-sorting theorem for the precedence-formula representation.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Berendsohn25antimatroid">[Berendsohn25antimatroid]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex immediately following ?#thm:learning-space-algorithms</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

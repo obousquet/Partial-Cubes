@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-76" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-196" style="position:relative;">
 
-        <h3><a href="examples/critical_pendant_twelve_state.html" class="table-title-link">Twelve-State Critical-Pendant Obstruction</a></h3>
+        <h3><a href="results/optimal_antimatroid_basic_word_recovery.html" class="table-title-link">Optimal Recovery of a Promised Antimatroid Basic Word</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Twelve-State Critical-Pendant Obstruction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal J_{5,3}^{0}">
-            \[\mathcal J_{5,3}^{0}\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>Use the chain-and-punctured-fiber construction with $d=4$, $j=3$, and $\epsilon=0$: the base on $\{a,b_1,b_2,b_3\}$ contains all prefixes of $b_1b_2b_3$ and every $a$-state except $\{a,b_3\}$, and a new coordinate is attached above the base with the lone lower state $\{a\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>It has $2^3+4=12$ states on five active coordinates and is contraction-minimal nonlearning. All five one-coordinate contractions are learning-space graphs, but none of its ten one-coordinate links is simultaneously antipodal and nonlearning. It is the sharpness witness for eleven-state contraction descent and refutes antipodal link descent even for a semicube of a learning-space graph.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/learning-spaces/sections/chain_family.tex?#prop:learning-space-critical-pendant-obstructions; PartialCubes:papers/survey/main.tex?#ex:learning-space-antipodal-link-descent</p></div>
-<p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/critical_pendant_chain_contraction_obstructions.html">Critical-Pendant Chain Contraction Obstructions</a></li></ul></p>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Optimal Recovery of a Promised Antimatroid Basic Word</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an antimatroid be represented by monotone Boolean precedence formulas of total length $N$, and suppose an unknown total order $\pi$ is promised to be one of its basic words. With an oracle that compares two ground-set elements, $\pi$ can be recovered in $O(N+\log|\operatorname{BW}(\mathcal A)|)$ time using $O(\log|\operatorname{BW}(\mathcal A)|)$ comparisons. Thus the information-theoretic comparison bound is attained; the result does not claim that the entire state graph can be listed in this time.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>This is the cited optimal antimatroid-sorting theorem for the precedence-formula representation.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Berendsohn25antimatroid">[Berendsohn25antimatroid]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex immediately following ?#thm:learning-space-algorithms</p></div>
 
         </div>
     </div>
