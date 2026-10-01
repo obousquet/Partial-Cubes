@@ -1,0 +1,13 @@
+{
+  "id": 137,
+  "short_name": "relative_initial_maximum_parent_criterion",
+  "name": "Relative Initial-Ideal Maximum-Parent Criterion",
+  "class_ids": ["#classes/maximum", "#classes/maximum_generated_classes"],
+  "result_type": "recognition",
+  "statement": "Fix visible class $C$, auxiliary mark $\\tau$, total coordinate set of size $N$, and rank $r$. A coordinate-multigraded ideal $F$ with the maximum-class Hilbert series $\\mathcal H_{N,r}$ and exact marked colon $(F:m_\\tau)\\cap S_X=Q_C$ exists exactly when $C$ has a rank-$r$ maximum parent at that mark. For a block term order placing every opposite auxiliary literal before all monomials without one, $\\operatorname{in}(F)=Q_M$ for such a parent and its marked colon remains $Q_C$.",
+  "status": "established",
+  "proof": "The prescribed Hilbert series forces the initial ideal to contain no monomial on at most $r$ colors and exactly one signed squarefree monomial on each $(r+1)$-support. Full-word counting gives the Sauer cardinality and the selected patterns bound VC dimension, so their avoider is rank-$r$ maximum. Homogeneous polarization then gives equality of the whole initial ideal with its signed ideal. Under the elimination block order, a leading monomial compatible with the mark comes from a polynomial containing no opposite auxiliary literal; coordinate homogeneity factors its marked auxiliary part, and the prescribed colon forces the visible leading factor into $Q_C$. This preserves the exact marked colon. The converse takes $F=Q_M$.",
+  "references": "\\cite{ConcaDeNegriGorla20}",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:relative-initial",
+  "witness_ids": ["#examples/relative_initial_term_order"]
+}

@@ -1,0 +1,11 @@
+{
+  "id": 47,
+  "short_name": "local_signed_pattern_triples",
+  "name": "Connected and Disconnected Signed Pattern Triples",
+  "symbol": "M_f",
+  "object_type": "construction",
+  "definition": "On coordinates $a,b,c$ with rank target one, first choose $f_{ab}=f_{ac}=f_{bc}=00$. For the contrasting choice take $f_{ab}=00$, $f_{ac}=10$, and $f_{bc}=11$.",
+  "properties": "For the all-zero choice the agreement graph is a triangle and the avoider is the four-word maximum class $\\{111,110,101,011\\}$. In the contrasting choice every pair disagrees on its common coordinate, the agreement graph is disconnected, and only $010,101$ survive. Thus one forbidden pattern per support does not by itself imply maximumity.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#ex:graphs",
+  "verification": "scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json"
+}

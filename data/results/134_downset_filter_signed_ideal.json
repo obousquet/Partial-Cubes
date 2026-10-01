@@ -1,0 +1,13 @@
+{
+  "id": 134,
+  "short_name": "downset_filter_signed_ideal",
+  "name": "Signed Ideal of a Downset Filter",
+  "class_ids": ["#classes/ample", "#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/downset_filter"],
+  "result_type": "invariant_law",
+  "statement": "If $C$ is downward closed in a coordinate block $U$, $D\\subseteq\\{0,1\\}^U$ is a nonempty downset with minimal nonfaces $\\mathcal N(D)$, and $F=\\{x\\in C:x|_U\\in D\\}$, then $Q_F=Q_C+(\\prod_{j\\in J}x_{j,1}:J\\in\\mathcal N(D))$.",
+  "status": "established",
+  "proof": "A consistent partial pattern missing from $F$ either was already missing from $C$, or has a witness in $C$. Lower every unspecified coordinate of $U$ in that witness to zero. Downward closure retains membership in $C$ and the prescribed pattern. Since the resulting word is not in $F$, its prescribed one-set in $U$ contains a minimal nonface of $D$. This proves both generator containments; minimal consistent generators suffice for the monomial-ideal equality.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#eq:filter-ideal",
+  "comments": "This identity retains literal signs and is stronger than the corresponding unsigned shattered-support formula."
+}

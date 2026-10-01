@@ -1,0 +1,11 @@
+{
+  "id": 48,
+  "short_name": "relative_initial_term_order",
+  "name": "Marked Section Depends on the Initial Term Order",
+  "object_type": "construction",
+  "definition": "In $k[a_0,a_1,b_0,b_1]$, take the coordinate-bigraded ideal $F=(a_0b_0-a_1b_1)$ and mark $b=0$.",
+  "properties": "The ideal has the rank-one maximum Hilbert series and $(F:b_0)\\cap k[a_0,a_1]=0$, prescribing the full visible one-cube. An order placing the opposite literal $b_1$ first gives initial ideal $(a_1b_1)$ and preserves that section. Choosing leading term $a_0b_0$ instead gives a singleton section. The starting paired differences need not be regular: after $a_0=a_1$, the factor $b_0-b_1$ is a zero divisor.",
+  "references": "\\cite{ConcaDeNegriGorla20}",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#ex:relative-order",
+  "verification": "scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json"
+}

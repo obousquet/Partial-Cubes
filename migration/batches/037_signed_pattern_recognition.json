@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "batch_id": "037_signed_pattern_recognition",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize local signed-pattern recognition of maximum classes and marked parents, signed-ideal polarization and section identities, the Yang-complex link dictionary, and the relative initial-ideal parent criterion.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#thm:recognition",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:exact-section",
+    "CompressionSchemes:maximum_parent_methods.tex#eq:filter-ideal",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:homogeneous",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:colon",
+    "CompressionSchemes:maximum_parent_methods.tex#eq:link",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:relative-initial"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "statement_sha256": {
+        "thm:recognition": "3e6c9177a8cdc0a8cea278829302ae832661e6eecba4e114d0fc6588c0572cad",
+        "ex:graphs": "737fcacb25ea299e26ac2229455bf3991483901c06797cdf4dbc7ee393cb8fb9",
+        "cor:exact-section": "c0ac6d7f13307e1692051fafe35dc9e01480d61f0eae9f0b07abfbaa3ab10e3e",
+        "thm:homogeneous": "88fea2556d9642f82e2b9fa78dbffea14974c93c6f7c1fcd82671fc3559c7a29",
+        "prop:colon": "0e4eff0ad5d63a5faf12ce80870d983688a421eafe20f6c83e0573bd10cc29a6",
+        "thm:relative-initial": "b3d4be243565247eab0391e17213cab0eeeb253511ea86ed14a443144a88f322",
+        "ex:relative-order": "04f9e9a33b426fa439eb88db3e18a1148659c159f254660b88c038594d685cd9"
+      }
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized characterizations, equivalence proofs, reusable signed-ideal identities, examples, and finite replay. CompressionSchemes retains the full polarization specialization, multigraded Hilbert-series arguments, initial-ideal proof, caveats, and manuscript exposition.",
+    "recoverability": "The manuscript and reconciliation hashes retain all labelled theorem and example statements; the database bibliography now includes the two published algebraic inputs.",
+    "mutation": "No source file in CompressionSchemes or another sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains exact source and statement hashes for all promoted labelled results and examples."
+    },
+    {
+      "id": "database-signed-pattern-verifier",
+      "path": "scripts/verify_signed_pattern_recognition.py",
+      "sha256": "1de61b5e33c6d8253eca7c6775ce8d3e9d2032405ea09621406a8d452f0a82be",
+      "assertions": "Exhausts small signed pattern systems, marked sections, signed depolarizations, colons, links, filters, and both example term orders."
+    },
+    {
+      "id": "signed-pattern-database-replay",
+      "path": "data/examples/assets/signed_pattern_recognition_database_verification.json",
+      "sha256": "d1361dd05a8138b7896b8c72108bd5b52f4f37e863c62279ced304f05d384a65",
+      "assertions": "Passed 64 pattern families, 896 marked-section candidates, 255 depolarizations, 480 colon/link cases, 361 filter identities, and two term orders."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterizations/084_connected_local_agreement_graphs.json",
+      "sha256": "8f045ec31f3e584eb377701912553d6aa13afbade16f89967d0a4b884b48879a"
+    },
+    {
+      "path": "data/characterizations/085_signed_ideal_homogeneous_polarization.json",
+      "sha256": "b027d7b9e57d43480eb07f5b3d5db9d3c9017d0f9083e8510871d50f0975d9a7"
+    },
+    {
+      "path": "data/characterizations/086_cohen_macaulay_yang_complex.json",
+      "sha256": "db1a7e5790c52fd40bb104f25b9c153852078757a0902402b9e5cf874c4e2dfe"
+    },
+    {
+      "path": "data/characterization_equivalences/022_maximum_local_recognition_equivalence.json",
+      "sha256": "0adbdc01faa6f5a934cc294967c6a499b1dea505ac5a7b5c83310dee3c1f57d8"
+    },
+    {
+      "path": "data/characterization_equivalences/023_ample_signed_algebra_equivalence.json",
+      "sha256": "d4609a1885bc06ff8dc2f334c6c42b562cde3914dea95e43afcf0df433f40322"
+    },
+    {
+      "path": "data/examples/047_local_signed_pattern_triples.json",
+      "sha256": "5ff7158cfd0e9ff95434acd91a6c69bbb5614b170df9bd1243cf77f9ab7d7676"
+    },
+    {
+      "path": "data/examples/048_relative_initial_term_order.json",
+      "sha256": "364b402eea5c250f0d5ee5bd084e1fcb7be4c8af09b660794f8dd3eb95fbf120"
+    },
+    {
+      "path": "data/examples/assets/signed_pattern_recognition_database_verification.json",
+      "sha256": "d1361dd05a8138b7896b8c72108bd5b52f4f37e863c62279ced304f05d384a65"
+    },
+    {
+      "path": "data/results/133_exact_marked_parent_recognition.json",
+      "sha256": "69e9ed2e6e881ca038d403fea2847d202da177b02f14bde6ae47b288c164959b"
+    },
+    {
+      "path": "data/results/134_downset_filter_signed_ideal.json",
+      "sha256": "2006c9cb195e0ca2eb1299047f52c549939b3067054aa7602442734ac2c1c424"
+    },
+    {
+      "path": "data/results/135_signed_section_colon_identity.json",
+      "sha256": "4f4da8334addc0626c7a3c72731f69d7e4c0baf77eb6f306bd60272c2b83d2ea"
+    },
+    {
+      "path": "data/results/136_yang_complex_section_link.json",
+      "sha256": "308aaab9c4821bfde746dcfb5e2ad543b539049c24ccd1f0dc602c7db03e1263"
+    },
+    {
+      "path": "data/results/137_relative_initial_maximum_parent_criterion.json",
+      "sha256": "d56e16898cdc409315fce749c26812a65de6f0ec30a744c942f849c92187955e"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "dc3de3f8ecbd88ee1d5f43a5483996513f36a05fa33f7df99079ea039b54d63c"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "b4c916573a581155626fba0fbd6dcdc371b06b630e12aa3528838756b1a60dcf"
+    },
+    {
+      "path": "scripts/verify_signed_pattern_recognition.py",
+      "sha256": "1de61b5e33c6d8253eca7c6775ce8d3e9d2032405ea09621406a8d452f0a82be"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 713 records.",
+    "exact_replay": "All required source labels and exhaustive signed-pattern, section, ideal, link, filter, and term-order checks passed.",
+    "website": "Normalized 729 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 78 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Coordinate substitution and recursively peripheral maximum-parent laws.",
+    "Remaining maximum-parent, YangDim algebraic, and PartialCubes facts."
+  ]
+}

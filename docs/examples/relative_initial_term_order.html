@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-17" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-48" style="position:relative;">
 
-        <h3><a href="operations/downset_filter.html" class="table-title-link">Downset Filter</a></h3>
+        <h3><a href="examples/relative_initial_term_order.html" class="table-title-link">Marked Section Depends on the Initial Term Order</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset Filter</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C|_D">
-            \[C|_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>If $C\subseteq\{0,1\}^X$ is downward closed in $U\subseteq X$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, the downset filter is $C|_D=\{x\in C:x|_U\in D\}$.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>The operation retains the positioned coordinates. Its hypotheses include a common downward orientation on the constrained block.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_generated_downset_filter_closed.html'>Maximum-Generated Classes Are Closed under Downset Filters</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/downset_filter_rank_preservation.html'>Rank-Preserving Downset Filtering</a></li><li><a href='results/downset_filter_signed_ideal.html'>Signed Ideal of a Downset Filter</a></li></ul></p></div>
+        <p><strong>Name: </strong>Marked Section Depends on the Initial Term Order</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>In $k[a_0,a_1,b_0,b_1]$, take the coordinate-bigraded ideal $F=(a_0b_0-a_1b_1)$ and mark $b=0$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The ideal has the rank-one maximum Hilbert series and $(F:b_0)\cap k[a_0,a_1]=0$, prescribing the full visible one-cube. An order placing the opposite literal $b_1$ first gives initial ideal $(a_1b_1)$ and preserves that section. Choosing leading term $a_0b_0$ instead gives a singleton section. The starting paired differences need not be regular: after $a_0=a_1$, the factor $b_0-b_1$ is a zero divisor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ConcaDeNegriGorla20">[ConcaDeNegriGorla20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:relative-order</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

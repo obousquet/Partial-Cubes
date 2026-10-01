@@ -2338,6 +2338,90 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-133" style="position:relative;">
+
+        <h3><a href="results/exact_marked_parent_recognition.html" class="table-title-link">Exact Marked Maximum-Parent Recognition</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Marked Maximum-Parent Recognition</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C$ be a nonempty proper class on visible coordinates $X$, fix an auxiliary mark $\tau$ on $A$, and choose one pattern $f_T$ on every $(r+1)$-support of $X\sqcup A$. Call $f_T$ active when its auxiliary restriction agrees with $\tau$. The avoider $M_f$ is a rank-$r$ maximum parent with section $M_f[\tau]=C$ exactly when: every local agreement graph is connected; every active pattern's visible restriction contains a minimally missing pattern of $C$; and every minimally missing pattern of $C$ occurs as the visible restriction of an active selected pattern.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Local connectivity is exactly maximumity. In a maximum class the selected patterns are all minimally missing. If the marked section is $C$, every active restriction is missing from $C$, hence contains a minimal missing pattern; minimizing a missing extension of each pattern of $C$ gives an active selected pattern with exactly that visible restriction. Conversely, the containment condition keeps every word of $C$ in the marked section, while coverage of every minimal missing pattern excludes every visible word outside $C$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AlmousaVandeBogert22">[AlmousaVandeBogert22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:exact-section</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/local_signed_pattern_triples.html">Connected and Disconnected Signed Pattern Triples</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-134" style="position:relative;">
+
+        <h3><a href="results/downset_filter_signed_ideal.html" class="table-title-link">Signed Ideal of a Downset Filter</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Signed Ideal of a Downset Filter</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/downset_filter.html">Downset Filter</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C$ is downward closed in a coordinate block $U$, $D\subseteq\{0,1\}^U$ is a nonempty downset with minimal nonfaces $\mathcal N(D)$, and $F=\{x\in C:x|_U\in D\}$, then $Q_F=Q_C+(\prod_{j\in J}x_{j,1}:J\in\mathcal N(D))$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A consistent partial pattern missing from $F$ either was already missing from $C$, or has a witness in $C$. Lower every unspecified coordinate of $U$ in that witness to zero. Downward closure retains membership in $C$ and the prescribed pattern. Since the resulting word is not in $F$, its prescribed one-set in $U$ contains a minimal nonface of $D$. This proves both generator containments; minimal consistent generators suffice for the monomial-ideal equality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#eq:filter-ideal</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This identity retains literal signs and is stronger than the corresponding unsigned shattered-support formula.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-135" style="position:relative;">
+
+        <h3><a href="results/signed_section_colon_identity.html" class="table-title-link">Signed-Ideal Colon Identity for Sections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Signed-Ideal Colon Identity for Sections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For any finite class $M$ with nonempty marked section $C=M[\tau]$ on visible coordinates $X$, if $m_\tau$ is the product of the marked auxiliary literals, then $Q_C=(Q_M:m_\tau)\cap S_X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The contracted colon is generated by visible restrictions of missing parent patterns whose auxiliary signs agree with the mark, so every generator is missing from the section. Conversely, extend a minimally missing pattern of $C$ by the mark and minimize it inside $M$; the resulting active parent generator has visible restriction dividing the original pattern. These containments prove equality for every monomial.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:colon</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-136" style="position:relative;">
+
+        <h3><a href="results/yang_complex_section_link.html" class="table-title-link">Yang Complex of a Marked Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Complex of a Marked Section</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a class $M$ on visible and auxiliary coordinates and a realized auxiliary mark $\tau$, the Yang complex of the section is the link $\Delta_{M[\tau]}=\operatorname{lk}_{\Delta_M}(\sigma_\tau)$ on the remaining literal pairs, after discarding opposite auxiliary ghost vertices.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A visible literal face lies in the link exactly when adjoining all marked auxiliary literals yields a face of $\Delta_M$. This is equivalent to extension by a word of $M$ with auxiliary restriction $\tau$, hence to membership in the Yang complex of the marked section.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#eq:link</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-137" style="position:relative;">
+
+        <h3><a href="results/relative_initial_maximum_parent_criterion.html" class="table-title-link">Relative Initial-Ideal Maximum-Parent Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Initial-Ideal Maximum-Parent Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix visible class $C$, auxiliary mark $\tau$, total coordinate set of size $N$, and rank $r$. A coordinate-multigraded ideal $F$ with the maximum-class Hilbert series $\mathcal H_{N,r}$ and exact marked colon $(F:m_\tau)\cap S_X=Q_C$ exists exactly when $C$ has a rank-$r$ maximum parent at that mark. For a block term order placing every opposite auxiliary literal before all monomials without one, $\operatorname{in}(F)=Q_M$ for such a parent and its marked colon remains $Q_C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The prescribed Hilbert series forces the initial ideal to contain no monomial on at most $r$ colors and exactly one signed squarefree monomial on each $(r+1)$-support. Full-word counting gives the Sauer cardinality and the selected patterns bound VC dimension, so their avoider is rank-$r$ maximum. Homogeneous polarization then gives equality of the whole initial ideal with its signed ideal. Under the elimination block order, a leading monomial compatible with the mark comes from a polynomial containing no opposite auxiliary literal; coordinate homogeneity factors its marked auxiliary part, and the prescribed colon forces the visible leading factor into $Q_C$. This preserves the exact marked colon. The converse takes $F=Q_M$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ConcaDeNegriGorla20">[ConcaDeNegriGorla20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:relative-initial</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/relative_initial_term_order.html">Marked Section Depends on the Initial Term Order</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

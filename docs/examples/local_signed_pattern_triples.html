@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,25 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-17" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-47" style="position:relative;">
 
-        <h3><a href="operations/downset_filter.html" class="table-title-link">Downset Filter</a></h3>
+        <h3><a href="examples/local_signed_pattern_triples.html" class="table-title-link">Connected and Disconnected Signed Pattern Triples</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset Filter</p>
+        <p><strong>Name: </strong>Connected and Disconnected Signed Pattern Triples</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="C|_D">
-            \[C|_D\]
+        <div class="latex-equation" data-latex="M_f">
+            \[M_f\]
         </div>
     </div>
 
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>If $C\subseteq\{0,1\}^X$ is downward closed in $U\subseteq X$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, the downset filter is $C|_D=\{x\in C:x|_U\in D\}$.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>The operation retains the positioned coordinates. Its hypotheses include a common downward orientation on the constrained block.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_generated_downset_filter_closed.html'>Maximum-Generated Classes Are Closed under Downset Filters</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/downset_filter_rank_preservation.html'>Rank-Preserving Downset Filtering</a></li><li><a href='results/downset_filter_signed_ideal.html'>Signed Ideal of a Downset Filter</a></li></ul></p></div>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $a,b,c$ with rank target one, first choose $f_{ab}=f_{ac}=f_{bc}=00$. For the contrasting choice take $f_{ab}=00$, $f_{ac}=10$, and $f_{bc}=11$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>For the all-zero choice the agreement graph is a triangle and the avoider is the four-word maximum class $\{111,110,101,011\}$. In the contrasting choice every pair disagrees on its common coordinate, the agreement graph is disconnected, and only $010,101$ survive. Thus one forbidden pattern per support does not by itself imply maximumity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:graphs</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

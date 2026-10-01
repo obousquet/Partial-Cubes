@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-17" style="position:relative;">
+            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
+    <div class="table-card" id="math-23" style="position:relative;">
 
-        <h3><a href="operations/downset_filter.html" class="table-title-link">Downset Filter</a></h3>
+        <h3><a href="characterization_equivalences/ample_signed_algebra_equivalence.html" class="table-title-link">Ample Signed-Ideal and Yang-Complex Equivalence</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset Filter</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C|_D">
-            \[C|_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>If $C\subseteq\{0,1\}^X$ is downward closed in $U\subseteq X$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, the downset filter is $C|_D=\{x\in C:x|_U\in D\}$.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>The operation retains the positioned coordinates. Its hypotheses include a common downward orientation on the constrained block.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_generated_downset_filter_closed.html'>Maximum-Generated Classes Are Closed under Downset Filters</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/downset_filter_rank_preservation.html'>Rank-Preserving Downset Filtering</a></li><li><a href='results/downset_filter_signed_ideal.html'>Signed Ideal of a Downset Filter</a></li></ul></p></div>
+        <p><strong>Name: </strong>Ample Signed-Ideal and Yang-Complex Equivalence</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a></li><li><a href="characterizations/signed_ideal_homogeneous_polarization.html">Signed-Ideal Homogeneous Polarization</a></li><li><a href="characterizations/cohen_macaulay_yang_complex.html">Cohen--Macaulay Yang Complex</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty binary class over any coefficient field.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Shattering extremality is equivalent to regularity of all paired literal differences on the signed missing-pattern ideal, and equivalently to Cohen--Macaulayness of the labeled Yang complex.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The homogeneous polarization theorem identifies ampleness with regularity of the paired differences and depolarizes the signed ideal to the Stanley--Reisner ideal of the shattered-support complex. The Yang correspondence identifies the same ample condition with Cohen--Macaulayness of the Yang complex, whose Stanley--Reisner ideal is the signed missing-pattern ideal plus the inconsistent literal pairs.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:homogeneous; CompressionSchemes:maximum_parent_methods.tex?#sec:algebra</p></div>
 
         </div>
     </div>

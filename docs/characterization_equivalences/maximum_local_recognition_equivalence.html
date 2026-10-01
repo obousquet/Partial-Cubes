@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-17" style="position:relative;">
+            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
+    <div class="table-card" id="math-22" style="position:relative;">
 
-        <h3><a href="operations/downset_filter.html" class="table-title-link">Downset Filter</a></h3>
+        <h3><a href="characterization_equivalences/maximum_local_recognition_equivalence.html" class="table-title-link">Maximum-Class Local Agreement Equivalence</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset Filter</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C|_D">
-            \[C|_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>If $C\subseteq\{0,1\}^X$ is downward closed in $U\subseteq X$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, the downset filter is $C|_D=\{x\in C:x|_U\in D\}$.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>The operation retains the positioned coordinates. Its hypotheses include a common downward orientation on the constrained block.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_generated_downset_filter_closed.html'>Maximum-Generated Classes Are Closed under Downset Filters</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/downset_filter_rank_preservation.html'>Rank-Preserving Downset Filtering</a></li><li><a href='results/downset_filter_signed_ideal.html'>Signed Ideal of a Downset Filter</a></li></ul></p></div>
+        <p><strong>Name: </strong>Maximum-Class Local Agreement Equivalence</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/sauer_bound_equality.html">Sauer--Shelah--Perles Bound Equality</a></li><li><a href="characterizations/connected_local_agreement_graphs.html">Connected Local Agreement Graphs</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>A finite binary class presented by one selected forbidden pattern on every support of size $r+1$, with $1\le r<N$.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>The selected-pattern avoider attains the rank-$r$ Sauer bound exactly when all local agreement graphs on $(r+2)$-supports are connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Connected agreement graphs make the signed ideal a polarization of the squarefree Veronese ideal. Its multigraded Hilbert series then counts exactly $\sum_{j=0}^r\binom Nj$ full words, and the selected forbidden patterns prevent VC dimension above $r$. Conversely, project a maximum avoider to any $(r+2)$-support. The complementary class has $r+3$ words and contains one edge in each direction supplied by the selected patterns. Those edges form an acyclic graph, so cardinality forces them to be connected; their edge-intersection graph is the local agreement graph.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AlmousaVandeBogert22">[AlmousaVandeBogert22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:recognition</p></div>
 
         </div>
     </div>

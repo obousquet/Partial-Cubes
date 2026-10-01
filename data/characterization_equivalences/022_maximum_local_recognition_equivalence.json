@@ -1,0 +1,16 @@
+{
+  "id": 22,
+  "short_name": "maximum_local_recognition_equivalence",
+  "name": "Maximum-Class Local Agreement Equivalence",
+  "class_id": "#classes/maximum",
+  "characterization_ids": [
+    "#characterizations/sauer_bound_equality",
+    "#characterizations/connected_local_agreement_graphs"
+  ],
+  "hypotheses": "A finite binary class presented by one selected forbidden pattern on every support of size $r+1$, with $1\\le r<N$.",
+  "statement": "The selected-pattern avoider attains the rank-$r$ Sauer bound exactly when all local agreement graphs on $(r+2)$-supports are connected.",
+  "status": "established",
+  "proof": "Connected agreement graphs make the signed ideal a polarization of the squarefree Veronese ideal. Its multigraded Hilbert series then counts exactly $\\sum_{j=0}^r\\binom Nj$ full words, and the selected forbidden patterns prevent VC dimension above $r$. Conversely, project a maximum avoider to any $(r+2)$-support. The complementary class has $r+3$ words and contains one edge in each direction supplied by the selected patterns. Those edges form an acyclic graph, so cardinality forces them to be connected; their edge-intersection graph is the local agreement graph.",
+  "references": "\\cite{AlmousaVandeBogert22}",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:recognition"
+}

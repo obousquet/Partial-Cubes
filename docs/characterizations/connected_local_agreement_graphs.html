@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Atomic membership criteria for catalogued classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Atomic membership criteria for catalogued classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-17" style="position:relative;">
+            <div class="back-link-light"><a href="characterizations/index.html">&larr; Back to Characterizations Table</a></div>
+    <div class="table-card" id="math-84" style="position:relative;">
 
-        <h3><a href="operations/downset_filter.html" class="table-title-link">Downset Filter</a></h3>
+        <h3><a href="characterizations/connected_local_agreement_graphs.html" class="table-title-link">Connected Local Agreement Graphs</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Downset Filter</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C|_D">
-            \[C|_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>If $C\subseteq\{0,1\}^X$ is downward closed in $U\subseteq X$ and $D\subseteq\{0,1\}^U$ is a nonempty downset, the downset filter is $C|_D=\{x\in C:x|_U\in D\}$.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>The operation retains the positioned coordinates. Its hypotheses include a common downward orientation on the constrained block.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-filter</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_generated_downset_filter_closed.html'>Maximum-Generated Classes Are Closed under Downset Filters</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/downset_filter_rank_preservation.html'>Rank-Preserving Downset Filtering</a></li><li><a href='results/downset_filter_signed_ideal.html'>Signed Ideal of a Downset Filter</a></li></ul></p></div>
+        <p><strong>Name: </strong>Connected Local Agreement Graphs</p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Type:</strong> Algorithmic</p>
+<p><strong>Model:</strong> Sign System</p>
+<strong>Criterion:</strong><div class="text-field"><p>Fix $1\le r<N$ and choose one binary pattern $f_T$ on every $(r+1)$-subset $T$ of an $N$-coordinate set. Let $M_f$ avoid all the selected patterns. For each $(r+2)$-subset $U$, form the graph on its $(r+1)$-subsets, joining two when their selected patterns agree on the common $r$ coordinates. Then $M_f$ is maximum of rank $r$ exactly when every such agreement graph is connected.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite binary coordinates, $1\le r<N$, and exactly one selected forbidden pattern on each $(r+1)$-support.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Recognition Complexity:</strong><div class="text-field"><p>For fixed $r$, polynomial in $N$: inspect $\binom{N}{r+2}$ graphs with $r+2$ vertices and compare at most $r$ signs per potential edge.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AlmousaVandeBogert22">[AlmousaVandeBogert22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:recognition</p></div>
+<strong>Comments:</strong><div class="text-field"><p>At $r=N-1$ the single forbidden full word is maximum with no graph checks; at $r=0$ the avoider is a singleton.</p></div>
 
         </div>
     </div>

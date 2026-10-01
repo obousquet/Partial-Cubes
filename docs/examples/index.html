@@ -1114,6 +1114,44 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-47" style="position:relative;">
+
+        <h3><a href="examples/local_signed_pattern_triples.html" class="table-title-link">Connected and Disconnected Signed Pattern Triples</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Connected and Disconnected Signed Pattern Triples</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="M_f">
+            \[M_f\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $a,b,c$ with rank target one, first choose $f_{ab}=f_{ac}=f_{bc}=00$. For the contrasting choice take $f_{ab}=00$, $f_{ac}=10$, and $f_{bc}=11$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>For the all-zero choice the agreement graph is a triangle and the avoider is the four-word maximum class $\{111,110,101,011\}$. In the contrasting choice every pair disagrees on its common coordinate, the agreement graph is disconnected, and only $010,101$ survive. Thus one forbidden pattern per support does not by itself imply maximumity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:graphs</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-48" style="position:relative;">
+
+        <h3><a href="examples/relative_initial_term_order.html" class="table-title-link">Marked Section Depends on the Initial Term Order</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Marked Section Depends on the Initial Term Order</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>In $k[a_0,a_1,b_0,b_1]$, take the coordinate-bigraded ideal $F=(a_0b_0-a_1b_1)$ and mark $b=0$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The ideal has the rank-one maximum Hilbert series and $(F:b_0)\cap k[a_0,a_1]=0$, prescribing the full visible one-cube. An order placing the opposite literal $b_1$ first gives initial ideal $(a_1b_1)$ and preserves that section. Choosing leading term $a_0b_0$ instead gives a singleton section. The starting paired differences need not be regular: after $a_0=a_1$, the factor $b_0-b_1$ is a zero divisor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ConcaDeNegriGorla20">[ConcaDeNegriGorla20]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:relative-order</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_signed_pattern_recognition.py; data/examples/assets/signed_pattern_recognition_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

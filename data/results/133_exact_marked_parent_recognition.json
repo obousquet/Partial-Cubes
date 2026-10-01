@@ -1,0 +1,13 @@
+{
+  "id": 133,
+  "short_name": "exact_marked_parent_recognition",
+  "name": "Exact Marked Maximum-Parent Recognition",
+  "class_ids": ["#classes/maximum", "#classes/maximum_generated_classes"],
+  "result_type": "recognition",
+  "statement": "Let $C$ be a nonempty proper class on visible coordinates $X$, fix an auxiliary mark $\\tau$ on $A$, and choose one pattern $f_T$ on every $(r+1)$-support of $X\\sqcup A$. Call $f_T$ active when its auxiliary restriction agrees with $\\tau$. The avoider $M_f$ is a rank-$r$ maximum parent with section $M_f[\\tau]=C$ exactly when: every local agreement graph is connected; every active pattern's visible restriction contains a minimally missing pattern of $C$; and every minimally missing pattern of $C$ occurs as the visible restriction of an active selected pattern.",
+  "status": "established",
+  "proof": "Local connectivity is exactly maximumity. In a maximum class the selected patterns are all minimally missing. If the marked section is $C$, every active restriction is missing from $C$, hence contains a minimal missing pattern; minimizing a missing extension of each pattern of $C$ gives an active selected pattern with exactly that visible restriction. Conversely, the containment condition keeps every word of $C$ in the marked section, while coverage of every minimal missing pattern excludes every visible word outside $C$.",
+  "references": "\\cite{AlmousaVandeBogert22}",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:exact-section",
+  "witness_ids": ["#examples/local_signed_pattern_triples" ]
+}
