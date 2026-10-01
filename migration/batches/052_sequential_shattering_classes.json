@@ -1,0 +1,139 @@
+{
+  "version": 1,
+  "batch_id": "052_sequential_shattering_classes",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete the class-level migration of the active VC--Littlestone paper by promoting its four remaining sequential shattering classes and recognizing labeled-tree extremality as an alternative characterization of the existing Stars class.",
+  "source_refs": [
+    "PartialCubes:papers/vc-littlestone/main.tex#thm:sequential-relationships",
+    "PartialCubes:papers/vc-littlestone/main.tex#sec:bhaskar-walker"
+  ],
+  "source_packets": [
+    {
+      "id": "vc-littlestone-manuscript",
+      "repository": "PartialCubes",
+      "path": "papers/vc-littlestone/main.tex",
+      "sha256": "b3583d2f856a31fbf08958637bc7cbee332e913fde4a27f782ccae4ed601b6e8"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized class identities, implications, separations, projection theorem, and concise equivalence proof. The LaTeX note retains the exact tree conventions, full sequential-Sandwich argument, examples, and open closure questions.",
+    "recoverability": "The exact manuscript hash and section locators preserve the source of every promoted statement.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/characterization_equivalences/027_star_labeled_tree_extremality.json",
+      "sha256": "0ce3c9d27bb8e8ef29a9c1660a8437e7091f5ccc0192d25dee1c44bb7d0609be"
+    },
+    {
+      "path": "data/characterizations/159_littlestone_cardinality_bound_equality.json",
+      "sha256": "8c8fb36c360ea3fd50ad0efa604ac9419e8e847603750096f8947aa7199f31f5"
+    },
+    {
+      "path": "data/characterizations/160_tree_support_equality.json",
+      "sha256": "5b766ce210c436a8909fef9650e150480b4cae21b0b3ba6d0482fe9c63458cdc"
+    },
+    {
+      "path": "data/characterizations/161_tree_support_saturation.json",
+      "sha256": "b3cbe11027dc47d41128d0cbfae056d285f9962201e341964b92e17aae781647"
+    },
+    {
+      "path": "data/characterizations/162_labeled_tree_saturation.json",
+      "sha256": "18fdabd3a89d8b18591039c4796e3e46c8a8b6cdbd10c4c157cfd7b5186342fd"
+    },
+    {
+      "path": "data/characterizations/163_ample_littlestone_dimension_at_most_one.json",
+      "sha256": "c33014462954b5d7f2ebe826efbf4f17241e34c820b54487357f74e934f67f26"
+    },
+    {
+      "path": "data/classes/101_littlestone_cardinality_equality.json",
+      "sha256": "4e84fa97d81d97dc80e69266127bdb7c8ca93cf65e9413e06a5bf5d8181b2080"
+    },
+    {
+      "path": "data/classes/102_tree_support_extremal.json",
+      "sha256": "63eeb8b564e375f2de7d5a17229c1cb04aa17fb5e489ffaa47f6a10b663672a2"
+    },
+    {
+      "path": "data/classes/103_tree_support_saturated.json",
+      "sha256": "6ea71077b36deccd6747af79b88f52dd061637e71df9fb4b157e6372f17762e6"
+    },
+    {
+      "path": "data/classes/104_labeled_tree_saturated.json",
+      "sha256": "56b8ec431afee7af7953dcb591e5dab1a6a195676f320b77841a2b3c8c0a6af8"
+    },
+    {
+      "path": "data/examples/063_adaptive_chain_class.json",
+      "sha256": "18871220c75c23c11f49b7146bd2532c47e381cdc5b00737f1832e6806f09da1"
+    },
+    {
+      "path": "data/examples/064_rank_two_three_coordinate_ball.json",
+      "sha256": "0d93ac1e066712a213b9e1ea608483e94b19165a63f02d7be0898dbbd88cb460"
+    },
+    {
+      "path": "data/examples/065_proper_displayed_subcube.json",
+      "sha256": "c80362b2cf76c32f181339dd5f7474fb025f9d5a8965fbb16564c394697c5d10"
+    },
+    {
+      "path": "data/operation_results/178_tree_support_extremal_projection_closed.json",
+      "sha256": "c38e2b3e06704f38ea73a37712fee752e1b90eb796f2ed60f4be390511249f40"
+    },
+    {
+      "path": "data/relations/233_littlestone_cardinality_equality_strict_subset_maximum.json",
+      "sha256": "3c4976d8c1bc8a8d93a449267b0109d7b612685e502547e645e1caa62e5faddc"
+    },
+    {
+      "path": "data/relations/234_littlestone_cardinality_equality_strict_subset_littlestone_maximal.json",
+      "sha256": "1e2a7b931e5b85c2712b316cf167f5b34d55a7a84e98b5beaa83ab273fa4dc98"
+    },
+    {
+      "path": "data/relations/235_tree_support_extremal_strict_subset_ample.json",
+      "sha256": "97a1050a23050d4962b2477fbd49478d6725d7fc2e0fa5692e903feb0df38f40"
+    },
+    {
+      "path": "data/relations/236_tree_support_extremal_subset_tree_support_saturated.json",
+      "sha256": "766fbcac43543c514f2731e30f6471e4a39207c78cc7ea325bd97fbed95d04c2"
+    },
+    {
+      "path": "data/relations/237_tree_support_saturated_subset_labeled_tree_saturated.json",
+      "sha256": "6ad86744987e73b8711aea47a8e27c60d73f59c004966c05e013279869b7bcdb"
+    },
+    {
+      "path": "data/relations/238_littlestone_maximal_subset_labeled_tree_saturated.json",
+      "sha256": "d07b80e5bd94b27f701ce8b625d7f9999d30a123f0b20fabb8f038f0f19fe187"
+    },
+    {
+      "path": "data/relations/239_littlestone_cardinality_equality_incomparable_tree_support_extremal.json",
+      "sha256": "4b116afbba7f8c1f15e23f525b35340447dbb0c2b590945856f506e3abf0bb9b"
+    },
+    {
+      "path": "data/relations/240_stars_strict_subset_tree_support_extremal.json",
+      "sha256": "6a2be23d4d1f8544d4fb0f9f6cb87ec7e137d9c36c840ce89ebff2c79589d027"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "395d0015465e56f011d18788446c3b3c0d81099d846ca7836420d3f7b71df746"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "700293d6bd4b06623fdcaf905be58075ca454e32727ba58d5c6e62a7070e0d25"
+    },
+    {
+      "path": "migration/repository_class_audit.json",
+      "sha256": "780625f0c12eb56c28c5fd31b3824d3e35f1a88e0dc97fdb7c33cbfb17672d9b"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1102 records.",
+    "website": "Normalized 1118 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "170 Hasse covers represent 213 stored inclusions; all 22 minor-atlas Ample-family nodes and 209 closure-map arrows remain covered.",
+    "migration": "The frozen source extracts, bibliography audit, source manifest, coverage report, canonical allocations, review queues, and repository class-discovery audit are current."
+  },
+  "deferred": [
+    "The full conditioning and shifting closure theory of tree-support-saturated and labeled-tree-saturated classes remains open in the source.",
+    "Promote the four spread comparison classes from YangDim.",
+    "Promote uniform-oriented-matroid fibers and the tree/product/amalgam closure of maximum classes from CompressionSchemes.",
+    "Resolve source status and graph scope for campaign-only, draft-only, pointed, and relative candidates."
+  ]
+}

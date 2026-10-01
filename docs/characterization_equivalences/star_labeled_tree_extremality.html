@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Theorems proving that two or more membership criteria define the same class - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Theorems proving that two or more membership criteria define the same class - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,37 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-97" style="position:relative;">
+            <div class="back-link-light"><a href="characterization_equivalences/index.html">&larr; Back to Characterization_Equivalences Table</a></div>
+    <div class="table-card" id="math-27" style="position:relative;">
 
-        <h3><a href="classes/littlestone_maximal.html" class="table-title-link">Littlestone-Maximal Classes</a></h3>
+        <h3><a href="characterization_equivalences/star_labeled_tree_extremality.html" class="table-title-link">Stars and Labeled-Tree Extremality</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Littlestone-Maximal Classes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathsf{LMax}">
-            \[\mathsf{LMax}\]
-        </div>
-    </div>
-
-<strong>Summary:</strong><div class="text-field"><p>Finite Boolean classes maximal under inclusion among classes of their Littlestone dimension.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/littlestone_maximality.html">Littlestone-Dimension Maximality</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>Littlestone-saturated classes</li></ul></p>
-<p><strong>Category:</strong> Set Family</p>
-<p><strong>Ambient Scope:</strong> Set Families</p>
-<p><strong>Parameterized:</strong> Yes</p>
-<strong>Parameters:</strong><div class="text-field"><p>Dimension d = Ldim(H).</p></div>
-<p><strong>P-Closed:</strong> Unspecified</p>
-<p><strong>C-Closed:</strong> Unspecified</p>
-<p><strong>PC-Closed:</strong> Unspecified</p>
-<strong>Comments:</strong><div class="text-field"><p>This is class maximality at a fixed Littlestone dimension, not maximality of a leaf trace for one labeled tree.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/littlestone_maximality.html'>Littlestone-Dimension Maximality</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/littlestone_maximal_subset_labeled_tree_saturated.html'>Littlestone Maximality Implies Labeled-Tree Saturation</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong><ul class='fields-list'><li><a href='relations/thicket_maximum_incomparable_littlestone_maximal.html'>Fixed-Horizon Thicket Maximum and Littlestone Maximality Are Incomparable</a></li><li><a href='relations/littlestone_cardinality_equality_strict_subset_littlestone_maximal.html'>Littlestone Cardinality Equality Is Strictly Littlestone-Maximal</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Stars and Labeled-Tree Extremality</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/star_graph.html">Star Graph</a></li><li><a href="characterizations/ample_littlestone_dimension_at_most_one.html">Ample with Littlestone Dimension at Most One</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty classes, with inactive coordinates suppressed.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>A class has labeled-tree equality $|H|=|\mathcal T_{\mathrm{sh}}(H)|$ exactly when it is ample with Littlestone dimension at most one; its one-inclusion graph is then a star.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The sequential-relationships theorem identifies labeled-tree equality with ampleness and Littlestone dimension at most one. An ample class of VC dimension at most one has a tree as its one-inclusion graph. Such a tree has Littlestone dimension at most one exactly when it contains no four-vertex path, equivalently when it has diameter at most two and is a star.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
 
         </div>
     </div>

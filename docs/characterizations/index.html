@@ -2716,6 +2716,88 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-159" style="position:relative;">
+
+        <h3><a href="characterizations/littlestone_cardinality_bound_equality.html" class="table-title-link">Littlestone Cardinality Equality</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Littlestone Cardinality Equality</p>
+<p><strong>Class: </strong><a href="classes/littlestone_cardinality_equality.html">Littlestone Cardinality-Equality Classes</a></p>
+<p><strong>Type:</strong> Invariant Condition</p>
+<p><strong>Model:</strong> Set Family</p>
+<strong>Criterion:</strong><div class="text-field"><p>For $H\subseteq\{0,1\}^X$, with $n=|X|$ and $d=\operatorname{Ldim}(H)$, one has $|H|=\sum_{i=0}^d\binom{n}{i}$.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty Boolean concept class on its displayed ground set.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/littlestone_dimension.html">Littlestone Dimension</a></li></ul></p>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-160" style="position:relative;">
+
+        <h3><a href="characterizations/tree_support_equality.html" class="table-title-link">Shattered-Tree Support Equality</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattered-Tree Support Equality</p>
+<p><strong>Class: </strong><a href="classes/tree_support_extremal.html">Tree-Support-Extremal Classes</a></p>
+<p><strong>Type:</strong> Set System</p>
+<p><strong>Model:</strong> Set Family</p>
+<strong>Criterion:</strong><div class="text-field"><p>Let $\mathcal S_{\mathrm{sh}}(H)$ be the sets of all coordinates used anywhere in exact labeled complete binary trees shattered by $H$. Then $H$ is tree-support-extremal exactly when $|H|=|\mathcal S_{\mathrm{sh}}(H)|$.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite Boolean concept class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-161" style="position:relative;">
+
+        <h3><a href="characterizations/tree_support_saturation.html" class="table-title-link">One-Concept Tree-Support Saturation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Concept Tree-Support Saturation</p>
+<p><strong>Class: </strong><a href="classes/tree_support_saturated.html">Tree-Support-Saturated Classes</a></p>
+<p><strong>Type:</strong> Definitional</p>
+<p><strong>Model:</strong> Set Family</p>
+<strong>Criterion:</strong><div class="text-field"><p>A class $H\subseteq\{0,1\}^X$ is tree-support-saturated when $\mathcal S_{\mathrm{sh}}(H\cup\{c\})$ strictly contains $\mathcal S_{\mathrm{sh}}(H)$ for every missing concept $c$.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite Boolean concept class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-162" style="position:relative;">
+
+        <h3><a href="characterizations/labeled_tree_saturation.html" class="table-title-link">One-Concept Labeled-Tree Saturation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Concept Labeled-Tree Saturation</p>
+<p><strong>Class: </strong><a href="classes/labeled_tree_saturated.html">Labeled-Tree-Saturated Classes</a></p>
+<p><strong>Type:</strong> Definitional</p>
+<p><strong>Model:</strong> Set Family</p>
+<strong>Criterion:</strong><div class="text-field"><p>A class $H\subseteq\{0,1\}^X$ is labeled-tree-saturated when adjoining every missing concept strictly enlarges the collection of exact labeled complete binary trees shattered by $H$.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite Boolean concept class; exact trees are literal labeling maps and are not quotiented by tree automorphisms or query permutations.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-163" style="position:relative;">
+
+        <h3><a href="characterizations/ample_littlestone_dimension_at_most_one.html" class="table-title-link">Ample with Littlestone Dimension at Most One</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample with Littlestone Dimension at Most One</p>
+<p><strong>Class: </strong><a href="classes/stars.html">Stars</a></p>
+<p><strong>Type:</strong> Invariant Condition</p>
+<p><strong>Model:</strong> Mixed</p>
+<strong>Criterion:</strong><div class="text-field"><p>Under the one-inclusion graph dictionary and after suppressing fixed coordinates, the class is ample and has Littlestone dimension at most one.</p></div>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite nonempty Boolean class with its one-inclusion graph.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/littlestone_dimension.html">Littlestone Dimension</a></li></ul></p>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:sequential-relationships</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

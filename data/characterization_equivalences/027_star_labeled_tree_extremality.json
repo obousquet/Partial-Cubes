@@ -1,0 +1,15 @@
+{
+  "id": 27,
+  "short_name": "star_labeled_tree_extremality",
+  "name": "Stars and Labeled-Tree Extremality",
+  "class_id": "#classes/stars",
+  "characterization_ids": [
+    "#characterizations/star_graph",
+    "#characterizations/ample_littlestone_dimension_at_most_one"
+  ],
+  "hypotheses": "Finite nonempty classes, with inactive coordinates suppressed.",
+  "statement": "A class has labeled-tree equality $|H|=|\\mathcal T_{\\mathrm{sh}}(H)|$ exactly when it is ample with Littlestone dimension at most one; its one-inclusion graph is then a star.",
+  "status": "established",
+  "proof": "The sequential-relationships theorem identifies labeled-tree equality with ampleness and Littlestone dimension at most one. An ample class of VC dimension at most one has a tree as its one-inclusion graph. Such a tree has Littlestone dimension at most one exactly when it contains no four-vertex path, equivalently when it has diameter at most two and is a star.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#thm:sequential-relationships"
+}

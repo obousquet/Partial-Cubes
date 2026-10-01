@@ -1,0 +1,15 @@
+{
+  "id": 159,
+  "short_name": "littlestone_cardinality_bound_equality",
+  "name": "Littlestone Cardinality Equality",
+  "class_id": "#classes/littlestone_cardinality_equality",
+  "characterization_type": "invariant_condition",
+  "model_type": "set_family",
+  "statement": "For $H\\subseteq\\{0,1\\}^X$, with $n=|X|$ and $d=\\operatorname{Ldim}(H)$, one has $|H|=\\sum_{i=0}^d\\binom{n}{i}$.",
+  "hypotheses": "Finite nonempty Boolean concept class on its displayed ground set.",
+  "status": "established",
+  "invariant_ids": [
+    "#invariants/littlestone_dimension"
+  ],
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#thm:sequential-relationships"
+}
