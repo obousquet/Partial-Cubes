@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "batch_id": "059_connected_conditioning_minimal_nonample",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Separate the connected part of conditioning-minimal non-ample classes, identify it exactly with non-free simple uniform-oriented-matroid tope graphs, place it inside Partial Cubes, and record its closure failures.",
+  "source_refs": [
+    "YangDim:minimal_nonample_classes.tex#def:mna",
+    "YangDim:minimal_nonample_classes.tex#prop:partial-cube",
+    "YangDim:minimal_nonample_classes.tex#lem:proper-antipodal",
+    "YangDim:minimal_nonample_classes.tex#thm:antipodality",
+    "YangDim:minimal_nonample_classes.tex#thm:mna-uom",
+    "YangDim:minimal_nonample_classes.tex#thm:structure",
+    "YangDim:minimal_nonample_classes.tex#rem:rank-one",
+    "YangDim:minimal_nonample_classes.tex#ex:rank-two-cycle"
+  ],
+  "source_packets": [
+    {
+      "id": "yangdim-minimal-nonample-classes",
+      "repository": "YangDim",
+      "path": "minimal_nonample_classes.tex",
+      "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the canonical connected subclass identity, its equivalent graph and oriented-matroid characterizations, hierarchy placement, closure profile, and concise proof. YangDim retains the complete local-to-global argument, oriented-matroid background, algebraic consequences, examples, and prescribed-dual theory.",
+    "recoverability": "The exact source hash and theorem locators preserve the complete scholarly context.",
+    "mutation": "No source file in YangDim or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/characterization_equivalences/029_connected_minimal_nonample_uom_equivalence.json",
+      "sha256": "0eb9c092d4d781fe25d94b1990512bc0f56e0909c6363ac8ece4d8ce39c6626b"
+    },
+    {
+      "path": "data/characterizations/174_connected_conditioning_minimal_non_ample_definition.json",
+      "sha256": "49b288f3c9e4604eed2ca24580c314a13d68308e94b6ac30eaac1c2dce828d3a"
+    },
+    {
+      "path": "data/characterizations/175_nonfree_simple_uniform_om_tope_graph.json",
+      "sha256": "9bbffbe891cb86e2659ed21ad305684a5ba4fa94e7469a5b70c92b209b333a54"
+    },
+    {
+      "path": "data/classes/114_connected_conditioning_minimal_non_ample.json",
+      "sha256": "46def930bde68311fa3a33dad6d26001054e9e26a7e5e327ec56e7adb2af7d69"
+    },
+    {
+      "path": "data/operation_results/280_connected_mna_projection_not_closed.json",
+      "sha256": "951f93a501bdaf57b39a94019bbc1cce6af65ba6a0c9a1f5315a9c8feb555856"
+    },
+    {
+      "path": "data/operation_results/281_connected_mna_conditioning_not_closed.json",
+      "sha256": "e145dcb385b6029d8100a6205f7a9cc62418007e3a63b6afe1560eb643e7d6d4"
+    },
+    {
+      "path": "data/operation_results/282_connected_mna_pc_minor_not_closed.json",
+      "sha256": "975626f1a6caca14cc609aa7e3b011f434ef7258c432637a1b0d2caad2814f1d"
+    },
+    {
+      "path": "data/relations/268_connected_mna_strict_subset_conditioning_mna.json",
+      "sha256": "fc4040cf43171af6b9652972486ce92924f22e74c43834639955ca9be9b941a1"
+    },
+    {
+      "path": "data/relations/269_connected_mna_strict_subset_om_tope_graphs.json",
+      "sha256": "8a26f333709bb4c158faa93f8a3c28be4eee47245999619925bde05366c886a5"
+    },
+    {
+      "path": "data/relations/270_connected_mna_strict_subset_partial_cubes.json",
+      "sha256": "8ebf9c99a1031db3cc985af33e07a201734218b18a02082f841669b7a853fcdd"
+    },
+    {
+      "path": "data/results/168_connected_minimal_nonample_structure.json",
+      "sha256": "6c1e2caafa47982df44a321c0e28b431cba98c63a61de551fb7475a0996e54d5"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "1e918580215eecc7260f07c848ea09f953dd369eda4f2e0e27ac8bbb035e7ea7"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "c0f2885e4cbf376ab76d027db05d8415d7b363806021c3b88f8e80847b520e8a"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c1441f0504df58ee4f8ccee942ad7a765abefd635c49a5506871fe23ca7df680"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "286c5eb98125846a904aca7c2ec34f72b363746bb475e8d5cdc0b42f295ed576"
+    },
+    {
+      "path": "migration/repository_class_audit.json",
+      "sha256": "e88c04040bb88e94b08d7f24b5aa6de6bd4c0952308add44e4a208664690dcc9"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1308 records.",
+    "website": "Normalized 1324 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "containment_audit": "103 proper class nodes have established paths into Partial Cubes, Partial Cubes is the reference node, Bipartite Graphs is an established superclass, nine set-family notions have established noncontainment witnesses, and zero nodes are unresolved.",
+    "migration": "All source extracts, source preservation checks, coverage reports, class-status audits, and review queues pass."
+  },
+  "deferred": [
+    "No shorter standard name for this exact connected subclass appears in the reviewed authoritative source; the UOM tope-graph description is retained as an alias and equivalent characterization.",
+    "The disconnected two-concept antipodal families remain in the parent conditioning-minimal non-ample class and outside Partial Cubes."
+  ]
+}
