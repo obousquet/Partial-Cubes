@@ -1,0 +1,20 @@
+{
+  "id": 258,
+  "short_name": "rectangular_filtration_exact_width",
+  "name": "Exact Width of Rectangular Filtrations",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/filtration_width"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $A_0\\supseteq\\cdots\\supseteq A_m$ and $F_0\\subsetneq\\cdots\\subsetneq F_m$ be nonempty classes on disjoint coordinate sets, and put $D_j=\\bigcup_{i=0}^j(A_i\\times F_i)$. Then $w(D_0,\\ldots,D_m)=\\max(\\{\\sigma(A_j):0\\leq j\\leq m\\}\\cup\\{w(F_0,\\ldots,F_m)\\})$.",
+  "status": "established",
+  "proof": "For the upper bound, fill each new inner fiber completely while visiting outer concepts in an optimal order of $A_j$. An old-stage predecessor is replaced inside the current fiber, while a predecessor in an earlier new fiber is replaced at the same inner word using the outer order; the step cost is at most $\\max\\{\\sigma(A_j),\\sigma(F_j;F_{j-1})\\}$. For the reverse bounds, conditioning $D_j$ at a new inner word recovers $A_j$, and conditioning the pair $(D_j,D_{j-1})$ at any $x\\in A_j$ recovers $(F_j,F_{j-1})$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#thm:rectangular-filtration",
+  "comments": "For one extension, with $\\emptyset\\ne B\\subseteq A$ and $\\emptyset\\ne F\\subsetneq G$, this specializes to $\\sigma((A\\times F)\\cup(B\\times G);A\\times F)=\\max\\{\\sigma(A),\\sigma(B),\\sigma(G;F)\\}$. If $F=G$, the output is $A\\times F$ and the $\\sigma(B)$ term is omitted; an empty $B$ likewise reduces to a product."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 118,
+  "short_name": "antipodal_pair_complement_ordering_width",
+  "name": "Ordering Width of an Antipodal-Pair Complement",
+  "invariant_id": "#invariants/ordering_width",
+  "example_id": "#examples/complement_of_antipodal_pair",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "$1$",
+  "parameters": "For $F_n=\\{0,1\\}^n\\setminus\\{0^n,1^n\\}$ with $n\\geq2$.",
+  "status": "established",
+  "proof": "In nondecreasing-weight order, weight-one concepts have minimal predecessor disagreements of size two, and every later concept has an earlier neighbor toward each predecessor, so the width is at most one. Every proper support is shattered while $|F_n|=2^n-2$, so $F_n$ is not ample; the zero-width characterization makes the value positive.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#ex:cube-asymmetry"
+}

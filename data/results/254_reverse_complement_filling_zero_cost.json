@@ -1,0 +1,21 @@
+{
+  "id": 254,
+  "short_name": "reverse_complement_filling_zero_cost",
+  "name": "Reverse Zero-Width Orders Fill the Complement at Zero Cost",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/cube_complement"
+  ],
+  "result_type": "algorithm",
+  "statement": "If $(f_1,\\ldots,f_m)$ is a zero-width order of a nonempty $F\\subseteq\\{0,1\\}^Y$, then, starting from $F^{\\mathrm c}$ and adding $f_m,\\ldots,f_1$, every addition has step cost zero with the whole initial complement counted as predecessors.",
+  "status": "established",
+  "proof": "After adding $f_j$, the current class is the complement of the remaining prefix $\\{f_1,\\ldots,f_{j-1}\\}$. Zero-width prefixes are ample, and cube complementation preserves ampleness, so the current class is ample. Its isometry supplies, toward every predecessor, an already present neighbor of $f_j$ whose singleton disagreement lies in the predecessor disagreement; this is exactly the zero-cost condition.",
+  "references": "\\cite{ChalopiChepoiMoran22,Lawrence1983}",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#lem:complement-fill"
+}

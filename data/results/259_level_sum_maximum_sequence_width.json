@@ -1,0 +1,21 @@
+{
+  "id": 259,
+  "short_name": "level_sum_maximum_sequence_width",
+  "name": "Constrained Width of Level-Sum Maximum Sequences",
+  "class_ids": [
+    "#classes/maximum"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/filtration_width"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $A_0\\subsetneq\\cdots\\subsetneq A_n=\\{0,1\\}^X$ and $B_0\\subsetneq\\cdots\\subsetneq B_m=\\{0,1\\}^Y$ be maximum sequences whose indices are their ranks. For $L_R=\\{(x,y):\\rho(x)+\\lambda(y)\\leq R\\}$, put $j_0=\\max\\{0,R-n\\}$ and $j_1=\\min\\{m,R\\}$. Then $L_R=\\bigcup_{j=j_0}^{j_1}A_{R-j}\\times B_j$ is maximum, and the minimum width of an order that introduces these rectangles successively is $\\max(\\{\\sigma(A_{R-j}):j_0\\leq j\\leq j_1\\}\\cup\\{w(B_{j_0},\\ldots,B_{j_1})\\})$. In particular this quantity bounds $\\sigma(L_R)$ from above; swapping the factors gives a second bound.",
+  "status": "established",
+  "proof": "The level-sum maximum theorem gives the displayed class and its rectangular decomposition. The outer classes $A_{R-j}$ decrease as the inner classes $B_j$ increase, so the exact rectangular-filtration formula applies directly. Dropping the rectangle-prefix constraints can only decrease ordering width, yielding the absolute-width bound; symmetry gives the factor-swapped version.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#eq:level-sum-width",
+  "comments": "Dismantlability of the individual levels removes their absolute-width terms but does not by itself provide a zero-width order compatible with every inclusion in either maximum sequence."
+}

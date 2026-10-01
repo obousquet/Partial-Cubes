@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "batch_id": "081_structural_prescribed_extensions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the complete prescribed-extensions section of the frozen structural-invariants manuscript: prescribed-prefix bounds, complement filling, cube-completion width, cubical extension bounds, filtration splicing, rectangular filtrations, complementary examples, and the maximum-sequence level-sum application.",
+  "source_refs": [
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#lem:prefix",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#lem:complement-fill",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#eq:cube-width",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#prop:cube-width",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#thm:cubical-extension",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#ex:cube-asymmetry",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#prop:filtration-width",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#thm:rectangular-filtration",
+    "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#eq:level-sum-width"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-prescribed-extensions",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/structural-invariants/sections/prescribed_extensions.tex",
+      "sha256": "25ab9f903c902c507c0dce67b3bcdb89c3c0b6b8a2dc4f9acbacbec37608257b"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariant definitions, exact laws, formulas, example values, and concise proofs. The LaTeX repository retains the full derivations, motivation, order constructions, and illustrative discussion.",
+    "recoverability": "The clean source section is pinned by repository commit and SHA-256 hash, and every promoted claim has an exact theorem, proposition, lemma, example, or equation locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Live checkout drift remains isolated from the frozen source packet."
+  },
+  "records": [
+    {"path": "data/invariants/034_cube_completion_width.json", "sha256": "d63a0ae1f0a92f80d938906243f667ea3862ecbe16c53502a3f7e52670926006"},
+    {"path": "data/invariants/035_filtration_width.json", "sha256": "355a9ac0579cd2ed45839c4124ae862270733fb3e1b0925e2db8e8249181c64a"},
+    {"path": "data/invariants/036_coordinate_cube_dimension.json", "sha256": "73169d40916c0c78b24bed565e6fda37a770ff0ded2ec62b02ff765695e95551"},
+    {"path": "data/results/253_prescribed_prefix_attachment_bound.json", "sha256": "c9f85c7010604fa7cb9fbdd8c52c6346287004797602863b5805ce128544200d"},
+    {"path": "data/results/254_reverse_complement_filling_zero_cost.json", "sha256": "5c7022b0809c0dfe02a68792b821858592f174cf3845347b99133a3d0a9a5c7a"},
+    {"path": "data/results/255_cube_completion_width_laws.json", "sha256": "c209dea52d05b71ae6db674e4daa6ba8efe6433745e60dbc8219f9c6a2364c6e"},
+    {"path": "data/results/256_cubical_extension_bound.json", "sha256": "26a3fdb44fb28adefa9f8351d925f58473688488fa7770c919686b39aef20f4b"},
+    {"path": "data/results/257_filtration_width_splicing_laws.json", "sha256": "d331674932d6974eddd1a1820bcc4c244213fc1be11d3247fe9d1561b3a68eb6"},
+    {"path": "data/results/258_rectangular_filtration_exact_width.json", "sha256": "cf6e66cbf9c9fcaf8683740b57729fddaccccc5801d1d83d7c65bf0f0d090d20"},
+    {"path": "data/results/259_level_sum_maximum_sequence_width.json", "sha256": "b041ea04d02b89a64dbd748271a89fd3eb9450a5f2d50c7c8aa02118cfe019d8"},
+    {"path": "data/examples/099_complement_of_antipodal_pair.json", "sha256": "f2cc99ebccdc607ed369df6f74bda4c006127f2ea54dadad47f2bd9e4ef26a76"},
+    {"path": "data/invariant_values/116_antipodal_pair_cube_completion_width.json", "sha256": "b948d0665f0acc267caa45e6d4ff0902315b10c078e897ff6f0a2ebacb774617"},
+    {"path": "data/invariant_values/117_antipodal_pair_complement_cube_completion_width.json", "sha256": "c503f03d726ae711456a7e16c705dc86125b4139d141b3bf9be10e8d61d77a10"},
+    {"path": "data/invariant_values/118_antipodal_pair_complement_ordering_width.json", "sha256": "5da09257e1753f91de0f603a795a9d133a0e39ea278c7b886aed9e2370c7be10"},
+    {"path": "migration/coverage.json", "sha256": "670e449c23bbf2fa46eb4877ce4482993f879cb7ace86fb85baa17fab3c25258"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "60683f2f1ea92cb25bf26e5dad6d2ed74839c362b710ac778103003c3d8d4281"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1455 records.",
+    "website": "Normalized 1471 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. All 7 labeled claims in prescribed_extensions.tex are covered; structural-invariants coverage is now 30 of 51 labels and overall workspace-aware coverage is 320 of 1016 labels."
+  },
+  "deferred": [
+    "The remaining 21 structural-invariants labels occur in boolean_substitution.tex and main.tex and are assigned to subsequent batches.",
+    "Exploratory changes in the live PartialCubes checkout after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 313,
-    "uncovered": 703,
-    "proof_source_records": 1327
+    "covered": 320,
+    "uncovered": 696,
+    "proof_source_records": 1341
   },
   "by_workspace": {
     "ample-corners": {
@@ -48,9 +48,9 @@
       "total": 19
     },
     "structural-invariants": {
-      "covered": 23,
+      "covered": 30,
       "total": 51,
-      "uncovered": 28
+      "uncovered": 21
     },
     "survey": {
       "covered": 73,
@@ -14078,7 +14078,7 @@
       "label": "ex:cube-asymmetry",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14088,7 +14088,12 @@
           "line": 140
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/099_complement_of_antipodal_pair.json",
+        "data/invariant_values/116_antipodal_pair_cube_completion_width.json",
+        "data/invariant_values/117_antipodal_pair_complement_cube_completion_width.json",
+        "data/invariant_values/118_antipodal_pair_complement_ordering_width.json"
+      ]
     },
     {
       "label": "ex:hall-completion",
@@ -14177,7 +14182,7 @@
       "label": "lem:complement-fill",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14187,7 +14192,9 @@
           "line": 42
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/254_reverse_complement_filling_zero_cost.json"
+      ]
     },
     {
       "label": "lem:majority-patterns",
@@ -14212,7 +14219,7 @@
       "label": "lem:prefix",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14222,7 +14229,9 @@
           "line": 13
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/253_prescribed_prefix_attachment_bound.json"
+      ]
     },
     {
       "label": "lem:substitution-crossing",
@@ -14279,7 +14288,7 @@
       "label": "prop:cube-width",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14289,7 +14298,9 @@
           "line": 72
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/255_cube_completion_width_laws.json"
+      ]
     },
     {
       "label": "prop:cycle-depth",
@@ -14355,7 +14366,7 @@
       "label": "prop:filtration-width",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14365,7 +14376,9 @@
           "line": 170
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/257_filtration_width_splicing_laws.json"
+      ]
     },
     {
       "label": "prop:first-two",
@@ -14585,7 +14598,7 @@
       "label": "thm:cubical-extension",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14595,7 +14608,10 @@
           "line": 116
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/036_coordinate_cube_dimension.json",
+        "data/results/256_cubical_extension_bound.json"
+      ]
     },
     {
       "label": "thm:cycle-width",
@@ -14805,7 +14821,7 @@
       "label": "thm:rectangular-filtration",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14815,7 +14831,9 @@
           "line": 209
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/258_rectangular_filtration_exact_width.json"
+      ]
     },
     {
       "label": "thm:root-gluing",

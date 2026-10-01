@@ -1,0 +1,21 @@
+{
+  "id": 257,
+  "short_name": "filtration_width_splicing_laws",
+  "name": "Filtration-Width Splicing and Functoriality",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/filtration_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty filtration $C_0\\subseteq\\cdots\\subseteq C_m$, $w(C_0,\\ldots,C_m)=\\max(\\{\\sigma(C_0)\\}\\cup\\{\\sigma(C_j;C_{j-1}):1\\leq j\\leq m\\})$. Deleting prescribed stages cannot increase the width. Applying one pc-minor to every stage cannot increase it when the first resulting stage is nonempty. For equal-length filtrations on disjoint coordinates, synchronized products satisfy $w(C_0\\times D_0,\\ldots,C_m\\times D_m)=\\max\\{w(C_0,\\ldots,C_m),w(D_0,\\ldots,D_m)\\}$.",
+  "status": "established",
+  "proof": "Every admissible order restricts at stage $j$ to a $C_{j-1}$-first order of $C_j$, giving all lower bounds. Conversely, start with an optimal order of $C_0$ and at each stage append the new concepts in their order from an optimal $C_{j-1}$-first order of $C_j$; all of $C_{j-1}$ is already present, so the previous internal order is irrelevant to new step costs. Stage deletion relaxes constraints, and the minor and synchronized-product formulas follow termwise from the paired-width laws.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#prop:filtration-width"
+}

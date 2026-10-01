@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-10" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-254" style="position:relative;">
 
-        <h3><a href="operations/cube_complement.html" class="table-title-link">Cube Complement</a></h3>
+        <h3><a href="results/reverse_complement_filling_zero_cost.html" class="table-title-link">Reverse Zero-Width Orders Fill the Complement at Zero Cost</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Cube Complement</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C^{\mathrm c}">
-            \[C^{\mathrm c}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a displayed binary class $C\subseteq\{0,1\}^n$, replace it by $\{0,1\}^n\setminus C$.</p></div>
-<p><strong>Category:</strong> Complement</p>
-<strong>Comments:</strong><div class="text-field"><p>The ambient coordinate cube is part of the positioned input. Closure statements below exclude the empty complement when classes are required to be nonempty.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Lawrence1983">[Lawrence1983]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#sec:complement</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_complement_closed.html'>Realizable Ample Classes Are Complement Closed</a></li><li><a href='operation_results/strict_dominance_complement_closed.html'>Strict-Dominance Classes Are Closed Under Cube Complement</a></li><li><a href='operation_results/ample_cube_complement_closed.html'>Ample Classes Are Closed under Cube Complement</a></li><li><a href='operation_results/maximum_generated_cube_complement_closed.html'>Maximum-Generated Classes Are Closed under Cube Complement</a></li><li><a href='operation_results/universal_tests_complement_closed.html'>Universal Tests Are Complement Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/separation_margin_complement_bound.html'>Separation-Margin Complement Bound</a></li><li><a href='results/coefficient_space_complement_duality.html'>Stable Complement Duality of Coefficient Spaces</a></li><li><a href='results/reverse_complement_filling_zero_cost.html'>Reverse Zero-Width Orders Fill the Complement at Zero Cost</a></li><li><a href='results/cube_completion_width_laws.html'>Cube-Completion Width Laws</a></li></ul></p></div>
+        <p><strong>Name: </strong>Reverse Zero-Width Orders Fill the Complement at Zero Cost</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>If $(f_1,\ldots,f_m)$ is a zero-width order of a nonempty $F\subseteq\{0,1\}^Y$, then, starting from $F^{\mathrm c}$ and adding $f_m,\ldots,f_1$, every addition has step cost zero with the whole initial complement counted as predecessors.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After adding $f_j$, the current class is the complement of the remaining prefix $\{f_1,\ldots,f_{j-1}\}$. Zero-width prefixes are ample, and cube complementation preserves ampleness, so the current class is ample. Its isometry supplies, toward every predecessor, an already present neighbor of $f_j$ whose singleton disagreement lies in the predecessor disagreement; this is exactly the zero-cost condition.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#Lawrence1983">[Lawrence1983]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex?#lem:complement-fill</p></div>
 
         </div>
     </div>

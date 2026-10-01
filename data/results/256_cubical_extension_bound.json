@@ -1,0 +1,17 @@
+{
+  "id": 256,
+  "short_name": "cubical_extension_bound",
+  "name": "Cubical Bound for Prescribed Extensions",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/cube_completion_width",
+    "#invariants/coordinate_cube_dimension"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\emptyset\\ne F\\subsetneq\\{0,1\\}^X$ and $F\\subseteq G\\subseteq\\{0,1\\}^X$. After any initial order of $F$, every ordering of $G\\setminus F$ has added-step cost at most $d_{\\square}(F^{\\mathrm c})$. Consequently $\\sigma(G;F)\\leq\\max\\{\\sigma(F),d_{\\square}(F^{\\mathrm c})\\}$ and $\\sigma_{\\square}(F)\\leq\\max\\{\\sigma(F),d_{\\square}(F^{\\mathrm c})\\}$.",
+  "status": "established",
+  "proof": "At a newly added word $a$, let $S$ be an inclusion-minimal predecessor disagreement. No word obtained from $a$ by flipping a proper subset of $S$ can be a predecessor. After choosing $j\\in S$, the coordinate cube based at $a$ and free on $S\\setminus\\{j\\}$ therefore lies in $F^{\\mathrm c}$. Hence $|S|-1\\leq d_{\\square}(F^{\\mathrm c})$ for every added step; optimizing the initial order gives both inequalities.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#thm:cubical-extension",
+  "comments": "The bound for a general target is sharp: if $F=\\{0^n\\}$ and $G=\\{0^n,1^n\\}$ with $n\\geq2$, both sides equal $n-1$. This does not make the full-cube completion bound sharp for that $F$, since a cube has a zero-width order starting at $0^n$."
+}

@@ -1,0 +1,15 @@
+{
+  "id": 35,
+  "short_name": "filtration_width",
+  "name": "Filtration Width",
+  "symbol": "w(C_0,\\ldots,C_m)",
+  "definition": "For a nested sequence of nonempty binary classes $C_0\\subseteq\\cdots\\subseteq C_m$ on one coordinate set, minimize the ordering width of $C_m$ over orders in which every $C_j$ is a prefix.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "parameters": "A finite nested filtration of nonempty classes on a common displayed coordinate set; repeated stages are allowed.",
+  "normalization": "$w(C_0)=\\sigma(C_0)$. Each stage is prescribed only as a set, so its internal order remains optimized subject to all earlier stages.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "This is an invariant of a filtered class rather than of its terminal class alone.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#eq:filtration-width"
+}

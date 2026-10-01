@@ -1,0 +1,26 @@
+{
+  "id": 255,
+  "short_name": "cube_completion_width_laws",
+  "name": "Cube-Completion Width Laws",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/cube_completion_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product",
+    "#operations/cube_complement"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty $C\\subseteq\\{0,1\\}^X$, $\\sigma_{\\square}(C)\\geq\\sigma(C)$, and $\\sigma_{\\square}(C)=0$ exactly when both $C$ and its cube complement are dismantlable ample (the empty complement is allowed). Nonempty pc-minors cannot increase $\\sigma_{\\square}$; on disjoint coordinate sets, $\\sigma_{\\square}(C\\times D)=\\max\\{\\sigma_{\\square}(C),\\sigma_{\\square}(D)\\}$. Cube symmetries and constant coordinates preserve the value. If $C^{\\mathrm c}$ is dismantlable ample, then $\\sigma_{\\square}(C)=\\sigma(C)$.",
+  "status": "established",
+  "proof": "The prescribed initial segment gives the first inequality. A zero-width full-cube order makes $C$ dismantlable; reading the suffix backwards gives a zero-width order of the complement because complements of ample prefixes are ample. Conversely, append the reverse of a zero-width complement order to an optimal order of $C$. The pc-minor and product laws follow by applying the paired prescribed-width laws to $(\\{0,1\\}^X,C)$, while a constant coordinate is a product with a singleton.",
+  "references": "\\cite{ChalopiChepoiMoran22,Lawrence1983}",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#prop:cube-width"
+}

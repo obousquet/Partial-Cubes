@@ -1,0 +1,14 @@
+{
+  "id": 253,
+  "short_name": "prescribed_prefix_attachment_bound",
+  "name": "Prescribed-Prefix Attachment Bound",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For $\\emptyset\\ne I\\subseteq C$, put $\\rho(C,I)=\\max(\\{q(c,I):c\\in C\\setminus I\\}\\cup\\{0\\})$. Then $\\max\\{\\sigma(C),\\sigma(I)\\}\\leq\\sigma(C;I)\\leq\\max\\{\\sigma(C),\\sigma(I),\\rho(C,I)\\}$.",
+  "status": "established",
+  "proof": "The lower bounds follow by forgetting the prefix constraint and by restricting an admissible order to its initial segment. For the upper bound, take an optimal order of $C$, move $I$ to the front in an optimal internal order, and retain the relative order outside $I$. A minimal disagreement against the enlarged predecessor family $P\\cup I$ is minimal against $P$ or against $I$, so its excess is bounded by the corresponding old step or by $q(c,I)$.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/prescribed_extensions.tex#lem:prefix"
+}
