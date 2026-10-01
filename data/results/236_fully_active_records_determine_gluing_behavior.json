@@ -1,0 +1,19 @@
+{
+  "id": 236,
+  "short_name": "fully_active_records_determine_gluing_behavior",
+  "name": "Fully Active Records Determine One Gluing-Behavior Class",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "For a nonempty peelable ample common section $D$ and the rooted attachment factor $R$, the product piece $\\Omega_D=D\\times R$ has record set $\\{(\\pi,D):\\pi\\in\\operatorname{Ord}(D)\\}$. Every peelable piece all of whose records have active set $D$ is interchangeable with $\\Omega_D$: its union with a test piece $C$ peels exactly when $C$ peels down to $D$. Moreover, every peelable piece failing to peel down to $D$ can be extended by at most $|D|-1$ further such failing pieces to a peelable piece in this fully active class.",
+  "status": "established",
+  "proof": "The exact context-record formula with attachment site $K=D$ gives the records of $\\Omega_D$. Compatibility with a fully active record requires the test piece to have an empty-active record, which is equivalent to peeling down to $D$ and then holds for every order. Starting from any peelable nonidentity piece, repeatedly glue a test piece that distinguishes its class from the fully active class. Each added piece also fails to peel to $D$, while the union remains peelable. The $|D|+1$-factor nilpotence bound forces this process to stop after at most $|D|-1$ additions.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#prop:fully-active",
+  "witness_ids": [
+    "#examples/edge_record_collapse_pair"
+  ]
+}

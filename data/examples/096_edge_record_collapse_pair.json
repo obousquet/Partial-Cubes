@@ -1,0 +1,12 @@
+{
+  "id": 96,
+  "short_name": "edge_record_collapse_pair",
+  "name": "Opposite Fully-Active Edge Records with Identical Gluing Behavior",
+  "symbol": "X\\equiv_D Y",
+  "object_type": "construction",
+  "definition": "Let $(R,0)$ be the rooted 289-vertex factor, put $u=0$, $v=2$, and use disjoint copies of its twelve coordinates. Define $X=R\\cup\\{2+2^{12}r:r\\in R\\}$ and $Y=\\{x\\mathbin{\\oplus}2:x\\in X\\}$, where $\\oplus$ is bitwise addition modulo two. Regard both as pieces over the common edge $D=\\{u,v\\}$.",
+  "parameters": "$|X|=|Y|=577$; the fully active product representative $\\Omega_D=D\\times R$ has 578 vertices.",
+  "properties": "Both pieces are ample and peelable. Their complete record sets are the disjoint singletons $\\operatorname{Tr}_D(X)=\\{((u,v),D)\\}$ and $\\operatorname{Tr}_D(Y)=\\{((v,u),D)\\}$, yet $X\\equiv_DY\\equiv_D\\Omega_D$. Thus even inclusion-minimal records do not classify gluing behavior. Cartesian products with any nonempty peelable ample family give the same failure over cubical common sections of every positive dimension.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#ex:record-collapse",
+  "verification": "PartialCubes:papers/gluing/supplement/verify_gated_record_quotient.py; PartialCubes:papers/gluing/supplement/expected/gated_record_quotient_verification.json"
+}

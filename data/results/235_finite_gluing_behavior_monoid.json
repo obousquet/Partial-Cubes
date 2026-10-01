@@ -1,0 +1,19 @@
+{
+  "id": 235,
+  "short_name": "finite_gluing_behavior_monoid",
+  "name": "Finite Gluing-Behavior Monoid and Relative-Peeling Nilpotence",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Fix a nonempty peelable ample common section $D$ of order $N$. Declare two ample pieces interchangeable when gluing either to any ample test piece gives the same peelability answer. Equal record sets imply interchangeability; there are at most $2^{|\\operatorname{Ord}(D)|2^N}$ classes, and gluing makes them a commutative monoid with identity $[D]$. A piece represents the identity exactly when it peels down to $D$. The union of $N+1$ pieces that each fail to peel to $D$ is nonpeelable; $N+1$ copies of $A$ peel exactly when $A$ peels to $D$, equivalently when every positive number of copies peels; and $A\\oplus_D B$ peels to $D$ exactly when both factors do. Consequently, if the monoid is nontrivial, all nonpeelable pieces form one absorbing zero class, the nonidentity classes form an ideal, and every product of $N+1$ nonidentity elements is zero.",
+  "status": "established",
+  "proof": "The record composition law proves sufficiency of record equality and compatibility of interchangeability with gluing; counting record subsets gives the finite bound. Empty-active records characterize relative peeling and compose with every test record, which identifies the identity class. Every piece failing to peel to $D$ has only nonempty active sets, and $N+1$ such sets cannot be pairwise disjoint in an $N$-vertex section. This proves the repeated-gluing statements. Restricting a relative peeling to either factor proves necessity for a two-factor union, while concatenating the two relative peelings proves sufficiency. Coordinate-section inheritance makes every union containing a nonpeelable piece nonpeelable, yielding the zero and ideal laws.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#prop:finite; PartialCubes:papers/gluing/main.tex#thm:structure",
+  "witness_ids": [
+    "#examples/singleton_edge_record_coarsening"
+  ]
+}

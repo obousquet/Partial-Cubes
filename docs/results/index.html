@@ -3907,6 +3907,106 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-231" style="position:relative;">
+
+        <h3><a href="results/empty_active_records_characterize_relative_peeling.html" class="table-title-link">Empty Active Records Characterize Relative Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Empty Active Records Characterize Relative Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A$ be a piece over a peelable common section $D$. Then $A$ corner-peels down to $D$ if and only if its record set contains $(\pi,\varnothing)$ for some complete peeling order $\pi$ of $D$, and this is equivalent to containing $(\pi,\varnothing)$ for every such order.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A relative peeling followed by any peeling of $D$ gives every empty-active record. Conversely, start from a complete peeling with empty active set, retain the common vertices, and execute only its outside deletions. A retained common vertex had no private neighbor when originally deleted, so restoring it introduces no neighbor at any later outside deletion. Each original corner cube therefore remains valid, and the retained family is exactly $D$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#lem:relative</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-232" style="position:relative;">
+
+        <h3><a href="results/product_attachment_tests_relative_peeling.html" class="table-title-link">Product Attachments Test Relative Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Product Attachments Test Relative Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a finite ample family $R\subseteq Q_F$ containing $0_F$ that peels but has no peeling ending at $0_F$. For nonempty ample $K\subseteq A\subseteq Q_E$, set $P_R(A,K)=(A\times\{0_F\})\cup(K\times R)$. Then $P_R(A,K)$ is ample, has $|A|+(|R|-1)|K|$ vertices, and peels if and only if $K$ peels and $A$ peels down to $K$. A fixed 289-vertex choice of $R$ therefore reduces relative peeling to ordinary peeling with constant-factor growth.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If a shattered support uses a new coordinate, its old part is shattered by $K$ and its new part by $R$, so the product of witnessing cubes lies in $K\times R$; supports using only old coordinates are witnessed in $A$. For necessity, every root $(k,0)$ must retain a private neighbor when deleted, or the induced peeling of $R$ could end at its root. The missing mixed square then prevents a simultaneous neighbor in $A\setminus K$, and retaining all of $K$ yields a relative peeling of $A$; a nonroot layer restricts to a peeling of $K$. Conversely, peel $A$ to $K$ and then peel the product $K\times R$ layer by layer.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:attachment</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-233" style="position:relative;">
+
+        <h3><a href="results/product_attachment_context_records.html" class="table-title-link">Exact Records of Product-Attachment Test Pieces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Records of Product-Attachment Test Pieces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D$ be a nonempty ample common section, let nonempty ample $K\subseteq D$, and put $C_K=P_R(D,K)$ using the rooted attachment factor. Then $\operatorname{Tr}_D(C_K)$ consists exactly of the pairs $(\pi,K)$ such that every edge $xy$ with $x\in K$ and $y\in D\setminus K$ has $y$ before $x$ in $\pi$. If $K$ peels, then for every ample piece $A$ over $D$, the gluing $A\oplus_D C_K$ peels if and only if $A$ peels down to $K$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restriction to each $R$-fiber forces every vertex of $K$ to be active, while vertices outside $K$ have no private neighbors. Missing mixed squares force the displayed edge precedences. Conversely, the precedences let one commute nonadjacent deletions until $D\setminus K$ precedes $K$; a peeling of $R$ can then be executed layer by layer around the prescribed order. The testing equivalence is the product-attachment theorem applied to $P_R(A,K)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#prop:context-records</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-234" style="position:relative;">
+
+        <h3><a href="results/relative_peeling_failures_transfer_to_forbidden_pc_minors.html" class="table-title-link">Relative Peeling Failures Transfer to Forbidden PC-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Peeling Failures Transfer to Forbidden PC-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let rooted ample $R$ peel but not to its root, and suppose every elementary root-preserving restriction or contraction of $R$ peels to its induced root. Let nonempty ample peelable $K\subseteq A\subseteq Q_E$ have all coordinates active, and assume the same for $R$. Then $P_R(A,K)$ is a forbidden pc-minor for corner-peelable ample families exactly when $A$ does not peel down to $K$, while $\mu A$ peels down to $\mu K$ for every elementary restriction or contraction $\mu$ on an old coordinate for which $\mu K$ is nonempty.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>An old-coordinate operation commutes with the attachment: $\mu P_R(A,K)=P_R(\mu A,\mu K)$. On a new coordinate, root-preserving restriction and contraction replace $R$ by the corresponding rooted image, while the opposite restriction is a product over $K$; all three peel by hypothesis. If an old-coordinate image of $K$ is empty, the image is merely $\mu A$. Otherwise the attachment theorem says it peels exactly when $\mu A$ peels down to $\mu K$. The same theorem detects nonpeelability of the original attachment, giving both directions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:minor-transfer</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-235" style="position:relative;">
+
+        <h3><a href="results/finite_gluing_behavior_monoid.html" class="table-title-link">Finite Gluing-Behavior Monoid and Relative-Peeling Nilpotence</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Gluing-Behavior Monoid and Relative-Peeling Nilpotence</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a nonempty peelable ample common section $D$ of order $N$. Declare two ample pieces interchangeable when gluing either to any ample test piece gives the same peelability answer. Equal record sets imply interchangeability; there are at most $2^{|\operatorname{Ord}(D)|2^N}$ classes, and gluing makes them a commutative monoid with identity $[D]$. A piece represents the identity exactly when it peels down to $D$. The union of $N+1$ pieces that each fail to peel to $D$ is nonpeelable; $N+1$ copies of $A$ peel exactly when $A$ peels to $D$, equivalently when every positive number of copies peels; and $A\oplus_D B$ peels to $D$ exactly when both factors do. Consequently, if the monoid is nontrivial, all nonpeelable pieces form one absorbing zero class, the nonidentity classes form an ideal, and every product of $N+1$ nonidentity elements is zero.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The record composition law proves sufficiency of record equality and compatibility of interchangeability with gluing; counting record subsets gives the finite bound. Empty-active records characterize relative peeling and compose with every test record, which identifies the identity class. Every piece failing to peel to $D$ has only nonempty active sets, and $N+1$ such sets cannot be pairwise disjoint in an $N$-vertex section. This proves the repeated-gluing statements. Restricting a relative peeling to either factor proves necessity for a two-factor union, while concatenating the two relative peelings proves sufficiency. Coordinate-section inheritance makes every union containing a nonpeelable piece nonpeelable, yielding the zero and ideal laws.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#prop:finite; PartialCubes:papers/gluing/main.tex?#thm:structure</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/singleton_edge_record_coarsening.html">Singleton--Edge Record Coarsening</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-236" style="position:relative;">
+
+        <h3><a href="results/fully_active_records_determine_gluing_behavior.html" class="table-title-link">Fully Active Records Determine One Gluing-Behavior Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fully Active Records Determine One Gluing-Behavior Class</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty peelable ample common section $D$ and the rooted attachment factor $R$, the product piece $\Omega_D=D\times R$ has record set $\{(\pi,D):\pi\in\operatorname{Ord}(D)\}$. Every peelable piece all of whose records have active set $D$ is interchangeable with $\Omega_D$: its union with a test piece $C$ peels exactly when $C$ peels down to $D$. Moreover, every peelable piece failing to peel down to $D$ can be extended by at most $|D|-1$ further such failing pieces to a peelable piece in this fully active class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact context-record formula with attachment site $K=D$ gives the records of $\Omega_D$. Compatibility with a fully active record requires the test piece to have an empty-active record, which is equivalent to peeling down to $D$ and then holds for every order. Starting from any peelable nonidentity piece, repeatedly glue a test piece that distinguishes its class from the fully active class. Each added piece also fails to peel to $D$, while the union remains peelable. The $|D|+1$-factor nilpotence bound forces this process to stop after at most $|D|-1$ additions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#prop:fully-active</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/edge_record_collapse_pair.html">Opposite Fully-Active Edge Records with Identical Gluing Behavior</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

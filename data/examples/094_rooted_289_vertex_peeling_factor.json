@@ -1,0 +1,12 @@
+{
+  "id": 94,
+  "short_name": "rooted_289_vertex_peeling_factor",
+  "name": "Rooted 289-Vertex Peeling Factor",
+  "symbol": "(R,0)",
+  "object_type": "set_family",
+  "definition": "The supplied vertex set `rooted_example.json` defines an ample family $R\\subseteq Q_{12}$ rooted at the zero word. Coordinates are bit positions of the integer vertex encodings.",
+  "parameters": "$|R|=289$, the ambient cube has dimension twelve, and the distinguished root is $0$.",
+  "properties": "$R$ is ample and corner-peelable, but no peeling ends at its root. The root is its only initial corner and has degree three. There is a peeling ending at vertex $2$. Every one of its 24 elementary root-preserving restrictions and contractions peels to the induced root.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#sec:attachments; PartialCubes:papers/gluing/main.tex#sec:invisible-records; PartialCubes:papers/gluing/supplement/rooted_example.json",
+  "verification": "PartialCubes:papers/gluing/supplement/verify_gated_relative_tests.py; PartialCubes:papers/gluing/supplement/expected/gated_relative_tests_verification.json"
+}

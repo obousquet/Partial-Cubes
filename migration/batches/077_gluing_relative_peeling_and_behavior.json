@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "batch_id": "077_gluing_relative_peeling_and_behavior",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete coverage of the frozen gluing manuscript with the relative-peeling criterion, product attachment, forbidden-pc-minor transfer, finite interchangeability monoid, fully active behavior class, and the exact separating examples.",
+  "source_refs": [
+    "PartialCubes:papers/gluing/main.tex#lem:relative",
+    "PartialCubes:papers/gluing/main.tex#thm:attachment",
+    "PartialCubes:papers/gluing/main.tex#prop:context-records",
+    "PartialCubes:papers/gluing/main.tex#thm:minor-transfer",
+    "PartialCubes:papers/gluing/main.tex#prop:finite",
+    "PartialCubes:papers/gluing/main.tex#ex:coarse",
+    "PartialCubes:papers/gluing/main.tex#thm:structure",
+    "PartialCubes:papers/gluing/main.tex#prop:fully-active",
+    "PartialCubes:papers/gluing/main.tex#ex:record-collapse"
+  ],
+  "source_packets": [
+    {
+      "id": "gluing-manuscript",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/main.tex",
+      "sha256": "c7eec56c8659356360e772dc2a923dcc28c43e95ab657f17033a50fc25eaab8c"
+    },
+    {
+      "id": "rooted-289-vertex-factor",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/supplement/rooted_example.json",
+      "sha256": "4b35c9585b60bdeb0be685f98f2ec899b2fb678889549ef40a302144c0d96b27"
+    },
+    {
+      "id": "relative-test-checker",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/supplement/verify_gated_relative_tests.py",
+      "sha256": "3f9b801593b775a4f8ea1a895fe59207ab836764567884f0fca72ee5555cc956"
+    },
+    {
+      "id": "relative-test-certificate",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/supplement/expected/gated_relative_tests_verification.json",
+      "sha256": "0747341054eddbd356ca4002b2b75253a42766f990c42f530406b80d207d24aa"
+    },
+    {
+      "id": "record-quotient-checker",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/supplement/verify_gated_record_quotient.py",
+      "sha256": "981c7e7beafa408c972254400945928defe216915d3d1d20aa0f9c7489e17859"
+    },
+    {
+      "id": "record-quotient-certificate",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/gluing/supplement/expected/gated_record_quotient_verification.json",
+      "sha256": "e2dac97c1b885e3687f38a132dd0e374287192327992b73a072fb878c937aa44"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the reusable definitions, theorem statements, concise proofs, exact example constructions, and certificate conclusions. The LaTeX repository retains the complete exposition, the 289-vertex list, peeling orders, checkers, and replay output.",
+    "recoverability": "Every theorem and example has an exact label in the frozen manuscript, and every computational input, checker, and expected output used here is pinned by repository commit and SHA-256 hash.",
+    "mutation": "No source file or computational artifact in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/094_rooted_289_vertex_peeling_factor.json", "sha256": "4cdfe35cda89836b5ed2856c2076242528577c636761f028b6f362f8e606d5e3"},
+    {"path": "data/examples/095_singleton_edge_record_coarsening.json", "sha256": "fdc47183f724182dc34e966d81e1cd6c86561637712ce3e903bafda78dc74a40"},
+    {"path": "data/examples/096_edge_record_collapse_pair.json", "sha256": "ff56e4f44d6896bc0b1cf879d537df18895ce1cef0257151990c63918b9618fc"},
+    {"path": "data/results/231_empty_active_records_characterize_relative_peeling.json", "sha256": "59c1448baa87a478dd39ba16f92c341063278456911e143ed48af782c411bb81"},
+    {"path": "data/results/232_product_attachment_tests_relative_peeling.json", "sha256": "ab20256bd543418414dbbce6f6721d2464df94d56e162ca4d2210a24f82fb66e"},
+    {"path": "data/results/233_product_attachment_context_records.json", "sha256": "ba7938925ab1d13c6e9ad9ae576ad5e2a0e644a73f0c2bdb24ae880ccf38d612"},
+    {"path": "data/results/234_relative_peeling_failures_transfer_to_forbidden_pc_minors.json", "sha256": "ec1c16919649e59d7135b4ae3b89c6743d203789524b193635f9a0ea91a7e0e1"},
+    {"path": "data/results/235_finite_gluing_behavior_monoid.json", "sha256": "e6f72a4fe7ee0a1254be971732a5b119cf6231b4a53218eba4122dfe6d682989"},
+    {"path": "data/results/236_fully_active_records_determine_gluing_behavior.json", "sha256": "6beebfe9b57a2457d6949aba1119a9f2bf682eddf51fa194429e8417af195501"},
+    {"path": "migration/coverage.json", "sha256": "fc4032018134bb1b418cf13f841490939a70658940a491e03967a9691b706210"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "40ad8d0b4198a5ebc185f244adfcfd6cad4bf2720a5740cbc8b1bc8378c7c75f"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1418 records.",
+    "website": "Normalized 1434 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The frozen gluing workspace now has all 20 of 20 theorem-like labels covered; overall workspace-aware coverage is 288 of 1016 labels."
+  },
+  "deferred": [
+    "The full 289-vertex list, peeling orders, exhaustive fixed-input checks, and replay logs remain preserved in the source supplement and are pinned here rather than duplicated in database rows."
+  ]
+}

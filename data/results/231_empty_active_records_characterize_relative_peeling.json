@@ -1,0 +1,13 @@
+{
+  "id": 231,
+  "short_name": "empty_active_records_characterize_relative_peeling",
+  "name": "Empty Active Records Characterize Relative Peeling",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $A$ be a piece over a peelable common section $D$. Then $A$ corner-peels down to $D$ if and only if its record set contains $(\\pi,\\varnothing)$ for some complete peeling order $\\pi$ of $D$, and this is equivalent to containing $(\\pi,\\varnothing)$ for every such order.",
+  "status": "established",
+  "proof": "A relative peeling followed by any peeling of $D$ gives every empty-active record. Conversely, start from a complete peeling with empty active set, retain the common vertices, and execute only its outside deletions. A retained common vertex had no private neighbor when originally deleted, so restoring it introduces no neighbor at any later outside deletion. Each original corner cube therefore remains valid, and the retained family is exactly $D$.",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#lem:relative"
+}

@@ -1987,6 +1987,73 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-94" style="position:relative;">
+
+        <h3><a href="examples/rooted_289_vertex_peeling_factor.html" class="table-title-link">Rooted 289-Vertex Peeling Factor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted 289-Vertex Peeling Factor</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="(R,0)">
+            \[(R,0)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The supplied vertex set <code>rooted_example.json</code> defines an ample family $R\subseteq Q_{12}$ rooted at the zero word. Coordinates are bit positions of the integer vertex encodings.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|R|=289$, the ambient cube has dimension twelve, and the distinguished root is $0$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$R$ is ample and corner-peelable, but no peeling ends at its root. The root is its only initial corner and has degree three. There is a peeling ending at vertex $2$. Every one of its 24 elementary root-preserving restrictions and contractions peels to the induced root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#sec:attachments; PartialCubes:papers/gluing/main.tex?#sec:invisible-records; PartialCubes:papers/gluing/supplement/rooted_example.json</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/gluing/supplement/verify_gated_relative_tests.py; PartialCubes:papers/gluing/supplement/expected/gated_relative_tests_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-95" style="position:relative;">
+
+        <h3><a href="examples/singleton_edge_record_coarsening.html" class="table-title-link">Singleton--Edge Record Coarsening</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Singleton--Edge Record Coarsening</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="D\equiv_D A">
+            \[D\equiv_D A\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let the common section be the singleton $D=\{d\}$ and let $A=\{d,a\}$ be an edge rooted at $d$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The record sets differ: $\operatorname{Tr}_D(D)=\{((d),\varnothing)\}$, whereas $\operatorname{Tr}_D(A)=\{((d),\varnothing),((d),\{d\})\}$. Nevertheless $A$ and $D$ are interchangeable over $D$, because the edge peels down to its root. Thus equality of record sets is strictly finer than gluing behavior.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#ex:coarse</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-96" style="position:relative;">
+
+        <h3><a href="examples/edge_record_collapse_pair.html" class="table-title-link">Opposite Fully-Active Edge Records with Identical Gluing Behavior</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Fully-Active Edge Records with Identical Gluing Behavior</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="X\equiv_D Y">
+            \[X\equiv_D Y\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $(R,0)$ be the rooted 289-vertex factor, put $u=0$, $v=2$, and use disjoint copies of its twelve coordinates. Define $X=R\cup\{2+2^{12}r:r\in R\}$ and $Y=\{x\mathbin{\oplus}2:x\in X\}$, where $\oplus$ is bitwise addition modulo two. Regard both as pieces over the common edge $D=\{u,v\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|X|=|Y|=577$; the fully active product representative $\Omega_D=D\times R$ has 578 vertices.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both pieces are ample and peelable. Their complete record sets are the disjoint singletons $\operatorname{Tr}_D(X)=\{((u,v),D)\}$ and $\operatorname{Tr}_D(Y)=\{((v,u),D)\}$, yet $X\equiv_DY\equiv_D\Omega_D$. Thus even inclusion-minimal records do not classify gluing behavior. Cartesian products with any nonempty peelable ample family give the same failure over cubical common sections of every positive dimension.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#ex:record-collapse</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/gluing/supplement/verify_gated_record_quotient.py; PartialCubes:papers/gluing/supplement/expected/gated_record_quotient_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
