@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,36 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-59" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-305" style="position:relative;">
 
-        <h3><a href="classes/paths.html" class="table-title-link">Paths</a></h3>
+        <h3><a href="results/explicit_medium_basic_algorithms.html" class="table-title-link">Reset and All-Pairs Routing Algorithms for Explicit Media</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Paths</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="P_n">
-            \[P_n\]
-        </div>
-    </div>
-
-<strong>Summary:</strong><div class="text-field"><p>Finite path graphs, equivalently trees of maximum degree at most two.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/path_graph.html">Path Graph</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>finite paths</li></ul></p>
-<p><strong>Category:</strong> Named Family</p>
-<p><strong>Ambient Scope:</strong> Partial Cubes</p>
-<p><strong>Parameterized:</strong> Unspecified</p>
-<p><strong>Projection Closure:</strong> Closed</p>
-<p><strong>Conditioning Closure:</strong> Closed</p>
-<p><strong>PC-Minor Closure:</strong> Closed</p>
-<strong>Comments:</strong><div class="text-field"><p>The one-vertex path P_1 is included. The index n denotes the number of vertices.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/path_graph.html'>Path Graph</a></li><li><a href='characterizations/tree_maximum_degree_two.html'>Tree of Maximum Degree at Most Two</a></li><li><a href='characterizations/no_square_or_claw_pc_minor.html'>No Square or Three-Leaf-Star PC-Minor</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/paths_strict_subset_trees.html'>Paths Are Strictly Contained in Trees</a></li><li><a href='relations/paths_strict_subset_learning_spaces.html'>Paths Are Strictly Contained in Learning-Space Graphs</a></li><li><a href='relations/paths_incomparable_stars.html'>Paths and Stars Are Incomparable</a></li><li><a href='relations/paths_strict_subset_realizable_ample.html'>Paths Are Strictly Realizable Ample</a></li><li><a href='relations/paths_strict_subset_spread_ample.html'>Paths Are Strictly Spread Ample</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong><ul class='fields-list'><li><a href='relations/even_cycles_incomparable_paths.html'>Even Cycles and Paths Are Incomparable</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/paths_projection_closed.html'>Paths Are Projection-Closed</a></li><li><a href='operation_results/paths_conditioning_closed.html'>Paths Are Conditioning-Closed</a></li><li><a href='operation_results/paths_pc_minor_closed.html'>Paths Are PC-Minor-Closed</a></li><li><a href='operation_results/paths_not_cartesian_product_closed.html'>Paths Are Not Cartesian-Product-Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/path_vc_dimension.html'>VC Dimension of a Path</a></li><li><a href='invariant_values/path_isometric_dimension.html'>Isometric Dimension of a Path</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong><ul class='fields-list'><li><a href='obstruction_bases/path_c4_claw_pc_basis.html'>Two-Obstruction PC-Minor Basis for Paths</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/well_graded_incidence_dual_characterization.html'>Well-Graded Incidence Duals Characterize Paths</a></li></ul></p></div>
+        <p><strong>Name: </strong>Reset and All-Pairs Routing Algorithms for Explicit Media</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For an explicit adjacency-list representation of a finite medium with $n$ states and $m$ effective directed transitions, a reset message of length at most $n-1$ sending every state to one fixed state can be found in $O(m)$ time. In $O(n^2)$ time one can construct all ordered-pair distances and a first effective token on a straight path; each path is then output in time linear in its length.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorems~1--2]{EppsteinFalmagne08media}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:media-algorithms</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The input includes token labels on directed transitions. The reset construction guarantees length at most $n-1$ but does not minimize reset length.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,14 @@
+{
+  "id": 305,
+  "short_name": "explicit_medium_basic_algorithms",
+  "name": "Reset and All-Pairs Routing Algorithms for Explicit Media",
+  "class_ids": [
+    "#classes/partial_cubes"
+  ],
+  "result_type": "algorithm",
+  "statement": "For an explicit adjacency-list representation of a finite medium with $n$ states and $m$ effective directed transitions, a reset message of length at most $n-1$ sending every state to one fixed state can be found in $O(m)$ time. In $O(n^2)$ time one can construct all ordered-pair distances and a first effective token on a straight path; each path is then output in time linear in its length.",
+  "status": "established",
+  "references": "\\cite[Theorems~1--2]{EppsteinFalmagne08media}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:media-algorithms",
+  "comments": "The input includes token labels on directed transitions. The reset construction guarantees length at most $n-1$ but does not minimize reset length."
+}

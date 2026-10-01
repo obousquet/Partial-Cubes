@@ -1,0 +1,16 @@
+{
+  "id": 306,
+  "short_name": "well_graded_incidence_dual_characterization",
+  "name": "Well-Graded Incidence Duals Characterize Paths",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/paths"
+  ],
+  "result_type": "recognition",
+  "statement": "For a finite irredundant well-graded family $H\\subseteq2^X$, its incidence dual $H^\\star=\\{\\{A\\in H:x\\in A\\}:x\\in X\\}$ is well graded exactly when $H$ is a full inclusion chain. Consequently, a finite partial cube admits an irredundant well-graded representation with well-graded incidence dual exactly when it is a path.",
+  "status": "established",
+  "proof": "The first assertion is the essential-coordinate incidence-dual theorem for well-graded families. A full chain has a path as its one-inclusion graph, while every path admits such a chain representation when based at an endpoint.",
+  "references": "\\cite[Theorem~4.12]{Mofidi20wellgraded}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:wellgraded-incidence-dual",
+  "comments": "The claim concerns existence of a suitable irredundant representation. Independent coordinate complementation preserves the partial cube but can destroy dual well-gradedness."
+}

@@ -1,0 +1,17 @@
+{
+  "id": 32,
+  "short_name": "partial_cube_well_graded_medium_equivalence",
+  "name": "Partial Cubes, Well-Graded Families, and Media",
+  "class_id": "#classes/partial_cubes",
+  "characterization_ids": [
+    "#characterizations/isometric_hypercube_embedding",
+    "#characterizations/well_graded_set_family",
+    "#characterizations/finite_medium_state_graph"
+  ],
+  "hypotheses": "Finite connected graphs.",
+  "statement": "A finite connected graph is a partial cube exactly when it is the one-inclusion graph of a finite well-graded family, and exactly when it is the state graph of a finite medium. In the canonical add/delete medium, reverse-token pairs correspond bijectively to Theta classes; two finite media are isomorphic exactly when their state graphs are isomorphic.",
+  "status": "established",
+  "proof": "Every graph path in a one-inclusion graph has length at least the Hamming distance, so well-gradedness is exactly isometry in the cube. The set-family representation theorem identifies well-graded families with the canonical reversible add/delete media and reconstructs every finite medium this way. Effective transitions of one reverse-token pair are precisely the edges of one coordinate Theta class; the medium uniqueness theorem gives the final assertion.",
+  "references": "\\cite[Theorem~6.2]{Ovchinnikov08media}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:partial-cube-wellgraded-medium"
+}

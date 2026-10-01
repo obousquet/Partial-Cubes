@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "batch_id": "088_survey_foundational_dictionary",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the foundational graph, set-family, and medium dictionary from the frozen survey: transitivity of isometric embeddings, the three-coordinate comparison, the partial-cube/well-graded/medium equivalence, explicit-medium algorithms, and the incidence-dual characterization of paths.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:isotrans",
+    "PartialCubes:papers/survey/main.tex#ex:three-coordinate-models",
+    "PartialCubes:papers/survey/main.tex#thm:partial-cube-wellgraded-medium",
+    "PartialCubes:papers/survey/main.tex#thm:media-algorithms",
+    "PartialCubes:papers/survey/main.tex#thm:wellgraded-incidence-dual"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized characterizations, equivalence, algorithmic guarantees, example data, concise proofs, and citations. The LaTeX survey retains the full terminology development, motivation, and representation caveats.",
+    "recoverability": "The source manuscript is read from the frozen repository commit, matches the manifest SHA-256 hash, and every migrated claim has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Two cited bibliography entries absent from the database bibliography were copied from the frozen source bibliography."
+  },
+  "records": [
+    {"path": "data/characterizations/179_well_graded_set_family.json", "sha256": "bc5b4902b94e470cda838c572a92a0892775d73463393f3840f2d6011fa0765b"},
+    {"path": "data/characterizations/180_finite_medium_state_graph.json", "sha256": "8a494983a74e0ca8c93f937a5f834cdcac9e78ec543e3db430bea70c3158cf66"},
+    {"path": "data/characterization_equivalences/032_partial_cube_well_graded_medium_equivalence.json", "sha256": "6dbf23bc900ad6c147b4e65d615fba855e7c610f7436b5d5d6c11c514be995f4"},
+    {"path": "data/examples/107_three_coordinate_partial_cube_models.json", "sha256": "4fb1a18e03ec9717298af2f8f7357dc137f75576efabf71106aa9f25c0e786d2"},
+    {"path": "data/results/304_isometric_embedding_transitivity.json", "sha256": "fa55c394cf82357e840424acbe32c9af839145aebb7f0594bd384dd077eb7f57"},
+    {"path": "data/results/305_explicit_medium_basic_algorithms.json", "sha256": "d1fc8b2edd406603832692b7b062190e355a19a631ffd7f4e5206f00c0359738"},
+    {"path": "data/results/306_well_graded_incidence_dual_characterization.json", "sha256": "e4a8dd26d2b75f04ef12a2679b3c520a06aedeb904ea21e7776875b37dcc2f7d"},
+    {"path": "data/latex/references.bib", "sha256": "f373aec28e2ad4c4087421c63c04ea5dc6acc9ba93581b46de13f7a7ccfd99a2"},
+    {"path": "migration/coverage.json", "sha256": "4b38df30712c693554f781a83105a44d008ecaec7375825c2a30d3443db6ef3c"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "952b1a5014547e56e225ae55b5c67ec3c880220d52548787863966366e22e37a"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1540 records.",
+    "website": "Normalized 1556 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 5 survey labels, raising that workspace from 73 of 131 to 78 of 131 and overall workspace-aware coverage from 373 to 378 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 53 uncovered labeled results, organized into class-specific structural batches.",
+    "Open media reset optimization remains prose in the LaTeX survey under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

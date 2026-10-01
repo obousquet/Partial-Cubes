@@ -5115,6 +5115,54 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-304" style="position:relative;">
+
+        <h3><a href="results/isometric_embedding_transitivity.html" class="table-title-link">Isometry in a Partial Cube and Its Ambient Hypercube Is Equivalent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Isometry in a Partial Cube and Its Ambient Hypercube Is Equivalent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal G$ be a partial cube embedded isometrically in $Q_X$, and let $G$ be a subgraph. Then $G$ is isometric in $\mathcal G$ exactly when it is isometric in $Q_X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For vertices of $G$, the ambient embedding gives $d_{\mathcal G}=d_{Q_X}$. Either of the equalities $d_G=d_{\mathcal G}$ and $d_G=d_{Q_X}$ therefore implies the other.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:isotrans</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-305" style="position:relative;">
+
+        <h3><a href="results/explicit_medium_basic_algorithms.html" class="table-title-link">Reset and All-Pairs Routing Algorithms for Explicit Media</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Reset and All-Pairs Routing Algorithms for Explicit Media</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For an explicit adjacency-list representation of a finite medium with $n$ states and $m$ effective directed transitions, a reset message of length at most $n-1$ sending every state to one fixed state can be found in $O(m)$ time. In $O(n^2)$ time one can construct all ordered-pair distances and a first effective token on a straight path; each path is then output in time linear in its length.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorems~1--2]{EppsteinFalmagne08media}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:media-algorithms</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The input includes token labels on directed transitions. The reset construction guarantees length at most $n-1$ but does not minimize reset length.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-306" style="position:relative;">
+
+        <h3><a href="results/well_graded_incidence_dual_characterization.html" class="table-title-link">Well-Graded Incidence Duals Characterize Paths</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Well-Graded Incidence Duals Characterize Paths</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/paths.html">Paths</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite irredundant well-graded family $H\subseteq2^X$, its incidence dual $H^\star=\{\{A\in H:x\in A\}:x\in X\}$ is well graded exactly when $H$ is a full inclusion chain. Consequently, a finite partial cube admits an irredundant well-graded representation with well-graded incidence dual exactly when it is a path.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The first assertion is the essential-coordinate incidence-dual theorem for well-graded families. A full chain has a path as its one-inclusion graph, while every path admits such a chain representation when based at an endpoint.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~4.12]{Mofidi20wellgraded}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:wellgraded-incidence-dual</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The claim concerns existence of a suitable irredundant representation. Independent coordinate complementation preserves the partial cube but can destroy dual well-gradedness.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
