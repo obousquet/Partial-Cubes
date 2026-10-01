@@ -1,0 +1,13 @@
+{
+  "id": 169,
+  "short_name": "learning_space_terminal_square_budget",
+  "name": "Terminal States and Square Budget in Learning Spaces",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\mathcal H\\subseteq2^X$ be finite, irredundant, well graded, and union closed, with $d=|X|$. For a state $A$, let $p(A)$ count its one-element supersets in $\\mathcal H$; let $m$ and $q$ be the numbers of edges and squares, and let $m_i$ count edges in coordinate $i$. Then at least $d$ states have $p(A)=1$, $q=\\sum_A\\binom{p(A)}2$, each coordinate's edges form a connected graph under opposite-edge adjacency in squares, and $m-d=\\sum_i(m_i-1)\\le2q$. If every $p(A)\\le2$, then the positive-outdegree profile is $n_0=1$, $n_1=d$, and $|\\mathcal H|=1+d+n_2$.",
+  "status": "established",
+  "proof": "For each coordinate $i$, the union of all states omitting $i$ is a distinct state with exactly one upward edge. Union closure completes every pair of upward edges at a state to a unique square. Tight monotone paths to unions connect all edges of a fixed coordinate through squares, giving the budget inequality after summing over coordinates. Under outdegree at most two, the edge and square counts force $n_1=d$; the full state is the unique state of outdegree zero.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-terminal-square-budget"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 170,
+  "short_name": "crossed_subcube_pendant_obstructions",
+  "name": "Crossed-Subcube Critical-Pendant Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=\\{a,b,p,q\\}\\mathbin{\\dot\\cup}U\\mathbin{\\dot\\cup}V$ have size $d\\ge4$, and choose $\\alpha,\\beta\\in\\{0,1\\}$. Delete from $2^X$ the two crossed wings based at $a$ and $b$, together with the optional $p$- and $q$-half-wings specified by $\\alpha$ and $\\beta$. The remaining family $\\mathcal K_d^{\\bowtie,\\alpha,\\beta}$ is a learning space with complementary invalid roots $R=\\{b,p\\}\\cup V$ and $\\bar R=\\{a,q\\}\\cup U$ whose contraction-repair sets cover $X$. Its pendant extension $\\mathcal Y_{d+1}^{\\alpha,\\beta}$ is therefore a contraction-minimal nonlearning partial cube of order $2^d-(2+\\alpha)2^{|U|}-(2+\\beta)2^{|V|}+2$.",
+  "status": "established",
+  "proof": "The deleted wings are downward closed relative to their anchor coordinates, so no union of retained states enters a wing; a direct deletion argument gives accessibility. Translating at either displayed root identifies its rooted-union holes with the opposite wing except for the shared state. The neighbor test gives two explicit repair sets whose union is every coordinate, and the critical-pair pendant theorem gives contraction minimality. Inclusion-exclusion over the wings yields the order formula.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-subcube-pendant-obstructions",
+  "comments": "When $U=V=\\varnothing$, the three values of $\\alpha+\\beta$ supply the order-13, order-12, and order-11 pointed base types not represented by the chain-and-punctured-fiber family."
+}

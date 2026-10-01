@@ -2920,6 +2920,38 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-169" style="position:relative;">
+
+        <h3><a href="results/learning_space_terminal_square_budget.html" class="table-title-link">Terminal States and Square Budget in Learning Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal States and Square Budget in Learning Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal H\subseteq2^X$ be finite, irredundant, well graded, and union closed, with $d=|X|$. For a state $A$, let $p(A)$ count its one-element supersets in $\mathcal H$; let $m$ and $q$ be the numbers of edges and squares, and let $m_i$ count edges in coordinate $i$. Then at least $d$ states have $p(A)=1$, $q=\sum_A\binom{p(A)}2$, each coordinate's edges form a connected graph under opposite-edge adjacency in squares, and $m-d=\sum_i(m_i-1)\le2q$. If every $p(A)\le2$, then the positive-outdegree profile is $n_0=1$, $n_1=d$, and $|\mathcal H|=1+d+n_2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each coordinate $i$, the union of all states omitting $i$ is a distinct state with exactly one upward edge. Union closure completes every pair of upward edges at a state to a unique square. Tight monotone paths to unions connect all edges of a fixed coordinate through squares, giving the budget inequality after summing over coordinates. Under outdegree at most two, the edge and square counts force $n_1=d$; the full state is the unique state of outdegree zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-terminal-square-budget</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-170" style="position:relative;">
+
+        <h3><a href="results/crossed_subcube_pendant_obstructions.html" class="table-title-link">Crossed-Subcube Critical-Pendant Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Crossed-Subcube Critical-Pendant Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X=\{a,b,p,q\}\mathbin{\dot\cup}U\mathbin{\dot\cup}V$ have size $d\ge4$, and choose $\alpha,\beta\in\{0,1\}$. Delete from $2^X$ the two crossed wings based at $a$ and $b$, together with the optional $p$- and $q$-half-wings specified by $\alpha$ and $\beta$. The remaining family $\mathcal K_d^{\bowtie,\alpha,\beta}$ is a learning space with complementary invalid roots $R=\{b,p\}\cup V$ and $\bar R=\{a,q\}\cup U$ whose contraction-repair sets cover $X$. Its pendant extension $\mathcal Y_{d+1}^{\alpha,\beta}$ is therefore a contraction-minimal nonlearning partial cube of order $2^d-(2+\alpha)2^{|U|}-(2+\beta)2^{|V|}+2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The deleted wings are downward closed relative to their anchor coordinates, so no union of retained states enters a wing; a direct deletion argument gives accessibility. Translating at either displayed root identifies its rooted-union holes with the opposite wing except for the shared state. The neighbor test gives two explicit repair sets whose union is every coordinate, and the critical-pair pendant theorem gives contraction minimality. Inclusion-exclusion over the wings yields the order formula.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-subcube-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>When $U=V=\varnothing$, the three values of $\alpha+\beta$ supply the order-13, order-12, and order-11 pointed base types not represented by the chain-and-punctured-fiber family.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

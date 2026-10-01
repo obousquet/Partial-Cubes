@@ -441,6 +441,30 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-16" style="position:relative;">
+
+        <h3><a href="obstruction_families/crossed_subcube_pendant_contraction_obstructions.html" class="table-title-link">Crossed-Subcube Pendant Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Crossed-Subcube Pendant Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\mathcal Y_{d+1}^{\alpha,\beta}(U,V;p,q)\}">
+            \[\{\mathcal Y_{d+1}^{\alpha,\beta}(U,V;p,q)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,p,q\}\mathbin{\dot\cup}U\mathbin{\dot\cup}V$. Delete from $2^X$ every $\{a\}\cup S$ and $\{a,b\}\cup S$ for $S\subseteq U$, and every $\{b\}\cup T$ and $\{a,b\}\cup T$ for $T\subseteq V$. If $\alpha=1$, also delete $\{a,p\}\cup S$ for $S\subseteq U$; if $\beta=1$, also delete $\{b,q\}\cup T$ for $T\subseteq V$. From the remaining learning space, attach a new pendant coordinate above every state while retaining the lone lower state $R=\{b,p\}\cup V$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge4$; disjoint coordinate blocks $U,V$; and $\alpha,\beta\in\{0,1\}$. The resulting family has $d+1$ active coordinates and $2^d-(2+\alpha)2^{|U|}-(2+\beta)2^{|V|}+2$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The source records the ordered crossed blocks, the two distinguished free coordinates, and the two optional half-wing flags. At $U=V=\varnothing$, only $\alpha+\beta$ distinguishes the three pointed base types up to the stated identifications.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate lists the two deleted wings, verifies the complementary endpoints, and checks that their exact contraction-repair sets cover all base coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-crossed-subcube-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. This is not a pc-minimal forbidden family because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

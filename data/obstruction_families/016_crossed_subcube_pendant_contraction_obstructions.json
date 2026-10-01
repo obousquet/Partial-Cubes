@@ -1,0 +1,14 @@
+{
+  "id": 16,
+  "short_name": "crossed_subcube_pendant_contraction_obstructions",
+  "name": "Crossed-Subcube Pendant Contraction Obstructions",
+  "symbol": "\\{\\mathcal Y_{d+1}^{\\alpha,\\beta}(U,V;p,q)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $X=\\{a,b,p,q\\}\\mathbin{\\dot\\cup}U\\mathbin{\\dot\\cup}V$. Delete from $2^X$ every $\\{a\\}\\cup S$ and $\\{a,b\\}\\cup S$ for $S\\subseteq U$, and every $\\{b\\}\\cup T$ and $\\{a,b\\}\\cup T$ for $T\\subseteq V$. If $\\alpha=1$, also delete $\\{a,p\\}\\cup S$ for $S\\subseteq U$; if $\\beta=1$, also delete $\\{b,q\\}\\cup T$ for $T\\subseteq V$. From the remaining learning space, attach a new pendant coordinate above every state while retaining the lone lower state $R=\\{b,p\\}\\cup V$.",
+  "parameters": "$d=|X|\\ge4$; disjoint coordinate blocks $U,V$; and $\\alpha,\\beta\\in\\{0,1\\}$. The resulting family has $d+1$ active coordinates and $2^d-(2+\\alpha)2^{|U|}-(2+\\beta)2^{|V|}+2$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The source records the ordered crossed blocks, the two distinguished free coordinates, and the two optional half-wing flags. At $U=V=\\varnothing$, only $\\alpha+\\beta$ distinguishes the three pointed base types up to the stated identifications.",
+  "recognition": "A construction certificate lists the two deleted wings, verifies the complementary endpoints, and checks that their exact contraction-repair sets cover all base coordinates.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-subcube-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. This is not a pc-minimal forbidden family because learning-space graphs are not closed under convex restrictions."
+}

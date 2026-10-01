@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "batch_id": "060_learning_space_square_budget_and_crossed_subcubes",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote the learning-space terminal-state square budget and the crossed-subcube family of contraction-minimal nonlearning partial cubes from the active survey.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-terminal-square-budget",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-crossed-subcube-pendant-obstructions"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized counting law, construction theorem, parameterized obstruction-family definition, and concise proofs. The survey retains the full proofs, surrounding first-unresolved-dimension analysis, notation, and continuation families.",
+    "recoverability": "The exact source hash and proposition locators preserve the complete scholarly context.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/016_crossed_subcube_pendant_contraction_obstructions.json",
+      "sha256": "9d6ec602330c01ce45d8f3daa0d1fef7b678775603c1e95f098b0f9e9cf5be44"
+    },
+    {
+      "path": "data/results/169_learning_space_terminal_square_budget.json",
+      "sha256": "55b02be4b7e34a2b0fd365fb0ddd53b7e10b38aea3e5517a4ea6fc50c5649539"
+    },
+    {
+      "path": "data/results/170_crossed_subcube_pendant_obstructions.json",
+      "sha256": "7895b1a445eb2d6247cd6a0cf77ac97f8ca1c8a76883d8f58b76991d892814c0"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "b7efd57e7c1c4c8419882fb08368dbc5463d852de2dc0bb3847fd080bf4d5c8f"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1311 records.",
+    "website": "Normalized 1327 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render."
+  },
+  "deferred": [
+    "The crossed-subcube members are contraction-minimal nonmembers, not pc-minimal obstructions, because learning-space graphs are not closed under convex restrictions.",
+    "The full-cap, decorated, scaffold, staircase, and punctured-triangle continuation families remain queued for separate exact promotion."
+  ]
+}
