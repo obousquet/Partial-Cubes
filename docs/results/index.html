@@ -3366,6 +3366,68 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-197" style="position:relative;">
+
+        <h3><a href="results/vc_sandwich_and_sauer_bounds.html" class="table-title-link">Sandwich and Sauer--Shelah Bounds</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Sandwich and Sauer--Shelah Bounds</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite Boolean class $H\subseteq\{0,1\}^X$, the strongly shattered and shattered complexes satisfy $|\operatorname{sstr}(H)|\le|H|\le|\operatorname{str}(H)|$. Consequently, if $|X|=n$ and $\operatorname{VCdim}(H)=d$, then $|H|\le\sum_{i=0}^d\binom ni$. The cardinality bound is sharp, attained by $\binom{X}{\le d}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Bollobas89">[Bollobas89]</a> <a href="bibliography.html#Bollobas95">[Bollobas95]</a> <a href="bibliography.html#Moran2012">[Moran2012]</a> <a href="bibliography.html#Sauer1972Density">[Sauer1972Density]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:vc-bounds</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-198" style="position:relative;">
+
+        <h3><a href="results/down_shifts_do_not_increase_vc_dimension.html" class="table-title-link">Down-Shifts Do Not Create Shattered Coordinate Sets</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Down-Shifts Do Not Create Shattered Coordinate Sets</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/down_shift.html">Elementary Down-Shift</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every Boolean class $H$ and coordinate $x$, elementary down-shifting satisfies $\operatorname{str}(D_xH)\subseteq\operatorname{str}(H)$. In particular $\operatorname{VCdim}(D_xH)\le\operatorname{VCdim}(H)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A shattered set omitting $x$ has the same trace before and after the shift. If a shifted class shatters a set containing $x$, each upper-fiber concept realizing a trace survived only because its matching lower concept was present before shifting; the surviving concepts and their lower mates already realize every trace in the original class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#lem:shift-vc</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-199" style="position:relative;">
+
+        <h3><a href="results/thicket_sauer_shelah_bound.html" class="table-title-link">Thicket Sauer--Shelah Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Thicket Sauer--Shelah Bound</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/littlestone_dimension.html">Littlestone Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $\operatorname{Ldim}(H)\le d$, then for every tree height $t\ge0$ the thicket shatter function satisfies $\rho_H(t)\le\sum_{i=0}^d\binom ti$. In particular, for a class on $n$ coordinates, $|H|\le\sum_{i=0}^d\binom ni$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Bhaskar2017ThicketDensity">[Bhaskar2017ThicketDensity]</a> <a href="bibliography.html#Walker2022TreeDimension">[Walker2022TreeDimension]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#thm:thicket-sauer</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-200" style="position:relative;">
+
+        <h3><a href="results/vc_littlestone_operation_monotonicity.html" class="table-title-link">Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate Operations Do Not Increase VC or Littlestone Dimension</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/littlestone_dimension.html">Littlestone Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/down_shift.html">Elementary Down-Shift</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Coordinate projection, conditioning, and elementary down-shifting do not increase either VC dimension or Littlestone dimension.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Shattered coordinate patterns and shattered labeled trees after projection or conditioning lift to the original class. VC monotonicity under shifting is the shift lemma. For Littlestone dimension, use its root-section recursion and induction on the number of coordinates: shifting commutes with sections away from the shifted coordinate, while at that coordinate the shifted lower and upper sections are their union and intersection, whose recursive minimum cannot exceed the original one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#prop:operations-ldim</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

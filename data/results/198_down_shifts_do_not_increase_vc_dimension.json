@@ -1,0 +1,16 @@
+{
+  "id": 198,
+  "short_name": "down_shifts_do_not_increase_vc_dimension",
+  "name": "Down-Shifts Do Not Create Shattered Coordinate Sets",
+  "invariant_ids": [
+    "#invariants/vc_dimension"
+  ],
+  "operation_ids": [
+    "#operations/down_shift"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every Boolean class $H$ and coordinate $x$, elementary down-shifting satisfies $\\operatorname{str}(D_xH)\\subseteq\\operatorname{str}(H)$. In particular $\\operatorname{VCdim}(D_xH)\\le\\operatorname{VCdim}(H)$.",
+  "status": "established",
+  "proof": "A shattered set omitting $x$ has the same trace before and after the shift. If a shifted class shatters a set containing $x$, each upper-fiber concept realizing a trace survived only because its matching lower concept was present before shifting; the surviving concepts and their lower mates already realize every trace in the original class.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#lem:shift-vc"
+}

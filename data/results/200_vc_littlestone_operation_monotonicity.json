@@ -1,0 +1,19 @@
+{
+  "id": 200,
+  "short_name": "vc_littlestone_operation_monotonicity",
+  "name": "Coordinate Operations Do Not Increase VC or Littlestone Dimension",
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/littlestone_dimension"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/down_shift"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Coordinate projection, conditioning, and elementary down-shifting do not increase either VC dimension or Littlestone dimension.",
+  "status": "established",
+  "proof": "Shattered coordinate patterns and shattered labeled trees after projection or conditioning lift to the original class. VC monotonicity under shifting is the shift lemma. For Littlestone dimension, use its root-section recursion and induction on the number of coordinates: shifting commutes with sections away from the shifted coordinate, while at that coordinate the shifted lower and upper sections are their union and intersection, whose recursive minimum cannot exceed the original one.",
+  "proof_source": "PartialCubes:papers/vc-littlestone/main.tex#prop:operations-ldim"
+}

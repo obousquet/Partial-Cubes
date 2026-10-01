@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,29 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-27" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-198" style="position:relative;">
 
-        <h3><a href="invariants/littlestone_dimension.html" class="table-title-link">Littlestone Dimension</a></h3>
+        <h3><a href="results/down_shifts_do_not_increase_vc_dimension.html" class="table-title-link">Down-Shifts Do Not Create Shattered Coordinate Sets</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Littlestone Dimension</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{Ldim}">
-            \[\operatorname{Ldim}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a finite Boolean class $H\subseteq\{0,1\}^X$, $\operatorname{Ldim}(H)$ is the largest height of a complete binary decision tree whose internal nodes are labeled by coordinates of $X$ and for which every root-to-leaf answer sequence is realized by a concept of $H$.</p></div>
+        <p><strong>Name: </strong>Down-Shifts Do Not Create Shattered Coordinate Sets</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/down_shift.html">Elementary Down-Shift</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every Boolean class $H$ and coordinate $x$, elementary down-shifting satisfies $\operatorname{str}(D_xH)\subseteq\operatorname{str}(H)$. In particular $\operatorname{VCdim}(D_xH)\le\operatorname{VCdim}(H)$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers for nonempty finite classes</p>
-<strong>Normalization:</strong><div class="text-field"><p>A nonempty class has Littlestone dimension zero exactly when it is a singleton; the empty class is conventionally assigned dimension $-1$ when needed.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>This adaptive shattering dimension differs from VC dimension, which uses a fixed coordinate set.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:littlestone</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/full_horizon_thicket_maximum_equals_maximum.html'>Full-Horizon Thicket Equality Is the Maximum-Class Equality</a></li><li><a href='results/thicket_sauer_shelah_bound.html'>Thicket Sauer--Shelah Bound</a></li><li><a href='results/vc_littlestone_operation_monotonicity.html'>Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>A shattered set omitting $x$ has the same trace before and after the shift. If a shifted class shatters a set containing $x$, each upper-fiber concept realizing a trace survived only because its matching lower concept was present before shifting; the surviving concepts and their lower mates already realize every trace in the original class.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#lem:shift-vc</p></div>
 
         </div>
     </div>

@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "batch_id": "070_vc_littlestone_foundations",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete theorem-label coverage of the vc-littlestone manuscript by promoting the VC sandwich and Sauer bounds, shift monotonicity, the thicket Sauer bound, and joint VC/Littlestone operation monotonicity, while adding down-shift as a normalized operation.",
+  "source_refs": [
+    "PartialCubes:papers/vc-littlestone/main.tex#thm:vc-bounds",
+    "PartialCubes:papers/vc-littlestone/main.tex#lem:shift-vc",
+    "PartialCubes:papers/vc-littlestone/main.tex#thm:thicket-sauer",
+    "PartialCubes:papers/vc-littlestone/main.tex#prop:operations-ldim"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized operation, exact inequalities, monotonicity laws, concise proofs, and primary citations. The manuscript retains the full development of shattering, sequential levels, equality classes, and detailed inductive proof.",
+    "recoverability": "Every promoted claim has an exact labelled proof-source locator; bibliography entries retain DOI or arXiv identifiers.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/operations/019_down_shift.json", "sha256": "c9e17765098d5c61fa86416e97dcd6891db9e87d3aab2b519eacf17b380ffca5"},
+    {"path": "data/results/197_vc_sandwich_and_sauer_bounds.json", "sha256": "3335c214ac8e2620058de59f35e90695a20d36f296d6290f9ad62192a3808b5a"},
+    {"path": "data/results/198_down_shifts_do_not_increase_vc_dimension.json", "sha256": "3d6db0a7e3d689a5d43698bd1cb1f1d9e0d7c699f6e8c169ddb4bec35bdf6368"},
+    {"path": "data/results/199_thicket_sauer_shelah_bound.json", "sha256": "640d79aa280a197d4130a7b972b1394b1f1e4d6b5652287362ffe2a08782e993"},
+    {"path": "data/results/200_vc_littlestone_operation_monotonicity.json", "sha256": "c0fbecc1c9c4879d529dedfea75f9a6ac322224b66b6adcb3ba9139830d65a3d"},
+    {"path": "data/latex/references.bib", "sha256": "dc4de881d1d344c2049238082dab77615f26859ba5dcfee05af16a8aed168ef0"},
+    {"path": "migration/bibliography_queue.json", "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"},
+    {"path": "migration/coverage.json", "sha256": "f7e226fbad341e05c68218cb561a0fd40c02c53a732be54cbd83165d6332c540"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "12f6cbdc7d3f8f0d5f2045874753496764ca4baee451780850b73996959fb678"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1362 records.",
+    "website": "Normalized 1378 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; the manuscript-result audit now reports vc-littlestone at 7 of 7 unique theorem-like labels covered."
+  },
+  "deferred": [
+    "Open questions and expository unlabelled remarks remain in the manuscript rather than becoming database question records."
+  ]
+}
