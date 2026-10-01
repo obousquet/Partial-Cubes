@@ -1,0 +1,13 @@
+{
+  "id": 113,
+  "short_name": "opposite_triple_square_completion",
+  "name": "Square Completion for Opposite Maximum Triples",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/peripheral_expansion"],
+  "result_type": "construction",
+  "statement": "Let $A_0\\subset A_1\\subset A_2$ and $B_0\\subset B_1\\subset B_2$ be maximum triples of ranks $r,r+1,r+2$ and $s,s+1,s+2$, with common marked sections $C_i,D_i$ and nonempty $C_0,D_0$. The four square fibers $C_0\\times D_2$, $C_1\\times D_1$, $C_2\\times D_0$, and $C_0\\times D_0$ have a maximum parent of rank $r+s+3$ with at most $\\max(|P|,r)+\\max(|Q|,s)+2$ auxiliary coordinates. Unmarked triples need at most $r+s+2$ auxiliaries.",
+  "status": "established",
+  "proof": "Prepare the marked faces so their entry sublevels are exactly the supplied triples. Over each pair of private entry levels place an explicit nested maximum class on the two visible square coordinates and two marked controls: a four-cube, punctured four-cube, one of two rank-two complements of trees, one of four rank-one stars, a singleton, or the empty class. Its rank depends only on the level sum. Vandermonde gives the rank-$(r+s+3)$ Sauer count and missing private traces bound the VC dimension. Fixing both private marks and the two controls recovers the four displayed fibers.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:square-triple-parent",
+  "witness_ids": ["#examples/rank_three_square_completion"]
+}

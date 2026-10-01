@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "batch_id": "033_maximum_parent_expansions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize square completion, projection--reduction gluing, convex and complementary site expansions, strict convex sign-class parents, exact two-monotone-shore parameters, and maximum-parent constructions for learning spaces.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#thm:square-triple-parent",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:block-gluing",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:face-expansion",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:dual-convex-expansion",
+    "CompressionSchemes:maximum_parent_methods.tex#lem:strict-realization",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:convex-realization",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-parameters",
+    "CompressionSchemes:maximum_parent_methods.tex#ex:monotone-optimal-parent",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:learning-maxmin",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:nested-learning"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized theorem, closure, class-inclusion, example, concise proof, and exact replay records. CompressionSchemes retains the complete maximum-sequence and agreement-graph proofs, control-fiber tables, geometric perturbation arguments, literature discussion, scope limitations, and manuscript layout.",
+    "recoverability": "The current manuscript and reconciliation hashes are retained; the reconciliation packet copied in Batch 032 contains exact statement hashes and audit locations for every promoted label.",
+    "reconciliation": "Convex-geometry ideals, learning spaces, and daisy cubes already had structural records in Partial-Cubes. This batch adds their proved maximum-parent inclusions and quantitative constructions without replacing their existing class definitions or coefficient-space theorems.",
+    "mutation": "No source file in CompressionSchemes or another sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains the current source hash, promoted statement hashes, line locations, and scoped audit headings."
+    },
+    {
+      "id": "database-maximum-parent-expansions-verifier",
+      "path": "scripts/verify_maximum_parent_expansions.py",
+      "sha256": "2c87eae6df1e8253a186df3ed7630bd33f45ca9d326563eadea97f4d8c4ef910",
+      "assertions": "Constructs the 93-word square parent and 16-word optimal downset parent, enumerates all three-coordinate learning spaces and their exact inequalities, and checks the nested nonconvex expansion."
+    },
+    {
+      "id": "maximum-parent-expansions-database-replay",
+      "path": "data/examples/assets/maximum_parent_expansions_database_verification.json",
+      "sha256": "e5a6893161666cc90e5265cfcfbd47e41d61098fee42e2a48f35d9e5c0509120",
+      "assertions": "Passed the 18/93 square section-parent construction, 8/16 optimal monotone parent, 252 prerequisite inequalities on 156 witnesses in 35 learning spaces, and the 12/5/17 nested expansion."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/041_monotone_optimal_parent.json",
+      "sha256": "429d2055aaa65a1a01278e8f25aced97aa82fdbcaf767a00a737be37e2c4630f"
+    },
+    {
+      "path": "data/examples/042_nested_learning_nonconvex_site.json",
+      "sha256": "b613bbacbc8f153c5193eb586f12cc907972c198532bf79b04d5419687d78631"
+    },
+    {
+      "path": "data/examples/043_rank_three_square_completion.json",
+      "sha256": "11c4dcacbf4393ba98a89cdc90427e5283513b345b26a235ecdc16fb9ca329e0"
+    },
+    {
+      "path": "data/examples/assets/maximum_parent_expansions_database_verification.json",
+      "sha256": "e5a6893161666cc90e5265cfcfbd47e41d61098fee42e2a48f35d9e5c0509120"
+    },
+    {
+      "path": "data/operation_results/122_maximum_generated_convex_site_expansion.json",
+      "sha256": "0c76ac2c24f5246dc7bc7c7ce6aca7dfe91d47c9bb58dd9e63e4148b3de616ae"
+    },
+    {
+      "path": "data/operation_results/123_maximum_generated_complementary_convex_site_expansion.json",
+      "sha256": "26b22ab39f13b11a7b4d3b8b3ce1d5e656cd32d2e1b263a1b3296bae5e22f97e"
+    },
+    {
+      "path": "data/operation_results/124_learning_spaces_nested_peripheral_expansion.json",
+      "sha256": "9d9e8a675522bb8daed5052d0bbe58e188eaed49228c8d36a90d03943ace90bf"
+    },
+    {
+      "path": "data/relations/095_learning_spaces_subset_maximum_generated.json",
+      "sha256": "2dbea6b65b9eaa1516d422742ebf347b0aa5c2df92137bfa15826346dba52840"
+    },
+    {
+      "path": "data/relations/096_convex_geometry_ideals_subset_maximum_generated.json",
+      "sha256": "fb83391834ccc3862239a309ec7e10e61b66f61141536b251dd73b3425a82139"
+    },
+    {
+      "path": "data/relations/097_daisy_cubes_subset_maximum_generated.json",
+      "sha256": "40298bf05442b7d35f62f196d3f235d8741c0cceccbda4a1abca6322d273721f"
+    },
+    {
+      "path": "data/results/113_opposite_triple_square_completion.json",
+      "sha256": "6633adaa5a62fa2d74432bc11b8257adf2183b7fc9f91d6958391cc11b982fea"
+    },
+    {
+      "path": "data/results/114_projection_reduction_gluing.json",
+      "sha256": "7f43fea5384c346097f6e196bb585b94db3c14fd566898978476912c2e9812ce"
+    },
+    {
+      "path": "data/results/115_convex_sign_classes_maximum_generated.json",
+      "sha256": "cf0731e70130f8c6e74493ebd52cf128f168e7220227f62af7f0232656b62260"
+    },
+    {
+      "path": "data/results/116_two_monotone_shores_parent_parameters.json",
+      "sha256": "3c1d767ad235840233c9f2796e610beb6f87fa196efb0ca21ef7f0fdeb24fa0f"
+    },
+    {
+      "path": "data/results/117_learning_space_maximum_parent_bound.json",
+      "sha256": "c91fc76926508b1fc11df5678ee62216a798766a7c4264d7367545936d247950"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "407fcee2a7f206c0ec3e92c8c285604e294706507b89a67b3f75a27e0083b944"
+    },
+    {
+      "path": "scripts/verify_maximum_parent_expansions.py",
+      "sha256": "2c87eae6df1e8253a186df3ed7630bd33f45ca9d326563eadea97f4d8c4ef910"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 668 records.",
+    "exact_replay": "All required source labels and finite square, monotone, learning-space, and nested-expansion certificates passed exactly.",
+    "website": "Normalized 684 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 78 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Minimum-section deletion, face avoidance, fixed-rank auxiliary profiles, Boolean substitution, and remaining maximum-parent constructions.",
+    "Yang-complex algebraic fiber-product formulas.",
+    "Remaining PartialCubes structural-invariant and coefficient-topology facts."
+  ]
+}

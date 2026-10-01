@@ -1,0 +1,12 @@
+{
+  "id": 123,
+  "short_name": "maximum_generated_complementary_convex_site_expansion",
+  "name": "Maximum-Generated Expansion over Complementary Convex Sites",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/peripheral_expansion",
+  "result_type": "closed_under",
+  "status": "established",
+  "statement": "If $S\\subseteq B$ are maximum-generated and $B^c=S^c\\cap F$ for a coordinate face $F$, then the peripheral expansion $E(B,S)$ is maximum-generated. In particular, when $B$ is the complement of a coordinate face, every nonempty maximum-generated $S\\subseteq B$ is allowed without a convexity assumption inside $B$.",
+  "proof": "Apply convex-site expansion to $S^c$ at the face trace $B^c$, then complement the resulting class and reverse the new height coordinate. Maximum-generated classes are complement closed.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:dual-convex-expansion"
+}

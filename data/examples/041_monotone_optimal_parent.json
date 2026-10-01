@@ -1,0 +1,11 @@
+{
+  "id": 41,
+  "short_name": "monotone_optimal_parent",
+  "name": "Downset with Simultaneously Optimal Parent Parameters",
+  "symbol": "C_{8}\\subset Q_4",
+  "object_type": "set_family",
+  "definition": "In binary integer notation on weights $1,2,4,8$, take $C=\\{0,1,2,3,4,5,6,8\\}$: every proper subset of $\\{1,2,3\\}$ together with the singleton $\\{4\\}$.",
+  "properties": "Its VC dimension and least minimal-nonface size are both two, so its minimum parent rank is two and its minimum auxiliary count is one. With auxiliary weight 16, the 16-word class $M=C\\cup\\{16+x:x\\in\\{0,1,2,4,8,9,10,12\\}\\}$ is an explicit rank-two maximum parent attaining both minima.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#ex:monotone-optimal-parent",
+  "verification": "scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json"
+}

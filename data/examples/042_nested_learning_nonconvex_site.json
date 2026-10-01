@@ -1,0 +1,11 @@
+{
+  "id": 42,
+  "short_name": "nested_learning_nonconvex_site",
+  "name": "Nested Learning-Space Expansion Beyond Convex Sites",
+  "symbol": "E(B,S)",
+  "object_type": "construction",
+  "definition": "On $\\{a,b,c,d\\}$ let $B$ contain the sets satisfying $c\\in T\\Rightarrow T\\cap\\{a,b\\}\\ne\\varnothing$ and $d\\in T\\Rightarrow T\\cap\\{b,c\\}\\ne\\varnothing$. Let $S=\\{\\varnothing,\\{a\\},\\{a,b\\},\\{a,b,c\\},\\{a,b,c,d\\}\\}$.",
+  "properties": "$S\\subseteq B$ are learning spaces, so their peripheral expansion is a reflected learning space and maximum-generated. The site $S$ is not convex in $B$: it contains opposite vertices of a cube but omits other vertices. The complementary face criterion also fails, since the smallest face containing $B^c$ is $b=0$ and its trace in $S^c$ has six vertices rather than four.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:nested-learning",
+  "verification": "scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json"
+}

@@ -2010,6 +2010,85 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-113" style="position:relative;">
+
+        <h3><a href="results/opposite_triple_square_completion.html" class="table-title-link">Square Completion for Opposite Maximum Triples</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square Completion for Opposite Maximum Triples</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A_0\subset A_1\subset A_2$ and $B_0\subset B_1\subset B_2$ be maximum triples of ranks $r,r+1,r+2$ and $s,s+1,s+2$, with common marked sections $C_i,D_i$ and nonempty $C_0,D_0$. The four square fibers $C_0\times D_2$, $C_1\times D_1$, $C_2\times D_0$, and $C_0\times D_0$ have a maximum parent of rank $r+s+3$ with at most $\max(|P|,r)+\max(|Q|,s)+2$ auxiliary coordinates. Unmarked triples need at most $r+s+2$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Prepare the marked faces so their entry sublevels are exactly the supplied triples. Over each pair of private entry levels place an explicit nested maximum class on the two visible square coordinates and two marked controls: a four-cube, punctured four-cube, one of two rank-two complements of trees, one of four rank-one stars, a singleton, or the empty class. Its rank depends only on the level sum. Vandermonde gives the rank-$(r+s+3)$ Sauer count and missing private traces bound the VC dimension. Fixing both private marks and the two controls recovers the four displayed fibers.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:square-triple-parent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rank_three_square_completion.html">Rank-Three Square Completion</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-114" style="position:relative;">
+
+        <h3><a href="results/projection_reduction_gluing.html" class="table-title-link">Projection--Reduction Gluing for Maximum Parents</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projection--Reduction Gluing for Maximum Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/universal_projection.html">Universal Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty maximum-generated $H\subseteq\{0,1\}^{X\sqcup D}$, put $U=\pi_XH$ and $I=\partial_DH$. Then $(U\times\{0\})\cup(I\times\{1\})$ is maximum-generated. If a supplied parent has rank $r$, marked auxiliary set $T$, $k=|D|$, $N=|X|+|T|$, and $0\le r-k<\min(r,N)$, a parent of rank $\min(r,N)$ retains the original mark and uses exactly $\min(r,N)-(r-k)-1\le k-1$ new auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Successively reduce the parent on an initial part of $D$ and project the rest. The resulting nested classes on $X\sqcup T$ pass through consecutive maximum ranks from the full projection to the full reduction. Extend them to a maximum sequence. A delayed one-coordinate maximum sequence has entry levels zero and the rank gap at its two visible values; the disjoint level sum is a maximum parent whose marked section is exactly the two-shore gluing. Empty and equal endpoints reduce to constant-coordinate and product closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:block-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-115" style="position:relative;">
+
+        <h3><a href="results/convex_sign_classes_maximum_generated.html" class="table-title-link">Convex Sign Classes Have Maximum Parents</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Convex Sign Classes Have Maximum Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty binary class is the set of coordinate orthants meeting an open convex set in $\mathbb R^n$, then it is maximum-generated. More quantitatively, if a bounded full-dimensional polytope uses $q$ nonconstant inequalities plus $2n$ box inequalities, contains an interior witness in every allowed orthant, and misses every forbidden closed orthant, then the class has a rank-$n$ maximum parent with at most $q+2n$ auxiliaries. The analogous statement for $n$ affine visible forms in $\mathbb R^d$ gives rank $d$ and $q+2d$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the visible hyperplanes and the oriented polytope facets as auxiliary hyperplanes. Small generic perturbations preserve all chosen witnesses; the box inequalities uniformly bound possible witnesses, so compactness prevents a forbidden sign region from appearing. Perturb into affine general position. The region class of the arrangement has the Sauer number and VC dimension equal to the ambient dimension, hence is maximum, and fixing the auxiliary facet signs recovers the original class. An arbitrary open convex realization is reduced to the bounded case by taking the convex hull of small boxes around one witness per allowed orthant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#lem:strict-realization; CompressionSchemes:maximum_parent_methods.tex?#cor:convex-realization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-116" style="position:relative;">
+
+        <h3><a href="results/two_monotone_shores_parent_parameters.html" class="table-title-link">Exact Maximum-Parent Parameters for Two Monotone Shores</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Maximum-Parent Parameters for Two Monotone Shores</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C=(A\times\{0\})\cup(B\times\{1\})$ be nonempty and proper, where after common coordinate reflections $A,B$ are upsets. Then $C$ is ample. If $d=\operatorname{VC}(C)$ and $s$ is the least support size of a minimally missing pattern, a rank-$r$ maximum parent with exactly $m$ auxiliary coordinates exists exactly when $r\ge d$ and $m\ge r+1-s$. Thus the simultaneous minima are rank $d$ and $d+1-s$ auxiliaries. This includes every proper nonempty downset and daisy cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Upset projections supply positioned cubes for every shattered support. Necessity follows because sections cannot raise VC dimension and a missing pattern of size $s$ needs $r+1-s$ auxiliary coordinates in any rank-$r$ parent witness. For sufficiency, mark $m$ zero auxiliaries and choose on every $(r+1)$-support the lexicographically first pattern absent from the marked target. Monotonicity makes these patterns zero or singleton patterns and makes every agreement graph connected. The resulting avoiding class is maximum of rank $r$, and padding each minimal missing pattern with auxiliaries proves that its marked section is exactly $C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-parameters</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-117" style="position:relative;">
+
+        <h3><a href="results/learning_space_maximum_parent_bound.html" class="table-title-link">Maximum Parents of Learning Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Parents of Learning Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite learning space is maximum-generated. On $n\ge1$ coordinates, if it has $q$ inclusion-minimal missing consistent patterns, it has a coordinate-hyperplane convex realization in $\mathbb R^n$ and a rank-$n$ maximum parent with at most $q+2n$ auxiliary coordinates. The zero-coordinate learning space needs none.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Union closure makes every minimal missing pattern have exactly one positive literal, say $a=1$ with prerequisites $A$ fixed to zero. Accessibility orders every feasible state by feasible prefixes. Give earlier learned elements geometrically larger positive coordinates, absent elements value $-1$, and use the inequalities $x_a<(n+1)^{-1}\sum_{b\in A}x_b$. Every feasible state satisfies them strictly and every forbidden orthant violates one. Adding a bounding box and applying the strict-realization construction gives the stated parent bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:learning-maxmin</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

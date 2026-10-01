@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-115" style="position:relative;">
 
-        <h3><a href="operations/peripheral_expansion.html" class="table-title-link">Peripheral Expansion</a></h3>
+        <h3><a href="results/convex_sign_classes_maximum_generated.html" class="table-title-link">Convex Sign Classes Have Maximum Parents</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Peripheral Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{PerExp}">
-            \[\operatorname{PerExp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Given an isometric subgraph or subfamily $S\subseteq B$, form $P=(B\times\{0\})\cup(S\times\{1\})$. Equivalently, this is an expansion whose two cover members are $B$ and $S$, so one cover member is the whole base.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The site $S$ and the base $B$ are both object inputs. The peripheral condition is stronger than being an arbitrary partial-cube expansion.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:peripheral-expansion</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/dismantlable_ample_peripheral_expansion.html'>Dismantlable Ample Peripheral-Expansion Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li><li><a href='operation_results/maximum_generated_convex_site_expansion.html'>Maximum-Generated Expansion over Convex Sites</a></li><li><a href='operation_results/maximum_generated_complementary_convex_site_expansion.html'>Maximum-Generated Expansion over Complementary Convex Sites</a></li><li><a href='operation_results/learning_spaces_nested_peripheral_expansion.html'>Nested Learning Spaces Form a Learning-Space Expansion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/opposite_triple_square_completion.html'>Square Completion for Opposite Maximum Triples</a></li><li><a href='results/projection_reduction_gluing.html'>Projection--Reduction Gluing for Maximum Parents</a></li></ul></p></div>
+        <p><strong>Name: </strong>Convex Sign Classes Have Maximum Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty binary class is the set of coordinate orthants meeting an open convex set in $\mathbb R^n$, then it is maximum-generated. More quantitatively, if a bounded full-dimensional polytope uses $q$ nonconstant inequalities plus $2n$ box inequalities, contains an interior witness in every allowed orthant, and misses every forbidden closed orthant, then the class has a rank-$n$ maximum parent with at most $q+2n$ auxiliaries. The analogous statement for $n$ affine visible forms in $\mathbb R^d$ gives rank $d$ and $q+2d$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the visible hyperplanes and the oriented polytope facets as auxiliary hyperplanes. Small generic perturbations preserve all chosen witnesses; the box inequalities uniformly bound possible witnesses, so compactness prevents a forbidden sign region from appearing. Perturb into affine general position. The region class of the arrangement has the Sauer number and VC dimension equal to the ambient dimension, hence is maximum, and fixing the auxiliary facet signs recovers the original class. An arbitrary open convex realization is reduced to the bounded case by taking the convex hull of small boxes around one witness per allowed orthant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#lem:strict-realization; CompressionSchemes:maximum_parent_methods.tex?#cor:convex-realization</p></div>
 
         </div>
     </div>

@@ -1,0 +1,11 @@
+{
+  "id": 117,
+  "short_name": "learning_space_maximum_parent_bound",
+  "name": "Maximum Parents of Learning Spaces",
+  "class_ids": ["#classes/learning_space_graphs", "#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "Every finite learning space is maximum-generated. On $n\\ge1$ coordinates, if it has $q$ inclusion-minimal missing consistent patterns, it has a coordinate-hyperplane convex realization in $\\mathbb R^n$ and a rank-$n$ maximum parent with at most $q+2n$ auxiliary coordinates. The zero-coordinate learning space needs none.",
+  "status": "established",
+  "proof": "Union closure makes every minimal missing pattern have exactly one positive literal, say $a=1$ with prerequisites $A$ fixed to zero. Accessibility orders every feasible state by feasible prefixes. Give earlier learned elements geometrically larger positive coordinates, absent elements value $-1$, and use the inequalities $x_a<(n+1)^{-1}\\sum_{b\\in A}x_b$. Every feasible state satisfies them strictly and every forbidden orthant violates one. Adding a bounding box and applying the strict-realization construction gives the stated parent bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:learning-maxmin"
+}

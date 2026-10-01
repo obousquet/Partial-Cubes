@@ -2078,6 +2078,55 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-122" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_convex_site_expansion.html" class="table-title-link">Maximum-Generated Expansion over Convex Sites</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Expansion over Convex Sites</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If $B$ is maximum-generated and $S$ is a nonempty geodesically convex subset of its one-inclusion graph, then $(B\times\{0\})\cup(S\times\{1\})$ is maximum-generated. Equivalently, this holds when $S=B\cap F$ for a coordinate face $F$, including positioned cubes; $B$ and $S$ then have nested consecutive-rank maximum parents with a common mark.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>In an ample class, nonempty geodesically convex subsets are exactly coordinate-face traces. Encode the face equalities by joining a three-word maximum path along each fixed coordinate. The resulting maximum-generated class has projection $B$ and full reduction $S$. Projection--reduction gluing produces the expansion, and the nested-parent construction gives the consecutive ranks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:face-expansion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-123" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_complementary_convex_site_expansion.html" class="table-title-link">Maximum-Generated Expansion over Complementary Convex Sites</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Generated Expansion over Complementary Convex Sites</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If $S\subseteq B$ are maximum-generated and $B^c=S^c\cap F$ for a coordinate face $F$, then the peripheral expansion $E(B,S)$ is maximum-generated. In particular, when $B$ is the complement of a coordinate face, every nonempty maximum-generated $S\subseteq B$ is allowed without a convexity assumption inside $B$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Apply convex-site expansion to $S^c$ at the face trace $B^c$, then complement the resulting class and reverse the new height coordinate. Maximum-generated classes are complement closed.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:dual-convex-expansion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-124" style="position:relative;">
+
+        <h3><a href="operation_results/learning_spaces_nested_peripheral_expansion.html" class="table-title-link">Nested Learning Spaces Form a Learning-Space Expansion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nested Learning Spaces Form a Learning-Space Expansion</p>
+<p><strong>Class: </strong><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If $S\subseteq B$ are learning spaces in the same coordinate orientation, then $E(B,S)$ is, after reflecting the new coordinate, a learning space and hence maximum-generated.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nested_learning_nonconvex_site.html">Nested Learning-Space Expansion Beyond Convex Sites</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Write the reflected class as $(S\times\{0\})\cup(B\times\{1\})$. Union closure holds within and between shores because $S\subseteq B$. Accessibility holds in the zero shore by accessibility of $S$; in a nontrivial one-shore state remove an old element using accessibility of $B$, and from the singleton new-coordinate state remove the new coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:nested-learning</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

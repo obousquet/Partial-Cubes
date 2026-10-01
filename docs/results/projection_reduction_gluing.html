@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-114" style="position:relative;">
 
-        <h3><a href="operations/peripheral_expansion.html" class="table-title-link">Peripheral Expansion</a></h3>
+        <h3><a href="results/projection_reduction_gluing.html" class="table-title-link">Projection--Reduction Gluing for Maximum Parents</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Peripheral Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{PerExp}">
-            \[\operatorname{PerExp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Given an isometric subgraph or subfamily $S\subseteq B$, form $P=(B\times\{0\})\cup(S\times\{1\})$. Equivalently, this is an expansion whose two cover members are $B$ and $S$, so one cover member is the whole base.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The site $S$ and the base $B$ are both object inputs. The peripheral condition is stronger than being an arbitrary partial-cube expansion.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:peripheral-expansion</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/dismantlable_ample_peripheral_expansion.html'>Dismantlable Ample Peripheral-Expansion Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li><li><a href='operation_results/maximum_generated_convex_site_expansion.html'>Maximum-Generated Expansion over Convex Sites</a></li><li><a href='operation_results/maximum_generated_complementary_convex_site_expansion.html'>Maximum-Generated Expansion over Complementary Convex Sites</a></li><li><a href='operation_results/learning_spaces_nested_peripheral_expansion.html'>Nested Learning Spaces Form a Learning-Space Expansion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/opposite_triple_square_completion.html'>Square Completion for Opposite Maximum Triples</a></li><li><a href='results/projection_reduction_gluing.html'>Projection--Reduction Gluing for Maximum Parents</a></li></ul></p></div>
+        <p><strong>Name: </strong>Projection--Reduction Gluing for Maximum Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/universal_projection.html">Universal Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty maximum-generated $H\subseteq\{0,1\}^{X\sqcup D}$, put $U=\pi_XH$ and $I=\partial_DH$. Then $(U\times\{0\})\cup(I\times\{1\})$ is maximum-generated. If a supplied parent has rank $r$, marked auxiliary set $T$, $k=|D|$, $N=|X|+|T|$, and $0\le r-k<\min(r,N)$, a parent of rank $\min(r,N)$ retains the original mark and uses exactly $\min(r,N)-(r-k)-1\le k-1$ new auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Successively reduce the parent on an initial part of $D$ and project the rest. The resulting nested classes on $X\sqcup T$ pass through consecutive maximum ranks from the full projection to the full reduction. Extend them to a maximum sequence. A delayed one-coordinate maximum sequence has entry levels zero and the rank gap at its two visible values; the disjoint level sum is a maximum parent whose marked section is exactly the two-shore gluing. Empty and equal endpoints reduce to constant-coordinate and product closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:block-gluing</p></div>
 
         </div>
     </div>

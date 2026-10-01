@@ -982,6 +982,72 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-41" style="position:relative;">
+
+        <h3><a href="examples/monotone_optimal_parent.html" class="table-title-link">Downset with Simultaneously Optimal Parent Parameters</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Downset with Simultaneously Optimal Parent Parameters</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C_{8}\subset Q_4">
+            \[C_{8}\subset Q_4\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>In binary integer notation on weights $1,2,4,8$, take $C=\{0,1,2,3,4,5,6,8\}$: every proper subset of $\{1,2,3\}$ together with the singleton $\{4\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Its VC dimension and least minimal-nonface size are both two, so its minimum parent rank is two and its minimum auxiliary count is one. With auxiliary weight 16, the 16-word class $M=C\cup\{16+x:x\in\{0,1,2,4,8,9,10,12\}\}$ is an explicit rank-two maximum parent attaining both minima.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-42" style="position:relative;">
+
+        <h3><a href="examples/nested_learning_nonconvex_site.html" class="table-title-link">Nested Learning-Space Expansion Beyond Convex Sites</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nested Learning-Space Expansion Beyond Convex Sites</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="E(B,S)">
+            \[E(B,S)\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>On $\{a,b,c,d\}$ let $B$ contain the sets satisfying $c\in T\Rightarrow T\cap\{a,b\}\ne\varnothing$ and $d\in T\Rightarrow T\cap\{b,c\}\ne\varnothing$. Let $S=\{\varnothing,\{a\},\{a,b\},\{a,b,c\},\{a,b,c,d\}\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$S\subseteq B$ are learning spaces, so their peripheral expansion is a reflected learning space and maximum-generated. The site $S$ is not convex in $B$: it contains opposite vertices of a cube but omits other vertices. The complementary face criterion also fails, since the smallest face containing $B^c$ is $b=0$ and its trace in $S^c$ has six vertices rather than four.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:nested-learning</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-43" style="position:relative;">
+
+        <h3><a href="examples/rank_three_square_completion.html" class="table-title-link">Rank-Three Square Completion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rank-Three Square Completion</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="F_{18}\subset Q_6">
+            \[F_{18}\subset Q_6\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the rank-zero, rank-one, and rank-two Hamming balls on each of two private two-cubes as the two maximum triples in the opposite-triple square construction.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The four visible square sections have sizes $4,9,4,1$, so the completed class has 18 words on six coordinates. The explicit construction gives a rank-three maximum parent with $\sum_{i=0}^3\binom8i=93$ words on eight coordinates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:square-triple-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_maximum_parent_expansions.py; data/examples/assets/maximum_parent_expansions_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

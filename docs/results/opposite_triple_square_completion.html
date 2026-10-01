@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-113" style="position:relative;">
 
-        <h3><a href="operations/peripheral_expansion.html" class="table-title-link">Peripheral Expansion</a></h3>
+        <h3><a href="results/opposite_triple_square_completion.html" class="table-title-link">Square Completion for Opposite Maximum Triples</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Peripheral Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{PerExp}">
-            \[\operatorname{PerExp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Given an isometric subgraph or subfamily $S\subseteq B$, form $P=(B\times\{0\})\cup(S\times\{1\})$. Equivalently, this is an expansion whose two cover members are $B$ and $S$, so one cover member is the whole base.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The site $S$ and the base $B$ are both object inputs. The peripheral condition is stronger than being an arbitrary partial-cube expansion.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:peripheral-expansion</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/dismantlable_ample_peripheral_expansion.html'>Dismantlable Ample Peripheral-Expansion Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li><li><a href='operation_results/maximum_generated_convex_site_expansion.html'>Maximum-Generated Expansion over Convex Sites</a></li><li><a href='operation_results/maximum_generated_complementary_convex_site_expansion.html'>Maximum-Generated Expansion over Complementary Convex Sites</a></li><li><a href='operation_results/learning_spaces_nested_peripheral_expansion.html'>Nested Learning Spaces Form a Learning-Space Expansion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/opposite_triple_square_completion.html'>Square Completion for Opposite Maximum Triples</a></li><li><a href='results/projection_reduction_gluing.html'>Projection--Reduction Gluing for Maximum Parents</a></li></ul></p></div>
+        <p><strong>Name: </strong>Square Completion for Opposite Maximum Triples</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A_0\subset A_1\subset A_2$ and $B_0\subset B_1\subset B_2$ be maximum triples of ranks $r,r+1,r+2$ and $s,s+1,s+2$, with common marked sections $C_i,D_i$ and nonempty $C_0,D_0$. The four square fibers $C_0\times D_2$, $C_1\times D_1$, $C_2\times D_0$, and $C_0\times D_0$ have a maximum parent of rank $r+s+3$ with at most $\max(|P|,r)+\max(|Q|,s)+2$ auxiliary coordinates. Unmarked triples need at most $r+s+2$ auxiliaries.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Prepare the marked faces so their entry sublevels are exactly the supplied triples. Over each pair of private entry levels place an explicit nested maximum class on the two visible square coordinates and two marked controls: a four-cube, punctured four-cube, one of two rank-two complements of trees, one of four rank-one stars, a singleton, or the empty class. Its rank depends only on the level sum. Vandermonde gives the rank-$(r+s+3)$ Sauer count and missing private traces bound the VC dimension. Fixing both private marks and the two controls recovers the four displayed fibers.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:square-triple-parent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rank_three_square_completion.html">Rank-Three Square Completion</a></li></ul></p>
 
         </div>
     </div>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
+    <div class="table-card" id="math-122" style="position:relative;">
 
-        <h3><a href="operations/peripheral_expansion.html" class="table-title-link">Peripheral Expansion</a></h3>
+        <h3><a href="operation_results/maximum_generated_convex_site_expansion.html" class="table-title-link">Maximum-Generated Expansion over Convex Sites</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Peripheral Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{PerExp}">
-            \[\operatorname{PerExp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Given an isometric subgraph or subfamily $S\subseteq B$, form $P=(B\times\{0\})\cup(S\times\{1\})$. Equivalently, this is an expansion whose two cover members are $B$ and $S$, so one cover member is the whole base.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The site $S$ and the base $B$ are both object inputs. The peripheral condition is stronger than being an arbitrary partial-cube expansion.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:peripheral-expansion</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/dismantlable_ample_peripheral_expansion.html'>Dismantlable Ample Peripheral-Expansion Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li><li><a href='operation_results/maximum_generated_convex_site_expansion.html'>Maximum-Generated Expansion over Convex Sites</a></li><li><a href='operation_results/maximum_generated_complementary_convex_site_expansion.html'>Maximum-Generated Expansion over Complementary Convex Sites</a></li><li><a href='operation_results/learning_spaces_nested_peripheral_expansion.html'>Nested Learning Spaces Form a Learning-Space Expansion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/opposite_triple_square_completion.html'>Square Completion for Opposite Maximum Triples</a></li><li><a href='results/projection_reduction_gluing.html'>Projection--Reduction Gluing for Maximum Parents</a></li></ul></p></div>
+        <p><strong>Name: </strong>Maximum-Generated Expansion over Convex Sites</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>If $B$ is maximum-generated and $S$ is a nonempty geodesically convex subset of its one-inclusion graph, then $(B\times\{0\})\cup(S\times\{1\})$ is maximum-generated. Equivalently, this holds when $S=B\cap F$ for a coordinate face $F$, including positioned cubes; $B$ and $S$ then have nested consecutive-rank maximum parents with a common mark.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>In an ample class, nonempty geodesically convex subsets are exactly coordinate-face traces. Encode the face equalities by joining a three-word maximum path along each fixed coordinate. The resulting maximum-generated class has projection $B$ and full reduction $S$. Projection--reduction gluing produces the expansion, and the nested-parent construction gives the consecutive ranks.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:face-expansion</p></div>
 
         </div>
     </div>

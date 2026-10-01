@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-116" style="position:relative;">
 
-        <h3><a href="operations/peripheral_expansion.html" class="table-title-link">Peripheral Expansion</a></h3>
+        <h3><a href="results/two_monotone_shores_parent_parameters.html" class="table-title-link">Exact Maximum-Parent Parameters for Two Monotone Shores</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Peripheral Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{PerExp}">
-            \[\operatorname{PerExp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Given an isometric subgraph or subfamily $S\subseteq B$, form $P=(B\times\{0\})\cup(S\times\{1\})$. Equivalently, this is an expansion whose two cover members are $B$ and $S$, so one cover member is the whole base.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The site $S$ and the base $B$ are both object inputs. The peripheral condition is stronger than being an arbitrary partial-cube expansion.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:peripheral-expansion</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/dismantlable_ample_peripheral_expansion.html'>Dismantlable Ample Peripheral-Expansion Theorem</a></li><li><a href='operation_results/cover_recursive_peripheral_expansion.html'>Convex-Treelike Peripheral-Expansion Theorem</a></li><li><a href='operation_results/maximum_generated_convex_site_expansion.html'>Maximum-Generated Expansion over Convex Sites</a></li><li><a href='operation_results/maximum_generated_complementary_convex_site_expansion.html'>Maximum-Generated Expansion over Complementary Convex Sites</a></li><li><a href='operation_results/learning_spaces_nested_peripheral_expansion.html'>Nested Learning Spaces Form a Learning-Space Expansion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/opposite_triple_square_completion.html'>Square Completion for Opposite Maximum Triples</a></li><li><a href='results/projection_reduction_gluing.html'>Projection--Reduction Gluing for Maximum Parents</a></li></ul></p></div>
+        <p><strong>Name: </strong>Exact Maximum-Parent Parameters for Two Monotone Shores</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C=(A\times\{0\})\cup(B\times\{1\})$ be nonempty and proper, where after common coordinate reflections $A,B$ are upsets. Then $C$ is ample. If $d=\operatorname{VC}(C)$ and $s$ is the least support size of a minimally missing pattern, a rank-$r$ maximum parent with exactly $m$ auxiliary coordinates exists exactly when $r\ge d$ and $m\ge r+1-s$. Thus the simultaneous minima are rank $d$ and $d+1-s$ auxiliaries. This includes every proper nonempty downset and daisy cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Upset projections supply positioned cubes for every shattered support. Necessity follows because sections cannot raise VC dimension and a missing pattern of size $s$ needs $r+1-s$ auxiliary coordinates in any rank-$r$ parent witness. For sufficiency, mark $m$ zero auxiliaries and choose on every $(r+1)$-support the lexicographically first pattern absent from the marked target. Monotonicity makes these patterns zero or singleton patterns and makes every agreement graph connected. The resulting avoiding class is maximum of rank $r$, and padding each minimal missing pattern with auxiliaries proves that its marked section is exactly $C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:monotone-parameters</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></li></ul></p>
 
         </div>
     </div>

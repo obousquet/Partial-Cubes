@@ -1,0 +1,12 @@
+{
+  "id": 122,
+  "short_name": "maximum_generated_convex_site_expansion",
+  "name": "Maximum-Generated Expansion over Convex Sites",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/peripheral_expansion",
+  "result_type": "closed_under",
+  "status": "established",
+  "statement": "If $B$ is maximum-generated and $S$ is a nonempty geodesically convex subset of its one-inclusion graph, then $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ is maximum-generated. Equivalently, this holds when $S=B\\cap F$ for a coordinate face $F$, including positioned cubes; $B$ and $S$ then have nested consecutive-rank maximum parents with a common mark.",
+  "proof": "In an ample class, nonempty geodesically convex subsets are exactly coordinate-face traces. Encode the face equalities by joining a three-word maximum path along each fixed coordinate. The resulting maximum-generated class has projection $B$ and full reduction $S$. Projection--reduction gluing produces the expansion, and the nested-parent construction gives the consecutive ranks.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:face-expansion"
+}

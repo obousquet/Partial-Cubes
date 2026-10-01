@@ -1,0 +1,11 @@
+{
+  "id": 115,
+  "short_name": "convex_sign_classes_maximum_generated",
+  "name": "Convex Sign Classes Have Maximum Parents",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "If a nonempty binary class is the set of coordinate orthants meeting an open convex set in $\\mathbb R^n$, then it is maximum-generated. More quantitatively, if a bounded full-dimensional polytope uses $q$ nonconstant inequalities plus $2n$ box inequalities, contains an interior witness in every allowed orthant, and misses every forbidden closed orthant, then the class has a rank-$n$ maximum parent with at most $q+2n$ auxiliaries. The analogous statement for $n$ affine visible forms in $\\mathbb R^d$ gives rank $d$ and $q+2d$ auxiliaries.",
+  "status": "established",
+  "proof": "Use the visible hyperplanes and the oriented polytope facets as auxiliary hyperplanes. Small generic perturbations preserve all chosen witnesses; the box inequalities uniformly bound possible witnesses, so compactness prevents a forbidden sign region from appearing. Perturb into affine general position. The region class of the arrangement has the Sauer number and VC dimension equal to the ambient dimension, hence is maximum, and fixing the auxiliary facet signs recovers the original class. An arbitrary open convex realization is reduced to the bounded case by taking the convex hull of small boxes around one witness per allowed orthant.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#lem:strict-realization; CompressionSchemes:maximum_parent_methods.tex#cor:convex-realization"
+}

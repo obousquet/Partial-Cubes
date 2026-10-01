@@ -1,0 +1,12 @@
+{
+  "id": 114,
+  "short_name": "projection_reduction_gluing",
+  "name": "Projection--Reduction Gluing for Maximum Parents",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/peripheral_expansion", "#operations/universal_projection"],
+  "result_type": "construction",
+  "statement": "For nonempty maximum-generated $H\\subseteq\\{0,1\\}^{X\\sqcup D}$, put $U=\\pi_XH$ and $I=\\partial_DH$. Then $(U\\times\\{0\\})\\cup(I\\times\\{1\\})$ is maximum-generated. If a supplied parent has rank $r$, marked auxiliary set $T$, $k=|D|$, $N=|X|+|T|$, and $0\\le r-k<\\min(r,N)$, a parent of rank $\\min(r,N)$ retains the original mark and uses exactly $\\min(r,N)-(r-k)-1\\le k-1$ new auxiliaries.",
+  "status": "established",
+  "proof": "Successively reduce the parent on an initial part of $D$ and project the rest. The resulting nested classes on $X\\sqcup T$ pass through consecutive maximum ranks from the full projection to the full reduction. Extend them to a maximum sequence. A delayed one-coordinate maximum sequence has entry levels zero and the rank gap at its two visible values; the disjoint level sum is a maximum parent whose marked section is exactly the two-shore gluing. Empty and equal endpoints reduce to constant-coordinate and product closure.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:block-gluing"
+}

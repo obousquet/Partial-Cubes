@@ -1,0 +1,12 @@
+{
+  "id": 116,
+  "short_name": "two_monotone_shores_parent_parameters",
+  "name": "Exact Maximum-Parent Parameters for Two Monotone Shores",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "result_type": "construction",
+  "statement": "Let $C=(A\\times\\{0\\})\\cup(B\\times\\{1\\})$ be nonempty and proper, where after common coordinate reflections $A,B$ are upsets. Then $C$ is ample. If $d=\\operatorname{VC}(C)$ and $s$ is the least support size of a minimally missing pattern, a rank-$r$ maximum parent with exactly $m$ auxiliary coordinates exists exactly when $r\\ge d$ and $m\\ge r+1-s$. Thus the simultaneous minima are rank $d$ and $d+1-s$ auxiliaries. This includes every proper nonempty downset and daisy cube.",
+  "status": "established",
+  "proof": "Upset projections supply positioned cubes for every shattered support. Necessity follows because sections cannot raise VC dimension and a missing pattern of size $s$ needs $r+1-s$ auxiliary coordinates in any rank-$r$ parent witness. For sufficiency, mark $m$ zero auxiliaries and choose on every $(r+1)$-support the lexicographically first pattern absent from the marked target. Monotonicity makes these patterns zero or singleton patterns and makes every agreement graph connected. The resulting avoiding class is maximum of rank $r$, and padding each minimal missing pattern with auxiliaries proves that its marked section is exactly $C$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:monotone-parameters",
+  "witness_ids": ["#examples/monotone_optimal_parent"]
+}

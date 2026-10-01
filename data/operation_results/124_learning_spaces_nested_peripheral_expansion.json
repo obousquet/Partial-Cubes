@@ -1,0 +1,13 @@
+{
+  "id": 124,
+  "short_name": "learning_spaces_nested_peripheral_expansion",
+  "name": "Nested Learning Spaces Form a Learning-Space Expansion",
+  "class_id": "#classes/learning_space_graphs",
+  "operation_id": "#operations/peripheral_expansion",
+  "result_type": "closed_under",
+  "status": "established",
+  "statement": "If $S\\subseteq B$ are learning spaces in the same coordinate orientation, then $E(B,S)$ is, after reflecting the new coordinate, a learning space and hence maximum-generated.",
+  "proof": "Write the reflected class as $(S\\times\\{0\\})\\cup(B\\times\\{1\\})$. Union closure holds within and between shores because $S\\subseteq B$. Accessibility holds in the zero shore by accessibility of $S$; in a nontrivial one-shore state remove an old element using accessibility of $B$, and from the singleton new-coordinate state remove the new coordinate.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:nested-learning",
+  "witness_ids": ["#examples/nested_learning_nonconvex_site"]
+}
