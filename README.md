@@ -5,8 +5,9 @@ workspace at `~/latex/PartialCubes`. It catalogues classes of partial cubes,
 their characterizations, inclusions, closure properties, invariants, forbidden
 pc-minor bases, examples, and supporting results.
 
-The database is intentionally empty at first. Its schemas and validation are in
-place so the existing mathematical material can be migrated record by record.
+The database is populated in reviewed migration batches. Its schemas and
+validation keep the existing mathematical material traceable to its LaTeX
+sources while normalized catalogue facts move here.
 
 ## Repository structure
 
@@ -49,6 +50,9 @@ Run `make check` before committing database changes, then commit the regenerated
   `PartialCubes:papers/survey/main.tex#thm:partial-cube-wellgraded-medium`.
 - The class fields `p_closed`, `c_closed`, and `pc_closed` are cached summaries
   checked against proof-bearing `operation_results` records.
+- The class hierarchy renders the transitive reduction of established
+  inclusions. Graph checks require every minor-atlas subclass of Ample to be a
+  database node with an established path to Ample.
 - Broad open questions and research campaign state remain in the LaTeX
   workspace.
 

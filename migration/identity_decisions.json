@@ -106,15 +106,6 @@
   ],
   "parameterized_decisions": [
     {
-      "canonical_short_name": "yang_decomposition_level_k",
-      "member_occurrences": [
-        "minor:d1",
-        "minor:d2"
-      ],
-      "parameter": "positive integer k",
-      "basis": "D1 and D2 are fixed levels of the same decomposition hierarchy."
-    },
-    {
       "canonical_short_name": "maximum_parent_decomposition_level_k",
       "canonical_occurrence": "minor:parent-levels",
       "parameter": "integer k >= 0",
@@ -123,12 +114,8 @@
     {
       "canonical_short_name": "maximum_section_auxiliary_level_k",
       "canonical_occurrence": "minor:auxiliary-levels",
-      "member_occurrences": [
-        "minor:m1",
-        "minor:m2"
-      ],
       "parameter": "integer k >= 0 with displayed coordinates retained",
-      "basis": "M1 and M2 are fixed levels of the M_k auxiliary-coordinate hierarchy."
+      "basis": "The source auxiliary-level row represents the parameterized M_k hierarchy; its displayed M1 and M2 rows are separately promoted for the atlas graph."
     }
   ]
 }

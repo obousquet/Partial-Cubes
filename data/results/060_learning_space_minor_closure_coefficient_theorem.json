@@ -1,0 +1,19 @@
+{
+  "id": 60,
+  "short_name": "learning_space_minor_closure_coefficient_theorem",
+  "name": "Learning-Space Minor Closure and Euclidean Coefficient Spaces",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/convex_geometry_ideals"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "status": "established",
+  "statement": "For a nonempty union-closed class $C$, the following are equivalent: every source has empty retained positive separator system; $C$ is an upper ideal in a learning space on the same coordinates; $C$ is a one-marker conditioning of a learning space; and $C$ is a nonempty pc-minor of a learning space in the inherited orientation. There is a unique largest ambient learning space. Up to signed coordinates and constants, these classes are exactly convex-geometry ideals, and every one has coefficient space $\\mathbb R^{d_C}$.",
+  "proof": "Deleting all-negative clauses leaves an implication family whose empty-root accessible component is the unique largest learning space. Empty retained systems put every source in that component and make the original class an upper ideal. Conversely, upper-ideal closure excludes every positive missing pattern and empties the retained systems. Adding one marker realizes the ideal as a conditioning. Minor monotonicity gives the reverse implication, complementation gives convex-geometry ideals, and the one-sided scaling theorem gives the Euclidean coefficient space.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:learning-ideal-closure",
+  "references": "\\cite[Section~2.5]{CCK2026}"
+}

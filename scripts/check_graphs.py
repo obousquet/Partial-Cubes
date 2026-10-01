@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -28,6 +29,16 @@ def main() -> int:
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--site-dir", type=Path, default=Path("docs"))
     parser.add_argument("--math-database-dir", type=Path, default=Path("../math_database"))
+    parser.add_argument(
+        "--minor-atlas-inventory",
+        type=Path,
+        default=Path("migration/generated/minor_inventory.json"),
+    )
+    parser.add_argument(
+        "--minor-atlas-graph-map",
+        type=Path,
+        default=Path("migration/minor_atlas_graph_classes.json"),
+    )
     args = parser.parse_args()
 
     data_dir = args.data_dir.resolve()
@@ -108,6 +119,34 @@ def main() -> int:
         if any(node.get(key) != value for key, value in expected.items()):
             errors.append(f"closure profile is not encoded on node: {entry['short_name']}")
 
+    # The minor atlas is the main Ample-class landscape.  Every atlas family
+    # that is a subclass of Ample must have a real database node and an
+    # established inclusion path to Ample.  The two excluded atlas rows are
+    # explicitly outside that down-set.
+    inventory = json.loads(args.minor_atlas_inventory.read_text(encoding="utf-8"))
+    graph_map = json.loads(args.minor_atlas_graph_map.read_text(encoding="utf-8"))
+    excluded_atlas_rows = {"minimal-nonample", "treelike"}
+    expected_atlas_ids = {
+        entry["id"] for entry in inventory["families"]
+        if entry["id"] not in excluded_atlas_rows
+    }
+    mapped_atlas_ids = {entry["source_id"] for entry in graph_map["classes"]}
+    if mapped_atlas_ids != expected_atlas_ids:
+        missing = sorted(expected_atlas_ids - mapped_atlas_ids)
+        extra = sorted(mapped_atlas_ids - expected_atlas_ids)
+        errors.append(f"minor-atlas graph map mismatch; missing={missing}, extra={extra}")
+    if len(mapped_atlas_ids) != len(graph_map["classes"]):
+        errors.append("minor-atlas graph map contains duplicate source ids")
+    ample_ref = "#classes/ample"
+    for mapping in graph_map["classes"]:
+        reference = aliases.get(mapping["class_id"])
+        if not reference or reference not in nodes:
+            errors.append(f"minor-atlas class is absent from hierarchy: {mapping['source_id']}")
+        elif reference != ample_ref and not has_path(reference, ample_ref, adjacency):
+            errors.append(
+                f"minor-atlas Ample subclass lacks Hasse reachability to Ample: {mapping['source_id']}"
+            )
+
     closure = make_graph.generate_minor_closure_map(cache)
     closure_refs = {edge.get("ref") for edge in closure["edges"]}
     for result in cache.get_table_entries("operation_results"):
@@ -135,7 +174,8 @@ def main() -> int:
         return 1
     print(
         f"Graph check passed: {len(cover_pairs)} Hasse covers represent "
-        f"{len(established)} stored inclusions; {len(closure['edges'])} closure-map arrows rendered."
+        f"{len(established)} stored inclusions; {len(mapped_atlas_ids)} minor-atlas Ample-family "
+        f"nodes covered; {len(closure['edges'])} closure-map arrows rendered."
     )
     return 0
 

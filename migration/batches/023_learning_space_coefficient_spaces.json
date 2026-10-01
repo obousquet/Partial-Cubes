@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "batch_id": "023_learning_space_coefficient_spaces",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize the prescribed-row criterion and Euclidean coefficient spaces for learning spaces, the cyclic Q4 half-space example, source-witness propagation and retraction, and the convex-geometry-ideal pc-minor closure theorem.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/learning_spaces.tex#thm:learning-root",
+    "PartialCubes:papers/coefficient-topology/learning_spaces.tex#thm:learning-euclidean",
+    "PartialCubes:papers/coefficient-topology/learning_spaces.tex#ex:learning-cycle",
+    "PartialCubes:papers/coefficient-topology/learning_spaces.tex#thm:source-witnesses",
+    "PartialCubes:papers/coefficient-topology/learning_spaces.tex#cor:source-witness-retraction",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:learning-ideal-closure"
+  ],
+  "source_packets": [
+    {
+      "id": "learning-space-coefficient-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/learning_spaces.tex",
+      "sha256": "50502649497a9b3be8409d2e98b0cd2af4d58c847309d66723173e738a5d1069"
+    },
+    {
+      "id": "learning-space-minor-closure",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/union_closed_families.tex",
+      "sha256": "2ba2a68df2d2a0e0c3a5ccc28f02c365182fbc1c5f5db417ad88dc569a9bf948"
+    },
+    {
+      "id": "learning-space-exact-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/learning_space_coefficients_verification.json",
+      "sha256": "9ae482fdbef6b05acd5ddca6826921b7c64a3d9e2ad6dc60fa1d53de6430aa0f"
+    },
+    {
+      "id": "learning-space-integration-review",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/learning_space_integration_review.json",
+      "sha256": "c112728d8a42f52717c1e8820fef1c8ad797d35e5117985113f816db513155e7"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized criteria, topology statements, invariant values, example data and minor-closure theorem. The LaTeX papers retain the full constructive proofs, scaling theory, surrounding examples, literature discussion and open questions.",
+    "recoverability": "The source reports are copied byte-for-byte into database assets, source hashes and the migration manifest preserve provenance, and no LaTeX source was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "database-learning-coefficient-verifier",
+      "path": "scripts/verify_learning_coefficient_spaces.py",
+      "sha256": "a0f3e0494e8b501f18eb4d32c56fe3583c68b11a4a2574d39f14196e30485f52",
+      "assertions": "All 181 serialized cases, 755 orthant decisions, 178 primal certificates, three dual infeasibility certificates, five cyclic-domain decisions and the inaccessible control replay exactly."
+    },
+    {
+      "id": "learning-coefficient-replay-report",
+      "path": "data/examples/assets/learning_coefficient_spaces_verification.json",
+      "sha256": "f3f8016eee72499220d4226831adc10ad325cf2b6ab50f7480823626003b24d7",
+      "assertions": "Compact database-owned replay output."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/023_cyclic_learning_space.json",
+      "sha256": "80f738f8c7cc22e21a6f07aa4c2e3bbca105f94dc865351cf75292b3beda3f8d"
+    },
+    {
+      "path": "data/examples/assets/learning_coefficient_spaces_verification.json",
+      "sha256": "f3f8016eee72499220d4226831adc10ad325cf2b6ab50f7480823626003b24d7"
+    },
+    {
+      "path": "data/examples/assets/learning_space_coefficients_source.json",
+      "sha256": "9ae482fdbef6b05acd5ddca6826921b7c64a3d9e2ad6dc60fa1d53de6430aa0f"
+    },
+    {
+      "path": "data/examples/assets/learning_space_integration_review.json",
+      "sha256": "c112728d8a42f52717c1e8820fef1c8ad797d35e5117985113f816db513155e7"
+    },
+    {
+      "path": "data/invariant_values/047_learning_space_coefficient_space.json",
+      "sha256": "a45a94dd32ec35e0f342841e643a49bfa49fc66263701f623f16b24aa4622c60"
+    },
+    {
+      "path": "data/invariant_values/048_cyclic_learning_space_coefficient_space.json",
+      "sha256": "fc9162d2ad02959d8bd3891e8fda2659acc27619325ec055efbc3ace44404ca3"
+    },
+    {
+      "path": "data/invariant_values/049_three_leaf_star_coefficient_space.json",
+      "sha256": "13f8a3f0f9e0a3a22bc5a385181e39488c59b391379d3a5b5a88071567ec9c02"
+    },
+    {
+      "path": "data/invariant_values/050_convex_geometry_ideal_coefficient_space.json",
+      "sha256": "4503db4b4f65f7d15f73e5b4e2c1b1fdd2ecdf394c855c4b60958b4dfbf74fa9"
+    },
+    {
+      "path": "data/results/056_learning_space_empty_concept_criterion.json",
+      "sha256": "873648ad1863935485c02a0c98cf85e5c732173ea67b4e91617ae394893a124d"
+    },
+    {
+      "path": "data/results/057_learning_space_euclidean_coefficient_space.json",
+      "sha256": "5d598b1e1cdc8af874e951e345d24d0171699374f826c49510d30bed1f9c4139"
+    },
+    {
+      "path": "data/results/058_union_closed_source_witnesses.json",
+      "sha256": "5ef8efb5c354a552918778aa1158be194c20eee473cbf293d0cd26c2dbbeab5b"
+    },
+    {
+      "path": "data/results/059_source_witness_space_retraction.json",
+      "sha256": "01c8096de121089c0a30a9bab99b6a91e6adc6a34f466458b64db50107f20e1a"
+    },
+    {
+      "path": "data/results/060_learning_space_minor_closure_coefficient_theorem.json",
+      "sha256": "f2229f03d01aa96184f60db0984a407d72bf825205c0711d7e0ad55ca2ac57bd"
+    },
+    {
+      "path": "scripts/verify_learning_coefficient_spaces.py",
+      "sha256": "a0f3e0494e8b501f18eb4d32c56fe3583c68b11a4a2574d39f14196e30485f52"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 519 records after batches 023 and 024.",
+    "exact_replay": "181 prescribed-row families and 755 orthant decisions replayed; all primal and dual certificates passed.",
+    "website": "Normalized 535 generated HTML files; 12 tables and 2 graph views pass.",
+    "migration": "100 class occurrences reconciled into 91 identities; source snapshot recoverable; review queues valid."
+  },
+  "deferred": [
+    "Union-closed spectral formulas and optimized thresholds.",
+    "Graph-arrangement and sphere-family constructions.",
+    "Two-control pc-minimal nonrealizable families."
+  ]
+}

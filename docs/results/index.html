@@ -1016,6 +1016,87 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-56" style="position:relative;">
+
+        <h3><a href="results/learning_space_empty_concept_criterion.html" class="table-title-link">Empty-Concept Criterion for Learning Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Empty-Concept Criterion for Learning Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A prescribed positive normalized row family belongs to $\mathcal A(L)$ exactly when one all-negative witness $-v$ exists at the empty concept. Equivalently, for every minimal missing pattern with unique positive coordinate $r(p)$, $v_{r(p)}>\sum_{j\in B_p}(a_{p,j}/a_{p,r(p)})v_j$. Rational input and a rational root witness construct rational witnesses for every concept without changing any row.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Accessibility gives an addition order for each concept. Choose each new positive magnitude successively small, then scale all remaining negative coordinates together. Rows whose positive coordinate is present gain slack from an earlier prerequisite; rows whose positive coordinate is absent follow from the empty-concept inequality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#thm:learning-root</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-57" style="position:relative;">
+
+        <h3><a href="results/learning_space_euclidean_coefficient_space.html" class="table-title-link">Learning-Space Coefficient Spaces Are Euclidean</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Learning-Space Coefficient Spaces Are Euclidean</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every learning space $L$, logarithmic coefficient ratios identify $\mathcal A(L)$ with a nonempty open convex domain $\mathcal D_L\subseteq\mathbb R^{d_L}$, and $\mathcal A(L)\cong\mathbb R^{d_L}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Writing root-witness magnitudes as exponentials makes every feasibility inequality a strict log-sum-exp inequality jointly convex in row logs and witness logs. Projection gives an open convex coefficient domain. A Minkowski-functional radial map identifies any nonempty open convex domain with Euclidean space.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#thm:learning-euclidean</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-58" style="position:relative;">
+
+        <h3><a href="results/union_closed_source_witnesses.html" class="table-title-link">Source-Witness Criterion for Union-Closed Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Source-Witness Criterion for Union-Closed Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty union-closed family and fixed positive separator rows, witnesses at the sources of its directed one-inclusion graph extend continuously and rationally along every allowed one-element addition. Hence the row family is feasible exactly when witnesses exist at all graph sources. For well-graded families, the sources are precisely the inclusion-minimal members.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Shrink all negative witness coordinates together, then turn the added coordinate positive with a finite-minimum choice. Union closure ensures only rows having that coordinate as their unique positive literal can oppose the change, and each such row already has a negative literal in the old concept.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#thm:source-witnesses</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-59" style="position:relative;">
+
+        <h3><a href="results/source_witness_space_retraction.html" class="table-title-link">Source-Witness Space Retraction for Union-Closed Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Source-Witness Space Retraction for Union-Closed Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty union-closed family, the joint space of all concept witnesses strongly deformation retracts onto the image of a continuous section from the joint space retaining only source witnesses. The section preserves all separator coefficients and supplied source witnesses and is rational on rational input.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Fix an upward path from a source to every nonsource and apply the explicit one-element witness extension. Convexity of every fixed-row witness region makes linear interpolation to the selected nonsource witnesses a strong deformation retraction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#cor:source-witness-retraction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-60" style="position:relative;">
+
+        <h3><a href="results/learning_space_minor_closure_coefficient_theorem.html" class="table-title-link">Learning-Space Minor Closure and Euclidean Coefficient Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Learning-Space Minor Closure and Euclidean Coefficient Spaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty union-closed class $C$, the following are equivalent: every source has empty retained positive separator system; $C$ is an upper ideal in a learning space on the same coordinates; $C$ is a one-marker conditioning of a learning space; and $C$ is a nonempty pc-minor of a learning space in the inherited orientation. There is a unique largest ambient learning space. Up to signed coordinates and constants, these classes are exactly convex-geometry ideals, and every one has coefficient space $\mathbb R^{d_C}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting all-negative clauses leaves an implication family whose empty-root accessible component is the unique largest learning space. Empty retained systems put every source in that component and make the original class an upper ideal. Conversely, upper-ideal closure excludes every positive missing pattern and empties the retained systems. Adding one marker realizes the ideal as a conditioning. Minor monotonicity gives the reverse implication, complementation gives convex-geometry ideals, and the one-sided scaling theorem gives the Euclidean coefficient space.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Section~2.5]{CCK2026}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

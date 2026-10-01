@@ -1,0 +1,16 @@
+{
+  "id": 57,
+  "short_name": "learning_space_euclidean_coefficient_space",
+  "name": "Learning-Space Coefficient Spaces Are Euclidean",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every learning space $L$, logarithmic coefficient ratios identify $\\mathcal A(L)$ with a nonempty open convex domain $\\mathcal D_L\\subseteq\\mathbb R^{d_L}$, and $\\mathcal A(L)\\cong\\mathbb R^{d_L}$.",
+  "status": "established",
+  "proof": "Writing root-witness magnitudes as exponentials makes every feasibility inequality a strict log-sum-exp inequality jointly convex in row logs and witness logs. Projection gives an open convex coefficient domain. A Minkowski-functional radial map identifies any nonempty open convex domain with Euclidean space.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/learning_spaces.tex#thm:learning-euclidean"
+}

@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "batch_id": "024_minor_atlas_hasse_coverage",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote every minor-atlas subclass of Ample into the database hierarchy, including the displayed D1, D2, Mk, M1 and M2 levels; normalize the atlas inclusion and open-comparison records; back every closure glyph by an operation result; and enforce transitive-reduced Hasse rendering and atlas coverage.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/inventory.json#/families",
+    "PartialCubes:papers/minor-atlas/inventory.json#/relations"
+  ],
+  "source_packets": [
+    {
+      "id": "minor-atlas-inventory",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/inventory.json",
+      "sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0"
+    },
+    {
+      "id": "extracted-minor-atlas-inventory",
+      "repository": "Partial-Cubes",
+      "path": "migration/generated/minor_inventory.json",
+      "sha256": "b872dd1cc4ca6912c2c3ebd386560f31ca5369d5b51b934882ab4a0cf60250fe"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized class identities, definitions, closure facts and relation facts promoted in this batch. The minor-atlas document retains extended assessments, witness narratives, source-packet discussions and open research questions.",
+    "recoverability": "The extracted inventory, source fingerprint, migration map and source manifest preserve the exact provenance. No LaTeX source was modified."
+  },
+  "records": [
+    {
+      "path": "README.md",
+      "sha256": "4181ac4c15e5fed7bd89dfc9b26cfe4965ed3baafedfdc70759ae3b7f8af3c67"
+    },
+    {
+      "path": "data/characterizations/068_maximum_parent_section.json",
+      "sha256": "5d8d82e1a7ea0acd9fa08728dd17d859f95f1d464f47cf3c6f2886f477ed4a59"
+    },
+    {
+      "path": "data/characterizations/069_dismantlable_maximum_parent_section.json",
+      "sha256": "33e9326965a3899255ba3b44b5f3209d8020b765fed882e97163db3ba82f9932"
+    },
+    {
+      "path": "data/characterizations/070_universal_cube_extension.json",
+      "sha256": "c57bbe86f819c1b89b6d69858ba8134b7d81453f2855db182cd4ccd3f7a57678"
+    },
+    {
+      "path": "data/characterizations/071_yang_level_one.json",
+      "sha256": "fa5a4625c4890c5dec9171dcf605c3a798ed436f4c21856f292bcf1551fdae28"
+    },
+    {
+      "path": "data/characterizations/072_yang_level_two.json",
+      "sha256": "54992bc38acd8f46aedc234331c76bbb104e9674faa603d2233d0f2c6c714a5c"
+    },
+    {
+      "path": "data/characterizations/073_both_sides_dismantlable.json",
+      "sha256": "7d8fd66b009b11d047914dffc577a4fe9b6d997b425a7e7f2b6ae1dd07874653"
+    },
+    {
+      "path": "data/characterizations/074_representation_map_ample_definition.json",
+      "sha256": "7a191b3706a0cd829c66232487b36a3f3ce47ba1d958dbc98f87ea59e2d2068f"
+    },
+    {
+      "path": "data/characterizations/075_fractional_yang_representation.json",
+      "sha256": "47096fba1abc042fbe686d0ee34a48bf2b15b0c6658d48077436da7ab06bb813"
+    },
+    {
+      "path": "data/characterizations/076_maximum_parent_level_k.json",
+      "sha256": "2bf90ef9bda4ab4e2340245522461d9a69753d0c210e2a4e8d63134b6fd41872"
+    },
+    {
+      "path": "data/characterizations/077_dismantlable_complement.json",
+      "sha256": "2bc40cb64bb628d73391e14dc962bd052115962444715e28017fb38e7227046c"
+    },
+    {
+      "path": "data/characterizations/078_maximum_section_auxiliary_level_k_definition.json",
+      "sha256": "38de6975461116b37867223f66f7ced1e5e45d7f36fc6407cd78cfec4136d8c0"
+    },
+    {
+      "path": "data/characterizations/079_maximum_section_auxiliary_level_one_definition.json",
+      "sha256": "7891ab655b50a27fdc537d0ca08083b840d888582b03c6cc1537d2cecebee62a"
+    },
+    {
+      "path": "data/characterizations/080_maximum_section_auxiliary_level_two_definition.json",
+      "sha256": "2f1551bb550f4325e58707eff5337a72ed6b7ae6787c5f309cae1cdccdac0077"
+    },
+    {
+      "path": "data/classes/011_both_sides_dismantlable_ample.json",
+      "sha256": "8abc04d07351e5add65811991d95d35aa448c8de88c952a69b8b9169d9617940"
+    },
+    {
+      "path": "data/classes/032_dismantlable_complement_ample.json",
+      "sha256": "334dce60c9102735ae287275fa8f3e0b0003521a1bf1ba6f06f1e0602a7ac8da"
+    },
+    {
+      "path": "data/classes/033_dismantlable_maximum_parent_sections.json",
+      "sha256": "c15bb59f8cc602682b73c289a7669de2766428597aef6a81966506603d647fa0"
+    },
+    {
+      "path": "data/classes/039_fractionally_representable_ample.json",
+      "sha256": "4e663eebcede12f6ee3cb0f5f0b531d78253f32f2e67933303d75d8a82fb681c"
+    },
+    {
+      "path": "data/classes/047_maximum_generated_classes.json",
+      "sha256": "d782efbb3bea5f00bfc07a2fb90e79ce88d322f33f9e6e390653ba1519dc798f"
+    },
+    {
+      "path": "data/classes/048_maximum_parent_decomposition_level_k.json",
+      "sha256": "4b9fa7720fe08284266f522e6a2544941840cbdbde490184ae327942cb6f4174"
+    },
+    {
+      "path": "data/classes/049_maximum_section_auxiliary_level_k.json",
+      "sha256": "ac6b7cad8f782c410901fa96254b3b34e4877947e2b5dcbe806e8977637ab9a2"
+    },
+    {
+      "path": "data/classes/070_representation_map_ample.json",
+      "sha256": "a073fcb1cc8b70b6bfd68a6f2ecdeea7dba16957667d1c8a5dd53282f29e65af"
+    },
+    {
+      "path": "data/classes/083_universal_cube_extension_ample.json",
+      "sha256": "577f90c1f2c9c1e2b2340487c93a3b49fe9463506a366fdcd65bd8182191f5db"
+    },
+    {
+      "path": "data/classes/087_yang_decomposition_level_one.json",
+      "sha256": "c12d471e3f74021994b627a142f3928a3def80185c50f8c7a7518662f309147f"
+    },
+    {
+      "path": "data/classes/089_yang_decomposition_level_two.json",
+      "sha256": "df350d12ed8304af8aafdecad6e6b5ae8cab99e189ceaece3fdff2815a2f3b3b"
+    },
+    {
+      "path": "data/classes/090_maximum_section_auxiliary_level_one.json",
+      "sha256": "5dec587f38de5ad95a56c0351ff84c2f12f3f1a1e29cadbd5b7f268b4b5728eb"
+    },
+    {
+      "path": "data/classes/091_maximum_section_auxiliary_level_two.json",
+      "sha256": "088c3902866eaa3baca7d965289fa1a14ea51b14d462cf6cf88048efb69b6243"
+    },
+    {
+      "path": "data/operation_results/074_maximum_generated_classes_projection_closed.json",
+      "sha256": "1e5f913c8465911e7dc60b9f2b75dc4d3111d6c780f7ef785c5e4dfbe4ea4de1"
+    },
+    {
+      "path": "data/operation_results/075_maximum_generated_classes_conditioning_closed.json",
+      "sha256": "a0923f4aa305c64b101148d4bea02418b95bac6769edadd161c57934a91212ce"
+    },
+    {
+      "path": "data/operation_results/076_maximum_generated_classes_pc_minor_closed.json",
+      "sha256": "71ac5c6204de98f1469a3b962dd14bdec646224dfa995f3006afb2e883507d66"
+    },
+    {
+      "path": "data/operation_results/077_dismantlable_maximum_parent_sections_projection_closed.json",
+      "sha256": "1117b515e1444153077ddd3246e8ded6314cdcbf8f3e595a1c41c14513c79d4c"
+    },
+    {
+      "path": "data/operation_results/078_dismantlable_maximum_parent_sections_conditioning_closed.json",
+      "sha256": "5081665c0fec02f345587873a8e91e0852c318ff32e67d2d765da4b64590eb12"
+    },
+    {
+      "path": "data/operation_results/079_dismantlable_maximum_parent_sections_pc_minor_closed.json",
+      "sha256": "5747b4daf2a911b43ec054f9f207d315479f84a3320e84170794a5d9e766fa3b"
+    },
+    {
+      "path": "data/operation_results/080_universal_cube_extension_ample_projection_closed.json",
+      "sha256": "771559a186ec7f5a98791c33f5584da81a21b342dd88ae2446db21e4876ff2d9"
+    },
+    {
+      "path": "data/operation_results/081_universal_cube_extension_ample_conditioning_closed.json",
+      "sha256": "95083b1f82bb7d53bf2802447debf592fdc08c4b46600bb29220c1444df9a944"
+    },
+    {
+      "path": "data/operation_results/082_universal_cube_extension_ample_pc_minor_closed.json",
+      "sha256": "f93bb1f67462d2b44b4ed8bb55e2f4a83acd50a2a839d51f473b86b1eaa6e22a"
+    },
+    {
+      "path": "data/operation_results/083_yang_decomposition_level_one_projection_closed.json",
+      "sha256": "59cf19f5c4581af8bf01332b3f52602666c9531349cffd7082f847b0ff4b8eeb"
+    },
+    {
+      "path": "data/operation_results/084_yang_decomposition_level_one_conditioning_closed.json",
+      "sha256": "ba8ba1659f1bd0636aadb1c9b7923a78429236a55ef4f365a00a19cc825df20c"
+    },
+    {
+      "path": "data/operation_results/085_yang_decomposition_level_one_pc_minor_closed.json",
+      "sha256": "8fa9e58f6dd5fae3098c0aa89957554113c103326a2724aa73f77d785bc5a498"
+    },
+    {
+      "path": "data/operation_results/086_yang_decomposition_level_two_projection_closed.json",
+      "sha256": "a5bf9ce50f37a05b74e2d99a53f73f14480705d8675d108a71a9edc29ad5e3b6"
+    },
+    {
+      "path": "data/operation_results/087_yang_decomposition_level_two_conditioning_closed.json",
+      "sha256": "57e468a4c38a59101d9f21e585b184c96f0109095abb881046398ab61695f353"
+    },
+    {
+      "path": "data/operation_results/088_yang_decomposition_level_two_pc_minor_closed.json",
+      "sha256": "47e6eda1c038e1a5babae22b4ed8bf8ccd28792c1a1f676e14ee910efa7327ea"
+    },
+    {
+      "path": "data/operation_results/089_both_sides_dismantlable_ample_projection_closed.json",
+      "sha256": "8f70e09b81a9b7a638c2428075381a01700753c19c86f9eb1949bed299279ad3"
+    },
+    {
+      "path": "data/operation_results/090_both_sides_dismantlable_ample_conditioning_closed.json",
+      "sha256": "81181ee07d89c03807affe2855c5c9cb6c4d0505c75e621a9b37595c0d46a5b6"
+    },
+    {
+      "path": "data/operation_results/091_both_sides_dismantlable_ample_pc_minor_closed.json",
+      "sha256": "1af35d1a62132e3b12b63ac89c47515b2e9eb47da0378f54fdb0c196a3be026a"
+    },
+    {
+      "path": "data/operation_results/092_representation_map_ample_projection_closed.json",
+      "sha256": "2a2e8fa847ddd575d2d9d1327ea4006ed9ff89d58c33c71162f7e9ab40467136"
+    },
+    {
+      "path": "data/operation_results/093_representation_map_ample_conditioning_closed.json",
+      "sha256": "637b6739b303d72584be6b1977d03e7f86f18efdf0126ffb9bcd6275d4662c83"
+    },
+    {
+      "path": "data/operation_results/094_representation_map_ample_pc_minor_closed.json",
+      "sha256": "60ae61afb7230ec4df5af09d9315685b832566058e4cf77c01dfb0936f555966"
+    },
+    {
+      "path": "data/operation_results/095_fractionally_representable_ample_projection_closed.json",
+      "sha256": "c6517eca7c02187bbbde876ab40b32493d3838e1d7910168d750c1f046e697d5"
+    },
+    {
+      "path": "data/operation_results/096_fractionally_representable_ample_conditioning_closed.json",
+      "sha256": "72366fecc566126161c81f71093be4ebcb88285d7915cbf924a4f93dd266955a"
+    },
+    {
+      "path": "data/operation_results/097_fractionally_representable_ample_pc_minor_closed.json",
+      "sha256": "45c1c3b45bb683b88473cdf04560b281eed2d5cfec20f7ebea37cc0de9ce4a9b"
+    },
+    {
+      "path": "data/operation_results/098_maximum_parent_decomposition_level_k_projection_closed.json",
+      "sha256": "08d01dcebe22b01fc3c762a525cb611d5a8bb2d6f3009f415e7789cbe859e123"
+    },
+    {
+      "path": "data/operation_results/099_maximum_parent_decomposition_level_k_conditioning_closed.json",
+      "sha256": "18b7d0f6bbbbeeaa681f97a9cde785d85bc035f3657a5fee262b26a92dea7e5b"
+    },
+    {
+      "path": "data/operation_results/100_maximum_parent_decomposition_level_k_pc_minor_closed.json",
+      "sha256": "f72e676001d6bb524d1ac09ee5bc7d49ca2cedc2a5c2719cf8ef97c1d1ea01ca"
+    },
+    {
+      "path": "data/operation_results/101_dismantlable_complement_ample_projection_closed.json",
+      "sha256": "65778d08ca8ebad17f1fbadddda70e3f4d47353a3b8ac62f84ca72b2127f6655"
+    },
+    {
+      "path": "data/operation_results/102_dismantlable_complement_ample_conditioning_closed.json",
+      "sha256": "f5f479d3a2a4294ee4bb00c60eafa3cb15ee069cfb166fe5f9444525080b89e5"
+    },
+    {
+      "path": "data/operation_results/103_dismantlable_complement_ample_pc_minor_closed.json",
+      "sha256": "801e926f3da778bd151b613b9211e9817a19558f8c5997b9cd90ad5bccb87bbd"
+    },
+    {
+      "path": "data/operation_results/104_maximum_section_auxiliary_level_k_projection_closed.json",
+      "sha256": "467cdf7712f7e1ea7665425ca3ac862b3802599ae42578dadb770034ef93c480"
+    },
+    {
+      "path": "data/operation_results/105_maximum_section_auxiliary_level_k_conditioning_not_closed.json",
+      "sha256": "e6f7e85cb4c46ac5a15af233a78fe484daa42b47bfa1946dd055c1a9699c3afb"
+    },
+    {
+      "path": "data/operation_results/106_maximum_section_auxiliary_level_k_pc_minor_not_closed.json",
+      "sha256": "8358f5a59e9700360cd3903640befe5062d2763e41c6c5146a96854340cd38f9"
+    },
+    {
+      "path": "data/operation_results/107_maximum_section_auxiliary_level_one_projection_closed.json",
+      "sha256": "ca75fccb930f24823387befe4d03f56b973339fa4a80c54534fda818b2b1ac4d"
+    },
+    {
+      "path": "data/operation_results/108_maximum_section_auxiliary_level_one_conditioning_not_closed.json",
+      "sha256": "6265b03f6674f27a0cdb67ad16fb17c24a3848e42a9283beac131779f196095b"
+    },
+    {
+      "path": "data/operation_results/109_maximum_section_auxiliary_level_one_pc_minor_not_closed.json",
+      "sha256": "7fa79134ab820e94fa52004062bb0cdbecb96c4cf11fb3f8bd5e45111f89d4d5"
+    },
+    {
+      "path": "data/operation_results/110_maximum_section_auxiliary_level_two_projection_closed.json",
+      "sha256": "7e0acd04f80ccd622eb46dcd6ca5fee1a379fc5dd9b033dce19f8e13e4b9ab74"
+    },
+    {
+      "path": "data/operation_results/111_maximum_section_auxiliary_level_two_conditioning_not_closed.json",
+      "sha256": "e3df182be072a3789d60eda8e5b7b995891b3748a39c29b826d0216a2340bb15"
+    },
+    {
+      "path": "data/operation_results/112_maximum_section_auxiliary_level_two_pc_minor_not_closed.json",
+      "sha256": "3d971769e400d40de606de864fa5782aaf63911b2094f0b8a0f06091a832a84e"
+    },
+    {
+      "path": "data/relations/057_dismantlable_ample_strict_subset_representation_map_ample.json",
+      "sha256": "940d51f0037f4fac9355375eb4d127929c3b523e35d6405139ea48d58f54ccdf"
+    },
+    {
+      "path": "data/relations/058_maximum_generated_subset_representation_map_ample.json",
+      "sha256": "8c3be72fd26cfa9001cce224942e5b3c4e403a1ccba29c219a804c9fa45ef72c"
+    },
+    {
+      "path": "data/relations/059_realizable_ample_strict_subset_maximum_generated.json",
+      "sha256": "034ac988899c1409b773d249ce53bf2407102b19dcec5e58e58fa7e92602a591"
+    },
+    {
+      "path": "data/relations/060_maximum_strict_subset_maximum_generated.json",
+      "sha256": "860685453d9b93d2be781427988c831561cbe837433fa5bb9e0b4aee0add4cbe"
+    },
+    {
+      "path": "data/relations/061_dismantlable_ample_to_maximum_generated_open.json",
+      "sha256": "9cc532356cbd1c93d89eea7ddf7ff20da41398af3afac4a1a0e69f2a4cf7151e"
+    },
+    {
+      "path": "data/relations/062_daisy_strict_subset_convex_geometry_ideals.json",
+      "sha256": "1ff0b79b2a8de64da8feb447b611b235d2fa8d0a5b079801e0feac7883590565"
+    },
+    {
+      "path": "data/relations/063_cover_recursive_strict_subset_yang_level_one.json",
+      "sha256": "5dea8d55bdb7a210d64e9954a564a7974562d6453d3e14df7cdc09366f6b0a09"
+    },
+    {
+      "path": "data/relations/064_cover_recursive_strict_subset_both_sides_dismantlable.json",
+      "sha256": "c13af0701464e7c665649dfdb909426de50868276c17edf5f288d059af444608"
+    },
+    {
+      "path": "data/relations/065_yang_level_one_strict_subset_dismantlable_ample.json",
+      "sha256": "e344ee225ab9ee21564ceed44222d3524a1a84edcb0de4cc9e67d7b1dec5faf0"
+    },
+    {
+      "path": "data/relations/066_both_sides_strict_subset_dismantlable_ample.json",
+      "sha256": "353198b242f58ae1c85472e4d0abf9517b2d74d69b7cfb9c6952329eb435a6b9"
+    },
+    {
+      "path": "data/relations/067_yang_level_one_to_maximum_generated_open.json",
+      "sha256": "b137647c3cc5f5dc5f77d6ecbc14ff117bc482276d390d406d45ce5ebdab9ddc"
+    },
+    {
+      "path": "data/relations/068_both_sides_to_maximum_generated_open.json",
+      "sha256": "4ae90c7d6bd032ea4e087945ddf704952d297a05c6d75f0840cc5a55fcf3ca13"
+    },
+    {
+      "path": "data/relations/069_realizable_ample_strict_subset_both_sides_dismantlable.json",
+      "sha256": "67d9cf6c28fbd5066fe9ec94e09e48a70a3da9534f8da8bdc403afa8e488a8e2"
+    },
+    {
+      "path": "data/relations/070_realizable_ample_strict_subset_dismantlable_maximum_parent_sections.json",
+      "sha256": "535ee0b8adf113b691e01c7beb578d00bcc0179219097b0c7a4e819168aec41f"
+    },
+    {
+      "path": "data/relations/071_dismantlable_maximum_parent_sections_strict_subset_maximum_generated.json",
+      "sha256": "28679667c99073bebe0c6fee3e8862162a373fd94fcf6ca44bdd4c6f5177a4cc"
+    },
+    {
+      "path": "data/relations/072_dismantlable_maximum_parent_sections_subset_dismantlable_ample.json",
+      "sha256": "010e70b23bb09da2016f8b85730eb684d4b2955689b525e8b7fd0253273fce6b"
+    },
+    {
+      "path": "data/relations/073_maximum_generated_subset_universal_cube_extension.json",
+      "sha256": "9fd4f536a8a78e7f3253d4745e30731fb9e3ae6cb5d6871d512273906920136d"
+    },
+    {
+      "path": "data/relations/074_universal_cube_extension_subset_representation_map_ample.json",
+      "sha256": "5185d14772ed86f1e1dd7b26d362c8752d5f2366a0f33504c343d61403c54449"
+    },
+    {
+      "path": "data/relations/075_both_sides_strict_subset_universal_cube_extension.json",
+      "sha256": "31118ea944f86055a75a31550170aa0d64588ee22fccd36d9fa393741d5c2eee"
+    },
+    {
+      "path": "data/relations/076_yang_level_one_strict_subset_yang_level_two.json",
+      "sha256": "00179af84dcca60d1d69f96f4ec7daeb4c505e9ff66cf2e998959a852db4dbf7"
+    },
+    {
+      "path": "data/relations/077_yang_level_two_strict_subset_dismantlable_ample.json",
+      "sha256": "9331e3047a8e490f6b5a628f8c1b3ebcbd52f00ba25a4cf5c65220d22c34d6a5"
+    },
+    {
+      "path": "data/relations/078_yang_level_one_to_both_sides_open.json",
+      "sha256": "9f2e1b43be2aef6110e79803b575de0e245b8245a8fd8e087ee1379e147d05d5"
+    },
+    {
+      "path": "data/relations/079_maximum_generated_not_subset_dismantlable_ample.json",
+      "sha256": "4892b2bffa256170468b5d66ca3688e647fd4ba6c44bceae7e2e1381c0b50bf9"
+    },
+    {
+      "path": "data/relations/080_both_sides_not_subset_yang_level_one.json",
+      "sha256": "16f6f339e96a4a4b03fdcfebfa049e59f20234261322df918f9f08b823ab41c9"
+    },
+    {
+      "path": "data/relations/081_maximum_parent_level_k_strict_subset_dismantlable_maximum_parent_sections.json",
+      "sha256": "9cd80a25ab5f816caaf39c3dd61efbb028c56af14cce836357aff2e47109e096"
+    },
+    {
+      "path": "data/relations/082_maximum_parent_level_k_strict_subset_maximum_generated.json",
+      "sha256": "1d8c6abb16e2b842292765b4c44f68db49e9caefaf3d0bdaf386b0a6a8fae7a0"
+    },
+    {
+      "path": "data/relations/083_both_sides_strict_subset_dismantlable_complement.json",
+      "sha256": "4a53a8fd9adad11888a38fd9e6d0a6c7bfaa0b56bce58bcf6bba36f76fc025d9"
+    },
+    {
+      "path": "data/relations/084_dismantlable_complement_strict_subset_ample.json",
+      "sha256": "e9e750a7dd8b56affc8c49d19a3f354a21aabe631e2ba7c8cf84f81685f874fd"
+    },
+    {
+      "path": "data/relations/085_dismantlable_complement_to_representation_map_open.json",
+      "sha256": "8b3b938bc92e159e79012ea0f3d9f63fd47175362010831f63f971d4b618c454"
+    },
+    {
+      "path": "data/relations/086_dismantlable_and_complement_classes_incomparable.json",
+      "sha256": "31fae48c95335e0d304690e8fabc0b8c0fac900786ef6b5560bc5b810f4248cb"
+    },
+    {
+      "path": "data/relations/087_maximum_section_auxiliary_level_k_strict_subset_maximum_generated.json",
+      "sha256": "b43351b4bab9f1be9031151f1d1c9eeab38a1b295ffdf1de2aa2fd1b2d9d3e6d"
+    },
+    {
+      "path": "data/relations/088_maximum_strict_subset_auxiliary_level_one.json",
+      "sha256": "c8c600b75085fa423d2f311719561a3bd5d77ffe49194882646ac66dbb570cd4"
+    },
+    {
+      "path": "data/relations/089_auxiliary_level_one_strict_subset_auxiliary_level_two.json",
+      "sha256": "5c622654e681191bd4f589c847f9574436a81daf85d13312ba0bd254bf0b6fa2"
+    },
+    {
+      "path": "data/relations/090_auxiliary_level_two_strict_subset_maximum_generated.json",
+      "sha256": "5b7bad4031f8da068a2e1499af9f72342f874f28f818e693dbf2499627e6a2cd"
+    },
+    {
+      "path": "data/relations/091_representation_map_subset_fractionally_representable.json",
+      "sha256": "3984d4306aa6480dd2d1154b1a4087fa47fc647f5f4c8bcec2dc0e982c731a98"
+    },
+    {
+      "path": "data/relations/092_fractionally_representable_subset_ample.json",
+      "sha256": "67a85ed8d6b14282d09527aa3d714fd51439d0a8118bac540a3a7260991fe4c7"
+    },
+    {
+      "path": "data/relations/093_representation_map_subset_ample.json",
+      "sha256": "b01463c2d54f8b89f79e9d24653b4f692f53c3820b2c4bcdbe86ba83926ec1ae"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "e7ad256c2155f189471a885ecf8d271f84a5acf8670176e0fda533b50b9eb9bb"
+    },
+    {
+      "path": "migration/class_crosswalk.json",
+      "sha256": "360c7ec1d43830a565bdc2d0dc48e69146a9dbe2bffbb1686363fa5481a2f896"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "4e43af0991cf9d5284c3f08676761d0e1d5918d3ad033fb1e68a89568d34210c"
+    },
+    {
+      "path": "migration/identity_decisions.json",
+      "sha256": "1a9afbbde8770831b5da4df3fb7dbc418a9d8cba6894936f63ac85989ef1ab5b"
+    },
+    {
+      "path": "migration/minor_atlas_graph_classes.json",
+      "sha256": "be80abb1f33c77d94d174c0400dcacd16693418263db31fce1eaa4fdd0b7cd72"
+    },
+    {
+      "path": "scripts/check_graphs.py",
+      "sha256": "636f591a59ce009f0bec904d11126a2f8d9377eb89ffa3fa8142fc75598d7323"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 519 records.",
+    "website": "Normalized 535 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "46 Hasse covers represent 74 stored inclusions; all 22 minor-atlas Ample-family nodes have established reachability to Ample; 67 closure-map arrows render.",
+    "migration": "100 class occurrences reconcile into 91 stable identities; all database IDs match the allocation registry; source snapshot recoverable."
+  },
+  "excluded_atlas_rows": {
+    "minimal-nonample": "Outside Ample by definition.",
+    "treelike": "The atlas explicitly states that sequential tree-like partial cubes are not contained in Ample."
+  },
+  "deferred": [
+    "Promote the two excluded non-Ample atlas families when their primary characterizations are reviewed.",
+    "Normalize the remaining theorem packages attached to the newly promoted atlas classes."
+  ]
+}

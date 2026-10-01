@@ -1,0 +1,11 @@
+{
+  "id": 23,
+  "short_name": "cyclic_learning_space",
+  "name": "Cyclic Four-Coordinate Learning Space",
+  "symbol": "L_{\\mathrm{cyc}}",
+  "object_type": "set_family",
+  "definition": "On coordinates $(r,a,b,s)$, take $\\{\\varnothing,r,ra,rab,s,rs,ras,bs,rbs,abs,rabs\\}$. In low-bit order this is $\\{0,1,3,7,8,9,11,12,13,14,15\\}$.",
+  "properties": "It is an eleven-concept learning space. Its four minimal missing patterns are $(a;\\{r,b\\})$, $(a;\\{r,s\\})$, $(b;\\{a,s\\})$, and $(b;\\{r,s\\})$. In logarithmic row-ratio coordinates its full coefficient space is the proper open halfspace $\\log\\alpha+\\log\\beta<0$ in $\\mathbb R^8$, hence is homeomorphic to $\\mathbb R^8$.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/learning_spaces.tex#ex:learning-cycle",
+  "verification": "scripts/verify_learning_coefficient_spaces.py; data/examples/assets/learning_coefficient_spaces_verification.json; data/examples/assets/learning_space_coefficients_source.json"
+}

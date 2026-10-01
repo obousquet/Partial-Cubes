@@ -1,0 +1,16 @@
+{
+  "id": 56,
+  "short_name": "learning_space_empty_concept_criterion",
+  "name": "Empty-Concept Criterion for Learning Spaces",
+  "class_ids": [
+    "#classes/learning_space_graphs"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "recognition",
+  "statement": "A prescribed positive normalized row family belongs to $\\mathcal A(L)$ exactly when one all-negative witness $-v$ exists at the empty concept. Equivalently, for every minimal missing pattern with unique positive coordinate $r(p)$, $v_{r(p)}>\\sum_{j\\in B_p}(a_{p,j}/a_{p,r(p)})v_j$. Rational input and a rational root witness construct rational witnesses for every concept without changing any row.",
+  "status": "established",
+  "proof": "Accessibility gives an addition order for each concept. Choose each new positive magnitude successively small, then scale all remaining negative coordinates together. Rows whose positive coordinate is present gain slack from an earlier prerequisite; rows whose positive coordinate is absent follow from the empty-concept inequality.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/learning_spaces.tex#thm:learning-root"
+}

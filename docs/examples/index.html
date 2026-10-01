@@ -256,7 +256,7 @@
 <strong>Properties:</strong><div class="text-field"><p>It is a star, tree, median graph, maximum class, and daisy cube, but it is not a path. Every proper pc-minor is a path.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:vc-cube-minors</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/three_leaf_star.html">Three-Leaf-Star Obstruction</a></li></ul></p>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/three_leaf_star_coefficient_space.html'>Coefficient Space of the Three-Leaf Star</a></li></ul></p></div>
 
         </div>
     </div>
@@ -569,6 +569,28 @@
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#thm:incompatible-extensions</p></div>
 <strong>Verification:</strong><div class="text-field"><p>scripts/verify_margin_gluing.py; data/examples/assets/margin_gluing_verification.json; data/examples/assets/margin_incompatible_extensions_verification.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-23" style="position:relative;">
+
+        <h3><a href="examples/cyclic_learning_space.html" class="table-title-link">Cyclic Four-Coordinate Learning Space</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cyclic Four-Coordinate Learning Space</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="L_{\mathrm{cyc}}">
+            \[L_{\mathrm{cyc}}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $(r,a,b,s)$, take $\{\varnothing,r,ra,rab,s,rs,ras,bs,rbs,abs,rabs\}$. In low-bit order this is $\{0,1,3,7,8,9,11,12,13,14,15\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is an eleven-concept learning space. Its four minimal missing patterns are $(a;\{r,b\})$, $(a;\{r,s\})$, $(b;\{a,s\})$, and $(b;\{r,s\})$. In logarithmic row-ratio coordinates its full coefficient space is the proper open halfspace $\log\alpha+\log\beta<0$ in $\mathbb R^8$, hence is homeomorphic to $\mathbb R^8$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#ex:learning-cycle</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_learning_coefficient_spaces.py; data/examples/assets/learning_coefficient_spaces_verification.json; data/examples/assets/learning_space_coefficients_source.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/cyclic_learning_space_coefficient_space.html'>Coefficient Space of the Cyclic Learning Space</a></li></ul></p></div>
 
         </div>
     </div>

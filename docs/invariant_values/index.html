@@ -951,6 +951,75 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-47" style="position:relative;">
+
+        <h3><a href="invariant_values/learning_space_coefficient_space.html" class="table-title-link">Coefficient Spaces of Learning Spaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Spaces of Learning Spaces</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Class: </strong><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\mathbb R^{d_L}</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Here $d_L=\sum_{p\in\mathcal M(L)}(|\operatorname{supp}p|-1)$. Logarithmic row ratios identify the space with a nonempty open convex subset of $\mathbb R^{d_L}$, and every such subset is homeomorphic to Euclidean space.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#thm:learning-euclidean</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-48" style="position:relative;">
+
+        <h3><a href="invariant_values/cyclic_learning_space_coefficient_space.html" class="table-title-link">Coefficient Space of the Cyclic Learning Space</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Cyclic Learning Space</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/cyclic_learning_space.html">Cyclic Four-Coordinate Learning Space</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\{u\in\mathbb R^8:u_\alpha+u_\beta<0\}\cong\mathbb R^8</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The empty-concept inequalities contain the two-cycle $v_a>\alpha v_b$ and $v_b>\beta v_a$, so feasibility is exactly $\alpha\beta<1$. The other six row ratios can be arbitrary positive values.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#ex:learning-cycle</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-49" style="position:relative;">
+
+        <h3><a href="invariant_values/three_leaf_star_coefficient_space.html" class="table-title-link">Coefficient Space of the Three-Leaf Star</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Three-Leaf Star</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/three_leaf_star.html">Three-Leaf Star</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>(0,1)^3\cong\mathbb R^3</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every positive row family works: use the all-negative unit witness at the center; at a leaf use a sufficiently small positive coordinate and negative unit values elsewhere. This shows Euclidean coefficient space does not characterize learning-space orientations.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/learning_spaces.tex?#sec:learning-spaces</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-50" style="position:relative;">
+
+        <h3><a href="invariant_values/convex_geometry_ideal_coefficient_space.html" class="table-title-link">Coefficient Space of Convex-Geometry Ideals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of Convex-Geometry Ideals</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Class: </strong><a href="classes/convex_geometry_ideals.html">Convex-Geometry Ideals</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\mathbb R^{d_C}</p>
+<strong>Scope:</strong><div class="text-field"><p>Finite nonempty convex-geometry ideal classes, up to signed-coordinate equivalence and suppression of constants.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Such a class is an upper ideal in a learning space after coordinate reflection. Its retained positive source systems are empty, so every sufficiently small common scaling is feasible. The feasible-scaling theorem then identifies its full coefficient space with Euclidean space of the ambient coefficient dimension.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:learning-ideal-closure</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
