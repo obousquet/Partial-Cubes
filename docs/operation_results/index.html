@@ -2617,6 +2617,89 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-154" style="position:relative;">
+
+        <h3><a href="operation_results/tree_like_projection_closed.html" class="table-title-link">Tree-Like Partial Cubes Are Projection-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tree-Like Partial Cubes Are Projection-Closed</p>
+<p><strong>Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every coordinate projection of a finite tree-like partial cube is tree-like.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Induct on a peripheral-expansion construction. Projecting an old coordinate projects both the base and the expansion site, preserving the peripheral form; projecting the newly introduced coordinate recovers the base.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#sec:map</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-155" style="position:relative;">
+
+        <h3><a href="operation_results/tree_like_not_conditioning_closed.html" class="table-title-link">Tree-Like Partial Cubes Are Not Conditioning-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tree-Like Partial Cubes Are Not Conditioning-Closed</p>
+<p><strong>Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A coordinate conditioning of a tree-like partial cube need not be tree-like.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For any finite partial cube $H\hookrightarrow Q_n$, peripherally expand the tree-like cube $Q_n$ along $H$. Conditioning the new coordinate to its added semicube recovers $H$. Choosing a non-tree-like $H$, such as $C_6$, proves failure of closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:treelike-gated-closure; PartialCubes:papers/minor-atlas/main.tex?#prop:tree-like</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-156" style="position:relative;">
+
+        <h3><a href="operation_results/tree_like_not_pc_minor_closed.html" class="table-title-link">Tree-Like Partial Cubes Are Not pc-Minor-Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tree-Like Partial Cubes Are Not pc-Minor-Closed</p>
+<p><strong>Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>A pc-minor of a tree-like partial cube need not be tree-like.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning is an elementary pc-minor operation, and every finite partial cube occurs as a conditioning of a tree-like partial cube. In particular, a non-tree-like partial cube such as $C_6$ occurs as such a minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:treelike-gated-closure; PartialCubes:papers/minor-atlas/main.tex?#prop:tree-like</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-157" style="position:relative;">
+
+        <h3><a href="operation_results/tree_like_conditioning_closure_equals_partial_cubes.html" class="table-title-link">The Conditioning Closure of Tree-Like Partial Cubes Is All Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Conditioning Closure of Tree-Like Partial Cubes Is All Partial Cubes</p>
+<p><strong>Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Within finite partial cubes, $\operatorname{Cl}_c(\mathsf{TreeLike})=\mathsf{PCube}$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Given any finite partial cube $H$, embed it isometrically in a cube $Q_n$ and peripherally expand $Q_n$ along $H$. The expanded graph is tree-like, and conditioning the new coordinate to the added semicube gives $H$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:tree-like</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-158" style="position:relative;">
+
+        <h3><a href="operation_results/tree_like_pc_closure_equals_partial_cubes.html" class="table-title-link">The pc-Minor Closure of Tree-Like Partial Cubes Is All Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The pc-Minor Closure of Tree-Like Partial Cubes Is All Partial Cubes</p>
+<p><strong>Class: </strong><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closure Equals</p>
+<p><strong>Target Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Within finite partial cubes, $\operatorname{Cl}_{pc}(\mathsf{TreeLike})=\mathsf{PCube}$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Every conditioning is a pc-minor, so the conditioning-closure construction places every finite partial cube in the pc-minor closure. Conversely, pc-minors of partial cubes remain partial cubes.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:tree-like</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

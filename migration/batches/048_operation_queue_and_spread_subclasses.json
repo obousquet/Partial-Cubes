@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "batch_id": "048_operation_queue_and_spread_subclasses",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Reconcile all remaining extracted operation-result candidates; promote the projection, conditioning, and pc-minor profile and exact closure hulls of tree-like partial cubes; and place paths and hypercubes as strict subclasses of spread ample classes with explicit witnesses.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/main.tex#sec:class-map",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:tree-like",
+    "PartialCubes:papers/survey/main.tex#thm:treelike-gated-closure",
+    "YangDim:sections/spread_ample_classes/04_examples.tex#thm:spread-vc-one-paths",
+    "YangDim:sections/spread_ample_classes/04_examples.tex#prop:spread-q3-minus"
+  ],
+  "source_packets": [
+    {
+      "id": "partial-cubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "minor-atlas-inventory",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/inventory.json",
+      "sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0"
+    },
+    {
+      "id": "minor-atlas-manuscript",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "3a6d8974a2479101290ae0dde5dd87321f1e839a95751d3ebec9d0ce0a1f862b"
+    },
+    {
+      "id": "spread-examples",
+      "repository": "YangDim",
+      "path": "sections/spread_ample_classes/04_examples.tex",
+      "sha256": "5b0f8f1078871028e2ef47ea5838b774c62d73eae2ab9d4d241644bb117ceaf2"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized tree-like closure profile, exact conditioning and pc-minor closure hulls, the two spread-ample containments and their witnesses, and the operation-candidate review pointers. PartialCubes and YangDim retain the full expansion theory, historical corrections, constructions, examples, proofs, and open questions.",
+    "recoverability": "Exact source hashes and stable TeX labels preserve the evidence for the new facts. The claim queue now links every extracted operation-result cell to its normalized database record.",
+    "mutation": "No source file in PartialCubes, YangDim, or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/classes/078_tree_like_partial_cubes.json",
+      "sha256": "f9c0645d2138fcdb1809121a3864be7828b92122e97ca309644eec88982c6788"
+    },
+    {
+      "path": "data/examples/004_vertex_deleted_three_cube.json",
+      "sha256": "9beb65bc91f86f0f0e4b43a373ab1d93f26379801307ff35714b9b7b741da783"
+    },
+    {
+      "path": "data/examples/007_four_cycle.json",
+      "sha256": "1c6e20134185cc2a0e772099914db3be6c12e75af2c2bcb0c0c3308fcc63ca88"
+    },
+    {
+      "path": "data/operation_results/154_tree_like_projection_closed.json",
+      "sha256": "6788f0a506a8d87f97f3096fb39c8723049a51c941c830d23f8646a9a96c3bd7"
+    },
+    {
+      "path": "data/operation_results/155_tree_like_not_conditioning_closed.json",
+      "sha256": "32fd39189cbbe446e85b9e5f47dc08af17a5d119c081321c2466baca720e7d13"
+    },
+    {
+      "path": "data/operation_results/156_tree_like_not_pc_minor_closed.json",
+      "sha256": "5ef393a3620ea6a422d5df7f27dad67f65b5d2c2a2d751c6307f45e380218191"
+    },
+    {
+      "path": "data/operation_results/157_tree_like_conditioning_closure_equals_partial_cubes.json",
+      "sha256": "302189709282f01cb9c823410e563deb42e79b67e77e534e1a90ed875f8e80a9"
+    },
+    {
+      "path": "data/operation_results/158_tree_like_pc_closure_equals_partial_cubes.json",
+      "sha256": "6334c9a4525278b9386a7a36c5d8315da7d998bff0608974e352fa63f80014e4"
+    },
+    {
+      "path": "data/relations/220_paths_strict_subset_spread_ample.json",
+      "sha256": "2903e0e1341643d1065d85bb3ad2f10f05616733a3bae85d746eb71d71d1026f"
+    },
+    {
+      "path": "data/relations/221_hypercubes_strict_subset_spread_ample.json",
+      "sha256": "dcd244c5a2ea32b3eab76b44aa61c9832d339a2219e101383dfc5da674b5beb9"
+    },
+    {
+      "path": "migration/claim_queue.json",
+      "sha256": "9f09816b03eb9b763f1b043449588823a95651afbcf24ee543417ad7d6e4f655"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "607fff49f9b60bd3a726e9051bfe5c6d60b8540203dd9679c232d7f89e101141"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1027 records.",
+    "operation_review": "All 72 extracted operation-result candidates are promoted to database records; the tree-like obstruction and two exact closure descriptions are also reconciled.",
+    "website": "Normalized 1043 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "158 Hasse covers represent 201 stored inclusions; all 22 minor-atlas Ample-family nodes and 182 closure-map arrows remain covered.",
+    "migration": "The survey atlas, minor inventory, LaTeX label index, bibliography audit, source manifest, coverage report, canonical allocations, and review queues are current."
+  },
+  "deferred": [
+    "Thirty-six composite closure descriptions and twenty obstruction summaries still require atomic normalization.",
+    "The explicit spread-ample obstruction census and spreading invariants remain for later YangDim batches.",
+    "Lower-priority maximum_parent_methods results remain deferred by the user."
+  ]
+}
