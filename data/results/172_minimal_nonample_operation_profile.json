@@ -1,0 +1,20 @@
+{
+  "id": 172,
+  "short_name": "minimal_nonample_operation_profile",
+  "name": "Exact Operation Profile of Minimal Non-Ample Classes",
+  "class_ids": [
+    "#classes/conditioning_minimal_non_ample",
+    "#classes/connected_conditioning_minimal_non_ample",
+    "#classes/uniform_oriented_matroid_fibers"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a conditioning-minimal non-ample class of VC dimension $k$, projection to $Z$ gives a cube for $|Z|\\le k$, an antipodally punctured $(k+1)$-cube for $|Z|=k+1$, and another minimal non-ample class for $|Z|>k+1$. Every nonempty proper conditioning is a UOM fiber; consequently every nonempty pc-minor lies in either the minimal-non-ample layer or UOMFib. For a connected parent, every noncube projection in this profile remains connected.",
+  "status": "established",
+  "proof": "The uniform-oriented-matroid classification turns projection into deletion of a uniform matroid, giving the three projection cases. Conditioning fixes tope signs and therefore gives a topal fiber. Once a pc-minor sequence enters UOMFib it stays there by pc-minor closure; otherwise its projection steps remain in the minimal-non-ample layer. The connected qualification follows from the non-free simple UOM recognition theorem.",
+  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uniform-oriented-matroid-fibers-pc-minor-closed"
+}

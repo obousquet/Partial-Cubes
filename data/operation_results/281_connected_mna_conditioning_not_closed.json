@@ -6,10 +6,10 @@
   "operation_id": "#operations/conditioning",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "Every proper nonempty one-coordinate conditioning of a member is ample and therefore lies outside the connected minimal-non-ample class.",
+  "statement": "Every nonempty one-coordinate conditioning is maximum of VC dimension $k-1$, and every nonempty proper iterated conditioning belongs to UOMFib. Hence conditioning always leaves the connected minimal-non-ample class.",
   "witness_ids": [
     "#examples/six_cycle"
   ],
-  "proof": "This is the defining minimality property. In particular, conditioning the six-cycle in any coordinate yields a three-vertex path, which is ample.",
-  "proof_source": "YangDim:minimal_nonample_classes.tex#def:mna; YangDim:minimal_nonample_classes.tex#thm:structure"
+  "proof": "The structure theorem gives the exact maximum one-coordinate sections. The UOM classification identifies every iterated conditioning with a topal fiber of the same uniform oriented matroid. In particular, conditioning the six-cycle in any coordinate yields the maximum three-vertex path.",
+  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure"
 }

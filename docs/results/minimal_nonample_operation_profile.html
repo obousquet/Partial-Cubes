@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,20 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
-    <div class="table-card" id="math-282" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-172" style="position:relative;">
 
-        <h3><a href="operation_results/connected_mna_pc_minor_not_closed.html" class="table-title-link">Connected Minimal-Non-Ample Classes Are Not pc-Minor-Closed</a></h3>
+        <h3><a href="results/minimal_nonample_operation_profile.html" class="table-title-link">Exact Operation Profile of Minimal Non-Ample Classes</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Connected Minimal-Non-Ample Classes Are Not pc-Minor-Closed</p>
-<p><strong>Class: </strong><a href="classes/connected_conditioning_minimal_non_ample.html">Connected Conditioning-Minimal Non-Ample Classes</a></p>
-<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
-<p><strong>Result Type:</strong> Not Closed Under</p>
+        <p><strong>Name: </strong>Exact Operation Profile of Minimal Non-Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/conditioning_minimal_non_ample.html">Conditioning-Minimal Non-Ample Classes</a></li><li><a href="classes/connected_conditioning_minimal_non_ample.html">Connected Conditioning-Minimal Non-Ample Classes</a></li><li><a href="classes/uniform_oriented_matroid_fibers.html">Uniform-Oriented-Matroid Fiber Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a conditioning-minimal non-ample class of VC dimension $k$, projection to $Z$ gives a cube for $|Z|\le k$, an antipodally punctured $(k+1)$-cube for $|Z|=k+1$, and another minimal non-ample class for $|Z|>k+1$. Every nonempty proper conditioning is a UOM fiber; consequently every nonempty pc-minor lies in either the minimal-non-ample layer or UOMFib. For a connected parent, every noncube projection in this profile remains connected.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor is either another connected conditioning-minimal non-ample class or a UOMFib member. Both outcomes occur, so the class is not pc-minor-closed.</p></div>
-<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/six_cycle.html">Six-Cycle</a></li></ul></p>
-<strong>Proof:</strong><div class="text-field"><p>Projections either preserve the connected minimal-non-ample layer or produce a cube. Any proper conditioning enters UOMFib, which is pc-minor-closed. Induction along elementary pc-minor operations gives the two-layer image. For $C_6$, a restriction is $P_3$ and a contraction is $C_4$, both UOMFib members outside the parent class.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>YangDim:minimal_nonample_classes.tex?#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex?#prop:uniform-oriented-matroid-fibers-pc-minor-closed</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The uniform-oriented-matroid classification turns projection into deletion of a uniform matroid, giving the three projection cases. Conditioning fixes tope signs and therefore gives a topal fiber. Once a pc-minor sequence enters UOMFib it stays there by pc-minor closure; otherwise its projection steps remain in the minimal-non-ample layer. The connected qualification follows from the non-free simple UOM recognition theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>YangDim:minimal_nonample_classes.tex?#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex?#prop:uom-fibers-minimal-nonample-conditioning-closure; CompressionSchemes:partitionable_yang_complexes.tex?#prop:uniform-oriented-matroid-fibers-pc-minor-closed</p></div>
 
         </div>
     </div>

@@ -6,7 +6,7 @@
   "operation_id": "#operations/conditioning",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "Every proper one-coordinate conditioning is ample and therefore lies outside the conditioning-minimal non-ample class.",
-  "proof": "This is the defining minimality condition.",
-  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; PartialCubes:papers/minor-atlas/inventory.json#/families/1"
+  "statement": "Every nonempty one-coordinate conditioning is a maximum class of VC dimension $k-1$ on $n-1$ coordinates, and every nonempty proper iterated conditioning belongs to UOMFib. Thus every proper conditioning is ample and lies outside the conditioning-minimal non-ample class.",
+  "proof": "One-coordinate conditionings are ample by definition; uniformity gives their exact cardinality and forces equality in Sauer's bound. Iterated conditionings are exactly nonempty topal fibers of the uniform-oriented-matroid parent, with the parallel rank-one cases reducing to singleton cubes.",
+  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure"
 }

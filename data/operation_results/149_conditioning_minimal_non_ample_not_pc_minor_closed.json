@@ -6,7 +6,7 @@
   "operation_id": "#operations/pc_minor",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "The class is not closed under pc-minors; its pc-minors consist of members of the family together with ample pc-minors, whose ample part is not classified here.",
-  "proof": "Conditioning is an elementary pc-minor operation and every proper conditioning is ample, so the class cannot be pc-minor closed.",
-  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; PartialCubes:papers/minor-atlas/inventory.json#/families/1"
+  "statement": "Every nonempty pc-minor of a conditioning-minimal non-ample class is either conditioning-minimal non-ample or belongs to UOMFib. Both outcomes occur, so the original class is not pc-minor-closed.",
+  "proof": "A projection has the exact three-case profile in the projection theorem: it is a cube or remains minimal non-ample. A nonempty proper conditioning of a minimal-non-ample member enters UOMFib, and UOMFib is pc-minor-closed. Induction along an elementary pc-minor sequence gives the asserted two-layer image. A conditioning of $C_6$ is the ample path $P_3$, proving failure of closure.",
+  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uniform-oriented-matroid-fibers-pc-minor-closed"
 }

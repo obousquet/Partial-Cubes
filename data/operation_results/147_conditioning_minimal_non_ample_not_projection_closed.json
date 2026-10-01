@@ -6,7 +6,7 @@
   "operation_id": "#operations/projection",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "A coordinate projection of a conditioning-minimal non-ample class may be a cube and hence ample, so it leaves the class.",
-  "proof": "The source classification proves that every projection is either another conditioning-minimal non-ample class or a cube; examples of the second case disprove closure.",
+  "statement": "Let $H$ have $n$ active coordinates and VC dimension $k$. Its projection to $Z$ is $Q_Z$ when $|Z|\\le k$, is $Q_Z$ with one antipodal pair removed when $|Z|=k+1$, and is again conditioning-minimal non-ample of VC dimension $k$ when $|Z|>k+1$. Hence the class is not projection-closed.",
+  "proof": "The uniform-oriented-matroid classification identifies projection with deletion. Deleting to at most the rank gives the free matroid and a cube; deletion to rank plus one leaves exactly one antipodal pair absent; larger deletions remain non-free uniform oriented matroids and hence conditioning-minimal non-ample.",
   "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; PartialCubes:papers/minor-atlas/inventory.json#/families/1"
 }

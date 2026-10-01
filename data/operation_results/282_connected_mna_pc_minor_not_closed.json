@@ -6,10 +6,10 @@
   "operation_id": "#operations/pc_minor",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "The class is not closed under partial-cube minors.",
+  "statement": "Every nonempty pc-minor is either another connected conditioning-minimal non-ample class or a UOMFib member. Both outcomes occur, so the class is not pc-minor-closed.",
   "witness_ids": [
     "#examples/six_cycle"
   ],
-  "proof": "A one-coordinate restriction of the six-cycle is a three-vertex path and a one-coordinate contraction is a square; both are ample and outside the class.",
-  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure"
+  "proof": "Projections either preserve the connected minimal-non-ample layer or produce a cube. Any proper conditioning enters UOMFib, which is pc-minor-closed. Induction along elementary pc-minor operations gives the two-layer image. For $C_6$, a restriction is $P_3$ and a contraction is $C_4$, both UOMFib members outside the parent class.",
+  "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uniform-oriented-matroid-fibers-pc-minor-closed"
 }

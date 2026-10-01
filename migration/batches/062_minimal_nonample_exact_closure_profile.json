@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "batch_id": "062_minimal_nonample_exact_closure_profile",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete the projection, conditioning, and pc-minor status of conditioning-minimal non-ample classes and their connected partial-cube subclass with exact image descriptions.",
+  "source_refs": [
+    "YangDim:minimal_nonample_classes.tex#thm:structure",
+    "YangDim:minimal_nonample_classes.tex#thm:mna-uom",
+    "YangDim:minimal_nonample_classes.tex#rem:rank-one",
+    "CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure",
+    "CompressionSchemes:partitionable_yang_complexes.tex#prop:uniform-oriented-matroid-fibers-pc-minor-closed"
+  ],
+  "source_packets": [
+    {
+      "id": "yangdim-minimal-nonample-classes",
+      "repository": "YangDim",
+      "path": "minimal_nonample_classes.tex",
+      "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+    },
+    {
+      "id": "compression-partitionable-yang-complexes",
+      "repository": "CompressionSchemes",
+      "path": "partitionable_yang_complexes.tex",
+      "sha256": "6f7ff6d152e211e933796981d70b443142257e74e0e96d1652ed5359e41607eb"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized operation statuses and exact image profile. The source manuscripts retain full oriented-matroid proofs and broader applications.",
+    "recoverability": "Exact hashes and theorem locators preserve both proof chains.",
+    "mutation": "No sibling source was modified."
+  },
+  "records": [
+    {
+      "path": "data/operation_results/147_conditioning_minimal_non_ample_not_projection_closed.json",
+      "sha256": "9ab54fb3cc8a3a47e7b9ff4792993aea6ab6e31c2cfab744531ad42d3c8a192b"
+    },
+    {
+      "path": "data/operation_results/148_conditioning_minimal_non_ample_not_conditioning_closed.json",
+      "sha256": "75c332f7e5f8b7c3a2b2cb0e58172bb77898d2de1b6434e95f921ba219d54c12"
+    },
+    {
+      "path": "data/operation_results/149_conditioning_minimal_non_ample_not_pc_minor_closed.json",
+      "sha256": "c8cf4d20a712cbb129db1f983d0e9da6fb0825371d8b1a886c70694adf7c7f0d"
+    },
+    {
+      "path": "data/operation_results/280_connected_mna_projection_not_closed.json",
+      "sha256": "46370e92399f9ab3c51463344ba734d57cef53ddd58fae553134e29f271a6751"
+    },
+    {
+      "path": "data/operation_results/281_connected_mna_conditioning_not_closed.json",
+      "sha256": "f5094381ce6b9bb20008d316bcd4ab42a42462d99d234d154c6f3983a6302dc1"
+    },
+    {
+      "path": "data/operation_results/282_connected_mna_pc_minor_not_closed.json",
+      "sha256": "5a089032bb671becc1fc3512a317fd34b1a5906e3f6446d192f5de2e5b2b4f98"
+    },
+    {
+      "path": "data/operation_results/284_conditioning_minimal_non_ample_conditionings_land_in_uom_fibers.json",
+      "sha256": "6e37676ffc3ef30ba7655615af333c4f53b24a1b7258c06d46c33c2236c24cbc"
+    },
+    {
+      "path": "data/results/172_minimal_nonample_operation_profile.json",
+      "sha256": "78bb66cddf86a2bb4724e9745cc3a9632b3ea41fc6e572d78d6e6de42b5a5c53"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "90d9ee5fdcee6373245f62c273cfd702adb4fdadc2a42ad62c91fc0c4aa67d5c"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "cce21977474a79f9a3126108e96cba98fc8b72a8f4fee335338c10ea8641aaa4"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "286c5eb98125846a904aca7c2ec34f72b363746bb475e8d5cdc0b42f295ed576"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1315 records.",
+    "website": "Normalized 1331 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 114 classes remain positioned relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All source preservation, coverage, class-status, and review-queue checks pass."
+  },
+  "deferred": []
+}
