@@ -1,0 +1,19 @@
+{
+  "id": 45,
+  "short_name": "extendable_cycle_ratio_spaces_open",
+  "name": "Extendable Cycle-Ratio Spaces Are Open",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If section rows $a$ extend to a positive $t$-certificate, then the open cycle-metric ball of radius $\\tfrac12\\log(1+t)$ about $[a]$ consists of extendable row orbits. Thus every extension space in fundamental-cycle coordinates is open. Two supplied pieces glue realizably whenever the distance between their row orbits is less than the sum of these two radii.",
+  "status": "established",
+  "proof": "Choose $q<\\sqrt{1+t}$ for every orbit in the ball and apply robust section gluing. For two pieces, normalized coefficientwise geometric interpolation gives a cycle-ratio point strictly inside both balls.",
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#cor:open-extensions"
+}

@@ -550,6 +550,29 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-22" style="position:relative;">
+
+        <h3><a href="examples/incompatible_realizable_gated_amalgam.html" class="table-title-link">Incompatible Realizable Gated Amalgam</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Incompatible Realizable Gated Amalgam</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="X_{33}">
+            \[X_{33}\]
+        </div>
+    </div>
+
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $(a_1,a_2,b_1,b_-,i,j,b_+)$ in low-bit order, take the 33 words $\{0,1,2,3,16,17,18,19,20,24,25,28,32,33,34,35,36,37,40,42,44,48,52,56,60,80,82,84,96,97,100,112,116\}$. Its sections $A=X_{b_+=0}$ and $B=X_{b_-=0}$ each have 25 words and meet in the common 17-word section $D=X_{b_-=b_+=0}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The union and both pieces are ample partial cubes. Each piece is gated in the union, is downward closed in its private coordinate, and has an exact rational separation certificate of margin at least $1/240$. Their section-row cycle ratios are respectively $1/3$ and $3$, forcing disjoint extension spaces; hence the 33-word gated amalgam has separation margin zero and is not realizable ample.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetFourSections">[BousquetFourSections]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#thm:incompatible-extensions</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_margin_gluing.py; data/examples/assets/margin_gluing_verification.json; data/examples/assets/margin_incompatible_extensions_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

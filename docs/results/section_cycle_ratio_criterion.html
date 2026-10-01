@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-8" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-42" style="position:relative;">
 
-        <h3><a href="operations/common_section_gluing.html" class="table-title-link">Common-Section Gluing</a></h3>
+        <h3><a href="results/section_cycle_ratio_criterion.html" class="table-title-link">Cycle-Ratio Criterion for Section Rows</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Common-Section Gluing</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\bigcup_D">
-            \[\bigcup_D\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $D\subseteq\{0,1\}^E$ be nonempty and let $F_1,F_2$ be disjoint private coordinate sets. Pieces $A_i\subseteq\{0,1\}^{E\sqcup F_i}$ satisfy $D\times\{0_{F_i}\}\subseteq A_i$ and $\pi_E(A_i)=D$. Embed each piece on $E\sqcup F_1\sqcup F_2$ by setting the other private block to zero, and take their union.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Comments:</strong><div class="text-field"><p>The paper uses the simultaneous finite-arity version with pairwise disjoint private blocks. Distinct pieces meet exactly in the common coordinate section $D$; the projection requirement is essential for the invariant laws.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#eq:piece</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_common_section_gluing_closed.html'>Realizable Ample Classes Are Not Closed Under Gated Common-Section Gluing</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/betti_numbers_under_common_section_gluing.html'>Betti Numbers under Common-Section Gluing</a></li><li><a href='results/interval_gap_first_syzygy_laws.html'>Interval Gaps and First Syzygies</a></li><li><a href='results/quantitative_common_section_gluing.html'>Quantitative Common-Section Gluing Bound</a></li><li><a href='results/horn_renaming_defect_vertex_gluing.html'>Exact Horn-Renaming Defect Under Rooted Vertex Gluing</a></li><li><a href='results/separation_margin_cube_union_bound.html'>Separation Margin Under Union Along a Cube</a></li><li><a href='results/section_row_compatibility.html'>Section-Row Compatibility Criterion</a></li><li><a href='results/section_cycle_ratio_criterion.html'>Cycle-Ratio Criterion for Section Rows</a></li><li><a href='results/forest_section_gluing_bound.html'>Forest-Section Gluing Bound</a></li><li><a href='results/robust_section_gluing_bound.html'>Robust Cycle-Agreement Gluing Bound</a></li><li><a href='results/extendable_cycle_ratio_spaces_open.html'>Extendable Cycle-Ratio Spaces Are Open</a></li></ul></p></div>
+        <p><strong>Name: </strong>Cycle-Ratio Criterion for Section Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G_D$ be the bipartite incidence graph between section coordinates and minimal missing patterns. Two positive normalized section-row families differ by positive coordinate rescaling exactly when their products around every fundamental cycle agree. Consequently, a downward-private union is realizable exactly when the pieces' extension spaces have a common point in fundamental-cycle coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Taking logarithms converts diagonal equivalence into vertex potentials on the incidence graph. Spanning-tree recursion defines the potentials, and equality on each fundamental cycle verifies every remaining edge. Positive rescaling preserves certificate positivity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#prop:cycle-coordinates</p></div>
 
         </div>
     </div>

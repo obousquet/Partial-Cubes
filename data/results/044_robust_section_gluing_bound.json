@@ -1,0 +1,19 @@
+{
+  "id": 44,
+  "short_name": "robust_section_gluing_bound",
+  "name": "Robust Cycle-Agreement Gluing Bound",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For supplied piece certificates with margins $t_j$ and section rows $a^j$, choose target rows $b$ and $q_j\\ge1$ whose simple-cycle ratios differ from those of $a^j$ by at most $q_j^{|\\gamma|}$. If $q_j^2-1<t_j$, then $b$ extends to every piece at the explicit positive margin $u=\\min_j(t_j-(q_j^2-1))/(Q(a^j,b)q_j^2)^L$, and $\\mu(X)\\ge u^2/(1+2u)$.",
+  "status": "established",
+  "proof": "The diagonal sandwich theorem supplies approximate row and coordinate factors. Fitting the rows to the target changes each evaluation by at most $q_j^2-1$; rescaling then loses at most the displayed path-length factor. Apply section-row compatibility.",
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:robust-gluing"
+}

@@ -761,6 +761,91 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-41" style="position:relative;">
+
+        <h3><a href="results/section_row_compatibility.html" class="table-title-link">Section-Row Compatibility Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Section-Row Compatibility Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For pieces $A_j$ with common section $D$, pairwise disjoint private coordinate blocks, and downward closure in each private block, the embedded union $X$ has positive margin exactly when the positive extension spaces of their minimal-missing-pattern rows on $D$ have a common member. If one row family extends to a $t$-certificate of every piece, then $t^2/(1+2t)\le\mu(X)\le\min_j\mu(A_j)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restriction proves necessity. For sufficiency, shrink the witness in the occupied piece and set every unoccupied private coordinate to $-1$. Downward closure makes those negative values help every private row; cross-block missing pairs use uniform rows.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#thm:section-compatibility</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-42" style="position:relative;">
+
+        <h3><a href="results/section_cycle_ratio_criterion.html" class="table-title-link">Cycle-Ratio Criterion for Section Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cycle-Ratio Criterion for Section Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G_D$ be the bipartite incidence graph between section coordinates and minimal missing patterns. Two positive normalized section-row families differ by positive coordinate rescaling exactly when their products around every fundamental cycle agree. Consequently, a downward-private union is realizable exactly when the pieces' extension spaces have a common point in fundamental-cycle coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Taking logarithms converts diagonal equivalence into vertex potentials on the incidence graph. Spanning-tree recursion defines the potentials, and equality on each fundamental cycle verifies every remaining edge. Positive rescaling preserves certificate positivity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#prop:cycle-coordinates</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-43" style="position:relative;">
+
+        <h3><a href="results/forest_section_gluing_bound.html" class="table-title-link">Forest-Section Gluing Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forest-Section Gluing Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If the section incidence graph $G_D$ is a forest and the least piece margin is $t>0$, put $\alpha=2t/(1+t)$, let $L$ be half the largest distance between coordinate vertices in one component, and set $u=t\alpha^L$. Then $u^2/(1+2u)\le\mu(X)\le t$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Root each incidence tree at a coordinate and propagate positive coordinate scales so every transformed section row becomes uniform. The coefficient lower bound confines the scale ratio to $\alpha^{-L}$; section-row compatibility then supplies the displayed union certificate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#thm:forest-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-44" style="position:relative;">
+
+        <h3><a href="results/robust_section_gluing_bound.html" class="table-title-link">Robust Cycle-Agreement Gluing Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Robust Cycle-Agreement Gluing Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For supplied piece certificates with margins $t_j$ and section rows $a^j$, choose target rows $b$ and $q_j\ge1$ whose simple-cycle ratios differ from those of $a^j$ by at most $q_j^{|\gamma|}$. If $q_j^2-1<t_j$, then $b$ extends to every piece at the explicit positive margin $u=\min_j(t_j-(q_j^2-1))/(Q(a^j,b)q_j^2)^L$, and $\mu(X)\ge u^2/(1+2u)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The diagonal sandwich theorem supplies approximate row and coordinate factors. Fitting the rows to the target changes each evaluation by at most $q_j^2-1$; rescaling then loses at most the displayed path-length factor. Apply section-row compatibility.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#thm:robust-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-45" style="position:relative;">
+
+        <h3><a href="results/extendable_cycle_ratio_spaces_open.html" class="table-title-link">Extendable Cycle-Ratio Spaces Are Open</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Extendable Cycle-Ratio Spaces Are Open</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If section rows $a$ extend to a positive $t$-certificate, then the open cycle-metric ball of radius $\tfrac12\log(1+t)$ about $[a]$ consists of extendable row orbits. Thus every extension space in fundamental-cycle coordinates is open. Two supplied pieces glue realizably whenever the distance between their row orbits is less than the sum of these two radii.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose $q<\sqrt{1+t}$ for every orbit in the ball and apply robust section gluing. For two pieces, normalized coefficientwise geometric interpolation gives a cycle-ratio point strictly inside both balls.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#cor:open-extensions</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

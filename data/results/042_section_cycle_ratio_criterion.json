@@ -1,0 +1,19 @@
+{
+  "id": 42,
+  "short_name": "section_cycle_ratio_criterion",
+  "name": "Cycle-Ratio Criterion for Section Rows",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $G_D$ be the bipartite incidence graph between section coordinates and minimal missing patterns. Two positive normalized section-row families differ by positive coordinate rescaling exactly when their products around every fundamental cycle agree. Consequently, a downward-private union is realizable exactly when the pieces' extension spaces have a common point in fundamental-cycle coordinates.",
+  "status": "established",
+  "proof": "Taking logarithms converts diagonal equivalence into vertex potentials on the incidence graph. Spanning-tree recursion defines the potentials, and equality on each fundamental cycle verifies every remaining edge. Positive rescaling preserves certificate positivity.",
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#prop:cycle-coordinates"
+}

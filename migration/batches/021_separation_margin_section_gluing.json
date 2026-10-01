@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "batch_id": "021_separation_margin_section_gluing",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize common-section separator extension spaces, exact cycle-ratio compatibility, forest and robust quantitative gluing, openness of extendable row-orbit spaces, and the exact 33-word gated-amalgam counterexample.",
+  "source_refs": [
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:section-compatibility",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#prop:cycle-coordinates",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:forest-gluing",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:robust-gluing",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#cor:open-extensions",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:incompatible-extensions"
+  ],
+  "source_packets": [
+    {
+      "id": "section-gluing-supplement",
+      "repository": "PartialCubes",
+      "path": "papers/realizability-margin/section_gluing.tex",
+      "sha256": "cb2c13f99ad20ad7810c683c27da699b03a9fcc486491b881ed4f23bff51e1cb"
+    },
+    {
+      "id": "exact-incompatible-extension-report",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/margin_incompatible_extensions_verification.json",
+      "sha256": "b69f632d5b8ac0d1d225d5f5ee346ae4eeb60cdcf9d9832cac18658036373c30"
+    },
+    {
+      "id": "source-incompatible-extension-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/verify_margin_incompatible_extensions.py",
+      "sha256": "140ec8293997475f442c769916243363f3c5c4627087c2d3e170a52d8dc0e1df"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized theorem statements, concise proofs, operation failure, and named witness. The manuscript retains the full coefficient-space development, diagonal-sandwich derivation, examples, exposition, and research history.",
+    "recoverability": "The source manifest plus these hashes preserve exact provenance; no LaTeX source was modified by this batch."
+  },
+  "verification_packets": [
+    {
+      "id": "database-margin-gluing-verifier",
+      "path": "scripts/verify_margin_gluing.py",
+      "sha256": "3e9e02458e2f63d7614b5e9e8f61b0bb2719a48ee678db904dc636b6874e3bea",
+      "assertions": "Exact Fraction replay of both 25-word certificates, their complete minimal row systems, all four ample partial-cube checks, private downward closure, and the four-row cycle obstruction."
+    },
+    {
+      "id": "compact-margin-gluing-report",
+      "path": "data/examples/assets/margin_gluing_verification.json",
+      "sha256": "21f3014a6914acbd4b886e9ea8263d5369c05b4fd2d70ad5a49159b2bd9cd71a",
+      "assertions": "Compact database-owned replay report."
+    },
+    {
+      "id": "source-exact-certificate-packet",
+      "path": "data/examples/assets/margin_incompatible_extensions_verification.json",
+      "sha256": "b69f632d5b8ac0d1d225d5f5ee346ae4eeb60cdcf9d9832cac18658036373c30",
+      "assertions": "Preserved exact rational witnesses and rows for both pieces and the 33-word union."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/022_incompatible_realizable_gated_amalgam.json",
+      "sha256": "9f589c05e79341b1c1b2b088a4d63076d5a6721b781d0199d466f0113bdb9a27"
+    },
+    {
+      "path": "data/examples/assets/margin_gluing_verification.json",
+      "sha256": "21f3014a6914acbd4b886e9ea8263d5369c05b4fd2d70ad5a49159b2bd9cd71a"
+    },
+    {
+      "path": "data/examples/assets/margin_incompatible_extensions_verification.json",
+      "sha256": "b69f632d5b8ac0d1d225d5f5ee346ae4eeb60cdcf9d9832cac18658036373c30"
+    },
+    {
+      "path": "data/operation_results/073_realizable_ample_not_common_section_gluing_closed.json",
+      "sha256": "ff984f5c6dc49c81c0646e51cea4d2e6ca4ffac9a26aa623e019c1ab62ee208d"
+    },
+    {
+      "path": "data/results/041_section_row_compatibility.json",
+      "sha256": "841ccea6b6ae1134d7e5476d5c3f046ecd3f7942411468ed9ce8df9bb54e004b"
+    },
+    {
+      "path": "data/results/042_section_cycle_ratio_criterion.json",
+      "sha256": "400fe685675af26440a63aa6bdf607dc5c6d2528131746e029bd10b630cd4947"
+    },
+    {
+      "path": "data/results/043_forest_section_gluing_bound.json",
+      "sha256": "9acf9aff82cd4c458cfa8bfbc0b7dcf103635a98893e0d655cd11706de98160c"
+    },
+    {
+      "path": "data/results/044_robust_section_gluing_bound.json",
+      "sha256": "a2b65461f41ba9fbad27b65ce97bac59b7f0c9699b115b09d4f9d88e3ebed7b9"
+    },
+    {
+      "path": "data/results/045_extendable_cycle_ratio_spaces_open.json",
+      "sha256": "9f039e42837895505c703b4663ceee6ac1c8e7d9647a163d04ee4d4891db7726"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "f0ac87165c35b5941f7974f990bb351a5afe5da13f6629455db86c80388754cc"
+    },
+    {
+      "path": "scripts/verify_margin_gluing.py",
+      "sha256": "3e9e02458e2f63d7614b5e9e8f61b0bb2719a48ee678db904dc636b6874e3bea"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 387 records.",
+    "website": "Generated site contains 12 tables and 2 graph views.",
+    "graphs": "28 Hasse covers represent 45 stored inclusions; 41 closure-map arrows rendered.",
+    "migration": "100 class occurrences reconciled; source snapshot recoverable; review queues valid."
+  },
+  "deferred": [
+    "Coefficient-space homotopy types and complement duality remain for topology-focused batches.",
+    "General gluing without private downward closure remains an open prose question in the manuscript and is not converted into a database claim."
+  ]
+}

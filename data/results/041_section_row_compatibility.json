@@ -1,0 +1,19 @@
+{
+  "id": 41,
+  "short_name": "section_row_compatibility",
+  "name": "Section-Row Compatibility Criterion",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For pieces $A_j$ with common section $D$, pairwise disjoint private coordinate blocks, and downward closure in each private block, the embedded union $X$ has positive margin exactly when the positive extension spaces of their minimal-missing-pattern rows on $D$ have a common member. If one row family extends to a $t$-certificate of every piece, then $t^2/(1+2t)\\le\\mu(X)\\le\\min_j\\mu(A_j)$.",
+  "status": "established",
+  "proof": "Restriction proves necessity. For sufficiency, shrink the witness in the occupied piece and set every unoccupied private coordinate to $-1$. Downward closure makes those negative values help every private row; cross-block missing pairs use uniform rows.",
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:section-compatibility"
+}

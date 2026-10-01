@@ -1,0 +1,19 @@
+{
+  "id": 43,
+  "short_name": "forest_section_gluing_bound",
+  "name": "Forest-Section Gluing Bound",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If the section incidence graph $G_D$ is a forest and the least piece margin is $t>0$, put $\\alpha=2t/(1+t)$, let $L$ be half the largest distance between coordinate vertices in one component, and set $u=t\\alpha^L$. Then $u^2/(1+2u)\\le\\mu(X)\\le t$.",
+  "status": "established",
+  "proof": "Root each incidence tree at a coordinate and propagate positive coordinate scales so every transformed section row becomes uniform. The coefficient lower bound confines the scale ratio to $\\alpha^{-L}$; section-row compatibility then supplies the displayed union certificate.",
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:forest-gluing"
+}
