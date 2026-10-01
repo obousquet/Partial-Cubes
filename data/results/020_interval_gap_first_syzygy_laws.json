@@ -1,0 +1,24 @@
+{
+  "id": 20,
+  "short_name": "interval_gap_first_syzygy_laws",
+  "name": "Interval Gaps and First Syzygies",
+  "result_type": "invariant_law",
+  "statement": "The first Betti multiplicity at a face label $u_F$ is one exactly when $C\\cap F$ is an antipodal pair in $F$, and is zero otherwise. Hence $g(C)=\\max(\\{j-n-1:\\beta_{1,j}(J_C)\\neq0\\}\\cup\\{0\\})\\leq\\nu_k(C)\\leq\\sigma(C)$. The zero set of $g$ is exactly the isometric cube embeddings. Moreover, $g$ is pc-minor monotone and takes maxima under Cartesian products and common-section gluings satisfying the projection hypotheses.",
+  "status": "established",
+  "proof": "First Betti multiplicity is reduced zero-dimensional homology of the face complex. Its graph joins every non-antipodal pair and is disconnected exactly for a two-vertex antipodal trace. Empty intervals survive lifting through projection or conditioning, while a product pair varying in both factors has a mixed intermediate point. In a common-section union, pairs from different pieces have a base lift strictly between them, so every empty interval lies in one piece.",
+  "references": "\\cite{BousquetYangDictionary26}",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:interval-betti",
+  "invariant_ids": [
+    "#invariants/interval_gap",
+    "#invariants/rounded_resolution_slope_defect",
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/cartesian_product",
+    "#operations/common_section_gluing"
+  ],
+  "class_ids": [
+    "#classes/partial_cubes"
+  ]
+}

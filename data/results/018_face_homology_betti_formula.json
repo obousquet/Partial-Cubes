@@ -1,0 +1,14 @@
+{
+  "id": 18,
+  "short_name": "face_homology_betti_formula",
+  "name": "Face-Homology Formula for Literal-Ideal Betti Numbers",
+  "result_type": "invariant_law",
+  "statement": "Let $F$ be a positive-dimensional coordinate face with nonempty trace $V=C\\cap F$, and let $\\mathcal B(C,F)$ be the simplicial complex of subsets of $V$ lying in a proper coordinate face of $F$. If $u_F$ is the literal label of $F$, then for $i\\geq1$, $\\beta_{i,u_F}(J_C)=\\dim_k\\widetilde H_{i-1}(\\mathcal B(C,F);k)$. Every positive-step Betti label arises from a face this way. Thus nonzero homology for an $r$-face certifies $\\nu_k(C)\\geq\\lceil r/i\\rceil-1$.",
+  "status": "established",
+  "proof": "The $u_F$ strand of the Taylor resolution is the relative augmented chain complex of the full simplex on $V$ modulo the subsets whose least common multiple strictly divides $u_F$, which are precisely $\\mathcal B(C,F)$. Contractibility of the full simplex gives the displayed reduced homology. Every squarefree least common multiple of literal generators determines a coordinate face.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:face-betti",
+  "invariant_ids": [
+    "#invariants/resolution_slope",
+    "#invariants/rounded_resolution_slope_defect"
+  ]
+}

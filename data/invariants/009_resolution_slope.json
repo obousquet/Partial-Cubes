@@ -1,0 +1,15 @@
+{
+  "id": 9,
+  "short_name": "resolution_slope",
+  "name": "Resolution Slope",
+  "symbol": "\\lambda_k",
+  "definition": "For a nonempty binary class $C\\subseteq\\{0,1\\}^n$, let $S=k[x_{i,0},x_{i,1}:i\\in[n]]$ and $J_C=(m_c:c\\in C)$, where $m_c=\\prod_{i=1}^n x_{i,1-c_i}$. If $\\beta_{i,j}(J_C)$ are the graded Betti numbers of this ideal, define $\\lambda_k(C)=\\max(\\{1\\}\\cup\\{(j-n)/i:i\\geq1,\\ \\beta_{i,j}(J_C)\\neq0\\})$.",
+  "status": "established",
+  "codomain": "Rational numbers at least one",
+  "parameters": "A coefficient field $k$; positive-step Betti numbers can depend on the field.",
+  "normalization": "Betti numbers are those of the ideal rather than the quotient. The floor at one gives principal ideals and the zero-coordinate singleton slope one.",
+  "category": "algebraic",
+  "isomorphism_invariant": true,
+  "references": "\\cite{AvramovConcaIyengar10}",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#eq:slope-definition"
+}

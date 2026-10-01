@@ -1,0 +1,15 @@
+{
+  "id": 22,
+  "short_name": "width_cut_characterization",
+  "name": "Cut Characterization of Ordering Width",
+  "result_type": "invariant_law",
+  "statement": "For every nonempty class $C$, $\\sigma(C)=\\max_R\\min_{A\\in\\partial^+R}\\nu_k(A)$, where the maximum ranges over $R\\subseteq2^C$ with $\\emptyset\\in R$ and $C\\notin R$, and $\\partial^+R=\\{A\\cup\\{c\\}:A\\in R,\\ c\\in C\\setminus A,\\ A\\cup\\{c\\}\\notin R\\}$. In particular, $\\sigma(C)\\geq t$ follows if every boundary class has an $r$-face with nonzero $\\widetilde H_{i-1}(\\mathcal B(A,F);k)$ and $r>it$.",
+  "status": "established",
+  "proof": "Every prefix chain first exits any admissible $R$, and the exact prefix-slope formula bounds the boundary value by the chain maximum. Conversely, for $a=\\sigma(C)$ take $R$ to consist of the empty set and all subclasses reachable by adding concepts through nonempty prefixes with $\\nu_k<a$. The full class is not reachable, and every outgoing boundary has value at least $a$. The face-homology formula supplies the stated certificates.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:width-cut",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/rounded_resolution_slope_defect"
+  ],
+  "comments": "The certificate can have exponential size; the theorem does not assert efficient recognition."
+}

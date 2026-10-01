@@ -1,0 +1,16 @@
+{
+  "id": 15,
+  "short_name": "partial_cube_interval_gap_equivalence",
+  "name": "Partial-Cube and Interval-Gap Equivalence",
+  "class_id": "#classes/partial_cubes",
+  "characterization_ids": [
+    "#characterizations/isometric_hypercube_embedding",
+    "#characterizations/zero_interval_gap"
+  ],
+  "hypotheses": "Finite nonempty binary family with its one-inclusion graph.",
+  "statement": "Isometry of the one-inclusion graph in the ambient cube is equivalent to the absence of an empty interval between concepts at Hamming distance greater than one.",
+  "status": "established",
+  "proof": "If the embedding is isometric, a geodesic supplies an intermediate concept in every nontrivial interval. Conversely, when $g(C)=0$, every pair at distance greater than one has an intermediate concept in its interval; induction on Hamming distance concatenates geodesics through such concepts and proves isometry.",
+  "references": "\\cite{BousquetYangDictionary26}",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#prop:interval-betti"
+}

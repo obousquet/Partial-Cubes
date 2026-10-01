@@ -1,0 +1,11 @@
+{
+  "id": 8,
+  "short_name": "common_section_gluing",
+  "name": "Common-Section Gluing",
+  "symbol": "\\bigcup_D",
+  "arity": 2,
+  "definition": "Let $D\\subseteq\\{0,1\\}^E$ be nonempty and let $F_1,F_2$ be disjoint private coordinate sets. Pieces $A_i\\subseteq\\{0,1\\}^{E\\sqcup F_i}$ satisfy $D\\times\\{0_{F_i}\\}\\subseteq A_i$ and $\\pi_E(A_i)=D$. Embed each piece on $E\\sqcup F_1\\sqcup F_2$ by setting the other private block to zero, and take their union.",
+  "category": "gluing",
+  "comments": "The paper uses the simultaneous finite-arity version with pairwise disjoint private blocks. Distinct pieces meet exactly in the common coordinate section $D$; the projection requirement is essential for the invariant laws.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#eq:piece"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 23,
+  "short_name": "quantitative_common_section_gluing",
+  "name": "Quantitative Common-Section Gluing Bound",
+  "result_type": "invariant_law",
+  "statement": "For common-section pieces $A_i$ over $D$, let $h_i=\\max_{a\\in A_i}d_H(a,D)$, $\\kappa_i=\\max\\{h_i-1,0\\}$, and let $\\kappa_{(2)}$ be the second largest $\\kappa_i$ with multiplicity, or zero for one piece. Then $\\max_i\\sigma(A_i)\\leq\\sigma(X)\\leq\\max\\{\\max_i\\sigma(A_i),\\kappa_{(2)}\\}$. If all but at most one piece have $h_i\\leq1$, equality holds with the maximum piece width.",
+  "status": "established",
+  "proof": "Every piece is a conditioning of the union, giving the lower bound. Order a piece with largest $\\kappa_i$ first, then append the outside concepts of each other piece after the base $D$. The gate of a current concept into $D$ has disagreement contained in every cross-piece disagreement, so cross-piece predecessors add no new minimal supports. Each appended piece costs at most the maximum of its absolute width and $\\kappa_i$, leaving only the second largest attachment penalty.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:gluing",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ]
+}

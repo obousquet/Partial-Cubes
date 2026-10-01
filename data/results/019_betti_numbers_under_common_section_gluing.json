@@ -1,0 +1,18 @@
+{
+  "id": 19,
+  "short_name": "betti_numbers_under_common_section_gluing",
+  "name": "Betti Numbers under Common-Section Gluing",
+  "result_type": "invariant_law",
+  "statement": "For common-section pieces $A_1,\\ldots,A_m$ over $D$ satisfying the projection hypotheses, embed their literal ideals $I_j$ and the base ideal $I_0$ in the common literal ring and let $I$ be the ideal of the union $X$. Then $\\beta_{h,u}(I)=\\sum_j\\beta_{h,u}(I_j)-(m-1)\\beta_{h,u}(I_0)$ for every $h$ and literal multidegree $u$. Consequently $\\lambda_k(X)=\\max_j\\lambda_k(A_j)$ and $\\nu_k(X)=\\max_j\\nu_k(A_j)$, and labels varying in two private blocks have multiplicity zero.",
+  "status": "established",
+  "proof": "Distinct piece ideals intersect in the embedded base ideal, yielding an exact sequence from $I_0^{\\oplus(m-1)}$ to the direct sum of the piece ideals and then to $I$. At a Betti label of $I_0$, the Taylor strands for the base and each piece coincide, so the induced Tor maps are injective. The long exact Tor sequence therefore splits into short exact sequences in every multidegree and gives the formula. Embedding a piece raises its shifts and generator degree equally, so the slope formulas follow.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:betti-gluing",
+  "invariant_ids": [
+    "#invariants/resolution_slope",
+    "#invariants/rounded_resolution_slope_defect"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "comments": "No ampleness assumption is required. The projection equality $\\pi_E(A_i)=D$ is essential."
+}

@@ -1,0 +1,25 @@
+{
+  "id": 17,
+  "short_name": "resolution_slope_width_laws",
+  "name": "Resolution-Slope and Ordering-Width Laws",
+  "result_type": "invariant_law",
+  "statement": "For every nonempty binary class $C$, $\\lambda_k(C)\\leq\\sigma(C)+1$ and $\\nu_k(C)\\leq\\sigma(C)$. Both slope invariants are unchanged by cube symmetries and constant-coordinate extensions, are nonincreasing under pc-minors, and take the maximum under Cartesian products on disjoint coordinates. Moreover, $\\nu_k(C)=0$ exactly when $C$ is ample.",
+  "status": "established",
+  "proof": "An order of width $t$ gives colon ideals generated in degrees at most $t+1$; Taylor resolutions of the colons and the graded horseshoe construction bound every shift of $J_C$ by $n+i(t+1)$. Literal multigraded resolutions restrict under conditioning and localize under projection without increasing excess shifts. Minimal resolutions tensor on disjoint variables, which gives the product maximum. Finally slope one is linear resolution, and the Alexander-dual Yang correspondence identifies that condition with ampleness.",
+  "references": "\\cite{AvramovConcaIyengar10,BousquetAmpleCM26,EmtanderMohammadiMoradi11}",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:slope-laws",
+  "invariant_ids": [
+    "#invariants/resolution_slope",
+    "#invariants/rounded_resolution_slope_defect",
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "class_ids": [
+    "#classes/ample"
+  ]
+}

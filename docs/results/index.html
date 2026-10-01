@@ -362,6 +362,121 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-17" style="position:relative;">
+
+        <h3><a href="results/resolution_slope_width_laws.html" class="table-title-link">Resolution-Slope and Ordering-Width Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Resolution-Slope and Ordering-Width Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/resolution_slope.html">Resolution Slope</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty binary class $C$, $\lambda_k(C)\leq\sigma(C)+1$ and $\nu_k(C)\leq\sigma(C)$. Both slope invariants are unchanged by cube symmetries and constant-coordinate extensions, are nonincreasing under pc-minors, and take the maximum under Cartesian products on disjoint coordinates. Moreover, $\nu_k(C)=0$ exactly when $C$ is ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>An order of width $t$ gives colon ideals generated in degrees at most $t+1$; Taylor resolutions of the colons and the graded horseshoe construction bound every shift of $J_C$ by $n+i(t+1)$. Literal multigraded resolutions restrict under conditioning and localize under projection without increasing excess shifts. Minimal resolutions tensor on disjoint variables, which gives the product maximum. Finally slope one is linear resolution, and the Alexander-dual Yang correspondence identifies that condition with ampleness.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AvramovConcaIyengar10">[AvramovConcaIyengar10]</a> <a href="bibliography.html#BousquetAmpleCM26">[BousquetAmpleCM26]</a> <a href="bibliography.html#EmtanderMohammadiMoradi11">[EmtanderMohammadiMoradi11]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:slope-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-18" style="position:relative;">
+
+        <h3><a href="results/face_homology_betti_formula.html" class="table-title-link">Face-Homology Formula for Literal-Ideal Betti Numbers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Face-Homology Formula for Literal-Ideal Betti Numbers</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/resolution_slope.html">Resolution Slope</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $F$ be a positive-dimensional coordinate face with nonempty trace $V=C\cap F$, and let $\mathcal B(C,F)$ be the simplicial complex of subsets of $V$ lying in a proper coordinate face of $F$. If $u_F$ is the literal label of $F$, then for $i\geq1$, $\beta_{i,u_F}(J_C)=\dim_k\widetilde H_{i-1}(\mathcal B(C,F);k)$. Every positive-step Betti label arises from a face this way. Thus nonzero homology for an $r$-face certifies $\nu_k(C)\geq\lceil r/i\rceil-1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The $u_F$ strand of the Taylor resolution is the relative augmented chain complex of the full simplex on $V$ modulo the subsets whose least common multiple strictly divides $u_F$, which are precisely $\mathcal B(C,F)$. Contractibility of the full simplex gives the displayed reduced homology. Every squarefree least common multiple of literal generators determines a coordinate face.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:face-betti</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-19" style="position:relative;">
+
+        <h3><a href="results/betti_numbers_under_common_section_gluing.html" class="table-title-link">Betti Numbers under Common-Section Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Betti Numbers under Common-Section Gluing</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/resolution_slope.html">Resolution Slope</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For common-section pieces $A_1,\ldots,A_m$ over $D$ satisfying the projection hypotheses, embed their literal ideals $I_j$ and the base ideal $I_0$ in the common literal ring and let $I$ be the ideal of the union $X$. Then $\beta_{h,u}(I)=\sum_j\beta_{h,u}(I_j)-(m-1)\beta_{h,u}(I_0)$ for every $h$ and literal multidegree $u$. Consequently $\lambda_k(X)=\max_j\lambda_k(A_j)$ and $\nu_k(X)=\max_j\nu_k(A_j)$, and labels varying in two private blocks have multiplicity zero.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Distinct piece ideals intersect in the embedded base ideal, yielding an exact sequence from $I_0^{\oplus(m-1)}$ to the direct sum of the piece ideals and then to $I$. At a Betti label of $I_0$, the Taylor strands for the base and each piece coincide, so the induced Tor maps are injective. The long exact Tor sequence therefore splits into short exact sequences in every multidegree and gives the formula. Embedding a piece raises its shifts and generator degree equally, so the slope formulas follow.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:betti-gluing</p></div>
+<strong>Comments:</strong><div class="text-field"><p>No ampleness assumption is required. The projection equality $\pi_E(A_i)=D$ is essential.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-20" style="position:relative;">
+
+        <h3><a href="results/interval_gap_first_syzygy_laws.html" class="table-title-link">Interval Gaps and First Syzygies</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interval Gaps and First Syzygies</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/interval_gap.html">Interval Gap</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li><li><a href="invariants/ordering_width.html">Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>The first Betti multiplicity at a face label $u_F$ is one exactly when $C\cap F$ is an antipodal pair in $F$, and is zero otherwise. Hence $g(C)=\max(\{j-n-1:\beta_{1,j}(J_C)\neq0\}\cup\{0\})\leq\nu_k(C)\leq\sigma(C)$. The zero set of $g$ is exactly the isometric cube embeddings. Moreover, $g$ is pc-minor monotone and takes maxima under Cartesian products and common-section gluings satisfying the projection hypotheses.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First Betti multiplicity is reduced zero-dimensional homology of the face complex. Its graph joins every non-antipodal pair and is disconnected exactly for a two-vertex antipodal trace. Empty intervals survive lifting through projection or conditioning, while a product pair varying in both factors has a mixed intermediate point. In a common-section union, pairs from different pieces have a base lift strictly between them, so every empty interval lies in one piece.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangDictionary26">[BousquetYangDictionary26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:interval-betti</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-21" style="position:relative;">
+
+        <h3><a href="results/exact_prefix_slope.html" class="table-title-link">Exact Prefix-Slope Formula</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Prefix-Slope Formula</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li><li><a href="invariants/interval_gap.html">Interval Gap</a></li><li><a href="invariants/resolution_slope.html">Resolution Slope</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For an order $\pi=(c_1,\ldots,c_m)$ and prefixes $C_j=\{c_1,\ldots,c_j\}$, $w(\pi)=\max_j g(C_j)=\max_j\nu_k(C_j)=\max_j\lambda_k(C_j)-1$. Minimizing any of these prefix maxima over all orders gives $\sigma(C)$; restricting to orders beginning with a prescribed nonempty subset $I$ gives $\sigma(C;I)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A minimal predecessor disagreement at the addition of $c_j$ is exactly an empty-interval pair in $C_j$. The inequalities $g(C_j)\leq\nu_k(C_j)\leq\sigma(C_j)\leq w(\pi|_{C_j})\leq w(\pi)$ force the first two equalities. A prefix attaining a positive gap has a first syzygy of slope $w(\pi)+1$; the baseline slope handles width zero, while the general slope bound gives the reverse inequality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:prefix-slope</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-22" style="position:relative;">
+
+        <h3><a href="results/width_cut_characterization.html" class="table-title-link">Cut Characterization of Ordering Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cut Characterization of Ordering Width</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/rounded_resolution_slope_defect.html">Rounded Resolution-Slope Defect</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty class $C$, $\sigma(C)=\max_R\min_{A\in\partial^+R}\nu_k(A)$, where the maximum ranges over $R\subseteq2^C$ with $\emptyset\in R$ and $C\notin R$, and $\partial^+R=\{A\cup\{c\}:A\in R,\ c\in C\setminus A,\ A\cup\{c\}\notin R\}$. In particular, $\sigma(C)\geq t$ follows if every boundary class has an $r$-face with nonzero $\widetilde H_{i-1}(\mathcal B(A,F);k)$ and $r>it$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every prefix chain first exits any admissible $R$, and the exact prefix-slope formula bounds the boundary value by the chain maximum. Conversely, for $a=\sigma(C)$ take $R$ to consist of the empty set and all subclasses reachable by adding concepts through nonempty prefixes with $\nu_k<a$. The full class is not reachable, and every outgoing boundary has value at least $a$. The face-homology formula supplies the stated certificates.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:width-cut</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The certificate can have exponential size; the theorem does not assert efficient recognition.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-23" style="position:relative;">
+
+        <h3><a href="results/quantitative_common_section_gluing.html" class="table-title-link">Quantitative Common-Section Gluing Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Quantitative Common-Section Gluing Bound</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For common-section pieces $A_i$ over $D$, let $h_i=\max_{a\in A_i}d_H(a,D)$, $\kappa_i=\max\{h_i-1,0\}$, and let $\kappa_{(2)}$ be the second largest $\kappa_i$ with multiplicity, or zero for one piece. Then $\max_i\sigma(A_i)\leq\sigma(X)\leq\max\{\max_i\sigma(A_i),\kappa_{(2)}\}$. If all but at most one piece have $h_i\leq1$, equality holds with the maximum piece width.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every piece is a conditioning of the union, giving the lower bound. Order a piece with largest $\kappa_i$ first, then append the outside concepts of each other piece after the base $D$. The gate of a current concept into $D$ has disagreement contained in every cross-piece disagreement, so cross-piece predecessors add no new minimal supports. Each appended piece costs at most the maximum of its absolute width and $\kappa_i$, leaving only the second largest attachment penalty.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:gluing</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

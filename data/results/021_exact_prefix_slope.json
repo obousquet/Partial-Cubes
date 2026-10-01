@@ -1,0 +1,17 @@
+{
+  "id": 21,
+  "short_name": "exact_prefix_slope",
+  "name": "Exact Prefix-Slope Formula",
+  "result_type": "invariant_law",
+  "statement": "For an order $\\pi=(c_1,\\ldots,c_m)$ and prefixes $C_j=\\{c_1,\\ldots,c_j\\}$, $w(\\pi)=\\max_j g(C_j)=\\max_j\\nu_k(C_j)=\\max_j\\lambda_k(C_j)-1$. Minimizing any of these prefix maxima over all orders gives $\\sigma(C)$; restricting to orders beginning with a prescribed nonempty subset $I$ gives $\\sigma(C;I)$.",
+  "status": "established",
+  "proof": "A minimal predecessor disagreement at the addition of $c_j$ is exactly an empty-interval pair in $C_j$. The inequalities $g(C_j)\\leq\\nu_k(C_j)\\leq\\sigma(C_j)\\leq w(\\pi|_{C_j})\\leq w(\\pi)$ force the first two equalities. A prefix attaining a positive gap has a first syzygy of slope $w(\\pi)+1$; the baseline slope handles width zero, while the general slope bound gives the reverse inequality.",
+  "proof_source": "PartialCubes:papers/structural-invariants/main.tex#thm:prefix-slope",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/interval_gap",
+    "#invariants/resolution_slope",
+    "#invariants/rounded_resolution_slope_defect"
+  ]
+}

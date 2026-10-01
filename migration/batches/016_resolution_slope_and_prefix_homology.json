@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "batch_id": "016_resolution_slope_and_prefix_homology",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Migrate the structural-invariants paper resolution-slope, prefix-homology, interval-gap, and common-section gluing facts into normalized database records.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4e",
+  "sources": [
+    "PartialCubes:papers/structural-invariants/main.tex#eq:slope-definition",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:slope-laws",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:face-betti",
+    "PartialCubes:papers/structural-invariants/main.tex#eq:piece",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:gluing",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:betti-gluing",
+    "PartialCubes:papers/structural-invariants/main.tex#eq:interval-gap",
+    "PartialCubes:papers/structural-invariants/main.tex#prop:interval-betti",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:prefix-slope",
+    "PartialCubes:papers/structural-invariants/main.tex#thm:width-cut",
+    "PartialCubes:papers/structural-invariants/main.tex#ex:pair",
+    "PartialCubes:papers/structural-invariants/main.tex#bibitem:ACI",
+    "PartialCubes:papers/structural-invariants/main.tex#bibitem:EMM"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-invariant-slope-and-prefix",
+      "path": "papers/structural-invariants/main.tex",
+      "sha256": "1d8b01d01353a2641fb9e75789b67d5f722a83c8406a740b5cbf9b3226b32f0e"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "13e79fe26d3a92d06f0870d02dbc6f70db8f63bf8f73bfd7191608d04e6708d3"
+    },
+    {
+      "path": "data/invariants/009_resolution_slope.json",
+      "sha256": "d1701619df3370a6e1bdbf9bcd5d3c74772bcbc066b4946f810915d35aa7a5a2"
+    },
+    {
+      "path": "data/invariants/010_rounded_resolution_slope_defect.json",
+      "sha256": "cf315467276bc7e24ef6fe17b7a57f1d9a4523444dc3c086aa111406125cd5f9"
+    },
+    {
+      "path": "data/invariants/011_interval_gap.json",
+      "sha256": "f54bc224d7d022687bb241e8db30b525c0514436a04b20d364b15c09f87cfdba"
+    },
+    {
+      "path": "data/operations/008_common_section_gluing.json",
+      "sha256": "9a6267a31843065f776c6065ab928ecfa3ce7443639c40833d13c81e53e57b9f"
+    },
+    {
+      "path": "data/characterizations/046_zero_interval_gap.json",
+      "sha256": "04a1cd45b9b605cc0e8879fb2eef43239fc0cbf848236122836ff94fd911dc70"
+    },
+    {
+      "path": "data/characterizations/047_unit_resolution_slope.json",
+      "sha256": "8558a5a855f94f58a96bb79796812a82799792097d50de5ad10e0df39d69eb77"
+    },
+    {
+      "path": "data/characterizations/048_zero_rounded_resolution_slope_defect.json",
+      "sha256": "d9347b36a12f74caf834fe4258543cd03f64cbd6a65b6db3c3638b8dd5294d29"
+    },
+    {
+      "path": "data/characterization_equivalences/015_partial_cube_interval_gap_equivalence.json",
+      "sha256": "b548053973efd7fed2e580cc109d54874e21dcfad34208f2c6770e24becca813"
+    },
+    {
+      "path": "data/characterization_equivalences/016_ample_resolution_slope_equivalence.json",
+      "sha256": "88168358d0db516087b8a1b45766c23ef9e69a2a10314ce7dfd3736440d82b5d"
+    },
+    {
+      "path": "data/results/017_resolution_slope_width_laws.json",
+      "sha256": "111ff668a5cd0870045634e1a2d7f8ba527944c0eea71d7484e67a79ad28407a"
+    },
+    {
+      "path": "data/results/018_face_homology_betti_formula.json",
+      "sha256": "c457c9514eccbfa4c096340c1a097111190692ac30e70b78c94d4f57f607c73f"
+    },
+    {
+      "path": "data/results/019_betti_numbers_under_common_section_gluing.json",
+      "sha256": "211460ebe7197fc4088386454b56198eae74fbbe129c49dc9cc8c06c94cef9f4"
+    },
+    {
+      "path": "data/results/020_interval_gap_first_syzygy_laws.json",
+      "sha256": "49a16aef75035dd376384bc55f61a29a85bfa699256396bc15456017d737e292"
+    },
+    {
+      "path": "data/results/021_exact_prefix_slope.json",
+      "sha256": "98ed3256ea38a57a0b95998aaa4ef9d0366af209e1a21d83458d86b5f4203a83"
+    },
+    {
+      "path": "data/results/022_width_cut_characterization.json",
+      "sha256": "340656045fbdb6597dda3d30ea6a5a66aef46c069ea1e220dc10476fc5f0b15a"
+    },
+    {
+      "path": "data/results/023_quantitative_common_section_gluing.json",
+      "sha256": "bde7b678ebe4514df44a4a3a8b693769bf62ce5c2a1834b0dd3443d56538f67c"
+    },
+    {
+      "path": "data/invariant_values/024_resolution_slope_one_on_ample.json",
+      "sha256": "8d485d76e9aa07efdc901bcd0ec537838ab976e7b9d833e11e1ed84f973fbd63"
+    },
+    {
+      "path": "data/invariant_values/025_rounded_slope_defect_zero_on_ample.json",
+      "sha256": "8ed44dafb37c53ec94c8aec440da68d06da3efee6f6c1001ac8c699c40c36052"
+    },
+    {
+      "path": "data/invariant_values/026_interval_gap_zero_on_partial_cubes.json",
+      "sha256": "440b35c31659d5e202dbf267d31d5b086bbb70eba7f057b0cb52aec850528ec6"
+    },
+    {
+      "path": "data/invariant_values/027_even_cycle_resolution_slope.json",
+      "sha256": "da60d8c4c522c060405e92ea78a167111f8fa6be2bc15e75aa55398a3acdd433"
+    },
+    {
+      "path": "data/invariant_values/028_even_cycle_rounded_slope_defect.json",
+      "sha256": "4160428a82474271fa13fbe41cff508c66335d5c2b2974343c2f725b0e099d3e"
+    },
+    {
+      "path": "data/invariant_values/029_even_cycle_interval_gap.json",
+      "sha256": "8c54fa5de3c66161e41ee6cc784b2c61c6ffc4076e033e07cde8821c2ffaa533"
+    },
+    {
+      "path": "data/invariant_values/030_antipodal_pair_resolution_slope.json",
+      "sha256": "4a4091f857399e807b8fdba3a9c60d761e3092f1c55545f20bc49bba14c991f7"
+    },
+    {
+      "path": "data/invariant_values/031_antipodal_pair_rounded_slope_defect.json",
+      "sha256": "7ac637486f4e68a4c64e7b4a5f86ec0c47ec94c5182e915b3fe5a71a91655a98"
+    },
+    {
+      "path": "data/invariant_values/032_antipodal_pair_interval_gap.json",
+      "sha256": "4f2bfe2c7efb7e262c7f7374937c78e3ecff20aca76591c62618b809a68a727c"
+    },
+    {
+      "path": "data/invariant_values/033_antipodal_pair_ordering_width.json",
+      "sha256": "88cad5820a242fea86ff957d3fd0c494446559f527bab2706d8e32e078110677"
+    }
+  ],
+  "claim_decisions": [],
+  "direct_source_normalizations": [
+    "#invariants/resolution_slope",
+    "#invariants/rounded_resolution_slope_defect",
+    "#invariants/interval_gap",
+    "#operations/common_section_gluing",
+    "#characterizations/zero_interval_gap",
+    "#characterizations/unit_resolution_slope",
+    "#characterizations/zero_rounded_resolution_slope_defect",
+    "#characterization_equivalences/partial_cube_interval_gap_equivalence",
+    "#characterization_equivalences/ample_resolution_slope_equivalence",
+    "#results/resolution_slope_width_laws",
+    "#results/face_homology_betti_formula",
+    "#results/betti_numbers_under_common_section_gluing",
+    "#results/interval_gap_first_syzygy_laws",
+    "#results/exact_prefix_slope",
+    "#results/width_cut_characterization",
+    "#results/quantitative_common_section_gluing"
+  ],
+  "renderer_dependency": {
+    "repository": "math_database",
+    "commit": "b48b206",
+    "purpose": "Reverse-reference matching through result arrays and example/class invariant-value references."
+  },
+  "ownership": {
+    "database": [
+      "formal definitions of resolution slope, rounded resolution-slope defect, and interval gap",
+      "invariant characterizations of partial cubes and ample classes with concise equivalence proofs",
+      "the common-section gluing operation and its exact hypotheses",
+      "seven reusable theorem statements with concise database-owned proofs",
+      "exact slope, rounded-defect, interval-gap, and ordering-width values for ample classes, partial cubes, even cycles, and antipodal pairs",
+      "normalized bibliography entries used by these records"
+    ],
+    "latex": [
+      "full Taylor-resolution, Tor, homology, horseshoe, and cut proofs",
+      "motivation, examples, failure modes, literature comparisons, and narrative order",
+      "remaining prescribed-extension, Boolean-substitution, polarization, and detailed gluing material not yet promoted",
+      "open questions and field-dependence discussion beyond the normalized claims"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "0572e117414eef22f26acd981af0dfce647c0eed5d04ecd38248aadd0c2add88",
+    "database_records_after_batch": 271,
+    "promoted_classes": 14,
+    "reserved_classes_remaining": 74
+  },
+  "graph_delivery": {
+    "hasse_covers_after_batch": 22,
+    "stored_established_inclusions_after_batch": 27,
+    "closure_map_arrows_after_batch": 33,
+    "negative_comparisons_after_batch": 9
+  },
+  "data_tree_sha256": "0d91e4b74004bf9d92f4e4f9030746c46982c319db90aa569aefa72d27d7d5c0",
+  "generated_outputs": [
+    "committed docs/ website with slope, prefix-homology, interval-gap, and common-section records",
+    "reverse theorem links from classes, invariants, operations, and the antipodal-pair example",
+    "checked class-table LaTeX preview",
+    "checked class-definitions LaTeX preview",
+    "checked bibliography LaTeX preview"
+  ],
+  "validation": [
+    "scripts/validate_data.py (271 records)",
+    "make check",
+    "all generated local href/src targets exist",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "batch record/source/coverage/data-tree hash audit",
+    "git diff --check"
+  ],
+  "deferred": "The dismantlable-ample class foundation and the remaining prescribed-extension, Boolean-substitution, polarization, and advanced gluing theorems remain for later batches."
+}
