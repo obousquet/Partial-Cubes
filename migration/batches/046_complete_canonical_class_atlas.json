@@ -1,0 +1,401 @@
+{
+  "version": 1,
+  "batch_id": "046_complete_canonical_class_atlas",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote the final fifteen reserved class identities from the PartialCubes survey and minor atlas; normalize their primary criteria, the conditioning-minimal non-ample UOM classification and closure failures, and forty class relations; and reconcile every extracted survey and minor-atlas class-relation candidate to a database record.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#thm:acc-characterizations",
+    "PartialCubes:papers/survey/main.tex#def:benzenoid-coronoid",
+    "PartialCubes:papers/survey/main.tex#thm:crossing-graph-profile",
+    "PartialCubes:papers/survey/main.tex#prop:edge-critical-profile",
+    "PartialCubes:papers/survey/main.tex#sec:low-rank-minors",
+    "PartialCubes:papers/survey/main.tex#thm:opposite-semicube-helly",
+    "PartialCubes:papers/survey/main.tex#thm:planar-expansions",
+    "PartialCubes:papers/survey/main.tex#def:squaregraph",
+    "PartialCubes:papers/survey/main.tex#def:peripheral-expansion",
+    "PartialCubes:papers/survey/main.tex#thm:zone-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:class-map-cross-inclusions",
+    "PartialCubes:papers/minor-atlas/inventory.json#/families/1",
+    "YangDim:minimal_nonample_classes.tex#def:mna",
+    "YangDim:minimal_nonample_classes.tex#thm:mna-uom",
+    "YangDim:minimal_nonample_classes.tex#thm:structure"
+  ],
+  "source_packets": [
+    {
+      "id": "partial-cubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "survey-containment-data",
+      "repository": "PartialCubes",
+      "path": "papers/survey/figures/class_containments.json",
+      "sha256": "2dc6a5c4870ba375fbe919e0580ea0b732a5c31e879eac1148e8656176ab611f"
+    },
+    {
+      "id": "minor-atlas-inventory",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/inventory.json",
+      "sha256": "ca14899f20e6ac3462bd874dd7301945cc8b33993f5661fe3c6ec63ad28331d0"
+    },
+    {
+      "id": "minor-atlas-manuscript",
+      "repository": "PartialCubes",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "772e7af921abf0eeb07e07f7b3061cc1bbfe56bcd644f3adb5f05e6de0ea2983"
+    },
+    {
+      "id": "minimal-nonample-source",
+      "repository": "YangDim",
+      "path": "minimal_nonample_classes.tex",
+      "sha256": "05e8b87a99562508e3866f3300c68557392bc83ef2d41ef0377ccd1f71b3e943"
+    },
+    {
+      "id": "extracted-survey-atlas",
+      "repository": "Partial-Cubes",
+      "path": "migration/generated/survey_atlas.json",
+      "sha256": "4f08f45e1cd03c138f2e55abcfcf18cf28878b08862b55f6d14b68977294e33e"
+    },
+    {
+      "id": "extracted-minor-inventory",
+      "repository": "Partial-Cubes",
+      "path": "migration/generated/minor_inventory.json",
+      "sha256": "b872dd1cc4ca6912c2c3ebd386560f31ca5369d5b51b934882ab4a0cf60250fe"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns all 93 canonical class identities, the promoted primary membership criteria, normalized relation records, the conditioning-minimal non-ample classification and closure facts, and the review pointers completed in this batch. PartialCubes and YangDim retain the full definitions, proofs, diagrams, classifications, examples, algorithms, source assessments, bibliography, and open questions that the database does not reproduce.",
+    "recoverability": "Fingerprints for the survey, both atlas inputs, the minor-atlas manuscript, and the YangDim classification, together with the frozen extracts and review queue, preserve the exact provenance and the distinction between normalized facts and manuscript-only content.",
+    "mutation": "No source file in PartialCubes, YangDim, or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/characterization_equivalences/025_conditioning_minimal_non_ample_classification_equivalence.json",
+      "sha256": "cbf1dbe7a3f02b632f6086d07d71ea8af89d2fb6ec534e9912a07002d030d3c4"
+    },
+    {
+      "path": "data/characterizations/134_acc_cube_elimination.json",
+      "sha256": "8672f6d6b4ad52d0bd30583e9db326510633b72f1ddebf18e462efe5c8c5520a"
+    },
+    {
+      "path": "data/characterizations/135_benzenoid_hexagonal_region.json",
+      "sha256": "e406e6615f38a2922b8d1de377eebc16bb0d915819f27fc2bba4d6057327bcf6"
+    },
+    {
+      "path": "data/characterizations/136_c4_cactoid_block_definition.json",
+      "sha256": "3a7a2c68e52ec317a771aba7c44403a34e4acaf7bc22a6d9d0e5a5003829710e"
+    },
+    {
+      "path": "data/characterizations/137_c4_tree_gluing_definition.json",
+      "sha256": "d2d6b45aca573bf1e0495f9f645b82083b67b07839246f2aadc9fb16b5fafa3d"
+    },
+    {
+      "path": "data/characterizations/138_conditioning_minimal_non_ample_definition.json",
+      "sha256": "993eb170c1fdb2675ab7068f04d300cf361ef5f97f3396937b3263b1c93eb32e"
+    },
+    {
+      "path": "data/characterizations/139_edge_critical_definition.json",
+      "sha256": "c8fad52824eccd2ebca0f0c8d2b3a62224158c26527f8ff19e5103aa90c7a91b"
+    },
+    {
+      "path": "data/characterizations/140_edge_even_cycle_blocks.json",
+      "sha256": "0842fd7f9e33780248a2d1c429dfd8e2160c0c107dc0ff5ae537e0ea49911f78"
+    },
+    {
+      "path": "data/characterizations/141_opposite_semicube_helly_property.json",
+      "sha256": "881ef91c111682012037a10673bc79847a5d485a33226f32be12e11be1d8e385"
+    },
+    {
+      "path": "data/characterizations/142_opposite_semicube_isomorphisms.json",
+      "sha256": "45869849479855874a546eea355c68b35df610b95835c4c06229bea770b3fc1f"
+    },
+    {
+      "path": "data/characterizations/143_noncrossing_planar_expansions.json",
+      "sha256": "c80ee2aec6949d0030e15d7bcd34b7316aeee013830f6c09f70a3d03c1de2e33"
+    },
+    {
+      "path": "data/characterizations/144_quasi_hypertorus_product.json",
+      "sha256": "16bb1eeee40659b6ef3f43506ba63cf92aacd8593548a5e8f7db1f7cb1901362"
+    },
+    {
+      "path": "data/characterizations/145_squaregraph_plane_definition.json",
+      "sha256": "45d5a9a1a423a22b72fd41a64e00d5ea883d2de60f4a5b85f7d2282bcecbb623"
+    },
+    {
+      "path": "data/characterizations/146_tree_like_peripheral_expansions.json",
+      "sha256": "add3571ece17c3288ad2a8d7d7fc51db41e2a7dbe0c96ee4390bc80a2dee3f77"
+    },
+    {
+      "path": "data/characterizations/147_tree_zone_definition.json",
+      "sha256": "add183f3d62c248a079972daa0ae395fba5ad5b88e2b5ba591686ead1ff1a9cd"
+    },
+    {
+      "path": "data/characterizations/148_well_embedded_zone_definition.json",
+      "sha256": "8b5b36dc07cc25d9b89e4dfb730ffe0b4cbde6d8de99e5d65a225b14c8737c8d"
+    },
+    {
+      "path": "data/characterizations/149_conditioning_minimal_non_ample_uom_classification.json",
+      "sha256": "0a44d9121d037e02a962c4ea71b22e4dd85f0d0f48017c48b7020fdc1e3c2743"
+    },
+    {
+      "path": "data/classes/003_acc_graphs.json",
+      "sha256": "9a129a590c108d00c4c4128f96509b147d348ddd12472f929f97829cfcd5c618"
+    },
+    {
+      "path": "data/classes/010_benzenoid_systems.json",
+      "sha256": "8c1d23add5b639f688ab90f96621f4ef8a5ef535d8a1b9b3991acac1dbaa3de9"
+    },
+    {
+      "path": "data/classes/013_c4_cactoids.json",
+      "sha256": "c51709539a16eb824649678ddb0408aa701a8e7bfb8937513aa31cca0c1461be"
+    },
+    {
+      "path": "data/classes/014_c4_trees.json",
+      "sha256": "24a4e5f2f8b2bae1868241e9d070c68220314486032d3be660b313a133f59532"
+    },
+    {
+      "path": "data/classes/022_conditioning_minimal_non_ample.json",
+      "sha256": "9b01a47b88fca84f8a25ebe25b781650373f5a4d1866d7ef1f03ca9a1177e4d7"
+    },
+    {
+      "path": "data/classes/035_edge_critical_partial_cubes.json",
+      "sha256": "2082005622fbf340375a05956553ed69a74ec94fb20bd5f45fba5309150b0c55"
+    },
+    {
+      "path": "data/classes/036_edge_even_cycle_block_partial_cubes.json",
+      "sha256": "d80c939a2edf8e6616011ba137f860d9e876d67a27c97037268b20307e0b76a6"
+    },
+    {
+      "path": "data/classes/055_opposite_semicube_helly_partial_cubes.json",
+      "sha256": "a9b836926c28a024063b7a26ceab3341cc52e7a18cbaf727cf559eb7f658c9ab"
+    },
+    {
+      "path": "data/classes/056_opposite_semicube_isomorphic_partial_cubes.json",
+      "sha256": "d79b2c7892183883751d210382dd858020ae7f84d4eab03d9d0b4b925430c742"
+    },
+    {
+      "path": "data/classes/061_planar_partial_cubes.json",
+      "sha256": "bea8b137ccbf0d5c34f3a7ee364ea825ec06f9e9962dda82553174c8e0d36d72"
+    },
+    {
+      "path": "data/classes/066_quasi_hypertori.json",
+      "sha256": "b34303a54dce4132f51a8c7c113857ec75e75c155afdbe0337c5e699e00b1785"
+    },
+    {
+      "path": "data/classes/075_squaregraphs.json",
+      "sha256": "651ead5fae7de6185294f54eea45d6279d33c343697020244872e55237c29f69"
+    },
+    {
+      "path": "data/classes/078_tree_like_partial_cubes.json",
+      "sha256": "1a074afc6983464c783a08f94b71b9641db10f695d937113afd9ada181bf0782"
+    },
+    {
+      "path": "data/classes/079_tree_zone_partial_cubes.json",
+      "sha256": "651e37293a8a3d8e5f2277ffaaa193e0bd593a1d542720d56c5eaad5881fe7aa"
+    },
+    {
+      "path": "data/classes/086_well_embedded_zone_partial_cubes.json",
+      "sha256": "fbd1ef0829440104b3b28ae2b9743b4b2fe4e945102ce5ef76388b22a16d15dc"
+    },
+    {
+      "path": "data/operation_results/147_conditioning_minimal_non_ample_not_projection_closed.json",
+      "sha256": "64d4c712c5e2eb05abc293be99d0c7dcce6d27c1868253c1b307ae175d7abcaa"
+    },
+    {
+      "path": "data/operation_results/148_conditioning_minimal_non_ample_not_conditioning_closed.json",
+      "sha256": "f7bab985b6b4c70691f98eab48f31e17eb3e1213b902f22810aad45b58ce4017"
+    },
+    {
+      "path": "data/operation_results/149_conditioning_minimal_non_ample_not_pc_minor_closed.json",
+      "sha256": "98fbaa3f7da70b18835ac5ddb4516ddbf8f3a834df50c3fa93a3b5469dcd97cc"
+    },
+    {
+      "path": "data/relations/178_well_embedded_zones_strict_subset_partial_cubes.json",
+      "sha256": "c7505e3d657f8ec26a41f20c48796bf40487349353c06a262b3bbdd627ce6604"
+    },
+    {
+      "path": "data/relations/179_tree_like_strict_subset_partial_cubes.json",
+      "sha256": "8c8931dd2fdad0a957065582f708a66560e104f55ba8367314dc1367f645cf71"
+    },
+    {
+      "path": "data/relations/180_opposite_helly_strict_subset_partial_cubes.json",
+      "sha256": "075a03cd9bb0dd7c9bd23bbbbe592ad860b1b20b543c67538b129af645cc0f76"
+    },
+    {
+      "path": "data/relations/181_opposite_isomorphic_strict_subset_partial_cubes.json",
+      "sha256": "f9464147c4bdd709fbfe17bb8f767823137b4d49dfaf06d29a07ec6d1450ebd1"
+    },
+    {
+      "path": "data/relations/182_edge_critical_strict_subset_partial_cubes.json",
+      "sha256": "bdd8413e0cb4f5cf85db8d35901da0a4a45752fd29773e16931de934bcc6e2ab"
+    },
+    {
+      "path": "data/relations/183_planar_subset_bounded_rank.json",
+      "sha256": "ec76ab96f46523855b0920cd952c677bb1cfc6cda94d15526d81459bb275ba61"
+    },
+    {
+      "path": "data/relations/184_tree_zone_subset_two_dimensional.json",
+      "sha256": "68cb812e43a4548dbfca6d8d17d936f7a3493bd91167dfe6991338661f1a4b03"
+    },
+    {
+      "path": "data/relations/185_tree_zone_subset_well_embedded_zones.json",
+      "sha256": "f62bc111579be830d18d932286c910d8b7402d589e22e8bb8d629e3ff1577679"
+    },
+    {
+      "path": "data/relations/186_com_subset_well_embedded_zones.json",
+      "sha256": "9ea071cb2e9c1c88fdc199d0289c47385d86692b79d80efc24c53ed1d0943028"
+    },
+    {
+      "path": "data/relations/187_antipodal_subset_opposite_helly.json",
+      "sha256": "83d62325230f8c89dd132ae7f5a516e73fd480970d9e87fa9ae31d518b157c65"
+    },
+    {
+      "path": "data/relations/188_antipodal_subset_opposite_isomorphic.json",
+      "sha256": "0f78bd3b35dd708d2e85ed28e39748ab66e8c215076261fc4149c6fd50385d8a"
+    },
+    {
+      "path": "data/relations/189_cubic_vertex_transitive_strict_subset_edge_critical.json",
+      "sha256": "c440a7ffb596aba5c66f8acd52bb16bf42c84572ac4528afa344b3f4c9eca467"
+    },
+    {
+      "path": "data/relations/190_quasi_hypertori_strict_subset_hypercellular.json",
+      "sha256": "1d39a0e4a0df2061b6edd638e163b48ccd59ac5a20a6d66f0623a297788cb444"
+    },
+    {
+      "path": "data/relations/191_benzenoid_subset_planar.json",
+      "sha256": "c3fcc282cd40eab0980d0a8bf2dc353c5aa7f5a8e9bb1a36da918500304b57b0"
+    },
+    {
+      "path": "data/relations/192_benzenoid_subset_tree_zone.json",
+      "sha256": "5780daa442696460cc6c635dc446533c548d73fc74fabf0364fa9775485fe745"
+    },
+    {
+      "path": "data/relations/193_benzenoid_subset_netlike.json",
+      "sha256": "7893a8e5afe3147290faf85fc64b593ac35ad7118a5599a8cd532550925fdb73"
+    },
+    {
+      "path": "data/relations/194_cover_recursive_strict_subset_tree_like.json",
+      "sha256": "fd4d9296d91413813b08c5fbb8849311a6f8dcbd6428234aa1055806a0e87631"
+    },
+    {
+      "path": "data/relations/195_median_subset_opposite_helly.json",
+      "sha256": "4e6588c9fc5cd9971fc77657899bef82a16b17a8bd04d1b3d1f50448751ff806"
+    },
+    {
+      "path": "data/relations/196_cellular_subset_tree_zone.json",
+      "sha256": "b30ba1292d0c44732452ec1a77175ac7f874a2aae63e51e729b45f2d5aeb6c7e"
+    },
+    {
+      "path": "data/relations/197_edge_even_blocks_strict_subset_planar.json",
+      "sha256": "56c8a0ee46febade396edb9d575777b669230873d5c8935a89466b48a347ee1a"
+    },
+    {
+      "path": "data/relations/198_edge_even_blocks_strict_subset_cellular.json",
+      "sha256": "756d627a262c428f3c4c4d7988a117fbf4ce9efab4103a4d00489ddd1d8fff76"
+    },
+    {
+      "path": "data/relations/199_squaregraphs_strict_subset_planar.json",
+      "sha256": "ebb8f0c214c72345fb8bbc814c2cc05f32dbc110ce9f1fc53380497d8ac9d52d"
+    },
+    {
+      "path": "data/relations/200_squaregraphs_strict_subset_median.json",
+      "sha256": "6d64b197f7b5fb2f09bcf744220293b51e2375252505ea8ae642cc31ba41dbb4"
+    },
+    {
+      "path": "data/relations/201_acc_strict_subset_median.json",
+      "sha256": "dabd23fae9bfc77fa3a1344a0c59235780bbb883e0a23648b12dc03b3a72ab91"
+    },
+    {
+      "path": "data/relations/202_even_cycles_strict_subset_edge_even_blocks.json",
+      "sha256": "f1b0c3a280a84a3b4178b3b858c78b46744cf074247607a772e1446cb626265a"
+    },
+    {
+      "path": "data/relations/203_even_cycles_strict_subset_quasi_hypertori.json",
+      "sha256": "60fdb0a5f35a78e1ded4938a76dcfd69e910df723430edd0871763c95973bcd9"
+    },
+    {
+      "path": "data/relations/204_c4_trees_strict_subset_c4_cactoids.json",
+      "sha256": "5035b2edb82b84ba3ec18c5f8c17f7cb0cbc8b18bb6d837085721a67cc7c03ac"
+    },
+    {
+      "path": "data/relations/205_c4_cactoids_strict_subset_planar.json",
+      "sha256": "8a98665a307b49e7af6f2e2e010be344eb1ad9b0386ab68972052d3e65e8f3cf"
+    },
+    {
+      "path": "data/relations/206_c4_cactoids_strict_subset_median.json",
+      "sha256": "121b6ef461d628ae4f077bd68c2013d3571fb375f7426ec99dfb02e235362b55"
+    },
+    {
+      "path": "data/relations/207_c4_cactoids_strict_subset_cellular.json",
+      "sha256": "3fadc7b614e40041c9be54c5658a26efb632ce32921e326e1145b2cfbdb40070"
+    },
+    {
+      "path": "data/relations/208_c4_cactoids_subset_ample_rank_two.json",
+      "sha256": "e69aeb84c8bb09bac72babd904fa8ed66f7834889b65ac34986b0f1eb834b288"
+    },
+    {
+      "path": "data/relations/209_hypercubes_strict_subset_acc.json",
+      "sha256": "b589c59b73ddd42aaebd4774663c1de6b0ef3ba0edd637c2fd5fe453fb6a7ebe"
+    },
+    {
+      "path": "data/relations/210_hypercubes_strict_subset_quasi_hypertori.json",
+      "sha256": "db7780f951c176ffbe6ceaee74e5b0f78b6df35749c54b375b4a79a84ee300ed"
+    },
+    {
+      "path": "data/relations/211_trees_strict_subset_c4_cactoids.json",
+      "sha256": "e6290fa4871774ad2b92369ddfd8840c7920f52c1c50944e8c479b8aaeda0f7c"
+    },
+    {
+      "path": "data/relations/212_trees_strict_subset_edge_even_blocks.json",
+      "sha256": "930f71f9d890c51f50a3fe2bdec20b5893f82a35b4aea547250059ec68b6b933"
+    },
+    {
+      "path": "data/relations/213_trees_strict_subset_squaregraphs.json",
+      "sha256": "9eae4d9a57aaf0b7e5f1bb0977f705d5f102cd17ad91844fe30694f24951d3cd"
+    },
+    {
+      "path": "data/relations/214_hypercubes_strict_subset_realizable_ample.json",
+      "sha256": "1fc9ee91f1a47f9000da19746b48ee1f7961d087fa8c05f462936d864ca54c1a"
+    },
+    {
+      "path": "data/relations/215_stars_strict_subset_simplex_graphs.json",
+      "sha256": "a3c649a5cce965939bcdd1279d6da665c4e6b2b403b19c14696a555fd1285f3d"
+    },
+    {
+      "path": "data/relations/216_paths_strict_subset_realizable_ample.json",
+      "sha256": "379778cb16b01f9030646076988020eb7b32ef5a0302c2483b8b5e0a9e613aa1"
+    },
+    {
+      "path": "data/relations/217_convex_geometry_ideals_strict_subset_cover_recursive.json",
+      "sha256": "11efdab03dd1a1c401cd08bbbce446ddeb5c4269ea5aa26a6c69ce9fc0137296"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "f0589c36c6bbd09442fc6add1438286fc9855e9f9c0b31a6dfa265c05ea7f7e3"
+    },
+    {
+      "path": "migration/claim_queue.json",
+      "sha256": "f9ae7e13346a16f3b52733bcd0b48b61fa78acc57a808b19aff6b3658632b4e3"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "1d93dc70f31100e152606aaafd9c39244b7c27afbbb8245a7dcba1207da18e95"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1006 records.",
+    "canonical_classes": "All 100 source occurrences resolve to 93 canonical identities, and all 93 identities are promoted to database records.",
+    "relation_review": "All 182 extracted class-relation candidates are promoted: 134 survey containments and 48 minor-atlas relations, including open comparisons and paired noncontainments.",
+    "website": "Normalized 1022 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "155 Hasse covers represent 198 stored inclusions; all 22 minor-atlas Ample-family nodes and 176 closure-map arrows remain covered.",
+    "migration": "The survey atlas, minor inventory, LaTeX label index, bibliography audit, source manifest, coverage report, canonical allocations, and review queues are current."
+  },
+  "deferred": [
+    "Secondary characterizations, equivalence proofs, invariant values, closure records, obstruction bases, and theorem-level results for the newly promoted classes.",
+    "Non-class claim candidates that still require atomic review, especially operation and closure descriptions outside this class-first pass.",
+    "Lower-priority maximum_parent_methods results deferred by the user."
+  ]
+}
