@@ -1542,6 +1542,138 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-80" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_graph_coefficient_space.html" class="table-title-link">Coefficient Space of the Two-Control Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Two-Control Graph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_bipartite_graph_family.html">Two-Control Oriented Bipartite-Graph Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>\Omega(G)\times(0,\infty)^{d-m}</p>
+<strong>Parameters:</strong><div class="text-field"><p>$m=|V(G)|$, $e=|E(G)|$, $N=\binom m2-e$, $d=2m+N+4e$, and $\Omega(G)=\{z\in\mathbb R^V:z_v<z_w\text{ for every arc }v\to w\}$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Homeomorphism of the full positive normalized separator coefficient space, including all row ratios.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each vertex row contributes the ratio $t_v=a_{p_v,0}/a_{p_v,1}$ and one free ratio. An edge witness forces and, by the explicit construction, is forced by $t_v<t_w$ on every arc. Nonedge rows contribute one free ratio and the two rows of each edge contribute four. Taking $z_v=\log t_v$ gives the displayed order cone and product.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-space</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_verification.json</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-81" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_graph_vc_dimension.html" class="table-title-link">VC Dimension of the Two-Control Graph Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Two-Control Graph Construction</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_bipartite_graph_family.html">Two-Control Oriented Bipartite-Graph Construction</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>2</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every finite oriented simple bipartite graph $G$, including the vertex-free convention.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The decreasing fibers are a control square, a three-vertex control path, or a point. Fiber shattering gives the maximum of private-support size plus fiber VC dimension, which is two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-space</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_two_control_graphs.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-82" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_cycle_coefficient_space.html" class="table-title-link">Coefficient Space of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coefficient Space of the Two-Control Directed Cycles</p>
+<p><strong>Invariant: </strong><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>\varnothing</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every even integer $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The consistently directed cycle requires $t_0<t_1<\cdots<t_{m-1}<t_0$, so its strict order cone and hence the full coefficient space are empty.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_verification.json</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-83" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_cycle_vc_dimension.html" class="table-title-link">VC Dimension of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>VC Dimension of the Two-Control Directed Cycles</p>
+<p><strong>Invariant: </strong><a href="invariants/vc_dimension.html">VC Dimension</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>2</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every even integer $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>This is the directed-cycle specialization of the two-control graph construction, whose VC dimension is two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_two_control_graphs.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-84" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_cycle_separation_margin.html" class="table-title-link">Separation Margin of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Separation Margin of the Two-Control Directed Cycles</p>
+<p><strong>Invariant: </strong><a href="invariants/separation_margin.html">Separation Margin</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>0</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every even integer $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every $D_m$ is ample but has empty coefficient space, so it is not affine-convex realizable. Positivity of the normalized separation margin is equivalent to realizable ampleness; therefore the margin is zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors; PartialCubes:papers/realizability-margin/main.tex?#thm:positive</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_two_control_graphs.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-85" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_cycle_small_scale_indicator.html" class="table-title-link">Small-Scale Source Indicator of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small-Scale Source Indicator of the Two-Control Directed Cycles</p>
+<p><strong>Invariant: </strong><a href="invariants/small_scale_source_indicator.html">Small-Scale Source Indicator</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>1</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every even integer $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class has a union-closed coordinate reflection, so the reflected minimum is finite. A zero value would make its full coefficient space Euclidean and in particular nonempty, contradicting $\mathcal A(D_m)=\varnothing$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors; PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:scaling-indicators</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-86" style="position:relative;">
+
+        <h3><a href="invariant_values/two_control_cycle_large_scale_indicator.html" class="table-title-link">Large-Scale Source Indicator of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Large-Scale Source Indicator of the Two-Control Directed Cycles</p>
+<p><strong>Invariant: </strong><a href="invariants/large_scale_source_indicator.html">Large-Scale Source Indicator</a></p>
+<p><strong>Example: </strong><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>1</p>
+<strong>Parameters:</strong><div class="text-field"><p>Every even integer $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class has a union-closed coordinate reflection, so the reflected minimum is finite. A zero value would make its full coefficient space Euclidean and in particular nonempty, contradicting $\mathcal A(D_m)=\varnothing$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors; PartialCubes:papers/coefficient-topology/union_closed_families.tex?#thm:scaling-indicators</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

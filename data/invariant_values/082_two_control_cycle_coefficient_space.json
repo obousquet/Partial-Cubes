@@ -1,0 +1,15 @@
+{
+  "id": 82,
+  "short_name": "two_control_cycle_coefficient_space",
+  "name": "Coefficient Space of the Two-Control Directed Cycles",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/two_control_directed_cycle_family",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "\\varnothing",
+  "parameters": "Every even integer $m\\geq4$.",
+  "status": "established",
+  "proof": "The consistently directed cycle requires $t_0<t_1<\\cdots<t_{m-1}<t_0$, so its strict order cone and hence the full coefficient space are empty.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "verification": "scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_verification.json"
+}

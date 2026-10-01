@@ -1,0 +1,13 @@
+{
+  "id": 34,
+  "short_name": "two_control_bipartite_graph_family",
+  "name": "Two-Control Oriented Bipartite-Graph Construction",
+  "symbol": "C_2(G)",
+  "object_type": "family",
+  "definition": "For a finite simple bipartite graph $G$ with one orientation per edge, use one private coordinate per vertex and controls $0,1$. The fiber at empty private support is $\\{0,1\\}^2$; the singleton fiber at $v$ is the control square with $00$ deleted on the left side and $11$ deleted on the right side; an edge fiber is the singleton $01$ when directed left-to-right and $10$ when directed right-to-left; all other fibers are empty.",
+  "parameters": "Finite oriented simple bipartite graph $G$ with $m$ vertices and $e$ edges; the vertex-free graph gives the control square.",
+  "properties": "The class has $m+2$ coordinates and $4+3m+e$ concepts. It is dismantlable ample and finite convex-treelike, has VC dimension two, and is convex-realizable exactly when the orientation is acyclic. Reflecting control $0$ makes it intersection closed; subsequently reflecting every coordinate gives a union-closed well-graded orientation.",
+  "references": "\\cite{TwoControlEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-space",
+  "verification": "scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_source.json; data/examples/assets/two_control_graphs_verification.json"
+}

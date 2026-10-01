@@ -1,0 +1,15 @@
+{
+  "id": 81,
+  "short_name": "two_control_graph_vc_dimension",
+  "name": "VC Dimension of the Two-Control Graph Construction",
+  "invariant_id": "#invariants/vc_dimension",
+  "example_id": "#examples/two_control_bipartite_graph_family",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "2",
+  "parameters": "Every finite oriented simple bipartite graph $G$, including the vertex-free convention.",
+  "status": "established",
+  "proof": "The decreasing fibers are a control square, a three-vertex control path, or a point. Fiber shattering gives the maximum of private-support size plus fiber VC dimension, which is two.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-space",
+  "verification": "scripts/verify_two_control_graphs.py"
+}

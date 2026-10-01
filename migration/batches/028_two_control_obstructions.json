@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "batch_id": "028_two_control_obstructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize the two-control oriented bipartite-graph construction, its full order-cone coefficient space, the infinite directed-cycle family of pc-minimal nonrealizable classes, the complete conditioning obstruction theorem inside the construction, the resulting failure of every finite global pc-minor list, and the exact relation between D_4 and the 26-concept nonrealizable bouquet.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-space",
+    "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+    "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#sec:two-control-minors",
+    "PartialCubes:papers/coefficient-topology/union_closed_families.tex#thm:scaling-indicators",
+    "PartialCubes:papers/realizability-margin/main.tex#thm:positive"
+  ],
+  "source_packets": [
+    {
+      "id": "two-control-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/two_control_graphs.tex",
+      "sha256": "ae91671f3a25d114e615e736817a7e441f8dcf589711c9682205cc0e06d0082a"
+    },
+    {
+      "id": "two-control-exact-report",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/two_control_graphs_verification.json",
+      "sha256": "46ba60957e32630d9e810d0c935054da8ebcaba7e1399c9f2d88a6655236c389"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized constructions, exact invariant values, obstruction-family and partial-basis records, theorem statements, concise proofs, bibliography entries, and replay code. The LaTeX artifact retains its full fiber tables, missing-pattern proof, explicit witness formulas, all-length minor arguments, comparison table, historical discussion, and manuscript organization.",
+    "recoverability": "The exact source report is copied byte-for-byte into database assets, both source hashes and every promoted-record hash are retained here, the frozen source snapshot remains recoverable, and no LaTeX source was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "two-control-source-report",
+      "path": "data/examples/assets/two_control_graphs_source.json",
+      "sha256": "46ba60957e32630d9e810d0c935054da8ebcaba7e1399c9f2d88a6655236c389",
+      "assertions": "Retains the published exact audit summary, case list, elementary-minor list, scope limitation, dependency fingerprints, and bouquet-source fingerprint byte-for-byte."
+    },
+    {
+      "id": "database-two-control-verifier",
+      "path": "scripts/verify_two_control_graphs.py",
+      "sha256": "7294cfd8bbddef8c9a655205f276f307ed4fb5e70ab7c71809e943936a91b1f4",
+      "assertions": "Independently reconstructs every tested two-control family, minimal missing-pattern list, ampleness and isometry check, VC dimension, ample-prefix order, intersection-closed reflection, exact rational primal or Farkas decision, elementary minor, rational minor witness, and the D_4 bouquet comparison."
+    },
+    {
+      "id": "two-control-database-replay",
+      "path": "data/examples/assets/two_control_graphs_verification.json",
+      "sha256": "5086eeead146e63bdcbf3e65b256ccc46bc77b7681ea7681d8071ae1bd3c747b",
+      "assertions": "Passed 20 graph cases, 1,603 exact orthant decisions, 1,502 primal checks, 101 dual checks, 378 constructed full witnesses, all 42 elementary minors of D_4 and D_6, 610 minor witnesses, and the six-concept bouquet deletion."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "8eccf9e8b7d529c1b89a90133464c6c3015cc805410628c948c46e3b3ebd00f5"
+    },
+    {
+      "path": "data/obstruction_families/012_two_control_directed_cycles.json",
+      "sha256": "e7dda69bd529d5792b6c71e049f50bfb89971ce5f76172696b36e369691353ff"
+    },
+    {
+      "path": "data/obstruction_bases/011_realizable_ample_two_control_cycle_obstructions.json",
+      "sha256": "c2debbf86e0abbd5f46f2de585129548533700d1b2fcfdcf5f1a0158b6d91f1f"
+    },
+    {
+      "path": "data/examples/034_two_control_bipartite_graph_family.json",
+      "sha256": "868596b6c96feb0765e1990376cf24c20c8378d7a799e0fd0f5747f8341ae4e7"
+    },
+    {
+      "path": "data/examples/035_two_control_directed_cycle_family.json",
+      "sha256": "5caa8997cf0c48741104e37635789849b848a2ad32c767a369c898fe40702677"
+    },
+    {
+      "path": "data/examples/assets/two_control_graphs_source.json",
+      "sha256": "46ba60957e32630d9e810d0c935054da8ebcaba7e1399c9f2d88a6655236c389"
+    },
+    {
+      "path": "data/examples/assets/two_control_graphs_verification.json",
+      "sha256": "5086eeead146e63bdcbf3e65b256ccc46bc77b7681ea7681d8071ae1bd3c747b"
+    },
+    {
+      "path": "data/invariant_values/080_two_control_graph_coefficient_space.json",
+      "sha256": "b615e7a3b962c858e5749a376478707977c3d9da8b058580d76e94c0a09b8b8f"
+    },
+    {
+      "path": "data/invariant_values/081_two_control_graph_vc_dimension.json",
+      "sha256": "d5bfae47f3d1f18ee40a6edfb2af30d48443f025baaa14cd7ecc0228adbccade"
+    },
+    {
+      "path": "data/invariant_values/082_two_control_cycle_coefficient_space.json",
+      "sha256": "994c16ddc273ace7e9e70406f7a222b432b38f28a9cf71b04b9a8c7f33a6dd2f"
+    },
+    {
+      "path": "data/invariant_values/083_two_control_cycle_vc_dimension.json",
+      "sha256": "b97d16b18a66bb89845eaecbe679c344c1eb33ef92a0101e0ee3d46b1082e855"
+    },
+    {
+      "path": "data/invariant_values/084_two_control_cycle_separation_margin.json",
+      "sha256": "dd9b1421387d5ab6485417e6929b8282194c45083760cd3740c5905d42c580c1"
+    },
+    {
+      "path": "data/invariant_values/085_two_control_cycle_small_scale_indicator.json",
+      "sha256": "2d7dd256fe70303d997beed1db6e57ab4e63c21fd4d9a1bd9bcda8eab2fc02d3"
+    },
+    {
+      "path": "data/invariant_values/086_two_control_cycle_large_scale_indicator.json",
+      "sha256": "d15efb9cf656ba08242b86399bc54ce8515a490c4ca9ac4b3590db094347cac7"
+    },
+    {
+      "path": "data/results/084_two_control_order_cone_model.json",
+      "sha256": "f6a42538e1826ab57ad99abd0515774725a9e523b89373fc2f49ab0ef5050b43"
+    },
+    {
+      "path": "data/results/085_two_control_cycle_pc_minimality.json",
+      "sha256": "83369d562597778ae91393123fde913a596289c342ae69fc57e888abf2f8826f"
+    },
+    {
+      "path": "data/results/086_two_control_directed_cycle_recognition.json",
+      "sha256": "45f4144a4616531645033e9c5cddfbe6b4b594dc0427dcd831869d7dbc87a4d2"
+    },
+    {
+      "path": "data/results/087_no_finite_realizable_ample_pc_basis.json",
+      "sha256": "40d9a6b81e7fcca13ba17746909dd62d9453b544f40d87f718ba0a772765f773"
+    },
+    {
+      "path": "data/results/088_two_control_four_cycle_bouquet_subfamily.json",
+      "sha256": "a345bca354473fcb9a3cc19d1260b82dedb405416b8746c32017d266c00e5881"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "266cdbc170018db5c01c957a65966a5bfd4a2cc26ab4a62ddba65e2876453239"
+    },
+    {
+      "path": "scripts/verify_two_control_graphs.py",
+      "sha256": "7294cfd8bbddef8c9a655205f276f307ed4fb5e70ab7c71809e943936a91b1f4"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 601 records.",
+    "exact_replay": "All retained source counts, graph cases, minor cases, rational feasibility decisions, structural checks, and the bouquet comparison passed independently.",
+    "website": "Normalized 617 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "46 Hasse covers represent 74 stored inclusions; all 22 minor-atlas Ample-family nodes and 67 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Coordinate-interval and Boolean-substitution invariants.",
+    "Relative nerve and exact coefficient-space gluing results.",
+    "Entropy-balance gluing formulas."
+  ]
+}

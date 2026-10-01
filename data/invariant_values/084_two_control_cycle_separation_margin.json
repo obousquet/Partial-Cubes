@@ -1,0 +1,15 @@
+{
+  "id": 84,
+  "short_name": "two_control_cycle_separation_margin",
+  "name": "Separation Margin of the Two-Control Directed Cycles",
+  "invariant_id": "#invariants/separation_margin",
+  "example_id": "#examples/two_control_directed_cycle_family",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "0",
+  "parameters": "Every even integer $m\\geq4$.",
+  "status": "established",
+  "proof": "Every $D_m$ is ample but has empty coefficient space, so it is not affine-convex realizable. Positivity of the normalized separation margin is equivalent to realizable ampleness; therefore the margin is zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors; PartialCubes:papers/realizability-margin/main.tex#thm:positive",
+  "verification": "scripts/verify_two_control_graphs.py"
+}

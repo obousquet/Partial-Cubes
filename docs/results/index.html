@@ -1472,6 +1472,97 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-84" style="position:relative;">
+
+        <h3><a href="results/two_control_order_cone_model.html" class="table-title-link">Full Order-Cone Model for Two-Control Graph Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full Order-Cone Model for Two-Control Graph Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For an oriented finite simple bipartite graph $G$ with $m$ vertices, $e$ edges, $N=\binom m2-e$, and $d=2m+N+4e$, the class $C_2(G)$ has $4+3m+e$ concepts, is dismantlable ample and finite convex-treelike, and has VC dimension two. A prescribed positive normalized row array is feasible exactly when $t_v<t_w$ for every arc $v\to w$, where $t_v=a_{p_v,0}/a_{p_v,1}$. Thus $\mathcal A(C_2(G))\cong\Omega(G)\times(0,\infty)^{d-m}$, and $C_2(G)$ is realizable exactly when $G$ is acyclic; then its coefficient space is $\mathbb R^d$. Witnesses vary continuously and are rational for rational input. The class has both an intersection-closed and a union-closed well-graded reflection.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The complete minimal missing patterns are the excluded singleton corner at each vertex, every private nonedge, and two control-augmented patterns at each edge. An edge concept turns the two incident vertex-row inequalities into $t_v<b/a<t_w$. Conversely, choose the midpoint ratio on each active edge, shrink active private coordinates to preserve all already negative rows, and make every inactive private coordinate sufficiently negative. This constructs all strict witnesses and leaves exactly the stated free row ratios.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#TwoControlEvidence">[TwoControlEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-space</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_control_bipartite_graph_family.html">Two-Control Oriented Bipartite-Graph Construction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-85" style="position:relative;">
+
+        <h3><a href="results/two_control_cycle_pc_minimality.html" class="table-title-link">pc-Minimality of the Two-Control Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>pc-Minimality of the Two-Control Directed Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every even $m\geq4$, $D_m$ has $m+2$ coordinates, $4m+4$ concepts, VC dimension two, and empty coefficient space. Every proper nonempty pc-minor is convex-realizable. Consequently the $D_m$ form an infinite antichain of pc-minimal obstructions to realizable ampleness inside the dismantlable ample and finite convex-treelike families, and they admit union-closed well-graded orientations.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A private projection or zero-conditioning deletes one cycle vertex and gives the acyclic two-control path construction. A private one-conditioning gives a reflected five-vertex path learning space. A control conditioning becomes a downset after reflection and has uniform feasible rows. A control projection has no vertex rows and direct witnesses exist for every remaining row array. These cover every elementary operation; realizability is pc-minor closed. Different lengths have different cardinalities, and a proper minor relation between two members would contradict minimality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#TwoControlEvidence">[TwoControlEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-86" style="position:relative;">
+
+        <h3><a href="results/two_control_directed_cycle_recognition.html" class="table-title-link">Directed-Cycle Recognition inside the Two-Control Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Directed-Cycle Recognition inside the Two-Control Construction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For every oriented finite simple bipartite graph $G$, the following are equivalent: $C_2(G)$ is convex-realizable; $G$ is acyclic; and $C_2(G)$ has no conditioning minor isomorphic to $D_m$ for an even $m\geq4$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The order cone is nonempty exactly for an acyclic orientation. If $G$ has a directed cycle, choose a shortest one. A chord in either direction would create a shorter directed cycle, so it is chordless; bipartiteness makes its length even and at least four. Conditioning every other private coordinate to zero leaves $D_m$. Conversely, realizability is preserved by nonempty conditioning.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_control_bipartite_graph_family.html">Two-Control Oriented Bipartite-Graph Construction</a></li><li><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is a complete recognition theorem only inside the named $C_2(G)$ construction.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-87" style="position:relative;">
+
+        <h3><a href="results/no_finite_realizable_ample_pc_basis.html" class="table-title-link">No Finite pc-Minor Basis for Convex Realizability</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No Finite pc-Minor Basis for Convex Realizability</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>No finite list of forbidden pc-minors characterizes convex realizability, even when the ambient classes are restricted to union-closed-orientable finite convex-treelike ample classes of VC dimension two.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The family $\{D_m:m\geq4\text{ even}\}$ is an infinite antichain, and every member is pc-minimal outside realizable ampleness while satisfying every stated ambient restriction. Any complete forbidden list must therefore contain one obstruction for each member.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#thm:two-control-minors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The theorem does not identify the entire infinite global obstruction basis.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-88" style="position:relative;">
+
+        <h3><a href="results/two_control_four_cycle_bouquet_subfamily.html" class="table-title-link">The First Two-Control Cycle inside the Nonrealizable Bouquet</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The First Two-Control Cycle inside the Nonrealizable Bouquet</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>After reflecting control $0$ and relabeling the four private coordinates, the 20-concept class $D_4$ is obtained from the 26-concept nonrealizable bouquet by deleting the two same-part private-pair fibers, six concepts in total.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Direct comparison of the two fiber tables gives strict subfamily inclusion and exactly six deleted concepts.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#NonrealizableBouquet">[NonrealizableBouquet]</a> <a href="bibliography.html#TwoControlEvidence">[TwoControlEvidence]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/two_control_graphs.tex?#sec:two-control-minors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_control_directed_cycle_family.html">Two-Control Directed-Cycle Family</a></li><li><a href="examples/nonrealizable_bouquet.html">Nonrealizable Twenty-Six-Set Bouquet</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is subfamily inclusion, not a pc-minor map. It transfers neither a maximum parent nor a minimum-cardinality claim.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,16 @@
+{
+  "id": 80,
+  "short_name": "two_control_graph_coefficient_space",
+  "name": "Coefficient Space of the Two-Control Graph Construction",
+  "invariant_id": "#invariants/coefficient_space",
+  "example_id": "#examples/two_control_bipartite_graph_family",
+  "quantifier": "individual",
+  "value_type": "formula",
+  "value": "\\Omega(G)\\times(0,\\infty)^{d-m}",
+  "parameters": "$m=|V(G)|$, $e=|E(G)|$, $N=\\binom m2-e$, $d=2m+N+4e$, and $\\Omega(G)=\\{z\\in\\mathbb R^V:z_v<z_w\\text{ for every arc }v\\to w\\}$.",
+  "scope": "Homeomorphism of the full positive normalized separator coefficient space, including all row ratios.",
+  "status": "established",
+  "proof": "Each vertex row contributes the ratio $t_v=a_{p_v,0}/a_{p_v,1}$ and one free ratio. An edge witness forces and, by the explicit construction, is forced by $t_v<t_w$ on every arc. Nonedge rows contribute one free ratio and the two rows of each edge contribute four. Taking $z_v=\\log t_v$ gives the displayed order cone and product.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-space",
+  "verification": "scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_verification.json"
+}

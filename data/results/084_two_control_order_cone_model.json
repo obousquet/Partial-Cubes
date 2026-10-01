@@ -1,0 +1,23 @@
+{
+  "id": 84,
+  "short_name": "two_control_order_cone_model",
+  "name": "Full Order-Cone Model for Two-Control Graph Classes",
+  "class_ids": [
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral",
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space",
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "construction",
+  "statement": "For an oriented finite simple bipartite graph $G$ with $m$ vertices, $e$ edges, $N=\\binom m2-e$, and $d=2m+N+4e$, the class $C_2(G)$ has $4+3m+e$ concepts, is dismantlable ample and finite convex-treelike, and has VC dimension two. A prescribed positive normalized row array is feasible exactly when $t_v<t_w$ for every arc $v\\to w$, where $t_v=a_{p_v,0}/a_{p_v,1}$. Thus $\\mathcal A(C_2(G))\\cong\\Omega(G)\\times(0,\\infty)^{d-m}$, and $C_2(G)$ is realizable exactly when $G$ is acyclic; then its coefficient space is $\\mathbb R^d$. Witnesses vary continuously and are rational for rational input. The class has both an intersection-closed and a union-closed well-graded reflection.",
+  "status": "established",
+  "proof": "The complete minimal missing patterns are the excluded singleton corner at each vertex, every private nonedge, and two control-augmented patterns at each edge. An edge concept turns the two incident vertex-row inequalities into $t_v<b/a<t_w$. Conversely, choose the midpoint ratio on each active edge, shrink active private coordinates to preserve all already negative rows, and make every inactive private coordinate sufficiently negative. This constructs all strict witnesses and leaves exactly the stated free row ratios.",
+  "references": "\\cite{TwoControlEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-space",
+  "witness_ids": [
+    "#examples/two_control_bipartite_graph_family"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": 12,
+  "short_name": "two_control_directed_cycles",
+  "name": "Two-Control Directed-Cycle Obstructions",
+  "symbol": "\\{D_m:m\\geq4\\text{ even}\\}",
+  "description_type": "parameterized",
+  "definition": "For an even integer $m\\geq4$, orient the cycle $G_m$ consistently and form the two-control class $D_m=C_2(G_m)$. It has one private coordinate per cycle vertex and controls $0,1$. The empty private support has the full control square; a singleton support at a vertex in the left (respectively right) bipartition has the square with $00$ (respectively $11$) deleted; an oriented edge has the singleton control word $01$ from left to right and $10$ from right to left; every other private support has empty fiber.",
+  "parameters": "Even integer $m\\geq4$; $D_m$ has $m+2$ coordinates and $4m+4$ concepts.",
+  "ambient_class_id": "#classes/cover_recursive_peripheral",
+  "canonical_form": "There is one member $D_m$ for each even cycle length $m\\geq4$, up to coordinate permutations and independent bit flips. Distinct lengths have distinct cardinalities.",
+  "recognition": "A construction certificate gives a consistently directed chordless even cycle. Equivalently within a two-control class $C_2(G)$, condition all private coordinates outside a shortest directed cycle to zero.",
+  "references": "\\cite{TwoControlEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "comments": "Every member is ample, dismantlable, finite convex-treelike, union-closed-orientable, and pc-minimal outside realizable ample classes. This is an infinite subfamily of the global obstruction basis; no global completeness or minimum-cardinality claim is made."
+}

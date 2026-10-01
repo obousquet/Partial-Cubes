@@ -1,0 +1,22 @@
+{
+  "id": 86,
+  "short_name": "two_control_directed_cycle_recognition",
+  "name": "Directed-Cycle Recognition inside the Two-Control Construction",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "For every oriented finite simple bipartite graph $G$, the following are equivalent: $C_2(G)$ is convex-realizable; $G$ is acyclic; and $C_2(G)$ has no conditioning minor isomorphic to $D_m$ for an even $m\\geq4$.",
+  "status": "established",
+  "proof": "The order cone is nonempty exactly for an acyclic orientation. If $G$ has a directed cycle, choose a shortest one. A chord in either direction would create a shorter directed cycle, so it is chordless; bipartiteness makes its length even and at least four. Conditioning every other private coordinate to zero leaves $D_m$. Conversely, realizability is preserved by nonempty conditioning.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "witness_ids": [
+    "#examples/two_control_bipartite_graph_family",
+    "#examples/two_control_directed_cycle_family"
+  ],
+  "comments": "This is a complete recognition theorem only inside the named $C_2(G)$ construction."
+}

@@ -1,0 +1,16 @@
+{
+  "id": 35,
+  "short_name": "two_control_directed_cycle_family",
+  "name": "Two-Control Directed-Cycle Family",
+  "symbol": "D_m",
+  "object_type": "family",
+  "definition": "For every even $m\\geq4$, let $G_m$ be the consistently directed cycle of length $m$ and set $D_m=C_2(G_m)$.",
+  "parameters": "Even integer $m\\geq4$.",
+  "properties": "The class has $m+2$ coordinates, $4m+4$ concepts, VC dimension two, and empty separator coefficient space. It is dismantlable ample and finite convex-treelike, admits a union-closed well-graded orientation, and every proper nonempty pc-minor is convex-realizable. The family is an infinite pc-minor antichain. The first member $D_4$ has 20 concepts on six coordinates.",
+  "references": "\\cite{TwoControlEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "verification": "scripts/verify_two_control_graphs.py; data/examples/assets/two_control_graphs_source.json; data/examples/assets/two_control_graphs_verification.json",
+  "obstruction_family_ids": [
+    "#obstruction_families/two_control_directed_cycles"
+  ]
+}

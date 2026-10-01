@@ -1,0 +1,19 @@
+{
+  "id": 11,
+  "short_name": "realizable_ample_two_control_cycle_obstructions",
+  "name": "Two-Control Cycle Obstructions to Convex Realizability",
+  "target_class_id": "#classes/realizable_ample",
+  "ambient_class_id": "#classes/cover_recursive_peripheral",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/two_control_directed_cycles"
+  ],
+  "basis_claim": "partial",
+  "minimality": "pc_minimal",
+  "statement": "For every even $m\\geq4$, the class $D_m$ is a finite convex-treelike dismantlable ample class outside $\\mathcal R_{\\mathrm{amp}}$, and every proper nonempty pc-minor of $D_m$ belongs to $\\mathcal R_{\\mathrm{amp}}$. The $D_m$ form an infinite antichain. Within the restricted construction $C_2(G)$, avoidance is complete: $C_2(G)$ is realizable if and only if it has no conditioning minor isomorphic to a $D_m$.",
+  "status": "established",
+  "proof": "The full coefficient criterion for $C_2(G)$ is the strict system $t_v<t_w$ on every arc. A directed cycle makes it inconsistent. For $D_m$, projecting or zero-conditioning a private coordinate leaves the acyclic construction on a path; one-conditioning a private coordinate yields a reflected learning space; conditioning a control yields a reflected downset; and projecting a control admits direct witnesses for every row array. Hence all elementary proper nonempty minors are realizable, and pc-minor closure handles every proper minor. A shortest directed cycle in any oriented bipartite graph is chordless and even, and zero-conditioning all other private coordinates leaves the corresponding $D_m$.",
+  "references": "\\cite{TwoControlEvidence}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "comments": "The partial designation is essential: completeness is proved only among classes of the form $C_2(G)$, not throughout the ambient finite convex-treelike class."
+}

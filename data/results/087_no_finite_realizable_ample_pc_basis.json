@@ -1,0 +1,22 @@
+{
+  "id": 87,
+  "short_name": "no_finite_realizable_ample_pc_basis",
+  "name": "No Finite pc-Minor Basis for Convex Realizability",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "No finite list of forbidden pc-minors characterizes convex realizability, even when the ambient classes are restricted to union-closed-orientable finite convex-treelike ample classes of VC dimension two.",
+  "status": "established",
+  "proof": "The family $\\{D_m:m\\geq4\\text{ even}\\}$ is an infinite antichain, and every member is pc-minimal outside realizable ampleness while satisfying every stated ambient restriction. Any complete forbidden list must therefore contain one obstruction for each member.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/two_control_graphs.tex#thm:two-control-minors",
+  "witness_ids": [
+    "#examples/two_control_directed_cycle_family"
+  ],
+  "comments": "The theorem does not identify the entire infinite global obstruction basis."
+}
