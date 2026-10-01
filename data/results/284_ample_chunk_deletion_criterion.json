@@ -1,0 +1,22 @@
+{
+  "id": 284,
+  "short_name": "ample_chunk_deletion_criterion",
+  "name": "Exact Ample-Preserving Chunk Deletion Criterion",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/chunk_peeling_width"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "For $T\\in\\operatorname{Sh}(C)$ and $a\\in\\{0,1\\}^T$, let $F_{T,a}=\\{c\\in C:c|_T=a\\}$ and let $L_C(S)$ be the shattered coordinate sets having some fiber contained in $S$. If $C$ is ample, then $C\\setminus S$ is ample exactly when $|L_C(S)|=|S|$. In that case $S$ is a union of contained fibers, and $\\chi(C)=\\min_{\\varnothing\\ne S, |L_C(S)|=|S|}\\max\\{|S|,\\chi(C\\setminus S)\\}$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/chunk_deletion_counting_pitfalls"
+  ],
+  "proof": "Deleting concepts cannot create shattered sets, and a shattered set $T$ disappears exactly when one full fiber $F_{T,a}$ is deleted. Thus $\\operatorname{Sh}(C\\setminus S)=\\operatorname{Sh}(C)\\setminus L_C(S)$. Combine $|C|=|\\operatorname{Sh}(C)|$ with the shattering inequality for the remainder to obtain $|L_C(S)|\\le|S|$, with equality exactly for an ample remainder. The same inequality applied after restoring any point not covered by a contained fiber proves the union assertion. Splitting a peeling at its first deletion gives the recurrence in both directions.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:tight-sets"
+}

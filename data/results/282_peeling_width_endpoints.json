@@ -1,0 +1,18 @@
+{
+  "id": 282,
+  "short_name": "peeling_width_endpoints",
+  "name": "USO Peeling Width Interpolates Between Dismantlability and Representation",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/representation_map_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/peeling_width"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a nonempty ample class $C$, $\\nu(C)=1$ exactly when $C$ is dismantlable ample, and $\\nu(C)<\\infty$ exactly when $C$ admits a representation map. If $\\nu(C)\\le k$, then repeated deletion of source components of at most $k$ concepts reduces $C$ to the empty class through represented ample intermediates.",
+  "status": "established",
+  "proof": "A unique-sink orientation is acyclic exactly when all its strongly connected components are singletons, giving the first equivalence; existence of any such orientation is the representation-map equivalence. Choose an orientation attaining $\\nu(C)$ and repeatedly delete a source component. The source-component theorem preserves ampleness and the restricted representation map, while every component has at most $k$ vertices.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:peeling-width-ends"
+}

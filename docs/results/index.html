@@ -4707,6 +4707,105 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-279" style="position:relative;">
+
+        <h3><a href="results/pc_minor_normal_form.html" class="table-title-link">Normal Form for pc-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Normal Form for pc-Minors</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of $C\subseteq\{0,1\}^E$ is $C[T;S=s]=\{x|_T:x\in C,\ x|_S=s\}$ for disjoint coordinate sets $S,T$. Coordinates outside $S\cup T$ are projected away, and projection and conditioning on distinct coordinates commute.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In any minor sequence, a removed coordinate cannot reappear. Partition the original coordinates into those retained, fixed, and projected away. Consistency of the fixed labels follows from nonemptiness, and the displayed membership test proves both the normal form and commutation. Conversely, fixing $S$ and projecting to $T$ constructs every displayed minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:normal-form</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-280" style="position:relative;">
+
+        <h3><a href="results/pc_closure_operator_calculus.html" class="table-title-link">Projection-Conditioning Closure Calculus</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projection-Conditioning Closure Calculus</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every family $\mathcal F$ in an operation-stable ambient universe, $\operatorname{Cl}_{pc}(\mathcal F)=\operatorname{Cl}_c(\operatorname{Cl}_p(\mathcal F))=\operatorname{Cl}_p(\operatorname{Cl}_c(\mathcal F))$. If $\mathcal F$ is p-closed, then $\operatorname{Cl}_{pc}(\mathcal F)=\operatorname{Cl}_c(\mathcal F)$. If it is pc-closed, then $\operatorname{Obs}_{pc}(\mathcal F)=\operatorname{Obs}_p(\mathcal F)\cap\operatorname{Obs}_c(\mathcal F)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The pc-minor normal form permits all projected coordinates to be removed before or after all conditioned coordinates. For the obstruction identity, pc-minimality implies both restricted minimalities. Conversely, the first effective step of a proper mixed minor lies in the pc-closed family by either restricted minimality, and closure keeps every later step inside.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:operators</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-281" style="position:relative;">
+
+        <h3><a href="results/uso_source_component_deletion.html" class="table-title-link">Source Components of a Representation USO Can Be Deleted</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Source Components of a Representation USO Can Be Deleted</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C$ be ample, let $r$ be a representation map, and orient its one-inclusion graph by the corresponding unique-sink orientation. For every source strongly connected component $S$, the deletion $C\setminus S$ is ample and the restriction of $r$ is again a representation map.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>This is the source-component deletion theorem for representation orientations. No arc enters $S$, so restricting the map after deleting the whole component preserves the representation conditions and the unique-sink property on every remaining cube.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Proposition~A.2]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:source-component</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-282" style="position:relative;">
+
+        <h3><a href="results/peeling_width_endpoints.html" class="table-title-link">USO Peeling Width Interpolates Between Dismantlability and Representation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>USO Peeling Width Interpolates Between Dismantlability and Representation</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/peeling_width.html">USO Peeling Width</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nonempty ample class $C$, $\nu(C)=1$ exactly when $C$ is dismantlable ample, and $\nu(C)<\infty$ exactly when $C$ admits a representation map. If $\nu(C)\le k$, then repeated deletion of source components of at most $k$ concepts reduces $C$ to the empty class through represented ample intermediates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A unique-sink orientation is acyclic exactly when all its strongly connected components are singletons, giving the first equivalence; existence of any such orientation is the representation-map equivalence. Choose an orientation attaining $\nu(C)$ and repeatedly delete a source component. The source-component theorem preserves ampleness and the restricted representation map, while every component has at most $k$ vertices.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:peeling-width-ends</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-283" style="position:relative;">
+
+        <h3><a href="results/peeling_width_pc_minor_monotonicity.html" class="table-title-link">USO Peeling Width Does Not Increase under pc-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>USO Peeling Width Does Not Increase under pc-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/peeling_width.html">USO Peeling Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C'$ is a pc-minor of an ample class $C$, then $\nu(C')\le\nu(C)$. More precisely, conditioning restricts a representation orientation to an induced subgraph, while the canonical in-map orientation on a projection has no larger strongly connected component.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restriction cannot enlarge a strongly connected component. For a projection, lift every projected vertex to the sink of its coordinate fiber. Each projected arc lifts to a directed path between the chosen representatives; therefore a strongly connected component downstairs injects into one strongly connected component upstairs. Iterate the two inequalities along the pc-minor sequence and minimize over orientations.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~6.8 and Proposition~6.14]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:width-minor-closed</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-284" style="position:relative;">
+
+        <h3><a href="results/ample_chunk_deletion_criterion.html" class="table-title-link">Exact Ample-Preserving Chunk Deletion Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Ample-Preserving Chunk Deletion Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/chunk_peeling_width.html">Ample Chunk-Peeling Width</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For $T\in\operatorname{Sh}(C)$ and $a\in\{0,1\}^T$, let $F_{T,a}=\{c\in C:c|_T=a\}$ and let $L_C(S)$ be the shattered coordinate sets having some fiber contained in $S$. If $C$ is ample, then $C\setminus S$ is ample exactly when $|L_C(S)|=|S|$. In that case $S$ is a union of contained fibers, and $\chi(C)=\min_{\varnothing\ne S, |L_C(S)|=|S|}\max\{|S|,\chi(C\setminus S)\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting concepts cannot create shattered sets, and a shattered set $T$ disappears exactly when one full fiber $F_{T,a}$ is deleted. Thus $\operatorname{Sh}(C\setminus S)=\operatorname{Sh}(C)\setminus L_C(S)$. Combine $|C|=|\operatorname{Sh}(C)|$ with the shattering inequality for the remainder to obtain $|L_C(S)|\le|S|$, with equality exactly for an ample remainder. The same inequality applied after restoring any point not covered by a contained fiber proves the union assertion. Splitting a peeling at its first deletion gives the recurrence in both directions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:tight-sets</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/chunk_deletion_counting_pitfalls.html">Chunk-Deletion Counting Pitfalls</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

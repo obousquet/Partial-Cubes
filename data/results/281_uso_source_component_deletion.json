@@ -1,0 +1,18 @@
+{
+  "id": 281,
+  "short_name": "uso_source_component_deletion",
+  "name": "Source Components of a Representation USO Can Be Deleted",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/representation_map_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $C$ be ample, let $r$ be a representation map, and orient its one-inclusion graph by the corresponding unique-sink orientation. For every source strongly connected component $S$, the deletion $C\\setminus S$ is ample and the restriction of $r$ is again a representation map.",
+  "status": "established",
+  "proof": "This is the source-component deletion theorem for representation orientations. No arc enters $S$, so restricting the map after deleting the whole component preserves the representation conditions and the unique-sink property on every remaining cube.",
+  "references": "\\cite[Proposition~A.2]{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:source-component"
+}

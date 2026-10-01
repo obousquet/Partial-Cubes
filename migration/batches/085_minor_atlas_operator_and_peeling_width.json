@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "batch_id": "085_minor_atlas_operator_and_peeling_width",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the foundational operator and deletion-width results from the frozen minor-atlas manuscript: pc-minor normal form and closure calculus, the representation-map/USO dictionary, source-component deletion, USO peeling width, chunk-peeling width, pc-minor monotonicity, Hall's bounds, and the exact ample-preserving deletion test.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/main.tex#prop:normal-form",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:operators",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:uso-dictionary",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:source-component",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:peeling-width-ends",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:width-minor-closed",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:hall-width",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:tight-sets",
+    "PartialCubes:papers/minor-atlas/main.tex#ex:width-counting-pitfalls"
+  ],
+  "source_packets": [
+    {
+      "id": "minor-atlas-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariant definitions, operator identities, characterization equivalence, theorem statements, concise proofs, bounds, and reusable witnesses. The LaTeX manuscript retains the extended derivations, literature discussion, implementation cautions, and open questions.",
+    "recoverability": "The source manuscript is read from the frozen repository commit, matches the manifest SHA-256 hash, and every migrated claim has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Live post-snapshot drift in minor-atlas main.tex remains isolated from this migration."
+  },
+  "records": [
+    {"path": "data/invariants/042_peeling_width.json", "sha256": "5a40c605daf0887f1c77fbabd39a0f2fe5400dba59c5d675b9cf7013fa5cb0b6"},
+    {"path": "data/invariants/043_chunk_peeling_width.json", "sha256": "e8c54b2e628ff60fb8630a5b6022ec450d8a47c194a585aba8fb0038a77b0396"},
+    {"path": "data/characterizations/178_unique_sink_orientation_representation.json", "sha256": "164eefa82a847e0cef1d98c4b23c8a5bdaccee961c65b432bd343027e767769e"},
+    {"path": "data/characterization_equivalences/031_representation_map_uso_equivalence.json", "sha256": "3d7293bb94a7882abe2ea6735c43fb6ab8d33f6802ed982f789298252ff4bd77"},
+    {"path": "data/results/279_pc_minor_normal_form.json", "sha256": "f4ef85a1d9b8a3d5e6348decfa226d155237944b46ef898d0f61583216443647"},
+    {"path": "data/results/280_pc_closure_operator_calculus.json", "sha256": "011e15a9d26d68db3c53e6236d37f573128ad813040a1d4595a4b3cc972beb2a"},
+    {"path": "data/results/281_uso_source_component_deletion.json", "sha256": "08a7f1306cfb44102f87f2b7177187b90803956d874468a40927f6c0e2edaecd"},
+    {"path": "data/results/282_peeling_width_endpoints.json", "sha256": "896cd63f451b16abb06c8996c010c092d9de9d97074459bb6e567e1fa5196860"},
+    {"path": "data/results/283_peeling_width_pc_minor_monotonicity.json", "sha256": "5d1892896fb30fb2774f7a0069e092f7471b4aa71d13b51685f9e922556ebc8a"},
+    {"path": "data/results/284_ample_chunk_deletion_criterion.json", "sha256": "d1955b7620e5425801cf372b84f80a8e22b3a043f7a449708cc79e1b953ddf83"},
+    {"path": "data/invariant_values/125_hall_maximum_peeling_width.json", "sha256": "18ffccdefae9c2f7e9eae1723050763c13d6c7d952a6ace578e5e98d8df432ef"},
+    {"path": "data/examples/104_chunk_deletion_counting_pitfalls.json", "sha256": "bfb6cb28eaeded281d2efaf3550b9bbb1b18aa8e4318a20f1d5e58f5b234968b"},
+    {"path": "migration/coverage.json", "sha256": "d9f6cd05bcef60b991317ca3631b6148290d77d9628b3b442bf8a75be8b9426a"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "5198fa3b96be780556c891ec20b97fb95c4937a07894ddb27cb1252f394cce48"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1506 records.",
+    "website": "Normalized 1522 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 9 minor-atlas labels, raising that workspace from 5 of 37 to 14 of 37 and overall workspace-aware coverage from 341 to 350 of 1016 unique labels."
+  },
+  "deferred": [
+    "The 23 remaining minor-atlas labels concern polygon and maximum-parent constructions, deletion-parent theorems, complement dismantlability, and ambient obstruction examples.",
+    "Parameterized peeling-width level classes can be promoted as hierarchy nodes when their full inclusion package is migrated; the present batch records the defining invariants and endpoint theorems without adding premature graph nodes.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

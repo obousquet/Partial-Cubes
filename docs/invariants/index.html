@@ -1185,6 +1185,61 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-42" style="position:relative;">
+
+        <h3><a href="invariants/peeling_width.html" class="table-title-link">USO Peeling Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>USO Peeling Width</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\nu">
+            \[\nu\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For an ample class $C$, minimize over all unique-sink orientations $o$ of its one-inclusion graph the largest cardinality of a strongly connected component of $o$. Set $\nu(C)=\infty$ when $C$ has no unique-sink orientation.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Codomain: </strong>Positive integers together with infinity</p>
+<strong>Normalization:</strong><div class="text-field"><p>Strongly connected components are counted by concepts. The minimum ranges over the CCMW unique-sink orientations intrinsic to the cubes of $C$.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>Width one is dismantlability; finite width is existence of a representation map. This invariant controls source-component deletion along one representation orientation.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#eq:peeling-width</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/hall_maximum_peeling_width.html'>USO Peeling Width of Hall's Maximum Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/peeling_width_endpoints.html'>USO Peeling Width Interpolates Between Dismantlability and Representation</a></li><li><a href='results/peeling_width_pc_minor_monotonicity.html'>USO Peeling Width Does Not Increase under pc-Minors</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-43" style="position:relative;">
+
+        <h3><a href="invariants/chunk_peeling_width.html" class="table-title-link">Ample Chunk-Peeling Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Chunk-Peeling Width</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\chi">
+            \[\chi\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For an ample class $C$, take the least $k$ for which $C$ can be reduced to the empty class by repeatedly deleting at most $k$ concepts while leaving an ample class after every deletion.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>$\chi(\varnothing)=0$; deleting all concepts in one step shows $\chi(C)\le |C|$ for every nonempty ample class.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>This invariant imposes no orientation. Always $\chi(C)\le\nu(C)$, and both widths have the same zero-level class: $\chi(C)=\nu(C)=1$ exactly for nonempty dismantlable ample classes.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:tight-sets</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/ample_chunk_deletion_criterion.html'>Exact Ample-Preserving Chunk Deletion Criterion</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

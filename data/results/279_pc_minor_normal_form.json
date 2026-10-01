@@ -1,0 +1,15 @@
+{
+  "id": 279,
+  "short_name": "pc_minor_normal_form",
+  "name": "Normal Form for pc-Minors",
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Every nonempty pc-minor of $C\\subseteq\\{0,1\\}^E$ is $C[T;S=s]=\\{x|_T:x\\in C,\\ x|_S=s\\}$ for disjoint coordinate sets $S,T$. Coordinates outside $S\\cup T$ are projected away, and projection and conditioning on distinct coordinates commute.",
+  "status": "established",
+  "proof": "In any minor sequence, a removed coordinate cannot reappear. Partition the original coordinates into those retained, fixed, and projected away. Consistency of the fixed labels follows from nonemptiness, and the displayed membership test proves both the normal form and commutation. Conversely, fixing $S$ and projecting to $T$ constructs every displayed minor.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:normal-form"
+}

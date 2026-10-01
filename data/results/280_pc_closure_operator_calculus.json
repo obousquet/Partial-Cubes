@@ -1,0 +1,15 @@
+{
+  "id": 280,
+  "short_name": "pc_closure_operator_calculus",
+  "name": "Projection-Conditioning Closure Calculus",
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every family $\\mathcal F$ in an operation-stable ambient universe, $\\operatorname{Cl}_{pc}(\\mathcal F)=\\operatorname{Cl}_c(\\operatorname{Cl}_p(\\mathcal F))=\\operatorname{Cl}_p(\\operatorname{Cl}_c(\\mathcal F))$. If $\\mathcal F$ is p-closed, then $\\operatorname{Cl}_{pc}(\\mathcal F)=\\operatorname{Cl}_c(\\mathcal F)$. If it is pc-closed, then $\\operatorname{Obs}_{pc}(\\mathcal F)=\\operatorname{Obs}_p(\\mathcal F)\\cap\\operatorname{Obs}_c(\\mathcal F)$.",
+  "status": "established",
+  "proof": "The pc-minor normal form permits all projected coordinates to be removed before or after all conditioned coordinates. For the obstruction identity, pc-minimality implies both restricted minimalities. Conversely, the first effective step of a proper mixed minor lies in the pc-closed family by either restricted minimality, and closure keeps every later step inside.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:operators"
+}

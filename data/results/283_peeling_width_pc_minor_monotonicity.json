@@ -1,0 +1,23 @@
+{
+  "id": 283,
+  "short_name": "peeling_width_pc_minor_monotonicity",
+  "name": "USO Peeling Width Does Not Increase under pc-Minors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/representation_map_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/peeling_width"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If $C'$ is a pc-minor of an ample class $C$, then $\\nu(C')\\le\\nu(C)$. More precisely, conditioning restricts a representation orientation to an induced subgraph, while the canonical in-map orientation on a projection has no larger strongly connected component.",
+  "status": "established",
+  "proof": "Restriction cannot enlarge a strongly connected component. For a projection, lift every projected vertex to the sink of its coordinate fiber. Each projected arc lifts to a directed path between the chosen representatives; therefore a strongly connected component downstairs injects into one strongly connected component upstairs. Iterate the two inequalities along the pc-minor sequence and minimize over orientations.",
+  "references": "\\cite[Theorem~6.8 and Proposition~6.14]{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:width-minor-closed"
+}

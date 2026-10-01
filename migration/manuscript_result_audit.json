@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 341,
-    "uncovered": 675,
-    "proof_source_records": 1380
+    "covered": 350,
+    "uncovered": 666,
+    "proof_source_records": 1392
   },
   "by_workspace": {
     "ample-corners": {
@@ -39,9 +39,9 @@
       "total": 12
     },
     "minor-atlas": {
-      "covered": 5,
+      "covered": 14,
       "total": 37,
-      "uncovered": 32
+      "uncovered": 23
     },
     "realizability-margin": {
       "covered": 19,
@@ -13109,7 +13109,7 @@
       "label": "ex:width-counting-pitfalls",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13119,7 +13119,9 @@
           "line": 530
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/104_chunk_deletion_counting_pitfalls.json"
+      ]
     },
     {
       "label": "lem:corner-representation-deletion",
@@ -13228,7 +13230,7 @@
       "label": "prop:hall-width",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13238,7 +13240,9 @@
           "line": 440
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariant_values/125_hall_maximum_peeling_width.json"
+      ]
     },
     {
       "label": "prop:intermediate-inclusions",
@@ -13363,7 +13367,7 @@
       "label": "prop:normal-form",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13373,13 +13377,15 @@
           "line": 127
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/279_pc_minor_normal_form.json"
+      ]
     },
     {
       "label": "prop:operators",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13389,7 +13395,9 @@
           "line": 175
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/280_pc_closure_operator_calculus.json"
+      ]
     },
     {
       "label": "prop:parent-depth-hierarchy",
@@ -13443,7 +13451,7 @@
       "label": "prop:peeling-width-ends",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13453,7 +13461,9 @@
           "line": 333
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/282_peeling_width_endpoints.json"
+      ]
     },
     {
       "label": "prop:peripheral-corner-parent",
@@ -13523,7 +13533,7 @@
       "label": "prop:source-component",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13533,13 +13543,15 @@
           "line": 310
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/281_uso_source_component_deletion.json"
+      ]
     },
     {
       "label": "prop:tight-sets",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13549,7 +13561,10 @@
           "line": 491
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/043_chunk_peeling_width.json",
+        "data/results/284_ample_chunk_deletion_criterion.json"
+      ]
     },
     {
       "label": "prop:tree-like",
@@ -13592,7 +13607,7 @@
       "label": "prop:uso-dictionary",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13602,13 +13617,16 @@
           "line": 271
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/031_representation_map_uso_equivalence.json",
+        "data/characterizations/178_unique_sink_orientation_representation.json"
+      ]
     },
     {
       "label": "prop:width-minor-closed",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "minor-atlas"
       ],
@@ -13618,7 +13636,9 @@
           "line": 382
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/283_peeling_width_pc_minor_monotonicity.json"
+      ]
     },
     {
       "label": "thm:dismantlable-minimum-deletion",

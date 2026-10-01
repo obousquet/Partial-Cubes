@@ -1,0 +1,15 @@
+{
+  "id": 43,
+  "short_name": "chunk_peeling_width",
+  "name": "Ample Chunk-Peeling Width",
+  "symbol": "\\chi",
+  "definition": "For an ample class $C$, take the least $k$ for which $C$ can be reduced to the empty class by repeatedly deleting at most $k$ concepts while leaving an ample class after every deletion.",
+  "status": "established",
+  "domain_class_id": "#classes/ample",
+  "codomain": "Nonnegative integers",
+  "normalization": "$\\chi(\\varnothing)=0$; deleting all concepts in one step shows $\\chi(C)\\le |C|$ for every nonempty ample class.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "This invariant imposes no orientation. Always $\\chi(C)\\le\\nu(C)$, and both widths have the same zero-level class: $\\chi(C)=\\nu(C)=1$ exactly for nonempty dismantlable ample classes.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:tight-sets"
+}

@@ -390,7 +390,7 @@
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:dismantlable-ample-obstructions</p></div>
 <strong>Verification:</strong><div class="text-field"><p>data/examples/assets/hall_maximum_class.json; replayed from PartialCubes:papers/dismantlable-ample/scripts/explore_dismantlable_ample.py</p></div>
 <p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/hall_maximum_class_obstruction.html">Hall Maximum-Class Obstruction</a></li></ul></p>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/hall_maximum_peeling_width.html'>USO Peeling Width of Hall's Maximum Class</a></li></ul></p></div>
 
         </div>
     </div>
@@ -2203,6 +2203,20 @@
 <strong>Properties:</strong><div class="text-field"><p>Both attachments are dismantlable ample and are exchanged by reflecting the shared coordinate. They have identical absolute and common-edge prescribed widths, yet gluing to $A$ at $u$ has positive width $s=\sigma(R;\{u\})$ and gluing at $v$ has width zero.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#prop:section-width-limit</p></div>
 <strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/gluing/supplement/verify_gated_relative_tests.py; PartialCubes:papers/gluing/supplement/expected/gated_relative_tests_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-104" style="position:relative;">
+
+        <h3><a href="examples/chunk_deletion_counting_pitfalls.html" class="table-title-link">Chunk-Deletion Counting Pitfalls</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Chunk-Deletion Counting Pitfalls</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>The first witness is the one-coordinate cube $C=\{0,1\}$ with the whole class deleted. The second starts from any cornerless ample class $H$, chooses $h\in H$, and forms $C_H^+=(H\times\{0\})\cup\{(h,1)\}$ on one new coordinate.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>For the first witness, three fibers are contained in the deleted set but only two shattered coordinate sets are lost, so fibers cannot be counted with multiplicity. For $C_H^+$, deleting the added concept is an ample-preserving singleton deletion leaving $H$, while deleting any other single concept leaves a nonample zero-section. Thus a smallest admissible first deletion can have size one although the full chunk-peeling width is greater than one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#ex:width-counting-pitfalls</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
