@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "batch_id": "064_subcube_scaffold_obstructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Promote the anchored and staircase subcube-scaffold families and the codimension-one staircase q-cap family of contraction-minimal nonlearning partial cubes from the active survey.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-subcube-scaffold-pendant-obstructions",
+    "PartialCubes:papers/survey/main.tex#prop:learning-space-staircase-q-cap-pendant-obstructions"
+  ],
+  "source_packets": [
+    {
+      "id": "partialcubes-survey",
+      "repository": "PartialCubes",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized family definitions, parameter compatibility conditions, valid and invalid root certificates, repair sets, orders, contraction-minimality claims, and concise proofs. The survey retains the complete translated-state arguments, accessibility cases, rooted-union witnesses, notation, and surrounding classification narrative.",
+    "recoverability": "The exact source hash and proposition locators preserve the complete scholarly context.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/obstruction_families/021_anchored_subcube_scaffold_contraction_obstructions.json",
+      "sha256": "648a2147cf33d1e292397bbeecad713f826173fa4b06ffc7453b2e9bff2deacb"
+    },
+    {
+      "path": "data/obstruction_families/022_staircase_subcube_scaffold_contraction_obstructions.json",
+      "sha256": "d8d86efbd6e6af5bac9b9a03413dbf3bf9ca544760a30c46412972c414659c56"
+    },
+    {
+      "path": "data/obstruction_families/023_staircase_q_cap_contraction_obstructions.json",
+      "sha256": "ac9bda39dea5d3c17eca4201b4c1c1dddb4d68676a818f349f60e2546fa7ff83"
+    },
+    {
+      "path": "data/results/177_anchored_subcube_scaffold_obstructions.json",
+      "sha256": "c472d2ddd599b06223155f3fa6f537ec2b902a32369e48254cafb1dd3bcf1a36"
+    },
+    {
+      "path": "data/results/178_staircase_subcube_scaffold_obstructions.json",
+      "sha256": "a5ce92efcf25187cced1429b76b6d6be0524e83c9390e5a8efb9097c1365951f"
+    },
+    {
+      "path": "data/results/179_staircase_q_cap_obstructions.json",
+      "sha256": "d4cf235320ec623194df02bdb8564cf3dd2c9028d6b9b2a2cbd36acdf5b144d9"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "917cc74925ffa89f75bf19e25f0c21543fe24edd4bb45d8680fa8c9592350985"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1329 records.",
+    "website": "Normalized 1345 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All extractors, source-preservation checks, bibliography and coverage audits, class-status audits, and review-queue validation pass."
+  },
+  "deferred": [
+    "These records assert contraction-minimality only; they make no pc-minimality or completeness claim because learning-space graphs are not closed under convex restrictions.",
+    "The three punctured-triangle continuation families remain queued for exact promotion."
+  ]
+}

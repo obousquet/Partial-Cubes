@@ -1,0 +1,17 @@
+{
+  "id": 177,
+  "short_name": "anchored_subcube_scaffold_obstructions",
+  "name": "Anchored Subcube-Scaffold Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "For $X=\\{a,b,q\\}\\mathbin{\\dot\\cup}U$ with $U\\ne\\varnothing$, let $\\mathcal K_d^{\\mathrm{an},\\delta}$ be obtained from $2^X$ by deleting $\\{a\\}$, $\\{b\\}$, all $\\{a,b\\}\\cup T$ for $T\\subseteq U$, and optionally $\\{a,q\\}$ according to $\\delta\\in\\{0,1\\}$. It is a learning space rooted at $\\{a,b,q\\}$. At $\\varnothing$ and $X$ its repair sets are $\\{a,b,q\\}$ and $U\\cup\\{q\\}$ when $\\delta=0$, or $U$ when $\\delta=1$. Its empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-2^{d-3}-1-\\delta$.",
+  "status": "established",
+  "proof": "Translation by $\\{a,b,q\\}$ makes the missing family hereditary in the anchor $q$, which proves union closure, while direct deletion proves accessibility. Rooted-union witnesses determine both endpoint hole sets. Their repair sets cover $X$, so the critical-antipodal pendant criterion gives contraction-minimality; counting the deleted states gives the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-subcube-scaffold-pendant-obstructions"
+}

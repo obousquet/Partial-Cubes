@@ -1,0 +1,14 @@
+{
+  "id": 21,
+  "short_name": "anchored_subcube_scaffold_contraction_obstructions",
+  "name": "Anchored Subcube-Scaffold Contraction Obstructions",
+  "symbol": "\\{\\operatorname{Pend}_f(\\mathcal K_d^{\\mathrm{an},\\delta},\\varnothing)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $X=\\{a,b,q\\}\\mathbin{\\dot\\cup}U$ with $U\\ne\\varnothing$. For $\\delta\\in\\{0,1\\}$, delete $\\{a\\}$, $\\{b\\}$, every $\\{a,b\\}\\cup T$ with $T\\subseteq U$, and additionally $\\{a,q\\}$ when $\\delta=1$. The base is the complement $\\mathcal K_d^{\\mathrm{an},\\delta}$ of this deleted family in $2^X$; attach a new pendant coordinate $f$ at the empty endpoint.",
+  "parameters": "$d=|X|\\ge4$, $U\\ne\\varnothing$, and $\\delta\\in\\{0,1\\}$. The pendant family has $2^d-2^{d-3}-1-\\delta$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The displayed coordinates distinguish the two singleton anchors $a,b$, the cap coordinate $q$, and the nonempty subcube support $U$; $\\delta$ records the optional deleted state $\\{a,q\\}$.",
+  "recognition": "A construction certificate verifies that the base has valid root $\\{a,b,q\\}$, that its complementary endpoints are the only critical pair used in the pendant criterion, and that their repair sets are $\\{a,b,q\\}$ and $U\\cup\\{q\\}$ for $\\delta=0$ or $U$ for $\\delta=1$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-subcube-scaffold-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}

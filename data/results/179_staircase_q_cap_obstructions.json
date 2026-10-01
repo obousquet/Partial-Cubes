@@ -1,0 +1,17 @@
+{
+  "id": 179,
+  "short_name": "staircase_q_cap_obstructions",
+  "name": "Codimension-One Staircase q-Cap Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=\\{a,b,c,z,q\\}\\mathbin{\\dot\\cup}W$ and $U=W\\mathbin{\\dot\\cup}\\{z\\}$. Delete the four-state staircase scaffold, the anchored subcube over $U$, and the codimension-one q-cap over $W$. The complement $\\mathcal K_d^{\\mathrm{st},\\mathrm{qcap}}$ is a learning space rooted at $\\{b,c\\}$. Its endpoint repair sets are $\\{a,b,c\\}$ and $U\\cup\\{q\\}$, so the empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-3\\cdot2^{d-5}-3$.",
+  "status": "established",
+  "proof": "Translation by $\\{b,c\\}$ exposes two hereditary anchored blocks and the staircase scaffold, proving union closure; a casewise deletion proves accessibility. Rooted-union witnesses give the exact holes, whose repair sets cover every coordinate. The critical-antipodal pendant criterion yields contraction-minimality, and the three disjoint deleted blocks give the order.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-staircase-q-cap-pendant-obstructions"
+}

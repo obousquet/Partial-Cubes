@@ -3049,6 +3049,54 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-177" style="position:relative;">
+
+        <h3><a href="results/anchored_subcube_scaffold_obstructions.html" class="table-title-link">Anchored Subcube-Scaffold Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Anchored Subcube-Scaffold Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $X=\{a,b,q\}\mathbin{\dot\cup}U$ with $U\ne\varnothing$, let $\mathcal K_d^{\mathrm{an},\delta}$ be obtained from $2^X$ by deleting $\{a\}$, $\{b\}$, all $\{a,b\}\cup T$ for $T\subseteq U$, and optionally $\{a,q\}$ according to $\delta\in\{0,1\}$. It is a learning space rooted at $\{a,b,q\}$. At $\varnothing$ and $X$ its repair sets are $\{a,b,q\}$ and $U\cup\{q\}$ when $\delta=0$, or $U$ when $\delta=1$. Its empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-2^{d-3}-1-\delta$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Translation by $\{a,b,q\}$ makes the missing family hereditary in the anchor $q$, which proves union closure, while direct deletion proves accessibility. Rooted-union witnesses determine both endpoint hole sets. Their repair sets cover $X$, so the critical-antipodal pendant criterion gives contraction-minimality; counting the deleted states gives the order.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-subcube-scaffold-pendant-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-178" style="position:relative;">
+
+        <h3><a href="results/staircase_subcube_scaffold_obstructions.html" class="table-title-link">Staircase Subcube-Scaffold Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Staircase Subcube-Scaffold Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For $X=\{a,b,c,q\}\mathbin{\dot\cup}U$ with $U\ne\varnothing$, delete the four-state staircase scaffold, the anchored subcube $\{\{a,b,c\}\cup T:T\subseteq U\}$, and compatible decorations selected by $\gamma,\beta,\eta,\lambda$. The resulting base is a learning space at the root prescribed by $(\gamma,\beta)$. Its endpoint repair sets are $\{a,b,c,q\}$ and $U\cup\{q\}$ for $\beta=0$, or $U$ for $\beta=1$. The empty-endpoint pendant extension is contraction-minimal nonlearning of order $2^d-2^{d-4}-3-\gamma-\beta-\eta-\lambda$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each allowed decoration, translation by the displayed valid root makes each missing block closed downward in a distinguished anchor, so no missing state is a union output; the source gives a complete accessibility deletion rule. Exact endpoint holes and neighbor tests yield repair sets covering $X$. The critical-antipodal pendant criterion and a disjoint count of scaffold and subcube deletions finish the claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-subcube-scaffold-pendant-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-179" style="position:relative;">
+
+        <h3><a href="results/staircase_q_cap_obstructions.html" class="table-title-link">Codimension-One Staircase q-Cap Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Codimension-One Staircase q-Cap Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X=\{a,b,c,z,q\}\mathbin{\dot\cup}W$ and $U=W\mathbin{\dot\cup}\{z\}$. Delete the four-state staircase scaffold, the anchored subcube over $U$, and the codimension-one q-cap over $W$. The complement $\mathcal K_d^{\mathrm{st},\mathrm{qcap}}$ is a learning space rooted at $\{b,c\}$. Its endpoint repair sets are $\{a,b,c\}$ and $U\cup\{q\}$, so the empty-endpoint pendant extension is a contraction-minimal nonlearning partial cube of order $2^d-3\cdot2^{d-5}-3$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Translation by $\{b,c\}$ exposes two hereditary anchored blocks and the staircase scaffold, proving union closure; a casewise deletion proves accessibility. Rooted-union witnesses give the exact holes, whose repair sets cover every coordinate. The critical-antipodal pendant criterion yields contraction-minimality, and the three disjoint deleted blocks give the order.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-staircase-q-cap-pendant-obstructions</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

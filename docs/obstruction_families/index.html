@@ -561,6 +561,78 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-21" style="position:relative;">
+
+        <h3><a href="obstruction_families/anchored_subcube_scaffold_contraction_obstructions.html" class="table-title-link">Anchored Subcube-Scaffold Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Anchored Subcube-Scaffold Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{an},\delta},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{an},\delta},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,q\}\mathbin{\dot\cup}U$ with $U\ne\varnothing$. For $\delta\in\{0,1\}$, delete $\{a\}$, $\{b\}$, every $\{a,b\}\cup T$ with $T\subseteq U$, and additionally $\{a,q\}$ when $\delta=1$. The base is the complement $\mathcal K_d^{\mathrm{an},\delta}$ of this deleted family in $2^X$; attach a new pendant coordinate $f$ at the empty endpoint.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge4$, $U\ne\varnothing$, and $\delta\in\{0,1\}$. The pendant family has $2^d-2^{d-3}-1-\delta$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The displayed coordinates distinguish the two singleton anchors $a,b$, the cap coordinate $q$, and the nonempty subcube support $U$; $\delta$ records the optional deleted state $\{a,q\}$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies that the base has valid root $\{a,b,q\}$, that its complementary endpoints are the only critical pair used in the pendant criterion, and that their repair sets are $\{a,b,q\}$ and $U\cup\{q\}$ for $\delta=0$ or $U$ for $\delta=1$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-subcube-scaffold-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-22" style="position:relative;">
+
+        <h3><a href="obstruction_families/staircase_subcube_scaffold_contraction_obstructions.html" class="table-title-link">Staircase Subcube-Scaffold Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Staircase Subcube-Scaffold Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{st},\gamma,\beta;\eta,\lambda},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{st},\gamma,\beta;\eta,\lambda},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,c,q\}\mathbin{\dot\cup}U$ with $U\ne\varnothing$. Delete the scaffold $\{\{a\},\{b\},\{a,b\},\{a,c\}\}$, every $\{a,b,c\}\cup T$ with $T\subseteq U$, and the optional states $\{b,c\}$, $\{b,q\}$, $\{c\}$, $\{a,b,q\}$ selected respectively by $\gamma,\beta,\eta,\lambda$. The base is the complement in $2^X$; attach a new pendant coordinate $f$ at the empty endpoint.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$, $U\ne\varnothing$, $\gamma,\beta,\eta,\lambda\in\{0,1\}$, $\gamma+\beta\le1$, $\eta\le\gamma$, and $\lambda\le\beta$. The pendant family has $2^d-2^{d-4}-3-\gamma-\beta-\eta-\lambda$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The parameters select compatible decorations of a four-state staircase scaffold attached to the anchored subcube $\{\{a,b,c\}\cup T:T\subseteq U\}$.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate checks the valid root $\{b,c\}$ when $\gamma=0$ and $\{a,b,c,q\}$ when $(\gamma,\beta)=(1,0)$, the exact endpoint hole sets, and repair sets $\{a,b,c,q\}$ and $U\cup\{q\}$ for $\beta=0$ or $U$ for $\beta=1$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-subcube-scaffold-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-23" style="position:relative;">
+
+        <h3><a href="obstruction_families/staircase_q_cap_contraction_obstructions.html" class="table-title-link">Codimension-One Staircase q-Cap Contraction Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Codimension-One Staircase q-Cap Contraction Obstructions</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{st},\mathrm{qcap}},\varnothing)\}">
+            \[\{\operatorname{Pend}_f(\mathcal K_d^{\mathrm{st},\mathrm{qcap}},\varnothing)\}\]
+        </div>
+    </div>
+
+<p><strong>Description Type:</strong> Parameterized</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $X=\{a,b,c,z,q\}\mathbin{\dot\cup}W$ and $U=W\mathbin{\dot\cup}\{z\}$. Delete $\{a\}$, $\{b\}$, $\{a,b\}$, $\{a,c\}$, the anchored subcube $\{\{a,b,c\}\cup T:T\subseteq U\}$, and its codimension-one q-cap $\{\{a,b,c,q\}\cup S:S\subseteq W\}$. The base is the complement $\mathcal K_d^{\mathrm{st},\mathrm{qcap}}$ in $2^X$; attach a new pendant coordinate $f$ at the empty endpoint.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$d=|X|\ge5$. The pendant family has $2^d-3\cdot2^{d-5}-3$ states.</p></div>
+<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<strong>Canonical Form:</strong><div class="text-field"><p>The coordinate $z$ distinguishes the codimension-one face $W$ of the anchored support $U$, and $q$ carries the added cap.</p></div>
+<strong>Recognition:</strong><div class="text-field"><p>A construction certificate verifies the valid root $\{b,c\}$, the exact rooted-union holes at $\varnothing$ and $X$, and their repair sets $\{a,b,c\}$ and $U\cup\{q\}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:learning-space-staircase-q-cap-pendant-obstructions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

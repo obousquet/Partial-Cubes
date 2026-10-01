@@ -1,0 +1,14 @@
+{
+  "id": 23,
+  "short_name": "staircase_q_cap_contraction_obstructions",
+  "name": "Codimension-One Staircase q-Cap Contraction Obstructions",
+  "symbol": "\\{\\operatorname{Pend}_f(\\mathcal K_d^{\\mathrm{st},\\mathrm{qcap}},\\varnothing)\\}",
+  "description_type": "parameterized",
+  "definition": "Let $X=\\{a,b,c,z,q\\}\\mathbin{\\dot\\cup}W$ and $U=W\\mathbin{\\dot\\cup}\\{z\\}$. Delete $\\{a\\}$, $\\{b\\}$, $\\{a,b\\}$, $\\{a,c\\}$, the anchored subcube $\\{\\{a,b,c\\}\\cup T:T\\subseteq U\\}$, and its codimension-one q-cap $\\{\\{a,b,c,q\\}\\cup S:S\\subseteq W\\}$. The base is the complement $\\mathcal K_d^{\\mathrm{st},\\mathrm{qcap}}$ in $2^X$; attach a new pendant coordinate $f$ at the empty endpoint.",
+  "parameters": "$d=|X|\\ge5$. The pendant family has $2^d-3\\cdot2^{d-5}-3$ states.",
+  "ambient_class_id": "#classes/partial_cubes",
+  "canonical_form": "The coordinate $z$ distinguishes the codimension-one face $W$ of the anchored support $U$, and $q$ carries the added cap.",
+  "recognition": "A construction certificate verifies the valid root $\\{b,c\\}$, the exact rooted-union holes at $\\varnothing$ and $X$, and their repair sets $\\{a,b,c\\}$ and $U\\cup\\{q\\}$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-staircase-q-cap-pendant-obstructions",
+  "comments": "Every member is contraction-minimal outside learning-space graphs. No pc-minimality or completeness claim is made because learning-space graphs are not closed under convex restrictions."
+}

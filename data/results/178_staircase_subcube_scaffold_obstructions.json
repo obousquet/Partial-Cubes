@@ -1,0 +1,17 @@
+{
+  "id": 178,
+  "short_name": "staircase_subcube_scaffold_obstructions",
+  "name": "Staircase Subcube-Scaffold Obstructions",
+  "class_ids": [
+    "#classes/learning_space_graphs",
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "For $X=\\{a,b,c,q\\}\\mathbin{\\dot\\cup}U$ with $U\\ne\\varnothing$, delete the four-state staircase scaffold, the anchored subcube $\\{\\{a,b,c\\}\\cup T:T\\subseteq U\\}$, and compatible decorations selected by $\\gamma,\\beta,\\eta,\\lambda$. The resulting base is a learning space at the root prescribed by $(\\gamma,\\beta)$. Its endpoint repair sets are $\\{a,b,c,q\\}$ and $U\\cup\\{q\\}$ for $\\beta=0$, or $U$ for $\\beta=1$. The empty-endpoint pendant extension is contraction-minimal nonlearning of order $2^d-2^{d-4}-3-\\gamma-\\beta-\\eta-\\lambda$.",
+  "status": "established",
+  "proof": "For each allowed decoration, translation by the displayed valid root makes each missing block closed downward in a distinguished anchor, so no missing state is a union output; the source gives a complete accessibility deletion rule. Exact endpoint holes and neighbor tests yield repair sets covering $X$. The critical-antipodal pendant criterion and a disjoint count of scaffold and subcube deletions finish the claim.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:learning-space-subcube-scaffold-pendant-obstructions"
+}
