@@ -1,0 +1,14 @@
+{
+  "id": 99,
+  "short_name": "monotone_optimal_asymptotic_auxiliary_rate",
+  "name": "Asymptotic Auxiliary Rate of the Optimal Monotone Example",
+  "invariant_id": "#invariants/asymptotic_maximum_parent_auxiliary_rate",
+  "example_id": "#examples/monotone_optimal_parent",
+  "quantifier": "individual",
+  "value_type": "exact",
+  "value": "2",
+  "status": "established",
+  "proof": "The example has VC dimension two and a rank-two maximum parent using one auxiliary coordinate. The auxiliary-rate certificate criterion therefore gives $\\gamma=2$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate; CompressionSchemes:maximum_parent_methods.tex#ex:monotone-optimal-parent",
+  "verification": "scripts/verify_asymptotic_parent_cost.py"
+}

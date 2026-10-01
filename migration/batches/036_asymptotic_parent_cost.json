@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "batch_id": "036_asymptotic_parent_cost",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize maximum-core rank, constant-stabilized and asymptotic auxiliary costs, quantitative product profiles, Cartesian-power limits, exact maximum-factor formulas, operation laws, and the finite parent-rank lower bound for powers.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#prop:product-profiles",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate",
+    "CompressionSchemes:maximum_parent_methods.tex#prop:auxiliary-rate-operations",
+    "CompressionSchemes:maximum_parent_methods.tex#products-and-asymptotic-auxiliary-cost"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "statement_sha256": {
+        "prop:product-profiles": "db3a56e3c0f8568339a8aaf0762c7ef668593be09c6cfb7c0946491b6c6592be",
+        "thm:auxiliary-rate": "76596ff5dc6f403b6dfc2d287263fc508201459379fa3a2cbf69bc2c65b47b22",
+        "prop:auxiliary-rate-operations": "fcae4eac910040b5b099191fd80aedea6ad25fe399f9819ab206d13d9228de6a"
+      }
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized invariants, formulas, operation laws, concise proofs, and finite replay. CompressionSchemes retains the full maximum-sequence constructions, face-avoidance preparation, subadditive-limit derivation, limitations, and manuscript exposition.",
+    "recoverability": "The current manuscript hash and copied reconciliation packet retain the promoted theorem hashes and audit locations.",
+    "mutation": "No source file in CompressionSchemes or another sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains exact source and statement hashes for all three labelled results."
+    },
+    {
+      "id": "database-asymptotic-parent-cost-verifier",
+      "path": "scripts/verify_asymptotic_parent_cost.py",
+      "sha256": "104f6b8b1ff3e14a0585b33358c1a365720f758d0a46d99fe38993ebe7d2298d",
+      "assertions": "Enumerates every small maximum factor and product core, then checks exact profile, power, and operation formulas."
+    },
+    {
+      "id": "asymptotic-parent-cost-database-replay",
+      "path": "data/examples/assets/asymptotic_parent_cost_database_verification.json",
+      "sha256": "497465bf736a60da88c6fccb817f8dda68e2a98387e2774b08e2ecf48c140278",
+      "assertions": "Passed 64 product-core pairs, 103 core candidates, 25 parent-core profile checks, eight power calibrations, and 23 operation-rate calibrations."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/assets/asymptotic_parent_cost_database_verification.json",
+      "sha256": "497465bf736a60da88c6fccb817f8dda68e2a98387e2774b08e2ecf48c140278"
+    },
+    {
+      "path": "data/invariants/024_maximum_subclass_rank.json",
+      "sha256": "147138a40c026a77d5d3fdd7a51c09b2406c8ffdbab65b485a6ecb0a1fe223c0"
+    },
+    {
+      "path": "data/invariants/025_stabilized_maximum_parent_auxiliaries.json",
+      "sha256": "502e3b31089a77acc51689cf1275e62bcbc0f1b141f806154d2f7721f3cbb645"
+    },
+    {
+      "path": "data/invariants/026_asymptotic_maximum_parent_auxiliary_rate.json",
+      "sha256": "b0d09998d955fd63a92318550ea35792a2e7c51459b7cb15d7218f161b613c9c"
+    },
+    {
+      "path": "data/invariant_values/096_maximum_class_maximum_subclass_rank.json",
+      "sha256": "867e84df56c3de5819fb21d7e9691a096691eff349496d62604a5a01ada0c9be"
+    },
+    {
+      "path": "data/invariant_values/097_maximum_class_stabilized_auxiliaries.json",
+      "sha256": "83657ef92b049739895ff2d445b7c48bd6545bb6ad547b35bcd5941159bcf0c4"
+    },
+    {
+      "path": "data/invariant_values/098_maximum_class_asymptotic_auxiliary_rate.json",
+      "sha256": "ac9e5170651bb6cf114d78f6693aec6b5495773b9f02c7ddcef4d9047972dbd4"
+    },
+    {
+      "path": "data/invariant_values/099_monotone_optimal_asymptotic_auxiliary_rate.json",
+      "sha256": "c48caaaade507efa19d4d2fed5cfecacab8149214ca349419f5053c015274e68"
+    },
+    {
+      "path": "data/results/128_maximum_parent_product_profiles.json",
+      "sha256": "2c233f1fa533181b8024fd132d9ccfd86e0c0186ae80208557a44a2d2e8bca4c"
+    },
+    {
+      "path": "data/results/129_asymptotic_maximum_parent_cost.json",
+      "sha256": "cfdad52a8e8ade46623ce33c1ead81cdb45e30c54ac841977423f8f364d955fe"
+    },
+    {
+      "path": "data/results/130_products_of_maximum_factors_parent_cost.json",
+      "sha256": "5bbbdf29f94884618982c395d7d4c186fe441ac8554f19bf05b5a94327d11a90"
+    },
+    {
+      "path": "data/results/131_asymptotic_parent_rate_operation_laws.json",
+      "sha256": "961e08e9662f43773094771de9043778374af722b86fd7d2dfb2466b01c72a00"
+    },
+    {
+      "path": "data/results/132_maximum_parent_power_rank_lower_bound.json",
+      "sha256": "930c9cc91f7852f6f9bcd153dabe0fefdaade7edc4b8aaa136c882a5615a9600"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "4d0432cc59abae70a0b5dade2de5e21726e214a069a3707aae63a6bb05d2fb5a"
+    },
+    {
+      "path": "scripts/verify_asymptotic_parent_cost.py",
+      "sha256": "104f6b8b1ff3e14a0585b33358c1a365720f758d0a46d99fe38993ebe7d2298d"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 701 records.",
+    "exact_replay": "All required source labels and finite product-core, profile, power, and operation checks passed.",
+    "website": "Normalized 717 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 78 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Local signed-pattern recognition and algebraic parent criteria.",
+    "Remaining maximum-parent, YangDim algebraic, and PartialCubes facts."
+  ]
+}

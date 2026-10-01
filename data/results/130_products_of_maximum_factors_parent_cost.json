@@ -1,0 +1,14 @@
+{
+  "id": 130,
+  "short_name": "products_of_maximum_factors_parent_cost",
+  "name": "Parent Costs for Products of Maximum Factors",
+  "class_ids": ["#classes/maximum", "#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/minimum_maximum_parent_rank", "#invariants/minimum_maximum_parent_auxiliaries", "#invariants/stabilized_maximum_parent_auxiliaries", "#invariants/maximum_subclass_rank"],
+  "operation_ids": ["#operations/cartesian_product"],
+  "result_type": "invariant_law",
+  "statement": "Let $M_1,\\ldots,M_\\ell$ be nonempty proper maximum classes of ranks $d_1,\\ldots,d_\\ell$, let $D=\\prod_iM_i$, and put $R=\\sum_i d_i$. Then $h(D)=b(D)=R$, $m(D)=\\min_i d_i$, and $R-\\min_i d_i\\le a(D)\\le R$. Adjoining one or more visible constant coordinates makes the auxiliary count exactly $R$.",
+  "status": "established",
+  "proof": "Each factor has a rank-$d_i$ zero-auxiliary parent and $b(M_i)=d_i$. Repeated product subadditivity gives $b(D)\\le R$, while VC additivity forces every parent rank, and hence $h(D)$ and $b(D)$, to be at least $R$. The product-core formula gives $m(D)=\\min_i d_i$, and $0\\le b(D)-a(D)\\le m(D)$ gives the displayed interval. The definition of $b$ gives the constant-extension assertion.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate",
+  "comments": "The factors need not be geometrically realizable."
+}

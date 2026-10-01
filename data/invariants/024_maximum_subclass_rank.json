@@ -1,0 +1,14 @@
+{
+  "id": 24,
+  "short_name": "maximum_subclass_rank",
+  "name": "Maximum Subclass Rank",
+  "symbol": "m(C)",
+  "definition": "For a nonempty finite binary class $C\\subseteq\\{0,1\\}^X$, $m(C)$ is the largest rank of a maximum subclass of $C$ on the same positioned ground $X$.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "normalization": "The maximum subclass uses the same visible coordinate set as $C$; constant visible coordinates are retained.",
+  "category": "combinatorial",
+  "isomorphism_invariant": false,
+  "comments": "A singleton gives $m(C)\\ge0$. If a maximum parent of $C$ has rank $r$ and $a$ auxiliary coordinates, then $r\\le a+m(C)$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#eq:parent-core-bound"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 131,
+  "short_name": "asymptotic_parent_rate_operation_laws",
+  "name": "Operation Laws for the Asymptotic Parent Rate",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/asymptotic_maximum_parent_auxiliary_rate"],
+  "operation_ids": ["#operations/cartesian_product", "#operations/projection", "#operations/full_reduction", "#operations/partial_trace"],
+  "result_type": "invariant_law",
+  "statement": "For nonempty proper represented classes on disjoint grounds, $\\gamma(C\\times D)\\le\\gamma(C)+\\gamma(D)$. Projection and full reduction do not increase $\\gamma$ when their outputs remain nonempty and proper. For $t\\ge0$, $\\max\\{\\gamma(C),\\operatorname{VC}(C)+t\\}\\le\\gamma(C\\times\\{0,1\\}^t)\\le\\gamma(C)+t$. If $C$ has $n$ coordinates, then its partial-trace expansion satisfies $\\gamma(T(C))\\le\\gamma(C)+n$. Thus $\\gamma=\\operatorname{VC}$ is preserved by products of equality cases, visible free or constant coordinates, partial traces, and VC-preserving proper projections.",
+  "status": "established",
+  "proof": "Regroup $(C\\times D)^k$ as $C^k\\times D^k$, apply subadditivity of $b$, divide by $k$, and pass to the limit. Apply projection or full reduction independently in every factor for monotonicity. The finite free-coordinate profile construction adds at most $tk$ auxiliaries to $C^k$, while projection and VC dimension give the two lower bounds. Partial trace commutes with products and its finite construction adds at most $nk$ auxiliaries. Combining these inequalities with VC additivity proves preservation of equality.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:auxiliary-rate-operations"
+}

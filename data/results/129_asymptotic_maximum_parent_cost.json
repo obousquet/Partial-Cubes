@@ -1,0 +1,13 @@
+{
+  "id": 129,
+  "short_name": "asymptotic_maximum_parent_cost",
+  "name": "Auxiliary Cost of Cartesian Powers",
+  "class_ids": ["#classes/maximum_generated_classes", "#classes/maximum"],
+  "invariant_ids": ["#invariants/asymptotic_maximum_parent_auxiliary_rate", "#invariants/minimum_maximum_parent_auxiliaries", "#invariants/stabilized_maximum_parent_auxiliaries", "#invariants/maximum_subclass_rank"],
+  "operation_ids": ["#operations/cartesian_product"],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty proper maximum-generated $C$, the limit $\\gamma(C)=\\lim_{k\\to\\infty}a(C^k)/k=\\inf_{k\\ge1}b(C^k)/k$ exists and $\\operatorname{VC}(C)\\le\\gamma(C)\\le b(C)$. Visible constant coordinates do not change $\\gamma$. If $d=\\operatorname{VC}(C)$ and $C$ has a rank-$d$ parent with at most $d$ auxiliaries, then $b(C^k)=kd$, $kd-m(C)\\le a(C^k)\\le kd$, and $\\gamma(C)=d$. In particular a proper rank-$d$ maximum class satisfies $(k-1)d\\le a(M^k)\\le kd$ and $b(M^k)=kd$.",
+  "status": "established",
+  "proof": "The sequence $b(C^k)$ is subadditive, so the elementary subadditive-limit argument gives its normalized limit and infimum formula. Product cores satisfy $m(C^k)=m(C)$ and $0\\le b(C^k)-a(C^k)\\le m(C)$, hence the normalized $a$-sequence has the same limit. Parent rank is at least $k\\operatorname{VC}(C)$, yielding the lower bound; subadditivity yields the upper bound. Under the stated certificate, both bounds force $b(C^k)=kd$. Constant invariance follows because $(C\\times\\{0\\}^t)^k$ is a constant extension of $C^k$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate"
+}

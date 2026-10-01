@@ -1838,6 +1838,79 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-96" style="position:relative;">
+
+        <h3><a href="invariant_values/maximum_class_maximum_subclass_rank.html" class="table-title-link">Maximum Subclass Rank of a Maximum Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Subclass Rank of a Maximum Class</p>
+<p><strong>Invariant: </strong><a href="invariants/maximum_subclass_rank.html">Maximum Subclass Rank</a></p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$m(M)=\operatorname{VC}(M)$</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class $M$ itself is a same-ground maximum subclass of rank $\operatorname{VC}(M)$, and no subclass can have larger VC dimension.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-97" style="position:relative;">
+
+        <h3><a href="invariant_values/maximum_class_stabilized_auxiliaries.html" class="table-title-link">Stabilized Auxiliary Count of a Proper Maximum Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Stabilized Auxiliary Count of a Proper Maximum Class</p>
+<p><strong>Invariant: </strong><a href="invariants/stabilized_maximum_parent_auxiliaries.html">Constant-Stabilized Maximum-Parent Auxiliary Count</a></p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$b(M)=\operatorname{VC}(M)$</p>
+<strong>Scope:</strong><div class="text-field"><p>Nonempty proper maximum classes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A proper rank-$d$ maximum class is its own zero-auxiliary rank-$d$ parent. The constant-stabilized minimum is at most $d$, while every parent rank is at least the VC dimension $d$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_asymptotic_parent_cost.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-98" style="position:relative;">
+
+        <h3><a href="invariant_values/maximum_class_asymptotic_auxiliary_rate.html" class="table-title-link">Asymptotic Auxiliary Rate of a Proper Maximum Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Asymptotic Auxiliary Rate of a Proper Maximum Class</p>
+<p><strong>Invariant: </strong><a href="invariants/asymptotic_maximum_parent_auxiliary_rate.html">Asymptotic Maximum-Parent Auxiliary Rate</a></p>
+<p><strong>Class: </strong><a href="classes/maximum.html">Maximum Classes</a></p>
+<p><strong>Quantifier:</strong> All Members</p>
+<p><strong>Value Type:</strong> Formula</p>
+<p><strong>Value: </strong>$\gamma(M)=\operatorname{VC}(M)$</p>
+<strong>Scope:</strong><div class="text-field"><p>Nonempty proper maximum classes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The general rate theorem gives $\operatorname{VC}(M)\le\gamma(M)\le b(M)$, and $b(M)=\operatorname{VC}(M)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_asymptotic_parent_cost.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-99" style="position:relative;">
+
+        <h3><a href="invariant_values/monotone_optimal_asymptotic_auxiliary_rate.html" class="table-title-link">Asymptotic Auxiliary Rate of the Optimal Monotone Example</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Asymptotic Auxiliary Rate of the Optimal Monotone Example</p>
+<p><strong>Invariant: </strong><a href="invariants/asymptotic_maximum_parent_auxiliary_rate.html">Asymptotic Maximum-Parent Auxiliary Rate</a></p>
+<p><strong>Example: </strong><a href="examples/monotone_optimal_parent.html">Downset with Simultaneously Optimal Parent Parameters</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>2</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The example has VC dimension two and a rank-two maximum parent using one auxiliary coordinate. The auxiliary-rate certificate criterion therefore gives $\gamma=2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate; CompressionSchemes:maximum_parent_methods.tex?#ex:monotone-optimal-parent</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_asymptotic_parent_cost.py</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

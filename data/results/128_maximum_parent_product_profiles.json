@@ -1,0 +1,14 @@
+{
+  "id": 128,
+  "short_name": "maximum_parent_product_profiles",
+  "name": "Quantitative Maximum-Parent Product Bounds",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile", "#invariants/minimum_maximum_parent_auxiliaries", "#invariants/maximum_subclass_rank", "#invariants/stabilized_maximum_parent_auxiliaries"],
+  "operation_ids": ["#operations/cartesian_product"],
+  "result_type": "invariant_law",
+  "statement": "Let nonempty proper $C_i\\subsetneq\\{0,1\\}^{X_i}$ have disjoint grounds of sizes $n_i$. Then $m(C_1\\times C_2)=\\min\\{m(C_1),m(C_2)\\}$. If $(r_i,s_i)\\in\\mathcal F(C_i)$, then $(r_1+r_2,\\max\\{s_1,n_1-1\\}+\\max\\{s_2,n_2-1\\}+1)\\in\\mathcal F(C_1\\times C_2)$. Consequently $b(C_1\\times C_2)\\le b(C_1)+b(C_2)$ and $a(C)\\le b(C)\\le a(C)+m(C)$.",
+  "status": "established",
+  "proof": "A same-ground maximum subclass of a proper product projects to maximum subclasses in both factors, which bounds its rank by both core ranks. Maximum sequences through largest cores give the reverse inequality at their minimum rank. For the parent bound, pad each supplied parent until its auxiliary count is at least its rank, choose a predecessor avoiding the marked face, and take the level sum of the two maximum sequences. The marked section is exactly the product and has the displayed profile. Minimizing first for $b$ gives subadditivity. Projection gives $a\\le b$, while the parent-core inequality gives $b\\le a+m$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:product-profiles",
+  "comments": "The construction controls the maximum-parent profile and auxiliary count; it does not preserve an arbitrary parent-decomposition level."
+}

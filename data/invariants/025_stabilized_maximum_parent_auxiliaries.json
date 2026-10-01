@@ -1,0 +1,15 @@
+{
+  "id": 25,
+  "short_name": "stabilized_maximum_parent_auxiliaries",
+  "name": "Constant-Stabilized Maximum-Parent Auxiliary Count",
+  "symbol": "b(C)",
+  "definition": "For a nonempty proper maximum-generated class $C\\subsetneq\\{0,1\\}^X$, set $b(C)=a(C\\times\\{0\\})$. Equivalently, $b(C)=\\min_{(r,s)\\in\\mathcal F(C)}\\max\\{r,r+s+1-|X|\\}$.",
+  "status": "established",
+  "domain_class_id": "#classes/maximum_generated_classes",
+  "codomain": "Nonnegative integers",
+  "normalization": "One visible constant coordinate is adjoined before minimizing the number of auxiliary coordinates; adjoining any positive number of visible constants gives the same value.",
+  "category": "combinatorial",
+  "isomorphism_invariant": false,
+  "comments": "It satisfies $a(C)\\le b(C)\\le a(C)+m(C)$ and is subadditive under Cartesian products.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:product-profiles"
+}

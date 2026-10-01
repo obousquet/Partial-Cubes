@@ -649,7 +649,7 @@
 <strong>Comments:</strong><div class="text-field"><p>Complementation transposes the profile. Its finite antichain of coordinatewise minimal points determines the entire profile.</p></div>
 <strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fixed_rank_maximum_parent_bounds.html'>Finite Auxiliary Bounds at a Prescribed Parent Rank</a></li><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fixed_rank_maximum_parent_bounds.html'>Finite Auxiliary Bounds at a Prescribed Parent Rank</a></li><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li></ul></p></div>
 
         </div>
     </div>
@@ -676,7 +676,7 @@
 <strong>Comments:</strong><div class="text-field"><p>Always at least the VC dimension. Constant visible coordinates can affect related auxiliary costs even when the one-inclusion graph is unchanged.</p></div>
 <strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_minimum_parent_rank.html'>Minimum Parent Rank of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li></ul></p></div>
 
         </div>
     </div>
@@ -703,7 +703,87 @@
 <strong>Comments:</strong><div class="text-field"><p>The minimum need not a priori occur at the least parent rank and least complementary rank simultaneously; the profile records this tradeoff.</p></div>
 <strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_minimum_auxiliaries.html'>Minimum Auxiliary Count of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/asymptotic_maximum_parent_cost.html'>Auxiliary Cost of Cartesian Powers</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-24" style="position:relative;">
+
+        <h3><a href="invariants/maximum_subclass_rank.html" class="table-title-link">Maximum Subclass Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Subclass Rank</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="m(C)">
+            \[m(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty finite binary class $C\subseteq\{0,1\}^X$, $m(C)$ is the largest rank of a maximum subclass of $C$ on the same positioned ground $X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The maximum subclass uses the same visible coordinate set as $C$; constant visible coordinates are retained.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>A singleton gives $m(C)\ge0$. If a maximum parent of $C$ has rank $r$ and $a$ auxiliary coordinates, then $r\le a+m(C)$.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#eq:parent-core-bound</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_class_maximum_subclass_rank.html'>Maximum Subclass Rank of a Maximum Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/asymptotic_maximum_parent_cost.html'>Auxiliary Cost of Cartesian Powers</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-25" style="position:relative;">
+
+        <h3><a href="invariants/stabilized_maximum_parent_auxiliaries.html" class="table-title-link">Constant-Stabilized Maximum-Parent Auxiliary Count</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Constant-Stabilized Maximum-Parent Auxiliary Count</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="b(C)">
+            \[b(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper maximum-generated class $C\subsetneq\{0,1\}^X$, set $b(C)=a(C\times\{0\})$. Equivalently, $b(C)=\min_{(r,s)\in\mathcal F(C)}\max\{r,r+s+1-|X|\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>One visible constant coordinate is adjoined before minimizing the number of auxiliary coordinates; adjoining any positive number of visible constants gives the same value.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>It satisfies $a(C)\le b(C)\le a(C)+m(C)$ and is subadditive under Cartesian products.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:product-profiles</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_class_stabilized_auxiliaries.html'>Stabilized Auxiliary Count of a Proper Maximum Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/asymptotic_maximum_parent_cost.html'>Auxiliary Cost of Cartesian Powers</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-26" style="position:relative;">
+
+        <h3><a href="invariants/asymptotic_maximum_parent_auxiliary_rate.html" class="table-title-link">Asymptotic Maximum-Parent Auxiliary Rate</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Asymptotic Maximum-Parent Auxiliary Rate</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\gamma(C)">
+            \[\gamma(C)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper maximum-generated class $C$, $\gamma(C)=\lim_{k\to\infty}a(C^k)/k=\inf_{k\ge1}b(C^k)/k$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative real numbers</p>
+<strong>Normalization:</strong><div class="text-field"><p>Cartesian powers use disjoint copies of the positioned visible ground; auxiliary coordinates are divided by the number of factors.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>The limit exists by subadditivity of $b(C^k)$ and $0\le b(C^k)-a(C^k)\le m(C)$. Always $\operatorname{VC}(C)\le\gamma(C)\le b(C)$.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_class_asymptotic_auxiliary_rate.html'>Asymptotic Auxiliary Rate of a Proper Maximum Class</a></li><li><a href='invariant_values/monotone_optimal_asymptotic_auxiliary_rate.html'>Asymptotic Auxiliary Rate of the Optimal Monotone Example</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/asymptotic_maximum_parent_cost.html'>Auxiliary Cost of Cartesian Powers</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li></ul></p></div>
 
         </div>
     </div>

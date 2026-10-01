@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,30 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-14" style="position:relative;">
+            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
+    <div class="table-card" id="math-25" style="position:relative;">
 
-        <h3><a href="operations/partial_trace.html" class="table-title-link">Partial-Trace Expansion</a></h3>
+        <h3><a href="invariants/stabilized_maximum_parent_auxiliaries.html" class="table-title-link">Constant-Stabilized Maximum-Parent Auxiliary Count</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Partial-Trace Expansion</p>
+        <p><strong>Name: </strong>Constant-Stabilized Maximum-Parent Auxiliary Count</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="T_I(C)">
-            \[T_I(C)\]
+        <div class="latex-equation" data-latex="b(C)">
+            \[b(C)\]
         </div>
     </div>
 
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For $I\subseteq E$, add a mask coordinate $m_i$ for each $i\in I$. A word $(x,m)$ belongs when some $c\in C$ agrees with $x$ outside $I$ and at every $i\in I$ whose mask is zero; mask one releases the old coordinate.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#eq:partial-trace-class</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/coefficient_space_partial_trace_product.html'>Coefficient Spaces of Partial Traces</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li></ul></p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper maximum-generated class $C\subsetneq\{0,1\}^X$, set $b(C)=a(C\times\{0\})$. Equivalently, $b(C)=\min_{(r,s)\in\mathcal F(C)}\max\{r,r+s+1-|X|\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>One visible constant coordinate is adjoined before minimizing the number of auxiliary coordinates; adjoining any positive number of visible constants gives the same value.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>It satisfies $a(C)\le b(C)\le a(C)+m(C)$ and is subadditive under Cartesian products.</p></div>
+<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:product-profiles</p></div>
+<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/maximum_class_stabilized_auxiliaries.html'>Stabilized Auxiliary Count of a Proper Maximum Class</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/asymptotic_maximum_parent_cost.html'>Auxiliary Cost of Cartesian Powers</a></li><li><a href='results/products_of_maximum_factors_parent_cost.html'>Parent Costs for Products of Maximum Factors</a></li></ul></p></div>
 
         </div>
     </div>

@@ -2250,6 +2250,94 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-128" style="position:relative;">
+
+        <h3><a href="results/maximum_parent_product_profiles.html" class="table-title-link">Quantitative Maximum-Parent Product Bounds</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Quantitative Maximum-Parent Product Bounds</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li><li><a href="invariants/maximum_subclass_rank.html">Maximum Subclass Rank</a></li><li><a href="invariants/stabilized_maximum_parent_auxiliaries.html">Constant-Stabilized Maximum-Parent Auxiliary Count</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty proper $C_i\subsetneq\{0,1\}^{X_i}$ have disjoint grounds of sizes $n_i$. Then $m(C_1\times C_2)=\min\{m(C_1),m(C_2)\}$. If $(r_i,s_i)\in\mathcal F(C_i)$, then $(r_1+r_2,\max\{s_1,n_1-1\}+\max\{s_2,n_2-1\}+1)\in\mathcal F(C_1\times C_2)$. Consequently $b(C_1\times C_2)\le b(C_1)+b(C_2)$ and $a(C)\le b(C)\le a(C)+m(C)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A same-ground maximum subclass of a proper product projects to maximum subclasses in both factors, which bounds its rank by both core ranks. Maximum sequences through largest cores give the reverse inequality at their minimum rank. For the parent bound, pad each supplied parent until its auxiliary count is at least its rank, choose a predecessor avoiding the marked face, and take the level sum of the two maximum sequences. The marked section is exactly the product and has the displayed profile. Minimizing first for $b$ gives subadditivity. Projection gives $a\le b$, while the parent-core inequality gives $b\le a+m$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:product-profiles</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The construction controls the maximum-parent profile and auxiliary count; it does not preserve an arbitrary parent-decomposition level.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-129" style="position:relative;">
+
+        <h3><a href="results/asymptotic_maximum_parent_cost.html" class="table-title-link">Auxiliary Cost of Cartesian Powers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Auxiliary Cost of Cartesian Powers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/asymptotic_maximum_parent_auxiliary_rate.html">Asymptotic Maximum-Parent Auxiliary Rate</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li><li><a href="invariants/stabilized_maximum_parent_auxiliaries.html">Constant-Stabilized Maximum-Parent Auxiliary Count</a></li><li><a href="invariants/maximum_subclass_rank.html">Maximum Subclass Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty proper maximum-generated $C$, the limit $\gamma(C)=\lim_{k\to\infty}a(C^k)/k=\inf_{k\ge1}b(C^k)/k$ exists and $\operatorname{VC}(C)\le\gamma(C)\le b(C)$. Visible constant coordinates do not change $\gamma$. If $d=\operatorname{VC}(C)$ and $C$ has a rank-$d$ parent with at most $d$ auxiliaries, then $b(C^k)=kd$, $kd-m(C)\le a(C^k)\le kd$, and $\gamma(C)=d$. In particular a proper rank-$d$ maximum class satisfies $(k-1)d\le a(M^k)\le kd$ and $b(M^k)=kd$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The sequence $b(C^k)$ is subadditive, so the elementary subadditive-limit argument gives its normalized limit and infimum formula. Product cores satisfy $m(C^k)=m(C)$ and $0\le b(C^k)-a(C^k)\le m(C)$, hence the normalized $a$-sequence has the same limit. Parent rank is at least $k\operatorname{VC}(C)$, yielding the lower bound; subadditivity yields the upper bound. Under the stated certificate, both bounds force $b(C^k)=kd$. Constant invariance follows because $(C\times\{0\}^t)^k$ is a constant extension of $C^k$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-130" style="position:relative;">
+
+        <h3><a href="results/products_of_maximum_factors_parent_cost.html" class="table-title-link">Parent Costs for Products of Maximum Factors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Parent Costs for Products of Maximum Factors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li><li><a href="invariants/minimum_maximum_parent_auxiliaries.html">Minimum Maximum-Parent Auxiliary Count</a></li><li><a href="invariants/stabilized_maximum_parent_auxiliaries.html">Constant-Stabilized Maximum-Parent Auxiliary Count</a></li><li><a href="invariants/maximum_subclass_rank.html">Maximum Subclass Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $M_1,\ldots,M_\ell$ be nonempty proper maximum classes of ranks $d_1,\ldots,d_\ell$, let $D=\prod_iM_i$, and put $R=\sum_i d_i$. Then $h(D)=b(D)=R$, $m(D)=\min_i d_i$, and $R-\min_i d_i\le a(D)\le R$. Adjoining one or more visible constant coordinates makes the auxiliary count exactly $R$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each factor has a rank-$d_i$ zero-auxiliary parent and $b(M_i)=d_i$. Repeated product subadditivity gives $b(D)\le R$, while VC additivity forces every parent rank, and hence $h(D)$ and $b(D)$, to be at least $R$. The product-core formula gives $m(D)=\min_i d_i$, and $0\le b(D)-a(D)\le m(D)$ gives the displayed interval. The definition of $b$ gives the constant-extension assertion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:auxiliary-rate</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The factors need not be geometrically realizable.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-131" style="position:relative;">
+
+        <h3><a href="results/asymptotic_parent_rate_operation_laws.html" class="table-title-link">Operation Laws for the Asymptotic Parent Rate</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Operation Laws for the Asymptotic Parent Rate</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/asymptotic_maximum_parent_auxiliary_rate.html">Asymptotic Maximum-Parent Auxiliary Rate</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/partial_trace.html">Partial-Trace Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty proper represented classes on disjoint grounds, $\gamma(C\times D)\le\gamma(C)+\gamma(D)$. Projection and full reduction do not increase $\gamma$ when their outputs remain nonempty and proper. For $t\ge0$, $\max\{\gamma(C),\operatorname{VC}(C)+t\}\le\gamma(C\times\{0,1\}^t)\le\gamma(C)+t$. If $C$ has $n$ coordinates, then its partial-trace expansion satisfies $\gamma(T(C))\le\gamma(C)+n$. Thus $\gamma=\operatorname{VC}$ is preserved by products of equality cases, visible free or constant coordinates, partial traces, and VC-preserving proper projections.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Regroup $(C\times D)^k$ as $C^k\times D^k$, apply subadditivity of $b$, divide by $k$, and pass to the limit. Apply projection or full reduction independently in every factor for monotonicity. The finite free-coordinate profile construction adds at most $tk$ auxiliaries to $C^k$, while projection and VC dimension give the two lower bounds. Partial trace commutes with products and its finite construction adds at most $nk$ auxiliaries. Combining these inequalities with VC additivity proves preservation of equality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:auxiliary-rate-operations</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-132" style="position:relative;">
+
+        <h3><a href="results/maximum_parent_power_rank_lower_bound.html" class="table-title-link">Finite Parent-Rank Lower Bound for Cartesian Powers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Parent-Rank Lower Bound for Cartesian Powers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty proper maximum-generated class $C$ and every $k\ge1$, $h(C^k)\ge h(C)+(k-1)\operatorname{VC}(C)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose a positioned cube of dimension $\operatorname{VC}(C)$ in each of the first $k-1$ factors. Fully reduce those cube coordinates and fix all remaining visible coordinates in those factors. Any rank-$h(C^k)$ parent of $C^k$ then yields a parent of the last copy of $C$ whose rank is lower by $(k-1)\operatorname{VC}(C)$. Its rank is at least $h(C)$, giving the inequality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#subsec:products-and-asymptotic-auxiliary-cost</p></div>
+<strong>Comments:</strong><div class="text-field"><p>A fixed one-copy excess in $h(C)$ does not by itself imply an asymptotic excess in $\gamma(C)$.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

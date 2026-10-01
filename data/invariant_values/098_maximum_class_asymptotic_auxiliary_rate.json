@@ -1,0 +1,15 @@
+{
+  "id": 98,
+  "short_name": "maximum_class_asymptotic_auxiliary_rate",
+  "name": "Asymptotic Auxiliary Rate of a Proper Maximum Class",
+  "invariant_id": "#invariants/asymptotic_maximum_parent_auxiliary_rate",
+  "class_id": "#classes/maximum",
+  "quantifier": "all_members",
+  "value_type": "formula",
+  "value": "$\\gamma(M)=\\operatorname{VC}(M)$",
+  "scope": "Nonempty proper maximum classes.",
+  "status": "established",
+  "proof": "The general rate theorem gives $\\operatorname{VC}(M)\\le\\gamma(M)\\le b(M)$, and $b(M)=\\operatorname{VC}(M)$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate",
+  "verification": "scripts/verify_asymptotic_parent_cost.py"
+}

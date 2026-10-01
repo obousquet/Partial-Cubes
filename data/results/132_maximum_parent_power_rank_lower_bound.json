@@ -1,0 +1,14 @@
+{
+  "id": 132,
+  "short_name": "maximum_parent_power_rank_lower_bound",
+  "name": "Finite Parent-Rank Lower Bound for Cartesian Powers",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/minimum_maximum_parent_rank"],
+  "operation_ids": ["#operations/cartesian_product", "#operations/full_reduction", "#operations/conditioning"],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty proper maximum-generated class $C$ and every $k\\ge1$, $h(C^k)\\ge h(C)+(k-1)\\operatorname{VC}(C)$.",
+  "status": "established",
+  "proof": "Choose a positioned cube of dimension $\\operatorname{VC}(C)$ in each of the first $k-1$ factors. Fully reduce those cube coordinates and fix all remaining visible coordinates in those factors. Any rank-$h(C^k)$ parent of $C^k$ then yields a parent of the last copy of $C$ whose rank is lower by $(k-1)\\operatorname{VC}(C)$. Its rank is at least $h(C)$, giving the inequality.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#subsec:products-and-asymptotic-auxiliary-cost",
+  "comments": "A fixed one-copy excess in $h(C)$ does not by itself imply an asymptotic excess in $\\gamma(C)$."
+}

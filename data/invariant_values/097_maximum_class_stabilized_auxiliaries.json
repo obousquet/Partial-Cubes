@@ -1,0 +1,15 @@
+{
+  "id": 97,
+  "short_name": "maximum_class_stabilized_auxiliaries",
+  "name": "Stabilized Auxiliary Count of a Proper Maximum Class",
+  "invariant_id": "#invariants/stabilized_maximum_parent_auxiliaries",
+  "class_id": "#classes/maximum",
+  "quantifier": "all_members",
+  "value_type": "formula",
+  "value": "$b(M)=\\operatorname{VC}(M)$",
+  "scope": "Nonempty proper maximum classes.",
+  "status": "established",
+  "proof": "A proper rank-$d$ maximum class is its own zero-auxiliary rank-$d$ parent. The constant-stabilized minimum is at most $d$, while every parent rank is at least the VC dimension $d$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:auxiliary-rate",
+  "verification": "scripts/verify_asymptotic_parent_cost.py"
+}
