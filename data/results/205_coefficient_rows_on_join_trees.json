@@ -1,0 +1,13 @@
+{
+  "id": 205,
+  "short_name": "coefficient_rows_on_join_trees",
+  "name": "Prescribed Coefficient Rows on a Join Tree",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "recognition",
+  "statement": "Suppose the maximal local coefficient systems admit a join tree, so the systems containing each row form a connected subtree. Root the tree at $r$. If the positive-front reduction clears every child-parent row intersection at the child concept, then every feasible coefficient family on the root system extends globally. In particular the full coefficient space is nonempty, with rational extension from rational data.",
+  "status": "established",
+  "proof": "Strip nonroot leaves. Rows outside the parent intersection occur only at that leaf and can be projected away; the residual intersection clears by hypothesis. Repeating leaves only the protected root system, and exact shared-row reduction extends every feasible root assignment.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#cor:row-join-tree"
+}

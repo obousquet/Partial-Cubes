@@ -1,0 +1,13 @@
+{
+  "id": 206,
+  "short_name": "two_coefficient_row_feasibility_criterion",
+  "name": "Two-Coefficient-Row Feasibility Criterion",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "recognition",
+  "statement": "For a blocked pair of positive normalized rows $p,q$ at concept $c$, let $I=I_c(p)$ and $J=I_c(q)$. A positive witness exists exactly when $\\max_{i\\in I}a_{p,i}/a_{q,i}>\\min_{j\\in J}a_{p,j}/a_{q,j}$, equivalently when $a_{p,i}a_{q,j}>a_{q,i}a_{p,j}$ for some $i\\in I,j\\in J$. Rational feasible rows admit an explicit rational witness.",
+  "status": "established",
+  "proof": "If the maximum ratio does not exceed the minimum, chaining the two strict row inequalities gives a contradiction. Conversely, choose a strict determinant pair, put positive weight one on its first coordinate, choose the second weight strictly between the two ratios, and give all remaining coordinates sufficiently small positive rational weights.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#lem:two-row-criterion"
+}

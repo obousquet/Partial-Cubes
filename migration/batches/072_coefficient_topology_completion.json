@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "batch_id": "072_coefficient_topology_completion",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete theorem-label coverage of the coefficient-topology manuscript with local row extension, join-tree, two-row nerve, positive-separator, operation-duality, partial-trace compatibility, and five explicit examples.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#ex:incompatible-local-rows",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#lem:row-extensions",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#cor:row-join-tree",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#lem:two-row-criterion",
+    "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#thm:coefficient-nerve",
+    "PartialCubes:papers/coefficient-topology/duality.tex#lem:duality-projections",
+    "PartialCubes:papers/coefficient-topology/duality.tex#ex:threshold-above-one",
+    "PartialCubes:papers/coefficient-topology/duality.tex#ex:projection-conditioning",
+    "PartialCubes:papers/coefficient-topology/duality.tex#thm:duality-operations",
+    "PartialCubes:papers/coefficient-topology/duality.tex#ex:partial-trace-path",
+    "PartialCubes:papers/coefficient-topology/duality.tex#cor:partial-trace-minors",
+    "PartialCubes:papers/coefficient-topology/setup.tex#ex:singleton-complement",
+    "PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex#lem:separator"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the exact normalized statements, finite criteria, example parameters, operation compatibilities, and concise proofs. The manuscript retains the complete reductions, continuous trivializations, good-cover proof, witness formulas, and evidence-source derivation.",
+    "recoverability": "Every promoted fact has an exact labelled source locator in the preserved manuscript snapshot.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/results/052_coefficient_space_complement_duality.json", "sha256": "e740e5d3ec66fbdcb050615d54715290bffafb00bcae1713a3f5329c0922a098"},
+    {"path": "data/results/053_coefficient_space_pc_minor_maps.json", "sha256": "6f6ad00ffa75aec426734adc58426261f3ab5f2c5f84f67c7ecfe6166db18ce5"},
+    {"path": "data/results/054_coefficient_space_partial_trace_product.json", "sha256": "1a9b5e0addf3858e90d656b10e80e697a717790eda03f99ed6af68aa95b4b14f"},
+    {"path": "data/examples/082_incompatible_local_coefficient_rows.json", "sha256": "15930247a7317fdcb96a12217ee3a72f88ded812d3c5caa17c11e4f48a938ddf"},
+    {"path": "data/examples/083_singleton_complement_coefficient_spaces.json", "sha256": "dc639f7aaf30e9627d6dba2c0639b237505b9533b88c980b76e50be7b6439799"},
+    {"path": "data/examples/084_threshold_projection_failure_above_one.json", "sha256": "26b098af678023d58f8d132d0438462926373d627b244d4c4fddf479c70dcbf6"},
+    {"path": "data/examples/085_projection_conditioning_coefficient_maps.json", "sha256": "d1f24ceb86cec15854d939fef46fc92427516a052af31c3d38057266c415ef84"},
+    {"path": "data/examples/086_partial_trace_path_coefficient_space.json", "sha256": "0aa15da75bb906a35e3ab357b8d89e2763c543136ddadc38bdedd7ca6708a124"},
+    {"path": "data/results/204_local_coefficient_row_extension_identities.json", "sha256": "c3775bf37c993d8d5b6030a29b3743d8d6214baecdc5af9755f59af55a05fd0c"},
+    {"path": "data/results/205_coefficient_rows_on_join_trees.json", "sha256": "307cfc49c2ce0697b44f7620f2bf0ed668a1427366d6f1d8f5ea441641925004"},
+    {"path": "data/results/206_two_coefficient_row_feasibility_criterion.json", "sha256": "e98c865ca5de95bbfc6d4c53943dce8439b5d7b523b6144bdd771cb0915f418e"},
+    {"path": "data/results/207_two_row_coefficient_nerve.json", "sha256": "11c7ba46b3408b45eb94344808a443ed9561d1688ddaa1f9a718ef960a801d97"},
+    {"path": "data/results/208_minimal_missing_pattern_positive_separator.json", "sha256": "476b24b054a27f367e08047fb90d37531a7e876e1090e111f33d3c9bf621647d"},
+    {"path": "migration/coverage.json", "sha256": "8ce5190488104bbb206ec8404b4e54702f46cdbf4889faf9445cb5288f4f4b68"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "d6ccdefd73cea16e765a7ab397df41859d0bc55e5949aa279d37c06a574e9778"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1378 records.",
+    "website": "Normalized 1394 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; the manuscript-result audit now reports coefficient-topology at 74 of 74 unique theorem-like labels covered."
+  },
+  "deferred": [
+    "The exact proof derivations, continuous-choice constructions, and evidence scripts remain preserved in the LaTeX repository rather than being flattened into database fields."
+  ]
+}

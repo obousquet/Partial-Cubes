@@ -1,0 +1,9 @@
+{
+  "id": 85,
+  "short_name": "projection_conditioning_coefficient_maps",
+  "name": "Projection and Conditioning Induce Different Coefficient Maps",
+  "object_type": "set_family",
+  "definition": "Let $C=\\{0,1\\}^3\\setminus\\{111\\}$, whose coefficient space is the open simplex of rows $(a_1,a_2,a_3)$.",
+  "properties": "Projection to the first two coordinates is a full square and discards the row. Conditioning the third coordinate to one gives the punctured square and maps $(a_1,a_2,a_3)$ to $(a_1/(a_1+a_2),a_2/(a_1+a_2))$. Conditioning it to zero again gives a full square and a one-point coefficient space.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/duality.tex#ex:projection-conditioning"
+}

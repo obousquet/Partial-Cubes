@@ -960,7 +960,7 @@
 <strong>Statement:</strong><div class="text-field"><p>For nonempty proper $C$ and $0<t\le1$, the threshold spaces satisfy $\mathcal A_t(C)\times\mathbb R^{d_{C^c}}\cong\mathcal A_t(C^c)\times\mathbb R^{d_C}$ and hence are homotopy equivalent. Therefore $\min(1,\tau(C))=\min(1,\tau(C^c))$; below one the values are equal.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>A symmetric bilinear relation projects exactly onto both threshold coefficient spaces. Minimum-norm centers and radial trivializations identify it with each space times the corresponding Euclidean fiber.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:complement-topology; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-complement</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:complement-topology; PartialCubes:papers/coefficient-topology/duality.tex?#lem:duality-projections; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-complement</p></div>
 
         </div>
     </div>
@@ -977,7 +977,7 @@
 <strong>Statement:</strong><div class="text-field"><p>Every specified nonempty pc-minor induces a continuous coefficient-space map by restricting and normalizing chosen representative rows. Its homotopy class is independent of those choices, and composition of specified minors agrees up to homotopy.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>A target missing pattern extends with the fixed coordinates and contains an original minimal missing representative. Fixed-coordinate terms are unfavorable, so deleting them preserves strict separation. Straight interpolation compares representative choices.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:minor-maps</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:minor-maps; PartialCubes:papers/coefficient-topology/duality.tex?#thm:duality-operations</p></div>
 
         </div>
     </div>
@@ -994,7 +994,7 @@
 <strong>Statement:</strong><div class="text-field"><p>The lifted missing patterns are exactly the old patterns together with zero masks on their released support coordinates, and $\mathcal A(T_I(C))\cong\mathcal A(C)\times(0,\infty)^{r_I(C)}$. The mask-zero map is the first projection and strongly deformation retracts onto a section.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Old-coordinate row ratios recover precisely a coefficient family for $C$; every new mask-to-old coefficient ratio is free. Explicit witnesses use small negative values on unreleased masks and large positive values on released masks.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:partial-trace</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:partial-trace; PartialCubes:papers/coefficient-topology/duality.tex?#cor:partial-trace-minors</p></div>
 
         </div>
     </div>
@@ -3469,6 +3469,82 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>Choose strict witnesses for all cube vertices. Pair vertices opposite in one free coordinate and take a positive convex combination that cancels that coordinate. Fixed signs and all strict linear separator inequalities survive. Repeat over the free coordinates; previously canceled coordinates remain zero.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-204" style="position:relative;">
+
+        <h3><a href="results/local_coefficient_row_extension_identities.html" class="table-title-link">Local Coefficient-Row Extension Identities</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Coefficient-Row Extension Identities</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For fixed positive normalized rows $R$ at a concept $c$, the local separator inequalities are feasible exactly when those on the positive-front residual family $\rho_c(R)$ are feasible. Moreover, for every $H\subseteq R$, coefficient restriction satisfies $\operatorname{pr}_H\mathcal F_c(R)=\mathcal F_c(H)$. Rational prescribed rows and witnesses extend rationally.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Reverse each positive-front deletion by raising its favorable private witness coordinate, which restores all deleted rows without changing surviving inequalities. For a new arbitrary row, choose one disagreement coordinate, make its raw coefficient dominate the weighted agreement sum, and normalize; rows extend independently.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#lem:row-extensions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-205" style="position:relative;">
+
+        <h3><a href="results/coefficient_rows_on_join_trees.html" class="table-title-link">Prescribed Coefficient Rows on a Join Tree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prescribed Coefficient Rows on a Join Tree</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose the maximal local coefficient systems admit a join tree, so the systems containing each row form a connected subtree. Root the tree at $r$. If the positive-front reduction clears every child-parent row intersection at the child concept, then every feasible coefficient family on the root system extends globally. In particular the full coefficient space is nonempty, with rational extension from rational data.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Strip nonroot leaves. Rows outside the parent intersection occur only at that leaf and can be projected away; the residual intersection clears by hypothesis. Repeating leaves only the protected root system, and exact shared-row reduction extends every feasible root assignment.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#cor:row-join-tree</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-206" style="position:relative;">
+
+        <h3><a href="results/two_coefficient_row_feasibility_criterion.html" class="table-title-link">Two-Coefficient-Row Feasibility Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Coefficient-Row Feasibility Criterion</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a blocked pair of positive normalized rows $p,q$ at concept $c$, let $I=I_c(p)$ and $J=I_c(q)$. A positive witness exists exactly when $\max_{i\in I}a_{p,i}/a_{q,i}>\min_{j\in J}a_{p,j}/a_{q,j}$, equivalently when $a_{p,i}a_{q,j}>a_{q,i}a_{p,j}$ for some $i\in I,j\in J$. Rational feasible rows admit an explicit rational witness.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If the maximum ratio does not exceed the minimum, chaining the two strict row inequalities gives a contradiction. Conversely, choose a strict determinant pair, put positive weight one on its first coordinate, choose the second weight strictly between the two ratios, and give all remaining coordinates sufficiently small positive rational weights.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#lem:two-row-criterion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-207" style="position:relative;">
+
+        <h3><a href="results/two_row_coefficient_nerve.html" class="table-title-link">Two-Row Recognition and Coefficient-Space Nerve</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Row Recognition and Coefficient-Space Nerve</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>When every terminal local system in exact coefficient reduction has at most two rows, positive logarithmic compatibility margin is equivalent to nonempty coefficient space, and $\mathcal A(C)$ is homotopy equivalent to the finite nerve of its feasible strict logarithmic cones. A collection of selections is a nerve face exactly when zero is outside the convex hull of its pooled inequality vectors, giving an exact rational linear-feasibility test. Singleton-disagreement terminal pairs, and empty terminal families, give contractible coefficient spaces whenever feasible.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-row determinant criterion converts each terminal relation into a finite union of strict homogeneous linear systems in logarithmic coefficients. Exact reduction identifies their union with the coefficient space up to homotopy. All nonempty cone intersections are convex; the good-cover nerve theorem gives the homotopy equivalence, while strict separation of zero from the pooled convex hull gives the exact face test.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#thm:coefficient-nerve</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-208" style="position:relative;">
+
+        <h3><a href="results/minimal_missing_pattern_positive_separator.html" class="table-title-link">Minimal Missing Patterns Have Strictly Positive Separators</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimal Missing Patterns Have Strictly Positive Separators</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty complete sign class has an affine-convex realization and $p$ is a minimal missing sign pattern on support $P$, then there are strictly positive coefficients $\lambda_e$ such that $\sum_{e\in P}\lambda_e\epsilon_e f_e(z)\le0$ throughout the realizing convex domain.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Separate the affine image of the realizing domain from the disjoint open orthant cylinder specified by the missing pattern. Free coordinates force the separating functional to be supported on $P$, and unbounded signed directions make its coefficients nonnegative. If a coefficient vanished, minimality would supply a strict witness for the proper positive-support subpattern, contradicting separation; hence all coefficients are positive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex?#lem:separator</p></div>
 
         </div>
     </div>

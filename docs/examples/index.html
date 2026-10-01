@@ -1808,6 +1808,76 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-82" style="position:relative;">
+
+        <h3><a href="examples/incompatible_local_coefficient_rows.html" class="table-title-link">Locally Feasible but Globally Incompatible Coefficient Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Locally Feasible but Globally Incompatible Coefficient Rows</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C=\{01,10\}\subseteq\{0,1\}^2$. Its missing patterns $00$ and $11$ have normalized rows $(\alpha,1-\alpha)$ and $(\beta,1-\beta)$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>At concept $01$, local feasibility is exactly $\alpha<\beta$; at concept $10$, it is exactly $\alpha>\beta$. Each local relation is a nonempty open triangle in $(0,1)^2$, but their intersection and hence $\mathcal A(C)$ are empty. Combinatorially, each coordinate is shattered and neither is strongly shattered.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#ex:incompatible-local-rows</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-83" style="position:relative;">
+
+        <h3><a href="examples/singleton_complement_coefficient_spaces.html" class="table-title-link">Complementary Coefficient Spaces Need Not Be Homeomorphic</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complementary Coefficient Spaces Need Not Be Homeomorphic</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For $n\ge1$, compare $C=\{0,1\}^n\setminus\{1^n\}$ with its singleton complement.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The punctured cube has one full-support missing pattern and coefficient space the open simplex $\Delta_{n-1}^\circ$. A singleton has only singleton-supported missing patterns and coefficient space a point. For $n\ge2$ these complementary coefficient spaces are homotopy equivalent but not homeomorphic, motivating Euclidean stabilization in complement duality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#ex:singleton-complement</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-84" style="position:relative;">
+
+        <h3><a href="examples/threshold_projection_failure_above_one.html" class="table-title-link">Exact Complement Projection Fails Above Threshold One</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Complement Projection Fails Above Threshold One</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C=\{0,1\}^3\setminus\{000,111\}$, take $t>1$ and $t<s<t^2$, and assign unnormalized rows $(1,1,1)$ and $(1,s,s^2)$ to its two missing patterns.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>After normalization the prescribed array belongs to $\mathcal A_t(C)$, but it has no lift to the symmetric complement relation: a complementary missing row would force both $b_1<t b_3$ and $s^2b_3<t b_1$, contradicting $s^2>t^2$. Both optimized coefficient ratios nevertheless equal one. Thus the exact prescribed-array projection theorem is sharp at threshold one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#ex:threshold-above-one</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-85" style="position:relative;">
+
+        <h3><a href="examples/projection_conditioning_coefficient_maps.html" class="table-title-link">Projection and Conditioning Induce Different Coefficient Maps</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projection and Conditioning Induce Different Coefficient Maps</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C=\{0,1\}^3\setminus\{111\}$, whose coefficient space is the open simplex of rows $(a_1,a_2,a_3)$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Projection to the first two coordinates is a full square and discards the row. Conditioning the third coordinate to one gives the punctured square and maps $(a_1,a_2,a_3)$ to $(a_1/(a_1+a_2),a_2/(a_1+a_2))$. Conditioning it to zero again gives a full square and a one-point coefficient space.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#ex:projection-conditioning</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-86" style="position:relative;">
+
+        <h3><a href="examples/partial_trace_path_coefficient_space.html" class="table-title-link">Partial Trace Turns a Point Coefficient Space into an Interval</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Trace Turns a Point Coefficient Space into an Interval</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Start with the singleton class $C=\{0\}\subseteq\{0,1\}$ and partially trace its coordinate, obtaining the three-state path $\{(0,0),(0,1),(1,1)\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The singleton coefficient space is a point. The path has the sole missing pattern $(x,m)=(1,0)$, and every normalized row $(1/(1+u),u/(1+u))$ with $u>0$ is feasible; its coefficient space is an open interval. Full cubes remain one-point coefficient spaces under mask addition.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#ex:partial-trace-path</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

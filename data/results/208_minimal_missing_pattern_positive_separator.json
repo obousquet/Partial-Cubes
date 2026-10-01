@@ -1,0 +1,16 @@
+{
+  "id": 208,
+  "short_name": "minimal_missing_pattern_positive_separator",
+  "name": "Minimal Missing Patterns Have Strictly Positive Separators",
+  "class_ids": [
+    "#classes/realizable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "implication",
+  "statement": "If a nonempty complete sign class has an affine-convex realization and $p$ is a minimal missing sign pattern on support $P$, then there are strictly positive coefficients $\\lambda_e$ such that $\\sum_{e\\in P}\\lambda_e\\epsilon_e f_e(z)\\le0$ throughout the realizing convex domain.",
+  "status": "established",
+  "proof": "Separate the affine image of the realizing domain from the disjoint open orthant cylinder specified by the missing pattern. Free coordinates force the separating functional to be supported on $P$, and unbounded signed directions make its coefficients nonnegative. If a coefficient vanished, minimality would supply a strict witness for the proper positive-support subpattern, contradicting separation; hence all coefficients are positive.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex#lem:separator"
+}

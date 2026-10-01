@@ -75,19 +75,18 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
-    <div class="table-card" id="math-52" style="position:relative;">
+    <div class="table-card" id="math-208" style="position:relative;">
 
-        <h3><a href="results/coefficient_space_complement_duality.html" class="table-title-link">Stable Complement Duality of Coefficient Spaces</a></h3>
+        <h3><a href="results/minimal_missing_pattern_positive_separator.html" class="table-title-link">Minimal Missing Patterns Have Strictly Positive Separators</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Stable Complement Duality of Coefficient Spaces</p>
-<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
-<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
-<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
-<p><strong>Result Type:</strong> Invariant Law</p>
-<strong>Statement:</strong><div class="text-field"><p>For nonempty proper $C$ and $0<t\le1$, the threshold spaces satisfy $\mathcal A_t(C)\times\mathbb R^{d_{C^c}}\cong\mathcal A_t(C^c)\times\mathbb R^{d_C}$ and hence are homotopy equivalent. Therefore $\min(1,\tau(C))=\min(1,\tau(C^c))$; below one the values are equal.</p></div>
+        <p><strong>Name: </strong>Minimal Missing Patterns Have Strictly Positive Separators</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty complete sign class has an affine-convex realization and $p$ is a minimal missing sign pattern on support $P$, then there are strictly positive coefficients $\lambda_e$ such that $\sum_{e\in P}\lambda_e\epsilon_e f_e(z)\le0$ throughout the realizing convex domain.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>A symmetric bilinear relation projects exactly onto both threshold coefficient spaces. Minimum-norm centers and radial trivializations identify it with each space times the corresponding Euclidean fiber.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:complement-topology; PartialCubes:papers/coefficient-topology/duality.tex?#lem:duality-projections; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-complement</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Separate the affine image of the realizing domain from the disjoint open orthant cylinder specified by the missing pattern. Free coordinates force the separating functional to be supported on $P$, and unbounded signed directions make its coefficients nonnegative. If a coefficient vanished, minimality would supply a strict witness for the proper positive-support subpattern, contradicting separation; hence all coefficients are positive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex?#lem:separator</p></div>
 
         </div>
     </div>

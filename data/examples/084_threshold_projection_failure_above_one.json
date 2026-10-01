@@ -1,0 +1,9 @@
+{
+  "id": 84,
+  "short_name": "threshold_projection_failure_above_one",
+  "name": "Exact Complement Projection Fails Above Threshold One",
+  "object_type": "set_family",
+  "definition": "Let $C=\\{0,1\\}^3\\setminus\\{000,111\\}$, take $t>1$ and $t<s<t^2$, and assign unnormalized rows $(1,1,1)$ and $(1,s,s^2)$ to its two missing patterns.",
+  "properties": "After normalization the prescribed array belongs to $\\mathcal A_t(C)$, but it has no lift to the symmetric complement relation: a complementary missing row would force both $b_1<t b_3$ and $s^2b_3<t b_1$, contradicting $s^2>t^2$. Both optimized coefficient ratios nevertheless equal one. Thus the exact prescribed-array projection theorem is sharp at threshold one.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/duality.tex#ex:threshold-above-one"
+}

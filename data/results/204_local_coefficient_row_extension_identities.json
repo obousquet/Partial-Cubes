@@ -1,0 +1,13 @@
+{
+  "id": 204,
+  "short_name": "local_coefficient_row_extension_identities",
+  "name": "Local Coefficient-Row Extension Identities",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For fixed positive normalized rows $R$ at a concept $c$, the local separator inequalities are feasible exactly when those on the positive-front residual family $\\rho_c(R)$ are feasible. Moreover, for every $H\\subseteq R$, coefficient restriction satisfies $\\operatorname{pr}_H\\mathcal F_c(R)=\\mathcal F_c(H)$. Rational prescribed rows and witnesses extend rationally.",
+  "status": "established",
+  "proof": "Reverse each positive-front deletion by raising its favorable private witness coordinate, which restores all deleted rows without changing surviving inequalities. For a new arbitrary row, choose one disagreement coordinate, make its raw coefficient dominate the weighted agreement sum, and normalize; rows extend independently.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#lem:row-extensions"
+}

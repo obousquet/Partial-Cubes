@@ -1,0 +1,9 @@
+{
+  "id": 82,
+  "short_name": "incompatible_local_coefficient_rows",
+  "name": "Locally Feasible but Globally Incompatible Coefficient Rows",
+  "object_type": "set_family",
+  "definition": "Let $C=\\{01,10\\}\\subseteq\\{0,1\\}^2$. Its missing patterns $00$ and $11$ have normalized rows $(\\alpha,1-\\alpha)$ and $(\\beta,1-\\beta)$.",
+  "properties": "At concept $01$, local feasibility is exactly $\\alpha<\\beta$; at concept $10$, it is exactly $\\alpha>\\beta$. Each local relation is a nonempty open triangle in $(0,1)^2$, but their intersection and hence $\\mathcal A(C)$ are empty. Combinatorially, each coordinate is shattered and neither is strongly shattered.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/coefficient_spaces.tex#ex:incompatible-local-rows"
+}

@@ -75,19 +75,17 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
-    <div class="table-card" id="math-52" style="position:relative;">
+    <div class="table-card" id="math-206" style="position:relative;">
 
-        <h3><a href="results/coefficient_space_complement_duality.html" class="table-title-link">Stable Complement Duality of Coefficient Spaces</a></h3>
+        <h3><a href="results/two_coefficient_row_feasibility_criterion.html" class="table-title-link">Two-Coefficient-Row Feasibility Criterion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Stable Complement Duality of Coefficient Spaces</p>
-<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
-<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
-<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
-<p><strong>Result Type:</strong> Invariant Law</p>
-<strong>Statement:</strong><div class="text-field"><p>For nonempty proper $C$ and $0<t\le1$, the threshold spaces satisfy $\mathcal A_t(C)\times\mathbb R^{d_{C^c}}\cong\mathcal A_t(C^c)\times\mathbb R^{d_C}$ and hence are homotopy equivalent. Therefore $\min(1,\tau(C))=\min(1,\tau(C^c))$; below one the values are equal.</p></div>
+        <p><strong>Name: </strong>Two-Coefficient-Row Feasibility Criterion</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a blocked pair of positive normalized rows $p,q$ at concept $c$, let $I=I_c(p)$ and $J=I_c(q)$. A positive witness exists exactly when $\max_{i\in I}a_{p,i}/a_{q,i}>\min_{j\in J}a_{p,j}/a_{q,j}$, equivalently when $a_{p,i}a_{q,j}>a_{q,i}a_{p,j}$ for some $i\in I,j\in J$. Rational feasible rows admit an explicit rational witness.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>A symmetric bilinear relation projects exactly onto both threshold coefficient spaces. Minimum-norm centers and radial trivializations identify it with each space times the corresponding Euclidean fiber.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/duality.tex?#thm:complement-topology; PartialCubes:papers/coefficient-topology/duality.tex?#lem:duality-projections; PartialCubes:papers/coefficient-topology/duality.tex?#cor:ratio-complement</p></div>
+<strong>Proof:</strong><div class="text-field"><p>If the maximum ratio does not exceed the minimum, chaining the two strict row inequalities gives a contradiction. Conversely, choose a strict determinant pair, put positive weight one on its first coordinate, choose the second weight strictly between the two ratios, and give all remaining coordinates sufficiently small positive rational weights.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/coefficient_spaces.tex?#lem:two-row-criterion</p></div>
 
         </div>
     </div>
