@@ -1,0 +1,12 @@
+{
+  "id": 138,
+  "short_name": "maximum_sequence_constructions",
+  "name": "Maximum Sequences, Level Sums, and Delays",
+  "class_ids": ["#classes/maximum"],
+  "operation_ids": ["#operations/cartesian_product"],
+  "result_type": "construction",
+  "statement": "Every maximum class on $n$ coordinates, and every nested maximum pair of consecutive ranks, extends to a chain $A_0\\subseteq\\cdots\\subseteq A_n=\\{0,1\\}^n$ with $A_i$ maximum of rank $i$. If $\\rho,\\sigma$ are entry-level functions of two such chains on disjoint grounds, then $\\{(x,y):\\rho(x)+\\sigma(y)\\le R\\}$ is maximum of rank $R$. For any threshold $h$, one new coordinate can delay precisely the levels above $h$ by one on its zero shore; $q$ iterations add $q\\mathbf1_{\\rho>h}$.",
+  "status": "established",
+  "proof": "Face avoidance supplies a maximum predecessor of one lower rank and cube addition supplies a maximum successor of one higher rank, so iteration completes the chain. Vandermonde's identity gives the Sauer cardinality of a level sum; missing traces in the two blocks prevent shattering a support of size $R+1$. For delay, put the two consecutive levels on opposite shores below and above the threshold. Pascal's identity gives the correct size, the nested shores give the VC bound, and the resulting chains remain nested across the threshold.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#lem:sequences"
+}

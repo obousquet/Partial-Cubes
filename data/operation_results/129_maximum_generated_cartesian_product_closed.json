@@ -1,0 +1,13 @@
+{
+  "id": 129,
+  "short_name": "maximum_generated_cartesian_product_closed",
+  "name": "Maximum-Generated Classes Are Closed under Cartesian Products",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/cartesian_product",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "The Cartesian product of two nonempty maximum-generated classes on disjoint visible coordinate sets is maximum-generated.",
+  "proof": "Extend maximum parents of ranks $r,s$ to maximum sequences. Delay the first sequence $s$ levels above its parent and the second $r$ levels above its parent, then take the level sum at $r+s$. On the marked delay face a pair has total entry level at most $r+s$ exactly when both entries lie in their supplied parents. Fixing the original marks therefore yields the product section.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#lem:peripheral-closures; CompressionSchemes:maximum_parent_methods.tex#lem:sequences"
+}

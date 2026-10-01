@@ -2422,6 +2422,55 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-138" style="position:relative;">
+
+        <h3><a href="results/maximum_sequence_constructions.html" class="table-title-link">Maximum Sequences, Level Sums, and Delays</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum Sequences, Level Sums, and Delays</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every maximum class on $n$ coordinates, and every nested maximum pair of consecutive ranks, extends to a chain $A_0\subseteq\cdots\subseteq A_n=\{0,1\}^n$ with $A_i$ maximum of rank $i$. If $\rho,\sigma$ are entry-level functions of two such chains on disjoint grounds, then $\{(x,y):\rho(x)+\sigma(y)\le R\}$ is maximum of rank $R$. For any threshold $h$, one new coordinate can delay precisely the levels above $h$ by one on its zero shore; $q$ iterations add $q\mathbf1_{\rho>h}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Face avoidance supplies a maximum predecessor of one lower rank and cube addition supplies a maximum successor of one higher rank, so iteration completes the chain. Vandermonde's identity gives the Sauer cardinality of a level sum; missing traces in the two blocks prevent shattering a support of size $R+1$. For delay, put the two consecutive levels on opposite shores below and above the threshold. Pascal's identity gives the correct size, the nested shores give the VC bound, and the resulting chains remain nested across the threshold.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#lem:sequences</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-139" style="position:relative;">
+
+        <h3><a href="results/boolean_substitution_shattering_and_signed_ideal.html" class="table-title-link">Shattering and Signed Ideals under Boolean Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Shattering and Signed Ideals under Boolean Substitution</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For $D=(C_0\times T)\cup(C_1\times T^c)$, put $P=C_0\cup C_1$ and $J=C_0\cap C_1$. If the outer class and test are ample, then $\operatorname{Sh}(D)=(\operatorname{Sh}(J)\times2^Y)\cup(\operatorname{Sh}(C_0)\times\operatorname{Sh}(T))\cup(\operatorname{Sh}(C_1)\times\operatorname{Sh}(T^c))$. Without ampleness, the signed missing-pattern ideals satisfy $Q_D=Q_P+Q_{C_0}Q_{T^c}+Q_{C_1}Q_T$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A support shattered in the outer projection lies in one or both shores. If it lies in both, ampleness supplies a positioned cube in their intersection and any test support is possible. If it lies only in one shore, a trace absent from the other forces the corresponding test side, giving the displayed union. For signed ideals, split a missing partial pattern into outer and test blocks. It is absent exactly when its outer part misses both shores, or it misses one shore while its test part misses the side paired with that shore. These three alternatives are precisely the three ideal summands.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-140" style="position:relative;">
+
+        <h3><a href="results/minimal_non_maximum_generated_factor_restriction.html" class="table-title-link">Factor Restriction on a Minimal Non-Maximum-Generated Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Factor Restriction on a Minimal Non-Maximum-Generated Class</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample class outside $\mathsf{MaxMin}$ has the least possible number of coordinates, it cannot have the form $(B\times T)\cup(S\times\{0,1\}^Y)$ with $\varnothing\ne S\subsetneq B$, nonempty proper $T$, $|X|\ge1$, and $|Y|\ge2$. The same holds for a least-coordinate member of $\mathcal R_{\mathrm{per}}$ outside $\mathsf{MaxMin}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class is the substitution of the smaller peripheral expansion $E(B,S)$ by the smaller test $T$. Both recovered factors belong to the same ambient family and have fewer coordinates. Minimality therefore places both in $\mathsf{MaxMin}$, and the nested-section substitution theorem constructs a maximum parent of the original class, a contradiction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:substitution-factor</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The conclusion uses a parent of the joint expansion $E(B,S)$; separate parents of $B$ and $S$ do not suffice.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

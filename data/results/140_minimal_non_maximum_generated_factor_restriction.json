@@ -1,0 +1,13 @@
+{
+  "id": 140,
+  "short_name": "minimal_non_maximum_generated_factor_restriction",
+  "name": "Factor Restriction on a Minimal Non-Maximum-Generated Class",
+  "class_ids": ["#classes/ample", "#classes/cover_recursive_peripheral", "#classes/maximum_generated_classes"],
+  "operation_ids": ["#operations/boolean_substitution", "#operations/peripheral_expansion"],
+  "result_type": "implication",
+  "statement": "If an ample class outside $\\mathsf{MaxMin}$ has the least possible number of coordinates, it cannot have the form $(B\\times T)\\cup(S\\times\\{0,1\\}^Y)$ with $\\varnothing\\ne S\\subsetneq B$, nonempty proper $T$, $|X|\\ge1$, and $|Y|\\ge2$. The same holds for a least-coordinate member of $\\mathcal R_{\\mathrm{per}}$ outside $\\mathsf{MaxMin}$.",
+  "status": "established",
+  "proof": "The class is the substitution of the smaller peripheral expansion $E(B,S)$ by the smaller test $T$. Both recovered factors belong to the same ambient family and have fewer coordinates. Minimality therefore places both in $\\mathsf{MaxMin}$, and the nested-section substitution theorem constructs a maximum parent of the original class, a contradiction.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:substitution-factor",
+  "comments": "The conclusion uses a parent of the joint expansion $E(B,S)$; separate parents of $B$ and $S$ do not suffice."
+}

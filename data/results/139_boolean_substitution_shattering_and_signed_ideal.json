@@ -1,0 +1,12 @@
+{
+  "id": 139,
+  "short_name": "boolean_substitution_shattering_and_signed_ideal",
+  "name": "Shattering and Signed Ideals under Boolean Substitution",
+  "class_ids": ["#classes/ample"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "invariant_law",
+  "statement": "For $D=(C_0\\times T)\\cup(C_1\\times T^c)$, put $P=C_0\\cup C_1$ and $J=C_0\\cap C_1$. If the outer class and test are ample, then $\\operatorname{Sh}(D)=(\\operatorname{Sh}(J)\\times2^Y)\\cup(\\operatorname{Sh}(C_0)\\times\\operatorname{Sh}(T))\\cup(\\operatorname{Sh}(C_1)\\times\\operatorname{Sh}(T^c))$. Without ampleness, the signed missing-pattern ideals satisfy $Q_D=Q_P+Q_{C_0}Q_{T^c}+Q_{C_1}Q_T$.",
+  "status": "established",
+  "proof": "A support shattered in the outer projection lies in one or both shores. If it lies in both, ampleness supplies a positioned cube in their intersection and any test support is possible. If it lies only in one shore, a trace absent from the other forces the corresponding test side, giving the displayed union. For signed ideals, split a missing partial pattern into outer and test blocks. It is absent exactly when its outer part misses both shores, or it misses one shore while its test part misses the side paired with that shore. These three alternatives are precisely the three ideal summands.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:substitution"
+}

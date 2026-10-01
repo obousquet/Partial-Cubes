@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-10" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-140" style="position:relative;">
 
-        <h3><a href="operations/cube_complement.html" class="table-title-link">Cube Complement</a></h3>
+        <h3><a href="results/minimal_non_maximum_generated_factor_restriction.html" class="table-title-link">Factor Restriction on a Minimal Non-Maximum-Generated Class</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Cube Complement</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C^{\mathrm c}">
-            \[C^{\mathrm c}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a displayed binary class $C\subseteq\{0,1\}^n$, replace it by $\{0,1\}^n\setminus C$.</p></div>
-<p><strong>Category:</strong> Complement</p>
-<strong>Comments:</strong><div class="text-field"><p>The ambient coordinate cube is part of the positioned input. Closure statements below exclude the empty complement when classes are required to be nonempty.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Lawrence1983">[Lawrence1983]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#sec:complement</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_complement_closed.html'>Realizable Ample Classes Are Complement Closed</a></li><li><a href='operation_results/strict_dominance_complement_closed.html'>Strict-Dominance Classes Are Closed Under Cube Complement</a></li><li><a href='operation_results/ample_cube_complement_closed.html'>Ample Classes Are Closed under Cube Complement</a></li><li><a href='operation_results/maximum_generated_cube_complement_closed.html'>Maximum-Generated Classes Are Closed under Cube Complement</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/separation_margin_complement_bound.html'>Separation-Margin Complement Bound</a></li><li><a href='results/coefficient_space_complement_duality.html'>Stable Complement Duality of Coefficient Spaces</a></li></ul></p></div>
+        <p><strong>Name: </strong>Factor Restriction on a Minimal Non-Maximum-Generated Class</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample class outside $\mathsf{MaxMin}$ has the least possible number of coordinates, it cannot have the form $(B\times T)\cup(S\times\{0,1\}^Y)$ with $\varnothing\ne S\subsetneq B$, nonempty proper $T$, $|X|\ge1$, and $|Y|\ge2$. The same holds for a least-coordinate member of $\mathcal R_{\mathrm{per}}$ outside $\mathsf{MaxMin}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The class is the substitution of the smaller peripheral expansion $E(B,S)$ by the smaller test $T$. Both recovered factors belong to the same ambient family and have fewer coordinates. Minimality therefore places both in $\mathsf{MaxMin}$, and the nested-section substitution theorem constructs a maximum parent of the original class, a contradiction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:substitution-factor</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The conclusion uses a parent of the joint expansion $E(B,S)$; separate parents of $B$ and $S$ do not suffice.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "batch_id": "038_boolean_substitution",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize missing complement and product closures for Ample and MaxMin, maximum-sequence constructions, exact Boolean-substitution laws for Ample, convex-treelike, and nested-section MaxMin classes, substitution shattering and signed-ideal formulas, and the minimal-counterexample factor restriction.",
+  "source_refs": [
+    "CompressionSchemes:maximum_parent_methods.tex#def:peripheral",
+    "CompressionSchemes:maximum_parent_methods.tex#lem:peripheral-closures",
+    "CompressionSchemes:maximum_parent_methods.tex#lem:sequences",
+    "CompressionSchemes:maximum_parent_methods.tex#thm:substitution",
+    "CompressionSchemes:maximum_parent_methods.tex#cor:substitution-factor"
+  ],
+  "source_packets": [
+    {
+      "id": "maximum-parent-methods",
+      "repository": "CompressionSchemes",
+      "path": "maximum_parent_methods.tex",
+      "sha256": "c1e8df40a3004200cc83bd4c1c3f5831588568bba301cb767d351ca39ec89f53"
+    },
+    {
+      "id": "maximum-parent-reconciliation",
+      "repository": "CompressionSchemes",
+      "path": "experiments/maximum_parent_reconciliation.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "statement_sha256": {
+        "def:peripheral": "dc6a24ff51a65688dd00a6d48590c185ceb829387d103fc0cfe0e98c27a0e7f5",
+        "lem:peripheral-closures": "80105cc8e51f46476ad04f21a5284b7670fe285442333813b6a97282131b5d13",
+        "lem:sequences": "069cc73bea212a12523233c6318d9ad7c95542461a8a431fd6c335118e19501d",
+        "thm:substitution": "7be20de9182a9d2cd3b0eb1492ecbbffc056a74158cb4081cd4074971840dd40",
+        "cor:substitution-factor": "dd831a714d0fc01b3d6fe68054b799bb28034e7231aa9fc431540e637edf146e"
+      }
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized closure statements, substitution formulas, reusable constructions, concise proofs, and finite replay. CompressionSchemes retains the full induction through peripheral trees, nested-pair parent construction, maximum-sequence derivations, limitations, and manuscript exposition.",
+    "recoverability": "The manuscript and reconciliation hashes retain all promoted statements. The existing database definition and characterization of the convex-treelike class were reused rather than duplicated.",
+    "mutation": "No source file in CompressionSchemes or another sibling repository was modified."
+  },
+  "verification_packets": [
+    {
+      "id": "maximum-parent-reconciliation",
+      "path": "data/examples/assets/maximum_parent_reconciliation_source.json",
+      "sha256": "6769f2952b81b90c808deef4a3c859b8617fb1cd3752eda45a68c6c03d020386",
+      "assertions": "Retains exact source and statement hashes for the recursive class, closures, sequences, substitution theorem, and factor corollary."
+    },
+    {
+      "id": "database-boolean-substitution-verifier",
+      "path": "scripts/verify_boolean_substitution.py",
+      "sha256": "946e624bd476e54d94cb322b01fd3c0eefb67b0d980a8f28f6756b44bc295019",
+      "assertions": "Exhausts small maximum chains, delays, Ample complements and products, and all qualified small substitutions."
+    },
+    {
+      "id": "boolean-substitution-database-replay",
+      "path": "data/examples/assets/boolean_substitution_database_verification.json",
+      "sha256": "83d0840e5dc643900a515fbdd6b6840355feaeb442ac4a336c3d0f05ddf346d9",
+      "assertions": "Passed 49 maximum Q3 classes, 18 level-sum/delay checks, 210 Ample closure checks, 2,940 substitution equivalences and signed-ideal formulas, and 1,056 shattering formulas."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/assets/boolean_substitution_database_verification.json",
+      "sha256": "83d0840e5dc643900a515fbdd6b6840355feaeb442ac4a336c3d0f05ddf346d9"
+    },
+    {
+      "path": "data/operation_results/126_ample_cube_complement_closed.json",
+      "sha256": "20bb83f2373bf5a590e52bbaa71b1a367a4df58e7a8a91496c7e76deb5146cb0"
+    },
+    {
+      "path": "data/operation_results/127_ample_cartesian_product_closed.json",
+      "sha256": "af2c2ce4b0ae065508f8223f7ff6bc038ad885028cdb665f57951fa42ca5e4e3"
+    },
+    {
+      "path": "data/operation_results/128_maximum_generated_cube_complement_closed.json",
+      "sha256": "861ca5b40a0bd6081005b5e716ecc12607f514d353bad91bd662599c5bb0cfab"
+    },
+    {
+      "path": "data/operation_results/129_maximum_generated_cartesian_product_closed.json",
+      "sha256": "b8a4f4a7b4cc112a760098aa3bce4644653a9adbc6315c61116471c696e273b6"
+    },
+    {
+      "path": "data/operation_results/130_ample_boolean_substitution_closed.json",
+      "sha256": "98202ae17dc9536a9f0bceace61058b35702a14767768be36e618cb2440bc2ec"
+    },
+    {
+      "path": "data/operation_results/131_cover_recursive_boolean_substitution_closed.json",
+      "sha256": "307c51e52a6cfeaacf5e4978c169de97520e52780eac217ebb6f325c0f9e6ba8"
+    },
+    {
+      "path": "data/operation_results/132_maximum_generated_nested_boolean_substitution_closed.json",
+      "sha256": "b45fad72c150e989783b6b825f364a9cf75c3d3c15fd0ebb1cfa861b9e6eaa33"
+    },
+    {
+      "path": "data/results/138_maximum_sequence_constructions.json",
+      "sha256": "276e51449f226d3a5c1d460a76cfd768cde47b14291c4cb726f72c39242e5dcc"
+    },
+    {
+      "path": "data/results/139_boolean_substitution_shattering_and_signed_ideal.json",
+      "sha256": "37dda0eff5c5999b596e69bf73bb1fdbad8931753bff37b4f8766237b4b288b5"
+    },
+    {
+      "path": "data/results/140_minimal_non_maximum_generated_factor_restriction.json",
+      "sha256": "42ea01ae43c76da8720ce72a488ea6ef0b61b7954115e2de00ebca8dbb3aebf8"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d73edc96f6e0fbd88072f9330ba9e0ec87d212e17547f3c5fca7fbf160f06e81"
+    },
+    {
+      "path": "scripts/verify_boolean_substitution.py",
+      "sha256": "946e624bd476e54d94cb322b01fd3c0eefb67b0d980a8f28f6756b44bc295019"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 723 records.",
+    "exact_replay": "All required source labels and exhaustive maximum-sequence, closure, substitution, shattering, and signed-ideal checks passed.",
+    "website": "Normalized 739 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 78 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Equal-cardinality fiber replacement, partial traces, and disjoint auxiliary witnesses.",
+    "Conjunction, read-once, and arbitrary monotone Boolean substitutions.",
+    "Remaining maximum-parent, YangDim algebraic, and PartialCubes facts."
+  ]
+}
