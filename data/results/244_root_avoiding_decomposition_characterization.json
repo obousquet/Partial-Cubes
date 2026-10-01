@@ -1,0 +1,20 @@
+{
+  "id": 244,
+  "short_name": "root_avoiding_decomposition_characterization",
+  "name": "Root-Avoiding Decompositions and Convex Root Tests",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "A pointed cover-recursively peripheral partial cube $(A,a)$ has a root-avoiding peripheral decomposition exactly when every nontrivial convex subgraph containing $a$ has a peripheral semicube omitting $a$. This pointed class is closed under coordinate contractions and restrictions to semicubes containing the root. Its pointed-minor-minimal nonmembers are exactly the root-critical pairs: root-locked pairs whose root-side restriction and contraction in every coordinate have root-avoiding decompositions.",
+  "status": "established",
+  "proof": "Root-preserving minors commute past the first root-avoiding peripheral step; induction preserves the rooted contraction base and uses ordinary pc-minor closure for the duplicated site. Hence every convex subgraph containing the root inherits an avoiding periphery. Conversely, choose such a periphery in the original graph. Its opposite side is the rooted contraction base and inherits the convex test, while the duplicated site is a convex member of the unpointed class; induction reconstructs a root-avoiding decomposition. Pointed minimality is then equivalent to root-locking plus repair of every immediate rooted minor.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#thm:rooted-wedge; PartialCubes:papers/cover-recursive/main.tex#cor:rooted-convex",
+  "witness_ids": [
+    "#examples/rooted_three_vertex_path"
+  ]
+}

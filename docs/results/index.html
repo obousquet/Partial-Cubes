@@ -4100,6 +4100,92 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-243" style="position:relative;">
+
+        <h3><a href="results/gated_amalgam_obstruction_reduction.html" class="table-title-link">Gated-Amalgam Closure Reduces to Prime Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Gated-Amalgam Closure Reduces to Prime Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/gated_amalgam.html">Gated Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The cover-recursively peripheral class is closed under gated amalgamation if and only if every one of its forbidden pc-minors is gated-prime. Every antipodally punctured cube $Q_n^{--}$ is gated-prime. Exact coordinate-face audits also make the pentagonal obstruction $\mathcal P_5$ and Hall-derived obstruction $\mathcal H_{22}$ gated-prime.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A proper gated decomposition of a minimal obstruction has both pieces as proper convex pc-minors in the class, contradicting closure. Conversely, track the two gated pieces through a descent to a minimal forbidden pc-minor: nonempty restrictions and contractions preserve gatedness, intersection, properness, and membership of both images, producing a forbidden gated decomposition. For $Q_n^{--}$, two proper Boolean faces cannot cover all but two cube vertices; the finite claims follow from exhaustive gated coordinate-face audits.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:gated-reduction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/pentagonal_obstruction.html">Pentagonal Obstruction</a></li><li><a href="examples/maximum_face_prime_h22.html">Maximum Face-Prime Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-244" style="position:relative;">
+
+        <h3><a href="results/root_avoiding_decomposition_characterization.html" class="table-title-link">Root-Avoiding Decompositions and Convex Root Tests</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Root-Avoiding Decompositions and Convex Root Tests</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A pointed cover-recursively peripheral partial cube $(A,a)$ has a root-avoiding peripheral decomposition exactly when every nontrivial convex subgraph containing $a$ has a peripheral semicube omitting $a$. This pointed class is closed under coordinate contractions and restrictions to semicubes containing the root. Its pointed-minor-minimal nonmembers are exactly the root-critical pairs: root-locked pairs whose root-side restriction and contraction in every coordinate have root-avoiding decompositions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Root-preserving minors commute past the first root-avoiding peripheral step; induction preserves the rooted contraction base and uses ordinary pc-minor closure for the duplicated site. Hence every convex subgraph containing the root inherits an avoiding periphery. Conversely, choose such a periphery in the original graph. Its opposite side is the rooted contraction base and inherits the convex test, while the duplicated site is a convex member of the unpointed class; induction reconstructs a root-avoiding decomposition. Pointed minimality is then equivalent to root-locking plus repair of every immediate rooted minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#thm:rooted-wedge; PartialCubes:papers/cover-recursive/main.tex?#cor:rooted-convex</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_three_vertex_path.html">Root-Avoiding Three-Vertex Path</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-245" style="position:relative;">
+
+        <h3><a href="results/rooted_wedge_membership_and_minimality.html" class="table-title-link">Rooted-Wedge Membership and Forbidden-Minor Classification</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted-Wedge Membership and Forbidden-Minor Classification</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,a)$ and $(B,b)$ be pointed cover-recursively peripheral partial cubes. Their one-point amalgam $A\vee B$ belongs to the class exactly when at least one factor has a root-avoiding decomposition. If both factors are nontrivial, the wedge is periphery-free exactly when both roots are locked, and it is a forbidden pc-minor exactly when both pointed factors are root-critical. Consequently the one-vertex-decomposable forbidden pc-minors are precisely the wedges of two nontrivial root-critical pointed members.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A root-avoiding decomposition peels its factor inside the wedge because every removed side omits the attachment vertex. Conversely, the first peripheral coordinate of a recursive wedge decomposition lies in one factor and its peripheral side must avoid the common root; induction either completes a root-avoiding decomposition of that factor or supplies one in the other. The same section calculation makes wedge peripherality equivalent to an avoiding periphery in a factor. Root-criticality repairs every root-side restriction and contraction, so all elementary wedge minors return to the class; minimality of a forbidden wedge forces the converse conditions on both factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#lem:rooted-amalgam; PartialCubes:papers/cover-recursive/main.tex?#thm:rooted-wedge; PartialCubes:papers/cover-recursive/main.tex?#cor:wedge-classification</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_wedge_obstruction_w8.html">Rooted-Wedge Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-246" style="position:relative;">
+
+        <h3><a href="results/polat_pointed_separation_construction.html" class="table-title-link">Pointed Construction Separating Convex- and Faithful-Treelike Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Pointed Construction Separating Convex- and Faithful-Treelike Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For nontrivial root-locked pointed members $(A,0^d)$ and $(B,0^e)$, put $P(A)=(Q_d\times\{0\})\cup(A\times\{1\})$ and similarly for $P(B)$, and wedge their bottom origins to form $G$. Then $G$ is cover-recursively peripheral. The induced subgraph $F$ on the two top layers and the common bottom root is faithful and periphery-free, has convex hull $G$, and contracts along its two root edges to $A\vee B$. This quotient is a forbidden pc-minor exactly when both pointed factors are root-critical.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each $P(A)$ has a root-avoiding decomposition beginning with its top layer, so the wedge theorem places $G$ in the class. The two top layers are isometric and median-stable: a majority of two vertices in one layer remains there, while a mixed triple with the common root has that root as majority. Root-locking supplies witnesses against peripheral old coordinates in $F$, and neither one-edge layer coordinate is peripheral. Contracting those layer coordinates gives the pointed wedge, whose minimality is the rooted-wedge criterion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Polat12treelike">[Polat12treelike]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:polat-construction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_wedge_obstruction_w8.html">Rooted-Wedge Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-247" style="position:relative;">
+
+        <h3><a href="results/root_critical_wedges_are_corner_peelable.html" class="table-title-link">Root-Critical Wedges Are Corner-Peelable</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Root-Critical Wedges Are Corner-Peelable</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every root-critical pointed cover-recursively peripheral partial cube has a corner peeling ending at its root. Therefore every one-vertex-decomposable forbidden pc-minor for the cover-recursively peripheral class is corner-peelable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First induct through a root-avoiding decomposition to build an isometric-prefix order beginning at the root: order the contraction-base layer first and append an isometric-prefix order of the duplicated site. For a root-critical pair, a peripheral coordinate has both its root-side restriction and contraction root-avoidable; interleave their root-first orders across the two layers to obtain an isometric-prefix order of the whole factor. For a wedge, list the common root, then one factor, then the other; distances between factors add through the root. Reversing these orders gives the required peelings.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:root-critical-wedges-peel</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_wedge_obstruction_w8.html">Rooted-Wedge Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

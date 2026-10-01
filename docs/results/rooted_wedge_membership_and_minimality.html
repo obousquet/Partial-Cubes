@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-71" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-245" style="position:relative;">
 
-        <h3><a href="examples/rooted_wedge_obstruction_w8.html" class="table-title-link">Rooted-Wedge Obstruction</a></h3>
+        <h3><a href="results/rooted_wedge_membership_and_minimality.html" class="table-title-link">Rooted-Wedge Membership and Forbidden-Minor Classification</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Rooted-Wedge Obstruction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal W_8">
-            \[\mathcal W_8\]
-        </div>
-    </div>
-
-<p><strong>Object Type:</strong> Set Family</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $\mathcal L_4=\{0000,0100,0101,0111,1000,1010,1011,1100,1101,1110,1111\}$, rooted at $0^4$. On disjoint coordinate blocks define $\mathcal W_8=(\mathcal L_4\times\{0^4\})\cup(\{0^4\}\times\mathcal L_4)$. Equivalently, its low-bit vertex-incidence mask is <code>0x100010001000100010001000000010001000000010001000000000000fdb1</code>.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>$\mathcal L_4$ is a maximum VC-dimension-two cover-recursively peripheral class, but every peripheral semicube contains its root; all its root-preserving elementary minors admit root-avoiding decompositions. The wedge $\mathcal W_8$ has 21 vertices, is ample of VC dimension two, has crossing graph $K_4\mathbin{\dot\cup}K_4$, and is pc-minimal outside the cover-recursively peripheral class. It is a gated one-vertex amalgam of its two proper factors, has sixteen proper gated two-covers, and has seven cubical face decompositions: one over a vertex, four over an edge, and two over a square.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#prop:rooted-wedge-obstruction; PartialCubes:forbidden_pc_minor_campaign/obstruction_reductions.tex?#prop:known-obstruction-face-split</p></div>
-<strong>Verification:</strong><div class="text-field"><p>data/examples/assets/known_obstruction_face_decompositions.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/rooted_wedge_w8_gated_two_covers.html'>Proper Gated Two-Covers of W8</a></li><li><a href='invariant_values/rooted_wedge_w8_cubical_face_decompositions.html'>Cubical Face Decompositions of W8</a></li></ul></p></div>
+        <p><strong>Name: </strong>Rooted-Wedge Membership and Forbidden-Minor Classification</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,a)$ and $(B,b)$ be pointed cover-recursively peripheral partial cubes. Their one-point amalgam $A\vee B$ belongs to the class exactly when at least one factor has a root-avoiding decomposition. If both factors are nontrivial, the wedge is periphery-free exactly when both roots are locked, and it is a forbidden pc-minor exactly when both pointed factors are root-critical. Consequently the one-vertex-decomposable forbidden pc-minors are precisely the wedges of two nontrivial root-critical pointed members.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A root-avoiding decomposition peels its factor inside the wedge because every removed side omits the attachment vertex. Conversely, the first peripheral coordinate of a recursive wedge decomposition lies in one factor and its peripheral side must avoid the common root; induction either completes a root-avoiding decomposition of that factor or supplies one in the other. The same section calculation makes wedge peripherality equivalent to an avoiding periphery in a factor. Root-criticality repairs every root-side restriction and contraction, so all elementary wedge minors return to the class; minimality of a forbidden wedge forces the converse conditions on both factors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/cover-recursive/main.tex?#lem:rooted-amalgam; PartialCubes:papers/cover-recursive/main.tex?#thm:rooted-wedge; PartialCubes:papers/cover-recursive/main.tex?#cor:wedge-classification</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_wedge_obstruction_w8.html">Rooted-Wedge Obstruction</a></li></ul></p>
 
         </div>
     </div>

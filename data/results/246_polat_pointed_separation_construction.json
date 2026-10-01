@@ -1,0 +1,21 @@
+{
+  "id": 246,
+  "short_name": "polat_pointed_separation_construction",
+  "name": "Pointed Construction Separating Convex- and Faithful-Treelike Graphs",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For nontrivial root-locked pointed members $(A,0^d)$ and $(B,0^e)$, put $P(A)=(Q_d\\times\\{0\\})\\cup(A\\times\\{1\\})$ and similarly for $P(B)$, and wedge their bottom origins to form $G$. Then $G$ is cover-recursively peripheral. The induced subgraph $F$ on the two top layers and the common bottom root is faithful and periphery-free, has convex hull $G$, and contracts along its two root edges to $A\\vee B$. This quotient is a forbidden pc-minor exactly when both pointed factors are root-critical.",
+  "status": "established",
+  "proof": "Each $P(A)$ has a root-avoiding decomposition beginning with its top layer, so the wedge theorem places $G$ in the class. The two top layers are isometric and median-stable: a majority of two vertices in one layer remains there, while a mixed triple with the common root has that root as majority. Root-locking supplies witnesses against peripheral old coordinates in $F$, and neither one-edge layer coordinate is peripheral. Contracting those layer coordinates gives the pointed wedge, whose minimality is the rooted-wedge criterion.",
+  "references": "\\cite{Polat12treelike}",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:polat-construction",
+  "witness_ids": [
+    "#examples/rooted_wedge_obstruction_w8"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": 247,
+  "short_name": "root_critical_wedges_are_corner_peelable",
+  "name": "Root-Critical Wedges Are Corner-Peelable",
+  "class_ids": [
+    "#classes/dismantlable_ample",
+    "#classes/cover_recursive_peripheral"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam"
+  ],
+  "result_type": "implication",
+  "statement": "Every root-critical pointed cover-recursively peripheral partial cube has a corner peeling ending at its root. Therefore every one-vertex-decomposable forbidden pc-minor for the cover-recursively peripheral class is corner-peelable.",
+  "status": "established",
+  "proof": "First induct through a root-avoiding decomposition to build an isometric-prefix order beginning at the root: order the contraction-base layer first and append an isometric-prefix order of the duplicated site. For a root-critical pair, a peripheral coordinate has both its root-side restriction and contraction root-avoidable; interleave their root-first orders across the two layers to obtain an isometric-prefix order of the whole factor. For a wedge, list the common root, then one factor, then the other; distances between factors add through the root. Reversing these orders gives the required peelings.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#prop:root-critical-wedges-peel",
+  "witness_ids": [
+    "#examples/rooted_wedge_obstruction_w8"
+  ]
+}

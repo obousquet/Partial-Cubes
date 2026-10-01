@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 298,
-    "uncovered": 718,
-    "proof_source_records": 1312
+    "covered": 307,
+    "uncovered": 709,
+    "proof_source_records": 1321
   },
   "by_workspace": {
     "ample-corners": {
@@ -19,9 +19,9 @@
       "total": 74
     },
     "cover-recursive": {
-      "covered": 27,
+      "covered": 36,
       "total": 42,
-      "uncovered": 15
+      "uncovered": 6
     },
     "daisy-cubes": {
       "covered": 14,
@@ -1996,7 +1996,7 @@
       "label": "cor:rooted-convex",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2006,13 +2006,15 @@
           "line": 2145
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/244_root_avoiding_decomposition_characterization.json"
+      ]
     },
     {
       "label": "cor:wedge-classification",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2022,7 +2024,9 @@
           "line": 2340
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/245_rooted_wedge_membership_and_minimality.json"
+      ]
     },
     {
       "label": "ex:peripheral-step",
@@ -2062,7 +2066,7 @@
       "label": "ex:rooted-path",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2072,7 +2076,9 @@
           "line": 2007
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/097_rooted_three_vertex_path.json"
+      ]
     },
     {
       "label": "ex:small-models",
@@ -2174,7 +2180,7 @@
       "label": "lem:rooted-amalgam",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2184,7 +2190,9 @@
           "line": 2020
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/245_rooted_wedge_membership_and_minimality.json"
+      ]
     },
     {
       "label": "lem:static-repair-formula",
@@ -2278,7 +2286,7 @@
       "label": "prop:gated-reduction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2288,7 +2296,10 @@
           "line": 1926
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operations/020_gated_amalgam.json",
+        "data/results/243_gated_amalgam_obstruction_reduction.json"
+      ]
     },
     {
       "label": "prop:hall-obstruction",
@@ -2370,7 +2381,7 @@
       "label": "prop:polat-construction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2380,7 +2391,9 @@
           "line": 2273
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/246_polat_pointed_separation_construction.json"
+      ]
     },
     {
       "label": "prop:position",
@@ -2426,7 +2439,7 @@
       "label": "prop:root-critical-wedges-peel",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2436,13 +2449,15 @@
           "line": 2354
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/247_root_critical_wedges_are_corner_peelable.json"
+      ]
     },
     {
       "label": "prop:rooted-wedge-obstruction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2452,7 +2467,11 @@
           "line": 2188
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/071_rooted_wedge_obstruction_w8.json",
+        "data/operation_results/287_cover_recursive_one_point_amalgam_not_closed.json",
+        "data/operation_results/288_cover_recursive_gated_amalgam_not_closed.json"
+      ]
     },
     {
       "label": "prop:square-amalgam-obstruction",
@@ -2642,7 +2661,7 @@
       "label": "thm:rooted-wedge",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "cover-recursive"
       ],
@@ -2652,7 +2671,10 @@
           "line": 2037
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/244_root_avoiding_decomposition_characterization.json",
+        "data/results/245_rooted_wedge_membership_and_minimality.json"
+      ]
     },
     {
       "label": "thm:static-repair-basis",

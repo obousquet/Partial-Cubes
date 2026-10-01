@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "batch_id": "079_cover_recursive_rooted_wedges",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the complete rooted-wedge theory from the frozen cover-recursive manuscript: root-avoiding decompositions, convex and minor tests, exact wedge membership and minimality, gated-amalgam reduction and failure, Polat's pointed construction, and the corner-peeling theorem.",
+  "source_refs": [
+    "PartialCubes:papers/cover-recursive/main.tex#prop:gated-reduction",
+    "PartialCubes:papers/cover-recursive/main.tex#ex:rooted-path",
+    "PartialCubes:papers/cover-recursive/main.tex#lem:rooted-amalgam",
+    "PartialCubes:papers/cover-recursive/main.tex#thm:rooted-wedge",
+    "PartialCubes:papers/cover-recursive/main.tex#cor:rooted-convex",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:rooted-wedge-obstruction",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:polat-construction",
+    "PartialCubes:papers/cover-recursive/main.tex#cor:wedge-classification",
+    "PartialCubes:papers/cover-recursive/main.tex#prop:root-critical-wedges-peel"
+  ],
+  "source_packets": [
+    {
+      "id": "cover-recursive-frozen-manuscript",
+      "repository": "PartialCubes",
+      "snapshot": "2026-09-30-b001",
+      "path": "papers/cover-recursive/main.tex",
+      "sha256": "1e7d85bc39e0588d8ff1d934a0d08d7b42e34d6b49f463adc865eb449eb9638e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized pointed definitions, membership and minimality criteria, operation failures, constructions, examples, and concise proofs. The manuscript retains the full inductive proofs, decomposition tables, historical comparison, and computation narrative.",
+    "recoverability": "All nine promoted labels point into the byte-archived frozen manuscript; the exact W8 vertex mask and independent face-decomposition certificate remain in the database evidence assets.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/071_rooted_wedge_obstruction_w8.json", "sha256": "1a3dbb82bc847149cc1b1247c5e4b7456247003ceed4f3aa507f5aa5b143655b"},
+    {"path": "data/examples/097_rooted_three_vertex_path.json", "sha256": "647fe4149e3da2a18a3c27bf73752f3c36e835169199f3323db7ba2c821faff1"},
+    {"path": "data/operations/020_gated_amalgam.json", "sha256": "e8977fea61ff2b7d5a882a0f04660c00c01dc8b7d565a348dde8642c85dcc8a2"},
+    {"path": "data/operation_results/287_cover_recursive_one_point_amalgam_not_closed.json", "sha256": "4c697f1a0f242e90a2a4f646eb3ce727e26c35dd1d6a91c0788eeb9160a8070b"},
+    {"path": "data/operation_results/288_cover_recursive_gated_amalgam_not_closed.json", "sha256": "17afe2bf7ef6fc1e27568381d65479c7f4d1f9f8b27cc39a92a715dbf7cfd6a4"},
+    {"path": "data/results/243_gated_amalgam_obstruction_reduction.json", "sha256": "99e48e6a4b471ee816d0b343afe6e38ca2720d0538982b8d52053bec8b0640ac"},
+    {"path": "data/results/244_root_avoiding_decomposition_characterization.json", "sha256": "60ec12f6798200af4fda32bf90b55d4b75829b709faf0e32dae167db855deed1"},
+    {"path": "data/results/245_rooted_wedge_membership_and_minimality.json", "sha256": "294aabf39c786a40ee2b508e2671644c5d66fb13c9600b63e118156d1772de0c"},
+    {"path": "data/results/246_polat_pointed_separation_construction.json", "sha256": "6a05172435b06ecbaa6c6afc845a5c235e9ef5b7eb02bfcaf333fda460bfbc9a"},
+    {"path": "data/results/247_root_critical_wedges_are_corner_peelable.json", "sha256": "0c75ce460a83f52d4e95e2eb2376ce91883ac03c807d179f8c31e69b03cd851b"},
+    {"path": "migration/coverage.json", "sha256": "2f71966906c1df2f5c091742ae5f9c50171adfc4298645449a30cb7c54a09554"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "aa7213b4245bb05357493de7ad2607f746d87f197d222690e13b97fa45f5fbaf"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1435 records.",
+    "website": "Normalized 1451 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. Cover-recursive coverage increased from 27 of 42 to 36 of 42 theorem-like labels; overall workspace-aware coverage is 307 of 1016 labels."
+  },
+  "deferred": [
+    "The six remaining cover-recursive labels comprise the complete two-layer repair and static repair-basis package.",
+    "Full rooted-minor decomposition tables and finite face audits remain in preserved evidence artifacts."
+  ]
+}
