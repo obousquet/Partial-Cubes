@@ -1,0 +1,18 @@
+{
+  "id": 267,
+  "short_name": "one_side_first_substitution_width",
+  "name": "One-Side-First Substitution Bound",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/cube_completion_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Under the common-section interval hypothesis, for each $b\\in\\{0,1\\}$, $\\sigma(C\\circ_iT)\\leq\\max\\{\\sigma(C_b),\\sigma(C_{1-b};H),\\sigma_{\\square}(F_b),\\sigma(F_{1-b})\\}$. If both test sides are dismantlable ample, this becomes $\\sigma(C\\circ_iT)\\leq\\min_b\\max\\{\\sigma(C_b),\\sigma(C_{1-b};H)\\}$.",
+  "status": "established",
+  "proof": "First use rectangular extension to order $(C_b\\times F_b)\\cup(H\\times\\{0,1\\}^Y)$ beginning with $C_b\\times F_b$. Then append the exclusive fibers of the other side in an optimal $H$-first order. Same-fiber and same-side predecessors use inner and outer witnesses. An opposite-side predecessor is replaced through a point of $H$ in its coordinate interval, giving a contained pure outer disagreement. If both test sides have width zero, their cube-completion widths equal zero, and minimizing over the first side gives the second formula.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#prop:one-side-substitution"
+}

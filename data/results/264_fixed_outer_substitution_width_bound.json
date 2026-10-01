@@ -1,0 +1,20 @@
+{
+  "id": 264,
+  "short_name": "fixed_outer_substitution_width_bound",
+  "name": "Fixed Partial-Cube Substitution Has Uniform Width Bound",
+  "class_ids": [
+    "#classes/partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If an isometric outer class $C$ is displayed on $N\\geq1$ coordinates and meets both halfspaces of the substituted coordinate, then $\\sigma(C\\circ_iT)\\leq\\max\\{\\max\\{N-2,0\\},\\sigma(T),\\sigma(T^{\\mathrm c})\\}$.",
+  "status": "established",
+  "proof": "Isometry makes the common section meet every interval between opposite outer sides. Each section lies on $N-1$ coordinates, so every section order, including one beginning with the common part, has width at most $\\max\\{N-2,0\\}$. Apply the exact common-section-first formula and then forget the prefix constraint.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#cor:fixed-outer-substitution",
+  "comments": "Thus enlarging a test whose two sides are dismantlable cannot create unbounded width in one substitution into a fixed partial cube. This does not bound iterated constructions whose outer dimension grows."
+}

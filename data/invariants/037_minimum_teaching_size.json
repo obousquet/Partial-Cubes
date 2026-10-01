@@ -1,0 +1,14 @@
+{
+  "id": 37,
+  "short_name": "minimum_teaching_size",
+  "name": "Minimum Teaching Size",
+  "symbol": "t_{\\min}(C)",
+  "definition": "For a nonempty binary class $C\\subseteq\\{0,1\\}^X$, minimize $|S|$ over a concept $c\\in C$ and a coordinate set $S\\subseteq X$ such that $c$ is the only member of $C$ with restriction $c|_S$.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "parameters": "A finite nonempty binary class on a displayed coordinate set.",
+  "normalization": "A singleton has value zero; the full $n$-cube has value $n$. The minimum is over concepts as well as their teaching sets.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:substitution-g"
+}

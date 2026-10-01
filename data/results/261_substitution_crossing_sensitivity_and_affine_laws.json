@@ -1,0 +1,20 @@
+{
+  "id": 261,
+  "short_name": "substitution_crossing_sensitivity_and_affine_laws",
+  "name": "Sensitivity and Affine Laws for Substitution Crossing Width",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/substitution_crossing_width",
+    "#invariants/boolean_sensitivity"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution",
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Every proper nonempty test satisfies $g(T)\\leq s(1_T)$. Equality holds when both $T$ and $T^{\\mathrm c}$ are well graded, hence in particular when $T$ is ample. Moreover $g(T)=1$ exactly when $1_T$ is a nonconstant affine Boolean function. For such an affine test and an outer class with both exclusive sections nonempty, $\\sigma(C\\circ_iT)=\\max\\{\\sigma(C),\\sigma(T),\\sigma(T^{\\mathrm c})\\}$.",
+  "status": "established",
+  "proof": "Every free direction of an isolating face is sensitive at its unique concept, proving $g\\leq s$. In a well-graded side, the neighbor directions at a concept form a minimum teaching set because a geodesic toward any other concept begins in one of them; taking both sides gives equality. The condition $g=1$ says every square meets the test in zero, two, or four vertices, so parallel edges have equal indicator increments and the indicator is affine over $\\mathbb F_2$; the converse is immediate from an active coordinate in every crossing support. The exact ordering-width law then combines the general upper bound with minor-recovery lower bounds.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:substitution-sensitivity",
+  "comments": "The parameter $g$ is not pc-minor monotone: deleting zero from the even-parity class in dimension $n\\geq3$ gives $g=2$, while projecting one coordinate gives the punctured cube $\\{0,1\\}^{n-1}\\setminus\\{0\\}$ with $g=n-1$."
+}

@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 320,
-    "uncovered": 696,
-    "proof_source_records": 1341
+    "covered": 329,
+    "uncovered": 687,
+    "proof_source_records": 1359
   },
   "by_workspace": {
     "ample-corners": {
@@ -48,9 +48,9 @@
       "total": 19
     },
     "structural-invariants": {
-      "covered": 30,
+      "covered": 39,
       "total": 51,
-      "uncovered": 21
+      "uncovered": 12
     },
     "survey": {
       "covered": 73,
@@ -14030,7 +14030,7 @@
       "label": "cor:fixed-outer-substitution",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14040,7 +14040,9 @@
           "line": 335
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/264_fixed_outer_substitution_width_bound.json"
+      ]
     },
     {
       "label": "cor:individual-pairs",
@@ -14150,7 +14152,7 @@
       "label": "ex:path-substitution",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14160,13 +14162,16 @@
           "line": 91
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/100_nonmonotone_path_substitution.json",
+        "data/invariant_values/119_nonmonotone_path_substitution_ordering_width.json"
+      ]
     },
     {
       "label": "ex:six-cycle-substitution",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14176,7 +14181,9 @@
           "line": 353
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/265_six_cycle_substitution_width.json"
+      ]
     },
     {
       "label": "lem:complement-fill",
@@ -14237,7 +14244,7 @@
       "label": "lem:substitution-crossing",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14247,7 +14254,9 @@
           "line": 137
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/260_substitution_crossing_width_characterizations.json"
+      ]
     },
     {
       "label": "prop:betti-blindness",
@@ -14459,7 +14468,7 @@
       "label": "prop:one-side-substitution",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14469,7 +14478,9 @@
           "line": 399
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/267_one_side_first_substitution_width.json"
+      ]
     },
     {
       "label": "prop:section-width-limit",
@@ -14507,7 +14518,7 @@
       "label": "prop:two-section-prefix-failure",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14517,7 +14528,12 @@
           "line": 433
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/101_two_section_prefix_failure_class.json",
+        "data/invariant_values/120_two_section_prefix_failure_ordering_width.json",
+        "data/invariant_values/121_two_section_common_prefix_width_positive.json",
+        "data/results/268_two_section_prefix_failure.json"
+      ]
     },
     {
       "label": "prop:zero",
@@ -14656,7 +14672,7 @@
       "label": "thm:dismantlable-substitution",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14666,7 +14682,9 @@
           "line": 26
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/289_dismantlable_ample_boolean_substitution_preserved.json"
+      ]
     },
     {
       "label": "thm:edge-width",
@@ -14787,7 +14805,7 @@
       "label": "thm:prescribed-substitution",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14797,7 +14815,9 @@
           "line": 280
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/263_common_section_first_substitution_width.json"
+      ]
     },
     {
       "label": "thm:products",
@@ -14878,7 +14898,7 @@
       "label": "thm:substitution-width",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "structural-invariants"
       ],
@@ -14888,7 +14908,9 @@
           "line": 160
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/262_ordering_width_under_boolean_substitution.json"
+      ]
     },
     {
       "label": "thm:width-cut",

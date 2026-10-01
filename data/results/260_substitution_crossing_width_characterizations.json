@@ -1,0 +1,14 @@
+{
+  "id": 260,
+  "short_name": "substitution_crossing_width_characterizations",
+  "name": "Geometric Characterizations of Substitution Crossing Width",
+  "invariant_ids": [
+    "#invariants/minimum_teaching_size",
+    "#invariants/substitution_crossing_width"
+  ],
+  "result_type": "recognition",
+  "statement": "For a proper nonempty test $T\\subsetneq\\{0,1\\}^Y$, $g(T)$ is both the largest dimension of a coordinate face meeting one of $T,T^{\\mathrm c}$ in exactly one concept and the largest size of an inclusion-minimal disagreement from a concept on one side to the other. Hence $1\\leq g(T)\\leq|Y|$. For every opposite-side pair $y,z$, there is a word $u$ on the side of $z$ with $\\operatorname{diff}(y,u)\\subseteq\\operatorname{diff}(y,z)$ and $d_H(y,u)\\leq g(T)$.",
+  "status": "established",
+  "proof": "A teaching set of size $s$ isolates its concept on a face of dimension $|Y|-s$, and every isolating face gives such a teaching set. A minimal crossing disagreement spans a face with a unique concept on one side; conversely, the antipode of the unique concept in a positive-dimensional isolating face lies on the other side and gives a minimal crossing. A crossing edge supplies the lower bound. Finally, minimize a crossing disagreement inside the support of any specified opposite-side pair.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#lem:substitution-crossing"
+}

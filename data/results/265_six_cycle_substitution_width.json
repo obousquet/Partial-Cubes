@@ -1,0 +1,24 @@
+{
+  "id": 265,
+  "short_name": "six_cycle_substitution_width",
+  "name": "Exact Substitution Width for the Six-Cycle",
+  "class_ids": [
+    "#classes/even_cycles",
+    "#classes/partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For $C=\\{000,001,011,111,110,100\\}$ with its middle coordinate substituted and every proper nonempty test $T$, $\\sigma(C\\circ_iT)=\\max\\{1,\\sigma(T),\\sigma(T^{\\mathrm c})\\}$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/six_cycle"
+  ],
+  "proof": "The two outer sections are $\\{00,01,10\\}$ and $\\{01,10,11\\}$ with common part $\\{01,10\\}$; both prescribed section widths are one. The displayed cycle has width one: its cyclic order has width at most one, while shattering all supports of size at most two makes it non-ample and hence excludes width zero. The common-section formula gives the upper bound and recovery of both test sides gives equality.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#ex:six-cycle-substitution",
+  "comments": "This is a positive-width isometric example; it is not an ample outer example."
+}

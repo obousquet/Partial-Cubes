@@ -1,0 +1,22 @@
+{
+  "id": 268,
+  "short_name": "two_section_prefix_failure",
+  "name": "Zero Width Need Not Give a Low-Width Common-Section Prefix",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "result_type": "construction",
+  "statement": "There is a 579-concept dismantlable ample class $C$ on 25 coordinates with nonnested sections and intersection $H$ a coordinate edge such that $\\sigma(C)=0<\\min\\{\\sigma(C_0;H),\\sigma(C_1;H)\\}$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/two_section_prefix_failure_class",
+    "#examples/rooted_289_vertex_peeling_factor"
+  ],
+  "proof": "Build the two sections from disjoint copies of the rooted 289-vertex ample factor $R$: one section is $A=\\{(r,0):r\\in R\\}$ and the other is $B=\\{(0,0)\\}\\cup\\{(e,r):r\\in R\\}$, meeting in $H=\\{(0,0),(e,0)\\}$. A block order using a zero-width order of the upper copy, then a zero-width order of the lower copy starting at $e$, then the final common vertex has width zero. The retained-edge obstruction in $R$ makes $\\sigma(A;H)>0$. Conditioning the active coordinate of $e$ maps $(B,H)$ to $(R,\\{0\\})$, whose prescribed width is positive, and paired-minor monotonicity gives the other inequality.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#prop:two-section-prefix-failure",
+  "comments": "The construction makes no minimum-cardinality claim. It limits common-section-first upper bounds but does not refute zero-width preservation under two-sided dismantlable tests."
+}

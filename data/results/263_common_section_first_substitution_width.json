@@ -1,0 +1,17 @@
+{
+  "id": 263,
+  "short_name": "common_section_first_substitution_width",
+  "name": "Exact Common-Section-First Substitution Width",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H=C_0\\cap C_1$ be nonempty and meet every coordinate interval $[x,z]$ with $x\\in C_0$ and $z\\in C_1$. For $F_0=T$, $F_1=T^{\\mathrm c}$, $D=C\\circ_iT$, and $I=H\\times\\{0,1\\}^Y$, one has $\\sigma(D;I)=\\max(\\{\\sigma(C_0;H),\\sigma(C_1;H)\\}\\cup\\{\\sigma(F_b):C_b\\setminus H\\ne\\emptyset\\})$.",
+  "status": "established",
+  "proof": "Order the whole common fiber first, then the exclusive fibers on each side using optimal $H$-first outer orders and optimal inner orders. Same-fiber predecessors use inner witnesses and same-side predecessors use outer witnesses in completed fibers. For an opposite-side predecessor, the interval hypothesis supplies a point of $H$ between the two outside words, and the outer order gives a contained witness toward it without any inner-coordinate cost. Conditioning an inner word recovers each pair $(C_b,H)$, while conditioning an exclusive outside word recovers the relevant test side, giving all reverse bounds.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:prescribed-substitution"
+}

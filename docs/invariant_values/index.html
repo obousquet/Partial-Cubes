@@ -2260,6 +2260,58 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-119" style="position:relative;">
+
+        <h3><a href="invariant_values/nonmonotone_path_substitution_ordering_width.html" class="table-title-link">Ordering Width of the Nonmonotone Path Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width of the Nonmonotone Path Substitution</p>
+<p><strong>Invariant: </strong><a href="invariants/ordering_width.html">Ordering Width</a></p>
+<p><strong>Example: </strong><a href="examples/nonmonotone_path_substitution.html">Zero-Width Substitution by a Nonmonotone Path Test</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Process the four outer concepts in the displayed zero-width order. Use the forward test order in the first two blocks, the reverse complement order after the common outside word's test block is complete, and the forward complement order in the last block. The dismantlable-substitution witness argument gives zero cost at every step.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex?#ex:path-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-120" style="position:relative;">
+
+        <h3><a href="invariant_values/two_section_prefix_failure_ordering_width.html" class="table-title-link">Ordering Width of the Two-Section Prefix-Failure Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ordering Width of the Two-Section Prefix-Failure Class</p>
+<p><strong>Invariant: </strong><a href="invariants/ordering_width.html">Ordering Width</a></p>
+<p><strong>Example: </strong><a href="examples/two_section_prefix_failure_class.html">Two-Section Prefix-Failure Class</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Exact</p>
+<p><strong>Value: </strong>$0$</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The explicit three-block order first peels the upper copy of $R$, then the lower copy in an order starting at $e$, and finally adds the remaining common vertex. Within each block the inherited peeling gives a neighbor toward every predecessor; vertical and common-edge neighbors handle cross-block predecessors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex?#prop:two-section-prefix-failure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-121" style="position:relative;">
+
+        <h3><a href="invariant_values/two_section_common_prefix_width_positive.html" class="table-title-link">Positive Common-Edge Prefix Width in Both Sections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Common-Edge Prefix Width in Both Sections</p>
+<p><strong>Invariant: </strong><a href="invariants/prescribed_ordering_width.html">Prescribed-Subset Ordering Width</a></p>
+<p><strong>Example: </strong><a href="examples/two_section_prefix_failure_class.html">Two-Section Prefix-Failure Class</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Lower Bound</p>
+<p><strong>Value: </strong>$1$</p>
+<strong>Parameters:</strong><div class="text-field"><p>For each of the two pairs $(C_0,H)$ and $(C_1,H)$ in the construction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The first section inherits the fact that the rooted factor has no zero-width order beginning with its retained edge. A conditioning of the second pair gives the rooted factor with its root prescribed first; paired-minor monotonicity transfers that positive lower bound back to the section.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex?#prop:two-section-prefix-failure</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

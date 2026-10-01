@@ -1,0 +1,11 @@
+{
+  "id": 100,
+  "short_name": "nonmonotone_path_substitution",
+  "name": "Zero-Width Substitution by a Nonmonotone Path Test",
+  "symbol": "C\\circ_iT",
+  "object_type": "construction",
+  "definition": "Take $C=T=\\{000,001,011,111\\}$ and substitute $T$ for the middle coordinate of $C$. The outer sections are $C_0=\\{00,01\\}$ and $C_1=\\{01,11\\}$; the test complement is $\\{010,110,100,101\\}$.",
+  "properties": "The output has 16 concepts on five coordinates and admits a zero-width four-block order. The test and its complement are both four-vertex paths with zero-width orders. The test cannot become monotone under coordinate reflections because its induced graph is a path, whereas a four-vertex daisy induces either a square or a three-leaf star.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#ex:path-substitution",
+  "verification": "PartialCubes:papers/structural-invariants/verify_dismantlable_substitution.py; PartialCubes:papers/structural-invariants/dismantlable_substitution_verification.json"
+}

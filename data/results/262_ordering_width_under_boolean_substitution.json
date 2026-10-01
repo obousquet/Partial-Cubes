@@ -1,0 +1,18 @@
+{
+  "id": 262,
+  "short_name": "ordering_width_under_boolean_substitution",
+  "name": "Ordering Width under Boolean Substitution",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/substitution_crossing_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty outer class $C$ and proper nonempty test $T$, $\\sigma(C\\circ_iT)\\leq\\max\\{\\sigma(T),\\sigma(T^{\\mathrm c}),\\sigma(C)+g(T)-1\\}$. If both exclusive outer sections are nonempty, then $\\sigma(C\\circ_iT)\\geq\\max\\{\\sigma(C),\\sigma(T),\\sigma(T^{\\mathrm c})\\}$. No ampleness hypothesis is required.",
+  "status": "established",
+  "proof": "Order optimal test-side blocks along an optimal outer order. A predecessor in the current block has an inner witness of size at most $\\sigma(T)+1$ or $\\sigma(T^{\\mathrm c})+1$. For a completed block, an outer witness that stays on the same side keeps the inner word; one that crosses the distinguished coordinate uses a contained crossing disagreement of size at most $g(T)$. Because the outer support then spends one coordinate on the split, the combined size is at most $\\sigma(C)+g(T)$. Conditioning a crossing test edge and exclusive outside words recovers the three inputs, proving the lower bound.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:substitution-width",
+  "comments": "For an empty or full test, every nonempty output is one outer section times the inner cube and has that section's width."
+}

@@ -1,0 +1,20 @@
+{
+  "id": 266,
+  "short_name": "nested_section_substitution_width",
+  "name": "Exact Width for Nested-Section Substitution",
+  "invariant_ids": [
+    "#invariants/ordering_width",
+    "#invariants/prescribed_ordering_width",
+    "#invariants/cube_completion_width"
+  ],
+  "operation_ids": [
+    "#operations/boolean_substitution",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\emptyset\\ne B\\subseteq A$, let $F$ be proper and nonempty, and assume $F^{\\mathrm c}$ is dismantlable ample. Then $\\sigma((A\\times F)\\cup(B\\times\\{0,1\\}^Y);A\\times F)=\\max\\{\\sigma(A),\\sigma(B),\\sigma(F)\\}$. If $B\\subsetneq A$, the same formula holds for absolute width; if $A=B$, the output is $A\\times\\{0,1\\}^Y$ and has width $\\sigma(A)$. Consequently, substituting a test with two dismantlable sides preserves the absolute width of every outer class with nested sections.",
+  "status": "established",
+  "proof": "Reverse complement filling gives $\\sigma_{\\square}(F)=\\sigma(F)$, and the exact one-stage rectangular-extension formula gives the prescribed equality. When $B\\subsetneq A$, conditioning an exclusive outer word recovers $F$, while conditioning inner words on the two test sides recovers $A$ and $B$, so the same maximum is a lower bound for absolute width. The width of the original nested two-section outer class is already $\\max\\{\\sigma(A),\\sigma(B)\\}$, proving preservation when both test sides have width zero.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:nested-substitution",
+  "comments": "Empty smaller sections reduce to products, and reflecting the substituted bit handles the opposite nesting direction. No isometry assumption is used."
+}

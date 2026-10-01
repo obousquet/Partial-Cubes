@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "batch_id": "082_structural_boolean_substitution",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the complete frozen Boolean-substitution section of structural-invariants: dismantlable preservation, teaching and crossing parameters, sensitivity and affine laws, general and prescribed width bounds, exact partial-cube and nested-section cases, and the two-section prefix limitation.",
+  "source_refs": [
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:dismantlable-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#ex:path-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:substitution-g",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#lem:substitution-crossing",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:substitution-width",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:substitution-sensitivity",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:prescribed-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#cor:fixed-outer-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#ex:six-cycle-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#eq:nested-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#prop:one-side-substitution",
+    "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#prop:two-section-prefix-failure"
+  ],
+  "source_packets": [
+    {
+      "id": "structural-boolean-substitution",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/structural-invariants/sections/boolean_substitution.tex",
+      "sha256": "71e89102b586f45763fb076a8d3c9951d035e3a516f5af43d53ceed31b3ecd4c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized operation theorem, invariant definitions, exact formulas, constructions, values, and concise proofs. The LaTeX repository retains the full block-order arguments, contextual discussion, open question, and computational exposition.",
+    "recoverability": "The clean source section is pinned by repository commit and SHA-256 hash, and every promoted fact has an exact theorem, proposition, lemma, corollary, example, or equation locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. The reproducibility pointers name verifier and report paths retained at the pinned source commit."
+  },
+  "records": [
+    {"path": "data/invariants/037_minimum_teaching_size.json", "sha256": "97bc9f3b825b298d679e0f3ab35a9b5e45f26dbe7ff81d6b2a6762e4d5afd357"},
+    {"path": "data/invariants/038_substitution_crossing_width.json", "sha256": "ae3b2479a6250c2505caa6d5fec6dd00c794ff049b67ca80160e0940e8f4d766"},
+    {"path": "data/invariants/039_boolean_sensitivity.json", "sha256": "1b2f6894fe5c4acd200f48dbfab85f17d648a5f9aa9df897d3aeb3965a5a8a67"},
+    {"path": "data/operation_results/289_dismantlable_ample_boolean_substitution_preserved.json", "sha256": "d5ffaeffa66e2d9f93de3500b86d37b31b569f8e9acaa078c64395ece61152c2"},
+    {"path": "data/results/260_substitution_crossing_width_characterizations.json", "sha256": "3ff4723cb95176ee5b8589f7865985f636956437c96dcbf92ffc175d2b3a4d66"},
+    {"path": "data/results/261_substitution_crossing_sensitivity_and_affine_laws.json", "sha256": "43ce44f0a5f5cefa63cca3d39b05c61c7205a77bc19c5f71c58059110ba44f73"},
+    {"path": "data/results/262_ordering_width_under_boolean_substitution.json", "sha256": "a021bec7d29728daa2d8037cf476305a8da814a7de46bd585a00c9a16962ab2c"},
+    {"path": "data/results/263_common_section_first_substitution_width.json", "sha256": "7822e549f4157ef557f25463cbd581c6ab85ef5defefa339be506521262a65dc"},
+    {"path": "data/results/264_fixed_outer_substitution_width_bound.json", "sha256": "fb64ffc984447d7d7d6598b10d64526b500c85b4de55c92da1a51fb1a12ee772"},
+    {"path": "data/results/265_six_cycle_substitution_width.json", "sha256": "10093f83394b530d74c47d84b2779274aafa748b73f1f1ea6fef6d7ad3a4c825"},
+    {"path": "data/results/266_nested_section_substitution_width.json", "sha256": "f333953d2e7e1a63eda8a837b834766a47c49f693d9a460d5ceba712ffa145a2"},
+    {"path": "data/results/267_one_side_first_substitution_width.json", "sha256": "35a167680f6aa990eada5f3387f4735e473f2bcd9511057b9ed9bfda2bccc02a"},
+    {"path": "data/results/268_two_section_prefix_failure.json", "sha256": "63c5a88b62c658c200552acdda9025150fbb150f0062183011400da81c440fe5"},
+    {"path": "data/examples/100_nonmonotone_path_substitution.json", "sha256": "a2e5d0e12f91961924eb6ba0ee20969af8880c5b103eda8195f5a834302f4067"},
+    {"path": "data/examples/101_two_section_prefix_failure_class.json", "sha256": "c136a266a4e492a7f22f7c18a36c4c356c6cf187bb8170ecd7c9cc2c0b513d37"},
+    {"path": "data/invariant_values/119_nonmonotone_path_substitution_ordering_width.json", "sha256": "87cb703a6178a61d2d9d5e3fe7297bc00fbd952669d8b1b27f13d8c3f3f53ea2"},
+    {"path": "data/invariant_values/120_two_section_prefix_failure_ordering_width.json", "sha256": "afe00634678db67635298805eb69362bc5ac4728e6122f1561fb87c1292b4646"},
+    {"path": "data/invariant_values/121_two_section_common_prefix_width_positive.json", "sha256": "94205832732326687bbbb7bdd64670b20437840a4e063f139eb9eba860de414b"},
+    {"path": "migration/coverage.json", "sha256": "f48ceda0a6668298b752709e086a6dd75e04583cfe7fbfb3918dcf4f32925afa"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "1f3ad18fdc37765fa746ab0cd3700f7be7d3ce49ccc0b014c689fc0fd2e00503"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1473 records.",
+    "website": "Normalized 1489 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. All 9 labeled claims in boolean_substitution.tex are covered; structural-invariants coverage is now 39 of 51 labels and overall workspace-aware coverage is 329 of 1016 labels."
+  },
+  "deferred": [
+    "The unresolved question whether two dismantlable test sides always force absolute-width nonincrease remains prose in the LaTeX source, following the agreed policy for questions.",
+    "The remaining 12 structural-invariants labels occur in main.tex and are assigned to subsequent batches.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

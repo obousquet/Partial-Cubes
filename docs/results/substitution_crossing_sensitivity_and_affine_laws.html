@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,29 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-6" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-261" style="position:relative;">
 
-        <h3><a href="invariants/prescribed_ordering_width.html" class="table-title-link">Prescribed-Subset Ordering Width</a></h3>
+        <h3><a href="results/substitution_crossing_sensitivity_and_affine_laws.html" class="table-title-link">Sensitivity and Affine Laws for Substitution Crossing Width</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Prescribed-Subset Ordering Width</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\sigma(C;I)">
-            \[\sigma(C;I)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a nonempty subset $I\subseteq C$, minimize the ordinary ordering width over all orders of $C$ whose first $|I|$ concepts are exactly the members of $I$; their internal ordering is also optimized and its cost is included.</p></div>
+        <p><strong>Name: </strong>Sensitivity and Affine Laws for Substitution Crossing Width</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/ordering_width.html">Ordering Width</a></li><li><a href="invariants/substitution_crossing_width.html">Substitution Crossing Width</a></li><li><a href="invariants/boolean_sensitivity.html">Boolean Sensitivity</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Every proper nonempty test satisfies $g(T)\leq s(1_T)$. Equality holds when both $T$ and $T^{\mathrm c}$ are well graded, hence in particular when $T$ is ample. Moreover $g(T)=1$ exactly when $1_T$ is a nonconstant affine Boolean function. For such an affine test and an outer class with both exclusive sections nonempty, $\sigma(C\circ_iT)=\max\{\sigma(C),\sigma(T),\sigma(T^{\mathrm c})\}$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers</p>
-<strong>Parameters:</strong><div class="text-field"><p>A finite nonempty binary class $C$ and nonempty prescribed initial subset $I\subseteq C$.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>No order within $I$ is prescribed; $\sigma(C;C)=\sigma(C)$ and $\sigma(C;I)\geq\max\{\sigma(C),\sigma(I)\}$.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#def:width</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/two_section_common_prefix_width_positive.html'>Positive Common-Edge Prefix Width in Both Sections</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/first_two_face_formula.html'>First-Two Face Formula</a></li><li><a href='results/ordering_width_pc_minor_monotonicity.html'>Ordering Width Decreases Under PC-Minors</a></li><li><a href='results/ordering_width_product_maximum.html'>Ordering Width Takes Maxima on Products</a></li><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/exact_prefix_slope.html'>Exact Prefix-Slope Formula</a></li><li><a href='results/quantitative_common_section_gluing.html'>Quantitative Common-Section Gluing Bound</a></li><li><a href='results/prescribed_prefix_attachment_bound.html'>Prescribed-Prefix Attachment Bound</a></li><li><a href='results/reverse_complement_filling_zero_cost.html'>Reverse Zero-Width Orders Fill the Complement at Zero Cost</a></li><li><a href='results/cube_completion_width_laws.html'>Cube-Completion Width Laws</a></li><li><a href='results/cubical_extension_bound.html'>Cubical Bound for Prescribed Extensions</a></li><li><a href='results/filtration_width_splicing_laws.html'>Filtration-Width Splicing and Functoriality</a></li><li><a href='results/rectangular_filtration_exact_width.html'>Exact Width of Rectangular Filtrations</a></li><li><a href='results/common_section_first_substitution_width.html'>Exact Common-Section-First Substitution Width</a></li><li><a href='results/nested_section_substitution_width.html'>Exact Width for Nested-Section Substitution</a></li><li><a href='results/one_side_first_substitution_width.html'>One-Side-First Substitution Bound</a></li><li><a href='results/two_section_prefix_failure.html'>Zero Width Need Not Give a Low-Width Common-Section Prefix</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Every free direction of an isolating face is sensitive at its unique concept, proving $g\leq s$. In a well-graded side, the neighbor directions at a concept form a minimum teaching set because a geodesic toward any other concept begins in one of them; taking both sides gives equality. The condition $g=1$ says every square meets the test in zero, two, or four vertices, so parallel edges have equal indicator increments and the indicator is affine over $\mathbb F_2$; the converse is immediate from an active coordinate in every crossing support. The exact ordering-width law then combines the general upper bound with minor-recovery lower bounds.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex?#eq:substitution-sensitivity</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The parameter $g$ is not pc-minor monotone: deleting zero from the even-parity class in dimension $n\geq3$ gives $g=2$, while projecting one coordinate gives the punctured cube $\{0,1\}^{n-1}\setminus\{0\}$ with $g=n-1$.</p></div>
 
         </div>
     </div>

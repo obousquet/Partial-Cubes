@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Partial Cubes</title>
+        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -33,11 +33,30 @@
     </script>
 
 
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <header>
-            <h1>Partial Cubes</h1>
-            <p>Classes, Characterizations, Invariants, and Forbidden Minors</p>
+            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+
             <nav>
                 <a href="index.html">Home</a>
                 <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
@@ -55,84 +74,32 @@
             </nav>
         </header>
         <main class="table-container">
+            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
+    <div class="table-card" id="math-38" style="position:relative;">
 
-    <div class="intro">
-        <p>A structured database of classes of partial cubes and their mathematical relationships.</p>
+        <h3><a href="invariants/substitution_crossing_width.html" class="table-title-link">Substitution Crossing Width</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Substitution Crossing Width</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="g(T)">
+            \[g(T)\]
+        </div>
     </div>
-    <div class="tables-grid">
 
-        <div class="table-card">
-            <h3><a href="classes/index.html">Classes</a></h3>
-            <p>Canonical classes of partial cubes and related ambient objects</p>
-            <p class="record-count">114 records</p>
+<strong>Definition:</strong><div class="text-field"><p>For a proper nonempty test $T\subsetneq\{0,1\}^Y$ on $n=|Y|$ coordinates, define $g(T)=n-\min\{t_{\min}(T),t_{\min}(T^{\mathrm c})\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Positive integers</p>
+<strong>Parameters:</strong><div class="text-field"><p>A proper nonempty Boolean test and its displayed ambient cube.</p></div>
+<strong>Normalization:</strong><div class="text-field"><p>The value is not assigned to an empty or full test; those substitution cases reduce to a section times a cube.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>Equivalently, this is the largest isolating-face dimension or largest inclusion-minimal disagreement crossing between the test and its complement.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex?#eq:substitution-g</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/substitution_crossing_width_characterizations.html'>Geometric Characterizations of Substitution Crossing Width</a></li><li><a href='results/substitution_crossing_sensitivity_and_affine_laws.html'>Sensitivity and Affine Laws for Substitution Crossing Width</a></li><li><a href='results/ordering_width_under_boolean_substitution.html'>Ordering Width under Boolean Substitution</a></li></ul></p></div>
+
         </div>
-
-        <div class="table-card">
-            <h3><a href="characterizations/index.html">Characterizations</a></h3>
-            <p>Atomic membership criteria for catalogued classes</p>
-            <p class="record-count">175 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="characterization_equivalences/index.html">Characterization_Equivalences</a></h3>
-            <p>Theorems proving that two or more membership criteria define the same class</p>
-            <p class="record-count">29 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="relations/index.html">Relations</a></h3>
-            <p>Inclusions, equalities, non-containments, incomparabilities, and open comparisons</p>
-            <p class="record-count">270 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="operations/index.html">Operations</a></h3>
-            <p>Operations on partial cubes, set families, and related structures</p>
-            <p class="record-count">20 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="operation_results/index.html">Operation_Results</a></h3>
-            <p>Closure, failure, image, and exact-closure theorems for classes</p>
-            <p class="record-count">289 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="invariants/index.html">Invariants</a></h3>
-            <p>Structural, algebraic, metric, topological, and geometric invariants</p>
-            <p class="record-count">39 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="invariant_values/index.html">Invariant_Values</a></h3>
-            <p>Exact values, formulas, bounds, and ranges on classes and examples</p>
-            <p class="record-count">121 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="obstruction_families/index.html">Obstruction_Families</a></h3>
-            <p>Reusable finite, parameterized, and generative families of forbidden objects</p>
-            <p class="record-count">34 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="obstruction_bases/index.html">Obstruction_Bases</a></h3>
-            <p>Complete, partial, necessary, and sufficient forbidden-minor theorems</p>
-            <p class="record-count">13 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="examples/index.html">Examples</a></h3>
-            <p>Named examples and counterexamples used as theorem witnesses</p>
-            <p class="record-count">101 records</p>
-        </div>
-
-        <div class="table-card">
-            <h3><a href="results/index.html">Results</a></h3>
-            <p>Class theorems outside binary relations, operations, and characterization equivalences</p>
-            <p class="record-count">268 records</p>
-        </div>
-
     </div>
 
         </main>

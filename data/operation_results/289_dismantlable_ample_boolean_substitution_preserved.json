@@ -1,0 +1,13 @@
+{
+  "id": 289,
+  "short_name": "dismantlable_ample_boolean_substitution_preserved",
+  "name": "Dismantlable Ample Classes Are Preserved by Two-Sided Dismantlable Tests",
+  "class_id": "#classes/dismantlable_ample",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "closed_under",
+  "target_class_id": "#classes/dismantlable_ample",
+  "status": "established",
+  "statement": "If the outer class $C$, a proper nonempty test $T$, and its cube complement $T^{\\mathrm c}$ all have ordering width zero, then $C\\circ_iT$ has width zero. Thus $T$ preserves every dismantlable ample outer class exactly when both test sides are dismantlable ample. If both exclusive outer sections are nonempty, then for the individual substitution $\\sigma(C\\circ_iT)=0$ exactly when $\\sigma(C)=\\sigma(T)=\\sigma(T^{\\mathrm c})=0$.",
+  "proof": "Process a zero-width outer order in blocks. In the first block at an outside word use the relevant test-side order forward; after the opposite block is complete, use the reverse-complement filling order. Inner predecessors then supply an earlier inner neighbor. For a predecessor in a completed outer block, the outer zero-cost witness either changes an outside coordinate, preserving the inner word, or crosses the distinguished coordinate, in which case the completed opposite inner block supplies a neighbor. For necessity, singleton outer classes recover each test side; when both exclusive sections occur, a crossing test edge recovers $C$ and exclusive outside words recover both test sides by conditioning.",
+  "proof_source": "PartialCubes:papers/structural-invariants/sections/boolean_substitution.tex#thm:dismantlable-substitution"
+}
