@@ -3428,6 +3428,51 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-201" style="position:relative;">
+
+        <h3><a href="results/minimal_pattern_coefficient_bound.html" class="table-title-link">Minimal-Pattern Coefficient Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimal-Pattern Coefficient Bound</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/separation_margin.html">Separation Margin</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In a separation-margin $t$-certificate, if $p$ is a minimal missing pattern with support $P$, then every normalized row coefficient satisfies $a_{p,i}\ge2t/(1+t)$ and $t\le1/(2|P|-1)$. Hence every row coefficient is strictly positive whenever $t>0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Minimality supplies a concept agreeing with $p$ outside each chosen coordinate $i$ and having the opposite sign at $i$. Evaluating the row at that witness gives $t(1-a_{p,i})-a_{p,i}\le-t$, which yields the coefficient bound. Summing it over the normalized row yields the margin bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#lem:coefficients</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-202" style="position:relative;">
+
+        <h3><a href="results/no_fixed_support_margin_lower_bound.html" class="table-title-link">Minimal Missing Support Does Not Bound Separation Margin</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimal Missing Support Does Not Bound Separation Margin</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/learning_space_graphs.html">Learning-Space Graphs</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>There is no function $g$ with $g(2)>0$ such that every convex-realizable maximum learning space $C$ satisfies $\mu(C)\ge g(r(C))$, where $r(C)$ is the largest support size of a minimal missing pattern.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The prefix-chain threshold classes $T_h$ are convex-realizable maximum learning spaces with $r(T_h)=2$ and positive separation margin at most $1/h$. Letting $h$ grow rules out any positive lower bound depending only on $r=2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#cor:fixed-support</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-203" style="position:relative;">
+
+        <h3><a href="results/cube_witness_free_coordinate_cancellation.html" class="table-title-link">Canceling the Free Coordinates of a Positioned Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canceling the Free Coordinates of a Positioned Cube</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_space.html">Separator Coefficient Space</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose a positioned cube fixing the signs of a partial pattern $q$ is contained in a convex-realizable Boolean class $C$, and fix a feasible normalized coefficient array. Then there is a strictly separated witness vector with the prescribed signs on the fixed support of $q$ and zeros on every free cube coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose strict witnesses for all cube vertices. Pair vertices opposite in one free coordinate and take a positive convex combination that cancels that coordinate. Fixed signs and all strict linear separator inequalities survive. Repeat over the free coordinates; previously canceled coordinates remain zero.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/setup.tex?#lem:average</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

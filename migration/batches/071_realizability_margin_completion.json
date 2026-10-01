@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "batch_id": "071_realizability_margin_completion",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Complete theorem-label coverage of the realizability-margin manuscript with its minimal-pattern coefficient bound, fixed-support counterexample, cube-witness cancellation lemma, and three explicit section/missing-pattern examples.",
+  "source_refs": [
+    "PartialCubes:papers/realizability-margin/main.tex#ex:missing",
+    "PartialCubes:papers/realizability-margin/main.tex#lem:coefficients",
+    "PartialCubes:papers/realizability-margin/main.tex#cor:fixed-support",
+    "PartialCubes:papers/coefficient-topology/setup.tex#lem:average",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#ex:extension-interval",
+    "PartialCubes:papers/realizability-margin/section_gluing.tex#ex:matching-section"
+  ],
+  "source_preservation": {
+    "policy": "The database owns the exact bounds, normalized example data, sharp interval, rescaling certificate, and concise proofs. The manuscripts retain the full linear-program development, witness arrays, surrounding gluing theory, and expository comparisons.",
+    "recoverability": "Each promoted fact has an exact labelled source locator in the preserved manuscript snapshot.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/079_minimal_missing_pattern_reorientation.json", "sha256": "1b71cdc65c75697d5123cbf8f1c11b458fa9d05364543b579030126d7491d608"},
+    {"path": "data/examples/080_single_row_extension_interval.json", "sha256": "0564f0a2ed87e659d4704c4df733e98f2f421ccb161f7d0dd08329e1b2a9fcf1"},
+    {"path": "data/examples/081_matching_section_rows_by_rescaling.json", "sha256": "4b845a2d1864d5b1b0ea682dc55da9ce6e74ff452b6c3d1265e41b1aa849cb4e"},
+    {"path": "data/results/201_minimal_pattern_coefficient_bound.json", "sha256": "b1dbb4bad9ab49c866fe1f75ae708f79343d21338a0d00066a20e43d5f2c1421"},
+    {"path": "data/results/202_no_fixed_support_margin_lower_bound.json", "sha256": "2c5d2683ea172e6dbdf8320538a6c74a8f0d97e65ab1ca86a8f6fc9d90379cf9"},
+    {"path": "data/results/203_cube_witness_free_coordinate_cancellation.json", "sha256": "732bce59309c18fc42ff9497c35ae674c24d4f11cf83cf0bf177b829256ed911"},
+    {"path": "migration/coverage.json", "sha256": "cd971922d6db84cc519245bc817c8b4f18b3d0bd7db5dbb28a2f78a2a6d7a68d"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "d9d90c350174af7f5b8cae53bae78d696a40e176164583c2846deba93c647a48"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1368 records.",
+    "website": "Normalized 1384 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass; the manuscript-result audit now reports realizability-margin at 19 of 19 unique theorem-like labels covered and coefficient-topology at 61 of 74."
+  },
+  "deferred": [
+    "The remaining thirteen coefficient-topology labels are queued separately because they concern broader coefficient-space operations and examples rather than the separation-margin manuscript itself."
+  ]
+}

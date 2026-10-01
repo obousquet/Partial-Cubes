@@ -1,0 +1,13 @@
+{
+  "id": 203,
+  "short_name": "cube_witness_free_coordinate_cancellation",
+  "name": "Canceling the Free Coordinates of a Positioned Cube",
+  "invariant_ids": [
+    "#invariants/coefficient_space"
+  ],
+  "result_type": "construction",
+  "statement": "Suppose a positioned cube fixing the signs of a partial pattern $q$ is contained in a convex-realizable Boolean class $C$, and fix a feasible normalized coefficient array. Then there is a strictly separated witness vector with the prescribed signs on the fixed support of $q$ and zeros on every free cube coordinate.",
+  "status": "established",
+  "proof": "Choose strict witnesses for all cube vertices. Pair vertices opposite in one free coordinate and take a positive convex combination that cancels that coordinate. Fixed signs and all strict linear separator inequalities survive. Repeat over the free coordinates; previously canceled coordinates remain zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/setup.tex#lem:average"
+}

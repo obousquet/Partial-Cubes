@@ -1,0 +1,13 @@
+{
+  "id": 201,
+  "short_name": "minimal_pattern_coefficient_bound",
+  "name": "Minimal-Pattern Coefficient Bound",
+  "invariant_ids": [
+    "#invariants/separation_margin"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In a separation-margin $t$-certificate, if $p$ is a minimal missing pattern with support $P$, then every normalized row coefficient satisfies $a_{p,i}\\ge2t/(1+t)$ and $t\\le1/(2|P|-1)$. Hence every row coefficient is strictly positive whenever $t>0$.",
+  "status": "established",
+  "proof": "Minimality supplies a concept agreeing with $p$ outside each chosen coordinate $i$ and having the opposite sign at $i$. Evaluating the row at that witness gives $t(1-a_{p,i})-a_{p,i}\\le-t$, which yields the coefficient bound. Summing it over the normalized row yields the margin bound.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#lem:coefficients"
+}

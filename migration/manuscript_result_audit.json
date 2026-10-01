@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1012,
     "label_occurrences": 1040,
-    "covered": 216,
-    "uncovered": 796,
-    "proof_source_records": 1248
+    "covered": 222,
+    "uncovered": 790,
+    "proof_source_records": 1254
   },
   "by_workspace": {
     "ample-corners": {
@@ -16,9 +16,9 @@
       "uncovered": 21
     },
     "coefficient-topology": {
-      "covered": 60,
+      "covered": 61,
       "total": 74,
-      "uncovered": 14
+      "uncovered": 13
     },
     "cover-recursive": {
       "covered": 17,
@@ -49,9 +49,8 @@
       "uncovered": 32
     },
     "realizability-margin": {
-      "covered": 13,
-      "total": 19,
-      "uncovered": 6
+      "covered": 19,
+      "total": 19
     },
     "structural-invariants": {
       "covered": 23,
@@ -2807,7 +2806,7 @@
       "label": "cor:fixed-support",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "realizability-margin"
       ],
@@ -2817,7 +2816,9 @@
           "line": 746
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/202_no_fixed_support_margin_lower_bound.json"
+      ]
     },
     {
       "label": "cor:forbidden-form",
@@ -3606,7 +3607,7 @@
       "label": "ex:extension-interval",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "realizability-margin"
       ],
@@ -3616,7 +3617,9 @@
           "line": 50
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/080_single_row_extension_interval.json"
+      ]
     },
     {
       "label": "ex:hall-completion",
@@ -3708,7 +3711,7 @@
       "label": "ex:matching-section",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "realizability-margin"
       ],
@@ -3718,7 +3721,9 @@
           "line": 223
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/081_matching_section_rows_by_rescaling.json"
+      ]
     },
     {
       "label": "ex:maximum-halves",
@@ -3740,7 +3745,7 @@
       "label": "ex:missing",
       "prefix": "ex",
       "environment": "example",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "realizability-margin"
       ],
@@ -3750,7 +3755,9 @@
           "line": 201
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/079_minimal_missing_pattern_reorientation.json"
+      ]
     },
     {
       "label": "ex:non-ample-union",
@@ -4207,7 +4214,7 @@
       "label": "lem:average",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "coefficient-topology",
         "realizability-margin"
@@ -4222,13 +4229,15 @@
           "line": 424
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/203_cube_witness_free_coordinate_cancellation.json"
+      ]
     },
     {
       "label": "lem:coefficients",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "realizability-margin"
       ],
@@ -4238,7 +4247,9 @@
           "line": 252
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/201_minimal_pattern_coefficient_bound.json"
+      ]
     },
     {
       "label": "lem:com-obstruction-minimality",

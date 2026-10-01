@@ -1,0 +1,15 @@
+{
+  "id": 202,
+  "short_name": "no_fixed_support_margin_lower_bound",
+  "name": "Minimal Missing Support Does Not Bound Separation Margin",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/learning_space_graphs",
+    "#classes/realizable_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "There is no function $g$ with $g(2)>0$ such that every convex-realizable maximum learning space $C$ satisfies $\\mu(C)\\ge g(r(C))$, where $r(C)$ is the largest support size of a minimal missing pattern.",
+  "status": "established",
+  "proof": "The prefix-chain threshold classes $T_h$ are convex-realizable maximum learning spaces with $r(T_h)=2$ and positive separation margin at most $1/h$. Letting $h$ grow rules out any positive lower bound depending only on $r=2$.",
+  "proof_source": "PartialCubes:papers/realizability-margin/main.tex#cor:fixed-support"
+}

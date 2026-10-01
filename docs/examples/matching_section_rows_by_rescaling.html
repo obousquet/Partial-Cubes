@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,17 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-13" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-81" style="position:relative;">
 
-        <h3><a href="invariants/separation_margin.html" class="table-title-link">Separation Margin</a></h3>
+        <h3><a href="examples/matching_section_rows_by_rescaling.html" class="table-title-link">Matching Different Section Rows by Coordinate Rescaling</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Separation Margin</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mu">
-            \[\mu\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For nonempty $C\subseteq\{0,1\}^n$, let $\mathcal M(C)$ be its minimal missing partial patterns. A $t$-certificate chooses $x^c\in\mathbb R^n$ for each $c\in C$ and coefficients $a_{p,i}\ge0$ summing to one on each $\operatorname{supp}p$, subject to $t\le(2c_i-1)x_i^c\le1$ and $\sum_i a_{p,i}\epsilon_{p,i}x_i^c\le-t$ for every $p,c$. Then $\mu(C)$ is the largest feasible $t\in[0,1]$.</p></div>
-<p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Real interval $[0,1]$</p>
-<strong>Normalization:</strong><div class="text-field"><p>Separator rows have $\ell_1$ norm one, witnesses have $\ell_\infty$ norm at most one, and the full cube, including the zero-dimensional cube, has margin one.</p></div>
-<p><strong>Category:</strong> Geometric</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>Defined for every nonempty binary class. Positivity is exactly affine-convex realizability plus ampleness; no class of all binary set families has yet been promoted as a database endpoint.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Lawrence1983">[Lawrence1983]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#def:margin</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/separation_margin_positive_on_realizable_ample.html'>Positive Margin on Realizable Ample Classes</a></li><li><a href='invariant_values/full_cube_separation_margin.html'>Separation Margin of a Full Cube</a></li><li><a href='invariant_values/daisy_separation_margin.html'>Separation Margin of Daisy Cubes</a></li><li><a href='invariant_values/two_control_cycle_separation_margin.html'>Separation Margin of the Two-Control Directed Cycles</a></li><li><a href='invariant_values/four_section_separation_margin.html'>Separation Margin of the Four-Section Corner Deletion</a></li><li><a href='invariant_values/realizable_corner_extension_separation_margin.html'>Positive Separation Margin of the Realizable Corner Extension</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/separation_margin_minor_product_laws.html'>Separation-Margin Minor and Product Laws</a></li><li><a href='results/separation_margin_complement_bound.html'>Separation-Margin Complement Bound</a></li><li><a href='results/separation_margin_cube_union_bound.html'>Separation Margin Under Union Along a Cube</a></li><li><a href='results/separation_margin_nested_halfspace_bound.html'>Nested-Halfspace Margin Bound</a></li><li><a href='results/separation_margin_fixed_row_formula.html'>Fixed-Row Separation Formula</a></li><li><a href='results/section_row_compatibility.html'>Section-Row Compatibility Criterion</a></li><li><a href='results/section_cycle_ratio_criterion.html'>Cycle-Ratio Criterion for Section Rows</a></li><li><a href='results/forest_section_gluing_bound.html'>Forest-Section Gluing Bound</a></li><li><a href='results/robust_section_gluing_bound.html'>Robust Cycle-Agreement Gluing Bound</a></li><li><a href='results/extendable_cycle_ratio_spaces_open.html'>Extendable Cycle-Ratio Spaces Are Open</a></li><li><a href='results/minimal_pattern_coefficient_bound.html'>Minimal-Pattern Coefficient Bound</a></li></ul></p></div>
+        <p><strong>Name: </strong>Matching Different Section Rows by Coordinate Rescaling</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>For $D=\{00,10,01\}$ on $S=\{s_1,s_2\}$, take $A=D\times\{0,1\}^{\{u\}}$ and $B=D\times\{0,1\}^{\{v\}}$ with distinct private coordinates, and embed their union as $X=D\times\{00,10,01\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The section rows $(1/3,2/3)$ for $A$ and $(2/3,1/3)$ for $B$ both extend at margin $1/5$. Positive coordinate rescalings turn both into the common row $(1/2,1/2)$ at margin $1/10$, after which section gluing gives a certificate of margin $1/120$. The exact margin is $1/3$; the conversion bound is deliberately nonsharp.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/section_gluing.tex?#ex:matching-section</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>
