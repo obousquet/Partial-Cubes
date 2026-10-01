@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "batch_id": "069_manuscript_result_audit",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Add a reproducible repository-wide audit of theorem-like manuscript labels against exact database proof-source locators, and close the sole remaining labelled example gap in the learning-spaces manuscript.",
+  "source_refs": [
+    "PartialCubes:papers/learning-spaces/main.tex#ex:repair",
+    "PartialCubes:migration/generated/latex_labels.json"
+  ],
+  "source_preservation": {
+    "policy": "The audit treats labels as discovery units and requires exact proof-source locators for coverage. It does not copy full proofs or infer that an unlabelled paragraph is absent. Open questions, definitions, equations, figures, tables, remarks, and section labels are outside this theorem-like audit.",
+    "recoverability": "Every audit entry retains all preserved source occurrences and line numbers; source hashes remain in the label index and source manifest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "Makefile", "sha256": "96468759673e0d8e47d50d857d7469ad61c8409e18b53c353fadc40a24c35853"},
+    {"path": "migration/audit_manuscript_results.py", "sha256": "1e93d41a56f94fe588eca45655afef6f0347f95957cdb8e75a7dbff0c0bdde5b"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "85cffbc88297a710dada9e053b24484a51cb43293c64981e1ee22c0ac482071f"},
+    {"path": "data/examples/078_punctured_cube_root_repair.json", "sha256": "77332c98466d541843523253183605de652f3bf58332809f1bfcad247d99a781"},
+    {"path": "migration/coverage.json", "sha256": "ab11f06aff5f8fa90c79ea3278da5a9f932a1feca767efdad9d98535abeb7cc3"}
+  ],
+  "audit_baseline": {
+    "unique_result_labels": 1012,
+    "label_occurrences": 1040,
+    "covered": 212,
+    "uncovered": 800,
+    "learning_spaces": "12 of 12 unique theorem-like labels covered",
+    "interpretation": "This is a conservative locator audit, not a claim that 800 distinct database facts remain: duplicated statements, supporting lemmas, draft-internal steps, and alternative labels may share one normalized result. Each uncovered label still requires an explicit disposition."
+  },
+  "validation": {
+    "database": "Validated 12 schemas and 1357 records.",
+    "website": "Normalized 1373 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "The new manuscript-result audit is part of migration-extract and migration-check; all existing migration gates pass."
+  },
+  "deferred": [
+    "Each uncovered theorem-like label must be promoted, linked to an existing normalized record, or explicitly classified as supporting/internal before the full migration can be claimed complete.",
+    "A separate audit is still needed for significant unlabelled claims and definitions."
+  ]
+}
