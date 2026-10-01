@@ -1,0 +1,12 @@
+{
+  "id": 150,
+  "short_name": "nested_geometric_substitution_cone",
+  "name": "Separator Cone for Nested Geometric Substitution",
+  "class_ids": ["#classes/realizable_ample"],
+  "operation_ids": ["#operations/boolean_substitution"],
+  "result_type": "construction",
+  "statement": "For nested shores $S\\subseteq B$, write the outer signed separators independent of the replaced coordinate as $h_\\ell(x)<0$ and the remaining ones as $a_p(x)+b_pz<0$ with $b_p>0$. If $\\alpha_q(y)<0$ are signed separators for the inner test, then the inequalities $h_\\ell(x)<0$ and $a_p(x)/b_p+\\alpha_q(y)<0$ realize the substituted class $(B\\times T)\\cup(S\\times Q^Y)$.",
+  "status": "established",
+  "proof": "A word of $B\\times T$ uses an outer witness at replaced value zero and a test witness; scaling the test block makes all sums negative. A word of $S\\times Q^Y$ uses an outer witness at value one, so every normalized outer term is negative; scaling the outer block dominates any chosen test signs. A forbidden outer word violates an independent separator, while a word in $(B\\setminus S)\\times T^{\\mathrm c}$ makes one normalized outer term and one test separator nonnegative.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:nested-geometric-substitution"
+}

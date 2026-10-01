@@ -5,8 +5,8 @@
   "symbol": "E_{26}",
   "object_type": "set_family",
   "definition": "On coordinates $(a_1,a_2,b_1,b_2,i,j)$ in low-bit order, take the 26 words encoded by $\\{0,1,2,3,16,17,18,19,20,22,24,25,28,32,33,34,35,36,37,40,42,44,48,52,56,60\\}$. Equivalently, over an empty base all four $(i,j)$ labels occur; over a nonempty subset of $\\{a_1,a_2\\}$ all except $11$ occur; over a nonempty subset of $\\{b_1,b_2\\}$ all except $00$ occur; the four mixed pairs carry alternating singleton labels; all other fibers are empty.",
-  "properties": "It is an ample partial cube of VC dimension three, belongs to the convex-treelike class and hence is dismantlable, but has no affine-convex realization. It has a verified maximum parent of rank four on eight coordinates.",
+  "properties": "It is an ample partial cube of VC dimension three, belongs to the convex-treelike class and hence is dismantlable, but has no affine-convex realization. It has a verified maximum parent of rank four on eight coordinates. Adding the corner word 49 gives the realizable ample class $D_{27}$.",
   "references": "\\cite{BousquetFourSections}",
-  "proof_source": "CompressionSchemes:drafts/round824_four_downset_sections.md; CompressionSchemes:drafts/round984_structural_targets.md#the-peripheral-side-e26",
-  "verification": "scripts/verify_realizable_ample.py; data/examples/assets/realizable_ample_verification.json; data/examples/assets/e26_parent_verification.json"
+  "proof_source": "CompressionSchemes:drafts/round824_four_downset_sections.md; CompressionSchemes:drafts/round984_structural_targets.md#the-peripheral-side-e26; CompressionSchemes:maximum_parent_methods.tex#prop:geometric-corner-deletion",
+  "verification": "scripts/verify_realizable_ample.py; scripts/verify_geometric_substitution.py; data/examples/assets/realizable_ample_verification.json; data/examples/assets/e26_parent_verification.json; data/examples/assets/geometric_substitution_database_verification.json"
 }

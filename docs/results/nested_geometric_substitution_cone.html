@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-150" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="results/nested_geometric_substitution_cone.html" class="table-title-link">Separator Cone for Nested Geometric Substitution</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li></ul></p></div>
+        <p><strong>Name: </strong>Separator Cone for Nested Geometric Substitution</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/boolean_substitution.html">Boolean Substitution</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For nested shores $S\subseteq B$, write the outer signed separators independent of the replaced coordinate as $h_\ell(x)<0$ and the remaining ones as $a_p(x)+b_pz<0$ with $b_p>0$. If $\alpha_q(y)<0$ are signed separators for the inner test, then the inequalities $h_\ell(x)<0$ and $a_p(x)/b_p+\alpha_q(y)<0$ realize the substituted class $(B\times T)\cup(S\times Q^Y)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A word of $B\times T$ uses an outer witness at replaced value zero and a test witness; scaling the test block makes all sums negative. A word of $S\times Q^Y$ uses an outer witness at value one, so every normalized outer term is negative; scaling the outer block dominates any chosen test signs. A forbidden outer word violates an independent separator, while a word in $(B\setminus S)\times T^{\mathrm c}$ makes one normalized outer term and one test separator nonnegative.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:nested-geometric-substitution</p></div>
 
         </div>
     </div>

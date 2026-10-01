@@ -1,0 +1,13 @@
+{
+  "id": 145,
+  "short_name": "realizable_ample_nested_substitution_closed",
+  "name": "Realizable Ample Classes Are Closed under Nested Substitution",
+  "class_id": "#classes/realizable_ample",
+  "operation_id": "#operations/boolean_substitution",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/realizable_ample",
+  "status": "established",
+  "statement": "Let the outer class have nested nonempty proper sections $S\\subsetneq B$ and let the nonempty proper test be $T$. Then $D=(B\\times T)\\cup(S\\times Q^Y)$ is realizable ample exactly when both the outer expansion $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ and $T$ are realizable ample. The forward construction also covers empty or equal nested shores, while constant tests reduce to a section times a cube.",
+  "proof": "Necessity follows by restricting the output to a crossing edge of the test and to a word of $B\\setminus S$. For sufficiency, minimal signed separators involving the downward outer coordinate use only its value one. Divide each such outer separator by its positive coordinate coefficient and add every test separator. The resulting open cone realizes precisely the two allowed blocks: scale the test variables for $B\\times T$, and scale the outer variables for $S\\times Q^Y$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:nested-geometric-substitution"
+}

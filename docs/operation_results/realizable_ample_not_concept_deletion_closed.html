@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Closure, failure, image, and exact-closure theorems for classes - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="operation_results/index.html">&larr; Back to Operation_Results Table</a></div>
+    <div class="table-card" id="math-146" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="operation_results/realizable_ample_not_concept_deletion_closed.html" class="table-title-link">Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li></ul></p></div>
+        <p><strong>Name: </strong>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</p>
+<p><strong>Class: </strong><a href="classes/realizable_ample.html">Realizable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/concept_deletion.html">Concept Deletion</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a realizable ample class $D\subseteq Q^6$ of 27 words and VC dimension three with a corner $w$ such that $D\setminus\{w\}$ remains ample, has 26 words and VC dimension three, but has no affine-convex realization in any dimension.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/realizable_corner_extension.html">Realizable Twenty-Seven-Word Corner Extension</a></li><li><a href="examples/four_section_nonrealizable_class.html">Four-Section Nonrealizable Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>The fiber table makes both classes ample and shows that the added word lies in a unique maximal three-cube. Explicit strict inequalities and 27 rational witnesses realize the larger class. For the deletion, signed separation of four minimally missing triples forces positive ratios $\alpha_1<\beta_1<\alpha_2<\beta_2<\alpha_1$, an impossibility in every affine dimension.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-corner-deletion</p></div>
 
         </div>
     </div>

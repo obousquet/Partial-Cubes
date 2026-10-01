@@ -1,0 +1,15 @@
+{
+  "id": 103,
+  "short_name": "realizable_corner_extension_separation_margin",
+  "name": "Positive Separation Margin of the Realizable Corner Extension",
+  "invariant_id": "#invariants/separation_margin",
+  "example_id": "#examples/realizable_corner_extension",
+  "quantifier": "individual",
+  "value_type": "lower_bound",
+  "value": ">0",
+  "scope": "Normalized separation margin; no optimal numerical value is asserted.",
+  "status": "established",
+  "proof": "The source supplies a bounded open convex domain, thirteen strict guard inequalities, and a strict rational witness for every allowed word. The class is ample, so its normalized separation margin is positive.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:geometric-corner-deletion; PartialCubes:papers/realizability-margin/main.tex#thm:positive",
+  "verification": "scripts/verify_geometric_substitution.py"
+}

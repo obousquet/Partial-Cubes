@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Exact values, formulas, bounds, and ranges on classes and examples - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Exact values, formulas, bounds, and ranges on classes and examples - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="invariant_values/index.html">&larr; Back to Invariant_Values Table</a></div>
+    <div class="table-card" id="math-103" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="invariant_values/realizable_corner_extension_separation_margin.html" class="table-title-link">Positive Separation Margin of the Realizable Corner Extension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li></ul></p></div>
+        <p><strong>Name: </strong>Positive Separation Margin of the Realizable Corner Extension</p>
+<p><strong>Invariant: </strong><a href="invariants/separation_margin.html">Separation Margin</a></p>
+<p><strong>Example: </strong><a href="examples/realizable_corner_extension.html">Realizable Twenty-Seven-Word Corner Extension</a></p>
+<p><strong>Quantifier:</strong> Individual Object</p>
+<p><strong>Value Type:</strong> Lower Bound</p>
+<p><strong>Value: </strong>>0</p>
+<strong>Scope:</strong><div class="text-field"><p>Normalized separation margin; no optimal numerical value is asserted.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The source supplies a bounded open convex domain, thirteen strict guard inequalities, and a strict rational witness for every allowed word. The class is ample, so its normalized separation margin is positive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-corner-deletion; PartialCubes:papers/realizability-margin/main.tex?#thm:positive</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_geometric_substitution.py</p></div>
 
         </div>
     </div>

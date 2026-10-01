@@ -1,0 +1,11 @@
+{
+  "id": 52,
+  "short_name": "realizable_corner_extension",
+  "name": "Realizable Twenty-Seven-Word Corner Extension",
+  "symbol": "D_{27}",
+  "object_type": "set_family",
+  "definition": "On coordinates $(a_1,a_2,b_1,b_2,i,j)$ in low-bit order, take the 26-word four-section class $E_{26}$ and add $w=(1,0,0,0,1,1)$, encoded by 49.",
+  "properties": "It is ample and affine-convex realizable in $R^6$, has 27 words and VC dimension three, and $w$ is contained in the unique maximal cube with free coordinates $\\{a_1,i,j\\}$. Deleting $w$ gives the nonrealizable ample class $E_{26}$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:geometric-corner-deletion",
+  "verification": "scripts/verify_geometric_substitution.py; data/examples/assets/geometric_substitution_database_verification.json"
+}

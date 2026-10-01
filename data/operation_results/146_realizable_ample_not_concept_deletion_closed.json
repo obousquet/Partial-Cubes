@@ -1,0 +1,17 @@
+{
+  "id": 146,
+  "short_name": "realizable_ample_not_concept_deletion_closed",
+  "name": "Realizable Ample Classes Are Not Closed under Ample Corner Deletion",
+  "class_id": "#classes/realizable_ample",
+  "operation_id": "#operations/concept_deletion",
+  "result_type": "not_closed_under",
+  "target_class_id": "#classes/ample",
+  "status": "established",
+  "statement": "There is a realizable ample class $D\\subseteq Q^6$ of 27 words and VC dimension three with a corner $w$ such that $D\\setminus\\{w\\}$ remains ample, has 26 words and VC dimension three, but has no affine-convex realization in any dimension.",
+  "witness_ids": [
+    "#examples/realizable_corner_extension",
+    "#examples/four_section_nonrealizable_class"
+  ],
+  "proof": "The fiber table makes both classes ample and shows that the added word lies in a unique maximal three-cube. Explicit strict inequalities and 27 rational witnesses realize the larger class. For the deletion, signed separation of four minimally missing triples forces positive ratios $\\alpha_1<\\beta_1<\\alpha_2<\\beta_2<\\alpha_1$, an impossibility in every affine dimension.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#prop:geometric-corner-deletion"
+}

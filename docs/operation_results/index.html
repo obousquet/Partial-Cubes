@@ -1268,8 +1268,8 @@
 <p><strong>Result Type:</strong> Closed Under</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>The nonempty cube complement of a proper realizable ample class is realizable ample.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>The complement-margin construction exchanges missing-pattern separator data with positioned-cube witness data and preserves a positive margin.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:complement</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Choose strict coordinate-sign witnesses for the class and positive signed separators for all minimally missing patterns. The open polar cone cut out by negative inner products with the class witnesses contains every separator. Each word outside the class extends a minimal missing pattern, so a small orthant-directed perturbation of its separator realizes that complementary word in the polar cone. A word of the original class cannot occur there because its own witness has positive inner product with every vector in its strict orthant. Exchanging the class and complement proves the converse.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/realizability-margin/main.tex?#thm:complement; CompressionSchemes:maximum_parent_methods.tex?#prop:realizable-complement</p></div>
 
         </div>
     </div>
@@ -2462,6 +2462,41 @@
 <strong>Statement:</strong><div class="text-field"><p>Substitution by any realizable ample test preserves $\mathsf{MaxMin}$. For a proper test on $k$ coordinates, if $q_0$ and $q_1$ are the numbers of minimal signed missing patterns of the test and its complement, a proper rank-$r$ input parent with $m$ auxiliaries yields rank $r+k$ with at most $m+q_0+q_1+2k+2$ auxiliaries.</p></div>
 <strong>Proof:</strong><div class="text-field"><p>Independent strict signed separators for the test and its complement, joined by two control forms, realize exactly the associated three-section class. Normalizing the controls and applying strict-realization completion gives a rank-$(k+1)$ parent with the stated auxiliary cost. The fixed-test criterion then supplies the substituted parent.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:complementary-realizations</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-145" style="position:relative;">
+
+        <h3><a href="operation_results/realizable_ample_nested_substitution_closed.html" class="table-title-link">Realizable Ample Classes Are Closed under Nested Substitution</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Realizable Ample Classes Are Closed under Nested Substitution</p>
+<p><strong>Class: </strong><a href="classes/realizable_ample.html">Realizable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/boolean_substitution.html">Boolean Substitution</a></p>
+<p><strong>Result Type:</strong> Preserves Between</p>
+<p><strong>Target Class: </strong><a href="classes/realizable_ample.html">Realizable Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Let the outer class have nested nonempty proper sections $S\subsetneq B$ and let the nonempty proper test be $T$. Then $D=(B\times T)\cup(S\times Q^Y)$ is realizable ample exactly when both the outer expansion $(B\times\{0\})\cup(S\times\{1\})$ and $T$ are realizable ample. The forward construction also covers empty or equal nested shores, while constant tests reduce to a section times a cube.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Necessity follows by restricting the output to a crossing edge of the test and to a word of $B\setminus S$. For sufficiency, minimal signed separators involving the downward outer coordinate use only its value one. Divide each such outer separator by its positive coordinate coefficient and add every test separator. The resulting open cone realizes precisely the two allowed blocks: scale the test variables for $B\times T$, and scale the outer variables for $S\times Q^Y$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:nested-geometric-substitution</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-146" style="position:relative;">
+
+        <h3><a href="operation_results/realizable_ample_not_concept_deletion_closed.html" class="table-title-link">Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</p>
+<p><strong>Class: </strong><a href="classes/realizable_ample.html">Realizable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/concept_deletion.html">Concept Deletion</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a realizable ample class $D\subseteq Q^6$ of 27 words and VC dimension three with a corner $w$ such that $D\setminus\{w\}$ remains ample, has 26 words and VC dimension three, but has no affine-convex realization in any dimension.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/realizable_corner_extension.html">Realizable Twenty-Seven-Word Corner Extension</a></li><li><a href="examples/four_section_nonrealizable_class.html">Four-Section Nonrealizable Class</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>The fiber table makes both classes ample and shows that the added word lies in a unique maximal three-cube. Explicit strict inequalities and 27 rational witnesses realize the larger class. For the deletion, signed separation of four minimally missing triples forces positive ratios $\alpha_1<\beta_1<\alpha_2<\beta_2<\alpha_1$, an impossibility in every affine dimension.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-corner-deletion</p></div>
 
         </div>
     </div>

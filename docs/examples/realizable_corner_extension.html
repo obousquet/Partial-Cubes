@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,25 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-52" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="examples/realizable_corner_extension.html" class="table-title-link">Realizable Twenty-Seven-Word Corner Extension</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
+        <p><strong>Name: </strong>Realizable Twenty-Seven-Word Corner Extension</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
+        <div class="latex-equation" data-latex="D_{27}">
+            \[D_{27}\]
         </div>
     </div>
 
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li></ul></p></div>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>On coordinates $(a_1,a_2,b_1,b_2,i,j)$ in low-bit order, take the 26-word four-section class $E_{26}$ and add $w=(1,0,0,0,1,1)$, encoded by 49.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>It is ample and affine-convex realizable in $R^6$, has 27 words and VC dimension three, and $w$ is contained in the unique maximal cube with free coordinates $\{a_1,i,j\}$. Deleting $w$ gives the nonrealizable ample class $E_{26}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-corner-deletion</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_geometric_substitution.py; data/examples/assets/geometric_substitution_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong><ul class='fields-list'><li><a href='invariant_values/realizable_corner_extension_vc_dimension.html'>VC Dimension of the Realizable Corner Extension</a></li><li><a href='invariant_values/realizable_corner_extension_separation_margin.html'>Positive Separation Margin of the Realizable Corner Extension</a></li></ul></p></div>
 
         </div>
     </div>
