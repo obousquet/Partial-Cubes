@@ -6,11 +6,11 @@
   "operation_id": "#operations/common_section_gluing",
   "result_type": "not_closed_under",
   "status": "established",
-  "statement": "Even when two realizable ample pieces are downward closed in their private coordinates and are gated induced subgraphs with a common gated coordinate section, their ample union need not be realizable ample.",
+  "statement": "Even when two realizable ample pieces are downward closed in their private coordinates and are gated induced subgraphs with a common gated coordinate section, their ample union need not be realizable ample. The explicit pieces can each have separator coefficient ratio zero while their union has ratio one.",
   "witness_ids": [
     "#examples/incompatible_realizable_gated_amalgam"
   ],
-  "proof": "The two 25-word pieces have exact rational $1/240$-certificates. On their shared section, two common missing-pattern rows define a cycle ratio. The first piece forces that ratio below one and the second forces it above one. Any positive certificate of the union would therefore yield the impossible strict cycle $\\alpha_2<\\beta_-<\\alpha_1<\\beta_+<\\alpha_2$.",
+  "proof": "The two 25-word pieces have exact rational $1/240$-certificates and explicit strict term-dominance witnesses, so each has coefficient ratio zero. On their shared section, two common missing-pattern rows define a cycle ratio. The first piece forces that ratio below one and the second forces it above one. Any positive certificate of the union would therefore yield the impossible strict cycle $\\alpha_2<\\beta_-<\\alpha_1<\\beta_+<\\alpha_2$. Opposite zero-entropy section circulations sharpen this obstruction to the exact union value $\\tau=1$.",
   "references": "\\cite{BousquetFourSections}",
-  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:incompatible-extensions"
+  "proof_source": "PartialCubes:papers/realizability-margin/section_gluing.tex#thm:incompatible-extensions; PartialCubes:papers/coefficient-topology/entropy_gluing.tex#prop:entropy-incompatible"
 }

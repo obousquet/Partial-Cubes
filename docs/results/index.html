@@ -1812,6 +1812,104 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-102" style="position:relative;">
+
+        <h3><a href="results/entropy_coefficient_ratio_duality.html" class="table-title-link">Entropy Duality for the Separator Coefficient Ratio</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Entropy Duality for the Separator Coefficient Ratio</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty positioned binary class $C$, index each unfavorable and favorable term in every separator comparison by its coefficient and witness entries. For favorable probability vectors $\theta_r$, let $\mathcal D_C(\theta)$ be the maximum of $\sum_r\lambda_r(H(\psi_r)-H(\theta_r))$ over all unit-mass feature balances, with value $-\infty$ when no balance exists. Then $\log\tau(C)=\inf_\theta\mathcal D_C(\theta)$. Thus $C$ is realizable ample exactly when some $\theta$ makes every balance have strictly negative entropy difference, and it is nonrealizable exactly when every $\theta$ admits a balance with nonnegative entropy difference.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Weighted AM--GM replaces each favorable sum by a monomial lower bound that is simultaneously exact at any prescribed logarithmic witness. The log-sum-exp variational formula then expresses the remaining maximum by unfavorable probability distributions and row masses. Minimizing the resulting affine functions over logarithmic coefficient and witness variables enforces equality of the total feature vectors; compact convex separation gives the exact value, including empty balance polytopes and unattained infima. Taking the outer infimum over favorable distributions gives the formula.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BV2004">[BV2004]</a> <a href="bibliography.html#BKVH2007">[BKVH2007]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#thm:entropy-duality</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/favorable_entropy_branching_system.html">Three-Comparison Favorable-Entropy Branching System</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The inner problem is convex in logarithmic variables for fixed favorable distributions. No convexity is asserted for the outer infimum. A balance for only one favorable distribution does not prove nonrealizability. Deterministic favorable choices recover the strict term-dominance criterion for $\tau=0$.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-103" style="position:relative;">
+
+        <h3><a href="results/entropy_balance_composition.html" class="table-title-link">Composition of Entropy Balances Through Shared Coefficients</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Composition of Entropy Balances Through Shared Coefficients</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Under common-section gluing with pairwise disjoint downward-closed private blocks, retain separate witness entries for the pieces and identify only coefficient entries on the common section. For fixed favorable distributions, let $\mathcal H_j(\theta_j;m,\omega)$ maximize the local entropy difference among balances of mass $m$, zero internal imbalance, and section imbalance $\omega$. If the combined system has a nontrivial comparison, then $\log\tau(X)=\inf_{\theta_1,\ldots,\theta_k}\max_{m_j\geq0,\,\sum m_j=1,\,\sum\omega_j=0}\sum_j\mathcal H_j(\theta_j;m_j,\omega_j)$ over feasible local arguments. If all comparisons are trivial, $\tau(X)=0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply entropy duality to the exact combined comparison system supplied by coefficient-ratio gluing. The full feature-balance equations split into zero balance on every internal entry, total row mass one, and cancellation of the section coefficient imbalance. The entropy objective is additive across pieces, so maximizing at fixed masses and section imbalances separates into the local functionals. Compactness gives attained local maxima; concatenating their optimizers proves the converse. Grouping pieces only regroups the same additive objective and linear constraints.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BV2004">[BV2004]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#thm:entropy-composition</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/incompatible_realizable_gated_amalgam.html">Incompatible Realizable Gated Amalgam</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The local functional is positively homogeneous and concave in $(m,\omega)$ on its feasible domain for fixed favorable distributions. Associativity concerns this fixed combined comparison presentation.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-104" style="position:relative;">
+
+        <h3><a href="results/section_entropy_cycle_space.html" class="table-title-link">Section Entropy Imbalances Form the Incidence Cycle Space</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Section Entropy Imbalances Form the Incidence Cycle Space</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G_D$ be the bipartite incidence graph between the minimal missing patterns of the common section $D$ and its coordinates, with one edge for every section coefficient entry. Every feasible local entropy imbalance $\omega$ lies in the real cycle space $Z_D$: its entries sum to zero at every pattern vertex and every coordinate vertex. Moreover $\|\omega\|_1\leq2m$ for local mass $m$, and $\dim Z_D=|E(G_D)|-|V(G_D)|+\operatorname{comp}(G_D)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Within each comparison, unfavorable and selected favorable masses agree, so summing coefficient contributions over one row gives zero. Summing the internal witness-balance equations over all concepts leaves zero total imbalance at each shared coordinate. The favorable and unfavorable section contributions each have total mass at most $m$, yielding the norm bound. Changing signs on one bipartition identifies these conservation equations with the oriented incidence equations of $G_D$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#SS1978">[SS1978]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#prop:entropy-cycle</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/incompatible_realizable_gated_amalgam.html">Incompatible Realizable Gated Amalgam</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>A spanning forest supplies the usual fundamental-cycle basis. The theorem adds that both concept-class incidence relations force the entropy interface into this cycle space.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-105" style="position:relative;">
+
+        <h3><a href="results/forest_section_coefficient_ratio_maximum.html" class="table-title-link">Forest-Section Coefficient-Ratio Maximum Law</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forest-Section Coefficient-Ratio Maximum Law</p>
+<p><strong>Classes:</strong><ul class='fields-list'></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Under common-section gluing with pairwise disjoint downward-closed private blocks, if the section incidence graph $G_D$ is a forest, then $\tau(X)=\max_j\tau(C_j)$, including when some pieces are nonrealizable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>On a forest, any two positive section coefficient arrays differ by positive row and coordinate rescalings: solve their logarithmic edge differences successively from a root in every tree. Coordinate rescaling can be canceled in witness magnitudes and row rescaling does not change ratios. Hence near-optimal piece arrays can be made identical on the section and glued, proving the upper bound; restriction to each piece proves the lower bound. Equivalently, the entropy interface cycle space is zero.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#SS1978">[SS1978]</a> <a href="bibliography.html#Margin">[Margin]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#cor:forest-ratio</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This exact coefficient-ratio identity is stronger than the positive-margin bounds recorded in the forest-section gluing theorem.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-106" style="position:relative;">
+
+        <h3><a href="results/incompatible_zero_ratio_gluing.html" class="table-title-link">Zero Coefficient Ratio Is Not Preserved by Cyclic Section Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Zero Coefficient Ratio Is Not Preserved by Cyclic Section Gluing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/strict_dominance.html">Strict-Dominance Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/coefficient_ratio.html">Separator Coefficient Ratio</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There are two 25-concept ample classes $A$ and $B$, each downward closed in one private coordinate and gated in their 33-concept ample common-section union $X$, such that $\tau(A)=\tau(B)=0$ but $\tau(X)=1$. Each piece supports a zero-entropy local distribution with nonzero section imbalance, and the two imbalances are opposite.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Explicit term-dominance witnesses with private-row parameters $(3,1,4,2)$ and $(1,3,4,2)$ prove the two zero values. Four deterministic comparisons in each piece give opposite quarter-unit circulations around a section four-cycle; after assigning half the global mass to each piece they form a zero-entropy balance for every outer favorable distribution, so entropy composition gives $\tau(X)\geq1$. All-one coefficients with control magnitudes one, present outside magnitudes $\varepsilon$, and absent magnitudes $2+5\varepsilon$ give ratio at most $1+5\varepsilon$, proving $\tau(X)\leq1$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Margin">[Margin]</a> <a href="bibliography.html#NonrealizableBouquet">[NonrealizableBouquet]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/entropy_gluing.tex?#prop:entropy-incompatible</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/incompatible_realizable_gated_amalgam.html">Incompatible Realizable Gated Amalgam</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The scalar values of the pieces do not determine the value of their union; the shared cycle imbalance is essential.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

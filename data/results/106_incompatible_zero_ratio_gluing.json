@@ -1,0 +1,24 @@
+{
+  "id": 106,
+  "short_name": "incompatible_zero_ratio_gluing",
+  "name": "Zero Coefficient Ratio Is Not Preserved by Cyclic Section Gluing",
+  "class_ids": [
+    "#classes/strict_dominance"
+  ],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "construction",
+  "statement": "There are two 25-concept ample classes $A$ and $B$, each downward closed in one private coordinate and gated in their 33-concept ample common-section union $X$, such that $\\tau(A)=\\tau(B)=0$ but $\\tau(X)=1$. Each piece supports a zero-entropy local distribution with nonzero section imbalance, and the two imbalances are opposite.",
+  "status": "established",
+  "proof": "Explicit term-dominance witnesses with private-row parameters $(3,1,4,2)$ and $(1,3,4,2)$ prove the two zero values. Four deterministic comparisons in each piece give opposite quarter-unit circulations around a section four-cycle; after assigning half the global mass to each piece they form a zero-entropy balance for every outer favorable distribution, so entropy composition gives $\\tau(X)\\geq1$. All-one coefficients with control magnitudes one, present outside magnitudes $\\varepsilon$, and absent magnitudes $2+5\\varepsilon$ give ratio at most $1+5\\varepsilon$, proving $\\tau(X)\\leq1$.",
+  "references": "\\cite{Margin,NonrealizableBouquet}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#prop:entropy-incompatible",
+  "witness_ids": [
+    "#examples/incompatible_realizable_gated_amalgam"
+  ],
+  "comments": "The scalar values of the pieces do not determine the value of their union; the shared cycle imbalance is essential."
+}

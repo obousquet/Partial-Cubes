@@ -1,0 +1,22 @@
+{
+  "id": 103,
+  "short_name": "entropy_balance_composition",
+  "name": "Composition of Entropy Balances Through Shared Coefficients",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Under common-section gluing with pairwise disjoint downward-closed private blocks, retain separate witness entries for the pieces and identify only coefficient entries on the common section. For fixed favorable distributions, let $\\mathcal H_j(\\theta_j;m,\\omega)$ maximize the local entropy difference among balances of mass $m$, zero internal imbalance, and section imbalance $\\omega$. If the combined system has a nontrivial comparison, then $\\log\\tau(X)=\\inf_{\\theta_1,\\ldots,\\theta_k}\\max_{m_j\\geq0,\\,\\sum m_j=1,\\,\\sum\\omega_j=0}\\sum_j\\mathcal H_j(\\theta_j;m_j,\\omega_j)$ over feasible local arguments. If all comparisons are trivial, $\\tau(X)=0$.",
+  "status": "established",
+  "proof": "Apply entropy duality to the exact combined comparison system supplied by coefficient-ratio gluing. The full feature-balance equations split into zero balance on every internal entry, total row mass one, and cancellation of the section coefficient imbalance. The entropy objective is additive across pieces, so maximizing at fixed masses and section imbalances separates into the local functionals. Compactness gives attained local maxima; concatenating their optimizers proves the converse. Grouping pieces only regroups the same additive objective and linear constraints.",
+  "references": "\\cite{BV2004}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#thm:entropy-composition",
+  "witness_ids": [
+    "#examples/incompatible_realizable_gated_amalgam"
+  ],
+  "comments": "The local functional is positively homogeneous and concave in $(m,\\omega)$ on its feasible domain for fixed favorable distributions. Associativity concerns this fixed combined comparison presentation."
+}

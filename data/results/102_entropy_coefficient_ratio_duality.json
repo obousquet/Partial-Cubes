@@ -1,0 +1,19 @@
+{
+  "id": 102,
+  "short_name": "entropy_coefficient_ratio_duality",
+  "name": "Entropy Duality for the Separator Coefficient Ratio",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every nonempty positioned binary class $C$, index each unfavorable and favorable term in every separator comparison by its coefficient and witness entries. For favorable probability vectors $\\theta_r$, let $\\mathcal D_C(\\theta)$ be the maximum of $\\sum_r\\lambda_r(H(\\psi_r)-H(\\theta_r))$ over all unit-mass feature balances, with value $-\\infty$ when no balance exists. Then $\\log\\tau(C)=\\inf_\\theta\\mathcal D_C(\\theta)$. Thus $C$ is realizable ample exactly when some $\\theta$ makes every balance have strictly negative entropy difference, and it is nonrealizable exactly when every $\\theta$ admits a balance with nonnegative entropy difference.",
+  "status": "established",
+  "proof": "Weighted AM--GM replaces each favorable sum by a monomial lower bound that is simultaneously exact at any prescribed logarithmic witness. The log-sum-exp variational formula then expresses the remaining maximum by unfavorable probability distributions and row masses. Minimizing the resulting affine functions over logarithmic coefficient and witness variables enforces equality of the total feature vectors; compact convex separation gives the exact value, including empty balance polytopes and unattained infima. Taking the outer infimum over favorable distributions gives the formula.",
+  "references": "\\cite{BV2004,BKVH2007}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#thm:entropy-duality",
+  "witness_ids": [
+    "#examples/favorable_entropy_branching_system"
+  ],
+  "comments": "The inner problem is convex in logarithmic variables for fixed favorable distributions. No convexity is asserted for the outer infimum. A balance for only one favorable distribution does not prove nonrealizability. Deterministic favorable choices recover the strict term-dominance criterion for $\\tau=0$."
+}

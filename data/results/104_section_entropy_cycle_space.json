@@ -1,0 +1,22 @@
+{
+  "id": 104,
+  "short_name": "section_entropy_cycle_space",
+  "name": "Section Entropy Imbalances Form the Incidence Cycle Space",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $G_D$ be the bipartite incidence graph between the minimal missing patterns of the common section $D$ and its coordinates, with one edge for every section coefficient entry. Every feasible local entropy imbalance $\\omega$ lies in the real cycle space $Z_D$: its entries sum to zero at every pattern vertex and every coordinate vertex. Moreover $\\|\\omega\\|_1\\leq2m$ for local mass $m$, and $\\dim Z_D=|E(G_D)|-|V(G_D)|+\\operatorname{comp}(G_D)$.",
+  "status": "established",
+  "proof": "Within each comparison, unfavorable and selected favorable masses agree, so summing coefficient contributions over one row gives zero. Summing the internal witness-balance equations over all concepts leaves zero total imbalance at each shared coordinate. The favorable and unfavorable section contributions each have total mass at most $m$, yielding the norm bound. Changing signs on one bipartition identifies these conservation equations with the oriented incidence equations of $G_D$.",
+  "references": "\\cite{SS1978}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#prop:entropy-cycle",
+  "witness_ids": [
+    "#examples/incompatible_realizable_gated_amalgam"
+  ],
+  "comments": "A spanning forest supplies the usual fundamental-cycle basis. The theorem adds that both concept-class incidence relations force the entropy interface into this cycle space."
+}

@@ -1,0 +1,11 @@
+{
+  "id": 38,
+  "short_name": "favorable_entropy_branching_system",
+  "name": "Three-Comparison Favorable-Entropy Branching System",
+  "symbol": "\\{c/(a+b),a/c,b/c\\}",
+  "object_type": "construction",
+  "definition": "The abstract positive comparison system consisting of the three ratios $c/(a+b)$, $a/c$, and $b/c$ for $a,b,c>0$.",
+  "properties": "Its optimized maximum is $1/\\sqrt2$, attained at $a=b=1$ and $c=\\sqrt2$. In the entropy dual, a favorable split $(p,1-p)$ on the first comparison forces row masses $(1/2,p/2,(1-p)/2)$ and gives value $-H(p,1-p)/2$, minimized at $p=1/2$ to $-\\log2/2$. Either deterministic favorable choice instead gives value zero.",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#ex:entropy-branching",
+  "verification": "scripts/verify_entropy_gluing.py; data/examples/assets/entropy_gluing_database_verification.json; data/examples/assets/entropy_balance_source.json"
+}

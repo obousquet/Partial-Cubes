@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "batch_id": "031_entropy_gluing",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Normalize the entropy dual formula for the separator coefficient ratio, its common-section composition law, the section cycle-space constraint, the exact forest maximum law, and the cyclic gluing with zero-valued pieces but union value one.",
+  "source_refs": [
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#thm:entropy-duality",
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#ex:entropy-branching",
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#thm:entropy-composition",
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#prop:entropy-cycle",
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#cor:forest-ratio",
+    "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#prop:entropy-incompatible"
+  ],
+  "source_packets": [
+    {
+      "id": "entropy-gluing-theory",
+      "repository": "PartialCubes",
+      "path": "papers/coefficient-topology/entropy_gluing.tex",
+      "sha256": "f750fa485f4077e6cbf7141793e856952d0da6db1a37843547df63956819f042"
+    },
+    {
+      "id": "entropy-balance-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/entropy_balance_verification.json",
+      "sha256": "3b42a3dc917d51f343ba596fda7ef48cca44f5b1f461c597a50f8d9af82a6f38"
+    },
+    {
+      "id": "entropy-gluing-source-report",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/entropy_gluing_verification.json",
+      "sha256": "b3d6663b5119ca62f2324a75311fda3d39130fda9bad8fa17c8b01e653a4b1d0"
+    },
+    {
+      "id": "entropy-balance-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/verify_entropy_balance.py",
+      "sha256": "67e68a8c2039917854a571a9c5635dda32bddefd98b86cfb237d8f2ec0bf48f7"
+    },
+    {
+      "id": "entropy-gluing-source-verifier",
+      "repository": "PartialCubes",
+      "path": "papers/structural-invariants/verify_entropy_gluing.py",
+      "sha256": "b372106e831c036c7445967d0eed945381e88abccdd4f1d2e79f281067d689dc"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns normalized theorem statements, concise proofs, the branching system, exact invariant value, bibliography entries, copied finite reports, and independent exact replay. The LaTeX repository retains the complete convex-separation proof, entropy-perspective development, derivations, full construction table, discussion, and manuscript layout.",
+    "recoverability": "Both source verification reports are copied byte-for-byte; theory and source-verifier hashes are retained here; the frozen source snapshot remains recoverable.",
+    "reconciliation": "The earlier margin records remain distinct: they prove positive piece margins, nonrealizability of the union, and quantitative forest bounds. This batch adds the exact coefficient-ratio identities and entropy interface responsible for the cyclic failure.",
+    "mutation": "No source file in PartialCubes or any sibling LaTeX repository was modified by this batch."
+  },
+  "verification_packets": [
+    {
+      "id": "entropy-balance-source-report",
+      "path": "data/examples/assets/entropy_balance_source.json",
+      "sha256": "3b42a3dc917d51f343ba596fda7ef48cca44f5b1f461c597a50f8d9af82a6f38",
+      "assertions": "Retains 156 minor maps, 45 threshold arrays, four exact opposite-pair balance rows, five branching calibrations, dependency hashes, and scope limitations byte-for-byte."
+    },
+    {
+      "id": "entropy-gluing-source-report",
+      "path": "data/examples/assets/entropy_gluing_source.json",
+      "sha256": "b3d6663b5119ca62f2324a75311fda3d39130fda9bad8fa17c8b01e653a4b1d0",
+      "assertions": "Retains eight row partitions, all 96 threshold cases, opposite section boundaries, cycle rank seven, 650 dominance comparisons, and three union upper arrays byte-for-byte."
+    },
+    {
+      "id": "database-entropy-gluing-verifier",
+      "path": "scripts/verify_entropy_gluing.py",
+      "sha256": "4dd7408d81607b7e9e770449888b16fb90bf484748302dee21503ed8091b9069",
+      "assertions": "Independently replays exact minor ratios, feature cancellations, branching balances, all gluing threshold decisions and reconstructed witnesses, term dominance, cycle conservation, and union upper arrays."
+    },
+    {
+      "id": "entropy-gluing-database-replay",
+      "path": "data/examples/assets/entropy_gluing_database_verification.json",
+      "sha256": "7db1cd8a38682be92583c3a1bf90d69097adc216eb86e5a882f79b8c4f786e64",
+      "assertions": "Passed 156 minor maps on 224 concepts, 96 threshold cases with 422 reconstructed witnesses, 650 dominance comparisons, 99 union upper witnesses, and the rank-seven opposite-boundary audit."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/examples/022_incompatible_realizable_gated_amalgam.json",
+      "sha256": "ba2d3d9b9283e0ecaeb03ca9d0ab349a059aca33adb0075178c322ee61b632b4"
+    },
+    {
+      "path": "data/examples/038_favorable_entropy_branching_system.json",
+      "sha256": "ab6797543183ffce17b1876c7d1281ab92b3c28593c030989b5081f4684261c0"
+    },
+    {
+      "path": "data/examples/assets/entropy_balance_source.json",
+      "sha256": "3b42a3dc917d51f343ba596fda7ef48cca44f5b1f461c597a50f8d9af82a6f38"
+    },
+    {
+      "path": "data/examples/assets/entropy_gluing_database_verification.json",
+      "sha256": "7db1cd8a38682be92583c3a1bf90d69097adc216eb86e5a882f79b8c4f786e64"
+    },
+    {
+      "path": "data/examples/assets/entropy_gluing_source.json",
+      "sha256": "b3d6663b5119ca62f2324a75311fda3d39130fda9bad8fa17c8b01e653a4b1d0"
+    },
+    {
+      "path": "data/invariant_values/092_incompatible_gated_amalgam_coefficient_ratio.json",
+      "sha256": "e13115b49b9b2c671469afbf8a4ebeb50f832acba18920e0fbbdf72fa025aeee"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "5e288094fcf0e60652ed9044d8ca1b0429dc59b2ce9e215109bf67656dd5fbc3"
+    },
+    {
+      "path": "data/operation_results/073_realizable_ample_not_common_section_gluing_closed.json",
+      "sha256": "ec985e55262e46dac05f8f514df568f252b8b5334a87e821cf664aca6d927835"
+    },
+    {
+      "path": "data/results/102_entropy_coefficient_ratio_duality.json",
+      "sha256": "974268b5e6cf8ae8699120dec8e5b618d4d9d77f3f8ee75d74e93da75874b229"
+    },
+    {
+      "path": "data/results/103_entropy_balance_composition.json",
+      "sha256": "40932d022955d89ad8ba8f0552357307ecd7178f1fc5fd0c0863df9a4869c929"
+    },
+    {
+      "path": "data/results/104_section_entropy_cycle_space.json",
+      "sha256": "1c09e671c1fda0f2845e9acb90cb47201f46fa193e2c755ca65383decf7aa3f2"
+    },
+    {
+      "path": "data/results/105_forest_section_coefficient_ratio_maximum.json",
+      "sha256": "29306f319e85a9600ab1aea624fb765f7c796d212134acac835d2b938eabe3bb"
+    },
+    {
+      "path": "data/results/106_incompatible_zero_ratio_gluing.json",
+      "sha256": "345d606df420453ba502aec9058049f65b6a60b8fd22464230409ac47641f488"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "833bc0fd1829ef4ab717ed7026fc0f75f905a67a1192b73f0f215ec0cc18c5bf"
+    },
+    {
+      "path": "scripts/verify_entropy_gluing.py",
+      "sha256": "4dd7408d81607b7e9e770449888b16fb90bf484748302dee21503ed8091b9069"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 642 records.",
+    "exact_replay": "Both retained source hashes, all exact bounded entropy calibrations, common-section threshold reconstructions, dominance comparisons, opposite circulation, and union upper arrays passed independently.",
+    "website": "Normalized 658 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "47 Hasse covers represent 75 stored inclusions; all 22 minor-atlas Ample-family nodes and 68 closure-map arrows remain covered."
+  },
+  "deferred": [
+    "Maximum-parent theorems for agreeing large patterns and path/tree coordinate fiber products from CompressionSchemes.",
+    "Further structural-invariant and coefficient-topology source files not yet normalized into database records."
+  ]
+}

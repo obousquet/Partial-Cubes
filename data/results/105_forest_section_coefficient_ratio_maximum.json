@@ -1,0 +1,19 @@
+{
+  "id": 105,
+  "short_name": "forest_section_coefficient_ratio_maximum",
+  "name": "Forest-Section Coefficient-Ratio Maximum Law",
+  "class_ids": [],
+  "invariant_ids": [
+    "#invariants/coefficient_ratio"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Under common-section gluing with pairwise disjoint downward-closed private blocks, if the section incidence graph $G_D$ is a forest, then $\\tau(X)=\\max_j\\tau(C_j)$, including when some pieces are nonrealizable.",
+  "status": "established",
+  "proof": "On a forest, any two positive section coefficient arrays differ by positive row and coordinate rescalings: solve their logarithmic edge differences successively from a root in every tree. Coordinate rescaling can be canceled in witness magnitudes and row rescaling does not change ratios. Hence near-optimal piece arrays can be made identical on the section and glued, proving the upper bound; restriction to each piece proves the lower bound. Equivalently, the entropy interface cycle space is zero.",
+  "references": "\\cite{SS1978,Margin}",
+  "proof_source": "PartialCubes:papers/coefficient-topology/entropy_gluing.tex#cor:forest-ratio",
+  "comments": "This exact coefficient-ratio identity is stronger than the positive-margin bounds recorded in the forest-section gluing theorem."
+}
