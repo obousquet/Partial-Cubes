@@ -1,0 +1,17 @@
+{
+  "id": 229,
+  "short_name": "periphery_free_incomparable_cover_recursive",
+  "name": "Periphery-Free and Cover-Recursive Peripheral Classes Are Disjoint",
+  "subject_id": "#classes/periphery_free_partial_cubes",
+  "object_id": "#classes/cover_recursive_peripheral",
+  "relation_type": "incomparable",
+  "status": "established",
+  "scope": "Finite partial cubes; the periphery-free side contains only nontrivial objects.",
+  "statement": "No nontrivial periphery-free partial cube is cover-recursive peripheral; consequently neither class contains the other.",
+  "witness_ids": [
+    "#examples/six_cycle",
+    "#examples/four_cycle"
+  ],
+  "proof": "Every nontrivial cover-recursive peripheral class has a peripheral coordinate at the root of its recursive construction, so the two classes are disjoint. The six-cycle is periphery-free, while the square is cover-recursive peripheral and not periphery-free.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#def:sequential-recursive; PartialCubes:papers/cover-recursive/main.tex#cor:forbidden-form"
+}

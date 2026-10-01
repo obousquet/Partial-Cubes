@@ -1,0 +1,15 @@
+{
+  "id": 173,
+  "short_name": "periphery_free_not_projection_closed",
+  "name": "Periphery-Free Partial Cubes Are Not Projection-Closed",
+  "class_id": "#classes/periphery_free_partial_cubes",
+  "operation_id": "#operations/projection",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "Deleting one coordinate from a periphery-free partial cube may produce a partial cube with a peripheral coordinate.",
+  "witness_ids": [
+    "#examples/six_cycle"
+  ],
+  "proof": "The six-cycle $C_6=Q_3^{--}$ is periphery-free. A coordinate projection is $Q_2$, and a nonempty one-coordinate section is a path on three vertices; both outputs have peripheral coordinates. These are respectively a contraction and a restriction pc-minor.",
+  "proof_source": "PartialCubes:papers/cover-recursive/main.tex#def:peripheral-coordinate; PartialCubes:papers/cover-recursive/main.tex#cor:forbidden-form"
+}
