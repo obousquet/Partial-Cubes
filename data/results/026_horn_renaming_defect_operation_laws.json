@@ -1,0 +1,22 @@
+{
+  "id": 26,
+  "short_name": "horn_renaming_defect_operation_laws",
+  "name": "Horn-Renaming Defect Operation Laws",
+  "class_ids": [
+    "#classes/conditional_antimatroids"
+  ],
+  "invariant_ids": [
+    "#invariants/horn_renaming_defect"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Cube symmetries and constant-coordinate extensions preserve $H$. Every nonempty pc-minor $D$ of $C$ satisfies $H(D)\\leq H(C)$, and binary classes on disjoint coordinate sets satisfy $H(A\\times B)=H(A)+H(B)$.",
+  "status": "established",
+  "proof": "Projection retains exactly the minimal missing patterns supported on surviving coordinates. A minimal missing pattern of a conditioning injects into an original pattern with at least its pair cost. Product minimal missing patterns lie wholly in one factor, so their costs and the minimizing reflections separate.",
+  "proof_source": "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md#2-general-operation-laws"
+}

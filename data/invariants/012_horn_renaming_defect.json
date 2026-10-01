@@ -1,0 +1,14 @@
+{
+  "id": 12,
+  "short_name": "horn_renaming_defect",
+  "name": "Horn-Renaming Defect",
+  "symbol": "H",
+  "definition": "For a nonempty binary class $C\\subseteq\\{0,1\\}^E$, let $\\mathcal M(C)$ be its complete family of minimal missing partial patterns. For a coordinate reflection $v\\in\\{0,1\\}^E$ and $p\\in\\mathcal M(C)$, put $t_v(p)=|\\{i\\in\\operatorname{dom}(p):p_i\\neq v_i\\}|$. Then $H(C)=\\min_v\\sum_{p\\in\\mathcal M(C)}\\binom{t_v(p)}2$.",
+  "status": "established",
+  "codomain": "Nonnegative integers",
+  "normalization": "Repeated canonical 2-CNF clauses are counted with multiplicity. The empty missing-pattern family has value zero, including the zero-coordinate cube.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The zero test is classical renamable Horn recognition. Positive values depend on the complete minimal-missing-pattern presentation and measure its minimum number of violated pair clauses.",
+  "proof_source": "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md#1-definition-and-classical-zero-test"
+}

@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "batch_id": "018_conditional_antimatroids_and_horn_defect",
+  "phase": 2,
+  "status": "complete",
+  "purpose": "Promote conditional antimatroids as a canonical class, distinguish them from convex-geometry ideals, and migrate the Horn-renaming defect, closure laws, peeling theorem, exact examples, and nonrealizability boundary.",
+  "snapshot_id": "2026-09-30-b001",
+  "source_manifest_sha256": "c02acc26e82380ad160520ef3616fcdec13e798b2959adc591d1c449e3382dd4",
+  "sources": [
+    "PartialCubes:papers/survey/main.tex#sec:dismantlable-ample",
+    "PartialCubes:papers/survey/main.tex#prop:dismantlable-ample-position",
+    "PartialCubes:papers/survey/figures/class_inclusion_atlas.tex#condanti",
+    "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md",
+    "PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex#thm:main",
+    "ResearchWork:literature/math/chalopinchepoiknauer2025geometry/source.txt#section-2.5",
+    "ResearchWork:literature/math/chalopinchepoiknauer2025geometry/source.txt#Proposition-4",
+    "ResearchWork:literature/math/chalopinchepoimoranwarmuth2022compression/source.txt#Proposition-4.9"
+  ],
+  "source_packets": [
+    {
+      "id": "survey",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "survey-class-atlas",
+      "path": "papers/survey/figures/class_inclusion_atlas.tex",
+      "sha256": "aa4710dac0d32dfef3e1489fed12f1e054f3a53b6ac065da5a819ebeb061270d"
+    },
+    {
+      "id": "horn-renaming-note",
+      "path": "papers/structural-invariants/HORN_RENAMING_DEFECT.md",
+      "sha256": "dd82b90940261f21bca2567471da90ddcab2fb7d4b56fcf8204788aa5d17fb91"
+    },
+    {
+      "id": "nonrealizable-bouquet-proof",
+      "path": "papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex",
+      "sha256": "8bc3f30e72c58ba22159a5f24a7debd74f2f80185369720c90bc77d760f87031"
+    },
+    {
+      "id": "cck-primary-source",
+      "repository": "ResearchWork",
+      "path": "literature/math/chalopinchepoiknauer2025geometry/source.txt",
+      "sha256": "9235425ee456fbe8d365181198206346efc1d3f7dbb68c373f36a67d707ac75c"
+    },
+    {
+      "id": "ccmw-primary-source",
+      "repository": "ResearchWork",
+      "path": "literature/math/chalopinchepoimoranwarmuth2022compression/source.txt",
+      "sha256": "fa8d619a221fa7c60bc7d04785e67bba301817bd01b4618f6838977edda35997"
+    }
+  ],
+  "verification_packets": [
+    {
+      "id": "database-horn-renaming-verifier",
+      "path": "scripts/verify_horn_renaming.py",
+      "sha256": "1af590066de434ce0ab2a9cdaed1e17edc5547e669999db71c3dd03eaa1814c6",
+      "assertions": "274 nonempty classes through Q3, 2,107 orientations, 2,290 elementary minors, 225 Q2-by-Q2 products, 1,024 rooted wedges, and the exact thirteen-concept defect-one calibration."
+    },
+    {
+      "id": "horn-renaming-report",
+      "path": "data/examples/assets/horn_renaming_verification.json",
+      "sha256": "76e608c4fbc94f3c1a73b8d928321fc59ce62c85a6badc99238151b2dec485c2",
+      "assertions": "All bounded exact diagnostics pass; agreeing-blocks class is ample with defect one and a signed 2-SAT contradiction certificate."
+    },
+    {
+      "id": "nonrealizable-bouquet-report",
+      "path": "data/examples/assets/nonrealizable_bouquet.json",
+      "sha256": "7f11af0393a01dfba67d18e7108d4fd0e91e4e80291971c86f5f0194a8998ae8",
+      "assertions": "Exact 26-word bouquet, intersection and local-extension checks, shattered counts (1,6,15,4), four missing-pattern witnesses, and a 163-word maximum parent."
+    }
+  ],
+  "records": [
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "14369ae1cc8b47b6b002999ba9127529c1b7e7097de3f62794d100ce96d57cce"
+    },
+    {
+      "path": "migration/class_crosswalk.json",
+      "sha256": "47b6c78de03695d4761f5016e21ea32b7a1cbb58e5a89e4a9f97c221fa89b4d6"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "34847efadf00757b9cd5f62c2db747bd0fdb22a93eac7e56c3fb8b2a37a0318d"
+    },
+    {
+      "path": "data/classes/021_conditional_antimatroids.json",
+      "sha256": "28143e1396c4b7be9b2dd68eb9d670d8871db18c6ec8fc4ba83dc100fcc514b2"
+    },
+    {
+      "path": "data/invariants/012_horn_renaming_defect.json",
+      "sha256": "058a8a7343d04719f8a45eabebf56417613cba03123d408dc7f2bc2b48b35dc0"
+    },
+    {
+      "path": "data/characterizations/054_conditional_antimatroid_extremal_generation.json",
+      "sha256": "c01d3c59fd0c928751128ec265119fe0a075c9340365879d7556b7571869335e"
+    },
+    {
+      "path": "data/characterizations/055_bouquet_of_convex_geometries.json",
+      "sha256": "cc53f22c0aff2899b34fe69d5feb9acf140cf3edc75e1716c4a921d348c96f45"
+    },
+    {
+      "path": "data/characterizations/056_reflectively_union_closed_ample.json",
+      "sha256": "b4131606af0156d47782f3952d61bfa75c47579ec275449289dd7c8fbe3c6e97"
+    },
+    {
+      "path": "data/characterizations/057_zero_horn_renaming_defect.json",
+      "sha256": "1a6678d5c9644043f3b4a3942a8d02420388661845a402b8e7b6606af345dedd"
+    },
+    {
+      "path": "data/characterization_equivalences/018_conditional_antimatroid_equivalence.json",
+      "sha256": "5b10ab33a7704b7c1b22c60b3df08284f944133997bd98de313c44b5a2222104"
+    },
+    {
+      "path": "data/relations/043_convex_geometry_ideals_subset_conditional_antimatroids.json",
+      "sha256": "7e4a03ce2315b3e8e5bdb3535ec96cad5ad05972578fd29e480c0277fdc96bfa"
+    },
+    {
+      "path": "data/relations/044_median_strict_subset_conditional_antimatroids.json",
+      "sha256": "70a1b85a7b5668d7a425afcd5d0e5ced9af22cc2e43c8d98653555576bfaa528"
+    },
+    {
+      "path": "data/relations/045_learning_spaces_strict_subset_conditional_antimatroids.json",
+      "sha256": "b04c6a4746cf41ce05402a0e4dd194030c48dd5b8e6b85f4e08888cf894bd97f"
+    },
+    {
+      "path": "data/relations/046_conditional_antimatroids_strict_subset_dismantlable_ample.json",
+      "sha256": "4adf83364d8721c19521b3626197c4859395b677ac4c89ea2d3cbb83045397ea"
+    },
+    {
+      "path": "data/operation_results/058_conditional_antimatroids_projection_closed.json",
+      "sha256": "e8d421bb212397769cd726e93daa9f18276fe18611a7a892e6c13b47d48f6a4a"
+    },
+    {
+      "path": "data/operation_results/059_conditional_antimatroids_conditioning_closed.json",
+      "sha256": "73ac0c7e358afbb02fbb14ea784436e04fb5ce571ad6fbca3f6a081ea384891e"
+    },
+    {
+      "path": "data/operation_results/060_conditional_antimatroids_pc_minor_closed.json",
+      "sha256": "1c05a084e0d9d08b925f75ae06663dd2988669ee3f11b0fc2601b96eb281b3a4"
+    },
+    {
+      "path": "data/operation_results/061_conditional_antimatroids_cartesian_product_closed.json",
+      "sha256": "1300a7fbd5c59a9348e4426538efc1d56ed31dea749af7cf59e44ce803cba0bf"
+    },
+    {
+      "path": "data/examples/015_cck_nonideal_bouquet.json",
+      "sha256": "516d5f298fa168e879fae49fdb2f7474dee56d140bcbe1d3fddbf4f148914f51"
+    },
+    {
+      "path": "data/examples/016_agreeing_blocks_ample_class.json",
+      "sha256": "fd6c3f3577cc9363c3ec9c88de65d7656403f21a1a843f98062fa500f487b138"
+    },
+    {
+      "path": "data/examples/017_nonrealizable_bouquet.json",
+      "sha256": "36361281db85a54614cd6355f5dc4b5f2c304a02a48c24adeda7f18d3d6e62a5"
+    },
+    {
+      "path": "data/examples/assets/horn_renaming_verification.json",
+      "sha256": "76e608c4fbc94f3c1a73b8d928321fc59ce62c85a6badc99238151b2dec485c2"
+    },
+    {
+      "path": "data/examples/assets/nonrealizable_bouquet.json",
+      "sha256": "7f11af0393a01dfba67d18e7108d4fd0e91e4e80291971c86f5f0194a8998ae8"
+    },
+    {
+      "path": "data/invariant_values/035_horn_renaming_zero_on_conditional_antimatroids.json",
+      "sha256": "c38c0e91160dfea4d5dc393fdcb41f8e7747f1d5e93c8ada7e9ad54d95f06526"
+    },
+    {
+      "path": "data/invariant_values/036_agreeing_blocks_horn_renaming_defect.json",
+      "sha256": "cdff145785b7295e453563446d8f2d5d4b6235c7cee9c77bc763751b25c42c4c"
+    },
+    {
+      "path": "data/invariant_values/037_nonrealizable_bouquet_horn_renaming_defect.json",
+      "sha256": "30027b49ecde6bb6e9875b9a0c25469bc2165d4a4569278b1156d5490e099fd5"
+    },
+    {
+      "path": "data/results/026_horn_renaming_defect_operation_laws.json",
+      "sha256": "f6349c117f68557a7faaa073ac26e0a6fe93bbea283d1c3129e60426b9b7c630"
+    },
+    {
+      "path": "data/results/027_horn_renaming_defect_vertex_gluing.json",
+      "sha256": "4c69e13f78099a8ba0f0c85bacb20668ec9fecbe169f7de435bac051980e095b"
+    },
+    {
+      "path": "data/results/028_conditional_antimatroid_bfs_peeling.json",
+      "sha256": "81b991abc6aa56b159c2967651b6717196495f74190a94d2262fc8d5d9d0a377"
+    },
+    {
+      "path": "data/results/029_nonrealizable_conditional_antimatroid.json",
+      "sha256": "b1fa892ded94163659eb22a966b0f4db1cbb424c6adc9176408645151ade7040"
+    },
+    {
+      "path": "scripts/verify_horn_renaming.py",
+      "sha256": "1af590066de434ce0ab2a9cdaed1e17edc5547e669999db71c3dd03eaa1814c6"
+    }
+  ],
+  "claim_decisions": [
+    {
+      "claim": "Conditional antimatroids and convex-geometry ideals are the same class.",
+      "decision": "Rejected. CCK identifies conditional antimatroids with bouquets of convex geometries and proves every ideal is a bouquet, while Proposition 4 gives an oriented bouquet that is not an ideal."
+    },
+    {
+      "claim": "CCK Proposition 4 proves strict containment for the signed-coordinate graph classes.",
+      "decision": "Not asserted. The database records the graph-class inclusion and preserves the stronger non-ideal statement on the displayed oriented example; arbitrary reflections require separate evidence."
+    },
+    {
+      "claim": "Every conditional antimatroid is affine-convex realizable.",
+      "decision": "Refuted by the exact twenty-six-set bouquet and its strict ratio-cycle proof."
+    }
+  ],
+  "direct_source_normalizations": [
+    "#classes/conditional_antimatroids",
+    "#invariants/horn_renaming_defect",
+    "#characterizations/conditional_antimatroid_extremal_generation",
+    "#characterizations/bouquet_of_convex_geometries",
+    "#characterizations/reflectively_union_closed_ample",
+    "#characterizations/zero_horn_renaming_defect",
+    "#characterization_equivalences/conditional_antimatroid_equivalence",
+    "#results/horn_renaming_defect_operation_laws",
+    "#results/horn_renaming_defect_vertex_gluing",
+    "#results/conditional_antimatroid_bfs_peeling",
+    "#results/nonrealizable_conditional_antimatroid"
+  ],
+  "renderer_dependency": {
+    "repository": "math_database",
+    "commit": "b48b206",
+    "purpose": "Reverse-reference arrays, Hasse transitive reduction, closure node styling, and generated row/detail pages."
+  },
+  "ownership": {
+    "database": [
+      "canonical conditional-antimatroid identity, terminology, and four equivalent membership criteria",
+      "Horn-renaming defect definition, zero characterization, pc-minor monotonicity, product additivity, and exact rooted-gluing formula",
+      "p/c/pc closure flags plus projection, conditioning, pc-minor, and factorwise product theorems",
+      "safe hierarchy placement and strict median, learning-space, and dismantlable-ample comparisons with witnesses",
+      "breadth-first corner-peeling algorithm",
+      "the exact eleven-set non-ideal bouquet, thirteen-set defect-one calibration, and twenty-six-set nonrealizable bouquet",
+      "database-owned finite verification code and replayable certificates"
+    ],
+    "latex": [
+      "full historical exposition, published proofs, and terminology discussion",
+      "the full affine-separation and strict ratio-cycle argument",
+      "research narrative, priority discussion, figures, and open questions",
+      "broader experiments and maximum-parent construction history"
+    ],
+    "latex_files_modified": 0
+  },
+  "coverage": {
+    "path": "migration/coverage.json",
+    "sha256": "34847efadf00757b9cd5f62c2db747bd0fdb22a93eac7e56c3fb8b2a37a0318d",
+    "database_records_after_batch": 321,
+    "promoted_classes": 16,
+    "reserved_classes_remaining": 72
+  },
+  "graph_delivery": {
+    "hasse_covers_after_batch": 23,
+    "stored_established_inclusions_after_batch": 37,
+    "closure_map_arrows_after_batch": 34,
+    "negative_comparisons_after_batch": 9
+  },
+  "data_tree_sha256": "a68d274f087c468002dcdf33465686d1611fcd663accd0049af83f8bf3dd1bbd",
+  "generated_outputs": [
+    "committed docs/ website with 337 HTML pages and new class, characterization, invariant, relation, operation, example, and theorem pages",
+    "Hasse hierarchy placing convex-geometry ideals below conditional antimatroids below dismantlable ample classes",
+    "minor/closure graph with cached closure profile and exact closure arrows",
+    "checked class-table, class-definitions, and bibliography LaTeX previews"
+  ],
+  "validation": [
+    "scripts/validate_data.py (321 records)",
+    "scripts/verify_horn_renaming.py exact bounded replay",
+    "nonrealizable bouquet source-certificate replay and byte comparison",
+    "make check",
+    "all 337 generated HTML pages have valid local href/src targets",
+    "make migration-check",
+    "sync/generate_latex_catalog.py --section class-table",
+    "sync/generate_latex_catalog.py --section class-definitions",
+    "sync/generate_latex_catalog.py --section bibliography",
+    "batch record/source/coverage/data-tree hash audit",
+    "git diff --check"
+  ],
+  "deferred": "Seventy-two reserved canonical classes remain. The next batches should promote peripheral-recursive partial cubes and realizable ample classes, then continue through the remaining survey/minor-atlas identities and unnormalized structural theorems."
+}

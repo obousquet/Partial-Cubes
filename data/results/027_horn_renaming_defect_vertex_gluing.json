@@ -1,0 +1,16 @@
+{
+  "id": 27,
+  "short_name": "horn_renaming_defect_vertex_gluing",
+  "name": "Exact Horn-Renaming Defect Under Rooted Vertex Gluing",
+  "invariant_ids": [
+    "#invariants/horn_renaming_defect"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $A_j\\subseteq\\{0,1\\}^{E_j}$ contain zero on pairwise disjoint coordinate sets and let $W$ be their union after identifying their zero vertices. If $I_j$ is the active coordinate set of $A_j$ and $k_j(v_j)=|\\{i\\in I_j:(v_j)_i=0\\}|$, then $F_W(v)=\\sum_jF_{A_j}(v_j)+\\sum_{j<\\ell}k_j(v_j)k_\\ell(v_\\ell)$. Hence $H(W)$ is the minimum of this expression and vanishes exactly when every piece has defect zero and all but at most one piece are intersection closed in the given rooted orientations.",
+  "status": "established",
+  "proof": "The minimal missing patterns of the glued family are precisely the patterns internal to a piece together with every positive pair on active coordinates from two different pieces. The internal costs give the first sum and the cross pairs give the second. Every summand is nonnegative, and a cross term vanishes exactly when at most one piece has a zero reflection bit on an active coordinate.",
+  "proof_source": "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md#3-exact-law-for-gluing-at-a-vertex"
+}

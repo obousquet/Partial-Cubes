@@ -515,6 +515,72 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-26" style="position:relative;">
+
+        <h3><a href="results/horn_renaming_defect_operation_laws.html" class="table-title-link">Horn-Renaming Defect Operation Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Horn-Renaming Defect Operation Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/conditional_antimatroids.html">Conditional Antimatroids</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/horn_renaming_defect.html">Horn-Renaming Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Cube symmetries and constant-coordinate extensions preserve $H$. Every nonempty pc-minor $D$ of $C$ satisfies $H(D)\leq H(C)$, and binary classes on disjoint coordinate sets satisfy $H(A\times B)=H(A)+H(B)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection retains exactly the minimal missing patterns supported on surviving coordinates. A minimal missing pattern of a conditioning injects into an original pattern with at least its pair cost. Product minimal missing patterns lie wholly in one factor, so their costs and the minimizing reflections separate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="characterizations/bipartite_transitive_theta.html">Bipartite Graph with Transitive Theta Relation</a>-general-operation-laws</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-27" style="position:relative;">
+
+        <h3><a href="results/horn_renaming_defect_vertex_gluing.html" class="table-title-link">Exact Horn-Renaming Defect Under Rooted Vertex Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Horn-Renaming Defect Under Rooted Vertex Gluing</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/horn_renaming_defect.html">Horn-Renaming Defect</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A_j\subseteq\{0,1\}^{E_j}$ contain zero on pairwise disjoint coordinate sets and let $W$ be their union after identifying their zero vertices. If $I_j$ is the active coordinate set of $A_j$ and $k_j(v_j)=|\{i\in I_j:(v_j)_i=0\}|$, then $F_W(v)=\sum_jF_{A_j}(v_j)+\sum_{j<\ell}k_j(v_j)k_\ell(v_\ell)$. Hence $H(W)$ is the minimum of this expression and vanishes exactly when every piece has defect zero and all but at most one piece are intersection closed in the given rooted orientations.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The minimal missing patterns of the glued family are precisely the patterns internal to a piece together with every positive pair on active coordinates from two different pieces. The internal costs give the first sum and the cross pairs give the second. Every summand is nonnegative, and a cross term vanishes exactly when at most one piece has a zero reflection bit on an active coordinate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="characterizations/shattering_equals_strong_shattering.html">Shattering-Extremal Equality</a>-exact-law-for-gluing-at-a-vertex</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-28" style="position:relative;">
+
+        <h3><a href="results/conditional_antimatroid_bfs_peeling.html" class="table-title-link">Breadth-First Corner Peeling of Conditional Antimatroids</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Breadth-First Corner Peeling of Conditional Antimatroids</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/conditional_antimatroids.html">Conditional Antimatroids</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>If $\mathcal C$ is a finite conditional antimatroid, any ordering of its members by nondecreasing cardinality, equivalently any breadth-first order from $\varnothing$ with ties broken arbitrarily, is an ample-prefix order. Reversing it is a corner peeling.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At the moment a member $c$ is inserted, its earlier neighbors are exactly $c\setminus\{x\}$ for extremal $x$. Intersection closure contains $c\setminus S$ for every subset $S$ of its extremal set, so those earlier neighbors and $c$ span a full cube. Thus $c$ is a corner of its prefix.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Proposition~4.9]{ChalopiChepoiMoran22}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>ResearchWork:literature/math/chalopinchepoimoranwarmuth2022compression/source.txt?#Proposition-4.9</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-29" style="position:relative;">
+
+        <h3><a href="results/nonrealizable_conditional_antimatroid.html" class="table-title-link">Conditional Antimatroids Need Not Be Affine-Convex Realizable</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Conditional Antimatroids Need Not Be Affine-Convex Realizable</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/conditional_antimatroids.html">Conditional Antimatroids</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There exists a conditional antimatroid on six coordinates with twenty-six members and VC dimension three that has no affine-convex realization in any finite dimension.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After reversing one control coordinate, four minimal missing triples yield positive-coefficient separating inequalities. Four realized mixed pairs force a strict ratio cycle $\alpha_1<\beta_1<\alpha_2<\beta_2<\alpha_1$, a contradiction. The exact family and all finite combinatorial premises are stored with the witness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/coefficient-topology/evidence/sources/nonrealizable_bouquet.tex?#thm:main</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nonrealizable_bouquet.html">Nonrealizable Twenty-Six-Set Bouquet</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This refutes the realizability conjecture stated as Conjecture 45 in the retained arXiv version of CCK2026; it does not alter CCK's theorem for convex geometries and their ideals.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

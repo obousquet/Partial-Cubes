@@ -1,0 +1,18 @@
+{
+  "id": 18,
+  "short_name": "conditional_antimatroid_equivalence",
+  "name": "Conditional-Antimatroid Equivalence",
+  "class_id": "#classes/conditional_antimatroids",
+  "characterization_ids": [
+    "#characterizations/conditional_antimatroid_extremal_generation",
+    "#characterizations/bouquet_of_convex_geometries",
+    "#characterizations/reflectively_union_closed_ample",
+    "#characterizations/zero_horn_renaming_defect"
+  ],
+  "hypotheses": "Finite nonempty binary classes; coordinate reflections and constant coordinates are ignored in the graph formulation.",
+  "statement": "Conditional antimatroids, bouquets of convex geometries, reflectively union-closed ample classes, and ample classes of Horn-renaming defect zero define the same one-inclusion graph class.",
+  "status": "established",
+  "proof": "The extremal-generation and local-extension formulations are the two standard finite definitions of conditional antimatroids. A reflected class has $H=0$ exactly when its complete minimal missing patterns have at most one positive bit, which is equivalent to union closure. An intersection-closed ample class contains its total intersection; after suppressing its fixed coordinates, partial-cube isometry supplies local one-element extension between comparable members, so it is a bouquet. Conversely every bouquet is ample and intersection closed.",
+  "references": "\\cite{CCK2026,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md#5-relation-to-the-subclass-program-and-stopping-decision"
+}

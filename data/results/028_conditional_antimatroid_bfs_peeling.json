@@ -1,0 +1,15 @@
+{
+  "id": 28,
+  "short_name": "conditional_antimatroid_bfs_peeling",
+  "name": "Breadth-First Corner Peeling of Conditional Antimatroids",
+  "class_ids": [
+    "#classes/conditional_antimatroids",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "algorithm",
+  "statement": "If $\\mathcal C$ is a finite conditional antimatroid, any ordering of its members by nondecreasing cardinality, equivalently any breadth-first order from $\\varnothing$ with ties broken arbitrarily, is an ample-prefix order. Reversing it is a corner peeling.",
+  "status": "established",
+  "proof": "At the moment a member $c$ is inserted, its earlier neighbors are exactly $c\\setminus\\{x\\}$ for extremal $x$. Intersection closure contains $c\\setminus S$ for every subset $S$ of its extremal set, so those earlier neighbors and $c$ span a full cube. Thus $c$ is a corner of its prefix.",
+  "references": "\\cite[Proposition~4.9]{ChalopiChepoiMoran22}",
+  "proof_source": "ResearchWork:literature/math/chalopinchepoimoranwarmuth2022compression/source.txt#Proposition-4.9"
+}
