@@ -1,0 +1,17 @@
+{
+  "id": 291,
+  "short_name": "nested_sequence_maximum_parent_products",
+  "name": "Recursively Nested Maximum Sequences Give Product Parents",
+  "class_ids": [
+    "#classes/maximum_parent_decomposition_level_k",
+    "#classes/dismantlable_maximum_parent_sections"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "construction",
+  "statement": "Suppose $C$ has a rank-$r$ maximum parent $M\\in\\mathcal D_k$, while $D$ has a rank-$s$ maximum parent $N$ lying in a complete maximum sequence whose entry function has a common nested-coordinate recursion. Then $C\\times D$ has a rank-$(r+s)$ maximum parent in $\\mathcal D_k$ with at most $r+s$ new auxiliary coordinates beyond the supplied marks.",
+  "status": "established",
+  "proof": "Extend $M$ to a complete maximum sequence in the same decomposition level. Delay its upper levels $s$ times and delay the second sequence $r$ times; delay preserves the common nested recursion. The disjoint level-sum class at rank $r+s$ is maximum. Threshold induction along the nested recursion keeps it in $\\mathcal D_k$, and the zero delay face is exactly the product of the supplied parents, so their old marks recover $C\\times D$.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:parent-nested-products"
+}

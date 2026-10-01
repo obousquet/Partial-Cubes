@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "batch_id": "086_minor_atlas_polygon_and_parent_constructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-01",
+  "scope": "Migrate the frozen minor-atlas hierarchy results built from Yang decomposition levels, odd tangent-polygon complements, dismantlable maximum parents, universal cube extension, decomposition-preserving maximum sequences, free-coordinate extensions, recursively nested products, and tree-parity flags.",
+  "source_refs": [
+    "PartialCubes:papers/minor-atlas/main.tex#prop:intermediate-inclusions",
+    "PartialCubes:papers/minor-atlas/main.tex#lem:interval-endpoint-cubes",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:polygon-decomposition",
+    "PartialCubes:papers/minor-atlas/main.tex#ex:nonagon-decomposition",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:maxmin-neighbors",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:decomposable-maximum-sequences",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:parent-free-coordinates",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:parent-nested-products",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:tree-parity-flags"
+  ],
+  "source_packets": [
+    {
+      "id": "minor-atlas-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "2aa92e089a97c472fc86295a6cbcfd5fdf020a2faef91db501650100fba481b3"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized decomposition invariant, exact family values, hierarchy statements, construction theorems, concise proofs, and reusable polygon witness. The LaTeX manuscript retains the detailed cyclic-interval argument, inductive constructions, literature comparisons, and open inclusions.",
+    "recoverability": "The source manuscript is read from the frozen repository commit, matches the manifest SHA-256 hash, and every migrated claim has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. Live post-snapshot drift remains isolated from this migration."
+  },
+  "records": [
+    {"path": "data/invariants/044_decomposition_level.json", "sha256": "6cb7c21323c4fe47cb3d3bb3b7d46ead3b83b99375f7f32641467fd42ecbc541"},
+    {"path": "data/examples/105_odd_tangent_polygon_complements.json", "sha256": "f6ab2a7e59f30c89a930cf449ed3bed3e0767cc76e9a17bc9df18a0edec8c3a3"},
+    {"path": "data/invariant_values/126_odd_tangent_polygon_decomposition_level.json", "sha256": "a6f0f09b5133914c297fa14ddc7e16155b42296b888c5451dfeb999773c6afb6"},
+    {"path": "data/invariant_values/127_odd_tangent_polygon_complement_decomposition_level.json", "sha256": "c80ece87f5dd88e7c00368ca22aef1208d8eb40a64222becd917e49ef9aef7d9"},
+    {"path": "data/results/285_intermediate_decomposition_class_hierarchy.json", "sha256": "650c751f07fd7a0866a3d9e48bd3ad3a98d43d533597e45fbdab230d39e57617"},
+    {"path": "data/results/286_interval_endpoint_cube_peripherality.json", "sha256": "3e027b32852a1eac03ad0cc509dcbdf1a045ff38e787380beec18c885005b137"},
+    {"path": "data/results/287_odd_polygon_exact_decomposition_hierarchy.json", "sha256": "3de50f89a53fde5eab25b0ea6ce3db36b02d0d146b379558300368ab8947258c"},
+    {"path": "data/results/288_maximum_ancestry_neighbor_hierarchy.json", "sha256": "bc6fa259637f643f9fbe63213a1c8dfa8463d58c26d2e4fce75c7ba24a722261"},
+    {"path": "data/results/289_decomposable_maximum_sequence_extension.json", "sha256": "4b6260de81aa37deccc90378f102b2c99e97d02cf2d853d9d4b6b0aad7a7ba14"},
+    {"path": "data/results/290_dismantlable_parent_free_coordinate_extension.json", "sha256": "fc0a0d66e87997744d8780e65289947765ec30034f2bd892196b8b97496d6134"},
+    {"path": "data/results/291_nested_sequence_maximum_parent_products.json", "sha256": "d0e6e26888b0893aa80568d07dfe94d622311af3a2ac1ca7450446ad15b872cc"},
+    {"path": "data/results/292_tree_parity_complete_maximum_sequences.json", "sha256": "aed13b9c3baa63314add0e6cac9846e3832a858b114f980791cefe380a6fc869"},
+    {"path": "migration/coverage.json", "sha256": "24fa7461473453480450c6db2ba01d1cf53c4dfcb9cedce993de0bec0a3ce020"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "a4437a9bbce6f8d70b9c52c77c13589ac58318551b65c3a56746143afe1807c8"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1518 records.",
+    "website": "Normalized 1534 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 9 minor-atlas labels, raising that workspace from 14 of 37 to 23 of 37 and overall workspace-aware coverage from 350 to 359 of 1016 unique labels."
+  },
+  "deferred": [
+    "The 14 remaining minor-atlas labels concern deletion-parent theorems, complement dismantlability, learning-space intersections, projection complexes, hierarchy depth, and ambient obstruction examples.",
+    "Open comparisons among decomposition levels, both-sides dismantlability, and maximum ancestry remain prose in the source under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

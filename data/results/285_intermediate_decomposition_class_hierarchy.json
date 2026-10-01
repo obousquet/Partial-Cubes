@@ -1,0 +1,30 @@
+{
+  "id": 285,
+  "short_name": "intermediate_decomposition_class_hierarchy",
+  "name": "Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral",
+    "#classes/yang_decomposition_level_one",
+    "#classes/dismantlable_ample",
+    "#classes/ample",
+    "#classes/both_sides_dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/full_reduction",
+    "#operations/cartesian_product",
+    "#operations/cube_complement"
+  ],
+  "result_type": "implication",
+  "statement": "The inclusions $\\mathcal R_{\\mathrm{per}}\\subsetneq\\mathcal D_1\\subsetneq\\mathcal D_{\\mathrm{amp}}\\subsetneq\\mathcal A$ and $\\mathcal R_{\\mathrm{per}}\\subsetneq\\mathcal B\\subsetneq\\mathcal D_{\\mathrm{amp}}$ are strict. Every ample class of VC dimension at most two belongs to $\\mathcal D_1$. Every fixed decomposition level and the both-sides dismantlable class $\\mathcal B$ are closed under nonempty pc-minors, full reductions, and Cartesian products; $\\mathcal B$ is complement closed after adjoining the empty boundary case.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/pentagonal_obstruction",
+    "#examples/hall_maximum_class",
+    "#examples/hall_complement"
+  ],
+  "proof": "Recursive decomposition gives the inclusions, the VC-two theorem, and closure under minors, reductions, and products. The tangent-pentagon class lies in the first decomposition level and in $\\mathcal B$ but is not recursively peripheral. Hall's class is ample and not dismantlable; its complement is dismantlable and belongs to $\\mathcal B$ but an exhaustive one- and two-coordinate section test excludes level one. Complement-section identities exchange projection with full reduction and prove the closure assertions for $\\mathcal B$.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:intermediate-inclusions"
+}

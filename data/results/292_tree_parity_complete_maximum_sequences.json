@@ -1,0 +1,13 @@
+{
+  "id": 292,
+  "short_name": "tree_parity_complete_maximum_sequences",
+  "name": "Tree Incidence Parities Produce Nested Maximum Sequences",
+  "class_ids": [
+    "#classes/maximum"
+  ],
+  "result_type": "construction",
+  "statement": "For a rooted tree $T=(V,E)$ with $n$ edges, put $d_v(x)=\\bigoplus_{e\\ni v}x_e$ for nonroot vertices, $f(x)=\\sum_{v\\ne o}d_v(x)$, and $B_s=\\{x:f(x)\\le s\\}$. Then $(B_s)_{s=0}^n$ is a complete maximum sequence with a common nested-coordinate recursion. Up to coordinate reflections, every rank-one maximum class and every rank-$(n-2)$ maximum class on $n\\ge2$ coordinates occurs in such a sequence.",
+  "status": "established",
+  "proof": "The reduced incidence map is a bijection, giving the Sauer cardinalities. Deleting any $s+1$ tested tree edges leaves a rooted quotient in which a suitable boundary-parity assignment forces at least $s+1$ odd nonroot components, proving the VC bound. Splitting at a leaf orders the two restrictions pointwise and recursively removes that leaf, giving the common nested recursion. Single parity supports are root paths, which model every rank-one maximum tree; complementing parity gives the rank-$(n-2)$ case.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:tree-parity-flags"
+}

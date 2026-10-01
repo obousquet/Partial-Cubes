@@ -1,0 +1,22 @@
+{
+  "id": 287,
+  "short_name": "odd_polygon_exact_decomposition_hierarchy",
+  "name": "Odd Polygon Complements Separate Every Decomposition Level",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/maximum",
+    "#classes/both_sides_dismantlable_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/decomposition_level"
+  ],
+  "result_type": "construction",
+  "statement": "For every $m\\ge2$, the regular $(2m+1)$-tangent sign class $H_{2m+1}$ and its complement $C_{2m+1}$ are realizable maximum classes in the both-sides dismantlable family, with $\\kappa(H_{2m+1})=1$ and $\\kappa(C_{2m+1})=m-1$. Hence every consecutive inclusion $\\mathcal D_k\\subsetneq\\mathcal D_{k+1}$ is strict, realizable and both-sides dismantlable classes have unbounded decomposition level, and no $\\mathcal D_k$ for $k\\ge1$ is cube-complement closed.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/odd_tangent_polygon_complements"
+  ],
+  "proof": "The arrangement has the Sauer number of regions, all two-coordinate traces, and one missing trace on every triple, so it is maximum of rank two; maximum complementation and Lawrence duality handle its complement. Cyclic-interval geometry proves the dominant-shore lower bound. A sequence adjoining the length-$(m+1)$ coordinate cubes has recursively peripheral links described by endpoint-interval classes and gives the matching upper decomposition. Substituting $m=k+2$ yields every strict step, while complementing the rank-two shore proves failure of complement closure.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:polygon-decomposition"
+}

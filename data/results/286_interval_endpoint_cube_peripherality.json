@@ -1,0 +1,13 @@
+{
+  "id": 286,
+  "short_name": "interval_endpoint_cube_peripherality",
+  "name": "Interval Families with Endpoint Cubes Are Recursively Peripheral",
+  "class_ids": [
+    "#classes/cover_recursive_peripheral"
+  ],
+  "result_type": "construction",
+  "statement": "Let $\\mathcal I_L$ contain the empty set and all intervals of the linear order $[L]$. For $0\\le a,b\\le L$, the class $K_{L,a,b}=\\mathcal I_L\\cup2^{[a]}\\cup2^{\\{L-b+1,\\ldots,L\\}}$ is recursively peripheral, and its cube complement is recursively peripheral whenever nonempty.",
+  "status": "established",
+  "proof": "First inductively peel a prefix family together with its initial cube. For $K_{L,a,b}$, splitting on the first coordinate yields a smaller class of the same form and one such prefix family, with nested shores. The peripheral recursion completes the induction; complement closure gives the final statement.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#lem:interval-endpoint-cubes"
+}

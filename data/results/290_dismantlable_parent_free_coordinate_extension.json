@@ -1,0 +1,17 @@
+{
+  "id": 290,
+  "short_name": "dismantlable_parent_free_coordinate_extension",
+  "name": "Free Coordinates Preserve Dismantlable Maximum Parents",
+  "class_ids": [
+    "#classes/dismantlable_maximum_parent_sections",
+    "#classes/maximum_parent_decomposition_level_k"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "construction",
+  "statement": "If $C$ has a rank-$r$ maximum parent in $\\mathcal D_k$, then $C\\times\\{0,1\\}^m$ has a rank-$(r+m)$ maximum parent in the same $\\mathcal D_k$ using at most $m$ additional auxiliary coordinates. In particular, sections of dismantlable maximum parents are closed under products with full cubes.",
+  "status": "established",
+  "proof": "For one free coordinate, place a supplied maximum parent between consecutive predecessor and successor maximum classes in the same decomposition level. A two-shore construction on one new visible and one auxiliary coordinate uses the parent in the common lower auxiliary shore, the successor on one upper shore, and the predecessor on the other. Pascal counts and nestedness give a rank-one-higher maximum parent whose old mark cuts out the free-coordinate product. Iterate.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:parent-free-coordinates"
+}

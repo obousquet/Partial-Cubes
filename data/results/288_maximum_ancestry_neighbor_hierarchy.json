@@ -1,0 +1,31 @@
+{
+  "id": 288,
+  "short_name": "maximum_ancestry_neighbor_hierarchy",
+  "name": "Classes Immediately Below and Above Maximum Ancestry",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_maximum_parent_sections",
+    "#classes/dismantlable_ample",
+    "#classes/maximum_generated_classes",
+    "#classes/universal_cube_extension_ample",
+    "#classes/representation_map_ample",
+    "#classes/ample",
+    "#classes/both_sides_dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/full_reduction",
+    "#operations/cube_complement"
+  ],
+  "result_type": "implication",
+  "statement": "The established chain is $\\mathcal R_{\\mathrm{amp}}\\subsetneq\\mathcal P_D\\subseteq\\mathcal D_{\\mathrm{amp}}\\cap\\mathsf{MaxMin}\\subsetneq\\mathsf{MaxMin}\\subseteq\\mathsf{Ext}\\subseteq\\mathsf{Rep}\\subseteq\\mathcal A$, and $\\mathcal B\\subsetneq\\mathsf{Ext}$. The dismantlable-parent class $\\mathcal P_D$ is closed under nonempty pc-minors and full reductions but not complement; $\\mathsf{Ext}$ is closed under those operations and complement after adjoining the empty boundary case.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/hall_maximum_class",
+    "#examples/hall_complement"
+  ],
+  "proof": "Generic affine arrangements give dismantlable maximum parents for realizable classes, and sections of dismantlable classes stay dismantlable. A maximum parent and its complementary maximum class give representation maps on both marked shores, which is the universal-extension criterion. Hall's complement lies in $\\mathcal P_D$ but is not realizable; Hall's class is maximum but not dismantlable and lies in $\\mathsf{Ext}\\setminus\\mathcal B$. Commuting marks with projections, conditionings, and reductions proves closure for $\\mathcal P_D$; forward-invariant unique-sink cube orientations prove closure for $\\mathsf{Ext}$.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:maxmin-neighbors"
+}

@@ -4806,6 +4806,134 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-285" style="position:relative;">
+
+        <h3><a href="results/intermediate_decomposition_class_hierarchy.html" class="table-title-link">Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li><li><a href="classes/yang_decomposition_level_one.html">One-Decomposable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/both_sides_dismantlable_ample.html">Both-Sides Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>The inclusions $\mathcal R_{\mathrm{per}}\subsetneq\mathcal D_1\subsetneq\mathcal D_{\mathrm{amp}}\subsetneq\mathcal A$ and $\mathcal R_{\mathrm{per}}\subsetneq\mathcal B\subsetneq\mathcal D_{\mathrm{amp}}$ are strict. Every ample class of VC dimension at most two belongs to $\mathcal D_1$. Every fixed decomposition level and the both-sides dismantlable class $\mathcal B$ are closed under nonempty pc-minors, full reductions, and Cartesian products; $\mathcal B$ is complement closed after adjoining the empty boundary case.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Recursive decomposition gives the inclusions, the VC-two theorem, and closure under minors, reductions, and products. The tangent-pentagon class lies in the first decomposition level and in $\mathcal B$ but is not recursively peripheral. Hall's class is ample and not dismantlable; its complement is dismantlable and belongs to $\mathcal B$ but an exhaustive one- and two-coordinate section test excludes level one. Complement-section identities exchange projection with full reduction and prove the closure assertions for $\mathcal B$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:intermediate-inclusions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/pentagonal_obstruction.html">Pentagonal Obstruction</a></li><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li><li><a href="examples/hall_complement.html">Complement of Hall's Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-286" style="position:relative;">
+
+        <h3><a href="results/interval_endpoint_cube_peripherality.html" class="table-title-link">Interval Families with Endpoint Cubes Are Recursively Peripheral</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Interval Families with Endpoint Cubes Are Recursively Peripheral</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cover_recursive_peripheral.html">Convex-Treelike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal I_L$ contain the empty set and all intervals of the linear order $[L]$. For $0\le a,b\le L$, the class $K_{L,a,b}=\mathcal I_L\cup2^{[a]}\cup2^{\{L-b+1,\ldots,L\}}$ is recursively peripheral, and its cube complement is recursively peripheral whenever nonempty.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First inductively peel a prefix family together with its initial cube. For $K_{L,a,b}$, splitting on the first coordinate yields a smaller class of the same form and one such prefix family, with nested shores. The peripheral recursion completes the induction; complement closure gives the final statement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#lem:interval-endpoint-cubes</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-287" style="position:relative;">
+
+        <h3><a href="results/odd_polygon_exact_decomposition_hierarchy.html" class="table-title-link">Odd Polygon Complements Separate Every Decomposition Level</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Odd Polygon Complements Separate Every Decomposition Level</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/both_sides_dismantlable_ample.html">Both-Sides Dismantlable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/decomposition_level.html">Yang Decomposition Level</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $m\ge2$, the regular $(2m+1)$-tangent sign class $H_{2m+1}$ and its complement $C_{2m+1}$ are realizable maximum classes in the both-sides dismantlable family, with $\kappa(H_{2m+1})=1$ and $\kappa(C_{2m+1})=m-1$. Hence every consecutive inclusion $\mathcal D_k\subsetneq\mathcal D_{k+1}$ is strict, realizable and both-sides dismantlable classes have unbounded decomposition level, and no $\mathcal D_k$ for $k\ge1$ is cube-complement closed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The arrangement has the Sauer number of regions, all two-coordinate traces, and one missing trace on every triple, so it is maximum of rank two; maximum complementation and Lawrence duality handle its complement. Cyclic-interval geometry proves the dominant-shore lower bound. A sequence adjoining the length-$(m+1)$ coordinate cubes has recursively peripheral links described by endpoint-interval classes and gives the matching upper decomposition. Substituting $m=k+2$ yields every strict step, while complementing the rank-two shore proves failure of complement closure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:polygon-decomposition</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/odd_tangent_polygon_complements.html">Odd Tangent-Polygon Classes and Complements</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-288" style="position:relative;">
+
+        <h3><a href="results/maximum_ancestry_neighbor_hierarchy.html" class="table-title-link">Classes Immediately Below and Above Maximum Ancestry</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Classes Immediately Below and Above Maximum Ancestry</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li><li><a href="classes/universal_cube_extension_ample.html">Universal Cube-Extension Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/both_sides_dismantlable_ample.html">Both-Sides Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>The established chain is $\mathcal R_{\mathrm{amp}}\subsetneq\mathcal P_D\subseteq\mathcal D_{\mathrm{amp}}\cap\mathsf{MaxMin}\subsetneq\mathsf{MaxMin}\subseteq\mathsf{Ext}\subseteq\mathsf{Rep}\subseteq\mathcal A$, and $\mathcal B\subsetneq\mathsf{Ext}$. The dismantlable-parent class $\mathcal P_D$ is closed under nonempty pc-minors and full reductions but not complement; $\mathsf{Ext}$ is closed under those operations and complement after adjoining the empty boundary case.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Generic affine arrangements give dismantlable maximum parents for realizable classes, and sections of dismantlable classes stay dismantlable. A maximum parent and its complementary maximum class give representation maps on both marked shores, which is the universal-extension criterion. Hall's complement lies in $\mathcal P_D$ but is not realizable; Hall's class is maximum but not dismantlable and lies in $\mathsf{Ext}\setminus\mathcal B$. Commuting marks with projections, conditionings, and reductions proves closure for $\mathcal P_D$; forward-invariant unique-sink cube orientations prove closure for $\mathsf{Ext}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:maxmin-neighbors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li><li><a href="examples/hall_complement.html">Complement of Hall's Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-289" style="position:relative;">
+
+        <h3><a href="results/decomposable_maximum_sequence_extension.html" class="table-title-link">Decomposition Levels Persist through Maximum Sequences</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Decomposition Levels Persist through Maximum Sequences</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix $k\ge0$. A rank-$r\ge1$ maximum class in $\mathcal D_k$ contains a rank-$(r-1)$ maximum member of $\mathcal D_k$ avoiding any prescribed face fixed on at least $r$ coordinates. A rank-$r<N$ maximum member of $\mathcal D_k$ can be extended within $\mathcal D_k$ to rank $r+1$ while containing any positioned cube of dimension at most $r+1$. Consequently any supplied maximum class, or nested consecutive-rank pair, in $\mathcal D_k$ extends to a complete maximum sequence in $\mathcal D_k$; the same holds for dismantlable maximum classes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Nested one-coordinate attachments preserve both maximumity and the fixed decomposition level. Induction on rank builds an avoiding predecessor from the full reduction and a lower predecessor; induction on codimension builds a successor from a projection and a larger projected successor containing the prescribed cube. Iterating downward and upward completes the sequence. A finite level containing all supplied dismantlable classes gives the dismantlable version.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:decomposable-maximum-sequences</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-290" style="position:relative;">
+
+        <h3><a href="results/dismantlable_parent_free_coordinate_extension.html" class="table-title-link">Free Coordinates Preserve Dismantlable Maximum Parents</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Free Coordinates Preserve Dismantlable Maximum Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li><li><a href="classes/maximum_parent_decomposition_level_k.html">Maximum-Parent Decomposition-Level Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C$ has a rank-$r$ maximum parent in $\mathcal D_k$, then $C\times\{0,1\}^m$ has a rank-$(r+m)$ maximum parent in the same $\mathcal D_k$ using at most $m$ additional auxiliary coordinates. In particular, sections of dismantlable maximum parents are closed under products with full cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For one free coordinate, place a supplied maximum parent between consecutive predecessor and successor maximum classes in the same decomposition level. A two-shore construction on one new visible and one auxiliary coordinate uses the parent in the common lower auxiliary shore, the successor on one upper shore, and the predecessor on the other. Pascal counts and nestedness give a rank-one-higher maximum parent whose old mark cuts out the free-coordinate product. Iterate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:parent-free-coordinates</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-291" style="position:relative;">
+
+        <h3><a href="results/nested_sequence_maximum_parent_products.html" class="table-title-link">Recursively Nested Maximum Sequences Give Product Parents</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recursively Nested Maximum Sequences Give Product Parents</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_parent_decomposition_level_k.html">Maximum-Parent Decomposition-Level Classes</a></li><li><a href="classes/dismantlable_maximum_parent_sections.html">Sections of Dismantlable Maximum Parents</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose $C$ has a rank-$r$ maximum parent $M\in\mathcal D_k$, while $D$ has a rank-$s$ maximum parent $N$ lying in a complete maximum sequence whose entry function has a common nested-coordinate recursion. Then $C\times D$ has a rank-$(r+s)$ maximum parent in $\mathcal D_k$ with at most $r+s$ new auxiliary coordinates beyond the supplied marks.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Extend $M$ to a complete maximum sequence in the same decomposition level. Delay its upper levels $s$ times and delay the second sequence $r$ times; delay preserves the common nested recursion. The disjoint level-sum class at rank $r+s$ is maximum. Threshold induction along the nested recursion keeps it in $\mathcal D_k$, and the zero delay face is exactly the product of the supplied parents, so their old marks recover $C\times D$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:parent-nested-products</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-292" style="position:relative;">
+
+        <h3><a href="results/tree_parity_complete_maximum_sequences.html" class="table-title-link">Tree Incidence Parities Produce Nested Maximum Sequences</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tree Incidence Parities Produce Nested Maximum Sequences</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For a rooted tree $T=(V,E)$ with $n$ edges, put $d_v(x)=\bigoplus_{e\ni v}x_e$ for nonroot vertices, $f(x)=\sum_{v\ne o}d_v(x)$, and $B_s=\{x:f(x)\le s\}$. Then $(B_s)_{s=0}^n$ is a complete maximum sequence with a common nested-coordinate recursion. Up to coordinate reflections, every rank-one maximum class and every rank-$(n-2)$ maximum class on $n\ge2$ coordinates occurs in such a sequence.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The reduced incidence map is a bijection, giving the Sauer cardinalities. Deleting any $s+1$ tested tree edges leaves a rooted quotient in which a suitable boundary-parity assignment forces at least $s+1$ odd nonroot components, proving the VC bound. Splitting at a leaf orders the two restrictions pointwise and recursively removes that leaf, giving the common nested recursion. Single parity supports are root paths, which model every rank-one maximum tree; complementing parity gives the rank-$(n-2)$ case.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:tree-parity-flags</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,14 @@
+{
+  "id": 289,
+  "short_name": "decomposable_maximum_sequence_extension",
+  "name": "Decomposition Levels Persist through Maximum Sequences",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "construction",
+  "statement": "Fix $k\\ge0$. A rank-$r\\ge1$ maximum class in $\\mathcal D_k$ contains a rank-$(r-1)$ maximum member of $\\mathcal D_k$ avoiding any prescribed face fixed on at least $r$ coordinates. A rank-$r<N$ maximum member of $\\mathcal D_k$ can be extended within $\\mathcal D_k$ to rank $r+1$ while containing any positioned cube of dimension at most $r+1$. Consequently any supplied maximum class, or nested consecutive-rank pair, in $\\mathcal D_k$ extends to a complete maximum sequence in $\\mathcal D_k$; the same holds for dismantlable maximum classes.",
+  "status": "established",
+  "proof": "Nested one-coordinate attachments preserve both maximumity and the fixed decomposition level. Induction on rank builds an avoiding predecessor from the full reduction and a lower predecessor; induction on codimension builds a successor from a projection and a larger projected successor containing the prescribed cube. Iterating downward and upward completes the sequence. A finite level containing all supplied dismantlable classes gives the dismantlable version.",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:decomposable-maximum-sequences"
+}
