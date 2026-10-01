@@ -1,0 +1,13 @@
+{
+  "id": 133,
+  "short_name": "ample_partial_trace_closed",
+  "name": "Partial Trace Preserves and Reflects Ampleness",
+  "class_id": "#classes/ample",
+  "operation_id": "#operations/partial_trace",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/ample",
+  "status": "established",
+  "statement": "For every nonempty finite binary class $C$, its full partial-trace expansion $T(C)$ is ample exactly when $C$ is ample.",
+  "proof": "The exact shattering formula counts the shattered supports of $T(C)$. If $C$ is ample, projection ampleness converts the word count $\\sum_{Z\\subseteq X}2^{n-|Z|}|\\pi_ZC|$ into the same sum that counts those shattered supports, so the sandwich equality makes $T(C)$ ample. Conversely, the all-zero mask section of $T(C)$ is exactly $C$, and sections of ample classes are ample.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:partial-traces"
+}

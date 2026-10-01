@@ -2471,6 +2471,73 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-141" style="position:relative;">
+
+        <h3><a href="results/equal_cardinality_fiber_replacement.html" class="table-title-link">Exact Equal-Cardinality Fiber Replacement Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Equal-Cardinality Fiber Replacement Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let maximum sequences $(A_i)$ on $U$ and $(B_j)$ on $Y$ define a rank-$R=k+s$ level sum. Replace the rank-$s$ fiber $B_s$ over every $x\in A_k\setminus A_{k-1}$ by a set $F_x$ of the same Sauer cardinality. Form $G_k$ by joining two level-$k$ words when they agree with a missing pattern of $A_{k-1}$ on a $k$-support. The modified class remains maximum exactly when every $F_x$ is maximum of rank $s$, the fibers are constant on each component of $G_k$, every $F_x\subseteq B_{s+1}$ when $k>0$, and every $F_x\supseteq B_{s-1}$ when $k<|U|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If a replacement has excessive rank, adjacent vertices have unequal fibers, or either neighboring-level containment fails, combine the offending control trace with a missing old trace to shatter $R+1$ coordinates. Conversely, consider a candidate support of size $R+1$ and split by whether its control part has at most $s$, exactly $s+1$, or at least $s+2$ coordinates. A missing trace from the appropriate old level, component constancy at the middle case, and the two containment conditions respectively supply a missing combined trace. Cardinality is unchanged, so the modified class is maximum.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:fibers</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/distinct_maximum_fibers.html">Maximum Level Sum with Distinct Nonsingleton Fibers</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-142" style="position:relative;">
+
+        <h3><a href="results/partial_trace_combinatorial_laws.html" class="table-title-link">Combinatorial and Parent-Rank Laws for Partial Traces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Combinatorial and Parent-Rank Laws for Partial Traces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/minimum_maximum_parent_rank.html">Minimum Maximum-Parent Rank</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/partial_trace.html">Partial-Trace Expansion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty $C\subseteq\{0,1\}^X$, with one mask coordinate $a_i$ for each $i\in X$, put $D(U)=\{i:i,a_i\in U\}$. Then $\operatorname{Sh}(T(C))=\{U:D(U)\in\operatorname{Sh}(C)\}$, the zero-mask section and full mask reduction both equal $C$, $\operatorname{VC}(T(C))=|X|+\operatorname{VC}(C)$, and $h(T(C))=h(C)+|X|$, including the value $+\infty$. A rank-$r$ parent with $m$ auxiliaries yields a rank-$(r+|X|)$ parent with at most $m+|X|$ auxiliaries while retaining the original mark.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A trace on $U$ is realizable precisely when the old class can realize the coordinates whose value and mask are both prescribed with mask zero; this proves the shattering formula and VC shift. Membership is increasing in the masks, so the zero section equals the full reduction and is $C$. For one coordinate, the fiber theorem replaces the rank-one control fiber according to the unique old height and constructs a parent one rank higher with one new auxiliary. Iterate for the upper bound. Full reduction of any parent in all mask coordinates lowers rank by $|X|$ and leaves a parent of $C$, proving equality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:partial-traces</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/partial_trace_calibrations.html">Partial-Trace Path and Star Calibrations</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-143" style="position:relative;">
+
+        <h3><a href="results/disjoint_auxiliary_witness_normal_form.html" class="table-title-link">Disjoint Auxiliary-Witness Normal Form</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Disjoint Auxiliary-Witness Normal Form</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximum_parent_profile.html">Maximum-Parent Profile</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>If nonempty proper $C$ has a rank-$r$ maximum parent, then it has one on $X\sqcup B$ with $B=\bigsqcup_{p\in\operatorname{Patt}(C)}B_p$, $|B_p|=r+1-|\operatorname{supp}p|$, whose zero section is $C$ and whose unique missing pattern on $\operatorname{supp}p\sqcup B_p$ is $p\cup0_{B_p}$. Thus the selected witness blocks are pairwise disjoint and $|B|=\sum_p(r+1-|\operatorname{supp}p|)$. The construction may preserve the visible projection of any supplied parent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Extract one active rank-$(r+1)$ missing pattern above each minimally missing pattern of $C$. Whenever an auxiliary coordinate is shared by several selected patterns, replace it by a maximum path with one coordinate per occurrence. The singleton-fiber case of the replacement theorem preserves rank, the zero-marked section, every selected pattern avoiding that coordinate, and the projection onto any one copy. Repeat for all shared auxiliaries and project away unused old coordinates. Each outside visible word realizes one retained selected pattern, so the final zero section is exactly $C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:disjoint-witnesses</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Only the selected witnesses are disjoint; their coordinates may occur in other parent missing patterns. This normalizes an existing parent and is not an independent existence criterion.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-144" style="position:relative;">
+
+        <h3><a href="results/complementary_fiber_replacement_obstruction.html" class="table-title-link">Complementary Fiber Replacement Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complementary Fiber Replacement Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a nontrivial old maximum sequence, if the control dimension is $m=2s+1$ with $s\ge1$, replacing even one middle fiber $B_s$ by its cube complement while keeping every other level unchanged cannot produce a maximum class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The complement has the correct cardinality and rank, but it cannot contain the nonempty lower neighbor $B_{s-1}\subseteq B_s$, and it cannot lie in the proper upper neighbor $B_{s+1}\supseteq B_s$, since then $B_s$ together with its complement would force the full control cube into $B_{s+1}$. At least one containment condition of the exact fiber criterion applies.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#cor:complement-fiber</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This only obstructs a single-level equal-cardinality replacement inside the level-sum construction; it does not disprove general maximum-generated substitution.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

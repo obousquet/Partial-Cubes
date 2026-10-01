@@ -1,0 +1,14 @@
+{
+  "id": 142,
+  "short_name": "partial_trace_combinatorial_laws",
+  "name": "Combinatorial and Parent-Rank Laws for Partial Traces",
+  "class_ids": ["#classes/ample", "#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/vc_dimension", "#invariants/minimum_maximum_parent_rank"],
+  "operation_ids": ["#operations/partial_trace", "#operations/full_reduction"],
+  "result_type": "invariant_law",
+  "statement": "For nonempty $C\\subseteq\\{0,1\\}^X$, with one mask coordinate $a_i$ for each $i\\in X$, put $D(U)=\\{i:i,a_i\\in U\\}$. Then $\\operatorname{Sh}(T(C))=\\{U:D(U)\\in\\operatorname{Sh}(C)\\}$, the zero-mask section and full mask reduction both equal $C$, $\\operatorname{VC}(T(C))=|X|+\\operatorname{VC}(C)$, and $h(T(C))=h(C)+|X|$, including the value $+\\infty$. A rank-$r$ parent with $m$ auxiliaries yields a rank-$(r+|X|)$ parent with at most $m+|X|$ auxiliaries while retaining the original mark.",
+  "status": "established",
+  "proof": "A trace on $U$ is realizable precisely when the old class can realize the coordinates whose value and mask are both prescribed with mask zero; this proves the shattering formula and VC shift. Membership is increasing in the masks, so the zero section equals the full reduction and is $C$. For one coordinate, the fiber theorem replaces the rank-one control fiber according to the unique old height and constructs a parent one rank higher with one new auxiliary. Iterate for the upper bound. Full reduction of any parent in all mask coordinates lowers rank by $|X|$ and leaves a parent of $C$, proving equality.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:partial-traces",
+  "witness_ids": ["#examples/partial_trace_calibrations"]
+}

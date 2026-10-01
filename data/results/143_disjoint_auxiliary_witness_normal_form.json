@@ -1,0 +1,13 @@
+{
+  "id": 143,
+  "short_name": "disjoint_auxiliary_witness_normal_form",
+  "name": "Disjoint Auxiliary-Witness Normal Form",
+  "class_ids": ["#classes/maximum_generated_classes"],
+  "invariant_ids": ["#invariants/maximum_parent_profile"],
+  "result_type": "construction",
+  "statement": "If nonempty proper $C$ has a rank-$r$ maximum parent, then it has one on $X\\sqcup B$ with $B=\\bigsqcup_{p\\in\\operatorname{Patt}(C)}B_p$, $|B_p|=r+1-|\\operatorname{supp}p|$, whose zero section is $C$ and whose unique missing pattern on $\\operatorname{supp}p\\sqcup B_p$ is $p\\cup0_{B_p}$. Thus the selected witness blocks are pairwise disjoint and $|B|=\\sum_p(r+1-|\\operatorname{supp}p|)$. The construction may preserve the visible projection of any supplied parent.",
+  "status": "established",
+  "proof": "Extract one active rank-$(r+1)$ missing pattern above each minimally missing pattern of $C$. Whenever an auxiliary coordinate is shared by several selected patterns, replace it by a maximum path with one coordinate per occurrence. The singleton-fiber case of the replacement theorem preserves rank, the zero-marked section, every selected pattern avoiding that coordinate, and the projection onto any one copy. Repeat for all shared auxiliaries and project away unused old coordinates. Each outside visible word realizes one retained selected pattern, so the final zero section is exactly $C$.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:disjoint-witnesses",
+  "comments": "Only the selected witnesses are disjoint; their coordinates may occur in other parent missing patterns. This normalizes an existing parent and is not an independent existence criterion."
+}

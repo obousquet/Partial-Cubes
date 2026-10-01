@@ -1,0 +1,10 @@
+{
+  "id": 50,
+  "short_name": "partial_trace_calibrations",
+  "name": "Partial-Trace Path and Star Calibrations",
+  "object_type": "construction",
+  "definition": "Apply the full partial-trace expansion first to the singleton $C=\\{0\\}\\subseteq\\{0,1\\}$, and then to the rank-one maximum three-coordinate star $S=\\{000,100,010,001\\}$.",
+  "properties": "The singleton expands to the three-word maximum path $\\{(0,0),(0,1),(1,1)\\}$ of rank one. The star expands to a 54-word ample class on six coordinates with VC dimension four; it is not itself maximum because the rank-four Sauer bound there is 57. It nevertheless has a maximum parent of the exact shifted minimum rank.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:partial-traces",
+  "verification": "scripts/verify_fiber_partial_trace.py; data/examples/assets/fiber_partial_trace_database_verification.json"
+}

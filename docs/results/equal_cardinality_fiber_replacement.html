@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-21" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-141" style="position:relative;">
 
-        <h3><a href="invariants/maximum_parent_profile.html" class="table-title-link">Maximum-Parent Profile</a></h3>
+        <h3><a href="results/equal_cardinality_fiber_replacement.html" class="table-title-link">Exact Equal-Cardinality Fiber Replacement Criterion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Maximum-Parent Profile</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal F(C)">
-            \[\mathcal F(C)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper positioned binary class $C\subsetneq\{0,1\}^X$, let $\mathcal F(C)$ be the set of pairs $(r,s)\in\mathbb N_0^2$ for which $C$ is a marked coordinate section of a proper maximum class of rank $r$ on exactly $r+s+1$ coordinates. Equivalently, $s$ is the rank of the complementary maximum class and the auxiliary count is $r+s+1-|X|$.</p></div>
+        <p><strong>Name: </strong>Exact Equal-Cardinality Fiber Replacement Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let maximum sequences $(A_i)$ on $U$ and $(B_j)$ on $Y$ define a rank-$R=k+s$ level sum. Replace the rank-$s$ fiber $B_s$ over every $x\in A_k\setminus A_{k-1}$ by a set $F_x$ of the same Sauer cardinality. Form $G_k$ by joining two level-$k$ words when they agree with a missing pattern of $A_{k-1}$ on a $k$-support. The modified class remains maximum exactly when every $F_x$ is maximum of rank $s$, the fibers are constant on each component of $G_k$, every $F_x\subseteq B_{s+1}$ when $k>0$, and every $F_x\supseteq B_{s-1}$ when $k<|U|$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
-<p><strong>Codomain: </strong>Upward-closed subsets of $\mathbb N_0^2$</p>
-<strong>Normalization:</strong><div class="text-field"><p>Visible coordinates, including constants, remain part of the positioned class. The invariant is recorded here for nonempty proper maximum-generated classes.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>Complementation transposes the profile. Its finite antichain of coordinatewise minimal points determines the entire profile.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fixed_rank_maximum_parent_bounds.html'>Finite Auxiliary Bounds at a Prescribed Parent Rank</a></li><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/disjoint_auxiliary_witness_normal_form.html'>Disjoint Auxiliary-Witness Normal Form</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>If a replacement has excessive rank, adjacent vertices have unequal fibers, or either neighboring-level containment fails, combine the offending control trace with a missing old trace to shatter $R+1$ coordinates. Conversely, consider a candidate support of size $R+1$ and split by whether its control part has at most $s$, exactly $s+1$, or at least $s+2$ coordinates. A missing trace from the appropriate old level, component constancy at the middle case, and the two containment conditions respectively supply a missing combined trace. Cardinality is unchanged, so the modified class is maximum.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:fibers</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/distinct_maximum_fibers.html">Maximum Level Sum with Distinct Nonsingleton Fibers</a></li></ul></p>
 
         </div>
     </div>

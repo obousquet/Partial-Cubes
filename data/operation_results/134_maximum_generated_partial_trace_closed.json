@@ -1,0 +1,13 @@
+{
+  "id": 134,
+  "short_name": "maximum_generated_partial_trace_closed",
+  "name": "Partial Trace Preserves and Reflects Maximum-Generated Classes",
+  "class_id": "#classes/maximum_generated_classes",
+  "operation_id": "#operations/partial_trace",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/maximum_generated_classes",
+  "status": "established",
+  "statement": "For every nonempty finite binary class $C$, $T(C)$ is maximum-generated exactly when $C$ is maximum-generated. Expanding $n$ visible coordinates raises the minimum maximum-parent rank by exactly $n$.",
+  "proof": "Expanding one coordinate of a maximum parent uses the fiber replacement theorem and one new marked control coordinate, raising parent rank by one and adding at most one auxiliary. Iteration gives the upper bound. Conversely, full reduction in all $n$ mask coordinates of any parent of $T(C)$ is nonempty and lowers its rank by exactly $n$; its marked section is $C$. This gives both reflection and the matching lower bound.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:partial-traces"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 144,
+  "short_name": "complementary_fiber_replacement_obstruction",
+  "name": "Complementary Fiber Replacement Obstruction",
+  "class_ids": ["#classes/maximum"],
+  "result_type": "implication",
+  "statement": "In a nontrivial old maximum sequence, if the control dimension is $m=2s+1$ with $s\\ge1$, replacing even one middle fiber $B_s$ by its cube complement while keeping every other level unchanged cannot produce a maximum class.",
+  "status": "established",
+  "proof": "The complement has the correct cardinality and rank, but it cannot contain the nonempty lower neighbor $B_{s-1}\\subseteq B_s$, and it cannot lie in the proper upper neighbor $B_{s+1}\\supseteq B_s$, since then $B_s$ together with its complement would force the full control cube into $B_{s+1}$. At least one containment condition of the exact fiber criterion applies.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#cor:complement-fiber",
+  "comments": "This only obstructs a single-level equal-cardinality replacement inside the level-sum construction; it does not disprove general maximum-generated substitution."
+}

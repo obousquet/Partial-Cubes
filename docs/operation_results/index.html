@@ -2262,6 +2262,40 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-133" style="position:relative;">
+
+        <h3><a href="operation_results/ample_partial_trace_closed.html" class="table-title-link">Partial Trace Preserves and Reflects Ampleness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Trace Preserves and Reflects Ampleness</p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/partial_trace.html">Partial-Trace Expansion</a></p>
+<p><strong>Result Type:</strong> Preserves Between</p>
+<p><strong>Target Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty finite binary class $C$, its full partial-trace expansion $T(C)$ is ample exactly when $C$ is ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The exact shattering formula counts the shattered supports of $T(C)$. If $C$ is ample, projection ampleness converts the word count $\sum_{Z\subseteq X}2^{n-|Z|}|\pi_ZC|$ into the same sum that counts those shattered supports, so the sandwich equality makes $T(C)$ ample. Conversely, the all-zero mask section of $T(C)$ is exactly $C$, and sections of ample classes are ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:partial-traces</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-134" style="position:relative;">
+
+        <h3><a href="operation_results/maximum_generated_partial_trace_closed.html" class="table-title-link">Partial Trace Preserves and Reflects Maximum-Generated Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Trace Preserves and Reflects Maximum-Generated Classes</p>
+<p><strong>Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/partial_trace.html">Partial-Trace Expansion</a></p>
+<p><strong>Result Type:</strong> Preserves Between</p>
+<p><strong>Target Class: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty finite binary class $C$, $T(C)$ is maximum-generated exactly when $C$ is maximum-generated. Expanding $n$ visible coordinates raises the minimum maximum-parent rank by exactly $n$.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Expanding one coordinate of a maximum parent uses the fiber replacement theorem and one new marked control coordinate, raising parent rank by one and adding at most one auxiliary. Iteration gives the upper bound. Conversely, full reduction in all $n$ mask coordinates of any parent of $T(C)$ is nonempty and lowers its rank by exactly $n$; its marked section is $C$. This gives both reflection and the matching lower bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:partial-traces</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

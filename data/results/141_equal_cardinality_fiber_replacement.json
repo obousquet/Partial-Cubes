@@ -1,0 +1,12 @@
+{
+  "id": 141,
+  "short_name": "equal_cardinality_fiber_replacement",
+  "name": "Exact Equal-Cardinality Fiber Replacement Criterion",
+  "class_ids": ["#classes/maximum"],
+  "result_type": "recognition",
+  "statement": "Let maximum sequences $(A_i)$ on $U$ and $(B_j)$ on $Y$ define a rank-$R=k+s$ level sum. Replace the rank-$s$ fiber $B_s$ over every $x\\in A_k\\setminus A_{k-1}$ by a set $F_x$ of the same Sauer cardinality. Form $G_k$ by joining two level-$k$ words when they agree with a missing pattern of $A_{k-1}$ on a $k$-support. The modified class remains maximum exactly when every $F_x$ is maximum of rank $s$, the fibers are constant on each component of $G_k$, every $F_x\\subseteq B_{s+1}$ when $k>0$, and every $F_x\\supseteq B_{s-1}$ when $k<|U|$.",
+  "status": "established",
+  "proof": "If a replacement has excessive rank, adjacent vertices have unequal fibers, or either neighboring-level containment fails, combine the offending control trace with a missing old trace to shatter $R+1$ coordinates. Conversely, consider a candidate support of size $R+1$ and split by whether its control part has at most $s$, exactly $s+1$, or at least $s+2$ coordinates. A missing trace from the appropriate old level, component constancy at the middle case, and the two containment conditions respectively supply a missing combined trace. Cardinality is unchanged, so the modified class is maximum.",
+  "proof_source": "CompressionSchemes:maximum_parent_methods.tex#thm:fibers",
+  "witness_ids": ["#examples/distinct_maximum_fibers"]
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-21" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-50" style="position:relative;">
 
-        <h3><a href="invariants/maximum_parent_profile.html" class="table-title-link">Maximum-Parent Profile</a></h3>
+        <h3><a href="examples/partial_trace_calibrations.html" class="table-title-link">Partial-Trace Path and Star Calibrations</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Maximum-Parent Profile</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal F(C)">
-            \[\mathcal F(C)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a nonempty proper positioned binary class $C\subsetneq\{0,1\}^X$, let $\mathcal F(C)$ be the set of pairs $(r,s)\in\mathbb N_0^2$ for which $C$ is a marked coordinate section of a proper maximum class of rank $r$ on exactly $r+s+1$ coordinates. Equivalently, $s$ is the rank of the complementary maximum class and the auxiliary count is $r+s+1-|X|$.</p></div>
-<p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/maximum_generated_classes.html">Maximum-Generated Classes</a></p>
-<p><strong>Codomain: </strong>Upward-closed subsets of $\mathbb N_0^2$</p>
-<strong>Normalization:</strong><div class="text-field"><p>Visible coordinates, including constants, remain part of the positioned class. The invariant is recorded here for nonempty proper maximum-generated classes.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>Complementation transposes the profile. Its finite antichain of coordinatewise minimal points determines the entire profile.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:effective-parent-profiles</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/monotone_optimal_parent_profile.html'>Maximum-Parent Profile of the Optimal Monotone Example</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fixed_rank_maximum_parent_bounds.html'>Finite Auxiliary Bounds at a Prescribed Parent Rank</a></li><li><a href='results/effective_maximum_parent_profile.html'>Effective Maximum-Parent Profile from One Parent</a></li><li><a href='results/constant_coordinate_parent_profile.html'>Maximum-Parent Profiles under Constant Coordinates</a></li><li><a href='results/free_coordinate_parent_profile_bounds.html'>Maximum-Parent Profile Bounds under Free Coordinates</a></li><li><a href='results/maximum_parent_product_profiles.html'>Quantitative Maximum-Parent Product Bounds</a></li><li><a href='results/disjoint_auxiliary_witness_normal_form.html'>Disjoint Auxiliary-Witness Normal Form</a></li></ul></p></div>
+        <p><strong>Name: </strong>Partial-Trace Path and Star Calibrations</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Apply the full partial-trace expansion first to the singleton $C=\{0\}\subseteq\{0,1\}$, and then to the rank-one maximum three-coordinate star $S=\{000,100,010,001\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The singleton expands to the three-word maximum path $\{(0,0),(0,1),(1,1)\}$ of rank one. The star expands to a 54-word ample class on six coordinates with VC dimension four; it is not itself maximum because the rank-four Sauer bound there is 57. It nevertheless has a maximum parent of the exact shifted minimum rank.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#thm:partial-traces</p></div>
+<strong>Verification:</strong><div class="text-field"><p>scripts/verify_fiber_partial_trace.py; data/examples/assets/fiber_partial_trace_database_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>
