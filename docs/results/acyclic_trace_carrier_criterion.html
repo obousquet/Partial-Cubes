@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Complete, partial, necessary, and sufficient forbidden-minor theorems - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Complete, partial, necessary, and sufficient forbidden-minor theorems - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="obstruction_bases/index.html">&larr; Back to Obstruction_Bases Table</a></div>
-    <div class="table-card" id="math-9" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-643" style="position:relative;">
 
-        <h3><a href="obstruction_bases/dismantlable_ample_known_pc_obstructions.html" class="table-title-link">Complete pc-Minimal Obstructions to Dismantlable Ampleness</a></h3>
+        <h3><a href="results/acyclic_trace_carrier_criterion.html" class="table-title-link">Acyclic Trace-Carrier Criterion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Complete pc-Minimal Obstructions to Dismantlable Ampleness</p>
-<p><strong>Target Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
-<p><strong>Ambient Class: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<p><strong>Minor Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
-<p><strong>Obstruction Families:</strong><ul class='fields-list'><li><a href="obstruction_families/antipodally_punctured_hypercubes.html">Antipodally Punctured Hypercubes</a></li><li><a href="obstruction_families/color_minimal_nonshellable_yang_balls.html">Color-Minimal Nonshellable Yang Balls</a></li></ul></p>
-<p><strong>Basis Claim:</strong> Complete</p>
-<p><strong>Minimality:</strong> pc-minimal</p>
-<strong>Statement:</strong><div class="text-field"><p>A finite partial cube is dismantlable ample exactly when it has no pc-minor isomorphic to an antipodally punctured cube $Q_n^{--}$, $n\ge3$, and no pc-minor whose Yang complex is a color-minimal nonshellable constructible ball. The punctured cubes are exactly the nonample pc-minimal obstructions; the color-minimal Yang balls are exactly the ample pc-minimal obstructions.</p></div>
+        <p><strong>Name: </strong>Acyclic Trace-Carrier Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An ample family has an ordering with bijective first-loss map exactly when it admits an acyclic trace-carrier scheme: a bijection $\kappa$ from shattered supports to concepts, one selected protector in every trace fiber other than the carrier trace, and an acyclic digraph directing all other carrier-trace concepts into the carrier and the carrier into every selected protector. Consequently, existence of such a scheme is equivalent to corner peelability.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>Every nonample partial cube contains an antipodally punctured cube as a pc-minor; pc-minimality therefore makes these and only these the nonample basis layer. For an ample family, dismantlable ampleness is equivalently linear quotients of the Alexander-dual ideal, shellability of the Yang ball, or existence of an acyclic trace-carrier scheme. The two restrictions and one contraction in each coordinate are exactly the elementary pc-minors. Thus an ample failure is pc-minimal precisely when it has no acyclic trace-carrier scheme but all $3d$ elementary images do. Pc-minor closure reduces every proper minor to one of those images.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#FloystadGabrielsenMafi26">[FloystadGabrielsenMafi26]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:nonample-layer; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-descendant-free-parametrization; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-descendant-free-yang-ball-parametrization; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-static-signed-clutter-basis</p></div>
-<strong>Comments:</strong><div class="text-field"><p>The ample layer has exact finite algebraic, shellability, and trace-carrier recognition in each fixed coordinate dimension. These criteria do not yet give the stronger intrinsic generative construction sought in the manuscript. Hall's class is a named member of this general family.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong> <em>None</em></p></div>
+<strong>Proof:</strong><div class="text-field"><p>From an order with bijective first-loss map, assign each support to the concept at its death time. In the dying trace all other representatives occur earlier, while the last representative of every other trace occurs later; selecting those last representatives makes every precedence arc point forward. Conversely, topologically order an acyclic scheme. The incoming arcs make the carrier the last representative of its own trace, and each outgoing arc places a representative of every other trace later. Thus the support dies at its carrier's position. Carrier bijectivity makes all death times distinct and exhaustive, and the first-loss criterion yields a corner peeling.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-acyclic-trace-carrier-criterion</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The criterion is order-free once a scheme is specified, but existence of a scheme remains a recognition problem rather than a generative construction of all obstructions.</p></div>
 
         </div>
     </div>

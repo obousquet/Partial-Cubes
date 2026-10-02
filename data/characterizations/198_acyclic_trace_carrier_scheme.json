@@ -1,0 +1,15 @@
+{
+  "id": 198,
+  "short_name": "acyclic_trace_carrier_scheme",
+  "name": "Acyclic Trace-Carrier Scheme",
+  "class_id": "#classes/dismantlable_ample",
+  "characterization_type": "algorithmic",
+  "model_type": "set_family",
+  "statement": "A finite nonempty ample family $H$ belongs to the dismantlable ample classes exactly when it admits the following data. Bijections assign each shattered support $D$ a distinct carrier $\\kappa(D)\\in H$. For every other trace $q$ on $D$, choose a protector $p(D,q)$ realizing $q$. Direct every other concept having the carrier trace toward $\\kappa(D)$, and direct $\\kappa(D)$ toward each chosen protector. The resulting precedence digraph must be acyclic.",
+  "hypotheses": "Finite nonempty ample binary family.",
+  "status": "established",
+  "recognition_complexity": "Finite search over support-to-concept bijections and selected trace-fiber representatives, followed by directed-cycle detection. The criterion removes the total-order variable but is not claimed polynomial-time.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-acyclic-trace-carrier-criterion",
+  "comments": "Protector choices are essential: replacing a chosen protector by every member of its trace fiber already makes the criterion fail on the square."
+}

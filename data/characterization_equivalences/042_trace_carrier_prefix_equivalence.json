@@ -1,0 +1,16 @@
+{
+  "id": 42,
+  "short_name": "trace_carrier_prefix_equivalence",
+  "name": "Trace-Carrier and Ample-Prefix Equivalence",
+  "class_id": "#classes/dismantlable_ample",
+  "characterization_ids": [
+    "#characterizations/ample_prefix_ordering",
+    "#characterizations/acyclic_trace_carrier_scheme"
+  ],
+  "hypotheses": "Finite nonempty ample binary family.",
+  "statement": "An ample family has an ample-prefix ordering, equivalently a reverse corner peeling, if and only if it admits an acyclic trace-carrier scheme.",
+  "status": "established",
+  "proof": "A corner-peeling order has a bijective first-loss map on the shattered supports. Assign each support to the concept at its loss time and choose the last later representative of every competing trace; every carrier and protector arc points forward. Conversely, any topological ordering of an acyclic scheme makes the carrier of each support its unique first-loss concept, so the first-loss map is bijective. The first-loss criterion makes every suffix ample and hence makes the order a corner peeling; reversing it gives an ample-prefix ordering.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-trace-death-peeling; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-acyclic-trace-carrier-criterion"
+}

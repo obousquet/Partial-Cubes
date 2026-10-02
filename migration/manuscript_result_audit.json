@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1143,
     "label_occurrences": 1167,
-    "covered": 741,
-    "uncovered": 402,
-    "proof_source_records": 1916
+    "covered": 744,
+    "uncovered": 399,
+    "proof_source_records": 1921
   },
   "by_workspace": {
     "ample-corners": {
@@ -28,9 +28,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 305,
+      "covered": 308,
       "total": 683,
-      "uncovered": 378
+      "uncovered": 375
     },
     "gluing": {
       "covered": 20,
@@ -5863,7 +5863,7 @@
       "label": "cor:damp-static-signed-clutter-basis",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5873,7 +5873,10 @@
           "line": 25351
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_bases/009_dismantlable_ample_known_pc_obstructions.json",
+        "data/results/644_static_trace_carrier_forbidden_basis.json"
+      ]
     },
     {
       "label": "cor:damp-strict-facet-excess",
@@ -12792,7 +12795,7 @@
       "label": "prop:damp-trace-death-peeling",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -12802,7 +12805,10 @@
           "line": 25187
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/042_trace_carrier_prefix_equivalence.json",
+        "data/results/642_trace_death_peeling_criterion.json"
+      ]
     },
     {
       "label": "prop:damp-transported-residual-bounded-genealogy",
@@ -13445,7 +13451,7 @@
       "label": "thm:damp-acyclic-trace-carrier-criterion",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -13455,7 +13461,11 @@
           "line": 25275
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/042_trace_carrier_prefix_equivalence.json",
+        "data/characterizations/198_acyclic_trace_carrier_scheme.json",
+        "data/results/643_acyclic_trace_carrier_criterion.json"
+      ]
     },
     {
       "label": "thm:damp-adjacent-rank-three-repair",

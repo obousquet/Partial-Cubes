@@ -10758,6 +10758,58 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-642" style="position:relative;">
+
+        <h3><a href="results/trace_death_peeling_criterion.html" class="table-title-link">First-Loss Criterion for a Corner Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>First-Loss Criterion for a Corner Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $H$ have shattered complex $\Sigma$ and order $m=|H|=|\Sigma|$. For an ordering $x_1,\ldots,x_m$ and $D\in\Sigma$, define the death time $\delta(D)$ as the minimum, over all traces $q$ on $D$, of the last index at which $q$ occurs. The ordering is a corner-peeling order exactly when $\delta:\Sigma\to[m]$ is a bijection. Thus an order can be checked using only the original trace table, without constructing its descendant families.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After the first $k$ deletions, a support $D$ remains shattered exactly when every trace on $D$ still has a representative, equivalently when $\delta(D)>k$. If the death map is bijective, exactly $m-k$ supports survive in a suffix of $m-k$ concepts, so equality in the Sandwich bound makes every suffix ample and every deletion a corner deletion. Conversely, a corner peeling has every suffix ample, hence exactly $m-k$ surviving shattered supports after $k$ deletions. These cardinalities force exactly one support to die at each time $1,\ldots,m$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-trace-death-peeling</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-643" style="position:relative;">
+
+        <h3><a href="results/acyclic_trace_carrier_criterion.html" class="table-title-link">Acyclic Trace-Carrier Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acyclic Trace-Carrier Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An ample family has an ordering with bijective first-loss map exactly when it admits an acyclic trace-carrier scheme: a bijection $\kappa$ from shattered supports to concepts, one selected protector in every trace fiber other than the carrier trace, and an acyclic digraph directing all other carrier-trace concepts into the carrier and the carrier into every selected protector. Consequently, existence of such a scheme is equivalent to corner peelability.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>From an order with bijective first-loss map, assign each support to the concept at its death time. In the dying trace all other representatives occur earlier, while the last representative of every other trace occurs later; selecting those last representatives makes every precedence arc point forward. Conversely, topologically order an acyclic scheme. The incoming arcs make the carrier the last representative of its own trace, and each outgoing arc places a representative of every other trace later. Thus the support dies at its carrier's position. Carrier bijectivity makes all death times distinct and exhaustive, and the first-loss criterion yields a corner peeling.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-acyclic-trace-carrier-criterion</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The criterion is order-free once a scheme is specified, but existence of a scheme remains a recognition problem rather than a generative construction of all obstructions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-644" style="position:relative;">
+
+        <h3><a href="results/static_trace_carrier_forbidden_basis.html" class="table-title-link">Order-Free Boolean Recognition of the Dismantlable-Ample Forbidden Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Order-Free Boolean Recognition of the Dismantlable-Ample Forbidden Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an irredundantly embedded binary family $H$ be presented by a signing of the minimal nonfaces of a proposed shattered complex. Then $H$ is an ample forbidden pc-minor for the dismantlable ample classes exactly when the signing is admissible, $H$ admits no acyclic trace-carrier scheme, and each of its $3|F|$ one-coordinate restrictions and contractions admits such a scheme for its own shattered complex. Together with the antipodally twice-punctured cubes $Q_n^{--}$ for $n\ge3$, these signed presentations modulo coordinate permutations and reorientations form the full forbidden basis. The conditions use only finite trace-fiber data of $H$ and its explicit elementary images.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The fixed-shadow signed-clutter theorem identifies admissibility with ampleness and fixes the shattered complex. The first-loss and trace-carrier theorems identify absence of a scheme with nonpeelability and existence of schemes on the elementary images with their peelability. Descendant-free pc-minor reduction makes those elementary tests equivalent to pc-minimality and supplies the quotient by cube symmetries. The nonample-layer theorem supplies exactly the antipodally twice-punctured cubes.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-static-signed-clutter-basis</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is an exact static recognition criterion. It does not satisfy the manuscript's stronger goal of a noncircular generative classification, because scheme existence is equivalent to corner peelability.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

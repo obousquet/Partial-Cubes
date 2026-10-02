@@ -1,0 +1,18 @@
+{
+  "id": 642,
+  "short_name": "trace_death_peeling_criterion",
+  "name": "First-Loss Criterion for a Corner Peeling",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let nonempty ample $H$ have shattered complex $\\Sigma$ and order $m=|H|=|\\Sigma|$. For an ordering $x_1,\\ldots,x_m$ and $D\\in\\Sigma$, define the death time $\\delta(D)$ as the minimum, over all traces $q$ on $D$, of the last index at which $q$ occurs. The ordering is a corner-peeling order exactly when $\\delta:\\Sigma\\to[m]$ is a bijection. Thus an order can be checked using only the original trace table, without constructing its descendant families.",
+  "status": "established",
+  "proof": "After the first $k$ deletions, a support $D$ remains shattered exactly when every trace on $D$ still has a representative, equivalently when $\\delta(D)>k$. If the death map is bijective, exactly $m-k$ supports survive in a suffix of $m-k$ concepts, so equality in the Sandwich bound makes every suffix ample and every deletion a corner deletion. Conversely, a corner peeling has every suffix ample, hence exactly $m-k$ surviving shattered supports after $k$ deletions. These cardinalities force exactly one support to die at each time $1,\\ldots,m$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-trace-death-peeling"
+}

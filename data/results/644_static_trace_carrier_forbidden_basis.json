@@ -1,0 +1,20 @@
+{
+  "id": 644,
+  "short_name": "static_trace_carrier_forbidden_basis",
+  "name": "Order-Free Boolean Recognition of the Dismantlable-Ample Forbidden Basis",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let an irredundantly embedded binary family $H$ be presented by a signing of the minimal nonfaces of a proposed shattered complex. Then $H$ is an ample forbidden pc-minor for the dismantlable ample classes exactly when the signing is admissible, $H$ admits no acyclic trace-carrier scheme, and each of its $3|F|$ one-coordinate restrictions and contractions admits such a scheme for its own shattered complex. Together with the antipodally twice-punctured cubes $Q_n^{--}$ for $n\\ge3$, these signed presentations modulo coordinate permutations and reorientations form the full forbidden basis. The conditions use only finite trace-fiber data of $H$ and its explicit elementary images.",
+  "status": "established",
+  "proof": "The fixed-shadow signed-clutter theorem identifies admissibility with ampleness and fixes the shattered complex. The first-loss and trace-carrier theorems identify absence of a scheme with nonpeelability and existence of schemes on the elementary images with their peelability. Descendant-free pc-minor reduction makes those elementary tests equivalent to pc-minimality and supplies the quotient by cube symmetries. The nonample-layer theorem supplies exactly the antipodally twice-punctured cubes.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-static-signed-clutter-basis",
+  "comments": "This is an exact static recognition criterion. It does not satisfy the manuscript's stronger goal of a noncircular generative classification, because scheme existence is equivalent to corner peelability."
+}

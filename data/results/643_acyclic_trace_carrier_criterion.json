@@ -1,0 +1,16 @@
+{
+  "id": 643,
+  "short_name": "acyclic_trace_carrier_criterion",
+  "name": "Acyclic Trace-Carrier Criterion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "An ample family has an ordering with bijective first-loss map exactly when it admits an acyclic trace-carrier scheme: a bijection $\\kappa$ from shattered supports to concepts, one selected protector in every trace fiber other than the carrier trace, and an acyclic digraph directing all other carrier-trace concepts into the carrier and the carrier into every selected protector. Consequently, existence of such a scheme is equivalent to corner peelability.",
+  "status": "established",
+  "proof": "From an order with bijective first-loss map, assign each support to the concept at its death time. In the dying trace all other representatives occur earlier, while the last representative of every other trace occurs later; selecting those last representatives makes every precedence arc point forward. Conversely, topologically order an acyclic scheme. The incoming arcs make the carrier the last representative of its own trace, and each outgoing arc places a representative of every other trace later. Thus the support dies at its carrier's position. Carrier bijectivity makes all death times distinct and exhaustive, and the first-loss criterion yields a corner peeling.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-acyclic-trace-carrier-criterion",
+  "comments": "The criterion is order-free once a scheme is specified, but existence of a scheme remains a recognition problem rather than a generative construction of all obstructions."
+}
