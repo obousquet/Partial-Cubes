@@ -1,0 +1,19 @@
+{
+  "id": 567,
+  "short_name": "two_relative_wings_all_minor_sinks",
+  "name": "Two Relative Wings Preserve Every Proper-Minor Sink Choice",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "In the one-relative-wing inverse construction, suppose both sections peel to the overlap $O$ and every vertex of either section is an attainable peeling sink. Then every vertex of every nonempty proper pc-minor of the forbidden expansion $X$ is an attainable sink. Consequently no pc-minor of $X$ is a rooted factor.",
+  "status": "established",
+  "proof": "Each section is all-sinks by hypothesis, and the contraction peels to either section after clearing the opposite wing. For an old-coordinate elementary operation $\\mu$, the overlap is the positive family $\\mu O$, the sections $\\mu B_i$ retain every sink by rooted-minor transport, and both relative wing orders transport. To end in one section, clear the opposite wing, delete the redundant copy of $\\mu O$, and finish with the prescribed endpoint order in the retained section. Rooted transport extends the construction to all proper pc-minors. A rooted factor has an unattainable root, while $X$ itself is nonpeelable.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-wing-all-minor-sinks"
+}

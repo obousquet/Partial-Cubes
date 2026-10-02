@@ -1,0 +1,19 @@
+{
+  "id": 564,
+  "short_name": "inverse_cube_dimension_exclusion",
+  "name": "Cube-Dimension Exclusion for Proper Minors of an Expansion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "statement": "Under the marked-reduction hypotheses, every forbidden proper pc-minor $H$ of $X$ has an active coordinate $f$ such that $\\operatorname{VC}(H^{\\{f\\}})\\leq\\operatorname{VC}(O)$. Hence, if $\\operatorname{VC}(O)\\leq d$, no ample forbidden class in which every active coordinate lies in a cube of dimension at least $d+2$ can be a proper pc-minor of $X$. In particular, overlap VC dimension at most three excludes every member of the 1364-vertex maximum-pair rectangular obstruction family.",
+  "status": "established",
+  "proof": "Choose $f$ to be the surviving marked coordinate. The marked reduction theorem identifies $H^{\\{f\\}}$ with the pc-minor $\\nu O$, so its VC dimension is at most that of $O$. A cube of dimension at least $d+2$ through $f$ would reduce to a cube of dimension at least $d+1$, contradicting this bound. In the rectangular family every coordinate belongs to a five-cube: combine a three-cube in its maximum rank-three factor with a two-cube in the opposite rank-two factor.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-inverse-cube-dimension-exclusion",
+  "comments": "The rectangular exclusion uses only the product structure, independently of the signed realization of the factors."
+}

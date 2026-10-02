@@ -1,0 +1,21 @@
+{
+  "id": 563,
+  "short_name": "marked_proper_obstruction_reduction_test",
+  "name": "Marked Reduction Test for Proper Obstructions in an Expansion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/full_reduction",
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X\\subseteq Q_{F\\cup\\{e\\}}$ be ample, use all $n+1$ displayed coordinates, and have both $e$-sections and its $e$-contraction dismantlable ample. Put $O=X^{\\{e\\}}$. Every ample forbidden proper pc-minor $H$ of $X$ can be written $H=\\nu X$, where the nonempty minor sequence $\\nu$ uses only coordinates in $F$, leaves $e$ active, and satisfies $H^{\\{e\\}}=\\nu O$. If $O$ is forbidden and uses all of $F$, then $\\nu O$ is dismantlable ample. If $H$ has $n$ active coordinates, $\\nu$ is one elementary operation, so the orders of the coordinate reductions of $H$ and of the elementary pc-minors of $O$ must have a common value.",
+  "status": "established",
+  "proof": "Any operation deleting $e$ can be commuted to the start of a minor sequence; the result would then be a pc-minor of a positive $e$-section or contraction, contradicting that $H$ is forbidden. The coordinate $e$ cannot become constant for the same reason. Old-coordinate restrictions commute with reduction in $e$. For contraction, isometry supplies an intermediate vertex whenever projected $e$-mates come from opposite shores, giving $(\\pi_qX)^{\\{e\\}}=\\pi_qO$; iteration proves $H^{\\{e\\}}=\\nu O$. If $O$ is forbidden and uses every old coordinate, the first operation is proper on $O$, so forbidden-minor minimality makes $\\nu O$ positive. Retaining $n$ active coordinates permits exactly one nontrivial elementary operation, which yields the cardinality intersection test.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-inverse-proper-obstruction-reduction-test",
+  "comments": "The cardinality intersection is necessary only; it is not an inverse-construction criterion."
+}

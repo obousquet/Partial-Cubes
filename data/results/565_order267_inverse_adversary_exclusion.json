@@ -1,0 +1,22 @@
+{
+  "id": 565,
+  "short_name": "order267_inverse_adversary_exclusion",
+  "name": "The Recorded 267-Class Excludes Known Twelve-Coordinate Inverse Adversaries",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "witness_ids": [
+    "#examples/cornerless_ample_267"
+  ],
+  "statement": "In the marked-reduction theorem, let the overlap be the recorded twelve-coordinate obstruction $O=Y_{267}$. No proper pc-minor of the expansion is isomorphic to $Y_{267}$ or to any of the 1364-vertex maximum-pair rectangular obstructions.",
+  "status": "established",
+  "proof": "Every coordinate reduction of $Y_{267}$ has $267-208=59$ concepts, while its nonempty elementary restrictions have orders from 77 through 190 and its contractions have order 208. Thus the necessary one-operation cardinality match fails for a proper minor isomorphic to $Y_{267}$. In a rectangular obstruction $H=(P_1\\times O_2)\\cup(O_1\\times P_2)$, a reduction in either six-coordinate block has order $16\\cdot22+6\\cdot(42-22)=472$. Since both candidate adversaries use twelve coordinates and 472 exceeds every elementary-minor order of $Y_{267}$, the same test excludes the rectangular family.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-order267-inverse-adversary-exclusion",
+  "comments": "The exclusion is limited to twelve-coordinate proper minors. A forbidden minor on fewer coordinates is not ruled out by the one-operation argument, so this does not prove the unrestricted inverse construction sound."
+}

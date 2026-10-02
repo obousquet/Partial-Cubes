@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-21" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-565" style="position:relative;">
 
-        <h3><a href="operations/graph_expansion.html" class="table-title-link">Graph Expansion</a></h3>
+        <h3><a href="results/order267_inverse_adversary_exclusion.html" class="table-title-link">The Recorded 267-Class Excludes Known Twelve-Coordinate Inverse Adversaries</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Graph Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{Exp}">
-            \[\operatorname{Exp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 3</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $G_1,G_2$ be isometric induced subgraphs covering a connected graph $G$, with no edge joining $G_1\setminus G_2$ to $G_2\setminus G_1$. Replace each vertex of $G_1\cap G_2$ by two adjacent copies, retain one copy of $G_1$ and one copy of $G_2$, and join corresponding overlap copies. The result is the expansion of $G$ with cover $(G_1,G_2)$.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>Convex, isometric, connected, and peripheral expansions impose additional conditions on the overlap or cover. These adjectives do not by themselves have interchangeable preservation theorems.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresarImrichKlavzar03fast">[BresarImrichKlavzar03fast]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:one-step-expansion-contracts</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/one_step_expansion_contracts.html'>One-Step Expansion Preservation Contracts</a></li><li><a href='results/component_labels_parametrize_ample_expansions.html'>Component Labels Parametrize Ample One-Coordinate Expansions</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li><li><a href='results/component_label_repair_disjunction.html'>Independent Repair Tips Give an Exact Component-Label Disjunction</a></li><li><a href='results/positive_faces_do_not_replace_contraction_tests.html'>Positive Coordinate Faces Do Not Replace Contraction Tests</a></li><li><a href='results/inclusion_minimal_negative_527_528.html'>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></li><li><a href='results/three_piece_component_reflection_repair.html'>Every Three-Piece Obstruction Has a Component-Reflection Repair</a></li><li><a href='results/prescribed_lifts_require_partition_disjunction.html'>Prescribed USO Lifts Can Require a Union of Equality Partitions</a></li><li><a href='results/one_relative_wing_inverse.html'>Inverse Construction from One Relatively Peelable Wing</a></li><li><a href='results/two_relative_wings_all_minor_sinks.html'>Two Relative Wings Preserve Every Proper-Minor Sink Choice</a></li><li><a href='results/forest_wing_inverse.html'>A Forest Exclusive Wing Gives a Sound Inverse Construction</a></li><li><a href='results/small_two_core_wing_inverse.html'>Small 2-Core Components Force a Relatively Peelable Wing</a></li></ul></p></div>
+        <p><strong>Name: </strong>The Recorded 267-Class Excludes Known Twelve-Coordinate Inverse Adversaries</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the marked-reduction theorem, let the overlap be the recorded twelve-coordinate obstruction $O=Y_{267}$. No proper pc-minor of the expansion is isomorphic to $Y_{267}$ or to any of the 1364-vertex maximum-pair rectangular obstructions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every coordinate reduction of $Y_{267}$ has $267-208=59$ concepts, while its nonempty elementary restrictions have orders from 77 through 190 and its contractions have order 208. Thus the necessary one-operation cardinality match fails for a proper minor isomorphic to $Y_{267}$. In a rectangular obstruction $H=(P_1\times O_2)\cup(O_1\times P_2)$, a reduction in either six-coordinate block has order $16\cdot22+6\cdot(42-22)=472$. Since both candidate adversaries use twelve coordinates and 472 exceeds every elementary-minor order of $Y_{267}$, the same test excludes the rectangular family.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-order267-inverse-adversary-exclusion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cornerless_ample_267.html">The 267-Concept Cornerless Ample Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The exclusion is limited to twelve-coordinate proper minors. A forbidden minor on fewer coordinates is not ruled out by the one-operation argument, so this does not prove the unrestricted inverse construction sound.</p></div>
 
         </div>
     </div>

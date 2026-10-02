@@ -1,0 +1,19 @@
+{
+  "id": 569,
+  "short_name": "small_two_core_wing_inverse",
+  "name": "Small 2-Core Components Force a Relatively Peelable Wing",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "Under the structural and positive-section hypotheses of the one-relative-wing inverse theorem, suppose that in one exclusive wing every connected component of the graph 2-core has at most eight vertices. Then the expansion is an ample forbidden pc-minor, with no bound on the number of components or on trees attached to their 2-cores. Consequently, if neither section peels relatively to the overlap, each exclusive wing has a 2-core component on at least nine vertices.",
+  "status": "established",
+  "proof": "More generally, let $\\varnothing\\ne H\\subseteq A$ have Cohen--Macaulay relative Yang module and put $D=A\\setminus H$. Induct on $|D|$. A residual leaf either teaches relative to $H$, so it can be prepended after the teaching lift, or its deletion preserves Cohen--Macaulayness and it can be appended after induction. With no leaf, the relative Alexander-dual presentation splits over residual components. An isolated generator teaches; otherwise every component lies in the 2-core and has at most eight generators, so the eight-facet linear-quotients theorem supplies a teaching generator. Thus the wing has a relative ample chain, and the inverse theorem applies. The lower bound nine is the contrapositive for each wing.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-small-component-wing-inverse"
+}

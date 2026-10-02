@@ -1,0 +1,17 @@
+{
+  "id": 570,
+  "short_name": "uniform_inactive_coordinate_removal",
+  "name": "Removing a Uniform Inactive Coordinate Preserves Relative Peeling",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\varnothing\\ne O\\subsetneq B\\subseteq Q_F$ be ample. Suppose every concept of $B\\setminus O$ has value $b$ in coordinate $j$ and $O_j^b$ is nonempty. If $j$ belongs either to every relative shattered support in $\\mathcal T=\\operatorname{Sh}(B)\\setminus\\operatorname{Sh}(O)$ or to none of them, then restriction to the $j=b$ section preserves exactly the relative corner-deletion orders. Its relative supports are $\\{S\\setminus\\{j\\}:S\\in\\mathcal T\\}$ without repetition, and deleting $j$ preserves the residual graph and all other edge labels.",
+  "status": "established",
+  "proof": "Write $A=O_j^b$, $D=B_j^b$, and $C=O_j^{1-b}=B_j^{1-b}$. The two-section shadow identity shows that each support in $\\operatorname{Sh}(D)\\setminus\\operatorname{Sh}(A)$ contributes exactly one relative support, containing $j$ precisely when it also lies in $\\operatorname{Sh}(C)$. If no relative support contains $j$, cardinality equality shows that no residual concept has a $j$-neighbor, so every section corner lifts. If every support contains $j$, then $D\\setminus A\\subseteq C$ and $D\\cup C=A\\cup C$; for every ample intermediate $D'$ in a section order, the shadow union and intersection count proves that the family with sections $D'$ and $C$ remains ample. Thus every section deletion lifts, while restricting any whole-family order gives the converse.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-uniform-inactive-coordinate"
+}

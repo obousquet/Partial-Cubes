@@ -9114,6 +9114,23 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-566" style="position:relative;">
+
+        <h3><a href="results/one_relative_wing_inverse.html" class="table-title-link">Inverse Construction from One Relatively Peelable Wing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Inverse Construction from One Relatively Peelable Wing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $O$ be an ample forbidden pc-minor for dismantlable ampleness and use every coordinate of $Q_F$. Choose dismantlable ample $B_0,B_1$ with $B_0\cap B_1=O$, ample union $A=B_0\cup B_1$, and no edge between the exclusive wings $B_0\setminus O$ and $B_1\setminus O$. If at least one section peels to $O$, then $X=(B_0\times\{0\})\cup(B_1\times\{1\})$ is an ample forbidden pc-minor. Its sections, contraction, and reduction recover the marked expansion and its inputs. Equivalently, this recovers every ample forbidden expansion with negative reduction and at least one relatively peelable section.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The component-expansion theorem makes $X$ ample, while its negative reduction $O$ and closure of dismantlable ampleness under full reduction make $X$ nonpeelable. Lift a peeling of, say, $B_0$ to $O$ through layer zero. The absent vertical mates and the separation of the exclusive wings preserve each corner cube, reducing $X$ to a peripheral expansion of $O$ and $B_1$; the same order shows the contraction is positive. Apply any old-coordinate elementary operation to this deletion sequence and omit repeated images. Its terminal family is a peripheral expansion of the positive families $\mu O$ and $\mu B_1$, so every proper elementary minor is positive. Pc-minor closure then proves forbiddenness. The sections, union, and intersection recover the construction data.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-one-relative-wing-inverse</p></div>
+<strong>Comments:</strong><div class="text-field"><p>It is enough that every one-concept intermediate $O\cup\{a\}$ in one wing is ample: positivity of the section then forces a relative peeling. No separate tests of old-coordinate minors of $X$ are needed.</p></div>
+
+        </div>
+    </div>
+
     <div class="table-card" id="math-549" style="position:relative;">
 
         <h3><a href="results/rank_three_local_trace_catalogue.html" class="table-title-link">Complete Rank-Three Local Trace-Cover Catalogue</a></h3>
@@ -9339,6 +9356,124 @@
 <strong>Proof:</strong><div class="text-field"><p>Restriction and contraction in any other coordinate commute with full reduction on ample families. Applying full-reduction closure to the corresponding proper pc-minor of H shows that every elementary pc-minor of A is dismantlable ample. Thus a nonpeelable A is forbidden. Each step removes a coordinate, so descent terminates; the two-cone dichotomy makes every terminal coordinate gluing-critical. Periphery-freeness makes both inverse wings nonempty, and the sections and their union are proper pc-minors of H.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-inherited-overlap-descent</p></div>
 <strong>Comments:</strong><div class="text-field"><p>The overlap is a full reduction and need not itself be a pc-minor of the original family.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-563" style="position:relative;">
+
+        <h3><a href="results/marked_proper_obstruction_reduction_test.html" class="table-title-link">Marked Reduction Test for Proper Obstructions in an Expansion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Marked Reduction Test for Proper Obstructions in an Expansion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X\subseteq Q_{F\cup\{e\}}$ be ample, use all $n+1$ displayed coordinates, and have both $e$-sections and its $e$-contraction dismantlable ample. Put $O=X^{\{e\}}$. Every ample forbidden proper pc-minor $H$ of $X$ can be written $H=\nu X$, where the nonempty minor sequence $\nu$ uses only coordinates in $F$, leaves $e$ active, and satisfies $H^{\{e\}}=\nu O$. If $O$ is forbidden and uses all of $F$, then $\nu O$ is dismantlable ample. If $H$ has $n$ active coordinates, $\nu$ is one elementary operation, so the orders of the coordinate reductions of $H$ and of the elementary pc-minors of $O$ must have a common value.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Any operation deleting $e$ can be commuted to the start of a minor sequence; the result would then be a pc-minor of a positive $e$-section or contraction, contradicting that $H$ is forbidden. The coordinate $e$ cannot become constant for the same reason. Old-coordinate restrictions commute with reduction in $e$. For contraction, isometry supplies an intermediate vertex whenever projected $e$-mates come from opposite shores, giving $(\pi_qX)^{\{e\}}=\pi_qO$; iteration proves $H^{\{e\}}=\nu O$. If $O$ is forbidden and uses every old coordinate, the first operation is proper on $O$, so forbidden-minor minimality makes $\nu O$ positive. Retaining $n$ active coordinates permits exactly one nontrivial elementary operation, which yields the cardinality intersection test.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-inverse-proper-obstruction-reduction-test</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The cardinality intersection is necessary only; it is not an inverse-construction criterion.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-564" style="position:relative;">
+
+        <h3><a href="results/inverse_cube_dimension_exclusion.html" class="table-title-link">Cube-Dimension Exclusion for Proper Minors of an Expansion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube-Dimension Exclusion for Proper Minors of an Expansion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the marked-reduction hypotheses, every forbidden proper pc-minor $H$ of $X$ has an active coordinate $f$ such that $\operatorname{VC}(H^{\{f\}})\leq\operatorname{VC}(O)$. Hence, if $\operatorname{VC}(O)\leq d$, no ample forbidden class in which every active coordinate lies in a cube of dimension at least $d+2$ can be a proper pc-minor of $X$. In particular, overlap VC dimension at most three excludes every member of the 1364-vertex maximum-pair rectangular obstruction family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose $f$ to be the surviving marked coordinate. The marked reduction theorem identifies $H^{\{f\}}$ with the pc-minor $\nu O$, so its VC dimension is at most that of $O$. A cube of dimension at least $d+2$ through $f$ would reduce to a cube of dimension at least $d+1$, contradicting this bound. In the rectangular family every coordinate belongs to a five-cube: combine a three-cube in its maximum rank-three factor with a two-cube in the opposite rank-two factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-inverse-cube-dimension-exclusion</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The rectangular exclusion uses only the product structure, independently of the signed realization of the factors.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-565" style="position:relative;">
+
+        <h3><a href="results/order267_inverse_adversary_exclusion.html" class="table-title-link">The Recorded 267-Class Excludes Known Twelve-Coordinate Inverse Adversaries</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Recorded 267-Class Excludes Known Twelve-Coordinate Inverse Adversaries</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the marked-reduction theorem, let the overlap be the recorded twelve-coordinate obstruction $O=Y_{267}$. No proper pc-minor of the expansion is isomorphic to $Y_{267}$ or to any of the 1364-vertex maximum-pair rectangular obstructions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every coordinate reduction of $Y_{267}$ has $267-208=59$ concepts, while its nonempty elementary restrictions have orders from 77 through 190 and its contractions have order 208. Thus the necessary one-operation cardinality match fails for a proper minor isomorphic to $Y_{267}$. In a rectangular obstruction $H=(P_1\times O_2)\cup(O_1\times P_2)$, a reduction in either six-coordinate block has order $16\cdot22+6\cdot(42-22)=472$. Since both candidate adversaries use twelve coordinates and 472 exceeds every elementary-minor order of $Y_{267}$, the same test excludes the rectangular family.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-order267-inverse-adversary-exclusion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cornerless_ample_267.html">The 267-Concept Cornerless Ample Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The exclusion is limited to twelve-coordinate proper minors. A forbidden minor on fewer coordinates is not ruled out by the one-operation argument, so this does not prove the unrestricted inverse construction sound.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-567" style="position:relative;">
+
+        <h3><a href="results/two_relative_wings_all_minor_sinks.html" class="table-title-link">Two Relative Wings Preserve Every Proper-Minor Sink Choice</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Relative Wings Preserve Every Proper-Minor Sink Choice</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In the one-relative-wing inverse construction, suppose both sections peel to the overlap $O$ and every vertex of either section is an attainable peeling sink. Then every vertex of every nonempty proper pc-minor of the forbidden expansion $X$ is an attainable sink. Consequently no pc-minor of $X$ is a rooted factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each section is all-sinks by hypothesis, and the contraction peels to either section after clearing the opposite wing. For an old-coordinate elementary operation $\mu$, the overlap is the positive family $\mu O$, the sections $\mu B_i$ retain every sink by rooted-minor transport, and both relative wing orders transport. To end in one section, clear the opposite wing, delete the redundant copy of $\mu O$, and finish with the prescribed endpoint order in the retained section. Rooted transport extends the construction to all proper pc-minors. A rooted factor has an unattainable root, while $X$ itself is nonpeelable.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-wing-all-minor-sinks</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-568" style="position:relative;">
+
+        <h3><a href="results/forest_wing_inverse.html" class="table-title-link">A Forest Exclusive Wing Gives a Sound Inverse Construction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Forest Exclusive Wing Gives a Sound Inverse Construction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the structural and positive-section hypotheses of the one-relative-wing inverse theorem, it is enough that one induced exclusive-wing graph $G(B_i\setminus O)$ be a forest. The resulting expansion is an ample forbidden pc-minor and its marked data are recovered from the expansion.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For nonempty nested ample families $O\subseteq B_i$, the relative Yang module is Cohen--Macaulay. The relative forest linear-quotients theorem supplies an $O$-relative ample addition chain in $B_i$; reversing it peels $B_i$ to $O$. The one-relative-wing inverse theorem then applies.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-forest-wing-inverse</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-569" style="position:relative;">
+
+        <h3><a href="results/small_two_core_wing_inverse.html" class="table-title-link">Small 2-Core Components Force a Relatively Peelable Wing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small 2-Core Components Force a Relatively Peelable Wing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the structural and positive-section hypotheses of the one-relative-wing inverse theorem, suppose that in one exclusive wing every connected component of the graph 2-core has at most eight vertices. Then the expansion is an ample forbidden pc-minor, with no bound on the number of components or on trees attached to their 2-cores. Consequently, if neither section peels relatively to the overlap, each exclusive wing has a 2-core component on at least nine vertices.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>More generally, let $\varnothing\ne H\subseteq A$ have Cohen--Macaulay relative Yang module and put $D=A\setminus H$. Induct on $|D|$. A residual leaf either teaches relative to $H$, so it can be prepended after the teaching lift, or its deletion preserves Cohen--Macaulayness and it can be appended after induction. With no leaf, the relative Alexander-dual presentation splits over residual components. An isolated generator teaches; otherwise every component lies in the 2-core and has at most eight generators, so the eight-facet linear-quotients theorem supplies a teaching generator. Thus the wing has a relative ample chain, and the inverse theorem applies. The lower bound nine is the contrapositive for each wing.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-small-component-wing-inverse</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-570" style="position:relative;">
+
+        <h3><a href="results/uniform_inactive_coordinate_removal.html" class="table-title-link">Removing a Uniform Inactive Coordinate Preserves Relative Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Removing a Uniform Inactive Coordinate Preserves Relative Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne O\subsetneq B\subseteq Q_F$ be ample. Suppose every concept of $B\setminus O$ has value $b$ in coordinate $j$ and $O_j^b$ is nonempty. If $j$ belongs either to every relative shattered support in $\mathcal T=\operatorname{Sh}(B)\setminus\operatorname{Sh}(O)$ or to none of them, then restriction to the $j=b$ section preserves exactly the relative corner-deletion orders. Its relative supports are $\{S\setminus\{j\}:S\in\mathcal T\}$ without repetition, and deleting $j$ preserves the residual graph and all other edge labels.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Write $A=O_j^b$, $D=B_j^b$, and $C=O_j^{1-b}=B_j^{1-b}$. The two-section shadow identity shows that each support in $\operatorname{Sh}(D)\setminus\operatorname{Sh}(A)$ contributes exactly one relative support, containing $j$ precisely when it also lies in $\operatorname{Sh}(C)$. If no relative support contains $j$, cardinality equality shows that no residual concept has a $j$-neighbor, so every section corner lifts. If every support contains $j$, then $D\setminus A\subseteq C$ and $D\cup C=A\cup C$; for every ample intermediate $D'$ in a section order, the shadow union and intersection count proves that the family with sections $D'$ and $C$ remains ample. Thus every section deletion lifts, while restricting any whole-family order gives the converse.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-uniform-inactive-coordinate</p></div>
 
         </div>
     </div>

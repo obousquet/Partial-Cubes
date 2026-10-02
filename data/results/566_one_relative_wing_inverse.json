@@ -1,0 +1,21 @@
+{
+  "id": 566,
+  "short_name": "one_relative_wing_inverse",
+  "name": "Inverse Construction from One Relatively Peelable Wing",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/full_reduction",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $O$ be an ample forbidden pc-minor for dismantlable ampleness and use every coordinate of $Q_F$. Choose dismantlable ample $B_0,B_1$ with $B_0\\cap B_1=O$, ample union $A=B_0\\cup B_1$, and no edge between the exclusive wings $B_0\\setminus O$ and $B_1\\setminus O$. If at least one section peels to $O$, then $X=(B_0\\times\\{0\\})\\cup(B_1\\times\\{1\\})$ is an ample forbidden pc-minor. Its sections, contraction, and reduction recover the marked expansion and its inputs. Equivalently, this recovers every ample forbidden expansion with negative reduction and at least one relatively peelable section.",
+  "status": "established",
+  "proof": "The component-expansion theorem makes $X$ ample, while its negative reduction $O$ and closure of dismantlable ampleness under full reduction make $X$ nonpeelable. Lift a peeling of, say, $B_0$ to $O$ through layer zero. The absent vertical mates and the separation of the exclusive wings preserve each corner cube, reducing $X$ to a peripheral expansion of $O$ and $B_1$; the same order shows the contraction is positive. Apply any old-coordinate elementary operation to this deletion sequence and omit repeated images. Its terminal family is a peripheral expansion of the positive families $\\mu O$ and $\\mu B_1$, so every proper elementary minor is positive. Pc-minor closure then proves forbiddenness. The sections, union, and intersection recover the construction data.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-one-relative-wing-inverse",
+  "comments": "It is enough that every one-concept intermediate $O\\cup\\{a\\}$ in one wing is ample: positivity of the section then forces a relative peeling. No separate tests of old-coordinate minors of $X$ are needed."
+}
