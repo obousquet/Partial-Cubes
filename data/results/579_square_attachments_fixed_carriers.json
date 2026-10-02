@@ -1,0 +1,27 @@
+{
+  "id": 579,
+  "short_name": "square_attachments_fixed_carriers",
+  "name": "Square Attachments Leave Nonpeelable Strong Carriers Unchanged",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph",
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness, and let $K$ be its canonical graph three-core. For every nonempty coordinate set $D$, the reduction $H^D$ is nonpeelable exactly when $K^D$ is, and then the two embedded reductions are equal. No acquired pair of any square attachment meets a coordinate $e$ with nonpeelable $H^{\\{e\\}}$. At such an $e$, relative peelability of either section to the common negative overlap is also identical for $H$ and $K$. Consequently, if the crossing graph of $K$ is not two-connected, reduction descent from $H$ has length at most one and the same unique cut-vertex terminal obstruction, even when $H$ itself has no separator.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/square_extended_tower_2319"
+  ],
+  "proof": "Reconstruct $H$ from $K$ by ample one-concept additions with acquired coordinate pairs $I$. Under reduction by $D$, one such step either disappears or remains a one-corner addition with acquired support $I\\setminus D$. If the earlier reduction is nonpeelable, full-coordinate strong descent says it already shatters every surviving singleton; hence $D\\subseteq I$ is impossible and the two reductions are equal. For $D=\\{e\\}$ this also proves $e\\notin I$. The new concept then changes only one $e$-section, by a rank-two addition disjoint from $e$; rank-two relative-extension invariance preserves peelability to the fixed overlap in both directions. Iterating proves all assertions, and applying separator strong descent to $K$ gives the final conclusion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-attachments-fixed-carriers"
+}

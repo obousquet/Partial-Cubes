@@ -1,0 +1,24 @@
+{
+  "id": 576,
+  "short_name": "opposite_peripheral_completions",
+  "name": "Opposite Peripheral Completions of Rooted Factors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/one_point_amalgam",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(A_i,0)$, $i=0,1$, be rooted factors on disjoint coordinate blocks $F_i$, and choose ample supersets $A_i\\subseteq T_i\\subseteq Q_{F_i}$. For a fresh coordinate $e$, put $B_0=T_0\\vee A_1$, $B_1=A_0\\vee T_1$, and $X=(B_0\\times\\{0\\})\\cup(B_1\\times\\{1\\})$. Then $X$ is ample, and it is a pc-minimal obstruction to dismantlable ampleness exactly when each $T_i$ admits an acyclic USO with sink $0$, equivalently when both sections $B_i$ are dismantlable ample. In that case the contraction is also positive, while the reduction is the forbidden overlap $A_0\\vee A_1$. The marked sections and coordinate blocks recover all four inputs uniquely, and $|X|=|A_0|+|A_1|+|T_0|+|T_1|-2$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/one_relative_wing_obstruction_1157"
+  ],
+  "proof": "The two peripheral pieces meet in one edge and have disjoint private coordinate blocks. Their shadows intersect only in the empty support and the layer singleton, so shadow counting proves ampleness. The layer reduction is the forbidden wedge of the rooted factors. If $X$ is forbidden, positivity of its sections and the vertex-gluing criterion force each $T_i$ to peel to the root. Conversely those endpoint orders make both sections, the contraction, and the two peripheral pieces positive. In every old-coordinate proper minor, rooted minimality and transported endpoint orders clear the changed peripheral piece to the common edge, leaving the unchanged positive piece. Thus every proper pc-minor peels while $X$ does not. Intersecting the marked sections with their two coordinate blocks recovers the inputs.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-opposite-peripheral-completions"
+}

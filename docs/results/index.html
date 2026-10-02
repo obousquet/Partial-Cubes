@@ -9564,6 +9564,99 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-576" style="position:relative;">
+
+        <h3><a href="results/opposite_peripheral_completions.html" class="table-title-link">Opposite Peripheral Completions of Rooted Factors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Peripheral Completions of Rooted Factors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A_i,0)$, $i=0,1$, be rooted factors on disjoint coordinate blocks $F_i$, and choose ample supersets $A_i\subseteq T_i\subseteq Q_{F_i}$. For a fresh coordinate $e$, put $B_0=T_0\vee A_1$, $B_1=A_0\vee T_1$, and $X=(B_0\times\{0\})\cup(B_1\times\{1\})$. Then $X$ is ample, and it is a pc-minimal obstruction to dismantlable ampleness exactly when each $T_i$ admits an acyclic USO with sink $0$, equivalently when both sections $B_i$ are dismantlable ample. In that case the contraction is also positive, while the reduction is the forbidden overlap $A_0\vee A_1$. The marked sections and coordinate blocks recover all four inputs uniquely, and $|X|=|A_0|+|A_1|+|T_0|+|T_1|-2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two peripheral pieces meet in one edge and have disjoint private coordinate blocks. Their shadows intersect only in the empty support and the layer singleton, so shadow counting proves ampleness. The layer reduction is the forbidden wedge of the rooted factors. If $X$ is forbidden, positivity of its sections and the vertex-gluing criterion force each $T_i$ to peel to the root. Conversely those endpoint orders make both sections, the contraction, and the two peripheral pieces positive. In every old-coordinate proper minor, rooted minimality and transported endpoint orders clear the changed peripheral piece to the common edge, leaving the unchanged positive piece. Thus every proper pc-minor peels while $X$ does not. Intersecting the marked sections with their two coordinate blocks recovers the inputs.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-opposite-peripheral-completions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/one_relative_wing_obstruction_1157.html">A 1157-Concept Obstruction with One Edge Wing and One Singleton Wing</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-577" style="position:relative;">
+
+        <h3><a href="results/peripheral_separator_recovery.html" class="table-title-link">Nested Separating-Edge Pieces Are Exactly Opposite Peripheral Completions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nested Separating-Edge Pieces Are Exactly Opposite Peripheral Completions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Opposite peripheral completion generates exactly the ample pc-minimal obstructions to dismantlable ampleness having a separating edge for which the two layer sections of every canonical piece are nested. Such an obstruction has exactly two pieces. Their larger sections lie on opposite sides and attain the projected root as a sink; their smaller sections are the two rooted factors. The separating edge and all four inputs are unique up to exchanging the pieces and reversing the edge. Consequently every three-piece forbidden edge amalgam has a canonical piece with nonnested sections.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In a nested piece, if both sections attained the root then their endpoint orders would peel the piece to the common edge, which the separator obstruction criterion forbids. Positivity of both global sections and of the contraction permits at most one root failure in each image. Counting those failures forces exactly two pieces, with the smaller root-negative sections on opposite layers and all larger sections root-positive. Their contraction is a forbidden vertex gluing, so the cut-vertex theorem identifies the smaller sections as rooted factors. Conversely, each constructed peripheral piece remains connected after deleting the shared edge, so these are precisely the canonical pieces. Strong descent makes the separating edge unique, after which its components and nested sections recover every input.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-peripheral-separator-recovery</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-578" style="position:relative;">
+
+        <h3><a href="results/separator_strong_descent.html" class="table-title-link">Strong Reduction Descent in the Separator Branch</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Strong Reduction Descent in the Separator Branch</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. Every nonpeelable reduction $H^D$ is itself an ample pc-minimal obstruction and uses every coordinate in $F\setminus D$; in particular, a coordinate with nonpeelable singleton reduction is universal in the crossing graph. If that graph is not two-connected, then either every nonempty reduction peels, or there is a unique coordinate $e$ and the only nonpeelable reductions are $H$ and $H^{\{e\}}$. In the latter case $e$ is the unique universal vertex and cut vertex of the crossing graph, its deletion has exactly two components, $H$ has a unique separating $e$-edge, and $H^{\{e\}}$ is the uniquely determined cut-vertex obstruction formed by the strong projections of those two pieces. Thus descent in the separator branch has length at most one.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Elementary operations outside $D$ commute with reduction. If a surviving coordinate were inactive, deleting it from $H$ would give a positive proper minor whose reduction is isomorphic to the assumed negative family, a contradiction. Iterated inherited-overlap descent therefore makes every negative reduction forbidden. A singleton negative reduction uses every remaining direction, and each such edge lifts to a square, making its deleted coordinate universal in the crossing graph. A non-two-connected graph of order at least three has at most one universal vertex, so there is at most one negative singleton reduction and no larger negative support. If it exists, deleting that universal coordinate disconnects the crossing graph into exactly the two coordinate blocks of the cut-vertex reduction; crossing-graph separator recovery lifts them to a unique separating edge of $H$ and identifies its strong projections.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-separator-strong-descent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/terminal_cut_vertex_obstruction_1158.html">Terminal Cut-Vertex Obstruction of Order 1158</a></li><li><a href="examples/square_extended_tower_2319.html">A Separator-Free Obstruction with a Nonpeelable Strong Reduction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>Universality locates the only possible descent coordinate but does not imply that its reduction is nonpeelable; both outcomes occur among the fixed examples.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-579" style="position:relative;">
+
+        <h3><a href="results/square_attachments_fixed_carriers.html" class="table-title-link">Square Attachments Leave Nonpeelable Strong Carriers Unchanged</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square Attachments Leave Nonpeelable Strong Carriers Unchanged</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness, and let $K$ be its canonical graph three-core. For every nonempty coordinate set $D$, the reduction $H^D$ is nonpeelable exactly when $K^D$ is, and then the two embedded reductions are equal. No acquired pair of any square attachment meets a coordinate $e$ with nonpeelable $H^{\{e\}}$. At such an $e$, relative peelability of either section to the common negative overlap is also identical for $H$ and $K$. Consequently, if the crossing graph of $K$ is not two-connected, reduction descent from $H$ has length at most one and the same unique cut-vertex terminal obstruction, even when $H$ itself has no separator.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Reconstruct $H$ from $K$ by ample one-concept additions with acquired coordinate pairs $I$. Under reduction by $D$, one such step either disappears or remains a one-corner addition with acquired support $I\setminus D$. If the earlier reduction is nonpeelable, full-coordinate strong descent says it already shatters every surviving singleton; hence $D\subseteq I$ is impossible and the two reductions are equal. For $D=\{e\}$ this also proves $e\notin I$. The new concept then changes only one $e$-section, by a rank-two addition disjoint from $e$; rank-two relative-extension invariance preserves peelability to the fixed overlap in both directions. Iterating proves all assertions, and applying separator strong descent to $K$ gives the final conclusion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-attachments-fixed-carriers</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/square_extended_tower_2319.html">A Separator-Free Obstruction with a Nonpeelable Strong Reduction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-580" style="position:relative;">
+
+        <h3><a href="results/coordinate_block_replacement.html" class="table-title-link">Replacing One Coordinate by a Nonempty Block</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Replacing One Coordinate by a Nonempty Block</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For ample $H\subseteq Q_{G\cup\{z\}}$, write $B_i=\rho_z^iH$, $C=B_0\cup B_1$, and $A=B_0\cap B_1$. Replace $z$ by a nonempty block $E$ of size $m$ and set $W_E(H)=(B_0\times\{0_E\})\cup(B_1\times\{1_E\})\cup(C\times(Q_E\setminus\{0_E,1_E\}))$. Then $W_E(H)$ is ample, $|W_E(H)|=(2^m-1)|C|+|A|$, and its shadow is the disjoint union of $\{D\cup T:D\in\operatorname{Sh}(C),T\subsetneq E\}$ and $\{D\cup E:D\in\operatorname{Sh}(A)\}$. For nonempty $H$, VC dimension rises by $m-1$. Signed minimal nonfaces avoiding $z$ remain unchanged, and each one containing $z$ replaces it by all of $E$ with the old sign repeated. Dismantlable ampleness, pc-minimal obstruction status for active irredundant input, and cornerlessness are each preserved in both directions. For a forbidden input and $m\ge2$, the output has minimum degree at least three, is its own graph three-core, and has a two-connected crossing graph in which every coordinate of $E$ is universal. The marked construction is uniquely recoverable from its two constant sections or its signed clauses.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The nonconstant block rows all carry $C$, while the two constant rows carry $B_0$ and $B_1$. This gives the displayed shadow and order formulas, and Sandwich equality proves ampleness; minimal nonfaces follow from the same decomposition. A binary replacement lifts each corner deletion of $H$: over an overlap word delete its constant lift, and over an exclusive word delete the two nonconstant lifts before the matching constant lift. Reduction along either new coordinate recovers $H$, proving positivity equivalence; iteration handles all block sizes. Old-coordinate elementary minors commute with replacement, while new-coordinate minors are products or peripheral expansions of the positive proper minors $A,B_i,C$, proving obstruction equivalence. Every new vertex gains at least $m-1$ fibre neighbors, cornerlessness projects through a full fibre, and the shadow formula makes every new coordinate universal. Two universal vertices make the crossing graph two-connected. The two constant sections and clause substitution give unique recovery.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-coordinate-block-replacement</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

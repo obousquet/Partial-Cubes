@@ -1,0 +1,23 @@
+{
+  "id": 577,
+  "short_name": "peripheral_separator_recovery",
+  "name": "Nested Separating-Edge Pieces Are Exactly Opposite Peripheral Completions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/one_point_amalgam",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Opposite peripheral completion generates exactly the ample pc-minimal obstructions to dismantlable ampleness having a separating edge for which the two layer sections of every canonical piece are nested. Such an obstruction has exactly two pieces. Their larger sections lie on opposite sides and attain the projected root as a sink; their smaller sections are the two rooted factors. The separating edge and all four inputs are unique up to exchanging the pieces and reversing the edge. Consequently every three-piece forbidden edge amalgam has a canonical piece with nonnested sections.",
+  "status": "established",
+  "proof": "In a nested piece, if both sections attained the root then their endpoint orders would peel the piece to the common edge, which the separator obstruction criterion forbids. Positivity of both global sections and of the contraction permits at most one root failure in each image. Counting those failures forces exactly two pieces, with the smaller root-negative sections on opposite layers and all larger sections root-positive. Their contraction is a forbidden vertex gluing, so the cut-vertex theorem identifies the smaller sections as rooted factors. Conversely, each constructed peripheral piece remains connected after deleting the shared edge, so these are precisely the canonical pieces. Strong descent makes the separating edge unique, after which its components and nested sections recover every input.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-peripheral-separator-recovery"
+}

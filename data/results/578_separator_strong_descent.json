@@ -1,0 +1,28 @@
+{
+  "id": 578,
+  "short_name": "separator_strong_descent",
+  "name": "Strong Reduction Descent in the Separator Branch",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $H\\subseteq Q_F$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. Every nonpeelable reduction $H^D$ is itself an ample pc-minimal obstruction and uses every coordinate in $F\\setminus D$; in particular, a coordinate with nonpeelable singleton reduction is universal in the crossing graph. If that graph is not two-connected, then either every nonempty reduction peels, or there is a unique coordinate $e$ and the only nonpeelable reductions are $H$ and $H^{\\{e\\}}$. In the latter case $e$ is the unique universal vertex and cut vertex of the crossing graph, its deletion has exactly two components, $H$ has a unique separating $e$-edge, and $H^{\\{e\\}}$ is the uniquely determined cut-vertex obstruction formed by the strong projections of those two pieces. Thus descent in the separator branch has length at most one.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/terminal_cut_vertex_obstruction_1158",
+    "#examples/square_extended_tower_2319"
+  ],
+  "proof": "Elementary operations outside $D$ commute with reduction. If a surviving coordinate were inactive, deleting it from $H$ would give a positive proper minor whose reduction is isomorphic to the assumed negative family, a contradiction. Iterated inherited-overlap descent therefore makes every negative reduction forbidden. A singleton negative reduction uses every remaining direction, and each such edge lifts to a square, making its deleted coordinate universal in the crossing graph. A non-two-connected graph of order at least three has at most one universal vertex, so there is at most one negative singleton reduction and no larger negative support. If it exists, deleting that universal coordinate disconnects the crossing graph into exactly the two coordinate blocks of the cut-vertex reduction; crossing-graph separator recovery lifts them to a unique separating edge of $H$ and identifies its strong projections.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-separator-strong-descent",
+  "comments": "Universality locates the only possible descent coordinate but does not imply that its reduction is nonpeelable; both outcomes occur among the fixed examples."
+}

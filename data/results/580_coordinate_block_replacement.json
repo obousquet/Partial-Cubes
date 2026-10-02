@@ -1,0 +1,25 @@
+{
+  "id": 580,
+  "short_name": "coordinate_block_replacement",
+  "name": "Replacing One Coordinate by a Nonempty Block",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation",
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For ample $H\\subseteq Q_{G\\cup\\{z\\}}$, write $B_i=\\rho_z^iH$, $C=B_0\\cup B_1$, and $A=B_0\\cap B_1$. Replace $z$ by a nonempty block $E$ of size $m$ and set $W_E(H)=(B_0\\times\\{0_E\\})\\cup(B_1\\times\\{1_E\\})\\cup(C\\times(Q_E\\setminus\\{0_E,1_E\\}))$. Then $W_E(H)$ is ample, $|W_E(H)|=(2^m-1)|C|+|A|$, and its shadow is the disjoint union of $\\{D\\cup T:D\\in\\operatorname{Sh}(C),T\\subsetneq E\\}$ and $\\{D\\cup E:D\\in\\operatorname{Sh}(A)\\}$. For nonempty $H$, VC dimension rises by $m-1$. Signed minimal nonfaces avoiding $z$ remain unchanged, and each one containing $z$ replaces it by all of $E$ with the old sign repeated. Dismantlable ampleness, pc-minimal obstruction status for active irredundant input, and cornerlessness are each preserved in both directions. For a forbidden input and $m\\ge2$, the output has minimum degree at least three, is its own graph three-core, and has a two-connected crossing graph in which every coordinate of $E$ is universal. The marked construction is uniquely recoverable from its two constant sections or its signed clauses.",
+  "status": "established",
+  "proof": "The nonconstant block rows all carry $C$, while the two constant rows carry $B_0$ and $B_1$. This gives the displayed shadow and order formulas, and Sandwich equality proves ampleness; minimal nonfaces follow from the same decomposition. A binary replacement lifts each corner deletion of $H$: over an overlap word delete its constant lift, and over an exclusive word delete the two nonconstant lifts before the matching constant lift. Reduction along either new coordinate recovers $H$, proving positivity equivalence; iteration handles all block sizes. Old-coordinate elementary minors commute with replacement, while new-coordinate minors are products or peripheral expansions of the positive proper minors $A,B_i,C$, proving obstruction equivalence. Every new vertex gains at least $m-1$ fibre neighbors, cornerlessness projects through a full fibre, and the shadow formula makes every new coordinate universal. Two universal vertices make the crossing graph two-connected. The two constant sections and clause substitution give unique recovery.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-coordinate-block-replacement"
+}

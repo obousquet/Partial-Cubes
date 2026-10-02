@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,29 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-48" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-580" style="position:relative;">
 
-        <h3><a href="invariants/crossing_graph.html" class="table-title-link">Crossing Graph</a></h3>
+        <h3><a href="results/coordinate_block_replacement.html" class="table-title-link">Replacing One Coordinate by a Nonempty Block</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Crossing Graph</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="G^{\sharp}">
-            \[G^{\sharp}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, the crossing graph has one vertex for each $\Theta$-class and joins two classes exactly when all four intersections of their two pairs of semicubes are nonempty.</p></div>
+        <p><strong>Name: </strong>Replacing One Coordinate by a Nonempty Block</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For ample $H\subseteq Q_{G\cup\{z\}}$, write $B_i=\rho_z^iH$, $C=B_0\cup B_1$, and $A=B_0\cap B_1$. Replace $z$ by a nonempty block $E$ of size $m$ and set $W_E(H)=(B_0\times\{0_E\})\cup(B_1\times\{1_E\})\cup(C\times(Q_E\setminus\{0_E,1_E\}))$. Then $W_E(H)$ is ample, $|W_E(H)|=(2^m-1)|C|+|A|$, and its shadow is the disjoint union of $\{D\cup T:D\in\operatorname{Sh}(C),T\subsetneq E\}$ and $\{D\cup E:D\in\operatorname{Sh}(A)\}$. For nonempty $H$, VC dimension rises by $m-1$. Signed minimal nonfaces avoiding $z$ remain unchanged, and each one containing $z$ replaces it by all of $E$ with the old sign repeated. Dismantlable ampleness, pc-minimal obstruction status for active irredundant input, and cornerlessness are each preserved in both directions. For a forbidden input and $m\ge2$, the output has minimum degree at least three, is its own graph three-core, and has a two-connected crossing graph in which every coordinate of $E$ is universal. The marked construction is uniquely recoverable from its two constant sections or its signed clauses.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<p><strong>Codomain: </strong>Finite simple graphs</p>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The crossing graph need not equal the square graph or the $\Theta$-graph outside special classes.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-graph-profile</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li><li><a href='results/crossing_graph_separator_recovery.html'>Crossing Graphs Detect and Recover Vertex and Edge Separators</a></li><li><a href='results/shadow_split_edge_factorization.html'>A Two-Component Shadow Split Determines an Edge Factorization</a></li><li><a href='results/peripheral_separator_recovery.html'>Nested Separating-Edge Pieces Are Exactly Opposite Peripheral Completions</a></li><li><a href='results/separator_strong_descent.html'>Strong Reduction Descent in the Separator Branch</a></li><li><a href='results/square_attachments_fixed_carriers.html'>Square Attachments Leave Nonpeelable Strong Carriers Unchanged</a></li><li><a href='results/coordinate_block_replacement.html'>Replacing One Coordinate by a Nonempty Block</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonconstant block rows all carry $C$, while the two constant rows carry $B_0$ and $B_1$. This gives the displayed shadow and order formulas, and Sandwich equality proves ampleness; minimal nonfaces follow from the same decomposition. A binary replacement lifts each corner deletion of $H$: over an overlap word delete its constant lift, and over an exclusive word delete the two nonconstant lifts before the matching constant lift. Reduction along either new coordinate recovers $H$, proving positivity equivalence; iteration handles all block sizes. Old-coordinate elementary minors commute with replacement, while new-coordinate minors are products or peripheral expansions of the positive proper minors $A,B_i,C$, proving obstruction equivalence. Every new vertex gains at least $m-1$ fibre neighbors, cornerlessness projects through a full fibre, and the shadow formula makes every new coordinate universal. Two universal vertices make the crossing graph two-connected. The two constant sections and clause substitution give unique recovery.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-coordinate-block-replacement</p></div>
 
         </div>
     </div>
