@@ -1,0 +1,17 @@
+{
+  "id": 617,
+  "short_name": "root_cut_one_hole_equivalence",
+  "name": "Punctured-Cube Protection Equals Complementary Root Locking",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "For a nested ample pair $A\\subsetneq B$, the following are equivalent: the pair is upper-root-locked; every $x\\in B\\setminus A$ lies in the interior $\\mathsf I(y,S)$ of an absent-tip punctured cube $\\mathsf P(y,S)\\subseteq B$ with $|S|\\ge2$; and, in the rooted signed presentation of the complementary pair, every relative vertex remains joined to the root after deleting all coordinate labels incident with that vertex at the root. Moreover, if $x=y^T$ is protected by such a block, every one-coordinate neighbour $x^{\\{q\\}}$ with $q\\in T$ lies in $B$, so the block induces a root path avoiding all labels deleted by the complementary cut test.",
+  "status": "established",
+  "proof": "The canonical one-hole normal form identifies upper-root-locking with punctured-cube protection, while the rooted relative presentation identifies upper-root-locking with the complementary labelled cut condition. For a protected word $x=y^T$, removing any $q\\in T$ leaves a nonempty subset of the punctured-cube support, so $x^{\\{q\\}}\\in B$. Thus no coordinate of $T$ is removed in the complementary cut test, and the root-cut criterion converts the missing-tip relation into the stated surviving path.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-root-cut-one-hole-comparison"
+}

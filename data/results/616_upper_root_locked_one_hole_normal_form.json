@@ -1,0 +1,18 @@
+{
+  "id": 616,
+  "short_name": "upper_root_locked_one_hole_normal_form",
+  "name": "Upper-Root-Locked Pairs Have a Canonical One-Hole Normal Form",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "For oriented one-hole data $(y,S)$, let $\\mathsf P(y,S)=\\{y^T:\\varnothing\\ne T\\subseteq S\\}$ be the punctured cube and $\\mathsf I(y,S)=\\{y^T:T\\subseteq S, |T|\\ge2\\}$ its interior. Given $A$ and a finite family $\\mathcal W$ of such data, put $B(A,\\mathcal W)=A\\cup\\bigcup_{(y,S)\\in\\mathcal W}\\mathsf P(y,S)$. If $A$ and $B(A,\\mathcal W)$ satisfy Sandwich equality, every tip $y$ is absent, the relative part is nonempty, and every relative concept lies in one of the displayed interiors, then $A\\subsetneq B(A,\\mathcal W)$ is an upper-root-locked nested ample pair. Conversely, every upper-root-locked nested ample pair $A\\subsetneq B$ has this form. It is canonically recovered by taking all absent-tip punctured cubes $\\mathsf P(y,S)\\subseteq B$ whose interiors meet $B\\setminus A$ and whose supports are inclusion-maximal for their fixed tips. Thus upper-root-locked relative Yang presentations have an explicit descendant-free construction and recovery.",
+  "status": "established",
+  "proof": "The Sandwich equalities make both endpoint families ample. If a relative concept $x=y^T$ lies in a displayed interior, then $|T|\\ge2$, every proper flip $x^C$ with $C\\subsetneq T$ lies in the punctured cube, and the full flip $x^T=y$ is absent. Hence $T$ is a nontrivial minimal nonface of the local cube-support complex at $x$; $x$ is not a corner, so deleting it makes $B$ nonample. This proves upper-root-locking. Conversely, upper-root-locking makes every relative $x$ a noncorner of $B$. A minimal nonface $S$ of its local cube-support complex supplies an absent tip $y=x^S$ with $\\mathsf P(y,S)\\subseteq B$ and $x\\in\\mathsf I(y,S)$. Extending $S$ maximally for its fixed tip yields the canonical family, protects every relative concept, and reconstructs exactly $B$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-one-hole-upper-lock",
+  "comments": "The admissibility test uses only finite Sandwich equalities, missing tips, and punctured-cube containment; it contains no deletion, corner, shelling, linear-quotient, or rooted-connectivity predicate. This classifies individual upper-locked pairs, while compatibility of two such covers over a common overlap remains separate."
+}

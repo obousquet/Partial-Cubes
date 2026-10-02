@@ -10302,6 +10302,41 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-616" style="position:relative;">
+
+        <h3><a href="results/upper_root_locked_one_hole_normal_form.html" class="table-title-link">Upper-Root-Locked Pairs Have a Canonical One-Hole Normal Form</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Upper-Root-Locked Pairs Have a Canonical One-Hole Normal Form</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For oriented one-hole data $(y,S)$, let $\mathsf P(y,S)=\{y^T:\varnothing\ne T\subseteq S\}$ be the punctured cube and $\mathsf I(y,S)=\{y^T:T\subseteq S, |T|\ge2\}$ its interior. Given $A$ and a finite family $\mathcal W$ of such data, put $B(A,\mathcal W)=A\cup\bigcup_{(y,S)\in\mathcal W}\mathsf P(y,S)$. If $A$ and $B(A,\mathcal W)$ satisfy Sandwich equality, every tip $y$ is absent, the relative part is nonempty, and every relative concept lies in one of the displayed interiors, then $A\subsetneq B(A,\mathcal W)$ is an upper-root-locked nested ample pair. Conversely, every upper-root-locked nested ample pair $A\subsetneq B$ has this form. It is canonically recovered by taking all absent-tip punctured cubes $\mathsf P(y,S)\subseteq B$ whose interiors meet $B\setminus A$ and whose supports are inclusion-maximal for their fixed tips. Thus upper-root-locked relative Yang presentations have an explicit descendant-free construction and recovery.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The Sandwich equalities make both endpoint families ample. If a relative concept $x=y^T$ lies in a displayed interior, then $|T|\ge2$, every proper flip $x^C$ with $C\subsetneq T$ lies in the punctured cube, and the full flip $x^T=y$ is absent. Hence $T$ is a nontrivial minimal nonface of the local cube-support complex at $x$; $x$ is not a corner, so deleting it makes $B$ nonample. This proves upper-root-locking. Conversely, upper-root-locking makes every relative $x$ a noncorner of $B$. A minimal nonface $S$ of its local cube-support complex supplies an absent tip $y=x^S$ with $\mathsf P(y,S)\subseteq B$ and $x\in\mathsf I(y,S)$. Extending $S$ maximally for its fixed tip yields the canonical family, protects every relative concept, and reconstructs exactly $B$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-relative-one-hole-upper-lock</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The admissibility test uses only finite Sandwich equalities, missing tips, and punctured-cube containment; it contains no deletion, corner, shelling, linear-quotient, or rooted-connectivity predicate. This classifies individual upper-locked pairs, while compatibility of two such covers over a common overlap remains separate.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-617" style="position:relative;">
+
+        <h3><a href="results/root_cut_one_hole_equivalence.html" class="table-title-link">Punctured-Cube Protection Equals Complementary Root Locking</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Punctured-Cube Protection Equals Complementary Root Locking</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a nested ample pair $A\subsetneq B$, the following are equivalent: the pair is upper-root-locked; every $x\in B\setminus A$ lies in the interior $\mathsf I(y,S)$ of an absent-tip punctured cube $\mathsf P(y,S)\subseteq B$ with $|S|\ge2$; and, in the rooted signed presentation of the complementary pair, every relative vertex remains joined to the root after deleting all coordinate labels incident with that vertex at the root. Moreover, if $x=y^T$ is protected by such a block, every one-coordinate neighbour $x^{\{q\}}$ with $q\in T$ lies in $B$, so the block induces a root path avoiding all labels deleted by the complementary cut test.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The canonical one-hole normal form identifies upper-root-locking with punctured-cube protection, while the rooted relative presentation identifies upper-root-locking with the complementary labelled cut condition. For a protected word $x=y^T$, removing any $q\in T$ leaves a nonempty subset of the punctured-cube support, so $x^{\{q\}}\in B$. Thus no coordinate of $T$ is removed in the complementary cut test, and the root-cut criterion converts the missing-tip relation into the stated surviving path.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-root-cut-one-hole-comparison</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

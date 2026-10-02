@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "batch_id": "157_dismantlable_ample_one_hole_upper_lock",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the canonical absent-tip punctured-cube normal form for upper-root-locked nested ample pairs and its exact equivalence with complementary rooted cut tests.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-one-hole-upper-lock",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-root-cut-one-hole-comparison"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims replace upper-root-locking as an oracle by finite punctured-cube data, prove canonical recovery of maximal blocks, and identify the same structure in the complementary rooted presentation.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The local-hole characterization proves construction and recovery, while the preceding rooted presentation supplies the equivalent labelled-cut formulation.",
+    "claim_block_sha256": {
+      "thm:damp-relative-one-hole-upper-lock": "a2246681d137a27537b2ed3d64d43e1d7d065ea9e8cbc0d604507e18bc12ff91",
+      "cor:damp-root-cut-one-hole-comparison": "e35ec38c900a0ffe7f6611f89e43dae0a8adf8a327f8f08f367ac07b34121f53"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the admissible one-hole construction, canonical maximal-block recovery, equivalence with upper-root-locking and complementary root cuts, and concise proofs. LaTeX retains the expanded local-complex argument and discussion of the unresolved compatibility of paired covers.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both source claims and the full definition of admissible relative one-hole covers.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/616_upper_root_locked_one_hole_normal_form.json",
+      "sha256": "8edd0e65a4d8035a53ca426cd6b3796a0ac1763a65350b3d1bd7924a0cc1f7e2"
+    },
+    {
+      "path": "data/results/617_root_cut_one_hole_equivalence.json",
+      "sha256": "e7a6288d1e2c3415ca4afda8e2739ea418aff4fe51174df10f8910c4bdb43b7d"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "2979e7f104dfdab97a89eeb7ba699a86081b399f97ffb3c47f2572083ebaa884"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "739949f537757bd75820e7d7bfd5fc970dc27b938b64750b732a07a0b31a5b06"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2000 records.",
+    "website": "Normalized 2016 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 716 to 718 of 1143 and dismantlable-ample coverage from 280 to 282 of 683.",
+    "certificates": "No finite replay packet is needed; the proof is a structural local-hole argument plus the previously normalized rooted cut criterion.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 425 uncovered database-owned labels: 401 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem gives an explicit paired internal/cross-layer punctured-cube criterion for a cornerless two-layer gluing.",
+    "The characterization of which paired covers also have all proper pc-minors peelable remains open and stays prose-owned in LaTeX."
+  ]
+}
