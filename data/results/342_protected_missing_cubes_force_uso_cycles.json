@@ -1,0 +1,15 @@
+{
+  "id": 342,
+  "short_name": "protected_missing_cubes_force_uso_cycles",
+  "name": "Protected Missing Cubes Force USO Cycles",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H\\subseteq Q_F$ be ample and $S\\subseteq H$ have at least two vertices. Suppose that for every $x\\in S$ there is a set $J_x\\subseteq F$ such that every neighbor $x^{\\{e\\}}$ with $e\\in J_x$ lies in $S$, while the opposite cube vertex $x^{J_x}$ is absent from $H$. Then every USO of $H$, if one exists, contains a directed cycle in $S$. Consequently $H$ is not dismantlable ample.",
+  "status": "established",
+  "proof": "The outgoing-cube axiom prevents all directions in $J_x$ from pointing outward at $x$, because their joint flip is missing. Thus every vertex of the finite digraph induced by $S$ has an incoming neighbor in $S$. Following predecessors eventually repeats a vertex and produces a directed cycle. Dismantlable ampleness is equivalent to existence of an acyclic USO.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-protected-uso-cycle"
+}

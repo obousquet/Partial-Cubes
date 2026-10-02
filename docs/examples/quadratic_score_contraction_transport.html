@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-108" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="examples/quadratic_score_contraction_transport.html" class="table-title-link">Contraction Can Increase a Transported Quadratic Score</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/dismantlable_ample_full_reduction_closed.html'>Dismantlable Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/intermediate_decomposition_class_hierarchy.html'>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></li><li><a href='results/maximum_ancestry_neighbor_hierarchy.html'>Classes Immediately Below and Above Maximum Ancestry</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li><li><a href='results/compatible_face_avoidance_operator.html'>Face-Avoiding Maximum Predecessors Preserve Intersections</a></li><li><a href='results/complement_dismantlability_structure.html'>Structure of Dismantlable-Complement Ample Classes</a></li></ul></p></div>
+        <p><strong>Name: </strong>Contraction Can Increase a Transported Quadratic Score</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Label $Q_4$ by binary integers $0,\ldots,15$, with coordinate $0$ least significant. Orient its edges toward later vertices in the order $14,6,10,12,8,4,9,0,1,11,3,7,2,15,5,13$. Contract coordinate $0$ and order each image vertex by the position of its last preimage; the induced order is $8,0,10,6,2,14,4,12$ on $Q_3$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The displayed $Q_4$ order has orientation score one: only the square $\{2,3,6,7\}$ has two sources. The transported $Q_3$ order has score two: $\{0,2,4,6\}$ and $\{2,6,10,14\}$ have two sources. Both optimized rooted scores are zero because both cubes have corner orders ending at the displayed last vertex. The example therefore refutes nonincrease for this last-preimage transport rule, not for the optimized invariant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-quadratic-score-contraction</p></div>
+<strong>Verification:</strong><div class="text-field"><p>The square-source enumeration and outgoing-pair totals are reproducible directly from the two displayed orders; the preserved manuscript also identifies the original replay artifact as papers/dismantlable-ample/research/quadratic_score_transport.py/json.</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

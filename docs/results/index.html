@@ -484,7 +484,7 @@
         <div class="table-details">
         <p><strong>Name: </strong>Dismantlable-Ample Closure Laws</p>
 <p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
-<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
 <p><strong>Result Type:</strong> Invariant Law</p>
 <strong>Statement:</strong><div class="text-field"><p>Dismantlable ample classes are closed under nonempty convex restrictions, coordinate projections, pc-minors, strong projections, Cartesian products, cube symmetries, and specified peripheral expansions whose base and site are dismantlable ample. They are not closed under arbitrary induced or isometric subgraphs or under ambient-family complement.</p></div>
 <p><strong>Status:</strong> Established</p>
@@ -504,11 +504,11 @@
 <p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
 <p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
 <p><strong>Result Type:</strong> Recognition</p>
-<strong>Statement:</strong><div class="text-field"><p>The nonample pc-minimal obstructions to dismantlable ampleness are exactly $Q_n^{--}$ for $n\geq3$. Hall's 299-concept maximum class is an additional ample pc-minimal obstruction. No ample partial cube on at most fourteen vertices fails to be dismantlable ample; consequently the minimum order of an ample obstruction lies between 15 and 299 inclusive.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Every pc-minimal obstruction to dismantlable ampleness is Cartesian-prime. The nonample pc-minimal obstructions are exactly $Q_n^{--}$ for $n\geq3$. Hall's 299-concept maximum class is an additional ample pc-minimal obstruction. No ample partial cube on at most fourteen vertices fails to be dismantlable ample; consequently the minimum order of an ample obstruction lies between 15 and 299 inclusive.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>The ample-class forbidden-minor theorem and pc-minimality force every nonample obstruction to equal a contained $Q_n^{--}$. Elementary minors verify minimality of those graphs. Hall's absence of corners is published, and exact corner-peeling certificates for its 36 elementary pc-minors prove its minimality. An exhaustive cube-isomorphism census through order fourteen, completed by the low-excess structural lemma in high isometric dimension, gives the lower bound.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>If an obstruction factored as a nontrivial Cartesian product, both factors would be proper convex restrictions and hence dismantlable ample; factorwise product closure would then make the obstruction dismantlable, a contradiction. The ample-class forbidden-minor theorem and pc-minimality force every nonample obstruction to equal a contained $Q_n^{--}$. Elementary minors verify minimality of those graphs. Hall's absence of corners is published, and exact corner-peeling certificates for its 36 elementary pc-minors prove its minimality. An exhaustive cube-isomorphism census through order fourteen, completed by the low-excess structural lemma in high isometric dimension, gives the lower bound.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:dismantlable-ample-obstructions</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:dismantlable-ample-obstructions; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:prime</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximum_class.html">Hall Maximum Class</a></li></ul></p>
 <strong>Comments:</strong><div class="text-field"><p>The complete ample obstruction family remains open; this record states the proved frontier only.</p></div>
 
@@ -5694,6 +5694,54 @@
 <p><strong>Status:</strong> Established</p>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Marc24compression">[Marc24compression]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:tope-unlabeled-compression</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-340" style="position:relative;">
+
+        <h3><a href="results/relative_peeling_uso_extension.html" class="table-title-link">Relative Peeling Is Equivalent to an Inward USO Extension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Peeling Is Equivalent to an Inward USO Extension</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $T\subseteq H$ be nonempty ample classes and prescribe a unique-sink orientation $D_T$ on $T$. Then $H$ corner-peels to $T$ if and only if $D_T$ extends to a USO of $H$ whose boundary edges point into $T$ and whose orientation on $H\setminus T$ is acyclic. If $T$ is dismantlable ample, this is equivalent to an acyclic USO of $H$ with inward boundary at $T$, and every prescribed acyclic USO of $T$ extends.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Reverse a relative peeling and add each deleted corner back as a source. Its corner cube supplies the outgoing-cube condition, every old cube keeps its unique sink, and the new sources form an acyclic outside orientation with boundary directed into $T$. Conversely, repeatedly delete a source of the outside acyclic digraph. The inward boundary makes it a source of the remaining whole USO; the outgoing-cube condition makes it a corner, and the restricted representation map stays valid. Iteration deletes exactly $H\setminus T$. If the prescribed orientation of $T$ is acyclic, no directed cycle can cross the inward boundary.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-relative-uso-extension</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-341" style="position:relative;">
+
+        <h3><a href="results/orientation_square_defect_characterization.html" class="table-title-link">Quadratic Orientation Score Detects Corner Peelings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Quadratic Orientation Score Detects Corner Peelings</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/acyclic_orientation_square_defect.html">Acyclic Orientation Square Defect</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For every acyclic orientation $O$ of a nonempty finite partial cube $H$, $\varepsilon_H(O)\geq0$. Equality holds exactly when every topological order of $O$ is a corner peeling; it then also follows that $H$ is ample. Thus $H$ is dismantlable ample exactly when $\mu(H)=0$, and $H$ peels to a prescribed vertex $a$ exactly when $\mu(H,a)=0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The score is the number of outgoing edge pairs whose opposite square vertex is absent plus the number of contained squares having two sources. When it vanishes, the opposite vertex for every two-edge segment through the next vertex of a topological order survives later in the order. Replacing each such segment through the deleted vertex preserves distances, so every suffix is isometric and metric elimination yields a corner peeling and ampleness. A corner order has neither kind of defect. The rooted claim follows by requiring the last vertex to be the designated sink.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-quadratic-orientation-score</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-342" style="position:relative;">
+
+        <h3><a href="results/protected_missing_cubes_force_uso_cycles.html" class="table-title-link">Protected Missing Cubes Force USO Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Protected Missing Cubes Force USO Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be ample and $S\subseteq H$ have at least two vertices. Suppose that for every $x\in S$ there is a set $J_x\subseteq F$ such that every neighbor $x^{\{e\}}$ with $e\in J_x$ lies in $S$, while the opposite cube vertex $x^{J_x}$ is absent from $H$. Then every USO of $H$, if one exists, contains a directed cycle in $S$. Consequently $H$ is not dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The outgoing-cube axiom prevents all directions in $J_x$ from pointing outward at $x$, because their joint flip is missing. Thus every vertex of the finite digraph induced by $S$ has an incoming neighbor in $S$. Following predecessors eventually repeats a vertex and produces a directed cycle. Dismantlable ampleness is equivalent to existence of an acyclic USO.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-protected-uso-cycle</p></div>
 
         </div>
     </div>

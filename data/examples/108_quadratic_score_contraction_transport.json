@@ -1,0 +1,10 @@
+{
+  "id": 108,
+  "short_name": "quadratic_score_contraction_transport",
+  "name": "Contraction Can Increase a Transported Quadratic Score",
+  "object_type": "construction",
+  "definition": "Label $Q_4$ by binary integers $0,\\ldots,15$, with coordinate $0$ least significant. Orient its edges toward later vertices in the order $14,6,10,12,8,4,9,0,1,11,3,7,2,15,5,13$. Contract coordinate $0$ and order each image vertex by the position of its last preimage; the induced order is $8,0,10,6,2,14,4,12$ on $Q_3$.",
+  "properties": "The displayed $Q_4$ order has orientation score one: only the square $\\{2,3,6,7\\}$ has two sources. The transported $Q_3$ order has score two: $\\{0,2,4,6\\}$ and $\\{2,6,10,14\\}$ have two sources. Both optimized rooted scores are zero because both cubes have corner orders ending at the displayed last vertex. The example therefore refutes nonincrease for this last-preimage transport rule, not for the optimized invariant.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-quadratic-score-contraction",
+  "verification": "The square-source enumeration and outgoing-pair totals are reproducible directly from the two displayed orders; the preserved manuscript also identifies the original replay artifact as papers/dismantlable-ample/research/quadratic_score_transport.py/json."
+}

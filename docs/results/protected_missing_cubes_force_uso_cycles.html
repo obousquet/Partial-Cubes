@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-342" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="results/protected_missing_cubes_force_uso_cycles.html" class="table-title-link">Protected Missing Cubes Force USO Cycles</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/dismantlable_ample_full_reduction_closed.html'>Dismantlable Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/intermediate_decomposition_class_hierarchy.html'>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></li><li><a href='results/maximum_ancestry_neighbor_hierarchy.html'>Classes Immediately Below and Above Maximum Ancestry</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li><li><a href='results/compatible_face_avoidance_operator.html'>Face-Avoiding Maximum Predecessors Preserve Intersections</a></li><li><a href='results/complement_dismantlability_structure.html'>Structure of Dismantlable-Complement Ample Classes</a></li></ul></p></div>
+        <p><strong>Name: </strong>Protected Missing Cubes Force USO Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be ample and $S\subseteq H$ have at least two vertices. Suppose that for every $x\in S$ there is a set $J_x\subseteq F$ such that every neighbor $x^{\{e\}}$ with $e\in J_x$ lies in $S$, while the opposite cube vertex $x^{J_x}$ is absent from $H$. Then every USO of $H$, if one exists, contains a directed cycle in $S$. Consequently $H$ is not dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The outgoing-cube axiom prevents all directions in $J_x$ from pointing outward at $x$, because their joint flip is missing. Thus every vertex of the finite digraph induced by $S$ has an incoming neighbor in $S$. Following predecessors eventually repeats a vertex and produces a directed cycle. Dismantlable ampleness is equivalent to existence of an acyclic USO.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-protected-uso-cycle</p></div>
 
         </div>
     </div>

@@ -1,0 +1,17 @@
+{
+  "id": 341,
+  "short_name": "orientation_square_defect_characterization",
+  "name": "Quadratic Orientation Score Detects Corner Peelings",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/acyclic_orientation_square_defect"
+  ],
+  "result_type": "recognition",
+  "statement": "For every acyclic orientation $O$ of a nonempty finite partial cube $H$, $\\varepsilon_H(O)\\geq0$. Equality holds exactly when every topological order of $O$ is a corner peeling; it then also follows that $H$ is ample. Thus $H$ is dismantlable ample exactly when $\\mu(H)=0$, and $H$ peels to a prescribed vertex $a$ exactly when $\\mu(H,a)=0$.",
+  "status": "established",
+  "proof": "The score is the number of outgoing edge pairs whose opposite square vertex is absent plus the number of contained squares having two sources. When it vanishes, the opposite vertex for every two-edge segment through the next vertex of a topological order survives later in the order. Replacing each such segment through the deleted vertex preserves distances, so every suffix is isometric and metric elimination yields a corner peeling and ampleness. A corner order has neither kind of defect. The rooted claim follows by requiring the last vertex to be the designated sink.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-quadratic-orientation-score"
+}

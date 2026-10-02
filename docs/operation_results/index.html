@@ -1007,7 +1007,7 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a finite dismantlable ample partial cube is dismantlable ample.</p></div>
 <strong>Proof:</strong><div class="text-field"><p>Convex restrictions preserve ample-prefix orders by intersection, and contractions preserve them by ordering projected concepts at first appearance. Iterating these two operations proves the claim.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-pc-minor-closure</p></div>
 
         </div>
     </div>
@@ -1023,7 +1023,7 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>For finite partial cubes $G_1,G_2$, the product $G_1\square G_2$ is dismantlable ample if and only if both factors are dismantlable ample.</p></div>
 <strong>Proof:</strong><div class="text-field"><p>Given prefix-isometric orders of the factors, order product vertices by nondecreasing sum of their two order indices. Factor geodesics stay in every prefix, proving sufficiency. Each factor is a convex coordinate face of the product, so pc-minor closure proves necessity.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-exact-expansion-product-tests</p></div>
 
         </div>
     </div>
@@ -1040,7 +1040,7 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>For an isometric site $S\subseteq B$, the specified peripheral expansion $P=(B\times\{0\})\cup(S\times\{1\})$ is dismantlable ample if and only if both $B$ and $S$ are dismantlable ample.</p></div>
 <strong>Proof:</strong><div class="text-field"><p>Concatenate a prefix-isometric order of the lower copy of $B$ with one of the upper copy of $S$; lower, upper, and cross-layer pairs all have shortest paths inside every prefix. Conversely, $B$ is a contraction and $S$ a semicube restriction of $P$.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:dismantlable-ample-closure; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-exact-expansion-product-tests</p></div>
 
         </div>
     </div>
@@ -4900,6 +4900,23 @@
 <strong>Proof:</strong><div class="text-field"><p>A single $\Theta$-class contraction commutes with the antipodal involution and preserves the complementary semicube action. Iterating the one-class theorem proves closure under arbitrary coordinate projection.</p></div>
 <strong>References:</strong><div class="text-field"><p>\cite[Corollary~3.9]{polat2020antipodal}</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:antipodal-expansions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-293" style="position:relative;">
+
+        <h3><a href="operation_results/dismantlable_ample_full_reduction_closed.html" class="table-title-link">Dismantlable Ample Classes Are Full-Reduction Closed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Dismantlable Ample Classes Are Full-Reduction Closed</p>
+<p><strong>Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/full_reduction.html">Full Reduction</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Target Class: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>For a dismantlable ample class $X\subseteq Q_E$ and every coordinate set $A\subseteq E$, the full reduction $X^A$ is either empty or dismantlable ample.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Reverse a corner peeling of $X$ to obtain an ample-prefix order. Assign every full $A$-fiber its completion time, the largest index of one of its concepts, and order the fibers by that time. At each completion time the resulting prefix is exactly the full reduction of an ample prefix, hence is ample. Reversing this prefix order gives a corner peeling of the nonempty reduction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-strong-projection-closure</p></div>
 
         </div>
     </div>

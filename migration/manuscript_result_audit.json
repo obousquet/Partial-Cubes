@@ -1,13 +1,13 @@
 {
   "version": 1,
   "kind": "manuscript_result_audit",
-  "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, example-, conjecture-, and problem-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed and open questions are excluded.",
+  "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, and example-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed. Conjecture, problem, and open-question labels remain prose-owned and are excluded.",
   "counts": {
-    "unique_result_labels": 1016,
-    "label_occurrences": 1040,
-    "covered": 431,
-    "uncovered": 585,
-    "proof_source_records": 1505
+    "unique_result_labels": 1013,
+    "label_occurrences": 1037,
+    "covered": 440,
+    "uncovered": 573,
+    "proof_source_records": 1512
   },
   "by_workspace": {
     "ample-corners": {
@@ -27,8 +27,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "total": 585,
-      "uncovered": 585
+      "covered": 9,
+      "total": 582,
+      "uncovered": 573
     },
     "gluing": {
       "covered": 20,
@@ -2981,38 +2982,6 @@
       ]
     },
     {
-      "label": "conj:damp-core-or-nonample",
-      "prefix": "conj",
-      "environment": "remark",
-      "status": "uncovered",
-      "workspaces": [
-        "dismantlable-ample"
-      ],
-      "occurrences": [
-        {
-          "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
-          "line": 18631
-        }
-      ],
-      "covered_by": []
-    },
-    {
-      "label": "conj:damp-mutual-section-corner",
-      "prefix": "conj",
-      "environment": "conjecture",
-      "status": "uncovered",
-      "workspaces": [
-        "dismantlable-ample"
-      ],
-      "occurrences": [
-        {
-          "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
-          "line": 25860
-        }
-      ],
-      "covered_by": []
-    },
-    {
       "label": "cor:damp-adjacent-carrier-collision-double-tax",
       "prefix": "cor",
       "environment": "corollary",
@@ -5648,7 +5617,7 @@
       "label": "ex:damp-quadratic-score-contraction",
       "prefix": "ex",
       "environment": "remark",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5658,7 +5627,9 @@
           "line": 237
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/108_quadratic_score_contraction_transport.json"
+      ]
     },
     {
       "label": "ex:damp-square-completed-578",
@@ -7472,7 +7443,7 @@
       "label": "lem:prime",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -7482,23 +7453,9 @@
           "line": 405
         }
       ],
-      "covered_by": []
-    },
-    {
-      "label": "prob:damp-intrinsic-generative-classification",
-      "prefix": "prob",
-      "environment": "problem",
-      "status": "uncovered",
-      "workspaces": [
-        "dismantlable-ample"
-      ],
-      "occurrences": [
-        {
-          "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
-          "line": 19725
-        }
-      ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/025_dismantlable_ample_obstruction_frontier.json"
+      ]
     },
     {
       "label": "prop:damp-adjacent-carrier-owner-monotonicity",
@@ -8084,7 +8041,7 @@
       "label": "prop:damp-exact-expansion-product-tests",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -8094,7 +8051,10 @@
           "line": 337
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/056_dismantlable_ample_cartesian_product_closed.json",
+        "data/operation_results/057_dismantlable_ample_peripheral_expansion.json"
+      ]
     },
     {
       "label": "prop:damp-extra-owner-anomaly-opposite-wing",
@@ -9252,7 +9212,7 @@
       "label": "prop:damp-pc-minor-closure",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9262,7 +9222,9 @@
           "line": 290
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/055_dismantlable_ample_pc_minor_closed.json"
+      ]
     },
     {
       "label": "prop:damp-periphery-free",
@@ -9316,7 +9278,7 @@
       "label": "prop:damp-protected-uso-cycle",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9326,7 +9288,9 @@
           "line": 434
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/342_protected_missing_cubes_force_uso_cycles.json"
+      ]
     },
     {
       "label": "prop:damp-punctured-antipodal-section-surcharge",
@@ -9572,7 +9536,7 @@
       "label": "prop:damp-quadratic-orientation-score",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9582,7 +9546,11 @@
           "line": 166
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariant_values/128_orientation_square_defect_characterizes_dismantlable_ample.json",
+        "data/invariants/060_acyclic_orientation_square_defect.json",
+        "data/results/341_orientation_square_defect_characterization.json"
+      ]
     },
     {
       "label": "prop:damp-quiet-58-exclusion",
@@ -9764,7 +9732,7 @@
       "label": "prop:damp-relative-uso-extension",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9774,7 +9742,9 @@
           "line": 133
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/340_relative_peeling_uso_extension.json"
+      ]
     },
     {
       "label": "prop:damp-relative-wing-first-moment-bound",
@@ -10292,7 +10262,7 @@
       "label": "prop:damp-strong-projection-closure",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -10302,7 +10272,9 @@
           "line": 319
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/293_dismantlable_ample_full_reduction_closed.json"
+      ]
     },
     {
       "label": "prop:damp-support-occurrence-failure-joint-injection",
@@ -11108,7 +11080,7 @@
       "label": "prop:nonample-layer",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -11118,7 +11090,9 @@
           "line": 416
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_bases/009_dismantlable_ample_known_pc_obstructions.json"
+      ]
     },
     {
       "label": "thm:damp-acyclic-trace-carrier-criterion",

@@ -1,0 +1,16 @@
+{
+  "id": 60,
+  "short_name": "acyclic_orientation_square_defect",
+  "name": "Acyclic Orientation Square Defect",
+  "symbol": "\\mu(H)",
+  "definition": "For a nonempty finite partial cube $H$, let $f_2(H)$ be its number of contained squares. For an acyclic orientation $O$ of its one-inclusion graph, put $\\varepsilon_H(O)=\\sum_{v\\in H}\\binom{d_O^+(v)}2-f_2(H)$, and define $\\mu(H)=\\min_O\\varepsilon_H(O)$. For a specified vertex $a$, the rooted value $\\mu(H,a)$ minimizes over acyclic orientations having $a$ as a sink.",
+  "status": "established",
+  "domain_class_id": "#classes/partial_cubes",
+  "codomain": "Nonnegative integers",
+  "parameters": "The rooted variant has a distinguished sink vertex $a$.",
+  "normalization": "Squares are contained two-dimensional cube faces, and $d_O^+(v)$ is outdegree in the oriented one-inclusion graph.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The score $\\varepsilon_H(O)$ belongs to an oriented realization; minimizing over all acyclic orientations gives the graph invariant. Transporting a particular order through a contraction need not make its score nonincreasing.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-quadratic-orientation-score"
+}

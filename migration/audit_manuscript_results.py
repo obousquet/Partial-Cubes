@@ -11,8 +11,18 @@ from pathlib import Path
 from common import emit_json, load_json
 
 
-RESULT_PREFIXES = {"thm", "prop", "cor", "lem", "ex", "conj", "prob"}
-NON_RESULT_PREFIXES = {"app", "def", "eq", "fig", "item", "q", "rem", "sec", "tab"}
+RESULT_PREFIXES = {"thm", "prop", "cor", "lem", "ex"}
+OPEN_PREFIXES = {"conj", "prob", "q"}
+NON_RESULT_PREFIXES = {
+    "app",
+    "def",
+    "eq",
+    "fig",
+    "item",
+    "rem",
+    "sec",
+    "tab",
+}
 RESULT_ENVIRONMENTS = {
     "theorem",
     "maintheorem",
@@ -20,8 +30,6 @@ RESULT_ENVIRONMENTS = {
     "corollary",
     "lemma",
     "example",
-    "conjecture",
-    "problem",
 }
 
 
@@ -76,12 +84,15 @@ def audit(label_index: dict, data_dir: Path) -> dict:
     grouped: dict[tuple[str, str], list[dict]] = defaultdict(list)
     for file_entry in label_index["files"]:
         for label in file_entry["labels"]:
+            environment = (label.get("environment") or "").lower()
             if (
-                label["prefix"] in RESULT_PREFIXES
-                or (
-                    label["prefix"] not in NON_RESULT_PREFIXES
-                    and (label.get("environment") or "").lower()
-                    in RESULT_ENVIRONMENTS
+                label["prefix"] not in OPEN_PREFIXES
+                and (
+                    label["prefix"] in RESULT_PREFIXES
+                    or (
+                        label["prefix"] not in NON_RESULT_PREFIXES
+                        and environment in RESULT_ENVIRONMENTS
+                    )
                 )
             ):
                 grouped[(workspace(file_entry["path"]), label["label"])].append(
@@ -126,7 +137,7 @@ def audit(label_index: dict, data_dir: Path) -> dict:
     return {
         "version": 1,
         "kind": "manuscript_result_audit",
-        "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, example-, conjecture-, and problem-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed and open questions are excluded.",
+        "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, and example-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed. Conjecture, problem, and open-question labels remain prose-owned and are excluded.",
         "counts": {
             "unique_result_labels": len(claims),
             "label_occurrences": sum(len(claim["occurrences"]) for claim in claims),

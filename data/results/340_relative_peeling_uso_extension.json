@@ -1,0 +1,15 @@
+{
+  "id": 340,
+  "short_name": "relative_peeling_uso_extension",
+  "name": "Relative Peeling Is Equivalent to an Inward USO Extension",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $T\\subseteq H$ be nonempty ample classes and prescribe a unique-sink orientation $D_T$ on $T$. Then $H$ corner-peels to $T$ if and only if $D_T$ extends to a USO of $H$ whose boundary edges point into $T$ and whose orientation on $H\\setminus T$ is acyclic. If $T$ is dismantlable ample, this is equivalent to an acyclic USO of $H$ with inward boundary at $T$, and every prescribed acyclic USO of $T$ extends.",
+  "status": "established",
+  "proof": "Reverse a relative peeling and add each deleted corner back as a source. Its corner cube supplies the outgoing-cube condition, every old cube keeps its unique sink, and the new sources form an acyclic outside orientation with boundary directed into $T$. Conversely, repeatedly delete a source of the outside acyclic digraph. The inward boundary makes it a source of the remaining whole USO; the outgoing-cube condition makes it a corner, and the restricted representation map stays valid. Iteration deletes exactly $H\\setminus T$. If the prescribed orientation of $T$ is acyclic, no directed cycle can cross the inward boundary.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-relative-uso-extension"
+}
