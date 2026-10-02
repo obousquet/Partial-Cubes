@@ -9212,6 +9212,85 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-555" style="position:relative;">
+
+        <h3><a href="results/cornerless_minor_minimal_gluing.html" class="table-title-link">Cornerlessness Can Be pc-Minimal without Forbiddenness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cornerlessness Can Be pc-Minimal without Forbiddenness</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be an ample forbidden pc-minor whose only corner is a root $0$, and let $P$ be a nontrivial corner-peelable ample family whose only corner is $0$. Assume every proper root-preserving pc-minor of either family peels to its root. On disjoint irredundant coordinate sets, the wedge $X=S\vee P$ is ample and cornerless, every nonempty proper pc-minor of $X$ has a corner, and every nonpeelable pc-minor contains $S$. Thus $S$ is the unique forbidden pc-minor of $X$ up to isomorphism, and $X$ has no cornerless forbidden pc-minor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Vertex gluing preserves ampleness. Nonroot vertices retain the multiple maximal cubes of their own piece, while neighbours of the root in the two blocks have no mixed completing square, so the root is not a corner. Every minor either lies in one block or retains the root and splits as $S\'\vee P\'$. If $S\'$ is proper, peel it to the root and then peel $P\'$. A nonpeelable minor therefore retains $S$; when it is proper, $P\'$ is proper and supplies a corner, including the root when $P\'=\{0\}$. Forbidden minimality then makes $S$ the unique forbidden minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-cornerless-minor-minimal-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-556" style="position:relative;">
+
+        <h3><a href="results/cornerless_minor_minimal_not_forbidden_580.html" class="table-title-link">A 580-Concept Cornerless Class with a One-Corner Forbidden Minor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 580-Concept Cornerless Class with a One-Corner Forbidden Minor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 580-concept ample class in $Q_{24}$ of VC dimension three and minimum graph degree four that is cornerless and whose every nonempty proper pc-minor has a corner. Its unique forbidden pc-minor has 292 concepts and exactly one corner. Hence pc-minimality among cornerless ample classes is strictly weaker than being a cornerless forbidden pc-minor, even for graph three-cores of VC dimension three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Translate the verified 292-concept one-corner obstruction and the verified 289-concept one-corner peelable rooted factor so their distinguished corners are zero, then wedge them on disjoint twelve-coordinate blocks. The gluing theorem gives all-minor and uniqueness statements. The checker reconstructs both inputs, verifies their shadows and corners, 48 rooted orders, 36 ordinary proper-minor orders, the order and VC dimension of the wedge, its minimum degree and cornerlessness, and all 72 elementary images.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-cornerless-minor-minimal-not-forbidden</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cornerless_minor_minimal_wedge_580.html">Cornerless Minor-Minimal Wedge of Order 580</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-557" style="position:relative;">
+
+        <h3><a href="results/two_largest_one_hole_supports.html" class="table-title-link">Two Largest Supports Force a Permutation Structure in Protected Covers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Largest Supports Force a Permutation Structure in Protected Covers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Consider $m$ distinct punctured-cube pieces satisfying the protected-cover equations, and suppose two supports have the largest possible size $m-1$. Their supports are $K\mathbin{\dot\cup}\{a\}$ and $K\mathbin{\dot\cup}\{b\}$ with $|K|=m-2$. The protection labels from the two pieces define a permutation $\pi$ of $K$. If $C$ is its moved set and $c=|C|$, then $c\ge2$; every other support indexed by a moved label has size at least $c$, every fixed-label support has size at least $c+2$, and every such support has size at least three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The protector equations in both directions force the two supports to differ only in their private labels and make both lists of labels enumerate their common core $K$. Symmetric-difference identities show that a third support contains both private labels and all moved coordinates except its two corresponding labels. This gives the rank bounds and identifies the disagreement set with the moved set of $\pi$, which cannot have size one. The only possible rank-two equality case forces a third missing tip into one of the original punctured cubes, contradicting the cover condition.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-two-largest-supports</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-558" style="position:relative;">
+
+        <h3><a href="results/six_piece_two_largest_capacity.html" class="table-title-link">Capacity Bound for Six One-Hole Pieces with Two Largest Supports</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Capacity Bound for Six One-Hole Pieces with Two Largest Supports</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a protected cover with six pieces, if two supports have size five, then every other support has size at least three and the sum of the protected-interior sizes is at least 82. In particular the rank multiset $(5,5,4,2,2,2)$ is impossible.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A rank-$r$ piece protects $f(r)=2^r-r-1$ concepts. The permutation structure on the four-element common core has moved-set size two, three, or four. The corresponding minimum rank profiles give respectively $2f(5)+2f(3)+2f(4)=82$, $3f(5)+3f(3)=90$, and $2f(5)+4f(4)=96$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-six-piece-two-largest-capacity</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This bounds the sum of protected interior sizes; overlaps mean it is not a lower bound on the order of the union, and it is not a pc-minimality criterion.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-559" style="position:relative;">
+
+        <h3><a href="results/oriented_one_hole_elementary_images.html" class="table-title-link">Exact Elementary Images of Oriented One-Hole Covers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Elementary Images of Oriented One-Hole Covers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For $\mathsf P(y,B)=\{y^U:\varnothing\ne U\subseteq B\}$ and a coordinate $e\notin B$, the conditioning at $y_e$ and the projection in $e$ both give $\mathsf P(\bar y,B)$, while the opposite conditioning is empty. If $e\in B$ and $C=B\setminus\{e\}$, conditioning at $y_e$ gives $\mathsf P(\bar y,C)$, while the opposite conditioning and projection both give the full affine cube $\mathsf Q(\bar y,C)$. Images of a finite cover are the unions of these piecewise images, preserving tip and support provenance.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Outside the support, every vertex has the fixed coordinate value. Inside the support, the fixed-tip side corresponds to nonempty flipped subsets of the remaining coordinates, while the opposite side corresponds to arbitrary subsets and hence the full cube. Projection is the union of the two sides, and all three operations commute with unions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-one-hole-elementary-images</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

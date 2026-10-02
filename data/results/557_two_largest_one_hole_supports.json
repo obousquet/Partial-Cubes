@@ -1,0 +1,13 @@
+{
+  "id": 557,
+  "short_name": "two_largest_one_hole_supports",
+  "name": "Two Largest Supports Force a Permutation Structure in Protected Covers",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Consider $m$ distinct punctured-cube pieces satisfying the protected-cover equations, and suppose two supports have the largest possible size $m-1$. Their supports are $K\\mathbin{\\dot\\cup}\\{a\\}$ and $K\\mathbin{\\dot\\cup}\\{b\\}$ with $|K|=m-2$. The protection labels from the two pieces define a permutation $\\pi$ of $K$. If $C$ is its moved set and $c=|C|$, then $c\\ge2$; every other support indexed by a moved label has size at least $c$, every fixed-label support has size at least $c+2$, and every such support has size at least three.",
+  "status": "established",
+  "proof": "The protector equations in both directions force the two supports to differ only in their private labels and make both lists of labels enumerate their common core $K$. Symmetric-difference identities show that a third support contains both private labels and all moved coordinates except its two corresponding labels. This gives the rank bounds and identifies the disagreement set with the moved set of $\\pi$, which cannot have size one. The only possible rank-two equality case forces a third missing tip into one of the original punctured cubes, contradicting the cover condition.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-two-largest-supports"
+}

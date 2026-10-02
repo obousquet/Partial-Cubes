@@ -1,0 +1,14 @@
+{
+  "id": 558,
+  "short_name": "six_piece_two_largest_capacity",
+  "name": "Capacity Bound for Six One-Hole Pieces with Two Largest Supports",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a protected cover with six pieces, if two supports have size five, then every other support has size at least three and the sum of the protected-interior sizes is at least 82. In particular the rank multiset $(5,5,4,2,2,2)$ is impossible.",
+  "status": "established",
+  "proof": "A rank-$r$ piece protects $f(r)=2^r-r-1$ concepts. The permutation structure on the four-element common core has moved-set size two, three, or four. The corresponding minimum rank profiles give respectively $2f(5)+2f(3)+2f(4)=82$, $3f(5)+3f(3)=90$, and $2f(5)+4f(4)=96$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-six-piece-two-largest-capacity",
+  "comments": "This bounds the sum of protected interior sizes; overlaps mean it is not a lower bound on the order of the union, and it is not a pc-minimality criterion."
+}

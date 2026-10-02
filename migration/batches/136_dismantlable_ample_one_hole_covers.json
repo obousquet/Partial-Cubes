@@ -1,0 +1,138 @@
+{
+  "version": 1,
+  "batch_id": "136_dismantlable_ample_one_hole_covers",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Add the canonical oriented one-hole parametrization of cornerless ample families, separate cornerless pc-minimality from forbiddenness with an exact 580-concept witness, derive support-capacity restrictions, and record elementary-minor formulas for the cover pieces.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-one-hole-cornerless-construction",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-cornerless-minor-minimal-gluing",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-cornerless-minor-minimal-not-forbidden",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-two-largest-supports",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-six-piece-two-largest-capacity",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-hole-elementary-images"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The one-hole theorem is an exact generative characterization and therefore belongs in the characterization tables. The following counterexample shows why cornerlessness and all-proper-minor corner tests do not characterize the forbidden basis; its large witness requires preservation of all rooted and ordinary peeling certificates.",
+    "outcome": "All six statement-plus-proof blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the live manuscript. The database-owned verifier reconstructs the 580-concept witness and reproduces the 393218-byte archived report byte-for-byte.",
+    "claim_block_sha256": {
+      "thm:damp-one-hole-cornerless-construction": "e32c67497ac549e3482234f228e82c53a9525186ab6ae19b72bc9fcdbcbf2dae",
+      "prop:damp-cornerless-minor-minimal-gluing": "509e5ede397f2b1e9eeabcbf03c08d523066e66fe86da8335ed5a85e22d5ba0d",
+      "cor:damp-cornerless-minor-minimal-not-forbidden": "8125821e539c6a2a9b3e5a3c79f00c48d9788b3dd273ae015815517c8459a41b",
+      "thm:damp-two-largest-supports": "db1d5e9e2d2694ceff09f292447c13fa65be84c403cff489d3ab6a4031026d83",
+      "cor:damp-six-piece-two-largest-capacity": "7bf069d7ff699387693040844a4e0a6e1ae6d7d2804231dd3ae96f9ecfa63696",
+      "prop:damp-one-hole-elementary-images": "5fb765a1d3de5c05baa4db47dbb2f236193179bfa742f0c93a97c4e56ec6f6a6"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/computations/probe_round818_one_corner_rooted_images.py",
+      "sha256": "f4bf4a8afd1104090a5f496b12f9c965b3a1c5b430d5a23b23d29409908b5f28"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/computations/round776_rooted_corner_descent.json",
+      "sha256": "04fd2af2b04b5953d95cd4944bde371264e5358faf81d40d12ed08f3c2ab85f6"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/computations/round818_one_corner_rooted_images.json",
+      "sha256": "c2b639dc2a37c7e1a8385a8b82109e514d4e367ccea4635e360ccad1947a28b3"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/damp_cornerless_minor_minimal_counterexample_verification.json",
+      "sha256": "ff72a08b0e50890a35044ce196027bb67143a7b76f94db3697280035065c123e"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/damp_cornerless_minor_minimal_counterexample_verification_source.json",
+      "sha256": "ff72a08b0e50890a35044ce196027bb67143a7b76f94db3697280035065c123e"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/damp_empty_core_counterexample.json",
+      "sha256": "3e3b26bccd102450b1f2c92973dd9b4da25d8b21fb373f151c5c31e10da639ff"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/damp_fixed_291_repair_creation.json",
+      "sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/damp_hall_carrier_defect_min8.json",
+      "sha256": "60e1d708636d85ccf991d1d574dec5dbde7829656f5576a12bba75170b6f6b53"
+    },
+    {
+      "path": "migration/certificates/136_dismantlable_ample_one_hole_covers/verify_damp_cornerless_minor_minimal_counterexample.py",
+      "sha256": "bfe66b2dad9fef599a269be48b777a6682c973ed2ef519d85567e764f613d3f4"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the one-hole characterization and equivalence, five normalized results, the explicit witness, concise proofs, all transitive verifier inputs, the verifier, and its full report. The manuscript retains the development of protected covers, contextual distinction between local holes and forbidden seeds, and the full surrounding argument.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact manuscript. The certificate directory is a self-contained copy of the source verifier boundary and reproduces the archived report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/characterizations/197_oriented_one_hole_cover.json",
+      "sha256": "7d57eb9269181c21a9bcd84e62cfc756bd0a5015e5dcf6e5839253d6297f05e0"
+    },
+    {
+      "path": "data/characterization_equivalences/041_cornerless_ample_one_hole_equivalence.json",
+      "sha256": "1e2d42b014fbca4451e2f4209e15a38c69fa25f4deffcad9b1e1c55a306fabb8"
+    },
+    {
+      "path": "data/examples/161_cornerless_minor_minimal_wedge_580.json",
+      "sha256": "f038107b9f2d7f0c853dc2bf72fb330d060aa1b9afabfa5bd9246b671ec6869d"
+    },
+    {
+      "path": "data/results/555_cornerless_minor_minimal_gluing.json",
+      "sha256": "b5afcc5f7761535cdc543c938c9865a0121f51a9857cf658c9841ddd3377113c"
+    },
+    {
+      "path": "data/results/556_cornerless_minor_minimal_not_forbidden_580.json",
+      "sha256": "4a29a97bbb8d4ed8ce36633d38970f76be36e42792c62e33b3d36f8d1b1a4c28"
+    },
+    {
+      "path": "data/results/557_two_largest_one_hole_supports.json",
+      "sha256": "34c4d2301cdb673df902cfd3538a499427022e6578801aae239a7c9488ee950f"
+    },
+    {
+      "path": "data/results/558_six_piece_two_largest_capacity.json",
+      "sha256": "bce0fd5e7cafebfc208279deaa8f202103cde8c52ffbc5a44a9126653a737bba"
+    },
+    {
+      "path": "data/results/559_oriented_one_hole_elementary_images.json",
+      "sha256": "c956160950cf18df7e38be17cfef1933dce6ee23b8bccd910fa1866d2dae2490"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d52fd58d026186f56db6bd433fa24787958da76c9cf9dd8181ae0a013b4b1f05"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "416c22cb5d1db78d62b523f45033829d30a5dbe4fc68f8da99c2c208a884c601"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1912 records.",
+    "website": "Normalized 1928 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 6 additional audited labels, raising the dismantlable-ample workspace from 222 to 228 of 683 and overall coverage from 653 to 659 of 1114 database-owned labels.",
+    "certificates": "The replay verifies the 580-concept family, dimension 24, VC dimension three, zero corners, minimum degree four, 48 rooted orders, 36 ordinary minor orders, and all 72 elementary images; 48 peel and 24 retain a projection onto the one-corner forbidden minor.",
+    "scope_review": "The records retain that the one-hole parametrization characterizes cornerless ampleness only. Neither protected-cover capacity nor corner-minimality is presented as a forbidden-minor recognition theorem.",
+    "source_integrity": "All six reviewed source blocks and the complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 455 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Contractions can create switched local holes not visible as the image of a single source piece; the next batch will normalize the canonical hole-transport theorem and preserve its Hall-obstruction audit.",
+    "The exact forbidden-seed condition still requires global compatibility and peelability information for the recovered punctured expansion profiles."
+  ]
+}

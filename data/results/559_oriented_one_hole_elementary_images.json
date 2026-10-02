@@ -1,0 +1,18 @@
+{
+  "id": 559,
+  "short_name": "oriented_one_hole_elementary_images",
+  "name": "Exact Elementary Images of Oriented One-Hole Covers",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For $\\mathsf P(y,B)=\\{y^U:\\varnothing\\ne U\\subseteq B\\}$ and a coordinate $e\\notin B$, the conditioning at $y_e$ and the projection in $e$ both give $\\mathsf P(\\bar y,B)$, while the opposite conditioning is empty. If $e\\in B$ and $C=B\\setminus\\{e\\}$, conditioning at $y_e$ gives $\\mathsf P(\\bar y,C)$, while the opposite conditioning and projection both give the full affine cube $\\mathsf Q(\\bar y,C)$. Images of a finite cover are the unions of these piecewise images, preserving tip and support provenance.",
+  "status": "established",
+  "proof": "Outside the support, every vertex has the fixed coordinate value. Inside the support, the fixed-tip side corresponds to nonempty flipped subsets of the remaining coordinates, while the opposite side corresponds to arbitrary subsets and hence the full cube. Projection is the union of the two sides, and all three operations commute with unions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-hole-elementary-images"
+}
