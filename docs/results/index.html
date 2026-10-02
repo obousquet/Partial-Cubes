@@ -10408,6 +10408,40 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-622" style="position:relative;">
+
+        <h3><a href="results/yang_protector_atlas_criterion.html" class="table-title-link">Colored Yang Protector-Atlas Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Colored Yang Protector-Atlas Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ample $H$, associate to every latent punctured face $(y,S)$ its punctured cross-polytopal chart in the Yang complex, with antipodal facet $A(y,S)=F_{y^S}$, protector facets $P_q(y,S)=F_{y^{S\setminus\{q\}}}$, and, when $y\in H$, escape facet $E(y,S)=F_y$. In every chart choose either the precedence $A(y,S)\prec E(y,S)$ or one precedence $P_q(y,S)\prec A(y,S)$. Then the Yang complex is shellable exactly when the local precedences can be chosen with acyclic union. Whenever they are acyclic, every linear extension is the Yang-facet order corresponding to a corner peeling of $H$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Under the facet--concept bijection, the escape precedence is exactly the latent-block escape arc and each protector precedence is exactly its facet-protector arc. The finite facet-protector acyclicity criterion characterizes corner peelability, and the Yang shellability--corner-peeling dictionary identifies those topological orders with shelling orders.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-yang-protector-atlas</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-623" style="position:relative;">
+
+        <h3><a href="results/yang_shellability_metric_elimination.html" class="table-title-link">Yang Shellability Equals Metric Elimination</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang Shellability Equals Metric Elimination</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty $H\subseteq Q_F$ be isometric and let $G_H$ be its induced concept graph. The following are equivalent: the Yang complex $\Delta_H$ is shellable; it is strongly shellable; $G_H$ has an elimination order whose every nonempty suffix is isometric in $G_H$; and $G_H$ has an elimination order in which every deleted vertex is weakly $4$-simplicial, meaning that every two of its current neighbours remain at distance at most two after its deletion. Every isometric family satisfying these conditions is ample and corner-peelable. Its distance-preserving elimination orders are exactly its corner-peeling orders, and their reversals are the corresponding Yang shellings.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For Yang facets, the pure shelling pairwise criterion automatically satisfies the extra containment required for strong shellability because each facet contains exactly one literal of every color. Thus shellability and strong shellability coincide. The codimension-one graph of the Yang complex is $G_H$, facet distance is Hamming distance, and isometry makes this graph harmonious; the strong-shellability graph theorem therefore gives distance-preserving elimination. A vertex deletion preserves all distances exactly when the vertex is weakly $4$-simplicial. Finally, reverse a distance-preserving order from its last singleton. Each successive cube-family extension is isometric, so the one-concept extension criterion preserves ampleness and adds a corner. Conversely every suffix of a corner peeling is ample and therefore isometric.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#GuoShenWu19strong">[GuoShenWu19strong]</a> <a href="bibliography.html#SmithZahedi25distance">[SmithZahedi25distance]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-yang-shellability-metric-elimination</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,18 @@
+{
+  "id": 622,
+  "short_name": "yang_protector_atlas_criterion",
+  "name": "Colored Yang Protector-Atlas Criterion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "For an ample $H$, associate to every latent punctured face $(y,S)$ its punctured cross-polytopal chart in the Yang complex, with antipodal facet $A(y,S)=F_{y^S}$, protector facets $P_q(y,S)=F_{y^{S\\setminus\\{q\\}}}$, and, when $y\\in H$, escape facet $E(y,S)=F_y$. In every chart choose either the precedence $A(y,S)\\prec E(y,S)$ or one precedence $P_q(y,S)\\prec A(y,S)$. Then the Yang complex is shellable exactly when the local precedences can be chosen with acyclic union. Whenever they are acyclic, every linear extension is the Yang-facet order corresponding to a corner peeling of $H$.",
+  "status": "established",
+  "proof": "Under the facet--concept bijection, the escape precedence is exactly the latent-block escape arc and each protector precedence is exactly its facet-protector arc. The finite facet-protector acyclicity criterion characterizes corner peelability, and the Yang shellability--corner-peeling dictionary identifies those topological orders with shelling orders.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-yang-protector-atlas"
+}
