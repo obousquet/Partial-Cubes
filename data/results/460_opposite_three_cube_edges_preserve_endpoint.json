@@ -1,0 +1,20 @@
+{
+  "id": 460,
+  "short_name": "opposite_three_cube_edges_preserve_endpoint",
+  "name": "Opposite Three-Cube Corner Edges Preserve a Retained Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let an ample family $H$ contain a three-cube with two opposite edges $\\{c,a\\}$ and $\\{z,w\\}$, and suppose that all four endpoints are degree-three corners of $H$. Then $H$ peels to $a$ if and only if $H\\setminus\\{c\\}$ peels to $a$. Equivalently, for the two remaining projected restrictions $U,V$ meeting in their common edge $E=\\{e_0,e_1\\}$, both $U$ and $V$ peel to $e_1$ and at least one peels relatively to $E$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/opposite_edge_endpoint_connectors"
+  ],
+  "proof": "The restrictions through the two opposite corner edges consist of those edges alone. Root-preserving minor closure forces both transverse restrictions to peel to the upper endpoint. Inspecting the first deletion at their four boundary vertices shows that one restriction must peel while retaining the common edge. Conversely, perform that relative peeling, delete the four exposed cube vertices in order, and finish in the other restriction. This constructs a peeling of $H-c$ to $a$; prefixing $c$ gives the forward family.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-opposite-edge-endpoint"
+}

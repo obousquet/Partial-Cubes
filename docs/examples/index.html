@@ -2961,6 +2961,84 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-151" style="position:relative;">
+
+        <h3><a href="examples/opposite_edge_endpoint_connectors.html" class="table-title-link">Opposite-Edge Endpoint Connector Controls</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite-Edge Endpoint Connector Controls</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Three verified connector families instantiate the opposite-edge criterion: two have positive relative-edge behavior, while the third has two bad relative edges and is tested both before and after restoring the missing cube corner.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The bad connector has complete negative endpoint certificates with 25 states before restoration and 125 states afterward. The verification enumerates the five possible removed-vertex sets inside the three-cube and all 20 first-boundary corner exclusions.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>All controls satisfy the equivalence between the endpoint in the full family, the endpoint after deleting the opposite corner, and the two transverse-restriction criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-opposite-edge-endpoint (following verification paragraph)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_square_endpoint_switch.py; PartialCubes:forbidden_pc_minor_campaign/damp_two_square_endpoint_switch_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-153" style="position:relative;">
+
+        <h3><a href="examples/small_lower_support_switch_controls.html" class="table-title-link">Small-Lower-Support Switch Controls</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small-Lower-Support Switch Controls</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>The 68-concept switch base has section sizes $|D|=|E|=11$ and $|U|=57$, so both sides have the same positive endpoint by the peripheral case. Two further fixed nonperipheral switches attach a three-concept lower square: one has two positive endpoints, while both sides of the other contract root-preservingly onto a known bad rooted factor and both endpoints fail.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>These controls realize both common signs of the small-lower-support criterion. None changes the endpoint, confirming that a changing rooted switch must have rank-at-least-three supports exclusive to both sections.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-small-lower-switch (following controls)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_switch_section_supports.py; PartialCubes:forbidden_pc_minor_campaign/damp_switch_section_supports_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-152" style="position:relative;">
+
+        <h3><a href="examples/positive_two_square_switch_70.html" class="table-title-link">Positive Two-Square Switch of Order 70</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Two-Square Switch of Order 70</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Extract a 68-concept base from the certified 71-concept family with root $a=29$, missing corners $c=157,z=25$, and acquired square-support masks $6$ and $130$. Add $z,a$ or $c,a$ in the two opposite square orders.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Both resulting switch sides have 70 concepts and peel to 29. The verification stores 20 successful endpoint orders, including two fixed-edge tests.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The two sides have the same shattered complex and the same positive endpoint behavior, showing that the geometric switch data alone do not force an endpoint change.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-two-square-endpoint-switch (following examples and verification)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_square_endpoint_switch.py; PartialCubes:forbidden_pc_minor_campaign/damp_two_square_endpoint_switch_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-154" style="position:relative;">
+
+        <h3><a href="examples/four_corner_path_controls.html" class="table-title-link">Four-Corner Path Endpoint Controls</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four-Corner Path Endpoint Controls</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Two nonperipheral controls have rank-three supports exclusive to both sections. A 36-concept family and its marked corner deletion both have positive endpoints; a 317-concept family and its marked corner deletion both contract to a known bad rooted factor.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The two pairs check the four-corner path equivalence in both endpoint signs and verify every local corner exclusion used by the proof.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-four-corner-path (following controls)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_four_corner_path.py; PartialCubes:forbidden_pc_minor_campaign/damp_four_corner_path_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-155" style="position:relative;">
+
+        <h3><a href="examples/first_upper_cube_pattern_control.html" class="table-title-link">Realizable Successive Upper-Cube Pattern</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Realizable Successive Upper-Cube Pattern</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>A 23-concept ample family has a successful prefix whose three corner supports are $\{p,q,r\}$, $\{p,q,e\}$, and $\{p,q,f\}$, where $e\ne f$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Deleting either marked switch corner gives a 22-concept side.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both 22-concept switch sides peel to the root. Thus the successive upper-cube pattern forced in a minimum repair is realizable, but the pattern alone does not imply endpoint failure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-first-upper-switch-cubes (following realization)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_four_corner_path.py; PartialCubes:forbidden_pc_minor_campaign/damp_four_corner_path_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

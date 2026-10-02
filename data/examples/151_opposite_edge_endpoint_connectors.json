@@ -1,0 +1,11 @@
+{
+  "id": 151,
+  "short_name": "opposite_edge_endpoint_connectors",
+  "name": "Opposite-Edge Endpoint Connector Controls",
+  "object_type": "family",
+  "definition": "Three verified connector families instantiate the opposite-edge criterion: two have positive relative-edge behavior, while the third has two bad relative edges and is tested both before and after restoring the missing cube corner.",
+  "parameters": "The bad connector has complete negative endpoint certificates with 25 states before restoration and 125 states afterward. The verification enumerates the five possible removed-vertex sets inside the three-cube and all 20 first-boundary corner exclusions.",
+  "properties": "All controls satisfy the equivalence between the endpoint in the full family, the endpoint after deleting the opposite corner, and the two transverse-restriction criterion.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-opposite-edge-endpoint (following verification paragraph)",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_square_endpoint_switch.py; PartialCubes:forbidden_pc_minor_campaign/damp_two_square_endpoint_switch_verification.json"
+}

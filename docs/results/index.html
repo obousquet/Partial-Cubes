@@ -7715,6 +7715,91 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-460" style="position:relative;">
+
+        <h3><a href="results/opposite_three_cube_edges_preserve_endpoint.html" class="table-title-link">Opposite Three-Cube Corner Edges Preserve a Retained Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Three-Cube Corner Edges Preserve a Retained Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample family $H$ contain a three-cube with two opposite edges $\{c,a\}$ and $\{z,w\}$, and suppose that all four endpoints are degree-three corners of $H$. Then $H$ peels to $a$ if and only if $H\setminus\{c\}$ peels to $a$. Equivalently, for the two remaining projected restrictions $U,V$ meeting in their common edge $E=\{e_0,e_1\}$, both $U$ and $V$ peel to $e_1$ and at least one peels relatively to $E$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The restrictions through the two opposite corner edges consist of those edges alone. Root-preserving minor closure forces both transverse restrictions to peel to the upper endpoint. Inspecting the first deletion at their four boundary vertices shows that one restriction must peel while retaining the common edge. Conversely, perform that relative peeling, delete the four exposed cube vertices in order, and finish in the other restriction. This constructs a peeling of $H-c$ to $a$; prefixing $c$ gives the forward family.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-opposite-edge-endpoint</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/opposite_edge_endpoint_connectors.html">Opposite-Edge Endpoint Connector Controls</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-461" style="position:relative;">
+
+        <h3><a href="results/two_square_endpoint_switch_reduction.html" class="table-title-link">Adjacent Rank-Three Repairs Are Two-Square Endpoint Switches</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Rank-Three Repairs Are Two-Square Endpoint Switches</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An adjacent rank-three endpoint repair exists exactly when there are an ample base $G$, distinct coordinates $p,q,r$, and three missing vertices $a,c=a^{\{p\}},z=a^{\{q\}}$ of one three-cube such that $G$ contains its other five vertices, neither $\{p,r\}$ nor $\{q,r\}$ is shattered by $G$, and the two completions $S=G\cup\{z,a\}$ and $T=G\cup\{c,a\}$ have different endpoint behavior at $a$. Both sides are ample, acquire the same two square supports in opposite orders, and have the same shattered complex. The completed union has $a,c,z$ as degree-three corners. A minimum changing switch may be chosen with its bad side a rooted factor whose root is its only degree-two vertex and whose other added neighbor is a degree-three noncorner.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The five old cube vertices provide the two punctured squares, so the distinct-pair attachment theorem proves that both addition orders are ample and acquire exactly the same supports. Completing the three-cube makes the three marked vertices corners and turns unequal endpoint behavior into an adjacent repair. Conversely, minimize an adjacent repair. No successful peeling can start outside the marked cube, at the deleted corner, or at its other cube neighbors. The opposite-edge lemma excludes the remaining antipodal start, forcing a first corner adjacent to the root. Removing that corner, the deleted corner, and the root leaves precisely the required ample five-vertex base. Minimal rooted-factor and three-core reductions give the final normal form.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-two-square-endpoint-switch</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></li><li><a href="examples/positive_two_square_switch_70.html">Positive Two-Square Switch of Order 70</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-462" style="position:relative;">
+
+        <h3><a href="results/small_lower_support_switch_criterion.html" class="table-title-link">Small Lower Supports Cannot Change a Two-Square Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small Lower Supports Cannot Change a Two-Square Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For a normalized two-square switch, write its base across coordinate $r$ as $(D\times\{0\})\cup(U\times\{1\})$, with $E=D\cap U$, $B=D\cup U$, and $d=\{p,q\}$. Then $D,U,E,B$ are ample, $\operatorname{Sh}(E)=\operatorname{Sh}(D)\cap\operatorname{Sh}(U)$, and $\operatorname{Sh}(B)=\operatorname{Sh}(D)\cup\operatorname{Sh}(U)$. If every support in $\operatorname{Sh}(D)\setminus\operatorname{Sh}(E)$ has size at most two, the two switch sides have identical endpoint behavior, equivalent both to $U$ peeling to $0$ with $E$ peeling to $d$ and to $B$ peeling to $0$ with $D$ peeling to $d$. Hence every changing switch needs a lower-exclusive support of size at least three avoiding $p,q,r$; if the bad side is a rooted factor, it also needs an upper-exclusive support of size at least three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Trace completeness on the two unshattered switch pairs forces the lower section to have $p=q=1$ and gives the claimed square in the upper section. Ampleness converts the two-layer shattering identities into the intersection and union formulas. The relative small-support theorem peels $D\setminus E$ by degree-at-most-two corners, and these deletions lift unchanged to both switch sides. The residual family is peripheral, so its endpoint reduces to the two stated section endpoints. Applying the same theorem to $E\subseteq D$ and $U\subseteq B$ gives the final equivalence. The rooted-section obstruction supplies the symmetric upper-exclusive support requirement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-small-lower-switch</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/small_lower_support_switch_controls.html">Small-Lower-Support Switch Controls</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-463" style="position:relative;">
+
+        <h3><a href="results/four_corner_three_cube_path_endpoint.html" class="table-title-link">Four Corners Along a Three-Cube Path Preserve the Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four Corners Along a Three-Cube Path Preserve the Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample family $H$ contain a three-cube and let $c,a,z,v$ be degree-three corners forming a shortest three-edge path between opposite cube vertices. Then $H$ peels to $a$ if and only if $H\setminus\{c\}$ peels to $a$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Assume a minimum counterexample. Square-pair invariance excludes the two other neighbors of $c$ as corners, and the opposite-edge theorem excludes the remaining opposite corner. Commutation of nonadjacent corner deletions then forces every successful peeling to start with the next two marked path vertices and a uniquely determined third cube vertex. These four vertices form an entire peripheral square restriction. The peripheral endpoint criterion yields a first corner outside that square; it is simultaneously a corner of $H$ and $H-c$, and deleting it produces a smaller counterexample, a contradiction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-four-corner-path</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_corner_path_controls.html">Four-Corner Path Endpoint Controls</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-464" style="position:relative;">
+
+        <h3><a href="results/first_upper_cubes_in_minimum_repair.html" class="table-title-link">First Upper-Section Cubes in a Minimum Rank-Three Repair</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>First Upper-Section Cubes in a Minimum Rank-Three Repair</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a minimum adjacent rank-three repair, normalize the switch root to $a=0$ and its marked corners to $c=\{p\}$ and $z=\{q\}$. A successful peeling can be chosen to begin $z$, $v=\{q,r\}$, and $x=\{q,r,e\}$. There are nonempty sets $J,F$, disjoint from $\{p,q,r\}$, with $e\in J$ and $F\cap J=\varnothing$, such that the second and third corner supports are $R=\{p,q\}\cup J$ and $R'=\{p,q\}\cup(J\setminus\{e\})\cup F$. Their cubes lie in the original upper section and meet in the $e=1$ facet of the first. Thus the upper section has an exclusive shattered support of size at least three containing $p,q$, while the lower section has an exclusive support of size at least three avoiding $p,q,r$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The switch reduction chooses $z$ first. Minimality and the pointed square-pair argument exclude every next corner except $v$. Its corner cube contains the upper $\{p,q\}$-square and has support $\{p,q\}\cup J$; the four-corner path theorem forces $J$ to be nonempty. After $z,v$ are removed, local cube defects exclude every third corner inside the switch cube. Commutation forces the next corner to neighbor $v$, hence it removes one $e\in J$ and may acquire only new directions $F$ disjoint from $J$. If $F$ were empty, the three deletions could be reordered to contradict minimality. The two cubes and their common facet therefore have the asserted form.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-first-upper-switch-cubes</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/first_upper_cube_pattern_control.html">Realizable Successive Upper-Cube Pattern</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

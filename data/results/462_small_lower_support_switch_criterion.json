@@ -1,0 +1,22 @@
+{
+  "id": 462,
+  "short_name": "small_lower_support_switch_criterion",
+  "name": "Small Lower Supports Cannot Change a Two-Square Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "For a normalized two-square switch, write its base across coordinate $r$ as $(D\\times\\{0\\})\\cup(U\\times\\{1\\})$, with $E=D\\cap U$, $B=D\\cup U$, and $d=\\{p,q\\}$. Then $D,U,E,B$ are ample, $\\operatorname{Sh}(E)=\\operatorname{Sh}(D)\\cap\\operatorname{Sh}(U)$, and $\\operatorname{Sh}(B)=\\operatorname{Sh}(D)\\cup\\operatorname{Sh}(U)$. If every support in $\\operatorname{Sh}(D)\\setminus\\operatorname{Sh}(E)$ has size at most two, the two switch sides have identical endpoint behavior, equivalent both to $U$ peeling to $0$ with $E$ peeling to $d$ and to $B$ peeling to $0$ with $D$ peeling to $d$. Hence every changing switch needs a lower-exclusive support of size at least three avoiding $p,q,r$; if the bad side is a rooted factor, it also needs an upper-exclusive support of size at least three.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/small_lower_support_switch_controls"
+  ],
+  "proof": "Trace completeness on the two unshattered switch pairs forces the lower section to have $p=q=1$ and gives the claimed square in the upper section. Ampleness converts the two-layer shattering identities into the intersection and union formulas. The relative small-support theorem peels $D\\setminus E$ by degree-at-most-two corners, and these deletions lift unchanged to both switch sides. The residual family is peripheral, so its endpoint reduces to the two stated section endpoints. Applying the same theorem to $E\\subseteq D$ and $U\\subseteq B$ gives the final equivalence. The rooted-section obstruction supplies the symmetric upper-exclusive support requirement.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-small-lower-switch"
+}

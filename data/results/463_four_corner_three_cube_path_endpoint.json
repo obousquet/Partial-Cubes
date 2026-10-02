@@ -1,0 +1,20 @@
+{
+  "id": 463,
+  "short_name": "four_corner_three_cube_path_endpoint",
+  "name": "Four Corners Along a Three-Cube Path Preserve the Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let an ample family $H$ contain a three-cube and let $c,a,z,v$ be degree-three corners forming a shortest three-edge path between opposite cube vertices. Then $H$ peels to $a$ if and only if $H\\setminus\\{c\\}$ peels to $a$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/four_corner_path_controls"
+  ],
+  "proof": "Assume a minimum counterexample. Square-pair invariance excludes the two other neighbors of $c$ as corners, and the opposite-edge theorem excludes the remaining opposite corner. Commutation of nonadjacent corner deletions then forces every successful peeling to start with the next two marked path vertices and a uniquely determined third cube vertex. These four vertices form an entire peripheral square restriction. The peripheral endpoint criterion yields a first corner outside that square; it is simultaneously a corner of $H$ and $H-c$, and deleting it produces a smaller counterexample, a contradiction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-four-corner-path"
+}

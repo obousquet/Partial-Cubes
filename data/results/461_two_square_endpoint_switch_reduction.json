@@ -1,0 +1,21 @@
+{
+  "id": 461,
+  "short_name": "two_square_endpoint_switch_reduction",
+  "name": "Adjacent Rank-Three Repairs Are Two-Square Endpoint Switches",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "An adjacent rank-three endpoint repair exists exactly when there are an ample base $G$, distinct coordinates $p,q,r$, and three missing vertices $a,c=a^{\\{p\\}},z=a^{\\{q\\}}$ of one three-cube such that $G$ contains its other five vertices, neither $\\{p,r\\}$ nor $\\{q,r\\}$ is shattered by $G$, and the two completions $S=G\\cup\\{z,a\\}$ and $T=G\\cup\\{c,a\\}$ have different endpoint behavior at $a$. Both sides are ample, acquire the same two square supports in opposite orders, and have the same shattered complex. The completed union has $a,c,z$ as degree-three corners. A minimum changing switch may be chosen with its bad side a rooted factor whose root is its only degree-two vertex and whose other added neighbor is a degree-three noncorner.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/positive_overlap_rooted_factor_621",
+    "#examples/positive_two_square_switch_70"
+  ],
+  "proof": "The five old cube vertices provide the two punctured squares, so the distinct-pair attachment theorem proves that both addition orders are ample and acquire exactly the same supports. Completing the three-cube makes the three marked vertices corners and turns unequal endpoint behavior into an adjacent repair. Conversely, minimize an adjacent repair. No successful peeling can start outside the marked cube, at the deleted corner, or at its other cube neighbors. The opposite-edge lemma excludes the remaining antipodal start, forcing a first corner adjacent to the root. Removing that corner, the deleted corner, and the root leaves precisely the required ample five-vertex base. Minimal rooted-factor and three-core reductions give the final normal form.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-two-square-endpoint-switch"
+}

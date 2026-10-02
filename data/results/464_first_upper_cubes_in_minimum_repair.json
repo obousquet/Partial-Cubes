@@ -1,0 +1,21 @@
+{
+  "id": 464,
+  "short_name": "first_upper_cubes_in_minimum_repair",
+  "name": "First Upper-Section Cubes in a Minimum Rank-Three Repair",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning"
+  ],
+  "result_type": "implication",
+  "statement": "In a minimum adjacent rank-three repair, normalize the switch root to $a=0$ and its marked corners to $c=\\{p\\}$ and $z=\\{q\\}$. A successful peeling can be chosen to begin $z$, $v=\\{q,r\\}$, and $x=\\{q,r,e\\}$. There are nonempty sets $J,F$, disjoint from $\\{p,q,r\\}$, with $e\\in J$ and $F\\cap J=\\varnothing$, such that the second and third corner supports are $R=\\{p,q\\}\\cup J$ and $R'=\\{p,q\\}\\cup(J\\setminus\\{e\\})\\cup F$. Their cubes lie in the original upper section and meet in the $e=1$ facet of the first. Thus the upper section has an exclusive shattered support of size at least three containing $p,q$, while the lower section has an exclusive support of size at least three avoiding $p,q,r$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/first_upper_cube_pattern_control"
+  ],
+  "proof": "The switch reduction chooses $z$ first. Minimality and the pointed square-pair argument exclude every next corner except $v$. Its corner cube contains the upper $\\{p,q\\}$-square and has support $\\{p,q\\}\\cup J$; the four-corner path theorem forces $J$ to be nonempty. After $z,v$ are removed, local cube defects exclude every third corner inside the switch cube. Commutation forces the next corner to neighbor $v$, hence it removes one $e\\in J$ and may acquire only new directions $F$ disjoint from $J$. If $F$ were empty, the three deletions could be reordered to contradict minimality. The two cubes and their common facet therefore have the asserted form.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-first-upper-switch-cubes"
+}
