@@ -1,0 +1,17 @@
+{
+  "id": 492,
+  "short_name": "below_forty_two_arm_reduction",
+  "name": "Cornerless Ample Obstructions Below Forty Reduce to Two-Arm Holonomy",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/relative_corner_threshold"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H$ have minimum cardinality among nonempty cornerless ample families and suppose $|H|\\le39$. In any active-coordinate section decomposition with common part $B$ and relative wings $D_0,D_1$, one has $|B|\\le9$. If an order-ten wing is two-connected, its pair $B\\subsetneq A_b$ is terminal under one-concept addition and deletion, its lower holonomy is a two-cycle, it satisfies the exact two-arm excess budget, and $|B|\\ge7$. The same conclusion holds for a two-connected order-eleven wing when addition terminality is assumed.",
+  "status": "established",
+  "proof": "Both wings have at least the relative-corner threshold, now at least ten, so $2|B|=|H|-|D_0|-|D_1|\\le19$ and $|B|\\le9$. For an order-ten wing, an ample one-concept addition to $B$ would be dismantlable and leave a trapped interval of size nine, contradicting the threshold. An ample deletion would make the deleted wing concept a corner of $A_b$, contrary to all corners being trapped in $B$. The pair is therefore terminal. Two-connectivity invokes the passive-gate normalization and small-lower-family theorem, giving the two-cycle, exact budget, and $|B|\\ge|L|+6\\ge7$. The assumed terminal order-eleven case is identical.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-below-forty-two-arm-reduction"
+}

@@ -8147,6 +8147,97 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-487" style="position:relative;">
+
+        <h3><a href="results/off_cycle_shore_cost.html" class="table-title-link">An Off-Cycle Passive Shore Costs Its Order Plus One</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Off-Cycle Passive Shore Costs Its Order Plus One</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a directed holonomy cycle of length $k$, put $\varepsilon=|K|-|L|-3k$. Every nonempty passive shore satisfies $|S_z|\le\varepsilon+2$ when it is a cycle shore and $|S_z|\le\varepsilon-1$ otherwise. Equivalently, a cycle shore costs at least $|S_z|-2$ units of excess, while a shore outside the cycle costs at least $|S_z|+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A cycle shore contributes its explicit $|S_i|-2$ summand to the holonomy excess decomposition. An off-cycle shore uses an additional passive coordinate, contributing at least one to $|Z_0|-k$. Every concept it contains has one more passive incidence than its cycle incidence, so its exponential incidence term contributes at least one more. These $|S_z|+1$ nonnegative charges give the second bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-off-cycle-shore-cost</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-488" style="position:relative;">
+
+        <h3><a href="results/small_lower_family_two_arm_holonomy.html" class="table-title-link">A Lower Family of Order at Most Nine Has Two-Arm Holonomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Lower Family of Order at Most Nine Has Two-Arm Holonomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In the terminal passive-gate setting, if $|K|\le9$, every lower holonomy cycle has length two. For its shores $S_1,S_2$, put $\varepsilon=|K|-|L|-6$. Then $0\le\varepsilon\le2$, and $\varepsilon$ is exactly the sum of the uncounted remainder, $|Z_0|-2$, all exponential incidence excesses, and $(|S_1|-2)+(|S_2|-2)$. Consequently $|Z_0|\le4$ and there are at most four distinct nonempty proper shores. If $|K|=7$, then $|L|=1$, $\varepsilon=0$, and the complete pendant two-arm normal form holds.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The lower active slice is nonempty. A cycle of length $k$ therefore gives $9\ge|K|\ge|L|+3k\ge1+3k$. Since $k\ge2$, it follows that $k=2$ and the excess lies between zero and two. Substitution into the exact holonomy excess decomposition gives the asserted budget and its bounds on coordinates and shore types. At order seven every inequality is sharp, so the equality classification applies.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-small-lower-family-two-arm-holonomy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-489" style="position:relative;">
+
+        <h3><a href="results/two_concept_cycle_shore_active_edge.html" class="table-title-link">A Two-Concept Holonomy Shore Is an Active Edge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Two-Concept Holonomy Shore Is an Active Edge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If a passive shore $S$ on a directed lower holonomy cycle has two concepts, then $S=\{r,o\}$ with $r$ a lower active root and $o$ a non-root common owner, and $ro$ is an active edge.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The shore-root theorem supplies $r$, while the predecessor blocker and common-owner depth transfer supply $o\notin R$. The ample gate $L\cup S$ and its first prefix $L\cup\{r\}$ are ample, whereas $L\cup\{o\}$ is not. If $r$ and $o$ were nonadjacent, a blocker in $L$ for adding $o$ would survive after adding $r$, contradicting ampleness of the gate by the one-concept colon criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-concept-cycle-shore-active-edge</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-490" style="position:relative;">
+
+        <h3><a href="results/one_unit_holonomy_anomaly_trichotomy.html" class="table-title-link">One-Unit Holonomy Anomalies Form a Trichotomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Unit Holonomy Anomalies Form a Trichotomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a two-arm holonomy cycle with excess $\varepsilon=1$, exactly one configuration occurs: two disjoint two-concept shores with one uncounted lower-fiber vertex; two two-concept shores meeting in their common non-root owner; or disjoint shores of orders two and three. No additional nonempty passive coordinate occurs at cost one. If $\varepsilon=2$ and there are three nonempty passive coordinates, the third shore is a singleton disjoint from the two disjoint two-concept cycle shores, and the uncounted remainder is zero.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In the exact two-arm budget, all terms are nonnegative integers. At excess one, an extra coordinate would itself cost one and every concept in its shore would add another exponential-incidence charge, so exactly the two cycle coordinates occur. The only remaining unit can be the uncounted remainder, one shared incidence of the two shores, or one additional shore member, giving the three cases. Gate holonomy shows that a shared concept cannot be either root, hence is the common owner. At excess two with a third coordinate, its coordinate charge and one concept charge exhaust the budget; overlap with a cycle shore would cost more, forcing the stated singleton profile.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-one-unit-holonomy-anomaly-trichotomy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-491" style="position:relative;">
+
+        <h3><a href="results/shared_owner_one_unit_anomaly_impossible.html" class="table-title-link">The Shared-Owner One-Unit Holonomy Anomaly Is Impossible</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Shared-Owner One-Unit Holonomy Anomaly Is Impossible</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the two-arm terminal setting with $|K|\le9$ and excess one, two two-concept cycle shores cannot meet in a common non-root owner. Hence the only one-unit profiles are an uncounted remainder of one with two disjoint two-concept shores, or disjoint cycle shores of orders two and three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Assume the shores are $\{r_1,o\}$ and $\{r_2,o\}$. Each root--owner pair is an active edge in a distinct direction. With zero uncounted remainder, each opposite collar is an ample three-vertex path and the punctured passive fiber over $o$ is forced. Since $|K|\le9$, the active lower slice has at most two vertices. Exhausting whether the collar roots coincide and which endpoint each collar meets shows that the one-inclusion graph of $K$ is a six- or eight-cycle with only tree edges attached and no square. If there are $t$ attached tree edges and the cycle has length $2m$, the isometric dimension is $m+t$, so only the empty set and $m+t$ singletons are strongly shattered. Thus $|\operatorname{SSh}(K)|=1+m+t<2m+t=|K|$, contradicting ampleness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-shared-owner-one-unit-anomaly-impossible</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-492" style="position:relative;">
+
+        <h3><a href="results/below_forty_two_arm_reduction.html" class="table-title-link">Cornerless Ample Obstructions Below Forty Reduce to Two-Arm Holonomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cornerless Ample Obstructions Below Forty Reduce to Two-Arm Holonomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ have minimum cardinality among nonempty cornerless ample families and suppose $|H|\le39$. In any active-coordinate section decomposition with common part $B$ and relative wings $D_0,D_1$, one has $|B|\le9$. If an order-ten wing is two-connected, its pair $B\subsetneq A_b$ is terminal under one-concept addition and deletion, its lower holonomy is a two-cycle, it satisfies the exact two-arm excess budget, and $|B|\ge7$. The same conclusion holds for a two-connected order-eleven wing when addition terminality is assumed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Both wings have at least the relative-corner threshold, now at least ten, so $2|B|=|H|-|D_0|-|D_1|\le19$ and $|B|\le9$. For an order-ten wing, an ample one-concept addition to $B$ would be dismantlable and leave a trapped interval of size nine, contradicting the threshold. An ample deletion would make the deleted wing concept a corner of $A_b$, contrary to all corners being trapped in $B$. The pair is therefore terminal. Two-connectivity invokes the passive-gate normalization and small-lower-family theorem, giving the two-cycle, exact budget, and $|B|\ge|L|+6\ge7$. The assumed terminal order-eleven case is identical.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-below-forty-two-arm-reduction</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

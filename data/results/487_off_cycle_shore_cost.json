@@ -1,0 +1,13 @@
+{
+  "id": 487,
+  "short_name": "off_cycle_shore_cost",
+  "name": "An Off-Cycle Passive Shore Costs Its Order Plus One",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a directed holonomy cycle of length $k$, put $\\varepsilon=|K|-|L|-3k$. Every nonempty passive shore satisfies $|S_z|\\le\\varepsilon+2$ when it is a cycle shore and $|S_z|\\le\\varepsilon-1$ otherwise. Equivalently, a cycle shore costs at least $|S_z|-2$ units of excess, while a shore outside the cycle costs at least $|S_z|+1$.",
+  "status": "established",
+  "proof": "A cycle shore contributes its explicit $|S_i|-2$ summand to the holonomy excess decomposition. An off-cycle shore uses an additional passive coordinate, contributing at least one to $|Z_0|-k$. Every concept it contains has one more passive incidence than its cycle incidence, so its exponential incidence term contributes at least one more. These $|S_z|+1$ nonnegative charges give the second bound.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-off-cycle-shore-cost"
+}
