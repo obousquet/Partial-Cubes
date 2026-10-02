@@ -1,0 +1,24 @@
+{
+  "id": 450,
+  "short_name": "support_three_endpoint_repair_descent",
+  "name": "Every Support-Three Endpoint Repair Descends to a Rooted Factor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $S$ be ample and ordinarily peelable, let $a\\in S$, and suppose that the ample one-concept extension $H=S\\cup\\{c\\}$ acquires a three-coordinate support $P$, peels to $a$, while $S$ does not. There is a root-preserving pc-minor map using only coordinates outside $P$ such that $(T,t)=(\\mu S,\\mu a)$ is a rooted factor. The paired image $\\mu H=T\\cup\\{\\mu c\\}$ remains an ample one-concept extension with acquired support $P$, retains the whole punctured $P$-cube at the added concept, and peels to $t$. If $a$ and $c$ are adjacent corners of $H$, their images remain adjacent degree-three corners and $t$ is a degree-two corner of $T$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/positive_overlap_rooted_factor_621"
+  ],
+  "proof": "Every root-preserving operation in a coordinate of $P$ makes the two images equal or leaves a support-two addition at an old root; in either case the smaller image peels to its root. Choose a root-negative pc-minor of $(S,a)$ minimal under root-preserving operations. Operations on distinct coordinates commute, so its map cannot use a coordinate of $P$. Ordinary minor closure and minimality give all rooted-factor conditions. Applying the same outside-coordinate map to $H$, the larger image remains root-positive and cannot merge with the smaller one. The difference therefore stays one concept, the shadow difference stays $P$, and the complete punctured $P$-cube survives. When the original endpoints are adjacent corners, outside restrictions retain their common cube and outside contractions preserve each singleton corner fibre and its support gain. Their images remain adjacent degree-three corners; deleting the added one leaves the root with the other two directions of that cube.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-minimal-rank-three-endpoint-repair"
+}

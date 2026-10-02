@@ -1,0 +1,21 @@
+{
+  "id": 451,
+  "short_name": "adjacent_degree_three_endpoint_repair_equivalence",
+  "name": "Adjacent Degree-Three Endpoint Failure Is Equivalent to Repairing a Degree-Two Rooted Factor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "The following are equivalent: (1) an ample family $H$ has adjacent degree-three corners $a,c$, peels to $a$, but $H\\setminus\\{c\\}$ does not peel to $a$; (2) a rooted factor $(T,t)$ has a degree-two corner root and admits an adjacent ample one-concept addition with acquired support three that makes peeling to $t$ possible. Both profiles occur in the certified 622-to-621 example. Hence prescribed-endpoint invariance under deleting an adjacent nonroot corner already fails in degree three.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/positive_overlap_rooted_factor_621"
+  ],
+  "proof": "For (1), delete both adjacent corners. Either single re-addition has the same two-coordinate acquired support; square-pair invariance makes the common base ordinarily peelable, and rank-two extension invariance makes the one-corner deletion ordinarily peelable. The support-three descent theorem then produces the rooted factor in (2), with a degree-two corner root. Conversely, the added concept in (2) is a degree-three corner whose cube contains the neighboring root. The root's two old incident directions together with their new edge are precisely that cube's directions, so the root is also a degree-three corner and deleting the new corner restores endpoint failure. The existing 621-concept factor and its 622-concept repair establish existence.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-adjacent-corner-minimal-repair-test"
+}

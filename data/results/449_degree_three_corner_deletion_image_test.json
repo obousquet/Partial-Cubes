@@ -1,0 +1,23 @@
+{
+  "id": 449,
+  "short_name": "degree_three_corner_deletion_image_test",
+  "name": "Exterior Images Decide Rooted Minimality after a Degree-Three Corner Deletion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $(A,a)$ be an irredundantly embedded rooted factor, let $c\\ne a$ be a corner with three-coordinate incident support $P$, and put $B=A\\setminus\\{c\\}$. Then $B$ is ample and cannot peel to $a$. Assuming $B$ is dismantlable ample, $(B,a)$ is a rooted factor exactly when every contraction outside $P$ peels to the projected root and every root-containing restriction outside $P$ that retains $c$ peels to the projected root. If one of these exterior tests fails, the corresponding image of $A$ is obtained from the image of $B$ by adding the nonroot image of $c$ with acquired support exactly $P$, and that addition repairs the prescribed endpoint. If $a$ and $c$ are adjacent corners, $B$ is automatically dismantlable ample and the displayed restrictions include all root-containing restrictions outside $P$.",
+  "status": "established",
+  "proof": "Corner deletion preserves ampleness, while a root-ending peeling of $B$ prefixed by $c$ would contradict rooted failure of $A$. The punctured corner cube retains all directions in $P$, and another surviving vertex in its outside-coordinate fibre keeps every other coordinate active. A contraction in $P$ identifies $c$ with a neighbor; a restriction discarding $c$ changes nothing; and a restriction in $P$ retaining $c$ makes only a support-two addition, which cannot change the old prescribed endpoint. Thus only the stated exterior images can fail. In each such image, the shadow difference remains the single support $P$, so the image of $c$ is a nonroot one-concept repair with that exact acquired support. Passing all tests gives every proper root-preserving pc-minor a root-ending peeling and hence gives the rooted-factor criterion. For adjacent corners, deleting both leaves an ample common base with two equal support-two additions; square-pair invariance and corner deletion show that $B$ is dismantlable ample.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-degree-three-images"
+}

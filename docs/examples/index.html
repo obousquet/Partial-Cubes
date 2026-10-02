@@ -2438,15 +2438,15 @@
 
     <div class="table-card" id="math-118" style="position:relative;">
 
-        <h3><a href="examples/positive_overlap_rooted_factor_621.html" class="table-title-link">Positive-Overlap Rooted Factor of Order 621</a></h3>
+        <h3><a href="examples/positive_overlap_rooted_factor_621.html" class="table-title-link">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive-Overlap Rooted Factor of Order 621</p>
+        <p><strong>Name: </strong>Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</p>
 <p><strong>Object Type:</strong> Construction</p>
-<strong>Definition:</strong><div class="text-field"><p>Recover the 621-concept block $K$ from the certified 909-concept cut-vertex obstruction as in the positive-overlap rooted-factor theorem, and mark its degree-two corner root $r$.</p></div>
-<strong>Parameters:</strong><div class="text-field"><p>$|K|=621$ and dimension 25; its canonical sections have orders 331, 149, and 140, with overlaps of orders 3 and 65.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>$(K,r)$ is a rooted factor. All three sections and both overlaps peel to zero, but one side does not peel relatively to its three-concept overlap. It is the concrete witness that positive overlaps survive rooted minimization and that the four-relative-order construction is not exhaustive.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor</p></div>
-<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_rooted_factor.py</p></div>
+<strong>Definition:</strong><div class="text-field"><p>Recover the $621$-concept block $K$ from the certified $909$-concept cut-vertex obstruction, mark its degree-two corner root $r=(2,1)$, and adjoin the specified adjacent concept $v=(6,1)$ to form $W=K\cup\{v\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$K$ has $621$ concepts and dimension $25$; its canonical sections have orders $331,149,140$, with overlaps of orders $3,65$. The repaired family $W$ has $622$ concepts on the same coordinates and gains exactly the support $\{e,f,g\}$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$(K,r)$ is a rooted factor. All three sections and both overlaps peel to zero, but one side does not peel relatively to its three-concept overlap. In $W$, the vertices $r,v$ are adjacent degree-three corners and $W$ peels to $r$; deleting $v$ returns $K$ and destroys that endpoint. Deleting the third recorded cube corner instead gives a $621$-concept positive partner with the same shattered complex as $K$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-adjacent-rank-three-repair</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_rooted_factor.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.json</p></div>
 <div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>

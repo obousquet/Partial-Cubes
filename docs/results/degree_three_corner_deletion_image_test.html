@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,19 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-118" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-449" style="position:relative;">
 
-        <h3><a href="examples/positive_overlap_rooted_factor_621.html" class="table-title-link">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></h3>
+        <h3><a href="results/degree_three_corner_deletion_image_test.html" class="table-title-link">Exterior Images Decide Rooted Minimality after a Degree-Three Corner Deletion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</p>
-<p><strong>Object Type:</strong> Construction</p>
-<strong>Definition:</strong><div class="text-field"><p>Recover the $621$-concept block $K$ from the certified $909$-concept cut-vertex obstruction, mark its degree-two corner root $r=(2,1)$, and adjoin the specified adjacent concept $v=(6,1)$ to form $W=K\cup\{v\}$.</p></div>
-<strong>Parameters:</strong><div class="text-field"><p>$K$ has $621$ concepts and dimension $25$; its canonical sections have orders $331,149,140$, with overlaps of orders $3,65$. The repaired family $W$ has $622$ concepts on the same coordinates and gains exactly the support $\{e,f,g\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>$(K,r)$ is a rooted factor. All three sections and both overlaps peel to zero, but one side does not peel relatively to its three-concept overlap. In $W$, the vertices $r,v$ are adjacent degree-three corners and $W$ peels to $r$; deleting $v$ returns $K$ and destroys that endpoint. Deleting the third recorded cube corner instead gives a $621$-concept positive partner with the same shattered complex as $K$.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-adjacent-rank-three-repair</p></div>
-<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_rooted_factor.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Exterior Images Decide Rooted Minimality after a Degree-Three Corner Deletion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,a)$ be an irredundantly embedded rooted factor, let $c\ne a$ be a corner with three-coordinate incident support $P$, and put $B=A\setminus\{c\}$. Then $B$ is ample and cannot peel to $a$. Assuming $B$ is dismantlable ample, $(B,a)$ is a rooted factor exactly when every contraction outside $P$ peels to the projected root and every root-containing restriction outside $P$ that retains $c$ peels to the projected root. If one of these exterior tests fails, the corresponding image of $A$ is obtained from the image of $B$ by adding the nonroot image of $c$ with acquired support exactly $P$, and that addition repairs the prescribed endpoint. If $a$ and $c$ are adjacent corners, $B$ is automatically dismantlable ample and the displayed restrictions include all root-containing restrictions outside $P$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion preserves ampleness, while a root-ending peeling of $B$ prefixed by $c$ would contradict rooted failure of $A$. The punctured corner cube retains all directions in $P$, and another surviving vertex in its outside-coordinate fibre keeps every other coordinate active. A contraction in $P$ identifies $c$ with a neighbor; a restriction discarding $c$ changes nothing; and a restriction in $P$ retaining $c$ makes only a support-two addition, which cannot change the old prescribed endpoint. Thus only the stated exterior images can fail. In each such image, the shadow difference remains the single support $P$, so the image of $c$ is a nonroot one-concept repair with that exact acquired support. Passing all tests gives every proper root-preserving pc-minor a root-ending peeling and hence gives the rooted-factor criterion. For adjacent corners, deleting both leaves an ample common base with two equal support-two additions; square-pair invariance and corner deletion show that $B$ is dismantlable ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-degree-three-images</p></div>
 
         </div>
     </div>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,19 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
-    <div class="table-card" id="math-118" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-450" style="position:relative;">
 
-        <h3><a href="examples/positive_overlap_rooted_factor_621.html" class="table-title-link">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></h3>
+        <h3><a href="results/support_three_endpoint_repair_descent.html" class="table-title-link">Every Support-Three Endpoint Repair Descends to a Rooted Factor</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</p>
-<p><strong>Object Type:</strong> Construction</p>
-<strong>Definition:</strong><div class="text-field"><p>Recover the $621$-concept block $K$ from the certified $909$-concept cut-vertex obstruction, mark its degree-two corner root $r=(2,1)$, and adjoin the specified adjacent concept $v=(6,1)$ to form $W=K\cup\{v\}$.</p></div>
-<strong>Parameters:</strong><div class="text-field"><p>$K$ has $621$ concepts and dimension $25$; its canonical sections have orders $331,149,140$, with overlaps of orders $3,65$. The repaired family $W$ has $622$ concepts on the same coordinates and gains exactly the support $\{e,f,g\}$.</p></div>
-<strong>Properties:</strong><div class="text-field"><p>$(K,r)$ is a rooted factor. All three sections and both overlaps peel to zero, but one side does not peel relatively to its three-concept overlap. In $W$, the vertices $r,v$ are adjacent degree-three corners and $W$ peels to $r$; deleting $v$ returns $K$ and destroys that endpoint. Deleting the third recorded cube corner instead gives a $621$-concept positive partner with the same shattered complex as $K$.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-adjacent-rank-three-repair</p></div>
-<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_rooted_factor.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.py; PartialCubes:papers/dismantlable-ample/research/adjacent_621_repair.json</p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Every Support-Three Endpoint Repair Descends to a Rooted Factor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample and ordinarily peelable, let $a\in S$, and suppose that the ample one-concept extension $H=S\cup\{c\}$ acquires a three-coordinate support $P$, peels to $a$, while $S$ does not. There is a root-preserving pc-minor map using only coordinates outside $P$ such that $(T,t)=(\mu S,\mu a)$ is a rooted factor. The paired image $\mu H=T\cup\{\mu c\}$ remains an ample one-concept extension with acquired support $P$, retains the whole punctured $P$-cube at the added concept, and peels to $t$. If $a$ and $c$ are adjacent corners of $H$, their images remain adjacent degree-three corners and $t$ is a degree-two corner of $T$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every root-preserving operation in a coordinate of $P$ makes the two images equal or leaves a support-two addition at an old root; in either case the smaller image peels to its root. Choose a root-negative pc-minor of $(S,a)$ minimal under root-preserving operations. Operations on distinct coordinates commute, so its map cannot use a coordinate of $P$. Ordinary minor closure and minimality give all rooted-factor conditions. Applying the same outside-coordinate map to $H$, the larger image remains root-positive and cannot merge with the smaller one. The difference therefore stays one concept, the shadow difference stays $P$, and the complete punctured $P$-cube survives. When the original endpoints are adjacent corners, outside restrictions retain their common cube and outside contractions preserve each singleton corner fibre and its support gain. Their images remain adjacent degree-three corners; deleting the added one leaves the root with the other two directions of that cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-minimal-rank-three-endpoint-repair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></li></ul></p>
 
         </div>
     </div>

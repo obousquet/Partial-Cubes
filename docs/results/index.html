@@ -6556,7 +6556,7 @@
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>The forward implication follows from the canonical section presentation of a rooted factor. Conversely, positive contractions force both side sections to peel to zero, so all four new-coordinate rooted images are positive. Commuting operations shows that every rooted minor using a new coordinate is positive; hence any root-negative minor retains both new coordinates. Repeatedly take root-negative elementary old-coordinate images until minimal. Ordinary peelability survives, so the terminal image is a rooted factor. Old-coordinate operations preserve the singleton root section and its two incident directions. They also preserve the identity between the image of the overlap and the intersection of the image sections: a new contraction intersection would create opposite square vertices without either intermediate vertex, contradicting isometry. Endpoint minor closure preserves root positivity of the overlap.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-positive-overlap-minimization</p></div>
-<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621</a></li></ul></p>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></li></ul></p>
 
         </div>
     </div>
@@ -7522,6 +7522,58 @@
 <strong>Proof:</strong><div class="text-field"><p>Three-piece boundary necessity supplies a piece admitting an endpoint sink and an endpoint leaf exit, possibly in different acyclic USOs. Contracting the common direction in the sink-ending order makes $U$ peel to $r$. Recording the first lost endpoint of each full fibre in the leaf-exit order gives a corner peeling of $C$ to $r$. In $P_b$, first peel the copy of $C$ in layer $1-b$ to $r$, using the untouched copy of $U$ for mate cubes, and then peel $U\setminus\{r\}$ in layer $b$; this peels the selected piece to $D$. In the full union it leaves an unchanged positive two-piece proper convex minor, so $X_b$ peels. The projected pieces meet only at $r\in X^e$ and have no cross edges, so every complementary component lies in one piece. The component-expansion theorem therefore preserves ampleness, shadow, and cardinality during the relabelling. The two constant labels change respectively $k_1$ and $k_0$ components.</p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-three-piece-component-repair</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/three_piece_single_component_reflections_1237.html">Single-Component Reflections of the 1237-Concept Three-Piece Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-449" style="position:relative;">
+
+        <h3><a href="results/degree_three_corner_deletion_image_test.html" class="table-title-link">Exterior Images Decide Rooted Minimality after a Degree-Three Corner Deletion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exterior Images Decide Rooted Minimality after a Degree-Three Corner Deletion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,a)$ be an irredundantly embedded rooted factor, let $c\ne a$ be a corner with three-coordinate incident support $P$, and put $B=A\setminus\{c\}$. Then $B$ is ample and cannot peel to $a$. Assuming $B$ is dismantlable ample, $(B,a)$ is a rooted factor exactly when every contraction outside $P$ peels to the projected root and every root-containing restriction outside $P$ that retains $c$ peels to the projected root. If one of these exterior tests fails, the corresponding image of $A$ is obtained from the image of $B$ by adding the nonroot image of $c$ with acquired support exactly $P$, and that addition repairs the prescribed endpoint. If $a$ and $c$ are adjacent corners, $B$ is automatically dismantlable ample and the displayed restrictions include all root-containing restrictions outside $P$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion preserves ampleness, while a root-ending peeling of $B$ prefixed by $c$ would contradict rooted failure of $A$. The punctured corner cube retains all directions in $P$, and another surviving vertex in its outside-coordinate fibre keeps every other coordinate active. A contraction in $P$ identifies $c$ with a neighbor; a restriction discarding $c$ changes nothing; and a restriction in $P$ retaining $c$ makes only a support-two addition, which cannot change the old prescribed endpoint. Thus only the stated exterior images can fail. In each such image, the shadow difference remains the single support $P$, so the image of $c$ is a nonroot one-concept repair with that exact acquired support. Passing all tests gives every proper root-preserving pc-minor a root-ending peeling and hence gives the rooted-factor criterion. For adjacent corners, deleting both leaves an ample common base with two equal support-two additions; square-pair invariance and corner deletion show that $B$ is dismantlable ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-degree-three-images</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-450" style="position:relative;">
+
+        <h3><a href="results/support_three_endpoint_repair_descent.html" class="table-title-link">Every Support-Three Endpoint Repair Descends to a Rooted Factor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Support-Three Endpoint Repair Descends to a Rooted Factor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample and ordinarily peelable, let $a\in S$, and suppose that the ample one-concept extension $H=S\cup\{c\}$ acquires a three-coordinate support $P$, peels to $a$, while $S$ does not. There is a root-preserving pc-minor map using only coordinates outside $P$ such that $(T,t)=(\mu S,\mu a)$ is a rooted factor. The paired image $\mu H=T\cup\{\mu c\}$ remains an ample one-concept extension with acquired support $P$, retains the whole punctured $P$-cube at the added concept, and peels to $t$. If $a$ and $c$ are adjacent corners of $H$, their images remain adjacent degree-three corners and $t$ is a degree-two corner of $T$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every root-preserving operation in a coordinate of $P$ makes the two images equal or leaves a support-two addition at an old root; in either case the smaller image peels to its root. Choose a root-negative pc-minor of $(S,a)$ minimal under root-preserving operations. Operations on distinct coordinates commute, so its map cannot use a coordinate of $P$. Ordinary minor closure and minimality give all rooted-factor conditions. Applying the same outside-coordinate map to $H$, the larger image remains root-positive and cannot merge with the smaller one. The difference therefore stays one concept, the shadow difference stays $P$, and the complete punctured $P$-cube survives. When the original endpoints are adjacent corners, outside restrictions retain their common cube and outside contractions preserve each singleton corner fibre and its support gain. Their images remain adjacent degree-three corners; deleting the added one leaves the root with the other two directions of that cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-minimal-rank-three-endpoint-repair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-451" style="position:relative;">
+
+        <h3><a href="results/adjacent_degree_three_endpoint_repair_equivalence.html" class="table-title-link">Adjacent Degree-Three Endpoint Failure Is Equivalent to Repairing a Degree-Two Rooted Factor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Degree-Three Endpoint Failure Is Equivalent to Repairing a Degree-Two Rooted Factor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The following are equivalent: (1) an ample family $H$ has adjacent degree-three corners $a,c$, peels to $a$, but $H\setminus\{c\}$ does not peel to $a$; (2) a rooted factor $(T,t)$ has a degree-two corner root and admits an adjacent ample one-concept addition with acquired support three that makes peeling to $t$ possible. Both profiles occur in the certified 622-to-621 example. Hence prescribed-endpoint invariance under deleting an adjacent nonroot corner already fails in degree three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For (1), delete both adjacent corners. Either single re-addition has the same two-coordinate acquired support; square-pair invariance makes the common base ordinarily peelable, and rank-two extension invariance makes the one-corner deletion ordinarily peelable. The support-three descent theorem then produces the rooted factor in (2), with a degree-two corner root. Conversely, the added concept in (2) is a degree-three corner whose cube contains the neighboring root. The root's two old incident directions together with their new edge are precisely that cube's directions, so the root is also a degree-three corner and deleting the new corner restores endpoint failure. The existing 621-concept factor and its 622-concept repair establish existence.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-adjacent-corner-minimal-repair-test</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621 and Its Adjacent Repair</a></li></ul></p>
 
         </div>
     </div>
