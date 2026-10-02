@@ -1,0 +1,169 @@
+{
+  "version": 1,
+  "batch_id": "094_complete_survey_com_antipodal_and_compression",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Complete the frozen survey workspace by migrating its remaining COM obstruction, bounded-rank, foundational, recognition, antipodal, Lawrence lopsidedness, and unlabeled-compression results; promote the COM obstruction families and antipodal projection closure to structured records.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#lem:com-obstruction-minimality",
+    "PartialCubes:papers/survey/main.tex#thm:acycloid-antipodal-profile",
+    "PartialCubes:papers/survey/main.tex#thm:antipodal-expansions",
+    "PartialCubes:papers/survey/main.tex#thm:antipodal-low-rank-simplicial",
+    "PartialCubes:papers/survey/main.tex#thm:bounded-com-rank",
+    "PartialCubes:papers/survey/main.tex#thm:foundational-com-structure",
+    "PartialCubes:papers/survey/main.tex#thm:further-antipodal-structure",
+    "PartialCubes:papers/survey/main.tex#thm:lawrence-lopsided",
+    "PartialCubes:papers/survey/main.tex#thm:maximum-unlabeled-compression",
+    "PartialCubes:papers/survey/main.tex#thm:tope-graph-recognition",
+    "PartialCubes:papers/survey/main.tex#thm:tope-unlabeled-compression"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partial-cubes-bibliography",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "main.bib",
+      "sha256": "66b3172b12af56ccbceba8a47f354dc326966f120f04720e545b3295c17d70de",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/main.bib"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized obstruction families and basis, class characterizations and equivalences, closure theorem, structural and algorithmic statements, concise proofs, and citations. The LaTeX survey retains the full sign-vector setup, cell-complex constructions, historical narrative, detailed compression arguments, computational evidence, and all open questions.",
+    "recoverability": "The survey manuscript and dirty bibliography are read from the frozen snapshot and match their manifest SHA-256 hashes; all 131 survey result labels now have exact database proof-source locators.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "e3f8a74b18b310efd242cb1a0d1980253a34b9c5d9a7aaa9b226397aee72696e"
+    },
+    {
+      "path": "data/classes/007_antipodal_partial_cubes.json",
+      "sha256": "d7ce8e5c8498f3d2f18aac3ab13038c0d698f7b8287d4d8885e835f0e171a626"
+    },
+    {
+      "path": "data/obstruction_families/035_com_qminus_obstructions.json",
+      "sha256": "699565d2d41c11e00f37a12c20d019b0474dce4e208e5de64ce0e6418791ec8b"
+    },
+    {
+      "path": "data/obstruction_families/036_bounded_com_qminus_obstructions.json",
+      "sha256": "1c08b090915fe067f444a2b4f7670d433711ab41e9ba14045f80f5e45810d2d7"
+    },
+    {
+      "path": "data/obstruction_families/037_bounded_ample_qdoubleminus_obstructions.json",
+      "sha256": "7cff945a9225e7be785f9d300bb34046b2df4d33dbd7542e4a910902a5cf821a"
+    },
+    {
+      "path": "data/obstruction_bases/014_com_complete_pc_basis.json",
+      "sha256": "6fbf6bc7e92d640eed05953d338353db541c09d959af012b1b35e12df3cc2e0e"
+    },
+    {
+      "path": "data/characterizations/191_no_com_qminus_pc_minor.json",
+      "sha256": "f933739ae9c7ae4adc7cacdfabdb1c0b7c2fa9830ca46bcdbb70f30964789e4c"
+    },
+    {
+      "path": "data/characterizations/192_iterated_well_embedded_zone_graphs.json",
+      "sha256": "6f5cea5f83bf24a5064e4d06f756638e279eb9a11a080dc3593d824ab77ec546"
+    },
+    {
+      "path": "data/characterizations/193_antipodality_respectful_expansions.json",
+      "sha256": "33851241ef189df56216c235ee56eb0b5b5b492f7618391ce8bdbc92dec24685"
+    },
+    {
+      "path": "data/characterizations/194_simple_acycloid_tope_graph.json",
+      "sha256": "00d983a56f9fd914ae7a08c9d6f753f40bc72894c43298f11cd49f20c2e80a7a"
+    },
+    {
+      "path": "data/characterizations/195_totally_asymmetric_face_sections.json",
+      "sha256": "d436fe671192efcf99e2693fcc0f12f8ba4a1fe11ae60354e74713bdc1f4607a"
+    },
+    {
+      "path": "data/characterization_equivalences/038_com_graph_characterizations.json",
+      "sha256": "1025506ef64353e2808943dd87de87af6a683cd843837a5bde22a88eb96f0f7c"
+    },
+    {
+      "path": "data/characterization_equivalences/039_antipodal_acycloid_expansion_equivalence.json",
+      "sha256": "146750c1ff687723601b6afa86f9b0b487a1be158286910cb038f7479c5cfff0"
+    },
+    {
+      "path": "data/characterization_equivalences/040_ample_total_asymmetry_equivalence.json",
+      "sha256": "3a6541239dabe4481544a812765b7eab8b15dd873c33148c4c6c83e0c00799f0"
+    },
+    {
+      "path": "data/operation_results/292_antipodal_partial_cubes_projection_closed.json",
+      "sha256": "95e7fd78a345eea586dfeb94af47c26f3a468676e8b1fd8283feff7af434c1be"
+    },
+    {
+      "path": "data/results/331_foundational_com_structure.json",
+      "sha256": "b0de8dc186a5efb8891d241d669e1dcd0c6df7b66538366cf69f93f6a5324c90"
+    },
+    {
+      "path": "data/results/332_tope_graph_class_recognition.json",
+      "sha256": "fe41b0208e8f03456973246919529e26a4bd27050a437ca736437c6d37854a9f"
+    },
+    {
+      "path": "data/results/333_bounded_com_rank_obstruction_theorem.json",
+      "sha256": "7da0389b7e4eabd9f460e72417a44e4472ef8cb69eb65d20ee4814536b489cb1"
+    },
+    {
+      "path": "data/results/334_acycloid_antipodal_profile.json",
+      "sha256": "83d67472514d832cead9f1562e38c33b865dc02751cea401439fdf813567f572"
+    },
+    {
+      "path": "data/results/335_further_antipodal_structure.json",
+      "sha256": "411e50c992be524701b88cd1da69ea93c3dc305bebd8f8f5800f7613a4203b15"
+    },
+    {
+      "path": "data/results/336_antipodal_low_rank_simplicial_profile.json",
+      "sha256": "80978eb526e27f39bf496f7d13f811ccb327d6a9702f93e85c56c612a50d2700"
+    },
+    {
+      "path": "data/results/337_lawrence_lopsided_theorems.json",
+      "sha256": "dab74d6e2d7e4cc10e35dc66139f9b68a0f5154b6f0241b3e305a605d17d5783"
+    },
+    {
+      "path": "data/results/338_maximum_unlabeled_compression_and_corners.json",
+      "sha256": "632f0a955a01a9825c19f07a1a258f3a285f5c8ab53398f47af019e8cd1f197e"
+    },
+    {
+      "path": "data/results/339_tope_unlabeled_compression.json",
+      "sha256": "6251f8b7e9d9be680120979bf0bec6eac14126350e4c12fb2f75148800ef7cc9"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "6cb334fb2037e99f0b7d05c85989dec7f7954591e4e2271069caa60500b44cf5"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "8fd1b1777fd31b19a2c0ea2412f907b624776c19b3bd6c1bfacc13bb06882c70"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "228ffef799eb4e57f76ff190a807e2cd2bf7f285ffd4712672e91c614d25e197"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1620 records.",
+    "website": "Normalized 1636 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers the final 11 survey labels, raising that workspace from 120 of 131 to 131 of 131 and overall workspace-aware coverage from 420 to 431 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace is complete at 131 of 131 labeled results; its open questions remain prose under the agreed policy.",
+    "The remaining 585 uncovered labels all belong to the lower-priority dismantlable-ample workspace.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

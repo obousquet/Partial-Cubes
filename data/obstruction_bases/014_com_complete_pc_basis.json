@@ -1,0 +1,18 @@
+{
+  "id": 14,
+  "short_name": "com_complete_pc_basis",
+  "name": "Complete Forbidden pc-Minor Basis for COM Tope Graphs",
+  "target_class_id": "#classes/com_tope_graphs",
+  "ambient_class_id": "#classes/partial_cubes",
+  "minor_operation_id": "#operations/pc_minor",
+  "obstruction_family_ids": [
+    "#obstruction_families/com_qminus_obstructions"
+  ],
+  "basis_claim": "complete",
+  "minimality": "pc_minimal",
+  "statement": "A finite partial cube is a COM tope graph exactly when it has no pc-minor in $\\mathcal Q^-$. Every member of $\\mathcal Q^-$ contains a nongated antipodal subgraph and every proper pc-minor avoids the whole family.",
+  "status": "established",
+  "proof": "The COM tope-graph theorem equates membership with gating of every antipodal subgraph and with avoidance of $\\mathcal Q^-$. Each displayed obstruction has a nongated antipodal subgraph. If a proper pc-minor contained another member of $\\mathcal Q^-$, transitivity would put that member as a proper pc-minor of the original obstruction, contradicting the obstruction-antichain lemma. Hence the basis is complete and pc-minimal.",
+  "references": "\\cite{KnauerMarc20}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#lem:com-obstruction-minimality; PartialCubes:papers/survey/main.tex#thm:com-tope-graphs"
+}

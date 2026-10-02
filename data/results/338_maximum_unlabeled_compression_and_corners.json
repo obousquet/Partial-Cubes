@@ -1,0 +1,22 @@
+{
+  "id": 338,
+  "short_name": "maximum_unlabeled_compression_and_corners",
+  "name": "Maximum-Class Unlabeled Compression and the Corner Boundary",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/ample",
+    "#classes/representation_map_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "algorithm",
+  "statement": "Every maximum class of VC dimension $d$ has a representation map and an unlabeled compression scheme of size $d$. On an ample class, representation maps are exactly the out-maps of unique-sink orientations and each yields an unlabeled scheme of size equal to the VC dimension. An ample class has a corner peeling exactly when it has an acyclic such orientation. Hall's 299-concept maximum class in dimension twelve has VC dimension three but no corner, showing that optimal unlabeled compression need not come from a corner peeling.",
+  "status": "established",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:maximum-unlabeled-compression",
+  "witness_ids": [
+    "#examples/hall_cornerless_class"
+  ]
+}

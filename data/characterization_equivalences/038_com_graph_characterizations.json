@@ -1,0 +1,17 @@
+{
+  "id": 38,
+  "short_name": "com_graph_characterizations",
+  "name": "COM Tope-Graph Characterizations",
+  "class_id": "#classes/com_tope_graphs",
+  "characterization_ids": [
+    "#characterizations/gated_antipodal_subgraphs",
+    "#characterizations/no_com_qminus_pc_minor",
+    "#characterizations/iterated_well_embedded_zone_graphs"
+  ],
+  "hypotheses": "Finite connected graph.",
+  "statement": "Gating every antipodal subgraph, avoiding $\\mathcal Q^-$ as pc-minors, and having only well-embedded partial cubes as iterated zone graphs are equivalent intrinsic descriptions of COM tope graphs.",
+  "status": "established",
+  "proof": "A nongated antipodal subgraph yields one of the canonical $\\mathcal Q^-$ pc-minors, while each member of $\\mathcal Q^-$ contains such a subgraph. Zone graphs encode successive covector zero sets: the COM elimination axioms make every iterate well embedded, and failure of well embedding recovers the same canonical obstruction. These translations are reversible and identify the common class with COM tope graphs.",
+  "references": "\\cite{KnauerMarc20}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:com-tope-graphs"
+}

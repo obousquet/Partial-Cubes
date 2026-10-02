@@ -1,0 +1,21 @@
+{
+  "id": 339,
+  "short_name": "tope_unlabeled_compression",
+  "name": "Proper Unlabeled Compression for Tope Classes",
+  "class_ids": [
+    "#classes/om_tope_graphs",
+    "#classes/aom_tope_graphs",
+    "#classes/corner_peelable_coms",
+    "#classes/realizable_coms",
+    "#classes/hypercellular_partial_cubes",
+    "#classes/cellular_partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension"
+  ],
+  "result_type": "algorithm",
+  "statement": "Every oriented-matroid or affine-oriented-matroid tope class of VC dimension $d$ has a proper unlabeled compression scheme of size at most $d$. The same holds for every COM tope graph with a corner peeling, and hence for realizable COMs, rank-at-most-two COMs, hypercellular graphs, and cellular graphs.",
+  "status": "established",
+  "references": "\\cite{Marc24compression}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:tope-unlabeled-compression"
+}

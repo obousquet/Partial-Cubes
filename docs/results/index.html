@@ -5549,6 +5549,155 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-331" style="position:relative;">
+
+        <h3><a href="results/foundational_com_structure.html" class="table-title-link">Foundational Structure of Simple COMs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Foundational Structure of Simple COMs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/com_tope_graphs.html">COM Tope Graphs</a></li><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For a simple COM $(E,\mathcal L)$, the tope graph is a partial cube and determines the sign-vector system up to coordinate reorientation. Deletions, contractions, and fibers remain COMs, and every face becomes an oriented matroid after deleting its fixed coordinates. The system supports a contractible regular cell complex $\Delta(\mathcal L)$ whose 1-skeleton is the tope graph and whose cells are the oriented-matroid complexes carried by its faces.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BCK2018">[BCK2018]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:foundational-com-structure</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The full covector constructions, cell attaching maps, and COM-amalgamation conditions remain in the scholarly source.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-332" style="position:relative;">
+
+        <h3><a href="results/tope_graph_class_recognition.html" class="table-title-link">Unrestricted-Rank Tope-Graph Classes Are Polynomial-Time Recognizable</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unrestricted-Rank Tope-Graph Classes Are Polynomial-Time Recognizable</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/com_tope_graphs.html">COM Tope Graphs</a></li><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li><li><a href="classes/aom_tope_graphs.html">Affine Oriented-Matroid Tope Graphs</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>From an arbitrary graph, membership in each unrestricted-rank tope-graph class associated with a COM, an oriented matroid, an affine oriented matroid, or a lopsided system can be decided in polynomial time.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First recognize a partial cube and recover its $\Theta$-coordinates. The intrinsic characterizations then reduce membership to polynomially many gating tests on antipodal and, in the affine case, conformal subgraphs. The method handles the infinite obstruction families directly and does not enumerate them.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Corollary~7.6]{KnauerMarc20}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:tope-graph-recognition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-333" style="position:relative;">
+
+        <h3><a href="results/bounded_com_rank_obstruction_theorem.html" class="table-title-link">Finite Obstruction Theorems for Bounded COM Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Obstruction Theorems for Bounded COM Rank</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/com_tope_graphs.html">COM Tope Graphs</a></li><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li><li><a href="classes/aom_tope_graphs.html">Affine Oriented-Matroid Tope Graphs</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For $r\ge3$, COM tope graphs of rank at most $r$ are exactly $\mathcal F(\mathcal Q_r^-)$. Oriented-matroid tope graphs are the antipodal members of this class, and affine-oriented-matroid tope graphs are its affine members whose conformal subgraphs are gated. Ample or lopsided tope graphs of rank at most $r$ are exactly $\mathcal F(\mathcal Q_r^{--})$. Rank here equals VC dimension.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Corollary~7.5]{KnauerMarc20}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:bounded-com-rank</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The finite obstruction families are recorded separately as $\mathcal Q_r^-$ and $\mathcal Q_r^{--}$; each includes $Q_{r+1}$ to enforce the rank bound.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-334" style="position:relative;">
+
+        <h3><a href="results/acycloid_antipodal_profile.html" class="table-title-link">Acycloid and Planar Rank-Three Profile of Antipodal Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acycloid and Planar Rank-Three Profile of Antipodal Partial Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/antipodal_partial_cubes.html">Antipodal Partial Cubes</a></li><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li><li><a href="classes/planar_partial_cubes.html">Planar Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li><li><a href="classes/hypercubes.html">Hypercubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A finite connected graph is an antipodal partial cube exactly when it is the tope graph of a simple acycloid. It is planar and antipodal exactly when it is the tope graph of an oriented matroid of rank at most three. A graph is both median and antipodal exactly when it is a hypercube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#FukudaHanda1993">[FukudaHanda1993]</a> <a href="bibliography.html#KlavzarKovse09even">[KlavzarKovse09even]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:acycloid-antipodal-profile</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-335" style="position:relative;">
+
+        <h3><a href="results/further_antipodal_structure.html" class="table-title-link">Further Structure of Antipodal Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Further Structure of Antipodal Partial Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/antipodal_partial_cubes.html">Antipodal Partial Cubes</a></li><li><a href="classes/even_cycles.html">Even Cycles</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li><li><a href="invariants/graph_girth.html">Graph Girth</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>A bipartite antipodal graph is a partial cube exactly when it is interval monotone; it suffices to test intervals of length at least $\operatorname{diam}(G)-1$. In an antipodal partial cube, an isometric cycle is principal exactly when its diameter, equivalently its isometric dimension, equals that of the graph, also exactly when its convex hull is the whole graph. For order $n$ and diameter $d$, equality $n=4d-4$ holds exactly for $C_4$ and prisms over even cycles. Every antipodal partial cube of girth greater than six is an even cycle; if a noncycle has diameter at least six, then its girth is smaller than its diameter.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#polat2020antipodal">[polat2020antipodal]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:further-antipodal-structure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-336" style="position:relative;">
+
+        <h3><a href="results/antipodal_low_rank_simplicial_profile.html" class="table-title-link">Low-Rank Simplicial Profile of Antipodal Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Low-Rank Simplicial Profile of Antipodal Partial Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/antipodal_partial_cubes.html">Antipodal Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>If an antipodal partial cube has rank three, then every $\Theta$-class contains an edge incident with a vertex of degree three; consequently its minimum degree is at most its rank. The same degree bound has been verified computationally for every antipodal partial cube of isometric dimension at most seven.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Proposition~6.4 and Section~6.2]{KnauerMarc23corners}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:antipodal-low-rank-simplicial</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The arbitrary-rank Las Vergnas-type bound remains open and is retained as prose in the survey.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-337" style="position:relative;">
+
+        <h3><a href="results/lawrence_lopsided_theorems.html" class="table-title-link">Lawrence's Lopsided-Set Theorems</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Lawrence's Lopsided-Set Theorems</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_complement.html">Cube Complement</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>Closed orthants met by a convex subset of $\mathbb R^X$ form a lopsided, hence ample, sign family. Lopsided families are closed under complements, nonempty cube-face sections, coordinate projections, and Cartesian products. They are exactly the totally asymmetric sign families, and every nonempty face section has a connected induced graph.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Lawrence1983">[Lawrence1983]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:lawrence-lopsided</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Convex orthant realizability is sufficient but not necessary; the separate weakly convex realization theorem covers every ample family.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-338" style="position:relative;">
+
+        <h3><a href="results/maximum_unlabeled_compression_and_corners.html" class="table-title-link">Maximum-Class Unlabeled Compression and the Corner Boundary</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximum-Class Unlabeled Compression and the Corner Boundary</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every maximum class of VC dimension $d$ has a representation map and an unlabeled compression scheme of size $d$. On an ample class, representation maps are exactly the out-maps of unique-sink orientations and each yields an unlabeled scheme of size equal to the VC dimension. An ample class has a corner peeling exactly when it has an acyclic such orientation. Hall's 299-concept maximum class in dimension twelve has VC dimension three but no corner, showing that optimal unlabeled compression need not come from a corner peeling.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:maximum-unlabeled-compression</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_cornerless_class.html">Hall's Cornerless Maximum Class</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-339" style="position:relative;">
+
+        <h3><a href="results/tope_unlabeled_compression.html" class="table-title-link">Proper Unlabeled Compression for Tope Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper Unlabeled Compression for Tope Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li><li><a href="classes/aom_tope_graphs.html">Affine Oriented-Matroid Tope Graphs</a></li><li><a href="classes/corner_peelable_coms.html">Corner-Peelable COMs</a></li><li><a href="classes/realizable_coms.html">Realizable COMs</a></li><li><a href="classes/hypercellular_partial_cubes.html">Hypercellular Partial Cubes</a></li><li><a href="classes/cellular_partial_cubes.html">Cellular Bipartite Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every oriented-matroid or affine-oriented-matroid tope class of VC dimension $d$ has a proper unlabeled compression scheme of size at most $d$. The same holds for every COM tope graph with a corner peeling, and hence for realizable COMs, rank-at-most-two COMs, hypercellular graphs, and cellular graphs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Marc24compression">[Marc24compression]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:tope-unlabeled-compression</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
