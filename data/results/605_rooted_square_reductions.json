@@ -1,0 +1,24 @@
+{
+  "id": 605,
+  "short_name": "rooted_square_reductions",
+  "name": "The Two Reductions of a Rooted Square Assembly",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/common_section_gluing",
+    "#operations/full_reduction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a rooted square assembly from nontrivial corner-peelable ample factors $A,B$, marked edge endpoints $a_0,a_1$, and hole $q=(q_e,q_f)\\ne00$, its two square-coordinate reductions are the vertex gluings $A\\vee_{a_{1-q_f}}B$ and $A\\vee_{a_{1-q_e}}B$. Each reduction is corner-peelable exactly when $A$ peels to its indicated attachment vertex. If the assembly is forbidden and that vertex is unattainable, then $A$ rooted there is itself a rooted factor. For the opposite hole $q=11$, the whole assembly equals the coordinate-block replacement of $A\\vee_{a_0}B$ and is forbidden exactly when $(A,a_0)$ is a rooted factor; no marked-edge retention conditions are needed.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_square_marked_edge_audit"
+  ],
+  "proof": "In either square reduction, a nonroot word of $B$ survives only in the row opposite the corresponding bit of the hole, while the root survives in both rows. This is exactly vertex gluing at the stated endpoint. The vertex-gluing theorem gives the peeling equivalence. A negative reduction of a forbidden assembly descends to a cut-vertex obstruction, forcing the stated rooted factor. For hole 11, the four square rows coincide with the block replacement of the gluing at $a_0$; block replacement and the cut-vertex theorem give the exact forbiddenness criterion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-square-recovery",
+  "comments": "Adjacent holes attach the second factor to the two different marked endpoints. Unmarked uniqueness of the decomposition is not asserted."
+}

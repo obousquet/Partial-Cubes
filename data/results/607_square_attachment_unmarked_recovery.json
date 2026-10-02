@@ -1,0 +1,25 @@
+{
+  "id": 607,
+  "short_name": "square_attachment_unmarked_recovery",
+  "name": "Finite Unmarked Recovery of Mixed-Puncture Square Attachments",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/partial_trace",
+    "#operations/conditioning"
+  ],
+  "result_type": "algorithm",
+  "statement": "Every presentation of an active-coordinate ample forbidden pc-minor as a mixed-puncture square attachment with positive first factor, nonempty first private coordinate set, and rooted second factor is recoverable without supplied markings. Find the unique two universal crossing-graph coordinates; for each component after deleting them, inspect its square fibres for one full root fibre and a common punctured fibre elsewhere; require a common first-factor root outside that component; then test the two square diagonals for the coordinate-block row identity. Every passing choice reconstructs the factors, root edge, and hole exactly. The square pair is unique, though different crossing-graph components can yield different presentations and factor uniqueness is not claimed.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_square_assembly_1601",
+    "#examples/punctured_square_attachment_2029"
+  ],
+  "proof": "In any such presentation, the crossing calculation identifies the square pair and separates the private crossing graphs. The rooted factor has connected crossing graph, so its coordinates occur as one tested component. Its root has the full square fibre, every nonroot word has the common punctured fibre, and all nonroot fibres sit over the same first-factor root. The block rows satisfy the tested diagonal identity. Conversely these fibre identities reconstruct the attachment word-for-word. In a forbidden input, the recovered block face and its reduction make the first factor positive; a nonmissing face makes the second factor positive. If the recovered root were attainable the attachment would peel, and if a root-retaining proper minor remained unattainable then positivity of the corresponding proper output minor would force the first block to peel to the punctured square, again making the original output positive. Thus the second factor satisfies rooted minimality.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-unmarked-recovery",
+  "comments": "This exhausts the mixed-puncture attachment branch; it is not a forbiddenness test for arbitrary recovered geometric presentations. The algorithm recovers one presentation on both the forbidden 1601 and positive 2029 controls, illustrating that distinction."
+}

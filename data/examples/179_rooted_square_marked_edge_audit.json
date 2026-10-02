@@ -1,0 +1,12 @@
+{
+  "id": 179,
+  "short_name": "rooted_square_marked_edge_audit",
+  "name": "Marked-Edge Audit of the Certified 288- and 289-Concept Rooted Factors",
+  "object_type": "construction",
+  "definition": "Enumerate every edge incident with the unique root corner in the certified factors $A_{288}$ and $B_{289}$. For each edge, test all 22 zero-restriction and contraction images in other coordinates for relative peeling to the edge image, and test the three section/contraction images in the edge coordinate for peeling to the projected endpoint.",
+  "parameters": "The eligible directions are 1, 2, and 7 for $A_{288}$ and 1, 2, and 8 for $B_{289}$ in the certificate coordinates.",
+  "properties": "All six incident root edges pass all 25 marked-edge tests with explicit replayed corner orders. This is a bounded input certificate and does not imply that every rooted factor satisfies the marked-edge hypotheses.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-square-recovery",
+  "verification": "migration/certificates/149_dismantlable_ample_square_reduction_and_recovery/papers/dismantlable-ample/research/explore_rooted_square_inputs.py"
+}

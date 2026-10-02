@@ -1,0 +1,26 @@
+{
+  "id": 606,
+  "short_name": "square_attachment_positive_reductions",
+  "name": "Coordinate Reductions and Crossing Graphs of Adjacent Square Attachments",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/cartesian_product",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "For an adjacent-hole square attachment with corner-peelable ample first factor $A$ and rooted second factor $B$, every reduction in a private coordinate of either factor is dismantlable ample. Every active coordinate reduction is dismantlable ample exactly when $A$ peels to both marked edge endpoints; this condition alone does not imply positivity of the attachment. If $A$ has a private active coordinate, the two square coordinates are exactly the universal vertices of the crossing graph. Deleting them leaves the disjoint crossing graphs of the marked contraction of $A$ and of $B$, so they form a two-vertex cut and the crossing graph has no cut vertex.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_square_assembly_1601",
+    "#examples/punctured_square_attachment_2029"
+  ],
+  "proof": "A private reduction on the first factor equals the corresponding reduction of its positive block piece. A private reduction on the second factor is the product of the punctured three-vertex path with a positive reduction of $B$. The two square reductions are vertex gluings at the two edge endpoints, and vertex gluing is positive exactly when $A$ attains the corresponding endpoint. The block shadow makes both square coordinates cross every private coordinate and each other, while no support mixes private coordinates from the two factors. This gives the exact crossing graph decomposition and connectivity claims.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-positive-reductions",
+  "comments": "The 1601-concept obstruction has 24 positive coordinate reductions and one negative square reduction. The positive 2029-concept control has all 26 reductions positive."
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-26" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-607" style="position:relative;">
 
-        <h3><a href="operations/coordinate_block_replacement.html" class="table-title-link">Coordinate-Block Replacement</a></h3>
+        <h3><a href="results/square_attachment_unmarked_recovery.html" class="table-title-link">Finite Unmarked Recovery of Mixed-Puncture Square Attachments</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate-Block Replacement</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="W_E(H)">
-            \[W_E(H)\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a family $H\subseteq Q_{G\cup\{z\}}$ with sections $B_i=\rho_z^iH$, union $C=B_0\cup B_1$, and a fresh nonempty coordinate block $E$, replace $z$ by $E$ and take $(B_0\times\{0_E\})\cup(B_1\times\{1_E\})\cup(C\times(Q_E\setminus\{0_E,1_E\}))$.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The marked output remembers the new block. A singleton block merely renames the original coordinate.</p></div>
+        <p><strong>Name: </strong>Finite Unmarked Recovery of Mixed-Puncture Square Attachments</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/partial_trace.html">Partial-Trace Expansion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every presentation of an active-coordinate ample forbidden pc-minor as a mixed-puncture square attachment with positive first factor, nonempty first private coordinate set, and rooted second factor is recoverable without supplied markings. Find the unique two universal crossing-graph coordinates; for each component after deleting them, inspect its square fibres for one full root fibre and a common punctured fibre elsewhere; require a common first-factor root outside that component; then test the two square diagonals for the coordinate-block row identity. Every passing choice reconstructs the factors, root edge, and hole exactly. The square pair is unique, though different crossing-graph components can yield different presentations and factor uniqueness is not claimed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In any such presentation, the crossing calculation identifies the square pair and separates the private crossing graphs. The rooted factor has connected crossing graph, so its coordinates occur as one tested component. Its root has the full square fibre, every nonroot word has the common punctured fibre, and all nonroot fibres sit over the same first-factor root. The block rows satisfy the tested diagonal identity. Conversely these fibre identities reconstruct the attachment word-for-word. In a forbidden input, the recovered block face and its reduction make the first factor positive; a nonmissing face makes the second factor positive. If the recovered root were attainable the attachment would peel, and if a root-retaining proper minor remained unattainable then positivity of the corresponding proper output minor would force the first block to peel to the punctured square, again making the original output positive. Thus the second factor satisfies rooted minimality.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-coordinate-block-replacement</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_coordinate_block_replacement_closed.html'>Ample Families Are Closed Under Coordinate-Block Replacement</a></li><li><a href='operation_results/dismantlable_ample_coordinate_block_replacement_closed.html'>Coordinate-Block Replacement Preserves Dismantlable Ampleness Exactly</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/simultaneous_nonconstant_row_enlargement.html'>Closed Formula for Simultaneous Row Enlargements</a></li><li><a href='results/block_row_completion.html'>Completing One Nonconstant Block Row</a></li><li><a href='results/two_component_cube_code.html'>Two Complementary Components Force Antipodal Cube Rows</a></li><li><a href='results/one_wing_mixed_puncture_retention.html'>One Relative Section Suffices for Mixed-Puncture Retention</a></li><li><a href='results/adjacent_square_relative_criterion.html'>Exact Relative Criterion for an Adjacent Square Hole</a></li><li><a href='results/rooted_endpoint_square_generator.html'>A Square Generator from Rooted Endpoints and Small Minor Wings</a></li><li><a href='results/rooted_square_assembly_automatic_minimality.html'>Rooted Square Assemblies Have Automatic Minor Minimality</a></li><li><a href='results/rooted_square_reductions.html'>The Two Reductions of a Rooted Square Assembly</a></li><li><a href='results/square_attachment_positive_reductions.html'>Coordinate Reductions and Crossing Graphs of Adjacent Square Attachments</a></li><li><a href='results/square_attachment_unmarked_recovery.html'>Finite Unmarked Recovery of Mixed-Puncture Square Attachments</a></li></ul></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-unmarked-recovery</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_square_assembly_1601.html">The 1601-Concept Rooted Square Assembly</a></li><li><a href="examples/punctured_square_attachment_2029.html">A 2029-Concept Attachment Showing the Punctured-Square Test Is Strictly Weaker</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This exhausts the mixed-puncture attachment branch; it is not a forbiddenness test for arbitrary recovered geometric presentations. The algorithm recovers one presentation on both the forbidden 1601 and positive 2029 controls, illustrating that distinction.</p></div>
 
         </div>
     </div>
