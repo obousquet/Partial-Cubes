@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "batch_id": "158_dismantlable_ample_paired_one_hole_cornerlessness",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact internal and cross-layer punctured-cube protection criterion for cornerlessness of an ample two-layer gluing.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-paired-one-hole-cornerless-gluing"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem supplies the exact nonpeelability compatibility law for two sections by splitting every local missing-tip witness into internal and cross-layer punctured-cube protection.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The local-hole characterization gives a reversible case split according to whether the punctured-cube support contains the layer coordinate.",
+    "claim_block_sha256": {
+      "thm:damp-paired-one-hole-cornerless-gluing": "2ce07c9c07ea756424a3aebba6a358d6da912641d24b25b1e8e59ccaa71bb2d1"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the internal and cross-layer protection definitions needed by the theorem, the exact cornerlessness equivalence, and its concise proof. LaTeX retains the expanded full/punctured section calculation and discussion of the remaining positive-minor compatibility problem.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the source theorem and surrounding definitions byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/618_paired_one_hole_cornerless_gluing.json",
+      "sha256": "dd8cbccae22d01c7e51d0bdbf309299d8c1bc010207e1d0fe7b3aac91d6e33dc"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "57807bec5fa3396df3ec961c354f4820bf3131189cd56028e403c729f8ec4bdd"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "ecc336ee8a3b55fb03e2d501656a8a40f2612e1817ed51702f09aa0f37d07f12"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2001 records.",
+    "website": "Normalized 2017 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 718 to 719 of 1143 and dismantlable-ample coverage from 282 to 283 of 683.",
+    "certificates": "No finite replay packet is needed; the proof is an exact local-hole case distinction inside a Sandwich-equality ample family.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 424 uncovered database-owned labels: 400 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem and corollary characterize corner peelings by latent punctured-face word constraints and an acyclic facet-protector digraph.",
+    "The paired protection law does not yet characterize positivity of all elementary pc-minors; that unresolved problem remains prose-owned in LaTeX."
+  ]
+}
