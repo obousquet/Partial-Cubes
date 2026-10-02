@@ -1,0 +1,19 @@
+{
+  "id": 378,
+  "short_name": "square_attachment_interval_poset",
+  "name": "Square Attachments Have a Canonical Interval Poset",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\varnothing\\ne B\\subseteq A$ be ample with the same active coordinates and with every support in $\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(B)$ of size at most two. For $D=A\\setminus B$, there is a unique acyclic orientation of all edges incident with $D$ such that boundary edges point toward $B$ and every vertex of $D$ has exactly two outgoing edges. Reachability defines a poset $P_{A,B}$ whose linear extensions are exactly the relative corner-deletion orders from $A$ to $B$. An intermediate $B\\subseteq C\\subseteq A$ is ample exactly when $A\\setminus C$ is an order ideal of $P_{A,B}$; hence the ample intermediate families form a distributive lattice under union and intersection. Sending each $x\\in D$ to the pair of its outgoing coordinate directions is a bijection from $D$ onto $\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(B)$, independent of the deletion order.",
+  "status": "established",
+  "proof": "A relative degree-two peeling orients each edge toward its later endpoint and supplies one admissible orientation. Boundary directions and the required outdegree fix the divergence at every internal vertex; the disagreement graph of two candidate orientations would be balanced and nonempty, hence contain a directed cycle, contradicting acyclicity. Every relative peeling induces this unique orientation. Conversely, linear extensions differ by swaps of consecutive incomparable vertices, which are nonadjacent corner deletions and therefore commute. An ample intermediate concatenates relative peelings above and below it, making its removed set an order ideal; every ideal is an initial segment of a linear extension and hence leaves an ample family. Each deletion removes precisely the pair of its two outgoing directions, so these distinct pairs exhaust the shadow difference.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-square-interval-poset"
+}

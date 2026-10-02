@@ -1,0 +1,19 @@
+{
+  "id": 381,
+  "short_name": "degree_two_corner_section_shadow_criterion",
+  "name": "Four Shadow Conditions Characterize a Marked Degree-Two Corner",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "recognition",
+  "statement": "Let ample $A,D,C\\subseteq Q_F$ contain $0$, put $U=A\\cup D\\cup C$, and set $Y=\\{(0,00)\\}\\cup(A\\times\\{01\\})\\cup(D\\times\\{10\\})\\cup(C\\times\\{11\\})$. Then $Y$ is ample exactly when (i) $\\operatorname{Sh}(U)=\\operatorname{Sh}(A)\\cup\\operatorname{Sh}(D)\\cup\\operatorname{Sh}(C)$, (ii) $\\operatorname{Sh}(A\\cup C)=\\operatorname{Sh}(A)\\cup\\operatorname{Sh}(C)$, (iii) $\\operatorname{Sh}(D\\cup C)=\\operatorname{Sh}(D)\\cup\\operatorname{Sh}(C)$, and (iv) $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(D)\\subseteq\\operatorname{Sh}(C)$. Every ample family with a marked degree-two corner has this presentation after translating that corner to zero, uniquely up to exchanging its two directions and the side sections $A,D$.",
+  "status": "established",
+  "proof": "Sorting shattered supports by the two new coordinates gives $|\\operatorname{Sh}(Y)|=|\\operatorname{Sh}(U)|+|\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(D\\cup C)|+|\\operatorname{Sh}(D)\\cap\\operatorname{Sh}(A\\cup C)|+1$. If $Y$ is ample, its two adjacent coordinate faces force conditions (ii) and (iii). Subtracting $|Y|$ then expresses the shadow excess as the sum of two nonnegative terms: the excess of $\\operatorname{Sh}(U)$ over the union of the three shadows, and $|(\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(D))\\setminus\\operatorname{Sh}(C)|$. Equality forces (i) and (iv), and conversely the four conditions make the excess zero. For recovery, fixing both corner directions at the corner value leaves a connected ample face in which the marked vertex is isolated, so that face is a singleton; the other three sections are then uniquely determined.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-degree-two-section-shadows"
+}

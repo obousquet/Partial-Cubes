@@ -1,0 +1,21 @@
+{
+  "id": 379,
+  "short_name": "square_attachment_data_recovery",
+  "name": "Finite Square-Attachment Data Construct and Recover Every Three-Core Extension",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Fix a nonempty ample $K\\subseteq Q_F$. Square-attachment data consist of a finite symbol set $D$ and, for each $x\\in D$, a coordinate pair $I_x=\\{p_x,q_x\\}$ and three targets $u_x,v_x,w_x\\in K\\mathbin{\\dot\\cup}D$. They are admissible when the target-dependency digraph is acyclic, the pairs $I_x$ are distinct and absent from $\\operatorname{Sh}(K)$, and the recursion $\\phi(k)=k$, $\\phi(x)=\\phi(u_x)^{\\{p_x\\}}$ is injective and satisfies $\\phi(v_x)=\\phi(x)^{\\{q_x\\}}$ and $\\phi(w_x)=\\phi(x)^{I_x}$. Admissible data produce an ample $A=K\\cup\\phi(D)$ on the same active coordinates with $\\operatorname{Sh}(A)=\\operatorname{Sh}(K)\\mathbin{\\dot\\cup}\\{I_x:x\\in D\\}$. Every target-first order constructs $A$ by ample square additions. Conversely every ample $A\\supseteq K$ on the same active coordinates with no new shattered support of size at least three has unique such data up to renaming $D$. Dependency reachability is the canonical interval poset and $|D|\\le\\binom{|F|}{2}-|\\{I\\in\\operatorname{Sh}(K):|I|=2\\}|$. If $K$ is a minimum-degree-three ample pc-minimal obstruction to dismantlable ampleness, all outputs are such obstructions with three-core $K$; every ample obstruction is recovered uniquely from its canonical three-core this way.",
+  "status": "established",
+  "proof": "In any target-first order, the three targets form the punctured $I_x$-square at the new word. Distinctness keeps $I_x$ unshattered, and an outside neighbor would force a second full $I_x$-square and contradict that fact. Thus the new word has exactly the prescribed two incident directions; the one-concept extension test preserves ampleness and adds precisely $I_x$. Conversely, orient an upper family toward $K$ by its canonical interval poset. For each outside concept, its two outgoing edge targets and the opposite square vertex supply $u_x,v_x,w_x$; the recovered arrows point forward in every relative peeling and the support pairs are distinct and absent from the base shadow. The unique orientation recovers the data up to symbol names, and diagonal-target dependencies do not enlarge its reachability order. The pair count gives the bound. The canonical three-core theorem supplies obstruction preservation and exhaustive recovery in the final clause.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-square-attachment-data"
+}

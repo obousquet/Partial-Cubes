@@ -1,0 +1,21 @@
+{
+  "id": 377,
+  "short_name": "relative_small_support_peeling",
+  "name": "Small Shadow Gaps Admit Exact Relative Peelings",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let $\\varnothing\\ne B\\subseteq A\\subseteq Q_F$ be ample, and suppose every support in $\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(B)$ has size at most two. Then $A$ reduces to $B$ by deleting corners of degree at most two while retaining every concept of $B$. Equivalently, starting from $B$ and repeatedly adding an outside concept with the largest current number of neighbors always preserves ampleness and reaches $A$, acquiring a support of size at most two at each step. For every $T\\subseteq B$, including $T=\\varnothing$, $A$ reduces to $T$ by corner deletions exactly when $B$ does. Hence $A$ is dismantlable ample exactly when $B$ is, and $A$ peels to any $b\\in B$ exactly when $B$ does. If $A$ and $B$ have the same active coordinates, every relative deletion has degree exactly two.",
+  "status": "established",
+  "proof": "Every cube of $A$ of dimension at least three lies in $B$: extend it to a maximal cube, use connectedness of the corresponding reduction to see that it is the unique cube of its support, and then use ampleness of $B$ to locate that same cube there. The same uniqueness holds for maximal squares. For an ample intermediate $B\\subseteq S\\subsetneq A$, choose an outside concept $x$ with the most neighbors in $S$. Its punctured incident cube lies in $S$, so it has at most two directions. With two directions, maximal-square uniqueness shows the pair is not already shattered and the one-concept criterion preserves ampleness. With one direction, maximality makes $S$ locally convex and hence convex; that direction is constant on $S$, so it is again newly acquired. Iteration gives the relative order. Rank-at-most-two extension invariance preserves reduction to every retained target $T$. Equal active coordinate sets rule out a one-direction step.",
+  "references": "[@ChalopiChepoiMoran22]",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-small-supports"
+}

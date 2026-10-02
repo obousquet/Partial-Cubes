@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-5" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-110" style="position:relative;">
 
-        <h3><a href="operations/concept_deletion.html" class="table-title-link">Concept Deletion</a></h3>
+        <h3><a href="examples/coupled_edge_minor_three_core.html" class="table-title-link">Coupled-Edge-Minor Three-Core of Order 1162</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Concept Deletion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="C\setminus R">
-            \[C\setminus R\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>Delete an arbitrary set $R$ of concepts from a finite binary class $C$, retaining the same coordinate set and requiring the surviving class to be nonempty.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>This removes vertices rather than coordinates and is distinct from projection, conditioning, and pc-minors.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/main.tex?#thm:deletion-width</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_not_concept_deletion_closed.html'>Realizable Ample Classes Are Not Closed under Ample Corner Deletion</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/ordering_width_deletion_stability.html'>Ordering Width Under Concept Deletion</a></li><li><a href='results/majority_completion_bounds_width.html'>Majority Completion Bounds Ordering Width</a></li><li><a href='results/intrinsic_daisy_antipodal_deletion_basis.html'>Intrinsic Antipodal-Deletion Basis for Daisy Cubes</a></li><li><a href='results/uso_source_component_deletion.html'>Source Components of a Representation USO Can Be Deleted</a></li><li><a href='results/ample_chunk_deletion_criterion.html'>Exact Ample-Preserving Chunk Deletion Criterion</a></li><li><a href='results/dismantlable_minimum_section_deletion_parent.html'>Minimum-Section Deletions Have Controlled Dismantlable Parents</a></li><li><a href='results/peripheral_minimum_section_deletion.html'>Peripheral Classes Survive Minimum-Section Deletion</a></li><li><a href='results/peripheral_corner_deletion_parent.html'>Every Corner Deletion of a Peripheral Maximum Class Has a Peripheral Parent</a></li><li><a href='results/corner_deletion_representation_criterion.html'>Representation Criterion after Deleting a Corner</a></li><li><a href='results/small_corner_representation_map_repair.html'>Representation Maps Can Be Repaired at Corners of Dimension at Most Two</a></li><li><a href='results/one_concept_ample_extension_test.html'>Local Test for an Ample One-Concept Extension</a></li><li><a href='results/forbidden_one_concept_extension_dichotomy.html'>One-Concept Extensions of an Ample Forbidden Minor</a></li><li><a href='results/low_support_extension_relative_invariance.html'>Low-Support One-Concept Additions Preserve Every Relative Peeling</a></li><li><a href='results/low_degree_corner_obstruction_descent.html'>Low-Degree Corners Descend within the Ample Forbidden Basis</a></li><li><a href='results/repair_face_rooted_factor.html'>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></li><li><a href='results/cut_vertex_corner_descent.html'>Corner Descent Is Exact in the Cut-Vertex Obstruction Branch</a></li><li><a href='results/canonical_three_core_of_ample_obstruction.html'>Every Ample Obstruction Has a Canonical Graph Three-Core</a></li><li><a href='results/relative_small_support_peeling.html'>Small Shadow Gaps Admit Exact Relative Peelings</a></li><li><a href='results/square_attachment_interval_poset.html'>Square Attachments Have a Canonical Interval Poset</a></li><li><a href='results/square_attachment_data_recovery.html'>Finite Square-Attachment Data Construct and Recover Every Three-Core Extension</a></li><li><a href='results/rooted_endpoint_operation_calculus.html'>Peripheral Expansions, Products, and Small Additions Have Exact Endpoint Laws</a></li></ul></p></div>
+        <p><strong>Name: </strong>Coupled-Edge-Minor Three-Core of Order 1162</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C\subseteq Q_{12}$ be the certified 289-concept core and $Y_0\subseteq Q_{14}$ the certified 870-concept rooted factor. In binary integer notation put $v=1024$, $Y=Y_0\cup\{v\}$, $C'=2^{14}C$, $K'=2^{14}\{0,2,4,6\}$, $B=C'\cup(v+K')$, and $X=Y\cup B$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|X|=1162$, isometric dimension $26$, VC dimension $4$; its canonical edge pieces have orders $871$ and $293$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$X$ is an ample two-connected pc-minimal obstruction to dismantlable ampleness, has minimum degree three, and is its own graph three-core. For the factor-exclusive restriction $\rho_0^0$, both resulting edge pieces have zero relative peelability to the common edge, yet their union is peelable because the changed piece peels to one endpoint and the unchanged piece has the complementary endpoint profile. Thus edge-minor compatibility cannot be replaced by positivity of the changed factor alone.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-coupled-edge-minors-1162</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_coupled_edge_minors.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

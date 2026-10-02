@@ -1,0 +1,22 @@
+{
+  "id": 382,
+  "short_name": "degree_two_corner_opposite_support_bound",
+  "name": "Opposite Sections of a Degree-Two Corner Obey a Sharp Support Bound",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $A,B,C\\subseteq\\{0,1\\}^n$ contain zero, with $n\\le7$, and suppose $Y=\\{(0,00)\\}\\cup(A\\times\\{01\\})\\cup(B\\times\\{10\\})\\cup(C\\times\\{11\\})$ is ample. Put $K=A\\cap C$, $\\mathcal G=\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(K)$, and let $\\mathcal L$ be the supports containing no member of $\\mathcal G$. Then $|B\\setminus C|\\le|\\mathcal L\\setminus\\operatorname{Sh}(A)|$. If $(0,00)$ is the unique corner of $Y$, the right side is at least nine. The same conclusions hold after exchanging $A$ and $B$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/stalled_square_support_pair"
+  ],
+  "proof": "Ample section-reduction identities give $\\operatorname{Sh}(A\\cap C)=\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(C)$ and the analogous identity for $B\\cap C$. The four-section criterion gives $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(B)\\subseteq\\operatorname{Sh}(C)$, so the down-set $\\operatorname{Sh}(B)$ avoids every member of $\\mathcal G$ and lies in $\\mathcal L$. Its part outside $\\operatorname{Sh}(C)$ injects into $\\mathcal L\\setminus\\operatorname{Sh}(A)$ and has cardinality $|B\\setminus C|$. If that bound were at most eight, a nonempty $B\\setminus C$ would have a relative corner outside $C$; if $B\\subseteq C$ and $|B|>1$, a prescribed-endpoint peeling supplies a nonzero corner; and if $B=\\{0\\}$, its displayed square vertex is a corner. Each case gives a second corner of $Y$, proving the lower bound nine under uniqueness.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-opposite-support-bound"
+}

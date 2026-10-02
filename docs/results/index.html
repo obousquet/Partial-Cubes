@@ -6308,6 +6308,109 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-377" style="position:relative;">
+
+        <h3><a href="results/relative_small_support_peeling.html" class="table-title-link">Small Shadow Gaps Admit Exact Relative Peelings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small Shadow Gaps Admit Exact Relative Peelings</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne B\subseteq A\subseteq Q_F$ be ample, and suppose every support in $\operatorname{Sh}(A)\setminus\operatorname{Sh}(B)$ has size at most two. Then $A$ reduces to $B$ by deleting corners of degree at most two while retaining every concept of $B$. Equivalently, starting from $B$ and repeatedly adding an outside concept with the largest current number of neighbors always preserves ampleness and reaches $A$, acquiring a support of size at most two at each step. For every $T\subseteq B$, including $T=\varnothing$, $A$ reduces to $T$ by corner deletions exactly when $B$ does. Hence $A$ is dismantlable ample exactly when $B$ is, and $A$ peels to any $b\in B$ exactly when $B$ does. If $A$ and $B$ have the same active coordinates, every relative deletion has degree exactly two.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cube of $A$ of dimension at least three lies in $B$: extend it to a maximal cube, use connectedness of the corresponding reduction to see that it is the unique cube of its support, and then use ampleness of $B$ to locate that same cube there. The same uniqueness holds for maximal squares. For an ample intermediate $B\subseteq S\subsetneq A$, choose an outside concept $x$ with the most neighbors in $S$. Its punctured incident cube lies in $S$, so it has at most two directions. With two directions, maximal-square uniqueness shows the pair is not already shattered and the one-concept criterion preserves ampleness. With one direction, maximality makes $S$ locally convex and hence convex; that direction is constant on $S$, so it is again newly acquired. Iteration gives the relative order. Rank-at-most-two extension invariance preserves reduction to every retained target $T$. Equal active coordinate sets rule out a one-direction step.</p></div>
+<strong>References:</strong><div class="text-field"><p>[@ChalopiChepoiMoran22]</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-relative-small-supports</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-378" style="position:relative;">
+
+        <h3><a href="results/square_attachment_interval_poset.html" class="table-title-link">Square Attachments Have a Canonical Interval Poset</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square Attachments Have a Canonical Interval Poset</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne B\subseteq A$ be ample with the same active coordinates and with every support in $\operatorname{Sh}(A)\setminus\operatorname{Sh}(B)$ of size at most two. For $D=A\setminus B$, there is a unique acyclic orientation of all edges incident with $D$ such that boundary edges point toward $B$ and every vertex of $D$ has exactly two outgoing edges. Reachability defines a poset $P_{A,B}$ whose linear extensions are exactly the relative corner-deletion orders from $A$ to $B$. An intermediate $B\subseteq C\subseteq A$ is ample exactly when $A\setminus C$ is an order ideal of $P_{A,B}$; hence the ample intermediate families form a distributive lattice under union and intersection. Sending each $x\in D$ to the pair of its outgoing coordinate directions is a bijection from $D$ onto $\operatorname{Sh}(A)\setminus\operatorname{Sh}(B)$, independent of the deletion order.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A relative degree-two peeling orients each edge toward its later endpoint and supplies one admissible orientation. Boundary directions and the required outdegree fix the divergence at every internal vertex; the disagreement graph of two candidate orientations would be balanced and nonempty, hence contain a directed cycle, contradicting acyclicity. Every relative peeling induces this unique orientation. Conversely, linear extensions differ by swaps of consecutive incomparable vertices, which are nonadjacent corner deletions and therefore commute. An ample intermediate concatenates relative peelings above and below it, making its removed set an order ideal; every ideal is an initial segment of a linear extension and hence leaves an ample family. Each deletion removes precisely the pair of its two outgoing directions, so these distinct pairs exhaust the shadow difference.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-square-interval-poset</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-379" style="position:relative;">
+
+        <h3><a href="results/square_attachment_data_recovery.html" class="table-title-link">Finite Square-Attachment Data Construct and Recover Every Three-Core Extension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Square-Attachment Data Construct and Recover Every Three-Core Extension</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a nonempty ample $K\subseteq Q_F$. Square-attachment data consist of a finite symbol set $D$ and, for each $x\in D$, a coordinate pair $I_x=\{p_x,q_x\}$ and three targets $u_x,v_x,w_x\in K\mathbin{\dot\cup}D$. They are admissible when the target-dependency digraph is acyclic, the pairs $I_x$ are distinct and absent from $\operatorname{Sh}(K)$, and the recursion $\phi(k)=k$, $\phi(x)=\phi(u_x)^{\{p_x\}}$ is injective and satisfies $\phi(v_x)=\phi(x)^{\{q_x\}}$ and $\phi(w_x)=\phi(x)^{I_x}$. Admissible data produce an ample $A=K\cup\phi(D)$ on the same active coordinates with $\operatorname{Sh}(A)=\operatorname{Sh}(K)\mathbin{\dot\cup}\{I_x:x\in D\}$. Every target-first order constructs $A$ by ample square additions. Conversely every ample $A\supseteq K$ on the same active coordinates with no new shattered support of size at least three has unique such data up to renaming $D$. Dependency reachability is the canonical interval poset and $|D|\le\binom{|F|}{2}-|\{I\in\operatorname{Sh}(K):|I|=2\}|$. If $K$ is a minimum-degree-three ample pc-minimal obstruction to dismantlable ampleness, all outputs are such obstructions with three-core $K$; every ample obstruction is recovered uniquely from its canonical three-core this way.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In any target-first order, the three targets form the punctured $I_x$-square at the new word. Distinctness keeps $I_x$ unshattered, and an outside neighbor would force a second full $I_x$-square and contradict that fact. Thus the new word has exactly the prescribed two incident directions; the one-concept extension test preserves ampleness and adds precisely $I_x$. Conversely, orient an upper family toward $K$ by its canonical interval poset. For each outside concept, its two outgoing edge targets and the opposite square vertex supply $u_x,v_x,w_x$; the recovered arrows point forward in every relative peeling and the support pairs are distinct and absent from the base shadow. The unique orientation recovers the data up to symbol names, and diagonal-target dependencies do not enlarge its reachability order. The pair count gives the bound. The canonical three-core theorem supplies obstruction preservation and exhaustive recovery in the final clause.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-square-attachment-data</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-380" style="position:relative;">
+
+        <h3><a href="results/rooted_endpoint_operation_calculus.html" class="table-title-link">Peripheral Expansions, Products, and Small Additions Have Exact Endpoint Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Peripheral Expansions, Products, and Small Additions Have Exact Endpoint Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty ample families the following endpoint laws hold. If $S\subseteq B$ and $Y=(B\times\{0\})\cup(S\times\{1\})$, then $Y$ peels to $(b,0)$ exactly when $B$ peels to $b$ and $S$ is dismantlable ample, while $Y$ peels to $(s,1)$ exactly when both $B$ and $S$ peel to $s$. A product $A\square B$ peels to $(a,b)$ exactly when its factors peel to $a$ and $b$. If $H=S\cup\{c\}$ is an ample one-concept extension whose acquired support has size at most two, then for every $r\in S$, $H$ peels to $r$ exactly when $S$ does. Consequently an ample addition that newly enables peeling to an old concept must acquire a support of size at least three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Root-preserving contraction and face restriction prove the necessary expansion conditions. For a lower endpoint, peel the upper site first and then the base; for an upper endpoint, peel the site to its root, peel the base while retaining the matching lower vertex, and remove that lower vertex last. Product face restrictions prove necessity, while the product peeling construction with factor orders ending at the chosen roots proves sufficiency. The one-concept assertion is exactly rank-at-most-two extension invariance with the singleton target $\{r\}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-operations</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-381" style="position:relative;">
+
+        <h3><a href="results/degree_two_corner_section_shadow_criterion.html" class="table-title-link">Four Shadow Conditions Characterize a Marked Degree-Two Corner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four Shadow Conditions Characterize a Marked Degree-Two Corner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $A,D,C\subseteq Q_F$ contain $0$, put $U=A\cup D\cup C$, and set $Y=\{(0,00)\}\cup(A\times\{01\})\cup(D\times\{10\})\cup(C\times\{11\})$. Then $Y$ is ample exactly when (i) $\operatorname{Sh}(U)=\operatorname{Sh}(A)\cup\operatorname{Sh}(D)\cup\operatorname{Sh}(C)$, (ii) $\operatorname{Sh}(A\cup C)=\operatorname{Sh}(A)\cup\operatorname{Sh}(C)$, (iii) $\operatorname{Sh}(D\cup C)=\operatorname{Sh}(D)\cup\operatorname{Sh}(C)$, and (iv) $\operatorname{Sh}(A)\cap\operatorname{Sh}(D)\subseteq\operatorname{Sh}(C)$. Every ample family with a marked degree-two corner has this presentation after translating that corner to zero, uniquely up to exchanging its two directions and the side sections $A,D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Sorting shattered supports by the two new coordinates gives $|\operatorname{Sh}(Y)|=|\operatorname{Sh}(U)|+|\operatorname{Sh}(A)\cap\operatorname{Sh}(D\cup C)|+|\operatorname{Sh}(D)\cap\operatorname{Sh}(A\cup C)|+1$. If $Y$ is ample, its two adjacent coordinate faces force conditions (ii) and (iii). Subtracting $|Y|$ then expresses the shadow excess as the sum of two nonnegative terms: the excess of $\operatorname{Sh}(U)$ over the union of the three shadows, and $|(\operatorname{Sh}(A)\cap\operatorname{Sh}(D))\setminus\operatorname{Sh}(C)|$. Equality forces (i) and (iv), and conversely the four conditions make the excess zero. For recovery, fixing both corner directions at the corner value leaves a connected ample face in which the marked vertex is isolated, so that face is a singleton; the other three sections are then uniquely determined.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-degree-two-section-shadows</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-382" style="position:relative;">
+
+        <h3><a href="results/degree_two_corner_opposite_support_bound.html" class="table-title-link">Opposite Sections of a Degree-Two Corner Obey a Sharp Support Bound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Sections of a Degree-Two Corner Obey a Sharp Support Bound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A,B,C\subseteq\{0,1\}^n$ contain zero, with $n\le7$, and suppose $Y=\{(0,00)\}\cup(A\times\{01\})\cup(B\times\{10\})\cup(C\times\{11\})$ is ample. Put $K=A\cap C$, $\mathcal G=\operatorname{Sh}(A)\setminus\operatorname{Sh}(K)$, and let $\mathcal L$ be the supports containing no member of $\mathcal G$. Then $|B\setminus C|\le|\mathcal L\setminus\operatorname{Sh}(A)|$. If $(0,00)$ is the unique corner of $Y$, the right side is at least nine. The same conclusions hold after exchanging $A$ and $B$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Ample section-reduction identities give $\operatorname{Sh}(A\cap C)=\operatorname{Sh}(A)\cap\operatorname{Sh}(C)$ and the analogous identity for $B\cap C$. The four-section criterion gives $\operatorname{Sh}(A)\cap\operatorname{Sh}(B)\subseteq\operatorname{Sh}(C)$, so the down-set $\operatorname{Sh}(B)$ avoids every member of $\mathcal G$ and lies in $\mathcal L$. Its part outside $\operatorname{Sh}(C)$ injects into $\mathcal L\setminus\operatorname{Sh}(A)$ and has cardinality $|B\setminus C|$. If that bound were at most eight, a nonempty $B\setminus C$ would have a relative corner outside $C$; if $B\subseteq C$ and $|B|>1$, a prescribed-endpoint peeling supplies a nonzero corner; and if $B=\{0\}$, its displayed square vertex is a corner. Each case gives a second corner of $Y$, proving the lower bound nine under uniqueness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-opposite-support-bound</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/stalled_square_support_pair.html">A Stalled Pair Excluded from Unique-Corner Square Completions</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

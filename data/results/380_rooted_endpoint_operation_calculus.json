@@ -1,0 +1,19 @@
+{
+  "id": 380,
+  "short_name": "rooted_endpoint_operation_calculus",
+  "name": "Peripheral Expansions, Products, and Small Additions Have Exact Endpoint Laws",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/cartesian_product",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For nonempty ample families the following endpoint laws hold. If $S\\subseteq B$ and $Y=(B\\times\\{0\\})\\cup(S\\times\\{1\\})$, then $Y$ peels to $(b,0)$ exactly when $B$ peels to $b$ and $S$ is dismantlable ample, while $Y$ peels to $(s,1)$ exactly when both $B$ and $S$ peel to $s$. A product $A\\square B$ peels to $(a,b)$ exactly when its factors peel to $a$ and $b$. If $H=S\\cup\\{c\\}$ is an ample one-concept extension whose acquired support has size at most two, then for every $r\\in S$, $H$ peels to $r$ exactly when $S$ does. Consequently an ample addition that newly enables peeling to an old concept must acquire a support of size at least three.",
+  "status": "established",
+  "proof": "Root-preserving contraction and face restriction prove the necessary expansion conditions. For a lower endpoint, peel the upper site first and then the base; for an upper endpoint, peel the site to its root, peel the base while retaining the matching lower vertex, and remove that lower vertex last. Product face restrictions prove necessity, while the product peeling construction with factor orders ending at the chosen roots proves sufficiency. The one-concept assertion is exactly rank-at-most-two extension invariance with the singleton target $\\{r\\}$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-operations"
+}

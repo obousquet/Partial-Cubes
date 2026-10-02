@@ -2309,6 +2309,70 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-110" style="position:relative;">
+
+        <h3><a href="examples/coupled_edge_minor_three_core.html" class="table-title-link">Coupled-Edge-Minor Three-Core of Order 1162</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coupled-Edge-Minor Three-Core of Order 1162</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C\subseteq Q_{12}$ be the certified 289-concept core and $Y_0\subseteq Q_{14}$ the certified 870-concept rooted factor. In binary integer notation put $v=1024$, $Y=Y_0\cup\{v\}$, $C'=2^{14}C$, $K'=2^{14}\{0,2,4,6\}$, $B=C'\cup(v+K')$, and $X=Y\cup B$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|X|=1162$, isometric dimension $26$, VC dimension $4$; its canonical edge pieces have orders $871$ and $293$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$X$ is an ample two-connected pc-minimal obstruction to dismantlable ampleness, has minimum degree three, and is its own graph three-core. For the factor-exclusive restriction $\rho_0^0$, both resulting edge pieces have zero relative peelability to the common edge, yet their union is peelable because the changed piece peels to one endpoint and the unchanged piece has the complementary endpoint profile. Thus edge-minor compatibility cannot be replaced by positivity of the changed factor alone.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-coupled-edge-minors-1162</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_coupled_edge_minors.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-111" style="position:relative;">
+
+        <h3><a href="examples/cut_vertex_obstruction_587.html" class="table-title-link">Gated Two-Block Cut-Vertex Obstruction of Order 587</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Gated Two-Block Cut-Vertex Obstruction of Order 587</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Translate the certified 294-concept peelable family $P$ by its unique corner so that this corner is $0$, and form the one-point union $X=(P\times\{0\}^{12})\cup(\{0\}^{12}\times P)$ on two disjoint twelve-coordinate blocks.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|X|=587$, isometric dimension $24$, VC dimension $3$; deleting its unique cut vertex leaves two components of order $293$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$X$ is ample, cornerless, and a pc-minimal obstruction to dismantlable ampleness. Each copy of $P$ is gated in $X$, with the common root as the gate for the other copy. Hence dismantlable ample families are not closed under vertex gluing even when both pieces are gated and peelable.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-cut-vertex-587</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_cut_vertex_obstruction.py; PartialCubes:papers/dismantlable-ample/damp_cut_vertex_587_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-112" style="position:relative;">
+
+        <h3><a href="examples/noncorner_rooted_factor_chain.html" class="table-title-link">A Minimal Rooted Failure Whose Root Is Not a Corner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Minimal Rooted Failure Whose Root Is Not a Corner</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $G$ be the fixed cornerless 291-concept family stored as <code>base</code> in <code>damp_fixed_291_repair_creation.json</code>, put $H=G\cup\{91\}$, and distinguish the root $a=29$. Let $B=H\setminus\{61,125,93\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$H$ has 292 concepts and VC dimension four; $B$ has 289 concepts and VC dimension three. Their self-amalgams have orders 583 and 577 in dimension 24.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$H$ is ample and peelable, its root is not a corner, it cannot peel to that root, and all 24 elementary root-preserving pc-minors peel to the root image. The same rooted minimality survives the displayed corner deletions down to $B$, whose only corner is its root. The self-amalgams $H\vee H$ and $B\vee B$ are ample cut-vertex pc-minimal obstructions, joined by six obstruction-preserving corner deletions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-noncorner-rooted-factor</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_noncorner_rooted_obstruction.py; PartialCubes:papers/dismantlable-ample/damp_noncorner_rooted_obstruction_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-113" style="position:relative;">
+
+        <h3><a href="examples/stalled_square_support_pair.html" class="table-title-link">A Stalled Pair Excluded from Unique-Corner Square Completions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Stalled Pair Excluded from Unique-Corner Square Completions</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>In six-coordinate binary integer notation, let $K=\{0,1,3,4,5,8,9,10,11,12,13,20,21,28,29,40,42,44,46,52,53,58,60,62\}$ and $A=K\cup\{16,17,32,33,34,35,36,38,41,43,48,49,50,54\}$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|K|=24$ and $|A|=38$; the shattered-support counts by size are $(1,6,15,2)$ for $K$ and $(1,6,15,16)$ for $A$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$A$ and $K$ are ample. Every corner of $A$ lies in $K$, so a relative peeling of $A$ to $K$ cannot start. The fourteen supports in $\operatorname{Sh}(A)\setminus\operatorname{Sh}(K)$ meet every four-support, and the support complement allowed by the opposite-section bound is exactly $\{7,19,38,50\}$, of size four. Therefore $(A,K)$ cannot occur as $(A,A\cap C)$ in an ample square presentation whose marked degree-two corner is unique.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-square-thirty-eight-pair</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/scripts/verify_square_support_bound.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
