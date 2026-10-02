@@ -11498,6 +11498,44 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-684" style="position:relative;">
+
+        <h3><a href="results/cornerless_recovery_requires_maximal_layer_set.html" class="table-title-link">Cornerless Recovery Requires a Maximal Layer Set</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cornerless Recovery Requires a Maximal Layer Set</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If a nonempty layer set $E$ satisfies the singleton recovery criterion for an ample family $X$ and its recovered seed $X^E$ is cornerless, then no proper superset of $E$ also satisfies that criterion. If $X$ is an irredundantly embedded ample forbidden pc-minor and $E$ is maximal among its successful layer sets, then $X^E$ has no nonempty successful layer set and no thin coordinate; it is a forbidden pc-minor with at least two one-concept repairs in the dismantlable ample class, but it need not be cornerless. Consequently, $X$ has a successful recovery with cornerless seed exactly when $E_{\max}(X)$ exists and $X^{E_{\max}(X)}$ is cornerless.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Suppose a proper successful superset $D$ existed. Recover the signed-facet presentation over $D$ and strongly project its rows along $E$. Every row owning a facet in $D\setminus E$ survives as a product of a singly punctured cube with a cube, and at least one survives because every signed facet outside $E$ has an owner. A corner of such a row lifts to a corner of $X^E$, contradicting cornerlessness. If instead $E$ is maximal for a forbidden obstruction, any successful layer set in $X^E$ would enlarge $E$ by nested recovery. Obstruction descent makes $X^E$ forbidden, while the two distinct owners of either sign at any layer coordinate give two repairs. A thin seed coordinate would itself be a successful singleton. Union closure makes the maximal successful set unique and gives the final equivalence.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-cornerless-recovery-maximal</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximal_recovery_with_cornered_seed.html">Hall Assembly with a Cornered Maximal Recovered Seed</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>Maximality of the layer set eliminates further recoverable layers, but it does not force the recovered obstruction itself to be cornerless.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-685" style="position:relative;">
+
+        <h3><a href="results/seed_corner_deletions_in_signed_facet_assemblies.html" class="table-title-link">Seed-Corner Deletions in Signed-Facet Assemblies</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Seed-Corner Deletions in Signed-Facet Assemblies</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be an ample forbidden pc-minor, let $\mathcal A$ be compatible resolving tips with distinct acquired supports, and let a surjection $\lambda:E\times\{0,1\}\to\mathcal A$ assign opposite facets of every nonempty layer coordinate set $E$ to distinct owners. Put $R_a=\bigcup_{\lambda(e,i)=a}\{t\in Q_E:t_e=i\}$ and $X=(S\times Q_E)\cup\bigcup_{a\in\mathcal A}(\{a\}\times R_a)$. Then $X$ is an ample forbidden pc-minor. For a seed corner $s$, put $G_s=S\setminus\{s\}$ and let $\mathcal A_s$ consist of tips $a$ that are nonadjacent to $s$ and satisfy $G_s\cup\{a\}\in\mathsf{Damp}$. Every obstruction-preserving corner deletion of $X$ deletes a seed concept $(s,t)$, and it does so exactly when $G_s$ is a forbidden pc-minor and $\lambda(e,t_e)\in\mathcal A_s$ for every $e\in E$. For fixed $s$, the allowed layer words form the face $D_s=\prod_{e\in E}\{i:\lambda(e,i)\in\mathcal A_s\}$. Hence $X$ is corner-descent terminal exactly when, for every corner $s$ with forbidden $G_s$, some coordinate $e$ has neither owner in $\mathcal A_s$. In particular, a corner-descent-terminal seed produces terminal signed-facet assemblies even when the seed has corners.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The common-seed theorem gives ampleness and forbiddenness. A seed occurrence $(s,t)$ is a corner precisely when $s$ is a seed corner and no repair tip adjacent to $s$ occurs at $t$. Occurrence-row peelings avoid such a deleted concept and remain valid under every elementary pc-minor. If deleting $(s,t)$ preserves forbiddenness, strong projection gives forbidden $G_s$, and restricting to each selected facet then projecting the remaining layers gives the peelable repair $G_s\cup\{\lambda(e,t_e)\}$; this proves necessity. Conversely, the stated repair conditions make $(s,t)$ a corner, leave the deletion nonpeelable through its reduction $G_s$, and supply explicit row and product peelings for every old-coordinate minor, layer contraction, and layer restriction. Thus all proper elementary minors peel. An occurrence-row corner belongs to one uniquely owned facet, so its deletion cannot preserve forbiddenness. The independent coordinate choices give the product face $D_s$, whose emptiness is exactly the opposite-owner terminality test.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-seed-corner-facet-deletion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximal_recovery_with_cornered_seed.html">Hall Assembly with a Cornered Maximal Recovered Seed</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is a complete terminality test within a given signed-facet assembly once the seed-deletion and inherited-repair data are known. It is not an intrinsic characterization of which seeds and repair sets are admissible. The fixed certificate checks the corner formula on 602- and 1,202-concept Hall assemblies and gives peelings for all 78 elementary images of two positive deletions.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

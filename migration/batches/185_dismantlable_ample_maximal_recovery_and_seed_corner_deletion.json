@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "batch_id": "185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record maximality of every cornerless recovered layer set, the exact obstruction-preserving seed-corner deletion and terminality criterion for signed-facet assemblies, and the Hall assembly whose unique maximal recovered seed remains cornered.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-cornerless-recovery-maximal",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-seed-corner-facet-deletion",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-cornered-maximal-hall-seed",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_seed_corner_facet_deletion.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "seed-corner-deletion-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_seed_corner_facet_deletion.py,damp_seed_corner_facet_deletion_verification.json,verify_damp_facet_partition_repairs.py,verify_damp_terminal_clause_recovery.py,damp_cornered_hall_repair_signatures.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "7a333881c0335ce20ee0708e8896dcc42539a9f730825c31aeb7b82e5f674e76",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The layer-set lattice alone does not decide whether its canonical seed is cornerless. These results isolate the maximality consequence, give a complete deletion test when a signed-facet presentation is available, and preserve the first explicit cornered-seed counterexample.",
+    "outcome": "The corollary, theorem, proof, and Hall remark match the preserved manuscript. The database records maximality and the no-thin-coordinate consequence, the face of allowable seed-corner occurrences, the opposite-owner terminality test, its exact scope, and the certified 602-concept counterexample.",
+    "claim_block_sha256": {
+      "cor:damp-cornerless-recovery-maximal": "2e361571af00220f0ce7e50a288cc13571f31edd86741d81cd5bc0b1ba5a297e",
+      "thm:damp-seed-corner-facet-deletion": "6f4e89fcffbb2d995abcd495e6d02f57ebae37e1240c56436b811886e21f049c",
+      "rem:damp-cornered-maximal-hall-seed": "80233ce64ca70f7977fb55882dd61bccef7e4cb838c7466329cf1163e87983b4"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/verify_damp_seed_corner_facet_deletion.py",
+      "sha256": "b09b229b2467ce97bc9fcd07b0a111a4564ba0ae24cfce72f3a6534cdb028dc9"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/damp_seed_corner_facet_deletion_verification.json",
+      "sha256": "2c9e7efe3026219cf7a73ca1bf9c77b5305435256e4e57716517de0833b5a944"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/source_damp_seed_corner_facet_deletion_verification.json",
+      "sha256": "2c9e7efe3026219cf7a73ca1bf9c77b5305435256e4e57716517de0833b5a944"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/verify_damp_facet_partition_repairs.py",
+      "sha256": "51501e47b1b4b37f8ba878ac6ab2bb1af57588ea960008084f60f2dd70200dfc"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/verify_damp_terminal_clause_recovery.py",
+      "sha256": "4c757bb193aa7a605bd6654e105b4befbd677f4bb0bb42830aecd68c1867d5a8"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/damp_cornered_hall_repair_signatures.json",
+      "sha256": "d8690c1a2e136c580080a2aa6e29fd450143d0c614c890a0095317d1ad5e7ed8"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/computations/hall_corner_exchange/source_H.json",
+      "sha256": "f21c8d7a76371d67c230ac0049c66949e9a26dc6dca4beed6fdbf1c139400ca1"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/source_packet_manifest.json",
+      "sha256": "1821b85de216250e81bbc6fa2c591c58cb89df18fd420ed5327c60188c2e2b1e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the maximality implication, the exact deletion and terminality tests, concise proofs, the named Hall witness, and the finite verification scope. LaTeX retains the expanded row-peeling proof, broader discussion of intrinsic seed admissibility, and the complete four-seed repair diagnostic. Exact verifier inputs and all 78 positive elementary-minor peelings remain byte-archived.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both proofs and the Hall remark. The tracked six-file computation packet at commit f304961 is path-hashed and byte-archived; the verifier reproduces its tracked 505,092-byte report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/190_hall_maximal_recovery_with_cornered_seed.json",
+      "sha256": "c169abbdfac8493eb3435592000ce35637cdce4d50d1a278195612095f128dc8"
+    },
+    {
+      "path": "data/results/684_cornerless_recovery_requires_maximal_layer_set.json",
+      "sha256": "2af18f9e33234d6474351951534776b4da9bf3508cd65a2ffeaa5f5aa1697e93"
+    },
+    {
+      "path": "data/results/685_seed_corner_deletions_in_signed_facet_assemblies.json",
+      "sha256": "0cb2be5db3c5b1dc111d343eb6e5a72754b7d277215d430ca159d44391f9127f"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "2bd67c1374643e97ee1fe7981ce40fc6d05a64df7e4a85e8e74357141ca09bec"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "259ac6cc221203d4feb7968bf4aab69f2f86d9648b9442fe34e25a3d550bbbd6"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2085 records.",
+    "website": "Normalized 2101 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 781 to 783 of 1143 and dismantlable-ample coverage from 345 to 347 of 683. The named Hall remark is preserved as an example but is outside the theorem-label coverage denominator.",
+    "certificates": "The replay checks exact corner sets on the 602- and 1,202-concept assemblies, records peelings for all 39 elementary images after each of two positive seed-corner deletions, exhibits Hall restrictions after both forbidden deletions of the terminal nested seed, and exhausts all eight owner-eligibility subsets of a fixed three-owner partition.",
+    "source_integrity": "Both proof blocks and the Hall remark match supplemental snapshot 2026-10-02-b002, every computation input matches its archived hash, and the regenerated report is byte-identical to its tracked source report."
+  },
+  "deferred": [
+    "The refreshed audit has 360 uncovered database-owned labels: 336 in dismantlable-ample and 24 in ample-corners.",
+    "The next block records the two-connected terminal tower construction whose unique largest recovered seed retains a cut vertex and corners.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

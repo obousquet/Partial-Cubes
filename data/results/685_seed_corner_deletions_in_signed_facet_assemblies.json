@@ -1,0 +1,24 @@
+{
+  "id": 685,
+  "short_name": "seed_corner_deletions_in_signed_facet_assemblies",
+  "name": "Seed-Corner Deletions in Signed-Facet Assemblies",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be an ample forbidden pc-minor, let $\\mathcal A$ be compatible resolving tips with distinct acquired supports, and let a surjection $\\lambda:E\\times\\{0,1\\}\\to\\mathcal A$ assign opposite facets of every nonempty layer coordinate set $E$ to distinct owners. Put $R_a=\\bigcup_{\\lambda(e,i)=a}\\{t\\in Q_E:t_e=i\\}$ and $X=(S\\times Q_E)\\cup\\bigcup_{a\\in\\mathcal A}(\\{a\\}\\times R_a)$. Then $X$ is an ample forbidden pc-minor. For a seed corner $s$, put $G_s=S\\setminus\\{s\\}$ and let $\\mathcal A_s$ consist of tips $a$ that are nonadjacent to $s$ and satisfy $G_s\\cup\\{a\\}\\in\\mathsf{Damp}$. Every obstruction-preserving corner deletion of $X$ deletes a seed concept $(s,t)$, and it does so exactly when $G_s$ is a forbidden pc-minor and $\\lambda(e,t_e)\\in\\mathcal A_s$ for every $e\\in E$. For fixed $s$, the allowed layer words form the face $D_s=\\prod_{e\\in E}\\{i:\\lambda(e,i)\\in\\mathcal A_s\\}$. Hence $X$ is corner-descent terminal exactly when, for every corner $s$ with forbidden $G_s$, some coordinate $e$ has neither owner in $\\mathcal A_s$. In particular, a corner-descent-terminal seed produces terminal signed-facet assemblies even when the seed has corners.",
+  "status": "established",
+  "proof": "The common-seed theorem gives ampleness and forbiddenness. A seed occurrence $(s,t)$ is a corner precisely when $s$ is a seed corner and no repair tip adjacent to $s$ occurs at $t$. Occurrence-row peelings avoid such a deleted concept and remain valid under every elementary pc-minor. If deleting $(s,t)$ preserves forbiddenness, strong projection gives forbidden $G_s$, and restricting to each selected facet then projecting the remaining layers gives the peelable repair $G_s\\cup\\{\\lambda(e,t_e)\\}$; this proves necessity. Conversely, the stated repair conditions make $(s,t)$ a corner, leave the deletion nonpeelable through its reduction $G_s$, and supply explicit row and product peelings for every old-coordinate minor, layer contraction, and layer restriction. Thus all proper elementary minors peel. An occurrence-row corner belongs to one uniquely owned facet, so its deletion cannot preserve forbiddenness. The independent coordinate choices give the product face $D_s$, whose emptiness is exactly the opposite-owner terminality test.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-seed-corner-facet-deletion",
+  "witness_ids": [
+    "#examples/hall_maximal_recovery_with_cornered_seed"
+  ],
+  "comments": "This is a complete terminality test within a given signed-facet assembly once the seed-deletion and inherited-repair data are known. It is not an intrinsic characterization of which seeds and repair sets are admissible. The fixed certificate checks the corner formula on 602- and 1,202-concept Hall assemblies and gives peelings for all 78 elementary images of two positive deletions."
+}

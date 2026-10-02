@@ -1,0 +1,23 @@
+{
+  "id": 684,
+  "short_name": "cornerless_recovery_requires_maximal_layer_set",
+  "name": "Cornerless Recovery Requires a Maximal Layer Set",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/projection"
+  ],
+  "result_type": "implication",
+  "statement": "If a nonempty layer set $E$ satisfies the singleton recovery criterion for an ample family $X$ and its recovered seed $X^E$ is cornerless, then no proper superset of $E$ also satisfies that criterion. If $X$ is an irredundantly embedded ample forbidden pc-minor and $E$ is maximal among its successful layer sets, then $X^E$ has no nonempty successful layer set and no thin coordinate; it is a forbidden pc-minor with at least two one-concept repairs in the dismantlable ample class, but it need not be cornerless. Consequently, $X$ has a successful recovery with cornerless seed exactly when $E_{\\max}(X)$ exists and $X^{E_{\\max}(X)}$ is cornerless.",
+  "status": "established",
+  "proof": "Suppose a proper successful superset $D$ existed. Recover the signed-facet presentation over $D$ and strongly project its rows along $E$. Every row owning a facet in $D\\setminus E$ survives as a product of a singly punctured cube with a cube, and at least one survives because every signed facet outside $E$ has an owner. A corner of such a row lifts to a corner of $X^E$, contradicting cornerlessness. If instead $E$ is maximal for a forbidden obstruction, any successful layer set in $X^E$ would enlarge $E$ by nested recovery. Obstruction descent makes $X^E$ forbidden, while the two distinct owners of either sign at any layer coordinate give two repairs. A thin seed coordinate would itself be a successful singleton. Union closure makes the maximal successful set unique and gives the final equivalence.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-cornerless-recovery-maximal",
+  "witness_ids": [
+    "#examples/hall_maximal_recovery_with_cornered_seed"
+  ],
+  "comments": "Maximality of the layer set eliminates further recoverable layers, but it does not force the recovered obstruction itself to be cornerless."
+}
