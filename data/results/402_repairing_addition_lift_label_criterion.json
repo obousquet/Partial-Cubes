@@ -1,0 +1,18 @@
+{
+  "id": 402,
+  "short_name": "repairing_addition_lift_label_criterion",
+  "name": "Component-Label Criterion for Lifting a Repairing Addition",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\varnothing\\ne D\\subseteq C$ be ample, let $K_1,\\ldots,K_k$ be the components of $C\\setminus D$, and suppose $A=C\\cup\\{d\\}$ is ample. Lift each $K_i$ to layer $t_i$, double $D$, and lift $d$ to layer $b$. If $I(d)$ indexes the components containing a neighbour of $d$, the lift is ample exactly when $t_i=b$ for all $i\\in I(d)$. Then the lifted repair is a corner with the same acquired support as $d$ over $C$. If additionally $A,D$ are corner-peelable but the ample lift is not, some untouched component $j\\notin I(d)$ has label $1-b$. Thus a repair meeting every component cannot yield an ample forbidden lift when the repaired contraction and reduction are positive.",
+  "status": "established",
+  "proof": "After adjoining $d$, it merges exactly the touched components of $C\\setminus D$. The component-sign parametrization of ample expansions forces, and is forced by, equality of their lift labels with the label of $d$. All old neighbours of the lifted repair then remain in its layer or lie over the doubled reduction, so its incident and acquired supports are unchanged. If no untouched opposite-layer component exists, the lift is the peripheral expansion $(A\\times\\{b\\})\\cup(D\\times\\{1-b\\})$, which is corner-peelable when both $A$ and $D$ are.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-repair-lift-labels"
+}

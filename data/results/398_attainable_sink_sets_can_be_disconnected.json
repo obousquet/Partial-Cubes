@@ -1,0 +1,24 @@
+{
+  "id": 398,
+  "short_name": "attainable_sink_sets_can_be_disconnected",
+  "name": "Attainable Sink Sets Can Be Disconnected",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/attainable_sink_set"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "construction",
+  "statement": "There is a 658-concept corner-peelable ample family $H$ of isometric dimension $25$ for which the graph induced by $\\operatorname{Sink}(H)$ is disconnected, and therefore $\\operatorname{Sink}(H)$ is not ample. For every $m\\ge1$, a corner-peelable ample family exists whose attainable-sink graph has at least $2^m$ connected components. Indeed $\\operatorname{Sink}(A\\times B)=\\operatorname{Sink}(A)\\times\\operatorname{Sink}(B)$ for positive ample families $A,B$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/disconnected_attainable_sink_family_658"
+  ],
+  "proof": "Glue two oppositely marked copies of the 330-concept edge piece. Their exact profiles supply compatible corner orders ending in opposite private sides, while the edge-context algebra excludes both common-edge vertices as attainable sinks; no edge joins the two private sides. Product peelings restrict to root-ending orders in both factors, and conversely fibrewise interleaving of such orders ends at any prescribed pair of attainable sinks. Hence sink sets and their component counts multiply under Cartesian products.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-disconnected-attainable-sinks"
+}

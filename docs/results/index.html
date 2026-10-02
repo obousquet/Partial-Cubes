@@ -6660,6 +6660,155 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-398" style="position:relative;">
+
+        <h3><a href="results/attainable_sink_sets_can_be_disconnected.html" class="table-title-link">Attainable Sink Sets Can Be Disconnected</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Attainable Sink Sets Can Be Disconnected</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/attainable_sink_set.html">Attainable Sink Set</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 658-concept corner-peelable ample family $H$ of isometric dimension $25$ for which the graph induced by $\operatorname{Sink}(H)$ is disconnected, and therefore $\operatorname{Sink}(H)$ is not ample. For every $m\ge1$, a corner-peelable ample family exists whose attainable-sink graph has at least $2^m$ connected components. Indeed $\operatorname{Sink}(A\times B)=\operatorname{Sink}(A)\times\operatorname{Sink}(B)$ for positive ample families $A,B$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Glue two oppositely marked copies of the 330-concept edge piece. Their exact profiles supply compatible corner orders ending in opposite private sides, while the edge-context algebra excludes both common-edge vertices as attainable sinks; no edge joins the two private sides. Product peelings restrict to root-ending orders in both factors, and conversely fibrewise interleaving of such orders ends at any prescribed pair of attainable sinks. Hence sink sets and their component counts multiply under Cartesian products.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-disconnected-attainable-sinks</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/disconnected_attainable_sink_family_658.html">A 658-Concept Family with Disconnected Attainable Sinks</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-399" style="position:relative;">
+
+        <h3><a href="results/rooted_factors_can_have_nonample_sink_sets.html" class="table-title-link">Rooted Factors Can Have Non-Ample Sink Sets</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Factors Can Have Non-Ample Sink Sets</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/attainable_sink_set.html">Attainable Sink Set</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is an ample rooted factor $(S,0)$ with $870$ concepts and isometric dimension $14$ such that $\operatorname{Sink}(S)$ is not isometric and hence not ample. In its integer encoding, $1,2\in\operatorname{Sink}(S)$ while $0,3\notin\operatorname{Sink}(S)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The stored construction and all 28 rooted elementary-minor orders certify that $(S,0)$ is a rooted factor. Two explicit complete corner orders end at 2 and 1. Rooted failure excludes 0; restricting any hypothetical order ending at 3 to the terminal core face would make the normalized core peel to its forbidden root. Vertices 1 and 2 are at Hamming distance two, and their only ambient common neighbours are precisely the two excluded vertices, so the induced sink graph is not isometric.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-nonample-sink-set</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_nonample_sink_factor_870.html">An 870-Concept Rooted Factor with a Nonisometric Sink Set</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-400" style="position:relative;">
+
+        <h3><a href="results/corner_deletion_rooted_minor_descent.html" class="table-title-link">Corner Deletion Followed by Rooted Minor Descent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corner Deletion Followed by Rooted Minor Descent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(H,a)$ be a rooted factor and let $x\ne a$ be a corner such that $S=H\setminus\{x\}$ is corner-peelable. Some root-preserving pc-minor $(C,b)=(\mu S,\mu a)$ is a rooted factor with $|C|<|H|$. If $(S,a)$ is not already rooted-minimal, $\mu$ is proper and $\mu H=C\cup\{d\}$ is an ample one-concept repair peeling to $b$. If $P$ is the support of the corner cube at $x$ and a normal form for $\mu$ restricts $R$ and contracts $Q$, then $Q\cap P=\varnothing$, every restriction in $R$ keeps the root bit, the acquired support at $d$ is $P\setminus R$, and $|P\setminus R|\ge3$. Iteration ends at a rooted factor whose root is the unique source in every acyclic USO.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The deletion remains ample, fails to peel to the root, and is ordinarily peelable. Minor-minimize that rooted failure. If the chosen map is proper, its images of $H$ and $S$ differ in exactly the repair $d$. A restriction discarding $x$, or a contraction in an incident direction, would identify the images, proving the normal-form exclusions. Shattered-support transport identifies the repair support with $P\setminus R$; support at most two cannot change endpoint peelability. Cardinality decreases at every iteration. At termination no peeling can start away from the root, which is equivalent through the peeling–acyclic-USO correspondence to unique-source status in every acyclic USO.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-combined-rooted-descent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-401" style="position:relative;">
+
+        <h3><a href="results/joint_rooted_and_ordinary_corner_descent.html" class="table-title-link">Joint Corner Descent for Rooted Factors and Ordinary Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Joint Corner Descent for Rooted Factors and Ordinary Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Starting from either a rooted factor or an ample pc-minimal obstruction to dismantlable ampleness, repeatedly delete a nonterminal corner and minor-minimize the residual rooted or ordinary failure. Cardinality decreases strictly, and the process ends either at a rooted factor whose root is its only geometric corner or at a cornerless ample pc-minimal obstruction. A rooted deletion with a corner-peelable remainder stays in the rooted branch; a nonpeelable remainder enters the ordinary branch, which is then permanent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting a nonroot corner from a rooted factor preserves ampleness and rooted failure. A positive remainder admits rooted minor descent; a negative remainder contains an ordinary pc-minimal obstruction. Deleting a corner from an ordinary nonpeelable ample family remains nonpeelable, since any peeling of the remainder could be prefixed by that corner, so ordinary minor-minimization can continue. Every step begins with a deletion, forcing termination with exactly the stated corner conditions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-joint-rooted-ordinary-descent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-402" style="position:relative;">
+
+        <h3><a href="results/repairing_addition_lift_label_criterion.html" class="table-title-link">Component-Label Criterion for Lifting a Repairing Addition</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Component-Label Criterion for Lifting a Repairing Addition</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne D\subseteq C$ be ample, let $K_1,\ldots,K_k$ be the components of $C\setminus D$, and suppose $A=C\cup\{d\}$ is ample. Lift each $K_i$ to layer $t_i$, double $D$, and lift $d$ to layer $b$. If $I(d)$ indexes the components containing a neighbour of $d$, the lift is ample exactly when $t_i=b$ for all $i\in I(d)$. Then the lifted repair is a corner with the same acquired support as $d$ over $C$. If additionally $A,D$ are corner-peelable but the ample lift is not, some untouched component $j\notin I(d)$ has label $1-b$. Thus a repair meeting every component cannot yield an ample forbidden lift when the repaired contraction and reduction are positive.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After adjoining $d$, it merges exactly the touched components of $C\setminus D$. The component-sign parametrization of ample expansions forces, and is forced by, equality of their lift labels with the label of $d$. All old neighbours of the lifted repair then remain in its layer or lie over the doubled reduction, so its incident and acquired supports are unchanged. If no untouched opposite-layer component exists, the lift is the peripheral expansion $(A\times\{b\})\cup(D\times\{1-b\})$, which is corner-peelable when both $A$ and $D$ are.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-repair-lift-labels</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-403" style="position:relative;">
+
+        <h3><a href="results/singleton_reduction_peeling_transfer.html" class="table-title-link">Singleton Reductions Preserve Corner-Peelability Exactly</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Singleton Reductions Preserve Corner-Peelability Exactly</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample one-coordinate expansion $X$ has contraction $A$ and singleton reduction $\{a\}$, then $X$ is corner-peelable if and only if $A$ is corner-peelable. Hence no active singleton-reduction expansion is an ample forbidden pc-minor. Moreover, an untouched component in the opposite layer is not sufficient for forbiddenness: a separated repair over the negative 577-concept double gives a corner-peelable 579-concept lift.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The components of $A-a$, after restoring $a$, occupy disjoint coordinate blocks and attach to the two ends of the sole new-direction edge. If $A$ peels, all component pieces peel and at most one fails to peel to $a$. Peel all other pieces to their attachment vertices, remove the resulting pendant endpoint, and peel the exceptional piece; the converse follows by contraction closure. In the explicit separated repair, peel the repaired first rooted block to zero, delete zero as a leaf across the new edge, and peel the second block.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-singleton-repair-control</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/separated_singleton_repair_579.html">A Positive 579-Concept Separated Singleton Repair</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-404" style="position:relative;">
+
+        <h3><a href="results/acyclic_uso_lift_through_convex_reduction.html" class="table-title-link">Acyclic USOs Lift Through Convex Reductions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acyclic USOs Lift Through Convex Reductions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample, let $e$ be active, and let $A=\pi_eX$ and $D=X^{\{e\}}$. If $D$ is convex in $A$, every acyclic USO of $A$ lifts to an acyclic USO of $X$ preserving every old-direction edge orientation. Consequently $X$ is corner-peelable exactly when $A$ is, and $X$ peels to $a$ exactly when $A$ peels to $\pi_ea$. Therefore no coordinate reduction of an ample pc-minimal obstruction or rooted factor is convex in its contraction; in particular no such reduction is a cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Convexity makes each cube intersection with $D$ a face and places the nonempty complement in one component of $A\setminus D$. Lift old edges from the given orientation and direct each vertical edge toward the component containing the outgoing neighbours at its base, choosing freely when none exist. The outgoing-cube and unique-sink conditions hold on every cube. Any directed cycle with an old edge would project to a directed closed walk in the acyclic base orientation, while vertical edges alone form a matching. Choosing the final vertical direction toward a prescribed lift proves endpoint transfer; contraction proves the reverse implications.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-convex-reduction-lift</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-405" style="position:relative;">
+
+        <h3><a href="results/convex_reduction_relative_face_transfer.html" class="table-title-link">Relative Face Peeling Through a Convex Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Face Peeling Through a Convex Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the convex-reduction hypotheses, let $B$ be a nonempty coordinate-face intersection of the contraction $A$, contained in one projected section $X_t$, and put $T=B\times\{t\}$ and $C=D\cap B$. Then $X$ peels relatively to $T$ exactly when $A$ peels relatively to $B$ and $C$ is empty or corner-peelable. If $B$ is corner-peelable, the second condition follows automatically by pc-minor closure.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Contracting a relative peeling of $X$ yields one of $A$ to $B$, while restricting its residual families to the opposite target face gives a peeling of $C$. Conversely, lift the relative order on $A$ by deleting each new-coordinate fibre. Convexity makes the corner-cube intersection with the reduction a face and its complement component-monochromatic, so each fibre deletion is one or two valid corner deletions. The remainder is $(B\times\{t\})\cup(C\times\{1-t\})$; a corner order of $C$ removes the opposite layer and leaves exactly $T$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-convex-relative-face</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-406" style="position:relative;">
+
+        <h3><a href="results/punctured_three_face_in_every_active_direction.html" class="table-title-link">Every Active Direction Contains a Seven-Vertex Three-Face</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Active Direction Contains a Seven-Vertex Three-Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For every active coordinate $e$ of an ample pc-minimal obstruction to dismantlable ampleness, or of the underlying family of a rooted factor, there are coordinates $f,g$ and a coordinate three-face whose intersection with the family has exactly seven vertices. After projecting this face along $e$, exactly three vertices have both lifts. Consequently every nonempty one-coordinate reduction has at least three vertices and is not a cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The convex-reduction lifting theorem makes the reduction $D$ nonconvex in the contraction $A$. Both are ample and $D$ is connected and isometric. The distance-two interval criterion for convexity therefore yields a square of $A$ with exactly three vertices in $D$. Those three have both lifts in the original family and the fourth has one, producing the seven-vertex three-face and the stated reduction constraints.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-every-direction-punctured-cube</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

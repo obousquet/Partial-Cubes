@@ -1,0 +1,19 @@
+{
+  "id": 404,
+  "short_name": "acyclic_uso_lift_through_convex_reduction",
+  "name": "Acyclic USOs Lift Through Convex Reductions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/coordinate_fiber_product",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X$ be ample, let $e$ be active, and let $A=\\pi_eX$ and $D=X^{\\{e\\}}$. If $D$ is convex in $A$, every acyclic USO of $A$ lifts to an acyclic USO of $X$ preserving every old-direction edge orientation. Consequently $X$ is corner-peelable exactly when $A$ is, and $X$ peels to $a$ exactly when $A$ peels to $\\pi_ea$. Therefore no coordinate reduction of an ample pc-minimal obstruction or rooted factor is convex in its contraction; in particular no such reduction is a cube.",
+  "status": "established",
+  "proof": "Convexity makes each cube intersection with $D$ a face and places the nonempty complement in one component of $A\\setminus D$. Lift old edges from the given orientation and direct each vertical edge toward the component containing the outgoing neighbours at its base, choosing freely when none exist. The outgoing-cube and unique-sink conditions hold on every cube. Any directed cycle with an old edge would project to a directed closed walk in the acyclic base orientation, while vertical edges alone form a matching. Choosing the final vertical direction toward a prescribed lift proves endpoint transfer; contraction proves the reverse implications.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-convex-reduction-lift"
+}

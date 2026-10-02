@@ -1,0 +1,19 @@
+{
+  "id": 406,
+  "short_name": "punctured_three_face_in_every_active_direction",
+  "name": "Every Active Direction Contains a Seven-Vertex Three-Face",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning"
+  ],
+  "result_type": "implication",
+  "statement": "For every active coordinate $e$ of an ample pc-minimal obstruction to dismantlable ampleness, or of the underlying family of a rooted factor, there are coordinates $f,g$ and a coordinate three-face whose intersection with the family has exactly seven vertices. After projecting this face along $e$, exactly three vertices have both lifts. Consequently every nonempty one-coordinate reduction has at least three vertices and is not a cube.",
+  "status": "established",
+  "proof": "The convex-reduction lifting theorem makes the reduction $D$ nonconvex in the contraction $A$. Both are ample and $D$ is connected and isometric. The distance-two interval criterion for convexity therefore yields a square of $A$ with exactly three vertices in $D$. Those three have both lifts in the original family and the fourth has one, producing the seven-vertex three-face and the stated reduction constraints.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-every-direction-punctured-cube"
+}

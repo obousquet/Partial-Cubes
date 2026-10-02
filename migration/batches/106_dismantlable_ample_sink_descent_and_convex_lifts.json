@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "batch_id": "106_dismantlable_ample_sink_descent_and_convex_lifts",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the attainable-sink invariant and its disconnected and rooted-factor counterexamples, combined rooted and ordinary corner descent, repair-lift component constraints, singleton and convex reduction transfer laws, and the local seven-vertex three-face consequence.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-disconnected-attainable-sinks",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-nonample-sink-set",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-combined-rooted-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-joint-rooted-ordinary-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-repair-lift-labels",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-singleton-repair-control",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-convex-reduction-lift",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-convex-relative-face",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-every-direction-punctured-cube"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This block separates endpoint reachability from ampleness, makes rooted/ordinary descent explicit, and identifies which inverse contraction steps are structurally impossible; exact counterexamples and the singleton control delimit each theorem.",
+    "outcome": "All nine distinct source blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "prop:damp-disconnected-attainable-sinks": "06123b69678d2b51bfb00d6dec22dd6a87fe5585ba3ba6262bb9693ffdc40d52",
+      "prop:damp-rooted-nonample-sink-set": "e5a3a95abbfb864ca6fd973f50b9a880273fcad222ce88c2bf6fe2df65c0c80d",
+      "prop:damp-combined-rooted-descent": "a4a674cc58311c536fd999fc5ee9aa2f2cd87d265f10fcb25fd73adb93fe18e2",
+      "cor:damp-joint-rooted-ordinary-descent": "ee52717627f6f5fffea4a642d923ed8c4b0facb55fb3d89ad4296cc93a459970",
+      "cor:damp-repair-lift-labels": "64de9d92e5697133be29e848255aed989f478dce3638a17bfb0f6a0bae6e1236",
+      "rem:damp-singleton-repair-control": "ddd5585f279d86160256483acafdcd6038ec3333a49115edb2835a51b4aad234",
+      "thm:damp-convex-reduction-lift": "daab9a64acc5c583fdaec27c644f7fa59663c2e7c2f26c66afdeda82e169f397",
+      "prop:damp-convex-relative-face": "1cf4f2c42dbd321d4ddc9b8f8c1ddd1f7e6142d007170b739aa30aca5fb7d0df",
+      "cor:damp-every-direction-punctured-cube": "bd5ed97da565f5e14890dbcbbbe721210467fe8cf0b09497ae45102e5c7ecbc1"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the attainable-sink definition, normalized counterexamples, descent algorithms, repair-label criterion, singleton and convex reduction transfer laws, local punctured-cube consequence, concise proofs, and source locators. The manuscript retains complete endpoint schedules, full USO lifting verification, component-label derivations, explicit word encodings, replay narratives, and open inverse-generation questions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact source bytes, is checked by migration-check, and every promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/invariants/063_attainable_sink_set.json",
+      "sha256": "cdba8190b79fdfab928e3ba43509b3519a5f79d2b8faf1980e14e833efd02536"
+    },
+    {
+      "path": "data/examples/119_disconnected_attainable_sink_family_658.json",
+      "sha256": "1e0dd7524f15c43c8acafbd735992feac7303db94a40ea0b6d0e52cb681650b0"
+    },
+    {
+      "path": "data/examples/120_rooted_nonample_sink_factor_870.json",
+      "sha256": "7e3a489eb8f67e86222d5c2c3e46bd9b332dc64b01a7a027435d1ec56e1217cc"
+    },
+    {
+      "path": "data/examples/121_separated_singleton_repair_579.json",
+      "sha256": "22553f82542adb1027d6bb8cca238b7517e7cc95125b1bd67ad32db7e657e361"
+    },
+    {
+      "path": "data/results/398_attainable_sink_sets_can_be_disconnected.json",
+      "sha256": "b7a6def7983a493ba6b622f9db5aa6ed9715abdabbcb4bb733c60918e4244ac3"
+    },
+    {
+      "path": "data/results/399_rooted_factors_can_have_nonample_sink_sets.json",
+      "sha256": "9c1debb753ce11422180b64d992bdc0384e761b5306c08d1f1d640e2185c3dfa"
+    },
+    {
+      "path": "data/results/400_corner_deletion_rooted_minor_descent.json",
+      "sha256": "69e91c1bc496ed81ac73c3f608b685ac2bf1197011162aa9409eeabdf2f5c667"
+    },
+    {
+      "path": "data/results/401_joint_rooted_and_ordinary_corner_descent.json",
+      "sha256": "1c65770d7d9f1f67b60cc5b61b77271c960a70f0bb39908cc558f41e17133ec5"
+    },
+    {
+      "path": "data/results/402_repairing_addition_lift_label_criterion.json",
+      "sha256": "882c90642e35d6fbbfd5ea3f43dc0573537e3bb20478d6ca69e70fd9c840de3d"
+    },
+    {
+      "path": "data/results/403_singleton_reduction_peeling_transfer.json",
+      "sha256": "5b4c875a1dcb38a80c42307b9ccd526cefa71f55eaeb206ffa93cd203a004931"
+    },
+    {
+      "path": "data/results/404_acyclic_uso_lift_through_convex_reduction.json",
+      "sha256": "fd1ab69a7ed81817f64b3e468a75a2d4a573a132586bacd119780a8655d2bcf1"
+    },
+    {
+      "path": "data/results/405_convex_reduction_relative_face_transfer.json",
+      "sha256": "b07cacc5c6493f3aa45625ce1f101318259c907951256cf31a822621c80c359d"
+    },
+    {
+      "path": "data/results/406_punctured_three_face_in_every_active_direction.json",
+      "sha256": "f05c23333bbe82c61d7dc47a95aecd3aa42c1a5ecf543eec7d6b18f5f7ad738e"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "f1aa2506277cffd71130961ef15d006cc8e069e73ff6ba5ce5881cfb306ba319"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "09756bcad3ca7a8039418f4e69c7078ee57f527122f9f25ba07d79a3a9d9c1b5"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1708 records.",
+    "website": "Normalized 1724 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 8 additional audited labels, raising the dismantlable-ample workspace from 71 to 79 of 683 and overall coverage from 502 to 510 of 1114 database-owned labels. The singleton-reduction remark is also normalized outside the theorem-label denominator.",
+    "source_integrity": "The nine reviewed blocks and the complete source file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 604 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Intrinsic forward generation of rooted factors and admissible inverse repair lifts remains prose-owned as an open problem.",
+    "Complete word sets, peeling orders, USO tables, and computational certificates remain preserved in the scholarly source tree and are summarized, not duplicated, in database records."
+  ]
+}

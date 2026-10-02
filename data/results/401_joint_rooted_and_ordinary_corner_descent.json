@@ -1,0 +1,18 @@
+{
+  "id": 401,
+  "short_name": "joint_rooted_and_ordinary_corner_descent",
+  "name": "Joint Corner Descent for Rooted Factors and Ordinary Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "algorithm",
+  "statement": "Starting from either a rooted factor or an ample pc-minimal obstruction to dismantlable ampleness, repeatedly delete a nonterminal corner and minor-minimize the residual rooted or ordinary failure. Cardinality decreases strictly, and the process ends either at a rooted factor whose root is its only geometric corner or at a cornerless ample pc-minimal obstruction. A rooted deletion with a corner-peelable remainder stays in the rooted branch; a nonpeelable remainder enters the ordinary branch, which is then permanent.",
+  "status": "established",
+  "proof": "Deleting a nonroot corner from a rooted factor preserves ampleness and rooted failure. A positive remainder admits rooted minor descent; a negative remainder contains an ordinary pc-minimal obstruction. Deleting a corner from an ordinary nonpeelable ample family remains nonpeelable, since any peeling of the remainder could be prefixed by that corner, so ordinary minor-minimization can continue. Every step begins with a deletion, forcing termination with exactly the stated corner conditions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-joint-rooted-ordinary-descent"
+}

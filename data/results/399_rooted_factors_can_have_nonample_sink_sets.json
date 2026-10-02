@@ -1,0 +1,20 @@
+{
+  "id": 399,
+  "short_name": "rooted_factors_can_have_nonample_sink_sets",
+  "name": "Rooted Factors Can Have Non-Ample Sink Sets",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/attainable_sink_set"
+  ],
+  "result_type": "construction",
+  "statement": "There is an ample rooted factor $(S,0)$ with $870$ concepts and isometric dimension $14$ such that $\\operatorname{Sink}(S)$ is not isometric and hence not ample. In its integer encoding, $1,2\\in\\operatorname{Sink}(S)$ while $0,3\\notin\\operatorname{Sink}(S)$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_nonample_sink_factor_870"
+  ],
+  "proof": "The stored construction and all 28 rooted elementary-minor orders certify that $(S,0)$ is a rooted factor. Two explicit complete corner orders end at 2 and 1. Rooted failure excludes 0; restricting any hypothetical order ending at 3 to the terminal core face would make the normalized core peel to its forbidden root. Vertices 1 and 2 are at Hamming distance two, and their only ambient common neighbours are precisely the two excluded vertices, so the induced sink graph is not isometric.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-nonample-sink-set"
+}

@@ -1,0 +1,22 @@
+{
+  "id": 403,
+  "short_name": "singleton_reduction_peeling_transfer",
+  "name": "Singleton Reductions Preserve Corner-Peelability Exactly",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/one_point_amalgam",
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "implication",
+  "statement": "If an ample one-coordinate expansion $X$ has contraction $A$ and singleton reduction $\\{a\\}$, then $X$ is corner-peelable if and only if $A$ is corner-peelable. Hence no active singleton-reduction expansion is an ample forbidden pc-minor. Moreover, an untouched component in the opposite layer is not sufficient for forbiddenness: a separated repair over the negative 577-concept double gives a corner-peelable 579-concept lift.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/separated_singleton_repair_579"
+  ],
+  "proof": "The components of $A-a$, after restoring $a$, occupy disjoint coordinate blocks and attach to the two ends of the sole new-direction edge. If $A$ peels, all component pieces peel and at most one fails to peel to $a$. Peel all other pieces to their attachment vertices, remove the resulting pendant endpoint, and peel the exceptional piece; the converse follows by contraction closure. In the explicit separated repair, peel the repaired first rooted block to zero, delete zero as a leaf across the new edge, and peel the second block.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-singleton-repair-control"
+}

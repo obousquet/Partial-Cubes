@@ -1,0 +1,18 @@
+{
+  "id": 400,
+  "short_name": "corner_deletion_rooted_minor_descent",
+  "name": "Corner Deletion Followed by Rooted Minor Descent",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let $(H,a)$ be a rooted factor and let $x\\ne a$ be a corner such that $S=H\\setminus\\{x\\}$ is corner-peelable. Some root-preserving pc-minor $(C,b)=(\\mu S,\\mu a)$ is a rooted factor with $|C|<|H|$. If $(S,a)$ is not already rooted-minimal, $\\mu$ is proper and $\\mu H=C\\cup\\{d\\}$ is an ample one-concept repair peeling to $b$. If $P$ is the support of the corner cube at $x$ and a normal form for $\\mu$ restricts $R$ and contracts $Q$, then $Q\\cap P=\\varnothing$, every restriction in $R$ keeps the root bit, the acquired support at $d$ is $P\\setminus R$, and $|P\\setminus R|\\ge3$. Iteration ends at a rooted factor whose root is the unique source in every acyclic USO.",
+  "status": "established",
+  "proof": "The deletion remains ample, fails to peel to the root, and is ordinarily peelable. Minor-minimize that rooted failure. If the chosen map is proper, its images of $H$ and $S$ differ in exactly the repair $d$. A restriction discarding $x$, or a contraction in an incident direction, would identify the images, proving the normal-form exclusions. Shattered-support transport identifies the repair support with $P\\setminus R$; support at most two cannot change endpoint peelability. Cardinality decreases at every iteration. At termination no peeling can start away from the root, which is equivalent through the peeling–acyclic-USO correspondence to unique-source status in every acyclic USO.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-combined-rooted-descent"
+}

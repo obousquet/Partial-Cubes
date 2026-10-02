@@ -1,0 +1,19 @@
+{
+  "id": 405,
+  "short_name": "convex_reduction_relative_face_transfer",
+  "name": "Relative Face Peeling Through a Convex Reduction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "recognition",
+  "statement": "Under the convex-reduction hypotheses, let $B$ be a nonempty coordinate-face intersection of the contraction $A$, contained in one projected section $X_t$, and put $T=B\\times\\{t\\}$ and $C=D\\cap B$. Then $X$ peels relatively to $T$ exactly when $A$ peels relatively to $B$ and $C$ is empty or corner-peelable. If $B$ is corner-peelable, the second condition follows automatically by pc-minor closure.",
+  "status": "established",
+  "proof": "Contracting a relative peeling of $X$ yields one of $A$ to $B$, while restricting its residual families to the opposite target face gives a peeling of $C$. Conversely, lift the relative order on $A$ by deleting each new-coordinate fibre. Convexity makes the corner-cube intersection with the reduction a face and its complement component-monochromatic, so each fibre deletion is one or two valid corner deletions. The remainder is $(B\\times\\{t\\})\\cup(C\\times\\{1-t\\})$; a corner order of $C$ removes the opposite layer and leaves exactly $T$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-convex-relative-face"
+}
