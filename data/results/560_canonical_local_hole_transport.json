@@ -1,0 +1,24 @@
+{
+  "id": 560,
+  "short_name": "canonical_local_hole_transport",
+  "name": "Canonical Transport and Reconstruction of Local Holes",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/punctured_expansion_profile"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "witness_ids": [
+    "#examples/first_switched_hole_path"
+  ],
+  "statement": "For an ample $H$ and coordinate $e$, conditioning transports the canonical local minimal nonfaces at a retained vertex by discarding exactly those supports containing $e$. A support $A$ is a canonical local hole at a vertex of the contraction exactly when its side data $\\varepsilon_{H,e}(z,A;\\cdot)$ is a punctured expansion profile. In every switched profile, the double-fibre set $D$ and exclusive sets $Z_0,Z_1$ are nonempty, no punctured-cube edge joins the two exclusive sets, every component outside $D$ is monochromatic, $D$ is ample, and $\\operatorname{Sh}(D\\cup Z_0)\\cap\\operatorname{Sh}(D\\cup Z_1)=\\operatorname{Sh}(D)$. Conversely these conditions construct an ample two-layer family with the prescribed switched contraction hole.",
+  "status": "established",
+  "proof": "Conditioning takes an induced subcomplex of the local cube-support complex. For contraction, an $A$-cube exists exactly when every profile value is nonempty, giving the minimal-hole equivalence. Oppositely coloured adjacent exclusive vertices would have no length-two path between their lifts, contradicting isometry; connectivity then forces a nonempty separator. Restricting to the profile coordinates gives a two-layer ample family whose union is the punctured cube and whose intersection is $D$. The exact two-layer shadow and order identities force $D$ to be ample and its shadow to equal the intersection of side shadows. Conversely those identities give Sandwich equality for the constructed two-layer family and hence ampleness and the desired canonical hole.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-canonical-hole-transport",
+  "comments": "The theorem explains why piecewise images of source one-hole covers are insufficient after contraction: switched holes can be assembled jointly by the two sections."
+}

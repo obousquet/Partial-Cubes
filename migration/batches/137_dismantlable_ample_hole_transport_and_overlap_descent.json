@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "batch_id": "137_dismantlable_ample_hole_transport_and_overlap_descent",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Normalize canonical local-hole transport under conditioning and contraction, preserve the first switched-hole witness and its Hall-obstruction audit, record the Yang two-cone gluing dichotomy, and descend forbidden expansions through nonpeelable full-reduction overlaps.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-canonical-hole-transport",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-first-switched-hole",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-two-cone-gluing-dichotomy",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-inherited-overlap-descent"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "Contraction can create canonical local holes assembled jointly from both sections, so the database needs the full punctured-expansion profile rather than only piecewise images of source holes. The following Yang-complex and overlap-descent results give the structural reduction used to isolate gluing-critical forbidden expansions.",
+    "outcome": "All four statement-plus-proof blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the live manuscript. The database-owned Hall audit reproduces its archived report byte-for-byte and verifies switched holes in every elementary contraction of the 299-concept obstruction.",
+    "claim_block_sha256": {
+      "thm:damp-canonical-hole-transport": "ce857f311bae92f731ef3c6e32d377461992912b30af8ac7054ebb5ee68be9a2",
+      "ex:damp-first-switched-hole": "b5f85864170d688488f2cf1f2689d96c7675306b5a7de1529426028566a5d278",
+      "prop:damp-yang-two-cone-gluing-dichotomy": "d96b5359648cdb97d489f0370676907403e371e9fa73e5de827e0279f5dc3d8d",
+      "thm:damp-inherited-overlap-descent": "d5b6f4158e8f74dcde235ddd729f19a5f59176a14c86a9bac7a98791b36ef01a"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/137_dismantlable_ample_hole_transport/analyze_damp_hall_contraction_hole_transport.py",
+      "sha256": "47d28c574a6c9784ffbef34af0cf7967cb5c2a7c9096756c03e4abeace91400d"
+    },
+    {
+      "path": "migration/certificates/137_dismantlable_ample_hole_transport/analyze_damp_hall_contraction_hole_transport_source_legacy.py",
+      "sha256": "2aceb8f2f6b4a9ce30d96d3a2276799763bc3026bfa42e971674537dad3a3a4b"
+    },
+    {
+      "path": "migration/certificates/137_dismantlable_ample_hole_transport/damp_hall_contraction_hole_transport.json",
+      "sha256": "28a39ea8f0544254d6f4d97ad0964832b18ac1d76f403d14bd13533b73142d16"
+    },
+    {
+      "path": "migration/certificates/137_dismantlable_ample_hole_transport/damp_hall_contraction_hole_transport_source.json",
+      "sha256": "28a39ea8f0544254d6f4d97ad0964832b18ac1d76f403d14bd13533b73142d16"
+    },
+    {
+      "path": "migration/certificates/137_dismantlable_ample_hole_transport/hall_concepts.py",
+      "sha256": "dbe01dc9e61da56cc76c954b19aaeb92681df6f66afaa27a458ef44283c8b071"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the punctured-expansion invariant, first switched-hole example, three normalized results, concise proofs, and the complete Hall audit boundary. The manuscript retains the full derivations, surrounding classification argument, explanatory remarks, and scholarly context.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact manuscript. The certificate directory contains the legacy audit, a locally replayable copy, the complete Hall vertex list, and byte-identical source and replay reports.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. The Hall counts are preserved as supporting evidence and are not used as a proof of the general transport theorem."
+  },
+  "records": [
+    {
+      "path": "data/invariants/069_punctured_expansion_profile.json",
+      "sha256": "abe9b4e056c16f4fdbd02c6d3276a0a7af16af0862c129fdd40c09e85cac8f14"
+    },
+    {
+      "path": "data/examples/162_first_switched_hole_path.json",
+      "sha256": "1ec0f8316e96dc5ccc5112a7f12c95aa9a909af2719f3f5bfd0e002ff7a3af16"
+    },
+    {
+      "path": "data/results/560_canonical_local_hole_transport.json",
+      "sha256": "1606d53608fae1c2e150fc50b5f658ee468fba42a5af0714a1a49487b2938879"
+    },
+    {
+      "path": "data/results/561_yang_two_cone_gluing_dichotomy.json",
+      "sha256": "4d53f13e2023aa934ff4d52f446ed9176c9f387404128778a88d036bfa083678"
+    },
+    {
+      "path": "data/results/562_nonpeelable_overlap_obstruction_descent.json",
+      "sha256": "f0657e7b684c9c21dcd442f595bfa758904c19c61edf04168a64278e19866af2"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "ecc39f727575c48aea0c3d6784edc1324b381d81ad97d22e9d189ba97d953525"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "8822c1c31d01c73be683348984095e12e274054868dde280bcb40f92eff4b569"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1917 records.",
+    "website": "Normalized 1933 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 4 additional audited labels, raising the dismantlable-ample workspace from 228 to 232 of 683 and overall coverage from 659 to 663 of 1114 database-owned labels.",
+    "certificates": "The Hall replay verifies 9,159 restriction holes and 8,560 contraction holes across all elementary minors; 7,691 contraction holes are direct and 869 are switched, with at least one switched hole in every contraction. Its mathematical payload digest is 6efc2fe62fa9ecca82d97b263276a3e9825a6c47e4db58953b4322f234bfe01d.",
+    "scope_review": "The records distinguish the general transport theorem from its finite Hall audit, and distinguish full-reduction descent from an assertion that the overlap is itself a pc-minor of the original family.",
+    "source_integrity": "All four reviewed source blocks and the complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 451 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "The next inverse-expansion results give proper-obstruction reduction tests and exclude several low-dimensional and low-order adversaries.",
+    "The one-relative-wing inverse theorem and uniform inactive-coordinate lemma remain to be normalized with their dependent corollaries."
+  ]
+}

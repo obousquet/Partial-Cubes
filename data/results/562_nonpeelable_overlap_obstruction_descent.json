@@ -1,0 +1,20 @@
+{
+  "id": 562,
+  "short_name": "nonpeelable_overlap_obstruction_descent",
+  "name": "A Nonpeelable Overlap of a Forbidden Expansion Is Itself Forbidden",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let $H$ be an ample forbidden pc-minor and let $A=H^{\\{e\\}}$ be its full reduction in an active coordinate. If $A$ is not dismantlable ample, then $A$ is itself an ample forbidden pc-minor. Repeating this descent terminates at an obstruction whose full reduction in every active coordinate is dismantlable ample. Each inverse step canonically recovers $H=(A\\times\\{0,1\\})\\cup(R_0\\times\\{0\\})\\cup(R_1\\times\\{1\\})$, with nonempty signed wings and with both sections and their union dismantlable ample.",
+  "status": "established",
+  "proof": "Restriction and contraction in any other coordinate commute with full reduction on ample families. Applying full-reduction closure to the corresponding proper pc-minor of H shows that every elementary pc-minor of A is dismantlable ample. Thus a nonpeelable A is forbidden. Each step removes a coordinate, so descent terminates; the two-cone dichotomy makes every terminal coordinate gluing-critical. Periphery-freeness makes both inverse wings nonempty, and the sections and their union are proper pc-minors of H.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-inherited-overlap-descent",
+  "comments": "The overlap is a full reduction and need not itself be a pc-minor of the original family."
+}
