@@ -1,0 +1,16 @@
+{
+  "id": 35,
+  "short_name": "lucas_string_tau_cycle_equivalence",
+  "name": "Lucas String and Intrinsic Tau-Cycle Equivalence",
+  "class_id": "#classes/lucas_cubes",
+  "characterization_ids": [
+    "#characterizations/lucas_string_definition",
+    "#characterizations/lucas_peripheral_tau_cycle"
+  ],
+  "hypotheses": "Finite median graph with $n\\ge3$ $\\Theta$-classes.",
+  "statement": "The cyclic Fibonacci-string model and the intrinsic peripheral-$\\Theta$ cycle-$\\tau$ criterion define the same graph $\\Lambda_n$.",
+  "status": "established",
+  "proof": "Peripheral $\\Theta$-classes give a simplex graph $G=\\kappa(R)$, and $G^\\tau\\cong\\overline R$. Thus a cycle $\\tau$-graph forces $R\\cong\\overline{C_n}$. Cliques of $\\overline{C_n}$ are independent sets of $C_n$, exactly the cyclic binary strings with no adjacent ones, so $\\kappa(\\overline{C_n})\\cong\\Lambda_n$; reversing the argument proves the converse.",
+  "references": "\\cite{Klavzar13fibonaccisurvey}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:fibonacci-lucas-intrinsic"
+}

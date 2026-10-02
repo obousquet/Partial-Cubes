@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 409,
-    "uncovered": 607,
-    "proof_source_records": 1462
+    "covered": 415,
+    "uncovered": 601,
+    "proof_source_records": 1472
   },
   "by_workspace": {
     "ample-corners": {
@@ -51,9 +51,9 @@
       "total": 51
     },
     "survey": {
-      "covered": 109,
+      "covered": 115,
       "total": 131,
-      "uncovered": 22
+      "uncovered": 16
     },
     "vc-littlestone": {
       "covered": 7,
@@ -15059,7 +15059,7 @@
       "label": "cor:daisy-obstruction-reduction",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15069,13 +15069,15 @@
           "line": 8855
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_bases/001_daisy_complete_pc_basis.json"
+      ]
     },
     {
       "label": "cor:daisy-recognition",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15085,7 +15087,9 @@
           "line": 8831
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/325_daisy_recognition_algorithm.json"
+      ]
     },
     {
       "label": "cor:learning-space-five-coordinate-endpoint-cover",
@@ -16163,7 +16167,7 @@
       "label": "thm:avoidance-fibonacci-dimension",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16173,7 +16177,9 @@
           "line": 8302
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/328_avoidance_cube_minimum_fibonacci_dimension.json"
+      ]
     },
     {
       "label": "thm:benzenoid-metric-structure",
@@ -16483,7 +16489,7 @@
       "label": "thm:daisy-peripheral",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16493,7 +16499,10 @@
           "line": 8819
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/002_daisy_definition_expansion_equivalence.json",
+        "data/characterizations/182_every_theta_class_peripheral.json"
+      ]
     },
     {
       "label": "thm:daisy-polynomials",
@@ -16578,7 +16587,7 @@
       "label": "thm:fibonacci-dimension-profile",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16588,13 +16597,17 @@
           "line": 8257
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/058_fibonacci_dimension.json",
+        "data/invariants/059_semicube_coordinating_path_number.json",
+        "data/results/327_fibonacci_dimension_profile.json"
+      ]
     },
     {
       "label": "thm:fibonacci-lucas-intrinsic",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16604,7 +16617,12 @@
           "line": 8212
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/034_fibonacci_string_tau_path_equivalence.json",
+        "data/characterization_equivalences/035_lucas_string_tau_cycle_equivalence.json",
+        "data/characterizations/183_fibonacci_peripheral_tau_path.json",
+        "data/characterizations/184_lucas_peripheral_tau_cycle.json"
+      ]
     },
     {
       "label": "thm:folb-partial-cubes",

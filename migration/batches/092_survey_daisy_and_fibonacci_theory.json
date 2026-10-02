@@ -1,0 +1,116 @@
+{
+  "version": 1,
+  "batch_id": "092_survey_daisy_and_fibonacci_theory",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the frozen survey cluster on the intrinsic peripheral characterization and recognition of daisy cubes, exact daisy obstruction reduction, intrinsic Fibonacci and Lucas recognition, Fibonacci dimension, and minimum-dimension word-avoidance cubes, representing new criteria and invariants as reusable first-class records.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#thm:daisy-peripheral",
+    "PartialCubes:papers/survey/main.tex#cor:daisy-recognition",
+    "PartialCubes:papers/survey/main.tex#cor:daisy-obstruction-reduction",
+    "PartialCubes:papers/survey/main.tex#thm:fibonacci-lucas-intrinsic",
+    "PartialCubes:papers/survey/main.tex#thm:fibonacci-dimension-profile",
+    "PartialCubes:papers/survey/main.tex#thm:avoidance-fibonacci-dimension"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partial-cubes-bibliography",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "main.bib",
+      "sha256": "66b3172b12af56ccbceba8a47f354dc326966f120f04720e545b3295c17d70de",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/main.bib"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized membership criteria and their equivalence proofs, obstruction reduction, algorithmic statement, invariant definitions and laws, concise proofs, and citations. The LaTeX survey retains the full historical discussion, detailed algorithms, examples, and open one-word-avoidance question.",
+    "recoverability": "The survey manuscript and dirty bibliography are read from the frozen snapshot and match their manifest SHA-256 hashes; every migrated theorem or corollary has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "c2b6e97618e963e51a707e75ba668b584c9638b652589b123fe56ae8b31e7866"
+    },
+    {
+      "path": "data/characterizations/182_every_theta_class_peripheral.json",
+      "sha256": "39f95252d42695b04d3322c862964cbd219084dbff029b090fa29c3267da696a"
+    },
+    {
+      "path": "data/characterizations/183_fibonacci_peripheral_tau_path.json",
+      "sha256": "d32f62602497d0f1c2678213f23bed207456a78a3768eeb3eba3e1302f684fad"
+    },
+    {
+      "path": "data/characterizations/184_lucas_peripheral_tau_cycle.json",
+      "sha256": "b922bd4c7ba76e9e176ea980fe3d8a0b4031755bcc56ea822b70aecf674cc7e2"
+    },
+    {
+      "path": "data/characterization_equivalences/002_daisy_definition_expansion_equivalence.json",
+      "sha256": "dc188c81c6b32b3d6ea95839301457ff9516fde49d7885aef4405bf8b96a3152"
+    },
+    {
+      "path": "data/characterization_equivalences/034_fibonacci_string_tau_path_equivalence.json",
+      "sha256": "783ccdb49e51fa3e5aeb7a755cc12ce7ec4a878da6df2cb6834dbd8a0db9a645"
+    },
+    {
+      "path": "data/characterization_equivalences/035_lucas_string_tau_cycle_equivalence.json",
+      "sha256": "a5c66073282367c10be0be762f25021fcc6ea171287dbb03e875b9702cd413ee"
+    },
+    {
+      "path": "data/obstruction_bases/001_daisy_complete_pc_basis.json",
+      "sha256": "6bad1195e2b4b0f7c87fc5bb7928d30608878a166e26b744e7c6bab74aef45ae"
+    },
+    {
+      "path": "data/invariants/058_fibonacci_dimension.json",
+      "sha256": "dbee1df36dafbe5def3088b51a128cb73ec1da415eb3cc6c422e7c94b20f967c"
+    },
+    {
+      "path": "data/invariants/059_semicube_coordinating_path_number.json",
+      "sha256": "e8407e3cc0dba21475c446f5956755699ca62d5aeb35741d98d7fc556bd4acb8"
+    },
+    {
+      "path": "data/results/325_daisy_recognition_algorithm.json",
+      "sha256": "e104cf236c4f75d4fd4696b0ee4c4834fdca6da7464b0466990db316cec1bfaf"
+    },
+    {
+      "path": "data/results/327_fibonacci_dimension_profile.json",
+      "sha256": "4b88e7722f1cad7f74778c6c9400e3c387ee9aaf3d83f1e73ba7707cbf15edee"
+    },
+    {
+      "path": "data/results/328_avoidance_cube_minimum_fibonacci_dimension.json",
+      "sha256": "0447fa927ab0c4e69cd4664b1d18c2c585ba2b1bf7cb11f69fd58efb14110d27"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "606bcbac621fce822fa2eaf36621844ae64722da6f1b971114e07cf41a7b098c"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "8b174fba86d9df72729e0a659680b26ca3b491063ef0a96d1109dda168f862ad"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1586 records.",
+    "website": "Normalized 1602 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 6 survey labels, raising that workspace from 109 of 131 to 115 of 131 and overall workspace-aware coverage from 409 to 415 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 16 uncovered labeled results in the COM/tope, antipodal, recognition, compression, and special graph-family clusters.",
+    "The one-word avoidance conjecture and other open questions remain prose in the survey under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

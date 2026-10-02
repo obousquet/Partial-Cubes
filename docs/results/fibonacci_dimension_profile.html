@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,36 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-45" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-327" style="position:relative;">
 
-        <h3><a href="classes/lucas_cubes.html" class="table-title-link">Lucas Cubes</a></h3>
+        <h3><a href="results/fibonacci_dimension_profile.html" class="table-title-link">Fibonacci-Dimension Formula, Bounds, and Product Laws</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Lucas Cubes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\Lambda_n">
-            \[\Lambda_n\]
-        </div>
-    </div>
-
-<strong>Summary:</strong><div class="text-field"><p>The induced subgraphs of Q_n on cyclic binary strings with no two consecutive ones, with the standard K1 conventions in dimensions zero and one.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/lucas_string_definition.html">Lucas-String Definition</a></p>
-<p><strong>Category:</strong> Named Family</p>
-<p><strong>Ambient Scope:</strong> Partial Cubes</p>
-<p><strong>Parameterized:</strong> Yes</p>
-<strong>Parameters:</strong><div class="text-field"><p>Integer $n\ge0$; for $n\ge2$ the first and last bits are also forbidden to be simultaneously one.</p></div>
-<p><strong>Projection Closure:</strong> Not Yet Assessed</p>
-<p><strong>Conditioning Closure:</strong> Not Yet Assessed</p>
-<p><strong>PC-Minor Closure:</strong> Not Yet Assessed</p>
-<strong>Comments:</strong><div class="text-field"><p>Equivalently, Lambda_n is the simplex graph of the complement of the n-cycle for n at least three.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/lucas_string_definition.html'>Lucas-String Definition</a></li><li><a href='characterizations/lucas_peripheral_tau_cycle.html'>Peripheral Theta Classes with Cycle Tau-Graph</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/lucas_cubes_subset_simplex_graphs.html'>Lucas Cubes Are Simplex Graphs</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong> <em>None</em></p></div>
+        <p><strong>Name: </strong>Fibonacci-Dimension Formula, Bounds, and Product Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/fibonacci_cubes.html">Fibonacci Cubes</a></li><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/fibonacci_dimension.html">Fibonacci Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li><li><a href="invariants/semicube_coordinating_path_number.html">Semicube Coordinating-Path Number</a></li><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>A connected graph has finite Fibonacci dimension exactly when it is a partial cube. For a nontrivial partial cube $G$, $\operatorname{fdim}(G)=\operatorname{idim}(G)+p(X(G))-1$ and $\operatorname{idim}(G)\le\operatorname{fdim}(G)\le2\operatorname{idim}(G)-1$; equality in the upper bound holds exactly when the crossing graph is complete. Nontrivial partial cubes satisfy $\operatorname{fdim}(G\square H)=\operatorname{fdim}(G)+\operatorname{fdim}(H)+1$, and every tree satisfies $\operatorname{fdim}(T)=|E(T)|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A Fibonacci-cube embedding is a hypercube embedding whose coordinate order prevents adjacent 1s. Choosing orientations and ordering the coordinates is equivalent to covering one semicube from each complementary pair by coordinating paths in $X(G)$; concatenating those paths requires one separator coordinate between consecutive paths. This gives the exact formula. The number of required paths lies between one and the isometric dimension, with the maximum characterized by complete crossing. Disjoint coordinate blocks with one separator prove the Cartesian-product law, and the tree formula follows because distinct tree edges form independent cuts.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CabelloEppsteinKlavzar11fibdim">[CabelloEppsteinKlavzar11fibdim]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-dimension-profile</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The cited source also gives NP-hardness and approximation results; the database record keeps the structural theorem while the survey retains the detailed algorithmic profile.</p></div>
 
         </div>
     </div>

@@ -1,0 +1,16 @@
+{
+  "id": 34,
+  "short_name": "fibonacci_string_tau_path_equivalence",
+  "name": "Fibonacci String and Intrinsic Tau-Path Equivalence",
+  "class_id": "#classes/fibonacci_cubes",
+  "characterization_ids": [
+    "#characterizations/fibonacci_string_definition",
+    "#characterizations/fibonacci_peripheral_tau_path"
+  ],
+  "hypotheses": "Finite median graph with $n$ $\\Theta$-classes.",
+  "statement": "The Fibonacci-string model and the intrinsic peripheral-$\\Theta$ path-$\\tau$ criterion define the same graph $\\Gamma_n$.",
+  "status": "established",
+  "proof": "Peripheral $\\Theta$-classes characterize simplex graphs, so $G=\\kappa(R)$ for some graph $R$. The simplex-graph identity $\\kappa(R)^\\tau\\cong\\overline R$ turns $G^\\tau\\cong P_n$ into $R\\cong\\overline{P_n}$. Cliques of $\\overline{P_n}$ are independent sets of $P_n$, exactly the binary strings with no consecutive ones, giving $\\kappa(\\overline{P_n})\\cong\\Gamma_n$. The same identities prove the converse.",
+  "references": "\\cite{Klavzar13fibonaccisurvey}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:fibonacci-lucas-intrinsic"
+}

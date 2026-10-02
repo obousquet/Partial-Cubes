@@ -116,16 +116,17 @@
 
     <div class="table-card" id="math-2" style="position:relative;">
 
-        <h3><a href="characterization_equivalences/daisy_definition_expansion_equivalence.html" class="table-title-link">Daisy Down-Set and Expansion Equivalence</a></h3>
+        <h3><a href="characterization_equivalences/daisy_definition_expansion_equivalence.html" class="table-title-link">Daisy Down-Set, Expansion, and Peripheral-Class Equivalence</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Daisy Down-Set and Expansion Equivalence</p>
+        <p><strong>Name: </strong>Daisy Down-Set, Expansion, and Peripheral-Class Equivalence</p>
 <p><strong>Class: </strong><a href="classes/daisy_cubes.html">Daisy Cubes</a></p>
-<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/rooted_downset_embedding.html">Rooted Down-Set Embedding</a></li><li><a href="characterizations/downward_closed_expansion_sequence.html">Downward-Closed Expansion Sequence</a></li></ul></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/rooted_downset_embedding.html">Rooted Down-Set Embedding</a></li><li><a href="characterizations/downward_closed_expansion_sequence.html">Downward-Closed Expansion Sequence</a></li><li><a href="characterizations/every_theta_class_peripheral.html">Every Theta Class Is Peripheral</a></li></ul></p>
 <strong>Hypotheses:</strong><div class="text-field"><p>Finite connected graph.</p></div>
-<strong>Statement:</strong><div class="text-field"><p>Admitting a rooted down-set embedding is equivalent to construction from $K_1$ by downward-closed peripheral expansions.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>Admitting a rooted down-set embedding, construction from $K_1$ by downward-closed peripheral expansions, and having every $\Theta$-class peripheral are equivalent.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#taranenko2020daisy">[taranenko2020daisy]</a> (Theorem 2.8)</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:daisy-expansions</p></div>
+<strong>Proof:</strong><div class="text-field"><p>A rooted down-set representation exposes a peripheral side in each coordinate: every vertex on that side has its downward neighbor across the coordinate. Conversely, orient a peripheral side as the 1-side in every $\Theta$-class. Repeatedly crossing 1-coordinates toward their mates shows that the intrinsic coordinate labels form a down-set. The established expansion theorem identifies these rooted down-sets with the downward-closed peripheral-expansion construction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#taranenko2020daisy">[taranenko2020daisy]</a> <a href="bibliography.html#XieXu25simplex">[XieXu25simplex]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:daisy-expansions; PartialCubes:papers/survey/main.tex?#thm:daisy-peripheral</p></div>
 
         </div>
     </div>
@@ -639,6 +640,40 @@
 <strong>Proof:</strong><div class="text-field"><p>A planar Theta-class is a bond and dualizes to a simple dual cycle. Intersections of semicubes containing one fixed vertex are convex and connected, which gives non-separation. Conversely, failure of the partial-cube cut-partition path criterion would yield selected curve sides whose union disconnects the required complement. The corrected planar expansion theorem supplies the equivalent constructive presentation.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AlbenqueKnauer16hull">[AlbenqueKnauer16hull]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:planar-jordan-representation</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-34" style="position:relative;">
+
+        <h3><a href="characterization_equivalences/fibonacci_string_tau_path_equivalence.html" class="table-title-link">Fibonacci String and Intrinsic Tau-Path Equivalence</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fibonacci String and Intrinsic Tau-Path Equivalence</p>
+<p><strong>Class: </strong><a href="classes/fibonacci_cubes.html">Fibonacci Cubes</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/fibonacci_string_definition.html">Fibonacci-String Definition</a></li><li><a href="characterizations/fibonacci_peripheral_tau_path.html">Peripheral Theta Classes with Path Tau-Graph</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite median graph with $n$ $\Theta$-classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>The Fibonacci-string model and the intrinsic peripheral-$\Theta$ path-$\tau$ criterion define the same graph $\Gamma_n$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Peripheral $\Theta$-classes characterize simplex graphs, so $G=\kappa(R)$ for some graph $R$. The simplex-graph identity $\kappa(R)^\tau\cong\overline R$ turns $G^\tau\cong P_n$ into $R\cong\overline{P_n}$. Cliques of $\overline{P_n}$ are independent sets of $P_n$, exactly the binary strings with no consecutive ones, giving $\kappa(\overline{P_n})\cong\Gamma_n$. The same identities prove the converse.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Klavzar13fibonaccisurvey">[Klavzar13fibonaccisurvey]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-lucas-intrinsic</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-35" style="position:relative;">
+
+        <h3><a href="characterization_equivalences/lucas_string_tau_cycle_equivalence.html" class="table-title-link">Lucas String and Intrinsic Tau-Cycle Equivalence</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Lucas String and Intrinsic Tau-Cycle Equivalence</p>
+<p><strong>Class: </strong><a href="classes/lucas_cubes.html">Lucas Cubes</a></p>
+<p><strong>Equivalent Characterizations:</strong><ul class='fields-list'><li><a href="characterizations/lucas_string_definition.html">Lucas-String Definition</a></li><li><a href="characterizations/lucas_peripheral_tau_cycle.html">Peripheral Theta Classes with Cycle Tau-Graph</a></li></ul></p>
+<strong>Hypotheses:</strong><div class="text-field"><p>Finite median graph with $n\ge3$ $\Theta$-classes.</p></div>
+<strong>Statement:</strong><div class="text-field"><p>The cyclic Fibonacci-string model and the intrinsic peripheral-$\Theta$ cycle-$\tau$ criterion define the same graph $\Lambda_n$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Peripheral $\Theta$-classes give a simplex graph $G=\kappa(R)$, and $G^\tau\cong\overline R$. Thus a cycle $\tau$-graph forces $R\cong\overline{C_n}$. Cliques of $\overline{C_n}$ are independent sets of $C_n$, exactly the cyclic binary strings with no adjacent ones, so $\kappa(\overline{C_n})\cong\Lambda_n$; reversing the argument proves the converse.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Klavzar13fibonaccisurvey">[Klavzar13fibonaccisurvey]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-lucas-intrinsic</p></div>
 
         </div>
     </div>

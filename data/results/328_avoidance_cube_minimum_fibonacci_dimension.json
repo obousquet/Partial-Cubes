@@ -1,0 +1,19 @@
+{
+  "id": 328,
+  "short_name": "avoidance_cube_minimum_fibonacci_dimension",
+  "name": "Minimum Fibonacci Dimension for Isometric Avoidance Families",
+  "class_ids": [
+    "#classes/isometric_word_avoidance_cubes",
+    "#classes/partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/fibonacci_dimension",
+    "#invariants/isometric_dimension"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $k\\ge|f|$. If $|f|\\ge3$ and $f$ is an isometric forbidden word, then $Q_k^{\\mathrm{av}}(f)$ is a partial cube with isometric dimension $k$. If $\\{11,f\\}$ is isometric and $f\\ne010$, then $Q_k^{\\mathrm{av}}(\\{11,f\\})$ has both isometric and Fibonacci dimension $k$. For $f=010$ the graph is $C_4$, with dimensions two and three.",
+  "status": "established",
+  "proof": "Isometricity of the forbidden language makes the induced word graph isometric in $Q_k$; when $|f|\\ge3$, every coordinate remains active, so the isometric dimension is $k$. Avoiding 11 places the family inside $\\Gamma_k$, giving Fibonacci dimension at most $k$, while isometric dimension gives the matching lower bound. The exceptional word 010 collapses the allowed graph to a 4-cycle, whose two dimensions are known directly.",
+  "references": "\\cite{AnselmoEtAl25fibdim}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:avoidance-fibonacci-dimension"
+}

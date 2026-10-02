@@ -1,0 +1,26 @@
+{
+  "id": 327,
+  "short_name": "fibonacci_dimension_profile",
+  "name": "Fibonacci-Dimension Formula, Bounds, and Product Laws",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/fibonacci_cubes",
+    "#classes/trees"
+  ],
+  "invariant_ids": [
+    "#invariants/fibonacci_dimension",
+    "#invariants/isometric_dimension",
+    "#invariants/semicube_coordinating_path_number",
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "A connected graph has finite Fibonacci dimension exactly when it is a partial cube. For a nontrivial partial cube $G$, $\\operatorname{fdim}(G)=\\operatorname{idim}(G)+p(X(G))-1$ and $\\operatorname{idim}(G)\\le\\operatorname{fdim}(G)\\le2\\operatorname{idim}(G)-1$; equality in the upper bound holds exactly when the crossing graph is complete. Nontrivial partial cubes satisfy $\\operatorname{fdim}(G\\square H)=\\operatorname{fdim}(G)+\\operatorname{fdim}(H)+1$, and every tree satisfies $\\operatorname{fdim}(T)=|E(T)|$.",
+  "status": "established",
+  "proof": "A Fibonacci-cube embedding is a hypercube embedding whose coordinate order prevents adjacent 1s. Choosing orientations and ordering the coordinates is equivalent to covering one semicube from each complementary pair by coordinating paths in $X(G)$; concatenating those paths requires one separator coordinate between consecutive paths. This gives the exact formula. The number of required paths lies between one and the isometric dimension, with the maximum characterized by complete crossing. Disjoint coordinate blocks with one separator prove the Cartesian-product law, and the tree formula follows because distinct tree edges form independent cuts.",
+  "references": "\\cite{CabelloEppsteinKlavzar11fibdim}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:fibonacci-dimension-profile",
+  "comments": "The cited source also gives NP-hardness and approximation results; the database record keeps the structural theorem while the survey retains the detailed algorithmic profile."
+}

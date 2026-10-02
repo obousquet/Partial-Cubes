@@ -223,7 +223,7 @@
 <p><strong>Isomorphism Invariant:</strong> Yes</p>
 <strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#sec:partial-cube-basics</p></div>
 <div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/hypercube_isometric_dimension.html'>Isometric Dimension of a Hypercube</a></li><li><a href='invariant_values/tree_isometric_dimension.html'>Isometric Dimension of a Tree</a></li><li><a href='invariant_values/path_isometric_dimension.html'>Isometric Dimension of a Path</a></li><li><a href='invariant_values/star_isometric_dimension.html'>Isometric Dimension of a Star</a></li><li><a href='invariant_values/two_dimensional_isometric_dimension.html'>Isometric Dimension on Two-Dimensional Partial Cubes</a></li><li><a href='invariant_values/ample_rank_two_isometric_dimension.html'>Isometric Dimension on Rank-Two Ample Classes</a></li><li><a href='invariant_values/even_cycle_isometric_dimension.html'>Isometric Dimension of an Even Cycle</a></li><li><a href='invariant_values/pentagonal_obstruction_isometric_dimension.html'>Isometric Dimension of the Pentagonal Obstruction</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li><li><a href='results/avoidance_cube_minimum_fibonacci_dimension.html'>Minimum Fibonacci Dimension for Isometric Avoidance Families</a></li></ul></p></div>
 
         </div>
     </div>
@@ -1369,7 +1369,7 @@
 <strong>Comments:</strong><div class="text-field"><p>The crossing graph need not equal the square graph or the $\Theta$-graph outside special classes.</p></div>
 <strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-graph-profile</p></div>
 <div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li></ul></p></div>
 
         </div>
     </div>
@@ -1604,6 +1604,59 @@
 <strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:squaregraph-tree-products</p></div>
 <div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
 <div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/squaregraph_tree_product_dimension.html'>Exact Tree-Product Bounds for Squaregraphs</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-58" style="position:relative;">
+
+        <h3><a href="invariants/fibonacci_dimension.html" class="table-title-link">Fibonacci Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fibonacci Dimension</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\operatorname{fdim}(G)">
+            \[\operatorname{fdim}(G)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a connected graph $G$, $\operatorname{fdim}(G)$ is the least $d$ for which $G$ embeds isometrically into the Fibonacci cube $\Gamma_d$, and is $\infty$ when no such $d$ exists.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Nonnegative integers together with infinity</p>
+<strong>Normalization:</strong><div class="text-field"><p>$\operatorname{fdim}(K_1)=0$.</p></div>
+<p><strong>Category:</strong> Metric</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CabelloEppsteinKlavzar11fibdim">[CabelloEppsteinKlavzar11fibdim]</a></p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-dimension-profile</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li><li><a href='results/avoidance_cube_minimum_fibonacci_dimension.html'>Minimum Fibonacci Dimension for Isometric Avoidance Families</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-59" style="position:relative;">
+
+        <h3><a href="invariants/semicube_coordinating_path_number.html" class="table-title-link">Semicube Coordinating-Path Number</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Semicube Coordinating-Path Number</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="p(X(G))">
+            \[p(X(G))\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite partial cube $G$, let $X(G)$ have its semicubes as vertices, joining semicubes from distinct complementary pairs exactly when they are disjoint. Then $p(X(G))$ is the least number of paths that together contain exactly one semicube from every complementary pair, with no path containing both members of a pair.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Nonnegative integers</p>
+<strong>Normalization:</strong><div class="text-field"><p>The one-vertex graph has no nonconstant semicube pair and coordinating-path number zero.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CabelloEppsteinKlavzar11fibdim">[CabelloEppsteinKlavzar11fibdim]</a></p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-dimension-profile</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li></ul></p></div>
 
         </div>
     </div>

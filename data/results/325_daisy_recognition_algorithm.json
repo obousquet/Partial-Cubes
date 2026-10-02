@@ -1,0 +1,14 @@
+{
+  "id": 325,
+  "short_name": "daisy_recognition_algorithm",
+  "name": "Daisy Cubes Are Recognizable with a Proper Labelling in Quadratic Time",
+  "class_ids": [
+    "#classes/daisy_cubes"
+  ],
+  "result_type": "algorithm",
+  "statement": "An arbitrary $n$-vertex graph can be tested for being a daisy cube in $O(n^2)$ time. On acceptance, the algorithm also outputs an isometric hypercube labelling whose label family is a down-set.",
+  "status": "established",
+  "proof": "First apply the quadratic partial-cube recognition algorithm to recover the intrinsic $\\Theta$-coordinates. For every $\\Theta$-class, compute both semicubes and their boundaries and require one boundary to equal its semicube. Orient that peripheral semicube as the 1-side. Crossing any present 1-coordinate gives its 0-neighbor, so repeated crossings prove that the resulting labels form a down-set. The recognition and output scans remain quadratic.",
+  "references": "\\cite{taranenko2020daisy,XieXu25simplex}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#cor:daisy-recognition"
+}

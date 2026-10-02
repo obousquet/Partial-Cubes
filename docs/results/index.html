@@ -5465,6 +5465,58 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-325" style="position:relative;">
+
+        <h3><a href="results/daisy_recognition_algorithm.html" class="table-title-link">Daisy Cubes Are Recognizable with a Proper Labelling in Quadratic Time</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Daisy Cubes Are Recognizable with a Proper Labelling in Quadratic Time</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>An arbitrary $n$-vertex graph can be tested for being a daisy cube in $O(n^2)$ time. On acceptance, the algorithm also outputs an isometric hypercube labelling whose label family is a down-set.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First apply the quadratic partial-cube recognition algorithm to recover the intrinsic $\Theta$-coordinates. For every $\Theta$-class, compute both semicubes and their boundaries and require one boundary to equal its semicube. Orient that peripheral semicube as the 1-side. Crossing any present 1-coordinate gives its 0-neighbor, so repeated crossings prove that the resulting labels form a down-set. The recognition and output scans remain quadratic.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#taranenko2020daisy">[taranenko2020daisy]</a> <a href="bibliography.html#XieXu25simplex">[XieXu25simplex]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#cor:daisy-recognition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-327" style="position:relative;">
+
+        <h3><a href="results/fibonacci_dimension_profile.html" class="table-title-link">Fibonacci-Dimension Formula, Bounds, and Product Laws</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fibonacci-Dimension Formula, Bounds, and Product Laws</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/fibonacci_cubes.html">Fibonacci Cubes</a></li><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/fibonacci_dimension.html">Fibonacci Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li><li><a href="invariants/semicube_coordinating_path_number.html">Semicube Coordinating-Path Number</a></li><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>A connected graph has finite Fibonacci dimension exactly when it is a partial cube. For a nontrivial partial cube $G$, $\operatorname{fdim}(G)=\operatorname{idim}(G)+p(X(G))-1$ and $\operatorname{idim}(G)\le\operatorname{fdim}(G)\le2\operatorname{idim}(G)-1$; equality in the upper bound holds exactly when the crossing graph is complete. Nontrivial partial cubes satisfy $\operatorname{fdim}(G\square H)=\operatorname{fdim}(G)+\operatorname{fdim}(H)+1$, and every tree satisfies $\operatorname{fdim}(T)=|E(T)|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A Fibonacci-cube embedding is a hypercube embedding whose coordinate order prevents adjacent 1s. Choosing orientations and ordering the coordinates is equivalent to covering one semicube from each complementary pair by coordinating paths in $X(G)$; concatenating those paths requires one separator coordinate between consecutive paths. This gives the exact formula. The number of required paths lies between one and the isometric dimension, with the maximum characterized by complete crossing. Disjoint coordinate blocks with one separator prove the Cartesian-product law, and the tree formula follows because distinct tree edges form independent cuts.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CabelloEppsteinKlavzar11fibdim">[CabelloEppsteinKlavzar11fibdim]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:fibonacci-dimension-profile</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The cited source also gives NP-hardness and approximation results; the database record keeps the structural theorem while the survey retains the detailed algorithmic profile.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-328" style="position:relative;">
+
+        <h3><a href="results/avoidance_cube_minimum_fibonacci_dimension.html" class="table-title-link">Minimum Fibonacci Dimension for Isometric Avoidance Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minimum Fibonacci Dimension for Isometric Avoidance Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/isometric_word_avoidance_cubes.html">Isometric Word-Avoidance Cubes</a></li><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/fibonacci_dimension.html">Fibonacci Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $k\ge|f|$. If $|f|\ge3$ and $f$ is an isometric forbidden word, then $Q_k^{\mathrm{av}}(f)$ is a partial cube with isometric dimension $k$. If $\{11,f\}$ is isometric and $f\ne010$, then $Q_k^{\mathrm{av}}(\{11,f\})$ has both isometric and Fibonacci dimension $k$. For $f=010$ the graph is $C_4$, with dimensions two and three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Isometricity of the forbidden language makes the induced word graph isometric in $Q_k$; when $|f|\ge3$, every coordinate remains active, so the isometric dimension is $k$. Avoiding 11 places the family inside $\Gamma_k$, giving Fibonacci dimension at most $k$, while isometric dimension gives the matching lower bound. The exceptional word 010 collapses the allowed graph to a 4-cycle, whose two dimensions are known directly.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AnselmoEtAl25fibdim">[AnselmoEtAl25fibdim]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:avoidance-fibonacci-dimension</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

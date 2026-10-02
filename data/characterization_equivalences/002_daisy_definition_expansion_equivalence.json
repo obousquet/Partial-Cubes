@@ -1,15 +1,17 @@
 {
   "id": 2,
   "short_name": "daisy_definition_expansion_equivalence",
-  "name": "Daisy Down-Set and Expansion Equivalence",
+  "name": "Daisy Down-Set, Expansion, and Peripheral-Class Equivalence",
   "class_id": "#classes/daisy_cubes",
   "characterization_ids": [
     "#characterizations/rooted_downset_embedding",
-    "#characterizations/downward_closed_expansion_sequence"
+    "#characterizations/downward_closed_expansion_sequence",
+    "#characterizations/every_theta_class_peripheral"
   ],
   "hypotheses": "Finite connected graph.",
-  "statement": "Admitting a rooted down-set embedding is equivalent to construction from $K_1$ by downward-closed peripheral expansions.",
+  "statement": "Admitting a rooted down-set embedding, construction from $K_1$ by downward-closed peripheral expansions, and having every $\\Theta$-class peripheral are equivalent.",
   "status": "established",
-  "references": "\\cite{taranenko2020daisy} (Theorem 2.8)",
-  "proof_source": "PartialCubes:papers/survey/main.tex#thm:daisy-expansions"
+  "proof": "A rooted down-set representation exposes a peripheral side in each coordinate: every vertex on that side has its downward neighbor across the coordinate. Conversely, orient a peripheral side as the 1-side in every $\\Theta$-class. Repeatedly crossing 1-coordinates toward their mates shows that the intrinsic coordinate labels form a down-set. The established expansion theorem identifies these rooted down-sets with the downward-closed peripheral-expansion construction.",
+  "references": "\\cite{taranenko2020daisy,XieXu25simplex}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:daisy-expansions; PartialCubes:papers/survey/main.tex#thm:daisy-peripheral"
 }
