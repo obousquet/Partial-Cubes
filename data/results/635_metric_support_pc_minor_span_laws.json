@@ -1,0 +1,21 @@
+{
+  "id": 635,
+  "short_name": "metric_support_pc_minor_span_laws",
+  "name": "Local Alphabet and pc-Minor Span Laws for Metric Supports",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "For an isometric cube family $H$, call an inclusion-minimal order-infeasible family of distance-two constraints a metric support, where a constraint on endpoints $u,v$ is satisfied by an order when some common neighbour $w$ follows at least one endpoint. Every distance-two pair has one or two common neighbours, so the local alphabet consists only of a rooted three-vertex constraint and a four-vertex square constraint. Coordinate halfspaces preserve both distance-two pairs and their common-neighbour sets. An ample $H$ is nonpeelable exactly when it contains a metric support. If $H$ is an ample forbidden pc-minor for corner peelability, every metric support meets both halfspaces of every effective coordinate. Moreover every contraction acts nontrivially on every support: it either identifies two support vertices, makes a constrained pair adjacent, or creates a new common neighbour for a same-layer constrained pair.",
+  "status": "established",
+  "proof": "Isometry makes the endpoints of a distance-two pair differ in exactly two cube coordinates, leaving precisely two possible ambient common neighbours and at least one present neighbour. A coordinate halfspace is convex, and a common neighbour of two distinct same-halfspace vertices cannot lie in the other halfspace, proving exact restriction transport. The static metric elimination criterion makes the whole constraint system order-infeasible exactly when $H$ is nonpeelable; finiteness supplies an inclusion-minimal subsystem. If a support lay in one coordinate halfspace, exact restriction transport would make that proper restriction nonpeelable, contrary to pc-minimality. If a contraction caused none of the three stated changes, projection would identify the support with an order-infeasible subsystem of the proper contraction, giving the same contradiction.",
+  "references": "\\cite{CoudertDucoffeNisseSoto18,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-metric-support-coordinate-span",
+  "comments": "These are necessary minimality laws. Order-infeasibility is still the original global peeling obstruction, so the laws do not yet constitute attachment axioms for a generative classification."
+}
