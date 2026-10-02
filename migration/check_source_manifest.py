@@ -16,6 +16,11 @@ def main() -> int:
     parser.add_argument("--manifest", type=Path, default=Path(__file__).with_name("source_manifest.json"))
     parser.add_argument("--latex-root", type=Path)
     parser.add_argument("--archive-index", type=Path, default=MIGRATION_DIR / "source_archive.json")
+    parser.add_argument(
+        "--supplemental-index",
+        type=Path,
+        default=MIGRATION_DIR / "supplemental_source_archive.json",
+    )
     args = parser.parse_args()
 
     config = load_config(args.config)
@@ -68,6 +73,23 @@ def main() -> int:
         for item in unrecoverable:
             print(f"- {item}")
         return 1
+    supplemental = (
+        load_json(args.supplemental_index)
+        if args.supplemental_index.is_file()
+        else {"files": []}
+    )
+    invalid_supplemental = []
+    for entry in supplemental["files"]:
+        archive_path = MIGRATION_DIR / entry["archive_path"]
+        if not archive_path.is_file() or sha256_file(archive_path) != entry["sha256"]:
+            invalid_supplemental.append(
+                f"{entry['snapshot_id']}:{entry['repository']}:{entry['path']}"
+            )
+    if invalid_supplemental:
+        print("Supplemental source bytes are missing or corrupt:")
+        for item in invalid_supplemental:
+            print(f"- {item}")
+        return 1
     print(
         f"Source snapshot is recoverable: {len(manifest['files'])} files in "
         f"{len(manifest['repositories'])} repositories; {len(archive['files'])} dirty files byte-archived."
@@ -76,6 +98,11 @@ def main() -> int:
         print(f"Repository HEAD drift recorded: {len(head_drift)}")
     if live_drift:
         print(f"Live-file drift safely isolated from snapshot: {len(live_drift)}")
+    if supplemental["files"]:
+        print(
+            "Supplemental reviewed source snapshots recoverable: "
+            f"{len(supplemental['files'])} file(s)."
+        )
     if manifest["missing_references"]:
         print(f"Recorded missing source references: {len(manifest['missing_references'])}")
     return 0

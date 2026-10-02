@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "batch_id": "099_dismantlable_ample_cube_boundary_and_three_piece",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate arbitrary-dimensional cube-boundary relative obstructions, the rooted-failure edge compatibility test and forbidden double, the rooted-prism characterization, profile transport under edge-retaining pc-minors, and the exact existence criterion for three-piece separating-edge obstructions.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-cube-boundary-retention",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-edge-boundary-double",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-prism-context",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-edge-boundary-minors",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-piece-boundary-equivalence"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The live cube-boundary theorem gained conclusions after snapshot 2026-09-30-b001. The full current source file was therefore preserved in supplemental snapshot 2026-10-02-b002 before promotion, and all five blocks were compared against both snapshots and the live checkout.",
+    "outcome": "The edge double, rooted prism, minor-transport lemma, and three-piece equivalence are byte-identical in both snapshots and the live manuscript. The cube-boundary theorem is identical between the supplemental snapshot and live manuscript; relative to the main snapshot it adds retention of both punctured boundary cubes and, for k=2, every nonempty proper ample boundary subfamily. Those strengthened conclusions are included in the database record.",
+    "main_snapshot_source_sha256": "f9fe2c566df65e4acf3dbc320d40c0dfb04dd61ee0b2eb5c01d7a8e5c76bcf1c",
+    "supplemental_snapshot_source_sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+    "claim_block_sha256": {
+      "thm:damp-cube-boundary-retention": "5de689faec226240b8f9de9c37ce1a7a9ca7ef4f3894efa2f42247d0eb635797",
+      "cor:damp-edge-boundary-double": "4fce1c4a2a6e37bbb25fd639a767feb7a3543c70bd40208ec32204419eb52530",
+      "prop:damp-rooted-prism-context": "3e39503f1bb14b6b31c960e914b90b224ce5c04f5a6f7d34c3b80477a7af158a",
+      "lem:damp-edge-boundary-minors": "e49f9e2bac7510ee8e1f82f3293817378fa3432d70a5ea4b6e3a202285fd4113",
+      "thm:damp-three-piece-boundary-equivalence": "b6412a59c2cb385de81cc65a01cd9792eb284ac3c821c6ac3d3407c949430b89"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized boundary-retention construction, exact marked-edge compatibility and transport laws, rooted-prism recognition, three-piece existence criterion, concise proofs, and source locators. The manuscript retains full schedules, verifier narratives, examples, caveats, and research context.",
+    "recoverability": "The exact 2,379,046-byte dirty source file is preserved in supplemental snapshot 2026-10-02-b002. Its archive index is checked by the migration source-integrity command, and each promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/361_cube_boundary_relative_obstructions.json",
+      "sha256": "c1afa60ccdd7dbc68562cc71a2ff9d31935d2be149a8d4ad1c926a03928ea44a"
+    },
+    {
+      "path": "data/results/362_edge_boundary_double.json",
+      "sha256": "e9e0860eba292d40e554240309f210926c358e06f89563f88cf576556b1c5075"
+    },
+    {
+      "path": "data/results/363_rooted_prism_edge_context.json",
+      "sha256": "174cc26832824bf96febb4cf51c2455139393780d39e17ae7e422d6a675cfe9f"
+    },
+    {
+      "path": "data/results/364_edge_profile_minor_transport.json",
+      "sha256": "9f1150bd772f7d0ff9f9dec6cadebfb929e115df8d0f9b93b6049a7c5987bb9c"
+    },
+    {
+      "path": "data/results/365_three_piece_edge_obstruction_existence.json",
+      "sha256": "2fddf9f7353a7a110aa271d5b57cbdae1706521d7ec6313bf89f07b98ff79ea2"
+    },
+    {
+      "path": "migration/README.md",
+      "sha256": "274d51c1c2e2aab3c2f12ed4ac2a00f96fa42e11d34a848c3128797501b9c105"
+    },
+    {
+      "path": "migration/common.py",
+      "sha256": "3838393706ac89ec59f9968d31b7c5105b09397b2f63f08887a43e6423a8c703"
+    },
+    {
+      "path": "migration/check_source_manifest.py",
+      "sha256": "ccd362e6b552ecd558680cddb3a3c313b3701a08247e44484c5103cddcfaca68"
+    },
+    {
+      "path": "migration/conflicts.json",
+      "sha256": "dfbb41b9e87b546e5cfc8201e13abae312202e7e9d43c5767ad9e0e404de3884"
+    },
+    {
+      "path": "migration/supplemental_source_archive.json",
+      "sha256": "c5fe5466cc9582a9cbdf751dd8575bdd9a64804d3418c408fa34b90fc3022e2c"
+    },
+    {
+      "path": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e"
+    },
+    {
+      "path": "migration/generated/minor_inventory.json",
+      "sha256": "7e9f0276a00281285f5c77427dc8e0e1ef4c17ac47b701891233e7ed40df2c25"
+    },
+    {
+      "path": "migration/generated/latex_labels.json",
+      "sha256": "c85d71f210ff218840f22c0fbdf1c473d3a99e036ba220d79b1b466e3f8d5255"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "99fc305f44e2b66b89d5b22185e5b5042e1d46ec5662c3de0bec355f788a44cd"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "83e7652bd4a52b5045e5445f05c56eb55c8b4060096afc1cd252566c889a5a8e"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1653 records.",
+    "website": "Normalized 1669 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "The supplemental overlay exposes 101 additional dismantlable-ample result labels. This batch covers 5 claims, raising that workspace from 31 to 36 of 683 and overall coverage from 462 to 467 of 1114 database-owned labels.",
+    "source_integrity": "The 93-file main snapshot and the one-file supplemental reviewed snapshot are recoverable."
+  },
+  "deferred": [
+    "The remaining 647 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Conjectures, problems, and intrinsic classification questions remain prose-owned in LaTeX.",
+    "Further live-checkout changes require another reviewed supplemental snapshot or full migration freeze."
+  ]
+}

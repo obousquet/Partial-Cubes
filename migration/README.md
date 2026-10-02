@@ -29,6 +29,15 @@ version even if the live research workspace changes later. The direct source
 corpus excludes `research/` and `archive/` directories; those artifacts remain
 in the LaTeX repository but cannot silently serve as proof provenance.
 
+When a reviewed claim changes after the main freeze, its exact current source
+file may be preserved as a supplemental snapshot under a new snapshot ID.
+`supplemental_source_archive.json` records these targeted refreshes, and
+`check_source_manifest.py` verifies their archived bytes on every migration
+check. Supplemental entries overlay the same logical path in extraction and
+coverage indexing, with the latest listed entry taking precedence. Batch
+ledgers must state which claims use the main snapshot and which use a
+supplemental refresh.
+
 The ownership states are:
 
 - `latex`: extracted candidate; the source document remains authoritative;

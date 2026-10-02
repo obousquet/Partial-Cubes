@@ -1,0 +1,21 @@
+{
+  "id": 362,
+  "short_name": "edge_boundary_double",
+  "name": "Rooted Failure Gives an Edge Compatibility Test and Forbidden Double",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $L$ be the rooted-failure transfer piece with marked edge $D=\\{u,v\\}$ and profile $(0,1,1,0,0)$. For any dismantlable ample piece $K$ with disjoint private coordinates and common edge $D$, the union $L\\cup_DK$ is dismantlable ample exactly when $r_D(K)=1$ or $\\ell_u(K)=1$ or $\\ell_v(K)=1$. If the core of $L$ is a rooted factor using every old coordinate, gluing two private-coordinate-disjoint copies of $L$ along $D$ produces an ample pc-minimal obstruction to dismantlable ampleness of order $2(|A|+|B|)-2$. The certified $581$-concept piece therefore gives a forbidden double of order $1160$.",
+  "status": "established",
+  "proof": "Substituting the profile of $L$ into the exact edge-gluing criterion gives the three-term compatibility test and makes two copies incompatible. A proper private-coordinate minor retaining $D$ turns the corresponding rooted core into a root-peelable minor, so that copy now peels to $D$ and the union becomes peelable. A private restriction discarding $D$ leaves a positive minor of one copy. Either shared-coordinate restriction and the shared-coordinate contraction give two pieces with an attainable common root, so the one-point-amalgam criterion makes those images peelable. Hence every proper elementary pc-minor is dismantlable ample while the original double is not.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-edge-boundary-double"
+}

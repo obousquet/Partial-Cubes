@@ -1,0 +1,21 @@
+{
+  "id": 365,
+  "short_name": "three_piece_edge_obstruction_existence",
+  "name": "Exact Existence Criterion for Three-Piece Separating-Edge Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "An ample pc-minimal obstruction to dismantlable ampleness with a separating edge whose deletion leaves exactly three connected components exists if and only if some dismantlable ample marked-edge piece $K$ satisfies $r_D(K)=0$, has at least one attainable endpoint sink, and has at least one attainable endpoint leaf exit. The sink and leaf may be witnessed by different acyclic USOs and may occur at the same or opposite endpoints; no minimality or connectivity hypothesis on $K\\setminus D$ is required.",
+  "status": "established",
+  "proof": "In a three-piece obstruction, the exact separator classification gives three relative-failing pieces that are pairwise compatible. If no one piece had both a sink entry and a leaf entry, sink-only and leaf-only pieces would form two groups and three pieces could not be pairwise compatible. Conversely, take an edge-retaining minor $K_0$ minimal subject to failure of retention. Profile transport preserves the positive sink and leaf entries, and minimality makes $K_0\\setminus D$ connected and every proper private minor relatively peelable. If an opposite-endpoint sink/leaf pair occurs, three copies of $K_0$ are pairwise compatible but jointly nonpeelable. For a same-endpoint pair, use $K_0$, its endpoint reversal, and the fixed $(0,1,1,0,0)$ piece. In either construction, the separator criterion and the one-point-amalgam criterion verify every private and shared-coordinate proper minor, producing the required three-component pc-minimal obstruction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-piece-boundary-equivalence"
+}

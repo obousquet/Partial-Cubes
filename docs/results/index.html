@@ -6043,6 +6043,90 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-361" style="position:relative;">
+
+        <h3><a href="results/cube_boundary_relative_obstructions.html" class="table-title-link">Relative Peeling Obstructions at Cube Boundaries of Every Dimension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Relative Peeling Obstructions at Cube Boundaries of Every Dimension</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $0\in C\subseteq A,B$ satisfy the hypotheses of the rooted-failure edge transfer: $C$ is dismantlable ample, the two ample wings peel both to $C$ and to $0$, and $A\cap B=C$ with matching shadow intersection. For a fresh $k$-set $E$, put $R_A=Q_E\setminus\{1^E\}$, $R_B=Q_E\setminus\{0^E\}$, $D_k=\{0\}\times Q_E$, and $Y_k=(C\times Q_E)\cup((A\setminus C)\times R_A)\cup((B\setminus C)\times R_B)$. Then $Y_k$ is ample and dismantlable ample. It peels to every nonempty proper face of $D_k$ and to each punctured boundary cube $\{0\}\times R_A,\{0\}\times R_B$; for $k=2$ it peels to every nonempty proper ample subfamily of $D_2$, including all four punctured squares. It peels to $D_k$ exactly when $C$ peels to $0$. If $(C,0)$ is a rooted factor using every old coordinate, every proper pc-minor of the marked pair $(Y_k,D_k)$ with nonempty target peels to its target, although the original pair does not. Certified inputs of orders $289,291,290$ yield $|Y_k|=292\cdot2^k-3$ and isometric dimension $12+k$ for every $k\ge1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Supports using a proper subset of the new coordinates are shattered exactly according to $A\cup B$, while supports using all of $E$ are shattered exactly according to $C$. The resulting shadow count equals $(2^k-1)|A\cup B|+|C|=|Y_k|$, proving ampleness. Relative wing orders clear the two punctured-cube rows to $C\times Q_E$, so the family is peelable. A peeling retaining the whole boundary cube would record first losses of complete $E$-fibers and project to a peeling of $C$ ending at $0$; conversely such a rooted peeling lifts. Every proper face avoids one puncture, allowing one wing and then the core to be cleared to that face. To retain $R_A$, clear the opposite wing, delete the missing row copy of each core vertex in a core peeling, and finish in $A\times R_A$; symmetry gives $R_B$. When $k=2$, the two remaining punctures are handled by clearing both repairs in the punctured middle row, deleting its core, and peeling the resulting three-row path from its outer rows inward. Root-preserving old-coordinate minors make the core peel to its root, new-coordinate restrictions invoke proper-face retention, and new-coordinate contractions produce $(A\cup B)\times Q_{E\setminus\{e\}}$; these observations prove relative pc-minimality. The size formula follows by substitution.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-cube-boundary-retention</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-362" style="position:relative;">
+
+        <h3><a href="results/edge_boundary_double.html" class="table-title-link">Rooted Failure Gives an Edge Compatibility Test and Forbidden Double</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Failure Gives an Edge Compatibility Test and Forbidden Double</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $L$ be the rooted-failure transfer piece with marked edge $D=\{u,v\}$ and profile $(0,1,1,0,0)$. For any dismantlable ample piece $K$ with disjoint private coordinates and common edge $D$, the union $L\cup_DK$ is dismantlable ample exactly when $r_D(K)=1$ or $\ell_u(K)=1$ or $\ell_v(K)=1$. If the core of $L$ is a rooted factor using every old coordinate, gluing two private-coordinate-disjoint copies of $L$ along $D$ produces an ample pc-minimal obstruction to dismantlable ampleness of order $2(|A|+|B|)-2$. The certified $581$-concept piece therefore gives a forbidden double of order $1160$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Substituting the profile of $L$ into the exact edge-gluing criterion gives the three-term compatibility test and makes two copies incompatible. A proper private-coordinate minor retaining $D$ turns the corresponding rooted core into a root-peelable minor, so that copy now peels to $D$ and the union becomes peelable. A private restriction discarding $D$ leaves a positive minor of one copy. Either shared-coordinate restriction and the shared-coordinate contraction give two pieces with an attainable common root, so the one-point-amalgam criterion makes those images peelable. Hence every proper elementary pc-minor is dismantlable ample while the original double is not.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-edge-boundary-double</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-363" style="position:relative;">
+
+        <h3><a href="results/rooted_prism_edge_context.html" class="table-title-link">Rooted Factors Are Exactly Minimal Zero-Context Prisms</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Factors Are Exactly Minimal Zero-Context Prisms</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a dismantlable ample family $C$ with marked vertex $a$, form the prism $P=C\times Q_1$ and mark the vertical edge $D=\{a\}\times Q_1$. If $h=1$ exactly when $C$ peels to $a$, then every entry of the marked-edge profile of $P$ equals $h$. Consequently $(C,a)$ is a rooted factor exactly when $P$ has positive zero-vector context type and every proper elementary private-coordinate minor retaining $D$ peels to $D$. Every rooted factor occurs as such a piece in an ample pc-minimal obstruction with a separating edge: gluing its prism to the fixed $581$-concept rooted-failure piece produces a forbidden family of order $2|C|+579$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A rooted peeling of $C$ lifts by deleting whole edge fibers, first retaining $D$ and then realizing either sink or leaf exit. Conversely, restricting any witness for retention, a sink, or a leaf exit to the appropriate horizontal section gives a peeling of $C$ ending at $a$, proving the all-$h$ profile. Private minors of the prism are prisms over the corresponding rooted minors of $C$, so their retention condition is exactly rooted minimality. The fixed second piece fails edge retention but attains both endpoint sinks and becomes relatively peelable after every proper private minor. Product-attachment minimality then makes the glued family forbidden, and counting the vertices gives $581+2(|C|-1)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-prism-context</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-364" style="position:relative;">
+
+        <h3><a href="results/edge_profile_minor_transport.html" class="table-title-link">Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D=\{u,v\}$ be an edge of an ample family. Under any coordinate-face intersection containing both endpoints, or any contraction in a coordinate other than the direction of $D$, each true entry among $r_D,t_u,t_v,\ell_u,\ell_v$ remains true for the image edge. The same holds for every sequence of such edge-retaining pc-minor operations.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply the operation to all residual families of a witnessing peeling and omit repeated images. Face intersections filter the order, while contractions record a word when its last lift disappears, preserving retention and sink endpoints. For a leaf exit, a face intersection preserves the leaf directly. Under contraction, no new quotient neighbor outside the marked-edge direction can appear: otherwise a lift at distance two from the leaf would have both intermediate vertices absent, contradicting isometry of the ample residual family. The marked neighbor persists, so the image is again the first endpoint deleted as a leaf. Iteration proves the sequence form.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-edge-boundary-minors</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-365" style="position:relative;">
+
+        <h3><a href="results/three_piece_edge_obstruction_existence.html" class="table-title-link">Exact Existence Criterion for Three-Piece Separating-Edge Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Existence Criterion for Three-Piece Separating-Edge Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An ample pc-minimal obstruction to dismantlable ampleness with a separating edge whose deletion leaves exactly three connected components exists if and only if some dismantlable ample marked-edge piece $K$ satisfies $r_D(K)=0$, has at least one attainable endpoint sink, and has at least one attainable endpoint leaf exit. The sink and leaf may be witnessed by different acyclic USOs and may occur at the same or opposite endpoints; no minimality or connectivity hypothesis on $K\setminus D$ is required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In a three-piece obstruction, the exact separator classification gives three relative-failing pieces that are pairwise compatible. If no one piece had both a sink entry and a leaf entry, sink-only and leaf-only pieces would form two groups and three pieces could not be pairwise compatible. Conversely, take an edge-retaining minor $K_0$ minimal subject to failure of retention. Profile transport preserves the positive sink and leaf entries, and minimality makes $K_0\setminus D$ connected and every proper private minor relatively peelable. If an opposite-endpoint sink/leaf pair occurs, three copies of $K_0$ are pairwise compatible but jointly nonpeelable. For a same-endpoint pair, use $K_0$, its endpoint reversal, and the fixed $(0,1,1,0,0)$ piece. In either construction, the separator criterion and the one-point-amalgam criterion verify every private and shared-coordinate proper minor, producing the required three-component pc-minimal obstruction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-three-piece-boundary-equivalence</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-16" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-364" style="position:relative;">
 
-        <h3><a href="operations/coordinate_fiber_product.html" class="table-title-link">Coordinate Fiber Product</a></h3>
+        <h3><a href="results/edge_profile_minor_transport.html" class="table-title-link">Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate Fiber Product</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\times_{\{0,1\}^X}">
-            \[\times_{\{0,1\}^X}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For $C\subseteq\{0,1\}^{X\sqcup Y}$ and $D\subseteq\{0,1\}^{X\sqcup Z}$ with pairwise disjoint $X,Y,Z$, their coordinate fiber product is $C\times_XD=\{(x,y,z):(x,y)\in C,\ (x,z)\in D\}$. Equivalently, duplicate the shared coordinates $X$ in the two factors and retain exactly the pairs whose two copies agree.</p></div>
-<p><strong>Category:</strong> Product</p>
-<strong>Comments:</strong><div class="text-field"><p>The output may be empty. For $|X|=1$ this is the one-coordinate product. For larger shared blocks, ampleness can fail even for maximum inputs; coordinate-tree projections and monotone path fibers provide positive special cases.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#sec:coordinate-product</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_one_coordinate_fiber_product_closed.html'>Ample Classes Are Closed Under One-Coordinate Fiber Products</a></li><li><a href='operation_results/maximum_generated_one_coordinate_fiber_product_closed.html'>Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</a></li><li><a href='operation_results/ample_arbitrary_coordinate_fiber_product_not_closed.html'>Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/coordinate_tree_fiber_product_formula.html'>Coordinate-Tree Fiber Products of Ample Classes</a></li><li><a href='results/opposite_consecutive_triple_parent.html'>Maximum Parent for Opposite Consecutive Triples</a></li><li><a href='results/cumulative_path_fiber_parents.html'>Consecutive Parents for Cumulative Path Fibers</a></li><li><a href='results/monotone_path_fiber_product_closure.html'>Maximum-Generated Closure for Monotone Path Fibers</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/cube_boundary_relative_obstructions.html'>Relative Peeling Obstructions at Cube Boundaries of Every Dimension</a></li></ul></p></div>
+        <p><strong>Name: </strong>Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $D=\{u,v\}$ be an edge of an ample family. Under any coordinate-face intersection containing both endpoints, or any contraction in a coordinate other than the direction of $D$, each true entry among $r_D,t_u,t_v,\ell_u,\ell_v$ remains true for the image edge. The same holds for every sequence of such edge-retaining pc-minor operations.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply the operation to all residual families of a witnessing peeling and omit repeated images. Face intersections filter the order, while contractions record a word when its last lift disappears, preserving retention and sink endpoints. For a leaf exit, a face intersection preserves the leaf directly. Under contraction, no new quotient neighbor outside the marked-edge direction can appear: otherwise a lift at distance two from the leaf would have both intermediate vertices absent, contradicting isometry of the ample residual family. The marked neighbor persists, so the image is again the first endpoint deleted as a leaf. Iteration proves the sequence form.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-edge-boundary-minors</p></div>
 
         </div>
     </div>

@@ -1,0 +1,22 @@
+{
+  "id": 363,
+  "short_name": "rooted_prism_edge_context",
+  "name": "Rooted Factors Are Exactly Minimal Zero-Context Prisms",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "For a dismantlable ample family $C$ with marked vertex $a$, form the prism $P=C\\times Q_1$ and mark the vertical edge $D=\\{a\\}\\times Q_1$. If $h=1$ exactly when $C$ peels to $a$, then every entry of the marked-edge profile of $P$ equals $h$. Consequently $(C,a)$ is a rooted factor exactly when $P$ has positive zero-vector context type and every proper elementary private-coordinate minor retaining $D$ peels to $D$. Every rooted factor occurs as such a piece in an ample pc-minimal obstruction with a separating edge: gluing its prism to the fixed $581$-concept rooted-failure piece produces a forbidden family of order $2|C|+579$.",
+  "status": "established",
+  "proof": "A rooted peeling of $C$ lifts by deleting whole edge fibers, first retaining $D$ and then realizing either sink or leaf exit. Conversely, restricting any witness for retention, a sink, or a leaf exit to the appropriate horizontal section gives a peeling of $C$ ending at $a$, proving the all-$h$ profile. Private minors of the prism are prisms over the corresponding rooted minors of $C$, so their retention condition is exactly rooted minimality. The fixed second piece fails edge retention but attains both endpoint sinks and becomes relatively peelable after every proper private minor. Product-attachment minimality then makes the glued family forbidden, and counting the vertices gives $581+2(|C|-1)$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-prism-context"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 364,
+  "short_name": "edge_profile_minor_transport",
+  "name": "Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $D=\\{u,v\\}$ be an edge of an ample family. Under any coordinate-face intersection containing both endpoints, or any contraction in a coordinate other than the direction of $D$, each true entry among $r_D,t_u,t_v,\\ell_u,\\ell_v$ remains true for the image edge. The same holds for every sequence of such edge-retaining pc-minor operations.",
+  "status": "established",
+  "proof": "Apply the operation to all residual families of a witnessing peeling and omit repeated images. Face intersections filter the order, while contractions record a word when its last lift disappears, preserving retention and sink endpoints. For a leaf exit, a face intersection preserves the leaf directly. Under contraction, no new quotient neighbor outside the marked-edge direction can appear: otherwise a lift at distance two from the leaf would have both intermediate vertices absent, contradicting isometry of the ample residual family. The marked neighbor persists, so the image is again the first endpoint deleted as a leaf. Iteration proves the sequence form.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-edge-boundary-minors"
+}

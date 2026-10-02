@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-16" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-363" style="position:relative;">
 
-        <h3><a href="operations/coordinate_fiber_product.html" class="table-title-link">Coordinate Fiber Product</a></h3>
+        <h3><a href="results/rooted_prism_edge_context.html" class="table-title-link">Rooted Factors Are Exactly Minimal Zero-Context Prisms</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate Fiber Product</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\times_{\{0,1\}^X}">
-            \[\times_{\{0,1\}^X}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For $C\subseteq\{0,1\}^{X\sqcup Y}$ and $D\subseteq\{0,1\}^{X\sqcup Z}$ with pairwise disjoint $X,Y,Z$, their coordinate fiber product is $C\times_XD=\{(x,y,z):(x,y)\in C,\ (x,z)\in D\}$. Equivalently, duplicate the shared coordinates $X$ in the two factors and retain exactly the pairs whose two copies agree.</p></div>
-<p><strong>Category:</strong> Product</p>
-<strong>Comments:</strong><div class="text-field"><p>The output may be empty. For $|X|=1$ this is the one-coordinate product. For larger shared blocks, ampleness can fail even for maximum inputs; coordinate-tree projections and monotone path fibers provide positive special cases.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#sec:coordinate-product</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_one_coordinate_fiber_product_closed.html'>Ample Classes Are Closed Under One-Coordinate Fiber Products</a></li><li><a href='operation_results/maximum_generated_one_coordinate_fiber_product_closed.html'>Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</a></li><li><a href='operation_results/ample_arbitrary_coordinate_fiber_product_not_closed.html'>Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/coordinate_tree_fiber_product_formula.html'>Coordinate-Tree Fiber Products of Ample Classes</a></li><li><a href='results/opposite_consecutive_triple_parent.html'>Maximum Parent for Opposite Consecutive Triples</a></li><li><a href='results/cumulative_path_fiber_parents.html'>Consecutive Parents for Cumulative Path Fibers</a></li><li><a href='results/monotone_path_fiber_product_closure.html'>Maximum-Generated Closure for Monotone Path Fibers</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/cube_boundary_relative_obstructions.html'>Relative Peeling Obstructions at Cube Boundaries of Every Dimension</a></li></ul></p></div>
+        <p><strong>Name: </strong>Rooted Factors Are Exactly Minimal Zero-Context Prisms</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a dismantlable ample family $C$ with marked vertex $a$, form the prism $P=C\times Q_1$ and mark the vertical edge $D=\{a\}\times Q_1$. If $h=1$ exactly when $C$ peels to $a$, then every entry of the marked-edge profile of $P$ equals $h$. Consequently $(C,a)$ is a rooted factor exactly when $P$ has positive zero-vector context type and every proper elementary private-coordinate minor retaining $D$ peels to $D$. Every rooted factor occurs as such a piece in an ample pc-minimal obstruction with a separating edge: gluing its prism to the fixed $581$-concept rooted-failure piece produces a forbidden family of order $2|C|+579$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A rooted peeling of $C$ lifts by deleting whole edge fibers, first retaining $D$ and then realizing either sink or leaf exit. Conversely, restricting any witness for retention, a sink, or a leaf exit to the appropriate horizontal section gives a peeling of $C$ ending at $a$, proving the all-$h$ profile. Private minors of the prism are prisms over the corresponding rooted minors of $C$, so their retention condition is exactly rooted minimality. The fixed second piece fails edge retention but attains both endpoint sinks and becomes relatively peelable after every proper private minor. Product-attachment minimality then makes the glued family forbidden, and counting the vertices gives $581+2(|C|-1)$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-prism-context</p></div>
 
         </div>
     </div>

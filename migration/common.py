@@ -137,6 +137,7 @@ class SourceSnapshot:
         config: dict[str, Any],
         manifest_path: Path | None = None,
         archive_index_path: Path | None = None,
+        supplemental_index_path: Path | None = None,
     ) -> None:
         self.latex_root = latex_root.resolve()
         self.config = config
@@ -168,6 +169,21 @@ class SourceSnapshot:
                 (entry["repository"], entry["path"]): MIGRATION_DIR / entry["archive_path"]
                 for entry in self.archive_index["files"]
             }
+        supplemental_path = (
+            supplemental_index_path
+            or MIGRATION_DIR / "supplemental_source_archive.json"
+        )
+        self.supplemental_index = (
+            load_json(supplemental_path) if supplemental_path.is_file() else None
+        )
+        self.supplemental_entries = {}
+        if self.supplemental_index:
+            # The index is chronological. A later reviewed snapshot supersedes
+            # an earlier one for the same logical repository path.
+            self.supplemental_entries = {
+                (entry["repository"], entry["path"]): entry
+                for entry in self.supplemental_index["files"]
+            }
 
     def key(self, path: Path) -> tuple[str, str]:
         return logical_repo_path(path, self.repositories)
@@ -180,6 +196,16 @@ class SourceSnapshot:
         entry = self.entries.get(key)
         if not entry:
             raise FileNotFoundError(f"Path is not in the frozen source manifest: {key[0]}:{key[1]}")
+        supplemental = self.supplemental_entries.get(key)
+        if supplemental:
+            archive = MIGRATION_DIR / supplemental["archive_path"]
+            if archive.is_file():
+                content = archive.read_bytes()
+                if sha256_bytes(content) == supplemental["sha256"]:
+                    return content
+            raise RuntimeError(
+                f"Supplemental source is not recoverable: {key[0]}:{key[1]}"
+            )
         if path.is_file():
             live = path.read_bytes()
             if sha256_bytes(live) == entry["sha256"]:
@@ -209,4 +235,7 @@ class SourceSnapshot:
         key = self.key(path.resolve())
         if key not in self.entries:
             raise FileNotFoundError(f"Path is not in the frozen source manifest: {key[0]}:{key[1]}")
+        supplemental = self.supplemental_entries.get(key)
+        if supplemental:
+            return supplemental["sha256"]
         return self.entries[key]["sha256"]
