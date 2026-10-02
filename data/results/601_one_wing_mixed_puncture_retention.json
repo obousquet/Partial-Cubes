@@ -1,0 +1,25 @@
+{
+  "id": 601,
+  "short_name": "one_wing_mixed_puncture_retention",
+  "name": "One Relative Section Suffices for Mixed-Puncture Retention",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let an ample family $H$ contain a marked edge with endpoints $a_0,a_1$, and write $A_0,A_1$ for its sections, $D=A_0\\cap A_1$, and $C=A_0\\cup A_1$. Replace the edge coordinate by a binary block, with root square $T$. If at least one section peels relatively to $D$, then for either mixed word $q$, the block replacement peels to $T\\setminus\\{q\\}$ exactly when $H$ peels to each marked endpoint. The forward implication holds without the relative-section hypothesis. Therefore any counterexample to the reverse implication without that hypothesis must have both relative sections fail, and each exclusive wing must contain a cyclic component of at least nine vertices.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/one_wing_mixed_puncture_752"
+  ],
+  "proof": "Reducing any proposed block peeling in each new coordinate and deleting repetitions produces rooted peelings of $H$ to both endpoints, proving necessity. For sufficiency, normalize so $A_0$ peels to $D$. Delete its exclusive wing in one nonconstant block row. The absence of edges between opposite exclusive wings makes every lifted deletion valid. One retained block section is now a copy of $H$ and the other is a peripheral family containing it; use the two endpoint orders to delete the copy and then the smaller retained row, followed by the contraction order for $C$. Exactly the three unpunctured root-square vertices remain. If both relative sections fail, the component-expansion theorem says each overlap-plus-component family is ample; the relative forest and eight-facet theorem would peel a wing whose components were all trees or had at most eight vertices, yielding the final necessary condition.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-wing-puncture-retention",
+  "comments": "The relative hypothesis is sufficient and is not claimed necessary. The theorem gives no endpoint-only converse when both sections fail."
+}
