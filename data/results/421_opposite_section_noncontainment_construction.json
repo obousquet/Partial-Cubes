@@ -1,0 +1,21 @@
+{
+  "id": 421,
+  "short_name": "opposite_section_noncontainment_construction",
+  "name": "Rooted Minimality Does Not Force Opposite-Section Containment",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(B,0)$ be a rooted factor and let $x,\\alpha,\\delta$ be distinct ample additions with pairwise distinct acquired supports, where $B\\cup\\{x\\}$ fails at zero and the other two extensions peel to zero. The two-coordinate family with sections $\\{0\\}$, $B\\cup\\{\\alpha\\}$, $B\\cup\\{x,\\delta\\}$, and $B\\cup\\{x\\}$ is a rooted factor with degree-two root. Its opposite section contains $x$ absent from one side, while both side differences are singletons. Deleting the two copies of $x$ successively preserves rooted-factor status and returns the paired-extension construction over $B$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/noncontained_opposite_section_factor_872"
+  ],
+  "proof": "Apply the partially replicated-tip theorem with $\\gamma=x$ and occurrence row $\\{10,11\\}$. Failure of $B\\cup\\{x\\}$ at zero makes the edge row, its singleton predecessor, and its empty predecessor rooted factors. Reversing the two ample row additions gives the preserving deletions, and the section differences follow directly from distinctness of the three tips.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-opposite-section-noncontainment"
+}

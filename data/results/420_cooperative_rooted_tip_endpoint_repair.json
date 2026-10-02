@@ -1,0 +1,20 @@
+{
+  "id": 420,
+  "short_name": "cooperative_rooted_tip_endpoint_repair",
+  "name": "Two Individually Ineffective Ample Additions Can Cooperatively Restore a Root",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "There is a 870-concept rooted factor $S$ with two adjacent ample additions $u,v$ such that both one-concept extensions remain rooted factors, while $S\\cup\\{u,v\\}$ peels to the original root. The two additions have the same initial acquired support of size four; after either is present, adding the other acquires a support of size five.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/cooperative_rooted_tip_pair_872"
+  ],
+  "proof": "The partially replicated-tip theorem evaluates singleton occurrence rows as rooted factors and either incident edge row as root-positive exactly when the underlying third tip repairs the base root. The certified tip $604$ has such a root-ending order, so its two singleton copies are individually ineffective while their edge row restores the endpoint. Direct replay verifies all eight occurrence rows and every proper rooted minor.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-cooperative-rooted-tip-pair"
+}

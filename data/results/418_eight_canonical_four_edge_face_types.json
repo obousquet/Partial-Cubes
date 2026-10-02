@@ -1,0 +1,23 @@
+{
+  "id": 418,
+  "short_name": "eight_canonical_four_edge_face_types",
+  "name": "Eight Canonical Face Types for a Four-Edge Coordinate Class",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be an ample pc-minimal obstruction to dismantlable ampleness and let coordinate $e$ have exactly four edges. Normalize its reduction to the path $H=\\{0,1,3,7\\}\\subseteq Q_F$ and let $D$ be the face obtained by fixing all coordinates outside $F\\cup\\{e\\}$. Then $D$ canonically separates $X$, $9\\le|D|\\le12$, and, up to path reversal and swapping shores, $D=((H\\cup L)\\times\\{0\\})\\cup((H\\cup R)\\times\\{1\\})$ has one of the eight types $(L,R)=(\\{2\\},\\varnothing),(\\{2,6\\},\\varnothing),(\\{2,5\\},\\varnothing),(\\{2\\},\\{5\\}),(\\{2,4,6\\},\\varnothing),(\\{2,4,5\\},\\varnothing),(\\{2,6\\},\\{5\\}),(\\{2,4,5,6\\},\\varnothing)$. Their orders are $9,10,10,10,11,11,11,12$, and at most $2,1,1,1,1,1,0,0$ pieces respectively have a nongated copy of $D$. Every exterior component lies in one shore, both shores have components, and each canonical piece is a proper positive coordinate restriction with disjoint exclusive coordinates that fails to peel to $D$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/four_edge_face_profile_909",
+    "#examples/five_vertex_face_relative_failure"
+  ],
+  "proof": "The reduction must be a four-vertex path by star transfer. Inside its three-coordinate face, the complementary vertices form the geodesic path $2-6-4-5$; ampleness makes the omitted set an interval, and component labels determine the shore assignment. Enumerating the 26 nonprism labelings modulo path reversal and shore swap yields the eight rows. Coordinate-face separator theory gives canonical components, positivity, disjoint coordinate blocks, and relative failure. Projection to the four face coordinates compares two nested complementary intervals, bounding nongated projected components by two, by one when the omitted interval has size at most two, and by zero in the last two stated cases.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-four-edge-face-types"
+}

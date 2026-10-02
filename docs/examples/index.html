@@ -2579,6 +2579,84 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-127" style="position:relative;">
+
+        <h3><a href="examples/four_edge_face_profile_909.html" class="table-title-link">Canonical Four-Edge Face Profile of the 909-Concept Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canonical Four-Edge Face Profile of the 909-Concept Obstruction</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>In the 909-concept four-vertex-path obstruction, take the canonical coordinate face determined by the path directions and the four-edge coordinate.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The face has type $(L,R)=(\{2\},\varnothing)$ and order $9$. The three components outside it have orders $284,288,328$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The projections of the three components outside the canonical face contain respectively $3,0,0$ vertices. Exactly the first piece has a nongated copy of the face. This realizes the first of the eight possible canonical face types.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-four-edge-face-types</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/four_edge_face_projections.py; PartialCubes:papers/dismantlable-ample/research/four_edge_face_projections.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-128" style="position:relative;">
+
+        <h3><a href="examples/five_vertex_face_relative_failure.html" class="table-title-link">A Five-Vertex Face Whose Vertices and Edges Are Retainable but the Face Is Not</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Five-Vertex Face Whose Vertices and Edges Are Retainable but the Face Is Not</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Start with the certified positive family $Y_2$ that retains a marked square but does not peel to it, attach a leaf at one square vertex in a fresh coordinate, and let $K$ be the square together with the new leaf. Form the one-sided peripheral expansion $(T\times\{0\})\cup(H\times\{1\})$ over the four-vertex path $H$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$K$ has the five-vertex shape $H\cup\{2\}$ from the smallest canonical four-edge face type. The family $T$ peels to every vertex and every edge of $K$ but not to $K$. The expanded piece is positive with connected exterior and fails to peel to its common face, while every proper exclusive-coordinate image does peel to that face.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-four-edge-face-types</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-129" style="position:relative;">
+
+        <h3><a href="examples/cooperative_rooted_tip_pair_872.html" class="table-title-link">Two Individually Ineffective Tips That Cooperatively Restore an Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Individually Ineffective Tips That Cooperatively Restore an Endpoint</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the 289-concept rooted core $B$, repairing side tips $\alpha=128$ and $\delta=290$, and the third ample tip $\gamma=604$ with acquired support $\{5,6,9,10\}$. In the resulting 870-concept partially replicated-tip factor $S$, add $u=(\gamma,10)$ and $v=(\gamma,11)$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$S$ has $870$ concepts; each single-tip extension has $871$ and the double extension has $872$. In integer encoding the new words are $2417,2419$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both $S\cup\{u\}$ and $S\cup\{v\}$ remain rooted factors, but $S\cup\{u,v\}$ peels to the original root. Each first addition has acquired support bitmask $6528$ of size four; the second addition has support $6530$ of size five. The two added words are adjacent and have coincident initial supports.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-cooperative-rooted-tip-pair</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_partial_tip_endpoints.py; PartialCubes:papers/dismantlable-ample/damp_partial_tip_endpoints_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-130" style="position:relative;">
+
+        <h3><a href="examples/noncontained_opposite_section_factor_872.html" class="table-title-link">An 872-Concept Rooted Factor with a Noncontained Opposite Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An 872-Concept Rooted Factor with a Noncontained Opposite Section</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the translated 289-concept rooted core $B$ with tips $x=64$, $\alpha=128$, and $\delta=290$, whose acquired-support bitmasks are $70,390,480$, in the two-coordinate construction of the opposite-section noncontainment proposition.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The output $Z$ has $872$ concepts, dimension $14$, and VC dimension $4$. Its corners are exactly $0,257,259,514,1161$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$Z$ is a rooted factor with degree-two root $0$ and four degree-four nonroot corners; every other nonroot vertex has degree at least four. Its opposite section contains $64$, absent from one side section, even after root-protected degree-two pruning. The complete sectionwise endpoint law still holds and zero is its unique critical root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-noncontainment-872</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_opposite_section_noncontainment.py; PartialCubes:papers/dismantlable-ample/damp_opposite_section_noncontainment_verification.json; PartialCubes:papers/dismantlable-ample/research/noncontained_endpoint_transfer.py; PartialCubes:papers/dismantlable-ample/research/noncontained_endpoint_transfer.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-131" style="position:relative;">
+
+        <h3><a href="examples/antipodal_tip_nonrepair_290.html" class="table-title-link">A 290-Concept Antipodal-Tip Nonrepair</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 290-Concept Antipodal-Tip Nonrepair</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Add $c=167$ to the normalized 289-concept rooted factor $B$. Its acquired support is $P=\{0,1,6,8\}$, with bitmask $323$, and the antipode of $c$ in its completed four-cube is the old word $484$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The extension $H$ has $290$ concepts, dimension $12$, and VC dimension $4$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The completed cube has exactly two vertices without exterior neighbours: $167$ and $484$. Thus $484$ becomes an old nonroot corner, and the corners of $H$ are exactly $0,167,484$. Deleting either nonroot corner leaves zero as the only corner, so $(H,0)$ remains a rooted factor. Exposing an old antipodal corner is insufficient to restore the endpoint.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-rooted-antipodal-290</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/verify_damp_rooted_clause_pivots.py; PartialCubes:papers/dismantlable-ample/damp_rooted_clause_pivots_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

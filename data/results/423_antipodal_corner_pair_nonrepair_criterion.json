@@ -1,0 +1,21 @@
+{
+  "id": 423,
+  "short_name": "antipodal_corner_pair_nonrepair_criterion",
+  "name": "An Antipodal New-Corner Pair Cannot Restore a Rooted Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $(B,a)$ be a rooted factor with unique corner $a$, and let $H=B\\cup\\{c\\}$ be an ample addition with acquired support $P$ and completed cube $Q$. Let $E$ be the old vertices $v\\in Q\\setminus\\{a,c\\}$ having no neighbour outside $Q$. Then $E$ is exactly the set of nonroot, nontip corners of $H$, every member has distance at least two from $c$, and every peeling of $H$ ending at $a$ must start in $E$. If $E$ is empty or consists only of the antipode $c^P$, then $(H,a)$ remains a rooted factor and every ordinary peeling deletes $a$ among its first two vertices. Consequently any endpoint-restoring addition has an available old corner at distance strictly between $1$ and $|P|$ from its tip.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/antipodal_tip_nonrepair_290"
+  ],
+  "proof": "Any old vertex newly becoming a corner must share a corner cube with the added tip, hence must lie in its completed cube and have no exterior neighbour. A neighbour of the tip cannot be such a corner, or deleting the tip would leave another corner of the unique-corner base. Root-ending peelings can start neither at the root nor at the tip, so must start in $E$. When $E$ is the singleton antipode, deleting it destroys the tip corner and exterior-neighbour witnesses exclude every other new corner; deleting the tip returns the base. Thus either first move forces the root second and the endpoint remains impossible, while ordinary peelability and proper rooted-minor positivity persist.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-antipodal-tip-nonrepair"
+}

@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "batch_id": "109_dismantlable_ample_four_edge_faces_and_rooted_tip_controls",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the canonical four-edge separating-face classification, the partial-tip shadow and endpoint criterion, cooperative endpoint repair, opposite-section noncontainment, and the antipodal-tip nonrepair criterion with their explicit computational controls.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-four-edge-face-types",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-partial-tip-endpoint-transfer",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-cooperative-rooted-tip-pair",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-opposite-section-noncontainment",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-noncontainment-872",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-antipodal-tip-nonrepair",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-rooted-antipodal-290"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These blocks classify the first sharp four-edge separating faces and isolate three distinct endpoint-repair mechanisms needed for the rooted obstruction calculus.",
+    "outcome": "All seven source blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "thm:damp-four-edge-face-types": "2b5941a64b19444b856bd688befe8b74c44a36df388bd87a6ca8c908f5e83541",
+      "thm:damp-partial-tip-endpoint-transfer": "58bb93acbb75aad7f218305abf7cd2aeb0b46c67ea41c23438e0593a2701bef0",
+      "rem:damp-cooperative-rooted-tip-pair": "4807c749d85cd311fec6647329a5edfcadffc99db62726a55c50b8d223a60b94",
+      "prop:damp-opposite-section-noncontainment": "6b980277af9b4b0077eb7628652782a7ee26349bc13497ab47a883b602b3bcff",
+      "rem:damp-noncontainment-872": "fba1530c70d42fdd884dfd7a461d119267c7e42fa27488a35678ad17c1e2ba92",
+      "prop:damp-antipodal-tip-nonrepair": "5a2065df9e6ab84eb3fea65c38e07377f2189e1d5ee8ea43b31f3b5eb4790d58",
+      "rem:damp-rooted-antipodal-290": "baa8bdb34598bf5701c3bfc3545bd6c30b20e3d52bb19fe9078f0c901680f53a"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the canonical face table, separator laws, partial-tip shadow and endpoint criterion, cooperative and noncontained repair controls, antipodal nonrepair criterion, explicit parameters, concise proofs, and source locators. The manuscript retains the complete enumeration of 81 assignments, layer-clearing orders, full negative graphs and endpoint tables, word encodings, replay scripts, and open generator and admissibility questions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact source bytes, is checked by migration-check, and every promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/127_four_edge_face_profile_909.json",
+      "sha256": "7f34912c27a81772b34b1948042e6985e93a4320c3a35e9f363b0dacf2910d4d"
+    },
+    {
+      "path": "data/examples/128_five_vertex_face_relative_failure.json",
+      "sha256": "91bb6f47c6e94d9c241f9654883518fdcf044b9d211f9b94a9bc111cefc51df2"
+    },
+    {
+      "path": "data/examples/129_cooperative_rooted_tip_pair_872.json",
+      "sha256": "2b6c69132e4b1e68689fee1179745e44c2105049e174b93a5c5081797cdd85d4"
+    },
+    {
+      "path": "data/examples/130_noncontained_opposite_section_factor_872.json",
+      "sha256": "94ba70fcb50ead79c40ac32d178864122ead3965605992996efd4d5591ff91f0"
+    },
+    {
+      "path": "data/examples/131_antipodal_tip_nonrepair_290.json",
+      "sha256": "358cbf4fafa15f167d185c182bb75380bb16cdf75f876e6c28c023f3f28df679"
+    },
+    {
+      "path": "data/results/418_eight_canonical_four_edge_face_types.json",
+      "sha256": "f4236c66e4f499eb3757fd8db20f8e726cfcdb64c75e01959ea8685b23b3743e"
+    },
+    {
+      "path": "data/results/419_partial_tip_shadow_and_endpoint_transfer.json",
+      "sha256": "37f6a46d11053c54a5d581508192909e103d63d3d04bee7f7924c9bb80257233"
+    },
+    {
+      "path": "data/results/420_cooperative_rooted_tip_endpoint_repair.json",
+      "sha256": "490e38543493921a6ed4ace928ac283bb0bad7e371f118771f9550425b9aca7b"
+    },
+    {
+      "path": "data/results/421_opposite_section_noncontainment_construction.json",
+      "sha256": "f187c7565a6381e85afd420a9ff9779038d1c3ea2e0596d484541a498f9a23e6"
+    },
+    {
+      "path": "data/results/422_noncontained_sections_can_preserve_endpoint_law.json",
+      "sha256": "7b52ff2a2e77df7985dd4b892d4b0f1c869604899c177ce46c4fa43b1c7db9d1"
+    },
+    {
+      "path": "data/results/423_antipodal_corner_pair_nonrepair_criterion.json",
+      "sha256": "7052a2046724bc4b55ac021ddf702237609de8e3b0d94df7d19a8257a2fa7849"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "1240edcfec9780c853710c76c46a37652a19e434f058a5843e8ad1512a04f458"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "9c268f298eaa65fe46740a9f15b21f7ed1d45903973488274a666c8c28d9912f"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1736 records.",
+    "website": "Normalized 1752 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 4 additional audited labels, raising the dismantlable-ample workspace from 89 to 93 of 683 and overall coverage from 520 to 524 of 1114 database-owned labels. Three remark-level controls are also normalized outside that denominator.",
+    "source_integrity": "The seven reviewed blocks and the complete source file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 590 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Full assignment enumerations, endpoint tables, layer orders, embedded words, and computational replay certificates remain preserved in the scholarly source tree and are summarized, not duplicated, in database records.",
+    "The manuscript's open generator and admissibility questions remain prose-owned."
+  ]
+}

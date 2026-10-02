@@ -1,0 +1,25 @@
+{
+  "id": 419,
+  "short_name": "partial_tip_shadow_and_endpoint_transfer",
+  "name": "Exact Shadow and Endpoint Transfer for a Partially Replicated Tip",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $(B,0)$ be a rooted factor, let $\\alpha,\\delta,\\gamma$ be distinct ample additions with pairwise distinct acquired supports, and suppose $B\\cup\\{\\alpha\\}$ and $B\\cup\\{\\delta\\}$ peel to zero. Form the paired two-coordinate factor $S$ and add copies of $\\gamma$ on an occurrence row $R\\subseteq L=\\{01,10,11\\}$. Then $\\operatorname{Sh}(S_R)=\\operatorname{Sh}(S)\\mathbin{\\dot\\cup}\\{P_\\gamma\\cup J:J\\in\\operatorname{Sh}(R)\\}$. The family $S_R$ is ample exactly when $R\\ne\\{01,10\\}$. For every allowable row it is ordinarily peelable, all proper root-preserving pc-minors peel to their roots, and it peels to $(0,00)$ exactly when $|R|\\ge2$ and $B\\cup\\{\\gamma\\}$ peels to zero. Otherwise it is a rooted factor; its root is always a degree-two corner.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/cooperative_rooted_tip_pair_872"
+  ],
+  "proof": "Compatible one-concept additions give the disjoint shadow formula, and the Sandwich equality excludes only the diagonal two-point row. Empty and singleton rows cannot reach the root because their unchanged paired overlaps would force $B$ itself to peel to zero. The full row is the paired construction over $B\\cup\\{\\gamma\\}$, giving necessity and sufficiency there; an explicit layer-clearing order proves sufficiency for either incident edge row. Every allowable row lies in ample addition chains above the original rooted factor and below the full row, yielding ordinary and proper-minor positivity and the exact rooted-factor criterion.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-partial-tip-endpoint-transfer"
+}

@@ -6990,6 +6990,109 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-418" style="position:relative;">
+
+        <h3><a href="results/eight_canonical_four_edge_face_types.html" class="table-title-link">Eight Canonical Face Types for a Four-Edge Coordinate Class</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Eight Canonical Face Types for a Four-Edge Coordinate Class</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be an ample pc-minimal obstruction to dismantlable ampleness and let coordinate $e$ have exactly four edges. Normalize its reduction to the path $H=\{0,1,3,7\}\subseteq Q_F$ and let $D$ be the face obtained by fixing all coordinates outside $F\cup\{e\}$. Then $D$ canonically separates $X$, $9\le|D|\le12$, and, up to path reversal and swapping shores, $D=((H\cup L)\times\{0\})\cup((H\cup R)\times\{1\})$ has one of the eight types $(L,R)=(\{2\},\varnothing),(\{2,6\},\varnothing),(\{2,5\},\varnothing),(\{2\},\{5\}),(\{2,4,6\},\varnothing),(\{2,4,5\},\varnothing),(\{2,6\},\{5\}),(\{2,4,5,6\},\varnothing)$. Their orders are $9,10,10,10,11,11,11,12$, and at most $2,1,1,1,1,1,0,0$ pieces respectively have a nongated copy of $D$. Every exterior component lies in one shore, both shores have components, and each canonical piece is a proper positive coordinate restriction with disjoint exclusive coordinates that fails to peel to $D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The reduction must be a four-vertex path by star transfer. Inside its three-coordinate face, the complementary vertices form the geodesic path $2-6-4-5$; ampleness makes the omitted set an interval, and component labels determine the shore assignment. Enumerating the 26 nonprism labelings modulo path reversal and shore swap yields the eight rows. Coordinate-face separator theory gives canonical components, positivity, disjoint coordinate blocks, and relative failure. Projection to the four face coordinates compares two nested complementary intervals, bounding nongated projected components by two, by one when the omitted interval has size at most two, and by zero in the last two stated cases.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-four-edge-face-types</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_edge_face_profile_909.html">Canonical Four-Edge Face Profile of the 909-Concept Obstruction</a></li><li><a href="examples/five_vertex_face_relative_failure.html">A Five-Vertex Face Whose Vertices and Edges Are Retainable but the Face Is Not</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-419" style="position:relative;">
+
+        <h3><a href="results/partial_tip_shadow_and_endpoint_transfer.html" class="table-title-link">Exact Shadow and Endpoint Transfer for a Partially Replicated Tip</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Shadow and Endpoint Transfer for a Partially Replicated Tip</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(B,0)$ be a rooted factor, let $\alpha,\delta,\gamma$ be distinct ample additions with pairwise distinct acquired supports, and suppose $B\cup\{\alpha\}$ and $B\cup\{\delta\}$ peel to zero. Form the paired two-coordinate factor $S$ and add copies of $\gamma$ on an occurrence row $R\subseteq L=\{01,10,11\}$. Then $\operatorname{Sh}(S_R)=\operatorname{Sh}(S)\mathbin{\dot\cup}\{P_\gamma\cup J:J\in\operatorname{Sh}(R)\}$. The family $S_R$ is ample exactly when $R\ne\{01,10\}$. For every allowable row it is ordinarily peelable, all proper root-preserving pc-minors peel to their roots, and it peels to $(0,00)$ exactly when $|R|\ge2$ and $B\cup\{\gamma\}$ peels to zero. Otherwise it is a rooted factor; its root is always a degree-two corner.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Compatible one-concept additions give the disjoint shadow formula, and the Sandwich equality excludes only the diagonal two-point row. Empty and singleton rows cannot reach the root because their unchanged paired overlaps would force $B$ itself to peel to zero. The full row is the paired construction over $B\cup\{\gamma\}$, giving necessity and sufficiency there; an explicit layer-clearing order proves sufficiency for either incident edge row. Every allowable row lies in ample addition chains above the original rooted factor and below the full row, yielding ordinary and proper-minor positivity and the exact rooted-factor criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-partial-tip-endpoint-transfer</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cooperative_rooted_tip_pair_872.html">Two Individually Ineffective Tips That Cooperatively Restore an Endpoint</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-420" style="position:relative;">
+
+        <h3><a href="results/cooperative_rooted_tip_endpoint_repair.html" class="table-title-link">Two Individually Ineffective Ample Additions Can Cooperatively Restore a Root</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Individually Ineffective Ample Additions Can Cooperatively Restore a Root</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 870-concept rooted factor $S$ with two adjacent ample additions $u,v$ such that both one-concept extensions remain rooted factors, while $S\cup\{u,v\}$ peels to the original root. The two additions have the same initial acquired support of size four; after either is present, adding the other acquires a support of size five.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The partially replicated-tip theorem evaluates singleton occurrence rows as rooted factors and either incident edge row as root-positive exactly when the underlying third tip repairs the base root. The certified tip $604$ has such a root-ending order, so its two singleton copies are individually ineffective while their edge row restores the endpoint. Direct replay verifies all eight occurrence rows and every proper rooted minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-cooperative-rooted-tip-pair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cooperative_rooted_tip_pair_872.html">Two Individually Ineffective Tips That Cooperatively Restore an Endpoint</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-421" style="position:relative;">
+
+        <h3><a href="results/opposite_section_noncontainment_construction.html" class="table-title-link">Rooted Minimality Does Not Force Opposite-Section Containment</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Minimality Does Not Force Opposite-Section Containment</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(B,0)$ be a rooted factor and let $x,\alpha,\delta$ be distinct ample additions with pairwise distinct acquired supports, where $B\cup\{x\}$ fails at zero and the other two extensions peel to zero. The two-coordinate family with sections $\{0\}$, $B\cup\{\alpha\}$, $B\cup\{x,\delta\}$, and $B\cup\{x\}$ is a rooted factor with degree-two root. Its opposite section contains $x$ absent from one side, while both side differences are singletons. Deleting the two copies of $x$ successively preserves rooted-factor status and returns the paired-extension construction over $B$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Apply the partially replicated-tip theorem with $\gamma=x$ and occurrence row $\{10,11\}$. Failure of $B\cup\{x\}$ at zero makes the edge row, its singleton predecessor, and its empty predecessor rooted factors. Reversing the two ample row additions gives the preserving deletions, and the section differences follow directly from distinctness of the three tips.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-opposite-section-noncontainment</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/noncontained_opposite_section_factor_872.html">An 872-Concept Rooted Factor with a Noncontained Opposite Section</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-422" style="position:relative;">
+
+        <h3><a href="results/noncontained_sections_can_preserve_endpoint_law.html" class="table-title-link">Noncontained Sections Can Still Satisfy the Full Endpoint Law</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Noncontained Sections Can Still Satisfy the Full Endpoint Law</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The explicit 872-concept noncontained-section rooted factor has the full sectionwise endpoint-transfer law despite failing the paired presentation containment hypotheses. Every unattainable vertex other than zero already fails in its own proper section, so zero is its unique critical root. This remains true after protecting the root and deleting all nonroot vertices of degree at most two, since there are none.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Three explicit relative orders clear pairs of layers to the two side sections and the opposite section. The first two transfer every endpoint attainable in the corresponding side. The opposite section has one initial corner, after whose deletion its attainable endpoints are exactly those of the core, and the third relative order transfers them. Necessity follows by coordinate-face restriction. The recorded corner and degree census proves the root-protected graph-core assertion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-noncontainment-872</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/noncontained_opposite_section_factor_872.html">An 872-Concept Rooted Factor with a Noncontained Opposite Section</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-423" style="position:relative;">
+
+        <h3><a href="results/antipodal_corner_pair_nonrepair_criterion.html" class="table-title-link">An Antipodal New-Corner Pair Cannot Restore a Rooted Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Antipodal New-Corner Pair Cannot Restore a Rooted Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(B,a)$ be a rooted factor with unique corner $a$, and let $H=B\cup\{c\}$ be an ample addition with acquired support $P$ and completed cube $Q$. Let $E$ be the old vertices $v\in Q\setminus\{a,c\}$ having no neighbour outside $Q$. Then $E$ is exactly the set of nonroot, nontip corners of $H$, every member has distance at least two from $c$, and every peeling of $H$ ending at $a$ must start in $E$. If $E$ is empty or consists only of the antipode $c^P$, then $(H,a)$ remains a rooted factor and every ordinary peeling deletes $a$ among its first two vertices. Consequently any endpoint-restoring addition has an available old corner at distance strictly between $1$ and $|P|$ from its tip.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Any old vertex newly becoming a corner must share a corner cube with the added tip, hence must lie in its completed cube and have no exterior neighbour. A neighbour of the tip cannot be such a corner, or deleting the tip would leave another corner of the unique-corner base. Root-ending peelings can start neither at the root nor at the tip, so must start in $E$. When $E$ is the singleton antipode, deleting it destroys the tip corner and exterior-neighbour witnesses exclude every other new corner; deleting the tip returns the base. Thus either first move forces the root second and the endpoint remains impossible, while ordinary peelability and proper rooted-minor positivity persist.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-antipodal-tip-nonrepair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/antipodal_tip_nonrepair_290.html">A 290-Concept Antipodal-Tip Nonrepair</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
