@@ -1,0 +1,18 @@
+{
+  "id": 615,
+  "short_name": "biroot_locked_terminal_pair_certificate",
+  "name": "Biroot Locking Is a Static Terminal-Pair Certificate",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "For nested ample $A\\subsetneq B$, call the pair lower-root-locked when, for every $x\\in B\\setminus A$, the root remains connected to $x$ after deleting from $\\widehat G(B,A)$ every edge labelled by a coordinate in $L_A(x)$. This finite ordering-free condition certifies that $(\\Delta_B,\\Delta_A)$ is not relatively shellable. Define upper-root-locking by applying the same condition to the complementary pair $Q_F\\setminus B\\subsetneq Q_F\\setminus A$. It is equivalent to $B\\setminus\\{x\\}$ being nonample for every $x\\in B\\setminus A$. Therefore a pair locked at both roots admits neither a first nor a last relative shelling facet, and both failures are decided by labelled cut tests in the two rooted graphs.",
+  "status": "established",
+  "proof": "The rooted cut criterion says that lower-root-locking excludes every ample one-concept extension of $A$ within $B$. A relative shelling would have to begin with such an extension, so none exists. For the upper condition, $B\\setminus\\{x\\}$ is ample exactly when $(Q_F\\setminus B)\\cup\\{x\\}$ is ample. Applying the same rooted cut criterion to the complementary nested pair proves the deletion characterization and excludes a final relative shelling facet.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-biroot-locked-terminal-pair",
+  "comments": "Root locking supplies a direct nonshellability certificate without storing a shelling or carrier order. Biroot locking is necessary for relative terminality; this result does not by itself classify all locked presentations."
+}

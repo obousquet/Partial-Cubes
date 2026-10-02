@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "batch_id": "156_dismantlable_ample_rooted_relative_presentations",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the complete rooted signed-graph presentation of relative Yang modules, the labelled root-cut test for one-concept ampleness, and the derived biroot-locking terminal-pair certificate.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-relative-presentation",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-biroot-locked-terminal-pair"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These linked claims replace relative-shelling search by a complete first-syzygy presentation and explicit labelled graph cuts, then turn those cuts into static lower- and upper-terminal certificates.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. Their proofs are algebraic and structural: linear presentation identifies all root and internal edge relations, while the colon formula and complement duality give the cut and biroot-locking tests.",
+    "claim_block_sha256": {
+      "prop:damp-rooted-relative-presentation": "68dee23c308e1b27c813c0e3e271b37ed38e598502eb21f4c53ea7304b2926c5",
+      "cor:damp-biroot-locked-terminal-pair": "a207313d9d04370ac504651d7fc678507b2b22cb7660cf808c3a25f2c06c2f06"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the module presentation, root-cut equivalence, locking definitions needed by the corollary, terminal-pair consequences, and concise proofs. LaTeX retains the expanded multidegree argument and the research discussion about compressing rooted graphs to smaller block or circuit data.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both claims and their surrounding definitions byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/614_rooted_relative_yang_presentation.json",
+      "sha256": "e6e64b34e5cc046f59283dc4c6ce0b3ae52a26f7cab6860b5183366a988fea8c"
+    },
+    {
+      "path": "data/results/615_biroot_locked_terminal_pair_certificate.json",
+      "sha256": "aa0fdf9d3364c22c1708e78506c1b1e527f1fa2900f90567ed0152cb53579fa7"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "2c775f8c5a535c1056b6db48cee343026ca2d6e6a4ffcd66c602fbbc53f464b0"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "f4a1341ab3d2d99aefe0679fc1f0c951409222a2d513c3c808f7569290c99d1b"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1998 records.",
+    "website": "Normalized 2014 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 714 to 716 of 1143 and dismantlable-ample coverage from 278 to 280 of 683.",
+    "certificates": "No finite replay packet is needed; the proof consists of the linear-presentation theorem, the exact monomial colon formula, a finite graph-component argument, and complement duality.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 427 uncovered database-owned labels: 403 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem gives a canonical punctured-cube normal form for upper-root-locked relative pairs, followed by its equivalence with complementary root cuts.",
+    "The broader paired-wing compatibility problem remains open and stays prose-owned in LaTeX."
+  ]
+}
