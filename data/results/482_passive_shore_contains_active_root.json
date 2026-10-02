@@ -1,0 +1,13 @@
+{
+  "id": 482,
+  "short_name": "passive_shore_contains_active_root",
+  "name": "Every Nonempty Passive Shore Contains an Active Root",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "In a two-connected terminal ample interval of order at most eleven, the active lower slice $L$ is nonempty, and every nonempty passive shore $S_z$ contains some $d$ for which $L\\cup\\{d\\}$ is ample.",
+  "status": "established",
+  "proof": "If $L$ were empty, every residual concept would be an active root. The passive Helly theorem would give a common owner of all nonempty shores, while the passive-root cover applied to that owner would require a shore omitting it, a contradiction. Thus $L$ is nonempty. For a nonempty $S_z$, the corresponding opposite active section $M_z$ meets $L$. The nested ample pair $L\\cap M_z\\subsetneq (B\\cap M_z)$ lives on at most five coordinates, so relative peeling supplies a first point $p\\in S_z$. The expansion-separator augmentation lemma lifts this first relative addition from the intersection to $L$, proving $L\\cup\\{p\\}$ ample.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-shore-contains-active-root"
+}

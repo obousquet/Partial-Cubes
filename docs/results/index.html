@@ -8041,6 +8041,112 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-480" style="position:relative;">
+
+        <h3><a href="results/passive_coordinate_ample_collars.html" class="table-title-link">A Passive Coordinate Determines Two Nested Ample Shores</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Passive Coordinate Determines Two Nested Ample Shores</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In the active/passive normalization of an ample pair $K\subsetneq A$, fix a passive coordinate $z$ and put $M_z=\{u\in Q_Y:\widehat u^{\oplus z}\in K\}$. Then $S_z=D\cap M_z$. Whenever nonempty, each of $L\cap M_z$, $B\cap M_z$, $L\cup M_z$, and $B\cup M_z$ is ample. Moreover $(B\cap M_z)\setminus(L\cap M_z)=S_z$ and $(B\cup M_z)\setminus(L\cup M_z)=D\setminus S_z$. Thus a passive boundary type and its complement are relative facets of two nested ample pairs on the same active coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Condition $K$ on the common passive assignment outside $z$. Its two sections are $L$ and $M_z$; the two-layer shadow-intersection lemma makes their union and intersection ample. The same conditioning of $A$ has sections $B$ and $M_z$, because every relative concept lies on the common passive side, so the same lemma handles the two families involving $B$. The shore identities follow from $B=L\mathbin{\dot\cup}D$ and the definition of $M_z$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-passive-coordinate-two-ample-subintervals</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-481" style="position:relative;">
+
+        <h3><a href="results/passive_neighbours_force_punctured_cube.html" class="table-title-link">Passive Neighbors Force a Punctured Cube Fiber</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Passive Neighbors Force a Punctured Cube Fiber</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample, let $D=A\setminus K$ have one passive restriction, and let $L$ be the corresponding active lower slice. For $d\in D$, let $Z(d)=\{z:d^{\oplus z}\in K\}$ and $t(d)=|Z(d)|$. Then $d^{\oplus T}\in K$ for every nonempty $T\subseteq Z(d)$, and $|K|\ge |L|+\sum_{d\in D}(2^{t(d)}-1)$. If $L$ is nonempty and $Z_0=\{z:S_z\ne\varnothing\}$, then every $z\in Z_0$ contributes an additional collar vertex and $|K|\ge |L|+|Z_0|+\sum_{d\in D}(2^{t(d)}-1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Condition $K$ on the active word of $d$ and all passive coordinates outside $Z(d)$. The resulting ample family contains every singleton of $Q_{Z(d)}$ but not the empty word. Its ample complement contains the empty word; isometry prevents it from containing any other word because a geodesic would begin with a forbidden singleton. Hence the conditioned family is the punctured cube. Fibers belonging to distinct $d$ have distinct active restrictions, giving the first count. When $L$ is nonempty, the ample two-section class in every nonempty passive direction is connected, so its sections $L$ and $M_z$ intersect. Choosing one intersection point per direction gives pairwise distinct collar vertices outside the punctured fibers and proves the strengthened count.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-passive-neighbours-force-punctured-cube</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-482" style="position:relative;">
+
+        <h3><a href="results/passive_shore_contains_active_root.html" class="table-title-link">Every Nonempty Passive Shore Contains an Active Root</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Nonempty Passive Shore Contains an Active Root</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a two-connected terminal ample interval of order at most eleven, the active lower slice $L$ is nonempty, and every nonempty passive shore $S_z$ contains some $d$ for which $L\cup\{d\}$ is ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If $L$ were empty, every residual concept would be an active root. The passive Helly theorem would give a common owner of all nonempty shores, while the passive-root cover applied to that owner would require a shore omitting it, a contradiction. Thus $L$ is nonempty. For a nonempty $S_z$, the corresponding opposite active section $M_z$ meets $L$. The nested ample pair $L\cap M_z\subsetneq (B\cap M_z)$ lives on at most five coordinates, so relative peeling supplies a first point $p\in S_z$. The expansion-separator augmentation lemma lifts this first relative addition from the intersection to $L$, proving $L\cup\{p\}$ ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-passive-shore-contains-active-root</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-483" style="position:relative;">
+
+        <h3><a href="results/passive_shore_absorption.html" class="table-title-link">Passive Shores Absorb into Ample Gates and Lower Blocker Rank</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Passive Shores Absorb into Ample Gates and Lower Blocker Rank</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty passive shore $S_z$ in the small terminal normal form, the gate $G_z=L\cup S_z$ is ample. There is a saturated ample chain from $L$ to $B$ that adds every member of $S_z$ before every member of $D\setminus S_z$. If $d\notin S_z$ has a peripheral blocker cell $C$ for the same $z$, with active support $W$ and duplicated endpoint $c=d^{\oplus W}$, then $C\cap G_z=\{c\}$ and $(G_z\cup\{d\})\cap Q_W(d)=\{d,c\}$. Thus the blocker descends to the active face when $|W|\ge2$ and disappears as a named blocker when $|W|=1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Relative peeling of $L\cap M_z\subsetneq B\cap M_z$ orders the shore. Repeatedly applying the expansion-separator duplication lemma lifts each prefix to an ample family over $L$, ending at $G_z$. A second relative peeling appends the complement shore and gives the two-block saturated chain. The peripheral cell lies in $D$, meets $S_z$ only at $c$, and is otherwise disjoint from $G_z$; restricting $G_z\cup\{d\}$ to its active face therefore leaves exactly the antipodal pair $\{d,c\}$. Antipodal localization proves nonampleness in rank at least two, while rank one is the full edge.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-passive-shore-absorption</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-484" style="position:relative;">
+
+        <h3><a href="results/terminal_fibre_two_root_cycles.html" class="table-title-link">A Terminal Fiber Forces Lower and Upper Directed Root Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Terminal Fiber Forces Lower and Upper Directed Root Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Assume the small two-connected interval is terminal under both one-concept addition to $K$ and one-concept deletion from $A$. Every nonempty passive shore contains a lower active root, and every nonempty complementary shore contains an upper deletion root. Both root sets have at least two members. On the lower roots there is a loopless directed graph of positive out-degree in which $d\to e$ is separated by a shore containing $e$ but not $d$, together with an isolated peripheral blocker cell, a non-root common owner, and an ample shore gate. The graph contains a directed cycle of length at least two; complement duality gives an analogous upper-root cycle.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The passive-shore root theorem gives the lower assertions, and applying it to the complementary ample pair gives the upper assertions and a two-block chain beginning and ending with the respective roots. Each lower root has a peripheral blocker shore that omits it; choose a different lower root in that shore as its outgoing neighbor. The common-owner theorem supplies a shore owner of carrier depth at least two, hence outside the lower-root set. Every root has a nonloop outgoing edge, so finiteness yields a directed cycle and at least two roots. Applying the same argument to the complementary pair gives the upper cycle.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-terminal-fibre-two-root-cycles</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-485" style="position:relative;">
+
+        <h3><a href="results/two_sided_passive_gate_holonomy.html" class="table-title-link">Terminal Root Cycles Couple as Two-Sided Passive-Gate Holonomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Root Cycles Couple as Two-Sided Passive-Gate Holonomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathscr S$ be the distinct nonempty proper passive shores of a two-sided terminal fiber. It is nonempty. For each $S\in\mathscr S$, choose a two-block peeling with first lower root $r_S\in R\cap S$ and last upper root $u_S\in R^+\cap(D\setminus S)$. There are self-maps $\lambda,\mu$ of $\mathscr S$ such that $r_S\in S\setminus\lambda(S)$ and $u_S\in\mu(S)\setminus S$. Neither map has a fixed point, so both contain directed cycles. If there are exactly two shores $S,T$, then $r_S,u_T\in S\setminus T$ and $r_T,u_S\in T\setminus S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A lower root has a nonempty proper blocker shore, proving $\mathscr S$ nonempty. Passive-shore absorption supplies the two-block peeling and its endpoint roots. Apply the blocker-cell theorem to $r_S$ and define $\lambda(S)$ to be a shore omitting it; apply the complementary theorem to $u_S$ and define $\mu(S)$ to be a shore containing it while the opposite shore omits it. The asymmetric differences forbid fixed points, and finite fixed-point-free self-maps contain cycles. On a two-element shore set both maps interchange the shores, giving the crossed profile.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-sided-passive-gate-holonomy</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-486" style="position:relative;">
+
+        <h3><a href="results/gate_holonomy_exponential_cost.html" class="table-title-link">Exponential Cost and Equality Form of Passive-Gate Holonomy</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exponential Cost and Equality Form of Passive-Gate Holonomy</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S_1,\ldots,S_k$ be a directed cycle of the lower shore map, let $t(d)$ count all passive shores containing $d$, let $t_{\mathcal C}(d)$ count cycle shores containing it, and let $Z_0$ be the active passive directions. With $\eta=|K|-|L|-|Z_0|-\sum_d(2^{t(d)}-1)$, one has $\eta\ge0$, $|K|-|L|\ge |Z_0|+\sum_d(2^{t(d)}-1)\ge3k$, and an exact nonnegative excess decomposition into $\eta$, $|Z_0|-k$, the exponential incidence excesses, and $|S_i|-2$. Equality $|K|=|L|+3k$ forces pairwise disjoint two-concept shores, each realized by one passive coordinate; every shore is an active root--owner edge, its opposite section is a three-vertex path, the corresponding active--passive square lies in $A$, the $k$ squares are vertex-disjoint, and these attached arms exhaust $K\setminus L$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cycle shore contains a lower root and a distinct non-root common owner, so its size is at least two and the cycle has at least $2k$ incidences. Also $t(d)\ge t_{\mathcal C}(d)$, $2^{t(d)}-1\ge t(d)$, and at least $k$ passive coordinates realize the distinct cycle shores. The punctured-fiber and collar count gives the bound and, after subtracting $3k$, the exact sum of nonnegative excess terms. Equality forces all inequalities to be equalities: every $t(d)$ is at most one, shores are disjoint pairs with unique coordinates, and no uncounted vertices remain. Shore absorption and the one-concept criterion force each root--owner pair to be an active edge. Equality in the collar count leaves one collar point and a three-vertex opposite path per shore; flipping the root--owner edge yields a full square, and the disjoint active endpoints and passive restrictions make these squares vertex-disjoint and exhaustive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-gate-holonomy-exponential-cost</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

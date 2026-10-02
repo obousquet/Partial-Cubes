@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "batch_id": "122_dismantlable_ample_passive_collars_and_gate_holonomy",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Normalize the four ample collar subintervals of a passive coordinate, punctured passive fibers and their exponential vertex cost, passive-shore roots and absorption gates, the complementary lower and upper root cycles, their coupling as two-sided shore holonomy, and the exact zero-excess square-arm normal form.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-coordinate-two-ample-subintervals",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-neighbours-force-punctured-cube",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-shore-contains-active-root",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-shore-absorption",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-fibre-two-root-cycles",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-sided-passive-gate-holonomy",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-gate-holonomy-exponential-cost"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This block upgrades passive boundary incidences to ample collar pairs and full punctured fibers, then organizes terminal addition and deletion roots through ample shore gates. The resulting holonomy has an exact nonnegative cost decomposition whose equality case is a disjoint system of square-gate arms.",
+    "outcome": "All seven statement-plus-proof blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "lem:damp-passive-coordinate-two-ample-subintervals": "29aa89c2a3d8079ad0682cdf67f0178773e4dc821c53da2cb554ac706bdb9d01",
+      "lem:damp-passive-neighbours-force-punctured-cube": "0f9db57de614a73a107ebc03be8862477dbb07c7e2274c17a18623e5dca847a0",
+      "lem:damp-passive-shore-contains-active-root": "546ba38aa48e08451d14d879232c55adbd6143e6ee1aff04023804af575db464",
+      "lem:damp-passive-shore-absorption": "cb814feec1a192cdf20e393d21c426d9b17b0d108b001f38f3e0bb234957c6b4",
+      "cor:damp-terminal-fibre-two-root-cycles": "1c7fa374be2875d5dd1db89403374f2ad6b5fe0871826a50013b7cbd0e9513be",
+      "cor:damp-two-sided-passive-gate-holonomy": "6549f61d63912ac0a4f7fed423646a4af3b7679697813a86e23c61766e4a9ee4",
+      "cor:damp-gate-holonomy-exponential-cost": "b817dbca59f0968e9302e2eaf40da320aeaaa7c31c4cab0e89eeee09e454b52a"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the seven normalized statements, exact cost and excess laws, equality normal form, concise proofs, and source locators. The manuscript retains the full two-layer duplication induction, complementary-pair bookkeeping, named root and owner choices, and every downstream anomaly calculation.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact source bytes, is checked by migration-check, and all seven reviewed source blocks have digests.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/480_passive_coordinate_ample_collars.json",
+      "sha256": "ac63ba7a674941ab9c62a61f200bf07a8e3e90cae2bfe9df60d0c8252b5a1cba"
+    },
+    {
+      "path": "data/results/481_passive_neighbours_force_punctured_cube.json",
+      "sha256": "17c796bf946465326075b210f2f41a20c0ae7ed1241f5b40bd26e471b50cd2dd"
+    },
+    {
+      "path": "data/results/482_passive_shore_contains_active_root.json",
+      "sha256": "23cb46970d6f0085bedf3e83ff80b412e78cca0f59720a5015ef0f197f567617"
+    },
+    {
+      "path": "data/results/483_passive_shore_absorption.json",
+      "sha256": "50b5b3f0afa17dd00a4b9ae1bfe8e18a4ada498359edcd97a07280c449703af0"
+    },
+    {
+      "path": "data/results/484_terminal_fibre_two_root_cycles.json",
+      "sha256": "25cab8e1342de7e138195ad69146d9a8fefdff63e54ccf7f1eaaf2d37cf1935d"
+    },
+    {
+      "path": "data/results/485_two_sided_passive_gate_holonomy.json",
+      "sha256": "9054c5a82ef26e5c206b463ce275f99a7397e757204d5e4116180625c46b0fc7"
+    },
+    {
+      "path": "data/results/486_gate_holonomy_exponential_cost.json",
+      "sha256": "a6f48ec46b349fc483f532a02d72330501318bf99925238d72c734902563b284"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d0325b506774c098c5841297171d73df5fb5698d391a78f1557d9683d01063bf"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "cc1152e2e4d9263ccc4e961890ebf53ee29aa1b7d7cfb66b88775bdcb59d6ec2"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1831 records.",
+    "website": "Normalized 1847 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 7 additional audited labels, raising the dismantlable-ample workspace from 147 to 154 of 683 and overall coverage from 578 to 585 of 1114 database-owned labels.",
+    "proof_review": "The normalized proof chain retains all decisive mechanisms: two-layer union/intersection closure, isometry of ample complements, five-coordinate shore peeling, complement duality, loopless finite root dynamics, and equality in every nonnegative holonomy charge.",
+    "source_integrity": "All seven reviewed source blocks and the complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 529 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Full intermediate peelings, root selections, attached-path orderings, and downstream anomaly casework remain preserved in the scholarly source tree and are summarized, not duplicated, in database records.",
+    "The next source-order block quantifies off-cycle shore cost and classifies the one- and two-unit deviations from the two-arm equality form."
+  ]
+}

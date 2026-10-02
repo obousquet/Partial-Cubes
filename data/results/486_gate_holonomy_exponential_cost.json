@@ -1,0 +1,13 @@
+{
+  "id": 486,
+  "short_name": "gate_holonomy_exponential_cost",
+  "name": "Exponential Cost and Equality Form of Passive-Gate Holonomy",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $S_1,\\ldots,S_k$ be a directed cycle of the lower shore map, let $t(d)$ count all passive shores containing $d$, let $t_{\\mathcal C}(d)$ count cycle shores containing it, and let $Z_0$ be the active passive directions. With $\\eta=|K|-|L|-|Z_0|-\\sum_d(2^{t(d)}-1)$, one has $\\eta\\ge0$, $|K|-|L|\\ge |Z_0|+\\sum_d(2^{t(d)}-1)\\ge3k$, and an exact nonnegative excess decomposition into $\\eta$, $|Z_0|-k$, the exponential incidence excesses, and $|S_i|-2$. Equality $|K|=|L|+3k$ forces pairwise disjoint two-concept shores, each realized by one passive coordinate; every shore is an active root--owner edge, its opposite section is a three-vertex path, the corresponding active--passive square lies in $A$, the $k$ squares are vertex-disjoint, and these attached arms exhaust $K\\setminus L$.",
+  "status": "established",
+  "proof": "Every cycle shore contains a lower root and a distinct non-root common owner, so its size is at least two and the cycle has at least $2k$ incidences. Also $t(d)\\ge t_{\\mathcal C}(d)$, $2^{t(d)}-1\\ge t(d)$, and at least $k$ passive coordinates realize the distinct cycle shores. The punctured-fiber and collar count gives the bound and, after subtracting $3k$, the exact sum of nonnegative excess terms. Equality forces all inequalities to be equalities: every $t(d)$ is at most one, shores are disjoint pairs with unique coordinates, and no uncounted vertices remain. Shore absorption and the one-concept criterion force each root--owner pair to be an active edge. Equality in the collar count leaves one collar point and a three-vertex opposite path per shore; flipping the root--owner edge yields a full square, and the disjoint active endpoints and passive restrictions make these squares vertex-disjoint and exhaustive.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-gate-holonomy-exponential-cost"
+}

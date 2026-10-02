@@ -1,0 +1,13 @@
+{
+  "id": 481,
+  "short_name": "passive_neighbours_force_punctured_cube",
+  "name": "Passive Neighbors Force a Punctured Cube Fiber",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $K\\subsetneq A$ be ample, let $D=A\\setminus K$ have one passive restriction, and let $L$ be the corresponding active lower slice. For $d\\in D$, let $Z(d)=\\{z:d^{\\oplus z}\\in K\\}$ and $t(d)=|Z(d)|$. Then $d^{\\oplus T}\\in K$ for every nonempty $T\\subseteq Z(d)$, and $|K|\\ge |L|+\\sum_{d\\in D}(2^{t(d)}-1)$. If $L$ is nonempty and $Z_0=\\{z:S_z\\ne\\varnothing\\}$, then every $z\\in Z_0$ contributes an additional collar vertex and $|K|\\ge |L|+|Z_0|+\\sum_{d\\in D}(2^{t(d)}-1)$.",
+  "status": "established",
+  "proof": "Condition $K$ on the active word of $d$ and all passive coordinates outside $Z(d)$. The resulting ample family contains every singleton of $Q_{Z(d)}$ but not the empty word. Its ample complement contains the empty word; isometry prevents it from containing any other word because a geodesic would begin with a forbidden singleton. Hence the conditioned family is the punctured cube. Fibers belonging to distinct $d$ have distinct active restrictions, giving the first count. When $L$ is nonempty, the ample two-section class in every nonempty passive direction is connected, so its sections $L$ and $M_z$ intersect. Choosing one intersection point per direction gives pairwise distinct collar vertices outside the punctured fibers and proves the strengthened count.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-neighbours-force-punctured-cube"
+}

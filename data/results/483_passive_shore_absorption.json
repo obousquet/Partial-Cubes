@@ -1,0 +1,13 @@
+{
+  "id": 483,
+  "short_name": "passive_shore_absorption",
+  "name": "Passive Shores Absorb into Ample Gates and Lower Blocker Rank",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "construction",
+  "statement": "For every nonempty passive shore $S_z$ in the small terminal normal form, the gate $G_z=L\\cup S_z$ is ample. There is a saturated ample chain from $L$ to $B$ that adds every member of $S_z$ before every member of $D\\setminus S_z$. If $d\\notin S_z$ has a peripheral blocker cell $C$ for the same $z$, with active support $W$ and duplicated endpoint $c=d^{\\oplus W}$, then $C\\cap G_z=\\{c\\}$ and $(G_z\\cup\\{d\\})\\cap Q_W(d)=\\{d,c\\}$. Thus the blocker descends to the active face when $|W|\\ge2$ and disappears as a named blocker when $|W|=1$.",
+  "status": "established",
+  "proof": "Relative peeling of $L\\cap M_z\\subsetneq B\\cap M_z$ orders the shore. Repeatedly applying the expansion-separator duplication lemma lifts each prefix to an ample family over $L$, ending at $G_z$. A second relative peeling appends the complement shore and gives the two-block saturated chain. The peripheral cell lies in $D$, meets $S_z$ only at $c$, and is otherwise disjoint from $G_z$; restricting $G_z\\cup\\{d\\}$ to its active face therefore leaves exactly the antipodal pair $\\{d,c\\}$. Antipodal localization proves nonampleness in rank at least two, while rank one is the full edge.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-shore-absorption"
+}

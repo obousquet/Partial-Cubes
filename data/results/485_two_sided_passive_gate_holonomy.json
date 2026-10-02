@@ -1,0 +1,13 @@
+{
+  "id": 485,
+  "short_name": "two_sided_passive_gate_holonomy",
+  "name": "Terminal Root Cycles Couple as Two-Sided Passive-Gate Holonomy",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "construction",
+  "statement": "Let $\\mathscr S$ be the distinct nonempty proper passive shores of a two-sided terminal fiber. It is nonempty. For each $S\\in\\mathscr S$, choose a two-block peeling with first lower root $r_S\\in R\\cap S$ and last upper root $u_S\\in R^+\\cap(D\\setminus S)$. There are self-maps $\\lambda,\\mu$ of $\\mathscr S$ such that $r_S\\in S\\setminus\\lambda(S)$ and $u_S\\in\\mu(S)\\setminus S$. Neither map has a fixed point, so both contain directed cycles. If there are exactly two shores $S,T$, then $r_S,u_T\\in S\\setminus T$ and $r_T,u_S\\in T\\setminus S$.",
+  "status": "established",
+  "proof": "A lower root has a nonempty proper blocker shore, proving $\\mathscr S$ nonempty. Passive-shore absorption supplies the two-block peeling and its endpoint roots. Apply the blocker-cell theorem to $r_S$ and define $\\lambda(S)$ to be a shore omitting it; apply the complementary theorem to $u_S$ and define $\\mu(S)$ to be a shore containing it while the opposite shore omits it. The asymmetric differences forbid fixed points, and finite fixed-point-free self-maps contain cycles. On a two-element shore set both maps interchange the shores, giving the crossed profile.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-sided-passive-gate-holonomy"
+}
