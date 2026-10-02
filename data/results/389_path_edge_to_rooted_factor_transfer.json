@@ -1,0 +1,22 @@
+{
+  "id": 389,
+  "short_name": "path_edge_to_rooted_factor_transfer",
+  "name": "Minimal Edge-Retention Failure Transfers Exactly to a Rooted Factor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Fix the certified 289-concept family $B$ and its path $H=a-b-c-d=2-0-4-5$. Let $P$ be any ample dismantlable family containing the edge $D=\\{c,d\\}$, using fresh coordinates apart from the direction of $cd$, and suppose $P$ peels to $c$. Embed $B\\cap P=D$ and, for a fresh coordinate $e$, set $K(P)=(B\\times\\{0\\})\\cup((H\\cup P)\\times\\{1\\})$ with root $r=(a,1)$. Then $K(P)$ is ample and dismantlable, $r$ is a degree-two corner, and $K(P)$ peels to $r$ exactly when $P$ peels relatively to $D$. Moreover, $(K(P),r)$ is a rooted factor exactly when $P$ fails to peel to $D$ but every elementary private-coordinate restriction or contraction of $P$ that retains $D$ peels to its image of $D$. The output has $|P|+291$ concepts and $\\dim(P)+12$ active coordinates. Under these minimality conditions, gluing $K(P)$ at $r$ to the fixed rooted factor $(B,b)$ gives an ample pc-minimal obstruction to dismantlable ampleness with $|P|+579$ concepts.",
+  "status": "established",
+  "proof": "The fixed factor $B$ has a prescribed acyclic USO with sink $a$, a controlled out-map at $d$, and root-preserving minors that peel to the path $H$. Edge gluing this orientation to one of $P$ ending at $c$ proves that the contraction $B\\cup P$ and the upper section $H\\cup P$ have compatible endpoint maps; their shadow intersection is exactly $\\operatorname{Sh}(H)$, giving ampleness of $K(P)$ and ordinary positivity. If $P$ retains $D$, a relative clearing followed by the star-reduction endpoint theorem peels $K(P)$ to $r$. Conversely, a hypothetical root-ending USO when $P$ cannot retain $D$ forces a directed cycle through the lower path, the vertical edges at $b,d$, and an upper directed path in $P$. This proves the endpoint equivalence. Private-coordinate images remain constructions of the same form, so the equivalence gives their exact rooted-minimality condition; stored relative path orders and star reductions handle all fixed-block and new-coordinate images. The order and dimension formulas are immediate, and the cut-vertex obstruction theorem gives the final gluing claim.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-rooted-transfer"
+}

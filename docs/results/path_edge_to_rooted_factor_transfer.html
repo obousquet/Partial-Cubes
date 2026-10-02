@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-61" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-389" style="position:relative;">
 
-        <h3><a href="invariants/edge_peeling_profile.html" class="table-title-link">Marked-Edge Peeling Profile</a></h3>
+        <h3><a href="results/path_edge_to_rooted_factor_transfer.html" class="table-title-link">Minimal Edge-Retention Failure Transfers Exactly to a Rooted Factor</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Marked-Edge Peeling Profile</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)">
-            \[\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For an ample family $A$ with ordered marked edge $D=\{u,v\}$ of direction $e$, the five Boolean entries quantify over acyclic unique-sink orientations. The retention entry $r_D$ is one when some out-map satisfies $r(u),r(v)\subseteq\{e\}$. The sink entry $t_s$ is one when some out-map has $r(s)=\varnothing$. The leaf-exit entry $\ell_s$ is one when some out-map has $r(s)=\{e\}$. Equivalently, these mean respectively peeling to $D$, peeling to $s$, and a complete peeling in which $s$ is the first endpoint deleted and is then a leaf adjacent to the other endpoint.</p></div>
+        <p><strong>Name: </strong>Minimal Edge-Retention Failure Transfers Exactly to a Rooted Factor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix the certified 289-concept family $B$ and its path $H=a-b-c-d=2-0-4-5$. Let $P$ be any ample dismantlable family containing the edge $D=\{c,d\}$, using fresh coordinates apart from the direction of $cd$, and suppose $P$ peels to $c$. Embed $B\cap P=D$ and, for a fresh coordinate $e$, set $K(P)=(B\times\{0\})\cup((H\cup P)\times\{1\})$ with root $r=(a,1)$. Then $K(P)$ is ample and dismantlable, $r$ is a degree-two corner, and $K(P)$ peels to $r$ exactly when $P$ peels relatively to $D$. Moreover, $(K(P),r)$ is a rooted factor exactly when $P$ fails to peel to $D$ but every elementary private-coordinate restriction or contraction of $P$ that retains $D$ peels to its image of $D$. The output has $|P|+291$ concepts and $\dim(P)+12$ active coordinates. Under these minimality conditions, gluing $K(P)$ at $r$ to the fixed rooted factor $(B,b)$ gives an ample pc-minimal obstruction to dismantlable ampleness with $|P|+579$ concepts.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Codomain: </strong>The Boolean cube $\{0,1\}^5$</p>
-<strong>Parameters:</strong><div class="text-field"><p>An ordered marked edge $D=(u,v)$; reversing its order swaps the two sink entries and the two leaf-exit entries.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>The common edge direction is denoted $e$ and the entries record existence, not a chosen orientation.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The profile is invariant under isomorphisms preserving the ordered marked edge. Intrinsic structural tests for which profiles are attainable remain open in the manuscript.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#def:damp-edge-peeling-profile</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/edge_peeling_gluing_criterion.html'>Exact Peeling Criterion for Gluing along an Edge</a></li><li><a href='results/edge_context_type_algebra.html'>Six Contexts Determine Every Edge-Gluing Type</a></li><li><a href='results/separating_edge_obstruction_classification.html'>Exact Classification of Obstructions with a Separating Edge</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/edge_boundary_double.html'>Rooted Failure Gives an Edge Compatibility Test and Forbidden Double</a></li><li><a href='results/rooted_prism_edge_context.html'>Rooted Factors Are Exactly Minimal Zero-Context Prisms</a></li><li><a href='results/edge_profile_minor_transport.html'>Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</a></li><li><a href='results/three_piece_edge_obstruction_existence.html'>Exact Existence Criterion for Three-Piece Separating-Edge Obstructions</a></li><li><a href='results/repair_face_rooted_factor.html'>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></li><li><a href='results/three_piece_edge_obstruction_witness.html'>A Certified Three-Piece Separating-Edge Obstruction</a></li><li><a href='results/peripheral_third_piece_obstructions.html'>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></li><li><a href='results/rooted_two_block_completion.html'>Rooted Ample Completion Transfers Exactly between Two Blocks</a></li><li><a href='results/path_edge_to_rooted_factor_transfer.html'>Minimal Edge-Retention Failure Transfers Exactly to a Rooted Factor</a></li><li><a href='results/iterated_edge_retention_obstructions.html'>Minimal Edge-Retention Failures Iterate to an Infinite Obstruction Family</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>The fixed factor $B$ has a prescribed acyclic USO with sink $a$, a controlled out-map at $d$, and root-preserving minors that peel to the path $H$. Edge gluing this orientation to one of $P$ ending at $c$ proves that the contraction $B\cup P$ and the upper section $H\cup P$ have compatible endpoint maps; their shadow intersection is exactly $\operatorname{Sh}(H)$, giving ampleness of $K(P)$ and ordinary positivity. If $P$ retains $D$, a relative clearing followed by the star-reduction endpoint theorem peels $K(P)$ to $r$. Conversely, a hypothetical root-ending USO when $P$ cannot retain $D$ forces a directed cycle through the lower path, the vertical edges at $b,d$, and an upper directed path in $P$. This proves the endpoint equivalence. Private-coordinate images remain constructions of the same form, so the equivalence gives their exact rooted-minimality condition; stored relative path orders and star reductions handle all fixed-block and new-coordinate images. The order and dimension formulas are immediate, and the cut-vertex obstruction theorem gives the final gluing claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-path-rooted-transfer</p></div>
 
         </div>
     </div>

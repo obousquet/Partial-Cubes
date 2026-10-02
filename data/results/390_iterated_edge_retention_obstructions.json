@@ -1,0 +1,22 @@
+{
+  "id": 390,
+  "short_name": "iterated_edge_retention_obstructions",
+  "name": "Minimal Edge-Retention Failures Iterate to an Infinite Obstruction Family",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "If $P$ satisfies the minimal edge-retention hypotheses of the path-to-root transfer theorem, mark in $K(P)$ the vertical edge $E_a=\\{(a,0),(a,1)\\}$. Then $K(P)$ is again an ample dismantlable family that fails to peel relatively to $E_a$, while every private elementary minor retaining $E_a$ does peel to its image. Its lower endpoint $(a,0)$ is attainable and its upper endpoint $(a,1)$ is not. Both sections and the reduction in the direction of $E_a$ peel to their common projected endpoint, so those three projected endpoint tests do not imply edge retention. Starting from the certified 330-concept edge piece and iterating gives edge pieces $P_k$ with $|P_k|=330+291k$ and $\\dim(P_k)=13+12k$. For every $k\\ge0$, vertex gluing yields an ample pc-minimal obstruction to dismantlable ampleness with $909+291k$ concepts in dimension $37+12k$.",
+  "status": "established",
+  "proof": "The transfer theorem makes the upper endpoint unattainable, while its ordinary construction can be oriented to end at the lower endpoint. The lower section, upper section, and path reduction all peel to the projected endpoint. In every private image of the input piece, first clear its private upper vertices to the old marked edge, then remove successive upper path vertices and peel the fixed lower block to $a$, leaving exactly $E_a$. For operations in the fixed block, stored relative orders clear the lower family to the corresponding image of $H$; successive square-corner deletions and a rooted order in the surviving upper piece again leave the marked edge. Thus the output satisfies the same minimal edge-retention hypotheses and may be reused as input. Each iteration adds 291 concepts and 12 coordinates; the obstruction formulas follow by adding the fixed 579 concepts and 24 coordinates from the gluing construction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-iterable-path-edge"
+}
