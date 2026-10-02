@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-19" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-439" style="position:relative;">
 
-        <h3><a href="operations/down_shift.html" class="table-title-link">Elementary Down-Shift</a></h3>
+        <h3><a href="results/component_label_repair_disjunction.html" class="table-title-link">Independent Repair Tips Give an Exact Component-Label Disjunction</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Elementary Down-Shift</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="D_x">
-            \[D_x\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a Boolean class $H\subseteq\{0,1\}^X$ and $x\in X$, let $P_x(H)=H_x^0\cup H_x^1$ and $I_x(H)=H_x^0\cap H_x^1$. The elementary down-shift $D_xH$ has lower $x$-section $P_x(H)$ and upper $x$-section $I_x(H)$. Equivalently, an unmatched upper concept moves to its lower mate while matched pairs remain.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Down-shifting preserves cardinality and the active ground set may shrink if the two resulting sections coincide. Iterated shifts are also called down-compressions.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:operations (Elementary down-shift definition)</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/down_shifts_do_not_increase_vc_dimension.html'>Down-Shifts Do Not Create Shattered Coordinate Sets</a></li><li><a href='results/vc_littlestone_operation_monotonicity.html'>Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li></ul></p></div>
+        <p><strong>Name: </strong>Independent Repair Tips Give an Exact Component-Label Disjunction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C\subseteq S\subseteq Q_F$ be nonempty ample families, where $C$ is corner-peelable and $S$ is not. Let $a_1,\ldots,a_r$ be distinct points outside $S$, with $r\ge1$, such that $A=S\cup\{a_1,\ldots,a_r\}$ is ample, every $\{a_i\}$ is a component of $A\setminus C$, and every $S\cup\{a_i\}$ is corner-peelable. In the component-label expansion, label every component in $S\setminus C$ by zero and label $\{a_i\}$ by $\varepsilon_i$. Then $X_\varepsilon$ is dismantlable ample exactly when at least one $\varepsilon_i$ is zero. For the all-one labeling, the zero section is the nonpeelable family $S$; hence this negative expansion has a proper nonpeelable section and is not a forbidden pc-minor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every interpolant $S\cup U$ with $U\subseteq\{a_1,\ldots,a_r\}$ is ample, since it is a section of a component-label expansion. When $U$ is nonempty, delete all but one of its tips and use the assumed peeling of $S\cup\{a_i\}$; thus every such interpolant peels. If some $\varepsilon_i=0$, first delete all tips labeled one. Every intermediate family is an ample expansion over one of these peelable interpolants and the same site $C$. What remains is a peripheral expansion with peelable base and site, so it peels. If all labels are one, conditioning to the zero section gives $S$, and pc-minor closure of dismantlable ampleness rules out a peeling of $X_\varepsilon$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex?#prop:damp-component-label-repair-disjunction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nonlinear_component_expansion_signs_319.html">Nonlinear Peelable Sign Set in a 319-Concept Expansion</a></li></ul></p>
 
         </div>
     </div>

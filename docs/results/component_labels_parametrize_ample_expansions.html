@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-19" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-437" style="position:relative;">
 
-        <h3><a href="operations/down_shift.html" class="table-title-link">Elementary Down-Shift</a></h3>
+        <h3><a href="results/component_labels_parametrize_ample_expansions.html" class="table-title-link">Component Labels Parametrize Ample One-Coordinate Expansions</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Elementary Down-Shift</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="D_x">
-            \[D_x\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a Boolean class $H\subseteq\{0,1\}^X$ and $x\in X$, let $P_x(H)=H_x^0\cup H_x^1$ and $I_x(H)=H_x^0\cap H_x^1$. The elementary down-shift $D_xH$ has lower $x$-section $P_x(H)$ and upper $x$-section $I_x(H)$. Equivalently, an unmatched upper concept moves to its lower mate while matched pairs remain.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Down-shifting preserves cardinality and the active ground set may shrink if the two resulting sections coincide. Iterated shifts are also called down-compressions.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:operations (Elementary down-shift definition)</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/down_shifts_do_not_increase_vc_dimension.html'>Down-Shifts Do Not Create Shattered Coordinate Sets</a></li><li><a href='results/vc_littlestone_operation_monotonicity.html'>Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li></ul></p></div>
+        <p><strong>Name: </strong>Component Labels Parametrize Ample One-Coordinate Expansions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne C\subseteq A\subseteq Q_F$ be ample, let $e\notin F$, and let $K_1,\ldots,K_k$ be the connected components of $A\setminus C$. For $b\in\{0,1\}^k$, set $X_b=(C\times\{0,1\})\cup\bigcup_i(K_i\times\{b_i\})$. Then $X_b$ is ample and $\operatorname{Sh}(X_b)=\operatorname{Sh}(A)\cup\{T\cup\{e\}:T\in\operatorname{Sh}(C)\}$. Conversely, these are exactly the ample families with contraction $A$ and reduction $C$ in coordinate $e$, and the component labels are unique. More precisely, put $\mathcal I=\mathcal N(\operatorname{Sh}(C))\cap\operatorname{Sh}(A)$ and let $\tau_T$ be the unique trace missing from $C|_T$. The fiber $A(T,\tau_T)$ lies in a unique component $K_{i(T)}$; the new signed minimal nonfaces are exactly $(T\cup\{e\},(\tau_T,1-b_{i(T)}))$ for $T\in\mathcal I$, every component occurs, and a signing is admissible exactly when its new bits agree on equal component indices. Hence there are exactly $2^k$ expansions. If $A=C$, the unique construction is $A\times\{0,1\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cube $Q\subseteq A$ has $Q\setminus C$ connected when nonempty, because it is the complement of an ample face section inside a cube. It therefore lies in one component and survives in one layer. This proves that old-coordinate supports shattered by $X_b$ are strongly shattered. A support $T\cup\{e\}$ is shattered exactly when $T$ is shattered by $C$: if a trace is missing from $C|_T$, its nonempty connected fiber in $A$ lies in one component and occurs in only one layer. The displayed shadow formula and Sandwich equality give ampleness. Conversely, adjacent vertices of $A\setminus C$ cannot receive different lift bits, since the resulting square section would be an antipodal pair and would not be ample, so lift bits are constant on components. The minimal-nonface formula follows from the shadow identity. Every component occurs because a point outside $C$ violates a minimal signed clause of $C$; cardinality equality forces its support to lie in $\mathcal I$. Finally, the old clauses and the component-consistent new clauses force contraction and reduction into $A$ and $C$, while equal cardinality forces equality, proving sufficiency and uniqueness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex?#thm:damp-component-expansion-signs</p></div>
 
         </div>
     </div>

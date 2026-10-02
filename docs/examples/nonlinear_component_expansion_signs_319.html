@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-19" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-139" style="position:relative;">
 
-        <h3><a href="operations/down_shift.html" class="table-title-link">Elementary Down-Shift</a></h3>
+        <h3><a href="examples/nonlinear_component_expansion_signs_319.html" class="table-title-link">Nonlinear Peelable Sign Set in a 319-Concept Expansion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Elementary Down-Shift</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="D_x">
-            \[D_x\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a Boolean class $H\subseteq\{0,1\}^X$ and $x\in X$, let $P_x(H)=H_x^0\cup H_x^1$ and $I_x(H)=H_x^0\cap H_x^1$. The elementary down-shift $D_xH$ has lower $x$-section $P_x(H)$ and upper $x$-section $I_x(H)$. Equivalently, an unmatched upper concept moves to its lower mate while matched pairs remain.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Down-shifting preserves cardinality and the active ground set may shrink if the two resulting sections coincide. Iterated shifts are also called down-compressions.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:operations (Elementary down-shift definition)</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/down_shifts_do_not_increase_vc_dimension.html'>Down-Shifts Do Not Create Shattered Coordinate Sets</a></li><li><a href='results/vc_littlestone_operation_monotonicity.html'>Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li></ul></p></div>
+        <p><strong>Name: </strong>Nonlinear Peelable Sign Set in a 319-Concept Expansion</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $S$ be the fixed 291-concept cornerless ample family with independent repairing tips $91$ and $157$, whose incident supports have binary encodings $102$ and $390$. Let $C$ be the union of the two punctured incident four-cubes and put $A=S\cup\{91,157\}$. The three components of $A\setminus C$ have orders $265,1,1$. Apply the one-coordinate component-label expansion to these components.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|C|=26$, $|A|=293$, every expansion has $319$ concepts, and the twelve new-coordinate signed clauses split as ten clauses for the 265-vertex component and one clause for each tip.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>All eight component labelings are ample and exactly six are corner-peelable. The two nonpeelable labels are $(0,1,1)$ and its global reflection $(1,0,0)$. In particular, with the large component labeled zero, both $(0,1,0)$ and $(0,0,1)$ peel while their coordinatewise maximum $(0,1,1)$ does not. Thus the equality constraints that characterize ample expansion signings do not characterize the peelable subset. Each negative example has the proper nonpeelable section $S$ and is not a forbidden pc-minor. Exhaustive checks through $Q_3$ cover all 2244 nested nonempty ample pairs and 9656 new-clause assignments; exactly 5384 assignments satisfy the component equalities and shadow formula, and inverse component reflections recover every small fixed-shadow realization in every coordinate order.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex?#ex:damp-component-signs-nonlinear-peeling</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_component_expansion_signs.py; PartialCubes:forbidden_pc_minor_campaign/component_expansion_signs_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

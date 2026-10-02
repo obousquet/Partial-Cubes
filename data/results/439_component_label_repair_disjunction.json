@@ -1,0 +1,22 @@
+{
+  "id": 439,
+  "short_name": "component_label_repair_disjunction",
+  "name": "Independent Repair Tips Give an Exact Component-Label Disjunction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/concept_deletion",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $C\\subseteq S\\subseteq Q_F$ be nonempty ample families, where $C$ is corner-peelable and $S$ is not. Let $a_1,\\ldots,a_r$ be distinct points outside $S$, with $r\\ge1$, such that $A=S\\cup\\{a_1,\\ldots,a_r\\}$ is ample, every $\\{a_i\\}$ is a component of $A\\setminus C$, and every $S\\cup\\{a_i\\}$ is corner-peelable. In the component-label expansion, label every component in $S\\setminus C$ by zero and label $\\{a_i\\}$ by $\\varepsilon_i$. Then $X_\\varepsilon$ is dismantlable ample exactly when at least one $\\varepsilon_i$ is zero. For the all-one labeling, the zero section is the nonpeelable family $S$; hence this negative expansion has a proper nonpeelable section and is not a forbidden pc-minor.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/nonlinear_component_expansion_signs_319"
+  ],
+  "proof": "Every interpolant $S\\cup U$ with $U\\subseteq\\{a_1,\\ldots,a_r\\}$ is ample, since it is a section of a component-label expansion. When $U$ is nonempty, delete all but one of its tips and use the assumed peeling of $S\\cup\\{a_i\\}$; thus every such interpolant peels. If some $\\varepsilon_i=0$, first delete all tips labeled one. Every intermediate family is an ample expansion over one of these peelable interpolants and the same site $C$. What remains is a peripheral expansion with peelable base and site, so it peels. If all labels are one, conditioning to the zero section gives $S$, and pc-minor closure of dismantlable ampleness rules out a peeling of $X_\\varepsilon$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex#prop:damp-component-label-repair-disjunction"
+}

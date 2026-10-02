@@ -1,0 +1,21 @@
+{
+  "id": 438,
+  "short_name": "component_reflections_generate_fixed_shadow_fiber",
+  "name": "Component Reflections Generate Every Fixed-Shadow Ample Family",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/down_shift",
+    "#operations/graph_expansion"
+  ],
+  "result_type": "construction",
+  "statement": "Fix a simplicial complex $\\Sigma\\subseteq2^F$ and a coordinate order $e_1,\\ldots,e_n$. Starting from the down-set $D_\\Sigma=\\{x\\in Q_F:\\{f:x_f=1\\}\\in\\Sigma\\}$, reverse the coordinate down-shifts in that order: at each coordinate, independently choose a bit for every connected component outside the current reduction and apply the component-label expansion; if the reduction is empty, retain or reflect the constant coordinate. The outputs are exactly all ample families $H$ with $\\operatorname{Sh}(H)=\\Sigma$. For the prescribed order, every output uniquely determines all intermediate families and component choices. Consequently the graph of fixed-shadow ample realizations, with an edge for reflecting one component in one coordinate, is connected.",
+  "status": "established",
+  "proof": "Moving every unique lift in coordinate $e$ to layer zero preserves ampleness and the shadow; on the signed minimal-nonface presentation it sets the $e$-bit of every clause containing $e$ to one and leaves every other bit unchanged. These normalizations commute. Applying all coordinates makes every missing trace all-one, producing exactly $D_\\Sigma$. Reversing the normalizations and applying the component-label theorem reconstructs any target realization. After stage $j$, the intermediate family is $D_{e_{j+1}}\\cdots D_{e_n}(H)$, so its clauses determine both the family and all recovered component labels uniquely. Reversing any realization's path to $D_\\Sigma$ proves connectivity.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex#cor:damp-component-reflection-generation"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-19" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-438" style="position:relative;">
 
-        <h3><a href="operations/down_shift.html" class="table-title-link">Elementary Down-Shift</a></h3>
+        <h3><a href="results/component_reflections_generate_fixed_shadow_fiber.html" class="table-title-link">Component Reflections Generate Every Fixed-Shadow Ample Family</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Elementary Down-Shift</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="D_x">
-            \[D_x\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a Boolean class $H\subseteq\{0,1\}^X$ and $x\in X$, let $P_x(H)=H_x^0\cup H_x^1$ and $I_x(H)=H_x^0\cap H_x^1$. The elementary down-shift $D_xH$ has lower $x$-section $P_x(H)$ and upper $x$-section $I_x(H)$. Equivalently, an unmatched upper concept moves to its lower mate while matched pairs remain.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Down-shifting preserves cardinality and the active ground set may shrink if the two resulting sections coincide. Iterated shifts are also called down-compressions.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/vc-littlestone/main.tex?#sec:operations (Elementary down-shift definition)</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/down_shifts_do_not_increase_vc_dimension.html'>Down-Shifts Do Not Create Shattered Coordinate Sets</a></li><li><a href='results/vc_littlestone_operation_monotonicity.html'>Coordinate Operations Do Not Increase VC or Littlestone Dimension</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li></ul></p></div>
+        <p><strong>Name: </strong>Component Reflections Generate Every Fixed-Shadow Ample Family</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/down_shift.html">Elementary Down-Shift</a></li><li><a href="operations/graph_expansion.html">Graph Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a simplicial complex $\Sigma\subseteq2^F$ and a coordinate order $e_1,\ldots,e_n$. Starting from the down-set $D_\Sigma=\{x\in Q_F:\{f:x_f=1\}\in\Sigma\}$, reverse the coordinate down-shifts in that order: at each coordinate, independently choose a bit for every connected component outside the current reduction and apply the component-label expansion; if the reduction is empty, retain or reflect the constant coordinate. The outputs are exactly all ample families $H$ with $\operatorname{Sh}(H)=\Sigma$. For the prescribed order, every output uniquely determines all intermediate families and component choices. Consequently the graph of fixed-shadow ample realizations, with an edge for reflecting one component in one coordinate, is connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Moving every unique lift in coordinate $e$ to layer zero preserves ampleness and the shadow; on the signed minimal-nonface presentation it sets the $e$-bit of every clause containing $e$ to one and leaves every other bit unchanged. These normalizations commute. Applying all coordinates makes every missing trace all-one, producing exactly $D_\Sigma$. Reversing the normalizations and applying the component-label theorem reconstructs any target realization. After stage $j$, the intermediate family is $D_{e_{j+1}}\cdots D_{e_n}(H)$, so its clauses determine both the family and all recovered component labels uniquely. Reversing any realization's path to $D_\Sigma$ proves connectivity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/component_expansion_signs.tex?#cor:damp-component-reflection-generation</p></div>
 
         </div>
     </div>
