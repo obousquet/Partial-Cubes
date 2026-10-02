@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "batch_id": "167_dismantlable_ample_empty_core_counterexample",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the certified 292-concept ample forbidden pc-minor with empty unique-midpoint core and its 291-concept cornerless predecessor with an activated 76-vertex core.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-empty-core-counterexample"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem is the decisive scope control for the unique-midpoint core: the core is a sufficient obstruction to peeling, but its emptiness is not sufficient once full-square constraints interact.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The archived standalone checker reconstructs both families, recomputes their shadows, corners and fixed cores, and validates all 72 elementary-minor peeling certificates while reproducing its source report byte-for-byte.",
+    "claim_block_sha256": {
+      "thm:damp-empty-core-counterexample": "f6d28c560cc41831ac1cde84c546073d0c2a7f15d35eca4159b302174202268b"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/verify_damp_empty_core_counterexample.py",
+      "sha256": "52da63e56ac8d15976411d4929554869dda962088be6ea07881cae27ca82dde6"
+    },
+    {
+      "path": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/damp_empty_core_counterexample.json",
+      "sha256": "3e3b26bccd102450b1f2c92973dd9b4da25d8b21fb373f151c5c31e10da639ff"
+    },
+    {
+      "path": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/damp_empty_core_counterexample_verification.json",
+      "sha256": "cc85ec237697f7f7b19fab3b3da68bed9ccdddc102481bd95033271b9c5cf7bf"
+    },
+    {
+      "path": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/damp_fixed_291_repair_creation.json",
+      "sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f"
+    },
+    {
+      "path": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/damp_hall_carrier_defect_min8.json",
+      "sha256": "60e1d708636d85ccf991d1d574dec5dbde7829656f5576a12bba75170b6f6b53"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the named example, exact construction, verified orders and core sizes, counterexample theorem, concise finite proof, and citation. LaTeX retains discovery provenance, expanded certificate discussion, and the consequences for the square-coupling research program.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the theorem. The certificate directory contains the standalone checker, compact witness, two source inputs, and byte-identical report.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/182_empty_midpoint_core_forbidden_pair.json",
+      "sha256": "d6335fbc86013eee9c3aca90cb84986e4eaf7456749cb4e0fac7ef9e1d9b592e"
+    },
+    {
+      "path": "data/results/634_empty_midpoint_core_counterexample.json",
+      "sha256": "8df458edf65c06f7dd2297bab39c951e8af1ce8d7416e6ffe53efbf44e0e981e"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "56c9556ce10b1106e4381f14d374a34e13cfff312d93171f4b38ebf19e76f7ad"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "aee4b10feeb92050307fe075561615292ba84d7e4f41ecc109ec9c7291f4c36a"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2021 records.",
+    "website": "Normalized 2037 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 734 to 735 of 1143 and dismantlable-ample coverage from 298 to 299 of 683.",
+    "certificates": "The checker verifies orders 291 and 292, equal shattered-set counts, corner sets of orders zero and one, 766 unique-midpoint constraints in the larger family, core orders 76 and zero, and all 36 elementary images of each family.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002; the regenerated report is byte-identical to its source copy."
+  },
+  "deferred": [
+    "The refreshed audit has 408 uncovered database-owned labels: 384 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem block develops local alphabet and pc-minor span laws for metric supports after the empty-core counterexample.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

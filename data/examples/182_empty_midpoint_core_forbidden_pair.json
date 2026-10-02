@@ -1,0 +1,13 @@
+{
+  "id": 182,
+  "short_name": "empty_midpoint_core_forbidden_pair",
+  "name": "One-Corner Forbidden Family with Empty Midpoint Core",
+  "symbol": "(\\widehat G,H)",
+  "object_type": "construction",
+  "definition": "Let $G\\subseteq Q_{12}$ be the 291-concept family stored as `base` in the archived `damp_fixed_291_repair_creation.json`. Set $D=\\{96,126,394,1922,1934\\}$ and $A=\\{553,763,2968,4008,4026\\}$, then define $\\widehat G=(G\\setminus D)\\cup A$ and $H=\\widehat G\\cup\\{3959\\}$.",
+  "parameters": "$\\widehat G$ has 291 concepts and $H$ has 292, both using all twelve coordinates.",
+  "properties": "$\\widehat G$ is cornerless, ample, pc-minimal outside the dismantlable ample classes, and has unique-midpoint core order 76. The family $H$ is also ample and pc-minimal outside that class, has only the corner 3959 with incident support $\\{4,7,11\\}$, and has empty unique-midpoint core despite being nonpeelable. All 36 elementary pc-minor images of each family have certified complete peelings.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-empty-core-counterexample",
+  "verification": "migration/certificates/167_dismantlable_ample_empty_core_counterexample/forbidden_pc_minor_campaign/verify_damp_empty_core_counterexample.py reconstructs both families and reproduces the archived report byte-for-byte."
+}

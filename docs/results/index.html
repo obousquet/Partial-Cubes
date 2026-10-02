@@ -10620,6 +10620,24 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-634" style="position:relative;">
+
+        <h3><a href="results/empty_midpoint_core_counterexample.html" class="table-title-link">Empty Unique-Midpoint Core Does Not Imply Peelability</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Empty Unique-Midpoint Core Does Not Imply Peelability</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 292-concept ample forbidden pc-minor $H\subseteq Q_{12}$ for the dismantlable ample classes whose unique-midpoint core is empty. It has exactly one corner, 3959, with corner-cube support $\{4,7,11\}$. Deleting that corner gives a 291-concept cornerless ample forbidden pc-minor $\widehat G$ whose unique-midpoint core has order 76. Thus an ample forbidden pc-minor with empty unique-midpoint core need not peel, and it need not have a corner whose deletion leaves an empty core.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The archived checker reconstructs both vertex sets and computes 291 and 292 shattered supports respectively, proving ampleness. It finds no corner in $\widehat G$ and only 3959 in $H$, so $\widehat G$ cannot peel and any peeling of $H$ would have to start by reaching $\widehat G$. It independently enumerates all 766 unique-midpoint constraints of $H$ and records a complete pruning order, while the same fixed-constraint calculation leaves a witnessed 76-vertex core in $\widehat G$. Finally, it verifies complete corner peelings for every restriction and contraction in all twelve coordinates of both families. Pc-minor closure of dismantlable ampleness then proves that both nonpeelable families are forbidden pc-minors.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-empty-core-counterexample</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/empty_midpoint_core_forbidden_pair.html">One-Corner Forbidden Family with Empty Midpoint Core</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This disproves the converse of the unique-midpoint core obstruction. The sufficient direction, that a nonempty core forces nonpeelability, remains valid.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
