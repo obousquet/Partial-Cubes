@@ -1,0 +1,24 @@
+{
+  "id": 455,
+  "short_name": "endpoint_peeling_need_not_be_section_first",
+  "name": "Endpoint Peelings Need Not Begin by Clearing a Coordinate Section",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/isometric_dimension"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "There is a two-connected, periphery-free, Cartesian-prime ample family $P$ of order $294$, dimension $12$, and VC dimension $3$ that peels to a marked noncorner $a$, although for every active coordinate there is no relative corner peeling to the section containing $a$. In every coordinate the opposite section nevertheless has no corner outside its overlap with the root-containing section. VC dimension three is least possible for this failure in a nontrivial ample family. A second example of order $290$ and VC dimension four has the same failure with the marked endpoint itself a corner.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_section_schedule_counterexamples"
+  ],
+  "proof": "For the 294-concept example take $a=1895$; the only corner is its coordinate-zero neighbor $1894$. In every other coordinate that corner already lies in the retained root section, so no relative peeling can start. In coordinate zero, the complete deletion-state graph has six maximal orders: each removes the same seven vertices and stops with 146 opposite-section vertices. The marked endpoint belongs to the unique corner cube, so the corner-cube criterion supplies the asserted overlap condition in every coordinate. For the corner-root example use the 290-concept support-four repair rooted at $29$; its five corners share a four-cube containing the root, while all twelve root-section intervals have complete negative certificates. Below VC dimension three, the relative VC-two peeling theorem clears any chosen coordinate section and then peels it to the prescribed endpoint, proving minimality.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-no-root-section-first-peeling"
+}

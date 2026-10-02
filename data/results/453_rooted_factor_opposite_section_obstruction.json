@@ -1,0 +1,22 @@
+{
+  "id": 453,
+  "short_name": "rooted_factor_opposite_section_obstruction",
+  "name": "Every Rooted Factor Has a Locked Opposite Section in Every Coordinate",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/isometric_dimension"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "statement": "Write a two-section ample family as $X=(A_0\\times\\{0\\})\\cup(A_1\\times\\{1\\})$, with nonempty sections and overlap $C=A_0\\cap A_1$. If $A_1$ peels relatively to $C$, then $X$ peels to $(a,0)$ exactly when $A_0$ peels to $a$ and $C$ is dismantlable ample. Consequently, for every active coordinate of a rooted factor, the section opposite the root has no relative peeling to its overlap. That opposite section has VC dimension at least three, uses at least six coordinates, and contains an ample $D\\supsetneq C$ all of whose corners lie in $C$. Every rooted factor therefore uses at least seven coordinates.",
+  "status": "established",
+  "proof": "Necessity follows by restricting a root-ending peeling to the lower section and ordering full fibres by their first deletion to obtain an ordinary peeling of the overlap. Conversely, perform the relative peeling of the upper section outside $C$; its vertices have no lower mates, so their corner cubes are unchanged. The remainder is a lower-root peripheral expansion, which peels to $(a,0)$ exactly under the two stated conditions. In a rooted factor the root-containing section is a positive proper rooted restriction and the overlap is dismantlable ample, so a relative peeling on the opposite side would contradict rooted failure. Known relative-peeling bounds force VC dimension at least three and at least six active coordinates on that side. Greedily delete opposite-side corners outside $C$ until no such deletion remains; failure of a full relative peeling makes the terminal ample family strictly larger than $C$, with all its corners in $C$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-section-obstructions"
+}

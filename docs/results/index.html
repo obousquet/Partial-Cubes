@@ -7578,6 +7578,75 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-452" style="position:relative;">
+
+        <h3><a href="results/prescribed_endpoint_lost_under_reduction.html" class="table-title-link">A Nonempty Reduction Can Lose a Prescribed Peeling Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Nonempty Reduction Can Lose a Prescribed Peeling Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is an ample family $Y$ with $579$ concepts, isometric dimension $13$, and VC dimension $4$ that peels to a marked root $r$, while its nonempty one-coordinate reduction is the $289$-concept rooted factor $B$ and cannot peel to the projected root $29$. The full fibre through $r$ is present. The only corners of $Y$ are $(157,0)$ and $(29,1)$, and every peeling ending at $r=(29,0)$ starts by deleting $(29,1)$. VC dimension four is the least possible for prescribed-endpoint failure under a nonempty reduction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Let $M=B\cup\{157\}$ be the certified support-four endpoint repair and set $Y=(M\times\{0\})\cup(B\times\{1\})$. The peripheral-expansion shadow formula gives order $579$, dimension $13$, and VC dimension four. Clearing the upper copy of $B$ and then peeling $M$ to $29$ makes $Y$ peel to $r$, while the reduction is exactly $B$, whose unique corner $29$ must be deleted first and hence cannot be retained as an endpoint. Direct corner-cube inspection leaves only $(157,0)$ and $(29,1)$. Deleting the former produces $B\square Q_1$, whose root-containing restriction is the root-negative $B$, forcing every root-ending order to start with the latter. Finally, a reduction on a nonempty coordinate set lowers VC dimension by at least its size; below VC dimension four the reduction has VC dimension at most two and therefore peels to every prescribed concept.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-strong-projection-failure</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_reduction_endpoint_failure_579.html">A 579-Concept Endpoint Failure under Reduction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-453" style="position:relative;">
+
+        <h3><a href="results/rooted_factor_opposite_section_obstruction.html" class="table-title-link">Every Rooted Factor Has a Locked Opposite Section in Every Coordinate</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Rooted Factor Has a Locked Opposite Section in Every Coordinate</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Write a two-section ample family as $X=(A_0\times\{0\})\cup(A_1\times\{1\})$, with nonempty sections and overlap $C=A_0\cap A_1$. If $A_1$ peels relatively to $C$, then $X$ peels to $(a,0)$ exactly when $A_0$ peels to $a$ and $C$ is dismantlable ample. Consequently, for every active coordinate of a rooted factor, the section opposite the root has no relative peeling to its overlap. That opposite section has VC dimension at least three, uses at least six coordinates, and contains an ample $D\supsetneq C$ all of whose corners lie in $C$. Every rooted factor therefore uses at least seven coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Necessity follows by restricting a root-ending peeling to the lower section and ordering full fibres by their first deletion to obtain an ordinary peeling of the overlap. Conversely, perform the relative peeling of the upper section outside $C$; its vertices have no lower mates, so their corner cubes are unchanged. The remainder is a lower-root peripheral expansion, which peels to $(a,0)$ exactly under the two stated conditions. In a rooted factor the root-containing section is a positive proper rooted restriction and the overlap is dismantlable ample, so a relative peeling on the opposite side would contradict rooted failure. Known relative-peeling bounds force VC dimension at least three and at least six active coordinates on that side. Greedily delete opposite-side corners outside $C$ until no such deletion remains; failure of a full relative peeling makes the terminal ample family strictly larger than $C$, with all its corners in $C$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-section-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-454" style="position:relative;">
+
+        <h3><a href="results/root_in_every_corner_cube_criterion.html" class="table-title-link">Corner Cubes Characterize Initial Opposite-Section Locking</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corner Cubes Characterize Initial Opposite-Section Locking</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A$ be ample with marked concept $a$, and in every active coordinate call the section containing $a$ lower. Every corner of every opposite section lies in its overlap with the lower section if and only if $a$ belongs to the unique maximal cube of every corner $c$ of $A$. Equivalently, the coordinates on which $c$ differs from $a$ are all incident directions of $c$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A corner of an opposite section outside the overlap has no mate across the split coordinate. Its lift is therefore a corner of $A$ with the same incident support, and the split coordinate separates it from $a$ without belonging to that support. Conversely, any such separating nonincident coordinate places the entire corner cube in the opposite section and leaves its projection as a corner outside the overlap. Excluding all such coordinates is exactly the condition that $a$ lies in every corner cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-root-in-corner-cubes</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-455" style="position:relative;">
+
+        <h3><a href="results/endpoint_peeling_need_not_be_section_first.html" class="table-title-link">Endpoint Peelings Need Not Begin by Clearing a Coordinate Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Endpoint Peelings Need Not Begin by Clearing a Coordinate Section</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/vc_dimension.html">VC Dimension</a></li><li><a href="invariants/isometric_dimension.html">Isometric Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a two-connected, periphery-free, Cartesian-prime ample family $P$ of order $294$, dimension $12$, and VC dimension $3$ that peels to a marked noncorner $a$, although for every active coordinate there is no relative corner peeling to the section containing $a$. In every coordinate the opposite section nevertheless has no corner outside its overlap with the root-containing section. VC dimension three is least possible for this failure in a nontrivial ample family. A second example of order $290$ and VC dimension four has the same failure with the marked endpoint itself a corner.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For the 294-concept example take $a=1895$; the only corner is its coordinate-zero neighbor $1894$. In every other coordinate that corner already lies in the retained root section, so no relative peeling can start. In coordinate zero, the complete deletion-state graph has six maximal orders: each removes the same seven vertices and stops with 146 opposite-section vertices. The marked endpoint belongs to the unique corner cube, so the corner-cube criterion supplies the asserted overlap condition in every coordinate. For the corner-root example use the 290-concept support-four repair rooted at $29$; its five corners share a four-cube containing the root, while all twelve root-section intervals have complete negative certificates. Below VC dimension three, the relative VC-two peeling theorem clears any chosen coordinate section and then peels it to the prescribed endpoint, proving minimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-no-root-section-first-peeling</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_section_schedule_counterexamples.html">Rooted Peelings with No Section-First Schedule</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

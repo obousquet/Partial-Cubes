@@ -1,0 +1,16 @@
+{
+  "id": 454,
+  "short_name": "root_in_every_corner_cube_criterion",
+  "name": "Corner Cubes Characterize Initial Opposite-Section Locking",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $A$ be ample with marked concept $a$, and in every active coordinate call the section containing $a$ lower. Every corner of every opposite section lies in its overlap with the lower section if and only if $a$ belongs to the unique maximal cube of every corner $c$ of $A$. Equivalently, the coordinates on which $c$ differs from $a$ are all incident directions of $c$.",
+  "status": "established",
+  "proof": "A corner of an opposite section outside the overlap has no mate across the split coordinate. Its lift is therefore a corner of $A$ with the same incident support, and the split coordinate separates it from $a$ without belonging to that support. Conversely, any such separating nonincident coordinate places the entire corner cube in the opposite section and leaves its projection as a corner outside the overlap. Excluding all such coordinates is exactly the condition that $a$ lies in every corner cube.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-root-in-corner-cubes"
+}

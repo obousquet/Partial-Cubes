@@ -2865,6 +2865,38 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-145" style="position:relative;">
+
+        <h3><a href="examples/rooted_reduction_endpoint_failure_579.html" class="table-title-link">A 579-Concept Endpoint Failure under Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 579-Concept Endpoint Failure under Reduction</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>From the certified $289$-concept rooted factor $(B,29)$ and its support-four repair $M=B\cup\{157\}$, form $Y=(M\times\{0\})\cup(B\times\{1\})$ and mark $r=(29,0)$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|Y|=579$, isometric dimension $13$, and VC dimension $4$; the reduction in the fresh direction is $B$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$Y$ peels to $r$ although $B$ cannot peel to $29$. Its only corners are $(157,0)$ and $(29,1)$, and every root-ending peeling deletes $(29,1)$ first. The full fibre through the root survives, so the failure is specifically prescribed-endpoint transport rather than emptiness of the reduced root fibre.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted-strong-projection-failure</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_strong_projection.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_strong_projection_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-146" style="position:relative;">
+
+        <h3><a href="examples/rooted_section_schedule_counterexamples.html" class="table-title-link">Rooted Peelings with No Section-First Schedule</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Peelings with No Section-First Schedule</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the stored $294$-concept one-corner family $P$ with noncorner endpoint $1895$, and the $290$-concept support-four repair $M=B\cup\{157\}$ with corner endpoint $29$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$P$ has dimension $12$ and VC dimension $3$; $M$ has dimension $12$ and VC dimension $4$. For coordinate zero of $P$, the complete relative deletion graph has $13$ states and six maximal orders, all stopping after seven deletions with $146$ opposite-section concepts.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Each family peels to its marked endpoint, but no active coordinate admits a relative peeling to the endpoint-containing section. In every coordinate, every corner of the opposite section already lies in the overlap. The first family is two-connected, periphery-free, and Cartesian-prime and proves the sharp VC-dimension-three threshold; the second shows that making the endpoint a corner does not restore a section-first schedule.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-no-root-section-first-peeling</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_section_counterexample.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_section_counterexample_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

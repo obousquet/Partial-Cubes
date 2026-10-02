@@ -1,0 +1,26 @@
+{
+  "id": 452,
+  "short_name": "prescribed_endpoint_lost_under_reduction",
+  "name": "A Nonempty Reduction Can Lose a Prescribed Peeling Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/vc_dimension",
+    "#invariants/isometric_dimension",
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "There is an ample family $Y$ with $579$ concepts, isometric dimension $13$, and VC dimension $4$ that peels to a marked root $r$, while its nonempty one-coordinate reduction is the $289$-concept rooted factor $B$ and cannot peel to the projected root $29$. The full fibre through $r$ is present. The only corners of $Y$ are $(157,0)$ and $(29,1)$, and every peeling ending at $r=(29,0)$ starts by deleting $(29,1)$. VC dimension four is the least possible for prescribed-endpoint failure under a nonempty reduction.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_reduction_endpoint_failure_579"
+  ],
+  "proof": "Let $M=B\\cup\\{157\\}$ be the certified support-four endpoint repair and set $Y=(M\\times\\{0\\})\\cup(B\\times\\{1\\})$. The peripheral-expansion shadow formula gives order $579$, dimension $13$, and VC dimension four. Clearing the upper copy of $B$ and then peeling $M$ to $29$ makes $Y$ peel to $r$, while the reduction is exactly $B$, whose unique corner $29$ must be deleted first and hence cannot be retained as an endpoint. Direct corner-cube inspection leaves only $(157,0)$ and $(29,1)$. Deleting the former produces $B\\square Q_1$, whose root-containing restriction is the root-negative $B$, forcing every root-ending order to start with the latter. Finally, a reduction on a nonempty coordinate set lowers VC dimension by at least its size; below VC dimension four the reduction has VC dimension at most two and therefore peels to every prescribed concept.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted-strong-projection-failure"
+}
