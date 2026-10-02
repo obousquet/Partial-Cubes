@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "batch_id": "170_dismantlable_ample_partition_filling_torsors",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the canonical two-element filling torsor of a binary partition split and the symmetric-group coherence of iterated binary refinements.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-binary-split-filling-torsor",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-iterated-filling-permutation"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These propositions identify the exact local topological state created by splitting a strongly connected partition class and the finite coherence group governing repeated splits.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The normalized records retain the PL-ball decomposition, chain-level torsor identities, tree-independence through leaf order, symmetric-group action, and the explicit boundary that factorization of actual cancellation maps remains to be proved.",
+    "claim_block_sha256": {
+      "prop:damp-yang-binary-split-filling-torsor": "90ad6c05d1cbdaddef6e97a0b780a79862b89b333ecf126b10ac3f5872b2e058",
+      "prop:damp-yang-iterated-filling-permutation": "156910e3f34bb30109f9e86f6c0a45e3ba858b845f671e206b6f52cd4cf273b4"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the binary filling construction, equator and fundamental-chain identities, iterated refinement law, finite coherence group, concise proofs, and citation. LaTeX retains the full Coxeter-complex discussion, owner-transport interpretation, and open holonomy program.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both propositions and their adjacent interpretation remarks. Each promoted claim has an exact workspace-and-label locator plus a reviewed statement-and-proof digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/640_binary_partition_filling_torsor.json",
+      "sha256": "caa0548c62c81a63d55fd8f3cb0a8ed925baaa378ef5fe0ddd187f4be2c62557"
+    },
+    {
+      "path": "data/results/641_iterated_partition_fillings_permute.json",
+      "sha256": "57e92a66f9d45093ec31e67e4efea9b9e6c78ebc754a63b110162517eb41b8f6"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "4f658e5fff92e6fedcc4f7c28f7bc1becc192ddaa32585213dec49fe12598c48"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "0030e893a500b13b2d2b534ab1449ca32d691d2519928cafe0a06df3049854ac"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2031 records.",
+    "website": "Normalized 2047 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 739 to 741 of 1143 and dismantlable-ample coverage from 303 to 305 of 683.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 402 uncovered database-owned labels: 378 in dismantlable-ample and 24 in ample-corners.",
+    "The next block replaces corner-peeling descendants by a static first-loss trace table and acyclic trace-carrier scheme.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": 640,
+  "short_name": "binary_partition_filling_torsor",
+  "name": "Binary Partition Splits Have Canonical Filling Torsors",
+  "invariant_ids": [
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let a partition $\\sigma$ refine $\\pi$ by splitting one part $C$ into nonempty parts $C_0,C_1$. The Boolean order sphere $\\mathbb S_\\pi$ embeds in $\\mathbb S_\\sigma$. For $b\\in\\{0,1\\}$, take the order complex of proper nonempty subsets of $\\sigma$ satisfying $C_{1-b}\\in A\\Rightarrow C_b\\in A$. The two resulting complexes $\\mathbb B_0,\\mathbb B_1$ are PL balls, their intersection is the embedded old sphere, and their union is the refined sphere. Over $\\mathbb F_2$, their top fundamental chains $h_0,h_1$ are exactly the two fillings of the old fundamental cycle: $\\partial h_0=\\partial h_1=[\\mathbb S_\\pi]$ and $h_0+h_1=[\\mathbb S_\\sigma]$. Thus a binary partition split carries a canonical two-element filling torsor indexed by the new parts.",
+  "status": "established",
+  "proof": "Each hemisphere is the proper-ideal complex of the one-relation poset $C_b<C_{1-b}$ together with the unaffected parts, hence a closed half of the Coxeter sphere and a PL ball. A subset satisfies both implications exactly when it contains both new parts or neither, giving the embedded Boolean lattice of $\\pi$. A chain cannot contain subsets choosing opposite singleton sides, so the two balls cover the refined sphere. Each ball's top chain bounds the common equator, and their sum is the refined fundamental cycle. Any two fillings differ by a top cycle of the refined sphere, whose top cycle space over $\\mathbb F_2$ is one-dimensional, so these are the only two.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-binary-split-filling-torsor"
+}

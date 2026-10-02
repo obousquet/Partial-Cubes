@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-72" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-640" style="position:relative;">
 
-        <h3><a href="invariants/yang_order_sphere_obstruction.html" class="table-title-link">Yang Order-Sphere Obstruction</a></h3>
+        <h3><a href="results/binary_partition_filling_torsor.html" class="table-title-link">Binary Partition Splits Have Canonical Filling Torsors</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Yang Order-Sphere Obstruction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\omega_{\mathrm{ord}}">
-            \[\omega_{\mathrm{ord}}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For an ample family $H$ of order $m\ge2$, let $\mathscr O(H)$ be the order complex of the proper nonempty subsets of $H$. Each latent Yang chart defines a failure poset and the order complex $\mathscr R_B$ of its proper nontrivial ideals. With $\mathscr U(H)=\bigcup_B\mathscr R_B$, define $\omega_{\mathrm{ord}}(H)=\dim_{\mathbb F_2}\widetilde H_{m-2}(\mathscr U(H);\mathbb F_2)$.</p></div>
+        <p><strong>Name: </strong>Binary Partition Splits Have Canonical Filling Torsors</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a partition $\sigma$ refine $\pi$ by splitting one part $C$ into nonempty parts $C_0,C_1$. The Boolean order sphere $\mathbb S_\pi$ embeds in $\mathbb S_\sigma$. For $b\in\{0,1\}$, take the order complex of proper nonempty subsets of $\sigma$ satisfying $C_{1-b}\in A\Rightarrow C_b\in A$. The two resulting complexes $\mathbb B_0,\mathbb B_1$ are PL balls, their intersection is the embedded old sphere, and their union is the refined sphere. Over $\mathbb F_2$, their top fundamental chains $h_0,h_1$ are exactly the two fillings of the old fundamental cycle: $\partial h_0=\partial h_1=[\mathbb S_\pi]$ and $h_0+h_1=[\mathbb S_\sigma]$. Thus a binary partition split carries a canonical two-element filling torsor indexed by the new parts.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Codomain: </strong>$\{0,1\}$</p>
-<strong>Normalization:</strong><div class="text-field"><p>Set $\omega_{\mathrm{ord}}(H)=0$ for the one-concept ample family. For $m\ge2$, homology is taken in the top dimension $m-2$ of the order sphere over $\mathbb F_2$.</p></div>
-<p><strong>Category:</strong> Topological</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>This is the colored latent-chart version of the metric Yang obstruction. Both equal one exactly on nonpeelable ample families, although their canonical covers encode different local data.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Each hemisphere is the proper-ideal complex of the one-relation poset $C_b<C_{1-b}$ together with the unaffected parts, hence a closed half of the Coxeter sphere and a PL ball. A subset satisfies both implications exactly when it contains both new parts or neither, giving the embedded Boolean lattice of $\pi$. A chain cannot contain subsets choosing opposite singleton sides, so the two balls cover the refined sphere. Each ball's top chain bounds the common equator, and their sum is the refined fundamental cycle. Any two fillings differ by a top cycle of the refined sphere, whose top cycle space over $\mathbb F_2$ is one-dimensional, so these are the only two.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-order-sphere-obstruction</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/yang_order_sphere_obstruction_dismantlable.html'>Yang Order-Sphere Obstruction Vanishes on Dismantlable Ample Families</a></li><li><a href='invariant_values/yang_order_sphere_obstruction_cornerless.html'>Yang Order-Sphere Obstruction of Cornerless Ample Families</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/yang_order_sphere_obstruction.html'>Canonical Yang Order-Sphere Obstruction</a></li><li><a href='results/yang_balanced_circuit_carrier.html'>Balanced Circuit Carriers of Yang Obstructions</a></li><li><a href='results/yang_first_cancellation_cut_nerve.html'>First Yang Cancellation Page Is Cut-Nerve Homology</a></li><li><a href='results/metric_and_colored_yang_obstructions_agree.html'>Metric and Colored Yang Obstructions Agree</a></li><li><a href='results/binary_partition_filling_torsor.html'>Binary Partition Splits Have Canonical Filling Torsors</a></li><li><a href='results/iterated_partition_fillings_permute.html'>Iterated Binary Fillings Factor Through a Permutation</a></li></ul></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-yang-binary-split-filling-torsor</p></div>
 
         </div>
     </div>

@@ -1,0 +1,15 @@
+{
+  "id": 641,
+  "short_name": "iterated_partition_fillings_permute",
+  "name": "Iterated Binary Fillings Factor Through a Permutation",
+  "invariant_ids": [
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Suppose $\\tau$ refines one part of $\\pi$ into nonempty parts indexed by a finite set $L$. An oriented full binary refinement tree orders its leaves by reading each chosen first child before the second. Applying the corresponding hemisphere filling at every split produces the proper-ideal complex of a poset that chains $L$ in this leaf order and leaves all other parts mutually incomparable and incomparable with the chain. This region is a PL ball, depends only on the induced permutation of $L$, and every permutation occurs. Hence coherence changes between binary refinement trees factor through the symmetric group $\\mathfrak S_L$. Refinements of distinct parts commute, while interacting refinements of one part have permutation-valued holonomy.",
+  "status": "established",
+  "proof": "Induct on the refinement tree. A leaf gives a one-element chain; at an internal node the chosen hemisphere orders every leaf of the first child before every leaf of the second, taking the ordinal sum of the two child chains. This yields precisely the recursively read leaf order and the stated ideal complex. Linear extensions of one chain with otherwise incomparable elements form a closed convex region of the Coxeter complex, hence a PL ball. The poset depends only on the final leaf order, and a binary comb realizes every order. Relations from distinct refined parts are disjoint and commute; relations within one part change only its leaf permutation.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-iterated-filling-permutation",
+  "comments": "For a latent chart, the natural finite local coherence group is therefore the symmetric group on its protector labels, together with the escape label when the tip is present. Establishing that the actual Yang cancellation maps factor through this action remains a separate theorem target."
+}
