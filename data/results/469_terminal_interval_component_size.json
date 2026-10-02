@@ -1,0 +1,14 @@
+{
+  "id": 469,
+  "short_name": "terminal_interval_component_size",
+  "name": "Terminal Relative Components Have at Least Nine Vertices",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let $K\\subsetneq A$ be ample and put $D=A\\setminus K$. If $K\\cup\\{d\\}$ is nonample for every $d\\in D$, then every connected component of the graph induced by $D$ has at least nine vertices. In particular, when $|D|\\le17$, the residual graph is connected.",
+  "status": "established",
+  "proof": "The relative Alexander-dual Yang module has a linear presentation whose annihilator and edge relations never cross residual components. It therefore splits as a direct sum over the components, and each summand has a linear resolution. The corresponding exact sequence makes $K$ together with any one component ample. If a component had at most eight concepts, the relative linear-quotient theorem through eight facets would order it with a first concept that can be adjoined amply to $K$, contradicting terminality. Two components therefore require at least eighteen concepts.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-relative-component-size"
+}

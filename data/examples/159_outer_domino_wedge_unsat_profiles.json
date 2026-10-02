@@ -1,0 +1,11 @@
+{
+  "id": 159,
+  "short_name": "outer_domino_wedge_unsat_profiles",
+  "name": "Unsatisfiable Outer-Domino-Wedge Carrier Profiles",
+  "object_type": "family",
+  "definition": "The only possible eleven-vertex terminal cut layer is a wedge of two degree-two-rooted dominoes. Its coordinate coloring has two profiles: five active coordinates when the middle directions are shared, and six when they are distinct. Encode each profile with eleven formal passive coordinates and every necessary terminal carrier constraint.",
+  "parameters": "The shared-middle formula has 12,126 variables and 130,526 clauses; its checked core has 311,417 lemmas and 20,710,244 resolution steps. The disjoint-middle formula has 13,476 variables and 145,285 clauses; its core has 749,165 lemmas, 51,150,761 resolution steps, and 26,857 RAT lemmas.",
+  "properties": "Both formulas are unsatisfiable. Because the formulas omit one-concept deletion co-pairs and preserve every passive inclusion and equality used by the carrier rules, they relax every genuine doubly blocked interval; their infeasibility excludes all terminal cut layers of order at most eleven.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-cut-layer-through-eleven",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/solve_damp_outer_domino_wedge_carrier_cnf.py; PartialCubes:forbidden_pc_minor_campaign/damp_outer_domino_wedge_carrier_cnf_manifest.json; PartialCubes:forbidden_pc_minor_campaign/damp_outer_domino_wedge_*_core.drat; PartialCubes:forbidden_pc_minor_campaign/verify_damp_outer_domino_wedge_carrier_proofs.py"
+}

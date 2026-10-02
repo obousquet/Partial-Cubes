@@ -4,7 +4,20 @@
 from __future__ import annotations
 
 import argparse
+import re
 from pathlib import Path
+
+
+GRAPH_LAYOUT_RE = re.compile(
+    r"rankdir=TB, newrank=true, remincross=true, splines=line, "
+    r"(?:nodesep=0\.35|ranksep=1\.1|mclimit=4), "
+    r"(?:nodesep=0\.35|ranksep=1\.1|mclimit=4), "
+    r"(?:nodesep=0\.35|ranksep=1\.1|mclimit=4)"
+)
+CANONICAL_GRAPH_LAYOUT = (
+    "rankdir=TB, newrank=true, remincross=true, splines=line, "
+    "ranksep=1.1, mclimit=4, nodesep=0.35"
+)
 
 
 def main() -> int:
@@ -18,6 +31,7 @@ def main() -> int:
         while lines and not lines[-1]:
             lines.pop()
         normalized = "\n".join(lines) + "\n"
+        normalized = GRAPH_LAYOUT_RE.sub(CANONICAL_GRAPH_LAYOUT, normalized)
         if normalized != content:
             path.write_text(normalized, encoding="utf-8")
             changed += 1

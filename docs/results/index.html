@@ -7800,6 +7800,138 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-465" style="position:relative;">
+
+        <h3><a href="results/two_wing_relative_corner_bound.html" class="table-title-link">Two-Wing Bound from the Relative Corner Threshold</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Wing Bound from the Relative Corner Threshold</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $H$ has minimum cardinality among nonempty cornerless ample families, then $|H|\ge 2\rho_{\mathsf{Damp}}+2$. Consequently, the bound $\rho_{\mathsf{Damp}}\ge22$ would exclude every cornerless ample family of order below $46$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For any active coordinate, let $A_0,A_1$ be the two projected sections and $B=A_0\cap A_1$. Minimality puts all three smaller ample families in $\mathsf{Damp}$, and the pc-minimal obstruction property makes the coordinate nonperipheral. Hence each wing $D_b=A_b\setminus B$ is nonempty. A corner of $A_b$ outside $B$ would lift to a corner of $H$, so every corner of either section lies in $B$. Both pairs $B\subsetneq A_b$ therefore contribute to the defining minimum, giving $|D_b|\ge\rho_{\mathsf{Damp}}$; since $B$ is nonempty, $|H|=|D_0|+|D_1|+2|B|\ge2\rho_{\mathsf{Damp}}+2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-wing-relative-corner-threshold</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-466" style="position:relative;">
+
+        <h3><a href="results/twelve_concept_trapped_interval.html" class="table-title-link">A Twelve-Concept Trapped Dismantlable-Ample Interval</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Twelve-Concept Trapped Dismantlable-Ample Interval</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The 85-concept smaller section $Q\subseteq Q_{11}$ of the 291-concept obstruction contains a 73-concept family $B\in\mathsf{Damp}$ with $\operatorname{Cor}(Q)\subseteq B$. The upper family $Q$ is also dismantlable ample, $|Q\setminus B|=12$, and no ample family lies strictly between $B$ and $Q$. Therefore $\rho_{\mathsf{Damp}}\le12$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Start from the 59-concept overlap $K$ and adjoin the fourteen certified concepts one at a time. The exact colon test proves every intermediate ample, so reversing the additions after peeling $K$ proves $B\in\mathsf{Damp}$. The same source certificate proves $Q\in\mathsf{Damp}$ and places every corner of $Q$ already in $K\subseteq B$. The twelve remaining concepts acquire twelve distinct shattered supports. Exhausting all $2^{12}-2=4094$ proper nonempty subsets finds no ample intermediate, establishing both the interval gap and the threshold bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-twelve-concept-trapped-interval</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/trapped_relative_interval_85_73.html">The 85/73 Trapped Relative Interval</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-467" style="position:relative;">
+
+        <h3><a href="results/octahedral_support_sphere_of_sharp_interval.html" class="table-title-link">The Twelve-Concept Interval Has an Octahedral Support Sphere</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Twelve-Concept Interval Has an Octahedral Support Sphere</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For the twelve-concept trapped interval, the acquired supports are the twelve triples on $Y_0=\{1,2,3,4,9,10\}$ containing one of the disjoint pairs $P_1=\{1,2\}$, $P_2=\{3,4\}$, or $P_3=\{9,10\}$. The complementary pure rank-three complex is $\partial2^{P_1}*\partial2^{P_2}*\partial2^{P_3}\cong S^2$, the octahedral sphere. Its opposite vertex pairs are exactly the direction pairs of the three vertex-disjoint residual squares.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Decoding the twelve support masks gives exactly four triples through each pair $P_i$, with no triple containing two pairs. A triple avoids all three pairs exactly when it chooses one coordinate from each pair, producing the eight facets of the join of three zero-spheres. The independently reconstructed residual graph has three vertex-disjoint squares with directions $P_1,P_2,P_3$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-twelve-concept-octahedral-support-sphere</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/trapped_relative_interval_85_73.html">The 85/73 Trapped Relative Interval</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-468" style="position:relative;">
+
+        <h3><a href="results/local_passive_carrier_rules.html" class="table-title-link">Local Carrier Rules Through Residual Degree Three</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Carrier Rules Through Residual Degree Three</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample, put $R=A\setminus K$ and $\mathcal H=\operatorname{Sh}(A)\setminus\operatorname{Sh}(K)$, and let $c\in R$ be doubly blocked: neither $K\cup\{c\}$ nor $A\setminus\{c\}$ is ample. Compatible lower carriers of minimal supports and upper carriers of maximal supports meet in a full residual cube. The concept $c$ lies in at least two carriers on each shore. At residual degree two, $c$ marks an isolated support containing exactly one incident residual direction, and adjacent markers reverse ownership of their common direction. At residual degree three, $c$ marks either an isolated support or a minimal-maximal support cover whose difference has size one.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Complement duality turns every relative support into a product of lower and upper trace-defect classes inside $R$; singleton defect classes characterize minimal and maximal supports, yielding the cross-carrier cube. Double blocking forces at least two minimal obstruction signatures on each shore. After translating $c$ to zero, existential-universal reductions produce two nonempty disjoint ample classes on the residual directions. For two directions these are disjoint intervals in a three-vertex path, forcing an isolated support and adjacent-marker reversal. For three directions, the exhaustive local two-shore calculation supplies disjoint minimal transversals; their union leaves at most one coordinate, giving the isolated-or-cover dichotomy.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-local-passive-carrier-rules</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/degree_three_two_shore_census.html">Degree-Three Two-Shore Carrier Census</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-469" style="position:relative;">
+
+        <h3><a href="results/terminal_interval_component_size.html" class="table-title-link">Terminal Relative Components Have at Least Nine Vertices</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Relative Components Have at Least Nine Vertices</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample and put $D=A\setminus K$. If $K\cup\{d\}$ is nonample for every $d\in D$, then every connected component of the graph induced by $D$ has at least nine vertices. In particular, when $|D|\le17$, the residual graph is connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The relative Alexander-dual Yang module has a linear presentation whose annihilator and edge relations never cross residual components. It therefore splits as a direct sum over the components, and each summand has a linear resolution. The corresponding exact sequence makes $K$ together with any one component ample. If a component had at most eight concepts, the relative linear-quotient theorem through eight facets would order it with a first concept that can be adjoined amply to $K$, contradicting terminality. Two components therefore require at least eighteen concepts.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-relative-component-size</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-470" style="position:relative;">
+
+        <h3><a href="results/small_terminal_cut_layer_domino_wedge.html" class="table-title-link">A Small Terminal Cut Layer Must Be a Domino Wedge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Small Terminal Cut Layer Must Be a Domino Wedge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample, put $D=A\setminus K$, and suppose every $d\in D$ is doubly blocked. If the residual graph on $D$ has a cut vertex and $|D|\le11$, then $|D|=11$ and its block-cut tree consists of two six-vertex dominoes sharing one articulation vertex. The articulation has degree two within each domino.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The component-size theorem makes the residual graph connected, and double blocking excludes residual degree below two. Two leaf blocks then satisfy $|D|\ge|L_1|+|L_2|-1$, so one has at most six vertices. Bipartiteness and cube common-neighbor bounds leave only $C_4$, $C_6$, and the domino as possible two-connected induced-cube blocks. The degree-two carrier rules and an exhaustive symbolic passive-coordinate check exclude both cycles and a domino rooted at a degree-three vertex. Thus both leaf blocks are degree-two-rooted dominoes; together they already use eleven vertices, forcing equality and a common articulation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-small-terminal-cut-layer-domino-wedge</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/small_leaf_block_carrier_census.html">Small Rooted Leaf-Block Carrier Census</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-471" style="position:relative;">
+
+        <h3><a href="results/terminal_layers_through_eleven_two_connected.html" class="table-title-link">Doubly Blocked Terminal Layers Through Eleven Are Two-Connected</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Doubly Blocked Terminal Layers Through Eleven Are Two-Connected</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If $K\subsetneq A$ are ample, every concept of $D=A\setminus K$ is doubly blocked, and $|D|\le11$, then the residual graph induced by $D$ is two-connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Connectivity and minimum degree two follow from the preceding terminal-component arguments. A cut vertex would force the unique eleven-vertex wedge of two degree-two-rooted dominoes. Coordinate labels reduce this wedge to two profiles, according as the middle domino directions coincide or differ. For each profile, a dimension-free passive-coordinate encoding imposes support order, carrier anchors and depths, cross-carrier cubes, marker reversal, and the degree-three dichotomy. Independently checked DRAT cores prove both relaxed formulas unsatisfiable, so no genuine doubly blocked interval has a cut vertex.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-cut-layer-through-eleven</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/outer_domino_wedge_unsat_profiles.html">Unsatisfiable Outer-Domino-Wedge Carrier Profiles</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-472" style="position:relative;">
+
+        <h3><a href="results/two_connected_cube_coordinate_cost.html" class="table-title-link">Coordinate Cost of a Two-Connected Cube Subgraph</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Coordinate Cost of a Two-Connected Cube Subgraph</p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/active_cube_coordinate_count.html">Active Cube-Coordinate Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $G$ is a two-connected subgraph of a Boolean cube and $Y$ is the set of coordinates appearing on its edges, then $|V(G)|\ge2|Y|$. The subgraph need not be induced or isometric.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Construct an open-ear decomposition. Every active coordinate on the initial cycle occurs a positive even number of times, so the cycle has at least twice as many vertices as new coordinates. If an ear of length $\ell$ introduces $k$ coordinates, each new coordinate occurs an even positive number of times because the endpoints are old. At least one edge uses an old coordinate, since otherwise the distinct endpoints would agree in every coordinate. Hence $\ell\ge2k+1$, and the ear contributes at least $2k$ new vertices. Summing over all ears proves the bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-connected-coordinate-cost</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

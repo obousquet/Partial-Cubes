@@ -1,0 +1,10 @@
+{
+  "id": 158,
+  "short_name": "small_leaf_block_carrier_census",
+  "name": "Small Rooted Leaf-Block Carrier Census",
+  "object_type": "family",
+  "definition": "Apply the dimension-free degree-two isolated-support, adjacent-marker reversal, and anchored cross-carrier constraints to every rooted two-connected induced-cube block on at most six vertices.",
+  "properties": "The candidate shapes are $C_4$, $C_6$, and the six-vertex domino. The constraints exclude both cycles and a domino rooted at a degree-three vertex; only a degree-two-rooted domino survives. The four first-witness searches visit $5,11,11,4$ nodes, and the surviving active masks are $(2,1,4),(3,6,5),(4,1,2),(5,6,3)$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-small-terminal-cut-layer-domino-wedge",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_small_leaf_block_carriers.py; PartialCubes:forbidden_pc_minor_campaign/damp_small_leaf_block_carriers.json"
+}

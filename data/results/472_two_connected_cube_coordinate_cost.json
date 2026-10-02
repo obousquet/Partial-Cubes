@@ -1,0 +1,13 @@
+{
+  "id": 472,
+  "short_name": "two_connected_cube_coordinate_cost",
+  "name": "Coordinate Cost of a Two-Connected Cube Subgraph",
+  "result_type": "invariant_law",
+  "invariant_ids": [
+    "#invariants/active_cube_coordinate_count"
+  ],
+  "statement": "If $G$ is a two-connected subgraph of a Boolean cube and $Y$ is the set of coordinates appearing on its edges, then $|V(G)|\\ge2|Y|$. The subgraph need not be induced or isometric.",
+  "status": "established",
+  "proof": "Construct an open-ear decomposition. Every active coordinate on the initial cycle occurs a positive even number of times, so the cycle has at least twice as many vertices as new coordinates. If an ear of length $\\ell$ introduces $k$ coordinates, each new coordinate occurs an even positive number of times because the endpoints are old. At least one edge uses an old coordinate, since otherwise the distinct endpoints would agree in every coordinate. Hence $\\ell\\ge2k+1$, and the ear contributes at least $2k$ new vertices. Summing over all ears proves the bound.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-two-connected-coordinate-cost"
+}

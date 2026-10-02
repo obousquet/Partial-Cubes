@@ -1,0 +1,15 @@
+{
+  "id": 129,
+  "short_name": "relative_corner_threshold_upper_twelve",
+  "name": "Relative Corner Threshold Is at Most Twelve",
+  "invariant_id": "#invariants/relative_corner_threshold",
+  "class_id": "#classes/dismantlable_ample",
+  "quantifier": "infimum",
+  "value_type": "upper_bound",
+  "value": "\\rho_{\\mathsf{Damp}}\\le 12",
+  "scope": "Finite dismantlable ample set families with concept cardinality as the interval size.",
+  "status": "established",
+  "proof": "The certified inclusion $B\\subsetneq Q$ has both endpoints dismantlable ample, $|Q\\setminus B|=12$, and every corner of $Q$ belongs to $B$. It is therefore an admissible pair in the defining minimum.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-twelve-concept-trapped-interval",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/analyze_damp_hall_relative_leaf_core.py; PartialCubes:forbidden_pc_minor_campaign/damp_hall_relative_leaf_core.json"
+}

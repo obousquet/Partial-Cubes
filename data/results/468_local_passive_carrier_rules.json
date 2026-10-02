@@ -1,0 +1,19 @@
+{
+  "id": 468,
+  "short_name": "local_passive_carrier_rules",
+  "name": "Local Carrier Rules Through Residual Degree Three",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $K\\subsetneq A$ be ample, put $R=A\\setminus K$ and $\\mathcal H=\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(K)$, and let $c\\in R$ be doubly blocked: neither $K\\cup\\{c\\}$ nor $A\\setminus\\{c\\}$ is ample. Compatible lower carriers of minimal supports and upper carriers of maximal supports meet in a full residual cube. The concept $c$ lies in at least two carriers on each shore. At residual degree two, $c$ marks an isolated support containing exactly one incident residual direction, and adjacent markers reverse ownership of their common direction. At residual degree three, $c$ marks either an isolated support or a minimal-maximal support cover whose difference has size one.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/degree_three_two_shore_census"
+  ],
+  "proof": "Complement duality turns every relative support into a product of lower and upper trace-defect classes inside $R$; singleton defect classes characterize minimal and maximal supports, yielding the cross-carrier cube. Double blocking forces at least two minimal obstruction signatures on each shore. After translating $c$ to zero, existential-universal reductions produce two nonempty disjoint ample classes on the residual directions. For two directions these are disjoint intervals in a three-vertex path, forcing an isolated support and adjacent-marker reversal. For three directions, the exhaustive local two-shore calculation supplies disjoint minimal transversals; their union leaves at most one coordinate, giving the isolated-or-cover dichotomy.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-local-passive-carrier-rules"
+}

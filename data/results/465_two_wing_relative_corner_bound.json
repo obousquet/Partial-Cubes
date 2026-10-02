@@ -1,0 +1,22 @@
+{
+  "id": 465,
+  "short_name": "two_wing_relative_corner_bound",
+  "name": "Two-Wing Bound from the Relative Corner Threshold",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/relative_corner_threshold"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If $H$ has minimum cardinality among nonempty cornerless ample families, then $|H|\\ge 2\\rho_{\\mathsf{Damp}}+2$. Consequently, the bound $\\rho_{\\mathsf{Damp}}\\ge22$ would exclude every cornerless ample family of order below $46$.",
+  "status": "established",
+  "proof": "For any active coordinate, let $A_0,A_1$ be the two projected sections and $B=A_0\\cap A_1$. Minimality puts all three smaller ample families in $\\mathsf{Damp}$, and the pc-minimal obstruction property makes the coordinate nonperipheral. Hence each wing $D_b=A_b\\setminus B$ is nonempty. A corner of $A_b$ outside $B$ would lift to a corner of $H$, so every corner of either section lies in $B$. Both pairs $B\\subsetneq A_b$ therefore contribute to the defining minimum, giving $|D_b|\\ge\\rho_{\\mathsf{Damp}}$; since $B$ is nonempty, $|H|=|D_0|+|D_1|+2|B|\\ge2\\rho_{\\mathsf{Damp}}+2$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-wing-relative-corner-threshold"
+}

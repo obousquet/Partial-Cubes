@@ -1,0 +1,16 @@
+{
+  "id": 470,
+  "short_name": "small_terminal_cut_layer_domino_wedge",
+  "name": "A Small Terminal Cut Layer Must Be a Domino Wedge",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $K\\subsetneq A$ be ample, put $D=A\\setminus K$, and suppose every $d\\in D$ is doubly blocked. If the residual graph on $D$ has a cut vertex and $|D|\\le11$, then $|D|=11$ and its block-cut tree consists of two six-vertex dominoes sharing one articulation vertex. The articulation has degree two within each domino.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/small_leaf_block_carrier_census"
+  ],
+  "proof": "The component-size theorem makes the residual graph connected, and double blocking excludes residual degree below two. Two leaf blocks then satisfy $|D|\\ge|L_1|+|L_2|-1$, so one has at most six vertices. Bipartiteness and cube common-neighbor bounds leave only $C_4$, $C_6$, and the domino as possible two-connected induced-cube blocks. The degree-two carrier rules and an exhaustive symbolic passive-coordinate check exclude both cycles and a domino rooted at a degree-three vertex. Thus both leaf blocks are degree-two-rooted dominoes; together they already use eleven vertices, forcing equality and a common articulation.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-small-terminal-cut-layer-domino-wedge"
+}

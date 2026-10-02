@@ -1,0 +1,101 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-468" style="position:relative;">
+
+        <h3><a href="results/local_passive_carrier_rules.html" class="table-title-link">Local Carrier Rules Through Residual Degree Three</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Carrier Rules Through Residual Degree Three</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample, put $R=A\setminus K$ and $\mathcal H=\operatorname{Sh}(A)\setminus\operatorname{Sh}(K)$, and let $c\in R$ be doubly blocked: neither $K\cup\{c\}$ nor $A\setminus\{c\}$ is ample. Compatible lower carriers of minimal supports and upper carriers of maximal supports meet in a full residual cube. The concept $c$ lies in at least two carriers on each shore. At residual degree two, $c$ marks an isolated support containing exactly one incident residual direction, and adjacent markers reverse ownership of their common direction. At residual degree three, $c$ marks either an isolated support or a minimal-maximal support cover whose difference has size one.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Complement duality turns every relative support into a product of lower and upper trace-defect classes inside $R$; singleton defect classes characterize minimal and maximal supports, yielding the cross-carrier cube. Double blocking forces at least two minimal obstruction signatures on each shore. After translating $c$ to zero, existential-universal reductions produce two nonempty disjoint ample classes on the residual directions. For two directions these are disjoint intervals in a three-vertex path, forcing an isolated support and adjacent-marker reversal. For three directions, the exhaustive local two-shore calculation supplies disjoint minimal transversals; their union leaves at most one coordinate, giving the isolated-or-cover dichotomy.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-local-passive-carrier-rules</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/degree_three_two_shore_census.html">Degree-Three Two-Shore Carrier Census</a></li></ul></p>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>

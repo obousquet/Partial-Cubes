@@ -1,0 +1,16 @@
+{
+  "id": 471,
+  "short_name": "terminal_layers_through_eleven_two_connected",
+  "name": "Doubly Blocked Terminal Layers Through Eleven Are Two-Connected",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "If $K\\subsetneq A$ are ample, every concept of $D=A\\setminus K$ is doubly blocked, and $|D|\\le11$, then the residual graph induced by $D$ is two-connected.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/outer_domino_wedge_unsat_profiles"
+  ],
+  "proof": "Connectivity and minimum degree two follow from the preceding terminal-component arguments. A cut vertex would force the unique eleven-vertex wedge of two degree-two-rooted dominoes. Coordinate labels reduce this wedge to two profiles, according as the middle domino directions coincide or differ. For each profile, a dimension-free passive-coordinate encoding imposes support order, carrier anchors and depths, cross-carrier cubes, marker reversal, and the degree-three dichotomy. Independently checked DRAT cores prove both relaxed formulas unsatisfiable, so no genuine doubly blocked interval has a cut vertex.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-cut-layer-through-eleven"
+}
