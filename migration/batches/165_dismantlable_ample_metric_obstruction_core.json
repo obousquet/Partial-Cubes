@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "batch_id": "165_dismantlable_ample_metric_obstruction_core",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the intrinsic metric Yang obstruction invariant, its Boolean-prefix pc-minor transport, and the deterministic unique-midpoint core criterion separating incomplete-square constraints from the full-square remainder.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-yang-metric-obstruction-class",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-boolean-prefix-cutset",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-unique-midpoint-core"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims convert the metric elimination characterization into a named topological invariant, an exact order-free transport system, and a constructive pruning obstruction for all unique-midpoint constraints.",
+    "outcome": "All three statement-plus-proof blocks match the preserved manuscript. The normalized records retain the precise recognition boundaries: the Boolean cutset is exact but still globally hard, while the unique-midpoint core is constructive but leaves coupled full-square constraints.",
+    "claim_block_sha256": {
+      "thm:damp-yang-metric-obstruction-class": "4f413305742b2ee1cecda933d42cc350a49ee7e8fa743d3feebda768ebb3719d",
+      "thm:damp-boolean-prefix-cutset": "563ee9d0b762e6f11bfd6ab911eff35256d4ea268aad6eccb693f00a557b027d",
+      "prop:damp-unique-midpoint-core": "5ce459c60248ce1570b3a82de07ace998f6d08627c3d0b75bd5d0510815d7d6f"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the metric obstruction definition, its class-level values, recognition and transport laws, pruning algorithm, exact limitations, concise proofs, and citations. LaTeX retains the expanded order-complex construction, the research interpretation of the fundamental class, and the surrounding generative-classification discussion.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three claims and their scope remarks. Each promoted fact has an exact workspace-and-label locator plus a reviewed statement-and-proof digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/invariants/071_metric_yang_obstruction.json",
+      "sha256": "a6ceceb0e74d0d6c0ebc30a6142c563dcc65bdcc72601b991ba68c87459aa7e8"
+    },
+    {
+      "path": "data/invariant_values/133_metric_yang_obstruction_dismantlable.json",
+      "sha256": "0ea444bddafea66a2338ee887859fa956c179af1b74aa8db3bb7da542c5ba9b0"
+    },
+    {
+      "path": "data/invariant_values/134_metric_yang_obstruction_cornerless.json",
+      "sha256": "46b52303cecdd0a10cfc2bc73550a8d21044b49da69e73fe4f582125cdb98037"
+    },
+    {
+      "path": "data/results/629_metric_yang_obstruction_characterization.json",
+      "sha256": "b56fbf4998cfc45ec944159498755c37eca2d9b62ee1ec0a183ea0fa86f8d064"
+    },
+    {
+      "path": "data/results/630_boolean_prefix_metric_cutset.json",
+      "sha256": "557bae1fa0da156409e3979f9f0f51c5dd17c27222a31fd5d390ddd209b7e0a7"
+    },
+    {
+      "path": "data/results/631_unique_midpoint_core_criterion.json",
+      "sha256": "1ab3c67f5b2a415e05b61cec6b9af71237aaeac763bfe04e954862cdf732af21"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "8f6d2bc3721fd9fb1ca50938443e3369648ee2bdcee8beb18033a64f8d3afaac"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "c3802bdb4495b56ef6de3b18a27bc2bdd1a7b6c268ad25bd192f125a1b6b3c21"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2017 records.",
+    "website": "Normalized 2033 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 729 to 732 of 1143 and dismantlable-ample coverage from 293 to 296 of 683.",
+    "source_integrity": "All three reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 411 uncovered database-owned labels: 387 in dismantlable-ample and 24 in ample-corners.",
+    "The following one-sided core proposition and its wing corollary give necessary structure for any forbidden pc-minor with nonempty unique-midpoint core.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

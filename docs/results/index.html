@@ -10532,6 +10532,58 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-629" style="position:relative;">
+
+        <h3><a href="results/metric_yang_obstruction_characterization.html" class="table-title-link">Metric Yang Obstruction Characterizes Nonpeelability</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Metric Yang Obstruction Characterizes Nonpeelability</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/metric_yang_obstruction.html">Metric Yang Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ample family $H$ of order $m\ge2$, let $\mathscr U_{\mathrm{met}}(H)$ be the union, inside its order sphere $\mathscr O(H)$, of the order-ideal complexes associated with all distance-two endpoint pairs and their common neighbours. Then $H$ is nonpeelable if and only if $\mathscr U_{\mathrm{met}}(H)=\mathscr O(H)$, if and only if $\widetilde H_{m-2}(\mathscr U_{\mathrm{met}}(H);\mathbb F_2)\cong\mathbb F_2$. Consequently $\omega_{\mathrm{met}}(H)\in\{0,1\}$ is an intrinsic invariant of the metric graph and equals one exactly when the Yang complex is nonshellable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A total order fails distance-preserving elimination at a distance-two pair $u,v$ exactly when every common neighbour precedes both endpoints. These are precisely the linear extensions, and hence chambers, of the associated failure poset. Thus all orders fail exactly when the metric failure union fills the order sphere. A proper subcomplex of the order sphere has zero top homology over $\mathbb F_2$, whereas the full sphere has its one-dimensional fundamental class. The established equivalence between metric elimination, corner peeling, and Yang shellability completes the characterization.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CoudertDucoffeNisseSoto18">[CoudertDucoffeNisseSoto18]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-metric-obstruction-class</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-630" style="position:relative;">
+
+        <h3><a href="results/boolean_prefix_metric_cutset.html" class="table-title-link">Boolean-Prefix Cutset and Exact pc-Minor Transport</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Boolean-Prefix Cutset and Exact pc-Minor Transport</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For each distance-two pair $D=\{u,v\}$ of an ample family $H$, let $\mathcal I_D(H)$ be the Boolean interval of prefixes that contain every common neighbour of $u,v$ but neither endpoint. Then $H$ is nonpeelable exactly when $\bigcup_D\mathcal I_D(H)$ meets every maximal chain of $2^H$. This interval system transports exactly under pc-minors. Under restriction to a coordinate section $A$, an interval owned by $D\subseteq A$ becomes $\mathcal I_D(H)\cap2^A$. Under contraction $q:H\to\overline H$, pullback identifies $2^{\overline H}$ with the sublattice of unions of $q$-fibres, and each quotient interval pulls back to the interval from $q^{-1}C_{\overline H}(\overline u,\overline v)$ to $H\setminus q^{-1}\{\overline u,\overline v\}$ inside that sublattice.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A total order corresponds to its maximal chain of prefixes. It fails at $D$ exactly when one prefix contains every common neighbour before either endpoint, which is exactly membership in $\mathcal I_D(H)$. The static distance-two elimination criterion proves the cutset equivalence. Restriction preserves the common-neighbour set of a retained distance-two pair, so intersecting the interval endpoints with $2^A$ gives the restriction formula. For contraction, inverse image is a lattice isomorphism from the quotient Boolean lattice to the fibre-saturated sublattice; applying it to each quotient interval gives the displayed pullback formula.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CoudertDucoffeNisseSoto18">[CoudertDucoffeNisseSoto18]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-boolean-prefix-cutset</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The construction is finite, intrinsic, and order-free as a set system, but testing whether it meets every maximal chain remains equivalent to the forbidden ordering search.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-631" style="position:relative;">
+
+        <h3><a href="results/unique_midpoint_core_criterion.html" class="table-title-link">Unique-Midpoint Core and Square Remainder</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unique-Midpoint Core and Square Remainder</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For rooted-pair constraints $(w;\{u,v\})$ on a finite set $V$, call nonempty $W\subseteq V$ a core when every $w\in W$ roots a constraint whose two heads lie in $W$. An order satisfying $u\prec w$ or $v\prec w$ for every constraint exists exactly when no core exists. Repeatedly deleting a root with no constraint whose two heads remain computes the unique largest core; if it empties, the deletion order satisfies all constraints. Applied to unique-midpoint constraints of an isometric cube family $H$, a nonempty core proves $H$ nonpeelable. If the core is empty, only full-square constraints remain: an order peels exactly when it satisfies every unique-midpoint constraint and its first two vertices in every square are adjacent. Square constraints alone never obstruct elimination; any order nondecreasing in cube distance from a fixed cube vertex satisfies them. Hence a family with no unique-midpoint constraints is peelable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In any order, the first vertex of a core violates the constraint witnessing it. Conversely, unions of cores are cores, so iterative pruning leaves the unique largest one; when it is empty, every deleted root has an already deleted head and the deletion order satisfies all rooted-pair constraints. A distance-two pair has either one common neighbour, giving exactly such a constraint, or two common neighbours forming a square. The two square diagonals are both satisfied precisely when the first two square vertices are adjacent. Finally, relative to any fixed cube vertex, a square has one nearest vertex, two adjacent next-nearest vertices, and one farthest vertex, so every distance-nondecreasing order satisfies all square conditions. The metric elimination criterion translates the resulting orders into peelings.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CoudertDucoffeNisseSoto18">[CoudertDucoffeNisseSoto18]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-unique-midpoint-core</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The core is a constructive sufficient obstruction. Its emptiness is not sufficient for peelability when full squares are present; the manuscript supplies a certified ample forbidden pc-minor with empty core.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

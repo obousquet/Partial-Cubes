@@ -1,0 +1,18 @@
+{
+  "id": 629,
+  "short_name": "metric_yang_obstruction_characterization",
+  "name": "Metric Yang Obstruction Characterizes Nonpeelability",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/metric_yang_obstruction"
+  ],
+  "result_type": "recognition",
+  "statement": "For an ample family $H$ of order $m\\ge2$, let $\\mathscr U_{\\mathrm{met}}(H)$ be the union, inside its order sphere $\\mathscr O(H)$, of the order-ideal complexes associated with all distance-two endpoint pairs and their common neighbours. Then $H$ is nonpeelable if and only if $\\mathscr U_{\\mathrm{met}}(H)=\\mathscr O(H)$, if and only if $\\widetilde H_{m-2}(\\mathscr U_{\\mathrm{met}}(H);\\mathbb F_2)\\cong\\mathbb F_2$. Consequently $\\omega_{\\mathrm{met}}(H)\\in\\{0,1\\}$ is an intrinsic invariant of the metric graph and equals one exactly when the Yang complex is nonshellable.",
+  "status": "established",
+  "proof": "A total order fails distance-preserving elimination at a distance-two pair $u,v$ exactly when every common neighbour precedes both endpoints. These are precisely the linear extensions, and hence chambers, of the associated failure poset. Thus all orders fail exactly when the metric failure union fills the order sphere. A proper subcomplex of the order sphere has zero top homology over $\\mathbb F_2$, whereas the full sphere has its one-dimensional fundamental class. The established equivalence between metric elimination, corner peeling, and Yang shellability completes the characterization.",
+  "references": "\\cite{CoudertDucoffeNisseSoto18,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-yang-metric-obstruction-class"
+}

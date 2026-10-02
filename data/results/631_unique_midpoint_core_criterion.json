@@ -1,0 +1,17 @@
+{
+  "id": 631,
+  "short_name": "unique_midpoint_core_criterion",
+  "name": "Unique-Midpoint Core and Square Remainder",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "algorithm",
+  "statement": "For rooted-pair constraints $(w;\\{u,v\\})$ on a finite set $V$, call nonempty $W\\subseteq V$ a core when every $w\\in W$ roots a constraint whose two heads lie in $W$. An order satisfying $u\\prec w$ or $v\\prec w$ for every constraint exists exactly when no core exists. Repeatedly deleting a root with no constraint whose two heads remain computes the unique largest core; if it empties, the deletion order satisfies all constraints. Applied to unique-midpoint constraints of an isometric cube family $H$, a nonempty core proves $H$ nonpeelable. If the core is empty, only full-square constraints remain: an order peels exactly when it satisfies every unique-midpoint constraint and its first two vertices in every square are adjacent. Square constraints alone never obstruct elimination; any order nondecreasing in cube distance from a fixed cube vertex satisfies them. Hence a family with no unique-midpoint constraints is peelable.",
+  "status": "established",
+  "proof": "In any order, the first vertex of a core violates the constraint witnessing it. Conversely, unions of cores are cores, so iterative pruning leaves the unique largest one; when it is empty, every deleted root has an already deleted head and the deletion order satisfies all rooted-pair constraints. A distance-two pair has either one common neighbour, giving exactly such a constraint, or two common neighbours forming a square. The two square diagonals are both satisfied precisely when the first two square vertices are adjacent. Finally, relative to any fixed cube vertex, a square has one nearest vertex, two adjacent next-nearest vertices, and one farthest vertex, so every distance-nondecreasing order satisfies all square conditions. The metric elimination criterion translates the resulting orders into peelings.",
+  "references": "\\cite{CoudertDucoffeNisseSoto18,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-unique-midpoint-core",
+  "comments": "The core is a constructive sufficient obstruction. Its emptiness is not sufficient for peelability when full squares are present; the manuscript supplies a certified ample forbidden pc-minor with empty core."
+}

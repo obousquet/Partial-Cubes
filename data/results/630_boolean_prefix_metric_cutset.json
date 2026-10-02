@@ -1,0 +1,19 @@
+{
+  "id": 630,
+  "short_name": "boolean_prefix_metric_cutset",
+  "name": "Boolean-Prefix Cutset and Exact pc-Minor Transport",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "For each distance-two pair $D=\\{u,v\\}$ of an ample family $H$, let $\\mathcal I_D(H)$ be the Boolean interval of prefixes that contain every common neighbour of $u,v$ but neither endpoint. Then $H$ is nonpeelable exactly when $\\bigcup_D\\mathcal I_D(H)$ meets every maximal chain of $2^H$. This interval system transports exactly under pc-minors. Under restriction to a coordinate section $A$, an interval owned by $D\\subseteq A$ becomes $\\mathcal I_D(H)\\cap2^A$. Under contraction $q:H\\to\\overline H$, pullback identifies $2^{\\overline H}$ with the sublattice of unions of $q$-fibres, and each quotient interval pulls back to the interval from $q^{-1}C_{\\overline H}(\\overline u,\\overline v)$ to $H\\setminus q^{-1}\\{\\overline u,\\overline v\\}$ inside that sublattice.",
+  "status": "established",
+  "proof": "A total order corresponds to its maximal chain of prefixes. It fails at $D$ exactly when one prefix contains every common neighbour before either endpoint, which is exactly membership in $\\mathcal I_D(H)$. The static distance-two elimination criterion proves the cutset equivalence. Restriction preserves the common-neighbour set of a retained distance-two pair, so intersecting the interval endpoints with $2^A$ gives the restriction formula. For contraction, inverse image is a lattice isomorphism from the quotient Boolean lattice to the fibre-saturated sublattice; applying it to each quotient interval gives the displayed pullback formula.",
+  "references": "\\cite{CoudertDucoffeNisseSoto18,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-boolean-prefix-cutset",
+  "comments": "The construction is finite, intrinsic, and order-free as a set system, but testing whether it meets every maximal chain remains equivalent to the forbidden ordering search."
+}
