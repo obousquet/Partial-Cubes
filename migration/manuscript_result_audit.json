@@ -5,8 +5,8 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 378,
-    "uncovered": 638,
+    "covered": 390,
+    "uncovered": 626,
     "proof_source_records": 1426
   },
   "by_workspace": {
@@ -51,9 +51,9 @@
       "total": 51
     },
     "survey": {
-      "covered": 78,
+      "covered": 90,
       "total": 131,
-      "uncovered": 53
+      "uncovered": 41
     },
     "vc-littlestone": {
       "covered": 7,
@@ -15040,7 +15040,7 @@
       "label": "cor:cover-recursive-peripheral-further-obstructions",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15050,7 +15050,10 @@
           "line": 5182
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/relations/049_cover_recursive_strict_subset_dismantlable_ample.json",
+        "data/results/033_cover_recursive_structural_consequences.json"
+      ]
     },
     {
       "label": "cor:daisy-obstruction-reduction",
@@ -15180,7 +15183,7 @@
       "label": "lem:cover-recursive-peripheral-pcminor-closure",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15190,13 +15193,15 @@
           "line": 5008
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/064_cover_recursive_pc_minor_closed.json"
+      ]
     },
     {
       "label": "lem:cover-recursive-peripheral-rooted-wedge",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15206,7 +15211,9 @@
           "line": 5534
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/245_rooted_wedge_membership_and_minimality.json"
+      ]
     },
     {
       "label": "lem:learning-space-two-three-endpoint-cover",
@@ -15230,7 +15237,7 @@
       "label": "lem:low-excess-partial-cubes",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15240,7 +15247,9 @@
           "line": 5846
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/242_low_excess_partial_cube_structure.json"
+      ]
     },
     {
       "label": "prop:antimatroid-learning-space-equivalence",
@@ -15389,7 +15398,7 @@
       "label": "prop:cover-recursive-peripheral-antipodal-obstructions",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15399,13 +15408,15 @@
           "line": 5144
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/obstruction_families/001_antipodally_punctured_hypercubes.json"
+      ]
     },
     {
       "label": "prop:cover-recursive-peripheral-gated-reduction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15415,13 +15426,15 @@
           "line": 5467
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/243_gated_amalgam_obstruction_reduction.json"
+      ]
     },
     {
       "label": "prop:cover-recursive-peripheral-obstruction-structure",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15431,13 +15444,15 @@
           "line": 5219
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/031_cover_recursive_obstruction_structure.json"
+      ]
     },
     {
       "label": "prop:cover-recursive-peripheral-pentagonal-obstruction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15447,13 +15462,16 @@
           "line": 5251
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/020_pentagonal_obstruction.json",
+        "data/results/034_pentagonal_obstruction_global_minimality.json"
+      ]
     },
     {
       "label": "prop:cover-recursive-peripheral-position",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15463,13 +15481,24 @@
           "line": 5367
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/065_cover_recursive_cartesian_product_closed.json",
+        "data/operation_results/066_cover_recursive_peripheral_expansion.json",
+        "data/relations/047_median_strict_subset_cover_recursive.json",
+        "data/relations/048_daisy_strict_subset_cover_recursive.json",
+        "data/relations/049_cover_recursive_strict_subset_dismantlable_ample.json",
+        "data/relations/173_cover_recursive_subset_proper_semi_median.json",
+        "data/relations/174_cover_recursive_subset_almost_median.json",
+        "data/relations/194_cover_recursive_strict_subset_tree_like.json",
+        "data/results/033_cover_recursive_structural_consequences.json",
+        "data/results/241_cover_recursive_position_is_sharp.json"
+      ]
     },
     {
       "label": "prop:cover-recursive-peripheral-rooted-wedge",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15479,7 +15508,11 @@
           "line": 5687
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/071_rooted_wedge_obstruction_w8.json",
+        "data/operation_results/287_cover_recursive_one_point_amalgam_not_closed.json",
+        "data/operation_results/288_cover_recursive_gated_amalgam_not_closed.json"
+      ]
     },
     {
       "label": "prop:daisy-foundations",
@@ -16283,7 +16316,7 @@
       "label": "thm:cover-recursive-peripheral-characterization",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16293,13 +16326,15 @@
           "line": 5077
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/characterization_equivalences/019_cover_recursive_peripheral_equivalence.json"
+      ]
     },
     {
       "label": "thm:cover-recursive-peripheral-rooted-wedge-characterization",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16309,7 +16344,10 @@
           "line": 5553
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/244_root_avoiding_decomposition_characterization.json",
+        "data/results/245_rooted_wedge_membership_and_minimality.json"
+      ]
     },
     {
       "label": "thm:crossing-cube-polynomial",
