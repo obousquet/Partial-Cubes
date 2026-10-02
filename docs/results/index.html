@@ -7508,6 +7508,24 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-448" style="position:relative;">
+
+        <h3><a href="results/three_piece_component_reflection_repair.html" class="table-title-link">Every Three-Piece Obstruction Has a Component-Reflection Repair</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Three-Piece Obstruction Has a Component-Reflection Repair</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X=A_1\cup_DA_2\cup_DA_3$ be an ample forbidden pc-minor in its canonical three-piece presentation, let $e$ be the direction of the common edge $D$, and put $r=\pi_eD$. Some piece $A_i$ has both $U=\pi_eA_i$ and $C=A_i^e$ peelable to $r$. For either $b\in\{0,1\}$, replacing $A_i$ by the peripheral expansion $P_b=(U\times\{b\})\cup(C\times\{1-b\})$ produces a dismantlable ample class $X_b$ with the same shattered sets and cardinality as $X$. The replacement reflects only components of $(\pi_eX)\setminus X^e$ lying in the selected piece. If $k_0$ and $k_1$ are the numbers of its components currently labelled zero and one, one of the two repairs uses $\min(k_0,k_1)$ reflections. This is an upper bound; intermediate reflections need not preserve forbiddenness and the bound need not be optimal.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Three-piece boundary necessity supplies a piece admitting an endpoint sink and an endpoint leaf exit, possibly in different acyclic USOs. Contracting the common direction in the sink-ending order makes $U$ peel to $r$. Recording the first lost endpoint of each full fibre in the leaf-exit order gives a corner peeling of $C$ to $r$. In $P_b$, first peel the copy of $C$ in layer $1-b$ to $r$, using the untouched copy of $U$ for mate cubes, and then peel $U\setminus\{r\}$ in layer $b$; this peels the selected piece to $D$. In the full union it leaves an unchanged positive two-piece proper convex minor, so $X_b$ peels. The projected pieces meet only at $r\in X^e$ and have no cross edges, so every complementary component lies in one piece. The component-expansion theorem therefore preserves ampleness, shadow, and cardinality during the relabelling. The two constant labels change respectively $k_1$ and $k_0$ components.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-three-piece-component-repair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/three_piece_single_component_reflections_1237.html">Single-Component Reflections of the 1237-Concept Three-Piece Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

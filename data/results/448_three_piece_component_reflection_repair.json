@@ -1,0 +1,24 @@
+{
+  "id": 448,
+  "short_name": "three_piece_component_reflection_repair",
+  "name": "Every Three-Piece Obstruction Has a Component-Reflection Repair",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X=A_1\\cup_DA_2\\cup_DA_3$ be an ample forbidden pc-minor in its canonical three-piece presentation, let $e$ be the direction of the common edge $D$, and put $r=\\pi_eD$. Some piece $A_i$ has both $U=\\pi_eA_i$ and $C=A_i^e$ peelable to $r$. For either $b\\in\\{0,1\\}$, replacing $A_i$ by the peripheral expansion $P_b=(U\\times\\{b\\})\\cup(C\\times\\{1-b\\})$ produces a dismantlable ample class $X_b$ with the same shattered sets and cardinality as $X$. The replacement reflects only components of $(\\pi_eX)\\setminus X^e$ lying in the selected piece. If $k_0$ and $k_1$ are the numbers of its components currently labelled zero and one, one of the two repairs uses $\\min(k_0,k_1)$ reflections. This is an upper bound; intermediate reflections need not preserve forbiddenness and the bound need not be optimal.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/three_piece_single_component_reflections_1237"
+  ],
+  "proof": "Three-piece boundary necessity supplies a piece admitting an endpoint sink and an endpoint leaf exit, possibly in different acyclic USOs. Contracting the common direction in the sink-ending order makes $U$ peel to $r$. Recording the first lost endpoint of each full fibre in the leaf-exit order gives a corner peeling of $C$ to $r$. In $P_b$, first peel the copy of $C$ in layer $1-b$ to $r$, using the untouched copy of $U$ for mate cubes, and then peel $U\\setminus\\{r\\}$ in layer $b$; this peels the selected piece to $D$. In the full union it leaves an unchanged positive two-piece proper convex minor, so $X_b$ peels. The projected pieces meet only at $r\\in X^e$ and have no cross edges, so every complementary component lies in one piece. The component-expansion theorem therefore preserves ampleness, shadow, and cardinality during the relabelling. The two constant labels change respectively $k_1$ and $k_0$ components.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-three-piece-component-repair"
+}
