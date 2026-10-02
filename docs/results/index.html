@@ -9948,6 +9948,63 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-597" style="position:relative;">
+
+        <h3><a href="results/block_row_completion.html" class="table-title-link">Completing One Nonconstant Block Row</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Completing One Nonconstant Block Row</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be an irredundant cornerless ample forbidden pc-minor, split at $z$ with contraction $C$, and suppose $C\cup\{x\}$ is an ample one-concept extension whose acquired support has size at least three. Replace $z$ by a binary block and add $(x,0,1)$ to a nonconstant row. The result is an ample forbidden pc-minor with that concept as its unique corner and minimum degree at least three; its reduction in either block coordinate is $H$, and neither section peels to the negative overlap. If the signed-clause columns of $H$ are distinct up to sign, the output also has this property and is fixed by both canonical reductions. Conversely, any irredundant ample forbidden pc-minor with a unique corner of degree at least three whose deletion makes two signed-clause columns agree up to sign, with opposite corner bits in those columns, has exactly this marked presentation. Its cornerless forbidden input, added old word, and acquired support are uniquely recovered for the marked pair.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The added concept completes exactly its acquired support cube, so the local extension criterion proves ampleness. It has no mate in either block direction, leaving a reduction equal to the negative input; reduction closure therefore prevents peeling, and the one-concept extension theorem gives forbiddenness. The corner-lifting argument for block replacement rules out every old corner, while the acquired support gives the new corner degree. Tracking the two new minimal nonfaces distinguishes the block columns and preserves every old signed-column distinction. Conversely, equal signed columns recover the block presentation. The negative reduction and block peeling equivalence recover a forbidden input; any input corner would lift to an old corner surviving the addition, contradicting uniqueness. Contracting both block coordinates recovers the one-concept extension and its support.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-block-row-completion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/block_row_completion_684.html">A Reduced 684-Concept Block-Row Completion</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The recovery is unique for a specified eligible coordinate pair; distinct eligible pairs need not give the same unmarked presentation. The rule is a block replacement followed by a certified addition and does not classify all reduced forbidden bases.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-598" style="position:relative;">
+
+        <h3><a href="results/fixed_two_row_contraction_rigidity.html" class="table-title-link">Rigidity of the Six Fixed Two-Row Contractions of the 267-Concept Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rigidity of the Six Fixed Two-Row Contractions of the 267-Concept Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For each of the six two-row presentations of the labelled $267$-concept obstruction, fix the two large rows $D_0,D_1$ and put $C=D_0\cap D_1$. Among every pair $B_0,B_1\subseteq C$ with $B_0\cup B_1=C$, the four-row assembly $(B_0,D_0,D_1,B_1)$ is ample and cornerless only for the original diagonal-row assignment and its exchange. Thus each fixed contraction has exactly two labelled solutions, both of order $267$, and no smaller cornerless ample assembly.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The fixed crossed family $(D_1,D_0)$ is ample, so the exact two-row identity reduces ampleness of the assembly to ampleness of $(B_0,B_1)$. A Boolean encoding expresses shattered-equals-strongly-shattered for this two-layer family and directly excludes a corner at every possible retained vertex. Complete model enumeration yields precisely the original rows and their exchange for each of the six contractions. Adding clauses that block those two assignments produces six independently checked DRAT refutations. Direct reconstruction verifies all twelve surviving models, and separate at-most-$266$ refutations agree with the minimum order.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:record-fixed-contraction-rigidity</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_transfer_obstruction_267.html">A 267-Concept Two-Row Transfer Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is a finite rigidity theorem for six labelled contractions. It does not classify cornered negative assemblies, assemblies with changed large rows, or establish a global $267$ lower bound.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-599" style="position:relative;">
+
+        <h3><a href="results/two_row_overlap_envelope.html" class="table-title-link">A 96-Word Two-Row Overlap Envelope Has No Negative Ample Subfamily</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 96-Word Two-Row Overlap Envelope Has No Negative Ample Subfamily</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the coordinate-$(0,1)$ two-row presentation of the labelled $267$-concept obstruction, with coordinate $1$ flipped, let $C=D_0\cap D_1$. Then $|C|=48$, and every ample subfamily of the $96$-word envelope $C\times Q_1$ is dismantlable ample. Consequently no ample forbidden two-layer family whose union is this labelled $C$ can be the reduced input of a two-row assembly, even when the large rows change while retaining intersection $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The overlap is reconstructed from the seed as the contraction in coordinate one of the reduction in coordinate zero and is directly verified ample of order $48$. An exact all-subfamily formula leaves all $96$ membership variables free, requires nonemptiness and ampleness through equality of shattered and strongly shattered supports, and requires cornerlessness through a missing vertex in each retained incident cube. The resulting formula has $3222$ variables and $21485$ clauses and an independently replayed DRAT refutation. Hence every nonempty ample subfamily has a corner; deleting corners and inducting on order proves dismantlability.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/ample-corners/main.tex?#prop:record-two-row-overlap-envelope</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_transfer_obstruction_267.html">A 267-Concept Two-Row Transfer Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The result concerns this labelled envelope and imposes no projection or cardinality cutoff. It is not a universal $96$-vertex theorem and does not resolve the two-row inverse for other intersections.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

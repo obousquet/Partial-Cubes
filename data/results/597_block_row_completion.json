@@ -1,0 +1,15 @@
+{
+  "id": 597,
+  "short_name": "block_row_completion",
+  "name": "Completing One Nonconstant Block Row",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/coordinate_block_replacement", "#operations/nonconstant_row_enlargement", "#operations/full_reduction"],
+  "result_type": "construction",
+  "statement": "Let $H$ be an irredundant cornerless ample forbidden pc-minor, split at $z$ with contraction $C$, and suppose $C\\cup\\{x\\}$ is an ample one-concept extension whose acquired support has size at least three. Replace $z$ by a binary block and add $(x,0,1)$ to a nonconstant row. The result is an ample forbidden pc-minor with that concept as its unique corner and minimum degree at least three; its reduction in either block coordinate is $H$, and neither section peels to the negative overlap. If the signed-clause columns of $H$ are distinct up to sign, the output also has this property and is fixed by both canonical reductions. Conversely, any irredundant ample forbidden pc-minor with a unique corner of degree at least three whose deletion makes two signed-clause columns agree up to sign, with opposite corner bits in those columns, has exactly this marked presentation. Its cornerless forbidden input, added old word, and acquired support are uniquely recovered for the marked pair.",
+  "status": "established",
+  "witness_ids": ["#examples/block_row_completion_684"],
+  "proof": "The added concept completes exactly its acquired support cube, so the local extension criterion proves ampleness. It has no mate in either block direction, leaving a reduction equal to the negative input; reduction closure therefore prevents peeling, and the one-concept extension theorem gives forbiddenness. The corner-lifting argument for block replacement rules out every old corner, while the acquired support gives the new corner degree. Tracking the two new minimal nonfaces distinguishes the block columns and preserves every old signed-column distinction. Conversely, equal signed columns recover the block presentation. The negative reduction and block peeling equivalence recover a forbidden input; any input corner would lift to an old corner surviving the addition, contradicting uniqueness. Contracting both block coordinates recovers the one-concept extension and its support.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-block-row-completion",
+  "comments": "The recovery is unique for a specified eligible coordinate pair; distinct eligible pairs need not give the same unmarked presentation. The rule is a block replacement followed by a certified addition and does not classify all reduced forbidden bases."
+}

@@ -1,0 +1,15 @@
+{
+  "id": 599,
+  "short_name": "two_row_overlap_envelope",
+  "name": "A 96-Word Two-Row Overlap Envelope Has No Negative Ample Subfamily",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/cartesian_product", "#operations/concept_deletion", "#operations/conditioning"],
+  "result_type": "implication",
+  "statement": "In the coordinate-$(0,1)$ two-row presentation of the labelled $267$-concept obstruction, with coordinate $1$ flipped, let $C=D_0\\cap D_1$. Then $|C|=48$, and every ample subfamily of the $96$-word envelope $C\\times Q_1$ is dismantlable ample. Consequently no ample forbidden two-layer family whose union is this labelled $C$ can be the reduced input of a two-row assembly, even when the large rows change while retaining intersection $C$.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_transfer_obstruction_267"],
+  "proof": "The overlap is reconstructed from the seed as the contraction in coordinate one of the reduction in coordinate zero and is directly verified ample of order $48$. An exact all-subfamily formula leaves all $96$ membership variables free, requires nonemptiness and ampleness through equality of shattered and strongly shattered supports, and requires cornerlessness through a missing vertex in each retained incident cube. The resulting formula has $3222$ variables and $21485$ clauses and an independently replayed DRAT refutation. Hence every nonempty ample subfamily has a corner; deleting corners and inducting on order proves dismantlability.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/ample-corners/main.tex#prop:record-two-row-overlap-envelope",
+  "comments": "The result concerns this labelled envelope and imposes no projection or cardinality cutoff. It is not a universal $96$-vertex theorem and does not resolve the two-row inverse for other intersections."
+}
