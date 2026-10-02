@@ -11574,6 +11574,78 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-688" style="position:relative;">
+
+        <h3><a href="results/one_corner_two_neighbor_falsifier.html" class="table-title-link">One-Corner Extensions and the Two-Neighbor Falsifier</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Corner Extensions and the Two-Neighbor Falsifier</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be an irredundantly embedded cornerless ample forbidden pc-minor. If adjacent words $c,h\notin G$ give ample one-concept extensions with the same acquired support, then $S=G\cup\{c\}$ is an ample forbidden pc-minor whose unique corner is $c$; it has no successful layer set and no common-seed cover with nonempty proper rows. More generally, suppose an irredundantly embedded ample forbidden pc-minor $S$ has unique corner $c$, and two distinct words $u,v\notin S$ adjacent to $c$ give dismantlable-ample extensions. On a new coordinate $e$, the two-section family $X=((S\cup\{u\})\times\{0\})\cup((S\cup\{v\})\times\{1\})$ is a corner-descent-terminal ample forbidden pc-minor with exactly two corners. Its only successful layer set is $\{e\}$ and its recovered seed is the cornered family $S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Write $h=c^{\{f\}}$ and let $I$ be the common acquired support. Then $f\notin I$, and the two punctured $I$-cubes already lie in $G$. The completed $I$-cube makes $c$ a corner of $S$. Any other candidate corner in that cube has an $f$-neighbor supplied by the second punctured cube, while a corner outside it would already be a corner of $G$; hence $c$ is unique. Deleting it returns nonpeelable $G$, so the one-concept atlas makes $S$ forbidden. Every proper-row common-seed cover has at least two occurrence-row corners, excluding such a presentation and therefore any successful layer set. In the general construction, adjacency of the two repairs to different directions at $c$ forces their acquired supports to be distinct. The common-seed theorem makes $X$ forbidden, its two repair occurrences are its only corners, and deleting either exposes $S$ as a proper layer restriction, proving terminality. The new coordinate is thin and successful. The thin-layer dichotomy makes the largest presentation antipodally punctured; its two rows contribute at least twice its layer dimension in distinct corners. Since $X$ has only two corners, that dimension is one and $\{e\}$ is the unique successful set.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-one-corner-two-neighbor</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The second part is conditional: the required two resolving neighbors are additional hypotheses. The fixed certificate finds adjacent ample additions to a 292-concept one-corner obstruction, but all three tested additions remain nonpeelable and therefore do not realize the falsifier.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-689" style="position:relative;">
+
+        <h3><a href="results/no_resolving_neighbor_after_square_completion.html" class="table-title-link">No Resolving Neighbor after a Square Completion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>No Resolving Neighbor after a Square Completion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be nonempty, ample, and nonpeelable, and let $S=G\cup\{c\}$ be ample with acquired support $I$ of size at most two. No word adjacent to $c$ is a resolving one-concept addition to $S$. Consequently, the one-corner two-neighbor construction can have its required resolving neighbors only when $|I|\ge3$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For an adjacent ample addition $u=c^{\{f\}}$, one has $f\notin I$ and its acquired support over $S$ is $P=J\cup\{f\}$ for some $J\subseteq I$. Rank-two extension invariance keeps $S$ nonpeelable and excludes resolution when $|J|\le1$. The only remaining case has $I=J$ of size two. Removing $c$ leaves the punctured $I$-square at $u$ and removes only its $f$-neighbor, so $G\cup\{u\}$ is ample and also acquires $I$. Square-pair invariance then makes $S\cup\{u\}$ nonpeelable.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-square-completion-neighbors</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The fixed controls certify nonpeelability before and after square completion at orders 293 and 294, and after one and two adjacent completions in a punctured-square product at orders 874 and 875.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-690" style="position:relative;">
+
+        <h3><a href="results/rank_three_neighbor_forced_deletions.html" class="table-title-link">Two Forced Deletions at a Rank-Three Neighbor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Forced Deletions at a Rank-Three Neighbor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\subseteq Q_F$ be ample and nonpeelable with unique corner $c$, whose incident-coordinate set $I$ has size at least three. Suppose $u=c^{\{i\}}\notin S$ and $H=S\cup\{u\}$ is ample with a three-coordinate acquired support. Then that support is $P=J\cup\{i\}$ for a two-element proper subset $J\subsetneq I$. Put $x=u^J$ and $y=c^J$. If $H$ peels, every peeling starts by deleting $x$ and then $y$. Thus $x$ has no neighbor outside the completed $P$-cube, and $x$ is the only neighbor of $y$ in a direction outside $I$. Consequently, $u$ is not resolving if another adjacent ample addition $v=c^{\{j\}}$ has acquired support $K\cup\{j\}$ with $J\subseteq K\subseteq I$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The punctured-cube test gives $i\in P$, $i\notin I$, and $P\setminus\{i\}=J\subsetneq I$. In $H$, the old corner $c$ is blocked by any direction in $I\setminus J$. Any other old corner must lie in the completed $P$-cube and have no neighbor outside it. All candidates except $x$ retain an outside neighbor because $c$ was the unique corner of $S$; hence the only possible first corners are $u$ and $x$. Deleting $u$ returns nonpeelable $S$, so every peeling starts at $x$. Only neighbors of $x$ can become new corners. Two retain incompatible outside neighbors and $u$ loses a required cube vertex, leaving $y$ as the sole possible second deletion. The full $I$-cube at $y$ shows it becomes a corner exactly when its only outside-$I$ neighbor is $x$. A companion addition with $J\subseteq K$ supplies the distinct outside neighbor $v^J=y^{\{j\}}$, contradicting this necessary condition.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rank-three-neighbor-first-deletions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The controls verify both the forced two-deletion case and the companion-blocked case, and replay fifteen recorded rank-three neighbors. The constructed controls have proper nonpeelable minors and are local proof checks rather than forbidden witnesses.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-691" style="position:relative;">
+
+        <h3><a href="results/companion_tip_excludes_rank_three_resolving_neighbors.html" class="table-title-link">A Companion Tip Excludes Rank-Three Resolving Neighbors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Companion Tip Excludes Rank-Three Resolving Neighbors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the adjacent same-support construction that turns a cornerless ample forbidden pc-minor $G$ into the one-corner obstruction $G\cup\{c\}$, every resolving addition adjacent to $c$ has acquired support of size at least four. If the original acquired support $I$ has size three, every such resolving tip $u=c^{\{i\}}$ completes the full $I\cup\{i\}$-cube, while $G\cup\{u\}$ is itself an ample one-corner forbidden pc-minor acquiring $I$. Therefore a two-neighbor falsifier at support three requires three tips $c,u,v$ with the same acquired support over $G$: all individual extensions are nonpeelable, but both pair extensions $G\cup\{c,u\}$ and $G\cup\{c,v\}$ must peel.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The square-completion corollary excludes original support at most two. Let the companion tip be $h=c^{\{f\}}$. Its punctured cube over $G$ shows that adding $h$ to $G\cup\{c\}$ acquires $I\cup\{f\}$, of size at least four. Any resolving neighbor has support at least three by rank-two invariance. If it had size three, the rank-three forced-deletion theorem would apply with companion $h$ and $K=I$, excluding resolution. Thus every resolving neighbor has support at least four. For original support three, the punctured-cube formula bounds an adjacent addition's support by $I\cup\{i\}$, so equality follows. Removing $c$ leaves the punctured $I$-cube at $u$, making $G\cup\{u\}$ ample with acquired support $I$; the adjacent same-support theorem makes it one-corner and forbidden. Applying this to both resolving neighbors yields the three-tip condition.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-companion-neighbor-rank-four</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This excludes support three only in the companion construction. It does not exclude rank-three resolving neighbors of arbitrary one-corner families or settle cooperation among support-four repairs.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

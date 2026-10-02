@@ -1,0 +1,19 @@
+{
+  "id": 689,
+  "short_name": "no_resolving_neighbor_after_square_completion",
+  "name": "No Resolving Neighbor after a Square Completion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $G$ be nonempty, ample, and nonpeelable, and let $S=G\\cup\\{c\\}$ be ample with acquired support $I$ of size at most two. No word adjacent to $c$ is a resolving one-concept addition to $S$. Consequently, the one-corner two-neighbor construction can have its required resolving neighbors only when $|I|\\ge3$.",
+  "status": "established",
+  "proof": "For an adjacent ample addition $u=c^{\\{f\\}}$, one has $f\\notin I$ and its acquired support over $S$ is $P=J\\cup\\{f\\}$ for some $J\\subseteq I$. Rank-two extension invariance keeps $S$ nonpeelable and excludes resolution when $|J|\\le1$. The only remaining case has $I=J$ of size two. Removing $c$ leaves the punctured $I$-square at $u$ and removes only its $f$-neighbor, so $G\\cup\\{u\\}$ is ample and also acquires $I$. Square-pair invariance then makes $S\\cup\\{u\\}$ nonpeelable.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-square-completion-neighbors",
+  "comments": "The fixed controls certify nonpeelability before and after square completion at orders 293 and 294, and after one and two adjacent completions in a punctured-square product at orders 874 and 875."
+}

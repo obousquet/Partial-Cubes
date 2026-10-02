@@ -1,0 +1,166 @@
+{
+  "scope": "Check one fixed one-corner obstruction and its adjacent ample additions.\n\nThe input is the already certified 291-concept cornerless seed. Verify the\ncomplete placement fibre at gain 2312, then only the adjacent additions to\nits fixed extension at 2696. Negative decisions carry complete corner\ndeletion certificates. This does not test further seeds or expand the\nprevious pair census, and proves no general repair-inheritance statement.",
+  "source_file_sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f",
+  "source_model_sha256": "60e1d708636d85ccf991d1d574dec5dbde7829656f5576a12bba75170b6f6b53",
+  "base_order": 291,
+  "gain": 2312,
+  "complete_gain_fibre": [
+    2184,
+    2696,
+    3720,
+    3818,
+    3822
+  ],
+  "gain_fibre_edges": [
+    [
+      2184,
+      2696
+    ],
+    [
+      2696,
+      3720
+    ],
+    [
+      3818,
+      3822
+    ]
+  ],
+  "outside_placements": [
+    128,
+    640,
+    1664,
+    1762,
+    1766
+  ],
+  "outside_placement_shadow": [
+    0,
+    2,
+    4,
+    32,
+    64,
+    512,
+    1024
+  ],
+  "placement_fibre_is_ample": false,
+  "all_five_extensions_have_one_corner": true,
+  "fixed_source_corner": 2696,
+  "source_order": 292,
+  "adjacent_ample_additions": [
+    {
+      "coordinate": 7,
+      "tip": 2568,
+      "support": 2184,
+      "status": "nonpeelable",
+      "visited": 3,
+      "complete_corner_deletion_certificate": [
+        {
+          "removed": [],
+          "corners": [
+            2568
+          ]
+        },
+        {
+          "removed": [
+            2568
+          ],
+          "corners": [
+            2696
+          ]
+        },
+        {
+          "removed": [
+            2568,
+            2696
+          ],
+          "corners": []
+        }
+      ]
+    },
+    {
+      "coordinate": 9,
+      "tip": 2184,
+      "support": 2824,
+      "status": "nonpeelable",
+      "visited": 5,
+      "complete_corner_deletion_certificate": [
+        {
+          "removed": [],
+          "corners": [
+            384,
+            2184,
+            2696
+          ]
+        },
+        {
+          "removed": [
+            384
+          ],
+          "corners": []
+        },
+        {
+          "removed": [
+            2184
+          ],
+          "corners": [
+            2696
+          ]
+        },
+        {
+          "removed": [
+            2696
+          ],
+          "corners": [
+            2184
+          ]
+        },
+        {
+          "removed": [
+            2184,
+            2696
+          ],
+          "corners": []
+        }
+      ]
+    },
+    {
+      "coordinate": 10,
+      "tip": 3720,
+      "support": 3336,
+      "status": "nonpeelable",
+      "visited": 4,
+      "complete_corner_deletion_certificate": [
+        {
+          "removed": [],
+          "corners": [
+            2696,
+            3720
+          ]
+        },
+        {
+          "removed": [
+            2696
+          ],
+          "corners": [
+            3720
+          ]
+        },
+        {
+          "removed": [
+            3720
+          ],
+          "corners": [
+            2696
+          ]
+        },
+        {
+          "removed": [
+            2696,
+            3720
+          ],
+          "corners": []
+        }
+      ]
+    }
+  ],
+  "all_checks_passed": true
+}

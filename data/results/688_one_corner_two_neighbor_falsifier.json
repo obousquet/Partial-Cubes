@@ -1,0 +1,22 @@
+{
+  "id": 688,
+  "short_name": "one_corner_two_neighbor_falsifier",
+  "name": "One-Corner Extensions and the Two-Neighbor Falsifier",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "Let $G$ be an irredundantly embedded cornerless ample forbidden pc-minor. If adjacent words $c,h\\notin G$ give ample one-concept extensions with the same acquired support, then $S=G\\cup\\{c\\}$ is an ample forbidden pc-minor whose unique corner is $c$; it has no successful layer set and no common-seed cover with nonempty proper rows. More generally, suppose an irredundantly embedded ample forbidden pc-minor $S$ has unique corner $c$, and two distinct words $u,v\\notin S$ adjacent to $c$ give dismantlable-ample extensions. On a new coordinate $e$, the two-section family $X=((S\\cup\\{u\\})\\times\\{0\\})\\cup((S\\cup\\{v\\})\\times\\{1\\})$ is a corner-descent-terminal ample forbidden pc-minor with exactly two corners. Its only successful layer set is $\\{e\\}$ and its recovered seed is the cornered family $S$.",
+  "status": "established",
+  "proof": "Write $h=c^{\\{f\\}}$ and let $I$ be the common acquired support. Then $f\\notin I$, and the two punctured $I$-cubes already lie in $G$. The completed $I$-cube makes $c$ a corner of $S$. Any other candidate corner in that cube has an $f$-neighbor supplied by the second punctured cube, while a corner outside it would already be a corner of $G$; hence $c$ is unique. Deleting it returns nonpeelable $G$, so the one-concept atlas makes $S$ forbidden. Every proper-row common-seed cover has at least two occurrence-row corners, excluding such a presentation and therefore any successful layer set. In the general construction, adjacency of the two repairs to different directions at $c$ forces their acquired supports to be distinct. The common-seed theorem makes $X$ forbidden, its two repair occurrences are its only corners, and deleting either exposes $S$ as a proper layer restriction, proving terminality. The new coordinate is thin and successful. The thin-layer dichotomy makes the largest presentation antipodally punctured; its two rows contribute at least twice its layer dimension in distinct corners. Since $X$ has only two corners, that dimension is one and $\\{e\\}$ is the unique successful set.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-corner-two-neighbor",
+  "comments": "The second part is conditional: the required two resolving neighbors are additional hypotheses. The fixed certificate finds adjacent ample additions to a 292-concept one-corner obstruction, but all three tested additions remain nonpeelable and therefore do not realize the falsifier."
+}

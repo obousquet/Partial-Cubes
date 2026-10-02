@@ -1,0 +1,20 @@
+{
+  "id": 691,
+  "short_name": "companion_tip_excludes_rank_three_resolving_neighbors",
+  "name": "A Companion Tip Excludes Rank-Three Resolving Neighbors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "In the adjacent same-support construction that turns a cornerless ample forbidden pc-minor $G$ into the one-corner obstruction $G\\cup\\{c\\}$, every resolving addition adjacent to $c$ has acquired support of size at least four. If the original acquired support $I$ has size three, every such resolving tip $u=c^{\\{i\\}}$ completes the full $I\\cup\\{i\\}$-cube, while $G\\cup\\{u\\}$ is itself an ample one-corner forbidden pc-minor acquiring $I$. Therefore a two-neighbor falsifier at support three requires three tips $c,u,v$ with the same acquired support over $G$: all individual extensions are nonpeelable, but both pair extensions $G\\cup\\{c,u\\}$ and $G\\cup\\{c,v\\}$ must peel.",
+  "status": "established",
+  "proof": "The square-completion corollary excludes original support at most two. Let the companion tip be $h=c^{\\{f\\}}$. Its punctured cube over $G$ shows that adding $h$ to $G\\cup\\{c\\}$ acquires $I\\cup\\{f\\}$, of size at least four. Any resolving neighbor has support at least three by rank-two invariance. If it had size three, the rank-three forced-deletion theorem would apply with companion $h$ and $K=I$, excluding resolution. Thus every resolving neighbor has support at least four. For original support three, the punctured-cube formula bounds an adjacent addition's support by $I\\cup\\{i\\}$, so equality follows. Removing $c$ leaves the punctured $I$-cube at $u$, making $G\\cup\\{u\\}$ ample with acquired support $I$; the adjacent same-support theorem makes it one-corner and forbidden. Applying this to both resolving neighbors yields the three-tip condition.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-companion-neighbor-rank-four",
+  "comments": "This excludes support three only in the companion construction. It does not exclude rank-three resolving neighbors of arbitrary one-corner families or settle cooperation among support-four repairs."
+}

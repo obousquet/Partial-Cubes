@@ -1,0 +1,19 @@
+{
+  "id": 690,
+  "short_name": "rank_three_neighbor_forced_deletions",
+  "name": "Two Forced Deletions at a Rank-Three Neighbor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S\\subseteq Q_F$ be ample and nonpeelable with unique corner $c$, whose incident-coordinate set $I$ has size at least three. Suppose $u=c^{\\{i\\}}\\notin S$ and $H=S\\cup\\{u\\}$ is ample with a three-coordinate acquired support. Then that support is $P=J\\cup\\{i\\}$ for a two-element proper subset $J\\subsetneq I$. Put $x=u^J$ and $y=c^J$. If $H$ peels, every peeling starts by deleting $x$ and then $y$. Thus $x$ has no neighbor outside the completed $P$-cube, and $x$ is the only neighbor of $y$ in a direction outside $I$. Consequently, $u$ is not resolving if another adjacent ample addition $v=c^{\\{j\\}}$ has acquired support $K\\cup\\{j\\}$ with $J\\subseteq K\\subseteq I$.",
+  "status": "established",
+  "proof": "The punctured-cube test gives $i\\in P$, $i\\notin I$, and $P\\setminus\\{i\\}=J\\subsetneq I$. In $H$, the old corner $c$ is blocked by any direction in $I\\setminus J$. Any other old corner must lie in the completed $P$-cube and have no neighbor outside it. All candidates except $x$ retain an outside neighbor because $c$ was the unique corner of $S$; hence the only possible first corners are $u$ and $x$. Deleting $u$ returns nonpeelable $S$, so every peeling starts at $x$. Only neighbors of $x$ can become new corners. Two retain incompatible outside neighbors and $u$ loses a required cube vertex, leaving $y$ as the sole possible second deletion. The full $I$-cube at $y$ shows it becomes a corner exactly when its only outside-$I$ neighbor is $x$. A companion addition with $J\\subseteq K$ supplies the distinct outside neighbor $v^J=y^{\\{j\\}}$, contradicting this necessary condition.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-three-neighbor-first-deletions",
+  "comments": "The controls verify both the forced two-deletion case and the companion-blocked case, and replay fifteen recorded rank-three neighbors. The constructed controls have proper nonpeelable minors and are local proof checks rather than forbidden witnesses."
+}

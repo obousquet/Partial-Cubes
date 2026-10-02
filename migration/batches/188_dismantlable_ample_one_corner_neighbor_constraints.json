@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "batch_id": "188_dismantlable_ample_one_corner_neighbor_constraints",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the conditional one-corner/two-neighbor terminal construction, exclude resolving neighbors after rank-at-most-two square completions, derive the forced two-deletion prefix for rank-three neighbors, and use a companion tip to force resolving-neighbor rank at least four.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-corner-two-neighbor",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-square-completion-neighbors",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-three-neighbor-first-deletions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-companion-neighbor-rank-four",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_one_corner_neighbors.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_rank_two_additions.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_rank_three_corner_neighbors.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "one-corner-neighbor-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_one_corner_neighbors.py,damp_one_corner_neighbors_verification.json,verify_damp_rank_two_additions.py,damp_rank_two_additions_verification.json,verify_damp_rank_three_corner_neighbors.py,damp_rank_three_corner_neighbors_verification.json,damp_fixed_291_repair_creation.json,damp_hall_carrier_defect_min8.json,computations/round767_recorded_rank_three_neighbors.json,explore_damp_cornered_hall_repair_signatures.py,explore_damp_fixed_291_repair_creation.py,verify_damp_singleton_recovery_implications.py,verify_damp_terminal_clause_recovery.py,verify_damp_layer_midpoint_cores.py,analyze_damp_yang_balanced_circuits.py}; papers/cover-recursive/scripts/{explore_smallest_additional_peripheral_obstruction.py,explore_cover_recursive_peripheral.py}",
+      "sha256": "d8df40804e25052d37b988357f1808e35e6249388a3c2c16adba8366a519ede2",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These four statements delimit the only remaining one-corner route to a terminal obstruction with a cornered recovered seed: low-rank neighbors cannot resolve, rank-three resolution has a forced prefix, and the natural companion construction raises the first possible support to four.",
+    "outcome": "All four proof blocks match the preserved manuscript. The database records the conditional falsifier without asserting existence, the rank-two exclusion, the exact rank-three private-edge condition, the companion obstruction, the support-four consequence, and the limits of the finite controls.",
+    "claim_block_sha256": {
+      "prop:damp-one-corner-two-neighbor": "b5e590a1f72c925aacfc2fb1870dd9e6c867782d156e36e98c949eb8928d8df0",
+      "cor:damp-square-completion-neighbors": "c842aba854cdc6dd6fec64fc65640410474e787934465e086cc9c282270591f6",
+      "prop:damp-rank-three-neighbor-first-deletions": "f54fa15a545f4f4aa34966a47e2b6c5db1200d2c70b49a98dac9df997eb1d1bb",
+      "cor:damp-companion-neighbor-rank-four": "8bceed16ad37effc0e47cf7177a6d3a34cff886ee6a2bcd2fb2b9add3f4696ac"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/verify_damp_one_corner_neighbors.py",
+      "sha256": "97932b2827dc775c1e57f17a98035dc349f6a3a6d024cfbd455cf97999bdb142"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/damp_one_corner_neighbors_verification.json",
+      "sha256": "ff9c47067987b9afa01290a7dd40b151fe5fbabb290810f7b595d3812f857e7d"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/source_damp_one_corner_neighbors_verification.json",
+      "sha256": "ff9c47067987b9afa01290a7dd40b151fe5fbabb290810f7b595d3812f857e7d"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/verify_damp_rank_two_additions.py",
+      "sha256": "e99189653578e0cdb056964a5b23c5e354a5e872b40b32d661a84c958b5847f5"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/damp_rank_two_additions_verification.json",
+      "sha256": "18f44cd4913dd027ff55154d8a2f4c21ffa286d12f68a9f7f03e2c33797336b4"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/source_damp_rank_two_additions_verification.json",
+      "sha256": "18f44cd4913dd027ff55154d8a2f4c21ffa286d12f68a9f7f03e2c33797336b4"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/verify_damp_rank_three_corner_neighbors.py",
+      "sha256": "6724330ff34cc73117032dbe3395264a0f847a45cd01bc50c56c6abf0b9e8343"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/damp_rank_three_corner_neighbors_verification.json",
+      "sha256": "3a635f262b61face2d5e099f8dc3012bd8c1a79b58deb693e0ff3ff31dfe42b3"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/source_damp_rank_three_corner_neighbors_verification.json",
+      "sha256": "3a635f262b61face2d5e099f8dc3012bd8c1a79b58deb693e0ff3ff31dfe42b3"
+    },
+    {
+      "path": "migration/certificates/188_dismantlable_ample_one_corner_neighbor_constraints/source_packet_manifest.json",
+      "sha256": "4f63209b7d58db2e871c8f75ae71929d31a7d1983b766fa9dd7e9b671da5db72"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the four symbolic results, concise proofs, hypothesis boundaries, and finite verification scope. LaTeX retains the expanded local cube arguments and the surrounding open support-four cooperation problem. Exact scripts, source reports, the 291-concept seed, recorded neighbors, and all helper inputs remain byte-archived.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all four proofs. The tracked seventeen-file computation packet at commit f304961 is path-hashed and byte-archived; all three verifiers reproduce their tracked reports byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/688_one_corner_two_neighbor_falsifier.json",
+      "sha256": "a82f187bc21081228091592a2acc79efd42eecd53bbe1b90a502943a2f5c5735"
+    },
+    {
+      "path": "data/results/689_no_resolving_neighbor_after_square_completion.json",
+      "sha256": "af6ee2636423886818e533e40d5da74ace83f03f762a53ce0bb62285fa3c841f"
+    },
+    {
+      "path": "data/results/690_rank_three_neighbor_forced_deletions.json",
+      "sha256": "990fc54bca7735f9e25583b7f504883b4ed81f9e051457a4747203552c24e0f2"
+    },
+    {
+      "path": "data/results/691_companion_tip_excludes_rank_three_resolving_neighbors.json",
+      "sha256": "82b68cf0f4079d7d3f8a6dde3f491b77788b27db93a78af71efb9ea4dfd12b4f"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "5c0aca82a0c7367ee0dced4e440d16aa39ae5bfadb224045be978a278cda0b5f"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "81b971fd73a77f2b133960e85f675c3ff609f8e7a43c83d4bae2226a9cbd808d"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2093 records.",
+    "website": "Normalized 2109 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 4 additional audited labels, raising overall coverage from 787 to 791 of 1143 and dismantlable-ample coverage from 351 to 355 of 683.",
+    "certificates": "The replays check the complete five-tip same-support fibre and five one-corner extensions, three adjacent nonresolving additions, rank-two completion controls of orders 293, 294, 874, and 875 with complete deletion-state graphs, two rank-three attached-block models, and all fifteen stored rank-three neighbor cases.",
+    "source_integrity": "All four proof blocks match supplemental snapshot 2026-10-02-b002, every archived computation input matches its manifest hash, and all three regenerated reports are byte-identical to their tracked source reports."
+  },
+  "deferred": [
+    "The refreshed audit has 352 uncovered database-owned labels: 328 in dismantlable-ample and 24 in ample-corners.",
+    "The next block records the strong-projection consequences for three same-support tips and the subsequent support-four cooperation constraints.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
