@@ -1,0 +1,21 @@
+{
+  "id": 358,
+  "short_name": "crossing_graph_separator_recovery",
+  "name": "Crossing Graphs Detect and Recover Vertex and Edge Separators",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "For an irredundant partial cube $H\\subseteq Q_F$ with $|F|\\ge3$, $H$ has a cut vertex exactly when its crossing graph is disconnected. If $H$ is two-connected, separating edges of direction $e$ are exactly the full fibers over cut vertices of the contraction $\\pi_eH$, and such an edge exists exactly when deleting $e$ disconnects the crossing graph. If that deletion has exactly two components $F_1,F_2$, there is exactly one separating $e$-edge; adjoining it to the two components of its complement yields convex coordinate restrictions with exclusive blocks $F_1,F_2$. Consequently an ample pc-minimal obstruction has neither a cut vertex nor a separating edge exactly when its crossing graph is two-connected.",
+  "status": "established",
+  "proof": "The cut-vertex/crossing-graph theorem applies to $H$ and its contraction, whose crossing graph is obtained by deleting $e$. Fibers of the contraction are connected singletons or $e$-edges, every projected edge lifts, and this remains true after deleting one fiber; hence complement components correspond. Two-connectedness rules out a singleton cut fiber, proving the edge characterization. Crossing-graph components are the coordinate sets of graph blocks: blocks are convex, a coordinate cannot occur in two blocks, and coordinates in distinct blocks do not cross. Two crossing components after deleting $e$ therefore give two quotient blocks at one cut vertex and lift to one separating edge with the claimed convex pieces.",
+  "references": "\\cite{klavzar2002partial}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-crossing-separator-recovery"
+}

@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "batch_id": "098_dismantlable_ample_separator_and_edge_profiles",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate separator bounds for cubes and coordinate faces, the marked-edge peeling profile and exact edge-gluing algebra, the separating-edge obstruction classification, crossing-graph recovery and shadow factorization, and the transfer from rooted failure to an edge boundary.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-cube-separator-bound",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-face-separator-bound",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-face-piece-projections",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#def:damp-edge-peeling-profile",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-edge-gluing-profile",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-edge-context-algebra",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-edge-separator-obstructions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-crossing-separator-recovery",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-shadow-edge-factorization",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-edge-boundary-transfer"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "f9fe2c566df65e4acf3dbc320d40c0dfb04dd61ee0b2eb5c01d7a8e5c76bcf1c",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The packet contains dirty working-tree bytes, so every promoted definition or statement-plus-proof block was compared across committed, frozen, and current live sources.",
+    "outcome": "All ten frozen blocks are byte-identical to the live manuscript. The separator-obstruction, crossing-recovery, and shadow-factorization blocks also match the committed source; the cube-separator, edge-profile definition, and edge-gluing blocks have revised committed versions; the remaining four blocks are absent from the committed file.",
+    "committed_source_sha256": "6ad0b6e4007e0376058f9d14dab0a6da713b9d52ea5cc29578498e50d652de3a",
+    "live_source_sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+    "claim_block_sha256": {
+      "thm:damp-cube-separator-bound": "2785be3d42ede104977c863daaa1d64bd62c6f15b22f34039ee9bd53a95b1917",
+      "prop:damp-face-separator-bound": "7d3c1e0f6dbce0f7a1c1a9d977224c5039c6312e78da0a608ab0ce4951dcb8a0",
+      "prop:damp-face-piece-projections": "2783c2af7e1f74210781b507a9dc8fe9ced0cc7abb01aaef39e74481f03f4cd7",
+      "def:damp-edge-peeling-profile": "a74f33bedf0ac48c3a6d86955e8f3b50f8779d958a48849aa0352f97b40d46f5",
+      "thm:damp-edge-gluing-profile": "fa743e5db5826db86976a4983b0ba2cfc9944cb4d9cd45e06342f04ae263b660",
+      "cor:damp-edge-context-algebra": "e6024c2abccea83540b43dce2eb3ea21827d6014de097494c317668c8e0826a5",
+      "thm:damp-edge-separator-obstructions": "5371cd219f423ffe8cbc93b173afd53e756ab0f52214c493fb5d6ebf416c4ab7",
+      "prop:damp-crossing-separator-recovery": "04e603efbf5614a42880c11e27b6c145d559c4ac127e4585e8097debc2b547ea",
+      "cor:damp-shadow-edge-factorization": "07cfed32710bcdcb850085e8c04b63bd8d65ad2fdea0615443fa12e1b7ac1cad",
+      "prop:damp-edge-boundary-transfer": "1ceee783d352a88d317e626b793c37183268b4cc6dd7ed589e7dbcd582224e9b"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized separator theorems, marked-edge invariant, gluing and obstruction criteria, crossing-graph recovery, concise proofs, citation, and source locators. The manuscript retains full USO arguments, examples, computational narratives, realizability caveats, and open structural questions.",
+    "recoverability": "Snapshot 2026-09-30-b001 preserves the exact dirty source bytes, and each promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/invariants/061_edge_peeling_profile.json",
+      "sha256": "f466e345a6ad95a9a4379c99bf1bf6d8d459fdd5e94a697309bb2e13d0d8bd80"
+    },
+    {
+      "path": "data/results/352_separating_cube_piece_bound.json",
+      "sha256": "712fe70f1943e2911cd0ebb7946c4623c83a27c374827d19418661e03ca9fd4d"
+    },
+    {
+      "path": "data/results/353_coordinate_face_piece_bound.json",
+      "sha256": "16ce30c75aa5718846add19020d668d88f960521cef2f90cb417abb0c611bebf"
+    },
+    {
+      "path": "data/results/354_coordinate_face_piece_projections.json",
+      "sha256": "403d7d6c051a26d93c3f57aa941c0652da6919440722e94005f06bf7dc9f5eed"
+    },
+    {
+      "path": "data/results/355_edge_peeling_gluing_criterion.json",
+      "sha256": "a61a868da2cea68cfa064d6ff0d5fc9fd88f92390b1371b562273d36f5e2ae4b"
+    },
+    {
+      "path": "data/results/356_edge_context_type_algebra.json",
+      "sha256": "22a2ef48bf56fd3031eabbfd39b6a3fab204a91dc71712733b714325cee5d488"
+    },
+    {
+      "path": "data/results/357_separating_edge_obstruction_classification.json",
+      "sha256": "5db4990030170ba5e45a5cf2a8abb130f7c19332527023cecfdd0c4ed4320875"
+    },
+    {
+      "path": "data/results/358_crossing_graph_separator_recovery.json",
+      "sha256": "afc1ecfd68005e77c190a665d92f97660845f488fe77d5ab74972a4840a651db"
+    },
+    {
+      "path": "data/results/359_shadow_split_edge_factorization.json",
+      "sha256": "b696e351b8a2c6465c66175d3e0e493c7c7130ce6a2642de0b0d7767e11df73e"
+    },
+    {
+      "path": "data/results/360_rooted_failure_to_edge_boundary_transfer.json",
+      "sha256": "472048142bd5a0d954d0454176a6d2fb28254e55b809e9330b533ee00b60ace9"
+    },
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "6d682d7685a3d609b600869547376378ca2c2c8f8a99382851634fd98f9dcb87"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c45fa2b797aa2b79086813cffafd872b2f0b4099675d56132590198e8f285d63"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "51520ede57795e2677782d7e93a367ee25ceaddfecccf6b704f4709da43d0d4a"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1648 records.",
+    "website": "Normalized 1664 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 9 additional dismantlable-ample result labels, raising that workspace from 22 to 31 of 582 and overall coverage from 453 to 462 of 1013 database-owned labels.",
+    "bibliography": "The imported crossing-graph citation leaves 219 unique source keys, 19 repeated keys, no conflicting keys, and 24 duplicate identities in the bibliography audit."
+  },
+  "deferred": [
+    "The remaining 551 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Conjectures, problems, and intrinsic realizability questions remain prose-owned in LaTeX.",
+    "Live-checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

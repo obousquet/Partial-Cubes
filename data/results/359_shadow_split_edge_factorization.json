@@ -1,0 +1,21 @@
+{
+  "id": 359,
+  "short_name": "shadow_split_edge_factorization",
+  "name": "A Two-Component Shadow Split Determines an Edge Factorization",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/projection"
+  ],
+  "result_type": "construction",
+  "statement": "Let a simplicial complex $\\Sigma\\subseteq2^F$ contain every singleton and have connected two-face graph. If deleting coordinate $e$ leaves exactly two graph components $F_1,F_2$, put $\\Sigma_i=\\Sigma\\cap2^{F_i\\cup\\{e\\}}$. Every ample realization of $\\Sigma$ is obtained by choosing ample realizations of the two $\\Sigma_i$, choosing and identifying oriented $e$-edges, embedding their exclusive blocks disjointly, and applying a cube translation. Every output has one separating $e$-edge, which recovers the two convex pieces up to interchange and simultaneous edge reversal. The pc-minimal obstructions among these realizations are exactly the two-piece data satisfying the separating-edge obstruction criterion.",
+  "status": "established",
+  "proof": "No face of $\\Sigma$ meets both exclusive blocks, so the two subcomplexes meet only in the empty face and $\\{e\\}$. The edge-glued realization has shadow $\\Sigma$ and cardinality $|\\Sigma|$, hence is ample. Connectivity of the two subgraphs makes each piece two-connected and its complement of the chosen edge connected; crossing-graph separator recovery then makes the identified edge unique. Conversely, that theorem recovers the edge and its convex blocks from any realization. Projection onto each block plus $e$ recovers a realization of $\\Sigma_i$, and normalizing the edge recovers the construction up to the stated symmetries.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-shadow-edge-factorization"
+}

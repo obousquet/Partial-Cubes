@@ -1,0 +1,18 @@
+{
+  "id": 352,
+  "short_name": "separating_cube_piece_bound",
+  "name": "Piece Bound at a Separating Cube",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "Let ample pieces $A_1,\\ldots,A_m$ contain a common cube $D=Q_E$ and otherwise use pairwise disjoint coordinate blocks. Their union is ample. If the union is dismantlable ample, at most $|D|$ pieces fail to peel to $D$. If an ample pc-minimal obstruction has a specified separating $k$-cube $D$, the components of its complement uniquely recover pieces $A_i$ that are proper convex restrictions, are dismantlable ample, and all fail to peel to $D$; moreover $2\\le m\\le |D|+1=2^k+1$.",
+  "status": "established",
+  "proof": "Every cube of the union lies in one piece, and the piece shadows meet in the full shadow of $D$, so the Sandwich equality proves ampleness. In an acyclic USO, every piece failing to peel to $D$ needs an outward edge at some boundary vertex, while compatibility permits at most one such piece per vertex of $D$; this gives the positive bound. For a forbidden family, the components outside $D$ use disjoint coordinate blocks and adjoining $D$ gives proper convex restrictions, hence positive pieces. Each must fail relative peeling or the whole obstruction could peel. If more than $|D|+1$ pieces occurred, deleting one piece would leave a proper union with more than $|D|$ relative failures and hence a nonpeelable proper minor. The components make the decomposition unique.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-cube-separator-bound"
+}

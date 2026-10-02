@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,29 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-48" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-353" style="position:relative;">
 
-        <h3><a href="invariants/crossing_graph.html" class="table-title-link">Crossing Graph</a></h3>
+        <h3><a href="results/coordinate_face_piece_bound.html" class="table-title-link">Piece Bound at an Arbitrary Coordinate Face</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Crossing Graph</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="G^{\sharp}">
-            \[G^{\sharp}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, the crossing graph has one vertex for each $\Theta$-class and joins two classes exactly when all four intersections of their two pairs of semicubes are nonempty.</p></div>
+        <p><strong>Name: </strong>Piece Bound at an Arbitrary Coordinate Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample and $D$ a nonempty coordinate-face intersection. The components $W_i$ of $X\setminus D$ use disjoint exclusive coordinate blocks, and every piece $A_i=D\cup W_i$, as well as every union of selected pieces, is a coordinate restriction of $X$. If $X$ is dismantlable ample, at most $|D|$ pieces fail to peel to $D$. If $X$ is a pc-minimal obstruction and at least two components occur, every piece is dismantlable ample, none peels to $D$, and $2\le m\le |D|+1$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<p><strong>Codomain: </strong>Finite simple graphs</p>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The crossing graph need not equal the square graph or the $\Theta$-graph outside special classes.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-graph-profile</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li><li><a href='results/crossing_graph_separator_recovery.html'>Crossing Graphs Detect and Recover Vertex and Edge Separators</a></li><li><a href='results/shadow_split_edge_factorization.html'>A Two-Component Shadow Split Determines an Edge Factorization</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate cannot vary outside $D$ in two components: a shortest path between opposite-side witnesses would pass through $D$ and repeat that coordinate. Fixing all blocks except a selected collection to their values on $D$ gives exactly the corresponding union, proving that these are coordinate restrictions. Restrict an acyclic USO of $X$ to the pieces; each relative failure needs a distinct outward boundary vertex, giving the $|D|$ bound. In a forbidden family every proper selected union is positive. A piece that peeled to $D$ could be removed first, contradicting minimal nonpeelability, and the same deletion argument as for a cube gives the $|D|+1$ obstruction bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-face-separator-bound</p></div>
 
         </div>
     </div>

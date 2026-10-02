@@ -1,0 +1,17 @@
+{
+  "id": 354,
+  "short_name": "coordinate_face_piece_projections",
+  "name": "Projection and Gating of Coordinate-Face Pieces",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In the coordinate-face decomposition of a nontrivial ample family, project onto the free coordinates $E$ of the common face $D$. If $B$ is the image of the whole family and $C_i$ the images of its pieces, then all are ample, $B=\\bigcup_iC_i$, distinct $C_i$ meet exactly in $D$, and no edge joins their parts outside $D$. Thus each $C_i\\setminus D$ is a union of components of $B\\setminus D$. If every coordinate of $E$ varies on $D$, then $D$ is gated in the original piece $A_i$ exactly when $C_i=D$; hence the number of nongated pieces is at most the number of components of $B\\setminus D$.",
+  "status": "established",
+  "proof": "Coordinate projections preserve ampleness and the component-block decomposition. A projected vertex outside $D$ retains a witness in one exclusive component; witnesses from two components cannot coincide or be adjacent without giving a path outside $D$ between those components. If $C_i=D$, projection of any vertex of $A_i$ lies in $D$ and is its unique metric gate. Conversely, a gate of $x$ in $D$ must equal its projection: variation of every free coordinate on $D$ would otherwise produce a route violating the gate equality in the Hamming metric. Distinct nongated pieces therefore occupy disjoint projected components.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-face-piece-projections"
+}

@@ -5892,6 +5892,157 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-352" style="position:relative;">
+
+        <h3><a href="results/separating_cube_piece_bound.html" class="table-title-link">Piece Bound at a Separating Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Piece Bound at a Separating Cube</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample pieces $A_1,\ldots,A_m$ contain a common cube $D=Q_E$ and otherwise use pairwise disjoint coordinate blocks. Their union is ample. If the union is dismantlable ample, at most $|D|$ pieces fail to peel to $D$. If an ample pc-minimal obstruction has a specified separating $k$-cube $D$, the components of its complement uniquely recover pieces $A_i$ that are proper convex restrictions, are dismantlable ample, and all fail to peel to $D$; moreover $2\le m\le |D|+1=2^k+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every cube of the union lies in one piece, and the piece shadows meet in the full shadow of $D$, so the Sandwich equality proves ampleness. In an acyclic USO, every piece failing to peel to $D$ needs an outward edge at some boundary vertex, while compatibility permits at most one such piece per vertex of $D$; this gives the positive bound. For a forbidden family, the components outside $D$ use disjoint coordinate blocks and adjoining $D$ gives proper convex restrictions, hence positive pieces. Each must fail relative peeling or the whole obstruction could peel. If more than $|D|+1$ pieces occurred, deleting one piece would leave a proper union with more than $|D|$ relative failures and hence a nonpeelable proper minor. The components make the decomposition unique.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-cube-separator-bound</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-353" style="position:relative;">
+
+        <h3><a href="results/coordinate_face_piece_bound.html" class="table-title-link">Piece Bound at an Arbitrary Coordinate Face</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Piece Bound at an Arbitrary Coordinate Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample and $D$ a nonempty coordinate-face intersection. The components $W_i$ of $X\setminus D$ use disjoint exclusive coordinate blocks, and every piece $A_i=D\cup W_i$, as well as every union of selected pieces, is a coordinate restriction of $X$. If $X$ is dismantlable ample, at most $|D|$ pieces fail to peel to $D$. If $X$ is a pc-minimal obstruction and at least two components occur, every piece is dismantlable ample, none peels to $D$, and $2\le m\le |D|+1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A coordinate cannot vary outside $D$ in two components: a shortest path between opposite-side witnesses would pass through $D$ and repeat that coordinate. Fixing all blocks except a selected collection to their values on $D$ gives exactly the corresponding union, proving that these are coordinate restrictions. Restrict an acyclic USO of $X$ to the pieces; each relative failure needs a distinct outward boundary vertex, giving the $|D|$ bound. In a forbidden family every proper selected union is positive. A piece that peeled to $D$ could be removed first, contradicting minimal nonpeelability, and the same deletion argument as for a cube gives the $|D|+1$ obstruction bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-face-separator-bound</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-354" style="position:relative;">
+
+        <h3><a href="results/coordinate_face_piece_projections.html" class="table-title-link">Projection and Gating of Coordinate-Face Pieces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Projection and Gating of Coordinate-Face Pieces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In the coordinate-face decomposition of a nontrivial ample family, project onto the free coordinates $E$ of the common face $D$. If $B$ is the image of the whole family and $C_i$ the images of its pieces, then all are ample, $B=\bigcup_iC_i$, distinct $C_i$ meet exactly in $D$, and no edge joins their parts outside $D$. Thus each $C_i\setminus D$ is a union of components of $B\setminus D$. If every coordinate of $E$ varies on $D$, then $D$ is gated in the original piece $A_i$ exactly when $C_i=D$; hence the number of nongated pieces is at most the number of components of $B\setminus D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Coordinate projections preserve ampleness and the component-block decomposition. A projected vertex outside $D$ retains a witness in one exclusive component; witnesses from two components cannot coincide or be adjacent without giving a path outside $D$ between those components. If $C_i=D$, projection of any vertex of $A_i$ lies in $D$ and is its unique metric gate. Conversely, a gate of $x$ in $D$ must equal its projection: variation of every free coordinate on $D$ would otherwise produce a route violating the gate equality in the Hamming metric. Distinct nongated pieces therefore occupy disjoint projected components.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-face-piece-projections</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-355" style="position:relative;">
+
+        <h3><a href="results/edge_peeling_gluing_criterion.html" class="table-title-link">Exact Peeling Criterion for Gluing along an Edge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Peeling Criterion for Gluing along an Edge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let dismantlable ample pieces $A_1,\ldots,A_m$ have disjoint exclusive coordinate blocks and common edge $D$. Let $I=\{i:r_D(A_i)=0\}$ be the pieces that fail to peel to the edge. Their union is dismantlable ample exactly when either $|I|\le1$, or $I=\{i,j\}$ and the two exceptional edge profiles are endpoint-compatible: for some ordering $(s,t)$ of $D$, one piece can peel to sink $t$ and the other can first delete $s$ as a leaf, in either assignment.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Orient the common edge in an acyclic USO of the union. Each relative-failing piece needs an outgoing exclusive edge at an endpoint, and USO compatibility permits at most one such piece at each endpoint, so there are at most two. With two, the piece active at the tail must have the head as a sink, while the piece active at the head must delete the tail as a leaf, giving the profile compatibility. Conversely, pieces peeling to $D$ extend either edge orientation with inward boundary. Use the exceptional piece's orientation when there is one, or the compatible sink/leaf witnesses when there are two; the coordinate-face gluing theorem then supplies an acyclic USO of the union.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-edge-gluing-profile</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-356" style="position:relative;">
+
+        <h3><a href="results/edge_context_type_algebra.html" class="table-title-link">Six Contexts Determine Every Edge-Gluing Type</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Six Contexts Determine Every Edge-Gluing Type</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a fixed ordered edge, context equivalence has at most eighteen types: zero for a nonpeelable piece, identity for a piece peeling to the edge, and one type $[p]$ for each realized four-bit endpoint vector $p=(t_u,t_v,\ell_u,\ell_v)$ of a peelable piece with $r_D=0$. Two pieces are context-equivalent exactly when these types agree. On realized vector types, the context preorder is coordinatewise order, with zero strictly below every vector type and identity strictly above. The product of $[p]$ and $[q]$ is the all-zero vector type when one sink entry is paired with the opposite leaf entry across the factors, and is zero otherwise; every product of three vector types is zero. The edge, the all-zero vector piece, and four unit-vector pieces distinguish all types and comparisons.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact edge-gluing criterion gives the Boolean product rule. A positive union of two relative-failing pieces has no attainable sink or leaf exit: either condition would force both pieces to use the other endpoint outward, violating compatibility. Hence every positive vector product is the all-zero vector, whose product with any vector is zero. Four realized unit profiles test the four dual coordinates; endpoint reversals supply all of them. The edge separates zero from positive types, while the all-zero vector piece separates identity from vector types. Coordinatewise dominance is sufficient against every context by the Boolean formula and necessary by the unit tests.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-edge-context-algebra</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-357" style="position:relative;">
+
+        <h3><a href="results/separating_edge_obstruction_classification.html" class="table-title-link">Exact Classification of Obstructions with a Separating Edge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Classification of Obstructions with a Separating Edge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let irredundantly embedded ample pieces with connected nonempty exclusive parts share an edge $D$, and let $X$ be their union. Then $X$ is a pc-minimal obstruction to dismantlable ampleness exactly when: (1) there are two or three pieces, every piece is dismantlable ample, and none peels to $D$; (2) two pieces are mutually incompatible, while with three pieces every pair is compatible; (3) every zero-side restriction or contraction in an exclusive coordinate either makes the changed piece peel to $D$ or, in the two-piece case, makes it compatible with the unchanged piece, whereas in the three-piece case it must peel to $D$; and (4) in each shared-coordinate restriction or contraction, at most one image fails to peel to the resulting singleton. Every obstruction with a specified separating edge arises uniquely this way, and the union is two-connected exactly when every piece is two-connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The separating-cube bound gives two or three positive relative-failing pieces. The edge-gluing criterion makes a two-piece obstruction incompatible, while every proper two-piece subunion of a three-piece obstruction must be compatible. Exclusive-coordinate minor minimality is exactly the stated edge-profile alternative; shared-coordinate images reduce to the one-point-amalgam criterion. Conversely these conditions make the original union nonpeelable and every elementary image peelable. Components outside the marked edge recover the pieces and their coordinate blocks. Deleting a vertex disconnects the union exactly when it disconnects one piece away from the still-shared endpoint or edge.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-edge-separator-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-358" style="position:relative;">
+
+        <h3><a href="results/crossing_graph_separator_recovery.html" class="table-title-link">Crossing Graphs Detect and Recover Vertex and Edge Separators</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Crossing Graphs Detect and Recover Vertex and Edge Separators</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For an irredundant partial cube $H\subseteq Q_F$ with $|F|\ge3$, $H$ has a cut vertex exactly when its crossing graph is disconnected. If $H$ is two-connected, separating edges of direction $e$ are exactly the full fibers over cut vertices of the contraction $\pi_eH$, and such an edge exists exactly when deleting $e$ disconnects the crossing graph. If that deletion has exactly two components $F_1,F_2$, there is exactly one separating $e$-edge; adjoining it to the two components of its complement yields convex coordinate restrictions with exclusive blocks $F_1,F_2$. Consequently an ample pc-minimal obstruction has neither a cut vertex nor a separating edge exactly when its crossing graph is two-connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The cut-vertex/crossing-graph theorem applies to $H$ and its contraction, whose crossing graph is obtained by deleting $e$. Fibers of the contraction are connected singletons or $e$-edges, every projected edge lifts, and this remains true after deleting one fiber; hence complement components correspond. Two-connectedness rules out a singleton cut fiber, proving the edge characterization. Crossing-graph components are the coordinate sets of graph blocks: blocks are convex, a coordinate cannot occur in two blocks, and coordinates in distinct blocks do not cross. Two crossing components after deleting $e$ therefore give two quotient blocks at one cut vertex and lift to one separating edge with the claimed convex pieces.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#klavzar2002partial">[klavzar2002partial]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-crossing-separator-recovery</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-359" style="position:relative;">
+
+        <h3><a href="results/shadow_split_edge_factorization.html" class="table-title-link">A Two-Component Shadow Split Determines an Edge Factorization</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Two-Component Shadow Split Determines an Edge Factorization</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a simplicial complex $\Sigma\subseteq2^F$ contain every singleton and have connected two-face graph. If deleting coordinate $e$ leaves exactly two graph components $F_1,F_2$, put $\Sigma_i=\Sigma\cap2^{F_i\cup\{e\}}$. Every ample realization of $\Sigma$ is obtained by choosing ample realizations of the two $\Sigma_i$, choosing and identifying oriented $e$-edges, embedding their exclusive blocks disjointly, and applying a cube translation. Every output has one separating $e$-edge, which recovers the two convex pieces up to interchange and simultaneous edge reversal. The pc-minimal obstructions among these realizations are exactly the two-piece data satisfying the separating-edge obstruction criterion.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>No face of $\Sigma$ meets both exclusive blocks, so the two subcomplexes meet only in the empty face and $\{e\}$. The edge-glued realization has shadow $\Sigma$ and cardinality $|\Sigma|$, hence is ample. Connectivity of the two subgraphs makes each piece two-connected and its complement of the chosen edge connected; crossing-graph separator recovery then makes the identified edge unique. Conversely, that theorem recovers the edge and its convex blocks from any realization. Projection onto each block plus $e$ recovers a realization of $\Sigma_i$, and normalizing the edge recovers the construction up to the stated symmetries.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-shadow-edge-factorization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-360" style="position:relative;">
+
+        <h3><a href="results/rooted_failure_to_edge_boundary_transfer.html" class="table-title-link">Rooted Failure Transfers to an Exact Edge Profile</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Failure Transfers to an Exact Edge Profile</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $0\in C\subseteq A,B$ be ample, with $A\cap B=C$, ample union, and $\operatorname{Sh}(A)\cap\operatorname{Sh}(B)=\operatorname{Sh}(C)$. Suppose $C$ is dismantlable ample, both wings peel to $C$, and both admit acyclic USOs with sink $0$. For a fresh coordinate, form the two-layer family $L=(A\times\{0\})\cup(B\times\{1\})$ and mark the vertical edge $D$ over $0$. Then $L$ is ample and its edge profile is $(p,1,1,p,p)$, where $p=1$ exactly when $C$ peels to $0$. Thus when rooted peeling of $C$ fails, either endpoint of $D$ is an attainable sink, but the edge cannot be retained and neither endpoint can be deleted first as a leaf.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Supports avoiding the new coordinate are counted by the ample union, while supports containing it correspond exactly to the common shadow of $A$ and $B$, proving ampleness. Clearing one wing relative to $C$, then its copy of $C$, and finishing in the other wing gives either endpoint as a sink. If $C$ peels to $0$, clear both wings and lift that rooted order to retain $D$ or exit through either leaf. Conversely, in any retention or leaf-exit peeling, record the moment when each full vertical fiber first breaks. The projected corner cubes give a corner reduction of $C$ to $0$; connectivity handles the leaf-exit terminal state. Hence each of the other three profile entries equals the rooted-peeling bit $p$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-edge-boundary-transfer</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

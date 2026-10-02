@@ -1,0 +1,20 @@
+{
+  "id": 360,
+  "short_name": "rooted_failure_to_edge_boundary_transfer",
+  "name": "Rooted Failure Transfers to an Exact Edge Profile",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Let $0\\in C\\subseteq A,B$ be ample, with $A\\cap B=C$, ample union, and $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(B)=\\operatorname{Sh}(C)$. Suppose $C$ is dismantlable ample, both wings peel to $C$, and both admit acyclic USOs with sink $0$. For a fresh coordinate, form the two-layer family $L=(A\\times\\{0\\})\\cup(B\\times\\{1\\})$ and mark the vertical edge $D$ over $0$. Then $L$ is ample and its edge profile is $(p,1,1,p,p)$, where $p=1$ exactly when $C$ peels to $0$. Thus when rooted peeling of $C$ fails, either endpoint of $D$ is an attainable sink, but the edge cannot be retained and neither endpoint can be deleted first as a leaf.",
+  "status": "established",
+  "proof": "Supports avoiding the new coordinate are counted by the ample union, while supports containing it correspond exactly to the common shadow of $A$ and $B$, proving ampleness. Clearing one wing relative to $C$, then its copy of $C$, and finishing in the other wing gives either endpoint as a sink. If $C$ peels to $0$, clear both wings and lift that rooted order to retain $D$ or exit through either leaf. Conversely, in any retention or leaf-exit peeling, record the moment when each full vertical fiber first breaks. The projected corner cubes give a corner reduction of $C$ to $0$; connectivity handles the leaf-exit terminal state. Hence each of the other three profile entries equals the rooted-peeling bit $p$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-edge-boundary-transfer"
+}

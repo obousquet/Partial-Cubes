@@ -1,0 +1,20 @@
+{
+  "id": 356,
+  "short_name": "edge_context_type_algebra",
+  "name": "Six Contexts Determine Every Edge-Gluing Type",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a fixed ordered edge, context equivalence has at most eighteen types: zero for a nonpeelable piece, identity for a piece peeling to the edge, and one type $[p]$ for each realized four-bit endpoint vector $p=(t_u,t_v,\\ell_u,\\ell_v)$ of a peelable piece with $r_D=0$. Two pieces are context-equivalent exactly when these types agree. On realized vector types, the context preorder is coordinatewise order, with zero strictly below every vector type and identity strictly above. The product of $[p]$ and $[q]$ is the all-zero vector type when one sink entry is paired with the opposite leaf entry across the factors, and is zero otherwise; every product of three vector types is zero. The edge, the all-zero vector piece, and four unit-vector pieces distinguish all types and comparisons.",
+  "status": "established",
+  "proof": "The exact edge-gluing criterion gives the Boolean product rule. A positive union of two relative-failing pieces has no attainable sink or leaf exit: either condition would force both pieces to use the other endpoint outward, violating compatibility. Hence every positive vector product is the all-zero vector, whose product with any vector is zero. Four realized unit profiles test the four dual coordinates; endpoint reversals supply all of them. The edge separates zero from positive types, while the all-zero vector piece separates identity from vector types. Coordinatewise dominance is sufficient against every context by the Boolean formula and necessary by the unit tests.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-edge-context-algebra"
+}

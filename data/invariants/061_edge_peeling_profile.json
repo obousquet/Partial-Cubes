@@ -1,0 +1,16 @@
+{
+  "id": 61,
+  "short_name": "edge_peeling_profile",
+  "name": "Marked-Edge Peeling Profile",
+  "symbol": "\\pi_D(A)=(r_D,t_u,t_v,\\ell_u,\\ell_v)",
+  "definition": "For an ample family $A$ with ordered marked edge $D=\\{u,v\\}$ of direction $e$, the five Boolean entries quantify over acyclic unique-sink orientations. The retention entry $r_D$ is one when some out-map satisfies $r(u),r(v)\\subseteq\\{e\\}$. The sink entry $t_s$ is one when some out-map has $r(s)=\\varnothing$. The leaf-exit entry $\\ell_s$ is one when some out-map has $r(s)=\\{e\\}$. Equivalently, these mean respectively peeling to $D$, peeling to $s$, and a complete peeling in which $s$ is the first endpoint deleted and is then a leaf adjacent to the other endpoint.",
+  "status": "established",
+  "domain_class_id": "#classes/ample",
+  "codomain": "The Boolean cube $\\{0,1\\}^5$",
+  "parameters": "An ordered marked edge $D=(u,v)$; reversing its order swaps the two sink entries and the two leaf-exit entries.",
+  "normalization": "The common edge direction is denoted $e$ and the entries record existence, not a chosen orientation.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The profile is invariant under isomorphisms preserving the ordered marked edge. Intrinsic structural tests for which profiles are attainable remain open in the manuscript.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#def:damp-edge-peeling-profile"
+}

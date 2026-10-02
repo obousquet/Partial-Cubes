@@ -1,0 +1,18 @@
+{
+  "id": 353,
+  "short_name": "coordinate_face_piece_bound",
+  "name": "Piece Bound at an Arbitrary Coordinate Face",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/conditioning"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be ample and $D$ a nonempty coordinate-face intersection. The components $W_i$ of $X\\setminus D$ use disjoint exclusive coordinate blocks, and every piece $A_i=D\\cup W_i$, as well as every union of selected pieces, is a coordinate restriction of $X$. If $X$ is dismantlable ample, at most $|D|$ pieces fail to peel to $D$. If $X$ is a pc-minimal obstruction and at least two components occur, every piece is dismantlable ample, none peels to $D$, and $2\\le m\\le |D|+1$.",
+  "status": "established",
+  "proof": "A coordinate cannot vary outside $D$ in two components: a shortest path between opposite-side witnesses would pass through $D$ and repeat that coordinate. Fixing all blocks except a selected collection to their values on $D$ gives exactly the corresponding union, proving that these are coordinate restrictions. Restrict an acyclic USO of $X$ to the pieces; each relative failure needs a distinct outward boundary vertex, giving the $|D|$ bound. In a forbidden family every proper selected union is positive. A piece that peeled to $D$ could be removed first, contradicting minimal nonpeelability, and the same deletion argument as for a cube gives the $|D|+1$ obstruction bound.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-face-separator-bound"
+}

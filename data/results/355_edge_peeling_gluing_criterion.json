@@ -1,0 +1,19 @@
+{
+  "id": 355,
+  "short_name": "edge_peeling_gluing_criterion",
+  "name": "Exact Peeling Criterion for Gluing along an Edge",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Let dismantlable ample pieces $A_1,\\ldots,A_m$ have disjoint exclusive coordinate blocks and common edge $D$. Let $I=\\{i:r_D(A_i)=0\\}$ be the pieces that fail to peel to the edge. Their union is dismantlable ample exactly when either $|I|\\le1$, or $I=\\{i,j\\}$ and the two exceptional edge profiles are endpoint-compatible: for some ordering $(s,t)$ of $D$, one piece can peel to sink $t$ and the other can first delete $s$ as a leaf, in either assignment.",
+  "status": "established",
+  "proof": "Orient the common edge in an acyclic USO of the union. Each relative-failing piece needs an outgoing exclusive edge at an endpoint, and USO compatibility permits at most one such piece at each endpoint, so there are at most two. With two, the piece active at the tail must have the head as a sink, while the piece active at the head must delete the tail as a leaf, giving the profile compatibility. Conversely, pieces peeling to $D$ extend either edge orientation with inward boundary. Use the exceptional piece's orientation when there is one, or the compatible sink/leaf witnesses when there are two; the coordinate-face gluing theorem then supplies an acyclic USO of the union.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-edge-gluing-profile"
+}

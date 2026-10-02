@@ -75,28 +75,30 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-48" style="position:relative;">
+    <div class="table-card" id="math-61" style="position:relative;">
 
-        <h3><a href="invariants/crossing_graph.html" class="table-title-link">Crossing Graph</a></h3>
+        <h3><a href="invariants/edge_peeling_profile.html" class="table-title-link">Marked-Edge Peeling Profile</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Crossing Graph</p>
+        <p><strong>Name: </strong>Marked-Edge Peeling Profile</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="G^{\sharp}">
-            \[G^{\sharp}\]
+        <div class="latex-equation" data-latex="\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)">
+            \[\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)\]
         </div>
     </div>
 
-<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, the crossing graph has one vertex for each $\Theta$-class and joins two classes exactly when all four intersections of their two pairs of semicubes are nonempty.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For an ample family $A$ with ordered marked edge $D=\{u,v\}$ of direction $e$, the five Boolean entries quantify over acyclic unique-sink orientations. The retention entry $r_D$ is one when some out-map satisfies $r(u),r(v)\subseteq\{e\}$. The sink entry $t_s$ is one when some out-map has $r(s)=\varnothing$. The leaf-exit entry $\ell_s$ is one when some out-map has $r(s)=\{e\}$. Equivalently, these mean respectively peeling to $D$, peeling to $s$, and a complete peeling in which $s$ is the first endpoint deleted and is then a leaf adjacent to the other endpoint.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
-<p><strong>Codomain: </strong>Finite simple graphs</p>
+<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Codomain: </strong>The Boolean cube $\{0,1\}^5$</p>
+<strong>Parameters:</strong><div class="text-field"><p>An ordered marked edge $D=(u,v)$; reversing its order swaps the two sink entries and the two leaf-exit entries.</p></div>
+<strong>Normalization:</strong><div class="text-field"><p>The common edge direction is denoted $e$ and the entries record existence, not a chosen orientation.</p></div>
 <p><strong>Category:</strong> Combinatorial</p>
 <p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The crossing graph need not equal the square graph or the $\Theta$-graph outside special classes.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-graph-profile</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The profile is invariant under isomorphisms preserving the ordered marked edge. Intrinsic structural tests for which profiles are attainable remain open in the manuscript.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#def:damp-edge-peeling-profile</p></div>
 <div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li><li><a href='results/fibonacci_dimension_profile.html'>Fibonacci-Dimension Formula, Bounds, and Product Laws</a></li><li><a href='results/crossing_graph_separator_recovery.html'>Crossing Graphs Detect and Recover Vertex and Edge Separators</a></li><li><a href='results/shadow_split_edge_factorization.html'>A Two-Component Shadow Split Determines an Edge Factorization</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/edge_peeling_gluing_criterion.html'>Exact Peeling Criterion for Gluing along an Edge</a></li><li><a href='results/edge_context_type_algebra.html'>Six Contexts Determine Every Edge-Gluing Type</a></li><li><a href='results/separating_edge_obstruction_classification.html'>Exact Classification of Obstructions with a Separating Edge</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li></ul></p></div>
 
         </div>
     </div>

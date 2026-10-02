@@ -1,0 +1,21 @@
+{
+  "id": 357,
+  "short_name": "separating_edge_obstruction_classification",
+  "name": "Exact Classification of Obstructions with a Separating Edge",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let irredundantly embedded ample pieces with connected nonempty exclusive parts share an edge $D$, and let $X$ be their union. Then $X$ is a pc-minimal obstruction to dismantlable ampleness exactly when: (1) there are two or three pieces, every piece is dismantlable ample, and none peels to $D$; (2) two pieces are mutually incompatible, while with three pieces every pair is compatible; (3) every zero-side restriction or contraction in an exclusive coordinate either makes the changed piece peel to $D$ or, in the two-piece case, makes it compatible with the unchanged piece, whereas in the three-piece case it must peel to $D$; and (4) in each shared-coordinate restriction or contraction, at most one image fails to peel to the resulting singleton. Every obstruction with a specified separating edge arises uniquely this way, and the union is two-connected exactly when every piece is two-connected.",
+  "status": "established",
+  "proof": "The separating-cube bound gives two or three positive relative-failing pieces. The edge-gluing criterion makes a two-piece obstruction incompatible, while every proper two-piece subunion of a three-piece obstruction must be compatible. Exclusive-coordinate minor minimality is exactly the stated edge-profile alternative; shared-coordinate images reduce to the one-point-amalgam criterion. Conversely these conditions make the original union nonpeelable and every elementary image peelable. Components outside the marked edge recover the pieces and their coordinate blocks. Deleting a vertex disconnects the union exactly when it disconnects one piece away from the still-shared endpoint or edge.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-edge-separator-obstructions"
+}
