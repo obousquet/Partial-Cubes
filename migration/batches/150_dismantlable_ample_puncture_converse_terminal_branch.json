@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "batch_id": "150_dismantlable_ample_puncture_converse_terminal_branch",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the equivalence between the universal endpoint-only mixed-puncture converse and absence of a terminal forbidden square-attachment branch, including the uniform conditional construction and every structural constraint on a minor-minimal counterexample.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-puncture-converse-terminal-branch"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This corollary precisely identifies an open endpoint question with a specific forbidden-minor branch and derives strong necessary geometry without asserting that the branch exists.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The Batch 149 replay confirms the advertised controls: the forbidden 1601 assembly has one negative reduction, while the positive 2029 attachment has all 26 reductions positive and therefore does not witness the hypothetical terminal branch.",
+    "claim_block_sha256": {
+      "cor:damp-puncture-converse-terminal-branch": "2424c26eee01a892ded1e796cd31205b15bd23db79075da0e6f76b9e936f4646"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/149_dismantlable_ample_square_reduction_and_recovery/papers/dismantlable-ample/research/square_reduction_terminal.py",
+      "sha256": "b437bcb5d54b34cd7e137e465e9a4393c45cdf5f8a5246a3a307136234c64d08"
+    },
+    {
+      "path": "migration/certificates/149_dismantlable_ample_square_reduction_and_recovery/papers/dismantlable-ample/research/square_reduction_terminal.json",
+      "sha256": "5d77b2a99ea927a2ce795074b3b7b17861b2abb13c6d5175712413e930a58a56"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized equivalence, conditional construction, all necessary counterexample constraints, concise proof, and exact control outcomes. LaTeX retains the full cut-vertex and separating-edge arguments and open-problem discussion.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the manuscript. Batch 149 preserves and replays the complete control certificate reused here.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/608_puncture_converse_terminal_branch.json",
+      "sha256": "0c70a65f15b0b18ee3a75ce7a224f2590958a8f74eef3d8d087f3aa127d00e7c"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "025029e3ebb8f9caefacd2b152994b232e49a6cc89b7f8ad08569590ad68255b"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "68f3610de494a6abb2f5cbe7fa2f6b73c601142f781a0cf3d3f2368e004c017d"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1989 records.",
+    "website": "Normalized 2005 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 708 to 709 of 1143 and dismantlable-ample coverage from 272 to 273 of 683.",
+    "certificates": "The reused control replay checks all 51 coordinate reductions: the 1601 obstruction has 24 positive and one negative reduction; the positive 2029 attachment has all 26 positive and a complete ordinary corner order. Neither is a terminal forbidden square witness.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002; both reused verification packet hashes match Batch 149."
+  },
+  "deferred": [
+    "The refreshed audit has 434 uncovered database-owned labels: 410 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem classifies all 64 three-component square codes and produces a reduced cornerless 1601-concept obstruction with one negative reduction.",
+    "Coordinate-block descent and canonical repeated-column reduction follow that computer-assisted classification."
+  ]
+}

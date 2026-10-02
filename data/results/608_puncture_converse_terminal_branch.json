@@ -1,0 +1,22 @@
+{
+  "id": 608,
+  "short_name": "puncture_converse_terminal_branch",
+  "name": "Endpoint Puncture Converse and the Terminal Forbidden Branch",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/cartesian_product",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Fix any rooted factor $B$. The assertion that every ample marked-edge family $A$ whose two endpoints are attainable has its binary block replacement peel to either mixed-punctured root square is equivalent to the absence of a forbidden mixed-puncture square attachment with every coordinate reduction dismantlable ample. If the assertion fails, a counterexample minimal under pc-minors retaining the marked edge produces such a forbidden attachment with this $B$ and with every other rooted factor on disjoint coordinates. Every counterexample uses at least seven coordinates, fails to retain its full marked edge, and has in each exclusive wing a cyclic component of at least nine vertices. A minor-minimal counterexample has no cut vertex and its marked edge is not separating.",
+  "status": "established",
+  "proof": "If all reductions of an attachment are positive, the reduction criterion makes both endpoints attainable; the endpoint assertion would then make the block peel to the punctured square, and the attachment theorem would make the output positive. Conversely, minimize a counterexample among edge-retaining minors. Every private proper image restores puncture retention, while the two endpoint orders give the required section and contraction orders, so the exact adjacent-square criterion makes its attachment forbidden. The reduction theorem makes every coordinate reduction positive. Failure to retain the full edge, the cyclic-wing bounds, and the seven-coordinate lower bound follow from block transport, one-wing retention, and five-coordinate relative peeling. If a cut vertex or separating marked edge existed, all other convex pieces could be peeled away while preserving endpoint attainability, producing a smaller counterexample and contradicting minimality.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-puncture-converse-terminal-branch",
+  "comments": "This is an equivalence and conditional construction. It does not assert that the endpoint converse fails or that the terminal forbidden branch exists. The known 1601 obstruction has one negative reduction, while the 2029 attachment is positive despite all reductions being positive."
+}
