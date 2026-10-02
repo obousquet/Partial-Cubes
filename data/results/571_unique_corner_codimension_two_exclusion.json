@@ -1,0 +1,18 @@
+{
+  "id": 571,
+  "short_name": "unique_corner_codimension_two_exclusion",
+  "name": "A Corner of Codimension Two Is Not Unique Through Seven Coordinates",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X$ be ample on $q+2$ coordinates with $1\\leq q\\leq5$. If a corner has degree $q$, then it is not the unique corner of $X$.",
+  "status": "established",
+  "proof": "Translate a hypothetical unique corner to zero, use its $q$ incident directions as $F$, and call the other directions $u,v$. The four fibers are $Q_F,P,Q,C$. Isometry and uniqueness give $P\\cup Q=Q_F\\setminus\\{0\\}$ and exclude zero from $P,Q,C$. Relative peeling in at most five coordinates shows $P,Q\\subseteq C$, hence $C=P\\cup Q=Q_F\\setminus\\{0\\}$ and both $P,Q$ are nonempty. Compare the $u=1$ face with the $u$-reduction. Their relative supports all contain $v$, so uniform inactive-coordinate removal reduces the interval to $Q\\subseteq C$, which peels relatively. Lift this peeling to $X$, then peel the retained upper layer, the remaining $Q$-layer, and finally the root cube to zero. The first deletion supplies a corner distinct from the alleged unique corner.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-unique-corner-codimension-two"
+}

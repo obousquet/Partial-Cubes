@@ -1,0 +1,21 @@
+{
+  "id": 575,
+  "short_name": "fixed_negative_reduction_extension",
+  "name": "Simultaneous Extensions Retaining a Negative Reduction Are Forbidden",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $X\\subseteq Y\\subseteq Q_F$ be ample, with $X$ an irredundant forbidden pc-minor. If an active coordinate $e$ satisfies $X^{\\{e\\}}=Y^{\\{e\\}}\\notin\\mathsf{Damp}$ and $Y$ peels to $X$, then $Y$ is a forbidden pc-minor. It is enough that every connected component of $G(Y\\setminus X)$ be a tree or have at most eight vertices; the number of components and the sizes of tree components are unrestricted, and no addition order or proper-minor peeling certificates need be supplied.",
+  "status": "established",
+  "proof": "Apply any elementary old-coordinate operation $\\mu$ to the relative deletion sequence from $Y$ to $X$ and omit repeated images. The remaining singleton changes form a relative peeling from $\\mu Y$ to the positive proper minor $\\mu X$, so every proper elementary minor of $Y$ is dismantlable ample. The shared negative reduction keeps $Y$ outside that class, proving forbiddenness. Under the graph condition, component expansion makes $X\\cup K$ ample for each residual component $K$; the relative forest theorem or the theorem through eight relative facets peels it to $X$. Components are mutually nonadjacent, so their orders concatenate and the first part applies.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-fixed-negative-reduction-extension",
+  "comments": "No converse is claimed: an arbitrary reduction-preserving extension need not have these component graphs, and a reduced obstruction need not contain a suitable smaller forbidden input."
+}

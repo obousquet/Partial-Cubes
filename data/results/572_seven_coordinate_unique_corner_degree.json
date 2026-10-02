@@ -1,0 +1,14 @@
+{
+  "id": 572,
+  "short_name": "seven_coordinate_unique_corner_degree",
+  "name": "A Unique Corner in Seven Coordinates Could Only Have Degree Three",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "If an ample class using seven coordinates has a unique corner, that corner has degree three. The exclusion of degree four is computer-assisted.",
+  "status": "established",
+  "proof": "Existing prescribed-endpoint and overlap results exclude degrees one and two. Full-cube arguments exclude degrees six and seven, and the codimension-two theorem excludes degree five. For degree four, normalize the root cube as $Q_4\\times\\{0\\}$. A symbolic proper-fiber lemma yields a proper nontrivial three-coordinate fiber at a unit root neighbor. The 62 labelled ample possibilities form 17 coordinate-permutation orbits. For each representative, Lawrence's exact total-asymmetry encoding, unique-corner clauses, full coordinate support, the order bound, and fixed fiber literals give a formula with 10,943 variables and 65,378 clauses. All 17 necessary cases have independently checked DRAT refutations; an eighteenth redundant orbit is also certified.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-seven-coordinate-unique-corner-degree; PartialCubes:papers/ample-corners/main.tex#thm:unique-corner-degree-four",
+  "comments": "The database certificate audit verifies all 54 archived files for the 18 DRAT cases against the preserved manifest. The complete CNF, DRAT, and log bytes remain LaTeX-owned."
+}

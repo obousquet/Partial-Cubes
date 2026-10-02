@@ -1,0 +1,19 @@
+{
+  "id": 573,
+  "short_name": "seven_coordinate_prescribed_endpoint_peeling",
+  "name": "Every Ample Class Through Seven Coordinates Peels to Any Prescribed Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/one_point_amalgam"
+  ],
+  "result_type": "algorithm",
+  "statement": "Every nonempty ample class of isometric dimension at most seven has a corner-peeling order ending at any prescribed concept. Consequently every rooted factor has isometric dimension at least eight, and every ample forbidden pc-minor for dismantlable ampleness that has a cut vertex has isometric dimension at least sixteen.",
+  "status": "established",
+  "proof": "The result is known through six coordinates. In dimension seven, the preceding degree analysis leaves degree three as the only possible unique-corner degree. A proper-fiber reduction enumerates 2,763 labelled nontrivial ample four-coordinate fibers containing zero in 185 coordinate-permutation orbits. Exact total-asymmetry formulas with 10,943 variables and 65,379 clauses have independently checked DRAT refutations for all 185 cases, excluding degree three. Every nontrivial ample class through dimension seven therefore has at least two corners; repeatedly delete a corner different from the prescribed endpoint. A rooted factor cannot admit such an order. A forbidden ample class with a cut vertex decomposes into two rooted factors on disjoint coordinate sets, so their dimensions add to at least $8+8=16$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-seven-coordinate-peeling; PartialCubes:papers/ample-corners/main.tex#thm:unique-corner-degree-three",
+  "comments": "The database certificate audit verifies all 555 archived files for the 185 DRAT cases against the preserved manifest. The complete CNF, DRAT, and log bytes remain LaTeX-owned."
+}

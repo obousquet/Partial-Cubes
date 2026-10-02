@@ -3,16 +3,17 @@
   "kind": "manuscript_result_audit",
   "scope": "Workspace-local theorem-, proposition-, corollary-, lemma-, and example-like labels in the preserved current paper sources. Coverage requires an exact PartialCubes paper-workspace and #label locator in a database proof_source field; copied files within one workspace are collapsed. Conjecture, problem, and open-question labels remain prose-owned and are excluded.",
   "counts": {
-    "unique_result_labels": 1114,
-    "label_occurrences": 1138,
-    "covered": 671,
-    "uncovered": 443,
-    "proof_source_records": 1810
+    "unique_result_labels": 1143,
+    "label_occurrences": 1167,
+    "covered": 679,
+    "uncovered": 464,
+    "proof_source_records": 1816
   },
   "by_workspace": {
     "ample-corners": {
-      "covered": 24,
-      "total": 24
+      "covered": 27,
+      "total": 53,
+      "uncovered": 26
     },
     "coefficient-topology": {
       "covered": 74,
@@ -27,9 +28,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 240,
+      "covered": 245,
       "total": 683,
-      "uncovered": 443
+      "uncovered": 438
     },
     "gluing": {
       "covered": 20,
@@ -62,6 +63,22 @@
   },
   "claims": [
     {
+      "label": "cor:connected-maximum-opposite-exclusion",
+      "prefix": "cor",
+      "environment": "corollary",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1680
+        }
+      ],
+      "covered_by": []
+    },
+    {
       "label": "cor:cornerless-cover",
       "prefix": "cor",
       "environment": "corollary",
@@ -72,12 +89,60 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 472
+          "line": 483
         }
       ],
       "covered_by": [
         "data/results/215_ample_facet_cube_theorem.json"
       ]
+    },
+    {
+      "label": "cor:full-base-edge-normalization",
+      "prefix": "cor",
+      "environment": "corollary",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1594
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "cor:rectangular-boundary-1364",
+      "prefix": "cor",
+      "environment": "corollary",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1113
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "cor:relative-six-weighted-size",
+      "prefix": "cor",
+      "environment": "corollary",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1392
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "cor:seven-peelable",
@@ -90,7 +155,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 945
+          "line": 2158
         }
       ],
       "covered_by": [
@@ -108,7 +173,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 360
+          "line": 371
         }
       ],
       "covered_by": [
@@ -126,12 +191,44 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 380
+          "line": 391
         }
       ],
       "covered_by": [
         "data/examples/089_nonample_union_of_facet_edges.json"
       ]
+    },
+    {
+      "label": "ex:square-thirty-eight-pair",
+      "prefix": "ex",
+      "environment": "example",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1811
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "lem:cornerless-codimension-two-fibers",
+      "prefix": "lem",
+      "environment": "lemma",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 933
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "lem:facet-cubes",
@@ -144,7 +241,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 401
+          "line": 412
         }
       ],
       "covered_by": [
@@ -162,12 +259,28 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 484
+          "line": 495
         }
       ],
       "covered_by": [
         "data/results/216_local_corner_criterion.json"
       ]
+    },
+    {
+      "label": "lem:nested-diagonal-cube-cover",
+      "prefix": "lem",
+      "environment": "lemma",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1445
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "lem:peripheral",
@@ -180,7 +293,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 549
+          "line": 560
         }
       ],
       "covered_by": [
@@ -198,7 +311,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 571
+          "line": 582
         }
       ],
       "covered_by": [
@@ -216,12 +329,28 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 517
+          "line": 528
         }
       ],
       "covered_by": [
         "data/results/217_cornerless_ample_dimension_bounds.json"
       ]
+    },
+    {
+      "label": "lem:unique-corner-proper-fiber",
+      "prefix": "lem",
+      "environment": "lemma",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 796
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "prop:291",
@@ -234,7 +363,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 1032
+          "line": 2245
         }
       ],
       "covered_by": [
@@ -253,12 +382,44 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 596
+          "line": 607
         }
       ],
       "covered_by": [
         "data/results/220_cornerless_minimum_equals_damp_obstruction_minimum.json"
       ]
+    },
+    {
+      "label": "prop:full-base-exclusive-degree",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1624
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:full-base-shadow-defect",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1490
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "prop:hall-structure",
@@ -271,7 +432,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 986
+          "line": 2199
         }
       ],
       "covered_by": [
@@ -293,7 +454,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 808
+          "line": 2021
         }
       ],
       "covered_by": [
@@ -311,7 +472,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 773
+          "line": 1986
         }
       ],
       "covered_by": [
@@ -329,12 +490,44 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 730
+          "line": 1943
         }
       ],
       "covered_by": [
         "data/results/221_exact_facet_cube_sat_encodings.json"
       ]
+    },
+    {
+      "label": "prop:maximum-relative-pair-no-completion",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1660
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:native272-cycle-fiber",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2556
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "prop:record-complex",
@@ -347,13 +540,192 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 1147
+          "line": 2360
         }
       ],
       "covered_by": [
         "data/examples/062_cornerless_ample_267.json",
         "data/results/226_cornerless_267_shattered_complex.json"
       ]
+    },
+    {
+      "label": "prop:record-corner-deleted-relifts",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2477
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:record-fixed-contraction-rigidity",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2712
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:record-small-shrinking-edits",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2423
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:record-two-row-overlap-envelope",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2798
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:rectangular-boundary-recovery",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1159
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:rectangular-small-input-profiles",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1251
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:relative-six-coordinate-counterexample",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 982
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:root264-relative-ample-inclusion",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "covered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2628
+        }
+      ],
+      "covered_by": [
+        "data/examples/141_inclusion_minimal_negative_527_528.json",
+        "data/results/443_inclusion_minimal_negative_527_528.json"
+      ]
+    },
+    {
+      "label": "prop:rooted264-double527",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2924
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:square-opposite-support-bound",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1737
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "prop:unique-corner-double",
+      "prefix": "prop",
+      "environment": "proposition",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 646
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "thm:A",
@@ -366,7 +738,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 157
+          "line": 160
         }
       ],
       "covered_by": [
@@ -384,7 +756,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 162
+          "line": 165
         }
       ],
       "covered_by": [
@@ -402,7 +774,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 169
+          "line": 172
         }
       ],
       "covered_by": [
@@ -420,13 +792,29 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 181
+          "line": 184
         }
       ],
       "covered_by": [
         "data/examples/062_cornerless_ample_267.json",
         "data/relations/231_cornerless_ample_incomparable_maximum.json"
       ]
+    },
+    {
+      "label": "thm:E",
+      "prefix": "thm",
+      "environment": "maintheorem",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 193
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "thm:corner-deletion",
@@ -439,7 +827,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 336
+          "line": 347
         }
       ],
       "covered_by": [
@@ -459,12 +847,60 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 673
+          "line": 1886
         }
       ],
       "covered_by": [
         "data/results/221_exact_facet_cube_sat_encodings.json"
       ]
+    },
+    {
+      "label": "thm:record267-ample-inclusion-minimality",
+      "prefix": "thm",
+      "environment": "theorem",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 2847
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "thm:rectangular-boundary-forbidden",
+      "prefix": "thm",
+      "environment": "theorem",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1037
+        }
+      ],
+      "covered_by": []
+    },
+    {
+      "label": "thm:rectangular-input-order-exclusion",
+      "prefix": "thm",
+      "environment": "theorem",
+      "status": "uncovered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 1300
+        }
+      ],
+      "covered_by": []
     },
     {
       "label": "thm:reductions",
@@ -477,7 +913,7 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 313
+          "line": 324
         }
       ],
       "covered_by": [
@@ -495,11 +931,47 @@
       "occurrences": [
         {
           "path": "papers/ample-corners/main.tex",
-          "line": 287
+          "line": 298
         }
       ],
       "covered_by": [
         "data/results/197_vc_sandwich_and_sauer_bounds.json"
+      ]
+    },
+    {
+      "label": "thm:unique-corner-degree-four",
+      "prefix": "thm",
+      "environment": "theorem",
+      "status": "covered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 826
+        }
+      ],
+      "covered_by": [
+        "data/results/572_seven_coordinate_unique_corner_degree.json"
+      ]
+    },
+    {
+      "label": "thm:unique-corner-degree-three",
+      "prefix": "thm",
+      "environment": "theorem",
+      "status": "covered",
+      "workspaces": [
+        "ample-corners"
+      ],
+      "occurrences": [
+        {
+          "path": "papers/ample-corners/main.tex",
+          "line": 877
+        }
+      ],
+      "covered_by": [
+        "data/results/573_seven_coordinate_prescribed_endpoint_peeling.json"
       ]
     },
     {
@@ -4135,7 +4607,7 @@
       "label": "cor:damp-marked-cycle-wing-inverse",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -4145,7 +4617,9 @@
           "line": 19069
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/574_nonpeelable_residual_cycle_uniform_support.json"
+      ]
     },
     {
       "label": "cor:damp-minimal-shift-repair-split-corners",
@@ -5173,7 +5647,7 @@
       "label": "cor:damp-seven-coordinate-peeling",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5183,13 +5657,15 @@
           "line": 19034
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/573_seven_coordinate_prescribed_endpoint_peeling.json"
+      ]
     },
     {
       "label": "cor:damp-seven-coordinate-unique-corner-degree",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5199,7 +5675,9 @@
           "line": 18998
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/572_seven_coordinate_unique_corner_degree.json"
+      ]
     },
     {
       "label": "cor:damp-shadow-edge-factorization",
@@ -5924,7 +6402,7 @@
       "label": "cor:damp-unique-corner-codimension-two",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5934,7 +6412,9 @@
           "line": 18931
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/571_unique_corner_codimension_two_exclusion.json"
+      ]
     },
     {
       "label": "cor:damp-vc-three-companion-neighbors",
@@ -9346,7 +9826,7 @@
       "label": "prop:damp-fixed-negative-reduction-extension",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9356,7 +9836,9 @@
           "line": 19238
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/575_fixed_negative_reduction_extension.json"
+      ]
     },
     {
       "label": "prop:damp-fixed-support-neutral-cycle-capacity",

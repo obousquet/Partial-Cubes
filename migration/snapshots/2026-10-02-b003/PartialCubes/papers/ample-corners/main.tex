@@ -1,0 +1,3060 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{booktabs,microtype}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage[colorlinks=true,linkcolor=blue!55!black,
+  citecolor=green!45!black,urlcolor=blue!55!black]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\numberwithin{equation}{section}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{maintheorem}{Theorem}
+\renewcommand{\themaintheorem}{\Alph{maintheorem}}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\Damp}{\mathcal D_{\mathrm{amp}}}
+\newcommand{\Sh}{\operatorname{Sh}}
+\newcommand{\SSh}{\operatorname{SSh}}
+\newcommand{\cmin}{c_{\min}}
+\newcommand{\mamp}{m_{\mathrm{amp}}}
+\newcommand{\unsat}{\textsc{unsat}}
+
+\title{Corners of Small Ample Classes:\\ Facet Cubes and Certified Searches}
+\author{Olivier Bousquet}
+\date{}
+
+\hypersetup{
+  pdftitle={Corners of Small Ample Classes: Facet Cubes and Certified Searches},
+  pdfauthor={Olivier Bousquet}
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+A vertex of an ample class is a corner if it lies in a unique maximal
+cube.  Hall's maximum class of VC dimension three, with \(299\) concepts on
+twelve coordinates, has no corner, so ample classes need not admit corner
+peelings.  We ask how small a nonempty ample class without corners can be.
+This least order equals the least order of an ample forbidden
+partial-cube minor for corner peelability, which was known to lie between
+\(64\) and \(291\).  We first observe that an ample class is the union of
+exactly one cube for each maximal shattered set, that these are its maximal
+cubes, and that its corners are the vertices covered once.  Conversely,
+choosing one cube for each facet of a simplicial complex produces an ample
+class whenever the union shatters nothing outside the complex.  This gives
+an exact propositional description of cornerless ample classes, which we
+combine with lexicographic symmetry breaking and DRAT proof checking.  We
+prove that every maximum class on at most eight coordinates has a corner,
+that every nonempty ample class on at most seven coordinates has a corner,
+and that every cornerless ample one-coordinate lift of a single or double
+contraction of Hall's class has at least \(291\)
+concepts.  For single contractions we determine the optimum exactly: it is
+\(291\) for eight of the twelve coordinates and \(295\) for the other four.
+We strengthen the seven-coordinate result by proving that every such ample
+class can be corner-peeled to any prescribed vertex. The proof excludes
+unique corners through an exhaustive, certified split of their fibers.
+We also record that Hall's class has no nontrivial cube symmetry, and that
+its twelve coordinates fall into six pairs with equal contractions, a
+pairing also singled out by the corner counts of double contractions.
+Finally, iterating contraction and optimal lifting from these classes
+produces a cornerless ample class of order \(267\) on twelve coordinates,
+which lowers the upper bound to \(\cmin\le267\).
+\end{abstract}
+
+\medskip
+\noindent\textbf{Keywords.}
+Ample class, lopsided set, maximum class, corner peeling, VC dimension,
+partial cube, SAT solving, DRAT proofs.
+
+\tableofcontents
+
+%======================================================================
+\section{Introduction}
+\label{sec:intro}
+
+\subsection{Ample classes and corners}
+
+Let \(E\) be a finite set of \emph{coordinates} and let
+\(Q_E=\{0,1\}^E\) be the hypercube on \(E\).  A \emph{class} (or
+\emph{family}) is a subset \(C\subseteq Q_E\); its elements are called
+\emph{concepts} or \emph{vertices}, and \(|C|\) is its \emph{order}.  A class
+\emph{shatters} \(S\subseteq E\) if its projection to \(S\) is all of
+\(Q_S\), and it \emph{strongly shatters} \(S\) if it contains a whole cube of
+dimension \(|S|\) in which exactly the coordinates in \(S\) vary.  A class is
+\emph{ample} if these two notions agree.  Ample classes were introduced by
+Lawrence as \emph{lopsided sets} \cite{Lawrence83} and were later studied
+under this name and as extremal or shattering-extremal classes
+\cite{BandeltCDK06,Bollobas95,Anstee2002,Moran2012}.  They include the
+\emph{maximum} classes, those meeting the Sauer--Shelah bound with
+equality \cite{Sauer1972Density,Floyd95}.
+
+A vertex of \(C\) is a \emph{corner} if it lies in a unique maximal cube of
+\(C\).  Deleting a corner from an ample class leaves an ample class
+\cite[Lemma~4.1]{ChalopiChepoiMoran22}.  A \emph{corner peeling} deletes
+corners one at a time until nothing is left.  Corner peelings of maximum
+classes were proposed as a route to unlabeled sample compression schemes
+\cite{Kuzmin06,Rubinstein2009a}.  Chalopin, Chepoi, Moran and Warmuth showed
+that a maximum class of VC dimension three with \(299\) concepts on twelve
+coordinates, derived from Hall's nonextendable partial shelling of the
+twelve-dimensional cross-polytope \cite{Hall04}, has no corner at all
+\cite[Theorem~4.5]{ChalopiChepoiMoran22}.  We call it \emph{Hall's class}
+and write \(C_H\).  They also proved that ample classes of VC dimension at
+most two always admit corner peelings
+\cite[Proposition~4.11]{ChalopiChepoiMoran22}.
+
+\subsection{The question}
+
+Hall's class shows that cornerless ample classes exist.  It leaves open how
+small they can be.
+
+\begin{definition}
+\label{def:cmin}
+Let \(\cmin\) be the least order of a nonempty ample class with no corner.
+\end{definition}
+
+This number has a second meaning.  Ample classes are identified with
+partial cubes, and the class \(\Damp\) of corner-peelable ample classes is
+closed under taking partial-cube minors (pc-minors)
+\cite{KnauerMarc20,BousquetDampReader}.  Let \(\mamp\) be the least order of
+an ample forbidden pc-minor of \(\Damp\).
+Proposition~\ref{prop:cmin-equals-mamp} shows that
+\[
+ \cmin=\mamp .
+\]
+The companion work \cite{BousquetDampReader} proves
+\(64\le\mamp\le291\); the upper bound comes from an explicit family, and
+the lower bound combines structural reductions with finite exclusions.
+This paper lowers the upper bound to \(267\) (Theorem~\ref{thm:D}) and rules
+out cornerless ample classes on few coordinates and near Hall's class.
+
+\subsection{Results}
+
+Our main tool is elementary.  For an ample class, the maximal cubes
+correspond bijectively to the maximal shattered sets, and the class is the
+union of these cubes (Lemma~\ref{lem:facet-cubes}).  Thus a corner is a
+vertex covered by exactly one of them, and a cornerless ample class is a
+choice of cubes that covers every vertex of its union at least twice.  The
+converse half of the lemma turns this into an exact finite search: a
+choice of one cube per facet of a simplicial complex \(\Sigma\) is ample,
+with shattered sets exactly \(\Sigma\), as soon as the union shatters no
+set outside \(\Sigma\).  No ampleness test appears in the search; the
+Sandwich inequalities supply it.
+
+We encode this description in propositional logic, break the
+hyperoctahedral symmetry with lexicographic-leader constraints, and check
+every unsatisfiability claim with an independently verified DRAT proof.
+
+\begin{maintheorem}[Maximum classes]
+\label{thm:A}
+Every maximum class on at most eight coordinates has a corner.
+\end{maintheorem}
+
+\begin{maintheorem}[Few coordinates]
+\label{thm:B}
+Every nonempty ample class on at most seven coordinates has a corner.
+Equivalently, every nonempty cornerless ample class has at least eight
+coordinates on which it is not constant.
+\end{maintheorem}
+
+\begin{maintheorem}[Lifts of Hall contractions]
+\label{thm:C}
+Let \(B\) be the contraction of Hall's class at one coordinate or at two
+coordinates.  If \(Y\subseteq B\times\{0,1\}\) is a cornerless ample class
+whose projection to the first factor is \(B\), then \(|Y|\ge291\).  For
+the contraction \(C_H/e\) at one coordinate \(e\in\{0,\dots,11\}\), the least
+order of such a lift is exactly
+\[
+ 291\ \text{ if } e\le7,\qquad 295\ \text{ if } e\ge8 .
+\]
+\end{maintheorem}
+
+\begin{maintheorem}[A smaller cornerless class]
+\label{thm:D}
+There is a cornerless ample class of VC dimension \(3\) and order \(267\) on
+twelve coordinates.  Consequently
+\[
+ 64\le\cmin=\mamp\le267 .
+\]
+\end{maintheorem}
+
+\begin{maintheorem}[Prescribed endpoints]
+\label{thm:E}
+Every nonempty ample class on at most seven coordinates can be
+corner-peeled to any prescribed vertex. In particular, every nontrivial
+such class has at least two corners.
+\end{maintheorem}
+
+Theorems~\ref{thm:A}--\ref{thm:C} and~\ref{thm:E} are computer-assisted.  The mathematical
+reductions from each statement to finite formulas are proved in full; what
+is delegated to the computer is the unsatisfiability of explicit formulas,
+and every such claim is backed by a checked proof
+(Section~\ref{sec:certification}).  Theorem~\ref{thm:C} is sharp for
+single contractions and recovers the upper bound \(\mamp\le291\) by an
+independent route: a satisfying assignment at bound \(291\) is itself a
+cornerless ample class (Proposition~\ref{prop:291}).
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}p{0.29\textwidth}p{0.33\textwidth}p{0.28\textwidth}@{}}
+\toprule
+Statement & Scope & Method\\
+\midrule
+Lemma~\ref{lem:facet-cubes} (facet cubes) & every ample class & proof\\
+Proposition~\ref{prop:cmin-equals-mamp} (\(\cmin=\mamp\)) & all orders & proof\\
+Theorem~\ref{thm:encoding} (exactness) & all \(n,d\) & proof\\
+Theorem~\ref{thm:A} & maximum, \(\le8\) coordinates & Theorem~\ref{thm:B} + \(4\) certificates\\
+Theorem~\ref{thm:B} & ample, \(\le7\) coordinates & proof + \(15\) certificates\\
+Theorem~\ref{thm:C} & lifts of \(78\) Hall contractions & proof + \(80\) certificates\\
+Proposition~\ref{prop:291} & orders \(291\), \(295\) & direct check\\
+Proposition~\ref{prop:hall-structure} & Hall's class & direct check\\
+Theorem~\ref{thm:D} & order \(267\) & direct check\\
+Theorem~\ref{thm:E} & prescribed endpoint, \(\le7\) coordinates & proof + fiber certificates\\
+\bottomrule
+\end{tabular}
+\caption{Results at a glance.  A certificate is a DRAT refutation of an
+explicit formula, accepted by \texttt{drat-trim}.}
+\label{tab:glance}
+\end{table}
+
+\subsection{Where the results sit}
+
+Theorem~\ref{thm:B} constrains the number of coordinates, while the lower
+bound \(\cmin\ge64\) of \cite{BousquetDampReader} constrains the order;
+neither implies the other.  A class on eight coordinates can have up to
+\(256\) vertices, so Theorem~\ref{thm:B} alone gives no order bound beyond
+the trivial one, and the order bound alone does not exclude seven
+coordinates, where classes of order up to \(128\) exist.  Hall's class uses
+twelve coordinates.
+
+Theorem~\ref{thm:A} complements the known low-dimensional results.
+Maximum classes of VC dimension at most two peel
+\cite[Proposition~4.11]{ChalopiChepoiMoran22}, and those of VC dimension
+\(n-1\) and \(n\) have corners (Example~\ref{ex:codim-one}).  For VC dimension
+three, the companion work proves the case of at most eight coordinates by a
+different encoding \cite{BousquetDampReader}; here we recertify that case
+with the encoding of Section~\ref{sec:encoding}.
+
+Theorem~\ref{thm:C} explores the neighbourhood of the only known small
+cornerless class.  Every cornerless ample class \(Y\) with a coordinate
+\(z\) has the form \((P\times\{0\})\cup(Q\times\{1\})\) with
+\(P\cup Q\) its contraction at \(z\).  Theorem~\ref{thm:C} says that no
+class below order \(291\) arises this way over a single or double
+contraction of Hall's class.  The companion work extends the same search to
+\(324\) further bases in a larger neighbourhood of Hall's class
+\cite{BousquetDampReader}.
+
+\subsection{Organization}
+
+Section~\ref{sec:prelim} fixes notation and gives running examples.
+Section~\ref{sec:facet} proves the facet-cube lemma and the identity
+\(\cmin=\mamp\).  Section~\ref{sec:encoding} turns the lemma into formulas
+and proves that they are exact.  Section~\ref{sec:certification} explains
+how unsatisfiability is certified and what is trusted.
+Sections~\ref{sec:maximum}--\ref{sec:hall} prove
+Theorems~\ref{thm:A}--\ref{thm:C}.  Section~\ref{sec:open} discusses the
+limits of the method and open problems.
+
+%======================================================================
+\section{Preliminaries}
+\label{sec:prelim}
+
+\subsection{Cubes, shattering and ampleness}
+
+We identify \(Q_E\) with the power set of \(E\) when convenient, and write
+vertices of \(Q_{[n]}\), \([n]=\{1,\dots,n\}\), as binary words
+\(x_1x_2\cdots x_n\).  For \(T\subseteq E\) and a vertex \(b\) with
+\(b_i=0\) for all \(i\in T\), the \emph{cube} with \emph{support} \(T\)
+and \emph{placement} \(b\) is
+\[
+ Q(T,b)=\{x\in Q_E: x_i=b_i\text{ for all } i\notin T\}.
+\]
+It has \(2^{|T|}\) vertices.  A vertex \(v\) lies in the cube with support
+\(T\) exactly when the placement is \(v\setminus T\), the vertex obtained
+from \(v\) by setting the coordinates in \(T\) to zero.  Thus \(v\) lies in
+exactly one cube of each support.
+
+For \(C\subseteq Q_E\), let \(\Sh(C)\) be the family of sets shattered by
+\(C\) and \(\SSh(C)\) the family of sets strongly shattered by \(C\), that
+is, the supports of cubes contained in \(C\).  Both families are
+down-closed, and \(\SSh(C)\subseteq\Sh(C)\).  The \emph{VC dimension} of
+\(C\) is the largest size of a member of \(\Sh(C)\).  A coordinate \(e\) is
+\emph{active} in \(C\) if \(C\) is not constant on it, that is, if
+\(\{e\}\in\Sh(C)\).
+
+\begin{theorem}[Sandwich inequalities {\cite{Bollobas95,Anstee2002,BandeltCDK06}}]
+\label{thm:sandwich}
+For every \(C\subseteq Q_E\),
+\[
+ |\SSh(C)|\le|C|\le|\Sh(C)|.
+\]
+Equality holds in either inequality if and only if \(C\) is ample,
+that is, if and only if \(\SSh(C)=\Sh(C)\)
+\cite[Corollary~1 and Theorem~2]{BandeltCDK06}.
+\end{theorem}
+
+For \(0\le d\le n\), put \(\Phi_d(n)=\sum_{i=0}^d\binom ni\).  A class of VC
+dimension \(d\) on \(n\) coordinates has at most \(\Phi_d(n)\) vertices
+\cite{Sauer1972Density}; it is \emph{maximum} if equality holds.  By
+Theorem~\ref{thm:sandwich}, a class \(C\) of VC dimension \(d\) is maximum
+if and only if it is ample and \(\Sh(C)\) consists of all sets of size at
+most \(d\): indeed \(\Phi_d(n)=|C|\le|\Sh(C)|\le\Phi_d(n)\).
+
+For \(T\subseteq E\), the \emph{reduction} of \(C\) along \(T\) is the set
+of placements of the \(T\)-cubes in \(C\),
+\[
+ C^T=\{b\in Q_{E\setminus T}: Q(T,b)\subseteq C\},
+\]
+where we view placements as vertices of \(Q_{E\setminus T}\).  We use two
+standard facts about ample classes.
+
+\begin{theorem}[{\cite[Theorems~3.1 and~3.2]{ChalopiChepoiMoran22}}]
+\label{thm:reductions}
+Let \(C\) be ample and \(T\subseteq E\).  Then \(C^T\) is ample, and if it
+is nonempty it is connected in the hypercube graph.
+\end{theorem}
+
+The shattering of a reduction is read off directly from that of \(C\): a
+cube with support \(U\subseteq E\setminus T\) in \(C^T\) is the same as a
+cube with support \(U\cup T\) in \(C\), so
+\begin{equation}
+ \SSh(C^T)=\{U\subseteq E\setminus T:\ U\cup T\in\SSh(C)\}.
+ \label{eq:ssh-reduction}
+\end{equation}
+
+\subsection{Corners, peelings and pc-minors}
+
+A cube \(Q(T,b)\subseteq C\) is \emph{maximal} if no cube of \(C\)
+properly contains it.  A vertex \(v\in C\) is a \emph{corner} if exactly one
+maximal cube of \(C\) contains \(v\).  The class is \emph{cornerless} if it
+has no corner.  A \emph{corner peeling} of \(C\) is an ordering
+\(v_1,\dots,v_m\) of \(C\) such that \(v_i\) is a corner of
+\(C\setminus\{v_1,\dots,v_{i-1}\}\) for every \(i\).
+
+\begin{theorem}[{\cite[Lemma~4.1]{ChalopiChepoiMoran22}}]
+\label{thm:corner-deletion}
+If \(C\) is ample and \(v\in C\), then \(C\setminus\{v\}\) is ample if and
+only if \(v\) is a corner of \(C\).
+\end{theorem}
+
+Consequently every class that has a corner peeling is ample, and every
+proper prefix deletion stays ample.  We write \(\Damp\) for the class of
+nonempty ample classes that admit a corner peeling.
+
+For \(e\in E\), the \emph{contraction} \(\pi_eC\subseteq Q_{E\setminus\{e\}}\)
+deletes coordinate \(e\) from every vertex, and the \emph{restriction}
+\(\rho_e^iC\) keeps the vertices with \(x_e=i\) and then deletes \(e\).
+A \emph{pc-minor} of \(C\) is a class obtained by a finite sequence of
+contractions and nonempty restrictions, with inactive coordinates
+discarded \cite{KnauerMarc20}; it is \emph{proper} if it is not isomorphic
+to \(C\).  Ample classes are closed under both operations
+\cite[Theorem~3.1]{ChalopiChepoiMoran22}, and the class \(\Damp\) is
+closed under pc-minors \cite[Proposition~2.1]{BousquetDampReader}.  An
+\emph{ample forbidden pc-minor} of \(\Damp\) is an ample class not in
+\(\Damp\) all of whose proper pc-minors lie in \(\Damp\).
+
+\subsection{Running examples}
+
+\begin{example}[A cube minus a vertex]
+\label{ex:codim-one}
+Let \(C=Q_3\setminus\{111\}\).  It shatters every set of size at most two
+but not \(\{1,2,3\}\), and it contains the three squares
+\[
+ Q(\{1,2\},000),\qquad Q(\{1,3\},000),\qquad Q(\{2,3\},000).
+\]
+So \(\SSh(C)=\Sh(C)\) has \(7=|C|\) members: \(C\) is ample and maximum of
+VC dimension two.  The three squares are its maximal cubes.  The vertex
+\(000\) lies in all three, the vertices \(100,010,001\) in two each, and
+\(110,101,011\) in one each.  Hence the corners are \(110,101,011\).
+
+More generally, the maximal cubes of \(Q_n\setminus\{x\}\) are the \(n\)
+subcubes of dimension \(n-1\) avoiding \(x\), namely
+\(\{y:y_e\ne x_e\}\) for \(e\in[n]\).  A vertex \(y\ne x\) lies in the
+\(e\)-th one exactly when \(y_e\ne x_e\), so the corners are the
+neighbours of \(x\).  The full cube \(Q_n\) is a single maximal cube, so
+all its vertices are corners.
+\end{example}
+
+\begin{example}[Why the union condition matters]
+\label{ex:non-ample-union}
+Let \(\Sigma=\{\varnothing,\{1\},\{2\},\{3\}\}\) on \(E=[3]\), whose facets
+are the singletons, and choose the three edges
+\[
+ Q(\{1\},000)=\{000,100\},\quad Q(\{2\},101)=\{101,111\},\quad
+ Q(\{3\},010)=\{010,011\}.
+\]
+The union has six vertices and shatters the pairs \(\{1,2\},\{1,3\},
+\{2,3\}\), which lie outside \(\Sigma\).  Here \(|\Sh(U)|=7>6=|U|\), so the
+union is not ample.  Lemma~\ref{lem:facet-cubes} shows that this is the
+only way a choice of facet cubes can fail to be ample.
+\end{example}
+
+%======================================================================
+\section{Facet cubes}
+\label{sec:facet}
+
+Call the inclusion-maximal members of \(\Sh(C)\) the \emph{facets} of
+\(C\).
+
+\begin{lemma}[Facet cubes]
+\label{lem:facet-cubes}
+Let \(C\subseteq Q_E\) be a nonempty ample class.
+\begin{enumerate}
+\item For every facet \(S\) of \(C\), the class \(C\) contains exactly one
+      cube with support \(S\), called the \emph{facet cube} of \(S\).
+\item The maximal cubes of \(C\) are exactly its facet cubes.
+\item \(C\) is the union of its facet cubes, and a vertex of \(C\) is a
+      corner if and only if it lies in exactly one facet cube.
+\end{enumerate}
+Conversely, let \(\Sigma\) be a down-closed family of subsets of \(E\)
+and choose one cube with support \(S\) for every inclusion-maximal
+\(S\in\Sigma\).  If the union \(U\) of the chosen cubes shatters no set
+outside \(\Sigma\), then \(U\) is ample, \(\Sh(U)=\Sigma\), and the chosen
+cubes are the facet cubes of \(U\).
+\end{lemma}
+
+\begin{proof}
+Throughout, \(\Sh(C)=\SSh(C)\) because \(C\) is ample.
+
+(1) Let \(S\) be a facet.  The reduction \(C^S\) is ample by
+Theorem~\ref{thm:reductions}.  By \eqref{eq:ssh-reduction}, a set \(U\)
+is strongly shattered by \(C^S\) exactly when \(U\cup S\in\SSh(C)\); since
+\(S\) is maximal, this holds only for \(U=\varnothing\).  The Sandwich
+equality for \(C^S\) gives \(|C^S|=|\SSh(C^S)|=1\).  The members of
+\(C^S\) are the placements of the \(S\)-cubes of \(C\), so there is exactly
+one.
+
+(2) First, the facet cube \(Q(S,b)\) of a facet \(S\) is maximal: a cube of
+\(C\) containing it has a support \(T\supseteq S\) with
+\(T\in\SSh(C)=\Sh(C)\), so \(T=S\) and the two cubes coincide.  Conversely,
+let \(Q(T,b)\) be a maximal cube of \(C\).  Then \(b\in C^T\).  If \(b\)
+had a neighbour \(b'\in C^T\), differing from \(b\) in a coordinate
+\(e\notin T\), then \(Q(T,b)\cup Q(T,b')=Q(T\cup\{e\},b\wedge b')\) would
+be a larger cube of \(C\).  So \(b\) is an isolated vertex of \(C^T\).
+By Theorem~\ref{thm:reductions} the nonempty class \(C^T\) is connected,
+hence \(C^T=\{b\}\), and by Theorem~\ref{thm:sandwich}
+\(|\SSh(C^T)|=1\), i.e.\ \(\SSh(C^T)=\{\varnothing\}\).  By
+\eqref{eq:ssh-reduction} no set \(U\cup T\) with \(U\neq\varnothing\)
+lies in \(\SSh(C)=\Sh(C)\).  Hence \(T\) is a facet, and \(Q(T,b)\) is its
+facet cube by (1).
+
+(3) Every vertex \(v\in C\) lies in the cube \(Q(\varnothing,v)\), which is
+contained in some maximal cube, and by (2) that is a facet cube.  By
+definition, \(v\) is a corner exactly when one maximal cube contains it,
+which by (2) means exactly one facet cube.
+
+For the converse, every \(T\in\Sigma\) lies in some maximal
+\(S\in\Sigma\), and the chosen cube with support \(S\) contains a cube
+with support \(T\).  So \(\Sigma\subseteq\SSh(U)\).  By hypothesis
+\(\Sh(U)\subseteq\Sigma\).  Theorem~\ref{thm:sandwich} gives
+\[
+ |\Sigma|\le|\SSh(U)|\le|U|\le|\Sh(U)|\le|\Sigma| ,
+\]
+so all these numbers are equal.  Hence \(U\) is ample and
+\(\SSh(U)=\Sh(U)=\Sigma\).  The facets of \(U\) are the maximal members of
+\(\Sigma\), and for each of them the chosen cube is a cube of \(U\) with that
+support, hence its facet cube by (1).
+\end{proof}
+
+\begin{remark}
+Part~(3) does not need the deletion criterion of
+Theorem~\ref{thm:corner-deletion}; it follows from the definition of a
+corner once the maximal cubes are known.  Part~(2) says in particular that
+a maximum class of VC dimension \(d\) has only \(d\)-dimensional maximal
+cubes, one for each \(d\)-set of coordinates.  In
+Example~\ref{ex:codim-one} the facets are the three pairs, and the
+coverage counts \(3,2,2,2,1,1,1\) computed there are the counts of
+Lemma~\ref{lem:facet-cubes}(3).
+\end{remark}
+
+\begin{corollary}
+\label{cor:cornerless-cover}
+A nonempty ample class is cornerless if and only if each of its vertices
+lies in at least two facet cubes.  In particular a cornerless ample class
+has at least two facets, and no facet cube of it is the whole class.
+\end{corollary}
+
+There is also a purely local description of corners, valid for every
+class.  For \(v\in C\) let \(I_C(v)=\{e\in E: v\oplus e\in C\}\) be the set of
+edge directions at \(v\), where \(v\oplus e\) is \(v\) with coordinate \(e\)
+flipped.
+
+\begin{lemma}[Local corner criterion]
+\label{lem:local-corner}
+Let \(C\subseteq Q_E\) and \(v\in C\).  Then \(v\) is a corner of \(C\) if and
+only if the cube spanned by \(v\) and its neighbours,
+\(Q(I_C(v),\,v\setminus I_C(v))\), is contained in \(C\).
+\end{lemma}
+
+\begin{proof}
+Every cube of \(C\) through \(v\) has its support inside \(I_C(v)\), since
+each coordinate of the support is an edge direction at \(v\).  If the
+cube spanned by \(I_C(v)\) at \(v\) lies in \(C\), it therefore contains every
+cube of \(C\) through \(v\) and is the unique maximal one.  Conversely, let
+\(v\) be a corner with unique maximal cube \(Q\).  For \(e\in I_C(v)\), the
+edge \(\{v,v\oplus e\}\) lies in some maximal cube, which is \(Q\); so the
+support of \(Q\) contains \(I_C(v)\), and \(Q\) is the spanned cube.
+\end{proof}
+
+Hence \(C\) is cornerless if and only if, for every \(v\in C\) and every
+\(T\subseteq E\), the implication
+\[
+ \Bigl(\bigwedge_{e\notin T} v\oplus e\notin C\Bigr)\ \Longrightarrow\
+ Q(T,v\setminus T)\not\subseteq C
+\]
+holds: the case \(T=I_C(v)\) is the lemma, and for \(T\supsetneq I_C(v)\) the
+cube \(Q(T,v\setminus T)\) is not contained in \(C\) anyway.  As clauses in the
+covering variables this reads
+\(\neg c_v\vee\bigvee_{e\notin T}c_{v\oplus e}\vee\bigvee_{w\in
+Q(T,v\setminus T)\setminus\{v\}}\neg c_w\).  Replacing clause family~(D)
+of Section~\ref{sec:general-formula} by these clauses gives another exact
+formula; we compare the two in Section~\ref{sec:open}.
+
+The following two observations reduce the search space.
+
+\begin{lemma}
+\label{lem:small-vc}
+Let \(C\) be a nonempty cornerless ample class of VC dimension \(d\) on
+\(n\) active coordinates.  Then \(3\le d\le n-1\).  If \(C\) is maximum,
+then \(3\le d\le n-2\).
+\end{lemma}
+
+\begin{proof}
+Ample classes of VC dimension at most two have corner peelings
+\cite[Proposition~4.11]{ChalopiChepoiMoran22}, and in particular have a
+corner, so \(d\ge3\).  If \(d=n\), then \(E\in\Sh(C)\), so \(C=Q_E\) by
+ampleness, and every vertex of a cube is a corner.  If \(C\) is maximum and
+\(d=n-1\), then \(|C|=2^n-1\) and \(C\) is a cube minus a vertex, which has
+corners by Example~\ref{ex:codim-one}.
+\end{proof}
+
+We do not use \(d\le n-1\) in the searches for general ample classes; the
+formulas for \(d=n\) are included and are trivially refuted.
+
+\subsection{Two reductions}
+\label{sec:reductions}
+
+The next two lemmas show that a cornerless ample class with a peripheral
+coordinate, or with a product decomposition, yields a cornerless ample class
+on fewer coordinates.  A coordinate \(e\) of \(C\) is \emph{peripheral} if,
+after possibly exchanging the values \(0\) and \(1\) on \(e\),
+\[
+ C=(B\times\{0\})\cup(S\times\{1\}),\qquad S\subseteq B,
+\]
+where \(B=\rho_e^0C\) and \(S=\rho_e^1C\) are viewed in \(Q_{E\setminus\{e\}}\).
+Then \(S=C^{\{e\}}\) is the reduction along \(e\).
+
+\begin{lemma}[Peripheral coordinates]
+\label{lem:peripheral}
+Let \(C\) be ample, let \(e\) be an active peripheral coordinate, and write
+\(C=(B\times\{0\})\cup(S\times\{1\})\) with \(S\subseteq B\).  Then \(S\) is a
+nonempty ample class, and for every \(s\in S\), the vertex \((s,1)\) is a
+corner of \(C\) if and only if \(s\) is a corner of \(S\).  In particular, if
+\(C\) is cornerless, then \(S\) is a nonempty cornerless ample class on
+\(E\setminus\{e\}\).
+\end{lemma}
+
+\begin{proof}
+Since \(e\) is active, \(S\neq\varnothing\), and \(S=C^{\{e\}}\) is ample by
+Theorem~\ref{thm:reductions}.  Let \(s\in S\).  A cube of \(C\) containing
+\((s,1)\) either lies in the layer \(x_e=1\), and then has the form
+\(Q\times\{1\}\) with \(Q\) a cube of \(S\) through \(s\), or has \(e\) in its
+support, and then has the form \(Q\times\{0,1\}\) with \(Q\subseteq S\cap B=S\).
+Conversely, for every cube \(Q\) of \(S\), the cube \(Q\times\{0,1\}\) lies in
+\(C\) because \(S\subseteq B\).  Hence the maximal cubes of \(C\) through
+\((s,1)\) are exactly the cubes \(Q\times\{0,1\}\) with \(Q\) a maximal cube of
+\(S\) through \(s\), and the two corner conditions agree.
+\end{proof}
+
+\begin{lemma}[Products]
+\label{lem:products}
+Let \(C=A\times B\subseteq Q_{E_1}\times Q_{E_2}\) with \(A,B\) nonempty.  The
+maximal cubes of \(C\) are the products of maximal cubes of \(A\) and of
+\(B\), and \((a,b)\) is a corner of \(C\) if and only if \(a\) is a corner of
+\(A\) and \(b\) is a corner of \(B\).  In particular, if \(C\) is cornerless,
+then \(A\) or \(B\) is cornerless.
+\end{lemma}
+
+\begin{proof}
+A cube of \(Q_{E_1\cup E_2}\) with support \(T\) is the product of the cubes
+with supports \(T\cap E_1\) and \(T\cap E_2\) through the corresponding
+projections, and it lies in \(A\times B\) exactly when both factors lie in
+\(A\) and \(B\).  Maximality therefore holds exactly factorwise, and the
+maximal cubes through \((a,b)\) are the products of maximal cubes through
+\(a\) and through \(b\).  Their number is the product of the two numbers,
+which equals \(1\) exactly when both are \(1\).  If \(A\) has a corner \(a\)
+and \(B\) has a corner \(b\), then \((a,b)\) is a corner of \(C\).
+\end{proof}
+
+Products of ample classes are ample, since shattered and strongly shattered
+sets of a product are the unions of those of the factors.  Thus a
+cornerless ample product has a cornerless ample factor on fewer
+coordinates.
+
+\begin{proposition}
+\label{prop:cmin-equals-mamp}
+\(\cmin=\mamp\).  More precisely, every ample forbidden pc-minor \(O\) of
+\(\Damp\) contains a nonempty cornerless ample subclass, and every nonempty
+cornerless ample class \(C\) has an ample forbidden pc-minor of order at
+most \(|C|\).
+\end{proposition}
+
+\begin{proof}
+Let \(O\) be an ample forbidden pc-minor.  Delete corners from \(O\) as
+long as one exists.  By Theorem~\ref{thm:corner-deletion} each
+intermediate class is ample.  The process cannot empty \(O\), since the
+deletion order would then be a corner peeling of \(O\).  It stops at a
+nonempty cornerless ample class of order at most \(|O|\).  Hence
+\(\cmin\le\mamp\).
+
+Let \(C\) be nonempty, cornerless and ample.  Then \(C\notin\Damp\), since
+a corner peeling would begin with a corner.  Among all pc-minors of \(C\)
+that are not in \(\Damp\), choose one, \(O\), of least order.  A proper
+pc-minor of \(O\) has strictly fewer vertices: a nonempty restriction to a
+proper subset deletes vertices, and contracting an active coordinate
+identifies the two endpoints of an edge.  Every pc-minor of \(O\) is a
+pc-minor of \(C\), so by the choice of \(O\) all proper pc-minors of \(O\)
+lie in \(\Damp\).  Since ampleness is preserved by restrictions and
+contractions, \(O\) is ample.  Thus \(O\) is an ample forbidden pc-minor,
+and \(|O|\le|C|\).  Hence \(\mamp\le\cmin\).
+\end{proof}
+
+%======================================================================
+\subsection{Unique corners and prescribed endpoints}
+\label{sec:unique-corner-search}
+
+A class with a unique corner provides another source of small
+obstructions, independent of the contraction-and-lift neighbourhood of a
+known example. The construction below is the vertex-gluing rule from
+\cite{BousquetDampReader}; we give its short proof to make the size
+consequence explicit. We then exclude unique corners in seven coordinates
+and deduce Theorem~\ref{thm:E}.
+
+\begin{proposition}
+\label{prop:unique-corner-double}
+Let $A$ be a nontrivial ample class whose unique corner is $a$.
+Identify the corners of two copies of $A$ on disjoint coordinate blocks.
+The resulting class is cornerless and ample, with $2|A|-1$ vertices.
+Consequently $|A|\ge33$. If such a class exists on seven coordinates,
+then $\mamp\le255$.
+
+If $A$ uses $n\ge2$ coordinates, the degree of its unique corner is
+at most $n-2$. On seven coordinates this degree is $3$ or $4$.
+\end{proposition}
+\begin{proof}
+Translate $a$ to zero. The shattered supports of the glued class are
+precisely those of its two copies: no support using a coordinate from
+each block is shattered, since its all-one trace is absent. The two
+shadows share just the empty support. Thus their union has
+$2|\Sh(A)|-1=2|A|-1$ supports, and the glued class is ample.
+Every nonroot vertex has exactly its original maximal cubes, so is
+not a corner. At the root an edge from either block exists, since
+$A$ is nontrivial and connected. These two edges do not span a square,
+so the root is not a corner either. Proposition~\ref{prop:cmin-equals-mamp}
+and the bound $\mamp\ge64$ give $2|A|-1\ge64$, hence $|A|\ge33$.
+For seven coordinates, $|A|\le128$ gives $\mamp\le255$.
+
+For the degree assertion, a corner of degree $n$ has the full cube as
+its corner cube, so cannot be unique. Suppose its degree is $n-1$.
+Translate it to zero again, and write $j$ for the only missing incident
+direction and $S$ for the other directions. The $j=0$ section is the
+full cube $Q_S$. Let $D$ be the $j=1$ section. It does not contain
+zero. Each unit vertex in $Q_S$ must have a $j$-neighbour: otherwise
+it too is a corner, with unique maximal cube $Q_S$. Hence $D$
+contains every unit vertex. The cube complement $Q_S\setminus D$
+is ample and connected, by complement closure of ampleness
+\cite[Section~3.1]{ChalopiChepoiMoran22}. It contains zero and none
+of its neighbours, so it consists of zero alone. Thus $A$ is an
+$n$-cube minus one vertex, which has at least two corners for $n\ge2$.
+This contradiction proves the assertion.
+
+For the final statement we use the companion results that every ample
+family on at most six coordinates peels to any prescribed vertex, and
+every nested nonempty ample pair on at most five coordinates peels
+relatively \cite{BousquetDampReader}. If the unique corner has degree
+one, its incident coordinate has a singleton root section: that
+section is ample and connected, and its root is isolated. The other
+section uses at most six coordinates and peels to the root's neighbour.
+Lift this order, retaining the root, and finish along the last edge.
+This contradicts uniqueness of the first corner.
+
+If the degree is two, translate the root to zero and use its two
+incident directions as the last coordinates. The sections have the form
+\[
+ \{(0,00)\}\cup(P\times\{01\})
+ \cup(Q\times\{10\})\cup(T\times\{11\}),
+\]
+where $P,Q,T$ are ample five-coordinate families containing zero.
+The first section is a singleton by the same connectedness argument.
+Put $R=P\cap T$ and $S=Q\cap T$; these are nonempty ample
+reductions of faces. Relatively peel $P$ to $R$ and $Q$ to $S$.
+These deletions have no neighbour in either adjacent section, so lift
+to the whole class. Next peel $R$ and $S$ to zero, with all mates
+retained in $T$. Their nonzero corner cubes lift across the respective
+incident edge. Peel $T$ to zero next; its nonzero vertices now have
+no mates in the other sections. All these orders exist by the
+five-coordinate relative theorem. The remaining square peels to the
+original root, again contradicting its being the unique corner.
+Together with the degree upper bound, this leaves $3,4,5$.
+
+It remains to exclude degree five. Let $F$ be the five incident
+directions. In the other two directions the sections are
+$Q_F,P,Q,T$ at $00,10,01,11$, respectively. None of $P,Q,T$
+contains zero; for $T$ this follows from isometry and the absence
+of the two intermediate neighbours of the root. Every nonzero
+vertex of the $00$ cube needs an outside neighbour to avoid being
+a corner, so $P\cup Q=Q_F\setminus\{0\}$.
+If $P\setminus T$ is nonempty, relative peeling to $P\cap T$
+(or ordinary peeling if that intersection is empty) supplies a
+corner of $P$ outside $T$. Its cube lifts into the full $00$
+section, giving another corner of the whole family. Thus $P\subseteq T$,
+and similarly $Q\subseteq T$. Hence $T=P\cup Q=Q_F\setminus\{0\}$.
+If one of $P,Q$ is empty, a corner of the $11$ section lifts into
+the other section, again contradicting uniqueness. Both are nonempty.
+
+The face $U=(P\times\{0\})\cup(T\times\{1\})$ and the reduction
+$K=(P\times\{0\})\cup(Q\times\{1\})$ are ample, with the same
+projection $T$. The section-shadow identity gives
+$\Sh(T)=\Sh(P)\cup\Sh(Q)$: supports containing the last coordinate
+are indexed by $\Sh(P)\cap\Sh(Q)$, so Sandwich equality for $K$
+gives equality of cardinalities in the inclusion
+$\Sh(P)\cup\Sh(Q)\subseteq\Sh(T)$.
+For any ample $Q\subseteq T'\subseteq T$, one has $P\cup T'=T$
+and $\Sh(P)\cup\Sh(T')=\Sh(T)$. The family with sections $P,T'$
+therefore has $|P|+|T'|$ shattered supports and is ample.
+Consequently a five-coordinate relative peeling of $T$ to $Q$
+lifts to one of $U$ to $K$. It also lifts into the whole family,
+since the deleted words have no mates in the other layer.
+The remaining $K$ layer has all its mates in the untouched layer
+with sections $Q_F,Q$. Peel $K$ ordinarily using Theorem~\ref{thm:B},
+delete the $Q$ layer with all mates in $Q_F$, and finish the cube
+at zero. This again contradicts uniqueness of the initial corner.
+Only degrees $3$ and $4$ remain.
+\end{proof}
+
+The exact facet-cube encoding below also describes this search: require
+the root to be covered by exactly one facet cube, and every other
+covered vertex by at least two. Fixing the root at zero is harmless,
+but translation lex-leaders must then be omitted. Coordinate permutations
+still fix the root and can put its incident directions first. This
+formulation imposes neither symmetry of the family nor a prescribed
+shattered complex.
+
+An alternative exact encoding works directly with membership variables
+$c_x$, one for each vertex $x$ of the ambient cube. Lawrence's total
+asymmetry characterization \cite[Theorems~3--4]{Lawrence83} says that a
+class is ample if and only if every antipodally invariant face section
+is empty or full. For each face $F$ of dimension at least two, choose
+one representative from each antipodal pair, forming a set $R_F$, and
+choose $r_F\in R_F$. Introduce the Boolean variables
+$d_{F,x}\leftrightarrow(c_x\mathbin{\mathrm{XOR}}c_{\bar x})$, where
+$\bar x$ is the antipode of $x$ in $F$. Impose
+\[
+ \left(\bigvee_{x\in R_F}d_{F,x}\right)
+ \ \lor\ (c_y\leftrightarrow c_{r_F})
+ \qquad (y\in R_F\setminus\{r_F\}).
+\]
+If one antipodal pair differs, these conditions impose nothing further
+on that face. If all pairs agree, they force every vertex of the face
+to have the same membership value. Thus the formula is exactly total
+asymmetry; faces of dimension zero or one need no clauses. A pair of
+vertices determines its smallest containing face, so its XOR variable
+can be indexed by the pair itself.
+
+For fixed root degree $d$, require the full cube on the first $d$
+directions at zero and exclude the other neighbours of zero. To exclude
+a corner at any other present vertex $v$, for every direction set $T$
+impose the clause
+\[
+ \neg c_v\ \lor\!!\bigvee_{j\notin T}c_{v^{\{j\}}}
+ \ \lor\!\!\bigvee_{\varnothing\ne M\subseteq T}\neg c_{v^M}.
+\]
+Here $v^M$ denotes flipping the coordinates in $M$. Taking $T$ to be
+exactly the incident directions demands that the neighbourhood cube
+be incomplete. All other choices either contain a missing neighbour
+or omit a present neighbour, so contribute no stronger condition.
+This reuses the local corner criterion above and Lawrence's theorem;
+it does not assume a prescribed shattered complex. The implementation
+\path{scripts/explore_unique_corner_asymmetry.py} checks its ampleness
+encoding on every family in $Q_3$ against independent shattered and
+strongly shattered counts. Bounded search outcomes are recorded in
+the ledger and are not additional nonexistence theorems.
+
+\begin{lemma}[A proper fiber at a root neighbour]
+\label{lem:unique-corner-proper-fiber}
+Let $A\subseteq Q_D\times Q_R$ be ample with unique corner $(0,0)$,
+whose incident directions are exactly $D$, where $D,R$ are nonempty.
+Write $A_x=\{y\in Q_R:(x,y)\in A\}$. Every $A_x$ with
+$x\ne0$ is a nontrivial ample class containing zero. At least one
+unit vertex $e_i\in Q_D$ has $A_{e_i}\ne Q_R$.
+\end{lemma}
+\begin{proof}
+The root cube is $Q_D\times\{0\}$, so every fiber contains zero.
+Each fiber is ample, being a face section. If $A_x=\{0\}$ for
+$x\ne0$, the incident directions at $(x,0)$ are exactly $D$ and
+span the full root cube. This would be another corner.
+The fiber $A_0$ is a singleton: it is ample and connected, but zero
+has no neighbour in a direction of $R$.
+
+Suppose every unit fiber is full. For each $y\ne0$ in $Q_R$, the
+section $B_y=\{x:(x,y)\in A\}$ contains all the unit vertices
+of $Q_D$ and excludes zero. Its cube complement is ample, hence
+connected, and contains zero but none of its neighbours. It is
+therefore the singleton $\{0\}$. Thus
+\[
+ A=(Q_D\times\{0\})\cup((Q_D\setminus\{0\})\times Q_R).
+\]
+For any unit $e_i$ and any $y\ne0$, the incident directions at
+$(e_i,y)$ are $(D\setminus\{i\})\cup R$. They span the full cube
+with coordinate $i$ fixed to one. Hence $(e_i,y)$ is a second
+corner, a contradiction.
+\end{proof}
+
+\begin{theorem}[The degree-four case is excluded, computer-assisted]
+\label{thm:unique-corner-degree-four}
+An ample class using seven coordinates cannot have a unique corner of
+degree four. Consequently any seven-coordinate ample class with a
+unique corner has that corner of degree three.
+\end{theorem}
+\begin{proof}
+Suppose such a class exists, and normalize its root to zero and its
+incident directions to the first four coordinates. By
+Lemma~\ref{lem:unique-corner-proper-fiber}, some unit root neighbour
+has a proper, nontrivial ample fiber in the other three coordinates.
+Permute the first four coordinates to make this neighbour $1$, and
+permute the last three coordinates to canonicalize its fiber.
+No reversal or symmetry of the whole class is imposed.
+
+Encode a fiber $V\subseteq\{0,\ldots,7\}$ by the integer
+$m(V)=\sum_{y\in V}2^y$. Checking the odd integers $3\le m<255$
+by the shattered and strongly shattered counts gives exactly $62$
+proper nontrivial ample fibers containing zero. Under the six
+permutations of their three coordinates, their minimum representatives
+are
+\[
+3,7,11,15,23,27,31,43,47,63,127,139,143,171,175,191,239.
+\]
+Their orbit sizes, in the same order, are
+\[
+3,3,6,3,1,6,3,3,6,3,1,6,3,3,6,3,3,
+\]
+which sum to $62$. The routine \texttt{catalog} in
+\path{scripts/explore_unique_corner_fibers.py} enumerates every eligible
+integer and every coordinate permutation; this is an exhaustive split,
+not a sample of fibers.
+
+For each representative, impose its eight membership literals on the
+exact total-asymmetry encoding above, together with the unique-root
+corner clauses, full coordinate support, and $|A|\ge33$ from
+Proposition~\ref{prop:unique-corner-double}. Also require each nonzero
+root-cube fiber to be nontrivial, as supplied by
+Lemma~\ref{lem:unique-corner-proper-fiber}. Every resulting formula has
+$10\,943$ variables and $65\,378$ clauses. All $17$ formulas are
+unsatisfiable, with independently checked DRAT proofs. The generating
+script is \path{scripts/certify_unique_corner_fibers.py}; formulas,
+proofs, checker logs and SHA-256 fingerprints are retained under
+\path{evidence/unique_corner_q7_degree4_certificates/}.
+Each case was solved afresh with its fiber literals as unit clauses:
+the checked proofs do not rely on solver assumptions or clauses learned
+in other cases. The split covers every possible proper unit fiber, so
+no such class exists. Proposition~\ref{prop:unique-corner-double}
+then leaves only degree three.
+\end{proof}
+
+\begin{theorem}[The degree-three case is excluded, computer-assisted]
+\label{thm:unique-corner-degree-three}
+An ample class using seven coordinates cannot have a unique corner of
+degree three.
+\end{theorem}
+\begin{proof}
+Normalize the root to zero and its incident directions to the first
+three coordinates. Lemma~\ref{lem:unique-corner-proper-fiber} supplies
+a proper nontrivial ample four-coordinate fiber at a unit root neighbour.
+Permute the root directions to put this neighbour at $1$ and the other
+four directions to canonicalize its fiber.
+
+For $V\subseteq\{0,\ldots,15\}$ use the code
+$m(V)=\sum_{y\in V}2^y$. Every eligible fiber is tested by enumerating
+the odd integers $3\le m<65535$. For each support $T\subseteq[4]$,
+its projection is full precisely when the family meets every cell
+$\{v:v|_T=b\}$, $b\in\{0,1\}^T$. Count these shattered supports
+and retain the code if the count equals its number of vertices.
+Equality in the Sandwich bound is exactly ampleness, so this enumerates
+all eligible fibers. There are $2763$ labelled fibers. Taking the
+minimum code over the $24$ coordinate permutations partitions them into
+$185$ orbits. The complete orbit lists are retained in
+\path{evidence/unique_corner_q7_degree3_fibers.json}; the routine
+\texttt{catalog} in \path{scripts/explore_unique_corner_degree3_fibers.py}
+performs this enumeration and independently checks shattered and strongly
+shattered counts on each representative.
+
+For each representative, use the same exact membership encoding as in
+Theorem~\ref{thm:unique-corner-degree-four}, with a three-dimensional
+root cube, nontrivial fibers at the other seven root-cube vertices, and
+sixteen unit literals fixing the chosen fiber. The proved lower bound
+$|A|\ge33$ is again included. Each formula has $10\,943$ variables and
+$65\,379$ clauses. All $185$ fresh formulas have independently checked
+DRAT refutations; no solver assumptions or learned clauses from another
+case enter the proofs. The complete certificate archive, source snapshots,
+logs and fingerprints are in
+\path{evidence/unique_corner_q7_degree3_certificates/}, generated by
+\path{scripts/certify_unique_corner_degree3_fibers.py}.
+The exhaustive orbit cover therefore excludes every possible proper
+unit fiber, proving the theorem.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:E}]
+The companion prescribed-endpoint theorem covers at most six coordinates
+\cite{BousquetDampReader}. In seven coordinates,
+Proposition~\ref{prop:unique-corner-double} and
+Theorems~\ref{thm:unique-corner-degree-four}
+and~\ref{thm:unique-corner-degree-three} exclude a unique corner.
+Theorem~\ref{thm:B} supplies at least one corner in every nonempty
+ample class. Thus every nontrivial ample class on at most seven
+coordinates has at least two corners. Given a prescribed vertex,
+delete a different corner. Corner deletion preserves ampleness and
+does not increase the number of coordinates. Repeat until only the
+prescribed vertex remains. This proves the required peeling order.
+\end{proof}
+
+\begin{lemma}[Three fiber cases for a cube of codimension two]
+\label{lem:cornerless-codimension-two-fibers}
+Let $A\subseteq Q_{D\cup R}$ be cornerless and ample, where $|R|=2$,
+and suppose $A$ contains a cube with direction set $D$. After a cube
+automorphism, it contains $Q_D\times\{00\}$ and its fiber above
+$0\in Q_D$ is one of
+\[
+ \{00,10\},\qquad \{00,10,01\},\qquad \{00,10,11\}.
+\]
+Every fiber above $Q_D$ is a nontrivial ample family containing $00$.
+\end{lemma}
+\begin{proof}
+Translate the given cube to $Q_D\times\{00\}$. Each fiber contains
+$00$ and is ample by face closure. A singleton fiber would make its
+base vertex a corner, since all its incident directions would lie in
+the full $D$-cube. Thus every fiber is nontrivial. At least one is
+proper, since otherwise $A$ would be the full ambient cube and have
+corners. Translate its base index to zero; this preserves the base cube.
+A proper nontrivial ample subset of $Q_2$ containing $00$ is either
+an edge through $00$, a three-vertex path with $00$ at its centre,
+or a three-vertex path with $00$ at an endpoint. The diagonal pair
+is not ample. Permuting the two outside coordinates gives the three
+listed representatives.
+\end{proof}
+
+There is also a relative-peeling obstruction forced by this presentation.
+For a hypothetical eight-coordinate example write the four six-coordinate
+sections as $N,P,Q,C$, at $00,10,01,11$, where $N=Q_6$. Then
+$P,Q$ are proper: otherwise the class contains a seven-cube, whose
+one-coordinate fibers must all be nontrivial to avoid corners, forcing
+the full eight-cube. Cornerlessness at the base vertices gives $P\cup Q=N$.
+If both $P,Q\subseteq C$, then $C=N$, and the cube complement consists
+of the two nonempty parts $(N\setminus P)\times\{10\}$ and
+$(N\setminus Q)\times\{01\}$, with no edge between them. This contradicts
+connectedness of the nonempty ample complement. Thus, after exchanging
+the outside coordinates, $P\setminus C\ne\varnothing$.
+
+The intersection $O=P\cap C$ is ample, being the reduction of a face.
+It is nonempty: if it were empty, a corner of the nonempty ample class
+$P\subseteq Q_6$ would lift with all its mates in the full base section
+to a corner of the whole class. The same reasoning shows that no
+relative peeling of $P$ to $O$ exists: its first deleted corner would
+be outside $C$ and lift to a corner of the whole class. Hence the
+hypothetical example forces a strict nonempty ample interval
+$O\subsetneq P\subseteq Q_6$ that fails relative peeling, together
+with the four-section compatibility above. The prescribed-endpoint
+conclusion of Theorem~\ref{thm:E} alone does not exclude such an
+interval; relative peeling retains an entire subfamily.
+
+\begin{proposition}[A six-coordinate failure of relative peeling]
+\label{prop:relative-six-coordinate-counterexample}
+There is a maximum class $P\subseteq Q_6$ of VC dimension three
+containing a maximum class $O$ of VC dimension two such that $P$
+cannot be corner-peeled to $O$ while retaining every vertex of $O$.
+Thus the five-coordinate relative-peeling theorem cannot be extended
+to six coordinates, even for maximum classes of consecutive ranks.
+\end{proposition}
+\begin{proof}
+Number the coordinates $0,\ldots,5$ and identify a word with the
+integer whose binary digits are its coordinate values. Take
+\[
+\begin{aligned}
+P={}&\{0,1,2,4,5,6,7,8,9,10,11,12,13,14,15,\\
+ &16,17,20,21,22,23,25,27,29,31,32,33,40,41,43,\\
+ &47,48,49,52,53,54,55,56,57,59,61,63\},\\
+O={}&\{0,2,4,6,7,15,16,20,22,23,31,47,48,49,\\
+ &52,53,54,55,56,57,61,63\}.
+\end{aligned}
+\]
+Both inclusions $\varnothing\ne O\subsetneq P\subsetneq Q_6$ are
+immediate. Direct finite verification gives the following numbers of
+shattered supports by cardinality; the strongly shattered counts are
+identical:
+\[
+\begin{array}{c|rrrrrrr|r}
+ &0&1&2&3&4&5&6&\text{total}\\\hline
+ P&1&6&15&20&0&0&0&42\\
+ O&1&6&15&0&0&0&0&22.
+\end{array}
+\]
+Thus $P$ and $O$ are maximum and ample. The complete corner list of
+$P$, with the incident coordinate sets, is
+\[
+\begin{array}{c|c}
+\text{corner}&\text{incident directions}\\\hline
+2&\{1,2,3\}\\
+47&\{2,4,5\}\\
+54&\{0,1,5\}\\
+56&\{0,3,4\}.
+\end{array}
+\]
+Each of these four vertices belongs to $O$. Consequently no corner
+can be deleted while retaining $O$, so the relative peeling cannot start.
+
+The finite checks use only the displayed sets, not the SAT solver
+that found them. For each triple, a full cube in $P$ certifies strong
+shattering, and for each four-set a missing trace certifies nonshattering.
+The corresponding witnesses for $O$ use pairs and triples. The direct
+certificate also supplies one missing vertex of the incident cube for
+every noncorner of $P$. All witnesses are retained in the accompanying
+\texttt{relative\_pair\_q6/direct\_certificate.json} evidence file and
+checked by \texttt{verify\_relative\_pair\_q6.py}.
+\end{proof}
+
+\begin{theorem}[Rectangular boundaries give forbidden pc-minors]
+\label{thm:rectangular-boundary-forbidden}
+For $i=1,2$, let $\varnothing\ne K_i\subsetneq A_i$ be ample
+classes on disjoint coordinate sets $E_i$, with every coordinate active
+in $A_i$. Assume the following:
+\begin{enumerate}
+ \item $A_i$ and $K_i$ admit complete corner peelings;
+ \item every corner $v$ of $A_i$ belongs to $K_i$, but its unique
+       maximal cube $M_i(v)$ is not contained in $K_i$;
+ \item for each elementary restriction or contraction $\mu$ on $E_i$
+       with $\mu K_i\ne\varnothing$, the class $\mu A_i$ peels
+       relatively to $\mu K_i$.
+\end{enumerate}
+Then
+\[
+ H=(A_1\times K_2)\cup(K_1\times A_2)
+\]
+is a cornerless ample forbidden pc-minor for $\Damp$. Its order is
+\[
+ |H|=|A_1||K_2|+|K_1||A_2|-|K_1||K_2|.
+\]
+\end{theorem}
+\begin{proof}
+We use the rectangular-boundary shattering formula
+\cite[Theorem \texttt{relative-rectangular-boundary-tensor-factorization}]
+{BousquetPartitionability26}:
+\[
+ \operatorname{Sh}(H)=
+ (\operatorname{Sh}(A_1)\times\operatorname{Sh}(K_2))
+ \cup
+ (\operatorname{Sh}(K_1)\times\operatorname{Sh}(A_2)),
+\]
+where a pair of supports is identified with their disjoint union.
+For completeness, if a support in each block is shattered by the larger
+class but by neither smaller class, choose one missing trace in each
+smaller class. Their combined trace is absent from $H$. In all other
+cases the appropriate product slab supplies the witnessing product cube.
+Thus the formula is exact and all its supports are strongly shattered,
+so $H$ is ample. Inclusion--exclusion gives its order.
+
+Consider a possible corner $(x,y)$ of $H$. If $x\notin K_1$, then
+$y\in K_2$ and the section at $y$ is $A_1$. A corner of the whole
+class is a corner in this section, so $x$ would be a corner of $A_1$
+outside $K_1$, contrary to (2). The symmetric argument handles
+$y\notin K_2$. It remains that $x\in K_1$ and $y\in K_2$.
+The two coordinate sections are now $A_1,A_2$, so $x,y$ must both
+be corners of these classes. All their incident directions occur in
+$H$, and the required incident cube is $M_1(x)\times M_2(y)$.
+By (2) choose $x'\in M_1(x)\setminus K_1$ and
+$y'\in M_2(y)\setminus K_2$. The vertex $(x',y')$ is absent from
+$H$, a contradiction. Hence $H$ is cornerless and is not in $\Damp$.
+
+We show directly why a relative peeling in either factor makes the
+boundary peelable. Suppose $A_1$ peels to $K_1$. In that relative
+order, delete the slice $\{x\}\times K_2$ for each
+$x\in A_1\setminus K_1$, using a fixed peeling of $K_2$ inside the
+slice. At an intermediate deletion, the incident cube is the product
+of the current corner cube at $x$ in the remaining $A_1$ and the
+current corner cube in the slice. Later outside slices still contain
+all of $K_2$, while slices over $K_1$ contain $A_2\supseteq K_2$,
+so this product cube is present. Thus every deletion is valid.
+The remainder $K_1\times A_2$ peels by the product of their peelings.
+
+An elementary operation $\mu$ on $E_1$ sends $H$ exactly to
+\[
+ (\mu A_1\times K_2)\cup(\mu K_1\times A_2).
+\]
+If $\mu K_1$ is empty, this is the product of two peelable classes,
+since peelability is closed under pc-minors. Otherwise (3) and the
+preceding slice argument give a peeling; $\mu K_1$ is peelable by
+(1) and minor closure. The same argument applies to $E_2$.
+Every coordinate is active in $H$, because the smaller classes are
+nonempty, so these are proper elementary minors. All proper pc-minors
+therefore belong to $\Damp$, proving forbiddenness.
+\end{proof}
+
+\begin{corollary}[An explicit rectangular-boundary obstruction]
+\label{cor:rectangular-boundary-1364}
+Let $O\subset P\subset Q_6$ be the displayed $22/42$ pair in
+Proposition~\ref{prop:relative-six-coordinate-counterexample}.
+On two disjoint copies of its six coordinates, the class
+\[
+ H=(P\times O)\cup(O\times P)
+\]
+is an ample forbidden pc-minor of order $1364$, dimension $12$,
+and VC dimension $5$.
+\end{corollary}
+\begin{proof}
+Both factors peel by the prescribed-endpoint theorem through seven
+coordinates. Every elementary image of the nested pair uses at most
+five coordinates, so the five-coordinate relative-peeling theorem
+\cite{BousquetDampReader} supplies condition (3).
+The verified corner list of $P$ lies in $O$. Each listed corner has
+three incident directions and its full three-cube, whereas $O$ has
+VC dimension two, so condition (2) holds. The theorem applies.
+Its order is $2\cdot42\cdot22-22^2=1364$. Both coordinate blocks
+are active. The shattering formula has maximal support sizes $3+2$
+and $2+3$, giving VC dimension five.
+\end{proof}
+
+More generally, choose independently, in each six-coordinate block,
+a maximum rank-three class $P_i$ and a maximum rank-two subclass
+$O_i$ containing all corners of $P_i$. Then
+$(P_1\times O_2)\cup(O_1\times P_2)$ is forbidden of the same order,
+dimension, and VC dimension. Indeed, every corner of a maximum
+rank-three class has a maximal three-cube, so no such cube lies in
+$O_i$; the remaining hypotheses follow from the same small-dimension
+theorems. Thus this finite input rule needs no separate peeling or
+minor tests. The displayed pair proves that its input set is nonempty.
+
+The construction uses no rooted negative input. It converts two
+explicit relative failures, with their proper-image peeling conditions,
+into an ordinary forbidden pc-minor. The rectangular-boundary operation
+and its ampleness are reused from the cited result; the cornerlessness
+and minor-minimality criterion above are the added conclusions. This
+is a sound generative subfamily, not an exhaustive description of all
+forbidden pc-minors. Its $1364$-vertex instance does not improve the
+$64$--$267$ minimum-order interval. The independent verifier
+\texttt{verify\_rectangular\_obstruction.py} checks its full shattered
+family, the absence of every corner, and explicit corner orders for
+all $36$ elementary pc-minors.
+
+\begin{proposition}[Intrinsic recovery of a rectangular boundary]
+\label{prop:rectangular-boundary-recovery}
+Fix a partition of the coordinates of a nonempty class $H$ into two
+nonempty blocks $E_1,E_2$. Let $A_1,A_2$ be its projections, and put
+\[
+ K_1=\{x\in A_1:\{x\}\times A_2\subseteq H\},\qquad
+ K_2=\{y\in A_2:A_1\times\{y\}\subseteq H\}.
+\]
+Suppose $\varnothing\ne K_i\subsetneq A_i$ for $i=1,2$.
+Then $H$ has a rectangular-boundary presentation on this split if
+and only if
+\[
+ |H|=|A_1||K_2|+|K_1||A_2|-|K_1||K_2|.
+\]
+When it exists, this presentation is unique and equals
+$(A_1\times K_2)\cup(K_1\times A_2)$.
+If $H$ is ample, all four recovered classes are ample. If $H$ is
+forbidden for $\Damp$, all four belong to $\Damp$.
+
+Whenever all four recovered classes belong to $\Damp$ and the
+presentation exists, $H$ is cornerless if and only if every corner
+of each $A_i$ belongs to $K_i$ and its unique maximal cube is not
+contained in $K_i$.
+\end{proposition}
+\begin{proof}
+By definition both slabs are contained in $H$. Their union has the
+cardinality in the display, so equality of cardinalities is equivalent
+to equality of classes. Conversely, in any presentation with nonempty
+proper smaller factors, the projections are the larger factors. A
+row indexed outside the first smaller factor is exactly the second
+smaller factor and hence is not full. Thus the full rows recover the
+first smaller factor; full columns recover the second. This proves
+uniqueness. The larger factors are projections of $H$. Fixing a word
+in $A_2\setminus K_2$ gives the section $K_1$, and symmetrically for
+$K_2$. Ampleness follows from minor closure. For a forbidden $H$
+these projections and sections are proper pc-minors, so they belong
+to $\Damp$.
+
+For necessity of the corner conditions, suppose a corner $x$ of
+$A_1$ lies outside $K_1$. Choose a corner $y$ of $K_2$, which exists
+because $K_2$ is nonempty and peelable. At $(x,y)$ the incident cube
+is the product of the corner cubes in $A_1$ and $K_2$ and lies wholly
+in the first slab. This is a corner of $H$, a contradiction. Thus
+all corners of $A_1$ lie in $K_1$, and symmetrically for $A_2$.
+If a corner cube $M_1(x)$ were wholly in $K_1$, choose any corner
+$y$ of $A_2$. It belongs to $K_2$ by what was just proved.
+The full incident cube $M_1(x)\times M_2(y)$ lies in the second
+slab, again giving a corner. This proves the necessary cube condition
+in both blocks. Conversely, the cornerlessness argument in
+Theorem~\ref{thm:rectangular-boundary-forbidden} uses exactly these
+conditions: outside the two smaller factors a corner cannot project
+to an outer corner, and inside them its product cube has a missing
+outside--outside vertex. The proper-image hypotheses are not needed
+for that argument.
+\end{proof}
+
+This is marked recovery and an exact cornerless criterion, not a
+converse to the entire forbiddenness theorem: necessity of its relative
+peeling conditions on proper images has not been proved. For two
+six-coordinate maximum rank-three/rank-two input pairs those conditions
+hold automatically, so the stated input rule is exhaustive within
+that cornerless rectangular subfamily. There is no assertion that
+every cornerless forbidden class has such a split.
+
+For the $1364$-vertex class above, all $2047$ unordered nontrivial
+coordinate bipartitions were checked by the recovery criterion.
+Exactly one works: the original two six-coordinate blocks, recovering
+orders $42,22,42,22$. The script
+\texttt{recognize\_rectangular\_boundaries.py} also agrees with direct
+enumeration of all possible nonempty proper lower factors on every
+nonempty three-coordinate class. The recognition certificate is
+retained with the explicit obstruction.
+
+The same construction also supplies a direct small-order target without
+maximum assumptions. Any nonempty proper ample pair $K\subset A\subseteq Q_6$
+satisfying the corner condition above satisfies the peeling hypotheses
+of the construction theorem, by the seven-coordinate endpoint and
+five-coordinate relative theorems. Thus its self-pair gives a forbidden
+object of order $k(2a-k)$, where $a=|A|$ and $k=|K|$.
+Moreover mixing two different admissible pairs cannot improve the minimum
+over all self-pairs. If their self-pair orders are
+$m_i=k_i(2a_i-k_i)$ and their mixed order is
+$m_{12}=a_1k_2+k_1a_2-k_1k_2$, then
+\[
+ m_{12}^2-m_1m_2=(a_1k_2-a_2k_1)^2\ge0.
+\]
+All orders are positive, so $m_{12}\ge\min(m_1,m_2)$.
+Consequently the entire six-coordinate-input rectangular construction
+has an output below $267$ if and only if one admissible pair satisfies
+$k(2a-k)\le266$. This is a smaller-obstruction search criterion;
+existence of such a pair is not asserted.
+
+\begin{proposition}[Small rectangular inputs have three size profiles]
+\label{prop:rectangular-small-input-profiles}
+Suppose a nonempty proper ample pair $K\subset A\subseteq Q_6$
+retains every corner of $A$, and $k(2a-k)\le266$, where
+$a=|A|$ and $k=|K|$. Then $K$ uses all six coordinates and
+\[
+ (k,a)\in
+ \{(7,a):16\le a\le22\}\cup
+ \{(8,a):17\le a\le20\}\cup
+ \{(9,a):18\le a\le19\}.
+\]
+In these three cases $K$ has VC dimension at most two and its
+shattered family consists of the empty set, all six singletons,
+and exactly $k-7$ pairs. The conclusion does not require the
+additional corner-cube-escape condition of the construction theorem.
+\end{proposition}
+\begin{proof}
+First, $A$ must use all six coordinates. Otherwise the five-coordinate
+relative theorem supplies a first corner outside $K$, a contradiction.
+We claim that each side of every active coordinate of $A$ contains
+a corner of $A$. Write its two nonempty sections as $A_0,A_1$ and
+put $D=A_0\cap A_1$. Connectedness of $A$ implies $D\ne\varnothing$,
+and $D$ is ample as a coordinate reduction. If $A_1\setminus D$ is
+nonempty, the five-coordinate relative theorem gives a corner of
+$A_1$ outside $D$. It has no neighbour across the split coordinate,
+so its incident cube is unchanged and it is a corner of $A$.
+If $A_1=D$, take any corner of this nonempty five-coordinate class.
+Its incident cube doubles across the split coordinate inside $A$,
+so its copy in $A_1$ is a corner of $A$. The same argument applies
+to $A_0$, proving the claim. Since $K$ retains all corners, it meets
+both sides of all six coordinates. Consequently $k\ge7$ by the
+Sandwich equality and the six shattered singletons.
+
+The relative peeling theorem for at most eight added concepts
+\cite{BousquetDampReader} implies $a-k\ge9$: otherwise this nested
+ample pair would admit a first relative deletion. (It is also the
+special case of the small graph-core relative theorem where the
+whole difference has at most eight vertices.) Therefore
+\[
+ k(2a-k)\ge k(k+18).
+\]
+The size bound forces $k\le9$. Substituting $k=7,8,9$ in
+$a\ge k+9$ and $a\le\lfloor(266+k^2)/(2k)\rfloor$ gives the stated
+ranges. Finally, any shattered triple would add its three pairs
+and itself to the seven already shattered empty/singleton supports,
+forcing $|K|\ge11$. Thus no triple is shattered, and the Sandwich
+equality leaves exactly $k-7$ pair supports.
+\end{proof}
+
+\begin{theorem}[Lower bounds for rectangular forbidden classes]
+\label{thm:rectangular-input-order-exclusion}
+Every class generated by the six-coordinate rectangular-input rule
+has at least $272$ vertices. More generally, let a cornerless ample
+forbidden pc-minor admit a presentation
+\[
+ H=(A_1\times K_2)\cup(K_1\times A_2),\qquad
+ \varnothing\ne K_i\subsetneq A_i,
+\]
+on disjoint active coordinate blocks. Then it uses at least twelve
+coordinates; if it uses exactly twelve, it has at least $272$ vertices.
+The dimension bound is attained by the $1364$-vertex example.
+In particular the known twelve-coordinate obstruction of order $267$
+has no such rectangular presentation.
+\end{theorem}
+\begin{proof}[Computer-assisted proof]
+We first exclude every strict corner-retaining pair $K\subset A\subseteq Q_6$
+whose self-boundary order $k(2a-k)$ is at most $271$.
+The proof of Proposition~\ref{prop:rectangular-small-input-profiles}
+continues to give exactly the same three profiles when $266$ is
+replaced by $271$: $k(k+18)\le271$ forces $7\le k\le9$, and the
+upper bounds for $a$ remain $22,20,19$, respectively.
+
+The pre-existing rooted ample inventory on six coordinates was audited
+independently through order nine. Starting with $\{0\}$, for every
+representative at each order through eight, every possible one-vertex
+augmentation was tested by direct shattered-set counting. The resulting
+coordinate-permutation orbits coincide exactly with the next inventory
+level. Every nonempty ample class on six coordinates peels to any
+prescribed vertex, so reversing a peeling ending at zero proves that
+this augmentation induction covers every rooted class. Each listed
+representative was also checked directly for ampleness. Restricting
+to six active coordinates gives $48,162,347$ rooted representatives
+at orders $7,8,9$. Taking every translation by a member and every
+coordinate permutation removes the root marking and leaves the
+following complete cover:
+\[
+\begin{array}{c|c|c}
+ |K|&\text{unrooted lower classes}&\text{allowed }|A|\\\hline
+ 7&11&16\text{--}22\\
+ 8&28&17\text{--}20\\
+ 9&47&18\text{--}19.
+\end{array}
+\]
+
+For each of these $86$ fixed lower classes, the formula imposes:
+$K\subseteq A$; ampleness of $A$ by total asymmetry; the displayed
+order bounds; absence of any corner in $A\setminus K$; and an
+$A$-neighbour outside $K$ at every corner of $K$. The last condition
+is exactly corner-cube escape. Indeed, if a corner of $A$ has its
+incident cube in $K$, its neighbours in $A$ and $K$ coincide, making
+it a corner of $K$ without an outside neighbour. Conversely such a
+corner of $K$ remains a corner of $A$ with the same cube. Thus no
+additional restriction is being imposed on the admissible pairs.
+
+All $86$ formulas are unsatisfiable, each with a separately verified
+DRAT proof. There are no unresolved cases or unchecked solver answers
+in this cover. The exact formulas, proofs, checker logs, source snapshots,
+and input inventory are retained under
+\path{evidence/rectangular_fixed_lower/} in the ample-corners project.
+The program \texttt{prepare\_rectangular\_lower\_cases.py} audits the
+inventory; \texttt{certify\_small\_rectangular\_inputs.py} produces and
+checks the proofs. A separate coverage audit reproduces all $86$ formula
+hashes and checks all $258$ retained artifact hashes. The local escape
+equivalence also agrees on every one of the $6050$ nonempty proper
+nested pairs on three coordinates. These finite checks supplement the
+symbolic coverage and encoding arguments above.
+
+Consequently every admissible self-boundary has order at least $272$.
+The mixed-order inequality proved after
+Proposition~\ref{prop:rectangular-boundary-recovery} gives the same
+lower bound when the two inputs differ.
+
+Finally, for an arbitrary cornerless forbidden $H$ with such a
+presentation, Proposition~\ref{prop:rectangular-boundary-recovery}
+makes the four input classes peelable and forces the strict
+corner-retention conditions. Neither upper class can use at most
+five coordinates: relative peeling to its nonempty proper lower
+class would supply a corner outside that lower class. Each block
+therefore has at least six active coordinates. If their total is
+twelve, both have exactly six and the proved order bound applies.
+The explicit $1364$ example proves sharpness of the dimension bound.
+\end{proof}
+
+This closes the search for a sub-$267$ obstruction within this
+rectangular family. It does not raise the global lower bound $64$,
+nor does it show that order $272$ is attained in the family. As a
+separate direct check, the rectangular recognizer finds no presentation
+of the known $267$-vertex class among all $2047$ coordinate splits.
+The full generative characterization must therefore include other
+structures even at twelve coordinates.
+
+\begin{corollary}[A size criterion for relative peeling on six coordinates]
+\label{cor:relative-six-weighted-size}
+Let $\varnothing\ne K\subsetneq A\subseteq Q_6$ be ample, with
+$k=|K|$ and $a=|A|$. If
+\[
+ k(2a-k)\le271,
+\]
+then $A$ peels relatively to $K$. No corner-retention, maximum-class,
+or corner-cube-escape hypothesis is required.
+\end{corollary}
+\begin{proof}
+Suppose no such relative peeling exists. Delete corners outside $K$
+as long as possible. The process stops at an ample class $B$ properly
+containing $K$, with every corner of $B$ in $K$; reaching $K$ would
+itself give a relative peeling of $A$.
+
+Whenever a corner $v$ of $B$ has its entire maximal cube contained
+in $K$, delete $v$ from both classes. It is also a corner of $K$:
+all neighbours of $v$ in $B$ lie in that cube and hence in $K$, so
+the incident cubes in the two classes coincide. Both endpoints
+therefore remain ample. This is the equal-support case of
+common-corner cancellation
+\cite[Lemma \texttt{relative-common-corner-cancellation}]
+{BousquetPartitionability26}; the relative face set is unchanged.
+There is also a direct check that the deletion remains stalled.
+Every vertex outside $K$ is nonadjacent to $v$, so its incident
+directions do not change on deleting $v$. A missing vertex of its
+incident cube cannot become present after a deletion. It therefore
+remains a noncorner. The difference of the two classes is unchanged
+and nonempty. The smaller class cannot become empty: its last vertex
+would have an incident cube consisting only of itself in the larger
+class, contradicting connectedness of that larger ample class.
+
+After finitely many such simultaneous deletions, we obtain
+$\varnothing\ne K'\subsetneq B'\subseteq Q_6$ such that every
+corner of $B'$ lies in $K'$ and every such corner cube escapes $K'$.
+The six-coordinate rectangular construction applies to this pair.
+Theorem~\ref{thm:rectangular-input-order-exclusion} therefore gives
+\[
+ |K'|\bigl(2|B'|-|K'|\bigr)\ge272.
+\]
+But $|B'|\le a$ and $|K'|\le k$, and $y(2x-y)$ is increasing in
+each variable on $0<y<x$. Thus the left side is at most
+$k(2a-k)\le271$, a contradiction.
+\end{proof}
+
+The added conclusion here is a relative-peeling criterion for arbitrary
+nested ample pairs of the indicated size. The cancellation operation is
+reused from the cited result; it is essential that the two corner cubes
+coincide. Deleting an arbitrary common corner with different incident
+cubes need not preserve the relative face set. This corollary does not
+assert that every pair outside the displayed size range fails to peel.
+
+\begin{lemma}[Nested opposite sections and their cubes]
+\label{lem:nested-diagonal-cube-cover}
+Let an ample class $X\subseteq Q_n\times Q_2$ have sections
+$A,P,Q,C$ at $00,10,01,11$, with $\varnothing\ne C\subseteq A$.
+Put $R=C\cap P\cap Q$. Then $R$ is ample, every cube of $C$ is
+contained in $P$ or in $Q$, and every connected component of
+$C\setminus R$ lies wholly in $P\setminus Q$ or in $Q\setminus P$.
+Every corner of $C$ outside $R$ lifts to a corner of $X$.
+
+If $C$ has a corner and $X$ is cornerless, then
+$\varnothing\ne R\subsetneq C$, every corner of $C$ lies in $R$,
+and $C$ cannot peel relatively to $R$. In particular $X$ has a corner
+whenever $C$ has VC dimension at most two or uses at most five active
+coordinates.
+\end{lemma}
+\begin{proof}
+Let $K$ be any cube in $C$. Restrict $X$ to the face generated by $K$
+and the two last coordinates. Its $00$ and $11$ sections both contain
+all of $K$, because $C\subseteq A$. If neither middle section contained
+$K$, the nonempty cube complement of this face restriction would be
+the union of two nonempty parts at $10$ and $01$, with no edge between
+them. This contradicts connectedness of a nonempty ample complement.
+Thus $K\subseteq P$ or $K\subseteq Q$. Applying this first to vertices
+and then to edges shows $C\subseteq P\cup Q$ and that no edge of
+$C\setminus R$ joins its two exclusive sides. This proves the component
+assertion. The set $R=A\cap P\cap Q\cap C$ is the double coordinate
+reduction of $X$, so is ample.
+
+If $v$ is a corner of $C$ outside $R$, it belongs to exactly one middle
+section. Its unique maximal cube $K$ is contained in that section by
+the preceding cube-cover argument. Doubling $K$ across the corresponding
+last-coordinate edge gives its entire incident cube in $X$, so its
+$11$ copy is a corner. If $R=C$, every corner cube of $C$ occurs in
+all four sections and extends across both last coordinates, again
+giving a corner of $X$.
+
+Consequently, if $X$ is cornerless and $C$ has a corner, then $R$ is
+nonempty and proper and contains every corner of $C$. No first relative
+deletion is possible. Finally, relative peeling holds for every nested
+ample pair with upper VC dimension at most two, and for every pair
+using at most five coordinates \cite{BousquetDampReader}; these classes
+also have corners. These results exclude the required stalled interval
+in either stated case.
+\end{proof}
+
+\begin{proposition}[Exact compatibility over a full base]
+\label{prop:full-base-shadow-defect}
+Let $P,Q,C\subseteq Q_n$ be arbitrary, including possibly empty
+families, and let $X\subseteq Q_n\times Q_2$ have sections
+$Q_n,P,Q,C$ at $00,10,01,11$. For any family $H$, put
+$\delta(H)=|\operatorname{Sh}(H)|-|H|$, and define
+\[
+\begin{split}
+ E_P&=\operatorname{Sh}(P\cup C)\setminus
+       (\operatorname{Sh}(P)\cup\operatorname{Sh}(C)),\\
+ E_Q&=\operatorname{Sh}(Q\cup C)\setminus
+       (\operatorname{Sh}(Q)\cup\operatorname{Sh}(C)),\\
+ E_C&=\operatorname{Sh}(C)\setminus
+       (\operatorname{Sh}(P)\cup\operatorname{Sh}(Q)).
+\end{split}
+\]
+Then the following identity is a sum of nonnegative terms:
+\begin{equation}
+ \delta(X)=\delta(P)+\delta(Q)+\delta(C)
+                  +|E_P|+|E_Q|+|E_C|.
+ \label{eq:full-base-shadow-defect}
+\end{equation}
+Consequently $X$ is ample if and only if $P,Q,C$ are ample and
+$E_P=E_Q=E_C=\varnothing$.
+
+Suppose these conditions hold. For a corner $v$ of an ample family
+$H$, write $K_H(v)$ for its unique maximal cube, viewed as a set of
+words in $Q_n$, and put $R=P\cap Q\cap C$. Then $X$ is cornerless
+if and only if all the following conditions hold:
+\begin{enumerate}
+ \item $P\cup Q=Q_n$, with $P\ne Q_n$ and $Q\ne Q_n$;
+ \item every corner $v$ of $P$ lies in $C$ and satisfies
+       $K_P(v)\not\subseteq Q\cap C$;
+ \item every corner $v$ of $Q$ lies in $C$ and satisfies
+       $K_Q(v)\not\subseteq P\cap C$;
+ \item every corner $v$ of $C$ lies in $R$ and satisfies
+       $K_C(v)\not\subseteq R$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Write $\mathcal A=\operatorname{Sh}(P)$,
+$\mathcal B=\operatorname{Sh}(Q)$, and
+$\mathcal D=\operatorname{Sh}(C)$. Splitting shattered supports
+according to their intersection with the two last coordinates gives
+\[
+ |\operatorname{Sh}(X)|=2^n+
+ |\operatorname{Sh}(P\cup C)|+
+ |\operatorname{Sh}(Q\cup C)|+
+ |\mathcal A\cap\mathcal B\cap\mathcal D|.
+\]
+Indeed, a support using just the first of the two last coordinates
+requires every old trace in $P\cup C$; its other section is full.
+The second coordinate is symmetric. A support using both requires
+every old trace separately in $P,Q,C$.
+For any three finite sets one has
+\[
+ |\mathcal A\cup\mathcal D|+|\mathcal B\cup\mathcal D|
+ +|\mathcal A\cap\mathcal B\cap\mathcal D|
+ =|\mathcal A|+|\mathcal B|+|\mathcal D|
+   +|\mathcal D\setminus(\mathcal A\cup\mathcal B)|.
+\]
+Substitute this equality and $|X|=2^n+|P|+|Q|+|C|$ to obtain
+\eqref{eq:full-base-shadow-defect}. The Sandwich inequality makes
+each $\delta$ nonnegative, with equality exactly for ample families.
+This proves the ampleness criterion, including empty sections.
+
+For corners, inspect the cube spanned by all incident directions.
+At a base vertex, the old directions span the full $Q_n$. If neither
+middle neighbour is present, this vertex is a corner. If exactly one
+is present, it is a corner precisely when that middle section is
+$Q_n$. If both are present, it is a corner precisely when all three
+other sections are full. Moreover a cornerless class cannot have
+$P=Q_n$ or $Q=Q_n$: it would contain a full codimension-one cube,
+and avoiding a corner at each vertex of that cube forces every
+opposite vertex to be present, giving the full cube and a contradiction.
+These observations give exactly condition (1).
+
+At $(v,10)$ the base neighbour is always present. A corner there
+requires $v$ to be a corner of $P$. If $v\notin C$, its incident cube
+is automatically complete; if $v\in C$, that cube is complete exactly
+when $K_P(v)\subseteq Q\cap C$. This gives (2), and interchanging
+the last coordinates gives (3).
+
+At $(v,11)$ a corner requires $v$ to be a corner of $C$. Lemma~\ref{lem:nested-diagonal-cube-cover} shows that a corner outside $R$ lifts
+to a corner of $X$. For a corner in $R$, both middle neighbours are
+present, and its incident cube is complete exactly when
+$K_C(v)\subseteq P\cap Q$; the base is full. Since $K_C(v)\subseteq C$,
+this is equivalent to containment in $R$, proving (4).
+Every vertex lies in one of these four sections, so the conditions
+are also sufficient.
+\end{proof}
+
+This is an exact reduction of the full-base search to three families
+on two fewer coordinates, with no maximum-class assumption. It
+specializes the general counting of shattered supports by section
+indices: the full base makes every remaining defect nonnegative
+and gives the explicit compatibility conditions above. It does not
+classify the triples satisfying those conditions. In particular it
+is not an exhaustive generator for all forbidden pc-minors. The
+identity and the local corner formulas are independently checked
+on all $4096$ labelled triples of subsets of $Q_2$, including the
+$819$ ample full-base families, by
+\texttt{verify\_full\_base\_defect.py}.
+
+\begin{corollary}[A single edge-fiber normalization]
+\label{cor:full-base-edge-normalization}
+Let a cornerless ample class have sections $Q_n,P,Q,C$.
+Then both $P\setminus(Q\cup C)$ and $Q\setminus(P\cup C)$ are
+nonempty. In particular, translating only the old coordinates puts
+its fiber over zero in the form $\{00,10\}$. This one fiber type
+suffices to cover all cornerless full-base classes up to translation.
+\end{corollary}
+\begin{proof}
+The exact corner criterion makes $P,Q$ proper and $P\cup Q=Q_n$.
+Also $C\ne Q_n$: otherwise Lemma~\ref{lem:nested-diagonal-cube-cover},
+applied to the full cube $C$, would put $Q_n$ in $P$ or $Q$.
+The ampleness criterion gives
+\[
+ \operatorname{Sh}(Q\cup C)
+ =\operatorname{Sh}(Q)\cup\operatorname{Sh}(C).
+\]
+If $Q\cup C=Q_n$, the full coordinate support would be shattered
+by $Q$ or $C$, forcing that family to be $Q_n$, a contradiction.
+Hence some $x$ lies outside $Q\cup C$. Since $P\cup Q=Q_n$, it lies
+in $P$, so its four-section fiber is exactly $\{00,10\}$.
+The symmetric argument proves $Q\setminus(P\cup C)\ne\varnothing$.
+Translation by $x$ preserves the full base and gives the normalization.
+\end{proof}
+
+Thus the earlier three-case fiber cover can be replaced by a single
+case. This does not assert that the other fiber types cannot occur at
+other old vertices. It chooses one guaranteed edge fiber, without
+assuming invariance of the family under translations or permutations.
+
+\begin{proposition}[A certified degree restriction at an exclusive edge fiber]
+\label{prop:full-base-exclusive-degree}
+Let $X\subseteq Q_6\times Q_2$ be cornerless and ample, with sections
+$Q_6,P,Q,C$ at $00,10,01,11$. Every vertex of
+$P\setminus(Q\cup C)$ has at least four neighbors in $P$.
+Symmetrically, every vertex of $Q\setminus(P\cup C)$ has at least
+four neighbors in $Q$.
+\end{proposition}
+\begin{proof}
+Choose $x\in P\setminus(Q\cup C)$ and translate the six old
+coordinates so that $x=0$. The exact corner criterion implies that
+every corner of $P$ belongs to $C$. Thus $0$ is not a corner of $P$;
+in particular its degree in $P$ is at least two, since a vertex of
+degree zero or one belongs to a unique maximal cube.
+Permuting the six old coordinates preserves the full base and the
+fiber over zero. If the degree is $k$, we may therefore require
+that its neighbors are exactly the first $k$ unit vectors.
+
+For $k=2,3$, the exact full-base shadow encoding with
+$0\in P\setminus(Q\cup C)$ and these six membership literals is
+unsatisfiable. Each formula has $9629$ variables and $81747$ clauses.
+The formulas were reconstructed byte-for-byte, and their DRAT
+refutations independently checked locally after the remote checks.
+The formulas, compressed proofs, hashes and replay records are in
+\texttt{papers/ample-corners/evidence/q8\_full\_base\_remote};
+\texttt{verify\_q8\_full\_base\_remote.py} reproduces the checks.
+This rules out degrees two and three. Exchanging the two new
+coordinates proves the symmetric statement.
+\end{proof}
+
+The degree-four, degree-five and degree-six cases remain unresolved:
+the remote solver reached its $600$-second limit in each case, as did
+two unsplit encodings. The proposition applies only to the indicated
+exclusive fibers. It neither excludes all six-cube classes nor changes
+the interval $[64,267]$ for the smallest ample obstruction.
+
+\begin{proposition}[Triple shattering and a small overlap force a corner]
+\label{prop:maximum-relative-pair-no-completion}
+Suppose an ample class $X\subseteq Q_n\times Q_2$ has sections
+$Q_n,P,Q,C$ at $00,10,01,11$, with $C\ne\varnothing$.
+If $P$ shatters every three-coordinate support and
+$\operatorname{VCdim}(P\cap C)\le2$, then $X$ has a corner.
+In particular this excludes every maximum rank-three side with a
+maximum rank-two overlap, without requiring either maximum hypothesis
+in the general statement.
+\end{proposition}
+\begin{proof}
+Ampleness of the face with sections $P,C$ gives
+$\operatorname{Sh}(P)\cap\operatorname{Sh}(C)
+=\operatorname{Sh}(P\cap C)$: a support shattered in both sections,
+with the separating coordinate adjoined, is strongly shattered in the
+face. Since every triple belongs to $\operatorname{Sh}(P)$ and no
+triple belongs to the right side, $C$ has VC dimension at most two.
+Lemma~\ref{lem:nested-diagonal-cube-cover} now supplies a corner of $X$.
+\end{proof}
+
+\begin{corollary}[A connected difference excludes a maximum opposite section]
+\label{cor:connected-maximum-opposite-exclusion}
+Let a cornerless ample class have sections $Q_n,P,Q,C$, and put
+$R=C\cap P\cap Q$. Suppose $C$ is maximum of VC dimension $d\ge1$
+and $R$ is maximum of VC dimension $d-1$. Then the induced graph
+on $C\setminus R$ is disconnected.
+\end{corollary}
+\begin{proof}
+If this graph were connected, the component assertion of
+Lemma~\ref{lem:nested-diagonal-cube-cover} would place it entirely
+in one exclusive side. After interchanging the middle coordinates,
+$C\subseteq P$ and $C\cap Q=R$. The section-shadow identity for the
+face with sections $Q,C$ gives
+$\operatorname{Sh}(Q)\cap\operatorname{Sh}(C)=\operatorname{Sh}(R)$.
+All $d$-sets lie in $\operatorname{Sh}(C)$ and none in
+$\operatorname{Sh}(R)$, so $\operatorname{VCdim}(Q)\le d-1$.
+Since $Q$ contains the maximum class $R$, the Sauer bound forces $Q=R$.
+
+Cornerlessness at the full-base vertices forces $P\cup Q=Q_n$:
+a base vertex with neither outside neighbour is a corner. As
+$Q=R\subseteq C\subseteq P$, this gives $P=Q_n$.
+The class then contains a full $(n+1)$-cube. Every one-coordinate
+fiber above this cube must be nontrivial to avoid a corner at its
+base, forcing the full $(n+2)$-cube, which has corners. This is the
+required contradiction.
+\end{proof}
+
+The $42/22$ pair above is excluded in both marked positions. The
+proposition excludes placing its larger class in a middle section
+with the smaller class as its overlap with $C$. The corollary also
+excludes placing the larger class at $11$ and the smaller class at
+$R$: their $20$-vertex difference is connected. A spanning tree is
+included in the direct finite certificate for the pair. These statements
+concern the indicated full-base completions, not every use of the pair
+in a larger construction.
+
+Proposition~\ref{prop:maximum-relative-pair-no-completion} explains
+why the pair in Proposition~\ref{prop:relative-six-coordinate-counterexample}
+does not realize the four-section obstruction. Fixing its $P$
+and imposing $P\cap C=O$, with $P\cup Q=Q_6$, leaves the other
+memberships of $Q,C$ free. The exact cornerless-ampleness formula is
+unsatisfiable, with an independently checked DRAT proof retained in
+\path{evidence/relative_pair_q6_completion/}. This excludes the marked
+completion of this particular pair, not the other six-coordinate
+relative intervals or the eight-coordinate six-cube case.
+
+For the eight-coordinate cornerless problem, VC dimension six implies
+the presence of a six-cube, so this lemma gives an exhaustive three-case
+split. The script \path{scripts/explore_cornerless_q8_large_cube.py}
+combines it with the exact total-asymmetry and local corner formulas.
+These are necessary normalization choices, not assumptions that the
+whole family is invariant under a symmetry. All three initial bounded
+runs were inconclusive; their formulas and records are retained under
+\path{evidence/cornerless_q8_six_cube/}. In particular this split does
+not exclude the eight-coordinate VC-dimension-six case.
+
+%======================================================================
+\begin{proposition}[Supports required opposite a degree-two corner]
+\label{prop:square-opposite-support-bound}
+Let $A,B,C\subseteq\{0,1\}^n$ contain zero, where $n\le7$, and suppose
+\[
+ Y=\{(0,00)\}\cup(A\times\{01\})\cup(B\times\{10\})
+       \cup(C\times\{11\})
+\]
+is ample. Set $K=A\cap C$ and define
+\[
+ \mathcal G=\operatorname{Sh}(A)\setminus\operatorname{Sh}(K),
+ \qquad
+ \mathcal L=\{T\subseteq[n]:\text{ no }S\in\mathcal G
+                                      \text{ satisfies }S\subseteq T\}.
+\]
+Then
+\[
+ |B\setminus C|\le |\mathcal L\setminus\operatorname{Sh}(A)|.
+\]
+If $(0,00)$ is the unique corner of $Y$, necessarily
+\[
+ |\mathcal L\setminus\operatorname{Sh}(A)|\ge9.
+\]
+The same conclusion holds after exchanging $A$ and $B$.
+\end{proposition}
+\begin{proof}
+The coordinate faces with sections $(A,C)$ and $(B,C)$ are ample.
+Their section--reduction identities give
+\[
+ \operatorname{Sh}(A\cap C)=\operatorname{Sh}(A)\cap\operatorname{Sh}(C),
+ \qquad
+ \operatorname{Sh}(B\cap C)=\operatorname{Sh}(B)\cap\operatorname{Sh}(C).
+\]
+For completeness, the first identity follows from shadow containment
+and equality of cardinalities: the ample face and its projection imply
+$\operatorname{Sh}(A\cup C)=\operatorname{Sh}(A)\cup\operatorname{Sh}(C)$;
+then $|A\cap C|=|A|+|C|-|A\cup C|$ is the size of the shadow
+intersection. The reduction $A\cap C$ is ample. The second identity
+is proved in the same way.
+By the unrestricted degree-two-section shadow criterion of
+\cite{BousquetDampReader},
+$\operatorname{Sh}(A)\cap\operatorname{Sh}(B)
+ \subseteq\operatorname{Sh}(C)$.
+Thus $\operatorname{Sh}(B)$ contains no member of $\mathcal G$.
+As a down-set it contains no superset of such a member either, so
+$\operatorname{Sh}(B)\subseteq\mathcal L$. Moreover,
+\[
+ \operatorname{Sh}(B)\setminus\operatorname{Sh}(C)
+       \subseteq\mathcal L\setminus\operatorname{Sh}(A).
+\]
+The second section--reduction identity and ampleness now give
+\[
+ |B\setminus C|
+ =|\operatorname{Sh}(B)\setminus\operatorname{Sh}(B\cap C)|
+ =|\operatorname{Sh}(B)\setminus\operatorname{Sh}(C)|,
+\]
+proving the size bound.
+
+Suppose the right-hand side of the bound is at most eight.
+If $B\setminus C$ is nonempty, the relative peeling theorem for at
+most eight added vertices, proved in the argument of
+the small graph-core relative-peeling corollary of
+\cite{BousquetDampReader}, supplies a corner
+of $B$ outside $B\cap C$. This corner is nonzero and has no neighbour
+in either adjacent section $C$ or $\{0\}$. Its copy in $B\times\{10\}$
+is therefore a corner of $Y$ distinct from $(0,00)$.
+If $B\subseteq C$ and $|B|>1$, the prescribed-endpoint theorem
+(Theorem~\ref{thm:E}) supplies a peeling
+of $B$ ending at zero, whose first vertex is a nonzero corner.
+Its incident cube doubles into $C$, again giving a corner of $Y$.
+Finally, if $B=\{0\}$, the vertex $(0,10)$ is a corner: its only
+incident directions are the two new coordinates and their full square
+is present. These cases exhaust the possibilities and prove the claim.
+\end{proof}
+
+\begin{example}[A stalled pair excluded by the support bound]
+\label{ex:square-thirty-eight-pair}
+Encode a vertex of $\{0,1\}^6$ by the integer whose binary expansion
+lists its coordinates. Let
+\begin{align*}
+ K={}&\{0,1,3,4,5,8,9,10,11,12,13,20,21,28,29,40,42,44,46,52,53,58,60,62\},\\
+ A={}&K\cup\{16,17,32,33,34,35,36,38,41,43,48,49,50,54\}.
+\end{align*}
+Direct trace and cube enumeration verifies that these classes are ample,
+with shattered-support counts $(1,6,15,16)$ and $(1,6,15,2)$ for $A$
+and $K$, respectively. The corners of $A$ are $3,10,29,53,58$, all
+in $K$, so relative peeling cannot start. Nevertheless this pair cannot
+occur as $(A,A\cap C)$ in a square with a unique degree-two corner.
+Indeed, $\mathcal G$ consists of fourteen triples and meets the set of
+triples of every four-element support. Hence $\mathcal L$ has no support
+of size four or more, and
+\[
+ \mathcal L\setminus\operatorname{Sh}(A)=\{7,19,38,50\}
+\]
+in the same binary encoding of supports. The preceding proposition
+applies with bound four. The finite checks, including a member of
+$\mathcal G$ in every four-element support, are reproduced by
+\path{scripts/verify_square_support_bound.py} in the ample-corners project.
+This rules out this marked completion, not every use of the pair in
+an obstruction construction.
+\end{example}
+
+\section{Exact propositional encodings}
+\label{sec:encoding}
+
+Lemma~\ref{lem:facet-cubes} replaces the global notion of ampleness by
+three local requirements: a down-closed complex, one cube per facet, and a
+family of forbidden traces.  Each is a set of clauses.
+
+\subsection{The general formula}
+\label{sec:general-formula}
+
+Fix \(n\ge1\) and \(1\le d\le n\), and let \(E=[n]\).  For subsets we use
+the words of \(Q_E\) as above.  The formula \(F_{n,d}\) has the following
+variables.
+\begin{itemize}
+\item \(\sigma_T\) for \(T\subseteq E\): \(T\) belongs to the complex
+      \(\Sigma\);
+\item \(\varphi_T\) for \(T\subseteq E\): \(T\) is a facet of \(\Sigma\);
+\item \(s_{T,b}\) for \(T\subseteq E\) and \(b\subseteq E\setminus T\):
+      the cube \(Q(T,b)\) is chosen;
+\item \(c_v\) for \(v\in Q_E\): \(v\) is covered by a chosen cube;
+\item \(y_{T,p}\) for \(\varnothing\neq T\subseteq E\) and \(p\subseteq
+      T\): the trace \(p\) is missing on \(T\);
+\item auxiliary variables of the cardinality encodings below.
+\end{itemize}
+Its clauses are:
+\begin{enumerate}
+\item[(\(\Sigma\))] \(\sigma_\varnothing\); \(\sigma_{\{i\}}\) for every \(i\in E\);
+      and \(\neg\sigma_T\vee\sigma_{T\setminus\{i\}}\) for all \(i\in T\).
+\item[(VC)] \(\bigvee_{|T|=d}\sigma_T\), and \(\neg\sigma_T\) for every
+      \(T\) with \(|T|=d+1\).
+\item[(\(\Phi\))] \(\varphi_T\leftrightarrow\bigl(\sigma_T\wedge
+      \bigwedge_{i\notin T}\neg\sigma_{T\cup\{i\}}\bigr)\).
+\item[(S)] \(\varphi_T\leftrightarrow\bigvee_b s_{T,b}\), and at most one
+      \(s_{T,b}\) is true for each \(T\).
+\item[(C)] \(c_v\leftrightarrow\bigvee_{T\subseteq E}s_{T,\,v\setminus T}\).
+\item[(D)] \(c_v\rightarrow\) at least two of the literals
+      \(s_{T,\,v\setminus T}\), \(T\subseteq E\), are true.
+\item[(Y)] For every \(T\neq\varnothing\):
+      \(\sigma_T\vee\bigvee_{p\subseteq T}y_{T,p}\), and
+      \(\neg y_{T,\,v\cap T}\vee\neg c_v\) for every \(v\in Q_E\).
+\end{enumerate}
+The constraints ``at most one'' in~(S) and ``at least two'' in~(D) are
+written with sequential counters \cite{Sinz05}; any correct encoding would
+do.  Clause family~(C) uses the fact from Section~\ref{sec:prelim} that
+\(v\in Q(T,b)\) if and only if \(b=v\setminus T\).  Clause family~(Y) says:
+if \(T\notin\Sigma\), then some trace \(p\) on \(T\) is realized by no
+covered vertex.
+
+\begin{theorem}[Exactness]
+\label{thm:encoding}
+The formula \(F_{n,d}\) is satisfiable if and only if there is a nonempty
+cornerless ample class \(C\subseteq Q_{[n]}\) of VC dimension exactly
+\(d\) in which every coordinate is active.  More precisely, for every
+satisfying assignment the set \(U=\{v:c_v\}\) is such a class, with
+\(\Sh(U)=\{T:\sigma_T\}\) and with \(\{Q(T,b):s_{T,b}\}\) as its facet
+cubes; and every such class arises in this way.
+\end{theorem}
+
+\begin{proof}
+Let an assignment satisfy \(F_{n,d}\), and let
+\(\Sigma=\{T:\sigma_T\}\).  By~(\(\Sigma\)), \(\Sigma\) is down-closed and contains
+all singletons.  By~(\(\Phi\)), \(\varphi_T\) holds exactly for the maximal
+members of \(\Sigma\).  By~(S), exactly one cube \(Q(T,b_T)\) is chosen
+for each maximal \(T\in\Sigma\) and none for any other \(T\).  By~(C), \(U\)
+is the union of the chosen cubes.  By~(Y), for each \(T\notin\Sigma\),
+some trace \(p\) on \(T\) satisfies \(y_{T,p}\), and then no \(v\in U\)
+has \(v\cap T=p\); so \(U\) does not shatter \(T\).  The converse half of
+Lemma~\ref{lem:facet-cubes} shows that \(U\) is ample with
+\(\Sh(U)=\Sigma\) and that the chosen cubes are its facet cubes.  It is
+nonempty and all coordinates are active because \(\Sigma\) contains the
+singletons.  By~(VC) and down-closedness, its VC dimension is exactly
+\(d\).  By~(D), every vertex of \(U\) lies in at least two chosen cubes,
+that is, in two facet cubes, so \(U\) is cornerless by
+Corollary~\ref{cor:cornerless-cover}.
+
+Conversely, let \(C\) be such a class.  Set \(\sigma_T\) true iff
+\(T\in\Sh(C)\), \(\varphi_T\) true iff \(T\) is a facet, \(s_{T,b}\) true iff
+\(Q(T,b)\) is a facet cube, and \(c_v\) true iff \(v\in C\).  For
+\(T\notin\Sh(C)\), pick one trace \(p\) on \(T\) that \(C\) does not
+realize and set \(y_{T,p}\) true; set all other \(y\) false.  Clauses~(\(\Sigma\)),
+(VC), (\(\Phi\)) and~(Y) hold by construction.  Clause~(S) holds by
+Lemma~\ref{lem:facet-cubes}(1).  Clause~(C) holds by
+Lemma~\ref{lem:facet-cubes}(3), and~(D) by
+Corollary~\ref{cor:cornerless-cover}.  The auxiliary variables of the
+cardinality encodings can be set accordingly.
+\end{proof}
+
+\begin{remark}
+Deleting~(D) gives a formula whose models are exactly the ample classes of
+VC dimension \(d\) with all coordinates active.  We used this variant as a
+sanity check: on small instances it is satisfiable, and every model
+returned was confirmed ample by the direct test \(|\Sh(U)|=|\SSh(U)|=|U|\).
+\end{remark}
+
+\subsection{The maximum-class formula}
+\label{sec:maximum-formula}
+
+For maximum classes the complex is known in advance: \(\Sigma\) consists of
+all sets of size at most \(d\).  The formula \(M_{n,d}\) has variables
+\(s_{T,b}\) only for \(|T|=d\), covering variables \(c_v\), and missing-trace
+variables \(y_{T,p}\) only for \(|T|=d+1\).  Its clauses are: exactly one
+\(s_{T,b}\) is true for each \(d\)-set \(T\); clauses~(C) and~(D) with \(T\)
+ranging over \(d\)-sets; and clauses~(Y) for every \((d+1)\)-set \(T\),
+with \(\sigma_T\) omitted.
+
+\begin{proposition}
+\label{prop:maximum-encoding}
+The formula \(M_{n,d}\) is satisfiable if and only if there is a
+cornerless maximum class of VC dimension \(d\) on \([n]\).
+\end{proposition}
+
+\begin{proof}
+Given a model, let \(U\) be the union of the chosen \(d\)-cubes.  It
+strongly shatters every set of size at most \(d\), and by~(Y) it shatters
+no \((d+1)\)-set, hence no larger set.  With \(\Sigma\) the sets of size at
+most \(d\), the converse half of Lemma~\ref{lem:facet-cubes} shows that
+\(U\) is ample with \(\Sh(U)=\Sigma\), hence maximum, and that the chosen
+cubes are its facet cubes.  By~(D) and
+Corollary~\ref{cor:cornerless-cover}, \(U\) is cornerless.  Conversely, a
+cornerless maximum class \(C\) is ample with \(\Sh(C)\) equal to the sets
+of size at most \(d\) (Section~\ref{sec:prelim}); its facet cubes, its
+vertex set, and one missing trace per \((d+1)\)-set give a model, as in
+Theorem~\ref{thm:encoding}.
+\end{proof}
+
+\subsection{Lifts of a fixed base}
+\label{sec:lift-formula}
+
+Let \(B\subseteq Q_E\) be fixed, let \(z\notin E\) be a new coordinate,
+and let \(N\) be an integer.  A \emph{lift} of \(B\) is a class
+\(Y\subseteq Q_{E\cup\{z\}}\) whose contraction \(\pi_zY\) is \(B\), that is,
+\(Y=(P\times\{0\})\cup(Q\times\{1\})\) with \(P\cup Q=B\).  Its vertices lie
+in the candidate set \(V=B\times\{0,1\}\).
+
+The formula \(L_{B,N}\) is obtained from \(F_{|E|+1,\cdot}\) on the
+coordinate set \(E\cup\{z\}\) with three changes: clause~(VC) is omitted;
+cube variables \(s_{T,b}\) are created only for cubes \(Q(T,b)\subseteq V\),
+and covering variables \(c_v\) only for \(v\in V\), with~(C), (D) and~(Y)
+restricted accordingly (a vertex outside \(V\) is never covered); and two
+constraints are added,
+\[
+ c_{(x,0)}\vee c_{(x,1)}\quad(x\in B),\qquad
+ \sum_{v\in V}c_v\le N,
+\]
+the second written with a totalizer \cite{BailleuxBoufkhad03}.  If a facet
+of \(\Sigma\) has no cube inside \(V\), clause~(S) forces \(\varphi_T\) to
+be false.
+
+\begin{proposition}
+\label{prop:lift-encoding}
+The formula \(L_{B,N}\) is satisfiable if and only if \(B\) has a
+cornerless ample lift \(Y\) with \(|Y|\le N\) in which every coordinate of
+\(E\cup\{z\}\) is active.
+\end{proposition}
+
+\begin{proof}
+The proof of Theorem~\ref{thm:encoding} applies verbatim.  The restriction
+to cubes inside \(V\) loses nothing: a facet cube of a lift \(Y\) lies in
+\(Y\subseteq V\).  The added clauses say exactly that
+\(\pi_zY\supseteq B\), hence \(\pi_zY=B\) since \(Y\subseteq V\), and that
+\(|Y|\le N\).
+\end{proof}
+
+\subsection{Symmetry breaking}
+\label{sec:lex}
+
+The hyperoctahedral group \(G_n\) of cube automorphisms, generated by
+coordinate permutations and coordinate reflections \(x\mapsto x\oplus e_j\),
+acts on classes and preserves ampleness, the VC dimension, active
+coordinates, facets, facet cubes and corners.  It acts on the cube
+variables by \(g\cdot s_{T,b}=s_{g(Q(T,b))}\), where \(g(Q(T,b))\) is again
+a cube, with support \(g(T)\).
+
+Fix a total order on the cube variables.  For an assignment \(s\) of the
+cube variables and \(g\in G_n\), let \(s^g\) be the assignment
+\(s^g_{T,b}=s_{g(Q(T,b))}\).  For a set \(R\) of generators, the
+\emph{lex-leader constraints} require \(s\le_{\mathrm{lex}}s^g\) for every
+\(g\in R\) \cite{CrawfordGinsbergLuksRoy96}.  They are encoded by the
+standard chain of equality variables: at the first position where \(s\)
+and \(s^g\) differ, \(s\) has \(0\) and \(s^g\) has \(1\).  We use for \(R\)
+the \(n-1\) adjacent transpositions and the \(n\) single-coordinate
+reflections, all of which are involutions.
+
+\begin{proposition}
+\label{prop:lex-sound}
+Adding the lex-leader constraints for \(R\) to \(F_{n,d}\) or to \(M_{n,d}\)
+preserves satisfiability.
+\end{proposition}
+
+\begin{proof}
+By Theorem~\ref{thm:encoding} (resp.\ Proposition~\ref{prop:maximum-encoding}),
+models correspond to classes \(C\), and the cube variables of the model are
+the indicator vector \(s(C)\) of the facet cubes of \(C\), which determines
+\(C\) as their union.  For \(g\in G_n\) the class \(g^{-1}(C)\) is again
+admissible and \(s(g^{-1}(C))=s(C)^g\), because \(g\) maps facet cubes of
+\(g^{-1}(C)\) to facet cubes of \(C\).  Choose \(C\) in its \(G_n\)-orbit
+with \(s(C)\) lexicographically least.  Then \(s(C)\le_{\mathrm{lex}}
+s(C)^g\) for every \(g\in G_n\), in particular for \(g\in R\).  The model
+built from this \(C\) in the proof of Theorem~\ref{thm:encoding}
+satisfies the added constraints.
+\end{proof}
+
+For the lift formulas no symmetry breaking is used.
+
+%======================================================================
+\section{Certification}
+\label{sec:certification}
+
+Every computer-assisted claim below is a claim that an explicit formula
+is unsatisfiable.  We produced each formula with the generator scripts in
+\path{scripts/} of the accompanying material, recorded its SHA-256 digest,
+solved it with CaDiCaL~2.1.2 \cite{BiereEtAl24CaDiCaL} writing a binary
+DRAT proof, and checked the proof with \texttt{drat-trim}
+\cite{WetzlerHeuleHunt14} at commit \texttt{2e3b2dc0}.  The checker
+reported \texttt{s VERIFIED} in every case.  A DRAT proof lists clauses
+that are each derivable from the formula and the earlier clauses by a
+syntactic rule (reverse unit propagation or resolution asymmetric
+tautology); ending in the empty clause, it shows that the formula is
+unsatisfiable.  The checker, not the solver, is therefore the component
+whose correctness is relied on.
+
+\paragraph{What is trusted.}
+The mathematical reductions (Theorem~\ref{thm:encoding},
+Propositions~\ref{prop:maximum-encoding}--\ref{prop:lex-sound}) are proved
+above.  Their implementation in the generator scripts, the DRAT checker, and
+the correspondence between the recorded digests and the checked formulas
+are trusted.  As an independent test of the generators, the formulas
+without the double-coverage constraint are satisfiable in every case we
+tried, and the decoded models were confirmed ample, and in the maximum
+case maximum, by a separate direct test.  The encodings also reproduce the
+known positive instances: \(L_{B,291}\) for the contraction of Hall's
+class at its first coordinate is satisfiable, and its decoded model passes
+the direct test of Proposition~\ref{prop:291}.
+
+\paragraph{Archived material.}
+All formulas can be regenerated from the scripts, and their digests are
+recorded.  For \(F_{n,d}\) with \(n\le6\) and for \(M_{6,4}\), \(M_{7,4}\),
+\(M_{7,5}\), \(M_{8,5}\), \(M_{8,6}\), \(F_{7,6}\) and \(F_{7,7}\), the
+compressed proofs are archived.  For the remaining cases, namely
+\(M_{8,3}\), \(M_{8,4}\), \(F_{7,3}\), \(F_{7,4}\), \(F_{7,5}\) (proofs of
+\(0.49\) to \(3.9\)\,GB) and the lift formulas (proofs of about
+\(80\)\,MB each), we record the digests of the formula and of the checked
+proof and the checker's verdict and statistics.  A separate replay of all
+the \(L_{B,290}\) formulas, with retained proofs, is recorded with the
+companion work \cite{BousquetDampReader}.  Rechecking them means regenerating the
+formula, comparing its digest, running a solver and checking the new proof;
+a new proof need not coincide with the original byte for byte.
+Table~\ref{tab:certificates} lists the certificates.
+
+%======================================================================
+\section{Maximum classes on at most eight coordinates}
+\label{sec:maximum}
+
+\begin{proof}[Proof of Theorem~\ref{thm:A}]
+Let \(C\) be a maximum class of VC dimension \(d\) on \(n\le8\)
+coordinates; all coordinates are active when \(d\ge1\), and \(d=0\) means
+a single vertex, which is a corner.  If \(n\le7\), Theorem~\ref{thm:B}
+applies.  Let \(n=8\).  By Lemma~\ref{lem:small-vc}, a cornerless
+maximum class would have \(3\le d\le6\).  For each of these four values of
+\(d\), the formula \(M_{8,d}\) with lex-leader constraints is unsatisfiable
+by the certificates in Table~\ref{tab:certificates}, so by
+Propositions~\ref{prop:maximum-encoding} and~\ref{prop:lex-sound} no
+cornerless maximum class exists.
+\end{proof}
+
+The proof of Theorem~\ref{thm:B} below also covers maximum classes on
+seven coordinates.  We have additionally refuted \(M_{6,4}\), \(M_{7,4}\) and
+\(M_{7,5}\) directly; these certificates are much smaller than those of
+Theorem~\ref{thm:B} and are listed for comparison.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Formula & \(\Phi_d(n)\) & variables & clauses & core lemmas & proof\\
+\midrule
+\(M_{6,4}\) & 57 & 2\,571 & 5\,299 & 69 & archived\\
+\(M_{7,4}\) & 99 & 12\,205 & 27\,252 & 20\,269 & archived\\
+\(M_{7,5}\) & 120 & 6\,519 & 13\,232 & 140 & archived\\
+\(M_{8,3}\) & 93 & 51\,496 & 134\,558 & 2\,383\,367 & 0.88\,GB, digest only\\
+\(M_{8,4}\) & 163 & 49\,858 & 118\,878 & 3\,010\,081 & 1.16\,GB, digest only\\
+\(M_{8,5}\) & 219 & 34\,752 & 75\,548 & 158\,465 & archived\\
+\(M_{8,6}\) & 247 & 16\,386 & 32\,958 & 693 & archived\\
+\midrule
+\(F_{n,d}\), \(3\le d\le n\le6\) & & \(\le15\,846\) & \(\le39\,835\) & \(\le121\,524\) & archived\\
+\(F_{7,3}\) & & 58\,531 & \(\le148\,463\) & 1\,299\,213 & 0.49\,GB, digest only\\
+\(F_{7,4}\) & & 58\,531 & \(\le148\,463\) & 7\,972\,306 & 3.90\,GB, digest only\\
+\(F_{7,5}\) & & 58\,531 & \(\le148\,463\) & 4\,607\,445 & 2.05\,GB, digest only\\
+\(F_{7,6}\) & & 58\,531 & \(\le148\,463\) & 72\,680 & archived\\
+\(F_{7,7}\) & & 58\,531 & \(\le148\,463\) & 1 & archived\\
+\midrule
+\(L_{B,290}\), \(B\) a Hall contraction & & \(\le592\,845\) & \(\le2\,174\,513\) & 78 cases & digest only\\
+\(L_{C_H/e,294}\), \(e=8,10\) & & 592\,845 & 2\,174\,513 & \(\le62\,863\) & digest only\\
+\bottomrule
+\end{tabular}
+\caption{Certificates.  All formulas carry lex-leader constraints except the
+lift formulas.  ``Core lemmas'' is the number of proof lemmas that
+\texttt{drat-trim} retains in its backward check.  Digests, checker logs and
+run times are in \texttt{evidence/}.}
+\label{tab:certificates}
+\end{table}
+
+%======================================================================
+\section{Ample classes on at most seven coordinates}
+\label{sec:seven}
+
+\begin{proof}[Proof of Theorem~\ref{thm:B}]
+Suppose that \(C\) is a nonempty cornerless ample class on at most seven
+coordinates.  Discarding inactive coordinates does not change the cube
+structure, so we may assume that \(C\subseteq Q_{[n]}\) with \(n\le7\) and
+every coordinate active.  Let \(d\) be its VC dimension.  By
+Lemma~\ref{lem:small-vc}, \(d\ge3\), so \(3\le d\le n\) and \(n\ge3\).  By
+Theorem~\ref{thm:encoding} and Proposition~\ref{prop:lex-sound}, the
+formula \(F_{n,d}\) with lex-leader constraints is satisfiable.  But for
+each of the \(15\) pairs \(3\le d\le n\le7\) it is unsatisfiable by the
+certificates in Table~\ref{tab:certificates}.  This contradiction proves the
+theorem.
+\end{proof}
+
+\begin{corollary}
+\label{cor:seven-peelable}
+Every nonempty ample class on at most seven coordinates has a corner
+peeling.  Every nonempty cornerless ample class on eight active coordinates
+has no peripheral coordinate and is not the product of two classes on
+nonempty coordinate sets.
+\end{corollary}
+
+\begin{proof}
+Deleting a corner from an ample class leaves an ample class
+(Theorem~\ref{thm:corner-deletion}) on the same coordinates, which has a
+corner again by Theorem~\ref{thm:B} as long as it is nonempty.  For the second
+statement, a peripheral coordinate would give a nonempty cornerless ample
+class on seven coordinates by Lemma~\ref{lem:peripheral}, and a product
+decomposition would give one on at most seven coordinates by
+Lemma~\ref{lem:products}; both contradict Theorem~\ref{thm:B}.
+\end{proof}
+
+\begin{remark}
+\label{rem:cost}
+The cost is concentrated in the middle dimensions.  For \(n=7\), the
+cases \(d=6,7\) take seconds, whereas \(d=3,4,5\) take between eight
+minutes and two hours of solver time and produce proofs of \(0.5\) to
+\(3.9\)\,GB.  The extreme dimensions are easy for structural reasons: when
+\(d=n\) the complex contains \(E\) and the unique facet cube is the whole
+cube, whose vertices are covered once, which the solver sees after
+propagation (the backward core has a single lemma).
+\end{remark}
+
+%======================================================================
+\section{Lifts of Hall contractions}
+\label{sec:hall}
+
+\subsection{Hall's class and its contractions}
+
+We use the \(299\) concepts of \(C_H\subseteq Q_{12}\) exactly as listed in
+the ancillary file of \cite{ChalopiChepoiMoran22}, with coordinates numbered
+\(0,\dots,11\) in the order of that file.  Write \(C_H/e\) for the
+contraction at coordinate \(e\), and \(C_H/\{e,f\}\) for the contraction at
+two coordinates.
+
+\begin{proposition}
+\label{prop:hall-structure}
+\begin{enumerate}
+\item \(C_H\) is a maximum class of VC dimension \(3\) with
+      \(\Phi_3(12)=299\) concepts and no corner.
+\item Each single contraction \(C_H/e\) is ample, has order \(232\), uses
+      all eleven coordinates, and has exactly two corners.
+\item For \(i=0,\dots,5\), the contractions \(C_H/2i\) and \(C_H/(2i+1)\)
+      coincide as subsets of \(Q_{11}\), when the remaining coordinates are
+      renumbered in increasing order.  The six classes \(C_H/2i\) are
+      pairwise distinct.
+\item Each double contraction \(C_H/\{e,f\}\) is ample, has order \(176\),
+      uses all ten coordinates, and has two, three or four corners.  It has
+      exactly two corners if and only if \(\{e,f\}\) is one of the pairs
+      \(\{0,1\},\{2,3\},\dots,\{10,11\}\) of item~(3).
+\item The only cube automorphism \(g\in G_{12}\) with \(g(C_H)=C_H\) is
+      the identity.
+\end{enumerate}
+\end{proposition}
+
+\begin{proof}
+All items are finite checks performed by
+\path{scripts/verify_ample_corners_data.py}, which uses no SAT solver.  It
+tests ampleness by the Sandwich equality \(|\Sh|=|\SSh|=|X|\) of
+Theorem~\ref{thm:sandwich}, and counts corners in two ways: by
+Lemma~\ref{lem:facet-cubes}(3), and directly from the definition, by listing
+the maximal cubes at each vertex.  The two counts agree in every case.
+
+For (5), write a cube automorphism as \(g(x)=\pi(x)\oplus t\) with \(\pi\) a
+coordinate permutation.  Since \(0\in C_H\), the translation \(t=g(0)\)
+lies in \(C_H\).  For each of the \(299\) candidates \(t\), the script
+assigns \(\pi(0),\pi(1),\dots\) in turn, keeping only partial assignments
+that preserve the numbers \(|\{x\in C:x_e=x_f=1\}|\) for all assigned
+\(e,f\) (with \(C=C_H\) on one side and \(C_H\oplus t\) on the other).  Each
+complete assignment is then tested directly.  Only the identity survives.
+\end{proof}
+
+Item~(3) says that the twelve coordinates of \(C_H\) come in six
+\emph{twin} pairs: if \(\tau_i\) exchanges \(2i\) and \(2i+1\), then \(C_H\) and
+\(\tau_i(C_H)\) have the same contraction at \(2i\), although
+\(\tau_i(C_H)\ne C_H\) by item~(5).  Item~(4) detects the same pairs through
+corner counts.  Item~(5) means that searches restricted to classes invariant
+under a nontrivial group of cube symmetries cannot find Hall's class.
+
+\subsection{Optimal lifts}
+
+\begin{proposition}
+\label{prop:291}
+For \(e\in\{0,2,4,6\}\) there is a cornerless ample class
+\(Y_e\subseteq Q_{12}\) of order \(291\), and for \(e\in\{8,10\}\) one of order
+\(295\), such that all coordinates of \(Y_e\) are active and contracting its
+last coordinate gives \(C_H/e\).  Each \(Y_e\) has VC dimension \(3\).
+Consequently \(\cmin=\mamp\le291\).
+\end{proposition}
+
+\begin{proof}
+The classes are listed in \path{evidence/hall_lifts/}.  They were obtained
+by decoding satisfying assignments of \(L_{C_H/e,\,291}\) and
+\(L_{C_H/e,\,295}\), but their properties are checked directly by
+\path{scripts/verify_ample_corners_data.py}: \(|\Sh(Y_e)|=|\SSh(Y_e)|=|Y_e|\),
+no vertex lies in a unique maximal cube, all coordinates are active, and
+contracting the last coordinate gives \(C_H/e\).  Of the \(232\) vertices of
+\(C_H/e\), exactly \(|Y_e|-232\) lift to both layers.  The last statement
+follows from Proposition~\ref{prop:cmin-equals-mamp}.
+\end{proof}
+
+The companion work constructs a class of order \(291\) over \(C_H/0\) by
+hand, starting from an ample overlap of order \(59\)
+\cite{BousquetDampReader}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:C}]
+Let \(B\) be \(C_H/e\) or \(C_H/\{e,f\}\), on the coordinate set \(E\), and let
+\(Y\) be a cornerless ample lift of \(B\) with \(|Y|\le N\).  Every
+coordinate of \(E\) is active in \(Y\), because \(\pi_zY=B\) and all
+coordinates of \(B\) are active by Proposition~\ref{prop:hall-structure}.
+The coordinate \(z\) is active as well.  Otherwise \(Y=B\times\{i\}\) is a
+copy of \(B\) in one layer, which has the same cubes and corners as \(B\);
+but \(B\) has a corner by Proposition~\ref{prop:hall-structure}.  Hence
+Proposition~\ref{prop:lift-encoding} shows that \(L_{B,N}\) is satisfiable.
+
+Take \(N=290\).  For each of the \(12\) single and \(66\) double contractions,
+\(L_{B,290}\) is unsatisfiable by the certificates listed in
+\path{evidence/hall_lifts/certificates.txt}.  This proves \(|Y|\ge291\).
+
+For single contractions, the upper bounds are
+Proposition~\ref{prop:291} for even \(e\), and the same classes serve for
+odd \(e\), because \(C_H/(2i+1)=C_H/2i\) by
+Proposition~\ref{prop:hall-structure}(3).  For \(e\le7\) this matches the
+lower bound \(291\).  For \(e\in\{8,10\}\), the formula \(L_{C_H/e,\,294}\) is
+unsatisfiable by the certificates in \path{evidence/hall_lifts/order294/};
+by the argument above, no cornerless ample lift of \(C_H/e\) has order at
+most \(294\).  The same holds for \(e\in\{9,11\}\), whose base is the
+same class.  With Proposition~\ref{prop:291}, the optimum for \(e\ge8\) is
+\(295\).
+\end{proof}
+
+\begin{remark}
+\label{rem:hall-doubles}
+For double contractions we only have the lower bound \(291\).  The class
+\(C_H/e\) is itself a lift of \(C_H/\{e,f\}\), but it has two corners, so it
+gives no upper bound.  The dichotomy between the twin pairs
+\(\{0,1\},\dots,\{6,7\}\) and \(\{8,9\},\{10,11\}\) in Theorem~\ref{thm:C} is
+not explained by any symmetry of \(C_H\), which has none.
+\end{remark}
+
+%======================================================================
+\section{Contract-and-relift descent}
+\label{sec:descent}
+
+Theorem~\ref{thm:C} describes one step of a procedure that can be
+iterated.  Let \(Y\) be a cornerless ample class.  Contract it at a coordinate
+\(c\), obtaining an ample class \(B=\pi_cY\) (which, in every case below, has
+corners), and search for a cornerless ample lift of \(B\) of least order with
+the formula \(L_{B,N}\) of Section~\ref{sec:lift-formula}.  The lift need not
+contain \(Y\) or be isomorphic to it.  Starting from Hall's class, the first
+step gives the classes \(Y_e\) of Proposition~\ref{prop:291}.  We iterate
+from these.
+
+\begin{proof}[Proof of Theorem~\ref{thm:D}]
+The class is listed in \path{evidence/descent/record.json}.  The script
+\path{scripts/verify_ample_corners_data.py} checks directly, without a SAT
+solver, that it has \(267\) concepts on twelve active coordinates, that
+\(|\Sh|=|\SSh|=267\), so that it is ample by Theorem~\ref{thm:sandwich}, that
+its VC dimension is \(3\), and that no vertex lies in a unique maximal cube
+(by both corner tests).  The equality \(\cmin=\mamp\) is
+Proposition~\ref{prop:cmin-equals-mamp}, and \(\cmin\ge64\) is proved in
+\cite{BousquetDampReader}.
+\end{proof}
+
+The record was found as follows; only the final class matters for the
+theorem, but the lineage shows how the method moves away from Hall's
+class.  Each arrow is ``contract at the indicated coordinate, then take the
+decoded lift of least order found''.
+\[
+ C_H\ (299)\ \xrightarrow{\,0\,}\ Y_0\ (291)\ \xrightarrow{\,0\,}\ 283\
+ \xrightarrow{\,0\,}\ 275\ \xrightarrow{\,0\,}\ 267 .
+\]
+In each step the solver was run with bound one below the current record
+and, after each satisfying assignment, with bound one below the order found.
+The script \path{scripts/descent.py} automates this and verifies every
+decoded class directly before storing it; all \(23\) classes it found are in
+\path{evidence/descent/state.json}, with their parents, and are rechecked,
+including the contraction relation to their parents, by
+\path{scripts/verify_ample_corners_data.py}.
+
+\subsection{The shattered sets of the record}
+
+The class of Theorem~\ref{thm:D} has a transparent shattering complex.
+Label its coordinates \(0,\dots,11\) as in
+\path{evidence/descent/record.json}, and put
+\[
+ \gamma(i)=\lfloor i/4\rfloor\in\{0,1,2\},\qquad
+ \lambda(i)=\lfloor (i\bmod 4)/2\rfloor\in\{0,1\}.
+\]
+Thus the coordinates fall into three \emph{groups}
+\(\{0,1,2,3\},\{4,5,6,7\},\{8,9,10,11\}\), and each group into two
+\emph{pairs} \(\{4g,4g+1\}\) (label \(0\)) and \(\{4g+2,4g+3\}\) (label \(1\)).
+Call a triple \(\{i,j,k\}\) an \emph{even transversal} if it meets every
+group once and \(\lambda(i)+\lambda(j)+\lambda(k)\) is even.  There are
+\(4\cdot2^3=32\) even transversals.
+
+\begin{proposition}
+\label{prop:record-complex}
+The class \(Y_{267}\) of Theorem~\ref{thm:D} shatters exactly the empty set,
+the \(12\) singletons, all \(66\) pairs, and the \(188\) triples that are not
+even transversals.  Consequently every contraction \(\pi_eY_{267}\) has
+\(208\) concepts, the facet cubes of \(Y_{267}\) are its \(188\) triple
+cubes, and its only cube automorphism is the identity.
+\end{proposition}
+
+\begin{proof}
+The shattered sets, the orders of the contractions and the automorphism
+group are computed directly by \path{scripts/verify_ample_corners_data.py}
+and \path{explore_ample_267_structure.py}.  The count
+\(1+12+66+188=267\) agrees with \(|Y_{267}|\) by the Sandwich equality.
+Since \(Y_{267}\) is ample, \(|\pi_eY_{267}|=|Y_{267}|-|Y_{267}^{\{e\}}|\) and
+\(|Y_{267}^{\{e\}}|\) is the number of shattered sets containing \(e\), namely
+\(1+11+47=59\) for every \(e\): each coordinate lies in \(8\) even
+transversals.  Every pair lies in at least \(10-2=8\) shattered triples, so no
+pair is a facet, and the facets are the \(188\) shattered triples
+(Lemma~\ref{lem:facet-cubes}).
+\end{proof}
+
+In the complex of Proposition~\ref{prop:record-complex}, every pair of
+coordinates lies in either \(0\) or exactly \(2\) even transversals, and the
+pairs lying in none form three disjoint copies of \(K_4\), one on each group.
+All \(16\) classes of order \(267\) found by the descent, which fall into
+\(13\) isomorphism types, have a complex isomorphic to this one, although
+their facet-cube placements differ and none has a nontrivial cube
+automorphism.  The same twin pairs appear in Hall's class
+(Proposition~\ref{prop:hall-structure}): the descent leading to \(Y_{267}\)
+contracts coordinate \(0\) at every step and so only rotates Hall's
+coordinate labels.  Nevertheless \(Y_{267}\) is far from Hall's class.
+Among the copies of \(C_H\) obtained by a cyclic rotation of the coordinates
+followed by a translation, the best one shares about \(100\) of the \(267\)
+vertices and \(36\) of the \(188\) facet cubes.
+
+\begin{remark}[Local optimality, not certified]
+\label{rem:descent-local}
+Starting the descent from each of the other optimal lifts \(Y_2,Y_4,Y_6\)
+(order \(291\)) and \(Y_8,Y_{10}\) (order \(295\)) also ends at exactly
+\(267\).  Several further searches for a cornerless ample class of order at
+most \(266\) returned no solution: one-coordinate lifts of all single and
+double contractions of the order-\(267\) classes, including all \(556\)
+double contractions, whose lifts have eleven coordinates; neighbourhood
+searches that keep the facet cubes of an order-\(267\) class on all triples
+avoiding a chosen set of free coordinates and allow at most \(187\)
+triples; and prescribed complexes with the same parity structure on nine to
+eleven coordinates.  In the neighbourhood searches, the same formulas with
+\(188\) triples allowed are satisfiable within seconds, and their decoded
+models are cornerless ample classes of order \(267\) that differ from the
+source class, so the free part is genuinely free.  These runs did not
+record proofs, and we make no claim based on them.  They indicate that
+\(267\) is a strong local minimum of the moves we have tried.
+\end{remark}
+
+%======================================================================
+\subsection{Certified shrinking edits of the record}
+\label{sec:record-shrinking-edits}
+
+We can exclude two small neighborhoods of the particular labelled class
+\(X=Y_{267}\) by complete enumeration, including full peeling certificates
+for every ample output.  The intermediate deletion need not be ample.
+
+\begin{proposition}[Computational exclusion of small shrinking edits]
+\label{prop:record-small-shrinking-edits}
+Let \(R\subseteq X\), let \(A\subseteq Q_{12}\setminus X\), and suppose
+\(|R|=r\), \(|A|=r-1\), where \(r\in\{2,3\}\).
+If \(Y=(X\setminus R)\cup A\) is ample, then \(Y\in\Damp\).
+There are exactly \(24\) such labelled ample outputs for \(r=2\), and
+exactly \(1296\) for \(r=3\).
+\end{proposition}
+
+\begin{proof}[Enumeration and certificate verification]
+Every output has \(266\) vertices, so ampleness requires
+\(|\Sh(Y)|=266\).  By monotonicity of shattering, at least one of the
+\(267\) supports in \(\Sh(X)\) must cease to be shattered by
+\(X\setminus R\).  Such a support \(S\) is lost precisely when \(R\)
+contains a whole nonempty trace fiber
+\[
+ F_{S,t}=\{x\in X:x|_S=t\},\qquad t\in\{0,1\}^S.
+\]
+The verifier enumerates these fibers for every \(S\in\Sh(X)\).
+There are no singleton fibers.  There are \(24\) distinct two-element
+fibers and \(6\) distinct three-element fibers.  Consequently only
+\(24\) deletion pairs and \(6354\) deletion triples need be considered;
+all other choices retain at least \(267\) shattered supports.
+
+For a remaining deletion set put \(B=X\setminus R\), and, for every
+coordinate support \(S\), let
+\(M_B(S)=\{0,1\}^S\setminus\{x|_S:x\in B\}\).
+The exact completion test is
+\[
+ S\in\Sh(B\cup A)
+ \quad\Longleftrightarrow\quad
+ M_B(S)\subseteq\{a|_S:a\in A\}.
+\]
+In particular, supports missing more than \(|A|\) traces can be ignored.
+Every inserted word must individually create at most
+\(266-|\Sh(B)|\) supports.  This necessary filter leaves \(8652\)
+pairs of inserted words in total in the three-deletion case; the joint
+completion test then gives exactly the \(1296\) ample outputs stated.
+For two deletions, each of the \(24\) pairs admits exactly one insertion.
+
+The archives \path{evidence/order267_two_for_one/} and
+\path{evidence/order267_three_for_two/} contain all resulting classes and
+complete \(266\)-vertex corner orders.  Their corresponding
+\path{scripts/verify_order267_*.py} verifiers check coverage, recompute
+shattering, and check that the full cube on the current incident
+directions of each deleted vertex is present.  The three-deletion verifier
+recomputes every candidate's projections directly from its membership
+bitset, independently of the exploration code's trace-update rule.
+Every order ends with the empty class, proving the assertion.
+\end{proof}
+
+This excludes the stated edits of one seed.  It neither excludes larger
+edits nor bounds the size of an arbitrary cornerless ample class.
+
+\begin{proposition}[Corner-deleted contractions have no cornerless ample lift]
+\label{prop:record-corner-deleted-relifts}
+Let $X=Y_{267}$, let $e$ be any of its twelve coordinates, and let $c$
+be any corner of $\pi_eX$. Put $B=(\pi_eX)\setminus\{c\}$.
+There is no cornerless ample class $Y\subseteq B\times\{0,1\}$ whose
+contraction of the last coordinate is exactly $B$.
+There is no restriction on the order or VC dimension of $Y$.
+\end{proposition}
+
+\begin{proof}[Computer-assisted proof]
+After suppressing coordinate $e$, encode the remaining eleven coordinates
+by their binary integer values, starting at coordinate zero.
+Each contraction has $208$ vertices and exactly two corners:
+\[
+\begin{array}{c|c}
+e&\text{corners of }\pi_eX\\\hline
+0,1&127,217\\
+2,3&1287,1860\\
+4,5&283,366\\
+6,7&1264,1536\\
+8&236,1736\\
+9&492,1992\\
+10,11&1330,1571
+\end{array}
+\]
+These lists are checked directly from the incident cubes. Deleting a
+corner leaves an ample $207$-vertex base. Within each paired row of the
+table the bases are identical. The two bases for $e=9$ are translates
+of the corresponding bases for $e=8$, by binary exclusive-or with $256$.
+Thus twelve explicit base families cover all twenty-four choices $(e,c)$.
+
+For each representative, use a membership variable $p_v$ for every
+$v\in E=B\times\{0,1\}$. Apply the exact ampleness and noncorner
+conditions from the proof of
+Theorem~\ref{thm:record267-ample-inclusion-minimality}, with potential
+family $E$. Add precisely the contraction clauses
+\[
+ p_{(x,0)}\lor p_{(x,1)}\qquad(x\in B).
+\]
+Membership outside $E$ is forbidden by the choice of variables. These
+clauses therefore impose $\pi_zY=B$, rather than merely containment.
+The other clauses impose ampleness and absence of corners exactly.
+No cardinality, prescribed-shadow, or VC-dimension clauses are added.
+Consequently a model would be exactly a class forbidden by the statement.
+All twelve formulas have DRAT refutations checked independently by
+\texttt{drat-trim}.
+
+The formulas, compressed proofs, hashes, coverage translations and checker
+logs are in \path{evidence/corner_deleted_relifts_unbounded/}.
+The generator is \path{scripts/explore_corner_deleted_relifts.py};
+\path{scripts/verify_corner_deleted_relifts.py} reconstructs every formula,
+checks all twenty-four input identifications, and replays the proofs.
+It also exhausts the contraction module on three-coordinate families and
+checks that the unchanged contraction of $X$ admits the known lift $X$.
+\end{proof}
+
+This excludes changing the contraction by one corner deletion and then
+choosing an entirely new lift, even one using words absent from $X$.
+It does not exclude lifts of other bases, further deletions from these
+bases, or cornered nonpeelable lifts. In particular, it does not improve
+the unrestricted interval $64\le c_{\min}\le267$.
+
+The exclusion cannot be explained by incompatible choices at the base
+corners alone. For each of the twelve representative bases, the archive
+\path{evidence/relift_corner_localization/} gives consistent layer
+memberships on the union of the incident corner cubes. On each such cube
+the induced lift is ample and neither lift of the base corner is a
+corner. These are local assignments, not full ample lifts.
+More strongly, for $B=(\pi_0Y_{267})\setminus\{127\}$,
+\path{evidence/relift_ampleness_rank_isometric/report.json} records a
+$272$-vertex isometric cornerless lift with contraction $B$ such that every shattered support of
+size at most three is strongly shattered. Direct counting gives $273$
+shattered supports and exactly three that are not strongly shattered;
+all three have size four. Thus even imposing isometry, cornerlessness
+globally, and all ampleness equalities through rank three does not suffice
+for this base. Each of the $142$ possible single-word insertions preserving
+the contraction creates a new shattered support, so none repairs ampleness.
+These nonample diagnostics do not change the minimum-order bounds.
+
+\begin{proposition}[All ample subfamilies of the $272$-vertex diagnostic peel]
+\label{prop:native272-cycle-fiber}
+Let $T\subseteq Q_{12}$ be the $272$-vertex isometric family just
+described, with coordinates numbered from zero, and put
+\[
+ U=\{2150,2166,2174,2278,2286\},\qquad
+ F=\{x\in T:x_8=0,\ x_{11}=x_3=x_4=x_7=1\}.
+\]
+Then $|F|=17$, and the following hold.
+\begin{enumerate}
+\item Every ample $Y\subseteq T$ satisfies
+      $U\nsubseteq Y$ or $Y\cap F=\varnothing$.
+\item Every ample subfamily of $T$ belongs to $\Damp$.
+\end{enumerate}
+Thus no deletion of an arbitrary batch of words from this fixed family
+produces an ample forbidden pc-minor, of any order.
+\end{proposition}
+\begin{proof}[Restriction argument and computer-assisted exclusion]
+Restrict $T$ to $x_8=0,x_{11}=1$ and project onto coordinates $(3,4,7)$.
+The resulting three-coordinate family is $Q_3\setminus\{100,011\}$,
+where the omitted words are antipodal; equivalently, its integer encoding
+is $\{0,2,3,4,5,7\}$, with the first coordinate the least significant bit.
+It is a six-cycle, with six vertices and seven shattered supports, so it
+is not ample. Five trace fibers are precisely the singletons indexed by
+$U$; the sixth is $F$. These image and fiber identities are checked
+directly from the recorded words. If $Y$ retained all five singleton
+fibers and any word of $F$, its same restriction and projection would
+still be this six-cycle. Closure of ample classes under restriction and
+projection proves the first assertion.
+
+First exclude cornerless ample subfamilies avoiding $F$. Encode arbitrary nonempty subfamilies of $T$
+using the exact ampleness and noncorner conditions of
+Theorem~\ref{thm:record267-ample-inclusion-minimality}. Add the just-proved
+condition that at least one of the six trace fibers is empty, and force
+every membership variable in $F$ to be false. The last condition already
+satisfies the additional trace condition, so the query covers every
+nonempty ample cornerless subfamily of $T\setminus F$. There is no order
+bound or restriction on which other vertices may be removed. The formula
+has $18166$ variables and $155690$ clauses and has an independently
+replayed DRAT refutation. Hence every nonempty ample subfamily of
+$T\setminus F$ has a corner. Corner deletion preserves ampleness and
+containment in $T\setminus F$, so induction gives a complete peeling.
+
+This first formula, compressed proof, and replay log are retained in
+\path{evidence/native272_subfamilies_unbounded_cycle_cut_trace152/}.
+The verifier \path{scripts/verify_native272_cycle_cut.py} checks the
+six-cycle image and all fibers, reconstructs the formula, and replays
+the refutation.
+
+It remains to consider a nonempty cornerless ample $Y\subseteq T$
+meeting $F$. List $U$ in the displayed increasing order as
+$u_0,\ldots,u_4$. The first assertion gives a least index $j$ with
+$u_j\notin Y$. There are exactly five disjoint cases, given by
+\[
+ u_0,\ldots,u_{j-1}\in Y,\qquad u_j\notin Y,\qquad
+ Y\cap F\ne\varnothing \qquad(0\le j\le4).
+\]
+For each case add these membership conditions to the same exact ample
+cornerless-subfamily encoding, without a cardinality or VC bound.
+Each formula has $18160$ variables; its clause count is $155646+j$.
+All five have DRAT refutations, first checked on the search worker and
+then independently replayed locally after reconstructing the formulas
+byte for byte. The formulas, compressed proofs, hashes, and logs are in
+\path{evidence/native272_remote_split/}; the reconstruction and replay
+are in \path{scripts/verify_native272_remote_split.py}.
+This excludes every nonempty cornerless ample subfamily of $T$.
+Any nonempty ample $Y\subseteq T$ therefore has a corner; its deletion
+leaves another ample subfamily of $T$. Induction on $|Y|$ gives a full
+corner peeling and proves the second assertion. The conclusion concerns
+this fixed envelope, not arbitrary classes of order at most $272$.
+\end{proof}
+
+\begin{proposition}[Relative minimality of the $264$-word rooted input]
+\label{prop:root264-relative-ample-inclusion}
+Let $A=(Y_{267}\setminus\{236,492,1004,748\})\cup\{220\}$ be the
+recorded $264$-word rooted input, with marked root $r=750$.
+Every proper ample $B\subsetneq A$ peels relatively to $B\cap\{r\}$.
+If $r\notin B$, this means an ordinary peeling to the empty family.
+In fact every maximal corner-deletion sequence avoiding $r$ reaches
+that target. This assertion concerns the specified root, not arbitrary
+rerootings of proper subfamilies.
+\end{proposition}
+\begin{proof}[Computer-assisted proof]
+Use the membership encoding of
+Theorem~\ref{thm:record267-ample-inclusion-minimality}, with potential
+family $A$. Omit the noncorner condition at $r$, leave its membership
+variable free, require at least one vertex outside $\{r\}$, and require
+a proper subfamily. Thus a model is exactly a proper ample $B\subset A$
+with $B\setminus\{r\}\ne\varnothing$ and no corner outside $\{r\}$.
+The resulting formula has $17008$ variables and $145304$ clauses.
+It has an independently checked DRAT refutation. Therefore each proper
+ample subfamily not already contained in $\{r\}$ has a deletable
+corner outside $\{r\}$. Deleting such a corner preserves ampleness,
+proper containment in $A$, and the intersection with $\{r\}$.
+Induction proves the assertion, regardless of deletion choices.
+
+The script \path{scripts/explore_root264_inclusion.py} constructs the
+formula. The proof, hashes and checker log are in
+\path{evidence/root264_ample_inclusion/}. The checker
+\path{scripts/verify_root264_inclusion.py} rebuilds that formula,
+verifies the input's ordinary corner order and unique corner, tests the
+protected-root encoding in $768$ small membership cases, and optionally
+replays the compressed proof with \texttt{--replay-proof}.
+The unchanged ordinary encoding is separately rebuilt against its
+previously checked $267$ certificate.
+\end{proof}
+
+The stronger endpoint statement remains open: does every proper ample
+$B\subsetneq A$ admit a corner order ending at each prescribed $b\in B$?
+By Proposition~\ref{prop:root264-relative-ample-inclusion}, every such $B$
+is ordinarily positive. Consequently the stronger statement is equivalent
+to the absence of a proper ample subfamily with at least two vertices and
+exactly one corner. In one direction that unique corner cannot be retained
+until the end. In the other, a failed maximal peeling avoiding a prescribed
+vertex leaves a nontrivial ample remainder with no corner outside that
+vertex. The remainder is proper in $A$ and ordinarily positive, so its
+prescribed vertex is its unique corner. This equivalence reduces the
+endpoint question to a single exact membership search with a free choice
+of root; it does not settle that search. The formulations and their current
+unresolved status are retained in
+\path{evidence/root264_free_root/} and
+\path{evidence/root264_free_root_exact/}.
+
+The vertex-gluing criterion in the companion Damp manuscript now shows
+that the $527$-word double has every proper ample subfamily in $\Damp$.
+Joining the two roots by a new edge instead gives a $528$-word cornerless
+class with the same all-subfamily property. It is not a forbidden pc-minor,
+since the bridge contracts to the negative $527$ class. The uniform
+criterion and full argument appear there as
+\texttt{prop:damp-inclusion-minimal-cut-vertex} and
+\texttt{cor:damp-inclusion-minimal-527-528}. This distinguishes minimality
+under ample inclusion from the contraction minimality required in the
+forbidden-minor problem; it gives no improvement to the global size bounds.
+
+\begin{remark}[Batch deletion in two-row presentations]
+\label{rem:record-two-row-fiber-deletions}
+The labelled $Y_{267}$ has six unordered coordinate pairs for which,
+after a sign choice, its four rows have the form
+$(B_0,D_0,D_1,B_1)$ with $B_0\cup B_1=D_0\cap D_1=:C$.
+One pair has row sizes $13,136,72,46$ and $|C|=48$.
+For each presentation and either large row, delete a nonempty fiber
+$\{x\in D_i:x|_S=t\}$ disjoint from $C$, leaving all other rows fixed.
+All $7148$ distinct resulting families are nonample; the largest deletion
+has $56$ words. This extends the preceding tests to a particular family
+of larger batches without insertions, not to arbitrary larger edits.
+
+The independent support/trace enumeration in the companion script
+\path{../dismantlable-ample/research/verify_two_row.py} agrees with the
+explorer's iterated bitset-intersection enumeration. For every output it
+records a shattered support with no witnessing cube, certifying failure
+of ampleness. A separate shadow-cardinality computation checks every
+output, including those with corners. Certificates are in
+\path{../dismantlable-ample/research/two_row_verification.json}.
+No change to the $64$--$267$ interval follows.
+\end{remark}
+
+\begin{proposition}[Rigidity with a fixed two-row contraction]
+\label{prop:record-fixed-contraction-rigidity}
+Fix any one of the six two-row presentations in
+Remark~\ref{rem:record-two-row-fiber-deletions}, and retain its large
+rows $D_0,D_1$. Put $C=D_0\cap D_1$. For arbitrary subsets
+$B_0,B_1\subseteq C$ with $B_0\cup B_1=C$, define
+\[
+ V=(B_0\times\{00\})\cup(D_0\times\{01\})
+   \cup(D_1\times\{10\})\cup(B_1\times\{11\}).
+\]
+If $V$ is ample and cornerless, then $(B_0,B_1)$ is either the original
+pair of diagonal rows or its exchange. Thus there are exactly two
+labelled assignments for each fixed pair $D_0,D_1$, both of order $267$.
+No bound on $|B_0\cap B_1|$ is assumed.
+\end{proposition}
+\begin{proof}[Exact encoding and certificate verification]
+Each fixed pair satisfies $|D_0|+|D_1|=208$ and $|C|=48$.
+The family $K=(D_1\times\{0\})\cup(D_0\times\{1\})$ is ample.
+By the two-row ampleness identity in the companion Damp manuscript,
+$V$ is ample exactly when $H=(B_0,B_1)$ is ample. We describe an exact
+finite encoding rather than testing a neighbourhood of the original rows.
+
+For each $x\in C$ introduce membership variables $a_{x,0},a_{x,1}$,
+with clause $a_{x,0}\vee a_{x,1}$. These allow all three possible
+memberships of each word. Every support of $H$ avoiding its new coordinate
+is in $\Sh(C)$, independently of the assignment. For every $S\in\Sh(C)$,
+require that some $S$-cube contained in $C$ lie wholly in one of the two
+sections. This is exactly strong shattering of $S$ in $H$.
+The support $S\cup\{z\}$ is shattered precisely when both sections
+contain every $S$-trace. Whenever this occurs, require that some
+$S$-cube of $C$ lie wholly in $B_0\cap B_1$. This is exactly strong
+shattering of $S\cup\{z\}$. Supports outside $\Sh(C)$ cannot be
+shattered even after adding $z$. These requirements therefore express
+$\Sh(H)=\operatorname{sSh}(H)$ exactly.
+
+For completeness, cornerlessness is encoded directly on the fixed
+potential family
+\[
+ E=(C\times\{00,11\})\cup(D_0\times\{01\})
+   \cup(D_1\times\{10\}).
+\]
+Write $p_v$ for the membership variable of a diagonal vertex, for the
+constant $1$ on the two retained rows, and for $0$ outside $E$.
+Let $N_E(v)$ be the set of coordinate directions $i$ with
+$v^{\{i\}}\in E$. For every $v\in E$ impose
+\[
+ p_v\ \Longrightarrow\
+ \bigvee_{\substack{T\subseteq N_E(v)\\ |T|\ge2}}
+ \left[\left(\bigwedge_{i\in T}p_{v^{\{i\}}}\right)
+ \wedge\neg p_{v^T}\right].
+\]
+The disjunction supplies a missing vertex of the cube generated by
+present neighbours. It is equivalent to saying that a present $v$ is
+not a corner: a missing cube vertex cannot differ in zero or one
+incident direction. Thus no degree surrogate or assumed VC bound enters.
+Standard conjunction/disjunction gate clauses convert these exact
+conditions to a conjunctive normal form, preserving their models.
+
+For each of the six fixed contractions, complete model enumeration gives
+exactly two assignments to the membership variables. Each is checked
+directly for ampleness and cornerlessness and identified with the original
+rows or their exchange. A clause excluding each of these two assignments
+is then added. The resulting formula has an independently checked DRAT
+refutation. Since every other assignment satisfies both exclusion clauses,
+this proves completeness. In particular the search has no cardinality
+cutoff. Separate checked refutations with $|B_0\cap B_1|\le10$ agree
+with the resulting lower bound $|V|\ge208+48+11=267$.
+
+The scripts in the companion directory
+\path{../dismantlable-ample/research/} are
+\path{two_row_fixed_contraction_sat.py}, \path{two_row_fixed_rigidity.py},
+and \path{verify_two_row_fixed_contraction.py}. Their
+\path{two_row_fixed_contraction/} archive contains the formulas, two
+surviving assignments per pair, refutations, checker logs, and hashes.
+The replay reconstructs each fixed pair from the original labelled seed,
+reconstructs the blocking clauses from the recorded assignments, checks
+the resulting formula, and independently replays each refutation.
+\end{proof}
+
+This excludes every change of the diagonal rows with those large rows
+fixed, not merely the earlier cylinder deletions. It is a finite rigidity
+statement for six specified contractions, not a global $267$ lower bound.
+Any smaller cornerless construction through these presentations must
+change at least one large row. Cornered negative assemblies are not
+classified by this test.
+
+\begin{proposition}[A two-row overlap with no negative ample lift]
+\label{prop:record-two-row-overlap-envelope}
+Use the labelled $Y_{267}$ and the two-row presentation on coordinates
+$0,1$, with coordinate $1$ flipped. Put $C=D_0\cap D_1$, deleting
+these two coordinates, and $E=C\times Q_1$. Then $|C|=48$, $|E|=96$,
+and every ample subfamily of $E$ belongs to $\Damp$.
+In particular, no ample forbidden class $H=(B_0,B_1)$ with
+$B_0\cup B_1=C$ can serve as the reduced input of a two-row assembly
+with this common row intersection. This holds even if the large rows
+are changed while their intersection remains this labelled $C$.
+\end{proposition}
+\begin{proof}[Computer-assisted exclusion and induction]
+In integer coordinates, with coordinate zero least significant, the
+base is recovered directly from the seed by
+\[
+ C=\{\lfloor x/4\rfloor:x\in Y_{267},\ x\mathbin{\mathrm{xor}}1\in Y_{267}\}.
+\]
+Thus it is the contraction in coordinate $1$ of the reduction in
+coordinate $0$, with both coordinates removed. The certificate verifies
+that $C$ is ample and has $48$ vertices.
+
+Apply the exact all-subfamily encoding used in
+Theorem~\ref{thm:record267-ample-inclusion-minimality} to the potential
+family $E$, without a properness clause. All $96$ membership variables
+are free. Require nonemptiness, ampleness by shattered/strongly-shattered
+support equality, and cornerlessness by a missing vertex of the full
+incident cube at each retained vertex. No projection, cardinality, VC,
+or coordinate-support constraint is imposed. The resulting formula has
+$3222$ variables and $21485$ clauses. Its DRAT refutation is checked,
+and an independent replay reconstructs the base from the displayed
+edge formula and rebuilds the CNF before checking the proof again.
+Consequently every nonempty ample subfamily of $E$ has a corner.
+Deleting a corner preserves ampleness and containment in $E$; induction
+on order proves dismantlability. Any proposed $H$ in the statement is
+an ample subfamily of $E$, proving the last assertion.
+
+The complete formula, compressed proof, hashes and two checker logs
+are in \path{evidence/two_row_overlap_envelope/}; the construction and
+replay scripts are \path{scripts/explore_two_row_overlap_envelope.py}
+and \path{scripts/verify_two_row_overlap_envelope.py}.
+\end{proof}
+
+Unlike fixed-contraction rigidity, this checks cornered as well as
+cornerless reduced inputs, and allows their projection to be a proper
+subfamily of $C$. It excludes one specified $96$-vertex envelope,
+not all ample classes of order at most $96$. It neither establishes
+a global lower bound nor resolves the inverse construction with an
+arbitrary forbidden reduced input.
+
+\begin{theorem}[Every proper ample subfamily of the recorded seed peels]
+\label{thm:record267-ample-inclusion-minimality}
+Let $X=Y_{267}$ be the labelled family in the certificate of order $267$.
+Every proper ample subfamily $Y\subsetneq X$ belongs to $\Damp$.
+Indeed, any maximal sequence of corner deletions from such a $Y$ ends
+at the empty family. In particular $X$ has no nonempty proper ample
+cornerless subfamily.
+\end{theorem}
+\begin{proof}[Computer-assisted exclusion and induction]
+We first exclude every nonempty proper ample cornerless $Y\subset X$,
+without fixing any row, coordinate support, or deletion radius.
+Introduce a membership variable $p_x$ for each $x\in X$, and clauses
+\[
+ \bigvee_{x\in X}p_x,\qquad \bigvee_{x\in X}\neg p_x,
+\]
+requiring $Y$ to be nonempty and proper. For every $S\in\Sh(X)$,
+let $\mathcal Q_S(X)$ be the family of all axis-parallel $S$-cubes
+contained in $X$. Impose
+\[
+ \left[\bigwedge_{t\in\{0,1\}^S}
+       \bigvee_{\substack{x\in X\\x|_S=t}}p_x\right]
+ \ \Longrightarrow\
+ \left[\bigvee_{Q\in\mathcal Q_S(X)}\ \bigwedge_{x\in Q}p_x\right].
+\]
+The antecedent means that $Y$ shatters $S$ and the consequent that it
+strongly shatters $S$. Every support shattered by $Y$ already belongs
+to $\Sh(X)$, so these implications express ampleness exactly. In
+particular, losing shattered supports is allowed; none of the original
+supports is prescribed to remain.
+
+Use the exact missing-incident-cube conditions from the proof of
+Proposition~\ref{prop:record-fixed-contraction-rigidity}, now with the
+potential family $E=X$ and every membership variable free. They express
+cornerlessness exactly. Gate clauses yield a formula with $17520$
+variables and $149656$ clauses. The full seed satisfies the same formula
+before the properness clause is added. After that clause is added,
+the saved DRAT refutation is independently verified. Hence no nonempty
+proper ample cornerless subfamily exists.
+
+Now let $Y\subsetneq X$ be ample. If $Y$ is nonempty, the exclusion
+just proved supplies a corner. Removing it preserves ampleness and
+leaves a proper subfamily of $X$. Repeat. Cardinality strictly decreases,
+and every nonempty remainder still has a corner, so the process ends
+at the empty family regardless of the choices. This proves the theorem.
+
+The encoder is \path{scripts/explore_seed267_subfamilies.py}; its
+saved formula and compressed refutation are in
+\path{evidence/seed267_all_subfamilies/}. The encoding audit
+\path{scripts/verify_seed267_subfamily_encoding.py} reconstructs the
+saved formula and checks ampleness and cornerlessness separately and
+jointly on all $256$ labelled subfamilies of $Q_3$, for $768$ checks.
+These small checks supplement the symbolic coverage argument; they do
+not replace the full refutation. The independent replay is
+\path{scripts/replay_seed267_subfamilies.py}, with formula, proof, seed,
+and checker hashes recorded in the evidence directory.
+\end{proof}
+
+This rules out all deletion-only improvements of this particular seed,
+including smaller cornered obstructions. Any smaller negative ample class
+obtained by replacing vertices of this seed must introduce a word outside
+it. The statement is additional to pc-minor minimality: it concerns
+arbitrary ample subfamilies, rather than coordinate restrictions and
+contractions. It neither raises the global lower bound $64$ nor excludes
+smaller examples with different vertex sets.
+
+%======================================================================
+\subsection{Smaller rooted inputs from the shrinking outputs}
+\label{sec:shrinking-rooted-inputs}
+
+The positive outputs of Proposition~\ref{prop:record-small-shrinking-edits}
+also supply inputs to the cut-vertex construction of
+\cite{BousquetDampReader}.  Here a rooted input is a positive ample family
+with a distinguished vertex that cannot be the last vertex of a corner
+peeling, although every proper root-preserving pc-minor can peel to the
+image of that vertex. Root-preserving minors use contractions and
+restrictions containing the root.
+
+\begin{proposition}[A $527$-vertex cut-vertex obstruction]
+\label{prop:rooted264-double527}
+In the integer encoding of $X=Y_{267}$, put
+\[
+ A=(X\setminus\{236,492,1004,748\})\cup\{220\},\qquad a=750.
+\]
+Then $(A,a)$ is a rooted input of order $264$, and every vertex of every
+nonempty proper pc-minor of $A$ is attainable as a peeling endpoint.
+Gluing two copies at their
+roots, on disjoint coordinate blocks, gives a cornerless ample forbidden
+pc-minor of order $527$ and isometric dimension $24$.
+\end{proposition}
+\begin{proof}
+The ample $266$-vertex output
+$(X\setminus\{236,492\})\cup\{220\}$ has forced first vertices
+$1004,748,750$. Deleting its first two corners leaves $A$, which is
+ample, peelable, and has unique corner $a$. Thus it cannot peel to $a$.
+The archive \path{evidence/shrinking_rooted_inputs/} supplies complete
+root-ending orders for all $24$ elementary root-preserving minors of
+$A$, checked by \path{scripts/verify_shrinking_rooted_inputs.py}.
+Peeling to the root is preserved under subsequent root-preserving minors,
+so these orders prove rooted minimality. In fact the stronger certificate
+\path{evidence/root264_minor_endpoints/} gives all $5637$ endpoint orders
+across all $36$ elementary proper pc-minors of this $A$. Its independent
+verifier reconstructs every minor and checks the USO out-map of every order.
+For any further minor and desired endpoint, choose a preimage vertex;
+rooted minor closure transports the corresponding order. This proves
+that no proper pc-minor can supply a rooted input at any new root.
+
+Translate $a$ to zero and put two copies on disjoint coordinate blocks.
+Their union is ample: no mixed support is shattered, and the two shadows
+share only the empty support, giving $264+264-1=527$ supports and vertices.
+Every nonroot vertex remains a noncorner, while the root has incident
+directions in both blocks but no mixed square. Thus the union is
+cornerless. A contraction or root-containing section in either block
+makes that block peel to the common root; remove it except for the root,
+then peel the other block. The opposite section leaves a positive minor
+of one block. Every elementary proper minor is therefore positive, proving
+forbiddenness. The verifier also replays explicit orders for all $72$
+minors of this double, stored in \path{double527.json} in the archive.
+\end{proof}
+
+The same certificates verify $24$, $12$, and $12$ distinct labelled rooted
+inputs of orders $266$, $265$, and $264$, respectively; isomorphism types
+have not been counted. Pairwise root gluing is sound for all of them.
+This improves the earlier $575$-vertex cut-vertex construction, not the
+unrestricted upper bound $267$. It does not establish that deleting a
+forced corner and changing the root preserves rooted minimality in general.
+
+%======================================================================
+\begin{remark}[Signed coordinate identifications of the rooted input]
+\label{rem:root264-identifications}
+A coordinate identification retains the words satisfying
+$x_i\mathbin{\oplus}x_j=b$ and then suppresses coordinate $j$.
+It need not be a pc-minor operation, so the proper-minor endpoint assertion
+above does not cover it. All $132$ choices $(i,j,b)$ for the explicit
+$264$-vertex input were checked. Exactly $15$ outputs are ample, and every
+vertex of each is attainable as a peeling endpoint, with $1941$ full orders
+in \path{evidence/root264_identifications/}. The other $117$ outputs are
+nonample and cannot directly supply ample rooted inputs.
+
+In particular, the identifications $(i,j,b)=(1,10,0)$ and $(3,8,0)$ give
+ample classes of orders $107$ and $108$. In fact each peels to every
+contained cube. The numbers of vertices, edges, squares and three-cubes are
+$(107,243,179,42)$ and $(108,246,182,43)$, respectively; there are no
+higher-dimensional cubes. All $1150$ corresponding relative orders are
+verified, with cube coverage independently enumerated from incident edges.
+
+Consequently neither class can occur as a piece obtained by cutting an
+ample forbidden pc-minor along a separating cube: the separator theorem of
+\cite{BousquetDampReader} requires every piece to fail peeling to the common
+cube. In particular, any number of coordinate-block copies glued along a
+common cube peel, by clearing their private vertices and then the cube.
+These checks do not cover repairs of the nonample identification outputs,
+repeated identifications, or arbitrary small classes.
+\end{remark}
+
+%======================================================================
+\section{Limitations and open problems}
+\label{sec:open}
+
+\paragraph{What is and is not excluded.}
+Theorems~\ref{thm:A}--\ref{thm:C} exclude three kinds of small cornerless
+classes: maximum ones on few coordinates, arbitrary ones on at most seven
+coordinates, and one-coordinate lifts of Hall's contractions.  A cornerless
+ample class of order between \(64\) and \(266\), if it exists, uses at least
+eight coordinates, is not maximum on eight coordinates, and is not a lift
+of a Hall contraction.  It could be a lift of a quite different base: for
+any coordinate \(z\) of a cornerless ample \(Y\), the base \(\pi_zY\) is an
+ample class which, by Theorem~\ref{thm:B}, lives on at least seven
+coordinates.
+
+\paragraph{Eight coordinates.}
+The next case of Theorem~\ref{thm:B} is \(n=8\).  The formulas \(F_{8,d}\)
+are roughly four times larger than for \(n=7\), and the hardest cases for
+\(n=7\) already needed hours of solver time.  One simplification is valid
+for fixed \(d\): only sets of size at most \(d+1\) need the trace
+clauses~(Y), since a larger set outside \(\Sigma\) contains a
+\((d+1)\)-set outside \(\Sigma\).  Splitting on the membership of a few
+\(d\)-sets in \(\Sigma\) gives independent subformulas.  These computations
+are in progress, and we claim no part of the case \(n=8\).
+
+\begin{problem}
+Does every nonempty ample class on eight coordinates have a corner?
+\end{problem}
+
+\paragraph{Maximum classes.}
+Theorem~\ref{thm:A} leaves maximum classes on nine to eleven coordinates.
+Only finitely many pairs \((d,n)\) with \(\Phi_d(n)<299\) remain, and a
+maximum class smaller than Hall's would have to be one of them.
+
+\begin{problem}
+Is Hall's class a smallest cornerless maximum class?
+\end{problem}
+
+\paragraph{The interval.}
+The central problem remains to close \(64\le\cmin\le267\).
+
+\begin{problem}
+Give a description of a cornerless ample class with the complex of
+Proposition~\ref{prop:record-complex} that can be verified by hand.  Does the
+parity construction generalize to other numbers of groups or other
+codes, and can such a generalization produce cornerless ample classes of
+order below \(267\)?
+\end{problem}  Our results
+suggest that a smaller example, if any, is not close to Hall's class in the
+sense of Theorem~\ref{thm:C}, and that the lower bound should be approached
+through the number of coordinates as well as the order.
+
+%======================================================================
+\section*{Acknowledgements}
+Hall's class is used in the form published with
+\cite{ChalopiChepoiMoran22}.
+
+\bibliographystyle{plain}
+\bibliography{main,references}
+
+\end{document}

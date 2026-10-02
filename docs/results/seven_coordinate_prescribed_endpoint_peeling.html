@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-21" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-573" style="position:relative;">
 
-        <h3><a href="operations/graph_expansion.html" class="table-title-link">Graph Expansion</a></h3>
+        <h3><a href="results/seven_coordinate_prescribed_endpoint_peeling.html" class="table-title-link">Every Ample Class Through Seven Coordinates Peels to Any Prescribed Endpoint</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Graph Expansion</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{Exp}">
-            \[\operatorname{Exp}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 3</p>
-<strong>Definition:</strong><div class="text-field"><p>Let $G_1,G_2$ be isometric induced subgraphs covering a connected graph $G$, with no edge joining $G_1\setminus G_2$ to $G_2\setminus G_1$. Replace each vertex of $G_1\cap G_2$ by two adjacent copies, retain one copy of $G_1$ and one copy of $G_2$, and join corresponding overlap copies. The result is the expansion of $G$ with cover $(G_1,G_2)$.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>Convex, isometric, connected, and peripheral expansions impose additional conditions on the overlap or cover. These adjectives do not by themselves have interchangeable preservation theorems.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresarImrichKlavzar03fast">[BresarImrichKlavzar03fast]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:one-step-expansion-contracts</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/one_step_expansion_contracts.html'>One-Step Expansion Preservation Contracts</a></li><li><a href='results/component_labels_parametrize_ample_expansions.html'>Component Labels Parametrize Ample One-Coordinate Expansions</a></li><li><a href='results/component_reflections_generate_fixed_shadow_fiber.html'>Component Reflections Generate Every Fixed-Shadow Ample Family</a></li><li><a href='results/component_label_repair_disjunction.html'>Independent Repair Tips Give an Exact Component-Label Disjunction</a></li><li><a href='results/positive_faces_do_not_replace_contraction_tests.html'>Positive Coordinate Faces Do Not Replace Contraction Tests</a></li><li><a href='results/inclusion_minimal_negative_527_528.html'>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></li><li><a href='results/three_piece_component_reflection_repair.html'>Every Three-Piece Obstruction Has a Component-Reflection Repair</a></li><li><a href='results/prescribed_lifts_require_partition_disjunction.html'>Prescribed USO Lifts Can Require a Union of Equality Partitions</a></li><li><a href='results/one_relative_wing_inverse.html'>Inverse Construction from One Relatively Peelable Wing</a></li><li><a href='results/two_relative_wings_all_minor_sinks.html'>Two Relative Wings Preserve Every Proper-Minor Sink Choice</a></li><li><a href='results/forest_wing_inverse.html'>A Forest Exclusive Wing Gives a Sound Inverse Construction</a></li><li><a href='results/small_two_core_wing_inverse.html'>Small 2-Core Components Force a Relatively Peelable Wing</a></li><li><a href='results/nonpeelable_residual_cycle_uniform_support.html'>A Nonpeelable Residual Cycle Requires Uniform Cyclic Support Exchanges</a></li></ul></p></div>
+        <p><strong>Name: </strong>Every Ample Class Through Seven Coordinates Peels to Any Prescribed Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty ample class of isometric dimension at most seven has a corner-peeling order ending at any prescribed concept. Consequently every rooted factor has isometric dimension at least eight, and every ample forbidden pc-minor for dismantlable ampleness that has a cut vertex has isometric dimension at least sixteen.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The result is known through six coordinates. In dimension seven, the preceding degree analysis leaves degree three as the only possible unique-corner degree. A proper-fiber reduction enumerates 2,763 labelled nontrivial ample four-coordinate fibers containing zero in 185 coordinate-permutation orbits. Exact total-asymmetry formulas with 10,943 variables and 65,379 clauses have independently checked DRAT refutations for all 185 cases, excluding degree three. Every nontrivial ample class through dimension seven therefore has at least two corners; repeatedly delete a corner different from the prescribed endpoint. A rooted factor cannot admit such an order. A forbidden ample class with a cut vertex decomposes into two rooted factors on disjoint coordinate sets, so their dimensions add to at least $8+8=16$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-seven-coordinate-peeling; PartialCubes:papers/ample-corners/main.tex?#thm:unique-corner-degree-three</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The database certificate audit verifies all 555 archived files for the 185 DRAT cases against the preserved manifest. The complete CNF, DRAT, and log bytes remain LaTeX-owned.</p></div>
 
         </div>
     </div>

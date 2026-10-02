@@ -1,0 +1,24 @@
+{
+  "id": 574,
+  "short_name": "nonpeelable_residual_cycle_uniform_support",
+  "name": "A Nonpeelable Residual Cycle Requires Uniform Cyclic Support Exchanges",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/graph_expansion"
+  ],
+  "result_type": "implication",
+  "witness_ids": [
+    "#examples/relative_cycle_endpoint_dichotomy"
+  ],
+  "statement": "Let $\\varnothing\\ne O\\subsetneq B\\subseteq Q_F$ be ample and let the residual graph $G(B\\setminus O)$ be a cycle of length greater than four. At least as many residual vertices admit an ample addition to $O$ or deletion from $B$ as there are nonisolated relative supports. If $B$ does not peel to $O$, its residual vertices and relative supports admit cyclic bijective listings $c_i,S_i$ with $c_{i+1}=c_i^{\\{e_i\\}}$, $S_i\\setminus S_{i+1}=\\{e_i\\}$, and $|S_{i+1}\\setminus S_i|=1$. All supports have one cardinality and agree off the residual active set $Y$. For $k=|S_i\\cap Y|$, restriction to the smallest containing face preserves the interval and $3\\leq k\\leq|Y|-3$, while $2|Y|\\leq m\\leq\\binom{|Y|}{k}$. Thus failure requires at least six active coordinates and twelve residual vertices. Different support sizes, disagreement outside $Y$, or cycle length at most ten each forces relative peeling and suffices for the one-wing inverse construction.",
+  "status": "established",
+  "proof": "The degree-two marker theorem injects vertices blocked at both the addition and deletion ends into isolated relative supports; any unblocked vertex breaks the cycle into a path and the relative forest theorem completes a peeling. Under failure the injection is bijective. Carrier duality and exact edge orientation direct the cycle and force consecutive isolated supports to exchange exactly their edge coordinate. Going around the cycle forces equal support sizes and constant coordinates outside the residual active set. Remove those coordinates by uniform inactive-coordinate reduction. Relative small-support peeling, applied also to the complementary ample interval, gives $3\\leq k\\leq|Y|-3$. Every active coordinate occurs a positive even number of times on the closed cube walk, yielding $m\\geq2|Y|$; distinct $k$-subsets give the binomial upper bound. The sufficient conditions follow by contraposition.",
+  "references": "\\cite{BousquetResidualExtension26,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-marked-cycle-wing-inverse",
+  "comments": "The cyclic exchange conditions are necessary for failure, not sufficient. The vertexwise first-or-last dichotomy is false on cycles, as the linked relatively peelable six-cycle shows."
+}
