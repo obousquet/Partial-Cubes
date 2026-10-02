@@ -1,0 +1,15 @@
+{
+  "id": 294,
+  "short_name": "dismantlable_ample_one_point_amalgam_not_closed",
+  "name": "Exact One-Point-Amalgam Criterion for Dismantlable Ampleness",
+  "class_id": "#classes/dismantlable_ample",
+  "operation_id": "#operations/one_point_amalgam",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "Let $A_1,\\ldots,A_m$ be nonempty ample families on disjoint coordinate blocks, each rooted at $0$, and let $X=A_1\\vee\\cdots\\vee A_m$ be their one-point amalgam. Then $X$ is ample and peels to $0$ exactly when every $A_i$ peels to $0$. Moreover, $X$ is dismantlable ample exactly when every factor is dismantlable ample and at most one factor fails to peel to its root. Hence dismantlable ample classes are not closed under arbitrary one-point amalgams.",
+  "witness_ids": [
+    "#examples/rooted_289_vertex_peeling_factor"
+  ],
+  "proof": "No support using coordinates from two exclusive blocks is shattered, so the shadows of the factors meet only at the empty support and the amalgam is ample. A USO of the union restricts to every factor. At the common root, its outgoing directions may lie in at most one exclusive block, because a mixed outgoing square is absent; hence every other factor must have the root as sink. Conversely, choose acyclic USOs rooted at $0$ in all but at most one factor and any acyclic USO in the exceptional factor. Their union satisfies both USO axioms, and a directed cycle cannot pass between pieces through their unique common vertex.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-vertex-gluing"
+}

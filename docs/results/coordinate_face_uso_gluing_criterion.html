@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-18" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-348" style="position:relative;">
 
-        <h3><a href="operations/one_point_amalgam.html" class="table-title-link">One-Point Amalgam</a></h3>
+        <h3><a href="results/coordinate_face_uso_gluing_criterion.html" class="table-title-link">Ample Assembly and USO Compatibility over a Coordinate Face</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>One-Point Amalgam</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\vee">
-            \[\vee\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For classes $A\subseteq2^X$ and $B\subseteq2^Y$ on disjoint coordinates and selected concepts $a_0,b_0$, the one-point amalgam is $(A\times\{b_0\})\cup(\{a_0\}\times B)$; the two copies meet only at $(a_0,b_0)$.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_tree_amalgam_one_point_amalgam_closed.html'>Maximum Tree-Amalgams Are Closed under One-Point Amalgams</a></li><li><a href='operation_results/cover_recursive_one_point_amalgam_not_closed.html'>Cover-Recursive Peripheral Partial Cubes Are Not One-Point-Amalgam Closed</a></li><li><a href='operation_results/dismantlable_ample_one_point_amalgam_not_closed.html'>Exact One-Point-Amalgam Criterion for Dismantlable Ampleness</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_tree_amalgams_have_all_roots.html'>Maximum Tree-Amalgams Have Representation Maps at Every Root</a></li><li><a href='results/rooted_wedge_membership_and_minimality.html'>Rooted-Wedge Membership and Forbidden-Minor Classification</a></li><li><a href='results/polat_pointed_separation_construction.html'>Pointed Construction Separating Convex- and Faithful-Treelike Graphs</a></li><li><a href='results/root_critical_wedges_are_corner_peelable.html'>Root-Critical Wedges Are Corner-Peelable</a></li><li><a href='results/exact_root_gluing_width.html'>Exact Root-Gluing Width</a></li><li><a href='results/cut_vertex_dismantlable_ample_obstructions.html'>Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</a></li></ul></p></div>
+        <p><strong>Name: </strong>Ample Assembly and USO Compatibility over a Coordinate Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty $D\subseteq Q_E$ be the common zero section of ample pieces $A_i\subseteq Q_{E\mathbin{\dot\cup}F_i}$ with disjoint exclusive coordinate blocks, and put $X=\bigcup_iA_i$. Then $X$ is ample exactly when $\operatorname{Sh}(A_i)\cap\operatorname{Sh}(A_j)=\operatorname{Sh}(D)$ for every $i\ne j$; this is automatic when $D=Q_E$. Under this condition, USOs on the pieces glue exactly when they agree on $D$ and at every $d\in D$ at most one piece directs an edge from $d$ into its exclusive part. The glued USO is acyclic exactly when the union orientation is acyclic; acyclicity of the pieces alone suffices when $|D|\le2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every contained cube lies in one piece, so the strongly shattered supports of the union are the union of the piece shadows. Inclusion-exclusion and the Sandwich inequality give the exact pairwise shadow-intersection test. The same cube localization proves the unique-sink axiom piecewise. At a boundary vertex, outgoing directions in two private blocks would require a missing mixed square, while directions from at most one private block and the common face lie in one piece. A directed cycle crossing a singleton is impossible; over an edge it would combine the common directed edge with a reverse directed path inside one piece, contradicting that piece's acyclicity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-uso-cube-gluing</p></div>
 
         </div>
     </div>

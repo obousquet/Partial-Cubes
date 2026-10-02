@@ -5811,6 +5811,87 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-347" style="position:relative;">
+
+        <h3><a href="results/cut_vertex_dismantlable_ample_obstructions.html" class="table-title-link">Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An ample family with a cut vertex is a pc-minimal obstruction to dismantlable ampleness exactly when it is the one-point amalgam of two rooted ample families $(A_i,a_i)$ such that each $A_i$ is dismantlable ample, does not peel to $a_i$, and every proper root-preserving pc-minor does peel to the image of $a_i$. Each factor has no cut vertex. The obstruction consequently has exactly two blocks and one cut vertex, and its rooted factors are unique up to interchange.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Isometry forces distinct components at a cut vertex to use disjoint coordinate blocks; each component together with the cut vertex is convex. Minimality puts all rooted component families in the positive class, while the exact wedge criterion requires at least two of them to fail rooted peeling. More than two components would leave a proper nonpeelable convex union, so exactly two remain. Applying any root-preserving elementary minor to one factor and keeping the other unchanged forces the changed factor to regain rooted peeling. Conversely these restoration conditions make every elementary image of the wedge peel. A further cut vertex inside a factor would split it into proper root-preserving pieces that all peel to their roots, contradicting the factor's rooted failure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-cut-vertex-obstructions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-348" style="position:relative;">
+
+        <h3><a href="results/coordinate_face_uso_gluing_criterion.html" class="table-title-link">Ample Assembly and USO Compatibility over a Coordinate Face</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Assembly and USO Compatibility over a Coordinate Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty $D\subseteq Q_E$ be the common zero section of ample pieces $A_i\subseteq Q_{E\mathbin{\dot\cup}F_i}$ with disjoint exclusive coordinate blocks, and put $X=\bigcup_iA_i$. Then $X$ is ample exactly when $\operatorname{Sh}(A_i)\cap\operatorname{Sh}(A_j)=\operatorname{Sh}(D)$ for every $i\ne j$; this is automatic when $D=Q_E$. Under this condition, USOs on the pieces glue exactly when they agree on $D$ and at every $d\in D$ at most one piece directs an edge from $d$ into its exclusive part. The glued USO is acyclic exactly when the union orientation is acyclic; acyclicity of the pieces alone suffices when $|D|\le2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every contained cube lies in one piece, so the strongly shattered supports of the union are the union of the piece shadows. Inclusion-exclusion and the Sandwich inequality give the exact pairwise shadow-intersection test. The same cube localization proves the unique-sink axiom piecewise. At a boundary vertex, outgoing directions in two private blocks would require a missing mixed square, while directions from at most one private block and the common face lie in one piece. A directed cycle crossing a singleton is impossible; over an edge it would combine the common directed edge with a reverse directed path inside one piece, contradicting that piece's acyclicity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-uso-cube-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-349" style="position:relative;">
+
+        <h3><a href="results/finite_boundary_records_for_acyclic_gluing.html" class="table-title-link">Finite Boundary Records Decide Acyclic Gluing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Boundary Records Decide Acyclic Gluing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Assume the coordinate-face assembly shadow condition and let $k=|D|$. For a piece $A_i$, a boundary record consists of a total order $\sigma$ of $D$ and the set $S_i\subseteq D$ of boundary vertices having an outgoing edge into that piece's exclusive part in an acyclic USO whose topological order restricts to $\sigma$. The union is dismantlable ample exactly when the pieces admit records with one common order and pairwise disjoint outward sets. Inclusion-minimal outward sets suffice, and each piece has at most $k!2^k$ records before minimization, independently of its interior size.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restrict an acyclic USO and one of its topological orders to every piece to obtain the common order and disjoint outward sets. Conversely, the common order makes the piece orientations agree on $D$, while disjointness supplies the USO compatibility condition. Split each piece's topological order into blocks before, between, and after successive boundary vertices, concatenate corresponding blocks across pieces, and insert each boundary vertex once; this is a topological order of the union. Replacing each outward set by a contained minimal attainable one preserves disjointness. Counting total orders and subsets gives the bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-finite-boundary-gluing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-350" style="position:relative;">
+
+        <h3><a href="results/boundary_record_minor_transport.html" class="table-title-link">Boundary Records Have One-Sided Minor Transport</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Boundary Records Have One-Sided Minor Transport</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample piece $A$ over a full coordinate-face boundary $D$ have a corner order realizing boundary record $(\sigma,S)$, and let $f$ be an exclusive coordinate. Restriction to $f=0$ transports the order to a record $(\sigma,T)$ with $T\subseteq S$. Contraction in $f$, ordered by the last preimage in each fiber, gives $(\tau,T)$ with $T\subseteq S$; moreover, if $x\in D\setminus S$ precedes $y$ in $\sigma$, it still precedes $y$ in $\tau$. In particular, an empty outward set preserves the entire boundary order under contraction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The order-level pc-minor proof transports both orders. Restriction retains boundary positions and can only remove outward edges. Under contraction, the later endpoint represents each double fiber. Any new outward boundary vertex either was already outward or used its exclusive mate as representative, which also certifies membership in $S$. For $d\notin S$, a present mate precedes $d$, so the last-preimage position remains the original position of $d$. This preserves every asserted precedence and, when $S$ is empty, all of $\sigma$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-boundary-record-transport</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-351" style="position:relative;">
+
+        <h3><a href="results/finite_gluing_record_algebra.html" class="table-title-link">Finite Gluing Record Algebra and Context Preorder</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Gluing Record Algebra and Context Preorder</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a nonempty dismantlable ample boundary $D\subseteq Q_E$. A piece record stores (i) the supports in $2^E\setminus\operatorname{Sh}(D)$ additionally shattered by the piece, (ii) a corner order of $D$, and (iii) its outward boundary set. Formal record families multiply by requiring a common order and disjoint first and third coordinates, then taking their unions. This product is associative and commutative, with empty zero and the records of $D$ as identity; the record family of a gluing is the product, and the gluing is ample and dismantlable exactly when it is nonempty. Realizable record families together with zero form a finite monoid. Comparing two families by whether every realizable context compatible with the first is compatible with the second defines a product-compatible preorder; mutual comparison yields a partially ordered commutative quotient monoid of at most $2^{|\Omega_D|}$ classes. Private contractions and zero-side restrictions that preserve the marked boundary move monotonically upward in this preorder, and the move is strict modulo equivalence when it is a proper minor of a forbidden glued family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The extra shattered-support coordinate enforces the exact ampleness criterion, while the common order and disjoint outward sets enforce the acyclic-USO gluing criterion. For three factors these are simply pairwise-disjointness conditions followed by set union, independent of parenthesization, which proves the monoid laws. The identity is realized by $D$, and gluing realizes every nonzero product, so the realized submonoid is finite. Compatibility against all realized contexts is reflexive, transitive, and preserved by multiplication. Applying a private minor inside any glued context preserves positive membership, proving monotonicity. If the original union is forbidden and the minor is proper, the unchanged opposite piece distinguishes the reverse comparison, proving strictness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-finite-gluing-algebra</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

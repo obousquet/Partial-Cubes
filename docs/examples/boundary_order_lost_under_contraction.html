@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-18" style="position:relative;">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-109" style="position:relative;">
 
-        <h3><a href="operations/one_point_amalgam.html" class="table-title-link">One-Point Amalgam</a></h3>
+        <h3><a href="examples/boundary_order_lost_under_contraction.html" class="table-title-link">An Attainable Boundary Order Lost under Contraction</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>One-Point Amalgam</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\vee">
-            \[\vee\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For classes $A\subseteq2^X$ and $B\subseteq2^Y$ on disjoint coordinates and selected concepts $a_0,b_0$, the one-point amalgam is $(A\times\{b_0\})\cup(\{a_0\}\times B)$; the two copies meet only at $(a_0,b_0)$.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_tree_amalgam_one_point_amalgam_closed.html'>Maximum Tree-Amalgams Are Closed under One-Point Amalgams</a></li><li><a href='operation_results/cover_recursive_one_point_amalgam_not_closed.html'>Cover-Recursive Peripheral Partial Cubes Are Not One-Point-Amalgam Closed</a></li><li><a href='operation_results/dismantlable_ample_one_point_amalgam_not_closed.html'>Exact One-Point-Amalgam Criterion for Dismantlable Ampleness</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_tree_amalgams_have_all_roots.html'>Maximum Tree-Amalgams Have Representation Maps at Every Root</a></li><li><a href='results/rooted_wedge_membership_and_minimality.html'>Rooted-Wedge Membership and Forbidden-Minor Classification</a></li><li><a href='results/polat_pointed_separation_construction.html'>Pointed Construction Separating Convex- and Faithful-Treelike Graphs</a></li><li><a href='results/root_critical_wedges_are_corner_peelable.html'>Root-Critical Wedges Are Corner-Peelable</a></li><li><a href='results/exact_root_gluing_width.html'>Exact Root-Gluing Width</a></li><li><a href='results/cut_vertex_dismantlable_ample_obstructions.html'>Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</a></li></ul></p></div>
+        <p><strong>Name: </strong>An Attainable Boundary Order Lost under Contraction</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $C\subseteq Q_{12}$ be the 289-concept dismantlable ample class whose unique initial corner is $0$, translated so that it contains the bit-$1$ and bit-$2$ neighbors $2$ and $4$. Mark the boundary edge $D=\{0,2\}$ and, for a fresh coordinate $f$, form the peripheral expansion $A=(D\times\{0\})\cup(C\times\{1\})$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The corner order beginning $(2,0),(0,0)$ and continuing through the upper copy realizes boundary order $(2,0)$ with outward set $D$. This is the unique, hence inclusion-minimal, outward set for that order. Contracting $f$ returns $C$, but every corner order of $C$ begins at its unique corner $0$, so no record with boundary order $(2,0)$ survives. Thus same-order attainability with a smaller outward set is not contraction-monotone, even after keeping only inclusion-minimal outward sets. The lost record cannot by itself destroy positive gluing because compatibility with it forces every other piece to have empty outward set and hence to peel to $D$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-boundary-attainability-failure</p></div>
+<strong>Verification:</strong><div class="text-field"><p>The defining class, forced first corners, and the two orders are preserved in the manuscript; its original replay artifact is papers/dismantlable-ample/research/boundary_attainability_failure.py/json.</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
 
         </div>
     </div>

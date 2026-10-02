@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-18" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-350" style="position:relative;">
 
-        <h3><a href="operations/one_point_amalgam.html" class="table-title-link">One-Point Amalgam</a></h3>
+        <h3><a href="results/boundary_record_minor_transport.html" class="table-title-link">Boundary Records Have One-Sided Minor Transport</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>One-Point Amalgam</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\vee">
-            \[\vee\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For classes $A\subseteq2^X$ and $B\subseteq2^Y$ on disjoint coordinates and selected concepts $a_0,b_0$, the one-point amalgam is $(A\times\{b_0\})\cup(\{a_0\}\times B)$; the two copies meet only at $(a_0,b_0)$.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_tree_amalgam_one_point_amalgam_closed.html'>Maximum Tree-Amalgams Are Closed under One-Point Amalgams</a></li><li><a href='operation_results/cover_recursive_one_point_amalgam_not_closed.html'>Cover-Recursive Peripheral Partial Cubes Are Not One-Point-Amalgam Closed</a></li><li><a href='operation_results/dismantlable_ample_one_point_amalgam_not_closed.html'>Exact One-Point-Amalgam Criterion for Dismantlable Ampleness</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_tree_amalgams_have_all_roots.html'>Maximum Tree-Amalgams Have Representation Maps at Every Root</a></li><li><a href='results/rooted_wedge_membership_and_minimality.html'>Rooted-Wedge Membership and Forbidden-Minor Classification</a></li><li><a href='results/polat_pointed_separation_construction.html'>Pointed Construction Separating Convex- and Faithful-Treelike Graphs</a></li><li><a href='results/root_critical_wedges_are_corner_peelable.html'>Root-Critical Wedges Are Corner-Peelable</a></li><li><a href='results/exact_root_gluing_width.html'>Exact Root-Gluing Width</a></li><li><a href='results/cut_vertex_dismantlable_ample_obstructions.html'>Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</a></li></ul></p></div>
+        <p><strong>Name: </strong>Boundary Records Have One-Sided Minor Transport</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample piece $A$ over a full coordinate-face boundary $D$ have a corner order realizing boundary record $(\sigma,S)$, and let $f$ be an exclusive coordinate. Restriction to $f=0$ transports the order to a record $(\sigma,T)$ with $T\subseteq S$. Contraction in $f$, ordered by the last preimage in each fiber, gives $(\tau,T)$ with $T\subseteq S$; moreover, if $x\in D\setminus S$ precedes $y$ in $\sigma$, it still precedes $y$ in $\tau$. In particular, an empty outward set preserves the entire boundary order under contraction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The order-level pc-minor proof transports both orders. Restriction retains boundary positions and can only remove outward edges. Under contraction, the later endpoint represents each double fiber. Any new outward boundary vertex either was already outward or used its exclusive mate as representative, which also certifies membership in $S$. For $d\notin S$, a present mate precedes $d$, so the last-preimage position remains the original position of $d$. This preserves every asserted precedence and, when $S$ is empty, all of $\sigma$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-boundary-record-transport</p></div>
 
         </div>
     </div>

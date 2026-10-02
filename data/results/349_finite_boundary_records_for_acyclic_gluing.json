@@ -1,0 +1,17 @@
+{
+  "id": 349,
+  "short_name": "finite_boundary_records_for_acyclic_gluing",
+  "name": "Finite Boundary Records Decide Acyclic Gluing",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Assume the coordinate-face assembly shadow condition and let $k=|D|$. For a piece $A_i$, a boundary record consists of a total order $\\sigma$ of $D$ and the set $S_i\\subseteq D$ of boundary vertices having an outgoing edge into that piece's exclusive part in an acyclic USO whose topological order restricts to $\\sigma$. The union is dismantlable ample exactly when the pieces admit records with one common order and pairwise disjoint outward sets. Inclusion-minimal outward sets suffice, and each piece has at most $k!2^k$ records before minimization, independently of its interior size.",
+  "status": "established",
+  "proof": "Restrict an acyclic USO and one of its topological orders to every piece to obtain the common order and disjoint outward sets. Conversely, the common order makes the piece orientations agree on $D$, while disjointness supplies the USO compatibility condition. Split each piece's topological order into blocks before, between, and after successive boundary vertices, concatenate corresponding blocks across pieces, and insert each boundary vertex once; this is a topological order of the union. Replacing each outward set by a contained minimal attainable one preserves disjointness. Counting total orders and subsets gives the bound.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-finite-boundary-gluing"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 348,
+  "short_name": "coordinate_face_uso_gluing_criterion",
+  "name": "Ample Assembly and USO Compatibility over a Coordinate Face",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Let nonempty $D\\subseteq Q_E$ be the common zero section of ample pieces $A_i\\subseteq Q_{E\\mathbin{\\dot\\cup}F_i}$ with disjoint exclusive coordinate blocks, and put $X=\\bigcup_iA_i$. Then $X$ is ample exactly when $\\operatorname{Sh}(A_i)\\cap\\operatorname{Sh}(A_j)=\\operatorname{Sh}(D)$ for every $i\\ne j$; this is automatic when $D=Q_E$. Under this condition, USOs on the pieces glue exactly when they agree on $D$ and at every $d\\in D$ at most one piece directs an edge from $d$ into its exclusive part. The glued USO is acyclic exactly when the union orientation is acyclic; acyclicity of the pieces alone suffices when $|D|\\le2$.",
+  "status": "established",
+  "proof": "Every contained cube lies in one piece, so the strongly shattered supports of the union are the union of the piece shadows. Inclusion-exclusion and the Sandwich inequality give the exact pairwise shadow-intersection test. The same cube localization proves the unique-sink axiom piecewise. At a boundary vertex, outgoing directions in two private blocks would require a missing mixed square, while directions from at most one private block and the common face lie in one piece. A directed cycle crossing a singleton is impossible; over an edge it would combine the common directed edge with a reverse directed path inside one piece, contradicting that piece's acyclicity.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-uso-cube-gluing"
+}

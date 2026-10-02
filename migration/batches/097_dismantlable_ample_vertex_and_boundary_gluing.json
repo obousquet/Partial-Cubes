@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "batch_id": "097_dismantlable_ample_vertex_and_boundary_gluing",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the one-point-amalgam criterion and cut-vertex obstruction classification, then normalize coordinate-face assembly, finite boundary records, minor transport and its sharp counterexample, and the finite context-ordered gluing algebra.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-vertex-gluing",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-cut-vertex-obstructions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-uso-cube-gluing",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-finite-boundary-gluing",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-boundary-record-transport",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-boundary-attainability-failure",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-finite-gluing-algebra"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "f9fe2c566df65e4acf3dbc320d40c0dfb04dd61ee0b2eb5c01d7a8e5c76bcf1c",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The packet contains dirty working-tree bytes, so every promoted block was compared across committed, frozen, and current live sources.",
+    "outcome": "All seven frozen statement-plus-proof blocks are byte-identical to the live manuscript. Vertex gluing and cut-vertex obstruction have revised committed versions; the five boundary-calculus and algebra blocks are absent from the committed file.",
+    "claim_block_sha256": {
+      "prop:damp-vertex-gluing": "2aa1d3cd780b1f17e5c0791ee4b1e17ded9471edce9521adad8e32d862854eaa",
+      "thm:damp-cut-vertex-obstructions": "33cb14a3b8eb363d2d5eeffabf914ac872b1c8c74705b340992d6e98a63fab30",
+      "prop:damp-uso-cube-gluing": "9981af7285aa56918dbd2032c2d86ee07b7b79b25b00095b2dfc5b625cae15c3",
+      "cor:damp-finite-boundary-gluing": "f9b2e7e6d90f6fb8f83998752d771b4f95b81591dbefaf512b93b5335cc5ba86",
+      "prop:damp-boundary-record-transport": "06c22dc3d6126d59a40ada2d581a0ab03035673d006dba2ad968c9751dfb6ad0",
+      "prop:damp-boundary-attainability-failure": "b8894d3dd6c70ab027aaadf0dd430fba95bdfb09396248c6611c0a0c4d7d9509",
+      "thm:damp-finite-gluing-algebra": "2d4cdabee492a0f47a7e8375183b2fb2ad84fb4f17c39c7afc72d8e7487b06f1"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the exact one-point-amalgam operation result, cut-vertex classification, face-assembly and boundary-record calculus, counterexample, finite gluing algebra, concise proofs, and source locators. The manuscript retains full USO arguments, computational replay narratives, examples, and scope limitations.",
+    "recoverability": "Snapshot 2026-09-30-b001 preserves the exact dirty source bytes, and each promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/operation_results/294_dismantlable_ample_one_point_amalgam_not_closed.json",
+      "sha256": "a87ce396d0020707e84c41c237de763a608e247ebc14dbb98d5a2261a3840b30"
+    },
+    {
+      "path": "data/results/347_cut_vertex_dismantlable_ample_obstructions.json",
+      "sha256": "5e5a68ac7e96a118d6afb355b5bad9c424fcf3ccc514bb169fbbc4d5553bec6e"
+    },
+    {
+      "path": "data/results/348_coordinate_face_uso_gluing_criterion.json",
+      "sha256": "8545c70e8cfa33ce0ecfaf36ddedd2802b88d316d72c36db9a241544811a0a6a"
+    },
+    {
+      "path": "data/results/349_finite_boundary_records_for_acyclic_gluing.json",
+      "sha256": "065c9ee8f2968118de66fc80e0ed66c537baccb41b91d0a00aa26c83a5c85bb8"
+    },
+    {
+      "path": "data/results/350_boundary_record_minor_transport.json",
+      "sha256": "fe44c5ea1ec4442ce4cf8bb7df7dd8db6b0629337b01f39202311887a47589f9"
+    },
+    {
+      "path": "data/results/351_finite_gluing_record_algebra.json",
+      "sha256": "c0f2a9466f0fe7dcdd725429f5ea95b6142417f3f3b32a6a507d74a113252f7a"
+    },
+    {
+      "path": "data/examples/109_boundary_order_lost_under_contraction.json",
+      "sha256": "c23bb5ce41712f3264a3dc92b526c1c6197fcf76672a7a4bc0e7c7b89878fc32"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "047b9c78d83378651d7bff5a702312b369b700caf2099e85c1ba17e805c804ab"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "22b078bc80a9e101e80eb4c5c72664451f39b59a026bf6744a2eecddd9114279"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1638 records.",
+    "website": "Normalized 1654 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 7 additional dismantlable-ample labels, raising that workspace to 22 of 582 and overall coverage from 446 to 453 of 1013 database-owned labels."
+  },
+  "deferred": [
+    "The remaining 560 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Conjectures and problems remain prose-owned in LaTeX.",
+    "Live-checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

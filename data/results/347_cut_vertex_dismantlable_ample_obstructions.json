@@ -1,0 +1,18 @@
+{
+  "id": 347,
+  "short_name": "cut_vertex_dismantlable_ample_obstructions",
+  "name": "Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "An ample family with a cut vertex is a pc-minimal obstruction to dismantlable ampleness exactly when it is the one-point amalgam of two rooted ample families $(A_i,a_i)$ such that each $A_i$ is dismantlable ample, does not peel to $a_i$, and every proper root-preserving pc-minor does peel to the image of $a_i$. Each factor has no cut vertex. The obstruction consequently has exactly two blocks and one cut vertex, and its rooted factors are unique up to interchange.",
+  "status": "established",
+  "proof": "Isometry forces distinct components at a cut vertex to use disjoint coordinate blocks; each component together with the cut vertex is convex. Minimality puts all rooted component families in the positive class, while the exact wedge criterion requires at least two of them to fail rooted peeling. More than two components would leave a proper nonpeelable convex union, so exactly two remain. Applying any root-preserving elementary minor to one factor and keeping the other unchanged forces the changed factor to regain rooted peeling. Conversely these restoration conditions make every elementary image of the wedge peel. A further cut vertex inside a factor would split it into proper root-preserving pieces that all peel to their roots, contradicting the factor's rooted failure.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-cut-vertex-obstructions"
+}

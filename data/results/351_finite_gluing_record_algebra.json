@@ -1,0 +1,19 @@
+{
+  "id": 351,
+  "short_name": "finite_gluing_record_algebra",
+  "name": "Finite Gluing Record Algebra and Context Preorder",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Fix a nonempty dismantlable ample boundary $D\\subseteq Q_E$. A piece record stores (i) the supports in $2^E\\setminus\\operatorname{Sh}(D)$ additionally shattered by the piece, (ii) a corner order of $D$, and (iii) its outward boundary set. Formal record families multiply by requiring a common order and disjoint first and third coordinates, then taking their unions. This product is associative and commutative, with empty zero and the records of $D$ as identity; the record family of a gluing is the product, and the gluing is ample and dismantlable exactly when it is nonempty. Realizable record families together with zero form a finite monoid. Comparing two families by whether every realizable context compatible with the first is compatible with the second defines a product-compatible preorder; mutual comparison yields a partially ordered commutative quotient monoid of at most $2^{|\\Omega_D|}$ classes. Private contractions and zero-side restrictions that preserve the marked boundary move monotonically upward in this preorder, and the move is strict modulo equivalence when it is a proper minor of a forbidden glued family.",
+  "status": "established",
+  "proof": "The extra shattered-support coordinate enforces the exact ampleness criterion, while the common order and disjoint outward sets enforce the acyclic-USO gluing criterion. For three factors these are simply pairwise-disjointness conditions followed by set union, independent of parenthesization, which proves the monoid laws. The identity is realized by $D$, and gluing realizes every nonzero product, so the realized submonoid is finite. Compatibility against all realized contexts is reflexive, transitive, and preserved by multiplication. Applying a private minor inside any glued context preserves positive membership, proving monotonicity. If the original union is forbidden and the minor is proper, the unchanged opposite piece distinguishes the reverse comparison, proving strictness.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-finite-gluing-algebra"
+}

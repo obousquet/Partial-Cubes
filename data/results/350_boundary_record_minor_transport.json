@@ -1,0 +1,20 @@
+{
+  "id": 350,
+  "short_name": "boundary_record_minor_transport",
+  "name": "Boundary Records Have One-Sided Minor Transport",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let an ample piece $A$ over a full coordinate-face boundary $D$ have a corner order realizing boundary record $(\\sigma,S)$, and let $f$ be an exclusive coordinate. Restriction to $f=0$ transports the order to a record $(\\sigma,T)$ with $T\\subseteq S$. Contraction in $f$, ordered by the last preimage in each fiber, gives $(\\tau,T)$ with $T\\subseteq S$; moreover, if $x\\in D\\setminus S$ precedes $y$ in $\\sigma$, it still precedes $y$ in $\\tau$. In particular, an empty outward set preserves the entire boundary order under contraction.",
+  "status": "established",
+  "proof": "The order-level pc-minor proof transports both orders. Restriction retains boundary positions and can only remove outward edges. Under contraction, the later endpoint represents each double fiber. Any new outward boundary vertex either was already outward or used its exclusive mate as representative, which also certifies membership in $S$. For $d\\notin S$, a present mate precedes $d$, so the last-preimage position remains the original position of $d$. This preserves every asserted precedence and, when $S$ is empty, all of $\\sigma$.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-boundary-record-transport"
+}
