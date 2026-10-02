@@ -2897,6 +2897,70 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-147" style="position:relative;">
+
+        <h3><a href="examples/original_cube_pruning_false_positives.html" class="table-title-link">Rooted and Ordinary False Positives for Original-Cube Pruning</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted and Ordinary False Positives for Original-Cube Pruning</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Normalize the certified $292$-concept rooted factor to root zero, calling it $B$, and form the $583$-concept one-point double $X$ of two copies of $B$ on disjoint twelve-coordinate blocks.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$B$ has order $292$, dimension $12$, and VC dimension $4$; $X$ has order $583$, dimension $24$, and VC dimension $4$. The certified pruning sequences have lengths $291$ and $583$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Original-cube pruning leaves only the protected root in $B$ and leaves the empty set in $X$, although $B$ cannot peel to its root and $X$ cannot peel at all. After the first pruning deletion $32$, vertex $64$ is permitted by its original complete four-cube even though that cube has just lost vertex $32$. Complete negative deletion graphs have eight rooted states and sixty-four ordinary states.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-original-cube-pruning</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_original_cube_pruning.py; PartialCubes:forbidden_pc_minor_campaign/damp_original_cube_pruning_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-148" style="position:relative;">
+
+        <h3><a href="examples/square_completed_rooted_blocks_578_to_586.html" class="table-title-link">The 511 Labelled Square Completions of the 577-Concept Double</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The 511 Labelled Square Completions of the 577-Concept Double</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Take two translated copies of the certified $289$-concept rooted factor in disjoint twelve-coordinate blocks. Their cornerless one-point double $X$ has $577$ concepts. For any nonempty subset $\Gamma$ of the nine pairs between root directions $\{1,2,8\}$ and $\{13,14,20\}$, add the corresponding cross-block square tips.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>There are $2^9-1=511$ labelled choices. A set of $k$ pairs produces $577+k$ concepts, dimension $24$, VC dimension $3$, and exactly $k$ degree-two corners. No count of graph-isomorphism classes is asserted.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Every output is a two-connected ample forbidden pc-minor, and deleting all added corners returns the cut-vertex obstruction $X$. The single-pair choice $\{(1,13)\}$ adds vertex $8194$ and yields a $578$-concept obstruction with exactly one corner. Degree two is the least possible corner degree in any ample forbidden pc-minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-square-completed-578</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_square_completed_blocks.py; PartialCubes:forbidden_pc_minor_campaign/damp_square_completed_blocks_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-149" style="position:relative;">
+
+        <h3><a href="examples/root_protected_three_core_examples.html" class="table-title-link">Canonical Three-Cores of Square-Attachment Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canonical Three-Cores of Square-Attachment Obstructions</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Start with the $577$-concept double, add $8194=2^1+2^{13}$ and then $8198=2^1+2^2+2^{13}$, completing squares on $\{1,13\}$ and $\{2,13\}$. Compare this with the certified nonresolving addition of vertex $186$ to the $291$-concept family.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The first output has $579$ concepts; the second has $292$. The checker replays all $72$ elementary minor orders for the first output.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The $579$-concept family is two-connected with unique degree-two corner $8198$; deleting it exposes $8194$ as the next degree-two corner, and deleting that gives the $577$-concept three-core. After the first deletion the family remains two-connected. The $292$-concept comparison is already a three-core and has two degree-four corners, showing that a three-core need not be cornerless.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-root-protected-three-core (following concrete three-core examples)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_three_core.py; PartialCubes:forbidden_pc_minor_campaign/damp_three_core_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-150" style="position:relative;">
+
+        <h3><a href="examples/same_shadow_attachment_posets_581.html" class="table-title-link">Same-Shadow 581-Concept Obstructions with Diamond and Antichain Attachments</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Same-Shadow 581-Concept Obstructions with Diamond and Antichain Attachments</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Over the same labelled $577$-concept three-core, use four fixed acquired pairs. In the first attachment data set, recursive targets produce new concepts $8194,8198,24578,24582$ and a four-element diamond. In the second, independent root-square targets produce $8194,8196,16386,16388$ and an antichain.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Both outputs have $581$ concepts and VC dimension $3$. The diamond attachment poset has six ample intermediate families; the antichain has sixteen.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The two families have the same full shattered complex and the same labelled three-core, but they are not graph-isomorphic: the diamond output has one corner and the antichain output has four. Thus the acquired support list, shattered complex, and labelled core do not recover the attachment targets or the resulting graph.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-root-protected-three-core (following square-attachment-data comparison)</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_square_attachment_data.py; PartialCubes:forbidden_pc_minor_campaign/damp_square_attachment_data_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

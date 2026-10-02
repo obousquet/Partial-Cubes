@@ -7647,6 +7647,74 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-456" style="position:relative;">
+
+        <h3><a href="results/original_cube_pruning_operator.html" class="table-title-link">Original-Cube Pruning Has a Canonical Kernel but Does Not Recognize Peelings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Original-Cube Pruning Has a Canonical Kernel but Does Not Recognize Peelings</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite family $H$ and protected set $A\subseteq H$, repeatedly delete an unprotected vertex whenever the cube on its current incident directions is contained in the original $H$. The terminal set $K_A(H)$ is independent of all choices. It is the greatest $U$, with $A\subseteq U\subseteq H$, such that every unprotected $v\in U$ has a set $P$ of current incident directions with $v^P\notin H$; $P$ may be chosen inclusion-minimal, so all its proper subfaces occur in $H$. A corner peeling of ample $H$ to $A$ implies $K_A(H)=A$, but the converse fails for a singleton and for the empty set: a $292$-concept rooted factor has singleton kernel at its root, and a $583$-concept ample forbidden pc-minor has empty kernel. Both have VC dimension four, in dimensions twelve and twenty-four.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The deletion predicate persists because later deletions only shrink a vertex's incident support. Any set in which every unprotected vertex has an original missing-cube witness survives every allowed sequence: at its first deletion all witnessing neighbors would still be present, contradicting the predicate. The terminal set itself has such witnesses, proving it is the unique greatest fixed set. If a genuine corner peeling to $A$ existed while the kernel had an extra vertex, the first deleted kernel vertex would still have all witness neighbors, while the completing vertex was absent already in $H$, contradicting its being a corner. In the rooted counterexample the pruning begins by deleting $32$ and then $64$ because the latter's original four-cube is complete, although deleting $32$ has made that cube incomplete; this forgotten new hole explains the false positive. Certified sequences leave the stated kernels, while independent complete deletion graphs prove that the corresponding actual peelings fail.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-original-cube-pruning</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/original_cube_pruning_false_positives.html">Rooted and Ordinary False Positives for Original-Cube Pruning</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-457" style="position:relative;">
+
+        <h3><a href="results/replicated_extensions_are_two_connected.html" class="table-title-link">Replicated Extensions with Two Core Neighbors Are Two-Connected</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Replicated Extensions with Two Core Neighbors Are Two-Connected</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be connected with at least two vertices, let $E$ be a nonempty disjoint coordinate set, and let every added base vertex $a$ have at least two neighbors in $S$. For arbitrary row sets $R_a\subseteq Q_E$, the graph of $(S\times Q_E)\cup\bigcup_a(\{a\}\times R_a)$ is two-connected. In particular, this applies when $S$ is ample and nonpeelable and each one-concept extension $S\cup\{a\}$ is ample and peelable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The product core $S\times Q_E$ remains connected after deleting any vertex: the other cube layers are connected, and every surviving vertex in the deleted layer has a neighbor in another layer. Every added vertex has at least two distinct neighbors in the core, so after any single vertex deletion every surviving added vertex still attaches to the surviving connected core. A resolving ample one-concept extension of a nonpeelable base has at least three base neighbors by low-support endpoint invariance, giving the final application.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-replicated-two-connected</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-458" style="position:relative;">
+
+        <h3><a href="results/square_completion_across_rooted_blocks.html" class="table-title-link">Square Completion Converts Rooted Block Wedges into Two-Connected Forbidden Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square Completion Converts Rooted Block Wedges into Two-Connected Forbidden Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A_1,0)$ and $(A_2,0)$ be rooted factors on disjoint coordinate blocks, let $N_i$ be the directions of their root neighbors, and choose a nonempty $\Gamma\subseteq N_1\times N_2$. Starting from the one-point amalgam $A_1\vee A_2$, add $0^{\{e,f\}}$ for every $(e,f)\in\Gamma$. The result is a two-connected ample forbidden pc-minor. Its shattered complex is the union of the two block shadows and the selected cross-block pairs. Every added vertex is a degree-two corner; if each factor has only its root as a corner, these are all the corners. Conversely, if deleting a degree-two corner from a two-connected ample forbidden pc-minor creates a cut vertex, the marked family arises uniquely from this construction with one selected pair, up to interchanging the two recovered rooted factors.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The rooted-factor wedge is forbidden. Each new vertex has exactly the two root-neighbor endpoints of its cross-block square, with the old root opposite; no earlier addition realizes the missing trace. Thus every addition is ample with its selected pair as acquired support, giving the shadow formula. Rank-two extension invariance preserves nonpeelability, and the one-concept atlas preserves pc-minimality at every step. A selected square joins the two rooted blocks after deletion of the common root, and every other vertex or new tip deletion leaves a connected core, proving two-connectivity. For recovery, delete the marked degree-two corner; low-degree descent leaves a forbidden family with a cut vertex. Its two corner neighbors must lie in different cut components and their old two-edge path forces the cut vertex to be the square's opposite vertex. The cut-vertex theorem then recovers the two rooted factors, their root neighbors, and the selected coordinate pair.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-square-completed-rooted-blocks</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/square_completed_rooted_blocks_578_to_586.html">The 511 Labelled Square Completions of the 577-Concept Double</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-459" style="position:relative;">
+
+        <h3><a href="results/root_protected_three_core.html" class="table-title-link">Root-Protected Three-Cores Preserve Adjacent Support-Three Repairs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Root-Protected Three-Cores Preserve Adjacent Support-Three Repairs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a rooted factor $(A,a)$, repeatedly deleting nonroot vertices of degree below three deletes only degree-two corners and preserves rooted-factor status. The terminal family is the unique largest induced subgraph containing $a$ in which every nonroot vertex has degree at least three. If $a$ is a degree-two corner and an adjacent support-three one-concept addition repairs its endpoint, the same addition repairs the terminal factor; its entire punctured three-cube survives and the root is the terminal factor's only degree-two vertex.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Rooted factors are two-connected, so every degree-two vertex is a corner and no smaller degree occurs. Small-corner irreducibility permits every nonroot deletion, and the usual core-containment argument gives uniqueness. For repair persistence, a nonroot degree-two vertex cannot lie in the punctured repair cube: the only candidates would form a second adjacent degree-three corner pair, and square-pair invariance after attaching a fixed bad rooted factor would make the unextended factor peel to its root. Outside the repair cube, the new tip gives such a vertex no new neighbor, so it remains a degree-two corner on both sides. Deleting it preserves both rooted failure and repaired endpoint success, leaves the punctured cube intact, and keeps the acquired support equal to the original triple. Iterating proves the claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-root-protected-three-core</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/root_protected_three_core_examples.html">Canonical Three-Cores of Square-Attachment Obstructions</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

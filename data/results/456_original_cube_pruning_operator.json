@@ -1,0 +1,20 @@
+{
+  "id": 456,
+  "short_name": "original_cube_pruning_operator",
+  "name": "Original-Cube Pruning Has a Canonical Kernel but Does Not Recognize Peelings",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "For a finite family $H$ and protected set $A\\subseteq H$, repeatedly delete an unprotected vertex whenever the cube on its current incident directions is contained in the original $H$. The terminal set $K_A(H)$ is independent of all choices. It is the greatest $U$, with $A\\subseteq U\\subseteq H$, such that every unprotected $v\\in U$ has a set $P$ of current incident directions with $v^P\\notin H$; $P$ may be chosen inclusion-minimal, so all its proper subfaces occur in $H$. A corner peeling of ample $H$ to $A$ implies $K_A(H)=A$, but the converse fails for a singleton and for the empty set: a $292$-concept rooted factor has singleton kernel at its root, and a $583$-concept ample forbidden pc-minor has empty kernel. Both have VC dimension four, in dimensions twelve and twenty-four.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/original_cube_pruning_false_positives"
+  ],
+  "proof": "The deletion predicate persists because later deletions only shrink a vertex's incident support. Any set in which every unprotected vertex has an original missing-cube witness survives every allowed sequence: at its first deletion all witnessing neighbors would still be present, contradicting the predicate. The terminal set itself has such witnesses, proving it is the unique greatest fixed set. If a genuine corner peeling to $A$ existed while the kernel had an extra vertex, the first deleted kernel vertex would still have all witness neighbors, while the completing vertex was absent already in $H$, contradicting its being a corner. In the rooted counterexample the pruning begins by deleting $32$ and then $64$ because the latter's original four-cube is complete, although deleting $32$ has made that cube incomplete; this forgotten new hole explains the false positive. Certified sequences leave the stated kernels, while independent complete deletion graphs prove that the corresponding actual peelings fail.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-original-cube-pruning"
+}

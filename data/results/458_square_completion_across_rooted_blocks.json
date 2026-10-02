@@ -1,0 +1,24 @@
+{
+  "id": 458,
+  "short_name": "square_completion_across_rooted_blocks",
+  "name": "Square Completion Converts Rooted Block Wedges into Two-Connected Forbidden Minors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(A_1,0)$ and $(A_2,0)$ be rooted factors on disjoint coordinate blocks, let $N_i$ be the directions of their root neighbors, and choose a nonempty $\\Gamma\\subseteq N_1\\times N_2$. Starting from the one-point amalgam $A_1\\vee A_2$, add $0^{\\{e,f\\}}$ for every $(e,f)\\in\\Gamma$. The result is a two-connected ample forbidden pc-minor. Its shattered complex is the union of the two block shadows and the selected cross-block pairs. Every added vertex is a degree-two corner; if each factor has only its root as a corner, these are all the corners. Conversely, if deleting a degree-two corner from a two-connected ample forbidden pc-minor creates a cut vertex, the marked family arises uniquely from this construction with one selected pair, up to interchanging the two recovered rooted factors.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/square_completed_rooted_blocks_578_to_586"
+  ],
+  "proof": "The rooted-factor wedge is forbidden. Each new vertex has exactly the two root-neighbor endpoints of its cross-block square, with the old root opposite; no earlier addition realizes the missing trace. Thus every addition is ample with its selected pair as acquired support, giving the shadow formula. Rank-two extension invariance preserves nonpeelability, and the one-concept atlas preserves pc-minimality at every step. A selected square joins the two rooted blocks after deletion of the common root, and every other vertex or new tip deletion leaves a connected core, proving two-connectivity. For recovery, delete the marked degree-two corner; low-degree descent leaves a forbidden family with a cut vertex. Its two corner neighbors must lie in different cut components and their old two-edge path forces the cut vertex to be the square's opposite vertex. The cut-vertex theorem then recovers the two rooted factors, their root neighbors, and the selected coordinate pair.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-square-completed-rooted-blocks"
+}

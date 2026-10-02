@@ -1,0 +1,11 @@
+{
+  "id": 147,
+  "short_name": "original_cube_pruning_false_positives",
+  "name": "Rooted and Ordinary False Positives for Original-Cube Pruning",
+  "object_type": "family",
+  "definition": "Normalize the certified $292$-concept rooted factor to root zero, calling it $B$, and form the $583$-concept one-point double $X$ of two copies of $B$ on disjoint twelve-coordinate blocks.",
+  "parameters": "$B$ has order $292$, dimension $12$, and VC dimension $4$; $X$ has order $583$, dimension $24$, and VC dimension $4$. The certified pruning sequences have lengths $291$ and $583$.",
+  "properties": "Original-cube pruning leaves only the protected root in $B$ and leaves the empty set in $X$, although $B$ cannot peel to its root and $X$ cannot peel at all. After the first pruning deletion $32$, vertex $64$ is permitted by its original complete four-cube even though that cube has just lost vertex $32$. Complete negative deletion graphs have eight rooted states and sixty-four ordinary states.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-original-cube-pruning",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_original_cube_pruning.py; PartialCubes:forbidden_pc_minor_campaign/damp_original_cube_pruning_verification.json"
+}

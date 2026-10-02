@@ -1,0 +1,21 @@
+{
+  "id": 459,
+  "short_name": "root_protected_three_core",
+  "name": "Root-Protected Three-Cores Preserve Adjacent Support-Three Repairs",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "In a rooted factor $(A,a)$, repeatedly deleting nonroot vertices of degree below three deletes only degree-two corners and preserves rooted-factor status. The terminal family is the unique largest induced subgraph containing $a$ in which every nonroot vertex has degree at least three. If $a$ is a degree-two corner and an adjacent support-three one-concept addition repairs its endpoint, the same addition repairs the terminal factor; its entire punctured three-cube survives and the root is the terminal factor's only degree-two vertex.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/root_protected_three_core_examples"
+  ],
+  "proof": "Rooted factors are two-connected, so every degree-two vertex is a corner and no smaller degree occurs. Small-corner irreducibility permits every nonroot deletion, and the usual core-containment argument gives uniqueness. For repair persistence, a nonroot degree-two vertex cannot lie in the punctured repair cube: the only candidates would form a second adjacent degree-three corner pair, and square-pair invariance after attaching a fixed bad rooted factor would make the unextended factor peel to its root. Outside the repair cube, the new tip gives such a vertex no new neighbor, so it remains a degree-two corner on both sides. Deleting it preserves both rooted failure and repaired endpoint success, leaves the punctured cube intact, and keeps the acquired support equal to the original triple. Iterating proves the claim.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-root-protected-three-core"
+}

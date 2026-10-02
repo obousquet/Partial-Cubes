@@ -1,0 +1,16 @@
+{
+  "id": 457,
+  "short_name": "replicated_extensions_are_two_connected",
+  "name": "Replicated Extensions with Two Core Neighbors Are Two-Connected",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "implication",
+  "statement": "Let $S$ be connected with at least two vertices, let $E$ be a nonempty disjoint coordinate set, and let every added base vertex $a$ have at least two neighbors in $S$. For arbitrary row sets $R_a\\subseteq Q_E$, the graph of $(S\\times Q_E)\\cup\\bigcup_a(\\{a\\}\\times R_a)$ is two-connected. In particular, this applies when $S$ is ample and nonpeelable and each one-concept extension $S\\cup\\{a\\}$ is ample and peelable.",
+  "status": "established",
+  "proof": "The product core $S\\times Q_E$ remains connected after deleting any vertex: the other cube layers are connected, and every surviving vertex in the deleted layer has a neighbor in another layer. Every added vertex has at least two distinct neighbors in the core, so after any single vertex deletion every surviving added vertex still attaches to the surviving connected core. A resolving ample one-concept extension of a nonpeelable base has at least three base neighbors by low-support endpoint invariance, giving the final application.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-replicated-two-connected"
+}
