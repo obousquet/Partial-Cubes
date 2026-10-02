@@ -1,0 +1,155 @@
+{
+  "version": 1,
+  "batch_id": "090_survey_expansion_and_derived_structures",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the frozen survey cluster on one-step and gated expansions, Theta-class hypergraphs, high-girth rigidity, maximal-cube intersection operators, crossing and distance-cube polynomial laws, and Varchenko products, promoting their reusable operations and invariants to first-class database records.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#prop:one-step-expansion-contracts",
+    "PartialCubes:papers/survey/main.tex#thm:gated-expansion-scope",
+    "PartialCubes:papers/survey/main.tex#thm:theta-hypergraph-profile",
+    "PartialCubes:papers/survey/main.tex#thm:high-girth-rigidity",
+    "PartialCubes:papers/survey/main.tex#thm:treelike-cube-graph",
+    "PartialCubes:papers/survey/main.tex#thm:cube-intersection-operators",
+    "PartialCubes:papers/survey/main.tex#thm:crossing-cube-polynomial",
+    "PartialCubes:papers/survey/main.tex#thm:daisy-polynomials",
+    "PartialCubes:papers/survey/main.tex#prop:varchenko-cartesian-products"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partial-cubes-bibliography",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "main.bib",
+      "sha256": "66b3172b12af56ccbceba8a47f354dc326966f120f04720e545b3295c17d70de",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/main.bib"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized operation definitions, reusable derived invariants, exact theorem statements, concise proofs, closure consequences, and citations. The LaTeX survey retains the full hierarchy discussion, historical corrections, counterexample exposition, and open converse questions.",
+    "recoverability": "The survey manuscript and dirty bibliography are read from the frozen snapshot and match their manifest SHA-256 hashes; every migrated theorem has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "1dcec326a910a3c398bac848bbde3bffeba462ef7fdf13342ae01090e3b9df15"
+    },
+    {
+      "path": "data/operations/021_graph_expansion.json",
+      "sha256": "7eb8ff943a67ee9d1de82264d0be39bab98cf3606f14d30b5b992688d35671c2"
+    },
+    {
+      "path": "data/operations/022_k_ary_expansion.json",
+      "sha256": "04e1dbc898a6a2bde0c9f609336f59456f65b51c402478f98881eff1b21542f6"
+    },
+    {
+      "path": "data/operations/023_cube_intersection_operator.json",
+      "sha256": "f3f774a833c0e1eb67ae4c926d44b5c3525d238d33744deb17861b3bc933f0a2"
+    },
+    {
+      "path": "data/invariants/048_crossing_graph.json",
+      "sha256": "3f28599d009cd6b9efb62105e5ac1a2cc761e7db49dd2d0a53b6cea8fbed173c"
+    },
+    {
+      "path": "data/invariants/049_theta_graph.json",
+      "sha256": "a53c02027c35a18f8d84c66b8cd448baa52327be48052284153565da1ff0f0c0"
+    },
+    {
+      "path": "data/invariants/050_theta_class_hypergraph.json",
+      "sha256": "e054908de09f2b17443a73bb36513a36ad7c2d02290ec2cf9ad597acdc387b68"
+    },
+    {
+      "path": "data/invariants/051_graph_girth.json",
+      "sha256": "39369243e0ff130aabcd9e9f3cee6254d0dc8ff7f0edb6c4e8f69059a6537682"
+    },
+    {
+      "path": "data/invariants/052_maximal_cube_intersection_graph.json",
+      "sha256": "a5fe903afaa4993492426816af8ff2ecf8aa70d6aec6b73412e2be914c5c2543"
+    },
+    {
+      "path": "data/invariants/053_cube_polynomial.json",
+      "sha256": "2167c12568ba42cacd053362e96859ca8f1c623d254edadcc91be14fe9061b68"
+    },
+    {
+      "path": "data/invariants/054_distance_cube_polynomial.json",
+      "sha256": "25de55aa5cba3cd31e4fa57e1122eedacc5f281ad68e38d4d28145ed7e19d2f5"
+    },
+    {
+      "path": "data/invariants/055_unsigned_varchenko_determinant.json",
+      "sha256": "73e68ef9c36dc4e0e2a0a00a83a103ca7d760daef916326342521fc28b118cde"
+    },
+    {
+      "path": "data/operation_results/291_varchenko_factorizable_cartesian_product_closed.json",
+      "sha256": "69273ec9bf67e1df40abff00334e6201471537af2a276829591be7ba4b6aed93"
+    },
+    {
+      "path": "data/results/307_one_step_expansion_contracts.json",
+      "sha256": "cdf934dd79597bf39efabca2318d7280113a255360d13e498298883c0f10d932"
+    },
+    {
+      "path": "data/results/308_gated_expansion_scope.json",
+      "sha256": "5e79ac06cdc21b7e5208ec785bd8a12bfaa5e90d45e71c1b52eda6465ac0ca74"
+    },
+    {
+      "path": "data/results/309_theta_class_hypergraph_profile.json",
+      "sha256": "3f5c4d34f41c202d8ec12abbfdd95cb53f780519dfbb287ee5f0a560beac9687"
+    },
+    {
+      "path": "data/results/310_high_girth_partial_cube_rigidity.json",
+      "sha256": "4bfec1e71606d2d0b3e8eef1ae29b462ef373c94462ef806de5e9c676bc891a3"
+    },
+    {
+      "path": "data/results/311_tree_like_cube_graph_dismantlable.json",
+      "sha256": "2fcbf179fc5430f35b7b28c7b883a25cd384fa52f4536e00c714676fdecd7b8f"
+    },
+    {
+      "path": "data/results/312_cube_intersection_operator_images.json",
+      "sha256": "c6baba0e4daa7840a886a1f1b655b5d38000c25a002618e976d1fd91b0db71fe"
+    },
+    {
+      "path": "data/results/313_crossing_graph_cube_polynomial_bound.json",
+      "sha256": "14dd37fb416a87d8140c1ca59c2db10cced7d576e8b4641925625207ade56093"
+    },
+    {
+      "path": "data/results/314_daisy_cube_polynomial_characterization.json",
+      "sha256": "b16f082ad1421bb9e1c736579a5f4eb21e350ace2fcec9de7c9790eb4e3b3194"
+    },
+    {
+      "path": "data/results/315_varchenko_cartesian_product_law.json",
+      "sha256": "856f8923c8f0b6f894c9eb844f6595e4582c0c95cfdc73c0c614a4581c12f0d8"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "6e9e79999c72d72f7b5c85204ad4ecb9e7c85210da97632aefef060c7792f197"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "9c7b64d43858288800284198953f58c468598c30908bd1c7a6623e6daaed1b97"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1561 records.",
+    "website": "Normalized 1577 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 9 survey labels, raising that workspace from 90 of 131 to 99 of 131 and overall workspace-aware coverage from 390 to 399 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 32 uncovered labeled results in graph-family, daisy/Fibonacci, compression, and COM/tope clusters.",
+    "Open converses and realization questions remain prose in the survey under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

@@ -5163,6 +5163,159 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-307" style="position:relative;">
+
+        <h3><a href="results/one_step_expansion_contracts.html" class="table-title-link">One-Step Expansion Preservation Contracts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Step Expansion Preservation Contracts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li><li><a href="classes/almost_median_partial_cubes.html">Almost-Median Partial Cubes</a></li><li><a href="classes/semi_median_partial_cubes.html">Semi-Median Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ expand $G$ with cover $(G_1,G_2)$ and overlap $G_0$. If $G$ is a partial cube, then $H$ is a partial cube without another overlap condition. If $G$ is median and $G_0$ is convex, then $H$ is median. If $G$ and both cover members are almost-median and $G_0$ is isometric, then $H$ is almost-median; isometry alone is insufficient. If $G$ is semi-median, $G_0$ is connected, and the cover satisfies property (P), then $H$ is semi-median; connectedness alone is insufficient.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The first two clauses are the classical partial-cube and median expansion theorems. The almost-median and semi-median clauses are the exact preservation theorems for their respective cover conditions; published counterexamples show that deleting the cover-membership or property-(P) hypotheses invalidates them.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresarImrichKlavzar03fast">[BresarImrichKlavzar03fast]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:one-step-expansion-contracts</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-308" style="position:relative;">
+
+        <h3><a href="results/gated_expansion_scope.html" class="table-title-link">Gated Expansions Characterize Quasi-Median Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Gated Expansions Characterize Quasi-Median Graphs</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/k_ary_expansion.html">k-Ary and Gated Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A finite graph is a partial Hamming graph exactly when it is obtainable from $K_1$ by $k$-ary expansions. It is quasi-median exactly when it is obtainable from $K_1$ by gated expansions. The binary bipartite specialization is the median expansion theorem, but general gated expansions permit $k>2$ and cliques.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresarKlavzarSkrekovski03Quasi">[BresarKlavzarSkrekovski03Quasi]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:gated-expansion-scope</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Partial Hamming and quasi-median graphs are retained here as the precise ambient scope of the operation theorem; they are not promoted to nodes in the partial-cube class hierarchy.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-309" style="position:relative;">
+
+        <h3><a href="results/theta_class_hypergraph_profile.html" class="table-title-link">Theta-Class Hypergraph and Theta-Graph Profile</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Theta-Class Hypergraph and Theta-Graph Profile</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li><li><a href="classes/acc_graphs.html">ACC Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/theta_graph.html">Theta Graph</a></li><li><a href="invariants/theta_class_hypergraph.html">Theta-Class Hypergraph</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ACC graph, the 2-section of $\mathcal H_\Theta(G)$ is chordal. In a median graph every pairwise adjacent family of $\Theta$-classes has representatives with a common endpoint, so $\omega(\Theta(G))=\Delta(G)$. If $G$ is both ACC and a $p$-expansion graph, then $\mathcal H_\Theta(G)$ is conformal and $\Theta(G)$ is dually chordal. For every $p$-expansion graph, $\Theta(G)$ is chordal; hence it is doubly chordal in the ACC case.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresakSumenjak2014">[BresakSumenjak2014]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:theta-hypergraph-profile</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The ACC hypothesis alone does not force conformality or dual chordality; the source supplies a counterexample.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-310" style="position:relative;">
+
+        <h3><a href="results/high_girth_partial_cube_rigidity.html" class="table-title-link">High-Girth Partial Cubes Are Tree-Zone and Sparse</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>High-Girth Partial Cubes Are Tree-Zone and Sparse</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/tree_zone_partial_cubes.html">Tree-Zone Partial Cubes</a></li><li><a href="classes/regular_partial_cubes.html">Regular Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/graph_girth.html">Graph Girth</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a finite or locally finite partial cube with $g(G)>6$. Every zone graph is a tree. If $\delta(G)\ge3$, then $G$ contains an infinite subtree of degrees two and three with degree-two vertices pairwise at distance at least two; hence $G$ is infinite and has exponential growth. A finite regular such graph is $K_1$, $K_2$, or an even cycle.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Marc16highgirth">[Marc16highgirth]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:high-girth-rigidity</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The strict girth bound is sharp: middle-levels graphs have girth six.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-311" style="position:relative;">
+
+        <h3><a href="results/tree_like_cube_graph_dismantlable.html" class="table-title-link">Tree-Like Partial Cubes Have Dismantlable Cube Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Tree-Like Partial Cubes Have Dismantlable Cube Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/tree_like_partial_cubes.html">Tree-Like Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If $G$ is a finite tree-like partial cube, then its maximal-cube intersection graph $Q(G)$ is dismantlable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Corollary~15]{Gologranc14treehamming}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:treelike-cube-graph</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The converse is open and remains prose in the survey.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-312" style="position:relative;">
+
+        <h3><a href="results/cube_intersection_operator_images.html" class="table-title-link">Images and Laws of Cube-Intersection Operators</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Images and Laws of Cube-Intersection Operators</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/median.html">Median Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_intersection_operator.html">Cube-Intersection Operator</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For median $G$, $Q_0(G)$ is Helly. For every $k\ge1$, the possible graphs $Q_k(G)$ are exactly the clique graphs, with $Q_1(G)=C(G^e)$. For all $k,\ell\ge0$, $Q_k(G)=Q_{k+\ell}(G\square Q_\ell)$. The possible $Q_{m2}(G)$ are exactly the diamond-free graphs, and $Q_{m2}(G\square H)=Q_{m2}(G)\square Q_{m2}(H)$; no analogous fixed-$Q_k$ product identity holds in general.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BresarSumenjak2009">[BresarSumenjak2009]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:cube-intersection-operators</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-313" style="position:relative;">
+
+        <h3><a href="results/crossing_graph_cube_polynomial_bound.html" class="table-title-link">Crossing Graph Bounds the Cube Polynomial</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Crossing Graph Bounds the Cube Polynomial</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/crossing_graph.html">Crossing Graph</a></li><li><a href="invariants/cube_polynomial.html">Cube Polynomial</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every partial cube $G\ne K_1$, $C(G,x)\le\operatorname{Cl}(G^\sharp,x+1)$ coefficientwise, with equality exactly when $G$ is median. Thus for median $G$, the coefficient of $(x+1)^k$ in $C(G,x)$ equals the number of $k$-cliques of $G^\sharp$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#XieFengXu24crossing">[XieFengXu24crossing]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-cube-polynomial</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The identity transfers clique-polynomial phenomena to cube polynomials; in particular, median cube polynomials need not be unimodal.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-314" style="position:relative;">
+
+        <h3><a href="results/daisy_cube_polynomial_characterization.html" class="table-title-link">Distance-Cube Polynomial Characterizes Rooted Daisy Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Distance-Cube Polynomial Characterizes Rooted Daisy Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/cube_polynomial.html">Cube Polynomial</a></li><li><a href="invariants/distance_cube_polynomial.html">Rooted Distance-Cube Polynomial</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a partial cube $G$ rooted at $u$, the following are equivalent: $G$ is a daisy cube rooted at $u$; $C(G,x)=W_{G,u}(x+1)$; $D_{G,u}(x,y)=W_{G,u}(x+y)$; and $D_{G,u}(x,y)=C(G,x+y-1)$. Every rooted partial cube satisfies $D_{G,u}(x,y)\le W_{G,u}(x+y)$ coefficientwise, with equality exactly in the daisy case.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorems~6--7]{ZhengXieXu26}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:daisy-polynomials</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The cited source is a March 2026 arXiv preprint; that publication status is preserved.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-315" style="position:relative;">
+
+        <h3><a href="results/varchenko_cartesian_product_law.html" class="table-title-link">Varchenko Matrices Multiply under Cartesian Products</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Varchenko Matrices Multiply under Cartesian Products</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/arrangement_factorizable_varchenko_partial_cubes.html">Arrangement-Factorizable Varchenko Partial Cubes</a></li><li><a href="classes/hypercubes.html">Hypercubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/unsigned_varchenko_determinant.html">Unsigned Varchenko Determinant</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For finite partial cubes on disjoint class variables, $\mathsf V_{G\square H}=\mathsf V_G\otimes\mathsf V_H$ and $\det\mathsf V_{G\square H}=(\det\mathsf V_G)^{|V(H)|}(\det\mathsf V_H)^{|V(G)|}$. Hence arrangement-type factorization is product-closed, and $\det\mathsf V_{Q_d}=\prod_{i=1}^d(1-x_i^2)^{2^{d-1}}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Separating classes in the product split disjointly between the two factors, so every matrix entry factors and the matrix is a Kronecker product. The determinant formula for Kronecker products gives the exponent law; iterate $Q_d=K_2^{\square d}$ for the cube formula.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#HochstattlerKeipYazici25">[HochstattlerKeipYazici25]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#prop:varchenko-cartesian-products</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,12 @@
+{
+  "id": 22,
+  "short_name": "k_ary_expansion",
+  "name": "k-Ary and Gated Expansion",
+  "symbol": "\\operatorname{Exp}_k",
+  "arity": 2,
+  "definition": "Given a graph $G$ and a pairwise-intersecting cover $W_1,\\ldots,W_k$ with no edges between opposite exclusive parts and the required isometric cover subgraphs, replace each vertex $x$ by the clique of copies $x_i$ for which $x\\in W_i$, retaining the edges inside each copy. The expansion is gated when all pairwise intersections equal one set $U$ and every $G[W_i]$ and $G[U]$ is gated in $G$.",
+  "category": "expansion",
+  "comments": "For $k=2$ the construction specializes to binary graph expansion. Gated expansion also constrains every cover member and may create triangles, so it is broader than the partial-cube expansion hierarchy.",
+  "references": "\\cite{BresarKlavzarSkrekovski03Quasi}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:gated-expansion-scope"
+}

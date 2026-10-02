@@ -1,0 +1,19 @@
+{
+  "id": 310,
+  "short_name": "high_girth_partial_cube_rigidity",
+  "name": "High-Girth Partial Cubes Are Tree-Zone and Sparse",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/tree_zone_partial_cubes",
+    "#classes/regular_partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/graph_girth"
+  ],
+  "result_type": "implication",
+  "statement": "Let $G$ be a finite or locally finite partial cube with $g(G)>6$. Every zone graph is a tree. If $\\delta(G)\\ge3$, then $G$ contains an infinite subtree of degrees two and three with degree-two vertices pairwise at distance at least two; hence $G$ is infinite and has exponential growth. A finite regular such graph is $K_1$, $K_2$, or an even cycle.",
+  "status": "established",
+  "references": "\\cite{Marc16highgirth}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:high-girth-rigidity",
+  "comments": "The strict girth bound is sharp: middle-levels graphs have girth six."
+}

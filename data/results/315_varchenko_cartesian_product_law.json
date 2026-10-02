@@ -1,0 +1,22 @@
+{
+  "id": 315,
+  "short_name": "varchenko_cartesian_product_law",
+  "name": "Varchenko Matrices Multiply under Cartesian Products",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/arrangement_factorizable_varchenko_partial_cubes",
+    "#classes/hypercubes"
+  ],
+  "invariant_ids": [
+    "#invariants/unsigned_varchenko_determinant"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For finite partial cubes on disjoint class variables, $\\mathsf V_{G\\square H}=\\mathsf V_G\\otimes\\mathsf V_H$ and $\\det\\mathsf V_{G\\square H}=(\\det\\mathsf V_G)^{|V(H)|}(\\det\\mathsf V_H)^{|V(G)|}$. Hence arrangement-type factorization is product-closed, and $\\det\\mathsf V_{Q_d}=\\prod_{i=1}^d(1-x_i^2)^{2^{d-1}}$.",
+  "status": "established",
+  "proof": "Separating classes in the product split disjointly between the two factors, so every matrix entry factors and the matrix is a Kronecker product. The determinant formula for Kronecker products gives the exponent law; iterate $Q_d=K_2^{\\square d}$ for the cube formula.",
+  "references": "\\cite{HochstattlerKeipYazici25}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:varchenko-cartesian-products"
+}

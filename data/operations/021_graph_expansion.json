@@ -1,0 +1,12 @@
+{
+  "id": 21,
+  "short_name": "graph_expansion",
+  "name": "Graph Expansion",
+  "symbol": "\\operatorname{Exp}",
+  "arity": 3,
+  "definition": "Let $G_1,G_2$ be isometric induced subgraphs covering a connected graph $G$, with no edge joining $G_1\\setminus G_2$ to $G_2\\setminus G_1$. Replace each vertex of $G_1\\cap G_2$ by two adjacent copies, retain one copy of $G_1$ and one copy of $G_2$, and join corresponding overlap copies. The result is the expansion of $G$ with cover $(G_1,G_2)$.",
+  "category": "expansion",
+  "comments": "Convex, isometric, connected, and peripheral expansions impose additional conditions on the overlap or cover. These adjectives do not by themselves have interchangeable preservation theorems.",
+  "references": "\\cite{BresarImrichKlavzar03fast}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:one-step-expansion-contracts"
+}

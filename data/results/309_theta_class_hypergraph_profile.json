@@ -1,0 +1,20 @@
+{
+  "id": 309,
+  "short_name": "theta_class_hypergraph_profile",
+  "name": "Theta-Class Hypergraph and Theta-Graph Profile",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/median",
+    "#classes/acc_graphs"
+  ],
+  "invariant_ids": [
+    "#invariants/theta_graph",
+    "#invariants/theta_class_hypergraph"
+  ],
+  "result_type": "implication",
+  "statement": "For an ACC graph, the 2-section of $\\mathcal H_\\Theta(G)$ is chordal. In a median graph every pairwise adjacent family of $\\Theta$-classes has representatives with a common endpoint, so $\\omega(\\Theta(G))=\\Delta(G)$. If $G$ is both ACC and a $p$-expansion graph, then $\\mathcal H_\\Theta(G)$ is conformal and $\\Theta(G)$ is dually chordal. For every $p$-expansion graph, $\\Theta(G)$ is chordal; hence it is doubly chordal in the ACC case.",
+  "status": "established",
+  "references": "\\cite{BresakSumenjak2014}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:theta-hypergraph-profile",
+  "comments": "The ACC hypothesis alone does not force conformality or dual chordality; the source supplies a counterexample."
+}

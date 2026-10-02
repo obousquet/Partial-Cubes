@@ -1,0 +1,19 @@
+{
+  "id": 314,
+  "short_name": "daisy_cube_polynomial_characterization",
+  "name": "Distance-Cube Polynomial Characterizes Rooted Daisy Cubes",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/daisy_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/cube_polynomial",
+    "#invariants/distance_cube_polynomial"
+  ],
+  "result_type": "recognition",
+  "statement": "For a partial cube $G$ rooted at $u$, the following are equivalent: $G$ is a daisy cube rooted at $u$; $C(G,x)=W_{G,u}(x+1)$; $D_{G,u}(x,y)=W_{G,u}(x+y)$; and $D_{G,u}(x,y)=C(G,x+y-1)$. Every rooted partial cube satisfies $D_{G,u}(x,y)\\le W_{G,u}(x+y)$ coefficientwise, with equality exactly in the daisy case.",
+  "status": "established",
+  "references": "\\cite[Theorems~6--7]{ZhengXieXu26}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:daisy-polynomials",
+  "comments": "The cited source is a March 2026 arXiv preprint; that publication status is preserved."
+}

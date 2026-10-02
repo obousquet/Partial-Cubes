@@ -1,0 +1,15 @@
+{
+  "id": 54,
+  "short_name": "distance_cube_polynomial",
+  "name": "Rooted Distance-Cube Polynomial",
+  "symbol": "D_{G,u}(x,y)",
+  "definition": "For a rooted graph $(G,u)$, let $c_{k,d}(G,u)$ count induced $k$-cubes whose minimum distance from $u$ is $d$, and put $D_{G,u}(x,y)=\\sum_{k,d\\ge0}c_{k,d}(G,u)x^ky^d$.",
+  "status": "established",
+  "domain_class_id": "#classes/partial_cubes",
+  "codomain": "Bivariate polynomials with nonnegative integer coefficients",
+  "category": "combinatorial",
+  "isomorphism_invariant": false,
+  "comments": "It specializes to $C(G,x)$ at $y=1$ and to the rooted distance polynomial at $x=0$.",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:daisy-polynomials",
+  "parameters": "A distinguished root vertex $u$."
+}

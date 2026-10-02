@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1016,
     "label_occurrences": 1040,
-    "covered": 390,
-    "uncovered": 626,
-    "proof_source_records": 1426
+    "covered": 399,
+    "uncovered": 617,
+    "proof_source_records": 1447
   },
   "by_workspace": {
     "ample-corners": {
@@ -51,9 +51,9 @@
       "total": 51
     },
     "survey": {
-      "covered": 90,
+      "covered": 99,
       "total": 131,
-      "uncovered": 41
+      "uncovered": 32
     },
     "vc-littlestone": {
       "covered": 7,
@@ -15982,7 +15982,7 @@
       "label": "prop:one-step-expansion-contracts",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -15992,13 +15992,16 @@
           "line": 6058
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operations/021_graph_expansion.json",
+        "data/results/307_one_step_expansion_contracts.json"
+      ]
     },
     {
       "label": "prop:varchenko-cartesian-products",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16008,7 +16011,10 @@
           "line": 6870
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/291_varchenko_factorizable_cartesian_product_closed.json",
+        "data/results/315_varchenko_cartesian_product_law.json"
+      ]
     },
     {
       "label": "thm:acc-characterizations",
@@ -16353,7 +16359,7 @@
       "label": "thm:crossing-cube-polynomial",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16363,7 +16369,10 @@
           "line": 6764
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/053_cube_polynomial.json",
+        "data/results/313_crossing_graph_cube_polynomial_bound.json"
+      ]
     },
     {
       "label": "thm:crossing-graph-profile",
@@ -16383,6 +16392,7 @@
         "data/characterizations/103_complete_crossing_graph.json",
         "data/characterizations/136_c4_cactoid_block_definition.json",
         "data/characterizations/137_c4_tree_gluing_definition.json",
+        "data/invariants/048_crossing_graph.json",
         "data/relations/121_complete_crossing_strict_subset_partial_cubes.json",
         "data/relations/125_antipodal_strict_subset_complete_crossing.json",
         "data/relations/204_c4_trees_strict_subset_c4_cactoids.json"
@@ -16392,7 +16402,7 @@
       "label": "thm:cube-intersection-operators",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16402,7 +16412,10 @@
           "line": 6698
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operations/023_cube_intersection_operator.json",
+        "data/results/312_cube_intersection_operator_images.json"
+      ]
     },
     {
       "label": "thm:cube-intersection-representations",
@@ -16482,7 +16495,7 @@
       "label": "thm:daisy-polynomials",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16492,7 +16505,10 @@
           "line": 6812
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/054_distance_cube_polynomial.json",
+        "data/results/314_daisy_cube_polynomial_characterization.json"
+      ]
     },
     {
       "label": "thm:diametrical-low-parameters",
@@ -16638,7 +16654,7 @@
       "label": "thm:gated-expansion-scope",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16648,13 +16664,16 @@
           "line": 6152
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operations/022_k_ary_expansion.json",
+        "data/results/308_gated_expansion_scope.json"
+      ]
     },
     {
       "label": "thm:high-girth-rigidity",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -16664,7 +16683,10 @@
           "line": 6603
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/051_graph_girth.json",
+        "data/results/310_high_girth_partial_cube_rigidity.json"
+      ]
     },
     {
       "label": "thm:hypercellular-characterizations",
@@ -17327,6 +17349,7 @@
       ],
       "covered_by": [
         "data/characterizations/091_complete_theta_graph.json",
+        "data/invariants/049_theta_graph.json",
         "data/relations/116_complete_theta_strict_subset_partial_cubes.json",
         "data/relations/117_hypercubes_strict_subset_complete_theta.json"
       ]
@@ -17335,7 +17358,7 @@
       "label": "thm:theta-hypergraph-profile",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -17345,7 +17368,10 @@
           "line": 6505
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/050_theta_class_hypergraph.json",
+        "data/results/309_theta_class_hypergraph_profile.json"
+      ]
     },
     {
       "label": "thm:tope-graph-recognition",
@@ -17401,7 +17427,7 @@
       "label": "thm:treelike-cube-graph",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "survey"
       ],
@@ -17411,7 +17437,10 @@
           "line": 6673
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariants/052_maximal_cube_intersection_graph.json",
+        "data/results/311_tree_like_cube_graph_dismantlable.json"
+      ]
     },
     {
       "label": "thm:treelike-gated-closure",

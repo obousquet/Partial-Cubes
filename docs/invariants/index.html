@@ -1348,6 +1348,214 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-48" style="position:relative;">
+
+        <h3><a href="invariants/crossing_graph.html" class="table-title-link">Crossing Graph</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Crossing Graph</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="G^{\sharp}">
+            \[G^{\sharp}\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, the crossing graph has one vertex for each $\Theta$-class and joins two classes exactly when all four intersections of their two pairs of semicubes are nonempty.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Finite simple graphs</p>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The crossing graph need not equal the square graph or the $\Theta$-graph outside special classes.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-graph-profile</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-49" style="position:relative;">
+
+        <h3><a href="invariants/theta_graph.html" class="table-title-link">Theta Graph</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Theta Graph</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\Theta(G)">
+            \[\Theta(G)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, $\Theta(G)$ has one vertex for each $\Theta$-class and joins two classes when they have incident edge representatives in $G$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Finite simple graphs</p>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>This is distinct from the Djoković--Winkler relation itself and from the crossing graph.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:theta-graph-profile</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/theta_class_hypergraph_profile.html'>Theta-Class Hypergraph and Theta-Graph Profile</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-50" style="position:relative;">
+
+        <h3><a href="invariants/theta_class_hypergraph.html" class="table-title-link">Theta-Class Hypergraph</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Theta-Class Hypergraph</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\mathcal H_{\Theta}(G)">
+            \[\mathcal H_{\Theta}(G)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For each $\Theta$-class $E$ of a partial cube $G$, let $C_E$ be the set of all endpoints of edges in $E$. Then $\mathcal H_{\Theta}(G)=(V(G),\{C_E:E\text{ a }\Theta\text{-class}\})$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Finite hypergraphs</p>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>Its line graph is the $\Theta$-graph; its 2-section instead has the vertices of $G$ as vertices.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:theta-hypergraph-profile</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/theta_class_hypergraph_profile.html'>Theta-Class Hypergraph and Theta-Graph Profile</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-51" style="position:relative;">
+
+        <h3><a href="invariants/graph_girth.html" class="table-title-link">Graph Girth</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Graph Girth</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="g(G)">
+            \[g(G)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>The girth of a graph is the length of a shortest cycle; it is $\infty$ when the graph is acyclic.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Positive integers at least three, together with infinity</p>
+<p><strong>Category:</strong> Metric</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>For bipartite partial cubes every finite value is even.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:high-girth-rigidity</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/high_girth_partial_cube_rigidity.html'>High-Girth Partial Cubes Are Tree-Zone and Sparse</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-52" style="position:relative;">
+
+        <h3><a href="invariants/maximal_cube_intersection_graph.html" class="table-title-link">Maximal-Cube Intersection Graph</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Maximal-Cube Intersection Graph</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="Q(G)">
+            \[Q(G)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a partial cube $G$, $Q(G)$ has the maximal induced cubes of $G$ as vertices, with two adjacent exactly when they intersect.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Finite simple graphs</p>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>For median graphs this is $Q_0(G)$ in the indexed cube-intersection family.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:treelike-cube-graph</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/tree_like_cube_graph_dismantlable.html'>Tree-Like Partial Cubes Have Dismantlable Cube Graphs</a></li><li><a href='results/cube_intersection_operator_images.html'>Images and Laws of Cube-Intersection Operators</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-53" style="position:relative;">
+
+        <h3><a href="invariants/cube_polynomial.html" class="table-title-link">Cube Polynomial</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Polynomial</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="C(G,x)">
+            \[C(G,x)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For $\alpha_k(G)$ the number of induced subgraphs of $G$ isomorphic to $Q_k$, define $C(G,x)=\sum_{k\ge0}\alpha_k(G)x^k$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Polynomials with nonnegative integer coefficients</p>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The constant coefficient is the number of vertices.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:crossing-cube-polynomial</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/crossing_graph_cube_polynomial_bound.html'>Crossing Graph Bounds the Cube Polynomial</a></li><li><a href='results/daisy_cube_polynomial_characterization.html'>Distance-Cube Polynomial Characterizes Rooted Daisy Cubes</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-54" style="position:relative;">
+
+        <h3><a href="invariants/distance_cube_polynomial.html" class="table-title-link">Rooted Distance-Cube Polynomial</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Distance-Cube Polynomial</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="D_{G,u}(x,y)">
+            \[D_{G,u}(x,y)\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a rooted graph $(G,u)$, let $c_{k,d}(G,u)$ count induced $k$-cubes whose minimum distance from $u$ is $d$, and put $D_{G,u}(x,y)=\sum_{k,d\ge0}c_{k,d}(G,u)x^ky^d$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Bivariate polynomials with nonnegative integer coefficients</p>
+<strong>Parameters:</strong><div class="text-field"><p>A distinguished root vertex $u$.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> No</p>
+<strong>Comments:</strong><div class="text-field"><p>It specializes to $C(G,x)$ at $y=1$ and to the rooted distance polynomial at $x=0$.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:daisy-polynomials</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/daisy_cube_polynomial_characterization.html'>Distance-Cube Polynomial Characterizes Rooted Daisy Cubes</a></li></ul></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-55" style="position:relative;">
+
+        <h3><a href="invariants/unsigned_varchenko_determinant.html" class="table-title-link">Unsigned Varchenko Determinant</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unsigned Varchenko Determinant</p>
+<strong>Symbol:</strong>
+    <div class="table-display">
+        <div class="latex-equation" data-latex="\det\mathsf V_G">
+            \[\det\mathsf V_G\]
+        </div>
+    </div>
+
+<strong>Definition:</strong><div class="text-field"><p>For a finite partial cube $G$ with one variable $x_e$ per $\Theta$-class, set $\mathsf V_G(u,v)=\prod_{e\in S(u,v)}x_e$, where $S(u,v)$ is the set of classes separating $u$ and $v$, and take its determinant.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Domain: </strong><a href="classes/partial_cubes.html">Partial Cubes</a></p>
+<p><strong>Codomain: </strong>Multivariate integer polynomials, up to relabeling of class variables</p>
+<p><strong>Category:</strong> Algebraic</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The determinant is independent of vertex order and of choices in a minimal cube embedding, up to variable relabeling.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#def:varchenko-partial-cube</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/varchenko_cartesian_product_law.html'>Varchenko Matrices Multiply under Cartesian Products</a></li></ul></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

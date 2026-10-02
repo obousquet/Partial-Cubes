@@ -1,0 +1,19 @@
+{
+  "id": 313,
+  "short_name": "crossing_graph_cube_polynomial_bound",
+  "name": "Crossing Graph Bounds the Cube Polynomial",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/median"
+  ],
+  "invariant_ids": [
+    "#invariants/crossing_graph",
+    "#invariants/cube_polynomial"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every partial cube $G\\ne K_1$, $C(G,x)\\le\\operatorname{Cl}(G^\\sharp,x+1)$ coefficientwise, with equality exactly when $G$ is median. Thus for median $G$, the coefficient of $(x+1)^k$ in $C(G,x)$ equals the number of $k$-cliques of $G^\\sharp$.",
+  "status": "established",
+  "references": "\\cite{XieFengXu24crossing}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:crossing-cube-polynomial",
+  "comments": "The identity transfers clique-polynomial phenomena to cube polynomials; in particular, median cube polynomials need not be unimodal."
+}

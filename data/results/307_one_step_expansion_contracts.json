@@ -1,0 +1,20 @@
+{
+  "id": 307,
+  "short_name": "one_step_expansion_contracts",
+  "name": "One-Step Expansion Preservation Contracts",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/median",
+    "#classes/almost_median_partial_cubes",
+    "#classes/semi_median_partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion"
+  ],
+  "result_type": "construction",
+  "statement": "Let $H$ expand $G$ with cover $(G_1,G_2)$ and overlap $G_0$. If $G$ is a partial cube, then $H$ is a partial cube without another overlap condition. If $G$ is median and $G_0$ is convex, then $H$ is median. If $G$ and both cover members are almost-median and $G_0$ is isometric, then $H$ is almost-median; isometry alone is insufficient. If $G$ is semi-median, $G_0$ is connected, and the cover satisfies property (P), then $H$ is semi-median; connectedness alone is insufficient.",
+  "status": "established",
+  "proof": "The first two clauses are the classical partial-cube and median expansion theorems. The almost-median and semi-median clauses are the exact preservation theorems for their respective cover conditions; published counterexamples show that deleting the cover-membership or property-(P) hypotheses invalidates them.",
+  "references": "\\cite{BresarImrichKlavzar03fast}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#prop:one-step-expansion-contracts"
+}
