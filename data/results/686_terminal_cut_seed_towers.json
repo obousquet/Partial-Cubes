@@ -1,0 +1,23 @@
+{
+  "id": 686,
+  "short_name": "terminal_cut_seed_towers",
+  "name": "Two-Connected Terminal Towers over Cut-Vertex Seeds",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $S\\subseteq Q_F$ be an irredundantly embedded, corner-descent-terminal ample forbidden pc-minor with a cut vertex. Suppose $a,b\\notin S$ are distinct resolving tips such that $S\\cup\\{a\\}$ and $S\\cup\\{b\\}$ are dismantlable ample and acquire distinct shattered supports. For every nonempty coordinate set $E$ disjoint from $F$, put $X_E=(S\\times Q_E)\\cup(\\{a\\}\\times(Q_E\\setminus\\{0^E\\}))\\cup(\\{b\\}\\times(Q_E\\setminus\\{1^E\\}))$. Then $X_E$ is a two-connected, corner-descent-terminal ample forbidden pc-minor. Its unique largest successful layer set is exactly $E$, and $X_E^E=S$. If $S$ has corners, no successful layer choice for $X_E$ has a cornerless recovered seed. Moreover, $X_E$ has minimum degree at least three and equals its graph three-core.",
+  "status": "established",
+  "proof": "The two antipodally punctured occurrence rows partition the signed facets, so the common-seed construction and seed-corner deletion criterion make $X_E$ ample, forbidden, and terminal; the replicated construction is two-connected. The displayed presentation makes $E$ successful with reduction $S$. If the largest successful set $D$ satisfied $E\\subsetneq D$, strong projection from its recovered presentation along $E$ would retain a nontrivial signed-facet assembly over $D\\setminus E$ with at least two distinct resolving tips. This would present $S$ as a two-connected replicated construction, contradicting its cut vertex. Thus $D=E$. Cornerless recovery can only occur at the largest successful set, so a cornered $S$ rules it out. A terminal ample obstruction has no vertex of degree at most two: the low-degree theorem would otherwise provide an obstruction-preserving corner deletion. Hence $X_E$ is its three-core.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-cut-seed-towers",
+  "witness_ids": [
+    "#examples/two_connected_terminal_cut_seed_towers"
+  ],
+  "comments": "This gives two-connected terminal counterexamples to cornerlessness of the canonical largest recovered seed, even after graph two-core pruning. The construction still has a successful layer set; the following edge-amalgam family removes layer recovery altogether."
+}

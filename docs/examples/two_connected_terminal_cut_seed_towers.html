@@ -1,0 +1,101 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Named examples and counterexamples used as theorem witnesses - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Named examples and counterexamples used as theorem witnesses - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="examples/index.html">&larr; Back to Examples Table</a></div>
+    <div class="table-card" id="math-191" style="position:relative;">
+
+        <h3><a href="examples/two_connected_terminal_cut_seed_towers.html" class="table-title-link">Two-Connected Terminal Towers with a Cornered Cut-Vertex Seed</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Connected Terminal Towers with a Cornered Cut-Vertex Seed</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Start with the 1,158-concept corner-descent-terminal cut-vertex obstruction $S=Y\vee C$. In its $C$ coordinate block use resolving tips $a=128\cdot2^{14}$ and $b=290\cdot2^{14}$, whose acquired-support bitmasks are $390\cdot2^{14}$ and $480\cdot2^{14}$. For $r=|E|\ge1$, form the antipodally punctured two-row tower $X_E=(S\times Q_E)\cup(\{a\}\times(Q_E\setminus\{0^E\}))\cup(\{b\}\times(Q_E\setminus\{1^E\}))$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|X_E|=1160\cdot2^r-2$, $\operatorname{idim}(X_E)=26+r$, $\operatorname{VCdim}(X_E)=4+r$, its minimum degree is $r+3$, and it has exactly $2^{r+1}+2r$ corners. The first two members have orders 2,318 and 4,638 and respectively six and twelve corners.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Every $X_E$ is a two-connected, corner-descent-terminal ample forbidden pc-minor and its own graph three-core. Its unique largest successful layer set is $E$, whose recovered seed is the same 1,158-concept terminal family with two corners and one cut vertex. The only thin coordinates are the $r$ layer coordinates. The fixed $r=1,2$ certificate replays 165 elementary-minor peelings, four resolving-extension peelings, and 18 terminal corner-deletion witnesses.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-cornered-maximal-seed-2318</p></div>
+<strong>Verification:</strong><div class="text-field"><p>migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/damp_cornered_maximal_seed_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>

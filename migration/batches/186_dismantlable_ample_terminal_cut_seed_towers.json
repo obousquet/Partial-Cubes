@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "batch_id": "186_dismantlable_ample_terminal_cut_seed_towers",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the two-connected terminal tower construction over a cut-vertex seed and preserve its explicit order-2318 and order-4638 controls, whose unique largest recovered seed retains both corners and a cut vertex.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-cut-seed-towers",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-cornered-maximal-seed-2318",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_cornered_maximal_seed.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "terminal-cut-seed-tower-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_cornered_maximal_seed.py,damp_cornered_maximal_seed_verification.json,damp_terminal_cut_vertex_verification.json,damp_fixed_291_repair_creation.json,computations/round776_rooted_corner_descent.json,computations/round790_paired_endpoint_repairs.json,verify_damp_cut_vertex_obstruction.py,verify_damp_layer_midpoint_cores.py,verify_damp_rank_three_corner_neighbors.py,verify_damp_terminal_cut_vertex.py}",
+      "sha256": "1edb67c8c89957b1948d6d35a3d77d828b6362503a5fa9d227db9729987c7afa",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This construction strengthens the cornered-seed warning from a nonterminal Hall assembly to an infinite family of two-connected terminal graph three-cores, and supplies exact finite controls for the first two members.",
+    "outcome": "The proposition, proof, and example match the preserved manuscript. The database records the antipodally punctured tower formula, terminality and two-connectivity, uniqueness of the largest layer set, the cut-vertex contradiction proving maximality, exact parameter formulas, and fixed peeling and corner-deletion certificates.",
+    "claim_block_sha256": {
+      "prop:damp-terminal-cut-seed-towers": "f93cac7483f51679b0a34fc5ceaed713b39c84714a0ba39173b2af98654d7a50",
+      "ex:damp-cornered-maximal-seed-2318": "2c150b2c6be411c459ddd20cb74771cad15d169bdd1d937af022e3b1fd42b57c"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/verify_damp_cornered_maximal_seed.py",
+      "sha256": "52fe3745ce499341f697c259d98fbb792288b8ade855a1fd64cd84ec7c6bad57"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/damp_cornered_maximal_seed_verification.json",
+      "sha256": "664930e59d817e98ae634d9924134405ebac57a7917521b5c9ff22dc4531e697"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/source_damp_cornered_maximal_seed_verification.json",
+      "sha256": "664930e59d817e98ae634d9924134405ebac57a7917521b5c9ff22dc4531e697"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/damp_terminal_cut_vertex_verification.json",
+      "sha256": "79c5cd617cd9ff6ef2eae96598c4d5b683c0d075836be67f7f4ce24d92bc18b4"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/damp_fixed_291_repair_creation.json",
+      "sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/computations/round776_rooted_corner_descent.json",
+      "sha256": "04fd2af2b04b5953d95cd4944bde371264e5358faf81d40d12ed08f3c2ab85f6"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/computations/round790_paired_endpoint_repairs.json",
+      "sha256": "c73de6b3b5a87f6899a71c40538f2f9b59df53cbb442e93ed00ec0214bdb3f41"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/verify_damp_cut_vertex_obstruction.py",
+      "sha256": "9f840c80b726e7a96bfe374bbb366d6616bf36448829f442d810ff5566dee2ad"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/verify_damp_layer_midpoint_cores.py",
+      "sha256": "8c9c4744262e18194cd908d1cbf3630768deaa6066f04378b4cf2ecacd4aa899"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/verify_damp_rank_three_corner_neighbors.py",
+      "sha256": "6724330ff34cc73117032dbe3395264a0f847a45cd01bc50c56c6abf0b9e8343"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/verify_damp_terminal_cut_vertex.py",
+      "sha256": "5a4ba8805df480c66cb3532cb27b46f8c728a73984105dae7722bbbd4af8eee0"
+    },
+    {
+      "path": "migration/certificates/186_dismantlable_ample_terminal_cut_seed_towers/source_packet_manifest.json",
+      "sha256": "ac985fb6419a542ac5694e9aa8358cd66aa67a809d8fb791e24460824c87cc70"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the tower theorem, exact parameter formulas, concise proof, named first controls, and replay scope. LaTeX retains the full construction narrative and interaction with later no-recovery examples. Exact seed, rooted-factor, repair, peeling, and fixed-tower certificates remain byte-archived.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the proposition and example. The tracked ten-file computation packet at commit f304961 is path-hashed and byte-archived; the verifier reproduces its tracked report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/191_two_connected_terminal_cut_seed_towers.json",
+      "sha256": "c275872ca883adcceb99b9c7e7a12d35afbc90a342bfd82d910fae17d4821dd0"
+    },
+    {
+      "path": "data/results/686_terminal_cut_seed_towers.json",
+      "sha256": "c41691f13f769cd976fd843d3c1ba0b44856aa5bcf62252dfde2b80e863700a0"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "a40eab9f6050de76610053b36e20e0492b3eb1e90f8979c4afad733c10dcf382"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "1d26ee9ba16f73eb78a6928f3b19e26c603fa09356a670f18fcc6b515c2a698a"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2087 records.",
+    "website": "Normalized 2103 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 783 to 785 of 1143 and dismantlable-ample coverage from 347 to 349 of 683.",
+    "certificates": "The replay reconstructs the order-2,318 and order-4,638 towers, verifies exact shadows, two-connectivity, corner sets, minimum degrees, thin-coordinate sets, and recovered seeds, replays 165 new elementary-minor peelings and four resolving extensions, and checks 18 terminal deletion witnesses against the 1,158- or 577-concept nonpeelable reductions.",
+    "source_integrity": "The proposition and example match supplemental snapshot 2026-10-02-b002, every computation input matches its archived hash, and the regenerated report is byte-identical to its tracked source report."
+  },
+  "deferred": [
+    "The refreshed audit has 358 uncovered database-owned labels: 334 in dismantlable-ample and 24 in ample-corners.",
+    "The next block records the terminal edge-amalgam construction, including its two-connected examples with no balanced coordinate and therefore no successful layer recovery.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
