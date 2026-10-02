@@ -1,0 +1,12 @@
+{
+  "id": 199,
+  "short_name": "hall_antipodal_repair_towers",
+  "name": "Hall Antipodal Repair Towers",
+  "object_type": "family",
+  "definition": "Use Hall's 299-concept cornerless obstruction with repair tips $a=183$ and $b=315$, whose zero-based acquired supports are $\\{2,3,6,7\\}$ and $\\{2,3,8,9\\}$. On $r\\ge1$ new layer coordinates, place $a$ on $Q_r\\setminus\\{0^r\\}$ and $b$ on $Q_r\\setminus\\{1^r\\}$ over the full Hall product core.",
+  "parameters": "The tower in layer dimension $r$ has $301\\cdot2^r-2$ concepts and isometric dimension $12+r$. For $r=1,2,3$ the orders are respectively 600, 1,202, and 2,406, in dimensions 13, 14, and 15.",
+  "properties": "Every member is an ample forbidden pc-minor. Its two occurrence rows are oppositely punctured layer cubes, and normalized layer recovery returns Hall's seed, the two repair tips, and the antipodal pair. Every pair of distinct-support Hall repair tips gives an analogous tower.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-hall-antipodal-repair-towers",
+  "verification": "The order-600 base is checked in migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/damp_layered_predecessor_repair_growth_verification.json; the order-1202 and order-2406 towers and all their successful layer sets are checked in migration/certificates/193_dismantlable_ample_layer_union_controls/damp_obstruction_layer_unions_verification.json."
+}

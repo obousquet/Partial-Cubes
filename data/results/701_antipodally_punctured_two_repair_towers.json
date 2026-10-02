@@ -1,0 +1,25 @@
+{
+  "id": 701,
+  "short_name": "antipodally_punctured_two_repair_towers",
+  "name": "Antipodally Punctured Two-Repair Tower Classification",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be a cornerless irredundantly embedded ample forbidden pc-minor, and let distinct tips $a,b$ give dismantlable-ample one-concept extensions with distinct acquired supports. For a nonempty disjoint layer set $E$ and nonempty proper ample occurrence rows $R_a,R_b\\subsetneq Q_E$, the assembly $X=(S\\times Q_E)\\cup(\\{a\\}\\times R_a)\\cup(\\{b\\}\\times R_b)$ is a forbidden pc-minor exactly when, after interchanging the tips if necessary, $R_a=Q_E\\setminus\\{u\\}$ and $R_b=Q_E\\setminus\\{\\bar u\\}$ for some layer word $u$. Then $|X|=2^{|E|}(|S|+2)-2$, $\\operatorname{idim}(X)=\\operatorname{idim}(S)+|E|$, and the normalized marked presentation recovers the seed, tips, and antipodal puncture pair. Up to layer-cube automorphism, the only new parameter is $|E|$.",
+  "status": "established",
+  "proof": "If $X$ is forbidden, each row is a proper dismantlable-ample minor. Pc-minimality forces the two rows to own every signed layer facet. A proper row cannot contain both opposite facets in one direction, so one row contains one consistently signed facet in every coordinate and the other contains all opposite facets. The union of the first set of facets is a cube with one word removed; properness forces equality, and the other missing word is antipodal. Conversely, punctured cubes are corner-peelable and the replicated-repair criterion makes the assembly ample but nonpeelable. Every layer restriction fills one row and every layer contraction fills both, so those proper minors peel. Under an old-coordinate operation the seed becomes a proper peelable minor; surviving compatible tips remain distinct corners, their punctured rows peel, and the remaining seed product peels. Hence all elementary pc-minors are dismantlable ample. Counting the product core and two punctured rows gives the order, while recovery identifies the marked data and the cube automorphism group identifies all puncture choices.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-antipodal-repair-towers",
+  "witness_ids": [
+    "#examples/hall_antipodal_repair_towers"
+  ],
+  "comments": "For one layer this is the opposite-layer two-extension lift. The theorem classifies every two-row forbidden common-seed assembly over a cornerless seed; it does not assert that all forbidden pc-minors admit such a presentation."
+}

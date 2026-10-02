@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "batch_id": "194_dismantlable_ample_antipodal_repair_towers",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact classification of two-row forbidden common-seed assemblies as antipodally punctured repair towers and the first Hall tower family, reusing the archived order-600, order-1202, and order-2406 controls.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-antipodal-repair-towers",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-hall-antipodal-repair-towers",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_layered_predecessor_repair_growth.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_obstruction_layer_unions.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "layered-predecessor-repair-growth-control-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_layered_predecessor_repair_growth.py,damp_layered_predecessor_repair_growth_verification.json,verify_damp_facet_partition_repairs.py,verify_damp_terminal_clause_recovery.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "2cd3874dbb2dcc595ab47c4257b7cf661fcbafd961bd6709375a1d0626c4ed82",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/"
+    },
+    {
+      "id": "layer-union-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_obstruction_layer_unions.py,damp_obstruction_layer_unions_verification.json,explore_damp_forced_layer_closure.py,verify_damp_singleton_recovery_implications.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "4e479d1633e312a566268178a789626065a7d3240d18229c27cd93d468bba3a5",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/193_dismantlable_ample_layer_union_controls/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "Earlier database records used antipodal towers for midpoint-core and cut-seed examples but did not own the exact two-row classification, recovery uniqueness, parameter formula, or the initial Hall tower sequence.",
+    "outcome": "The theorem, proof, and Hall example match the preserved manuscript. The database now records both directions of the classification, all formulas and recovery data, the one-layer specialization, and the verified Hall orders in dimensions one through three.",
+    "claim_block_sha256": {
+      "thm:damp-antipodal-repair-towers": "626a00d03a66575bcc21896b002abc7b882c8522f43d83c4cea8c0a69489e09a",
+      "ex:damp-hall-antipodal-repair-towers": "c82269afbfaa5bb32be48551c787931f5c06b9e19502dd7f0da2c072ce737cbe"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/damp_layered_predecessor_repair_growth_verification.json",
+      "sha256": "d00dc5bea80cd5035cf64aa3162eb92d34954ebcbd33f0adcac97873157d25c6"
+    },
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/source_packet_manifest.json",
+      "sha256": "9b4b7a8c247be676d443d689194c453bf88979028545d0bc5acde08efc1cbb75"
+    },
+    {
+      "path": "migration/certificates/193_dismantlable_ample_layer_union_controls/damp_obstruction_layer_unions_verification.json",
+      "sha256": "b497c15d0d1ec4c53e2245099c93786a45e55d099ec7c0399d2c7a1325bb7a6f"
+    },
+    {
+      "path": "migration/certificates/193_dismantlable_ample_layer_union_controls/source_packet_manifest.json",
+      "sha256": "ecabbaf1ee4c3ea1167e1857d04a71ee809f79521773ba6c47cd40e72f1541c7"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the classification theorem, concise proof, normalized Hall family, exact locators, and links to finite controls. LaTeX retains the expanded pc-minor peeling proof and its placement in the broader terminal-obstruction discussion.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both labeled blocks. Batches 191 and 193 preserve the Hall source, repair certificates, and exact reports for layer dimensions one, two, and three.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/701_antipodally_punctured_two_repair_towers.json",
+      "sha256": "37d1e717c17180a916a9194ba3c7a7e63c5b40787c072ff1a16074610ae5678f"
+    },
+    {
+      "path": "data/examples/199_hall_antipodal_repair_towers.json",
+      "sha256": "a29c0f7181a1741381809fe7f0f434376ce15638e4b79b92199a96430f002362"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d23ea6908b2e4b283853a1c9cec53e6aa8737814f8241fddca4dbe37b414e2ce"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "1131c6b758cd68216130fea16837c7a9d8f580e378ae0202b5d3d94a5f12b537"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2110 records.",
+    "website": "Normalized 2126 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 799 to 801 of 1143 and dismantlable-ample coverage from 363 to 365 of 683.",
+    "certificates": "The reused controls check Hall's order-600 one-layer lift and its complete repair lists, plus the order-1202 and order-2406 antipodal towers, every successful sublayer, thin-coordinate set, owner count, and reduction seed.",
+    "source_integrity": "The theorem and Hall example match supplemental snapshot 2026-10-02-b002, and every reused certificate and source-manifest hash remains unchanged."
+  },
+  "deferred": [
+    "The refreshed audit has 342 uncovered database-owned labels: 318 in dismantlable-ample and 24 in ample-corners.",
+    "The next block gives the exact ampleness test for two one-concept extensions and its trace-transport consequences.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
