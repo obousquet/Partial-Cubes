@@ -1,0 +1,21 @@
+{
+  "id": 446,
+  "short_name": "square_attachment_source_criterion",
+  "name": "Distinct Central Square Sources Certify Relative Peeling after Attachment",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "implication",
+  "statement": "Let $S$ be ample, let $T$ be a vertex or edge of $S$, and attach ample pieces $P_i$ along squares $Q_i$ of $S$, with pairwise disjoint private coordinate blocks. Suppose an acyclic USO $r$ of $S$ has inward boundary at $T$. If there are pairwise distinct vertices $u_i\\in Q_i\\setminus T$ such that $P_i$ peels to the punctured square $Q_i\\setminus\\{u_i\\}$ and $r(u_i)$ consists exactly of the two directions of $Q_i$, then the assembled family peels to $T$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/eleven_vertex_attachment_core",
+    "#examples/three_square_attachment_3494"
+  ],
+  "proof": "The central orientation makes $u_i$ the source of $Q_i$. Relative USO extension lifts the orientation on $Q_i\\setminus\\{u_i\\}$ to $P_i$ with inward boundary there, and the two source edges make the orientations agree on the whole square. Only $u_i$ can have outgoing private directions on that boundary; its central outgoing directions are exactly the square directions, so the maps are compatible. Distinct sources prevent conflicts between pieces. A directed excursion through a private block starts at its source and returns, if at all, at another square vertex; replacing it by a directed central square path would turn any global directed cycle into a directed closed walk in the acyclic central map. Thus the glued USO is acyclic, and its boundary at $T$ remains inward.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-source-attachment"
+}

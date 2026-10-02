@@ -1,0 +1,11 @@
+{
+  "id": 142,
+  "short_name": "eleven_vertex_attachment_core",
+  "name": "Eleven-Vertex Edge-and-Square Attachment Core",
+  "object_type": "set_family",
+  "definition": "In four coordinates with weights $1,2,4,8$, take $S=\\{0,1,2,3,7,8,9,11,12,13,15\\}$ and mark the edge $T=\\{0,8\\}$. Equivalently, expand the punctured cube $\\{0,1,2,3,4,5,7\\}$ so that complementary components $\\{2\\}$ and $\\{4,5\\}$ lie on opposite sides of the reduction path $0-1-3-7$.",
+  "parameters": "$S$ has $11$ concepts, $16$ edges, and four active coordinates. Its three marked horizontal squares are $(0,1,2,3)$, $(8,9,12,13)$, and $(9,11,13,15)$.",
+  "properties": "$S$ is ample and corner-peelable. Among all $2^{16}=65536$ orientations, exactly $784$ are acyclic USOs; $69$ have sink $0$, $69$ have sink $8$, and $72$ retain the target edge. The two endpoint records have $79$ distinct common attachment-constraint signatures, each covered by a target-retaining map. The coordinate-$8$ reduction is the four-vertex path $0-1-3-7$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-eleven-vertex-edge-attachments",
+  "verification": "PartialCubes:papers/dismantlable-ample/research/edge_attachment_constraints.py; PartialCubes:papers/dismantlable-ample/research/edge_attachment_constraints.json"
+}

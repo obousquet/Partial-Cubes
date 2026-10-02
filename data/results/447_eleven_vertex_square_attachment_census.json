@@ -1,0 +1,21 @@
+{
+  "id": 447,
+  "short_name": "eleven_vertex_square_attachment_census",
+  "name": "Seven Generic and Eight Concrete Square-Attachment Alignments Retain the Target Edge",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "construction",
+  "statement": "For the eleven-vertex core $S$, take $Q_0=(0,1,2,3)$, $Q_1=(8,9,12,13)$, and $Q_2=(9,11,13,15)$, with target edge $T=\\{0,8\\}$. For each $i$, let $h_i$ select the opposite pair of local hole indices $\\{h_i,3\\mathbin{\\mathrm{xor}}h_i\\}$, and suppose the attached piece can peel to the square with either selected member omitted. The square-source criterion certifies peeling to $T$ for every pattern $(h_0,h_1,h_2)$ except $(0,0,1)$; the seven source triples are $(3,13,15),(3,12,15),(3,12,13),(2,13,15),(2,13,11),(2,12,15),(2,12,13)$. Failure of this source condition for $(0,0,1)$ does not decide that generic eighth case. For the concrete $1165$-concept cube-boundary piece, all four punctured squares are attainable, so the fixed sources $(3,13,15)$ work in every alignment. All eight resulting $3494$-concept assemblies peel to $T$, including pattern $(0,0,1)$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/eleven_vertex_attachment_core",
+    "#examples/three_square_attachment_3494"
+  ],
+  "proof": "The seven displayed central out-maps were checked by corner orders and nonclashing; at their chosen vertices the out-map masks are respectively the two directions of each attachment square, so the square-source theorem applies. In the omitted pattern, avoiding the target forces the first two sources to be $3$ and $13$; choosing source $13$ again for the third square conflicts with distinctness, while choosing $11$ forces the shared edge $3,11$ in the opposite direction from the first source. This proves only failure of the sufficient condition. The concrete boundary piece has certified relative orders for every punctured square, allowing the same first central map in every alignment; replayed orders directly certify the formerly omitted assembly.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-source-attachment (following seven-pattern census)"
+}

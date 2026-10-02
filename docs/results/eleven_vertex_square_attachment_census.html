@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-447" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="results/eleven_vertex_square_attachment_census.html" class="table-title-link">Seven Generic and Eight Concrete Square-Attachment Alignments Retain the Target Edge</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/dismantlable_ample_full_reduction_closed.html'>Dismantlable Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/intermediate_decomposition_class_hierarchy.html'>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></li><li><a href='results/maximum_ancestry_neighbor_hierarchy.html'>Classes Immediately Below and Above Maximum Ancestry</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li><li><a href='results/compatible_face_avoidance_operator.html'>Face-Avoiding Maximum Predecessors Preserve Intersections</a></li><li><a href='results/complement_dismantlability_structure.html'>Structure of Dismantlable-Complement Ample Classes</a></li><li><a href='results/low_support_extension_relative_invariance.html'>Low-Support One-Concept Additions Preserve Every Relative Peeling</a></li><li><a href='results/terminal_edge_product_attachments.html'>Terminal Edge-Product Attachments Have an Exact Reduction Test</a></li><li><a href='results/ample_inclusion_minimal_cut_vertex_classes.html'>Ample-Inclusion-Minimal Negative Classes at a Cut Vertex</a></li><li><a href='results/inclusion_minimal_negative_527_528.html'>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></li><li><a href='results/eleven_vertex_edge_attachment_exclusion.html'>Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core</a></li></ul></p></div>
+        <p><strong>Name: </strong>Seven Generic and Eight Concrete Square-Attachment Alignments Retain the Target Edge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the eleven-vertex core $S$, take $Q_0=(0,1,2,3)$, $Q_1=(8,9,12,13)$, and $Q_2=(9,11,13,15)$, with target edge $T=\{0,8\}$. For each $i$, let $h_i$ select the opposite pair of local hole indices $\{h_i,3\mathbin{\mathrm{xor}}h_i\}$, and suppose the attached piece can peel to the square with either selected member omitted. The square-source criterion certifies peeling to $T$ for every pattern $(h_0,h_1,h_2)$ except $(0,0,1)$; the seven source triples are $(3,13,15),(3,12,15),(3,12,13),(2,13,15),(2,13,11),(2,12,15),(2,12,13)$. Failure of this source condition for $(0,0,1)$ does not decide that generic eighth case. For the concrete $1165$-concept cube-boundary piece, all four punctured squares are attainable, so the fixed sources $(3,13,15)$ work in every alignment. All eight resulting $3494$-concept assemblies peel to $T$, including pattern $(0,0,1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The seven displayed central out-maps were checked by corner orders and nonclashing; at their chosen vertices the out-map masks are respectively the two directions of each attachment square, so the square-source theorem applies. In the omitted pattern, avoiding the target forces the first two sources to be $3$ and $13$; choosing source $13$ again for the third square conflicts with distinctness, while choosing $11$ forces the shared edge $3,11$ in the opposite direction from the first source. This proves only failure of the sufficient condition. The concrete boundary piece has certified relative orders for every punctured square, allowing the same first central map in every alignment; replayed orders directly certify the formerly omitted assembly.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-source-attachment (following seven-pattern census)</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/eleven_vertex_attachment_core.html">Eleven-Vertex Edge-and-Square Attachment Core</a></li><li><a href="examples/three_square_attachment_3494.html">Three Concrete Square-Boundary Attachments of Order 3494</a></li></ul></p>
 
         </div>
     </div>

@@ -1,0 +1,17 @@
+{
+  "id": 444,
+  "short_name": "edge_attachment_endpoint_constraints",
+  "name": "Edge Attachments Reduce Prescribed Peeling to Central Leaf Constraints",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be ample and attach $P_i\\in\\mathsf{DAmp}$ along distinct edges $E_i$ of $S$, using pairwise disjoint private coordinate blocks and meeting $S$ exactly in $E_i$. Put $Y=S\\cup\\bigcup_iP_i$ and let $T$ be a vertex or edge of $S$. Ignore every piece that peels to its attachment edge. For each remaining piece, let $H_i\\subseteq E_i$ be its attainable peeling endpoints. Then $Y$ peels to $T$ exactly when $S$ has an acyclic USO with inward boundary at $T$ and, for each remaining piece, an ordering $(u_i,v_i)$ of $E_i$ such that $v_i\\in H_i$, $u_i\\notin T$, and the central out-map satisfies $r(u_i)=\\{e_i\\}$, where $e_i$ is the direction of $E_i$. Thus a singleton $H_i$ forces the edge orientation, $H_i=E_i$ allows either orientation, and $H_i=\\varnothing$ makes peeling to $T$ impossible.",
+  "status": "established",
+  "proof": "If the union peels to $T$, restrict a witnessing acyclic USO to a nonretaining piece. Its sink cannot lie in a private vertex, since that would be a global sink outside $T$, so it is an attainable endpoint $v_i$. At the other endpoint $u_i$, the piece must have an outgoing private direction; otherwise it would have inward boundary on $E_i$ and peel to that edge. The absence of mixed squares forces the central out-map to be exactly $\\{e_i\\}$ at $u_i$, and the inward target boundary excludes $u_i\\in T$. Conversely, choose the asserted central map and endpoint-sink maps on all nonretaining pieces; retaining pieces extend the central edge orientation with inward boundary. Two nonretaining pieces cannot use the same tail because the central out-map there would have to be two distinct singleton directions. The boundary out-maps are therefore compatible, successive edge gluing gives an acyclic USO of $Y$, and its boundary at $T$ is inward.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-edge-attachment-leaf-constraints"
+}

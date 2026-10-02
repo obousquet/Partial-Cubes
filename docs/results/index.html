@@ -7441,6 +7441,73 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-444" style="position:relative;">
+
+        <h3><a href="results/edge_attachment_endpoint_constraints.html" class="table-title-link">Edge Attachments Reduce Prescribed Peeling to Central Leaf Constraints</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Edge Attachments Reduce Prescribed Peeling to Central Leaf Constraints</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample and attach $P_i\in\mathsf{DAmp}$ along distinct edges $E_i$ of $S$, using pairwise disjoint private coordinate blocks and meeting $S$ exactly in $E_i$. Put $Y=S\cup\bigcup_iP_i$ and let $T$ be a vertex or edge of $S$. Ignore every piece that peels to its attachment edge. For each remaining piece, let $H_i\subseteq E_i$ be its attainable peeling endpoints. Then $Y$ peels to $T$ exactly when $S$ has an acyclic USO with inward boundary at $T$ and, for each remaining piece, an ordering $(u_i,v_i)$ of $E_i$ such that $v_i\in H_i$, $u_i\notin T$, and the central out-map satisfies $r(u_i)=\{e_i\}$, where $e_i$ is the direction of $E_i$. Thus a singleton $H_i$ forces the edge orientation, $H_i=E_i$ allows either orientation, and $H_i=\varnothing$ makes peeling to $T$ impossible.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If the union peels to $T$, restrict a witnessing acyclic USO to a nonretaining piece. Its sink cannot lie in a private vertex, since that would be a global sink outside $T$, so it is an attainable endpoint $v_i$. At the other endpoint $u_i$, the piece must have an outgoing private direction; otherwise it would have inward boundary on $E_i$ and peel to that edge. The absence of mixed squares forces the central out-map to be exactly $\{e_i\}$ at $u_i$, and the inward target boundary excludes $u_i\in T$. Conversely, choose the asserted central map and endpoint-sink maps on all nonretaining pieces; retaining pieces extend the central edge orientation with inward boundary. Two nonretaining pieces cannot use the same tail because the central out-map there would have to be two distinct singleton directions. The boundary out-maps are therefore compatible, successive edge gluing gives an acyclic USO of $Y$, and its boundary at $T$ is inward.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-edge-attachment-leaf-constraints</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-445" style="position:relative;">
+
+        <h3><a href="results/eleven_vertex_edge_attachment_exclusion.html" class="table-title-link">Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In four coordinates of weights $1,2,4,8$, let $S=\{0,1,2,3,7,8,9,11,12,13,15\}$ and $T=\{0,8\}$. Attach arbitrary positive ample pieces to distinct edges of $S$ whose direction is not $8$, using disjoint private coordinates. If the assembled family peels to both $0$ and $8$, then it peels to the edge $T$. Its reduction in direction $8$ remains the path $0-1-3-7$. Hence this entire edge-attachment template cannot produce a both-endpoints retention failure over that path reduction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each acyclic USO of $S$, record at every eligible attachment edge both directed singleton-out-map constraints and the corresponding undirected alternative. Exhaustive enumeration of all $2^{16}$ edge orientations finds $784$ acyclic USOs, independently reproduced from corner deletions: $69$ end at $0$, $69$ end at $8$, and $72$ have inward boundary at $T$. The pairwise intersections of the two endpoint records give $79$ distinct constraint sets, each contained in the record of a map retaining $T$. The general edge-attachment criterion converts endpoint peelings of the assembly into one of these common central constraint sets and converts the covering retaining map back into a peeling to $T$. Since every attachment is constant in coordinate $8$ and private blocks are disjoint, no attachment adds a doubled fiber to that reduction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-eleven-vertex-edge-attachments</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/eleven_vertex_attachment_core.html">Eleven-Vertex Edge-and-Square Attachment Core</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-446" style="position:relative;">
+
+        <h3><a href="results/square_attachment_source_criterion.html" class="table-title-link">Distinct Central Square Sources Certify Relative Peeling after Attachment</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Distinct Central Square Sources Certify Relative Peeling after Attachment</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample, let $T$ be a vertex or edge of $S$, and attach ample pieces $P_i$ along squares $Q_i$ of $S$, with pairwise disjoint private coordinate blocks. Suppose an acyclic USO $r$ of $S$ has inward boundary at $T$. If there are pairwise distinct vertices $u_i\in Q_i\setminus T$ such that $P_i$ peels to the punctured square $Q_i\setminus\{u_i\}$ and $r(u_i)$ consists exactly of the two directions of $Q_i$, then the assembled family peels to $T$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The central orientation makes $u_i$ the source of $Q_i$. Relative USO extension lifts the orientation on $Q_i\setminus\{u_i\}$ to $P_i$ with inward boundary there, and the two source edges make the orientations agree on the whole square. Only $u_i$ can have outgoing private directions on that boundary; its central outgoing directions are exactly the square directions, so the maps are compatible. Distinct sources prevent conflicts between pieces. A directed excursion through a private block starts at its source and returns, if at all, at another square vertex; replacing it by a directed central square path would turn any global directed cycle into a directed closed walk in the acyclic central map. Thus the glued USO is acyclic, and its boundary at $T$ remains inward.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-source-attachment</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/eleven_vertex_attachment_core.html">Eleven-Vertex Edge-and-Square Attachment Core</a></li><li><a href="examples/three_square_attachment_3494.html">Three Concrete Square-Boundary Attachments of Order 3494</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-447" style="position:relative;">
+
+        <h3><a href="results/eleven_vertex_square_attachment_census.html" class="table-title-link">Seven Generic and Eight Concrete Square-Attachment Alignments Retain the Target Edge</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Seven Generic and Eight Concrete Square-Attachment Alignments Retain the Target Edge</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the eleven-vertex core $S$, take $Q_0=(0,1,2,3)$, $Q_1=(8,9,12,13)$, and $Q_2=(9,11,13,15)$, with target edge $T=\{0,8\}$. For each $i$, let $h_i$ select the opposite pair of local hole indices $\{h_i,3\mathbin{\mathrm{xor}}h_i\}$, and suppose the attached piece can peel to the square with either selected member omitted. The square-source criterion certifies peeling to $T$ for every pattern $(h_0,h_1,h_2)$ except $(0,0,1)$; the seven source triples are $(3,13,15),(3,12,15),(3,12,13),(2,13,15),(2,13,11),(2,12,15),(2,12,13)$. Failure of this source condition for $(0,0,1)$ does not decide that generic eighth case. For the concrete $1165$-concept cube-boundary piece, all four punctured squares are attainable, so the fixed sources $(3,13,15)$ work in every alignment. All eight resulting $3494$-concept assemblies peel to $T$, including pattern $(0,0,1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The seven displayed central out-maps were checked by corner orders and nonclashing; at their chosen vertices the out-map masks are respectively the two directions of each attachment square, so the square-source theorem applies. In the omitted pattern, avoiding the target forces the first two sources to be $3$ and $13$; choosing source $13$ again for the third square conflicts with distinctness, while choosing $11$ forces the shared edge $3,11$ in the opposite direction from the first source. This proves only failure of the sufficient condition. The concrete boundary piece has certified relative orders for every punctured square, allowing the same first central map in every alignment; replayed orders directly certify the formerly omitted assembly.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-source-attachment (following seven-pattern census)</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/eleven_vertex_attachment_core.html">Eleven-Vertex Edge-and-Square Attachment Core</a></li><li><a href="examples/three_square_attachment_3494.html">Three Concrete Square-Boundary Attachments of Order 3494</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-444" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="results/edge_attachment_endpoint_constraints.html" class="table-title-link">Edge Attachments Reduce Prescribed Peeling to Central Leaf Constraints</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/dismantlable_ample_full_reduction_closed.html'>Dismantlable Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/intermediate_decomposition_class_hierarchy.html'>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></li><li><a href='results/maximum_ancestry_neighbor_hierarchy.html'>Classes Immediately Below and Above Maximum Ancestry</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li><li><a href='results/compatible_face_avoidance_operator.html'>Face-Avoiding Maximum Predecessors Preserve Intersections</a></li><li><a href='results/complement_dismantlability_structure.html'>Structure of Dismantlable-Complement Ample Classes</a></li><li><a href='results/low_support_extension_relative_invariance.html'>Low-Support One-Concept Additions Preserve Every Relative Peeling</a></li><li><a href='results/terminal_edge_product_attachments.html'>Terminal Edge-Product Attachments Have an Exact Reduction Test</a></li><li><a href='results/ample_inclusion_minimal_cut_vertex_classes.html'>Ample-Inclusion-Minimal Negative Classes at a Cut Vertex</a></li><li><a href='results/inclusion_minimal_negative_527_528.html'>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></li><li><a href='results/eleven_vertex_edge_attachment_exclusion.html'>Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core</a></li></ul></p></div>
+        <p><strong>Name: </strong>Edge Attachments Reduce Prescribed Peeling to Central Leaf Constraints</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample and attach $P_i\in\mathsf{DAmp}$ along distinct edges $E_i$ of $S$, using pairwise disjoint private coordinate blocks and meeting $S$ exactly in $E_i$. Put $Y=S\cup\bigcup_iP_i$ and let $T$ be a vertex or edge of $S$. Ignore every piece that peels to its attachment edge. For each remaining piece, let $H_i\subseteq E_i$ be its attainable peeling endpoints. Then $Y$ peels to $T$ exactly when $S$ has an acyclic USO with inward boundary at $T$ and, for each remaining piece, an ordering $(u_i,v_i)$ of $E_i$ such that $v_i\in H_i$, $u_i\notin T$, and the central out-map satisfies $r(u_i)=\{e_i\}$, where $e_i$ is the direction of $E_i$. Thus a singleton $H_i$ forces the edge orientation, $H_i=E_i$ allows either orientation, and $H_i=\varnothing$ makes peeling to $T$ impossible.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If the union peels to $T$, restrict a witnessing acyclic USO to a nonretaining piece. Its sink cannot lie in a private vertex, since that would be a global sink outside $T$, so it is an attainable endpoint $v_i$. At the other endpoint $u_i$, the piece must have an outgoing private direction; otherwise it would have inward boundary on $E_i$ and peel to that edge. The absence of mixed squares forces the central out-map to be exactly $\{e_i\}$ at $u_i$, and the inward target boundary excludes $u_i\in T$. Conversely, choose the asserted central map and endpoint-sink maps on all nonretaining pieces; retaining pieces extend the central edge orientation with inward boundary. Two nonretaining pieces cannot use the same tail because the central out-map there would have to be two distinct singleton directions. The boundary out-maps are therefore compatible, successive edge gluing gives an acyclic USO of $Y$, and its boundary at $T$ is inward.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-edge-attachment-leaf-constraints</p></div>
 
         </div>
     </div>

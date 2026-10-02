@@ -1,0 +1,21 @@
+{
+  "id": 445,
+  "short_name": "eleven_vertex_edge_attachment_exclusion",
+  "name": "Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/full_reduction"
+  ],
+  "result_type": "implication",
+  "statement": "In four coordinates of weights $1,2,4,8$, let $S=\\{0,1,2,3,7,8,9,11,12,13,15\\}$ and $T=\\{0,8\\}$. Attach arbitrary positive ample pieces to distinct edges of $S$ whose direction is not $8$, using disjoint private coordinates. If the assembled family peels to both $0$ and $8$, then it peels to the edge $T$. Its reduction in direction $8$ remains the path $0-1-3-7$. Hence this entire edge-attachment template cannot produce a both-endpoints retention failure over that path reduction.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/eleven_vertex_attachment_core"
+  ],
+  "proof": "For each acyclic USO of $S$, record at every eligible attachment edge both directed singleton-out-map constraints and the corresponding undirected alternative. Exhaustive enumeration of all $2^{16}$ edge orientations finds $784$ acyclic USOs, independently reproduced from corner deletions: $69$ end at $0$, $69$ end at $8$, and $72$ have inward boundary at $T$. The pairwise intersections of the two endpoint records give $79$ distinct constraint sets, each contained in the record of a map retaining $T$. The general edge-attachment criterion converts endpoint peelings of the assembly into one of these common central constraint sets and converts the covering retaining map back into a peeling to $T$. Since every attachment is constant in coordinate $8$ and private blocks are disjoint, no attachment adds a doubled fiber to that reduction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-eleven-vertex-edge-attachments"
+}
