@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "batch_id": "182_dismantlable_ample_terminal_facet_partitions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact row-deletion test for common-seed covers, the signed-facet shell and residual-core decomposition, the partition normal form for terminal common-seed obstructions, its thickness law, and the 1,203-concept Hall three-repair example.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-common-seed-obstruction-deletions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-row-facet-shell-core",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-terminal-common-seed-facet-partitions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-facet-thickness",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-thick-terminal-three-repair",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_terminal_facet_partitions.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "terminal-facet-partition-regression-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign/verify_damp_terminal_facet_partitions.py",
+      "sha256": "7a77e3a46bfc1b6eab8efa0b39d456533f7dbefd8a31df426308a743a5829e56",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/182_dismantlable_ample_terminal_facet_partitions/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims convert the rowwise deletion criterion into an exact structural normal form. They identify all terminal occurrence rows over a fixed cornerless seed with consistent partitions of the signed layer facets and quantify the resulting section thickness.",
+    "outcome": "All four statement-plus-proof blocks and the explicit Hall example match the preserved manuscript. The database records the deletion equivalence, shell/core decomposition and preservation tests, necessity and sufficiency of signed-facet partitions, canonical recovery, exact thickness formula, relative-classification boundary, and the 1,203-concept thick example.",
+    "claim_block_sha256": {
+      "cor:damp-common-seed-obstruction-deletions": "c2a39d5df9b4945a548290486bdcdcc4aa999312fdc4bfb305c5c033ece24eb9",
+      "lem:damp-row-facet-shell-core": "b9e46ba53cf9f9872452cb48c0d90be6e233155c76cf192da0348189ec86d685",
+      "thm:damp-terminal-common-seed-facet-partitions": "671d804bd0e24dd30b2666507f6f8c60043c32454c3109095581c00b62b79c21",
+      "prop:damp-terminal-facet-thickness": "b792f085b4590b2e6e0f57a2c80c06d0101bc97464e3a9b04d953fafff34cee6",
+      "ex:damp-thick-terminal-three-repair": "14162c10e474d65dd98e5b14b38cf83df54db46a5b662fd364256fbe89855376"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/182_dismantlable_ample_terminal_facet_partitions/verify_damp_terminal_facet_partitions.py",
+      "sha256": "7c13d7fda30f9c3b450f90e197d56a1de447d9d9d5d33f34fa8c40ff15a9fb43"
+    },
+    {
+      "path": "migration/certificates/182_dismantlable_ample_terminal_facet_partitions/damp_terminal_facet_partitions_verification.json",
+      "sha256": "c8d73862ac3b5942464047374ce99fd8b5e8ce3a63ffbe4f791fa62fa4e2ea40"
+    },
+    {
+      "path": "migration/certificates/182_dismantlable_ample_terminal_facet_partitions/source_packet_manifest.json",
+      "sha256": "7e54ed11d3abd540b9506912807a055df252cfa144f28f2d786608662270022d"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the deletion criterion, shell/core recognition theorem, signed-facet partition normal form, thickness formula, Hall example, concise proofs, and regression scope. LaTeX retains the expanded arguments and discussion of the remaining intrinsic seed and repair-tip classification debts. The exact regression source and generated exhaustive report are retained with the database.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all five claim blocks. The tracked verifier at commit b30995f is path-hashed and byte-archived; its database-owned report records the exhaustive dimension-four run.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/188_hall_thick_terminal_three_repair_obstruction.json",
+      "sha256": "cc141b0959ec1c470be1f267bdd549f555faf3e6ce67b41e18374e8cce600496"
+    },
+    {
+      "path": "data/results/675_common_seed_obstruction_deletion_test.json",
+      "sha256": "747fc099a0efbf30a3e356e5f8eba431e755e1332d7087a4b06a247759ac6663"
+    },
+    {
+      "path": "data/results/676_signed_facet_shell_and_residual_core.json",
+      "sha256": "3dbf50ad8964dd2248a1ed3339947ed79b64f4baa6f17f526fd34e2782257d27"
+    },
+    {
+      "path": "data/results/677_terminal_common_seed_signed_facet_partitions.json",
+      "sha256": "55aedcf01a50393638246b4fac6396ce41435324ae812394a7d2a99dc762dd5e"
+    },
+    {
+      "path": "data/results/678_terminal_facet_partition_thickness.json",
+      "sha256": "b729bb895b93ab6431e604422021db26c3b77c9cee01b09b77b2dbbdaaff14c1"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "066a9da35fa6cf0d80bf7447f7c259d0741db39543839c6937f2a018afb735df"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "98f2bd3aa336861de216a44734c1e40b1096d9bc16c1d8d4aa4e14f796ab4fb1"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2076 records.",
+    "website": "Normalized 2092 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 5 additional audited labels, raising overall coverage from 771 to 776 of 1143 and dismantlable-ample coverage from 335 to 340 of 683.",
+    "certificates": "The independent regression checks all 65,808 proper rows in cube dimensions one through four. For every row it verifies the canonical shell decomposition and ampleness and peelability equivalence with the residual core; for empty-core rows it also verifies the corner and safe-deletion formulas.",
+    "source_integrity": "All five reviewed claim blocks match supplemental snapshot 2026-10-02-b002, and the verifier source matches the tracked file at commit b30995f."
+  },
+  "deferred": [
+    "The refreshed audit has 367 uncovered database-owned labels: 343 in dismantlable-ample and 24 in ample-corners.",
+    "The next block recovers terminal common-seed presentations intrinsically from signed clauses and singleton trace fibres and records its finite regression controls.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 678,
+  "short_name": "terminal_facet_partition_thickness",
+  "name": "Thickness of Terminal Facet Partitions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In a terminal signed-facet partition on $r=|E|$ layer coordinates, let $K_a$ be the layer coordinates represented in owner block $\\mathcal O_a$, and let $\\lambda(e,i)$ own signed facet $(e,i)$. For the projected $e$-sections $H_i=\\rho_e^iX$, one has $|H_i\\setminus H_{1-i}|=2^{r-|K_{\\lambda(e,i)}|}$. A layer coordinate has symmetric-difference order two exactly when there are two repair tips, in which case every layer coordinate does. With at least three repair tips, every coordinate of $X$, including each seed coordinate, has two nonempty exclusive sections whose total order is at least three.",
+  "status": "established",
+  "proof": "For the owner of $(e,i)$, the $i$-section of its row is full and the opposite section misses the face that fixes every other represented coordinate opposite its owned sign. That face has $2^{r-|K_a|}$ words; all nonowners have equal $e$-sections, proving the formula. Both exclusive parts have order one exactly when the two owners represent every coordinate, which exhausts the signed-facet partition and leaves exactly two tips. For an old coordinate, periphery-freeness of the seed supplies one exclusive old word on each side. The product core supplies all layer occurrences of it, and an opposite repair row can fill all but $2^{r-|K_a|}$ occurrences. Both sides remain nonempty; total order two would force two full-support owners and exclude a third tip.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-facet-thickness",
+  "witness_ids": [
+    "#examples/hall_thick_terminal_three_repair_obstruction"
+  ],
+  "comments": "The 1,203-concept Hall three-repair example shows that every coordinate can be thick even inside the terminal common-seed construction."
+}

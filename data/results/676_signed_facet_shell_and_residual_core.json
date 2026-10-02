@@ -1,0 +1,20 @@
+{
+  "id": 676,
+  "short_name": "signed_facet_shell_and_residual_core",
+  "name": "Signed-Facet Shell and Residual Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "recognition",
+  "statement": "For a proper family $R\\subsetneq Q_E$, let $\\mathcal O(R)$ be the signed facets $F_{e,i}$ contained in $R$, let $F_R$ be the face opposite every member of $\\mathcal O(R)$, and put $B_R=R\\cap F_R$. At most one sign of each coordinate occurs in $\\mathcal O(R)$, and $R=(Q_E\\setminus F_R)\\mathbin{\\dot\\cup}B_R$. After suppressing the coordinates fixed on $F_R$, $R$ is ample exactly when $B_R$ is ample, and $R$ is dismantlable ample exactly when $B_R$ is dismantlable ample. The residual core $B_R$ has no full signed facet in its residual cube; the empty core is allowed as a terminal row.",
+  "status": "established",
+  "proof": "A proper row cannot contain both facets of one coordinate. The union of all contained facets is exactly the complement of their common opposite face, and the remaining row points form $B_R$. After reorientation, if $K$ is the set of shell coordinates and $L$ the rest, then $R=((Q_K\\setminus\\{\\mathbf1_K\\})\\times Q_L)\\cup(\\{\\mathbf1_K\\}\\times B_R)$. Adding the coordinates of $K$ one at a time is an iterated peripheral expansion with one full-cube section, so the exact expansion criterion transfers both ampleness and peelability between $R$ and $B_R$. A full residual facet in $B_R$ would extend through the shell to a full facet of $R$, contradicting its omission from $\\mathcal O(R)$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-row-facet-shell-core",
+  "comments": "The regression certificate exhaustively checks all 65,808 proper rows in dimensions one through four, including the shell decomposition, both equivalences, and the empty-core corner and safe-deletion formulas."
+}

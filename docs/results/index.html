@@ -11332,6 +11332,80 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-675" style="position:relative;">
+
+        <h3><a href="results/common_seed_obstruction_deletion_test.html" class="table-title-link">Common-Seed Obstruction Deletion Test</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Common-Seed Obstruction Deletion Test</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X(\mathbf R)$ be a forbidden pc-minor satisfying the common-seed occurrence-cover hypotheses. For $t\in R_a$, replace $R_a$ by $R_a^-=R_a\setminus\{t\}$, discarding the row label if it becomes empty. Then $X(\mathbf R)\setminus\{(a,t)\}$ is again a forbidden pc-minor if and only if $R_a^-$ is empty or dismantlable ample and the modified rows still own every signed layer facet. Whenever these conditions hold, $(a,t)$ is automatically a corner. If the seed is cornerless, the cover is terminal under obstruction-preserving corner deletion exactly when every row deletion either leaves a nonempty nonpeelable row or destroys signed-facet ownership.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After deleting $(a,t)$ the family remains a replicated repair assembly over the same seed, with only one occurrence row changed. The replicated-layer criterion makes the new assembly ample exactly when the nonempty modified row is ample. After an empty row is discarded, the common-seed classification makes it forbidden exactly when all nonempty rows peel and every signed facet remains owned, giving the stated two conditions. When they hold, both the original and deleted families are ample, so the ample one-concept deletion criterion makes $(a,t)$ a corner. For a cornerless seed all assembly corners lie in the occurrence rows, and negating the test gives the terminality criterion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-common-seed-obstruction-deletions</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is an exact test on the row data; the signed-facet partition theorem gives its structural normal form for cornerless seeds.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-676" style="position:relative;">
+
+        <h3><a href="results/signed_facet_shell_and_residual_core.html" class="table-title-link">Signed-Facet Shell and Residual Core</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Signed-Facet Shell and Residual Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a proper family $R\subsetneq Q_E$, let $\mathcal O(R)$ be the signed facets $F_{e,i}$ contained in $R$, let $F_R$ be the face opposite every member of $\mathcal O(R)$, and put $B_R=R\cap F_R$. At most one sign of each coordinate occurs in $\mathcal O(R)$, and $R=(Q_E\setminus F_R)\mathbin{\dot\cup}B_R$. After suppressing the coordinates fixed on $F_R$, $R$ is ample exactly when $B_R$ is ample, and $R$ is dismantlable ample exactly when $B_R$ is dismantlable ample. The residual core $B_R$ has no full signed facet in its residual cube; the empty core is allowed as a terminal row.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A proper row cannot contain both facets of one coordinate. The union of all contained facets is exactly the complement of their common opposite face, and the remaining row points form $B_R$. After reorientation, if $K$ is the set of shell coordinates and $L$ the rest, then $R=((Q_K\setminus\{\mathbf1_K\})\times Q_L)\cup(\{\mathbf1_K\}\times B_R)$. Adding the coordinates of $K$ one at a time is an iterated peripheral expansion with one full-cube section, so the exact expansion criterion transfers both ampleness and peelability between $R$ and $B_R$. A full residual facet in $B_R$ would extend through the shell to a full facet of $R$, contradicting its omission from $\mathcal O(R)$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-row-facet-shell-core</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The regression certificate exhaustively checks all 65,808 proper rows in dimensions one through four, including the shell decomposition, both equivalences, and the empty-core corner and safe-deletion formulas.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-677" style="position:relative;">
+
+        <h3><a href="results/terminal_common_seed_signed_facet_partitions.html" class="table-title-link">Terminal Common-Seed Covers as Signed-Facet Partitions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Common-Seed Covers as Signed-Facet Partitions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In a terminal forbidden common-seed occurrence cover, the full-signed-facet sets $\mathcal O_a$ of the rows partition $E\times\{0,1\}$, and every row is exactly its facet shell $R_a=\bigcup_{(e,i)\in\mathcal O_a}F_{e,i}$. For a cornerless seed these conditions are also sufficient. Equivalently, every partition of the signed layer facets into nonempty blocks, with no block containing both signs of one coordinate, defines a corner-descent-terminal forbidden pc-minor by taking each occurrence row to be the union of its assigned facets. The marked rows canonically recover the partition.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If a terminal row had nonempty residual core, peel the first core concept. The shell-core theorem keeps the modified row peelable, and no owned facet is lost, so the deletion test would produce another forbidden pc-minor, a contradiction. Thus every row is its shell. The ownership criterion makes the shell blocks cover all signed facets. If two rows owned one facet, a row corner lying only in that facet could be deleted while the second owner preserved coverage, again contradicting terminality; hence ownership is a partition. Conversely, each partition row has empty residual core and is therefore ample and peelable, while the partition covers all signed facets, so the common-seed theorem gives a forbidden pc-minor. A row corner lies in exactly one maximal owned facet, and deleting it destroys that uniquely owned facet. The deletion test then proves terminality. Full facets of each marked row recover its block.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-terminal-common-seed-facet-partitions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_thick_terminal_three_repair_obstruction.html">Hall Thick Terminal Three-Repair Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This classifies terminal occurrence rows relative to a fixed cornerless forbidden seed and certified repair tips. It is not a classification of every terminal obstruction, nor an intrinsic classification of admissible seeds and repair tips.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-678" style="position:relative;">
+
+        <h3><a href="results/terminal_facet_partition_thickness.html" class="table-title-link">Thickness of Terminal Facet Partitions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Thickness of Terminal Facet Partitions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In a terminal signed-facet partition on $r=|E|$ layer coordinates, let $K_a$ be the layer coordinates represented in owner block $\mathcal O_a$, and let $\lambda(e,i)$ own signed facet $(e,i)$. For the projected $e$-sections $H_i=\rho_e^iX$, one has $|H_i\setminus H_{1-i}|=2^{r-|K_{\lambda(e,i)}|}$. A layer coordinate has symmetric-difference order two exactly when there are two repair tips, in which case every layer coordinate does. With at least three repair tips, every coordinate of $X$, including each seed coordinate, has two nonempty exclusive sections whose total order is at least three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For the owner of $(e,i)$, the $i$-section of its row is full and the opposite section misses the face that fixes every other represented coordinate opposite its owned sign. That face has $2^{r-|K_a|}$ words; all nonowners have equal $e$-sections, proving the formula. Both exclusive parts have order one exactly when the two owners represent every coordinate, which exhausts the signed-facet partition and leaves exactly two tips. For an old coordinate, periphery-freeness of the seed supplies one exclusive old word on each side. The product core supplies all layer occurrences of it, and an opposite repair row can fill all but $2^{r-|K_a|}$ occurrences. Both sides remain nonempty; total order two would force two full-support owners and exclude a third tip.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-facet-thickness</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_thick_terminal_three_repair_obstruction.html">Hall Thick Terminal Three-Repair Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The 1,203-concept Hall three-repair example shows that every coordinate can be thick even inside the terminal common-seed construction.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

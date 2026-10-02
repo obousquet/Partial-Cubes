@@ -1,0 +1,23 @@
+{
+  "id": 677,
+  "short_name": "terminal_common_seed_signed_facet_partitions",
+  "name": "Terminal Common-Seed Covers as Signed-Facet Partitions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "In a terminal forbidden common-seed occurrence cover, the full-signed-facet sets $\\mathcal O_a$ of the rows partition $E\\times\\{0,1\\}$, and every row is exactly its facet shell $R_a=\\bigcup_{(e,i)\\in\\mathcal O_a}F_{e,i}$. For a cornerless seed these conditions are also sufficient. Equivalently, every partition of the signed layer facets into nonempty blocks, with no block containing both signs of one coordinate, defines a corner-descent-terminal forbidden pc-minor by taking each occurrence row to be the union of its assigned facets. The marked rows canonically recover the partition.",
+  "status": "established",
+  "proof": "If a terminal row had nonempty residual core, peel the first core concept. The shell-core theorem keeps the modified row peelable, and no owned facet is lost, so the deletion test would produce another forbidden pc-minor, a contradiction. Thus every row is its shell. The ownership criterion makes the shell blocks cover all signed facets. If two rows owned one facet, a row corner lying only in that facet could be deleted while the second owner preserved coverage, again contradicting terminality; hence ownership is a partition. Conversely, each partition row has empty residual core and is therefore ample and peelable, while the partition covers all signed facets, so the common-seed theorem gives a forbidden pc-minor. A row corner lies in exactly one maximal owned facet, and deleting it destroys that uniquely owned facet. The deletion test then proves terminality. Full facets of each marked row recover its block.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-terminal-common-seed-facet-partitions",
+  "witness_ids": [
+    "#examples/hall_thick_terminal_three_repair_obstruction"
+  ],
+  "comments": "This classifies terminal occurrence rows relative to a fixed cornerless forbidden seed and certified repair tips. It is not a classification of every terminal obstruction, nor an intrinsic classification of admissible seeds and repair tips."
+}

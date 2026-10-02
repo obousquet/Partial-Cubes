@@ -1,0 +1,20 @@
+{
+  "id": 675,
+  "short_name": "common_seed_obstruction_deletion_test",
+  "name": "Common-Seed Obstruction Deletion Test",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X(\\mathbf R)$ be a forbidden pc-minor satisfying the common-seed occurrence-cover hypotheses. For $t\\in R_a$, replace $R_a$ by $R_a^-=R_a\\setminus\\{t\\}$, discarding the row label if it becomes empty. Then $X(\\mathbf R)\\setminus\\{(a,t)\\}$ is again a forbidden pc-minor if and only if $R_a^-$ is empty or dismantlable ample and the modified rows still own every signed layer facet. Whenever these conditions hold, $(a,t)$ is automatically a corner. If the seed is cornerless, the cover is terminal under obstruction-preserving corner deletion exactly when every row deletion either leaves a nonempty nonpeelable row or destroys signed-facet ownership.",
+  "status": "established",
+  "proof": "After deleting $(a,t)$ the family remains a replicated repair assembly over the same seed, with only one occurrence row changed. The replicated-layer criterion makes the new assembly ample exactly when the nonempty modified row is ample. After an empty row is discarded, the common-seed classification makes it forbidden exactly when all nonempty rows peel and every signed facet remains owned, giving the stated two conditions. When they hold, both the original and deleted families are ample, so the ample one-concept deletion criterion makes $(a,t)$ a corner. For a cornerless seed all assembly corners lie in the occurrence rows, and negating the test gives the terminality criterion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-common-seed-obstruction-deletions",
+  "comments": "This is an exact test on the row data; the signed-facet partition theorem gives its structural normal form for cornerless seeds."
+}
