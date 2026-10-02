@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,18 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-67" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-478" style="position:relative;">
 
-        <h3><a href="invariants/active_cube_coordinate_count.html" class="table-title-link">Active Cube-Coordinate Count</a></h3>
+        <h3><a href="results/minimal_active_carrier_common_owner.html" class="table-title-link">Passive Boundary Types Incident with a Minimal Active Carrier Share an Owner</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Active Cube-Coordinate Count</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="a_{\square}(G\hookrightarrow Q_X)">
-            \[a_{\square}(G\hookrightarrow Q_X)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a graph $G$ displayed as a subgraph of the Boolean cube $Q_X$, let $Y(G)\subseteq X$ be the set of coordinates that label at least one edge of $G$. The active cube-coordinate count is $a_{\square}(G\hookrightarrow Q_X)=|Y(G)|$.</p></div>
+        <p><strong>Name: </strong>Passive Boundary Types Incident with a Minimal Active Carrier Share an Owner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample and let $D=A\setminus K$ be connected. In the induced active slice $L\subseteq B=L\mathbin{\dot\cup}D$, let $E_P$ be the carrier of an inclusion-minimal support $P\in\operatorname{Sh}(B)\setminus\operatorname{Sh}(L)$. For passive boundary types $S_z=\{d\in D:d^{\oplus z}\in K\}$, put $Z_P=\{z:E_P\cap S_z\ne\varnothing\}$. If $Z_P$ is nonempty, then $E_P\cap\bigcap_{z\in Z_P}S_z$ is nonempty.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers</p>
-<strong>Parameters:</strong><div class="text-field"><p>A specified embedding of $G$ as a subgraph of a Boolean cube $Q_X$.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>Ambient coordinates that label no edge of $G$ are suppressed. No inducedness or isometry assumption is imposed.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>For an isometric cube embedding of a connected partial cube, this agrees with the number of $\Theta$-classes. For a general displayed cube subgraph it depends on the chosen embedding and is therefore recorded as a presentation invariant.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-connected-coordinate-cost</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/two_connected_cube_coordinate_cost.html'>Coordinate Cost of a Two-Connected Cube Subgraph</a></li><li><a href='results/two_connected_passive_root_cover.html'>Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Condition both $A$ and $K$ on the unique active trace on $P$ missed by $L$. Their relative concepts are exactly $E_P$, all with the common passive restriction, and the corresponding lower active slice is empty. The empty-slice passive Helly lemma therefore applies; its nonempty boundary types are precisely the sets $E_P\cap S_z$ for $z\in Z_P$, and it supplies their common owner.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-minimal-active-carrier-common-owner</p></div>
 
         </div>
     </div>

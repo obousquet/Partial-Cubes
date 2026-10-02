@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-67" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-476" style="position:relative;">
 
-        <h3><a href="invariants/active_cube_coordinate_count.html" class="table-title-link">Active Cube-Coordinate Count</a></h3>
+        <h3><a href="results/active_root_peripheral_blocker_cell.html" class="table-title-link">An Isolated Passive Blocker Forms a Peripheral Active Cell</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Active Cube-Coordinate Count</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="a_{\square}(G\hookrightarrow Q_X)">
-            \[a_{\square}(G\hookrightarrow Q_X)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a graph $G$ displayed as a subgraph of the Boolean cube $Q_X$, let $Y(G)\subseteq X$ be the set of coordinates that label at least one edge of $G$. The active cube-coordinate count is $a_{\square}(G\hookrightarrow Q_X)=|Y(G)|$.</p></div>
+        <p><strong>Name: </strong>An Isolated Passive Blocker Forms a Peripheral Active Cell</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In the passive-owner normal form, let $d\in R$. There are a passive coordinate $z$, a nonempty set $W\subseteq Y\setminus N_L(d)$, and an ample family $C\subseteq D\cap Q_W(d)$ containing $d$ and $d^{\oplus W}$ such that $(d^{\oplus W})^{\oplus z}\in K$. Moreover $C\cap S_z=\{d^{\oplus W}\}$, and the conditioning of $A$ to $Q_{W\cup\{z\}}(d)$ is the peripheral expansion $C\mathbin{\dot\cup}\{(d^{\oplus W})^{\oplus z}\}$ with singleton duplicated site. The cell $C$ lies in the unique minimal active carrier of $d$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers</p>
-<strong>Parameters:</strong><div class="text-field"><p>A specified embedding of $G$ as a subgraph of a Boolean cube $Q_X$.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>Ambient coordinates that label no edge of $G$ are suppressed. No inducedness or isometry assumption is imposed.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>For an isometric cube embedding of a connected partial cube, this agrees with the number of $\Theta$-classes. For a general displayed cube subgraph it depends on the chosen embedding and is therefore recorded as a presentation invariant.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-connected-coordinate-cost</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/two_connected_cube_coordinate_cost.html'>Coordinate Cost of a Two-Connected Cube Subgraph</a></li><li><a href='results/two_connected_passive_root_cover.html'>Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Localize the failure of $K\cup\{d\}$ to an antipodal pair $\{d,h\}$ on a face $Q_T(d)$. An interval-exit path inside $D\cap[d,h]$ ends with an edge to $h$. That edge must use a passive coordinate $z$; an active exit would put another member of $K$ in the isolated face. Thus $W=T\setminus\{z\}$ is nonempty and $h^{\oplus z}=d^{\oplus W}$. Isolation also gives $W\cap N_L(d)=\varnothing$. Conditioning $A$ on the active $W$-face produces an ample family $C$ on the residual side and only the mate of $d^{\oplus W}$ on the opposite passive side, proving the peripheral-expansion and unique-owner assertions. Agreement with $d$ on $N_L(d)$ places all of $C$ in its unique minimal carrier.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-active-root-peripheral-blocker-cell</p></div>
 
         </div>
     </div>

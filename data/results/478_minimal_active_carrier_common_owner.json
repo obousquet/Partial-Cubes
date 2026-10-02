@@ -1,0 +1,13 @@
+{
+  "id": 478,
+  "short_name": "minimal_active_carrier_common_owner",
+  "name": "Passive Boundary Types Incident with a Minimal Active Carrier Share an Owner",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let $K\\subsetneq A$ be ample and let $D=A\\setminus K$ be connected. In the induced active slice $L\\subseteq B=L\\mathbin{\\dot\\cup}D$, let $E_P$ be the carrier of an inclusion-minimal support $P\\in\\operatorname{Sh}(B)\\setminus\\operatorname{Sh}(L)$. For passive boundary types $S_z=\\{d\\in D:d^{\\oplus z}\\in K\\}$, put $Z_P=\\{z:E_P\\cap S_z\\ne\\varnothing\\}$. If $Z_P$ is nonempty, then $E_P\\cap\\bigcap_{z\\in Z_P}S_z$ is nonempty.",
+  "status": "established",
+  "proof": "Condition both $A$ and $K$ on the unique active trace on $P$ missed by $L$. Their relative concepts are exactly $E_P$, all with the common passive restriction, and the corresponding lower active slice is empty. The empty-slice passive Helly lemma therefore applies; its nonempty boundary types are precisely the sets $E_P\\cap S_z$ for $z\\in Z_P$, and it supplies their common owner.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-minimal-active-carrier-common-owner"
+}

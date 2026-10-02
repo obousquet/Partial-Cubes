@@ -1,0 +1,14 @@
+{
+  "id": 473,
+  "short_name": "failed_augmentation_antipodal_localization",
+  "name": "Failed One-Concept Augmentation Localizes to an Antipodal Pair",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $K\\subseteq Q_X$ be ample and $d\\notin K$. Then $K\\cup\\{d\\}$ is nonample if and only if there is a set $T\\subseteq X$ with $|T|\\ge2$ such that, for $h=d^{\\oplus T}$, one has $h\\in K$ and $(K\\cup\\{d\\})\\cap Q_T(d)=\\{d,h\\}$. Equivalently, the failed augmentation has a conditioning consisting of the two antipodes of a face of dimension at least two.",
+  "status": "established",
+  "proof": "The displayed antipodal pair is a nonample conditioning, proving sufficiency. Conversely, condition $K\\cup\\{d\\}$ until reaching a conditioning-minimal nonample class $H$. Every such conditioning contains $d$, and $H\\setminus\\{d\\}$ is an ample conditioning of $K$. If $H$ has $n$ active coordinates and VC dimension $k$, the minimal-nonample structure theorem gives $|H|=2\\sum_{i=0}^{k-1}\\binom{n-1}{i}$ and all strongly shattered sets of size at most $k-1$. Since deleting $d$ cannot create strongly shattered sets and leaves an ample class, Sauer's inequality yields $\\binom{n-1}{k-1}\\le1$. With $1\\le k\\le n-1$, this forces $k=1$, so $H$ consists of two antipodes on all its active coordinates. Restoring the fixed coordinates gives the required face.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-failed-augmentation-antipodal-localization"
+}

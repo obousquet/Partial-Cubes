@@ -1,0 +1,13 @@
+{
+  "id": 479,
+  "short_name": "blocked_active_root_depth_transfer",
+  "name": "A Blocked Active Root Transfers to Carrier Depth Two",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "In a two-connected terminal interval of order at most eleven, let $d$ be an active root for which $L\\cup\\{d\\}$ is ample. The unique minimal active carrier $E_P$ containing $d$ contains a concept $o\\ne d$ that belongs to at least two minimal active carriers.",
+  "status": "established",
+  "proof": "The one-concept colon criterion identifies $P=N_L(d)$ as the unique minimal support represented by $d$. A passive blocker meets $E_P$ without containing $d$. Choose the common owner $o$ of all passive boundary types incident with $E_P$; then $o\\ne d$. If $o$ belonged to only $E_P$, the local one-concept criterion would make $L\\cup\\{o\\}$ ample with unique carrier $E_P$. Applying the passive-root cover to $o$ would produce an incident passive boundary type omitting $o$, contradicting its choice as common owner. Hence $o$ has carrier depth at least two.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-blocked-active-root-depth-transfer"
+}

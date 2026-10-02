@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-67" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-475" style="position:relative;">
 
-        <h3><a href="invariants/active_cube_coordinate_count.html" class="table-title-link">Active Cube-Coordinate Count</a></h3>
+        <h3><a href="results/two_connected_passive_root_cover.html" class="table-title-link">Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Active Cube-Coordinate Count</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="a_{\square}(G\hookrightarrow Q_X)">
-            \[a_{\square}(G\hookrightarrow Q_X)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a graph $G$ displayed as a subgraph of the Boolean cube $Q_X$, let $Y(G)\subseteq X$ be the set of coordinates that label at least one edge of $G$. The active cube-coordinate count is $a_{\square}(G\hookrightarrow Q_X)=|Y(G)|$.</p></div>
+        <p><strong>Name: </strong>Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/active_cube_coordinate_count.html">Active Cube-Coordinate Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A\subseteq Q_X$ be ample, put $D=A\setminus K$, and suppose $K\cup\{d\}$ is nonample for every $d\in D$. If the graph induced by $D$ is two-connected and $|D|\le11$, let $Y$ be its active coordinates and $Z=X\setminus Y$. Then $|Y|\le5$, every member of $D$ has one passive restriction $\sigma\in Q_Z$, and the conditioned families $L=\{k|_Y:k\in K,\ k|_Z=\sigma\}$ and $B=L\mathbin{\dot\cup}D$ are ample. The set $R=\{d\in D:L\cup\{d\}\text{ is ample}\}$ is nonempty. For every $d\in R$ there are $z\in Z$ and $c\in D$ such that $c^{\oplus z}\in K$, $d^{\oplus z}\notin K$, and $N_L(d)\cap\operatorname{Diff}(d,c)=\varnothing$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Nonnegative integers</p>
-<strong>Parameters:</strong><div class="text-field"><p>A specified embedding of $G$ as a subgraph of a Boolean cube $Q_X$.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>Ambient coordinates that label no edge of $G$ are suppressed. No inducedness or isometry assumption is imposed.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> No</p>
-<strong>Comments:</strong><div class="text-field"><p>For an isometric cube embedding of a connected partial cube, this agrees with the number of $\Theta$-classes. For a general displayed cube subgraph it depends on the chosen embedding and is therefore recorded as a presentation invariant.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-connected-coordinate-cost</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/two_connected_cube_coordinate_cost.html'>Coordinate Cost of a Two-Connected Cube Subgraph</a></li><li><a href='results/two_connected_passive_root_cover.html'>Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Connectedness makes every coordinate outside $Y$ constant on $D$, and the two-connected coordinate-cost inequality gives $2|Y|\le|D|\le11$. Conditioning $A$ and $K$ at the passive restriction gives the ample pair $L\subseteq B$. If $L$ is empty then $R=D$; otherwise five-coordinate relative peeling ends with an ample singleton extension of $L$, so $R$ is nonempty. For $d\in R$, the one-concept colon criterion makes $d$ teach $L$ but, by terminality, supplies a blocker in $K$. Linear presentation of the relative module gives an interval-exit path from $d$ through $D$ to $K$. Its last edge cannot use an active coordinate, since that would contradict the teaching and blocker conditions. Its passive coordinate and last residual endpoint give $z$ and $c$ with all three asserted properties.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-connected-passive-root-cover</p></div>
 
         </div>
     </div>

@@ -1,0 +1,14 @@
+{
+  "id": 477,
+  "short_name": "empty_active_slice_passive_helly",
+  "name": "Passive Boundary Types Have a Common Owner over an Empty Active Slice",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let $K\\subsetneq A\\subseteq Q_{Y\\mathbin{\\dot\\cup}Z}$ be ample, put $D=A\\setminus K$, and suppose all members of $D$ have one passive restriction $\\sigma\\in Q_Z$, while no member of $K$ has restriction $\\sigma$. For $z\\in Z$ let $S_z=\\{d\\in D:d^{\\oplus z}\\in K\\}$ and $Z_0=\\{z:S_z\\ne\\varnothing\\}$. If $Z_0$ is nonempty, then $\\bigcap_{z\\in Z_0}S_z$ is nonempty.",
+  "status": "established",
+  "proof": "For every active projection $D\\to D|_Q$, label each fiber by the passive boundary types it meets. Boolean differences of the numbers of fibers with each label are sums of fine numerator coefficients of the relative Yang module of $(A,K)$. Since both endpoints are ample, that module is Cohen--Macaulay and all these coefficients are nonnegative. The unique fiber over the empty active projection meets every nonempty $S_z$, so its full-label coefficient is one. Möbius inversion implies that at least one fiber over all of $Y$ still has the full label. Projection to $Y$ is injective because every residual concept has the same passive restriction, so this fiber is a singleton belonging to every $S_z$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-empty-active-slice-passive-helly"
+}

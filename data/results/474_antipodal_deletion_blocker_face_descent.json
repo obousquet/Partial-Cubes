@@ -1,0 +1,13 @@
+{
+  "id": 474,
+  "short_name": "antipodal_deletion_blocker_face_descent",
+  "name": "Antipodal Deletion Blockers Descend Along Their Faces",
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Suppose $v\\in A\\subseteq Q_X$ and $A\\cap Q_J(v)=Q_J(v)\\setminus\\{h\\}$, where $h=v^{\\oplus J}$ and $|J|\\ge2$. For every proper $S\\subset J$, putting $w=v^{\\oplus S}$ gives $A\\cap Q_{J\\setminus S}(w)=Q_{J\\setminus S}(w)\\setminus\\{h\\}$. If $|J\\setminus S|\\ge2$, then $A\\setminus\\{w\\}$ is nonample.",
+  "status": "established",
+  "proof": "The vertices of $Q_{J\\setminus S}(w)$ are $v^{\\oplus(S\\cup T)}$ for $T\\subseteq J\\setminus S$; all belong to the original punctured $J$-face except the unique choice $T=J\\setminus S$, which gives $h$. After deleting $w$, the complement on this subface is the antipodal pair $\\{w,h\\}$. In dimension at least two that pair is nonample, and conditioning together with complement duality transfers the failure to $A\\setminus\\{w\\}$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-antipodal-deletion-blocker-face-descent"
+}

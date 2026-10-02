@@ -1,0 +1,16 @@
+{
+  "id": 475,
+  "short_name": "two_connected_passive_root_cover",
+  "name": "Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/active_cube_coordinate_count"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $K\\subsetneq A\\subseteq Q_X$ be ample, put $D=A\\setminus K$, and suppose $K\\cup\\{d\\}$ is nonample for every $d\\in D$. If the graph induced by $D$ is two-connected and $|D|\\le11$, let $Y$ be its active coordinates and $Z=X\\setminus Y$. Then $|Y|\\le5$, every member of $D$ has one passive restriction $\\sigma\\in Q_Z$, and the conditioned families $L=\\{k|_Y:k\\in K,\\ k|_Z=\\sigma\\}$ and $B=L\\mathbin{\\dot\\cup}D$ are ample. The set $R=\\{d\\in D:L\\cup\\{d\\}\\text{ is ample}\\}$ is nonempty. For every $d\\in R$ there are $z\\in Z$ and $c\\in D$ such that $c^{\\oplus z}\\in K$, $d^{\\oplus z}\\notin K$, and $N_L(d)\\cap\\operatorname{Diff}(d,c)=\\varnothing$.",
+  "status": "established",
+  "proof": "Connectedness makes every coordinate outside $Y$ constant on $D$, and the two-connected coordinate-cost inequality gives $2|Y|\\le|D|\\le11$. Conditioning $A$ and $K$ at the passive restriction gives the ample pair $L\\subseteq B$. If $L$ is empty then $R=D$; otherwise five-coordinate relative peeling ends with an ample singleton extension of $L$, so $R$ is nonempty. For $d\\in R$, the one-concept colon criterion makes $d$ teach $L$ but, by terminality, supplies a blocker in $K$. Linear presentation of the relative module gives an interval-exit path from $d$ through $D$ to $K$. Its last edge cannot use an active coordinate, since that would contradict the teaching and blocker conditions. Its passive coordinate and last residual endpoint give $z$ and $c$ with all three asserted properties.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-connected-passive-root-cover"
+}

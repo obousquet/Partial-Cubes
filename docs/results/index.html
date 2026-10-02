@@ -7932,6 +7932,115 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-473" style="position:relative;">
+
+        <h3><a href="results/failed_augmentation_antipodal_localization.html" class="table-title-link">Failed One-Concept Augmentation Localizes to an Antipodal Pair</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Failed One-Concept Augmentation Localizes to an Antipodal Pair</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subseteq Q_X$ be ample and $d\notin K$. Then $K\cup\{d\}$ is nonample if and only if there is a set $T\subseteq X$ with $|T|\ge2$ such that, for $h=d^{\oplus T}$, one has $h\in K$ and $(K\cup\{d\})\cap Q_T(d)=\{d,h\}$. Equivalently, the failed augmentation has a conditioning consisting of the two antipodes of a face of dimension at least two.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The displayed antipodal pair is a nonample conditioning, proving sufficiency. Conversely, condition $K\cup\{d\}$ until reaching a conditioning-minimal nonample class $H$. Every such conditioning contains $d$, and $H\setminus\{d\}$ is an ample conditioning of $K$. If $H$ has $n$ active coordinates and VC dimension $k$, the minimal-nonample structure theorem gives $|H|=2\sum_{i=0}^{k-1}\binom{n-1}{i}$ and all strongly shattered sets of size at most $k-1$. Since deleting $d$ cannot create strongly shattered sets and leaves an ample class, Sauer's inequality yields $\binom{n-1}{k-1}\le1$. With $1\le k\le n-1$, this forces $k=1$, so $H$ consists of two antipodes on all its active coordinates. Restoring the fixed coordinates gives the required face.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-failed-augmentation-antipodal-localization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-474" style="position:relative;">
+
+        <h3><a href="results/antipodal_deletion_blocker_face_descent.html" class="table-title-link">Antipodal Deletion Blockers Descend Along Their Faces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Antipodal Deletion Blockers Descend Along Their Faces</p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose $v\in A\subseteq Q_X$ and $A\cap Q_J(v)=Q_J(v)\setminus\{h\}$, where $h=v^{\oplus J}$ and $|J|\ge2$. For every proper $S\subset J$, putting $w=v^{\oplus S}$ gives $A\cap Q_{J\setminus S}(w)=Q_{J\setminus S}(w)\setminus\{h\}$. If $|J\setminus S|\ge2$, then $A\setminus\{w\}$ is nonample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The vertices of $Q_{J\setminus S}(w)$ are $v^{\oplus(S\cup T)}$ for $T\subseteq J\setminus S$; all belong to the original punctured $J$-face except the unique choice $T=J\setminus S$, which gives $h$. After deleting $w$, the complement on this subface is the antipodal pair $\{w,h\}$. In dimension at least two that pair is nonample, and conditioning together with complement duality transfers the failure to $A\setminus\{w\}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-antipodal-deletion-blocker-face-descent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-475" style="position:relative;">
+
+        <h3><a href="results/two_connected_passive_root_cover.html" class="table-title-link">Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Five-Coordinate Passive-Owner Normal Form for Small Terminal Intervals</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/active_cube_coordinate_count.html">Active Cube-Coordinate Count</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A\subseteq Q_X$ be ample, put $D=A\setminus K$, and suppose $K\cup\{d\}$ is nonample for every $d\in D$. If the graph induced by $D$ is two-connected and $|D|\le11$, let $Y$ be its active coordinates and $Z=X\setminus Y$. Then $|Y|\le5$, every member of $D$ has one passive restriction $\sigma\in Q_Z$, and the conditioned families $L=\{k|_Y:k\in K,\ k|_Z=\sigma\}$ and $B=L\mathbin{\dot\cup}D$ are ample. The set $R=\{d\in D:L\cup\{d\}\text{ is ample}\}$ is nonempty. For every $d\in R$ there are $z\in Z$ and $c\in D$ such that $c^{\oplus z}\in K$, $d^{\oplus z}\notin K$, and $N_L(d)\cap\operatorname{Diff}(d,c)=\varnothing$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Connectedness makes every coordinate outside $Y$ constant on $D$, and the two-connected coordinate-cost inequality gives $2|Y|\le|D|\le11$. Conditioning $A$ and $K$ at the passive restriction gives the ample pair $L\subseteq B$. If $L$ is empty then $R=D$; otherwise five-coordinate relative peeling ends with an ample singleton extension of $L$, so $R$ is nonempty. For $d\in R$, the one-concept colon criterion makes $d$ teach $L$ but, by terminality, supplies a blocker in $K$. Linear presentation of the relative module gives an interval-exit path from $d$ through $D$ to $K$. Its last edge cannot use an active coordinate, since that would contradict the teaching and blocker conditions. Its passive coordinate and last residual endpoint give $z$ and $c$ with all three asserted properties.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-connected-passive-root-cover</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-476" style="position:relative;">
+
+        <h3><a href="results/active_root_peripheral_blocker_cell.html" class="table-title-link">An Isolated Passive Blocker Forms a Peripheral Active Cell</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Isolated Passive Blocker Forms a Peripheral Active Cell</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>In the passive-owner normal form, let $d\in R$. There are a passive coordinate $z$, a nonempty set $W\subseteq Y\setminus N_L(d)$, and an ample family $C\subseteq D\cap Q_W(d)$ containing $d$ and $d^{\oplus W}$ such that $(d^{\oplus W})^{\oplus z}\in K$. Moreover $C\cap S_z=\{d^{\oplus W}\}$, and the conditioning of $A$ to $Q_{W\cup\{z\}}(d)$ is the peripheral expansion $C\mathbin{\dot\cup}\{(d^{\oplus W})^{\oplus z}\}$ with singleton duplicated site. The cell $C$ lies in the unique minimal active carrier of $d$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Localize the failure of $K\cup\{d\}$ to an antipodal pair $\{d,h\}$ on a face $Q_T(d)$. An interval-exit path inside $D\cap[d,h]$ ends with an edge to $h$. That edge must use a passive coordinate $z$; an active exit would put another member of $K$ in the isolated face. Thus $W=T\setminus\{z\}$ is nonempty and $h^{\oplus z}=d^{\oplus W}$. Isolation also gives $W\cap N_L(d)=\varnothing$. Conditioning $A$ on the active $W$-face produces an ample family $C$ on the residual side and only the mate of $d^{\oplus W}$ on the opposite passive side, proving the peripheral-expansion and unique-owner assertions. Agreement with $d$ on $N_L(d)$ places all of $C$ in its unique minimal carrier.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-active-root-peripheral-blocker-cell</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-477" style="position:relative;">
+
+        <h3><a href="results/empty_active_slice_passive_helly.html" class="table-title-link">Passive Boundary Types Have a Common Owner over an Empty Active Slice</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Passive Boundary Types Have a Common Owner over an Empty Active Slice</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A\subseteq Q_{Y\mathbin{\dot\cup}Z}$ be ample, put $D=A\setminus K$, and suppose all members of $D$ have one passive restriction $\sigma\in Q_Z$, while no member of $K$ has restriction $\sigma$. For $z\in Z$ let $S_z=\{d\in D:d^{\oplus z}\in K\}$ and $Z_0=\{z:S_z\ne\varnothing\}$. If $Z_0$ is nonempty, then $\bigcap_{z\in Z_0}S_z$ is nonempty.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For every active projection $D\to D|_Q$, label each fiber by the passive boundary types it meets. Boolean differences of the numbers of fibers with each label are sums of fine numerator coefficients of the relative Yang module of $(A,K)$. Since both endpoints are ample, that module is Cohen--Macaulay and all these coefficients are nonnegative. The unique fiber over the empty active projection meets every nonempty $S_z$, so its full-label coefficient is one. Möbius inversion implies that at least one fiber over all of $Y$ still has the full label. Projection to $Y$ is injective because every residual concept has the same passive restriction, so this fiber is a singleton belonging to every $S_z$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-empty-active-slice-passive-helly</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-478" style="position:relative;">
+
+        <h3><a href="results/minimal_active_carrier_common_owner.html" class="table-title-link">Passive Boundary Types Incident with a Minimal Active Carrier Share an Owner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Passive Boundary Types Incident with a Minimal Active Carrier Share an Owner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be ample and let $D=A\setminus K$ be connected. In the induced active slice $L\subseteq B=L\mathbin{\dot\cup}D$, let $E_P$ be the carrier of an inclusion-minimal support $P\in\operatorname{Sh}(B)\setminus\operatorname{Sh}(L)$. For passive boundary types $S_z=\{d\in D:d^{\oplus z}\in K\}$, put $Z_P=\{z:E_P\cap S_z\ne\varnothing\}$. If $Z_P$ is nonempty, then $E_P\cap\bigcap_{z\in Z_P}S_z$ is nonempty.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Condition both $A$ and $K$ on the unique active trace on $P$ missed by $L$. Their relative concepts are exactly $E_P$, all with the common passive restriction, and the corresponding lower active slice is empty. The empty-slice passive Helly lemma therefore applies; its nonempty boundary types are precisely the sets $E_P\cap S_z$ for $z\in Z_P$, and it supplies their common owner.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-minimal-active-carrier-common-owner</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-479" style="position:relative;">
+
+        <h3><a href="results/blocked_active_root_depth_transfer.html" class="table-title-link">A Blocked Active Root Transfers to Carrier Depth Two</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Blocked Active Root Transfers to Carrier Depth Two</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a two-connected terminal interval of order at most eleven, let $d$ be an active root for which $L\cup\{d\}$ is ample. The unique minimal active carrier $E_P$ containing $d$ contains a concept $o\ne d$ that belongs to at least two minimal active carriers.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The one-concept colon criterion identifies $P=N_L(d)$ as the unique minimal support represented by $d$. A passive blocker meets $E_P$ without containing $d$. Choose the common owner $o$ of all passive boundary types incident with $E_P$; then $o\ne d$. If $o$ belonged to only $E_P$, the local one-concept criterion would make $L\cup\{o\}$ ample with unique carrier $E_P$. Applying the passive-root cover to $o$ would produce an incident passive boundary type omitting $o$, contradicting its choice as common owner. Hence $o$ has carrier depth at least two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-blocked-active-root-depth-transfer</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

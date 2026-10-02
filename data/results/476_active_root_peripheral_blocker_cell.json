@@ -1,0 +1,16 @@
+{
+  "id": 476,
+  "short_name": "active_root_peripheral_blocker_cell",
+  "name": "An Isolated Passive Blocker Forms a Peripheral Active Cell",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "construction",
+  "statement": "In the passive-owner normal form, let $d\\in R$. There are a passive coordinate $z$, a nonempty set $W\\subseteq Y\\setminus N_L(d)$, and an ample family $C\\subseteq D\\cap Q_W(d)$ containing $d$ and $d^{\\oplus W}$ such that $(d^{\\oplus W})^{\\oplus z}\\in K$. Moreover $C\\cap S_z=\\{d^{\\oplus W}\\}$, and the conditioning of $A$ to $Q_{W\\cup\\{z\\}}(d)$ is the peripheral expansion $C\\mathbin{\\dot\\cup}\\{(d^{\\oplus W})^{\\oplus z}\\}$ with singleton duplicated site. The cell $C$ lies in the unique minimal active carrier of $d$.",
+  "status": "established",
+  "proof": "Localize the failure of $K\\cup\\{d\\}$ to an antipodal pair $\\{d,h\\}$ on a face $Q_T(d)$. An interval-exit path inside $D\\cap[d,h]$ ends with an edge to $h$. That edge must use a passive coordinate $z$; an active exit would put another member of $K$ in the isolated face. Thus $W=T\\setminus\\{z\\}$ is nonempty and $h^{\\oplus z}=d^{\\oplus W}$. Isolation also gives $W\\cap N_L(d)=\\varnothing$. Conditioning $A$ on the active $W$-face produces an ample family $C$ on the residual side and only the mate of $d^{\\oplus W}$ on the opposite passive side, proving the peripheral-expansion and unique-owner assertions. Agreement with $d$ on $N_L(d)$ places all of $C$ in its unique minimal carrier.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-active-root-peripheral-blocker-cell"
+}
