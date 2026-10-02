@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "batch_id": "154_dismantlable_ample_alternating_reductions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the canonical alternating graph and signed-column normal form, its phase bounds and inverse parametrization, and the sharp 1604-concept noncommuting witness.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-alternating-reductions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#eq:damp-alternating-fixed-example"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem combines the two previously normalized canonical reductions into a complete alternating normal form, proves quantitative phase bounds, and gives an exact inverse construction from the reduced base.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The archived verifier reproduces the source report byte-for-byte, replays 294 proper-minor orders, checks both reduction priorities and column representatives, and verifies the sharp three-phase witness.",
+    "claim_block_sha256": {
+      "thm:damp-alternating-reductions": "fe670699e0cddbcb26d5ea68e662df19a56de64df7266d0ce159b330dad6540c"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/154_dismantlable_ample_alternating_reductions/forbidden_pc_minor_campaign/verify_damp_alternating_reductions.py",
+      "sha256": "bf1bc89c324170a94527af3097bbc4d16334d35bd07d8b0a2820292c00bfa576"
+    },
+    {
+      "path": "migration/certificates/154_dismantlable_ample_alternating_reductions/forbidden_pc_minor_campaign/damp_three_core_verification.json",
+      "sha256": "9e81c67f04c418cb36ed1b55a7c17d731be1a57cb89bc32c5c35cd93a60ded8e"
+    },
+    {
+      "path": "migration/certificates/154_dismantlable_ample_alternating_reductions/forbidden_pc_minor_campaign/damp_noncorner_rooted_obstruction_verification.json",
+      "sha256": "7143b4e76fc3aa18d3223c667074e8f2c20626197e1d99fb73498481169dd358"
+    },
+    {
+      "path": "migration/certificates/154_dismantlable_ample_alternating_reductions/forbidden_pc_minor_campaign/damp_alternating_reductions_verification.json",
+      "sha256": "1e42452595837144326bc54f6276fe62975840d8e3351e92d25e8de7e607fc42"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the canonical phase decomposition, phase bounds, inverse construction, noncommuting witness, concise proof, and replay boundary. LaTeX retains the expanded derivation and the discussion of the unresolved intrinsic classification of reduced bases.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the theorem and witness. The certificate directory contains the standalone verifier, both complete input packets, and the byte-identical generated report.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/612_alternating_graph_signed_column_normal_form.json",
+      "sha256": "524a66540342d3e83960e7a06fa013db889d6e671473f9d0213cd931b7b6028c"
+    },
+    {
+      "path": "data/examples/181_alternating_reduction_obstruction_1604.json",
+      "sha256": "77cddfe3f62a9ece36dffb7fe80ac7672c88ae320b4fd8f46eb76ffeca8ced87"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "a718b957c69039c2a366c8d63492742a749ac1e2b7d1ecfd66931357a16aaed4"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "d7ee992a8531761b7a0249ace5deda0aa8af30a47ee2615a7aebdb105761f106"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1995 records.",
+    "website": "Normalized 2011 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 712 to 713 of 1143 and dismantlable-ample coverage from 276 to 277 of 683.",
+    "certificates": "The replay checks the forced order sequence 1604 to 1603 to 579 to 577, all 294 elementary proper-minor orders, both graph-deletion priorities, both column representatives, noncommutation of the one-pass reductions, and attainment of the three-phase VC-four bound.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002; the regenerated report is byte-identical to its source copy."
+  },
+  "deferred": [
+    "The refreshed audit has 430 uncovered database-owned labels: 406 in dismantlable-ample and 24 in ample-corners.",
+    "The intrinsic classification of terminal bases fixed by both canonical reductions remains an open question and stays prose-owned in LaTeX.",
+    "The next theorem-like source claim proves that both relative-facet graphs at an overlap-atomic coordinate contain cycles."
+  ]
+}

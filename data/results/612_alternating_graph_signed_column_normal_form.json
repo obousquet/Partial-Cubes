@@ -1,0 +1,24 @@
+{
+  "id": 612,
+  "short_name": "alternating_graph_signed_column_normal_form",
+  "name": "Canonical Alternating Graph and Signed-Column Normal Form",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_block_replacement",
+    "#operations/full_reduction"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let $H$ be an irredundantly embedded ample forbidden pc-minor of VC dimension $d$. Repeatedly either delete a degree-two vertex or compress two signed minimal-nonface columns that agree up to sign. Every maximal reduction sequence reaches, up to coordinate renaming and reorientation, the same ample forbidden family $H_*$, which has minimum degree at least three and pairwise distinct signed columns up to sign. Maximal runs of one reduction type form canonical alternating phases: graph phases take the full graph three-core and column phases compress every repeated column. If there are $q$ column phases and $s$ graph phases, then $q\\le d-\\operatorname{VC}(H_*)\\le d-3$, $s\\le q+1$, and $q+s\\le2d-5$; every phase preserves $\\operatorname{idim}-\\operatorname{VC}$. Conversely, every ample forbidden family is recovered uniquely from such a reduced base by a finite alternating sequence of nonempty admissible square attachments and nontrivial coordinate-block replacements, including the attachment data and coordinate multiplicities. Every minimum-cardinality ample forbidden family is fixed by both reductions.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/alternating_reduction_obstruction_1604"
+  ],
+  "proof": "The two reduction types are mutually exclusive on forbidden families: repeated signed columns express the family as a nontrivial coordinate-block replacement, whose output has minimum degree at least three. Both reductions preserve ample forbidden-minor status and strictly reduce cardinality. Exhausting degree-two deletions gives the choice-independent graph three-core, while exhausting repeated columns gives the choice-independent canonical signed-column reduction; mutual exclusion forces these canonical phases to alternate and proves uniqueness by induction. Graph phases preserve isometric and VC dimensions. A column phase lowers both dimensions by the same positive sum of multiplicity excesses, so $q\\le d-\\operatorname{VC}(H_*)$; every ample forbidden family has VC dimension at least three, and alternation gives $s\\le q+1$. For the inverse direction, a nonempty square attachment is recovered by the graph phase and creates degree-two vertices but no repeated columns, whereas a nontrivial block replacement is recovered by the column phase and creates minimum degree at least three. Induction yields exact phase-by-phase reconstruction and completeness. Either reduction of a minimum-cardinality obstruction would contradict minimality.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-alternating-reductions",
+  "comments": "The terminal base is a canonical normal form, but minimum degree at least three and distinct signed columns do not by themselves characterize forbiddenness. The 42-concept weight-at-most-three down-set in $Q_6$ is a peelable ample counterexample to that converse."
+}
