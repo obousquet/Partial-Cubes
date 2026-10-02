@@ -1,0 +1,21 @@
+{
+  "id": 442,
+  "short_name": "positive_faces_do_not_replace_contraction_tests",
+  "name": "Positive Coordinate Faces Do Not Replace Contraction Tests",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/one_point_amalgam",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(A,0)$ and $(B,0)$ be rooted factors, on disjoint active coordinate blocks, satisfying the cut-vertex obstruction criterion. For a fresh coordinate $e$, put $X=(A\\times\\{0\\})\\cup(B\\times\\{1\\})$, so the two roots are joined by one $e$-edge. Then $X$ is ample and every elementary pc-minor other than the $e$-projection is dismantlable ample, while $\\pi_eX=A\\vee_0B$ is a forbidden pc-minor. Thus every proper coordinate face of $X$ is positive, but $X$ is negative and is not itself pc-minimal.",
+  "status": "established",
+  "proof": "The $e$-projection is the ample one-point amalgam $A\\vee_0B$ and the $e$-reduction is the common root; the component-label expansion theorem therefore proves ampleness. The two $e$-faces are $A$ and $B$. In a coordinate of one factor, the face away from the root is a proper positive face of that factor, while the root-side face and projection replace it by a proper root-preserving minor that peels to its root. Peel this changed factor to the root, delete the root as the pendant endpoint of the joining edge, and peel the unchanged factor. Hence all those elementary images are positive. The $e$-projection is forbidden by the cut-vertex theorem, so pc-minor closure makes $X$ negative and the negative proper projection rules out forbiddenness of $X$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-separated-roots-face-control"
+}

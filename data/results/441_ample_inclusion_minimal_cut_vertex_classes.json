@@ -1,0 +1,22 @@
+{
+  "id": 441,
+  "short_name": "ample_inclusion_minimal_cut_vertex_classes",
+  "name": "Ample-Inclusion-Minimal Negative Classes at a Cut Vertex",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/concept_deletion",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be ample and not dismantlable ample, and suppose every proper ample subfamily of $X$ is dismantlable ample. Then $X$ is cornerless and every coordinate reduction of $X$ is dismantlable ample. If $r$ is a cut vertex, it separates $X$ into exactly two component families and $X=A_1\\vee_rA_2$. Conversely, such a vertex gluing is minimal under proper ample subfamilies exactly when each $A_i$ is dismantlable ample but does not peel to $r$, and every proper ample $B\\subsetneq A_i$ peels relatively to $B\\cap\\{r\\}$, with an empty target meaning a full peeling. The marked cut vertex uniquely recovers the two coordinate blocks and pieces up to interchange. This criterion does not assert rooted pc-minor minimality of the pieces.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/inclusion_minimal_negative_527_528"
+  ],
+  "proof": "A corner of $X$ could be deleted to a proper ample positive subfamily and prefixed to its peeling, contradicting negativity. A coordinate reduction has an ample copy inside the corresponding proper section, so it is positive. At a cut vertex, all component families are proper and positive, while at least two fail to peel to the cut vertex by the one-point-amalgam criterion. The union of any two failing pieces is ample and negative, so inclusion-minimality forces exactly two. Replacing either piece by a proper ample subfamily and applying the same gluing criterion gives the required relative peeling property. Conversely, any proper ample subfamily avoiding $r$ lies in one piece and peels; one containing $r$ splits into two positive sections, at least one proper and therefore root-peelable, so the gluing criterion makes their union positive.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-inclusion-minimal-cut-vertex"
+}

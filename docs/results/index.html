@@ -7374,6 +7374,73 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-440" style="position:relative;">
+
+        <h3><a href="results/terminal_edge_product_attachments.html" class="table-title-link">Terminal Edge-Product Attachments Have an Exact Reduction Test</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Edge-Product Attachments Have an Exact Reduction Test</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(R,0)$ be a rooted factor and let nonempty ample peelable $D\subseteq A$ satisfy the relative-attachment forbiddenness criterion, with $D$ an edge in direction $e$ and $r=\pi_eD$. Put $X=P_R(A,D)=(A\times\{0_F\})\cup(D\times R)$. Then every nonempty coordinate reduction of $X$ is dismantlable ample exactly when $A^e$ peels to $r$. There is a certified $289$-concept choice of $A\subseteq Q_{12}$ with $D=\{0,2\}$ satisfying this condition. For that input, every rooted factor $R$ produces a forbidden pc-minor of order $2|R|+287$ in $12+\dim R$ active coordinates, all of whose nonempty reductions are dismantlable ample. Every output has minimum degree at least three; if the root is the only corner of $R$, the output is cornerless.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For every old direction other than $e$, the reduction is $A^f\times\{0_F\}$; for every direction of $R$, it is $D\times R^f$. These are positive by reduction and product closure. In direction $e$, the reduction is $(A^e\times\{0_F\})\cup(\{r\}\times R)$, a one-point amalgam of two positive pieces. Since $R$ cannot peel to its root, the vertex-gluing criterion makes this reduction positive exactly when $A^e$ peels to $r$. Forbiddenness follows from the relative-attachment minimality theorem. For the fixed input, stored relative orders verify every required elementary image and a separate order makes $A^e$ peel to $r$. Minimum degree follows because $A$ has minimum degree three and the two-connected rooted factor has minimum degree two; vertices in $D\times R$ gain the edge direction of $D$. When the root is the factor's only corner, all nonroot missing-cube witnesses survive and mixed absent squares destroy the remaining possible corner at the root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-terminal-edge-product</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/terminal_edge_product_obstruction_865.html">Cornerless Terminal Edge-Product Obstruction of Order 865</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-441" style="position:relative;">
+
+        <h3><a href="results/ample_inclusion_minimal_cut_vertex_classes.html" class="table-title-link">Ample-Inclusion-Minimal Negative Classes at a Cut Vertex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample-Inclusion-Minimal Negative Classes at a Cut Vertex</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample and not dismantlable ample, and suppose every proper ample subfamily of $X$ is dismantlable ample. Then $X$ is cornerless and every coordinate reduction of $X$ is dismantlable ample. If $r$ is a cut vertex, it separates $X$ into exactly two component families and $X=A_1\vee_rA_2$. Conversely, such a vertex gluing is minimal under proper ample subfamilies exactly when each $A_i$ is dismantlable ample but does not peel to $r$, and every proper ample $B\subsetneq A_i$ peels relatively to $B\cap\{r\}$, with an empty target meaning a full peeling. The marked cut vertex uniquely recovers the two coordinate blocks and pieces up to interchange. This criterion does not assert rooted pc-minor minimality of the pieces.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A corner of $X$ could be deleted to a proper ample positive subfamily and prefixed to its peeling, contradicting negativity. A coordinate reduction has an ample copy inside the corresponding proper section, so it is positive. At a cut vertex, all component families are proper and positive, while at least two fail to peel to the cut vertex by the one-point-amalgam criterion. The union of any two failing pieces is ample and negative, so inclusion-minimality forces exactly two. Replacing either piece by a proper ample subfamily and applying the same gluing criterion gives the required relative peeling property. Conversely, any proper ample subfamily avoiding $r$ lies in one piece and peels; one containing $r$ splits into two positive sections, at least one proper and therefore root-peelable, so the gluing criterion makes their union positive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-inclusion-minimal-cut-vertex</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/inclusion_minimal_negative_527_528.html">Inclusion-Minimal Negative Classes of Orders 527 and 528</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-442" style="position:relative;">
+
+        <h3><a href="results/positive_faces_do_not_replace_contraction_tests.html" class="table-title-link">Positive Coordinate Faces Do Not Replace Contraction Tests</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Coordinate Faces Do Not Replace Contraction Tests</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,0)$ and $(B,0)$ be rooted factors, on disjoint active coordinate blocks, satisfying the cut-vertex obstruction criterion. For a fresh coordinate $e$, put $X=(A\times\{0\})\cup(B\times\{1\})$, so the two roots are joined by one $e$-edge. Then $X$ is ample and every elementary pc-minor other than the $e$-projection is dismantlable ample, while $\pi_eX=A\vee_0B$ is a forbidden pc-minor. Thus every proper coordinate face of $X$ is positive, but $X$ is negative and is not itself pc-minimal.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The $e$-projection is the ample one-point amalgam $A\vee_0B$ and the $e$-reduction is the common root; the component-label expansion theorem therefore proves ampleness. The two $e$-faces are $A$ and $B$. In a coordinate of one factor, the face away from the root is a proper positive face of that factor, while the root-side face and projection replace it by a proper root-preserving minor that peels to its root. Peel this changed factor to the root, delete the root as the pendant endpoint of the joining edge, and peel the unchanged factor. Hence all those elementary images are positive. The $e$-projection is forbidden by the cut-vertex theorem, so pc-minor closure makes $X$ negative and the negative proper projection rules out forbiddenness of $X$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-separated-roots-face-control</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-443" style="position:relative;">
+
+        <h3><a href="results/inclusion_minimal_negative_527_528.html" class="table-title-link">The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(A,r)$ be the certified $264$-concept rooted input with $r=750$. Gluing two copies at their roots gives a cornerless $527$-concept ample forbidden pc-minor for which every proper ample subfamily is dismantlable ample. Joining the two roots by a fresh edge instead gives a cornerless $528$-concept negative ample class with the same proper-ample-subfamily property. It is not a forbidden pc-minor because contracting the new edge produces the negative $527$-concept class. Every coordinate reduction of both examples is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The certified rooted input is positive, has $r$ as its only corner, cannot peel to $r$, and every proper ample subfamily $B$ peels relatively to $B\cap\{r\}$. The ample-inclusion cut-vertex criterion therefore proves the $527$ assertion. For the bridge example, attach a new leaf $s$ at $r$. The resulting piece peels ordinarily but cannot peel to $s$; every proper ample subfamily peels relatively to its intersection with $s$, by reducing its old-coordinate part to the corresponding certified subfamily of $A$. Gluing this leaf-rooted piece to the other copy of $A$ gives the $528$ class and the same inclusion-minimality criterion proves its negativity and cornerlessness. Its bridge contraction is the $527$ class, which disproves pc-minimality. Positivity of all reductions follows from the general inclusion-minimal theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-inclusion-minimal-527-528; PartialCubes:papers/ample-corners/main.tex?#prop:root264-relative-ample-inclusion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/inclusion_minimal_negative_527_528.html">Inclusion-Minimal Negative Classes of Orders 527 and 528</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

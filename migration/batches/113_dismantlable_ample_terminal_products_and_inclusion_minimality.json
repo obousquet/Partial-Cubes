@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "batch_id": "113_dismantlable_ample_terminal_products_and_inclusion_minimality",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Normalize terminal edge-product attachments, negativity minimal under ample inclusion at a cut vertex, the failure of positive-face tests to replace contractions, and the certified 527/528 separation between ample-inclusion minimality and pc-minimality.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-edge-product",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-inclusion-minimal-cut-vertex",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-separated-roots-face-control",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-inclusion-minimal-527-528",
+    "PartialCubes:papers/ample-corners/main.tex#prop:root264-relative-ample-inclusion"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These consecutive separator results distinguish three minimality notions: rooted pc-minimality, minimality among proper ample subfamilies, and positivity of coordinate faces. The terminal product and 527/528 witnesses make every separation explicit.",
+    "outcome": "All four classification blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript. The 527/528 corollary embeds the exact rooted-264 property used from the companion ample-corners result and identifies its independently replayed certificate.",
+    "claim_block_sha256": {
+      "cor:damp-terminal-edge-product": "1f3afe1106e8daf12ca6d2f2579b89d89015591717b6be332621df6ba5b649be",
+      "prop:damp-inclusion-minimal-cut-vertex": "ac094d427944581fad7d4a1294d676dbe24f9fce868d25df08d295881bad7051",
+      "rem:damp-separated-roots-face-control": "35531c5ac456ac974aad79bdc59b671f31d7143b8e5cc6bbdfff02c5b5f73490",
+      "cor:damp-inclusion-minimal-527-528": "d54c6090ba2f2c38dc888072da00834dda82e71969aa716a07a6a174f9a5d245"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the exact reduction criterion and product formulas, the ample-inclusion cut-vertex equivalence, the face-versus-contraction counterconstruction, the 527/528 statuses, concise proofs, certificate summaries, and source locators. The manuscripts retain the complete relative orders, block-decomposition arguments, SAT encoding, DRAT proof, bit-level isomorphism, stored word lists, and open intrinsic rooted-input questions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the complete classification source bytes. The root-264 fact is stated inside the preserved 527/528 corollary, while its full 17,008-variable, 145,304-clause certificate and replay remain in the ample-corners evidence tree.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/440_terminal_edge_product_attachments.json",
+      "sha256": "12507f4bbfef0aa2319564a46aaf388c91032170e4470f269b0008272f1c260f"
+    },
+    {
+      "path": "data/results/441_ample_inclusion_minimal_cut_vertex_classes.json",
+      "sha256": "67406a5ca3bd56beeb3a7e8c5d694e0f02768ca5d1cab572b11f44f1e30e0398"
+    },
+    {
+      "path": "data/results/442_positive_faces_do_not_replace_contraction_tests.json",
+      "sha256": "2ee8e8a94c1bbb2fe915fc4491f24207923683c312b422037ad5eb1952bf319e"
+    },
+    {
+      "path": "data/results/443_inclusion_minimal_negative_527_528.json",
+      "sha256": "36d6424b046091d444c8ec187f2edd8ea7585be24acb2b056346bfa4d47f41ec"
+    },
+    {
+      "path": "data/examples/140_terminal_edge_product_obstruction_865.json",
+      "sha256": "4c040b995629eca322370aadac95794779b6faa12a4a5623336cb343ba3f4c4c"
+    },
+    {
+      "path": "data/examples/141_inclusion_minimal_negative_527_528.json",
+      "sha256": "2260717b7b065e1b074a695e7c21a1507ee7820be902ab0b0f1c0e601d7f2515"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "10ea8a1bd03df7437becd8c987c48b7e413087f4a45f7e8e2602f9f69e717f46"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "d265ce3132925ed3e1261a80e2546775224f38bb87c70f63b5a7dc51d99a879e"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1767 records.",
+    "website": "Normalized 1783 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising the dismantlable-ample workspace from 108 to 111 of 683 and overall coverage from 539 to 542 of 1114 database-owned labels. The separated-roots remark is also normalized outside that denominator.",
+    "certificates": "The terminal product certificate reports order 865 and dimension 24. The rooted-264 verification is PASS, its 17,008-variable and 145,304-clause formula is UNSAT-DRAT-verified, and the bridge contraction and both cornerless checks pass.",
+    "source_integrity": "The four reviewed classification blocks and complete classification source are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 572 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Complete relative orders, word sets, SAT clauses, compressed DRAT proofs, and replay logs remain preserved in the scholarly source tree and are summarized, not duplicated, in database records.",
+    "Intrinsic recognition of rooted factors and the stronger arbitrary-rerooting question for proper ample subfamilies remain prose-owned open problems."
+  ]
+}

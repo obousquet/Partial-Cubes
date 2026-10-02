@@ -1,0 +1,23 @@
+{
+  "id": 440,
+  "short_name": "terminal_edge_product_attachments",
+  "name": "Terminal Edge-Product Attachments Have an Exact Reduction Test",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/cartesian_product",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(R,0)$ be a rooted factor and let nonempty ample peelable $D\\subseteq A$ satisfy the relative-attachment forbiddenness criterion, with $D$ an edge in direction $e$ and $r=\\pi_eD$. Put $X=P_R(A,D)=(A\\times\\{0_F\\})\\cup(D\\times R)$. Then every nonempty coordinate reduction of $X$ is dismantlable ample exactly when $A^e$ peels to $r$. There is a certified $289$-concept choice of $A\\subseteq Q_{12}$ with $D=\\{0,2\\}$ satisfying this condition. For that input, every rooted factor $R$ produces a forbidden pc-minor of order $2|R|+287$ in $12+\\dim R$ active coordinates, all of whose nonempty reductions are dismantlable ample. Every output has minimum degree at least three; if the root is the only corner of $R$, the output is cornerless.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/terminal_edge_product_obstruction_865"
+  ],
+  "proof": "For every old direction other than $e$, the reduction is $A^f\\times\\{0_F\\}$; for every direction of $R$, it is $D\\times R^f$. These are positive by reduction and product closure. In direction $e$, the reduction is $(A^e\\times\\{0_F\\})\\cup(\\{r\\}\\times R)$, a one-point amalgam of two positive pieces. Since $R$ cannot peel to its root, the vertex-gluing criterion makes this reduction positive exactly when $A^e$ peels to $r$. Forbiddenness follows from the relative-attachment minimality theorem. For the fixed input, stored relative orders verify every required elementary image and a separate order makes $A^e$ peel to $r$. Minimum degree follows because $A$ has minimum degree three and the two-connected rooted factor has minimum degree two; vertices in $D\\times R$ gain the edge direction of $D$. When the root is the factor's only corner, all nonroot missing-cube witnesses survive and mixed absent squares destroy the remaining possible corner at the root.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-edge-product"
+}

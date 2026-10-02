@@ -1,0 +1,23 @@
+{
+  "id": 443,
+  "short_name": "inclusion_minimal_negative_527_528",
+  "name": "The 527- and 528-Concept Classes Are Minimal under Ample Inclusion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/graph_expansion",
+    "#operations/projection",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(A,r)$ be the certified $264$-concept rooted input with $r=750$. Gluing two copies at their roots gives a cornerless $527$-concept ample forbidden pc-minor for which every proper ample subfamily is dismantlable ample. Joining the two roots by a fresh edge instead gives a cornerless $528$-concept negative ample class with the same proper-ample-subfamily property. It is not a forbidden pc-minor because contracting the new edge produces the negative $527$-concept class. Every coordinate reduction of both examples is dismantlable ample.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/inclusion_minimal_negative_527_528"
+  ],
+  "proof": "The certified rooted input is positive, has $r$ as its only corner, cannot peel to $r$, and every proper ample subfamily $B$ peels relatively to $B\\cap\\{r\\}$. The ample-inclusion cut-vertex criterion therefore proves the $527$ assertion. For the bridge example, attach a new leaf $s$ at $r$. The resulting piece peels ordinarily but cannot peel to $s$; every proper ample subfamily peels relatively to its intersection with $s$, by reducing its old-coordinate part to the corresponding certified subfamily of $A$. Gluing this leaf-rooted piece to the other copy of $A$ gives the $528$ class and the same inclusion-minimality criterion proves its negativity and cornerlessness. Its bridge contraction is the $527$ class, which disproves pc-minimality. Positivity of all reductions follows from the general inclusion-minimal theorem.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-inclusion-minimal-527-528; PartialCubes:papers/ample-corners/main.tex#prop:root264-relative-ample-inclusion"
+}
