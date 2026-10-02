@@ -1,0 +1,15 @@
+{
+  "id": 329,
+  "short_name": "partial_cube_recognition_algorithm",
+  "name": "Partial Cubes Are Recognizable with Coordinates in Quadratic Time",
+  "class_ids": [
+    "#classes/partial_cubes"
+  ],
+  "result_type": "algorithm",
+  "statement": "An arbitrary $n$-vertex graph can be tested for being a partial cube in $O(n^2)$ word-RAM time. On acceptance, the same algorithm outputs an isometric hypercube labelling with one coordinate for each $\\Theta$-class.",
+  "status": "established",
+  "proof": "Breadth-first distance data identify candidate semicube cuts and the algorithm verifies the partial-cube cut partition while incrementally assigning one bit per accepted cut. Failure of a cut or distance condition rejects the graph; when all cuts pass, Hamming distance in the constructed labels equals graph distance. The data structures and total scans take quadratic word-RAM time.",
+  "references": "\\cite[Theorem~1]{Eppstein11recognizing}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:partial-cube-recognition",
+  "comments": "The full coordinate output can itself require quadratic size, for example on paths."
+}

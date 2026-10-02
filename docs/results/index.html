@@ -5517,6 +5517,38 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-329" style="position:relative;">
+
+        <h3><a href="results/partial_cube_recognition_algorithm.html" class="table-title-link">Partial Cubes Are Recognizable with Coordinates in Quadratic Time</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Partial Cubes Are Recognizable with Coordinates in Quadratic Time</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>An arbitrary $n$-vertex graph can be tested for being a partial cube in $O(n^2)$ word-RAM time. On acceptance, the same algorithm outputs an isometric hypercube labelling with one coordinate for each $\Theta$-class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Breadth-first distance data identify candidate semicube cuts and the algorithm verifies the partial-cube cut partition while incrementally assigning one bit per accepted cut. Failure of a cut or distance condition rejects the graph; when all cuts pass, Hamming distance in the constructed labels equals graph distance. The data structures and total scans take quadratic word-RAM time.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~1]{Eppstein11recognizing}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:partial-cube-recognition</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The full coordinate output can itself require quadratic size, for example on paths.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-330" style="position:relative;">
+
+        <h3><a href="results/regular_almost_median_hypercube.html" class="table-title-link">Finite Regular Almost-Median Graphs Are Hypercubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Regular Almost-Median Graphs Are Hypercubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/regular_partial_cubes.html">Regular Partial Cubes</a></li><li><a href="classes/almost_median_partial_cubes.html">Almost-Median Partial Cubes</a></li><li><a href="classes/hypercubes.html">Hypercubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A finite $d$-regular almost-median graph is isomorphic to $Q_d$. Conversely, $Q_d$ is $d$-regular and almost-median.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~1.3]{XieFengXu24Regular}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:regular-almost-median</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

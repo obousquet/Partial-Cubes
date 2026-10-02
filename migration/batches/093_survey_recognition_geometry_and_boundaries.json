@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "batch_id": "093_survey_recognition_geometry_and_boundaries",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the frozen survey cluster on general partial-cube recognition, regular almost-median rigidity, geometric cubihedron characterizations of ampleness, the coronoid boundary, and local girth-six characterizations of middle-levels graphs; add coronoids as a fully positioned catalogue class.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#thm:partial-cube-recognition",
+    "PartialCubes:papers/survey/main.tex#thm:regular-almost-median",
+    "PartialCubes:papers/survey/main.tex#thm:ample-cubihedron",
+    "PartialCubes:papers/survey/main.tex#thm:coronoids-not-partial-cubes",
+    "PartialCubes:papers/survey/main.tex#thm:regular-girth-six-middle-levels"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partial-cubes-bibliography",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "main.bib",
+      "sha256": "66b3172b12af56ccbceba8a47f354dc326966f120f04720e545b3295c17d70de",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/main.bib"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized class definition, class position, membership criteria and equivalence theorems, algorithm and rigidity statements, concise proof where available, closure-status applicability, and citations. The LaTeX survey retains the full geometric setup, historical corrections, algorithmic discussion, and open regularity and recognition questions.",
+    "recoverability": "The survey manuscript and dirty bibliography are read from the frozen snapshot and match their manifest SHA-256 hashes; every migrated theorem has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "0dbf9c115a60ad950bfc16354d9f0af071c7842ac3f437fb79b7639352644028"
+    },
+    {
+      "path": "data/classes/115_coronoid_systems.json",
+      "sha256": "0c2054e0538cd95f9b7ca58c8e9d7e13f17ef09e698d76c69316aa0d57a4ea01"
+    },
+    {
+      "path": "data/characterizations/185_coronoid_hexagonal_system.json",
+      "sha256": "bf57b8256b479d4a45fa0af57045d42b91b8d8c4c6e752ab2320d0241adae85f"
+    },
+    {
+      "path": "data/characterizations/186_weakly_convex_cubihedron.json",
+      "sha256": "a1ff1647447dbd2c051e4fdd12b096bab336762119a8f42347cfe30c72106b15"
+    },
+    {
+      "path": "data/characterizations/187_isometric_cube_gated_cubihedron_faces.json",
+      "sha256": "aebdd559262b2b5b932468c17dd70141cc8cf5533b83a7d91c827bc65afa1b5b"
+    },
+    {
+      "path": "data/characterizations/188_weakly_convex_orthant_trace.json",
+      "sha256": "34491773048f57a2144270e6cc05eed2a246ae8d8a0d2598852dae45f0b22a3b"
+    },
+    {
+      "path": "data/characterizations/189_middle_levels_uniform_convex_six_cycles.json",
+      "sha256": "609cf1f64bce475c01b5a6713b43158542487aa3a757f47c2da86bae43adda2a"
+    },
+    {
+      "path": "data/characterizations/190_middle_levels_three_paths_in_six_cycles.json",
+      "sha256": "c8059aac0228b21c924016d055e784dc660f6925f2c7964ed266fdcac0ed107f"
+    },
+    {
+      "path": "data/characterization_equivalences/036_ample_cubihedron_geometry_equivalence.json",
+      "sha256": "292908ce6f5f36442f7315b8a10419488f5c71451f2e8e96c008b97beb86ad69"
+    },
+    {
+      "path": "data/characterization_equivalences/037_middle_levels_girth_six_equivalence.json",
+      "sha256": "c6cc829632bd8cde1b3d29a48cb71a8a028b5929c430c68db4c3cd33e52e8201"
+    },
+    {
+      "path": "data/relations/271_coronoids_disjoint_partial_cubes.json",
+      "sha256": "ce5ad9ce19a72ca30ff76f43400f73be64cf9d1456058dfb4f6dd90cc6b6bb85"
+    },
+    {
+      "path": "data/results/329_partial_cube_recognition_algorithm.json",
+      "sha256": "f46a494e7e89edc60e0b44c36e4f7ef3c4c060a40cdffa281d3f7dffa3b49d27"
+    },
+    {
+      "path": "data/results/330_regular_almost_median_hypercube.json",
+      "sha256": "fd84eca3b4118b4bf45c3890c885b9d68f6f3272fb5795fd809584bc39c93d23"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "70bb1e592028a3b0fb8b823665bbac08f169c8437ce1642204d765f83f5e06b5"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "e9f2bacf9fdc35dd5669ec5ea39cadbaee11eacded548e34243200e02976c05a"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "f8e51d86adbc1dec086bd9fdbe91dcd66fd3c8caa43cf28d53328472c1b40f4c"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "a25786a1c6920f51d78ae66ba94bca3e74d284c8dd2b65b479bea2bc1a07b4f0"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "8bad576aade810240036964397292f9ccfe83be14801ab9f162ba8577ef04cb3"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1598 records.",
+    "website": "Normalized 1614 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 5 survey labels, raising that workspace from 115 of 131 to 120 of 131 and overall workspace-aware coverage from 415 to 420 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 11 uncovered labeled results in the COM/tope, antipodal, Lawrence, and compression clusters.",
+    "Open recognition and regularity questions remain prose in the survey under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

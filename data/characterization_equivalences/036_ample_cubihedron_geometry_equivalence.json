@@ -1,0 +1,19 @@
+{
+  "id": 36,
+  "short_name": "ample_cubihedron_geometry_equivalence",
+  "name": "Ample Cubihedron Geometry Equivalence",
+  "class_id": "#classes/ample",
+  "characterization_ids": [
+    "#characterizations/shattering_equals_strong_shattering",
+    "#characterizations/weakly_convex_cubihedron",
+    "#characterizations/isometric_cube_gated_cubihedron_faces",
+    "#characterizations/weakly_convex_orthant_trace"
+  ],
+  "hypotheses": "Finite sign family $L\\subseteq\\{-1,1\\}^X$.",
+  "statement": "Ampleness, weak convexity of the cubihedron, isometry of the one-inclusion graph together with gated cubihedron faces, and realization as the orthant trace of a weakly convex set are equivalent.",
+  "status": "established",
+  "proof": "The cubihedron decomposes into the coordinate cubes supported by strongly shattered sets. Ampleness fills every shattered trace by such a cube, which makes coordinatewise $\\ell_1$ geodesics intrinsic and its faces gated. Conversely, weak convexity and face gating prevent a shattered trace from lacking its supporting cube, recovering equality of shattered and strongly shattered sets. The orthant construction realizes the same cubical complex, while taking the cubihedron itself supplies the reverse realization.",
+  "references": "\\cite{BandeltChepoiDressKoolen26geometry}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:ample-cubihedron",
+  "comments": "Weak convexity is Menger convexity plus completeness in the ambient $\\ell_1$ metric; ordinary convexity is stronger and is not asserted."
+}
