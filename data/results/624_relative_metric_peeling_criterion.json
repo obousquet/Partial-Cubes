@@ -1,0 +1,19 @@
+{
+  "id": 624,
+  "short_name": "relative_metric_peeling_criterion",
+  "name": "Metric Criterion for Peeling to a Retained Ample Target",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let nonempty $A\\subseteq H\\subseteq Q_F$ be ample and list $H\\setminus A$ as $x_1,\\ldots,x_k$. For a distance-two pair $u,v$ in $H$, let $C_H(u,v)$ be its common neighbours. The following are equivalent: the displayed deletions are a relative corner peeling from $H$ to $A$; every prefix-deleted family is isometric in the original concept graph of $H$; and for every distance-two pair, either $C_H(u,v)$ meets $A$, or some endpoint $z\\in\\{u,v\\}\\setminus A$ precedes some $w\\in C_H(u,v)$ in the deletion list. The target $A$ need not itself be corner-peelable. A complete peeling of $H$ with $A$ as its final block exists exactly when such a relative peeling exists and $A$ is corner-peelable.",
+  "status": "established",
+  "proof": "A relative corner peeling leaves ample and hence isometric residual families. Conversely, reverse an isometric residual sequence from the ample target $A$; the one-concept metric extension criterion makes each enlarged family ample and the new concept a corner. For the static original-graph condition, if all residuals are isometric and a distance-two pair has no retained common neighbour, immediately before its first endpoint is deleted some common neighbour must survive later. Conversely, at the first deletion that fails to preserve distances there are two nonadjacent surviving neighbours of the deleted vertex with no surviving common neighbour; all their original common neighbours have already been deleted, contradicting the stated precedence alternative. Concatenating a relative peeling with a peeling of $A$ proves the final-block assertion, and any complete peeling splits into those two parts.",
+  "references": "\\cite{CoudertDucoffeNisseSoto18,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-relative-metric-peeling",
+  "comments": "Ampleness of the retained target is essential: deleting $000,111$ from $Q_3$ leaves isometric residuals but the six-cycle target is nonample and the second deletion is not a corner deletion. Peelability of the target is not essential for the relative part: the certified 292-concept extension peels relatively by deleting its added concept to a cornerless ample 291-concept target. The exhaustive replay is archived with migration Batch 162."
+}
