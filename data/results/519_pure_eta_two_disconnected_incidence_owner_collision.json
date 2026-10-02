@@ -1,0 +1,14 @@
+{
+  "id": 519,
+  "short_name": "pure_eta_two_disconnected_incidence_owner_collision",
+  "name": "Disconnected Pure Two-Apex Incidence Has One Path Falsifier",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "In the same two-decomposition pure $\\eta=2$ setting, suppose the four terminal supports form two disjoint two-edge paths. For each decomposition $j$, let $O_j$ contain every word obtained by correcting the unique passive coordinate of a corner at passive distance one from its centre. Then either $O_0\\cap O_1\\ne\\varnothing$ or $(O_0\\cup O_1)\\cap B\\ne\\varnothing$, or $G(B)=P_9$. In the path exception, up to reversal and swapping decompositions, the counted spines are $v_0\\cdots v_6$ and $v_2\\cdots v_8$, centred at $v_3,v_5$, and their inner arms share the collar support $\\{x_4,x_5\\}$.",
+  "status": "established",
+  "proof": "Continue the exact normal-form audit through the 42 labelled $2P_3$ comparisons. For every distance-one corner, compute its forced correcting word. Thirty-six comparisons have a word forced by both decompositions or already present in $B$, giving 20 embedded types. The remaining six labelled comparisons, or three embedded types, are all the stated $P_9$ role-reversal form. Reading the two overlapping $P_7$ direction sequences shows that the right inner arm of the first and left inner arm of the second both have collar pair $\\{x_4,x_5\\}$; no further comparison remains.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-pure-eta-two-disconnected-incidence-owner-collision; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_pure_eta_two_connected_incidence.py",
+  "comments": "This result shares the database-owned replay report and mathematical-record digest e12c192cb3e1ef387bc42655cd7486ad58b9eee3fd3085c32d3b75fcca3252e8 with the connected-incidence audit."
+}

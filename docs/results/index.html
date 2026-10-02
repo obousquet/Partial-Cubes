@@ -8613,6 +8613,85 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-518" style="position:relative;">
+
+        <h3><a href="results/pure_eta_two_connected_incidence_distant_corner.html" class="table-title-link">Connected Pure Two-Apex Incidence Exposes a Distant Corner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Connected Pure Two-Apex Incidence Exposes a Distant Corner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample family $B$ of order nine have two pure $\eta=2$ two-apex decompositions. For decomposition $j$, let $U_j$ be its two apices, $Z_j$ its passive directions, $c_j$ the centre of its counted $P_7$, and $\mathcal P_j$ its two terminal supports. If the four supports are distinct, have no matching of order three, and form a connected support graph, then for some $j$ an apex $v\in U_j$ is a corner of $B$ at passive distance two from $c_j$: $d_{Q_{Z_j}}(v|_{Z_j},c_j|_{Z_j})=2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Adjoin two arbitrary vertices to a fixed labelled $P_7$, enumerate the $2^7 2^8=32768$ neighbourhood choices, and retain exactly the isometric cube families satisfying Sandwich equality. Rediscover every pure decomposition, its terminal supports, and its corners by maximal-cube containment rather than degree. The audit retains 317 ample completions with the distinguished spine. Among comparisons without a three-edge matching it finds 52 with support graph $C_4$, 32 with $P_5$, and 42 with $2P_3$; the numbers lacking the asserted distant corner are respectively $0,0,42$. The connected cases are exactly $C_4$ and $P_5$, proving the claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-pure-eta-two-connected-incidence-distant-corner; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_pure_eta_two_connected_incidence.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The database-owned replay report is migration/certificates/129_dismantlable_ample_two_apex_profiles/damp_pure_eta_two_connected_incidence.json. Its mathematical-record digest is e12c192cb3e1ef387bc42655cd7486ad58b9eee3fd3085c32d3b75fcca3252e8.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-519" style="position:relative;">
+
+        <h3><a href="results/pure_eta_two_disconnected_incidence_owner_collision.html" class="table-title-link">Disconnected Pure Two-Apex Incidence Has One Path Falsifier</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Disconnected Pure Two-Apex Incidence Has One Path Falsifier</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In the same two-decomposition pure $\eta=2$ setting, suppose the four terminal supports form two disjoint two-edge paths. For each decomposition $j$, let $O_j$ contain every word obtained by correcting the unique passive coordinate of a corner at passive distance one from its centre. Then either $O_0\cap O_1\ne\varnothing$ or $(O_0\cup O_1)\cap B\ne\varnothing$, or $G(B)=P_9$. In the path exception, up to reversal and swapping decompositions, the counted spines are $v_0\cdots v_6$ and $v_2\cdots v_8$, centred at $v_3,v_5$, and their inner arms share the collar support $\{x_4,x_5\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Continue the exact normal-form audit through the 42 labelled $2P_3$ comparisons. For every distance-one corner, compute its forced correcting word. Thirty-six comparisons have a word forced by both decompositions or already present in $B$, giving 20 embedded types. The remaining six labelled comparisons, or three embedded types, are all the stated $P_9$ role-reversal form. Reading the two overlapping $P_7$ direction sequences shows that the right inner arm of the first and left inner arm of the second both have collar pair $\{x_4,x_5\}$; no further comparison remains.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-pure-eta-two-disconnected-incidence-owner-collision; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_pure_eta_two_connected_incidence.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This result shares the database-owned replay report and mathematical-record digest e12c192cb3e1ef387bc42655cd7486ad58b9eee3fd3085c32d3b75fcca3252e8 with the connected-incidence audit.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-520" style="position:relative;">
+
+        <h3><a href="results/pure_eta_two_opposite_wings_three_independent_pairs.html" class="table-title-link">Two Pure Two-Unit Wings Force Three Independent Pairs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Pure Two-Unit Wings Force Three Independent Pairs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$, and suppose both terminal wings have the pure $\eta=2$ two-apex form. Then three of their four terminal acquired direction pairs are pairwise disjoint.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two systems are internally disjoint and cannot repeat a pair across wings by shadow intersection. Without a matching of order three, their support graph is $C_4$, $P_5$, or $2P_3$. In the connected cases, the normal-form theorem produces an apex corner at passive distance two, contradicting passive radius-one shielding and cornerlessness. In the disconnected case, either a forced distance-one owner lies in $B$ or is forced into both disjoint exclusive sets, again impossible; or $B=P_9$ and both wings acquire the common collar pair $\{x_4,x_5\}$ although the tree $B$ shatters no pair, contradicting shadow intersection. Thus the matching must exist.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-pure-eta-two-opposite-wings-three-independent-pairs</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-521" style="position:relative;">
+
+        <h3><a href="results/one_pure_eta_two_wing_resolves_opposite_profiles.html" class="table-title-link">One Pure Two-Apex Wing Resolves the Sharp, Uncounted, and Two-Unit Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One Pure Two-Apex Wing Resolves the Sharp, Uncounted, and Two-Unit Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$ of order at most nine. If one wing has the pure $\eta=2$ two-apex form and the opposite wing is sharp, has the uncounted $\eta=1$ one-unit form, or has any feasible two-unit profile, then their acquired supports contain three pairwise disjoint direction pairs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>An exact-profile audit constructs all two-vertex completions of the pure $P_7$ spine, retains 158 embedded ample overlaps, rediscovers each pure decomposition, and recognizes the opposite profiles from their structural normal forms and the exact excess identity. Every one of 2268 comparisons ends in a repeated acquired terminal pair, a terminal matching of order three, a passive-distance-two corner, a forced-owner conflict, a repeated acquired collar, or a matching after collars are added. Repetitions contradict shadow intersection, distant corners contradict radius-one shielding, and owner conflicts force a word into $B$ or both disjoint exclusive sets. The two matching outcomes give the conclusion directly.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-one-pure-eta-two-wing-resolves-opposite-profiles; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_pure_eta_two_mixed_profiles.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>With marker multiplicities retained, the audit classifies sharp comparisons as 16 repeated-terminal and 3 terminal-matching outcomes; eta-one comparisons as 172 repeated-terminal, 42 terminal-matching, and 2 distant-corner outcomes; and feasible two-unit comparisons as 1188 repeated-terminal, 592 terminal-matching, 118 distant-corner, 95 owner-conflict, 24 repeated-collar, and 16 collar-matching outcomes. The database-owned report has mathematical-record digest f6fed025e0c67f1789358d287e116bc8d46cfbdca691c78b340a446cfb312ffd.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-522" style="position:relative;">
+
+        <h3><a href="results/two_unit_wing_resolves_all_opposite_profiles.html" class="table-title-link">A Two-Unit Wing Resolves Every Opposite Profile through Two Units</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Two-Unit Wing Resolves Every Opposite Profile through Two Units</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$ of order at most nine. If one wing has two-cycle holonomy and excess two while the opposite wing has two-cycle holonomy and excess at most two, then their acquired supports contain three pairwise disjoint direction pairs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact excess classification leaves five feasible two-unit normal forms. Constructing these from a pure $P_7$ completion or wedges of rooted ample gates of orders at most five yields 148 distinct embedded ample overlaps and 960 exact two-unit markers. The audit compares distinct markers against every opposite two-unit, sharp, eta-one, and pair-rich extra-owner marker, while coincident markers immediately repeat both terminal supports and the rooted-claw theorem handles all pair-poor extra-owner markers. All 8395 distinct comparisons end in a repeated acquired support, passive-shielding contradiction, forced-owner conflict, direct terminal matching, or collar-augmented matching; each outcome respectively contradicts the structural identities or yields three independent acquired pairs.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-unit-wing-resolves-all-opposite-profiles; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_two_unit_all_opposite_profiles.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>For distinct markers the outcome counts are: opposite two-unit 3131 repeated-terminal, 1930 terminal-matching, 117 distant-corner, 347 owner-conflict, 112 repeated-collar, 238 collar-matching; sharp 121,49,0,0,0,7; eta-one 791,260,12,66,0,0; pair-rich extra-owner 718,334,0,94,0,68. The database-owned report has mathematical-record digest 272d55715bd51f23c8956fb0578ccc84c804eb5a54dd4995ca0d9e9484de1b81.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

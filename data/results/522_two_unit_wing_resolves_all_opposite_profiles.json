@@ -1,0 +1,14 @@
+{
+  "id": 522,
+  "short_name": "two_unit_wing_resolves_all_opposite_profiles",
+  "name": "A Two-Unit Wing Resolves Every Opposite Profile through Two Units",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let a cornerless ample two-layer family have overlap $B$ of order at most nine. If one wing has two-cycle holonomy and excess two while the opposite wing has two-cycle holonomy and excess at most two, then their acquired supports contain three pairwise disjoint direction pairs.",
+  "status": "established",
+  "proof": "The exact excess classification leaves five feasible two-unit normal forms. Constructing these from a pure $P_7$ completion or wedges of rooted ample gates of orders at most five yields 148 distinct embedded ample overlaps and 960 exact two-unit markers. The audit compares distinct markers against every opposite two-unit, sharp, eta-one, and pair-rich extra-owner marker, while coincident markers immediately repeat both terminal supports and the rooted-claw theorem handles all pair-poor extra-owner markers. All 8395 distinct comparisons end in a repeated acquired support, passive-shielding contradiction, forced-owner conflict, direct terminal matching, or collar-augmented matching; each outcome respectively contradicts the structural identities or yields three independent acquired pairs.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-unit-wing-resolves-all-opposite-profiles; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_two_unit_all_opposite_profiles.py",
+  "comments": "For distinct markers the outcome counts are: opposite two-unit 3131 repeated-terminal, 1930 terminal-matching, 117 distant-corner, 347 owner-conflict, 112 repeated-collar, 238 collar-matching; sharp 121,49,0,0,0,7; eta-one 791,260,12,66,0,0; pair-rich extra-owner 718,334,0,94,0,68. The database-owned report has mathematical-record digest 272d55715bd51f23c8956fb0578ccc84c804eb5a54dd4995ca0d9e9484de1b81."
+}

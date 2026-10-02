@@ -1,0 +1,14 @@
+{
+  "id": 518,
+  "short_name": "pure_eta_two_connected_incidence_distant_corner",
+  "name": "Connected Pure Two-Apex Incidence Exposes a Distant Corner",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let an ample family $B$ of order nine have two pure $\\eta=2$ two-apex decompositions. For decomposition $j$, let $U_j$ be its two apices, $Z_j$ its passive directions, $c_j$ the centre of its counted $P_7$, and $\\mathcal P_j$ its two terminal supports. If the four supports are distinct, have no matching of order three, and form a connected support graph, then for some $j$ an apex $v\\in U_j$ is a corner of $B$ at passive distance two from $c_j$: $d_{Q_{Z_j}}(v|_{Z_j},c_j|_{Z_j})=2$.",
+  "status": "established",
+  "proof": "Adjoin two arbitrary vertices to a fixed labelled $P_7$, enumerate the $2^7 2^8=32768$ neighbourhood choices, and retain exactly the isometric cube families satisfying Sandwich equality. Rediscover every pure decomposition, its terminal supports, and its corners by maximal-cube containment rather than degree. The audit retains 317 ample completions with the distinguished spine. Among comparisons without a three-edge matching it finds 52 with support graph $C_4$, 32 with $P_5$, and 42 with $2P_3$; the numbers lacking the asserted distant corner are respectively $0,0,42$. The connected cases are exactly $C_4$ and $P_5$, proving the claim.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-pure-eta-two-connected-incidence-distant-corner; database certificate migration/certificates/129_dismantlable_ample_two_apex_profiles/verify_damp_pure_eta_two_connected_incidence.py",
+  "comments": "The database-owned replay report is migration/certificates/129_dismantlable_ample_two_apex_profiles/damp_pure_eta_two_connected_incidence.json. Its mathematical-record digest is e12c192cb3e1ef387bc42655cd7486ad58b9eee3fd3085c32d3b75fcca3252e8."
+}
