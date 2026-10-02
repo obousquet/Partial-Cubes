@@ -1,0 +1,18 @@
+{
+  "id": 621,
+  "short_name": "contraction_facet_protector_transport",
+  "name": "Contraction Transports Facet Protectors by Edge Owners",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H\\subseteq Q_{F\\cup\\{e\\}}$ be ample, let $K=\\pi_eH$, and let $L_e(z)\\subseteq\\{0,1\\}$ be the layers in which $z\\in K$ lifts to $H$. Every edge $zz^{\\{q\\}}$ of $K$ has a nonempty owner set $\\Omega_e(z,q)=L_e(z)\\cap L_e(z^{\\{q\\}})$. Hence, if a latent block $(y,S)$ of $K$ has antipode $z=y^S$, its facet-protector state $q\\in S$ lifts in every layer in $\\Omega_e(z,q)$; contraction preserves $q$ and adds only this one- or two-element owner set. In a switched punctured-expansion profile $P_S=D\\mathbin{\\dot\\cup}Z_0\\mathbin{\\dot\\cup}Z_1$, an edge has both owners exactly when both endpoints lie in $D$; otherwise its non-$D$ endpoints lie in one monochromatic $Z_b$ and its owner set is $\\{b\\}$. Thus the separator and component colors recover every transported protector state without a peeling order.",
+  "status": "established",
+  "proof": "If the endpoint lift sets of a projected edge were disjoint, they would be opposite singletons. The two present lifts would then be at Hamming distance two while both possible intermediate cube vertices were absent, contradicting isometry of the ample family. Thus every projected edge has an owner. A facet protector is exactly the edge from a latent block's antipode to the corresponding support neighbour, so its lifting rule follows. In a switched profile, vertices in $D$ have both lifts and vertices in $Z_b$ only their layer-$b$ lift. The canonical profile theorem forbids edges between $Z_0$ and $Z_1$; intersecting endpoint lift sets gives the stated owner formula.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-latent-facet-protector-transport",
+  "comments": "Protector transport is canonical and coordinate preserving. Global compatibility of owner choices and escape arcs remains a separate signed-holonomy problem."
+}
