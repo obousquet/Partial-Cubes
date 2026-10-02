@@ -11555,6 +11555,25 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-687" style="position:relative;">
+
+        <h3><a href="results/terminal_edge_amalgam_obstructions.html" class="table-title-link">Terminal Obstructions from an Edge Amalgam</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Obstructions from an Edge Amalgam</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C\subseteq Q_F$ be irredundantly embedded, two-connected, ample, corner-peelable, and have $0$ as its only corner. Fix an edge $D=\{0,0^{\{e\}}\}$. Assume that for every $f\ne e$, the zero restriction and contraction of $C$ peel to their copies of $D$; all three elementary images in coordinate $e$ peel to the singleton image of $D$; and distinct tips $a,b$ give ample extensions $C\cup\{a\},C\cup\{b\}$ that peel to $D$ and acquire distinct supports. Take two copies $C_1,C_2$ whose coordinate sets meet only in $e$ and whose copies of $D$ are identified. With new coordinates $p,q$, put $X=C_2\cup(C_1\times(Q_{\{p,q\}}\setminus\{00\}))\cup\{(a_1,10),(b_1,01)\}$, with $C_2$ in the $00$ section. Then $X$ is a two-connected, corner-descent-terminal ample forbidden pc-minor of order $4|C|+2$ and dimension $2|F|+1$, and its only corners are $(a_1,10)$ and $(b_1,01)$. If $|F|\ge4$ and $e$ lies in at least three minimal nonfaces of $\operatorname{Sh}(C)$, no coordinate of $X$ is balanced, so $X$ has no successful common-seed layer set even when cornered recovered seeds are allowed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Shadow decomposition first shows that the punctured three-layer piece is ample; its union with the second copy along $D$ remains ample because mixed supports across the exclusive coordinate blocks are not shattered. The prescribed relative orders combine with product peelings to peel every restriction and contraction of $X$. Away from the two repair tips, the unique-corner property of $C$, the three-layer product, and the two exclusive blocks prevent every candidate corner cube; the two tips remain corners even after either is removed. Thus corner deletion stops at a nonempty cornerless family, so $X$ is nonpeelable, while the elementary-minor peelings make it forbidden. After either tip deletion, one restriction and one contraction expose the cornerless amalgam $C_1\cup_D C_2$ as a proper nonpeelable minor, proving terminality. The punctured product and attachment of the two pieces along an edge preserve two-connectivity. Under the extra hypotheses, every coordinate belongs to at least three minimal nonfaces: exclusive coordinates lie in at least three missing cross-pairs, while the common coordinate retains three minimal nonfaces from $C_2$. Hence no coordinate has the two-clause profile required for a successful recovered layer.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-edge-amalgam</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/terminal_edge_amalgam_obstruction_1158.html">Terminal Edge-Amalgam Obstruction of Order 1158</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The construction gives two-connected terminal graph three-cores for which layer recovery does not exist. It assumes relative peeling certificates for the input family and its two repairs; intrinsic admissibility of those inputs remains a separate problem.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
