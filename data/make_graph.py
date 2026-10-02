@@ -241,6 +241,10 @@ def _legend(include_closure=False):
             "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "peripheries": 2,
         },
         {
+            "type": "node", "label": "not PC", "text": "Single outline: not PC-closed",
+            "shape": "box", "color": "#334155", "fillcolor": "#F8FAFC", "peripheries": 1,
+        },
+        {
             "type": "node", "label": "P?", "text": "Hexagonal node: P closure open, unassessed, or N/A",
             "shape": "hexagon", "color": "#334155", "fillcolor": "#F8FAFC",
         },
