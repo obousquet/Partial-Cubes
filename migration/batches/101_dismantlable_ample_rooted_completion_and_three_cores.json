@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "batch_id": "101_dismantlable_ample_rooted_completion_and_three_cores",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate exact rooted two-block completion, cut-vertex corner descent, periphery-freeness of the obstruction basis, canonical graph three-cores, the shattered-support corner-forcing lemma, and the fixed same-shadow three-corner obstruction.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-rooted-downset-completion",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-rooted-block-corner-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-periphery-free",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-core",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-shadow-forced-corners",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-three-core-shadow-forces-corners"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "All six theorem blocks come from the reviewed supplemental source overlay created after the main freeze.",
+    "outcome": "Every statement-plus-proof block is byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "thm:damp-rooted-downset-completion": "6b839ae6973c3bb3c3b626ddccd7312be0bdac55ad63babcfe0a810136a31d5c",
+      "cor:damp-rooted-block-corner-descent": "da0b2ff76a9d00a67ce01575dfde92bb30e24397bb4bf84eaf1a0113743c0e11",
+      "prop:damp-periphery-free": "9256ec106e1e6d9e5947c12681c7719179dd497820222b3d70502ad61e4ce868",
+      "thm:damp-three-core": "73df514c3d01fcd524f57f4a55dcb189381cf64a2784c1b5de1c69bf491b11aa",
+      "lem:damp-shadow-forced-corners": "a43b5fc5a65dbc8608a18bf264f6b3c947e92738cec67b73e1aa95321a6c02b4",
+      "cor:damp-three-core-shadow-forces-corners": "dff2ce12efd7b2a8542e7228347109739692b996bf4a92ba707b823736c0890b"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized shattered-complex invariant, rooted completion and descent theorems, periphery-freeness, canonical three-core theorem, shadow corner-forcing results, concise proofs, and source locators. The manuscript retains full examples, explicit checks, computational files, sharpness narrative, and the open three-core classification questions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact dirty source bytes, is checked by migration-check, and every promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/invariants/062_shattered_complex.json",
+      "sha256": "26893f50699302b8bcc0d4b754d2bbce63bd06afcca6d54d02e6f95119cb336a"
+    },
+    {
+      "path": "data/results/371_rooted_two_block_completion.json",
+      "sha256": "a13551e08045b29da2fe16ea23d9043b92ed918f5ae67a90e8d447b66236a492"
+    },
+    {
+      "path": "data/results/372_cut_vertex_corner_descent.json",
+      "sha256": "7e9263f2d670944547101ba1475c50409053104093a37ffc3eec4038d6ce2cb8"
+    },
+    {
+      "path": "data/results/373_dismantlable_obstructions_periphery_free.json",
+      "sha256": "1dfa7a486fe757272e2d4ed5856a4f24d867cb11f31b4a590434eaabd414b077"
+    },
+    {
+      "path": "data/results/374_canonical_three_core_of_ample_obstruction.json",
+      "sha256": "5c4092815411e17393e61069fd8d5f891b21b964ee47c3212ecbf4a4df71ea2d"
+    },
+    {
+      "path": "data/results/375_shadow_pattern_forces_corners.json",
+      "sha256": "9106fa9621f2db56d98a27c1c31c6c113704f82b7abff0759fd5692774d1653f"
+    },
+    {
+      "path": "data/results/376_three_core_shadow_forces_corners.json",
+      "sha256": "ce348c05decf92668a5e13cd3673f32f5a17585f74f11154bc41ef606c202b52"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "3f827d0920c050370015fabfb65b96584a90dd296a283fcc9a521a1a51313edb"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "666ad86910933be0c26d0b2368e626a3bf220a9222f711dc53e71a5e9218418f"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1665 records.",
+    "website": "Normalized 1681 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 6 additional dismantlable-ample labels, raising that workspace from 41 to 47 of 683 and overall coverage from 472 to 478 of 1114 database-owned labels.",
+    "source_integrity": "The 93-file main snapshot and one-file supplemental reviewed snapshot are recoverable."
+  },
+  "deferred": [
+    "The remaining 636 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Conjectures, problems, and the open intrinsic classification of graph three-cores remain prose-owned in LaTeX.",
+    "Explicit computational certificates remain preserved in the scholarly source tree and are summarized, not duplicated, in database records."
+  ]
+}

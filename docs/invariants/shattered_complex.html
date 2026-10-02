@@ -75,30 +75,29 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-61" style="position:relative;">
+    <div class="table-card" id="math-62" style="position:relative;">
 
-        <h3><a href="invariants/edge_peeling_profile.html" class="table-title-link">Marked-Edge Peeling Profile</a></h3>
+        <h3><a href="invariants/shattered_complex.html" class="table-title-link">Shattered Complex</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Marked-Edge Peeling Profile</p>
+        <p><strong>Name: </strong>Shattered Complex</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)">
-            \[\pi_D(A)=(r_D,t_u,t_v,\ell_u,\ell_v)\]
+        <div class="latex-equation" data-latex="\operatorname{Sh}(C)">
+            \[\operatorname{Sh}(C)\]
         </div>
     </div>
 
-<strong>Definition:</strong><div class="text-field"><p>For an ample family $A$ with ordered marked edge $D=\{u,v\}$ of direction $e$, the five Boolean entries quantify over acyclic unique-sink orientations. The retention entry $r_D$ is one when some out-map satisfies $r(u),r(v)\subseteq\{e\}$. The sink entry $t_s$ is one when some out-map has $r(s)=\varnothing$. The leaf-exit entry $\ell_s$ is one when some out-map has $r(s)=\{e\}$. Equivalently, these mean respectively peeling to $D$, peeling to $s$, and a complete peeling in which $s$ is the first endpoint deleted and is then a leaf adjacent to the other endpoint.</p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a set family $C\subseteq\{0,1\}^F$, the shattered complex is the collection of coordinate sets $I\subseteq F$ for which every binary pattern on $I$ occurs as the restriction of some member of $C$. It is a simplicial complex because every subset of a shattered set is shattered.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Codomain: </strong>The Boolean cube $\{0,1\}^5$</p>
-<strong>Parameters:</strong><div class="text-field"><p>An ordered marked edge $D=(u,v)$; reversing its order swaps the two sink entries and the two leaf-exit entries.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>The common edge direction is denoted $e$ and the entries record existence, not a chosen orientation.</p></div>
+<p><strong>Codomain: </strong>Finite simplicial complexes on the active coordinate set</p>
+<strong>Parameters:</strong><div class="text-field"><p>A displayed hypercube embedding, considered up to coordinate permutation and coordinate sign changes.</p></div>
+<strong>Normalization:</strong><div class="text-field"><p>Inactive coordinates may be retained in the ground set but occur only as isolated vertices outside the complex; comparisons in this database normally use active coordinates.</p></div>
 <p><strong>Category:</strong> Combinatorial</p>
 <p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The profile is invariant under isomorphisms preserving the ordered marked edge. Intrinsic structural tests for which profiles are attainable remain open in the manuscript.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#def:damp-edge-peeling-profile</p></div>
+<strong>Comments:</strong><div class="text-field"><p>For an ample family, the Sandwich equality gives |C|=|Sh(C)|. Its one-skeleton is the crossing graph of the associated partial cube, while higher faces retain strictly more cubical information.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-shadow-forced-corners</p></div>
 <div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/edge_peeling_gluing_criterion.html'>Exact Peeling Criterion for Gluing along an Edge</a></li><li><a href='results/edge_context_type_algebra.html'>Six Contexts Determine Every Edge-Gluing Type</a></li><li><a href='results/separating_edge_obstruction_classification.html'>Exact Classification of Obstructions with a Separating Edge</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/edge_boundary_double.html'>Rooted Failure Gives an Edge Compatibility Test and Forbidden Double</a></li><li><a href='results/rooted_prism_edge_context.html'>Rooted Factors Are Exactly Minimal Zero-Context Prisms</a></li><li><a href='results/edge_profile_minor_transport.html'>Marked-Edge Peeling Conditions Survive Edge-Retaining pc-Minors</a></li><li><a href='results/three_piece_edge_obstruction_existence.html'>Exact Existence Criterion for Three-Piece Separating-Edge Obstructions</a></li><li><a href='results/repair_face_rooted_factor.html'>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></li><li><a href='results/three_piece_edge_obstruction_witness.html'>A Certified Three-Piece Separating-Edge Obstruction</a></li><li><a href='results/peripheral_third_piece_obstructions.html'>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></li><li><a href='results/rooted_two_block_completion.html'>Rooted Ample Completion Transfers Exactly between Two Blocks</a></li></ul></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/canonical_three_core_of_ample_obstruction.html'>Every Ample Obstruction Has a Canonical Graph Three-Core</a></li><li><a href='results/shadow_pattern_forces_corners.html'>A Shattered-Support Pattern Forces Exponentially Many Corners</a></li><li><a href='results/three_core_shadow_forces_corners.html'>A Forbidden Three-Core Whose Shattered Complex Forces Corners</a></li></ul></p></div>
 
         </div>
     </div>

@@ -1,0 +1,22 @@
+{
+  "id": 371,
+  "short_name": "rooted_two_block_completion",
+  "name": "Rooted Ample Completion Transfers Exactly between Two Blocks",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $Y\\subseteq Q_F$ and $C\\subseteq Q_G$ be irredundantly embedded ample families on disjoint coordinates, both containing $0$, let $v$ be a neighbor of $0$ in $Y$, and let $K\\subseteq C$ be a nonempty ample subfamily containing $0$ that peels to $0$. Put $B=C\\cup(v+K)$ and $X=Y\\cup B$, with common edge $D=\\{0,v\\}$. Then $X$ is ample and is a pc-minimal obstruction to dismantlable ampleness exactly when $(Y,0)$ and $(C,0)$ are rooted factors. The parameters are uniquely recovered from $X$ by its two coordinate blocks and upper site. Under these equivalent conditions, $X$ is two-connected exactly when $|K|>1$, and $|X|=|Y|+|C|+|K|-2$. If both factors have minimum degree at least three and $K$ is a cube of dimension at least two, then $X$ also has minimum degree at least three and is its own graph three-core.",
+  "status": "established",
+  "proof": "The family $B$ is the peripheral expansion of $C$ at site $K$, and an edge-amalgam shadow count proves ampleness of $X$. Clearing the upper site reduces $X$ to the one-point union $Y\\vee C$, giving the exact peeling identity: $X$ peels precisely when both factors peel ordinarily and at least one peels to the root. When neither root is attainable, $B$ has profile $(0,0,0,0,1)$ and is incompatible with $Y$, proving nonpeelability. Applying each elementary pc-minor to this identity shows that forbiddenness is equivalent to rooted minimality of both inputs; opposite-side restrictions are handled by peripheral-expansion closure. The coordinate blocks and site are direct intersections of $X$, proving recovery. A singleton site leaves the common root as a cut vertex, while a larger connected upper site supplies two attachments through every deletion, proving the connectivity criterion. The degree and order formulas follow directly from the construction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-rooted-downset-completion"
+}

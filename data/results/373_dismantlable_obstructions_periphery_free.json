@@ -1,0 +1,18 @@
+{
+  "id": 373,
+  "short_name": "dismantlable_obstructions_periphery_free",
+  "name": "Every Dismantlable-Ample Obstruction Is Periphery-Free",
+  "class_ids": [
+    "#classes/dismantlable_ample",
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Every pc-minimal obstruction to dismantlable ampleness has no peripheral coordinate. Consequently every such obstruction other than the nonample families $Q_n^{--}$ for $n\\ge3$ is ample, periphery-free, and Cartesian-prime.",
+  "status": "established",
+  "proof": "If a coordinate were peripheral, orient it so the obstruction were $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ with $S\\subseteq B$. Its contraction base $B$ and duplicated site $S$ are proper pc-minors and hence dismantlable ample. The exact peripheral-expansion criterion would then make the whole family dismantlable ample, a contradiction. The known nonample obstruction layer and the product-prime lemma give the remaining conclusions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-periphery-free"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 374,
+  "short_name": "canonical_three_core_of_ample_obstruction",
+  "name": "Every Ample Obstruction Has a Canonical Graph Three-Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "In an ample pc-minimal obstruction to dismantlable ampleness, every degree-two vertex is a corner. Repeatedly deleting vertices of degree below three, in any order, performs only degree-two corner deletions and ends at a nonempty ample pc-minimal obstruction $K$. This $K$ is the unique largest induced subgraph of minimum degree at least three, independent of all choices. The original family and $K$ have the same active coordinates, the same shattered supports of size at least three, and the same VC dimension. Conversely, the original family is recovered from $K$ by ample one-concept square completions, and every such sequence from any minimum-degree-three ample obstruction preserves obstruction status and has that starting family as its three-core.",
+  "status": "established",
+  "proof": "In any ample family a degree-two vertex is either a corner or a cut vertex: if its two directions realize the opposite trace, ampleness supplies the square; otherwise the two nonempty shores disconnect after deleting the vertex. A cut vertex of an obstruction belongs to two two-connected rooted factors and has degree at least four. Periphery-freeness excludes leaves, so every low-degree deletion is a degree-two corner. Low-degree corner descent preserves pc-minimal obstruction status until minimum degree three is reached. Any induced subgraph of minimum degree three survives every such process, proving uniqueness and maximality. A degree-two corner deletion removes exactly its two-support from the shadow, preserving active coordinates and all supports of size at least three; VC dimension is at least three and remains fixed. Reversing the deletions gives square completions, whose local extension and rank-two invariance theorems preserve ampleness, nonpeelability, and minor minimality.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-core"
+}

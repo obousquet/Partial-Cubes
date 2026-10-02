@@ -1,0 +1,19 @@
+{
+  "id": 372,
+  "short_name": "cut_vertex_corner_descent",
+  "name": "Corner Descent Is Exact in the Cut-Vertex Obstruction Branch",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/one_point_amalgam",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let an ample pc-minimal obstruction with cut vertex be the one-point amalgam $X=A_1\\vee A_2$ at root $a$. For any nonroot corner $x$ of one factor, $X\\setminus\\{x\\}$ is again a pc-minimal obstruction exactly when the rooted pair $(A_i\\setminus\\{x\\},a)$ remains a rooted factor. Consequently a cornered obstruction in this branch is terminal under obstruction-preserving corner deletion exactly when one rooted factor has a nonroot corner but none of its nonroot corner deletions remains a rooted factor.",
+  "status": "established",
+  "proof": "The corners of the amalgam are exactly the nonroot corners of its two factors: the root has incident directions in both blocks without the mixed square. Deleting such a corner preserves ampleness and the cut vertex. The cut-vertex classification then makes obstruction status equivalent to the rooted-factor conditions on the changed branch; failure to peel to the root is automatic, since otherwise prefixing the deleted corner would root-peel the original factor. For terminality, one direction reads this criterion inside a terminal obstruction. Conversely, glue a rooted factor with the stated deletion property to a known rooted factor whose only corner is its root; every corner then belongs to the first branch and every deletion fails the criterion.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-rooted-block-corner-descent"
+}

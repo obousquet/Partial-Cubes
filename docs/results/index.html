@@ -6210,6 +6210,104 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-371" style="position:relative;">
+
+        <h3><a href="results/rooted_two_block_completion.html" class="table-title-link">Rooted Ample Completion Transfers Exactly between Two Blocks</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Ample Completion Transfers Exactly between Two Blocks</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $Y\subseteq Q_F$ and $C\subseteq Q_G$ be irredundantly embedded ample families on disjoint coordinates, both containing $0$, let $v$ be a neighbor of $0$ in $Y$, and let $K\subseteq C$ be a nonempty ample subfamily containing $0$ that peels to $0$. Put $B=C\cup(v+K)$ and $X=Y\cup B$, with common edge $D=\{0,v\}$. Then $X$ is ample and is a pc-minimal obstruction to dismantlable ampleness exactly when $(Y,0)$ and $(C,0)$ are rooted factors. The parameters are uniquely recovered from $X$ by its two coordinate blocks and upper site. Under these equivalent conditions, $X$ is two-connected exactly when $|K|>1$, and $|X|=|Y|+|C|+|K|-2$. If both factors have minimum degree at least three and $K$ is a cube of dimension at least two, then $X$ also has minimum degree at least three and is its own graph three-core.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The family $B$ is the peripheral expansion of $C$ at site $K$, and an edge-amalgam shadow count proves ampleness of $X$. Clearing the upper site reduces $X$ to the one-point union $Y\vee C$, giving the exact peeling identity: $X$ peels precisely when both factors peel ordinarily and at least one peels to the root. When neither root is attainable, $B$ has profile $(0,0,0,0,1)$ and is incompatible with $Y$, proving nonpeelability. Applying each elementary pc-minor to this identity shows that forbiddenness is equivalent to rooted minimality of both inputs; opposite-side restrictions are handled by peripheral-expansion closure. The coordinate blocks and site are direct intersections of $X$, proving recovery. A singleton site leaves the common root as a cut vertex, while a larger connected upper site supplies two attachments through every deletion, proving the connectivity criterion. The degree and order formulas follow directly from the construction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-rooted-downset-completion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-372" style="position:relative;">
+
+        <h3><a href="results/cut_vertex_corner_descent.html" class="table-title-link">Corner Descent Is Exact in the Cut-Vertex Obstruction Branch</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corner Descent Is Exact in the Cut-Vertex Obstruction Branch</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample pc-minimal obstruction with cut vertex be the one-point amalgam $X=A_1\vee A_2$ at root $a$. For any nonroot corner $x$ of one factor, $X\setminus\{x\}$ is again a pc-minimal obstruction exactly when the rooted pair $(A_i\setminus\{x\},a)$ remains a rooted factor. Consequently a cornered obstruction in this branch is terminal under obstruction-preserving corner deletion exactly when one rooted factor has a nonroot corner but none of its nonroot corner deletions remains a rooted factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The corners of the amalgam are exactly the nonroot corners of its two factors: the root has incident directions in both blocks without the mixed square. Deleting such a corner preserves ampleness and the cut vertex. The cut-vertex classification then makes obstruction status equivalent to the rooted-factor conditions on the changed branch; failure to peel to the root is automatic, since otherwise prefixing the deleted corner would root-peel the original factor. For terminality, one direction reads this criterion inside a terminal obstruction. Conversely, glue a rooted factor with the stated deletion property to a known rooted factor whose only corner is its root; every corner then belongs to the first branch and every deletion fails the criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-rooted-block-corner-descent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-373" style="position:relative;">
+
+        <h3><a href="results/dismantlable_obstructions_periphery_free.html" class="table-title-link">Every Dismantlable-Ample Obstruction Is Periphery-Free</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Dismantlable-Ample Obstruction Is Periphery-Free</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every pc-minimal obstruction to dismantlable ampleness has no peripheral coordinate. Consequently every such obstruction other than the nonample families $Q_n^{--}$ for $n\ge3$ is ample, periphery-free, and Cartesian-prime.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If a coordinate were peripheral, orient it so the obstruction were $(B\times\{0\})\cup(S\times\{1\})$ with $S\subseteq B$. Its contraction base $B$ and duplicated site $S$ are proper pc-minors and hence dismantlable ample. The exact peripheral-expansion criterion would then make the whole family dismantlable ample, a contradiction. The known nonample obstruction layer and the product-prime lemma give the remaining conclusions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-periphery-free</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-374" style="position:relative;">
+
+        <h3><a href="results/canonical_three_core_of_ample_obstruction.html" class="table-title-link">Every Ample Obstruction Has a Canonical Graph Three-Core</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Ample Obstruction Has a Canonical Graph Three-Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In an ample pc-minimal obstruction to dismantlable ampleness, every degree-two vertex is a corner. Repeatedly deleting vertices of degree below three, in any order, performs only degree-two corner deletions and ends at a nonempty ample pc-minimal obstruction $K$. This $K$ is the unique largest induced subgraph of minimum degree at least three, independent of all choices. The original family and $K$ have the same active coordinates, the same shattered supports of size at least three, and the same VC dimension. Conversely, the original family is recovered from $K$ by ample one-concept square completions, and every such sequence from any minimum-degree-three ample obstruction preserves obstruction status and has that starting family as its three-core.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In any ample family a degree-two vertex is either a corner or a cut vertex: if its two directions realize the opposite trace, ampleness supplies the square; otherwise the two nonempty shores disconnect after deleting the vertex. A cut vertex of an obstruction belongs to two two-connected rooted factors and has degree at least four. Periphery-freeness excludes leaves, so every low-degree deletion is a degree-two corner. Low-degree corner descent preserves pc-minimal obstruction status until minimum degree three is reached. Any induced subgraph of minimum degree three survives every such process, proving uniqueness and maximality. A degree-two corner deletion removes exactly its two-support from the shadow, preserving active coordinates and all supports of size at least three; VC dimension is at least three and remains fixed. Reversing the deletions gives square completions, whose local extension and rank-two invariance theorems preserve ampleness, nonpeelability, and minor minimality.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-three-core</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-375" style="position:relative;">
+
+        <h3><a href="results/shadow_pattern_forces_corners.html" class="table-title-link">A Shattered-Support Pattern Forces Exponentially Many Corners</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Shattered-Support Pattern Forces Exponentially Many Corners</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be ample with all coordinates active, and let the graph of shattered pairs have a partition $F=\{e\}\mathbin{\dot\cup}I\mathbin{\dot\cup}A\mathbin{\dot\cup}B$ with $I,A,B$ nonempty. Assume $P=\{e\}\cup I$ is shattered, the induced pair graphs on $A$ and $B$ are connected, no pair $\{a,i\}$ with $a\in A,i\in I$ is shattered, and no pair $\{b,e\}$ with $b\in B$ is shattered. Then the unique cube of support $P$ contains at least $2^{|I|}-1$ corners. The hypotheses depend only on the shattered complex, so the conclusion holds for every ample realization with that same complex.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The missing pairs exclude every shattered support $P\cup\{f\}$ outside $P$, making the ample $P$-cube unique. For any unshattered coordinate pair, all edges in one direction have a fixed value in the other coordinate; otherwise two such edges realize all four traces. Connectivity on $A$ makes every $A$-edge share one trace $\alpha\in Q_I$, and connectivity on $B$ makes every $B$-edge share one value $\beta$ of coordinate $e$. A vertex of the distinguished cube with $x_e\ne\beta$ and $x|_I\ne\alpha$ has no outside neighbor, so all cubes through it lie in the distinguished cube and it is a corner. Exactly $2^{|I|}-1$ cube vertices satisfy both inequalities.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-shadow-forced-corners</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-376" style="position:relative;">
+
+        <h3><a href="results/three_core_shadow_forces_corners.html" class="table-title-link">A Forbidden Three-Core Whose Shattered Complex Forces Corners</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Forbidden Three-Core Whose Shattered Complex Forces Corners</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>There exists a two-connected ample pc-minimal obstruction to dismantlable ampleness with $1162$ concepts, isometric dimension $26$, and minimum degree three such that every ample family on those coordinates with the same shattered complex has at least three corners. Thus preserving the full shattered complex cannot always transform an ample forbidden three-core into a cornerless ample family, even when intermediate families need not remain pc-minimal obstructions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For the fixed $1162$-concept rooted-completion three-core, take $e=10$, $I=\{15,16\}$, the other first-block coordinates as $A$, and the remaining second-block coordinates as $B$. Its duplicated square supplies the cube on $\{10,15,16\}$; its shadow has no pairs between $A$ and $I$ and none between $B$ and $e$, while the pair graphs induced on $A$ and $B$ each contain a spanning star. These are properties of the shattered complex alone. The support-pattern lemma therefore applies to every ample realization with that complex and forces $2^2-1=3$ corners in the unique distinguished cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-three-core-shadow-forces-corners</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

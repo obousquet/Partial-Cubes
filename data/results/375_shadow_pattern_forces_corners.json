@@ -1,0 +1,16 @@
+{
+  "id": 375,
+  "short_name": "shadow_pattern_forces_corners",
+  "name": "A Shattered-Support Pattern Forces Exponentially Many Corners",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H\\subseteq Q_F$ be ample with all coordinates active, and let the graph of shattered pairs have a partition $F=\\{e\\}\\mathbin{\\dot\\cup}I\\mathbin{\\dot\\cup}A\\mathbin{\\dot\\cup}B$ with $I,A,B$ nonempty. Assume $P=\\{e\\}\\cup I$ is shattered, the induced pair graphs on $A$ and $B$ are connected, no pair $\\{a,i\\}$ with $a\\in A,i\\in I$ is shattered, and no pair $\\{b,e\\}$ with $b\\in B$ is shattered. Then the unique cube of support $P$ contains at least $2^{|I|}-1$ corners. The hypotheses depend only on the shattered complex, so the conclusion holds for every ample realization with that same complex.",
+  "status": "established",
+  "proof": "The missing pairs exclude every shattered support $P\\cup\\{f\\}$ outside $P$, making the ample $P$-cube unique. For any unshattered coordinate pair, all edges in one direction have a fixed value in the other coordinate; otherwise two such edges realize all four traces. Connectivity on $A$ makes every $A$-edge share one trace $\\alpha\\in Q_I$, and connectivity on $B$ makes every $B$-edge share one value $\\beta$ of coordinate $e$. A vertex of the distinguished cube with $x_e\\ne\\beta$ and $x|_I\\ne\\alpha$ has no outside neighbor, so all cubes through it lie in the distinguished cube and it is a corner. Exactly $2^{|I|}-1$ cube vertices satisfy both inequalities.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-shadow-forced-corners"
+}
