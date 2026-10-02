@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "batch_id": "179_dismantlable_ample_occurrence_row_universality",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record universality of arbitrary peelable occurrence rows and its strengthening to nonpeelable reduced bases with complete crossing graph, separated signed columns, fixed dimension gap, and forbiddenness equivalent to input peelability.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-universal-peelable-occurrence-row",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-reduced-base-universality",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-shelling-universality-scope",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_reduced_base_universality.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "reduced-base-universality-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_reduced_base_universality.py,damp_reduced_base_universality_verification.json,damp_terminal_clause_recovery_verification.json,damp_rooted_clause_pivots_verification.json,computations/hall_corner_exchange/source_H.json,computations/round810_hall_complement_peeling.json}",
+      "sha256": "b398f8226460d6fbcbb0f3021077c802d45e461f3aec9f85cc440b27fd913d85",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/179_dismantlable_ample_occurrence_row_universality/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These theorems show that arbitrary dismantlable ample inputs persist inside forbidden pc-minors even after both proposed base reductions. This is a decisive scope constraint on any intrinsic classification and relies on a certified Hall repair triple and large formula-defined controls.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The database records the universal three-row embedding, its unconditional Hall realization, every reduced-base stopping property, exact size and dimension formulas, forbiddenness equivalence, fixed gap-nine infinite family, and the boundary between materialized and symbolic certificate checks.",
+    "claim_block_sha256": {
+      "thm:damp-universal-peelable-occurrence-row": "24aa7a6eee63ae229670e239bd0db7c1cd6540ad77833c84e63f6125575007d3",
+      "thm:damp-reduced-base-universality": "65dd8f8997d77e537296a5f8c3d106760b0ba47e1a2afefa3de6fe135749a309"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/179_dismantlable_ample_occurrence_row_universality/verify_damp_reduced_base_universality.py",
+      "sha256": "7b29d14038eeafe30013c33449d8aad021ca0dc7ca747f6feb10486756015328"
+    },
+    {
+      "path": "migration/certificates/179_dismantlable_ample_occurrence_row_universality/damp_reduced_base_universality_verification.json",
+      "sha256": "71b40e5ca2014185d439799191579f8ce71e0b7545bcd40e9ef6ac914c69c29a"
+    },
+    {
+      "path": "migration/certificates/179_dismantlable_ample_occurrence_row_universality/source_damp_reduced_base_universality_verification.json",
+      "sha256": "71b40e5ca2014185d439799191579f8ce71e0b7545bcd40e9ef6ac914c69c29a"
+    },
+    {
+      "path": "migration/certificates/179_dismantlable_ample_occurrence_row_universality/source_packet_manifest.json",
+      "sha256": "f494bcafcace328dcad5ffe0c29a76d2f4cd7eb4ad551a8a670bc621c25c8306"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the two universality constructions, Hall seed triple, exact output formulas and structural properties, scope limitations, concise proofs, and replay boundary. LaTeX retains the full clause-column separation argument, construction motivation, and consequences for intrinsic admissibility. Compact seed, repair, rooted-factor, and minor-order data remain byte-archived because the large outputs and their certifications cannot be reconstructed from theorem prose alone.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both proofs and the Hall-triple remark. The tracked six-file computation packet at commit b30995f is path-hashed and byte-archived; its verifier reproduces the tracked report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/186_hall_three_repair_universality_seed.json",
+      "sha256": "a85191f42622556606d2a485f64b8bc909f25ab09e4df3df5801bacd3b96aeb5"
+    },
+    {
+      "path": "data/results/668_universality_of_peelable_occurrence_rows.json",
+      "sha256": "8ef8fd5c4b8feb7bc25ab99916856603c2618fb1e08b99d978bc088b8a16c71a"
+    },
+    {
+      "path": "data/results/669_reduced_base_universality.json",
+      "sha256": "3d75a287a9b9d11eb615492405d3457f4a56d96eb048a2d3df14c0a5d38417a8"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "179de516bba9e19e6e1b86a3196fa852478bbff4c05e947baf7aa5561b02b157"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "6713d48b1392897615e2b75e7a2003bd2984caa4536f77ee8b30678d1e770931"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2065 records.",
+    "website": "Normalized 2081 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 764 to 766 of 1143 and dismantlable-ample coverage from 328 to 330 of 683. The Hall repair triple is separately normalized as the reusable witness for both constructions.",
+    "certificates": "The replay checks all 36 elementary seed-minor orders, three repair orders, four input families, materialized outputs of orders 4,819 and 9,637, and exact compact formulas for outputs of orders 19,726,915 and 19,726,935. No output-minor census is claimed.",
+    "source_integrity": "Both reviewed claim blocks match supplemental snapshot 2026-10-02-b002, every tracked computation input matches its archived hash, and the generated verification report is byte-identical to the source report."
+  },
+  "deferred": [
+    "The refreshed audit has 377 uncovered database-owned labels: 353 in dismantlable-ample and 24 in ample-corners.",
+    "The next block realizes matched corner-deletion pairs inside reduced forbidden parents and transports single-clause sign changes into nonpeelable families where pc-minimality changes.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

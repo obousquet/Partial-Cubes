@@ -11201,6 +11201,44 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-668" style="position:relative;">
+
+        <h3><a href="results/universality_of_peelable_occurrence_rows.html" class="table-title-link">Universality of Peelable Occurrence Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universality of Peelable Occurrence Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose a cornerless ample forbidden pc-minor $S$ has three dismantlable-ample one-concept repairs $a_0,a_+,a_-$ with pairwise distinct acquired supports. Then every nonempty dismantlable ample family $K$ is isomorphic to a proper pc-minor of an explicitly constructed ample forbidden pc-minor $X_K$. If $K\subseteq Q_D$, add a layer bit $z$, set $E=D\dot\cup\{z\}$, choose $u\in Q_E$, and use occurrence rows $R_0=K\times\{0\}$, $R_+=Q_E\setminus\{u\}$, and $R_-=Q_E\setminus\{\bar u\}$ at the three tips. Fixing the old coordinates to $a_0$ and $z=0$ recovers $K$. Hall's class with tips 183, 315, and 1836 supplies the required seed triple, so the conclusion is unconditional.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The first row is isomorphic to $K$, and the other two are singly punctured cubes, so all three are nonempty proper ample and corner-peelable. For each layer coordinate, the signed facet opposite the chosen bit of $u$ lies in $R_+$ and the other facet lies in $R_-$. The common-seed occurrence-cover criterion therefore makes the assembly an ample forbidden pc-minor independently of the shape of $R_0$. Only $R_0$ occurs at old word $a_0$, and restricting its added bit to zero gives $K$ as a proper face. The certified Hall repair atlas verifies the three distinct-support peelable repairs.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-universal-peelable-occurrence-row</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_three_repair_universality_seed.html">Hall Three-Repair Universality Seed</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is a universality barrier for generative classification: using membership of the arbitrary row $K$ in the dismantlable ample class as an admissibility condition would remain circular.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-669" style="position:relative;">
+
+        <h3><a href="results/reduced_base_universality.html" class="table-title-link">Universality within Reduced Forbidden Bases</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Universality within Reduced Forbidden Bases</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty ample family $K$ of isometric dimension $n$, there is an explicit ample family $X_K$ such that: $X_K$ is nonpeelable and contains $K$ as a proper coordinate face; its minimum graph degree is at least four, its signed minimal-nonface columns are pairwise distinct up to sign, and its crossing graph is complete, so it has no cut vertex or separating edge; $|X_K|=301\cdot2^{n+4}+2|K|+1$, $\operatorname{idim}(X_K)=n+16$, and $\operatorname{VC}(X_K)=n+7$; and $X_K$ is a forbidden pc-minor exactly when $K$ is dismantlable ample. Hence every nonempty dismantlable ample family occurs as a proper face of a forbidden base fixed by both standard reductions. Such bases exist infinitely often with isometric dimension minus VC dimension equal to nine.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First replace $K$ by its product with an edge and glue a square at zero, obtaining a row $L$ of order $2|K|+3$ that is peelable whenever $K$ is. Add one constant layer coordinate and place this row at the first tip of the certified Hall three-repair seed; place complementary singly punctured layer cubes at the other two tips. The replicated-repair theorem gives ampleness, and strong projection to the proper-row core gives Hall's nonpeelable seed, so every output is nonpeelable. The common-seed criterion makes the output forbidden exactly when $K$ peels; conversely, a forbidden output must have its proper face $K$ peelable. The intact seed product supplies minimum degree four and every crossing edge. Old four-support clauses distinguish all seed coordinates, while the square-gluing and constant-coordinate clauses distinguish every layer coordinate, proving signed-column separation. Direct counting and the repair shadow formula give the stated order, dimension, and VC dimension. Hypercube inputs in unbounded dimension yield infinitely many pairwise nonisomorphic forbidden bases with gap nine.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-reduced-base-universality</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_three_repair_universality_seed.html">Hall Three-Repair Universality Seed</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The certificate materializes and checks the 4,819- and 9,637-concept outputs. The 19,726,915- and 19,726,935-concept controls use exact formulas and compact inputs; no output-minor enumeration is claimed.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

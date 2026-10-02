@@ -1,0 +1,23 @@
+{
+  "id": 668,
+  "short_name": "universality_of_peelable_occurrence_rows",
+  "name": "Universality of Peelable Occurrence Rows",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Suppose a cornerless ample forbidden pc-minor $S$ has three dismantlable-ample one-concept repairs $a_0,a_+,a_-$ with pairwise distinct acquired supports. Then every nonempty dismantlable ample family $K$ is isomorphic to a proper pc-minor of an explicitly constructed ample forbidden pc-minor $X_K$. If $K\\subseteq Q_D$, add a layer bit $z$, set $E=D\\dot\\cup\\{z\\}$, choose $u\\in Q_E$, and use occurrence rows $R_0=K\\times\\{0\\}$, $R_+=Q_E\\setminus\\{u\\}$, and $R_-=Q_E\\setminus\\{\\bar u\\}$ at the three tips. Fixing the old coordinates to $a_0$ and $z=0$ recovers $K$. Hall's class with tips 183, 315, and 1836 supplies the required seed triple, so the conclusion is unconditional.",
+  "status": "established",
+  "proof": "The first row is isomorphic to $K$, and the other two are singly punctured cubes, so all three are nonempty proper ample and corner-peelable. For each layer coordinate, the signed facet opposite the chosen bit of $u$ lies in $R_+$ and the other facet lies in $R_-$. The common-seed occurrence-cover criterion therefore makes the assembly an ample forbidden pc-minor independently of the shape of $R_0$. Only $R_0$ occurs at old word $a_0$, and restricting its added bit to zero gives $K$ as a proper face. The certified Hall repair atlas verifies the three distinct-support peelable repairs.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-universal-peelable-occurrence-row",
+  "witness_ids": [
+    "#examples/hall_three_repair_universality_seed"
+  ],
+  "comments": "This is a universality barrier for generative classification: using membership of the arbitrary row $K$ in the dismantlable ample class as an admissibility condition would remain circular."
+}

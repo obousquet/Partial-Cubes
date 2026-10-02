@@ -1,0 +1,24 @@
+{
+  "id": 669,
+  "short_name": "reduced_base_universality",
+  "name": "Universality within Reduced Forbidden Bases",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every nonempty ample family $K$ of isometric dimension $n$, there is an explicit ample family $X_K$ such that: $X_K$ is nonpeelable and contains $K$ as a proper coordinate face; its minimum graph degree is at least four, its signed minimal-nonface columns are pairwise distinct up to sign, and its crossing graph is complete, so it has no cut vertex or separating edge; $|X_K|=301\\cdot2^{n+4}+2|K|+1$, $\\operatorname{idim}(X_K)=n+16$, and $\\operatorname{VC}(X_K)=n+7$; and $X_K$ is a forbidden pc-minor exactly when $K$ is dismantlable ample. Hence every nonempty dismantlable ample family occurs as a proper face of a forbidden base fixed by both standard reductions. Such bases exist infinitely often with isometric dimension minus VC dimension equal to nine.",
+  "status": "established",
+  "proof": "First replace $K$ by its product with an edge and glue a square at zero, obtaining a row $L$ of order $2|K|+3$ that is peelable whenever $K$ is. Add one constant layer coordinate and place this row at the first tip of the certified Hall three-repair seed; place complementary singly punctured layer cubes at the other two tips. The replicated-repair theorem gives ampleness, and strong projection to the proper-row core gives Hall's nonpeelable seed, so every output is nonpeelable. The common-seed criterion makes the output forbidden exactly when $K$ peels; conversely, a forbidden output must have its proper face $K$ peelable. The intact seed product supplies minimum degree four and every crossing edge. Old four-support clauses distinguish all seed coordinates, while the square-gluing and constant-coordinate clauses distinguish every layer coordinate, proving signed-column separation. Direct counting and the repair shadow formula give the stated order, dimension, and VC dimension. Hypercube inputs in unbounded dimension yield infinitely many pairwise nonisomorphic forbidden bases with gap nine.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-reduced-base-universality",
+  "witness_ids": [
+    "#examples/hall_three_repair_universality_seed"
+  ],
+  "comments": "The certificate materializes and checks the 4,819- and 9,637-concept outputs. The 19,726,915- and 19,726,935-concept controls use exact formulas and compact inputs; no output-minor enumeration is claimed."
+}
