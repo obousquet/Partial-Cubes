@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "batch_id": "159_dismantlable_ample_latent_facet_protectors",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the latent punctured-face word characterization of corner peelings and its finite acyclic escape/facet-protector state criterion.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-latent-punctured-face-word-criterion",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-latent-facet-protector-criterion"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims convert the dynamic corner condition into exact ordering constraints on every present or latent punctured face, then compress those constraints to one finite state and one arc per block.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The local-hole characterization proves the word rule, and a forward-arc/topological-order argument proves the finite acyclicity criterion.",
+    "claim_block_sha256": {
+      "thm:damp-latent-punctured-face-word-criterion": "414a2989aabeca96b5729123d8f5a45c390f72529f3968ad0a3e7d51fdf1faab",
+      "cor:damp-latent-facet-protector-criterion": "b5048b3c11a1cf72e6d9e39bdf01d1da5fce654ecd900e8356b610caefd64e27"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the latent-block definition needed by the results, the exact word constraint, the escape/protector state system, acyclicity equivalence, and concise proofs. LaTeX retains the expanded activation interpretation and transition to transported owner data.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both source claims and their latent punctured-face definition byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/619_latent_punctured_face_word_criterion.json",
+      "sha256": "5eef42f630aaefb911fb7b33e2bab0a07da1e2b9e3d121e432f58e7c8a75f0f3"
+    },
+    {
+      "path": "data/results/620_facet_protector_acyclicity_criterion.json",
+      "sha256": "42a884dc70bf08c9dd91c637e6b193b7390baf90598ea41ab05d044416c02d55"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "8b9fa4cf924ec9faeeca9a89e8ca1100c374e9c5011a87639adbaa1cc072c64e"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "633400264b5d8f1d7688eba33162028848e4ec8c77b6a8c1a948b3ed71323279"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2003 records.",
+    "website": "Normalized 2019 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 719 to 721 of 1143 and dismantlable-ample coverage from 283 to 285 of 683.",
+    "certificates": "No finite replay packet is needed; both equivalences are proved directly from local missing-tip witnesses and acyclic digraph orders.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 422 uncovered database-owned labels: 398 in dismantlable-ample and 24 in ample-corners.",
+    "The next proposition gives canonical owner sets transporting facet protectors through contractions and switched punctured-expansion profiles.",
+    "The remaining construction problem is to derive globally compatible protector owners and escape arcs from separator incidence without an acyclicity search."
+  ]
+}

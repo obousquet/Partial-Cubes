@@ -1,0 +1,18 @@
+{
+  "id": 619,
+  "short_name": "latent_punctured_face_word_criterion",
+  "name": "Latent Punctured Faces Characterize Corner-Peeling Words",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "For $H\\subseteq Q_F$, let its latent punctured-face system be all pairs $(y,S)$ with $|S|\\ge2$ and $\\mathsf P(y,S)\\subseteq H$; the tip $y$ may be present, representing a punctured face activated when $y$ is deleted. For an ordering $\\mathbf x$ of an ample $H$, assign an absent tip position zero and let $b_{\\mathbf x}(y,S)$ be the first displayed member of $\\mathsf P(y,S)$. Then $\\mathbf x$ is a corner peeling exactly when, for every latent block, whenever the tip occurs before its first displayed vertex, that first vertex is a one-coordinate neighbour $y^{\\{q\\}}$ of the tip for some $q\\in S$.",
+  "status": "established",
+  "proof": "In a corner peeling, let the first surviving vertex of a latent block be $x=y^T$ after the tip has disappeared. Immediately before deleting $x$, every other displayed block vertex is present. If $|T|\\ge2$, the entire punctured subcube $\\mathsf P(y,T)$ remains around $x$ while its tip is absent, so the local cube-support complex at $x$ is not a simplex and $x$ is not a corner. Thus $|T|=1$. Conversely, proceed inductively through an ordering satisfying the word rule. Earlier corner deletions preserve ampleness. If the current vertex were not a corner, a minimal nonface $T$ of its local cube-support complex would produce a latent block with missing or earlier tip $y=x^T$, while the current vertex $y^T$ is the block's first displayed member and $|T|\\ge2$, contradicting the rule.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-latent-punctured-face-word-criterion"
+}

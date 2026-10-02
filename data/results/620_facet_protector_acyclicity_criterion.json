@@ -1,0 +1,19 @@
+{
+  "id": 620,
+  "short_name": "facet_protector_acyclicity_criterion",
+  "name": "Finite Facet-Protector Acyclicity Criterion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "Let $H$ be ample. For every latent punctured face $(y,S)$, choose either an escape state, allowed when $y\\in H$ and contributing the arc $y^S\\to y$, or a facet-protector state marked by $q\\in S$ and contributing the arc $y^{S\\setminus\\{q\\}}\\to y^S$. Then $H$ is corner-peelable exactly when one can choose one state for every latent block so that the union of all selected arcs is acyclic.",
+  "status": "established",
+  "proof": "Given a corner peeling, choose the escape state when the block antipode precedes its present tip. Otherwise the tip is absent or earlier. Before the antipode is deleted, at least one support-neighbour must already be gone; if all remained, the antipode's unique maximal corner cube would contain the whole support cube and its tip. Choose that neighbour as protector. Every selected arc points forward, so the union is acyclic. Conversely, topologically order an acyclic selected-arc graph. If the latent word rule failed first at $x=y^T$ with $|T|\\ge2$, the latent subblock $(y,T)$ could not use its escape arc because the tip is earlier than $x$. Its chosen protector is another vertex of the original block preceding $x$, contradicting that $x$ was the block's first displayed vertex. The word criterion then makes the topological order a corner peeling.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-latent-facet-protector-criterion",
+  "comments": "This compresses the full word condition to one binary-or-coordinate state per latent block plus an acyclicity test. It is a recognition criterion; later transport results describe how protector states behave under contraction."
+}

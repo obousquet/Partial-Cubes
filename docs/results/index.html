@@ -10355,6 +10355,41 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-619" style="position:relative;">
+
+        <h3><a href="results/latent_punctured_face_word_criterion.html" class="table-title-link">Latent Punctured Faces Characterize Corner-Peeling Words</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Latent Punctured Faces Characterize Corner-Peeling Words</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For $H\subseteq Q_F$, let its latent punctured-face system be all pairs $(y,S)$ with $|S|\ge2$ and $\mathsf P(y,S)\subseteq H$; the tip $y$ may be present, representing a punctured face activated when $y$ is deleted. For an ordering $\mathbf x$ of an ample $H$, assign an absent tip position zero and let $b_{\mathbf x}(y,S)$ be the first displayed member of $\mathsf P(y,S)$. Then $\mathbf x$ is a corner peeling exactly when, for every latent block, whenever the tip occurs before its first displayed vertex, that first vertex is a one-coordinate neighbour $y^{\{q\}}$ of the tip for some $q\in S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In a corner peeling, let the first surviving vertex of a latent block be $x=y^T$ after the tip has disappeared. Immediately before deleting $x$, every other displayed block vertex is present. If $|T|\ge2$, the entire punctured subcube $\mathsf P(y,T)$ remains around $x$ while its tip is absent, so the local cube-support complex at $x$ is not a simplex and $x$ is not a corner. Thus $|T|=1$. Conversely, proceed inductively through an ordering satisfying the word rule. Earlier corner deletions preserve ampleness. If the current vertex were not a corner, a minimal nonface $T$ of its local cube-support complex would produce a latent block with missing or earlier tip $y=x^T$, while the current vertex $y^T$ is the block's first displayed member and $|T|\ge2$, contradicting the rule.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-latent-punctured-face-word-criterion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-620" style="position:relative;">
+
+        <h3><a href="results/facet_protector_acyclicity_criterion.html" class="table-title-link">Finite Facet-Protector Acyclicity Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Finite Facet-Protector Acyclicity Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be ample. For every latent punctured face $(y,S)$, choose either an escape state, allowed when $y\in H$ and contributing the arc $y^S\to y$, or a facet-protector state marked by $q\in S$ and contributing the arc $y^{S\setminus\{q\}}\to y^S$. Then $H$ is corner-peelable exactly when one can choose one state for every latent block so that the union of all selected arcs is acyclic.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Given a corner peeling, choose the escape state when the block antipode precedes its present tip. Otherwise the tip is absent or earlier. Before the antipode is deleted, at least one support-neighbour must already be gone; if all remained, the antipode's unique maximal corner cube would contain the whole support cube and its tip. Choose that neighbour as protector. Every selected arc points forward, so the union is acyclic. Conversely, topologically order an acyclic selected-arc graph. If the latent word rule failed first at $x=y^T$ with $|T|\ge2$, the latent subblock $(y,T)$ could not use its escape arc because the tip is earlier than $x$. Its chosen protector is another vertex of the original block preceding $x$, contradicting that $x$ was the block's first displayed vertex. The word criterion then makes the topological order a corner peeling.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-latent-facet-protector-criterion</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This compresses the full word condition to one binary-or-coordinate state per latent block plus an acyclicity test. It is a recognition criterion; later transport results describe how protector states behave under contraction.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
