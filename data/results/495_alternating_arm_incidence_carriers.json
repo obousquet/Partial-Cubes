@@ -1,0 +1,13 @@
+{
+  "id": 495,
+  "short_name": "alternating_arm_incidence_carriers",
+  "name": "One Signed Carrier Object Covers the Three Alternating Support Graphs",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "For four acquired direction pairs whose individual directions are shattered by the common section, form the bipartite incidence graph $J$ on the two pairs of each wing, joining opposite-wing pairs that share a direction. If the four pairs have no three-edge matching, then $J$ is $K_{2,2}$, $P_4$, or $2K_2$. Every edge of $J$ carries the two omitted trace labels, a forced common carrier slice, and, for distinct arm occurrences, a square-transport path avoiding both partner directions.",
+  "status": "established",
+  "proof": "Same-wing pairs are disjoint, so two opposite-wing pairs meet in at most one direction and $J$ is a simple subgraph of $K_{2,2}$. The three alternating support graphs have incidence shadows $K_{2,2}$, $P_4$, and $2K_2$. Applying crossed-pair carrier freezing to every incidence edge supplies its signed omitted traces, conditioned carrier, and square transport.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-alternating-arm-incidence-carriers"
+}

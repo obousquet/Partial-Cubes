@@ -6,6 +6,9 @@
   "operation_id": "#operations/projection",
   "result_type": "not_closed_under",
   "status": "established",
+  "witness_ids": [
+    "#examples/six_cycle"
+  ],
   "statement": "Let $H$ have $n$ active coordinates and VC dimension $k$. Its projection to $Z$ is $Q_Z$ when $|Z|\\le k$, is $Q_Z$ with one antipodal pair removed when $|Z|=k+1$, and is again conditioning-minimal non-ample of VC dimension $k$ when $|Z|>k+1$. Hence the class is not projection-closed.",
   "proof": "The uniform-oriented-matroid classification identifies projection with deletion. Deleting to at most the rank gives the free matroid and a cube; deletion to rank plus one leaves exactly one antipodal pair absent; larger deletions remain non-free uniform oriented matroids and hence conditioning-minimal non-ample.",
   "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; PartialCubes:papers/minor-atlas/inventory.json#/families/1"

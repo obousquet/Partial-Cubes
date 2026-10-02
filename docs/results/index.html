@@ -8238,6 +8238,96 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-493" style="position:relative;">
+
+        <h3><a href="results/pair_rich_opposite_wing_support_graphs.html" class="table-title-link">Pair-Rich Opposite Wings Have Three Alternating Support Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Pair-Rich Opposite Wings Have Three Alternating Support Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-layer family have sections $A_0,A_1$ and common section $B$. Suppose each wing acquires two disjoint direction pairs outside $\operatorname{Sh}(B)$. The four pairs are distinct. Moreover, either three are pairwise disjoint, or their two-colored support graph is an alternating four-cycle, an alternating four-edge path, or two disjoint alternating two-edge paths.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The shadow-intersection identity $\operatorname{Sh}(A_0)\cap\operatorname{Sh}(A_1)=\operatorname{Sh}(B)$ prevents the same pair from being acquired by both wings; disjointness within each wing gives four distinct pairs. Coloring by wing makes each color class a two-edge matching, so the support graph has maximum degree two and every cycle alternates. If it has no three-edge matching, the component partitions of four edges that do admit such a matching are excluded. The only remaining graphs are the stated alternating cycle, path, and pair of paths.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-pair-rich-opposite-wing-support-graphs</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-494" style="position:relative;">
+
+        <h3><a href="results/crossed_acquired_pair_carrier_freezing.html" class="table-title-link">A Crossed Acquired Pair Freezes Its Common Carrier</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Crossed Acquired Pair Freezes Its Common Carrier</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In an ample two-layer family with common section $B$, suppose one wing acquires $\{x,y\}$ and the other acquires $\{x,z\}$, while $B$ shatters the three singletons. Then the projections of $B$ to $\{x,y\}$ and $\{x,z\}$ are uniquely punctured squares, the corresponding triples with the layer coordinate are minimal nonfaces with oppositely layered omitted traces, and every $x$-edge of $B$ has the same forced $y$- and $z$-values. Hence distinct distinguished $x$-edges are joined inside the connected $x$-carrier by a path of $\{x,t\}$-squares using neither partner direction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection preserves ampleness. Since $B$ shatters both singletons but not the pair, each two-coordinate projection has three concepts and is a uniquely punctured square by Sandwich equality. Shadow intersection makes the opposite wing omit the same trace, so the three-coordinate projection with the layer bit is a once-punctured cube and the triple is a minimal nonface. An $x$-edge using the omitted $y$- or $z$-value would realize the missing trace, forcing both partner values on every such edge. The anchor set of an $x$-carrier in an ample family is connected; with $y,z$ constant, every transport step uses another coordinate $t$ and corresponds to a full $\{x,t\}$-square.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-crossed-acquired-pair-carrier-freezing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-495" style="position:relative;">
+
+        <h3><a href="results/alternating_arm_incidence_carriers.html" class="table-title-link">One Signed Carrier Object Covers the Three Alternating Support Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One Signed Carrier Object Covers the Three Alternating Support Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For four acquired direction pairs whose individual directions are shattered by the common section, form the bipartite incidence graph $J$ on the two pairs of each wing, joining opposite-wing pairs that share a direction. If the four pairs have no three-edge matching, then $J$ is $K_{2,2}$, $P_4$, or $2K_2$. Every edge of $J$ carries the two omitted trace labels, a forced common carrier slice, and, for distinct arm occurrences, a square-transport path avoiding both partner directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Same-wing pairs are disjoint, so two opposite-wing pairs meet in at most one direction and $J$ is a simple subgraph of $K_{2,2}$. The three alternating support graphs have incidence shadows $K_{2,2}$, $P_4$, and $2K_2$. Applying crossed-pair carrier freezing to every incidence edge supplies its signed omitted traces, conditioned carrier, and square transport.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-alternating-arm-incidence-carriers</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-496" style="position:relative;">
+
+        <h3><a href="results/opposite_sharp_two_arm_support_graphs.html" class="table-title-link">Opposite Sharp Two-Arm Systems Have Three Alternating Support Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Sharp Two-Arm Systems Have Three Alternating Support Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose both relative wings of an ample two-layer family attain the sharp two-arm holonomy equality. For each arm, pair the direction of its shore edge with its passive direction. Within each wing the two support pairs are disjoint, all four support pairs are distinct, and either three are pairwise disjoint or the colored support graph is an alternating four-cycle, an alternating four-edge path, or two disjoint alternating two-edge paths.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In the equality description, the common lower family is an active core with two pendant three-edge arms. Every arm edge is a bridge and therefore the unique edge of its coordinate class, so the six arm directions are distinct and the two support pairs in one wing are disjoint. Each terminal active--passive square is shattered by its wing but not by the common section: the passive direction labels only one common-section edge, whereas a shattered square requires two. The pair-rich opposite-wing theorem now gives four distinct pairs and exactly the three exceptional incidence forms.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-opposite-sharp-two-arm-support-graphs</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-497" style="position:relative;">
+
+        <h3><a href="results/two_pendant_three_edge_arms_unique_small_core.html" class="table-title-link">Two Pendant Three-Edge Arms Determine a Small Tree Core Uniquely</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Pendant Three-Edge Arms Determine a Small Tree Core Uniquely</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a tree be obtained from a path core of order one, two, or three by attaching two internally vertex-disjoint pendant paths of length three, each meeting the core only at its initial vertex. The core and the unordered pair of attached paths are uniquely determined by the resulting tree among decompositions with the same core order.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For core orders one and two, the center or central edge identifies the core unless both arms meet one endpoint, in which case the unique degree-three vertex and branch lengths $1,3,3$ do. For a three-vertex core, the four attachment patterns are distinguished respectively by the central three-vertex path, branch lengths $2,3,3$, degree four with branch lengths $1,1,3,3$, or branch lengths $1,3,4$. In each case these intrinsic degrees and branch lengths recover the core and both arms.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-pendant-three-edge-arms-unique-small-core</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-498" style="position:relative;">
+
+        <h3><a href="results/opposite_sharp_two_arm_small_overlap_impossible.html" class="table-title-link">Opposite Sharp Two-Arm Wings Require an Overlap of Order at Least Ten</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Opposite Sharp Two-Arm Wings Require an Overlap of Order at Least Ten</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If both relative wings of an ample two-layer family attain equality in the two-arm holonomy bound, then their common section $B$ has at least ten concepts. Equivalently, opposite sharp two-arm systems cannot coexist over an overlap of order at most nine.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If $|B|\le9$, either sharp wing writes the one-inclusion graph of $B$ as a connected active core of order $|B|-6\in\{1,2,3\}$ with two pendant length-three arms. The small-core uniqueness theorem forces the two wing decompositions of the same tree to have the same unordered arm pair. An arm's square support is the pair of coordinate labels on its attachment and terminal edges, so the two wings would have the same two support pairs. This contradicts the opposite-wing theorem that all four supports are distinct.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-opposite-sharp-two-arm-small-overlap-impossible</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

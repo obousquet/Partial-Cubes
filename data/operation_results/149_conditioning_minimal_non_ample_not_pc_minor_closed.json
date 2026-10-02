@@ -6,6 +6,9 @@
   "operation_id": "#operations/pc_minor",
   "result_type": "not_closed_under",
   "status": "established",
+  "witness_ids": [
+    "#examples/six_cycle"
+  ],
   "statement": "Every nonempty pc-minor of a conditioning-minimal non-ample class is either conditioning-minimal non-ample or belongs to UOMFib. Both outcomes occur, so the original class is not pc-minor-closed.",
   "proof": "A projection has the exact three-case profile in the projection theorem: it is a cube or remains minimal non-ample. A nonempty proper conditioning of a minimal-non-ample member enters UOMFib, and UOMFib is pc-minor-closed. Induction along an elementary pc-minor sequence gives the asserted two-layer image. A conditioning of $C_6$ is the ample path $P_3$, proving failure of closure.",
   "proof_source": "YangDim:minimal_nonample_classes.tex#thm:structure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uom-fibers-minimal-nonample-conditioning-closure; CompressionSchemes:partitionable_yang_complexes.tex#prop:uniform-oriented-matroid-fibers-pc-minor-closed"
