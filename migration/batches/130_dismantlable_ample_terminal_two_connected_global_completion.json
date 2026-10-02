@@ -1,0 +1,128 @@
+{
+  "version": 1,
+  "batch_id": "130_dismantlable_ample_terminal_two_connected_global_completion",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Normalize exclusion of the unshielded one-unit central-square profile, the forced-wing active-coordinate certificate, and the finite global completion that rules out pairs of terminal two-connected wings of orders ten and eleven through holonomy excess two.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-one-unit-central-square-unshielded",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-forced-wing-words-active-coordinates",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-two-connected-global-completion"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The terminal two-connected matching row is the first global completion step after the local one- and two-unit profile audits. Its proof combines passive shielding and the coordinate-cost lemma with three finite certificates, so the normalized result must retain the exact comparison counts and replayable evidence.",
+    "outcome": "All three statement-plus-proof blocks and the complete classification source are byte-identical between supplemental snapshot 2026-10-02-b002 and the live manuscript. The first two reports replay byte-for-byte. The current final verifier adds only candidate-subset and exact-active diagnostics to the manuscript-era report; removing those diagnostics and restoring the legacy digest makes the parsed reports identical, with every theorem-relevant count and the zero-unresolved conclusion unchanged.",
+    "claim_block_sha256": {
+      "cor:damp-one-unit-central-square-unshielded": "93c32c9dc17e1d4917f3d4a56a00af0b2d9f4d093b10ac55d07372f0052b3847",
+      "lem:damp-forced-wing-words-active-coordinates": "997a9217e1a4968d85d57469570835e769d5366a64bb43438e0e6d1ea125e086",
+      "prop:damp-terminal-two-connected-global-completion": "b6be67ceec91b71d29ff660653bf782dd300b6585d630f1046d4c4a03d250b8d"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/explore_damp_two_arm_tree_decompositions.py",
+      "sha256": "45304b39d8975b5a6cdb86bc304bc7df99b6ea929e7a6dcf736f042bff107831"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/verify_damp_pure_eta_two_connected_incidence.py",
+      "sha256": "a127df865d012038af995aa9cec34ead4cab9e00afd072102b62031368cc276d"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/verify_damp_pure_eta_two_mixed_profiles.py",
+      "sha256": "db44cda91b6dd0e5fb983c4037333ee33ff273ef96933cd261edf72eff4e159f"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/verify_damp_two_unit_all_opposite_profiles.py",
+      "sha256": "79c4adcf1757763745332ab15aa42196145f9a8469ec474cf8665c07b9f5185c"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/explore_damp_three_pair_global_compatibility.py",
+      "sha256": "b42a1f27bec29133827565acf271e901b0a793620963bd1e776584152244bd99"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/damp_three_pair_global_compatibility.json",
+      "sha256": "2a16cc7cf35930ded083a8729b48d6d7123cc114760f402a737625494c74935e",
+      "mathematical_digest": "ff2d10fdf95a608da5e7cdc0dca8cc9d973c4cfc345336f3b7278e40df8e3f92"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/verify_damp_low_excess_global_matching.py",
+      "sha256": "3427da2b5fa49d39573d29b6574085fcc49efef2cc1524f3f37f026583047385"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/damp_low_excess_global_matching.json",
+      "sha256": "9206c9db0cb074d949bd2a3843d8bbc417e9cc074fcbd2eb234828a51f10540f",
+      "mathematical_digest": "760ff9566860cefa41b8a300dd9f99b03ecd08a79701a89803027f954e5afe08"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/explore_damp_five_coordinate_matching_completions.py",
+      "sha256": "cdbd9cdd91358d7f41e972ea1fef24e78443a2804656bc2ed7b6b71b02099b33"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/damp_five_coordinate_matching_completions.json",
+      "sha256": "e4e7a99dbfbacf9998cec2dbc586ab0f824c902f4b9c55d17f975649c5a21b10",
+      "mathematical_digest": "e1662d9256e8350c5eabd4bd410ea7a6359b280ae0930961452b939a163277f8"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/damp_five_coordinate_matching_completions_source_legacy.json",
+      "sha256": "f35bb7ca8d4a5ad52c406b28d4f55f5603eed8e8876df206796610ca1fc58784",
+      "mathematical_digest": "fc485e9c7e6550c8478248effa90bf60b84719d42ea1579e2399b3d3f3cb5b10"
+    },
+    {
+      "path": "migration/certificates/130_dismantlable_ample_terminal_two_connected/damp_five_coordinate_matching_reconciliation.json",
+      "sha256": "3defd94e7e993ba79529a91d70513246adeeb0c2e552742e35925d4ac765e72d"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the three normalized statements, concise proofs, finite comparison and completion counts, verifier code, replay reports, digest reconciliation, and source locators. The manuscript retains its complete narrative reduction, geometric descriptions of the three forced five-cube subsets, and proof organization.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact manuscript bytes. The manuscript-era final report is archived verbatim beside the current replay report, and the reconciliation record states and verifies their sole diagnostic difference.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/523_one_unit_central_square_unshielded.json",
+      "sha256": "18b0c1b135ac2b9e69fc6461dfb6642265c5f08b3e7a158f572ffbc203881510"
+    },
+    {
+      "path": "data/results/524_forced_wing_words_active_coordinates.json",
+      "sha256": "d5ca085177a3861c603e6b2540b0d12c46c5bcf72ee96a77a2f064b2e49e6bf6"
+    },
+    {
+      "path": "data/results/525_terminal_two_connected_global_completion.json",
+      "sha256": "3a2cc1ebe9f11e1696663f6caa8229d990d4068016fa44277c84c22a84ba811a"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "5c256b89fb0903109798299c8def0291f9cb7c8b610e3565abd03b169db87b56"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "deed06856eebfc3701328d08a5598d35a1c249487d226c0e76daff3d7763b284"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1870 records.",
+    "website": "Normalized 1886 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising the dismantlable-ample workspace from 190 to 193 of 683 and overall coverage from 621 to 624 of 1114 database-owned labels.",
+    "certificates": "All three current database-owned reports match fresh replay outputs. The first two match the imported reports byte-for-byte; the final report has zero unresolved terminal completions and is semantically identical to the archived legacy report after removing its two newly emitted diagnostics.",
+    "proof_review": "The records retain the 2886 two-unit comparisons, 302 preliminary exclusions, the 504/108/1972 varying-coordinate split, all twenty final side states, the order-ten and order-eleven completion table, and the proof that every ample upper completion fails both terminality requirements.",
+    "source_integrity": "All three reviewed source blocks and the complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 490 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "The manuscript retains the full local-to-global narrative and five-cube geometry; the repository now owns the exact code, both historical and current reports, and their reconciliation.",
+    "The next source-order block begins with the nine-concept passive-carrier exclusion and its finite cut-system classification."
+  ]
+}

@@ -8692,6 +8692,52 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-523" style="position:relative;">
+
+        <h3><a href="results/one_unit_central_square_unshielded.html" class="table-title-link">The One-Unit Central-Square Profile Cannot Be Shielded</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The One-Unit Central-Square Profile Cannot Be Shielded</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the one-unit opposite-wing hypotheses, a cornerless ample two-layer family has three pairwise disjoint acquired direction pairs. In particular, the exceptional central-square support graph $K_{2,2}$ cannot occur.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Assume the central-square alternative and fix either wing. Its active slice is the singleton $\{c\}$, its uncounted vertex $v$ is opposite $c$ in the central square, and the square directions $z_1,z_2$ are passive attachment directions. Every exclusive concept has the passive word of $c$, so $v$ is at passive distance two from that word. The two pendant paths attach at the other antipodal pair of the square, making $v$ a corner of the overlap $B$. This contradicts passive radius-one shielding in a cornerless family.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-one-unit-central-square-unshielded</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-524" style="position:relative;">
+
+        <h3><a href="results/forced_wing_words_active_coordinates.html" class="table-title-link">Forced Wing Words Certify Active Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forced Wing Words Certify Active Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$ and wing $D_b$, and suppose all members of $D_b$ share one word $\sigma$ on passive coordinates $Z$. Form $W_b$ from any shore concepts whose opposite $Z$-fibres occur in $B$, together with $o_v=v^{\oplus z}$ for every corner $v$ of $B$ whose passive word differs from $\sigma$ only in $z$. Then $W_b\subseteq D_b$. If $D_b$ is connected, every coordinate varying on $W_b$ is active on $D_b$; if $D_b$ is two-connected, then $|D_b|\ge 2|Y(W_b)|$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The shore concepts lie in the wing by definition. Passive radius-one shielding makes $v^{\oplus z}$ the unique possible shield of each distance-one overlap corner, so cornerlessness forces every such owner into $D_b$. A path inside connected $D_b$ between two words differing in coordinate $x$ must traverse an $x$-edge, hence every coordinate varying on $W_b$ is active. The two-connected cube-coordinate cost bound then gives $|D_b|\ge2|Y(W_b)|$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-forced-wing-words-active-coordinates</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-525" style="position:relative;">
+
+        <h3><a href="results/terminal_two_connected_global_completion.html" class="table-title-link">The Terminal Two-Connected Matching Row Closes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Terminal Two-Connected Matching Row Closes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$ with $|B|\le9$. Suppose both proper pairs $B\subsetneq A_b$ are terminal under one-concept addition and deletion, each wing $D_b=A_b\setminus B$ is two-connected, and $|D_b|\in\{10,11\}$. Then the two lower gate-holonomy cycles cannot both have excess at most two. Consequently, no pair of terminal two-connected wings of orders ten or eleven occurs in the below-forty two-wing reduction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The local profile theorems reduce all excess-at-most-two comparisons to three independent acquired pairs; the sole central-square alternative is excluded by shielding. Adding actual shore concepts and forced distance-one owners to each wing gives sets $W_0,W_1$. Of 2886 two-unit matching comparisons, 302 fail passive-distance or owner-consistency tests; among the remaining 2584, the varying-coordinate counts are 504 of type $(5,5)$, 108 of type $(6,5)$, and 1972 of type $(6,6)$. A two-connected wing with six active coordinates needs at least twelve concepts, excluding the latter two types. In the low-excess comparison, all positioned wings likewise force six coordinates except the $P_8$ equality pattern. The remaining five-cube audit has fourteen two-unit side states and six low-excess side states. For wing orders ten and eleven it finds respectively 504 and 3346 two-connected two-unit completions, of which 238 and 1330 have ample upper families, and 744 and 4176 two-connected $P_8$ completions, of which 198 and 1026 have ample upper families. Every ample upper family has both an addable exclusive concept and a deletable exclusive concept, so none is terminal.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-two-connected-global-completion; database certificates migration/certificates/130_dismantlable_ample_terminal_two_connected/explore_damp_three_pair_global_compatibility.py, migration/certificates/130_dismantlable_ample_terminal_two_connected/verify_damp_low_excess_global_matching.py, and migration/certificates/130_dismantlable_ample_terminal_two_connected/explore_damp_five_coordinate_matching_completions.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The first two database-owned reports have mathematical digests ff2d10fdf95a608da5e7cdc0dca8cc9d973c4cfc345336f3b7278e40df8e3f92 and 760ff9566860cefa41b8a300dd9f99b03ecd08a79701a89803027f954e5afe08. The manuscript-era final report has digest fc485e9c7e6550c8478248effa90bf60b84719d42ea1579e2399b3d3f3cb5b10. The current verifier additionally records candidate_subsets and exact_active diagnostics, giving replay digest e1662d9256e8350c5eabd4bd410ea7a6359b280ae0930961452b939a163277f8; after removing only those diagnostics, the report is identical to the preserved legacy report and all theorem-relevant counts remain unchanged.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
