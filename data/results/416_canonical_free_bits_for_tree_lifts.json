@@ -1,0 +1,16 @@
+{
+  "id": 416,
+  "short_name": "canonical_free_bits_for_tree_lifts",
+  "name": "Canonical Free Vertical Directions Suffice for Tree-Lift Acyclicity",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "algorithm",
+  "statement": "In the representation-map lift over a nonempty ample tree reduction $H$, fix the contraction map, component labels, a quotient sink block $K_*$, and a root $q\\in K_*$. Keep forced vertical-source bits, set the free root bit to zero when applicable, and propagate each remaining free bit from its parent in the tree rooted at $q$. Some allowed free-bit assignment is acyclic exactly when this canonical assignment is. Hence at most $|K_*|$ cycle tests are needed, one per root, instead of $2^{|Z|}$. Moving a successful root along an outgoing contraction edge in $K_*$ preserves success, so only sinks of the induced orientation on $K_*$ need be tested.",
+  "status": "established",
+  "proof": "At a free nonroot vertex the only outgoing horizontal edge leads to its parent. If its bit differs from the parent, matching it to the parent cannot create a new directed cycle: replace the new two-edge vertical-then-parent segment of any alleged cycle by the old parent-then-vertical segment, producing a directed closed walk before the change. The free root edge may be normalized because its new head has no outgoing edge. Processing outward from the root yields the canonical assignment. The same cycle-splicing argument shows that moving the root along an outgoing edge inside the sink block preserves acyclicity.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-tree-free-bit-normalization; CompressionSchemes:drafts/round736_tree_overlap_lifting.tex#thm:round736-tree-overlap-lifting"
+}

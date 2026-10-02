@@ -1,0 +1,18 @@
+{
+  "id": 413,
+  "short_name": "path_end_corner_retention_and_prefix_separation",
+  "name": "Attainable End Corners Force Retention in a Four-Vertex Path Reduction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "implication",
+  "statement": "Let an active-coordinate reduction be the path $a-b-c-d$, with lifts $a_0,a_1$. If some $a_i$ is both a geometric corner and an attainable endpoint, the family peels to the whole edge $\\{a_0,a_1\\}$. More generally, if both lifts are attainable but their edge cannot be retained, there are disjoint exclusive-prefix sets $R_0,R_1$ in components of their respective layers such that each can be deleted while retaining the path, each $A_i=A\\setminus R_i$ peels to $a$, but $A_*=A\\setminus(R_0\\cup R_1)$ is ample with $a$ a leaf and does not peel to $a$. In such a failure neither lift is a geometric corner.",
+  "status": "established",
+  "proof": "Under nonretention, any endpoint order must first break the fibre over $a$; breaking the opposite end would leave a star reduction, and an internal path vertex cannot project from the first doubled corner. Exclusive corner tests depend only on their own complement component, so the layer-specific prefixes from the two endpoint orders can be reordered, omitted, and concatenated. Each prefix removes all exterior neighbours of $a$ in its layer. A geometric attainable lift would therefore lead after the opposite prefix to a leaf contraction peeling to $a$, from which star transfer retains the edge. Combining both prefixes gives the stated ample intersection, whose failure at $a$ is necessary to avoid the same conclusion.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-path-end-corner-retention"
+}

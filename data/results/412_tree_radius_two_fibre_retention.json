@@ -1,0 +1,18 @@
+{
+  "id": 412,
+  "short_name": "tree_radius_two_fibre_retention",
+  "name": "A Radius-Two Vertex in a Tree Reduction Retains Its Fibre",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be ample and suppose an active-coordinate reduction $D$ is a tree. If every vertex of $D$ is within graph distance two of $z$, then the following are equivalent: one lift of $z$ is an attainable endpoint; $X$ peels to the entire two-point fibre over $z$; both lifts are attainable. Hence a nonretainable coordinate edge with an attainable endpoint projects to a vertex of eccentricity at least three in any tree reduction. For a four-vertex path it must project to an endpoint, and the bound is sharp.",
+  "status": "established",
+  "proof": "Induct on the size of the reduction. Star reductions are the base case. In an endpoint peeling, the first deletion over the still-intact reduction projects to a tree corner and therefore to a leaf different from $z$. Removing that fibre vertex leaves an ample expansion whose reduction is the tree with this leaf deleted; distances among surviving vertices are unchanged and the endpoint-order suffix remains valid. Induction retains the whole fibre over $z$. The remaining implications and eccentricity consequence are immediate.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-tree-radius-two-fibre"
+}

@@ -6891,6 +6891,105 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-412" style="position:relative;">
+
+        <h3><a href="results/tree_radius_two_fibre_retention.html" class="table-title-link">A Radius-Two Vertex in a Tree Reduction Retains Its Fibre</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Radius-Two Vertex in a Tree Reduction Retains Its Fibre</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample and suppose an active-coordinate reduction $D$ is a tree. If every vertex of $D$ is within graph distance two of $z$, then the following are equivalent: one lift of $z$ is an attainable endpoint; $X$ peels to the entire two-point fibre over $z$; both lifts are attainable. Hence a nonretainable coordinate edge with an attainable endpoint projects to a vertex of eccentricity at least three in any tree reduction. For a four-vertex path it must project to an endpoint, and the bound is sharp.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct on the size of the reduction. Star reductions are the base case. In an endpoint peeling, the first deletion over the still-intact reduction projects to a tree corner and therefore to a leaf different from $z$. Removing that fibre vertex leaves an ample expansion whose reduction is the tree with this leaf deleted; distances among surviving vertices are unchanged and the endpoint-order suffix remains valid. Induction retains the whole fibre over $z$. The remaining implications and eccentricity consequence are immediate.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-tree-radius-two-fibre</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-413" style="position:relative;">
+
+        <h3><a href="results/path_end_corner_retention_and_prefix_separation.html" class="table-title-link">Attainable End Corners Force Retention in a Four-Vertex Path Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Attainable End Corners Force Retention in a Four-Vertex Path Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an active-coordinate reduction be the path $a-b-c-d$, with lifts $a_0,a_1$. If some $a_i$ is both a geometric corner and an attainable endpoint, the family peels to the whole edge $\{a_0,a_1\}$. More generally, if both lifts are attainable but their edge cannot be retained, there are disjoint exclusive-prefix sets $R_0,R_1$ in components of their respective layers such that each can be deleted while retaining the path, each $A_i=A\setminus R_i$ peels to $a$, but $A_*=A\setminus(R_0\cup R_1)$ is ample with $a$ a leaf and does not peel to $a$. In such a failure neither lift is a geometric corner.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Under nonretention, any endpoint order must first break the fibre over $a$; breaking the opposite end would leave a star reduction, and an internal path vertex cannot project from the first doubled corner. Exclusive corner tests depend only on their own complement component, so the layer-specific prefixes from the two endpoint orders can be reordered, omitted, and concatenated. Each prefix removes all exterior neighbours of $a$ in its layer. A geometric attainable lift would therefore lead after the opposite prefix to a leaf contraction peeling to $a$, from which star transfer retains the edge. Combining both prefixes gives the stated ample intersection, whose failure at $a$ is necessary to avoid the same conclusion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-path-end-corner-retention</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-414" style="position:relative;">
+
+        <h3><a href="results/short_path_connected_core_excludes_edge_failure.html" class="table-title-link">Short-Path-Connected Cores Exclude Four-Path Edge-Retention Failure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Short-Path-Connected Cores Exclude Four-Path Edge-Retention Failure</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $B$ be ample and suppose deleting the vertices of every geodesic path on at most four vertices leaves a nonempty connected graph. Attach arbitrary finite trees to vertices of $B$, each on a fresh coordinate block, to form $A$. In any ample expansion with contraction $A$ and a four-vertex-path reduction, if both lifts of a reduction vertex are attainable endpoints, the family peels to their edge.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Internal reduction vertices follow from radius-two fibre retention. For an endpoint, repeatedly delete lifted leaves of the attached trees outside the core and reduction; these are corner restrictions and preserve both endpoint attainabilities. The residual complement of the path is connected, either by the core hypothesis or by the unique path through one attached tree to the core. It therefore occupies one lift layer. The opposite end lift is a geometric corner, so attainable-corner retention applies; prepend the cleared leaves.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-path-separation-input-exclusion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/short_path_robust_rooted_inputs.html">Four Rooted Inputs Robust to Deleting Short Geodesic Paths</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-415" style="position:relative;">
+
+        <h3><a href="results/tree_lift_free_choices_can_create_cycles.html" class="table-title-link">Free Choices in a Certified Tree Lift Can Create Directed Cycles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Free Choices in a Certified Tree Lift Can Create Directed Cycles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The representation-map lifting construction over a tree reduction does not preserve acyclicity for every allowed choice. A 12-vertex expansion over a four-vertex path has a certified lifted representation map containing a directed six-cycle; changing one free vertical-source bit yields an acyclic representation map, and the same expansion has an explicit corner peeling. Thus the example refutes arbitrary-choice preservation, while retaining existence of an acyclic choice.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The displayed out-map satisfies nonclashing, outgoing-cube, and unique-sink conditions, but direct evaluation on its six listed vertices gives a directed cycle. Flipping the sole free bit reverses only one vertical assignment; the upper path and lower cube are then separately acyclic and every vertical edge points downward. The independent twelve-vertex deletion order verifies ordinary corner peelability.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-tree-lift-cycle</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/tree_lift_cycle_12.html">A 12-Vertex Tree Lift with a Cyclic Certified Choice</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-416" style="position:relative;">
+
+        <h3><a href="results/canonical_free_bits_for_tree_lifts.html" class="table-title-link">Canonical Free Vertical Directions Suffice for Tree-Lift Acyclicity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canonical Free Vertical Directions Suffice for Tree-Lift Acyclicity</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>In the representation-map lift over a nonempty ample tree reduction $H$, fix the contraction map, component labels, a quotient sink block $K_*$, and a root $q\in K_*$. Keep forced vertical-source bits, set the free root bit to zero when applicable, and propagate each remaining free bit from its parent in the tree rooted at $q$. Some allowed free-bit assignment is acyclic exactly when this canonical assignment is. Hence at most $|K_*|$ cycle tests are needed, one per root, instead of $2^{|Z|}$. Moving a successful root along an outgoing contraction edge in $K_*$ preserves success, so only sinks of the induced orientation on $K_*$ need be tested.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At a free nonroot vertex the only outgoing horizontal edge leads to its parent. If its bit differs from the parent, matching it to the parent cannot create a new directed cycle: replace the new two-edge vertical-then-parent segment of any alleged cycle by the old parent-then-vertical segment, producing a directed closed walk before the change. The free root edge may be normalized because its new head has no outgoing edge. Processing outward from the root yields the canonical assignment. The same cycle-splicing argument shows that moving the root along an outgoing edge inside the sink block preserves acyclicity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-tree-free-bit-normalization; CompressionSchemes:drafts/round736_tree_overlap_lifting.tex?#thm:round736-tree-overlap-lifting</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-417" style="position:relative;">
+
+        <h3><a href="results/four_vertex_path_reduction_obstruction.html" class="table-title-link">A Four-Vertex-Path Reduction Does Not Preserve Corner Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Four-Vertex-Path Reduction Does Not Preserve Corner Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is an ample pc-minimal obstruction $X$ to dismantlable ampleness with $909$ concepts in $37$ active coordinates and an active coordinate $e$ such that the contraction $\pi_eX$ and both sections are corner-peelable, while $X^{\{e\}}$ is the four-vertex path $2-0-4-5$. Thus expansion over a tree reduction does not preserve corner peeling. The $e$-coordinate class has exactly four edges, proving the star-reduction lower bound sharp.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Assemble a 289-concept unique-corner block containing the marked path, a disjoint 289-concept rooted factor at its first endpoint, and the 330-concept edge piece at its last edge, then lift the first block alone to the lower shore and all three pieces to the upper shore. Shadow inclusion–exclusion proves ampleness. A first-deletion argument excludes every possible first doubled-path vertex: the lower block has one corner, the first upper endpoint would force the rooted factor to its forbidden root, and the last would contradict the edge piece leaf-exit profile. Coordinate-block arguments plus star-reduction transfer prove all $111$ elementary proper minors positive; stored orders explicitly cover $109$ of them.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-four-vertex-path-obstruction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_vertex_path_obstruction_909.html">A 909-Concept Obstruction with a Four-Vertex-Path Reduction</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

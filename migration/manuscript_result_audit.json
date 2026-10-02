@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1114,
     "label_occurrences": 1138,
-    "covered": 515,
-    "uncovered": 599,
-    "proof_source_records": 1600
+    "covered": 520,
+    "uncovered": 594,
+    "proof_source_records": 1610
   },
   "by_workspace": {
     "ample-corners": {
@@ -27,9 +27,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 84,
+      "covered": 89,
       "total": 683,
-      "uncovered": 599
+      "uncovered": 594
     },
     "gluing": {
       "covered": 20,
@@ -10248,7 +10248,7 @@
       "label": "prop:damp-path-end-corner-retention",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -10258,7 +10258,9 @@
           "line": 7209
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/413_path_end_corner_retention_and_prefix_separation.json"
+      ]
     },
     {
       "label": "prop:damp-path-endpoint-trapped-wing-or-escape",
@@ -10280,7 +10282,7 @@
       "label": "prop:damp-path-separation-input-exclusion",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -10290,7 +10292,10 @@
           "line": 7303
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/125_short_path_robust_rooted_inputs.json",
+        "data/results/414_short_path_connected_core_excludes_edge_failure.json"
+      ]
     },
     {
       "label": "prop:damp-path-spine-euler-identity",
@@ -11997,7 +12002,7 @@
       "label": "prop:damp-tree-free-bit-normalization",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -12007,13 +12012,15 @@
           "line": 7421
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/416_canonical_free_bits_for_tree_lifts.json"
+      ]
     },
     {
       "label": "prop:damp-tree-radius-two-fibre",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -12023,7 +12030,9 @@
           "line": 7152
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/412_tree_radius_two_fibre_retention.json"
+      ]
     },
     {
       "label": "prop:damp-twelve-concept-octahedral-support-sphere",
@@ -13079,7 +13088,7 @@
       "label": "thm:damp-four-vertex-path-obstruction",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -13089,7 +13098,10 @@
           "line": 7552
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/126_four_vertex_path_obstruction_909.json",
+        "data/results/417_four_vertex_path_reduction_obstruction.json"
+      ]
     },
     {
       "label": "thm:damp-hall-all-overlaps-optimum",
@@ -13836,6 +13848,7 @@
         }
       ],
       "covered_by": [
+        "data/examples/123_peripheral_291_star_endpoint_control.json",
         "data/results/411_star_reduction_endpoint_and_fibre_transfer.json"
       ]
     },

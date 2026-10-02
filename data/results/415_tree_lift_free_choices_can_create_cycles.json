@@ -1,0 +1,20 @@
+{
+  "id": 415,
+  "short_name": "tree_lift_free_choices_can_create_cycles",
+  "name": "Free Choices in a Certified Tree Lift Can Create Directed Cycles",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "The representation-map lifting construction over a tree reduction does not preserve acyclicity for every allowed choice. A 12-vertex expansion over a four-vertex path has a certified lifted representation map containing a directed six-cycle; changing one free vertical-source bit yields an acyclic representation map, and the same expansion has an explicit corner peeling. Thus the example refutes arbitrary-choice preservation, while retaining existence of an acyclic choice.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/tree_lift_cycle_12"
+  ],
+  "proof": "The displayed out-map satisfies nonclashing, outgoing-cube, and unique-sink conditions, but direct evaluation on its six listed vertices gives a directed cycle. Flipping the sole free bit reverses only one vertical assignment; the upper path and lower cube are then separately acyclic and every vertical edge points downward. The independent twelve-vertex deletion order verifies ordinary corner peelability.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-tree-lift-cycle"
+}

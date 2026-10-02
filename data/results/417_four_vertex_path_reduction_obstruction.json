@@ -1,0 +1,22 @@
+{
+  "id": 417,
+  "short_name": "four_vertex_path_reduction_obstruction",
+  "name": "A Four-Vertex-Path Reduction Does Not Preserve Corner Peeling",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "There is an ample pc-minimal obstruction $X$ to dismantlable ampleness with $909$ concepts in $37$ active coordinates and an active coordinate $e$ such that the contraction $\\pi_eX$ and both sections are corner-peelable, while $X^{\\{e\\}}$ is the four-vertex path $2-0-4-5$. Thus expansion over a tree reduction does not preserve corner peeling. The $e$-coordinate class has exactly four edges, proving the star-reduction lower bound sharp.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/four_vertex_path_obstruction_909"
+  ],
+  "proof": "Assemble a 289-concept unique-corner block containing the marked path, a disjoint 289-concept rooted factor at its first endpoint, and the 330-concept edge piece at its last edge, then lift the first block alone to the lower shore and all three pieces to the upper shore. Shadow inclusion–exclusion proves ampleness. A first-deletion argument excludes every possible first doubled-path vertex: the lower block has one corner, the first upper endpoint would force the rooted factor to its forbidden root, and the last would contradict the edge piece leaf-exit profile. Coordinate-block arguments plus star-reduction transfer prove all $111$ elementary proper minors positive; stored orders explicitly cover $109$ of them.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-four-vertex-path-obstruction"
+}

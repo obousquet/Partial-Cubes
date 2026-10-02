@@ -1,0 +1,11 @@
+{
+  "id": 124,
+  "short_name": "tree_lift_cycle_12",
+  "name": "A 12-Vertex Tree Lift with a Cyclic Certified Choice",
+  "object_type": "construction",
+  "definition": "Let $U=Q_3=\\{0,\\ldots,7\\}$, take the path reduction $H=1-3-7-6$, and use the acyclic cube out-map $(7,6,1,4,3,0,5,2)$. Lift the connected complement in layer zero and apply the tree-lifting construction with lower root $6$ and free vertical-source bit zero at $3$.",
+  "parameters": "The expansion is $\\{0,1,2,3,4,5,6,7,9,11,14,15\\}\\subseteq Q_4$.",
+  "properties": "The resulting representation map has the directed cycle $3\\to11\\to15\\to14\\to6\\to2\\to3$. Flipping only the free bit at $3$ makes the map acyclic, and the expansion independently peels in the order $(9,11,15,14,0,1,4,6,2,3,7,5)$. Thus arbitrary certified free-bit choices need not preserve acyclicity, although an acyclic choice exists here.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-tree-lift-cycle",
+  "verification": "PartialCubes:papers/dismantlable-ample/research/tree_lift_acyclicity.py; PartialCubes:papers/dismantlable-ample/research/tree_lift_acyclicity.json"
+}

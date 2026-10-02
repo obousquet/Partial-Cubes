@@ -1,0 +1,21 @@
+{
+  "id": 414,
+  "short_name": "short_path_connected_core_excludes_edge_failure",
+  "name": "Short-Path-Connected Cores Exclude Four-Path Edge-Retention Failure",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "implication",
+  "statement": "Let $B$ be ample and suppose deleting the vertices of every geodesic path on at most four vertices leaves a nonempty connected graph. Attach arbitrary finite trees to vertices of $B$, each on a fresh coordinate block, to form $A$. In any ample expansion with contraction $A$ and a four-vertex-path reduction, if both lifts of a reduction vertex are attainable endpoints, the family peels to their edge.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/short_path_robust_rooted_inputs"
+  ],
+  "proof": "Internal reduction vertices follow from radius-two fibre retention. For an endpoint, repeatedly delete lifted leaves of the attached trees outside the core and reduction; these are corner restrictions and preserve both endpoint attainabilities. The residual complement of the path is connected, either by the core hypothesis or by the unique path through one attached tree to the core. It therefore occupies one lift layer. The opposite end lift is a geometric corner, so attainable-corner retention applies; prepend the cleared leaves.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-path-separation-input-exclusion"
+}
