@@ -1,0 +1,13 @@
+{
+  "id": 511,
+  "short_name": "eta_one_two_arm_comparison",
+  "name": "Comparison of One-Unit Two-Arm Decompositions",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let an ample partial cube $G$ of order at most nine have an $\\eta=1$ square-fan decomposition with terminal pairs $P_1,P_2$. If $G$ also has a sharp two-arm decomposition, one sharp terminal pair equals $P_1$ or $P_2$. If it has two $\\eta=1$ decompositions, their terminal systems share a pair, three of the four pairs are pairwise disjoint, or $G$ is a four-cycle with a pendant path of length two at each vertex of one antipodal pair. In that exceptional graph, if $z_1,z_2$ are the square directions and $f_1,f_2$ the tail directions, the four supports are $\\{z_i,f_j\\}$ for $i,j\\in\\{1,2\\}$. If $G$ also has an extra-owner three--four decomposition, its ordinary-arm support equals $P_1$ or $P_2$, or is disjoint from both.",
+  "status": "established",
+  "proof": "Deleting the square-fan apex leaves one of three tree profiles: $P_7$, $P_8$, or a tree with branch lengths $1,3,3$. For trees, branch lengths recover the arms except on $P_8$ and $P_9$, where moving the extra leaf to the opposite end yields three disjoint supports. With at least two squares, any second tree-deletion vertex lies in every square; the link tree is a star, and the block--cut branches recover a common arm unless the competing ordinary arm lies outside both old supports. With one square, comparing the four possible attachment positions leaves one exceptional arrangement: two length-two tails at antipodal square vertices, while the opposite square vertices alternate as core and apex. Reading its square and tail directions gives the four displayed supports.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-eta-one-two-arm-comparison"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 512,
+  "short_name": "extra_owner_pair_poor_active_slice",
+  "name": "A Pair-Poor Extra-Owner Wing Has a Rooted-Claw Overlap",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "In the one-unit extra-owner profile with $|K|\\le9$, a singleton active slice makes the two disjoint shores supply two disjoint acquired direction pairs. Therefore every pair-poor extra-owner wing has $|L|=2$ and $|K|=9$. Writing $G(L)=ab$ and its ordinary arm as $ap_1p_2p_3$, the graph $G(K)$ is obtained by adding a vertex $c$, three leaves $q_1,q_2,q_3$ adjacent to $c$, and one edge $rc$ with $r\\in\\{a,b\\}$. Thus exactly two rooted overlap graphs occur.",
+  "status": "established",
+  "proof": "The one-unit identity gives $|K|=|L|+7$. For $|L|=1$, each disjoint shore contains an active edge; the disjoint-shore acquisition lemma makes both active--passive pairs acquired and the direction-separation lemma makes them disjoint. Hence a pair-poor wing has $|L|=2$. Its graph consists of the slice edge, an ordinary length-three arm, and a rooted connected four-vertex component made from the larger shore and its collar. If two shore concepts were adjacent, their active--passive square would be acquired and disjoint from the ordinary-arm pair, whose terminal direction labels a bridge and cannot coincide with the shore-edge direction. Pair-poorness therefore makes the three shore concepts independent; connectivity forces each to meet the collar vertex, so the four-vertex component is a claw rooted at its centre and attached to either endpoint of $ab$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-extra-owner-pair-poor-active-slice"
+}

@@ -8478,6 +8478,66 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-509" style="position:relative;">
+
+        <h3><a href="results/small_three_four_arm_decomposition.html" class="table-title-link">A Small Three--Four Arm Decomposition Is Intrinsic Except on a Path</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Small Three--Four Arm Decomposition Is Intrinsic Except on a Path</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a connected graph $G$ of order at most nine be obtained from a path core of order one or two by attaching a pendant path of length three (the ordinary arm) and a connected four-vertex tree or four-cycle by one edge at a distinguished vertex. If $G$ has two such decompositions, their ordinary arms coincide except for $P_8$ with a one-vertex core or $P_9$ with a two-vertex core, where the decompositions interchange the length-three and length-four sides. If $G$ also has a sharp decomposition into a path core of order at most three and two pendant length-three arms, every three--four decomposition uses one of those sharp arms as its ordinary arm, with the same attachment and terminal edges.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A four-cycle component is the unique nontrivial block and is recovered from the block--cut tree. For a four-vertex tree, the internally rooted path, centre-rooted claw, and leaf-rooted claw have distinct degree and branch-order profiles, which recover the rooted component and leave the ordinary arm. The only ambiguous rooted component is a path rooted at an endpoint. Attaching paths of lengths three and four to a one-vertex core gives $P_8$; attaching them to opposite ends of a two-vertex core gives $P_9$; attaching them to the same end creates a unique degree-three vertex with branch lengths $1,3,4$. Comparison with the intrinsic sharp-arm decomposition then identifies the ordinary arm in all remaining cases.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-small-three-four-arm-decomposition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-510" style="position:relative;">
+
+        <h3><a href="results/eta_one_square_fan_normal_form.html" class="table-title-link">The Eta-One Holonomy Anomaly Is a Tree of Squares</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Eta-One Holonomy Anomaly Is a Tree of Squares</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a one-unit holonomy wing have $|K|\le9$, uncounted remainder $\eta=1$, and two disjoint two-concept cycle shores. Then $|L|\in\{1,2\}$. After choosing one collar vertex for each passive direction, exactly one vertex $v\in K$ remains uncounted, and $G(K)-v$ is obtained from the path $G(L)$ by attaching two pendant paths of length three. The square link of $v$ is a tree, so if $d=\deg_K(v)$, then $K$ contains exactly $d-1$ squares, all through $v$. For arm $i$, the pair $P_i=\{z_i,f_i\}$ of its attachment and terminal directions is not shattered by $K$; the two pairs are disjoint and are exactly the terminal-square supports acquired by the upper family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The one-unit identity gives $|K|=|L|+7$, and the shore-root lemma gives $1\le|L|\le2$. Connectivity and bipartiteness of each opposite active section allow its collar to be chosen so that the shore edge lifts to a pendant length-three arm. The two arms have disjoint nonbase vertices and no cross edge; together with $L$ they leave exactly the uncounted vertex $v$, so deleting $v$ gives the asserted tree and the one-vertex tree-completion theorem gives the square fan. Each passive arm direction occurs only on its attachment edge below, so a square through it cannot use the terminal direction; ampleness therefore excludes $P_i$ from $\operatorname{Sh}(K)$. Carrier connectivity forces the two terminal directions to differ, and the upper shore squares show that both pairs are acquired.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-eta-one-square-fan-normal-form</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-511" style="position:relative;">
+
+        <h3><a href="results/eta_one_two_arm_comparison.html" class="table-title-link">Comparison of One-Unit Two-Arm Decompositions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Comparison of One-Unit Two-Arm Decompositions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample partial cube $G$ of order at most nine have an $\eta=1$ square-fan decomposition with terminal pairs $P_1,P_2$. If $G$ also has a sharp two-arm decomposition, one sharp terminal pair equals $P_1$ or $P_2$. If it has two $\eta=1$ decompositions, their terminal systems share a pair, three of the four pairs are pairwise disjoint, or $G$ is a four-cycle with a pendant path of length two at each vertex of one antipodal pair. In that exceptional graph, if $z_1,z_2$ are the square directions and $f_1,f_2$ the tail directions, the four supports are $\{z_i,f_j\}$ for $i,j\in\{1,2\}$. If $G$ also has an extra-owner three--four decomposition, its ordinary-arm support equals $P_1$ or $P_2$, or is disjoint from both.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting the square-fan apex leaves one of three tree profiles: $P_7$, $P_8$, or a tree with branch lengths $1,3,3$. For trees, branch lengths recover the arms except on $P_8$ and $P_9$, where moving the extra leaf to the opposite end yields three disjoint supports. With at least two squares, any second tree-deletion vertex lies in every square; the link tree is a star, and the block--cut branches recover a common arm unless the competing ordinary arm lies outside both old supports. With one square, comparing the four possible attachment positions leaves one exceptional arrangement: two length-two tails at antipodal square vertices, while the opposite square vertices alternate as core and apex. Reading its square and tail directions gives the four displayed supports.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-eta-one-two-arm-comparison</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-512" style="position:relative;">
+
+        <h3><a href="results/extra_owner_pair_poor_active_slice.html" class="table-title-link">A Pair-Poor Extra-Owner Wing Has a Rooted-Claw Overlap</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Pair-Poor Extra-Owner Wing Has a Rooted-Claw Overlap</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In the one-unit extra-owner profile with $|K|\le9$, a singleton active slice makes the two disjoint shores supply two disjoint acquired direction pairs. Therefore every pair-poor extra-owner wing has $|L|=2$ and $|K|=9$. Writing $G(L)=ab$ and its ordinary arm as $ap_1p_2p_3$, the graph $G(K)$ is obtained by adding a vertex $c$, three leaves $q_1,q_2,q_3$ adjacent to $c$, and one edge $rc$ with $r\in\{a,b\}$. Thus exactly two rooted overlap graphs occur.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The one-unit identity gives $|K|=|L|+7$. For $|L|=1$, each disjoint shore contains an active edge; the disjoint-shore acquisition lemma makes both active--passive pairs acquired and the direction-separation lemma makes them disjoint. Hence a pair-poor wing has $|L|=2$. Its graph consists of the slice edge, an ordinary length-three arm, and a rooted connected four-vertex component made from the larger shore and its collar. If two shore concepts were adjacent, their active--passive square would be acquired and disjoint from the ordinary-arm pair, whose terminal direction labels a bridge and cannot coincide with the shore-edge direction. Pair-poorness therefore makes the three shore concepts independent; connectivity forces each to meet the collar vertex, so the four-vertex component is a claw rooted at its centre and attached to either endpoint of $ab$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-extra-owner-pair-poor-active-slice</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
