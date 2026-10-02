@@ -1,0 +1,19 @@
+{
+  "id": 672,
+  "short_name": "ambient_cube_corner_descent_criterion",
+  "name": "Ambient-Cube Corner-Descent Criterion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/cube_complement"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $A\\subsetneq Q_E$ be nonempty and ample. A sequence of corner deletions takes the ambient cube $Q_E$ to $A$ if and only if the cube complement $Q_E\\setminus A$ is dismantlable ample.",
+  "status": "established",
+  "proof": "Write $B=Q_E\\setminus A$, which is ample by complement duality. If $b_1,\\ldots,b_m$ are deleted from the cube, every residual complement $\\{b_1,\\ldots,b_j\\}$ is ample. Reversing these ample prefixes gives a corner peeling of $B$. Conversely, reverse a peeling of $B$. Its successive prefixes $B_j$ are ample, so their complements are ample; the ample corner-deletion criterion makes each next $b_j$ a corner of $Q_E\\setminus B_{j-1}$, producing the descent to $A$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-ambient-cube-descent",
+  "comments": "This converts generation by deletion from a cube into an ordinary peelability test for the complement."
+}

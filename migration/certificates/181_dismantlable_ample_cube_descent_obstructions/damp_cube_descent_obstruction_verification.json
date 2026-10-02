@@ -1,0 +1,234 @@
+{
+  "schema": "damp-cube-descent-obstruction-v1",
+  "input_sha256": {
+    "computations/hall_corner_exchange/source_H.json": "f21c8d7a76371d67c230ac0049c66949e9a26dc6dca4beed6fdbf1c139400ca1",
+    "damp_terminal_clause_recovery_verification.json": "b316136808d02f2e7f9d4b851fc251e8f455cbf667a07c2fec4f4ee272197c65",
+    "computations/round810_hall_complement_peeling.json": "cdecdcf654564cc50329dc113c1e8aa1b24cdfcd0a78a3f95aaea60e05b5df18"
+  },
+  "verifier_sha256": "85771bdfe4958e5877f929d4b9b28f51aeeafaa588264eee01c52a50483bbd53",
+  "helper_sha256": {
+    "verify_damp_cornered_maximal_seed.py": "52fe3745ce499341f697c259d98fbb792288b8ade855a1fd64cd84ec7c6bad57",
+    "verify_damp_cut_vertex_obstruction.py": "9f840c80b726e7a96bfe374bbb366d6616bf36448829f442d810ff5566dee2ad",
+    "verify_damp_layer_midpoint_cores.py": "8c9c4744262e18194cd908d1cbf3630768deaa6066f04378b4cf2ecacd4aa899",
+    "verify_damp_terminal_cut_vertex.py": "5a4ba8805df480c66cb3532cb27b46f8c728a73984105dae7722bbbd4af8eee0"
+  },
+  "source": {
+    "order": 299,
+    "dimension": 12,
+    "vc_dimension": 3,
+    "corner_count": 0,
+    "elementary_minor_orders_replayed": 36,
+    "elementary_minor_sizes": [
+      157,
+      142,
+      232,
+      198,
+      101,
+      232,
+      149,
+      150,
+      232,
+      190,
+      109,
+      232,
+      101,
+      198,
+      232,
+      142,
+      157,
+      232,
+      109,
+      190,
+      232,
+      150,
+      149,
+      232,
+      137,
+      162,
+      232,
+      178,
+      121,
+      232,
+      129,
+      170,
+      232,
+      170,
+      129,
+      232
+    ]
+  },
+  "repairs": [
+    {
+      "tip": 183,
+      "support": [
+        2,
+        3,
+        6,
+        7
+      ],
+      "peeling_length": 300
+    },
+    {
+      "tip": 315,
+      "support": [
+        2,
+        3,
+        8,
+        9
+      ],
+      "peeling_length": 300
+    },
+    {
+      "tip": 1836,
+      "support": [
+        4,
+        5,
+        10,
+        11
+      ],
+      "peeling_length": 300
+    }
+  ],
+  "rows": {
+    "orders": [
+      3797,
+      4095,
+      4095
+    ],
+    "peelings_replayed": 3,
+    "signed_facet_owners": [
+      {
+        "coordinate": 0,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 0,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 1,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 1,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 2,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 2,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 3,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 3,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 4,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 4,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 5,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 5,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 6,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 6,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 7,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 7,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 8,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 8,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 9,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 9,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 10,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 10,
+        "sign": 1,
+        "owner": 315
+      },
+      {
+        "coordinate": 11,
+        "sign": 0,
+        "owner": 1836
+      },
+      {
+        "coordinate": 11,
+        "sign": 1,
+        "owner": 315
+      }
+    ]
+  },
+  "output": {
+    "order": 1236691,
+    "dimension": 24,
+    "complement_order": 15540525,
+    "complement_section_old_word": 183,
+    "complement_section_equals_H": true,
+    "common_seed_theorem_inputs_verified": true,
+    "full_output_materialized": false,
+    "full_output_minor_orders_replayed": 0
+  },
+  "conclusion_scope": "Uniform theorem plus fixed input replay; no output census.",
+  "all_checks_passed": true
+}

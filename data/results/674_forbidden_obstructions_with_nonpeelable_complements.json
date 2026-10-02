@@ -1,0 +1,25 @@
+{
+  "id": 674,
+  "short_name": "forbidden_obstructions_with_nonpeelable_complements",
+  "name": "Forbidden Obstructions with Nonpeelable Cube Complements",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product",
+    "#operations/concept_deletion",
+    "#operations/cube_complement",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every integer $r\\ge0$, there is an ample forbidden pc-minor $X_r$ of isometric dimension $24+r$ and order $1{,}236{,}693\\cdot2^r-2$ whose cube complement is nonpeelable. Hence ample forbidden pc-minors need not be obtainable by corner deletions from their ambient cubes.",
+  "status": "established",
+  "proof": "Use Hall's 299-concept cornerless obstruction $H\\subseteq Q_{12}$ and its three certified resolving additions. Its complement $K_0=Q_{12}\\setminus H$ has 3,797 concepts and a certified corner peeling. Apply the prescribed-complement-section construction with $K=K_0\\times Q_r$ on $12+r$ new coordinates. The product is dismantlable ample, while its complement $H\\times Q_r$ has the nonpeelable minor $H$. Thus the output and its complement are nonpeelable and ambient-cube descent is impossible. The full product $H\\times Q_{12+r}$ supplies all $24+r$ active directions, and substitution into the order formula gives $1{,}236{,}693\\cdot2^r-2$.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-nonpeelable-complement-obstructions",
+  "witness_ids": [
+    "#examples/hall_complement_section_obstruction_tower"
+  ],
+  "comments": "For $r=0$ the certificate verifies all compact inputs and the exact output order 1,236,691 and complement order 15,540,525. Neither large family is materialized and no output-minor census is claimed."
+}

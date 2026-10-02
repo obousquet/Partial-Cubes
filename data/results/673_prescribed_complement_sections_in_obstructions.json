@@ -1,0 +1,25 @@
+{
+  "id": 673,
+  "short_name": "prescribed_complement_sections_in_obstructions",
+  "name": "Prescribed Sections in Complements of Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/cartesian_product",
+    "#operations/conditioning",
+    "#operations/cube_complement",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $S$ be an irredundantly embedded ample forbidden pc-minor with three resolving one-concept additions $a_0,a_+,a_-$ having pairwise distinct acquired supports. For nonempty proper $K\\in\\mathcal D_{\\rm amp}$ on a disjoint coordinate set $D$ and $u\\in Q_D$, set $X_K=(S\\times Q_D)\\cup(\\{a_0\\}\\times K)\\cup(\\{a_+\\}\\times(Q_D\\setminus\\{u\\}))\\cup(\\{a_-\\}\\times(Q_D\\setminus\\{\\bar u\\}))$. Then $X_K$ is an ample forbidden pc-minor, and the section of its cube complement at old word $a_0$ is exactly $Q_D\\setminus K$. If this complementary section is nonpeelable, both $X_K$ and its cube complement are nonpeelable and $X_K$ cannot be obtained from its ambient cube by corner deletions. Moreover $|X_K|=(|S|+2)2^{|D|}+|K|-2$.",
+  "status": "established",
+  "proof": "The three occurrence rows are nonempty, proper, ample, and peelable. The two punctured cubes own opposite full facets for every coordinate of $D$, so the common-seed occurrence-cover theorem makes $X_K$ an ample forbidden pc-minor. Only the row $K$ occurs at old word $a_0$, giving the asserted complementary section. This is a proper pc-minor of the complement because the complement also contains $(a_+,u)$. A peeling of the complement would induce an ample-prefix order on the section, so a nonpeelable section forces the whole complement to be nonpeelable. The ambient-cube descent criterion then excludes a descent to $X_K$. The four parts are disjoint, and direct counting yields the order formula.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-complement-section-construction",
+  "witness_ids": [
+    "#examples/hall_complement_section_obstruction_tower"
+  ],
+  "comments": "The theorem prescribes an arbitrary complement section arising as the complement of a nonempty proper dismantlable ample row; it does not claim that the resulting obstruction is terminal under obstruction-preserving corner deletion."
+}

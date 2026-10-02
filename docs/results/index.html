@@ -11277,6 +11277,61 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-672" style="position:relative;">
+
+        <h3><a href="results/ambient_cube_corner_descent_criterion.html" class="table-title-link">Ambient-Cube Corner-Descent Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ambient-Cube Corner-Descent Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A\subsetneq Q_E$ be nonempty and ample. A sequence of corner deletions takes the ambient cube $Q_E$ to $A$ if and only if the cube complement $Q_E\setminus A$ is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Write $B=Q_E\setminus A$, which is ample by complement duality. If $b_1,\ldots,b_m$ are deleted from the cube, every residual complement $\{b_1,\ldots,b_j\}$ is ample. Reversing these ample prefixes gives a corner peeling of $B$. Conversely, reverse a peeling of $B$. Its successive prefixes $B_j$ are ample, so their complements are ample; the ample corner-deletion criterion makes each next $b_j$ a corner of $Q_E\setminus B_{j-1}$, producing the descent to $A$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-ambient-cube-descent</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This converts generation by deletion from a cube into an ordinary peelability test for the complement.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-673" style="position:relative;">
+
+        <h3><a href="results/prescribed_complement_sections_in_obstructions.html" class="table-title-link">Prescribed Sections in Complements of Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prescribed Sections in Complements of Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be an irredundantly embedded ample forbidden pc-minor with three resolving one-concept additions $a_0,a_+,a_-$ having pairwise distinct acquired supports. For nonempty proper $K\in\mathcal D_{\rm amp}$ on a disjoint coordinate set $D$ and $u\in Q_D$, set $X_K=(S\times Q_D)\cup(\{a_0\}\times K)\cup(\{a_+\}\times(Q_D\setminus\{u\}))\cup(\{a_-\}\times(Q_D\setminus\{\bar u\}))$. Then $X_K$ is an ample forbidden pc-minor, and the section of its cube complement at old word $a_0$ is exactly $Q_D\setminus K$. If this complementary section is nonpeelable, both $X_K$ and its cube complement are nonpeelable and $X_K$ cannot be obtained from its ambient cube by corner deletions. Moreover $|X_K|=(|S|+2)2^{|D|}+|K|-2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The three occurrence rows are nonempty, proper, ample, and peelable. The two punctured cubes own opposite full facets for every coordinate of $D$, so the common-seed occurrence-cover theorem makes $X_K$ an ample forbidden pc-minor. Only the row $K$ occurs at old word $a_0$, giving the asserted complementary section. This is a proper pc-minor of the complement because the complement also contains $(a_+,u)$. A peeling of the complement would induce an ample-prefix order on the section, so a nonpeelable section forces the whole complement to be nonpeelable. The ambient-cube descent criterion then excludes a descent to $X_K$. The four parts are disjoint, and direct counting yields the order formula.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-complement-section-construction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_complement_section_obstruction_tower.html">Hall Complement-Section Obstruction Tower</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The theorem prescribes an arbitrary complement section arising as the complement of a nonempty proper dismantlable ample row; it does not claim that the resulting obstruction is terminal under obstruction-preserving corner deletion.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-674" style="position:relative;">
+
+        <h3><a href="results/forbidden_obstructions_with_nonpeelable_complements.html" class="table-title-link">Forbidden Obstructions with Nonpeelable Cube Complements</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forbidden Obstructions with Nonpeelable Cube Complements</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/cube_complement.html">Cube Complement</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every integer $r\ge0$, there is an ample forbidden pc-minor $X_r$ of isometric dimension $24+r$ and order $1{,}236{,}693\cdot2^r-2$ whose cube complement is nonpeelable. Hence ample forbidden pc-minors need not be obtainable by corner deletions from their ambient cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use Hall's 299-concept cornerless obstruction $H\subseteq Q_{12}$ and its three certified resolving additions. Its complement $K_0=Q_{12}\setminus H$ has 3,797 concepts and a certified corner peeling. Apply the prescribed-complement-section construction with $K=K_0\times Q_r$ on $12+r$ new coordinates. The product is dismantlable ample, while its complement $H\times Q_r$ has the nonpeelable minor $H$. Thus the output and its complement are nonpeelable and ambient-cube descent is impossible. The full product $H\times Q_{12+r}$ supplies all $24+r$ active directions, and substitution into the order formula gives $1{,}236{,}693\cdot2^r-2$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-nonpeelable-complement-obstructions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_complement_section_obstruction_tower.html">Hall Complement-Section Obstruction Tower</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>For $r=0$ the certificate verifies all compact inputs and the exact output order 1,236,691 and complement order 15,540,525. Neither large family is materialized and no output-minor census is claimed.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

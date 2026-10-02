@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "batch_id": "181_dismantlable_ample_cube_descent_obstructions",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the complement criterion for corner descent from a cube, the common-seed construction prescribing a section of an obstruction complement, and the Hall-based infinite family of forbidden pc-minors whose cube complements are nonpeelable.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-ambient-cube-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-complement-section-construction",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-nonpeelable-complement-obstructions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-cube-descent-verification",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_cube_descent_obstruction.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "cube-descent-obstruction-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign cube-descent verifier and its complete eleven-file runtime and hash dependency closure",
+      "sha256": "5a16bfe9b9fe731ab96b8dbec1ea8ca2beba1e69d5edd5e447242d8d42331503",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/181_dismantlable_ample_cube_descent_obstructions/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The three claims close a proposed generation scheme: an ample family is reachable from its cube by corner deletions exactly when its complement peels, and the common-seed construction produces an infinite certified family where that necessary and sufficient condition fails.",
+    "outcome": "All three statement-plus-proof blocks match the preserved manuscript. The database records the complement-prefix equivalence, exact prescribed-section construction, proper-minor argument for complement nonpeelability, order formula, Hall tower parameters, and the boundary between compact input replay and symbolic large-output certification.",
+    "claim_block_sha256": {
+      "lem:damp-ambient-cube-descent": "436bf15d71911723cdb21da5b80dfc67e1ac9349c33b787dedbd6b6cb1ade483",
+      "thm:damp-complement-section-construction": "7964f503c62e098b889938e2a9747f9dd81e4cd89e719b4a55fb17235b1d62bb",
+      "cor:damp-nonpeelable-complement-obstructions": "c2c75dcb88c277dd75e0684e0a91c438953c2564b9cc6b31c0277d4fc99d315c"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/181_dismantlable_ample_cube_descent_obstructions/verify_damp_cube_descent_obstruction.py",
+      "sha256": "85771bdfe4958e5877f929d4b9b28f51aeeafaa588264eee01c52a50483bbd53"
+    },
+    {
+      "path": "migration/certificates/181_dismantlable_ample_cube_descent_obstructions/damp_cube_descent_obstruction_verification.json",
+      "sha256": "980e38e9a74dffff9f46de48037a7814a511ec3c9b957283f565e945a28aba04"
+    },
+    {
+      "path": "migration/certificates/181_dismantlable_ample_cube_descent_obstructions/source_damp_cube_descent_obstruction_verification.json",
+      "sha256": "980e38e9a74dffff9f46de48037a7814a511ec3c9b957283f565e945a28aba04"
+    },
+    {
+      "path": "migration/certificates/181_dismantlable_ample_cube_descent_obstructions/source_packet_manifest.json",
+      "sha256": "ba4eca3e0bda0c454ba2064a5c3597b79c18362279b5985f5942c0857880aca1"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the three normalized results, Hall obstruction tower, exact formulas, concise proofs, and replay scope. LaTeX retains the expanded construction discussion and its implications for intrinsic generation. The compact Hall family, all peeling orders, repair data, verifier helpers, and probe source remain byte-archived because the certified large families cannot be reconstructed from theorem prose alone.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three proofs. The tracked eleven-file computation packet at commit b30995f is path-hashed and byte-archived; its verifier reproduces the tracked report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/187_hall_complement_section_obstruction_tower.json",
+      "sha256": "efa2ca5a860c283c51d7dbbe932531d892c45acb5e4c2ed1b76014ff4ecd098d"
+    },
+    {
+      "path": "data/results/672_ambient_cube_corner_descent_criterion.json",
+      "sha256": "f471c60dc7bf4cdf855c579b7ad750f3878376e8fc1b4b30a5fc13634ffb5d04"
+    },
+    {
+      "path": "data/results/673_prescribed_complement_sections_in_obstructions.json",
+      "sha256": "aa8113b0e5f9f0299f3d67963b7079bd3f4a45114deb2fecc0cda8437e25b50b"
+    },
+    {
+      "path": "data/results/674_forbidden_obstructions_with_nonpeelable_complements.json",
+      "sha256": "4a17365940ac9cac0f1a17b359fcd3ce3714c8454ffde76f03ace7e7fd19a24f"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d087cb1a5dce48fceb24433ef8ab225747505a992077f2a9991e438ef6fb17ab"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "fe86ac9e35b338c8f6b8ac6f2825444aa7e116b1491dfbec05392a62174b0295"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2071 records.",
+    "website": "Normalized 2087 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 768 to 771 of 1143 and dismantlable-ample coverage from 332 to 335 of 683.",
+    "certificates": "The replay checks Hall's exact shadow and cornerlessness, all 36 elementary-minor orders, three resolving additions, the 3,797-concept complement peeling, three occurrence-row orders, all 24 signed facets, the exact Hall complementary section, and the order formulas for the $r=0$ output and complement.",
+    "source_integrity": "All three reviewed claim blocks match supplemental snapshot 2026-10-02-b002, every computation input matches its archived hash, and the generated verification report is byte-identical to the source report."
+  },
+  "deferred": [
+    "The refreshed audit has 372 uncovered database-owned labels: 348 in dismantlable-ample and 24 in ample-corners.",
+    "The next block gives an exact deletion test for common-seed covers and classifies terminal occurrence rows as signed-facet partitions, including their coordinate thickness.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
