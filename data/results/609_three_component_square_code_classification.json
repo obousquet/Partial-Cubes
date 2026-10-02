@@ -1,0 +1,24 @@
+{
+  "id": 609,
+  "short_name": "three_component_square_code_classification",
+  "name": "Exact Three-Component Square-Code Classification",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be the certified 577-concept cornerless double, and let its marked contraction $U$ and reduction $D$ satisfy that $U\\setminus D$ has three connected components $K_0,K_1,K_2$. For an ordered triple $q=(q_0,q_1,q_2)$ of square words, retain the full square fibre over $D$ and omit precisely $q_i$ over $K_i$. Every resulting family is ample of order 1601. It is a forbidden pc-minor exactly when $q_0\\mathbin{\\oplus}q_1=3$ and $q_2\\ne q_1$. Among all 64 assignments, 28 are dismantlable ample, 24 have a negative proper square face and are not forbidden, and 12 are forbidden.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/three_component_cornerless_1601"
+  ],
+  "proof": "The component cube construction proves ampleness and the common order. When adjacent labels agree, one of two certified binary peeling traces expands to a complete positive order, giving 28 positive assignments. Four antipodal triples with $q_2=q_0$ are coordinate-block replacements of $S$; the other eight selected triples are square isometries of the fully verified representative. For every remaining assignment, direct restriction to a square-coordinate face produces a proper cornerless face. These disjoint cases exhaust all 64 codes. The representative certificate independently replays all 75 elementary minor orders, so its cornerlessness proves nonpeelability and the orders prove minor minimality.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-component-cornerless-obstruction",
+  "comments": "This is an exact classification for the fixed three-component input. It does not select admissible codes for arbitrary inputs or prove exhaustive generation of reduced forbidden classes."
+}
