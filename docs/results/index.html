@@ -5316,6 +5316,155 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-316" style="position:relative;">
+
+        <h3><a href="results/partial_cube_hull_number_complexity.html" class="table-title-link">Hull Number Is Hard for Partial Cubes but Tractable for Partial-Cube Quadrangulations</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hull Number Is Hard for Partial Cubes but Tractable for Partial-Cube Quadrangulations</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/planar_partial_cubes.html">Planar Partial Cubes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/hull_number.html">Geodesic Hull Number</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Given a partial cube $G$ and integer $k$, deciding whether $h(G)\le k$ is NP-complete. If a plane quadrangulation $G$ is a partial cube, then $h(G)$ is computable in polynomial time.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For the positive case, the simple non-separating Jordan arrangement has a chordal open-interior intersection graph, and a minimum hitting set of interiors reduces to minimum clique cover. The simplicity hypothesis is essential to this reduction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#AlbenqueKnauer16hull">[AlbenqueKnauer16hull]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:planar-partial-cube-hull-number</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-317" style="position:relative;">
+
+        <h3><a href="results/squaregraph_tree_product_dimension.html" class="table-title-link">Exact Tree-Product Bounds for Squaregraphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Tree-Product Bounds for Squaregraphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/squaregraphs.html">Squaregraphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/isometric_tree_product_dimension.html">Isometric Tree-Product Dimension</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite squaregraph embeds isometrically into a product of five trees, and some require five. Three trees suffice when the $2\times2$ grid is absent. A finite squaregraph embeds isometrically into a product of two trees exactly when every inner vertex has even degree.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~3]{bandelt2010combinatorics}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:squaregraph-tree-products</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-318" style="position:relative;">
+
+        <h3><a href="results/squaregraph_semistrong_product_structure.html" class="table-title-link">Squaregraphs Have Outerplanar-by-Path Semistrong Hosts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Squaregraphs Have Outerplanar-by-Path Semistrong Hosts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/squaregraphs.html">Squaregraphs</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/semistrong_product.html">Semistrong Graph Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite squaregraph $G$ is isomorphic to a subgraph of $H\boxtimes_s P$ for some outerplanar graph $H$ and path $P$. The outerplanar factor cannot uniformly be replaced by a forest, even in a strong-product host with any fixed complete-graph factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~1 and Corollary~12]{HickingbothamJungeblutMerkerWood24}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:squaregraph-semistrong-product</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The containment is an ordinary subgraph representation and carries no induced or isometric guarantee.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-319" style="position:relative;">
+
+        <h3><a href="results/acc_recognition_algorithm.html" class="table-title-link">ACC Graphs Are Recognizable in Near-Linear Time</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>ACC Graphs Are Recognizable in Near-Linear Time</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/acc_graphs.html">ACC Graphs</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Given an arbitrary graph with $n$ vertices and $m$ edges, ACC membership can be decided in $O(m\log n)$ time. The input need not be promised median or partial-cubical.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The algorithm recognizes the median structure, identifies square-generated edge classes, and maintains pendant cubes through the elimination process.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~8]{ImrichKlavzar99accrecognition}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:acc-recognition</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-320" style="position:relative;">
+
+        <h3><a href="results/cube_intersection_representation_classes.html" class="table-title-link">Cube-Intersection Graph Representation Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube-Intersection Graph Representation Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/median.html">Median Graphs</a></li><li><a href="classes/acc_graphs.html">ACC Graphs</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cube_intersection_operator.html">Cube-Intersection Operator</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The graphs $Q(G)$ arising from $p$-expansion graphs are exactly the chordal graphs; those from median $p$-expansion graphs are exactly the Helly chordal graphs; those from ACC graphs are exactly the dually chordal graphs; and those from ACC $p$-expansion graphs are exactly the doubly chordal graphs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BandeltChepoi96">[BandeltChepoi96]</a> <a href="bibliography.html#Bresar2003">[Bresar2003]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:cube-intersection-representations</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Each converse asserts existence of a representing graph in the stated class. It does not turn a property of $Q(G)$ into membership of an arbitrary given $G$.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-321" style="position:relative;">
+
+        <h3><a href="results/peano_strongly_faithful_retracts.html" class="table-title-link">Strongly Faithful Peano Subgraphs and Retracts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Strongly Faithful Peano Subgraphs and Retracts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/peano_partial_cubes.html">Peano Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every strongly faithful subgraph of a Peano partial cube is Peano, and every retract of a Peano partial cube is strongly faithful. The converse to the latter implication fails: the gated amalgam of $C_4$ and $K_2$ along one vertex is strongly faithful in $Q_3=C_4\square K_2$ but is not a retract.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorems~6.32 and 6.35]{polat2019peano}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:strongly-faithful-retracts</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-322" style="position:relative;">
+
+        <h3><a href="results/netlike_median_completion.html" class="table-title-link">Median Completion Characterizes MCP Netlike Partial Cubes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Median Completion Characterizes MCP Netlike Partial Cubes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/netlike_partial_cubes.html">Netlike Partial Cubes</a></li><li><a href="classes/polat_partial_cubes.html">Polat Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/netlike_completion.html">Netlike Median Completion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>A netlike completion $\widehat G$ is median exactly when $G$ has the median-cycle property. In that case $\widehat G$ is a minimal median graph containing $G$ isometrically. Conversely, every MCP netlike partial cube is obtained from a median graph by deleting the specified maximal finite hypercubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Polat09netlikeV">[Polat09netlikeV]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:netlike-completion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-323" style="position:relative;">
+
+        <h3><a href="results/folb_partial_cube_class_definability.html" class="table-title-link">Major Partial-Cube Classes Are First-Order Definable with Betweenness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Major Partial-Cube Classes Are First-Order Definable with Betweenness</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/median.html">Median Graphs</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/om_tope_graphs.html">Oriented-Matroid Tope Graphs</a></li><li><a href="classes/com_tope_graphs.html">COM Tope Graphs</a></li><li><a href="classes/pasch_partial_cubes.html">Pasch Partial Cubes</a></li><li><a href="classes/peano_partial_cubes.html">Peano Partial Cubes</a></li><li><a href="classes/cellular_partial_cubes.html">Cellular Bipartite Partial Cubes</a></li><li><a href="classes/hypercellular_partial_cubes.html">Hypercellular Partial Cubes</a></li><li><a href="classes/almost_median_partial_cubes.html">Almost-Median Partial Cubes</a></li><li><a href="classes/netlike_partial_cubes.html">Netlike Partial Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Each listed class is definable on finite connected graphs by a fixed first-order sentence using equality and the ternary metric-betweenness relation. Consequently every listed class has a polynomial-time recognition algorithm obtained by constructing all-pairs betweenness and evaluating its fixed sentence.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~10]{ChalopinChangatChepoiJacob24}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:folb-partial-cubes</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The generic model-checking algorithm need not output structural certificates and can have a much larger exponent than specialized recognition algorithms. Semi-median definability remains open.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-324" style="position:relative;">
+
+        <h3><a href="results/flag_complex_boolean_median_test.html" class="table-title-link">Boolean Median Characterizes Flag Complexes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Boolean Median Characterizes Flag Complexes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/simplex_graphs.html">Simplex Graphs</a></li><li><a href="classes/median.html">Median Graphs</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/majority_closure.html">Majority Closure</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a finite abstract simplicial complex $\Delta\subseteq2^X$, the following are equivalent: $\Delta$ is flag; it is the clique complex, equivalently the independence complex, of a graph; and $\operatorname{med}(A,B,C)=(A\cap B)\cup(A\cap C)\cup(B\cap C)$ belongs to $\Delta$ for all $A,B,C\in\Delta$. Its face-poset covering graph is then a simplex graph and hence median.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>References:</strong><div class="text-field"><p>\cite[Theorem~1.5]{XieXu25simplex}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/survey/main.tex?#thm:simplex-boolean-median</p></div>
+<strong>Comments:</strong><div class="text-field"><p>For $2^{\{1,2,3\}}\setminus\{\{1,2,3\}\}$, the three 2-faces have missing Boolean median $\{1,2,3\}$; its covering graph is $Q_3^-$ and is not simplex.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

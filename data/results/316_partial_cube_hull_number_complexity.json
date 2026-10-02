@@ -1,0 +1,18 @@
+{
+  "id": 316,
+  "short_name": "partial_cube_hull_number_complexity",
+  "name": "Hull Number Is Hard for Partial Cubes but Tractable for Partial-Cube Quadrangulations",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/planar_partial_cubes"
+  ],
+  "invariant_ids": [
+    "#invariants/hull_number"
+  ],
+  "result_type": "algorithm",
+  "statement": "Given a partial cube $G$ and integer $k$, deciding whether $h(G)\\le k$ is NP-complete. If a plane quadrangulation $G$ is a partial cube, then $h(G)$ is computable in polynomial time.",
+  "status": "established",
+  "proof": "For the positive case, the simple non-separating Jordan arrangement has a chordal open-interior intersection graph, and a minimum hitting set of interiors reduces to minimum clique cover. The simplicity hypothesis is essential to this reduction.",
+  "references": "\\cite{AlbenqueKnauer16hull}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:planar-partial-cube-hull-number"
+}

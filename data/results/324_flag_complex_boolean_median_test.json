@@ -1,0 +1,18 @@
+{
+  "id": 324,
+  "short_name": "flag_complex_boolean_median_test",
+  "name": "Boolean Median Characterizes Flag Complexes",
+  "class_ids": [
+    "#classes/simplex_graphs",
+    "#classes/median"
+  ],
+  "operation_ids": [
+    "#operations/majority_closure"
+  ],
+  "result_type": "recognition",
+  "statement": "For a finite abstract simplicial complex $\\Delta\\subseteq2^X$, the following are equivalent: $\\Delta$ is flag; it is the clique complex, equivalently the independence complex, of a graph; and $\\operatorname{med}(A,B,C)=(A\\cap B)\\cup(A\\cap C)\\cup(B\\cap C)$ belongs to $\\Delta$ for all $A,B,C\\in\\Delta$. Its face-poset covering graph is then a simplex graph and hence median.",
+  "status": "established",
+  "references": "\\cite[Theorem~1.5]{XieXu25simplex}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:simplex-boolean-median",
+  "comments": "For $2^{\\{1,2,3\\}}\\setminus\\{\\{1,2,3\\}\\}$, the three 2-faces have missing Boolean median $\\{1,2,3\\}$; its covering graph is $Q_3^-$ and is not simplex."
+}

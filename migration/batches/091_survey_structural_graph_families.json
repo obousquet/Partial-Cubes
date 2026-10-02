@@ -1,0 +1,132 @@
+{
+  "version": 1,
+  "batch_id": "091_survey_structural_graph_families",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the frozen survey cluster on planar Jordan-region models, hull-number complexity, squaregraph product structure, ACC recognition, cube-intersection representation classes, Peano retracts, netlike completion, first-order definability, and the flag-complex Boolean-median test, promoting their reusable characterizations, operations, and invariants to first-class database records.",
+  "source_refs": [
+    "PartialCubes:papers/survey/main.tex#thm:planar-jordan-representation",
+    "PartialCubes:papers/survey/main.tex#thm:planar-partial-cube-hull-number",
+    "PartialCubes:papers/survey/main.tex#thm:squaregraph-tree-products",
+    "PartialCubes:papers/survey/main.tex#thm:squaregraph-semistrong-product",
+    "PartialCubes:papers/survey/main.tex#thm:acc-recognition",
+    "PartialCubes:papers/survey/main.tex#thm:cube-intersection-representations",
+    "PartialCubes:papers/survey/main.tex#thm:strongly-faithful-retracts",
+    "PartialCubes:papers/survey/main.tex#thm:netlike-completion",
+    "PartialCubes:papers/survey/main.tex#thm:folb-partial-cubes",
+    "PartialCubes:papers/survey/main.tex#thm:simplex-boolean-median"
+  ],
+  "source_packets": [
+    {
+      "id": "survey-main",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "papers/survey/main.tex",
+      "sha256": "967f472b2d083e6230522eaf60add14fc1ff11daa04def557f755e0cfb0c5d8c"
+    },
+    {
+      "id": "partial-cubes-bibliography",
+      "repository": "PartialCubes",
+      "commit": "ef128da6d41fa52d8e2e81d2c157fa1842d132da",
+      "path": "main.bib",
+      "sha256": "66b3172b12af56ccbceba8a47f354dc326966f120f04720e545b3295c17d70de",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/main.bib"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized characterization, operation, invariant, theorem statements, concise proof summaries, and citations. The LaTeX survey retains the full scholarly exposition, historical context, proof detail, and open questions.",
+    "recoverability": "The survey manuscript and dirty bibliography are read from the frozen snapshot and match their manifest SHA-256 hashes; every migrated theorem has an exact label locator.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified. The database bibliography normalizes the frozen Bresar2003 entry's repeated keywords fields into one BibTeX field so the site renderer can parse it without changing the citation."
+  },
+  "records": [
+    {
+      "path": "data/latex/references.bib",
+      "sha256": "d8fc04b13b54dfe2b25a20f512a3d164cc6eedcde48c0105fa6ecc7140adeb77"
+    },
+    {
+      "path": "data/characterization_equivalences/033_planar_expansion_jordan_equivalence.json",
+      "sha256": "3db22386867e0c8b3aa872adb4847f0a2e2691660d1d5f6be15288357abf6230"
+    },
+    {
+      "path": "data/characterizations/181_nonseparating_jordan_region_graph.json",
+      "sha256": "183b96baf8c980e5133bb6a4a636245fac9f0fdac1a33f717bf85ab97ceb9d50"
+    },
+    {
+      "path": "data/invariants/056_hull_number.json",
+      "sha256": "9d63ffc5f58a8e60c7a4402846041bb273a66178d9e374645d8b79a993e412e3"
+    },
+    {
+      "path": "data/invariants/057_isometric_tree_product_dimension.json",
+      "sha256": "078f4b765cacbb135c8e168bce05fda1acc1b2afa56faec0d8b89a748271571a"
+    },
+    {
+      "path": "data/operations/024_semistrong_product.json",
+      "sha256": "7e35c8878ce4c5654c9a9aa0e50724a84df75d6481794eb1c6e510913953cefc"
+    },
+    {
+      "path": "data/operations/025_netlike_completion.json",
+      "sha256": "352c861d8fa99ad5e84f952f0fbb19cee0ca7027374d5e6ec7eb6772a5522bfd"
+    },
+    {
+      "path": "data/results/316_partial_cube_hull_number_complexity.json",
+      "sha256": "e96531e5bc9d6e8f6e012964d96e716bf30b35b8c030c43a1c17ee3c911d3f3c"
+    },
+    {
+      "path": "data/results/317_squaregraph_tree_product_dimension.json",
+      "sha256": "13d75e02549a78dbaf11ccfaf26dd5af67a989e9205ca0fc90ac6f1ea4efaef5"
+    },
+    {
+      "path": "data/results/318_squaregraph_semistrong_product_structure.json",
+      "sha256": "caa86ceb794b015e3dd4a73ae4657c65f27ff43c9d97715b4a262456d65d4888"
+    },
+    {
+      "path": "data/results/319_acc_recognition_algorithm.json",
+      "sha256": "63c3dc0b49c46537910e57f0a01775ebcdea6986eb20518b5e4dcdacd8ed3b00"
+    },
+    {
+      "path": "data/results/320_cube_intersection_representation_classes.json",
+      "sha256": "70ec1a97e2c5c022d6a9dcc59a895816b8ae465c6dd14bffd46a1da8496d3080"
+    },
+    {
+      "path": "data/results/321_peano_strongly_faithful_retracts.json",
+      "sha256": "ec78c08aa43e42ea30ae4251625f5271e1bef53eee82e5b5155cd4f5c9a8323d"
+    },
+    {
+      "path": "data/results/322_netlike_median_completion.json",
+      "sha256": "f3c27cb81ce6999fe632b99d30b8ecc9be987f8b80758256d23ca6a1986225bf"
+    },
+    {
+      "path": "data/results/323_folb_partial_cube_class_definability.json",
+      "sha256": "8bf96aff5038beca717c7e26844947d6b3da9d78af982245f7e6827c86b1b0cd"
+    },
+    {
+      "path": "data/results/324_flag_complex_boolean_median_test.json",
+      "sha256": "3bd85f233228c215a095c0e2d04c4b6a8f734a1b06a9de46054725282231af5d"
+    },
+    {
+      "path": "migration/bibliography_queue.json",
+      "sha256": "d01a6b06dc5187e00cf7c36b85f96d4526721eb6c43b4b7474afba0c6bcfb7bf"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "ca5f85d89117d229c908ce10f2337a5970fa45ce1288a89879e74a138169b0c8"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "1ad649fc0487e4b526525d5f00e57bc0050b8d77ce5a5601fb2363b1872eaffa"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1576 records.",
+    "website": "Normalized 1592 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 114 classes have an audited position relative to Partial Cubes; 234 closure-map arrows render.",
+    "migration": "All migration gates pass. The batch covers 10 survey labels, raising that workspace from 99 of 131 to 109 of 131 and overall workspace-aware coverage from 399 to 409 of 1016 unique labels."
+  },
+  "deferred": [
+    "The survey workspace retains 22 uncovered labeled results in the daisy/Fibonacci, antipodal/COM, recognition, compression, and special graph-family clusters.",
+    "Open questions remain prose in the survey under the agreed policy.",
+    "Live checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

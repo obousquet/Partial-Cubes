@@ -1,0 +1,24 @@
+{
+  "id": 323,
+  "short_name": "folb_partial_cube_class_definability",
+  "name": "Major Partial-Cube Classes Are First-Order Definable with Betweenness",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/median",
+    "#classes/ample",
+    "#classes/om_tope_graphs",
+    "#classes/com_tope_graphs",
+    "#classes/pasch_partial_cubes",
+    "#classes/peano_partial_cubes",
+    "#classes/cellular_partial_cubes",
+    "#classes/hypercellular_partial_cubes",
+    "#classes/almost_median_partial_cubes",
+    "#classes/netlike_partial_cubes"
+  ],
+  "result_type": "recognition",
+  "statement": "Each listed class is definable on finite connected graphs by a fixed first-order sentence using equality and the ternary metric-betweenness relation. Consequently every listed class has a polynomial-time recognition algorithm obtained by constructing all-pairs betweenness and evaluating its fixed sentence.",
+  "status": "established",
+  "references": "\\cite[Theorem~10]{ChalopinChangatChepoiJacob24}",
+  "proof_source": "PartialCubes:papers/survey/main.tex#thm:folb-partial-cubes",
+  "comments": "The generic model-checking algorithm need not output structural certificates and can have a much larger exponent than specialized recognition algorithms. Semi-median definability remains open."
+}
