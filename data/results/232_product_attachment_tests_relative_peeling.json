@@ -14,7 +14,7 @@
   "statement": "Fix a finite ample family $R\\subseteq Q_F$ containing $0_F$ that peels but has no peeling ending at $0_F$. For nonempty ample $K\\subseteq A\\subseteq Q_E$, set $P_R(A,K)=(A\\times\\{0_F\\})\\cup(K\\times R)$. Then $P_R(A,K)$ is ample, has $|A|+(|R|-1)|K|$ vertices, and peels if and only if $K$ peels and $A$ peels down to $K$. A fixed 289-vertex choice of $R$ therefore reduces relative peeling to ordinary peeling with constant-factor growth.",
   "status": "established",
   "proof": "If a shattered support uses a new coordinate, its old part is shattered by $K$ and its new part by $R$, so the product of witnessing cubes lies in $K\\times R$; supports using only old coordinates are witnessed in $A$. For necessity, every root $(k,0)$ must retain a private neighbor when deleted, or the induced peeling of $R$ could end at its root. The missing mixed square then prevents a simultaneous neighbor in $A\\setminus K$, and retaining all of $K$ yields a relative peeling of $A$; a nonroot layer restricts to a peeling of $K$. Conversely, peel $A$ to $K$ and then peel the product $K\\times R$ layer by layer.",
-  "proof_source": "PartialCubes:papers/gluing/main.tex#thm:attachment",
+  "proof_source": "PartialCubes:papers/gluing/main.tex#thm:attachment; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-attachment-test",
   "witness_ids": [
     "#examples/rooted_289_vertex_peeling_factor"
   ]

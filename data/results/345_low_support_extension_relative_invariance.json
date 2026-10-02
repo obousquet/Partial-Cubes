@@ -1,0 +1,18 @@
+{
+  "id": 345,
+  "short_name": "low_support_extension_relative_invariance",
+  "name": "Low-Support One-Concept Additions Preserve Every Relative Peeling",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/full_reduction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $S$ be nonempty and ample, and let $H=S\\cup\\{a\\}$ be an ample one-concept extension whose acquired support $I_S(a)$ has size at most two. For every retained set $T\\subseteq S$, including the empty set, $H$ corner-reduces to $T$ if and only if $S$ corner-reduces to $T$. Consequently $H$ is dismantlable ample exactly when $S$ is, and every old prescribed peeling endpoint is preserved. Any one-concept addition that makes a previously unreachable retained target reachable must acquire at least three directions.",
+  "status": "established",
+  "proof": "One direction deletes the new corner $a$ first. For the converse, take a smallest counterexample and let $z\\ne a$ be the first deletion in a reduction of $H$. If $z$ is also a corner of $S$, delete it from both families and use minimality. Otherwise the unique maximal cube of $z$ in $H$ contains $a$ and equals the acquired cube. The two vertices cannot be adjacent, so the support has size two and $a,z$ are opposite vertices of a square with the same two neighbors. Swapping them is an automorphism fixing $T$ and transports the remaining reduction to one of $S$, a contradiction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-two-extension-invariance"
+}

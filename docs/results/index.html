@@ -3933,7 +3933,7 @@
 <strong>Statement:</strong><div class="text-field"><p>Fix a finite ample family $R\subseteq Q_F$ containing $0_F$ that peels but has no peeling ending at $0_F$. For nonempty ample $K\subseteq A\subseteq Q_E$, set $P_R(A,K)=(A\times\{0_F\})\cup(K\times R)$. Then $P_R(A,K)$ is ample, has $|A|+(|R|-1)|K|$ vertices, and peels if and only if $K$ peels and $A$ peels down to $K$. A fixed 289-vertex choice of $R$ therefore reduces relative peeling to ordinary peeling with constant-factor growth.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>If a shattered support uses a new coordinate, its old part is shattered by $K$ and its new part by $R$, so the product of witnessing cubes lies in $K\times R$; supports using only old coordinates are witnessed in $A$. For necessity, every root $(k,0)$ must retain a private neighbor when deleted, or the induced peeling of $R$ could end at its root. The missing mixed square then prevents a simultaneous neighbor in $A\setminus K$, and retaining all of $K$ yields a relative peeling of $A$; a nonroot layer restricts to a peeling of $K$. Conversely, peel $A$ to $K$ and then peel the product $K\times R$ layer by layer.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:attachment</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:attachment; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-relative-attachment-test</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
 
         </div>
@@ -3967,7 +3967,7 @@
 <strong>Statement:</strong><div class="text-field"><p>Let rooted ample $R$ peel but not to its root, and suppose every elementary root-preserving restriction or contraction of $R$ peels to its induced root. Let nonempty ample peelable $K\subseteq A\subseteq Q_E$ have all coordinates active, and assume the same for $R$. Then $P_R(A,K)$ is a forbidden pc-minor for corner-peelable ample families exactly when $A$ does not peel down to $K$, while $\mu A$ peels down to $\mu K$ for every elementary restriction or contraction $\mu$ on an old coordinate for which $\mu K$ is nonempty.</p></div>
 <p><strong>Status:</strong> Established</p>
 <strong>Proof:</strong><div class="text-field"><p>An old-coordinate operation commutes with the attachment: $\mu P_R(A,K)=P_R(\mu A,\mu K)$. On a new coordinate, root-preserving restriction and contraction replace $R$ by the corresponding rooted image, while the opposite restriction is a product over $K$; all three peel by hypothesis. If an old-coordinate image of $K$ is empty, the image is merely $\mu A$. Otherwise the attachment theorem says it peels exactly when $\mu A$ peels down to $\mu K$. The same theorem detects nonpeelability of the original attachment, giving both directions.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:minor-transfer</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:minor-transfer; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-relative-attachment-minimality</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
 
         </div>
@@ -5742,6 +5742,71 @@
 <strong>Proof:</strong><div class="text-field"><p>The outgoing-cube axiom prevents all directions in $J_x$ from pointing outward at $x$, because their joint flip is missing. Thus every vertex of the finite digraph induced by $S$ has an incoming neighbor in $S$. Following predecessors eventually repeats a vertex and produces a directed cycle. Dismantlable ampleness is equivalent to existence of an acyclic USO.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-protected-uso-cycle</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-343" style="position:relative;">
+
+        <h3><a href="results/one_concept_ample_extension_test.html" class="table-title-link">Local Test for an Ample One-Concept Extension</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Test for an Ample One-Concept Extension</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\subseteq Q_F$ be nonempty and ample, let $a\notin S$, and let $I=\{f:a^{\{f\}}\in S\}$. Then $S\cup\{a\}$ is ample exactly when $I\notin\operatorname{Sh}(S)$, equivalently when the extension is isometric, or when $\operatorname{Diff}(a,x)\cap I\ne\varnothing$ for every $x\in S$. The punctured $I$-cube around $a$ is automatically present in $S$. When the conditions hold, $a$ is a corner with unique maximal-cube support $I$, $\operatorname{Sh}(S\cup\{a\})=\operatorname{Sh}(S)\mathbin{\dot\cup}\{I\}$, and $I$ is a minimal nonface of $\operatorname{Sh}(S)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Restrict $S$ to the face agreeing with $a$ outside $I$. Its cube complement is ample and connected, contains $a$, and contains none of its neighbors, so it is the singleton $\{a\}$; hence all other vertices of the $I$-face lie in $S$. The missing-support condition is therefore exactly the condition that every $x\in S$ has a shortest path from $a$ beginning with an $I$-edge. If the extension is ample, deleting $a$ between two ample classes makes $a$ a corner and removes exactly the shattered support $I$. Conversely the punctured cube strongly shatters $I$, so the Sandwich inequality and $|S|=|\operatorname{Sh}(S)|$ force equality for the extension. Parallel faces through neighbors of $a$ show that every proper subset of $I$ was already shattered.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-one-concept-extension-test</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-344" style="position:relative;">
+
+        <h3><a href="results/forbidden_one_concept_extension_dichotomy.html" class="table-title-link">One-Concept Extensions of an Ample Forbidden Minor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One-Concept Extensions of an Ample Forbidden Minor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. Its ample one-concept extensions are in bijection with oriented punctured faces $(a,I)$ for which $a\notin S$, $I=I_S(a)$, every other vertex $a^U$ of that face lies in $S$, and $I\notin\operatorname{Sh}(S)$. Every such extension $E=S\cup\{a\}$ is either dismantlable ample or is itself an ample pc-minimal obstruction; the two outcomes partition the punctured-face atlas.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The local one-concept test gives the bijection and makes $a$ a corner of $E$. Under any elementary restriction or contraction, irredundancy makes the image of $S$ a proper pc-minor and hence dismantlable ample. The image of $E$ is either that same family or an ample one-concept extension of it; in the latter case the surviving new concept is a corner and may be peeled first. Thus every proper pc-minor of $E$ is dismantlable ample. If $E$ peels it is in the positive part; otherwise it is an ample pc-minimal obstruction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-one-concept-atlas</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-345" style="position:relative;">
+
+        <h3><a href="results/low_support_extension_relative_invariance.html" class="table-title-link">Low-Support One-Concept Additions Preserve Every Relative Peeling</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Low-Support One-Concept Additions Preserve Every Relative Peeling</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be nonempty and ample, and let $H=S\cup\{a\}$ be an ample one-concept extension whose acquired support $I_S(a)$ has size at most two. For every retained set $T\subseteq S$, including the empty set, $H$ corner-reduces to $T$ if and only if $S$ corner-reduces to $T$. Consequently $H$ is dismantlable ample exactly when $S$ is, and every old prescribed peeling endpoint is preserved. Any one-concept addition that makes a previously unreachable retained target reachable must acquire at least three directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>One direction deletes the new corner $a$ first. For the converse, take a smallest counterexample and let $z\ne a$ be the first deletion in a reduction of $H$. If $z$ is also a corner of $S$, delete it from both families and use minimality. Otherwise the unique maximal cube of $z$ in $H$ contains $a$ and equals the acquired cube. The two vertices cannot be adjacent, so the support has size two and $a,z$ are opposite vertices of a square with the same two neighbors. Swapping them is an automorphism fixing $T$ and transports the remaining reduction to one of $S$, a contradiction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rank-two-extension-invariance</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-346" style="position:relative;">
+
+        <h3><a href="results/low_degree_corner_obstruction_descent.html" class="table-title-link">Low-Degree Corners Descend within the Ample Forbidden Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Low-Degree Corners Descend within the Ample Forbidden Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. If $a$ is a corner of degree at most two, then $H\setminus\{a\}$ is again an irredundantly embedded ample pc-minimal obstruction. Hence, if no corner deletion remains in the ample forbidden basis, every corner has degree at least three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion leaves an ample family $S$, and low-support relative invariance keeps it nonpeelable. A coordinate constant on $S$ would make $S$ a proper signed restriction of $H$ and therefore peelable, so the embedding remains irredundant. Every elementary image of $H$ peels. Its corresponding image of $S$ is either identical or obtained by deleting a concept from an ample extension whose acquired support still has size at most two; low-support invariance therefore makes that image peel as well. Thus every proper pc-minor of $S$ is dismantlable ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-low-degree-corner-descent</p></div>
 
         </div>
     </div>

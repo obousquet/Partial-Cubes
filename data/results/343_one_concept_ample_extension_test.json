@@ -1,0 +1,17 @@
+{
+  "id": 343,
+  "short_name": "one_concept_ample_extension_test",
+  "name": "Local Test for an Ample One-Concept Extension",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S\\subseteq Q_F$ be nonempty and ample, let $a\\notin S$, and let $I=\\{f:a^{\\{f\\}}\\in S\\}$. Then $S\\cup\\{a\\}$ is ample exactly when $I\\notin\\operatorname{Sh}(S)$, equivalently when the extension is isometric, or when $\\operatorname{Diff}(a,x)\\cap I\\ne\\varnothing$ for every $x\\in S$. The punctured $I$-cube around $a$ is automatically present in $S$. When the conditions hold, $a$ is a corner with unique maximal-cube support $I$, $\\operatorname{Sh}(S\\cup\\{a\\})=\\operatorname{Sh}(S)\\mathbin{\\dot\\cup}\\{I\\}$, and $I$ is a minimal nonface of $\\operatorname{Sh}(S)$.",
+  "status": "established",
+  "proof": "Restrict $S$ to the face agreeing with $a$ outside $I$. Its cube complement is ample and connected, contains $a$, and contains none of its neighbors, so it is the singleton $\\{a\\}$; hence all other vertices of the $I$-face lie in $S$. The missing-support condition is therefore exactly the condition that every $x\\in S$ has a shortest path from $a$ beginning with an $I$-edge. If the extension is ample, deleting $a$ between two ample classes makes $a$ a corner and removes exactly the shattered support $I$. Conversely the punctured cube strongly shatters $I$, so the Sandwich inequality and $|S|=|\\operatorname{Sh}(S)|$ force equality for the extension. Parallel faces through neighbors of $a$ show that every proper subset of $I$ was already shattered.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-one-concept-extension-test"
+}

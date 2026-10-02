@@ -1,0 +1,18 @@
+{
+  "id": 346,
+  "short_name": "low_degree_corner_obstruction_descent",
+  "name": "Low-Degree Corners Descend within the Ample Forbidden Basis",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. If $a$ is a corner of degree at most two, then $H\\setminus\\{a\\}$ is again an irredundantly embedded ample pc-minimal obstruction. Hence, if no corner deletion remains in the ample forbidden basis, every corner has degree at least three.",
+  "status": "established",
+  "proof": "Corner deletion leaves an ample family $S$, and low-support relative invariance keeps it nonpeelable. A coordinate constant on $S$ would make $S$ a proper signed restriction of $H$ and therefore peelable, so the embedding remains irredundant. Every elementary image of $H$ peels. Its corresponding image of $S$ is either identical or obtained by deleting a concept from an ample extension whose acquired support still has size at most two; low-support invariance therefore makes that image peel as well. Thus every proper pc-minor of $S$ is dismantlable ample.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-low-degree-corner-descent"
+}

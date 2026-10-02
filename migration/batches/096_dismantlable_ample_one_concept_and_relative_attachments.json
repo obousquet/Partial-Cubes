@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "batch_id": "096_dismantlable_ample_one_concept_and_relative_attachments",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the frozen one-concept extension calculus for ample forbidden minors, its low-support relative-peeling invariance and corner descent, and reconcile the product-attachment and minimality-transfer theorems with their existing database records.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-one-concept-extension-test",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-concept-atlas",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-two-extension-invariance",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-low-degree-corner-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-attachment-test",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-relative-attachment-minimality"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "f9fe2c566df65e4acf3dbc320d40c0dfb04dd61ee0b2eb5c01d7a8e5c76bcf1c",
+      "git_state": "modified at freeze",
+      "byte_archive": "migration/snapshots/2026-09-30-b001/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The source packet records dirty working-tree bytes, so each promoted claim was checked against the committed file, frozen snapshot, and current live file.",
+    "outcome": "All six selected statement-plus-proof blocks are byte-identical in the committed file, frozen snapshot, and current live manuscript.",
+    "claim_block_sha256": {
+      "lem:damp-one-concept-extension-test": "a502b997dde50de238a68f4b8ece56f13011ebb43db6cdd1150313801b21cbfd",
+      "prop:damp-one-concept-atlas": "c5b41cb5831fb4c02a80439e8e8af7e512fa584c3187ff4e3fad5dfd99c5dca5",
+      "prop:damp-rank-two-extension-invariance": "6decc2f6e024a0eb053f82b610d1d832384e6570617fa6a216cabf44f0eb33d1",
+      "cor:damp-low-degree-corner-descent": "c7e82beb045bee93a81f7e5dbad3bdba212c67e481d99f94bb7bfc447b2672b8",
+      "thm:damp-relative-attachment-test": "cb0ec60e96bec6c33a7fa26efd54f5dc33dbe79acb6c73498878f002d6a1160f",
+      "thm:damp-relative-attachment-minimality": "7ec8e51b18f8c3e3a8f3a5e5112bda4b6d6eca46f625c528706c72677d4bac98"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized local extension test, punctured-face obstruction dichotomy, low-support invariance, corner descent, relative-attachment criteria, concise proofs, and exact locators. The LaTeX manuscript retains the full recursive proof, checker narrative, notation, and limitations.",
+    "recoverability": "The exact dirty source bytes remain in snapshot 2026-09-30-b001; each promoted theorem has an exact locator and reviewed statement-plus-proof digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/232_product_attachment_tests_relative_peeling.json",
+      "sha256": "c1c1bfab2735b0ccedfdeb499cb22cc4507570ac248fc38325648193a6d2c431"
+    },
+    {
+      "path": "data/results/234_relative_peeling_failures_transfer_to_forbidden_pc_minors.json",
+      "sha256": "bf7f24e86e7944720ddd99d543ab248c8b7b6d59817b75157c09670ae7708764"
+    },
+    {
+      "path": "data/results/343_one_concept_ample_extension_test.json",
+      "sha256": "5e9ec226265b773f42e1c0c5d7e749df38a814bf96880f4723007c3d13ae6696"
+    },
+    {
+      "path": "data/results/344_forbidden_one_concept_extension_dichotomy.json",
+      "sha256": "38d8a5efa5b033dae395decf1356ec60461911de676ff3558527d5e95dcb1eef"
+    },
+    {
+      "path": "data/results/345_low_support_extension_relative_invariance.json",
+      "sha256": "cf68b1b92d7247e603fe611312a0d7554f6c54a36d202f233c40cf886944d6a3"
+    },
+    {
+      "path": "data/results/346_low_degree_corner_obstruction_descent.json",
+      "sha256": "7d20d040da4b273425acddc5fe91b7e7d944c6d8ff330106fd08bc46ecdd5358"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "12a7dbd5746b288660d42b06d789c8ec324b8bd19e9cebe8530bd2d3a1d8ea6e"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "148ff4e4cfde2b79dda042730846a132245c3ed0e142691c3cdf55d8a25f5c7c"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1631 records.",
+    "website": "Normalized 1647 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 6 additional dismantlable-ample labels, raising that workspace to 15 of 582 and overall coverage from 440 to 446 of 1013 database-owned labels."
+  },
+  "deferred": [
+    "The remaining 567 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Conjectures and problems remain prose-owned in LaTeX.",
+    "Live-checkout changes after the frozen snapshot require a separately reviewed snapshot refresh."
+  ]
+}

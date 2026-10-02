@@ -75,19 +75,18 @@
         </header>
         <main class="table-container">
             <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
-    <div class="table-card" id="math-232" style="position:relative;">
+    <div class="table-card" id="math-346" style="position:relative;">
 
-        <h3><a href="results/product_attachment_tests_relative_peeling.html" class="table-title-link">Product Attachments Test Relative Peeling</a></h3>
+        <h3><a href="results/low_degree_corner_obstruction_descent.html" class="table-title-link">Low-Degree Corners Descend within the Ample Forbidden Basis</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Product Attachments Test Relative Peeling</p>
+        <p><strong>Name: </strong>Low-Degree Corners Descend within the Ample Forbidden Basis</p>
 <p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
-<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li></ul></p>
-<p><strong>Result Type:</strong> Construction</p>
-<strong>Statement:</strong><div class="text-field"><p>Fix a finite ample family $R\subseteq Q_F$ containing $0_F$ that peels but has no peeling ending at $0_F$. For nonempty ample $K\subseteq A\subseteq Q_E$, set $P_R(A,K)=(A\times\{0_F\})\cup(K\times R)$. Then $P_R(A,K)$ is ample, has $|A|+(|R|-1)|K|$ vertices, and peels if and only if $K$ peels and $A$ peels down to $K$. A fixed 289-vertex choice of $R$ therefore reduces relative peeling to ordinary peeling with constant-factor growth.</p></div>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be an irredundantly embedded ample pc-minimal obstruction to dismantlable ampleness. If $a$ is a corner of degree at most two, then $H\setminus\{a\}$ is again an irredundantly embedded ample pc-minimal obstruction. Hence, if no corner deletion remains in the ample forbidden basis, every corner has degree at least three.</p></div>
 <p><strong>Status:</strong> Established</p>
-<strong>Proof:</strong><div class="text-field"><p>If a shattered support uses a new coordinate, its old part is shattered by $K$ and its new part by $R$, so the product of witnessing cubes lies in $K\times R$; supports using only old coordinates are witnessed in $A$. For necessity, every root $(k,0)$ must retain a private neighbor when deleted, or the induced peeling of $R$ could end at its root. The missing mixed square then prevents a simultaneous neighbor in $A\setminus K$, and retaining all of $K$ yields a relative peeling of $A$; a nonroot layer restricts to a peeling of $K$. Conversely, peel $A$ to $K$ and then peel the product $K\times R$ layer by layer.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/gluing/main.tex?#thm:attachment; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-relative-attachment-test</p></div>
-<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion leaves an ample family $S$, and low-support relative invariance keeps it nonpeelable. A coordinate constant on $S$ would make $S$ a proper signed restriction of $H$ and therefore peelable, so the embedding remains irredundant. Every elementary image of $H$ peels. Its corresponding image of $S$ is either identical or obtained by deleting a concept from an ample extension whose acquired support still has size at most two; low-support invariance therefore makes that image peel as well. Thus every proper pc-minor of $S$ is dismantlable ample.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-low-degree-corner-descent</p></div>
 
         </div>
     </div>
