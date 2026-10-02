@@ -1,0 +1,121 @@
+{
+  "version": 1,
+  "batch_id": "180_dismantlable_ample_corner_pairs_and_clause_transport",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the simultaneous realization of any dismantlable-ample corner-deletion pair inside reduced forbidden parents and the exact transport of signed clauses into nonpeelable reduced bases, including an adjacent one-bit clause change that changes pc-minimality.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-corner-pair-universality",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-clause-transport-minimality",
+    "PartialCubes:papers/dismantlable-ample/research/corner_pair_universality.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_clause_changes_minimality.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "corner-pair-universality-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "papers/dismantlable-ample/research/{corner_pair_universality.py,corner_pair_universality.json,explore_seed267_endpoints.py,all_sinks_corner_failure.json}",
+      "sha256": "2381480867a2ee2257f9b711bf24756725a505bde8dbc185f2a67ce932bed426",
+      "git_state": "untracked at capture",
+      "byte_archive": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/corner_pair/"
+    },
+    {
+      "id": "clause-transport-minimality-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign clause-transport verifier and its complete eighteen-file hash dependency closure",
+      "sha256": "e8d18996b79cd62b3a0ba0e6df2a14afad254c0eac16b4239c7a8439d482dd4d",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/clause_transport/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These propositions strengthen reduced-base universality in two independent directions: a prescribed corner deletion can occur between two reduced forbidden parents, and the full signed-clause variation of a fixed-shadow input survives inside nonpeelable outputs closely enough that one sign bit can change pc-minimality.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The database records the common face restriction, corner and peeling arguments, exact size and dimension formulas, clause formula, injectivity and distance preservation, forbiddenness equivalence, structural stopping properties, and the distinction between explicit small rows and formula-defined large outputs.",
+    "claim_block_sha256": {
+      "prop:damp-corner-pair-universality": "059f5b3d5233b9337a440763b58335869cafc22e55b34f3f0f83a7b6d99a65f8",
+      "prop:damp-clause-transport-minimality": "3117f30705490ffd1d463d66338fd01a947192322d4414e6c8367487c15846d3"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/corner_pair/corner_pair_universality.py",
+      "sha256": "5313670debc64c5925e3453e7990fdb10e5aeff65be5490e8ee7b10d5f87e6d8"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/corner_pair/corner_pair_universality.json",
+      "sha256": "c2a6ecc84079421f3b650a22b46e4a8ab457fdf1a72985c7a43c657524150a35"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/corner_pair/source_corner_pair_universality.json",
+      "sha256": "c2a6ecc84079421f3b650a22b46e4a8ab457fdf1a72985c7a43c657524150a35"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/corner_pair/source_packet_manifest.json",
+      "sha256": "2393ab6ccfeda3b75c950ee75e58420602b1847d2e567d488a99525de9dd4196"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/clause_transport/verify_damp_clause_changes_minimality.py",
+      "sha256": "74f12e45c6dbf56385f2ec6ffa5092910c6a6f9aa9d1333dd7479cc9fafece3a"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/clause_transport/damp_clause_changes_minimality_verification.json",
+      "sha256": "f650ff7eb7983ff4cc24de6587f9705c072f1db4ac27f3080b3cf50b9d209a81"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/clause_transport/source_damp_clause_changes_minimality_verification.json",
+      "sha256": "f650ff7eb7983ff4cc24de6587f9705c072f1db4ac27f3080b3cf50b9d209a81"
+    },
+    {
+      "path": "migration/certificates/180_dismantlable_ample_corner_pairs_and_clause_transport/clause_transport/source_packet_manifest.json",
+      "sha256": "d641262abe5f16f572a2d24f172a0c4ddd94daf17f0c07405177cc7fdae3172d"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns both normalized constructions, their exact formulas, concise proofs, structural properties, example parameters, and replay scope. LaTeX retains the expanded row and signed-column arguments and the surrounding discussion of intrinsic admissibility. The complete computation dependency closures remain byte-archived because the explicit row orders and large signed presentations cannot be reconstructed from theorem prose alone.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both proofs. The four untracked corner-pair files and the complete tracked eighteen-file clause-transport packet at commit b30995f are separately path-hashed and archived; each verifier reproduces its captured source report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/670_corner_deletion_pair_universality.json",
+      "sha256": "13f6198d01044f5b22a75c840c0fda909e0d44ea7fb56d162270ce01b152bee8"
+    },
+    {
+      "path": "data/results/671_clause_transport_and_pc_minimality_change.json",
+      "sha256": "7916227f7bc0302364aa99e6e5cc88b727484e5732df448eebeffff1b5c2defe"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "56f90150bf9e49930a4304c015182a3d9e8080fee16919928515634270ac19aa"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "c7e3962ecf13f95e4c32c524371e66270f938f8d3ecf1d82bd013b3afa1cc47a"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2067 records.",
+    "website": "Normalized 2083 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 766 to 768 of 1143 and dismantlable-ample coverage from 330 to 332 of 683.",
+    "certificates": "The corner replay checks the 581/580 rows, marked corner, and 289/288 face recovery. The clause replay checks one positive input order, 78 negative elementary-minor orders, two rooted-piece orders and obstructions, actual input shadows and clauses, and both compact 1,589-clause output presentations.",
+    "source_integrity": "Both reviewed claim blocks match supplemental snapshot 2026-10-02-b002, both computation packets match their manifests, and both generated reports are byte-identical to their captured source reports."
+  },
+  "deferred": [
+    "The refreshed audit has 375 uncovered database-owned labels: 351 in dismantlable-ample and 24 in ample-corners.",
+    "The next block treats ambient-cube descent, complement-section constructions, and the resulting nonpeelable complement obstructions.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

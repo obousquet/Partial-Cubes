@@ -1,0 +1,25 @@
+{
+  "id": 671,
+  "short_name": "clause_transport_and_pc_minimality_change",
+  "name": "Clause Transport and Change of pc-Minimality",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Fix a coordinate set $D$ and a simplicial complex $\\Sigma\\subseteq2^D$ containing every singleton. Apply the same reduced-base construction to every ample $K\\subseteq Q_D$ with $0\\in K$ and $\\operatorname{Sh}(K)=\\Sigma$. All outputs $X_K$ have the same shadow. If $P_0$ is the fixed repair support and $I$ is a minimal nonface of $\\Sigma$, the inherited clause is $\\sigma_{X_K}(P_0\\cup I)=(a_0|_{P_0},\\sigma_K(I))$; every other output clause is independent of $K$. The map $K\\mapsto X_K$ is injective and preserves both the number of changed clauses and total changed sign-bit distance between two inputs. Every output is nonpeelable, and $X_K$ is a forbidden pc-minor exactly when $K$ is dismantlable ample. Consequently, two nonpeelable ample families with the same shadow can differ in one bit of one clause while exactly one is pc-minimal, even when both have minimum degree at least four, distinct signed columns up to sign, and complete crossing graph.",
+  "status": "established",
+  "proof": "The variable occurrence row is $R_0=L\\times\\{0_z\\}$ with $L=(K\\times Q_{\\{w\\}})\\vee_0Q_{\\{p,q\\}}$. Its minimal nonfaces are those of $\\Sigma$, the cross pairs $\\{t,p\\},\\{t,q\\}$ for $t\\in D\\cup\\{w\\}$, and $\\{z\\}$. Only the first group depends on $K$, and its missing traces are precisely $\\sigma_K(I)$; the cross-pair and constant-coordinate traces are fixed. The replicated-repair formulas prepend the same seed trace to each input clause and fix all other output clauses, proving the transport and distance assertions. A fixed proper face recovers $K$, giving injectivity. Reduced-base universality gives nonpeelability for every output and forbiddenness exactly for peelable inputs. Applying this to the adjacent 1188-concept pair whose only changed clause has support 6531 and traces 2306 and 2307 yields two order-323,196,291,401 outputs in dimension 42 and VC dimension 33; their 1589-clause presentations differ in one bit of one ten-coordinate clause, while only the output from the peelable input is forbidden.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-clause-transport-minimality",
+  "witness_ids": [
+    "#examples/forbidden_adjacent_sign_pivots_1188",
+    "#examples/hall_three_repair_universality_seed"
+  ],
+  "comments": "The certificate replays the positive input peeling, all 78 elementary proper-minor orders of the negative input, two rooted obstructions, the actual input shadows and clauses, and both complete 1,589-clause output presentations. The order-323,196,291,401 outputs are specified compactly and are not materialized; their nonpeelability and minimality statuses use the uniform theorem rather than an output-minor enumeration."
+}

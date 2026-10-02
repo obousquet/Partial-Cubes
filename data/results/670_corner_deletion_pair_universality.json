@@ -1,0 +1,25 @@
+{
+  "id": 670,
+  "short_name": "corner_deletion_pair_universality",
+  "name": "Corner-Deletion Pair Universality in Reduced Forbidden Classes",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/concept_deletion",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $K$ be a nonempty ample family with corner $c$, and suppose both $K$ and $A=K\\setminus\\{c\\}$ are nonempty and dismantlable ample. There are explicit ample forbidden pc-minors $X$ and $X'=X\\setminus\\{v\\}$ such that $v$ is a corner of $X$ and one common coordinate-face restriction recovers $K$ from $X$ and $A$ from $X'$. Both parents have minimum graph degree at least four, pairwise distinct signed minimal-nonface columns up to sign, and complete crossing graph. If $K$ has $n$ active coordinates, then $|X|=301\\cdot2^{n+4}+2|K|+1$, $|X'|=|X|-1$, and both parents have isometric dimension $n+16$.",
+  "status": "established",
+  "proof": "Use the reduced-base universality construction with its Hall three-repair seed. Replace the occurrence row $L=(K\\times Q_{\\{w\\}})\\vee_0Q_{\\{p,q\\}}$ by $L'=L\\setminus\\{(c,1_w,0_p,0_q)\\}$. The deleted row vertex is a corner whose cube is the product of the corner cube of $c$ with the $w$-edge. The modified row equals $((K\\times\\{0_w\\})\\cup(A\\times\\{1_w\\}))\\vee_0Q_{\\{p,q\\}}$ and peels by clearing the three nonzero square vertices, then the upper copy of $A$, then the lower copy of $K$. The other two rows still cover both facets in every layer direction, so the common-seed criterion makes both parents forbidden. The corresponding parent vertex is a corner and its deletion gives exactly $X'$. Fixing the seed coordinates, setting $w=1$, and setting $p=q=z=0$ recovers $K$ and $A$. The intact seed product and the same separating clauses as in reduced-base universality prove the degree, crossing, and signed-column properties; counting gives the formulas.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-corner-pair-universality",
+  "witness_ids": [
+    "#examples/hall_three_repair_universality_seed"
+  ],
+  "comments": "Applying the construction to the certified 289-concept all-sinks family and its 288-concept corner deletion gives parents of orders 19,726,915 and 19,726,914 in dimension 28. The certificate explicitly checks the 581/580 occurrence rows, their marked corner deletion, and recovery of the 289/288 faces; the two large parents and their forbiddenness are certified symbolically and are not enumerated. This result does not claim that every proper minor of either parent has every sink attainable."
+}
