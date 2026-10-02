@@ -1,0 +1,26 @@
+{
+  "id": 425,
+  "short_name": "remote_rooted_single_clause_pivots",
+  "name": "One Signed Clause Can Change an Arbitrarily Remote Rooted Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every $j\\ge0$ there are ordinarily peelable ample families $B_j,K_j\\subseteq Q_{12+2j}$ containing zero such that $(B_j,0)$ is a rooted factor, $K_j$ peels to zero, and every proper root-preserving pc-minor of either peels to its root. Their shadows coincide and their signed minimal-nonface presentations differ only on one four-support, by antipodal omitted traces. They agree on the Hamming ball of radius $j+4$ about zero and first differ at distance $j+5$. Both have $(581\\cdot3^j-3)/2$ concepts and VC dimension $3+j$; the root has degree three at $j=0$ and degree two thereafter. Hence no fixed-radius root neighborhood, even with the full shadow, determines prescribed-root peelability or rooted-factor status.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/remote_rooted_clause_pivot_tower"
+  ],
+  "proof": "At level zero, exchange the corner $1084$ for the repairing tip $604$ in the certified 289-concept factor; the exchange preserves the shadow and changes only the antipodal omitted trace on support $\\{5,6,9,10\\}$. Paired-square transfer recursively preserves the negative rooted factor, the positive endpoint, proper-minor positivity, and the two compatible repairs. The order recurrence is $n_{j+1}=3n_j+3$. The differences are exactly $\\{1084\\}\\times\\{01,10,11\\}^j$ versus $\\{604\\}\\times\\{01,10,11\\}^j$, which proves the distance claim; common punctured-cube neighbors show that every other signed clause agrees.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-remote-rooted-clause-pivot",
+  "comments": "The finite replay checks levels zero through two; the recursive proof covers every level."
+}

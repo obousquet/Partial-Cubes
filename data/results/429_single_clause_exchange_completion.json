@@ -1,0 +1,21 @@
+{
+  "id": 429,
+  "short_name": "single_clause_exchange_completion",
+  "name": "Every Single-Clause Exchange Has a Canonical Ample Completion and Outside Slice",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let ample $H_s,H_t\\subseteq Q_F$ have common shadow $\\Sigma$ and signed presentations differing only on a minimal nonface $I$, with omitted traces $s\\ne t$. If $R$ satisfies all unchanged clauses and $R_u$ is its outside slice at $u\\in Q_I$, then $R=H_s\\cup H_t$ is ample, $A:=R_s=R_t=\\bigcap_uR_u$ is nonempty and ample, $Q_I\\times A\\subseteq R$, and $H_t\\setminus H_s=\\{s\\}\\times A$, $H_s\\setminus H_t=\\{t\\}\\times A$. Moreover $\\operatorname{Sh}(R)\\setminus\\Sigma=\\{I\\cup J:J\\in\\operatorname{Sh}(A)\\}$. The admissible omitted traces are exactly $P=\\{u:R_u=A\\}$, and conversely every ample $R$ and nonempty $I$ with nonempty $A=\\bigcap_uR_u$ and $|P|\\ge2$ arises this way. For $u\\in P$, deleting the slice $\\{u\\}\\times A$ by corners is possible exactly when $A$ is dismantlable ample. If $|I|\\ge2$ and some resulting $H_u$ is peelable or a forbidden pc-minor, then $A$ is automatically dismantlable ample.",
+  "status": "established",
+  "proof": "Projection away from any coordinate of $I$ makes the two presentations identical. A difference vertex therefore has every one-bit neighbor in the other family; ampleness of the corresponding $I$-face forces a punctured cube, giving the common outside slice and the two difference formulas. The old shadow together with $I+\\operatorname{Sh}(A)$ has cardinality $|R|$, so Sandwich equality proves that $R$ is ample with exactly this shadow. Imposing an omitted trace $u$ deletes $\\{u\\}\\times R_u$; it has the original cardinality precisely when $R_u=A$, which is exactly admissibility. During deletion inside one minimal slice, corner tests factor as the corresponding corner tests in $A$, proving the relative-peeling equivalence. A second admissible slice exposes $A$ as a proper pc-minor when $|I|\\ge2$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-single-clause-completion"
+}

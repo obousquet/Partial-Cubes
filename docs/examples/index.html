@@ -2657,6 +2657,54 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-132" style="position:relative;">
+
+        <h3><a href="examples/remote_rooted_clause_pivot_tower.html" class="table-title-link">Remote Rooted Single-Clause Pivot Tower</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Remote Rooted Single-Clause Pivot Tower</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $B_0$ be the normalized 289-concept rooted factor, put $K_0=(B_0\setminus\{1084\})\cup\{604\}$, and take compatible repairing tips $\alpha_0=128$, $\delta_0=290$. Recursively set $B_{j+1}=\mathcal S(B_j;\alpha_j,\delta_j)$ and $K_{j+1}=\mathcal S(K_j;\alpha_j,\delta_j)$ by paired-square transfer, with $\alpha_{j+1}=(\alpha_j,11)$ and $\delta_{j+1}=(\delta_j,11)$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>For $j\ge0$, both families have $(581\cdot3^j-3)/2$ concepts, dimension $12+2j$, and VC dimension $3+j$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$(B_j,0)$ is a rooted factor and $K_j$ peels to zero; every proper root-preserving pc-minor of either family peels to its root. Their shadows coincide and their signed presentations differ only on the four-coordinate support $\{5,6,9,10\}$, with antipodal omitted traces. They agree through Hamming radius $j+4$ about zero, and their nearest difference is at distance $j+5$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-remote-rooted-clause-pivot</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_clause_pivots.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_clause_pivots_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-133" style="position:relative;">
+
+        <h3><a href="examples/remote_forbidden_clause_pivot_tower.html" class="table-title-link">Remote Forbidden-Minor Single-Clause Pivot Tower</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Remote Forbidden-Minor Single-Clause Pivot Tower</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>For the rooted pair $B_j,K_j$, take a fresh-coordinate copy $T$ of $B_0$, form $B_j\vee T$ and $K_j\vee T$ at zero, and in each add the same square tip across one common root direction of the first block and one root direction of $T$. Denote the completed families by $X_j,Y_j$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>For $j\ge0$, both families have $(581\cdot3^j+575)/2$ concepts, dimension $24+2j$, and VC dimension $3+j$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both are two-connected and ample; $X_j$ is pc-minimal outside dismantlable ampleness, while $Y_j$ is dismantlable ample. Every proper pc-minor of either peels. Their shadows coincide, exactly one four-support clause changes to its antipodal sign, and their marked-zero neighborhoods agree through radius $j+4$ with first difference at radius $j+5$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-remote-forbidden-clause-pivot</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_forbidden_clause_pivots.py; PartialCubes:forbidden_pc_minor_campaign/damp_forbidden_clause_pivots_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-134" style="position:relative;">
+
+        <h3><a href="examples/four_sign_clause_exchange_family.html" class="table-title-link">Four Admissible Signs in the Remote Clause Tower</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four Admissible Signs in the Remote Clause Tower</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Fix every signed minimal-nonface clause of the remote rooted tower except the clause on old coordinates $(5,6,9,10)$. At level zero the common ample completion is $R_0=B_0\cup\{604\}$ and the common outside slice is $A_0=\{28\}$; paired-square transfer gives $A_j=A_0\times\{01,11,10\}^j$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>At level $j\ge0$, the outside family has $3^j$ concepts and the common completion has $(583\cdot3^j-3)/2$ concepts.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Exactly four omitted traces are admissible: $0110,1001,0101,1101$, deleting respectively the base-completion vertices $604,1084,1116,1148$. The first class fails to peel to zero and the other three peel to zero. The same four signs exhaust both ordinary forbidden-pivot stages; exactly the first is a forbidden pc-minor, all proper minors of all four peel, and all four square-completed classes are two-connected.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-four-sign-clause-family</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_single_clause_completions.py; PartialCubes:forbidden_pc_minor_campaign/damp_single_clause_completions_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

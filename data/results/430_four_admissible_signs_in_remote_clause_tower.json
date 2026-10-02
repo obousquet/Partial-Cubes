@@ -1,0 +1,25 @@
+{
+  "id": 430,
+  "short_name": "four_admissible_signs_in_remote_clause_tower",
+  "name": "The Remote Clause Tower Has Exactly Four Admissible Signs",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Fix every clause except the distinguished four-coordinate clause in the remote rooted tower at any level $j$. Exactly four signs are admissible. In coordinate order $(5,6,9,10)$ they are $0110,1001,0101,1101$, deleting respectively $604,1084,1116,1148$ in the base completion. The first class does not peel to zero and the other three do. The outside family is a translate of $\\{01,11,10\\}^j$, of order $3^j$, and the common ample completion has $(583\\cdot3^j-3)/2$ concepts. The same four choices exhaust both ordinary remote forbidden-pivot stages; exactly the first is a forbidden pc-minor, every proper minor of all four peels, and all four square-completed classes are two-connected.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/four_sign_clause_exchange_family"
+  ],
+  "proof": "At level zero, direct slice recovery in the common completion finds exactly four slices equal to the singleton outside family. The completion theorem makes this list exhaustive. Stored corner prefixes give root-ending orders for the last three signs, while the first is the rooted factor. Paired-square transfer multiplies the outside slice by the three-vertex path and introduces no new minimal slices, so the list and endpoint statuses persist inductively. Gluing the fixed factor and adding the common square tip occur only in a different old trace, preserving all four minimal slices; the rooted-block and block-peeling theorems then give the forbidden versus positive statuses, minor claims, and two-connectivity.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-four-sign-clause-family"
+}

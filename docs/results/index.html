@@ -7093,6 +7093,131 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-424" style="position:relative;">
+
+        <h3><a href="results/signed_minimal_nonfaces_parametrize_ample_families.html" class="table-title-link">Signed Minimal Nonfaces Parametrize Every Fixed-Shadow Ample Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Signed Minimal Nonfaces Parametrize Every Fixed-Shadow Ample Family</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\Sigma\subseteq2^F$ be a simplicial complex and choose a trace $\sigma_I\in Q_I$ for every minimal nonface $I\in\mathcal N(\Sigma)$. Put $H(\Sigma,\boldsymbol\sigma)=\{x\in Q_F:x|_I\ne\sigma_I\text{ for all }I\in\mathcal N(\Sigma)\}$. The signing is admissible when $|H(\Sigma,\boldsymbol\sigma)|=|\Sigma|$. Sending an ample $H$ with $\operatorname{Sh}(H)=\Sigma$ to the unique trace omitted on every minimal nonface is a bijection onto the admissible signings, with inverse $\boldsymbol\sigma\mapsto H(\Sigma,\boldsymbol\sigma)$. Thus the signed minimal nonfaces determine the entire ample family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection to a minimal nonface remains ample and has shattered complex $2^I\setminus\{I\}$, so Sandwich equality says that it omits exactly one trace. The original family lies in the avoidance family of these traces. The latter shatters no nonface of $\Sigma$, so the upper Sandwich bound gives $|H(\Sigma,\boldsymbol\sigma_H)|\le|\Sigma|=|H|$ and forces equality. Conversely an admissible avoidance family has shattered complex contained in $\Sigma$ and cardinality $|\Sigma|$; both Sandwich inequalities are equalities, proving ampleness and exact shadow.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-fixed-shadow-signed-clutter</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-425" style="position:relative;">
+
+        <h3><a href="results/remote_rooted_single_clause_pivots.html" class="table-title-link">One Signed Clause Can Change an Arbitrarily Remote Rooted Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One Signed Clause Can Change an Arbitrarily Remote Rooted Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $j\ge0$ there are ordinarily peelable ample families $B_j,K_j\subseteq Q_{12+2j}$ containing zero such that $(B_j,0)$ is a rooted factor, $K_j$ peels to zero, and every proper root-preserving pc-minor of either peels to its root. Their shadows coincide and their signed minimal-nonface presentations differ only on one four-support, by antipodal omitted traces. They agree on the Hamming ball of radius $j+4$ about zero and first differ at distance $j+5$. Both have $(581\cdot3^j-3)/2$ concepts and VC dimension $3+j$; the root has degree three at $j=0$ and degree two thereafter. Hence no fixed-radius root neighborhood, even with the full shadow, determines prescribed-root peelability or rooted-factor status.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At level zero, exchange the corner $1084$ for the repairing tip $604$ in the certified 289-concept factor; the exchange preserves the shadow and changes only the antipodal omitted trace on support $\{5,6,9,10\}$. Paired-square transfer recursively preserves the negative rooted factor, the positive endpoint, proper-minor positivity, and the two compatible repairs. The order recurrence is $n_{j+1}=3n_j+3$. The differences are exactly $\{1084\}\times\{01,10,11\}^j$ versus $\{604\}\times\{01,10,11\}^j$, which proves the distance claim; common punctured-cube neighbors show that every other signed clause agrees.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-remote-rooted-clause-pivot</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/remote_rooted_clause_pivot_tower.html">Remote Rooted Single-Clause Pivot Tower</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The finite replay checks levels zero through two; the recursive proof covers every level.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-426" style="position:relative;">
+
+        <h3><a href="results/remote_clause_pivots_change_forbidden_minor_status.html" class="table-title-link">A Remote Signed-Clause Pivot Can Remove a Forbidden pc-Minor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Remote Signed-Clause Pivot Can Remove a Forbidden pc-Minor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $j\ge0$ there are two-connected ample families $X_j,Y_j\subseteq Q_{24+2j}$ with $X_j$ pc-minimal outside dismantlable ampleness and $Y_j$ dismantlable ample. Every proper pc-minor of either is dismantlable ample. They have the same shadow, differ in one four-support clause by antipodal signs, agree through Hamming radius $j+4$ about zero, and first differ at radius $j+5$. Their common order is $(581\cdot3^j+575)/2$ and their VC dimension is $3+j$. Thus the marked local ball and complete shadow do not determine forbidden-minor membership, even among two-connected ample classes whose proper minors all peel.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Glue each rooted pair member at zero to a fresh copy of the fixed rooted factor. The negative wedge is a cut-vertex forbidden pc-minor, while the positive wedge peels blockwise. Complete the same cross-block square in both families. The square-completed rooted-block theorem makes the negative side a two-connected forbidden pc-minor; the new degree-two corner and the block orders peel the positive side. The common addition preserves the unique changed clause and the distance profile. Product-layer connectivity and the new square tip prove two-connectivity on the positive side.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-remote-forbidden-clause-pivot</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/remote_forbidden_clause_pivot_tower.html">Remote Forbidden-Minor Single-Clause Pivot Tower</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-427" style="position:relative;">
+
+        <h3><a href="results/geometric_realizations_allow_every_endpoint.html" class="table-title-link">Every Concept of a Geometrically Realizable Ample Family Is a Peeling Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Concept of a Geometrically Realizable Ample Family Is a Peeling Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/realizable_ample.html">Realizable Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample family is the chamber-sign family of finitely many affine hyperplanes on a nonempty open convex polyhedron, then it corner-peels to every prescribed concept. Consequently no rooted factor is geometrically realizable. Geometric realizability is inherited by coordinate faces, so any family having a rooted factor as a coordinate face is nonrealizable; in particular the remote opposite-status families are all nonrealizable, including their ordinarily peelable sides.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose a point in the prescribed chamber and first bound the realizing polyhedron without changing its sign system. A generic affine functional close to a hyperplane separating that chamber from another chamber defines a moving halfspace that keeps the chosen point. At the first nontrivial sweep event, the Knauer--Marc corner sweep deletes one COM corner; in a lopsided system this is one ordinary corner, and the remainder is again an ample geometric realization containing the chosen point. Iteration peels to the prescribed chamber. Coordinate-face inheritance follows by intersecting with the fixed open sign halfspaces and forgetting their hyperplanes.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Propositions~5.3 and~5.5]{KnauerMarc23corners}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-realizable-prescribed-endpoint</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_289_vertex_peeling_factor.html">Rooted 289-Vertex Peeling Factor</a></li><li><a href="examples/remote_forbidden_clause_pivot_tower.html">Remote Forbidden-Minor Single-Clause Pivot Tower</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-428" style="position:relative;">
+
+        <h3><a href="results/affine_om_shadows_are_matroidal.html" class="table-title-link">Affine Oriented-Matroid Tope Classes Have Matroidal Shadows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Affine Oriented-Matroid Tope Classes Have Matroidal Shadows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/aom_tope_graphs.html">Affine Oriented-Matroid Tope Graphs</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C$ is the projection of the $g=+$ topes of an oriented matroid $M$, then $\operatorname{Sh}(C)=\operatorname{Ind}(M/g)$. In particular its shattered complex satisfies matroid augmentation. The common shadow of the remote rooted pair violates augmentation: $\{1,2\}$ and $\{1,5,6\}$ are faces but neither $\{1,2,5\}$ nor $\{1,2,6\}$ is. Every higher paired-square level also violates augmentation. Hence none of these rooted pairs is a full affine-oriented-matroid tope class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A support is shattered by the full antipodal tope set exactly when it is independent in the underlying matroid. Antipodality identifies shattering of $I$ in the positive half with shattering of $I\cup\{g\}$ in the full tope set, which is equivalent to independence of $I$ in $M/g$. The displayed face pair gives an explicit augmentation failure at level zero; at higher levels the fresh root pair is a maximal two-face while adjoining either fresh coordinate to a shattered old pair gives a three-face, again violating augmentation.</p></div>
+<strong>References:</strong><div class="text-field"><p>\cite[Claim~2.2]{Marc24compression}</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-affine-om-shadow</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/remote_rooted_clause_pivot_tower.html">Remote Rooted Single-Clause Pivot Tower</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This excludes representation as the full positive half of one oriented matroid. It does not exclude fibers with several sign constraints or representations using auxiliary elements.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-429" style="position:relative;">
+
+        <h3><a href="results/single_clause_exchange_completion.html" class="table-title-link">Every Single-Clause Exchange Has a Canonical Ample Completion and Outside Slice</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Single-Clause Exchange Has a Canonical Ample Completion and Outside Slice</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $H_s,H_t\subseteq Q_F$ have common shadow $\Sigma$ and signed presentations differing only on a minimal nonface $I$, with omitted traces $s\ne t$. If $R$ satisfies all unchanged clauses and $R_u$ is its outside slice at $u\in Q_I$, then $R=H_s\cup H_t$ is ample, $A:=R_s=R_t=\bigcap_uR_u$ is nonempty and ample, $Q_I\times A\subseteq R$, and $H_t\setminus H_s=\{s\}\times A$, $H_s\setminus H_t=\{t\}\times A$. Moreover $\operatorname{Sh}(R)\setminus\Sigma=\{I\cup J:J\in\operatorname{Sh}(A)\}$. The admissible omitted traces are exactly $P=\{u:R_u=A\}$, and conversely every ample $R$ and nonempty $I$ with nonempty $A=\bigcap_uR_u$ and $|P|\ge2$ arises this way. For $u\in P$, deleting the slice $\{u\}\times A$ by corners is possible exactly when $A$ is dismantlable ample. If $|I|\ge2$ and some resulting $H_u$ is peelable or a forbidden pc-minor, then $A$ is automatically dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection away from any coordinate of $I$ makes the two presentations identical. A difference vertex therefore has every one-bit neighbor in the other family; ampleness of the corresponding $I$-face forces a punctured cube, giving the common outside slice and the two difference formulas. The old shadow together with $I+\operatorname{Sh}(A)$ has cardinality $|R|$, so Sandwich equality proves that $R$ is ample with exactly this shadow. Imposing an omitted trace $u$ deletes $\{u\}\times R_u$; it has the original cardinality precisely when $R_u=A$, which is exactly admissibility. During deletion inside one minimal slice, corner tests factor as the corresponding corner tests in $A$, proving the relative-peeling equivalence. A second admissible slice exposes $A$ as a proper pc-minor when $|I|\ge2$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-single-clause-completion</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-430" style="position:relative;">
+
+        <h3><a href="results/four_admissible_signs_in_remote_clause_tower.html" class="table-title-link">The Remote Clause Tower Has Exactly Four Admissible Signs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Remote Clause Tower Has Exactly Four Admissible Signs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix every clause except the distinguished four-coordinate clause in the remote rooted tower at any level $j$. Exactly four signs are admissible. In coordinate order $(5,6,9,10)$ they are $0110,1001,0101,1101$, deleting respectively $604,1084,1116,1148$ in the base completion. The first class does not peel to zero and the other three do. The outside family is a translate of $\{01,11,10\}^j$, of order $3^j$, and the common ample completion has $(583\cdot3^j-3)/2$ concepts. The same four choices exhaust both ordinary remote forbidden-pivot stages; exactly the first is a forbidden pc-minor, every proper minor of all four peels, and all four square-completed classes are two-connected.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At level zero, direct slice recovery in the common completion finds exactly four slices equal to the singleton outside family. The completion theorem makes this list exhaustive. Stored corner prefixes give root-ending orders for the last three signs, while the first is the rooted factor. Paired-square transfer multiplies the outside slice by the three-vertex path and introduces no new minimal slices, so the list and endpoint statuses persist inductively. Gluing the fixed factor and adding the common square tip occur only in a different old trace, preserving all four minimal slices; the rooted-block and block-peeling theorems then give the forbidden versus positive statuses, minor claims, and two-connectivity.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-four-sign-clause-family</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/four_sign_clause_exchange_family.html">Four Admissible Signs in the Remote Clause Tower</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

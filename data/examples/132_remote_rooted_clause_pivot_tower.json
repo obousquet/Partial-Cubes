@@ -1,0 +1,11 @@
+{
+  "id": 132,
+  "short_name": "remote_rooted_clause_pivot_tower",
+  "name": "Remote Rooted Single-Clause Pivot Tower",
+  "object_type": "family",
+  "definition": "Let $B_0$ be the normalized 289-concept rooted factor, put $K_0=(B_0\\setminus\\{1084\\})\\cup\\{604\\}$, and take compatible repairing tips $\\alpha_0=128$, $\\delta_0=290$. Recursively set $B_{j+1}=\\mathcal S(B_j;\\alpha_j,\\delta_j)$ and $K_{j+1}=\\mathcal S(K_j;\\alpha_j,\\delta_j)$ by paired-square transfer, with $\\alpha_{j+1}=(\\alpha_j,11)$ and $\\delta_{j+1}=(\\delta_j,11)$.",
+  "parameters": "For $j\\ge0$, both families have $(581\\cdot3^j-3)/2$ concepts, dimension $12+2j$, and VC dimension $3+j$.",
+  "properties": "$(B_j,0)$ is a rooted factor and $K_j$ peels to zero; every proper root-preserving pc-minor of either family peels to its root. Their shadows coincide and their signed presentations differ only on the four-coordinate support $\\{5,6,9,10\\}$, with antipodal omitted traces. They agree through Hamming radius $j+4$ about zero, and their nearest difference is at distance $j+5$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-remote-rooted-clause-pivot",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_clause_pivots.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_clause_pivots_verification.json"
+}

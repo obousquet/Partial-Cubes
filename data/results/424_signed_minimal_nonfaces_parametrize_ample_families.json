@@ -1,0 +1,17 @@
+{
+  "id": 424,
+  "short_name": "signed_minimal_nonfaces_parametrize_ample_families",
+  "name": "Signed Minimal Nonfaces Parametrize Every Fixed-Shadow Ample Family",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\Sigma\\subseteq2^F$ be a simplicial complex and choose a trace $\\sigma_I\\in Q_I$ for every minimal nonface $I\\in\\mathcal N(\\Sigma)$. Put $H(\\Sigma,\\boldsymbol\\sigma)=\\{x\\in Q_F:x|_I\\ne\\sigma_I\\text{ for all }I\\in\\mathcal N(\\Sigma)\\}$. The signing is admissible when $|H(\\Sigma,\\boldsymbol\\sigma)|=|\\Sigma|$. Sending an ample $H$ with $\\operatorname{Sh}(H)=\\Sigma$ to the unique trace omitted on every minimal nonface is a bijection onto the admissible signings, with inverse $\\boldsymbol\\sigma\\mapsto H(\\Sigma,\\boldsymbol\\sigma)$. Thus the signed minimal nonfaces determine the entire ample family.",
+  "status": "established",
+  "proof": "Projection to a minimal nonface remains ample and has shattered complex $2^I\\setminus\\{I\\}$, so Sandwich equality says that it omits exactly one trace. The original family lies in the avoidance family of these traces. The latter shatters no nonface of $\\Sigma$, so the upper Sandwich bound gives $|H(\\Sigma,\\boldsymbol\\sigma_H)|\\le|\\Sigma|=|H|$ and forces equality. Conversely an admissible avoidance family has shattered complex contained in $\\Sigma$ and cardinality $|\\Sigma|$; both Sandwich inequalities are equalities, proving ampleness and exact shadow.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-fixed-shadow-signed-clutter"
+}

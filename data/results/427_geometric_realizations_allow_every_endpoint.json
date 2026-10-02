@@ -1,0 +1,22 @@
+{
+  "id": 427,
+  "short_name": "geometric_realizations_allow_every_endpoint",
+  "name": "Every Concept of a Geometrically Realizable Ample Family Is a Peeling Endpoint",
+  "class_ids": [
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "If an ample family is the chamber-sign family of finitely many affine hyperplanes on a nonempty open convex polyhedron, then it corner-peels to every prescribed concept. Consequently no rooted factor is geometrically realizable. Geometric realizability is inherited by coordinate faces, so any family having a rooted factor as a coordinate face is nonrealizable; in particular the remote opposite-status families are all nonrealizable, including their ordinarily peelable sides.",
+  "status": "established",
+  "proof": "Choose a point in the prescribed chamber and first bound the realizing polyhedron without changing its sign system. A generic affine functional close to a hyperplane separating that chamber from another chamber defines a moving halfspace that keeps the chosen point. At the first nontrivial sweep event, the Knauer--Marc corner sweep deletes one COM corner; in a lopsided system this is one ordinary corner, and the remainder is again an ample geometric realization containing the chosen point. Iteration peels to the prescribed chamber. Coordinate-face inheritance follows by intersecting with the fixed open sign halfspaces and forgetting their hyperplanes.",
+  "references": "\\cite[Propositions~5.3 and~5.5]{KnauerMarc23corners}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-realizable-prescribed-endpoint",
+  "witness_ids": [
+    "#examples/rooted_289_vertex_peeling_factor",
+    "#examples/remote_forbidden_clause_pivot_tower"
+  ]
+}

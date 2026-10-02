@@ -1,0 +1,22 @@
+{
+  "id": 428,
+  "short_name": "affine_om_shadows_are_matroidal",
+  "name": "Affine Oriented-Matroid Tope Classes Have Matroidal Shadows",
+  "class_ids": [
+    "#classes/aom_tope_graphs",
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "invariant_law",
+  "statement": "If $C$ is the projection of the $g=+$ topes of an oriented matroid $M$, then $\\operatorname{Sh}(C)=\\operatorname{Ind}(M/g)$. In particular its shattered complex satisfies matroid augmentation. The common shadow of the remote rooted pair violates augmentation: $\\{1,2\\}$ and $\\{1,5,6\\}$ are faces but neither $\\{1,2,5\\}$ nor $\\{1,2,6\\}$ is. Every higher paired-square level also violates augmentation. Hence none of these rooted pairs is a full affine-oriented-matroid tope class.",
+  "status": "established",
+  "proof": "A support is shattered by the full antipodal tope set exactly when it is independent in the underlying matroid. Antipodality identifies shattering of $I$ in the positive half with shattering of $I\\cup\\{g\\}$ in the full tope set, which is equivalent to independence of $I$ in $M/g$. The displayed face pair gives an explicit augmentation failure at level zero; at higher levels the fresh root pair is a maximal two-face while adjoining either fresh coordinate to a shattered old pair gives a three-face, again violating augmentation.",
+  "references": "\\cite[Claim~2.2]{Marc24compression}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-affine-om-shadow",
+  "witness_ids": [
+    "#examples/remote_rooted_clause_pivot_tower"
+  ],
+  "comments": "This excludes representation as the full positive half of one oriented matroid. It does not exclude fibers with several sign constraints or representations using auxiliary elements."
+}

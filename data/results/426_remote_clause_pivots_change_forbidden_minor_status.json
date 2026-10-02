@@ -1,0 +1,26 @@
+{
+  "id": 426,
+  "short_name": "remote_clause_pivots_change_forbidden_minor_status",
+  "name": "A Remote Signed-Clause Pivot Can Remove a Forbidden pc-Minor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every $j\\ge0$ there are two-connected ample families $X_j,Y_j\\subseteq Q_{24+2j}$ with $X_j$ pc-minimal outside dismantlable ampleness and $Y_j$ dismantlable ample. Every proper pc-minor of either is dismantlable ample. They have the same shadow, differ in one four-support clause by antipodal signs, agree through Hamming radius $j+4$ about zero, and first differ at radius $j+5$. Their common order is $(581\\cdot3^j+575)/2$ and their VC dimension is $3+j$. Thus the marked local ball and complete shadow do not determine forbidden-minor membership, even among two-connected ample classes whose proper minors all peel.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/remote_forbidden_clause_pivot_tower"
+  ],
+  "proof": "Glue each rooted pair member at zero to a fresh copy of the fixed rooted factor. The negative wedge is a cut-vertex forbidden pc-minor, while the positive wedge peels blockwise. Complete the same cross-block square in both families. The square-completed rooted-block theorem makes the negative side a two-connected forbidden pc-minor; the new degree-two corner and the block orders peel the positive side. The common addition preserves the unique changed clause and the distance profile. Product-layer connectivity and the new square tip prove two-connectivity on the positive side.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-remote-forbidden-clause-pivot"
+}
