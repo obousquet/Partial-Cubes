@@ -1,0 +1,11 @@
+{
+  "id": 138,
+  "short_name": "adjacent_rank_four_root_repair_290",
+  "name": "An Adjacent Degree-Four Corner Repairs a Rooted Endpoint",
+  "object_type": "set_family",
+  "definition": "Take the certified 289-concept factor $B$ rooted at $29$ and adjoin vertex $157$. The addition acquires support $\\{1,2,7,8\\}$, of bitmask $390$.",
+  "parameters": "The extension has 290 concepts in the stored twelve-coordinate embedding.",
+  "properties": "Both root $29$ and the new vertex $157$ are corners of the completed four-cube and are adjacent in coordinate $7$. The extension peels to either vertex, while deleting $157$ returns $B$, which cannot peel to $29$. Thus deletion of an adjacent nonroot corner can destroy a prescribed endpoint; support size four is sufficient.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-rooted-rank-four-repair",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_operations.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_operations_verification.json"
+}

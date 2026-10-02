@@ -1,0 +1,26 @@
+{
+  "id": 434,
+  "short_name": "adjacent_signs_change_forbidden_minor_status",
+  "name": "Adjacent Clause Signs Can Change Forbidden-pc-Minor Status",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/one_point_amalgam",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "There are four 1188-concept ample classes in dimension twenty-six and VC dimension five with a common shadow, whose signed presentations vary over a square of adjacent signs at one clause. Exactly one is a pc-minimal obstruction to dismantlable ampleness; the other three peel, and every proper pc-minor of all four peels. Adding one common root-square concept gives four 1189-concept two-connected classes with the same conclusions.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/forbidden_adjacent_sign_pivots_1188"
+  ],
+  "proof": "Glue each 900-concept square pivot at its root to a fresh fixed rooted factor. The negative choice is the wedge of two rooted factors and hence forbidden; each positive choice peels its first block to the root and then clears the fixed block. All new cross-block clauses are common, so the unique varying clause persists. Completing the same root square on all four sides preserves the signs; the square-completed rooted-block theorem makes the negative member forbidden, while the common tip is a first corner on the positive sides. It also joins the two blocks after root deletion, proving two-connectivity. Forbidden minimality and positive pc-minor closure give the proper-minor claims.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-forbidden-adjacent-sign-pivots"
+}

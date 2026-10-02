@@ -1,0 +1,20 @@
+{
+  "id": 435,
+  "short_name": "rooted_factor_irreducibility_and_corner_deletion",
+  "name": "Rooted Factors Are Periphery-Free, Product-Prime, and Stable under Small Corner Deletions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/cartesian_product",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Every rooted factor is periphery-free and Cartesian-prime. Deleting a nonroot corner of degree at most two preserves rooted-factor status. If two nonroot corners are adjacent and have degree three, deleting either one or both also preserves rooted-factor status. Consequently, if a rooted factor has a nonroot corner but no preserving nonroot-corner deletion, every nonroot corner has degree at least three, and a degree-three nonroot corner has no nonroot corner as a neighbor.",
+  "status": "established",
+  "proof": "A peripheral coordinate would express the family as a peripheral expansion whose contraction base and relevant section are proper rooted minors; their endpoint orders combine to reach the forbidden root. A nontrivial Cartesian product similarly combines root-ending orders of its two factor restrictions. For deletion, glue the factor to a fixed rooted factor to obtain a cut-vertex forbidden pc-minor. Low-degree corner descent, or adjacent degree-three-pair descent, preserves the obstruction; the resulting family still has the same cut vertex, so the cut-vertex classification forces the changed block to remain a rooted factor. Adjacent corners share their unique maximal cube and therefore have equal degree.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-rooted-irreducibility"
+}

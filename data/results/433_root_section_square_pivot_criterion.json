@@ -1,0 +1,25 @@
+{
+  "id": 433,
+  "short_name": "root_section_square_pivot_criterion",
+  "name": "Exact Root-Section Square-Row Criterion for Adjacent Endpoint Pivots",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $(B,0)$ be a rooted factor using every coordinate with unique corner zero, let $\\alpha,\\delta,\\gamma$ be three compatible ample additions with distinct acquired supports and root-ending orders, and let a coordinate face $D$ contain zero and the punctured $\\gamma$-cube while omitting a root neighbor. Form $Y_R$ over a fresh square by placing $D$ at $00$, the $\\alpha$- and $\\delta$-extensions at $01,10$, $B$ at $11$, and copies of $\\gamma$ on row $R\\subseteq Q_2$. Then $Y_R$ is ample exactly when $R$ is not a diagonal pair; for every ample row, $\\operatorname{Sh}(Y_R)=\\operatorname{Sh}(Y_\\varnothing)\\mathbin{\\dot\\cup}\\{P_\\gamma\\cup J:J\\in\\operatorname{Sh}(R)\\}$. Every such family is two-connected and ordinarily peelable, and all proper root-preserving pc-minors peel. It peels to $(0,00)$ exactly when $R$ contains $\\{01,11\\}$ or $\\{10,11\\}$. Thus eight of fourteen ample rows are rooted factors and six are endpoint-positive. For the four punctured-square rows, exactly omission $11$ is a rooted factor and the other three peel, yielding adjacent opposite-status signs with the same shadow.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/root_section_square_pivots_900"
+  ],
+  "proof": "Build the empty-row family from the paired rooted factor by reversing a peeling of $D$; each new support lifts through the other three core copies. Adding a row corner at $\\gamma$ acquires the disjoint union of its old support and row support, giving the shadow formula; diagonal pairs create three new shattered supports with only two vertices and are nonample. Active-coordinate additions preserve ordinary peelability and positivity of proper rooted minors. If neither required row edge occurs, any first deletion from a nonroot core copy would force an old corner of $B$, hence zero, but its fresh-square and omitted-neighbor directions demand an absent $(h,00)$ vertex. If a required edge occurs, clear any $00$ tip and $D$, then apply the partial-tip endpoint theorem. Attachment degrees preserve two-connectivity. The single-clause completion theorem identifies the four punctured-square signs.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-root-section-square-pivots"
+}

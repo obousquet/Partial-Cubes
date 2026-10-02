@@ -7218,6 +7218,111 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-431" style="position:relative;">
+
+        <h3><a href="results/cube_layer_adjacent_endpoint_switch.html" class="table-title-link">A Cube Layer Can Switch Endpoints across Adjacent Clause Signs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Cube Layer Can Switch Endpoints across Adjacent Clause Signs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $S\subseteq Q_F$ peel to $a$, contain the coordinate cube $C=Q_I\times\{y\}$, and put $P_0=\{u\in Q_I:S_u=\{y\}\}$. For a fresh $f$, let $R=(S\times\{0\})\cup(C\times\{1\})$. Then $R$ is an ample single-clause completion on $J=I\cup\{f\}$ with outside family $\{y\}$ and admissible traces $P=(P_0\times\{0\})\cup(Q_I\times\{1\})$. All members have common shadow $\operatorname{Sh}(S)\cup\{T\cup\{f\}:T\subsetneq I\}$. Every upper omission peels to $(a,0)$; a lower omission at $u\in P_0$ peels to $(a,0)$ exactly when $S\setminus\{(u,y)\}$ peels to $a$. The root-retaining admissible-trace graph is connected, yet a corner deletion in $S$ that destroys the endpoint produces adjacent retained traces of opposite endpoint status.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The construction is the peripheral expansion of $S$ along $C$. Its outside slices are $S_u$ below and the singleton $\{y\}$ above, so the single-clause completion theorem gives exactly the displayed admissible set and shadow. A punctured cube peels by increasing distance from its missing vertex. Applying this first to the upper layer proves every upper choice positive and reduces a lower choice to the corresponding deletion in $S$; restricting any hypothetical lower-side endpoint order back to the lower face proves the converse. The intact upper trace cube connects every retained lower trace to the trace graph. A destructive corner $c=(u,y)$ has no neighbor outside $C$, so $u\in P_0$ and its two vertical choices give the adjacent opposite-status pair.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-adjacent-clause-endpoint-switch</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/adjacent_clause_endpoint_switch_305.html">A 305-Concept Adjacent-Clause Endpoint Switch</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-432" style="position:relative;">
+
+        <h3><a href="results/adjacent_exchange_rooted_minor_reduction.html" class="table-title-link">Adjacent Endpoint Switches Reduce to Rooted Factors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Endpoint Switches Reduce to Rooted Factors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $H_s,H_t$ have the same shadow and differ only at one clause on $I$, with adjacent omitted traces differing at coordinate $f$. Suppose $H_s$ is dismantlable ample but does not peel to a common root $a$, while $H_t$ does, and the root-containing $f$-face of $H_s$ peels to $a$. Then a common sequence of root-preserving pc-minor operations avoiding $f$ produces a rooted factor from $H_s$ while the image of $H_t$ still peels to its root; the adjacent single-clause exchange persists on a subset of $I$, with outside family a nonempty pc-minor of the original outside family. Hence invariance under adjacent clause changes for rooted factors is equivalent to the claim that endpoint status is determined by the root-containing flipped-coordinate face; both claims are false. Such a switch is impossible for $|I|\le2$, and also for singleton outside family with $|I|\le3$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The common completion writes both sides as deletion of adjacent slices $\{s\}\times A$ and $\{t\}\times A$. Contraction inside $I$ identifies the two families; operations outside $I$ transport the same exchange through a nonempty minor of $A$; root restrictions in $I\setminus\{f\}$ either identify the sides or retain adjacency. Restriction in $f$ cannot retain failure because it commutes with the initially positive root face. Repeatedly take proper failing root-preserving images on the negative side; size decreases until rooted minimality, while the positive side and adjacent exchange persist. The small-support cases reduce both sides to the same peripheral-expansion endpoint test, and singleton outside slices with support at most three are low-support one-concept extensions with equal endpoint status.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-adjacent-exchange-minor-reduction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/root_section_square_pivots_900.html">Four Root-Section Square Pivots of Order 900</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-433" style="position:relative;">
+
+        <h3><a href="results/root_section_square_pivot_criterion.html" class="table-title-link">Exact Root-Section Square-Row Criterion for Adjacent Endpoint Pivots</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Root-Section Square-Row Criterion for Adjacent Endpoint Pivots</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(B,0)$ be a rooted factor using every coordinate with unique corner zero, let $\alpha,\delta,\gamma$ be three compatible ample additions with distinct acquired supports and root-ending orders, and let a coordinate face $D$ contain zero and the punctured $\gamma$-cube while omitting a root neighbor. Form $Y_R$ over a fresh square by placing $D$ at $00$, the $\alpha$- and $\delta$-extensions at $01,10$, $B$ at $11$, and copies of $\gamma$ on row $R\subseteq Q_2$. Then $Y_R$ is ample exactly when $R$ is not a diagonal pair; for every ample row, $\operatorname{Sh}(Y_R)=\operatorname{Sh}(Y_\varnothing)\mathbin{\dot\cup}\{P_\gamma\cup J:J\in\operatorname{Sh}(R)\}$. Every such family is two-connected and ordinarily peelable, and all proper root-preserving pc-minors peel. It peels to $(0,00)$ exactly when $R$ contains $\{01,11\}$ or $\{10,11\}$. Thus eight of fourteen ample rows are rooted factors and six are endpoint-positive. For the four punctured-square rows, exactly omission $11$ is a rooted factor and the other three peel, yielding adjacent opposite-status signs with the same shadow.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Build the empty-row family from the paired rooted factor by reversing a peeling of $D$; each new support lifts through the other three core copies. Adding a row corner at $\gamma$ acquires the disjoint union of its old support and row support, giving the shadow formula; diagonal pairs create three new shattered supports with only two vertices and are nonample. Active-coordinate additions preserve ordinary peelability and positivity of proper rooted minors. If neither required row edge occurs, any first deletion from a nonroot core copy would force an old corner of $B$, hence zero, but its fresh-square and omitted-neighbor directions demand an absent $(h,00)$ vertex. If a required edge occurs, clear any $00$ tip and $D$, then apply the partial-tip endpoint theorem. Attachment degrees preserve two-connectivity. The single-clause completion theorem identifies the four punctured-square signs.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-root-section-square-pivots</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/root_section_square_pivots_900.html">Four Root-Section Square Pivots of Order 900</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-434" style="position:relative;">
+
+        <h3><a href="results/adjacent_signs_change_forbidden_minor_status.html" class="table-title-link">Adjacent Clause Signs Can Change Forbidden-pc-Minor Status</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Clause Signs Can Change Forbidden-pc-Minor Status</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There are four 1188-concept ample classes in dimension twenty-six and VC dimension five with a common shadow, whose signed presentations vary over a square of adjacent signs at one clause. Exactly one is a pc-minimal obstruction to dismantlable ampleness; the other three peel, and every proper pc-minor of all four peels. Adding one common root-square concept gives four 1189-concept two-connected classes with the same conclusions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Glue each 900-concept square pivot at its root to a fresh fixed rooted factor. The negative choice is the wedge of two rooted factors and hence forbidden; each positive choice peels its first block to the root and then clears the fixed block. All new cross-block clauses are common, so the unique varying clause persists. Completing the same root square on all four sides preserves the signs; the square-completed rooted-block theorem makes the negative member forbidden, while the common tip is a first corner on the positive sides. It also joins the two blocks after root deletion, proving two-connectivity. Forbidden minimality and positive pc-minor closure give the proper-minor claims.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-forbidden-adjacent-sign-pivots</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/forbidden_adjacent_sign_pivots_1188.html">Forbidden-Minor Square of Adjacent Clause Signs</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-435" style="position:relative;">
+
+        <h3><a href="results/rooted_factor_irreducibility_and_corner_deletion.html" class="table-title-link">Rooted Factors Are Periphery-Free, Product-Prime, and Stable under Small Corner Deletions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Factors Are Periphery-Free, Product-Prime, and Stable under Small Corner Deletions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every rooted factor is periphery-free and Cartesian-prime. Deleting a nonroot corner of degree at most two preserves rooted-factor status. If two nonroot corners are adjacent and have degree three, deleting either one or both also preserves rooted-factor status. Consequently, if a rooted factor has a nonroot corner but no preserving nonroot-corner deletion, every nonroot corner has degree at least three, and a degree-three nonroot corner has no nonroot corner as a neighbor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A peripheral coordinate would express the family as a peripheral expansion whose contraction base and relevant section are proper rooted minors; their endpoint orders combine to reach the forbidden root. A nontrivial Cartesian product similarly combines root-ending orders of its two factor restrictions. For deletion, glue the factor to a fixed rooted factor to obtain a cut-vertex forbidden pc-minor. Low-degree corner descent, or adjacent degree-three-pair descent, preserves the obstruction; the resulting family still has the same cut vertex, so the cut-vertex classification forces the changed block to remain a rooted factor. Adjacent corners share their unique maximal cube and therefore have equal degree.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-rooted-irreducibility</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-436" style="position:relative;">
+
+        <h3><a href="results/adjacent_rank_four_corner_repairs_endpoint.html" class="table-title-link">An Adjacent Support-Four Corner Can Repair a Prescribed Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Adjacent Support-Four Corner Can Repair a Prescribed Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a 289-concept rooted factor $(B,29)$ and an ample one-concept extension $M=B\cup\{157\}$ acquiring four directions such that both $29$ and $157$ are adjacent corners of the completed four-cube and $M$ peels to either one, while deleting the nonroot corner $157$ returns $B$, which cannot peel to $29$. Thus even deletion of a corner adjacent to the root can destroy the prescribed endpoint; support size at most two cannot do so, while support four can.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The certified addition has acquired support $\{1,2,7,8\}$ and makes both endpoints corners joined in direction $7$. Stored corner orders end at each marked vertex. Deleting the new vertex exactly recovers the certified rooted factor, whose root-ending peeling is impossible. The low-support extension theorem supplies the contrasting impossibility through support two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-rooted-rank-four-repair</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/adjacent_rank_four_root_repair_290.html">An Adjacent Degree-Four Corner Repairs a Rooted Endpoint</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

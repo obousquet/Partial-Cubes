@@ -2705,6 +2705,70 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-135" style="position:relative;">
+
+        <h3><a href="examples/adjacent_clause_endpoint_switch_305.html" class="table-title-link">A 305-Concept Adjacent-Clause Endpoint Switch</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 305-Concept Adjacent-Clause Endpoint Switch</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Let $S=B_0\cup\{604\}$, take the completed four-cube $C=Q_I\times\{28\}$ on support $I$ of bitmask $1632$, and add a fresh coordinate $f$ of bitmask $4096$. Form $R=(S\times\{0\})\cup(C\times\{1\})$ and, for each admissible trace, delete its corresponding vertex of the full $J=I\cup\{f\}$ slice.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The common completion $R$ has 306 concepts. Its twenty admissible omissions have 305 concepts, dimension thirteen, and VC dimension four.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The root-retaining admissible-trace graph is connected. All sixteen upper omissions peel to zero; among the four lower omissions only trace $576$ fails. Adjacent traces $576$ and $4672$ delete vertices $604$ and $4700$ and have opposite endpoint status. The negative member contains the proper rooted face $B_0$ and is therefore not itself a rooted factor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-adjacent-clause-endpoint-switch</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_adjacent_clause_endpoint_switch.py; PartialCubes:forbidden_pc_minor_campaign/damp_adjacent_clause_endpoint_switch_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-136" style="position:relative;">
+
+        <h3><a href="examples/root_section_square_pivots_900.html" class="table-title-link">Four Root-Section Square Pivots of Order 900</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Four Root-Section Square Pivots of Order 900</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the rooted core $B_0$, repairing tips $\alpha=128$, $\delta=290$, $\gamma=604$, and the 28-concept coordinate face $D$ containing the punctured $\gamma$-cube but omitting root neighbor $2$. Place $D$ in layer $00$, the two side extensions in layers $01,10$, $B_0$ in layer $11$, and replicate $\gamma$ on a three-vertex row of the fresh square.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The empty-row base has 897 concepts. Each punctured-square row gives 900 concepts in dimension fourteen and VC dimension five; their common completion has 901 concepts.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The four omitted row traces $00,10,01,11$ delete encoded concepts $2416,2417,2418,2419$. Exactly the last class fails to peel to zero and is a two-connected rooted factor; the other three peel to zero. Every proper root-preserving pc-minor of all four peels. Their single changed support has bitmask $6531$, outside family $\{112\}$, and adjacent negative and positive omitted traces $2307,2306$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-root-section-square-pivots</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_root_section_square_pivots.py; PartialCubes:forbidden_pc_minor_campaign/damp_root_section_square_pivots_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-137" style="position:relative;">
+
+        <h3><a href="examples/forbidden_adjacent_sign_pivots_1188.html" class="table-title-link">Forbidden-Minor Square of Adjacent Clause Signs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forbidden-Minor Square of Adjacent Clause Signs</p>
+<p><strong>Object Type:</strong> Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Glue each of the four 900-concept root-section pivots at zero to a fresh-coordinate copy of $B_0$. For the two-connected version, add the common square tip joining root directions $0$ and $15$, encoded by $32769$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The cut-vertex stage has four 1188-concept classes in dimension twenty-six; the square-completed stage has four 1189-concept two-connected classes. All have VC dimension five.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>At each stage the four classes have one common shadow and signs forming a square at a single clause. Exactly one class is a pc-minimal obstruction to dismantlable ampleness; the other three peel. Every proper pc-minor of all eight classes peels.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-forbidden-adjacent-sign-pivots</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_forbidden_adjacent_sign_pivots.py; PartialCubes:forbidden_pc_minor_campaign/damp_forbidden_adjacent_sign_pivots_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-138" style="position:relative;">
+
+        <h3><a href="examples/adjacent_rank_four_root_repair_290.html" class="table-title-link">An Adjacent Degree-Four Corner Repairs a Rooted Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Adjacent Degree-Four Corner Repairs a Rooted Endpoint</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Take the certified 289-concept factor $B$ rooted at $29$ and adjoin vertex $157$. The addition acquires support $\{1,2,7,8\}$, of bitmask $390$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The extension has 290 concepts in the stored twelve-coordinate embedding.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>Both root $29$ and the new vertex $157$ are corners of the completed four-cube and are adjacent in coordinate $7$. The extension peels to either vertex, while deleting $157$ returns $B$, which cannot peel to $29$. Thus deletion of an adjacent nonroot corner can destroy a prescribed endpoint; support size four is sufficient.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-rooted-rank-four-repair</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_rooted_operations.py; PartialCubes:forbidden_pc_minor_campaign/damp_rooted_operations_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

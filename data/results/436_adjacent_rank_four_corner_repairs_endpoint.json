@@ -1,0 +1,20 @@
+{
+  "id": 436,
+  "short_name": "adjacent_rank_four_corner_repairs_endpoint",
+  "name": "An Adjacent Support-Four Corner Can Repair a Prescribed Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "There is a 289-concept rooted factor $(B,29)$ and an ample one-concept extension $M=B\\cup\\{157\\}$ acquiring four directions such that both $29$ and $157$ are adjacent corners of the completed four-cube and $M$ peels to either one, while deleting the nonroot corner $157$ returns $B$, which cannot peel to $29$. Thus even deletion of a corner adjacent to the root can destroy the prescribed endpoint; support size at most two cannot do so, while support four can.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/adjacent_rank_four_root_repair_290"
+  ],
+  "proof": "The certified addition has acquired support $\\{1,2,7,8\\}$ and makes both endpoints corners joined in direction $7$. Stored corner orders end at each marked vertex. Deleting the new vertex exactly recovers the certified rooted factor, whose root-ending peeling is impossible. The low-support extension theorem supplies the contrasting impossibility through support two.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-rooted-rank-four-repair"
+}

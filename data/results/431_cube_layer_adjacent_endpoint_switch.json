@@ -1,0 +1,25 @@
+{
+  "id": 431,
+  "short_name": "cube_layer_adjacent_endpoint_switch",
+  "name": "A Cube Layer Can Switch Endpoints across Adjacent Clause Signs",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "construction",
+  "statement": "Let ample $S\\subseteq Q_F$ peel to $a$, contain the coordinate cube $C=Q_I\\times\\{y\\}$, and put $P_0=\\{u\\in Q_I:S_u=\\{y\\}\\}$. For a fresh $f$, let $R=(S\\times\\{0\\})\\cup(C\\times\\{1\\})$. Then $R$ is an ample single-clause completion on $J=I\\cup\\{f\\}$ with outside family $\\{y\\}$ and admissible traces $P=(P_0\\times\\{0\\})\\cup(Q_I\\times\\{1\\})$. All members have common shadow $\\operatorname{Sh}(S)\\cup\\{T\\cup\\{f\\}:T\\subsetneq I\\}$. Every upper omission peels to $(a,0)$; a lower omission at $u\\in P_0$ peels to $(a,0)$ exactly when $S\\setminus\\{(u,y)\\}$ peels to $a$. The root-retaining admissible-trace graph is connected, yet a corner deletion in $S$ that destroys the endpoint produces adjacent retained traces of opposite endpoint status.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/adjacent_clause_endpoint_switch_305"
+  ],
+  "proof": "The construction is the peripheral expansion of $S$ along $C$. Its outside slices are $S_u$ below and the singleton $\\{y\\}$ above, so the single-clause completion theorem gives exactly the displayed admissible set and shadow. A punctured cube peels by increasing distance from its missing vertex. Applying this first to the upper layer proves every upper choice positive and reduces a lower choice to the corresponding deletion in $S$; restricting any hypothetical lower-side endpoint order back to the lower face proves the converse. The intact upper trace cube connects every retained lower trace to the trace graph. A destructive corner $c=(u,y)$ has no neighbor outside $C$, so $u\\in P_0$ and its two vertical choices give the adjacent opposite-status pair.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-adjacent-clause-endpoint-switch"
+}

@@ -1,0 +1,24 @@
+{
+  "id": 432,
+  "short_name": "adjacent_exchange_rooted_minor_reduction",
+  "name": "Adjacent Endpoint Switches Reduce to Rooted Factors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let ample $H_s,H_t$ have the same shadow and differ only at one clause on $I$, with adjacent omitted traces differing at coordinate $f$. Suppose $H_s$ is dismantlable ample but does not peel to a common root $a$, while $H_t$ does, and the root-containing $f$-face of $H_s$ peels to $a$. Then a common sequence of root-preserving pc-minor operations avoiding $f$ produces a rooted factor from $H_s$ while the image of $H_t$ still peels to its root; the adjacent single-clause exchange persists on a subset of $I$, with outside family a nonempty pc-minor of the original outside family. Hence invariance under adjacent clause changes for rooted factors is equivalent to the claim that endpoint status is determined by the root-containing flipped-coordinate face; both claims are false. Such a switch is impossible for $|I|\\le2$, and also for singleton outside family with $|I|\\le3$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/root_section_square_pivots_900"
+  ],
+  "proof": "The common completion writes both sides as deletion of adjacent slices $\\{s\\}\\times A$ and $\\{t\\}\\times A$. Contraction inside $I$ identifies the two families; operations outside $I$ transport the same exchange through a nonempty minor of $A$; root restrictions in $I\\setminus\\{f\\}$ either identify the sides or retain adjacency. Restriction in $f$ cannot retain failure because it commutes with the initially positive root face. Repeatedly take proper failing root-preserving images on the negative side; size decreases until rooted minimality, while the positive side and adjacent exchange persist. The small-support cases reduce both sides to the same peripheral-expansion endpoint test, and singleton outside slices with support at most three are low-support one-concept extensions with equal endpoint status.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-adjacent-exchange-minor-reduction"
+}

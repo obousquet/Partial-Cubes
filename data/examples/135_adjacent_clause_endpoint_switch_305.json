@@ -1,0 +1,11 @@
+{
+  "id": 135,
+  "short_name": "adjacent_clause_endpoint_switch_305",
+  "name": "A 305-Concept Adjacent-Clause Endpoint Switch",
+  "object_type": "family",
+  "definition": "Let $S=B_0\\cup\\{604\\}$, take the completed four-cube $C=Q_I\\times\\{28\\}$ on support $I$ of bitmask $1632$, and add a fresh coordinate $f$ of bitmask $4096$. Form $R=(S\\times\\{0\\})\\cup(C\\times\\{1\\})$ and, for each admissible trace, delete its corresponding vertex of the full $J=I\\cup\\{f\\}$ slice.",
+  "parameters": "The common completion $R$ has 306 concepts. Its twenty admissible omissions have 305 concepts, dimension thirteen, and VC dimension four.",
+  "properties": "The root-retaining admissible-trace graph is connected. All sixteen upper omissions peel to zero; among the four lower omissions only trace $576$ fails. Adjacent traces $576$ and $4672$ delete vertices $604$ and $4700$ and have opposite endpoint status. The negative member contains the proper rooted face $B_0$ and is therefore not itself a rooted factor.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-adjacent-clause-endpoint-switch",
+  "verification": "PartialCubes:forbidden_pc_minor_campaign/verify_damp_adjacent_clause_endpoint_switch.py; PartialCubes:forbidden_pc_minor_campaign/damp_adjacent_clause_endpoint_switch_verification.json"
+}
