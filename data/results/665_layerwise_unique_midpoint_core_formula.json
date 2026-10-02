@@ -1,0 +1,15 @@
+{
+  "id": 665,
+  "short_name": "layerwise_unique_midpoint_core_formula",
+  "name": "Layerwise Separation of Unique-Midpoint Cores",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a replicated repair assembly $X(\\mathbf R)$ with ample proper occurrence rows, let $H_t=S\\cup\\{a:t\\in R_a\\}$ be its old-coordinate section at layer word $t$, and write $\\kappa$ for the largest unique-midpoint core. If every row has empty core, then $\\kappa(X(\\mathbf R))=\\dot\\bigcup_{t\\in Q_E}(\\kappa(H_t)\\times\\{t\\})$. In particular, if all occurrence rows and all sections $H_t$ are corner-peelable, the assembled family has empty unique-midpoint core.",
+  "status": "established",
+  "proof": "A unique-midpoint constraint rooted at a repair occurrence cannot use two old directions or one old and one layer direction, because the product of its completed repair cube with every layer edge supplies the opposite midpoint. Any constraint rooted there is therefore exactly a lifted constraint of its occurrence row; empty row cores exclude all repair occurrences from a core of the assembly. A remaining root lies in the full product $S\\times Q_E$. Two layer directions or one layer and one old direction span a full square, so every surviving witness uses two old directions inside one section $H_t$. This gives one inclusion. Conversely, horizontal distance-two pairs have both candidate midpoints in their own layer, so each section-core constraint is unchanged in the assembly and the union of all lifted section cores is again a core.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-layer-midpoint-cores"
+}

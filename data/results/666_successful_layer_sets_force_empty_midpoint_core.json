@@ -1,0 +1,18 @@
+{
+  "id": 666,
+  "short_name": "successful_layer_sets_force_empty_midpoint_core",
+  "name": "Successful Layer Sets Force Empty Unique-Midpoint Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "implication",
+  "statement": "Every forbidden pc-minor produced by the complete common-seed occurrence-cover criterion has empty unique-midpoint core. More generally, any ample forbidden pc-minor with a successful layer set has empty core. Hence a nonempty unique-midpoint core excludes every successful layer set. The converse fails: an ample forbidden pc-minor may have empty core without admitting a successful layer set.",
+  "status": "established",
+  "proof": "The common-seed criterion makes every occurrence row corner-peelable. Each old-coordinate section is a proper pc-minor because the layer set is nonempty and the seed occurs in every layer, so every section is also corner-peelable. The layerwise core formula therefore gives an empty core. The terminal clause-recovery theorem places every successful layer presentation in this common-seed form. For the converse failure, the certified 292-concept obstruction has empty core and exactly one corner. Any successful layer presentation needs at least two nonempty proper rows to own opposite signed facets; each row has a corner that lifts to a distinct occurrence corner, contradicting uniqueness.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-layered-obstructions-empty-core",
+  "witness_ids": [
+    "#examples/empty_midpoint_core_forbidden_pair"
+  ]
+}

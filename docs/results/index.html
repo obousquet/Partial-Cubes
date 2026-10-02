@@ -11151,6 +11151,56 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-665" style="position:relative;">
+
+        <h3><a href="results/layerwise_unique_midpoint_core_formula.html" class="table-title-link">Layerwise Separation of Unique-Midpoint Cores</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Layerwise Separation of Unique-Midpoint Cores</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For a replicated repair assembly $X(\mathbf R)$ with ample proper occurrence rows, let $H_t=S\cup\{a:t\in R_a\}$ be its old-coordinate section at layer word $t$, and write $\kappa$ for the largest unique-midpoint core. If every row has empty core, then $\kappa(X(\mathbf R))=\dot\bigcup_{t\in Q_E}(\kappa(H_t)\times\{t\})$. In particular, if all occurrence rows and all sections $H_t$ are corner-peelable, the assembled family has empty unique-midpoint core.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A unique-midpoint constraint rooted at a repair occurrence cannot use two old directions or one old and one layer direction, because the product of its completed repair cube with every layer edge supplies the opposite midpoint. Any constraint rooted there is therefore exactly a lifted constraint of its occurrence row; empty row cores exclude all repair occurrences from a core of the assembly. A remaining root lies in the full product $S\times Q_E$. Two layer directions or one layer and one old direction span a full square, so every surviving witness uses two old directions inside one section $H_t$. This gives one inclusion. Conversely, horizontal distance-two pairs have both candidate midpoints in their own layer, so each section-core constraint is unchanged in the assembly and the union of all lifted section cores is again a core.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-layer-midpoint-cores</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-666" style="position:relative;">
+
+        <h3><a href="results/successful_layer_sets_force_empty_midpoint_core.html" class="table-title-link">Successful Layer Sets Force Empty Unique-Midpoint Core</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Successful Layer Sets Force Empty Unique-Midpoint Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Every forbidden pc-minor produced by the complete common-seed occurrence-cover criterion has empty unique-midpoint core. More generally, any ample forbidden pc-minor with a successful layer set has empty core. Hence a nonempty unique-midpoint core excludes every successful layer set. The converse fails: an ample forbidden pc-minor may have empty core without admitting a successful layer set.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The common-seed criterion makes every occurrence row corner-peelable. Each old-coordinate section is a proper pc-minor because the layer set is nonempty and the seed occurs in every layer, so every section is also corner-peelable. The layerwise core formula therefore gives an empty core. The terminal clause-recovery theorem places every successful layer presentation in this common-seed form. For the converse failure, the certified 292-concept obstruction has empty core and exactly one corner. Any successful layer presentation needs at least two nonempty proper rows to own opposite signed facets; each row has a corner that lifts to a distinct occurrence corner, contradicting uniqueness.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-layered-obstructions-empty-core</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/empty_midpoint_core_forbidden_pair.html">One-Corner Forbidden Family with Empty Midpoint Core</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-667" style="position:relative;">
+
+        <h3><a href="results/terminal_empty_core_obstruction_towers.html" class="table-title-link">Terminal Empty-Core Obstruction Towers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Empty-Core Obstruction Towers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every $r\ge1$, the antipodal repair tower $X_r=(G\times Q_r)\cup(\{91\}\times(Q_r\setminus\{0^r\}))\cup(\{157\}\times(Q_r\setminus\{1^r\}))$ over the certified cornerless 291-concept seed is a corner-descent-terminal ample forbidden pc-minor with empty unique-midpoint core. It has isometric dimension $12+r$, exactly $293\cdot2^r-2$ concepts, and exactly $2r$ corners. For $r=1$, deleting either corner leaves a unique-midpoint core of order 76. Thus terminality restores neither the implication from empty core to peelability nor the existence of a corner whose deletion preserves empty core.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two tips have certified peelable one-concept extensions and acquire distinct four-coordinate supports. The antipodal repair-tower theorem gives ampleness, forbiddenness, order, and dimension, while the complementary punctured rows partition all signed layer facets and the terminal facet-partition theorem gives corner-descent terminality. Each punctured $r$-cube row has $r$ corners and the seed has none, so the repair-cover corner formula gives $2r$ corners. Successful-layer core separation makes the tower core empty. At $r=1$, deleting either occurrence corner removes its row; the remaining sections are the 76-core seed and an empty-core one-tip repair, so the layerwise formula gives core order 76. The archived checker independently verifies the seed and repair hashes, exact shadows, corners, static pruning orders, and core witnesses for $r=1,2$ and all their corner deletions.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-terminal-empty-core-towers</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/terminal_empty_core_antipodal_repair_towers.html">Terminal Empty-Core Antipodal Repair Towers</a></li></ul></p>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

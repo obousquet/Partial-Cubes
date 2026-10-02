@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "batch_id": "178_dismantlable_ample_layer_midpoint_core_towers",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact layerwise decomposition of unique-midpoint cores, the empty-core obstruction imposed by successful layer sets, and the explicit unbounded family of corner-descent-terminal empty-core forbidden pc-minors.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-layer-midpoint-cores",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-layered-obstructions-empty-core",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-empty-core-towers",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_layer_midpoint_cores.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "layer-midpoint-core-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_layer_midpoint_cores.py,damp_fixed_291_repair_creation.json,damp_hall_carrier_defect_min8.json,damp_layer_midpoint_cores_verification.json}",
+      "sha256": "657986492f74d2243057912046ea10a27ff75be5831112693580cf0003e194dd",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The layerwise core identity supplies a reusable obstruction test, while the terminal tower shows sharply that neither empty core nor corner-descent terminality repairs the failed midpoint-core converse. Its exact seed and pruning evidence must remain replayable.",
+    "outcome": "All three statement-plus-proof blocks match the preserved manuscript. The database records both directions of the core decomposition, the necessary successful-layer condition and converse counterexample, and the uniform tower formulas for order, dimension, corner count, terminality, empty core, and deletion-core size.",
+    "claim_block_sha256": {
+      "prop:damp-layer-midpoint-cores": "18d4a37e0eab0757ea2f5414eea575b29313f7759a1fb48a8d047312acf5ebe3",
+      "cor:damp-layered-obstructions-empty-core": "0551aaab14706332029a483a264bd78a17569dd2f53fe468e8d6d20fae4796f3",
+      "cor:damp-terminal-empty-core-towers": "26d9a2bb3e2a2e51fb872fe1c0f7b8c82cf4a64450767f77b8b0fe3b454e7f2a"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/verify_damp_layer_midpoint_cores.py",
+      "sha256": "8c9c4744262e18194cd908d1cbf3630768deaa6066f04378b4cf2ecacd4aa899"
+    },
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/damp_fixed_291_repair_creation.json",
+      "sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f"
+    },
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/damp_hall_carrier_defect_min8.json",
+      "sha256": "60e1d708636d85ccf991d1d574dec5dbde7829656f5576a12bba75170b6f6b53"
+    },
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/damp_layer_midpoint_cores_verification.json",
+      "sha256": "3f8444a1dca00b1f1714e64076a0f6082ec7698ad45c5ce9438b6cb4709c89e6"
+    },
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/source_damp_layer_midpoint_cores_verification.json",
+      "sha256": "3f8444a1dca00b1f1714e64076a0f6082ec7698ad45c5ce9438b6cb4709c89e6"
+    },
+    {
+      "path": "migration/certificates/178_dismantlable_ample_layer_midpoint_core_towers/source_packet_manifest.json",
+      "sha256": "952f4907f7b3d020635b3aa7993beca25185548c7c205a844ec6aa16bc006b3c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the layerwise core law, successful-layer obstruction, complete tower definition and parameters, concise proofs, fixed replay boundary, and citation. LaTeX retains the expanded constraint analysis and the connections to earlier tower and terminality theorems. The exact 291-concept seed, repair peelings, carrier model, pruning orders, and core witnesses remain in the certificate archive because they cannot be reconstructed from the normalized theorem rows.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three proofs. The tracked source packet at commit b30995f is byte-archived and path-hashed; rerunning its checker reproduces the source report byte-for-byte for the unrepaired product, towers at r=1 and r=2, all corner deletions, and the nonempty-row-core control.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/185_terminal_empty_core_antipodal_repair_towers.json",
+      "sha256": "a7342520b6b37e97f0ea9a55f7677259c77f4d94148ef9ec22101da7e98e9c2e"
+    },
+    {
+      "path": "data/results/665_layerwise_unique_midpoint_core_formula.json",
+      "sha256": "066d7aa3b9e5d07d1246540c95d8a1ca95131dfc39af7456b3ece7daf789d32e"
+    },
+    {
+      "path": "data/results/666_successful_layer_sets_force_empty_midpoint_core.json",
+      "sha256": "da6ea2e715327c2092a817d448e4aa3a8771818f395421339d9d98f751cf68c1"
+    },
+    {
+      "path": "data/results/667_terminal_empty_core_obstruction_towers.json",
+      "sha256": "57e12ffb798154359fbe536f912fd205cd68bfd9dbad316892ae21a6caf43f5d"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "5af397ed45c2b8a99759e948b068fe021694d8a398bbea49110ec5f57f5e1064"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "62e49e3bd1c0e0c0792d635293d2952cf7fef794fa3663c9f97e57c42246e026"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2062 records.",
+    "website": "Normalized 2078 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 761 to 764 of 1143 and dismantlable-ample coverage from 325 to 328 of 683. The named tower example preserves the uniform construction independently of theorem rendering.",
+    "certificates": "The replay verifies exact shadows and static midpoint pruning for controls of orders 582, 584, 1170, and 4387; the generated report is byte-identical to the tracked source report.",
+    "source_integrity": "All three reviewed claim blocks match supplemental snapshot 2026-10-02-b002, and every file in the tracked computation packet matches its archived hash."
+  },
+  "deferred": [
+    "The refreshed audit has 379 uncovered database-owned labels: 355 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem proves universality of peelable occurrence rows, using three certified Hall repair tips to embed every nonempty dismantlable ample family as a proper pc-minor of a constructed forbidden pc-minor.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
