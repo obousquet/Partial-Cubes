@@ -11834,6 +11834,43 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-702" style="position:relative;">
+
+        <h3><a href="results/two_repair_ampleness_criterion.html" class="table-title-link">Exact Ampleness Criterion for Two One-Concept Extensions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Ampleness Criterion for Two One-Concept Extensions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\subseteq Q_F$ be ample and let the distinct one-concept extensions $A=S\cup\{a\}$ and $B=S\cup\{b\}$ be ample. Each adds one unique shattered support, locally given by $P_a=\{f:a^{\{f\}}\in S\}$ and $P_b=\{f:b^{\{f\}}\in S\}$. For a new coordinate $e$, the opposite-layer lift $X=(B\times\{0\})\cup(A\times\{1\})$ is ample exactly when $P_a\ne P_b$. Under this condition $C=S\cup\{a,b\}$ is ample, $\operatorname{Sh}(C)=\operatorname{Sh}(S)\mathbin{\dot\cup}\{P_a,P_b\}$, and $\operatorname{Sh}(A)\cap\operatorname{Sh}(B)=\operatorname{Sh}(S)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The one-concept extension test gives the unique supports and their local formulas. If they are distinct, the two-tip union strongly shatters the old shadow and both new supports, already $|S|+2$ sets. The Sandwich inequalities force equality and ampleness, yielding the exact union and intersection formulas. A support on old coordinates is shattered by the lift exactly when it is shattered by $C$, while $D\cup\{e\}$ is shattered exactly when $D$ is shattered by both sections. With distinct supports this gives $|\operatorname{Sh}(X)|=|C|+|S|=|X|$, so $X$ is ample. If the supports agree, the section-shadow intersection contains the old shadow plus their common new support, and Sauer's inequality gives at least $|X|+1$ shattered sets, excluding ampleness.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-repair-ampleness</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The exhaustive regression checks the criterion on every eligible ordered pair of ample one-concept extensions over every ample family through ambient dimension four: 87,296 ordered pairs in total, including 24,136 equal-support failures and 63,160 distinct-support positive cases.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-703" style="position:relative;">
+
+        <h3><a href="results/two_repair_signed_trace_transport.html" class="table-title-link">Signed Trace Transport and Recovery for a Two-Repair Lift</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Signed Trace Transport and Recovery for a Two-Repair Lift</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Under the distinct-support hypotheses of the two-repair ampleness criterion, put $\Sigma=\operatorname{Sh}(S)$ and $\Sigma^+=\Sigma\mathbin{\dot\cup}\{P_a,P_b\}$. The lift has $\operatorname{Sh}(X)=\Sigma^+\mathbin{\dot\cup}\{D\cup\{e\}:D\in\Sigma\}$. Every old-support trace fibre is the disjoint union of its fibres in the two sections, and every trace involving $e$ is the corresponding single section fibre. Its minimal nonfaces are $\mathcal N(\Sigma^+)\mathbin{\dot\cup}\{P_a\cup\{e\},P_b\cup\{e\}\}$; old signs are inherited from $C=S\cup\{a,b\}$, while the two vertical missing traces are $(a|_{P_a},0)$ and $(b|_{P_b},1)$. These signed clauses reconstruct $X$. Conversely, the marked pair $(X,e)$ recovers the two sections, their intersection $S$, both singleton tips, and both supports, uniquely up to reversing $e$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Substituting the exact union and section-intersection shadows into the two-section shattering formula gives the displayed complex, and the trace identities follow directly by separating words according to their $e$-coordinate. An old-coordinate nonface is minimal exactly when it is minimal in $\Sigma^+$. A vertical support $D\cup\{e\}$ is minimally absent exactly when $D$ is one of the two supports added to $\Sigma$, giving the two vertical nonfaces. The trace missing from $S$ on $P_a$ also remains missing from the opposite section, so the lower vertical sign is $(a|_{P_a},0)$; the other sign is symmetric. The fixed-shadow signed-clutter theorem reconstructs the family. Finally, projecting the two marked sections gives $B$ and $A$; their intersection is $S$, their singleton differences are the tips, and adjacency to $S$ recovers each support.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-repair-trace-transport</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The exhaustive regression verifies 63,160 canonical recoveries, 333,352 signed clauses, and 3,929,800 trace fibres through dimension four, including exact reconstruction from the transported signing.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

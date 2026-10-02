@@ -1,0 +1,18 @@
+{
+  "id": 702,
+  "short_name": "two_repair_ampleness_criterion",
+  "name": "Exact Ampleness Criterion for Two One-Concept Extensions",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S\\subseteq Q_F$ be ample and let the distinct one-concept extensions $A=S\\cup\\{a\\}$ and $B=S\\cup\\{b\\}$ be ample. Each adds one unique shattered support, locally given by $P_a=\\{f:a^{\\{f\\}}\\in S\\}$ and $P_b=\\{f:b^{\\{f\\}}\\in S\\}$. For a new coordinate $e$, the opposite-layer lift $X=(B\\times\\{0\\})\\cup(A\\times\\{1\\})$ is ample exactly when $P_a\\ne P_b$. Under this condition $C=S\\cup\\{a,b\\}$ is ample, $\\operatorname{Sh}(C)=\\operatorname{Sh}(S)\\mathbin{\\dot\\cup}\\{P_a,P_b\\}$, and $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(B)=\\operatorname{Sh}(S)$.",
+  "status": "established",
+  "proof": "The one-concept extension test gives the unique supports and their local formulas. If they are distinct, the two-tip union strongly shatters the old shadow and both new supports, already $|S|+2$ sets. The Sandwich inequalities force equality and ampleness, yielding the exact union and intersection formulas. A support on old coordinates is shattered by the lift exactly when it is shattered by $C$, while $D\\cup\\{e\\}$ is shattered exactly when $D$ is shattered by both sections. With distinct supports this gives $|\\operatorname{Sh}(X)|=|C|+|S|=|X|$, so $X$ is ample. If the supports agree, the section-shadow intersection contains the old shadow plus their common new support, and Sauer's inequality gives at least $|X|+1$ shattered sets, excluding ampleness.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-two-repair-ampleness",
+  "comments": "The exhaustive regression checks the criterion on every eligible ordered pair of ample one-concept extensions over every ample family through ambient dimension four: 87,296 ordered pairs in total, including 24,136 equal-support failures and 63,160 distinct-support positive cases."
+}

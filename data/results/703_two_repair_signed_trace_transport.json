@@ -1,0 +1,22 @@
+{
+  "id": 703,
+  "short_name": "two_repair_signed_trace_transport",
+  "name": "Signed Trace Transport and Recovery for a Two-Repair Lift",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Under the distinct-support hypotheses of the two-repair ampleness criterion, put $\\Sigma=\\operatorname{Sh}(S)$ and $\\Sigma^+=\\Sigma\\mathbin{\\dot\\cup}\\{P_a,P_b\\}$. The lift has $\\operatorname{Sh}(X)=\\Sigma^+\\mathbin{\\dot\\cup}\\{D\\cup\\{e\\}:D\\in\\Sigma\\}$. Every old-support trace fibre is the disjoint union of its fibres in the two sections, and every trace involving $e$ is the corresponding single section fibre. Its minimal nonfaces are $\\mathcal N(\\Sigma^+)\\mathbin{\\dot\\cup}\\{P_a\\cup\\{e\\},P_b\\cup\\{e\\}\\}$; old signs are inherited from $C=S\\cup\\{a,b\\}$, while the two vertical missing traces are $(a|_{P_a},0)$ and $(b|_{P_b},1)$. These signed clauses reconstruct $X$. Conversely, the marked pair $(X,e)$ recovers the two sections, their intersection $S$, both singleton tips, and both supports, uniquely up to reversing $e$.",
+  "status": "established",
+  "proof": "Substituting the exact union and section-intersection shadows into the two-section shattering formula gives the displayed complex, and the trace identities follow directly by separating words according to their $e$-coordinate. An old-coordinate nonface is minimal exactly when it is minimal in $\\Sigma^+$. A vertical support $D\\cup\\{e\\}$ is minimally absent exactly when $D$ is one of the two supports added to $\\Sigma$, giving the two vertical nonfaces. The trace missing from $S$ on $P_a$ also remains missing from the opposite section, so the lower vertical sign is $(a|_{P_a},0)$; the other sign is symmetric. The fixed-shadow signed-clutter theorem reconstructs the family. Finally, projecting the two marked sections gives $B$ and $A$; their intersection is $S$, their singleton differences are the tips, and adjacency to $S$ recovers each support.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-repair-trace-transport",
+  "comments": "The exhaustive regression verifies 63,160 canonical recoveries, 333,352 signed clauses, and 3,929,800 trace fibres through dimension four, including exact reconstruction from the transported signing."
+}

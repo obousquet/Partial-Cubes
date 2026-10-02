@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "batch_id": "195_dismantlable_ample_two_repair_trace_transport",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact support-inequality criterion for ampleness of an opposite-layer two-extension lift and the resulting complete shattered-complex, trace-fibre, signed-minimal-nonface, reconstruction, and parameter-recovery formulas.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-two-repair-ampleness",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-repair-trace-transport",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_repair_trace_transport.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "two-repair-trace-transport-regression-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_two_repair_trace_transport.py,damp_two_repair_trace_transport_regression.json,verify_signed_clutter_parametrization.py}; papers/cover-recursive/scripts/{explore_smallest_additional_peripheral_obstruction.py,explore_cover_recursive_peripheral.py}",
+      "sha256": "3544f38c8942ef5f3adc31f304c75576c02f124f3304e7bd717ccbbc54f31f2d",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These results are the exact local algebra behind two-repair lifts: support equality is the sole ampleness obstruction, while distinct supports determine every shadow, trace, signed clause, and recoverable parameter.",
+    "outcome": "Both proof blocks match the preserved manuscript. The database records all equivalences, local support formulas, union and intersection shadows, full trace transport, minimal nonfaces and signs, signed reconstruction, and canonical marked recovery.",
+    "claim_block_sha256": {
+      "lem:damp-two-repair-ampleness": "f0470615dda14bbf73daee874e706c43090fef11a77159d7d83438921866639a",
+      "prop:damp-two-repair-trace-transport": "3b143291843c925f1503490c66d4a884c5283a74d4d7673bf58ac71618305fc7"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/forbidden_pc_minor_campaign/verify_damp_two_repair_trace_transport.py",
+      "sha256": "16a9c4fb884c8e25952beec68d756c4765e1e91e7136462bd1624ca57d6096cc"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/forbidden_pc_minor_campaign/damp_two_repair_trace_transport_regression.json",
+      "sha256": "b9474e7bb4a8554d27b63290c63e24a2ea807ddc87e7fa022a75dfc1c5b064db"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/forbidden_pc_minor_campaign/source_damp_two_repair_trace_transport_regression.json",
+      "sha256": "b9474e7bb4a8554d27b63290c63e24a2ea807ddc87e7fa022a75dfc1c5b064db"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/source_packet_manifest.json",
+      "sha256": "16c56c75915b6f408c532fa573638318acd8f156082e54c77985d23b5e1637d4"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns both symbolic results and concise proofs, including all recovery formulas and bounded-regression scope. LaTeX retains the expanded Sandwich and fixed-shadow arguments. The exact exhaustive verifier, source report, and imported enumeration helpers remain byte-archived.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both proof blocks. The five-file source packet at commit f304961 is path-hashed and byte-archived; the exhaustive verifier reproduces its tracked report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/702_two_repair_ampleness_criterion.json",
+      "sha256": "518275891ce835cb4024addf76e435ca4535e8a42ba699453ea34f99189492d5"
+    },
+    {
+      "path": "data/results/703_two_repair_signed_trace_transport.json",
+      "sha256": "245ce776c33f00e3c3976d7558e1260e9977f43c49da7bba4e81bd91400a35e6"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "aa2d956967164b53484d893839639f63103527eff09cfc3fb325363f60556f47"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "da788042e5f2b08a68619a84f76f7801e8864cee48b0abd54c009c403d0d1ee4"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2112 records.",
+    "website": "Normalized 2128 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 801 to 803 of 1143 and dismantlable-ample coverage from 365 to 367 of 683.",
+    "certificates": "The exhaustive replay checks 87,296 eligible ordered repair pairs through dimension four, including 24,136 equal-support negative cases and 63,160 distinct-support positive cases, with 333,352 signed clauses, 3,929,800 trace fibres, and 63,160 canonical marked recoveries.",
+    "source_integrity": "Both proof blocks match supplemental snapshot 2026-10-02-b002, all five archived source files match the manifest, and the regenerated report is byte-identical to its tracked source report."
+  },
+  "deferred": [
+    "The refreshed audit has 340 uncovered database-owned labels: 316 in dismantlable-ample and 24 in ample-corners.",
+    "The next block characterizes thin coordinates by a two-sided fragile kernel and derives the terminal thin/thick dichotomy.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
