@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "batch_id": "148_dismantlable_ample_rooted_square_assembly",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the automatic minor-minimality theorem for rooted square assemblies, including its exact corner and order formulas and marked recovery, together with the 1601-concept instance and the resulting 3|B|+734 family.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-rooted-square-assembly"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem packages a broad forbidden-minor construction: positivity of every output minor follows from marked boundary orders, eliminating output-specific searches and giving exact corner and size information.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. Batch 147 already preserved and replayed the complete certificate boundary: 22 first-factor edge-relative orders, three projected endpoint orders, 24 rooted minor orders for the second factor, the attachment identity, and the predicted two-corner set of the 1601-concept instance.",
+    "claim_block_sha256": {
+      "thm:damp-rooted-square-assembly": "346939f78e032db43b3845710616aeb8860bd7ee4b26e242ffc4542767fe98ef"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/147_dismantlable_ample_adjacent_square_criterion/papers/dismantlable-ample/research/rooted_square_assembly.json",
+      "sha256": "302bac9bef2849a8eafd669247dd454ca800c4b3b49cc0f2ff64fd83aaeffc24"
+    },
+    {
+      "path": "migration/certificates/147_dismantlable_ample_adjacent_square_criterion/papers/dismantlable-ample/research/square_attachment_criterion.py",
+      "sha256": "85ecb223409c4eebd8853105e19949f89bef7d04ebb6468cf4c72e9e1e27e3b7"
+    },
+    {
+      "path": "migration/certificates/147_dismantlable_ample_adjacent_square_criterion/papers/dismantlable-ample/research/square_attachment_criterion.json",
+      "sha256": "03c6997c54ee0ebde535e9ddf8bb33ca2d452398535b26d156ec0a7afdcc12d3"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized theorem, exact formulas, concise proof, and named 1601-concept witness. The replay artifacts remain database-owned in Batch 147. LaTeX retains the detailed three-case minor proof and discussion of input selection.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the manuscript. Batch 147 preserves the full self-contained source hierarchy and byte-identical replay used by this theorem and example.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/examples/178_rooted_square_assembly_1601.json",
+      "sha256": "7c80940e0c0c49f77390a5266b5a1ea3cc252c0cd10557f0ec9cc50f16809176"
+    },
+    {
+      "path": "data/results/604_rooted_square_assembly_automatic_minimality.json",
+      "sha256": "e42000f162945ef5953e05c3386c60668116ceca191631f4f48b21c81f337c62"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "4e29913bb645070f145996225bd673c597fd7534e458d3dd014e8021480dd4bb"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "3963bbb61c27f72ae2e154ed1531e3990b89c8df028a1364559085ffb81f84e7"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1984 records.",
+    "website": "Normalized 2000 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 704 to 705 of 1143 and dismantlable-ample coverage from 268 to 269 of 683.",
+    "certificates": "The preserved replay checks the 289-concept first factor, 22 edge-relative minor orders, three projected endpoint orders, the 289-concept second factor with 24 rooted minor orders, exact assembly order 1601 in dimension 25, the product-attachment identity, and exactly two output corners. The theorem supplies all proper-minor positivity without output-minor enumeration.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002; all reused verification packet hashes match Batch 147."
+  },
+  "deferred": [
+    "The refreshed audit has 438 uncovered database-owned labels: 414 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block identifies both reductions of a rooted square assembly and separates the opposite-hole block case from adjacent holes.",
+    "It is followed by positive-reduction and unmarked-recovery criteria for adjacent mixed-puncture attachments."
+  ]
+}

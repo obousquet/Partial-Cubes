@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,22 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-26" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-604" style="position:relative;">
 
-        <h3><a href="operations/coordinate_block_replacement.html" class="table-title-link">Coordinate-Block Replacement</a></h3>
+        <h3><a href="results/rooted_square_assembly_automatic_minimality.html" class="table-title-link">Rooted Square Assemblies Have Automatic Minor Minimality</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate-Block Replacement</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="W_E(H)">
-            \[W_E(H)\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a family $H\subseteq Q_{G\cup\{z\}}$ with sections $B_i=\rho_z^iH$, union $C=B_0\cup B_1$, and a fresh nonempty coordinate block $E$, replace $z$ by $E$ and take $(B_0\times\{0_E\})\cup(B_1\times\{1_E\})\cup(C\times(Q_E\setminus\{0_E,1_E\}))$.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The marked output remembers the new block. A singleton block merely renames the original coordinate.</p></div>
+        <p><strong>Name: </strong>Rooted Square Assemblies Have Automatic Minor Minimality</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A$ be ample and corner-peelable with unique corner $0$ and a marked incident coordinate $z$. Assume every zero restriction and contraction in an unmarked coordinate peels to the image of the marked edge, and that both $z$-sections and their contraction peel to the projected root. Replace $z$ by a square block $E$ to obtain $P$. For any rooted factor $(B,0)$ and any hole $q\ne00$, let $Q$ contain the full root square and the punctured square $Q_E\setminus\{q\}$ over every nonroot word of $B$. Then $X=P\cup Q$ is an ample forbidden pc-minor. Its corners are exactly $(b,t)$ with $b$ a nonroot corner of $B$ and $t$ a square neighbor of $q$, so it is cornerless exactly when the root is the unique corner of $B$. Its order is $3|C|+|A_0\cap A_1|+3|B|-3$. The marked pieces, inputs, and hole are recoverable from coordinate faces, block reduction, and square rows.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Both pieces are ample: $P$ by block replacement, and $Q$ by adding the missing root-square vertex as a corner to a product. Their shadows meet exactly in the square shadow, proving ampleness of the union. A direct cube test gives the stated corners. Writing $K=T\setminus\{q\}$ identifies the union as a relative product attachment; the unique corner of $P$ lies in $K$, so no relative peeling can start. For a private coordinate of $A$, block transport peels its minor to the unchanged positive $Q$; for a private coordinate of $B$, rooted minimality peels $Q$ to the positive $P$. Square restrictions reduce to the assumed rooted orders on $A_0,A_1,C$, while square contractions are products of a positive vertex gluing with an edge. Thus every elementary proper minor is positive. Counting the two pieces and their common four-vertex square gives the order formula, and their coordinate faces give marked recovery.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-coordinate-block-replacement</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_coordinate_block_replacement_closed.html'>Ample Families Are Closed Under Coordinate-Block Replacement</a></li><li><a href='operation_results/dismantlable_ample_coordinate_block_replacement_closed.html'>Coordinate-Block Replacement Preserves Dismantlable Ampleness Exactly</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/simultaneous_nonconstant_row_enlargement.html'>Closed Formula for Simultaneous Row Enlargements</a></li><li><a href='results/block_row_completion.html'>Completing One Nonconstant Block Row</a></li><li><a href='results/two_component_cube_code.html'>Two Complementary Components Force Antipodal Cube Rows</a></li><li><a href='results/one_wing_mixed_puncture_retention.html'>One Relative Section Suffices for Mixed-Puncture Retention</a></li><li><a href='results/adjacent_square_relative_criterion.html'>Exact Relative Criterion for an Adjacent Square Hole</a></li><li><a href='results/rooted_endpoint_square_generator.html'>A Square Generator from Rooted Endpoints and Small Minor Wings</a></li><li><a href='results/rooted_square_assembly_automatic_minimality.html'>Rooted Square Assemblies Have Automatic Minor Minimality</a></li></ul></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-rooted-square-assembly</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/rooted_square_assembly_1601.html">The 1601-Concept Rooted Square Assembly</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The two marked-edge retention conditions are assumptions; rooted minimality alone is not claimed to imply them. Recovery is marked and does not assert uniqueness of an unmarked decomposition.</p></div>
 
         </div>
     </div>

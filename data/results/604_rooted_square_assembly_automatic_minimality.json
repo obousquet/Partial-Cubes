@@ -1,0 +1,26 @@
+{
+  "id": 604,
+  "short_name": "rooted_square_assembly_automatic_minimality",
+  "name": "Rooted Square Assemblies Have Automatic Minor Minimality",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/cartesian_product",
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "Let $A$ be ample and corner-peelable with unique corner $0$ and a marked incident coordinate $z$. Assume every zero restriction and contraction in an unmarked coordinate peels to the image of the marked edge, and that both $z$-sections and their contraction peel to the projected root. Replace $z$ by a square block $E$ to obtain $P$. For any rooted factor $(B,0)$ and any hole $q\\ne00$, let $Q$ contain the full root square and the punctured square $Q_E\\setminus\\{q\\}$ over every nonroot word of $B$. Then $X=P\\cup Q$ is an ample forbidden pc-minor. Its corners are exactly $(b,t)$ with $b$ a nonroot corner of $B$ and $t$ a square neighbor of $q$, so it is cornerless exactly when the root is the unique corner of $B$. Its order is $3|C|+|A_0\\cap A_1|+3|B|-3$. The marked pieces, inputs, and hole are recoverable from coordinate faces, block reduction, and square rows.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/rooted_square_assembly_1601"
+  ],
+  "proof": "Both pieces are ample: $P$ by block replacement, and $Q$ by adding the missing root-square vertex as a corner to a product. Their shadows meet exactly in the square shadow, proving ampleness of the union. A direct cube test gives the stated corners. Writing $K=T\\setminus\\{q\\}$ identifies the union as a relative product attachment; the unique corner of $P$ lies in $K$, so no relative peeling can start. For a private coordinate of $A$, block transport peels its minor to the unchanged positive $Q$; for a private coordinate of $B$, rooted minimality peels $Q$ to the positive $P$. Square restrictions reduce to the assumed rooted orders on $A_0,A_1,C$, while square contractions are products of a positive vertex gluing with an edge. Thus every elementary proper minor is positive. Counting the two pieces and their common four-vertex square gives the order formula, and their coordinate faces give marked recovery.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-rooted-square-assembly",
+  "comments": "The two marked-edge retention conditions are assumptions; rooted minimality alone is not claimed to imply them. Recovery is marked and does not assert uniqueness of an unmarked decomposition."
+}
