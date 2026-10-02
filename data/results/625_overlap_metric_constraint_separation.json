@@ -1,0 +1,20 @@
+{
+  "id": 625,
+  "short_name": "overlap_metric_constraint_separation",
+  "name": "Metric Constraints Separate Across an Ample Overlap",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let ample $H$ be split in an active coordinate into sections $B_0,B_1$, overlap $A=B_0\\cap B_1$, contraction $C=B_0\\cup B_1$, and wings $D_b=B_b\\setminus A$. The four families are nonempty and ample. For $X\\in\\{B_0,B_1,C\\}$, retain each original-graph distance-two constraint whose common-neighbour set avoids $A$. Then the constraint system for $C$ is the disjoint union of those for $B_0$ and $B_1$, and every exterior vertex in a side constraint lies in that side's wing. Consequently, a partial deletion list in $C\\setminus A$ preserves distances after every deletion exactly when its two wing subsequences do so in their sections. A full list peels $C$ relatively to $A$ exactly when both wing subsequences peel their sections relatively to $A$, and every interleaving of two valid wing orders is valid. Moreover, if a same-side distance-two pair acquires a new midpoint under contraction, its old midpoint is unique, the two endpoints and old midpoint lie in $A$, the new midpoint lies in the opposite wing, and their lifted three-face is a cube with exactly the new midpoint's same-side lift missing; every such punctured three-cube gives a new midpoint.",
+  "status": "established",
+  "proof": "No contraction edge joins the two exclusive wings, since their exclusive lifts would otherwise be a Hamming-distance-two pair with both intermediate vertices absent. A cross-wing distance-two pair has all common neighbours in $A$, and a pair wholly in $A$ has an $A$-midpoint by isometry. Every constraint avoiding retained midpoints therefore belongs to one section and cannot acquire an opposite-wing midpoint; this proves the disjoint split. A deletion sequence preserves distances exactly while no distance-two pair loses all common neighbours with both endpoints retained. Constraints meeting $A$ are permanently satisfied, and all others split by wing, proving the partial and full order assertions via the relative metric criterion. Finally a cube distance-two pair has only two possible midpoints. Acquiring the second forces the endpoints and old midpoint into $A$ and the new one into the opposite wing; their lifts are precisely the seven vertices of the stated punctured cube, and the construction reverses.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-overlap-metric-separation",
+  "comments": "The result applies to partial exterior deletion lists as well as complete relative peelings. Its exhaustive replay is archived with migration Batch 163."
+}

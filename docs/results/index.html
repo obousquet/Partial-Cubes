@@ -10460,6 +10460,42 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-625" style="position:relative;">
+
+        <h3><a href="results/overlap_metric_constraint_separation.html" class="table-title-link">Metric Constraints Separate Across an Ample Overlap</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Metric Constraints Separate Across an Ample Overlap</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $H$ be split in an active coordinate into sections $B_0,B_1$, overlap $A=B_0\cap B_1$, contraction $C=B_0\cup B_1$, and wings $D_b=B_b\setminus A$. The four families are nonempty and ample. For $X\in\{B_0,B_1,C\}$, retain each original-graph distance-two constraint whose common-neighbour set avoids $A$. Then the constraint system for $C$ is the disjoint union of those for $B_0$ and $B_1$, and every exterior vertex in a side constraint lies in that side's wing. Consequently, a partial deletion list in $C\setminus A$ preserves distances after every deletion exactly when its two wing subsequences do so in their sections. A full list peels $C$ relatively to $A$ exactly when both wing subsequences peel their sections relatively to $A$, and every interleaving of two valid wing orders is valid. Moreover, if a same-side distance-two pair acquires a new midpoint under contraction, its old midpoint is unique, the two endpoints and old midpoint lie in $A$, the new midpoint lies in the opposite wing, and their lifted three-face is a cube with exactly the new midpoint's same-side lift missing; every such punctured three-cube gives a new midpoint.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>No contraction edge joins the two exclusive wings, since their exclusive lifts would otherwise be a Hamming-distance-two pair with both intermediate vertices absent. A cross-wing distance-two pair has all common neighbours in $A$, and a pair wholly in $A$ has an $A$-midpoint by isometry. Every constraint avoiding retained midpoints therefore belongs to one section and cannot acquire an opposite-wing midpoint; this proves the disjoint split. A deletion sequence preserves distances exactly while no distance-two pair loses all common neighbours with both endpoints retained. Constraints meeting $A$ are permanently satisfied, and all others split by wing, proving the partial and full order assertions via the relative metric criterion. Finally a cube distance-two pair has only two possible midpoints. Acquiring the second forces the endpoints and old midpoint into $A$ and the new one into the opposite wing; their lifts are precisely the seven vertices of the stated punctured cube, and the construction reverses.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-overlap-metric-separation</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The result applies to partial exterior deletion lists as well as complete relative peelings. Its exhaustive replay is archived with migration Batch 163.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-626" style="position:relative;">
+
+        <h3><a href="results/contraction_peelings_enter_overlap.html" class="table-title-link">Contraction Peelings of Ample Obstructions Must Enter the Overlap</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Contraction Peelings of Ample Obstructions Must Enter the Overlap</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample forbidden pc-minor $H$ be split in an active coordinate into sections $B_0,B_1$, overlap $A$, contraction $C$, and wings $D_0,D_1$. The proper minor $C$ is corner-peelable, but no complete peeling of $C$ has $A$ as its final block. If $A$ is corner-peelable, the first deletion from $A$ occurs while both wings remain nonempty. If $H$ is cornerless, then every corner of $C$ lies in $A$ but is not a corner of $A$. Consequently every peeling of $C$ enters $A$ at its first deletion, and deleting that concept makes the remaining overlap nonample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The contraction is a proper pc-minor and hence peels. If $A$ does not peel it cannot be a final block. If it does peel, the gluing-critical dichotomy says neither section peels relatively to $A$. Exhausting either wing before entering $A$ would project to a distance-preserving deletion of that section to $A$, which the overlap separation and relative metric criterion turn into the forbidden relative peeling. For cornerless $H$, every cube in $C$ lies in one section. A contraction corner in a wing would therefore lift to a corner of $H$. A contraction corner in $A$ that were also an overlap corner would likewise make one of its two lifts a corner. Thus contraction corners lie in $A\setminus\operatorname{Cor}(A)$, and the ample corner-deletion criterion says their deletion destroys overlap ampleness.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-contraction-must-enter-overlap</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Retaining the canonical overlap cannot generally produce the required contraction peeling. Attachment rules must justify deletions inside the overlap and their effects on both remaining wings.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,22 @@
+{
+  "id": 626,
+  "short_name": "contraction_peelings_enter_overlap",
+  "name": "Contraction Peelings of Ample Obstructions Must Enter the Overlap",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let an ample forbidden pc-minor $H$ be split in an active coordinate into sections $B_0,B_1$, overlap $A$, contraction $C$, and wings $D_0,D_1$. The proper minor $C$ is corner-peelable, but no complete peeling of $C$ has $A$ as its final block. If $A$ is corner-peelable, the first deletion from $A$ occurs while both wings remain nonempty. If $H$ is cornerless, then every corner of $C$ lies in $A$ but is not a corner of $A$. Consequently every peeling of $C$ enters $A$ at its first deletion, and deleting that concept makes the remaining overlap nonample.",
+  "status": "established",
+  "proof": "The contraction is a proper pc-minor and hence peels. If $A$ does not peel it cannot be a final block. If it does peel, the gluing-critical dichotomy says neither section peels relatively to $A$. Exhausting either wing before entering $A$ would project to a distance-preserving deletion of that section to $A$, which the overlap separation and relative metric criterion turn into the forbidden relative peeling. For cornerless $H$, every cube in $C$ lies in one section. A contraction corner in a wing would therefore lift to a corner of $H$. A contraction corner in $A$ that were also an overlap corner would likewise make one of its two lifts a corner. Thus contraction corners lie in $A\\setminus\\operatorname{Cor}(A)$, and the ample corner-deletion criterion says their deletion destroys overlap ampleness.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-contraction-must-enter-overlap",
+  "comments": "Retaining the canonical overlap cannot generally produce the required contraction peeling. Attachment rules must justify deletions inside the overlap and their effects on both remaining wings."
+}

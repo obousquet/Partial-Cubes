@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "batch_id": "163_dismantlable_ample_overlap_metric_separation",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the separation of relative metric constraints across the two wings of an ample overlap, the punctured-three-cube description of new contraction midpoints, and the forced entry of every contraction peeling into the overlap of a cornerless forbidden pc-minor.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-overlap-metric-separation",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-contraction-must-enter-overlap"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These adjacent claims isolate the metric obstruction to peeling outside a retained overlap, identify its exact local cube mechanism, and show why a cornerless forbidden pc-minor cannot be repaired while leaving that overlap intact.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The archived standalone verifier reproduces its source report byte-for-byte and exhausts the small-cube separation assertions, then replays all active-coordinate splits of the fixed obstruction examples.",
+    "claim_block_sha256": {
+      "prop:damp-overlap-metric-separation": "d90a037d0f8dd5a0d924f00eefe1e2ca618c2b269cc862ebde9e78b3ca313db7",
+      "cor:damp-contraction-must-enter-overlap": "ba5b08428155bc693b89988f6bcec9c6b17891614650652b0f4a17fd0ac52080"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/verify_damp_overlap_metric_separation.py",
+      "sha256": "6d47b947dcd1cb72d451c82b809e8199df1a108216b67b953f1d92d7b4a4ec83"
+    },
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/damp_overlap_metric_separation_verification.json",
+      "sha256": "b8497b8c3f5f6d6d7a2035a8afc83c4d9dc0a0e2a65d7b607ff911845b510245"
+    },
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/damp_empty_core_counterexample.json",
+      "sha256": "3e3b26bccd102450b1f2c92973dd9b4da25d8b21fb373f151c5c31e10da639ff"
+    },
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/verify_damp_layer_midpoint_cores.py",
+      "sha256": "8c9c4744262e18194cd908d1cbf3630768deaa6066f04378b4cf2ecacd4aa899"
+    },
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/verify_damp_rank_three_corner_neighbors.py",
+      "sha256": "6724330ff34cc73117032dbe3395264a0f847a45cd01bc50c56c6abf0b9e8343"
+    },
+    {
+      "path": "migration/certificates/163_dismantlable_ample_overlap_metric_separation/forbidden_pc_minor_campaign/verify_damp_relative_metric_peeling.py",
+      "sha256": "1c43c7c33005219a704f99d27d12affcdceb0ec044e3601ada0a5e12aa57b80a"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the separation law, interleaving consequence, punctured-cube midpoint criterion, forced-overlap corollary, concise proofs, replay boundary, and cited graph source. LaTeX retains the expanded metric argument, fixed-example discussion, and the surrounding generative-classification program.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both claims. The certificate directory contains the standalone verifier, three imported helpers, the fixed obstruction input, and the byte-identical report.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/625_overlap_metric_constraint_separation.json",
+      "sha256": "444dc53e992dbfe2a0085e3f23476f29ec85eff5624a8fa4c74692372485289f"
+    },
+    {
+      "path": "data/results/626_contraction_peelings_enter_overlap.json",
+      "sha256": "a8fb2bc169463fdae43aa40a41ad5d094259fd6b24d39cd6046dcaf25b666cc9"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "67c3e2dc755cbab50b4d01ec6542938a4d42b6a88a940731d2c2a23fdd4126eb"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "3d96fb821af37745c7c1e48713c748b6ddef28ca7e5415ecbc989a532302de25"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2009 records.",
+    "website": "Normalized 2025 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 725 to 727 of 1143 and dismantlable-ample coverage from 289 to 291 of 683.",
+    "certificates": "The replay checks 127 nonempty ample Q3 families, 303 active Q3 splits, 24 new-midpoint and 24 cross-wing cases, 1263 partial and 543 complete relative orders, 24 fixed-coordinate splits, 1182 fixed new midpoints, and the forced first overlap deletion in every tested cornerless case.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002; the regenerated report is byte-identical to its source copy."
+  },
+  "deferred": [
+    "The refreshed audit has 416 uncovered database-owned labels: 392 in dismantlable-ample and 24 in ample-corners.",
+    "The following manuscript result gives an exact shattered-set description of the loss of overlap ampleness after the forced first deletion.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
