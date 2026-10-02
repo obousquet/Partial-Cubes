@@ -1,0 +1,13 @@
+{
+  "id": 513,
+  "short_name": "extra_owner_rooted_claw_cuts",
+  "name": "The Two Rooted-Claw Overlaps Have Rigid Cuts",
+  "class_ids": [
+    "#classes/trees"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $T^{\\parallel}$ and $T^{\\times}$ have the common edges $ab,ap_1,p_1p_2,p_2p_3,cq_1,cq_2,cq_3$, with the remaining edge respectively $ac$ or $bc$, and call $ap_1p_2p_3$ the old arm. If deletion of two vertices leaves the seven-vertex path formed by two length-three arms, then the tree is $T^{\\times}$, the deleted vertices are two claw leaves, and one surviving arm is the old arm. If one-vertex deletion leaves a one-vertex core with a length-three arm and a rooted four-vertex tree whose three nonattachment vertices contain an edge, that arm is the old arm. The only $(3,5)$ component cut is at $a$ in $T^{\\times}$ and isolates the old arm; the only $(4,4)$ cut is at $b$ there and one component is the rooted claw with independent leaves; neither tree has a $(2,3,3)$ cut. In an isometric cube embedding, every recovered old arm retains its original attachment and terminal directions.",
+  "status": "established",
+  "proof": "To leave a path after deleting two vertices, the claw centre must remain and two claw leaves must be removed; this fails in $T^{\\parallel}$ because $a$ retains degree three, while in $T^{\\times}$ it leaves $q_i-c-b-a-p_1-p_2-p_3$. For one-vertex deletion, connectivity forces deletion of a leaf. Checking the leaf orbits and possible core cuts leaves only the cases in which either the four-vertex component is a centre-rooted claw with independent nonattachment vertices or the pendant path is the old arm. Direct vertex deletion gives component profiles $(1,3,4),(2,6),(1,7),(1,1,1,5),(8)$ in $T^{\\parallel}$; in $T^{\\times}$ only deletion of $a$ and $b$ adds $(3,5)$ and $(4,4)$. Since every edge of a tree partial cube is its own direction class, a repeated arm preserves both relevant directions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-extra-owner-rooted-claw-cuts"
+}

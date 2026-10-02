@@ -8538,6 +8538,81 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-513" style="position:relative;">
+
+        <h3><a href="results/extra_owner_rooted_claw_cuts.html" class="table-title-link">The Two Rooted-Claw Overlaps Have Rigid Cuts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Two Rooted-Claw Overlaps Have Rigid Cuts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $T^{\parallel}$ and $T^{\times}$ have the common edges $ab,ap_1,p_1p_2,p_2p_3,cq_1,cq_2,cq_3$, with the remaining edge respectively $ac$ or $bc$, and call $ap_1p_2p_3$ the old arm. If deletion of two vertices leaves the seven-vertex path formed by two length-three arms, then the tree is $T^{\times}$, the deleted vertices are two claw leaves, and one surviving arm is the old arm. If one-vertex deletion leaves a one-vertex core with a length-three arm and a rooted four-vertex tree whose three nonattachment vertices contain an edge, that arm is the old arm. The only $(3,5)$ component cut is at $a$ in $T^{\times}$ and isolates the old arm; the only $(4,4)$ cut is at $b$ there and one component is the rooted claw with independent leaves; neither tree has a $(2,3,3)$ cut. In an isometric cube embedding, every recovered old arm retains its original attachment and terminal directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>To leave a path after deleting two vertices, the claw centre must remain and two claw leaves must be removed; this fails in $T^{\parallel}$ because $a$ retains degree three, while in $T^{\times}$ it leaves $q_i-c-b-a-p_1-p_2-p_3$. For one-vertex deletion, connectivity forces deletion of a leaf. Checking the leaf orbits and possible core cuts leaves only the cases in which either the four-vertex component is a centre-rooted claw with independent nonattachment vertices or the pendant path is the old arm. Direct vertex deletion gives component profiles $(1,3,4),(2,6),(1,7),(1,1,1,5),(8)$ in $T^{\parallel}$; in $T^{\times}$ only deletion of $a$ and $b$ adds $(3,5)$ and $(4,4)$. Since every edge of a tree partial cube is its own direction class, a repeated arm preserves both relevant directions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-extra-owner-rooted-claw-cuts</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-514" style="position:relative;">
+
+        <h3><a href="results/two_unit_extra_owner_comparison.html" class="table-title-link">A Two-Unit Wing Excludes a Pair-Poor Extra-Owner Wing</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Two-Unit Wing Excludes a Pair-Poor Extra-Owner Wing</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-layer family have overlap $B$ of order at most nine. If one terminal wing has two-cycle holonomy of excess two and the opposite wing has the one-unit extra-owner form, then the extra-owner wing is pair-rich. Consequently the two wings either supply three pairwise disjoint acquired direction pairs or their four acquired pairs form an alternating $C_4$, a four-edge path, or two disjoint two-edge paths.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If the extra-owner wing were pair-poor, $|B|=9$ and $G(B)$ would be one of the two rooted-claw trees, with acquired old-arm support $Q$. Comparing its rigid cuts with all seven two-unit profiles shows that every feasible profile also acquires $Q$: the two-apex and disjoint $2$--$3$ profiles retain the old arm; the intersecting profiles are impossible; and the three vertex-free component profiles either isolate the old arm, contradict the required internal shore edge, or do not occur in either rooted-claw tree. Thus both wings acquire $Q$ although $B$ does not shatter it, contradicting $\operatorname{Sh}(A_0)\cap\operatorname{Sh}(A_1)=\operatorname{Sh}(B)$. Both wings are therefore pair-rich, and the opposite-wing support theorem gives the stated alternatives.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-unit-extra-owner-comparison</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-515" style="position:relative;">
+
+        <h3><a href="results/extra_owner_anomaly_opposite_wing.html" class="table-title-link">The Extra-Owner Anomaly Contradicts the Opposite Wing or Forces Three Pairs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Extra-Owner Anomaly Contradicts the Opposite Wing or Forces Three Pairs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-layer family have overlap $B$ of order at most nine, and suppose each terminal wing has a two-cycle and is either sharp or has the one-unit extra-owner form with disjoint shores of orders two and three. The wings cannot both be sharp. If at least one is extra-owner, then their structures are incompatible or their acquired supports contain three pairwise disjoint direction pairs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Sharp--sharp is excluded by the overlap lower bound. An extra-owner wing decomposes $G(B)$ into an active path core of order at most two, an ordinary length-three arm, and a rooted four-vertex tree or square. Against a sharp wing, or against another extra-owner decomposition with intrinsic ordinary arm, the arm-recovery theorem makes the same terminal support acquired by both wings but absent from $\operatorname{Sh}(B)$, contradicting the two-layer shadow-intersection identity. The only ambiguity is when two extra-owner decompositions view $B$ as $P_8$ or $P_9$. Reading their consecutive edge directions yields three disjoint acquired supports: $\{x_0,x_2\},\{x_4,x_6\},\{x_3,x_5\}$ on $P_8$, or $\{x_0,x_2\},\{x_5,x_7\},\{x_4,x_6\}$ on $P_9$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-extra-owner-anomaly-opposite-wing</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-516" style="position:relative;">
+
+        <h3><a href="results/one_unit_opposite_wing_central_square.html" class="table-title-link">All One-Unit Opposite-Wing Comparisons Reduce to One Central Square</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>All One-Unit Opposite-Wing Comparisons Reduce to One Central Square</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-layer family have overlap $B$ of order at most nine, and suppose both terminal wings have two-cycle holonomy and excess at most one. Either their acquired supports contain three pairwise disjoint direction pairs, or $B$ is the unique exceptional graph consisting of a central four-cycle with a pendant path of length two at each of two antipodal vertices, and both wings have the $\eta=1$ form based at the other antipodal pair. In the exceptional case, if $z_1,z_2$ are the square directions and $f_1,f_2$ the tail directions, the four terminal supports are exactly $\{\{z_i,f_j\}:i,j\in\{1,2\}\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every one-unit wing is either eta-one or extra-owner, and every zero-unit wing is sharp. Sharp--sharp is impossible, while extra-owner comparisons without an eta-one wing are incompatible or yield three disjoint supports. For an eta-one wing, both terminal supports are acquired above and absent from $\operatorname{Sh}(B)$; the same holds for the ordinary extra-owner support and sharp terminal supports. The shadow-intersection identity forbids a support acquired by both wings. The eta-one comparison theorem then eliminates the repeated-pair alternatives against sharp and extra-owner wings, and against a second eta-one wing leaves three disjoint pairs or precisely the exceptional central-square graph with the displayed complete bipartite support system.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-one-unit-opposite-wing-central-square</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-517" style="position:relative;">
+
+        <h3><a href="results/passive_radius_one_shielding.html" class="table-title-link">Passive Layers Can Shield Only Nearby Overlap Corners</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Passive Layers Can Shield Only Nearby Overlap Corners</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a cornerless ample two-layer family have overlap $B$, and suppose every concept exclusive to one wing has the same restriction $\sigma_b$ on a passive coordinate set $Z_b$. Then every corner $v$ of $B$ has passive Hamming distance at most one from $\sigma_b$. If the distance is one with unique differing coordinate $z$, its exclusive shield is forced: $v^{\oplus z}$ belongs to that wing's exclusive part. Thus a corner at passive distance at least two becomes a corner of the full family, while a distance-one corner has only one possible exclusive neighbour.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>At passive distance at least two, $v$ has no exclusive neighbour. All horizontal directions at its copy belong to the unique maximal cube of $B$ through $v$, and the vertical edge joins the two copies, so all incident directions lie in the single product cube over that maximal cube. The copy is therefore a corner of the full family, a contradiction. At distance one the same argument forces an exclusive neighbour. Since every exclusive concept has passive word $\sigma_b$, adjacency can change only the unique differing coordinate $z$; hence the neighbour must be $v^{\oplus z}$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-passive-radius-one-shielding</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

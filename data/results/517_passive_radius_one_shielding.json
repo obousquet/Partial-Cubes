@@ -1,0 +1,13 @@
+{
+  "id": 517,
+  "short_name": "passive_radius_one_shielding",
+  "name": "Passive Layers Can Shield Only Nearby Overlap Corners",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "implication",
+  "statement": "Let a cornerless ample two-layer family have overlap $B$, and suppose every concept exclusive to one wing has the same restriction $\\sigma_b$ on a passive coordinate set $Z_b$. Then every corner $v$ of $B$ has passive Hamming distance at most one from $\\sigma_b$. If the distance is one with unique differing coordinate $z$, its exclusive shield is forced: $v^{\\oplus z}$ belongs to that wing's exclusive part. Thus a corner at passive distance at least two becomes a corner of the full family, while a distance-one corner has only one possible exclusive neighbour.",
+  "status": "established",
+  "proof": "At passive distance at least two, $v$ has no exclusive neighbour. All horizontal directions at its copy belong to the unique maximal cube of $B$ through $v$, and the vertical edge joins the two copies, so all incident directions lie in the single product cube over that maximal cube. The copy is therefore a corner of the full family, a contradiction. At distance one the same argument forces an exclusive neighbour. Since every exclusive concept has passive word $\\sigma_b$, adjacency can change only the unique differing coordinate $z$; hence the neighbour must be $v^{\\oplus z}$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-passive-radius-one-shielding"
+}

@@ -1,0 +1,99 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-513" style="position:relative;">
+
+        <h3><a href="results/extra_owner_rooted_claw_cuts.html" class="table-title-link">The Two Rooted-Claw Overlaps Have Rigid Cuts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Two Rooted-Claw Overlaps Have Rigid Cuts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $T^{\parallel}$ and $T^{\times}$ have the common edges $ab,ap_1,p_1p_2,p_2p_3,cq_1,cq_2,cq_3$, with the remaining edge respectively $ac$ or $bc$, and call $ap_1p_2p_3$ the old arm. If deletion of two vertices leaves the seven-vertex path formed by two length-three arms, then the tree is $T^{\times}$, the deleted vertices are two claw leaves, and one surviving arm is the old arm. If one-vertex deletion leaves a one-vertex core with a length-three arm and a rooted four-vertex tree whose three nonattachment vertices contain an edge, that arm is the old arm. The only $(3,5)$ component cut is at $a$ in $T^{\times}$ and isolates the old arm; the only $(4,4)$ cut is at $b$ there and one component is the rooted claw with independent leaves; neither tree has a $(2,3,3)$ cut. In an isometric cube embedding, every recovered old arm retains its original attachment and terminal directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>To leave a path after deleting two vertices, the claw centre must remain and two claw leaves must be removed; this fails in $T^{\parallel}$ because $a$ retains degree three, while in $T^{\times}$ it leaves $q_i-c-b-a-p_1-p_2-p_3$. For one-vertex deletion, connectivity forces deletion of a leaf. Checking the leaf orbits and possible core cuts leaves only the cases in which either the four-vertex component is a centre-rooted claw with independent nonattachment vertices or the pendant path is the old arm. Direct vertex deletion gives component profiles $(1,3,4),(2,6),(1,7),(1,1,1,5),(8)$ in $T^{\parallel}$; in $T^{\times}$ only deletion of $a$ and $b$ adds $(3,5)$ and $(4,4)$. Since every edge of a tree partial cube is its own direction class, a repeated arm preserves both relevant directions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-extra-owner-rooted-claw-cuts</p></div>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>
