@@ -8,12 +8,13 @@
     "#characterizations/prefix_isometric_ordering",
     "#characterizations/corner_peeling_order",
     "#characterizations/acyclic_unique_sink_orientation",
-    "#characterizations/zero_ordering_width"
+    "#characterizations/zero_ordering_width",
+    "#characterizations/alexander_dual_linear_quotients"
   ],
   "hypotheses": "Finite nonempty binary family and its one-inclusion graph.",
-  "statement": "Ample-prefix orders, prefix-isometric orders, reverse corner-peeling orders, acyclic unique-sink orientations, and zero ordering width define the same class.",
+  "statement": "Ample-prefix orders, prefix-isometric orders, reverse corner-peeling orders, acyclic unique-sink orientations, zero ordering width, and linear quotients of the Alexander-dual Yang ideal define the same class.",
   "status": "established",
-  "proof": "For an isometric family, the first four order and orientation formulations are equivalent by the corner-peeling correspondence. An order has width zero precisely when every minimal predecessor disagreement is a singleton; the linear-quotients and Alexander-dual shelling dictionary identifies these orders with the same ample-prefix orders.",
+  "proof": "For an isometric family, the first four order and orientation formulations are equivalent by the corner-peeling correspondence. An order has width zero precisely when every minimal predecessor disagreement is a singleton. The monomial-colon formula says that an order of the complementary-literal generators has linear quotients exactly when every earlier word has a previously inserted cube neighbor beginning a Boolean-interval path to it; this is equivalent to the same prefix-isometric, hence ample-prefix, order.",
   "references": "\\cite{ChalopiChepoiMoran22}",
-  "proof_source": "PartialCubes:papers/survey/main.tex#def:dismantlable-ample; PartialCubes:papers/structural-invariants/main.tex#prop:zero"
+  "proof_source": "PartialCubes:papers/survey/main.tex#def:dismantlable-ample; PartialCubes:papers/structural-invariants/main.tex#prop:zero; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-algebraic-minor-dictionary"
 }

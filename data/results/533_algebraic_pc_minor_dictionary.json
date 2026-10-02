@@ -1,0 +1,20 @@
+{
+  "id": 533,
+  "short_name": "algebraic_pc_minor_dictionary",
+  "name": "Algebraic pc-Minor Dictionary",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "For an isometrically embedded family $X\\subseteq Q_E$, its complementary-literal ideal $J_X=(\\prod_{e\\in E}v_{e,1-x_e}:x\\in X)$ has linear quotients exactly when $X$ is dismantlable ample. If a pc-minor $K=\\pi_D(X_f)$ conditions coordinates $F$ to a realized word $f$ and contracts disjoint coordinates $D$, then $J_K=\\phi_{f,D}(J_X)$, where the conditioned matching literals map to zero, their opposites to one, and both literals of every contracted color to one. Consequently, $X$ is pc-minimal outside dismantlable ampleness exactly when $J_X$ lacks linear quotients but every proper specialization of this form has them.",
+  "status": "established",
+  "proof": "The monomial-colon formula identifies variable-generated colons with the condition that every earlier concept has a previously inserted cube neighbor of the new concept in their Boolean interval. Induction on Hamming distance makes this equivalent to every prefix being isometric, hence to a reversed corner peeling. Under the displayed specialization, a generator from the wrong conditioned side vanishes, a generator from the retained side loses all conditioned and contracted factors, and its remaining product is exactly the generator of the projected concept; repetitions do not change the ideal. The normal form of a pc-minor as conditioning followed by contractions gives the minimal-obstruction clause.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-algebraic-minor-dictionary"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 38,
+  "short_name": "color_minimal_nonshellable_yang_balls",
+  "name": "Color-Minimal Nonshellable Yang Balls",
+  "symbol": "\\mathfrak B^{\\mathrm{col}}",
+  "description_type": "predicate",
+  "definition": "For each $d\\ge1$, take the irredundant ample families $X\\subseteq Q_d$ whose Yang complex is a nonshellable constructible $(d-1)$-ball, while every link at one literal vertex and every induced deletion of one complete literal pair is shellable. Equivalently, their Alexander-dual full-transversal ideals have a $d$-linear resolution but no linear-quotient order, while all $3d$ one-color restriction and contraction images have linear quotients.",
+  "parameters": "Dimension $d\\ge1$, modulo permutations of the $d$ coordinate colors and independent swaps of the two literals in each color.",
+  "ambient_class_id": "#classes/ample",
+  "canonical_form": "An orbit of an ideal $J\\in\\mathfrak B_d^{\\mathrm{col}}$ under $C_2\\wr S_d$; the minimal generators uniquely recover the irredundant cube embedding up to that action.",
+  "recognition": "Check a linear resolution and failure of linear quotients for $J$, then check linear quotients for the two literal-retaining images and the color-contraction image in every coordinate. Equivalently, test nonshellability of the Yang ball and shellability of its $3d$ elementary color minors.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22,FloystadGabrielsenMafi26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-descendant-free-parametrization; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-descendant-free-yang-ball-parametrization",
+  "comments": "This is an exact predicate parametrization of every ample pc-minimal obstruction to dismantlable ampleness. It is not asserted to be a finite list or a classification by elementary named graph families."
+}

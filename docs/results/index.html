@@ -8816,6 +8816,106 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-531" style="position:relative;">
+
+        <h3><a href="results/terminal_block_curvature_tax.html" class="table-title-link">Terminal Block-Curvature Tax</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Block-Curvature Tax</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\varnothing\ne B\subsetneq A$ be dismantlable ample with $\operatorname{Cor}(A)\subseteq B$. Choose a maximal proper dismantlable-ample intermediate $C$ and put $D=A\setminus C$. Define $\tau(D)=e(D)-|D|+\max\{1,|\operatorname{Cor}(D)|\}$. Then $D$ has minimum graph degree at least two, every cube-family corner of $D$ has a neighbor in $C$, the relative Yang module of $(A,C)$ is deletion-minimal Cohen--Macaulay, and $\sum_{S\in\operatorname{Sh}(A)\setminus\operatorname{Sh}(B)}|S|\ge|A\setminus B|+\tau(D)$. In particular $\tau(D)\ge1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Maximality of $C$ excludes every relative teaching concept. Ampleness makes the relative Yang module Cohen--Macaulay, while deleting any $d\in D$ cannot remain ample because then $d$ would be a corner of $A$ outside $C$; the relative Cohen--Macaulay criterion gives deletion-minimality. An isolated residual vertex would teach $C$ by the first edge of an isometric path, and the relative leaf dichotomy similarly excludes residual degree one, so $e(D)\ge|D|$. Every corner of $D$ needs a boundary neighbor in $C$, or its unique maximal cube in $D$ would also make it a corner of $A$. Hence the boundary has at least $\max\{1,|\operatorname{Cor}(D)|\}$ edges. The ample edge--shadow identity converts internal plus boundary edges into the rank sum of newly shattered supports; the earlier supports from $B$ to $C$ each contribute at least one.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-terminal-block-curvature-tax</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-532" style="position:relative;">
+
+        <h3><a href="results/contracted_teaching_root_wrong_side.html" class="table-title-link">Wrong-Side Witnesses Localize on Relative Edges</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Wrong-Side Witnesses Localize on Relative Edges</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C\subsetneq A\subseteq Q_E$ with $A$ isometric, contract coordinate $e$, and put $D=A\setminus C$. Suppose $d\in D$ is the unique relative member of its $e$-fibre and its image $y$ lies in $\pi_eA\setminus\pi_eC$. If $y$ teaches $\pi_eC$ but $d$ does not teach $C$, then some $c\in C$ has the following property: every contracted teaching direction $f$ that separates $y$ from $c$ satisfies $d^{\oplus f}\in D$ and $d^{\oplus\{e,f\}}\in C$. Thus every witness lost on lifting runs along a relative edge and completes the opposite square into the lower family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The other lift $d^{\oplus e}$ lies outside $A$. Since $d$ does not teach $C$, choose $c\in C$ with no $C$-neighbor of $d$ in a differing direction. For a contracted teaching direction $f$ separating $y$ from $c$, one lift over $y^{\oplus f}$ lies in $C$; the choice of $c$ rules out $d^{\oplus f}$, so the opposite vertex $d^{\oplus\{e,f\}}$ lies in $C$. Isometry supplies a two-edge path in $A$ from $d$ to that opposite vertex. Its other possible intermediate vertex $d^{\oplus e}$ is absent, forcing $d^{\oplus f}\in A\setminus C=D$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-contracted-teaching-root-wrong-side</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-533" style="position:relative;">
+
+        <h3><a href="results/algebraic_pc_minor_dictionary.html" class="table-title-link">Algebraic pc-Minor Dictionary</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Algebraic pc-Minor Dictionary</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For an isometrically embedded family $X\subseteq Q_E$, its complementary-literal ideal $J_X=(\prod_{e\in E}v_{e,1-x_e}:x\in X)$ has linear quotients exactly when $X$ is dismantlable ample. If a pc-minor $K=\pi_D(X_f)$ conditions coordinates $F$ to a realized word $f$ and contracts disjoint coordinates $D$, then $J_K=\phi_{f,D}(J_X)$, where the conditioned matching literals map to zero, their opposites to one, and both literals of every contracted color to one. Consequently, $X$ is pc-minimal outside dismantlable ampleness exactly when $J_X$ lacks linear quotients but every proper specialization of this form has them.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The monomial-colon formula identifies variable-generated colons with the condition that every earlier concept has a previously inserted cube neighbor of the new concept in their Boolean interval. Induction on Hamming distance makes this equivalent to every prefix being isometric, hence to a reversed corner peeling. Under the displayed specialization, a generator from the wrong conditioned side vanishes, a generator from the retained side loses all conditioned and contracted factors, and its remaining product is exactly the generator of the projected concept; repetitions do not change the ideal. The normal form of a pc-minor as conditioning followed by contractions gives the minimal-obstruction clause.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-algebraic-minor-dictionary</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-534" style="position:relative;">
+
+        <h3><a href="results/yang_homology_ball.html" class="table-title-link">Ball Form of Ampleness</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ball Form of Ampleness</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For every nonempty proper $X\subsetneq Q_E$ and every field $k$, ampleness of $X$, constructible-ball structure of its Yang complex $\Delta_X$, and $k$-homology-ball structure of $\Delta_X$ are equivalent. The ball has dimension $|E|-1$ and boundary $\partial\Delta_X=\Delta_X\cap\Delta_{Q_E\setminus X}$. Moreover, $X$ is corner-peelable exactly when this ball is shellable.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The ample--Cohen--Macaulay dictionary identifies ampleness with Cohen--Macaulayness of $\Delta_X$. A nonempty proper full-dimensional subcomplex of the cross-polytope boundary that is Cohen--Macaulay is a constructible triangulated ball; constructible balls are Cohen--Macaulay over every field, and homology balls are Cohen--Macaulay, giving all three equivalences. The complementary-ball theorem for polarizations identifies the complement Yang complex as the other ball and their intersection as the common boundary. The shelling--corner-peeling correspondence proves the final assertion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#FloystadGabrielsenMafi26">[FloystadGabrielsenMafi26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-yang-homology-ball</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-535" style="position:relative;">
+
+        <h3><a href="results/descendant_free_parametrization.html" class="table-title-link">Colored-Ideal Parametrization of the Dismantlable-Ample Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Colored-Ideal Parametrization of the Dismantlable-Ample Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to partial-cube isomorphism, the complete pc-minimal obstruction basis for dismantlable ampleness is the disjoint union of the antipodally punctured cubes $Q_n^{--}$, $n\ge3$, and the hyperoctahedral orbits of full-transversal ideals $J\in\mathfrak B_d^{\mathrm{col}}$: $J$ has a $d$-linear resolution but no linear-quotient order, uses both literals of every color, and all two restriction images and the contraction image in every color have linear quotients. Equivalently, an irredundant ample $X\subseteq Q_d$ is a forbidden pc-minor exactly when $X\notin\mathsf{Damp}$ but all $3d$ elementary pc-minors belong to $\mathsf{Damp}$. Within the ample layer, cornerless obstructions are exactly those whose ideal loses $d$-linearity after deleting any minimal generator.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A full-transversal ideal recovers an irredundant cube family. Its linear resolution is equivalent to ampleness and failure of linear quotients to failure of dismantlability. The three one-color maps are exactly the ideals of the two elementary restrictions and the elementary contraction. If these images have linear quotients, all elementary pc-minors are dismantlable; pc-minor closure then handles every proper minor. Conversely every ample pc-minimal obstruction satisfies these four ideal conditions. Uniqueness of an irredundant cube embedding gives the quotient by coordinate permutations and reorientations. The nonample-layer theorem supplies precisely the punctured cubes. Finally, deleting a concept preserves ampleness exactly when deleting its ideal generator preserves $d$-linearity, proving the corner criterion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-descendant-free-parametrization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-536" style="position:relative;">
+
+        <h3><a href="results/descendant_free_yang_ball_parametrization.html" class="table-title-link">Yang-Ball Parametrization of the Dismantlable-Ample Basis</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Yang-Ball Parametrization of the Dismantlable-Ample Basis</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>An irredundant ample family $X\subseteq Q_d$ is pc-minimal outside dismantlable ampleness exactly when its Yang complex is a nonshellable constructible $(d-1)$-ball, every link at a literal vertex is shellable, and every induced deletion of both literal vertices of one coordinate is shellable. Hence the complete basis consists of the antipodally punctured cubes and these color-minimal nonshellable Yang balls, modulo color permutations and reorientations; no iterated-link or additional pc-minor test is needed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The Yang complex of a restriction is the link at the retained literal, and the Yang complex of a contraction is the induced deletion of the corresponding literal pair. The ball theorem makes an ample family dismantlable exactly when its Yang ball is shellable. Thus shellability of the $3d$ displayed elementary color minors is precisely the elementary pc-minor condition in the colored-ideal parametrization. Pc-minor closure handles all iterated minors, while the nonample-layer theorem supplies the punctured-cube part.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#FloystadGabrielsenMafi26">[FloystadGabrielsenMafi26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-descendant-free-yang-ball-parametrization</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

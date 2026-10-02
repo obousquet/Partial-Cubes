@@ -1,0 +1,16 @@
+{
+  "id": 532,
+  "short_name": "contracted_teaching_root_wrong_side",
+  "name": "Wrong-Side Witnesses Localize on Relative Edges",
+  "class_ids": [
+    "#classes/partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "implication",
+  "statement": "Let $C\\subsetneq A\\subseteq Q_E$ with $A$ isometric, contract coordinate $e$, and put $D=A\\setminus C$. Suppose $d\\in D$ is the unique relative member of its $e$-fibre and its image $y$ lies in $\\pi_eA\\setminus\\pi_eC$. If $y$ teaches $\\pi_eC$ but $d$ does not teach $C$, then some $c\\in C$ has the following property: every contracted teaching direction $f$ that separates $y$ from $c$ satisfies $d^{\\oplus f}\\in D$ and $d^{\\oplus\\{e,f\\}}\\in C$. Thus every witness lost on lifting runs along a relative edge and completes the opposite square into the lower family.",
+  "status": "established",
+  "proof": "The other lift $d^{\\oplus e}$ lies outside $A$. Since $d$ does not teach $C$, choose $c\\in C$ with no $C$-neighbor of $d$ in a differing direction. For a contracted teaching direction $f$ separating $y$ from $c$, one lift over $y^{\\oplus f}$ lies in $C$; the choice of $c$ rules out $d^{\\oplus f}$, so the opposite vertex $d^{\\oplus\\{e,f\\}}$ lies in $C$. Isometry supplies a two-edge path in $A$ from $d$ to that opposite vertex. Its other possible intermediate vertex $d^{\\oplus e}$ is absent, forcing $d^{\\oplus f}\\in A\\setminus C=D$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-contracted-teaching-root-wrong-side"
+}

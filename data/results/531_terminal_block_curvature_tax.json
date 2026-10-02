@@ -1,0 +1,18 @@
+{
+  "id": 531,
+  "short_name": "terminal_block_curvature_tax",
+  "name": "Terminal Block-Curvature Tax",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/relative_corner_threshold"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\varnothing\\ne B\\subsetneq A$ be dismantlable ample with $\\operatorname{Cor}(A)\\subseteq B$. Choose a maximal proper dismantlable-ample intermediate $C$ and put $D=A\\setminus C$. Define $\\tau(D)=e(D)-|D|+\\max\\{1,|\\operatorname{Cor}(D)|\\}$. Then $D$ has minimum graph degree at least two, every cube-family corner of $D$ has a neighbor in $C$, the relative Yang module of $(A,C)$ is deletion-minimal Cohen--Macaulay, and $\\sum_{S\\in\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(B)}|S|\\ge|A\\setminus B|+\\tau(D)$. In particular $\\tau(D)\\ge1$.",
+  "status": "established",
+  "proof": "Maximality of $C$ excludes every relative teaching concept. Ampleness makes the relative Yang module Cohen--Macaulay, while deleting any $d\\in D$ cannot remain ample because then $d$ would be a corner of $A$ outside $C$; the relative Cohen--Macaulay criterion gives deletion-minimality. An isolated residual vertex would teach $C$ by the first edge of an isometric path, and the relative leaf dichotomy similarly excludes residual degree one, so $e(D)\\ge|D|$. Every corner of $D$ needs a boundary neighbor in $C$, or its unique maximal cube in $D$ would also make it a corner of $A$. Hence the boundary has at least $\\max\\{1,|\\operatorname{Cor}(D)|\\}$ edges. The ample edge--shadow identity converts internal plus boundary edges into the rank sum of newly shattered supports; the earlier supports from $B$ to $C$ each contribute at least one.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-terminal-block-curvature-tax"
+}
