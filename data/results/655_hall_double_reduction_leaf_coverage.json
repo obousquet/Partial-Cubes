@@ -1,0 +1,19 @@
+{
+  "id": 655,
+  "short_name": "hall_double_reduction_leaf_coverage",
+  "name": "Hall Double-Reduction Leaves Need Not Lift to Corners",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "For all twelve recorded two-corner Hall reverse-mutation controls, reduction in the marked two-coordinate type is an eleven-vertex maximum rank-one class, hence a tree; in fact every such tree is a path with two leaves. At each of the resulting 24 leaves, every external escape profile is a proper subset of the lifted square, yet two profiles cover the entire square, and two is the minimum cover size. Thus a leaf of the double reduction, even when the reduction is a path, does not by itself force a corner in the lifted maximum rank-three class.",
+  "status": "established",
+  "proof": "The archived replay reconstructs all twelve marked Hall controls from the Hall word list and their coordinate orders. It recomputes each full-square reduction, its ten distinctly labelled edges, its two leaves, and every proper escape profile. For every leaf it verifies coverage of all four square vertices and exhaustively checks that the minimum profile cover has size two.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-final-mutation-tree-leaves",
+  "comments": "These Hall controls have type sizes $2+6$. They do not settle the dimension-sensitive exclusion of the $2+5$ case."
+}

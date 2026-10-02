@@ -1,0 +1,18 @@
+{
+  "id": 653,
+  "short_name": "hall_projection_two_corner_mutation_paths",
+  "name": "Two-Corner Mutation Paths from a Hall Projection",
+  "class_ids": [
+    "#classes/maximum"
+  ],
+  "result_type": "construction",
+  "statement": "A bounded mutation search from Hall's coordinate-zero projection discovered 505 distinct 232-word maximum VC-three classes in $Q_{11}$, all with exactly two corners; 128 states were processed and 377 remained pending. Two verified three-step paths move the two original corners separately, and their six-step concatenation ends with corner set $\\{1537,2023\\}$ of Hamming distance six. No zero- or one-corner class occurs among the discovered states.",
+  "status": "established",
+  "proof": "The archived independent verifier checks maximum VC-three trace conditions and the exact two-corner set for all 505 saved word lists, replays every saved transition from the seed, and verifies the concatenated six exchanges and final word list. It also confirms the final corner distance directly.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-maximum-mutation-corner-elimination",
+  "witness_ids": [
+    "#examples/hall_projection_combined_corner_moves"
+  ],
+  "comments": "The search is explicitly partial: it does not certify a closed mutation component or a barrier to reaching a cornerless class. The distance-six endpoints merely rule out a cornerless next mutation by the proved distance-two necessity."
+}

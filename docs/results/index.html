@@ -10912,6 +10912,94 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-651" style="position:relative;">
+
+        <h3><a href="results/maximum_class_mutation_corner_formula.html" class="table-title-link">Corner Formula for a Maximum-Class Mutation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corner Formula for a Maximum-Class Mutation</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let maximum classes $C,C'\subseteq Q_n$ have VC dimension $d$ and differ by the legal exchange $C'=(C\setminus\{r\})\cup\{a\}$. Put $U=(C\setminus\{r\})\cap(N(r)\setminus N(a))$ and $V=(C\setminus\{r\})\cap(N(a)\setminus N(r))$. The incident coordinate sets at $r$ in $C$ and at $a$ in $C'$ agree; writing their common degree as $q$, one has $|\operatorname{Cor}(C')|-|\operatorname{Cor}(C)|=|\{v\in U:\deg_C(v)=d+1\}|-|\{v\in V:\deg_C(v)=d\}|$. Moreover $C'$ is cornerless exactly when $q>d$, every corner of $C$ lies in $V$, and no vertex of $U$ has degree $d+1$. In particular, if $C$ has exactly two corners, a one-mutation move to a cornerless maximum class requires those corners to have Hamming distance two. These conditions evaluate a legal mutation; they do not by themselves prove that the exchanged family is maximum.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Every maximal cube of a maximum VC-$d$ class has dimension $d$, each $d$-support carries exactly one cube, and a vertex is a corner exactly when its degree is $d$. Under the exchange, each $d$-cube through $r$ is replaced by the corresponding cube through $a$ and every other cube survives, so the exchanged vertices have the same incident coordinate set. Among surviving vertices, precisely those in $U$ lose one neighbour and precisely those in $V$ gain one. Thus the new surviving corners are the old degree-$(d+1)$ vertices of $U$, while the lost corners are the old degree-$d$ vertices of $V$; $r$ and $a$ contribute equally. This gives the formula and the cornerless criterion. If two old corners are both lost, they are distinct neighbours of $a$ and therefore differ in exactly two coordinates.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-maximum-mutation-corner-elimination</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_reverse_corner_elimination_neighbor.html">Hall Reverse-Mutation Corner-Elimination Neighbor</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-652" style="position:relative;">
+
+        <h3><a href="results/hall_reverse_mutation_census.html" class="table-title-link">Hall Reverse-Mutation Census</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hall Reverse-Mutation Census</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Hall's 299-concept cornerless maximum class has 40 legal one-word maximum-class exchanges. Their neighbouring classes have two, one, and zero corners in respectively 12, 24, and 4 cases. Every two-corner pair has Hamming distance two, and in every reverse exchange the removed neighbour vertex has degree four and the maximum-class corner-elimination formula returns to Hall's class without creating a corner. For each exchange, adjoining the proposed word before deletion gives an ample 300-word family with 300 shattered supports. In particular, $(C_H\setminus\{2\})\cup\{2049\}$ has corners 1026 and 2050, and the reverse exchange eliminates both.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The archived replay starts from the database-owned Hall word list, reconstructs every legal VC-three maximum exchange, and independently recomputes full triple cubes, corner sets, degrees, the birth-and-loss terms in the mutation formula, and each 300-word union shadow. It verifies all 40 rows and the stated histogram; the displayed exchange is one of the twelve two-corner rows.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-maximum-mutation-corner-elimination</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_reverse_corner_elimination_neighbor.html">Hall Reverse-Mutation Corner-Elimination Neighbor</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This certifies possible final-step configurations at order 299 and does not improve the obstruction-order bound.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-653" style="position:relative;">
+
+        <h3><a href="results/hall_projection_two_corner_mutation_paths.html" class="table-title-link">Two-Corner Mutation Paths from a Hall Projection</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Corner Mutation Paths from a Hall Projection</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>A bounded mutation search from Hall's coordinate-zero projection discovered 505 distinct 232-word maximum VC-three classes in $Q_{11}$, all with exactly two corners; 128 states were processed and 377 remained pending. Two verified three-step paths move the two original corners separately, and their six-step concatenation ends with corner set $\{1537,2023\}$ of Hamming distance six. No zero- or one-corner class occurs among the discovered states.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The archived independent verifier checks maximum VC-three trace conditions and the exact two-corner set for all 505 saved word lists, replays every saved transition from the seed, and verifies the concatenated six exchanges and final word list. It also confirms the final corner distance directly.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-maximum-mutation-corner-elimination</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_projection_combined_corner_moves.html">Hall Projection after Two Independent Corner Moves</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The search is explicitly partial: it does not certify a closed mutation component or a barrier to reaching a cornerless class. The distance-six endpoints merely rule out a cornerless next mutation by the proved distance-two necessity.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-654" style="position:relative;">
+
+        <h3><a href="results/marked_four_cube_external_section_types.html" class="table-title-link">External Section Types around a Marked Four-Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>External Section Types around a Marked Four-Cube</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X\subseteq Q_{\{1,2,3,4\}\sqcup J}$ be a cornerless maximum class of VC dimension three. Suppose its zero external face is $Q_4\setminus\{7\}$ and the marked vertices $(0,0),(1,0),(8,0)$ have no neighbours in directions from $J$. For each $j\in J$, the first-four-coordinate projection of the section $x_j=1$ is exactly $Q_4\setminus\{0,1,3,7,8\}$ or $Q_4\setminus\{0,1,5,7,8\}$. If $A,B$ are the coordinates of these two types, then $|A|,|B|\ge2$; the fibre over pattern 3 uses only $B$, and that over pattern 5 uses only $A$. Thus for $|J|=7$ the type sizes are $2+5$ or $3+4$, up to symmetry. If $|B|=2$, the pattern-3 fibre is the full $B$-square and the fibres over 2 and 11 contain that square; symmetrically, the same holds for patterns 5, 4, and 13 when $|A|=2$. These are necessary conditions, not an existence or sufficiency result.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection to the marked four coordinates is the fifteen-vertex face, since realizing pattern 7 would shatter four coordinates. Each marked fibre is an ample connected coordinate face whose zero vertex is isolated, hence is a singleton. Projecting additionally to an external coordinate gives a 26-word maximum rank-three class; its one-section is therefore an eleven-word maximum rank-two class. Connectivity of its five-word complement forces its extra omitted pattern to be 3 or 5. The type and fibre-support conclusions follow. Minimum degree four at the base vertices over patterns 3 and 5 forces at least two coordinates of each type. When one type has size two, cornerlessness at every nonzero square vertex forces the whole square and its two possible horizontal neighbours, yielding the final containments.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-final-mutation-two-types</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-655" style="position:relative;">
+
+        <h3><a href="results/hall_double_reduction_leaf_coverage.html" class="table-title-link">Hall Double-Reduction Leaves Need Not Lift to Corners</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Hall Double-Reduction Leaves Need Not Lift to Corners</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For all twelve recorded two-corner Hall reverse-mutation controls, reduction in the marked two-coordinate type is an eleven-vertex maximum rank-one class, hence a tree; in fact every such tree is a path with two leaves. At each of the resulting 24 leaves, every external escape profile is a proper subset of the lifted square, yet two profiles cover the entire square, and two is the minimum cover size. Thus a leaf of the double reduction, even when the reduction is a path, does not by itself force a corner in the lifted maximum rank-three class.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The archived replay reconstructs all twelve marked Hall controls from the Hall word list and their coordinate orders. It recomputes each full-square reduction, its ten distinctly labelled edges, its two leaves, and every proper escape profile. For every leaf it verifies coverage of all four square vertices and exhaustively checks that the minimum profile cover has size two.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-final-mutation-tree-leaves</p></div>
+<strong>Comments:</strong><div class="text-field"><p>These Hall controls have type sizes $2+6$. They do not settle the dimension-sensitive exclusion of the $2+5$ case.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

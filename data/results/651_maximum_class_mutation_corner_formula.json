@@ -1,0 +1,18 @@
+{
+  "id": 651,
+  "short_name": "maximum_class_mutation_corner_formula",
+  "name": "Corner Formula for a Maximum-Class Mutation",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let maximum classes $C,C'\\subseteq Q_n$ have VC dimension $d$ and differ by the legal exchange $C'=(C\\setminus\\{r\\})\\cup\\{a\\}$. Put $U=(C\\setminus\\{r\\})\\cap(N(r)\\setminus N(a))$ and $V=(C\\setminus\\{r\\})\\cap(N(a)\\setminus N(r))$. The incident coordinate sets at $r$ in $C$ and at $a$ in $C'$ agree; writing their common degree as $q$, one has $|\\operatorname{Cor}(C')|-|\\operatorname{Cor}(C)|=|\\{v\\in U:\\deg_C(v)=d+1\\}|-|\\{v\\in V:\\deg_C(v)=d\\}|$. Moreover $C'$ is cornerless exactly when $q>d$, every corner of $C$ lies in $V$, and no vertex of $U$ has degree $d+1$. In particular, if $C$ has exactly two corners, a one-mutation move to a cornerless maximum class requires those corners to have Hamming distance two. These conditions evaluate a legal mutation; they do not by themselves prove that the exchanged family is maximum.",
+  "status": "established",
+  "proof": "Every maximal cube of a maximum VC-$d$ class has dimension $d$, each $d$-support carries exactly one cube, and a vertex is a corner exactly when its degree is $d$. Under the exchange, each $d$-cube through $r$ is replaced by the corresponding cube through $a$ and every other cube survives, so the exchanged vertices have the same incident coordinate set. Among surviving vertices, precisely those in $U$ lose one neighbour and precisely those in $V$ gain one. Thus the new surviving corners are the old degree-$(d+1)$ vertices of $U$, while the lost corners are the old degree-$d$ vertices of $V$; $r$ and $a$ contribute equally. This gives the formula and the cornerless criterion. If two old corners are both lost, they are distinct neighbours of $a$ and therefore differ in exactly two coordinates.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-maximum-mutation-corner-elimination",
+  "witness_ids": [
+    "#examples/hall_reverse_corner_elimination_neighbor"
+  ]
+}

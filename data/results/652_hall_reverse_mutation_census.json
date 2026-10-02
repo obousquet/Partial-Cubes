@@ -1,0 +1,19 @@
+{
+  "id": 652,
+  "short_name": "hall_reverse_mutation_census",
+  "name": "Hall Reverse-Mutation Census",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "construction",
+  "statement": "Hall's 299-concept cornerless maximum class has 40 legal one-word maximum-class exchanges. Their neighbouring classes have two, one, and zero corners in respectively 12, 24, and 4 cases. Every two-corner pair has Hamming distance two, and in every reverse exchange the removed neighbour vertex has degree four and the maximum-class corner-elimination formula returns to Hall's class without creating a corner. For each exchange, adjoining the proposed word before deletion gives an ample 300-word family with 300 shattered supports. In particular, $(C_H\\setminus\\{2\\})\\cup\\{2049\\}$ has corners 1026 and 2050, and the reverse exchange eliminates both.",
+  "status": "established",
+  "proof": "The archived replay starts from the database-owned Hall word list, reconstructs every legal VC-three maximum exchange, and independently recomputes full triple cubes, corner sets, degrees, the birth-and-loss terms in the mutation formula, and each 300-word union shadow. It verifies all 40 rows and the stated histogram; the displayed exchange is one of the twelve two-corner rows.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-maximum-mutation-corner-elimination",
+  "witness_ids": [
+    "#examples/hall_reverse_corner_elimination_neighbor"
+  ],
+  "comments": "This certifies possible final-step configurations at order 299 and does not improve the obstruction-order bound."
+}
