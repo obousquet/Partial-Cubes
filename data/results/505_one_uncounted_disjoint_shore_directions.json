@@ -1,0 +1,13 @@
+{
+  "id": 505,
+  "short_name": "one_uncounted_disjoint_shore_directions",
+  "name": "At Most One Uncounted Vertex Separates Disjoint Shore Directions",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "Suppose the active slice is $L=\\{a\\}$, the nonempty passive shores are pairwise disjoint, and the uncounted remainder satisfies $\\eta\\le1$. If distinct shores $S_z,S_w$ contain active edges of directions $f_z,f_w$, then $f_z\\ne f_w$. Consequently the active--passive pairs $\\{z,f_z\\}$ and $\\{w,f_w\\}$ are disjoint.",
+  "status": "established",
+  "proof": "If both shore edges had direction $f$, their passive flips would be two $f$-edges of $K$ in the one-coordinate layers $\\sigma\\oplus z$ and $\\sigma\\oplus w$. Their anchor family is ample and connected. At the first anchor-path step that changes the passive restriction, the new edge lies either in the base layer, which contains only the singleton lift and no edge, or in a layer with at least two passive flips. Pairwise shore disjointness puts all forced fibres and collars in one-coordinate layers, so both endpoints in the latter layer would be uncounted, forcing $\\eta\\ge2$. Both possibilities contradict the assumptions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-one-uncounted-disjoint-shore-directions"
+}

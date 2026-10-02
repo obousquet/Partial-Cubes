@@ -8403,6 +8403,81 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-504" style="position:relative;">
+
+        <h3><a href="results/disjoint_shore_terminal_square_acquired.html" class="table-title-link">A Disjoint Passive Shore Forces an Acquired Terminal Square</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Disjoint Passive Shore Forces an Acquired Terminal Square</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In the active--passive normalization, suppose the active slice is the singleton $L=\{a\}$ and a passive shore $S_z$ is disjoint from every other passive shore. If $S_z$ contains an active edge $xy$ of direction $f$, then $\{z,f\}\in\operatorname{Sh}(A)\setminus\operatorname{Sh}(K)$. Thus the terminal square over that shore edge is genuinely acquired by the upper family, regardless of other vertices of $K$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The vertices $x,y,x^{\oplus z},y^{\oplus z}$ form a full $\{z,f\}$-square in $A$. If $K$ also shattered this pair, ampleness would give a second full square in $K$. The anchors of all such squares form a connected ample carrier, so an anchor path joins the displayed split square to the square in $K$. The first step changing another passive coordinate $w$ starts from a square whose base-layer side contains two vertices; since $L$ is a singleton, one is a lower concept $d$. The adjacent squares then put both $d^{\oplus z}$ and $d^{\oplus w}$ in $K$, implying $d\in S_z\cap S_w$, contrary to shore disjointness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-disjoint-shore-terminal-square-acquired</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-505" style="position:relative;">
+
+        <h3><a href="results/one_uncounted_disjoint_shore_directions.html" class="table-title-link">At Most One Uncounted Vertex Separates Disjoint Shore Directions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>At Most One Uncounted Vertex Separates Disjoint Shore Directions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Suppose the active slice is $L=\{a\}$, the nonempty passive shores are pairwise disjoint, and the uncounted remainder satisfies $\eta\le1$. If distinct shores $S_z,S_w$ contain active edges of directions $f_z,f_w$, then $f_z\ne f_w$. Consequently the active--passive pairs $\{z,f_z\}$ and $\{w,f_w\}$ are disjoint.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If both shore edges had direction $f$, their passive flips would be two $f$-edges of $K$ in the one-coordinate layers $\sigma\oplus z$ and $\sigma\oplus w$. Their anchor family is ample and connected. At the first anchor-path step that changes the passive restriction, the new edge lies either in the base layer, which contains only the singleton lift and no edge, or in a layer with at least two passive flips. Pairwise shore disjointness puts all forced fibres and collars in one-coordinate layers, so both endpoints in the latter layer would be uncounted, forcing $\eta\ge2$. Both possibilities contradict the assumptions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-one-uncounted-disjoint-shore-directions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-506" style="position:relative;">
+
+        <h3><a href="results/two_unit_uncounted_profiles_acquire_pairs.html" class="table-title-link">Feasible Uncounted Two-Unit Profiles Are Pair-Rich</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Feasible Uncounted Two-Unit Profiles Are Pair-Rich</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a two-unit holonomy wing with lower family $K$ of order at most nine, the three profiles having an uncounted lower vertex behave as follows. The $\eta=2$ profile has the two-apex $P_7$ normal form and both terminal pairs are acquired; the $\eta=1$ profile with two two-concept shores meeting in one concept is impossible; and the $\eta=1$ profile with disjoint shores of orders two and three has $|L|=1$, $|K|=9$, and an acquired terminal pair from each shore. In every feasible case the two acquired pairs are disjoint.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In the $\eta=2$ profile, the terminal pairs from the two-apex normal form are disjoint, so the disjoint-shore terminal-square lemma makes both acquired. In the intersecting $\eta=1$ profile, exact counting gives a singleton active slice and one uncounted vertex; deleting it leaves a square-free shared-owner eight-cycle. The unicyclic square-link theorem forces this cycle to be the subdivision of a four-cycle link, whose direction sequence has no direction on opposite edges, whereas the shore provenance puts every direction on opposite edges. For the disjoint $2$--$3$ profile, exact counting again gives $|L|=1$ and $|K|=9$; each shore contains an active edge, the disjoint-shore lemma makes both terminal pairs acquired, and the one-uncounted direction lemma makes them disjoint.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-unit-uncounted-profiles-acquire-pair</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-507" style="position:relative;">
+
+        <h3><a href="results/two_unit_vertex_free_passive_carriers.html" class="table-title-link">Vertex-Free Two-Unit Profiles Are Separated by Their Passive Carriers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Vertex-Free Two-Unit Profiles Are Separated by Their Passive Carriers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a two-unit holonomy wing with $|K|\le9$ and $\eta=0$, the profile with shores of orders two and three meeting in one concept is impossible. In each remaining profile—disjoint shores of orders two and four, disjoint three-concept shores, or disjoint two-concept cycle shores with a third disjoint singleton shore—the two cycle shores supply two disjoint acquired direction pairs. Hence every feasible two-unit wing is pair-rich.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Exact counting gives $|L|=1$, $|K|=9$, and a complete description by collars and punctured fibres. In the intersecting $2$--$3$ profile, the two anchors of the edges in one passive direction differ in that passive direction and in an active direction, so they are nonadjacent, contradicting connectedness of the ample edge carrier. In each remaining profile, every cycle shore is disjoint from all other nonempty shores and contains an active edge. Below, its collar is the only edge in the passive direction, so the associated active--passive pair is not shattered; above, the shore edge and its flip form the full square. Applying this to both cycle shores gives acquired pairs, and the direction-separation lemma makes them disjoint.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-unit-vertex-free-passive-carriers</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-508" style="position:relative;">
+
+        <h3><a href="results/two_unit_cross_wing_reduction.html" class="table-title-link">Two-Unit Wings Reduce Cross-Wing Comparisons to Pair-Rich Support Graphs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Unit Wings Reduce Cross-Wing Comparisons to Pair-Rich Support Graphs</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H=(A_0\times\{0\})\cup(A_1\times\{1\})$ be ample, put $B=A_0\cap A_1$, and suppose $|B|\le9$. If $B\subsetneq A_0$ has two-cycle holonomy of excess two, it has two disjoint acquired direction pairs. If the opposite wing is sharp, has the uncounted $\eta=1$ one-unit form, or has any feasible two-unit profile, then the two wings either supply three pairwise disjoint acquired pairs or their four acquired pairs form an alternating $C_4$, a four-edge path, or two disjoint two-edge paths. The only remaining apparent pair-poor profile is the one-unit extra-owner wing with disjoint shores of orders two and three.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The uncounted two-unit classification excludes its intersecting profile and supplies two disjoint pairs in the other uncounted profiles; the vertex-free classification excludes its intersecting profile and does the same for every remaining profile. Sharp wings and uncounted one-unit wings also provide two disjoint acquired pairs. The opposite-wing support-graph theorem applied to either pair-rich comparison gives a three-edge matching or exactly one of the three alternating support graphs. The one-unit anomaly trichotomy and exclusion of the shared-owner branch leave only the extra-owner form outside this reduction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-unit-cross-wing-reduction</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

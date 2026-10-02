@@ -1,0 +1,13 @@
+{
+  "id": 504,
+  "short_name": "disjoint_shore_terminal_square_acquired",
+  "name": "A Disjoint Passive Shore Forces an Acquired Terminal Square",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "implication",
+  "statement": "In the active--passive normalization, suppose the active slice is the singleton $L=\\{a\\}$ and a passive shore $S_z$ is disjoint from every other passive shore. If $S_z$ contains an active edge $xy$ of direction $f$, then $\\{z,f\\}\\in\\operatorname{Sh}(A)\\setminus\\operatorname{Sh}(K)$. Thus the terminal square over that shore edge is genuinely acquired by the upper family, regardless of other vertices of $K$.",
+  "status": "established",
+  "proof": "The vertices $x,y,x^{\\oplus z},y^{\\oplus z}$ form a full $\\{z,f\\}$-square in $A$. If $K$ also shattered this pair, ampleness would give a second full square in $K$. The anchors of all such squares form a connected ample carrier, so an anchor path joins the displayed split square to the square in $K$. The first step changing another passive coordinate $w$ starts from a square whose base-layer side contains two vertices; since $L$ is a singleton, one is a lower concept $d$. The adjacent squares then put both $d^{\\oplus z}$ and $d^{\\oplus w}$ in $K$, implying $d\\in S_z\\cap S_w$, contrary to shore disjointness.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-disjoint-shore-terminal-square-acquired"
+}
