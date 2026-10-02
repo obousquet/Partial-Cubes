@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "batch_id": "184_dismantlable_ample_layer_set_lattice",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the forced-enlargement algorithm for candidate common-seed layer sets, the union lattice and canonical largest recovered layer set for ample forbidden pc-minors, and the thin-coordinate dichotomy controlling all recovered sublayers and resolving extensions.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-forced-layer-closure",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-obstruction-layer-union",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-layer-recovery-dichotomy",
+    "PartialCubes:forbidden_pc_minor_campaign/explore_damp_forced_layer_closure.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_obstruction_layer_unions.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_singleton_recovery_implications.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "layer-set-lattice-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "b30995f1bec71361c7e3ff0669f1559b2a3bce75",
+      "path": "forbidden_pc_minor_campaign/{explore_damp_forced_layer_closure.py,damp_forced_layer_closure_verification.json,verify_damp_obstruction_layer_unions.py,damp_obstruction_layer_unions_verification.json,verify_damp_singleton_recovery_implications.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "59a23952b8a994197a61569bc4044b854b3e2289d9a20f8e1588b1563af0086a",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/184_dismantlable_ample_layer_set_lattice/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These results make common-seed layer recovery algorithmic and canonical, identify the lattice structure that is special to forbidden pc-minors, and extract the thin-coordinate invariant that separates the two-repair regime from all thicker recovered presentations.",
+    "outcome": "All three theorem blocks match the preserved manuscript. The database records the monotone closure procedure and its failure certificates, intersection and obstruction-specific union closure, the singleton-start formula for the largest layer set, the complete thin-coordinate dichotomy, and the resulting resolving-extension counts.",
+    "claim_block_sha256": {
+      "thm:damp-forced-layer-closure": "1cdae9fdf7c403f14ff3bd942755bd2aeb7d2c396d957936a19a0c7091afa6d2",
+      "thm:damp-obstruction-layer-union": "ce02ef938a27c04c08d506cf29e13dceea9f98bb76b187b5eb9cd010da27c8a0",
+      "thm:damp-layer-recovery-dichotomy": "39826170126a377ed80ea30c2648ce4e71a96dc8e1abec9a437e52010f673597"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/explore_damp_forced_layer_closure.py",
+      "sha256": "aafa9ba998c50fb63ee608fc1c8a9a3ea944299ad3c03bf6b75a0a2a20cca051"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/damp_forced_layer_closure_verification.json",
+      "sha256": "1bfc593fbb3cab31827af80a9b7191b15b925d31579987e907231b6b3c0b3333"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/source_damp_forced_layer_closure_verification.json",
+      "sha256": "1bfc593fbb3cab31827af80a9b7191b15b925d31579987e907231b6b3c0b3333"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/verify_damp_obstruction_layer_unions.py",
+      "sha256": "b0260057ae3cc811f81a4868764d2d88f3e955b346f9f90afcc3c0358f08aed7"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/damp_obstruction_layer_unions_verification.json",
+      "sha256": "b497c15d0d1ec4c53e2245099c93786a45e55d099ec7c0399d2c7a1325bb7a6f"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/source_damp_obstruction_layer_unions_verification.json",
+      "sha256": "b497c15d0d1ec4c53e2245099c93786a45e55d099ec7c0399d2c7a1325bb7a6f"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/verify_damp_singleton_recovery_implications.py",
+      "sha256": "01634ce4bc4b298fa77f23fa4620a5f7ecfaf4558b91b6d96528219f83d09d7d"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/damp_terminal_clause_recovery_verification.json",
+      "sha256": "b316136808d02f2e7f9d4b851fc251e8f455cbf667a07c2fec4f4ee272197c65"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/computations/hall_corner_exchange/source_H.json",
+      "sha256": "f21c8d7a76371d67c230ac0049c66949e9a26dc6dca4beed6fdbf1c139400ca1"
+    },
+    {
+      "path": "migration/certificates/184_dismantlable_ample_layer_set_lattice/source_packet_manifest.json",
+      "sha256": "5beaf255f0c3f9e74bf2389909a920d83964add8b693a53e8a7399f0bf815b80"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the closure algorithm, the lattice and canonical-seed facts, the thin-coordinate classification, concise proofs, and finite replay scope. LaTeX retains the expanded fibre calculations, nested-recovery argument, and the broader common-seed classification narrative. Exact programs, reports, and the Hall input remain byte-archived.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three proofs. The tracked seven-file computation packet at commit b30995f is path-hashed and byte-archived; both generated reports reproduce their source reports byte-for-byte, and the inherited singleton-recovery report and Hall input are preserved with their exact hashes.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/681_forced_enlargement_of_candidate_layer_sets.json",
+      "sha256": "562dfdd08214f1895eda4a20c5930fe53e1e8b72cc59c52e366219f5aefde042"
+    },
+    {
+      "path": "data/results/682_largest_recovered_layer_set.json",
+      "sha256": "37d4096ab6eac6ae640ba128fdcae3ccd52a04045369e3156821a2478c6f0412"
+    },
+    {
+      "path": "data/results/683_layer_recovery_thin_coordinate_dichotomy.json",
+      "sha256": "30b7613ba5903c76cb1fe00a8073b5a500988e61e929d6128f6b8b25f39d2b53"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "afa5ee0bcad811e8657389f1b5d30393c6349ef9ad3632d6b252d021713e38df"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "32819dac7b09083adc3affcc7ba4eff59eea65006e8831b86a6dadafe0ab277a"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2082 records.",
+    "website": "Normalized 2098 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 778 to 781 of 1143 and dismantlable-ample coverage from 342 to 345 of 683.",
+    "certificates": "The closure replay exhausts all 5,672 nonempty ample families through dimension four, checks 3,192 candidate sets and both explicit failure modes, and exercises forced growth on the Hall control. The obstruction replay checks every candidate layer set, disjoint and overlapping unions, inherited balanced coordinates, sublayer fibres, thin coordinates, and zero/one/two repair counts on six fixed obstructions, plus a six-word peelable counterexample to unrestricted union closure.",
+    "source_integrity": "All three theorem blocks match supplemental snapshot 2026-10-02-b002, every computation input matches its archived hash, and both regenerated reports are byte-identical to their tracked source reports."
+  },
+  "deferred": [
+    "The refreshed audit has 362 uncovered database-owned labels: 338 in dismantlable-ample and 24 in ample-corners.",
+    "The next block records maximal recovery for cornerless obstructions and the corner/facet structure after deleting a recovered seed corner.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

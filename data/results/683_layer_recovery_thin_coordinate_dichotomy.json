@@ -1,0 +1,20 @@
+{
+  "id": 683,
+  "short_name": "layer_recovery_thin_coordinate_dichotomy",
+  "name": "Layer-Recovery and Thin-Coordinate Dichotomy",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "For an irredundantly embedded ample forbidden pc-minor $X$, let $\\mathcal L(X)$ be its successful layer sets and let $\\mathcal T(X)$ be the coordinates whose two projected sections each have exactly one word absent from the other. Exactly one of two alternatives holds. If $\\mathcal T(X)\\ne\\varnothing$, then $E_{\\max}(X)=\\mathcal T(X)$ and $\\mathcal L(X)=2^{\\mathcal T(X)}\\setminus\\{\\varnothing\\}$; the largest presentation has two repair tips with antipodally punctured rows, and $X$ has exactly two one-concept extensions in the dismantlable ample class. If $\\mathcal T(X)=\\varnothing$, then either no successful layer set exists or $\\mathcal L(X)=\\{E_{\\max}(X)\\}$; in the latter case $|E_{\\max}(X)|\\ge2$, the presentation has at least three repair tips, and $X$ has at most one dismantlable-ample one-concept extension. Hence a cornered terminal obstruction with every coordinate thick and two distinct resolving extensions has no common-seed presentation.",
+  "status": "established",
+  "proof": "Inside a recovered presentation on $E$, the fibre for a proper nonempty sublayer set $D$ equals the repair tip times the face that fixes the remaining owner coordinates to their missing signs. Hence $D$ is successful exactly when every owner meeting $D$ contains all of $E\\setminus D$. This can occur for a proper sublayer set exactly when there are two owners; then both owner supports are all of $E$ and every nonempty subset is successful. A singleton is successful exactly when its coordinate is thin. If a thin coordinate exists, it lies in the unique largest successful set, forces that presentation to have two owners, and all its nonempty subsets are successful; their singleton members identify the largest set with $\\mathcal T(X)$. Without thin coordinates, any largest successful presentation has at least three owners and admits no proper successful subset. The resolving-tip theorem gives exactly two extensions in the first case and at most one in the second.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-layer-recovery-dichotomy",
+  "comments": "The fixed regressions verify the complete successful-set families, thin coordinates, owner counts, repair counts, sublayer fibre formula, and inherited balanced coordinates on six obstruction constructions."
+}

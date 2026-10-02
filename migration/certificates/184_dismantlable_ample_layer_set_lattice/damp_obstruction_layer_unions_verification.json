@@ -1,0 +1,378 @@
+{
+  "scope": "Fixed regressions for union closure and the full layer-recovery dichotomy.\n\nThis is not an obstruction census or a proof of the general theorem.\nThe Hall seed and its certified repairs give the obstruction inputs by the\nassembly theorems. We check all candidate layer sets on six fixed inputs,\nthe disjoint and overlapping reductions, signed seed-coordinate inheritance,\nthe sublayer fibre formula, the thin-coordinate and repair-count dichotomy,\nand the peelable six-word counterexample to unrestricted union closure.",
+  "source_file_sha256": "f21c8d7a76371d67c230ac0049c66949e9a26dc6dca4beed6fdbf1c139400ca1",
+  "source_mathematical_profile_sha256": "e82d6a7dcf9ab6d58dfea9c5889d6890ad5e7c625ea4314e76f3a5da8f04cb46",
+  "repair_certificate_sha256": "b316136808d02f2e7f9d4b851fc251e8f455cbf667a07c2fec4f4ee272197c65",
+  "fixed_obstructions": [
+    {
+      "name": "two_layers",
+      "order": 1202,
+      "balanced": 12288,
+      "successful_layer_sets": [
+        4096,
+        8192,
+        12288
+      ],
+      "largest": 12288,
+      "thin_coordinates": 12288,
+      "largest_owner_count": 2,
+      "resolving_addition_count_by_fibre_theorem": 2,
+      "sublayer_fibre_checks": 4,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 8192,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 4096,
+          "steps": [
+            {
+              "layers": 4096,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 4096,
+          "seed_order": 600,
+          "seed_balanced": 8192
+        },
+        {
+          "layers": 8192,
+          "seed_order": 600,
+          "seed_balanced": 4096
+        },
+        {
+          "layers": 12288,
+          "seed_order": 299,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 2,
+      "ordered_overlapping_incomparable_pairs": 0
+    },
+    {
+      "name": "three_layers",
+      "order": 2406,
+      "balanced": 28672,
+      "successful_layer_sets": [
+        4096,
+        8192,
+        12288,
+        16384,
+        20480,
+        24576,
+        28672
+      ],
+      "largest": 28672,
+      "thin_coordinates": 28672,
+      "largest_owner_count": 2,
+      "resolving_addition_count_by_fibre_theorem": 2,
+      "sublayer_fibre_checks": 24,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 16384,
+          "steps": [
+            {
+              "layers": 16384,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 8192,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 4096,
+          "steps": [
+            {
+              "layers": 4096,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 4096,
+          "seed_order": 1202,
+          "seed_balanced": 24576
+        },
+        {
+          "layers": 8192,
+          "seed_order": 1202,
+          "seed_balanced": 20480
+        },
+        {
+          "layers": 12288,
+          "seed_order": 600,
+          "seed_balanced": 16384
+        },
+        {
+          "layers": 16384,
+          "seed_order": 1202,
+          "seed_balanced": 12288
+        },
+        {
+          "layers": 20480,
+          "seed_order": 600,
+          "seed_balanced": 8192
+        },
+        {
+          "layers": 24576,
+          "seed_order": 600,
+          "seed_balanced": 4096
+        },
+        {
+          "layers": 28672,
+          "seed_order": 299,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 12,
+      "ordered_overlapping_incomparable_pairs": 6
+    },
+    {
+      "name": "three_owners",
+      "order": 1203,
+      "balanced": 12288,
+      "successful_layer_sets": [
+        12288
+      ],
+      "largest": 12288,
+      "thin_coordinates": 0,
+      "largest_owner_count": 3,
+      "resolving_addition_count_by_fibre_theorem": 1,
+      "sublayer_fibre_checks": 4,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 12288,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 4096
+            },
+            {
+              "layers": 12288,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 12288,
+          "steps": [
+            {
+              "layers": 4096,
+              "variation": 8192
+            },
+            {
+              "layers": 12288,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 12288,
+          "seed_order": 299,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 0,
+      "ordered_overlapping_incomparable_pairs": 0
+    },
+    {
+      "name": "cornered_largest_seed",
+      "order": 1204,
+      "balanced": 8192,
+      "successful_layer_sets": [
+        8192
+      ],
+      "largest": 8192,
+      "thin_coordinates": 8192,
+      "largest_owner_count": 2,
+      "resolving_addition_count_by_fibre_theorem": 2,
+      "sublayer_fibre_checks": 0,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 8192,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 8192,
+          "seed_order": 601,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 0,
+      "ordered_overlapping_incomparable_pairs": 0
+    },
+    {
+      "name": "terminal_endpoint",
+      "order": 1203,
+      "balanced": 12288,
+      "successful_layer_sets": [
+        12288
+      ],
+      "largest": 12288,
+      "thin_coordinates": 0,
+      "largest_owner_count": 3,
+      "resolving_addition_count_by_fibre_theorem": 1,
+      "sublayer_fibre_checks": 4,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 12288,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 4096
+            },
+            {
+              "layers": 12288,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 12288,
+          "steps": [
+            {
+              "layers": 4096,
+              "variation": 8192
+            },
+            {
+              "layers": 12288,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 12288,
+          "seed_order": 299,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 0,
+      "ordered_overlapping_incomparable_pairs": 0
+    },
+    {
+      "name": "three_owners_no_resolving_addition",
+      "order": 2410,
+      "balanced": 28672,
+      "successful_layer_sets": [
+        28672
+      ],
+      "largest": 28672,
+      "thin_coordinates": 0,
+      "largest_owner_count": 3,
+      "resolving_addition_count_by_fibre_theorem": 0,
+      "sublayer_fibre_checks": 15,
+      "singleton_starts": [
+        {
+          "status": "success",
+          "layers": 28672,
+          "steps": [
+            {
+              "layers": 16384,
+              "variation": 12288
+            },
+            {
+              "layers": 28672,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 28672,
+          "steps": [
+            {
+              "layers": 8192,
+              "variation": 20480
+            },
+            {
+              "layers": 28672,
+              "variation": 0
+            }
+          ]
+        },
+        {
+          "status": "success",
+          "layers": 28672,
+          "steps": [
+            {
+              "layers": 4096,
+              "variation": 24576
+            },
+            {
+              "layers": 28672,
+              "variation": 0
+            }
+          ]
+        }
+      ],
+      "seed_checks": [
+        {
+          "layers": 28672,
+          "seed_order": 299,
+          "seed_balanced": 0
+        }
+      ],
+      "ordered_disjoint_pairs": 0,
+      "ordered_overlapping_incomparable_pairs": 0
+    }
+  ],
+  "peelable_control": {
+    "family": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8
+    ],
+    "successes": [
+      1,
+      2
+    ],
+    "failed_union": [
+      1,
+      2,
+      3
+    ]
+  },
+  "all_checks_passed": true
+}

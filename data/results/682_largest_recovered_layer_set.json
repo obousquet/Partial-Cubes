@@ -1,0 +1,21 @@
+{
+  "id": 682,
+  "short_name": "largest_recovered_layer_set",
+  "name": "Largest Recovered Layer Set of an Ample Obstruction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/pc_minor",
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "For an irredundantly embedded ample forbidden pc-minor $X$, call nonempty $E\\subseteq\\mathcal B(X)$ successful when it satisfies the distinct-singleton recovery criterion, without requiring a cornerless seed. Successful sets are closed under union. Thus, whenever recovery is possible, there is a unique largest successful set $E_{\\max}(X)$, equal to the set of balanced coordinates whose singleton-start forced-enlargement procedure succeeds. Its recovered seed $X^{E_{\\max}(X)}$ is determined by $X$ independently of any presentation choice.",
+  "status": "established",
+  "proof": "Recover a presentation on one successful set $E$. Its seed is again an irredundant ample forbidden pc-minor, and signed-clause transport shows that balanced coordinates outside $E$ remain balanced in the seed. For a disjoint successful set $D$, singleton fibres force every seed clause meeting $D$ to come from one of two outer repairs whose owner supports equal all of $E$. These two blocks exhaust the signed $E$-facets and have antipodally punctured rows. The induced fibres in the seed are distinct singletons, so nested recovery makes $E\\cup D$ successful. For overlapping $E,D$, strongly project their intersection. Their differences become disjoint successful sets in an irredundant forbidden reduction; applying the disjoint argument there and lifting by nested recovery again yields $E\\cup D$. Finiteness makes the union of all successful sets successful. A coordinate belongs to this union exactly when its singleton-start closure succeeds, giving the formula and canonical seed.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-obstruction-layer-union",
+  "comments": "Union closure uses obstruction minimality and is false for arbitrary ample families; the certificate includes a six-word peelable counterexample. Six certified obstruction models check disjoint and overlapping unions, signed seed-coordinate inheritance, and recovery of the largest set from singleton starts."
+}

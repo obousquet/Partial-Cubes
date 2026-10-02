@@ -1,0 +1,166 @@
+{
+  "scope": "Check forced layer enlargement and whether successful sets are union-closed.\n\nThe bounded domain is all nonempty ample families through Q4. The fixed\nHall control is checked separately. This is a recovery diagnostic, not a\nsearch for forbidden pc-minors.",
+  "counts": [
+    {
+      "dimension": 1,
+      "ample_families": 3,
+      "candidate_sets": 0,
+      "successes": 0,
+      "forced_growth": 0,
+      "outside_balanced": 0,
+      "collision": 0
+    },
+    {
+      "dimension": 2,
+      "ample_families": 13,
+      "candidate_sets": 0,
+      "successes": 0,
+      "forced_growth": 0,
+      "outside_balanced": 0,
+      "collision": 0
+    },
+    {
+      "dimension": 3,
+      "ample_families": 127,
+      "candidate_sets": 24,
+      "successes": 24,
+      "forced_growth": 0,
+      "outside_balanced": 0,
+      "collision": 0
+    },
+    {
+      "dimension": 4,
+      "ample_families": 5529,
+      "candidate_sets": 3168,
+      "successes": 1824,
+      "forced_growth": 0,
+      "outside_balanced": 1056,
+      "collision": 288
+    }
+  ],
+  "union_counterexample": {
+    "dimension": 4,
+    "family": [
+      0,
+      1,
+      2,
+      3,
+      7,
+      8
+    ],
+    "balanced": 3,
+    "sets_and_union": [
+      1,
+      2,
+      3
+    ]
+  },
+  "failure_examples": {
+    "collision": {
+      "dimension": 4,
+      "family": [
+        0,
+        1,
+        2,
+        3,
+        7,
+        8
+      ],
+      "balanced": 3,
+      "closure": {
+        "status": "collision",
+        "steps": [
+          {
+            "layers": 3,
+            "variation": 0
+          }
+        ],
+        "witness": {
+          "clauses": [
+            10,
+            9
+          ],
+          "word": 8
+        }
+      }
+    },
+    "outside_balanced": {
+      "dimension": 4,
+      "family": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8
+      ],
+      "balanced": 1,
+      "closure": {
+        "status": "outside_balanced",
+        "steps": [
+          {
+            "layers": 1,
+            "variation": 2
+          }
+        ],
+        "witness": {
+          "clause": 5,
+          "words": [
+            4,
+            6
+          ],
+          "coordinate_mask": 2
+        }
+      }
+    }
+  },
+  "hall_control": {
+    "source_mathematical_profile_sha256": "e82d6a7dcf9ab6d58dfea9c5889d6890ad5e7c625ea4314e76f3a5da8f04cb46",
+    "balanced": 12288,
+    "successes": [
+      12288
+    ],
+    "closures": [
+      {
+        "status": "success",
+        "layers": 12288,
+        "steps": [
+          {
+            "layers": 12288,
+            "variation": 0
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "layers": 12288,
+        "steps": [
+          {
+            "layers": 8192,
+            "variation": 4096
+          },
+          {
+            "layers": 12288,
+            "variation": 0
+          }
+        ]
+      },
+      {
+        "status": "success",
+        "layers": 12288,
+        "steps": [
+          {
+            "layers": 4096,
+            "variation": 8192
+          },
+          {
+            "layers": 12288,
+            "variation": 0
+          }
+        ]
+      }
+    ]
+  },
+  "forced_closure_checks_passed": true
+}
