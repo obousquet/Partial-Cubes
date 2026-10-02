@@ -1,0 +1,16 @@
+{
+  "id": 545,
+  "short_name": "corners_are_unique_facet_traces",
+  "name": "Corners Are Exactly Unique Facet Traces",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $H\\subseteq Q_F$ be ample with shattered complex $\\Sigma$. A concept $x\\in H$ is a corner exactly when some facet $T$ of $\\Sigma$ has trace $x|_T$ realized by no other member of $H$.",
+  "status": "established",
+  "proof": "Deleting $x$ loses a shattered face precisely when its trace there was unique. The Sandwich inequalities and the ample corner-deletion criterion say that deletion is ample exactly when it loses one shattered face. Uniqueness propagates from a face to every shattered coface, so exactly one face is lost precisely when that face is a facet.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-corner-unique-facet-trace"
+}

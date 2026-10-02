@@ -1,0 +1,17 @@
+{
+  "id": 550,
+  "short_name": "vc_three_triangle_carrier_trees",
+  "name": "Triangle Carriers Are Maximum Rank-One Trees in VC Dimension Three",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H\\subseteq Q_E$ be ample of VC dimension at most three and fix a shattered pair $S$. For $L_S=\\{e:S\\cup\\{e\\}\\in\\operatorname{Sh}(H)\\}$, the family of placements of contained $S$-cubes, after deleting constants, is a maximum VC-dimension-one class on $L_S$. Its one-inclusion graph is a tree on $|L_S|+1$ vertices with one edge in each direction. The edge in direction $e$ represents the unique cube on $S\\cup\\{e\\}$; either endpoint is nonleaf exactly when its corresponding $S$-facet belongs to another maximal three-cube. For a maximum VC-three class the carrier tree has $|E|-1$ vertices and $|E|-2$ edges.",
+  "status": "established",
+  "proof": "A support is shattered or strongly shattered by the carrier exactly when adjoining $S$ gives the corresponding property in $H$. Ampleness and the rank bound make its shattered complex the empty face plus the singletons in $L_S$, so it has $|L_S|+1$ members. Connectedness supplies a spanning tree; every active direction must occur, exhausting its $|L_S|$ edges and excluding additional edges. The definition of the carrier identifies directional edges with the unique three-cubes and adjacency at an endpoint with extension of that facet into another maximal cube.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-maximum-vc-three-carrier-trees"
+}

@@ -1,0 +1,87 @@
+{
+  "version": 1,
+  "batch_id": "135_dismantlable_ample_rank_three_local_traces",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Normalize the local maximal-cube geometry of corners, the complete rank-three trace-cover catalogue, triangle-carrier trees, anchored facet-cube reconstruction, the order-27 triangle cap, and four-coordinate propagation rigidity for signed missing traces.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-corner-unique-facet-trace",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-simplicial-maximal-cube-corner",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-square-free-edge-bridge",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-local-maximal-cube-trace-cover",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-three-local-trace-catalogue",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-maximum-vc-three-carrier-trees",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-facet-cube-reconstruction",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-order-twenty-seven-triangle-cap",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-four-coordinate-forbidden-tree",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-coordinate-propagation-rigidity"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This block turns cornerlessness into local covers of maximal cubes and then exhausts every cover type through rank three. The generator and full orbit report are needed to support the finite 48-type reduction, while the adjacent dimension-free lemmas and reconstruction laws remain proof-owned facts.",
+    "outcome": "All ten statement-plus-proof blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the live manuscript. The database-owned catalogue generator reproduces the source JSON byte-for-byte, including its canonical digest and all orbit profiles.",
+    "claim_block_sha256": {
+      "lem:damp-corner-unique-facet-trace": "39f8631c24ab89f7feeb91c4eed4f1581058309abe973268110abc2affac486d",
+      "prop:damp-simplicial-maximal-cube-corner": "b773289bda1544df31344dd56b24397371b2f8ff3fe82cd87fd8c02c5901e279",
+      "lem:damp-square-free-edge-bridge": "5e51c7a91c59638e77994f9b09d5d93b68302764f9e75f32e6dfa6dc241b78bd",
+      "lem:damp-local-maximal-cube-trace-cover": "429feccb25e6969d5e296e2ee749190a5d8989216f6e3e3728ce2a42b2aafe93",
+      "prop:damp-rank-three-local-trace-catalogue": "c993617d389e3d901829033feb91e7f0ba6110a1b4fdbb1033019361e63d7d1d",
+      "prop:damp-maximum-vc-three-carrier-trees": "9bf44c4a71c275293e1e7548532595b3884381479ac7470b91b76aa1b759a570",
+      "prop:damp-facet-cube-reconstruction": "80dcfcd51bc1d7b82bfcca443bca9db0eafc69bb9b2de1b013b1c79ca4b100c3",
+      "cor:damp-order-twenty-seven-triangle-cap": "3f23979936a92452450d166178a02cfb425af084b049fce2916a62f612eaa6ff",
+      "lem:damp-four-coordinate-forbidden-tree": "14e755d82c131a3d2913abe68640fcada026e285bfe0014b1f1f962901d07d81",
+      "prop:damp-coordinate-propagation-rigidity": "e85dde453d2a9556d5a25fa4f63de2f16b2b3d594651f452a706050b5f25bf57"
+    }
+  },
+  "verification_packets": [
+    {"path": "migration/certificates/135_dismantlable_ample_rank_three_local_traces/damp_local_maximal_cube_covers.json", "sha256": "a42e93aa2b43799e31c6b445588454a56037a89d844260f936c68126c8b0ac47", "mathematical_digest": "c570301788f52c46a536d0905c627cc05dfcf530625afc3124f6971d7613e931"},
+    {"path": "migration/certificates/135_dismantlable_ample_rank_three_local_traces/damp_local_maximal_cube_covers_source.json", "sha256": "a42e93aa2b43799e31c6b445588454a56037a89d844260f936c68126c8b0ac47", "mathematical_digest": "c570301788f52c46a536d0905c627cc05dfcf530625afc3124f6971d7613e931"},
+    {"path": "migration/certificates/135_dismantlable_ample_rank_three_local_traces/explore_damp_local_maximal_cube_covers.py", "sha256": "7ad78c160634e369cb40a772d0d2601de422d76a3e8c43ca95aa58351c7db62f"},
+    {"path": "migration/certificates/135_dismantlable_ample_rank_three_local_traces/explore_damp_local_maximal_cube_covers_source_legacy.py", "sha256": "a65fe69eccb34012c3b07ec2237cf15575a34cd11f5318f4c5361e3b190417aa"}
+  ],
+  "source_preservation": {
+    "policy": "The database owns the ten normalized claims, concise proofs, bibliography metadata, exhaustive rank-three generator, and full orbit catalogue. The manuscript retains the broader minimum-order argument, definitions, examples, and narrative connecting these local constraints to later obstruction searches.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact manuscript. The certificate directory preserves the original generator and report verbatim and a path-local generator whose output is byte-identical.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/results/545_corners_are_unique_facet_traces.json", "sha256": "c703e5b3cb40bab7f477cf4e2c0699832d87d6b5e3207d8a33a9c820077d5c18"},
+    {"path": "data/results/546_simplicial_maximal_cube_exposes_corner.json", "sha256": "5aa763df107a46dbe2966591e82cd33a33db3c37d463e0d8009d67d08ce46050"},
+    {"path": "data/results/547_square_free_edges_are_bridges_in_ample_families.json", "sha256": "9fe8b37f435e0704759902b84b2a4af5f7ec192fec131e50b5bbf1124a37a515"},
+    {"path": "data/results/548_local_maximal_cube_trace_cover.json", "sha256": "7853502653a6eecb9f3f339d06fcdbb99a808eb6339e8a3924ce8bd71665052f"},
+    {"path": "data/results/549_rank_three_local_trace_catalogue.json", "sha256": "a454ea4d60bb5352c7008231497e19f5055ba3c4e1bd69390d9ab0d10d8809e1"},
+    {"path": "data/results/550_vc_three_triangle_carrier_trees.json", "sha256": "5a329e0c436303b6ece8f3834adae1f8b7b14f047774c408ec83dd61b1942e2f"},
+    {"path": "data/results/551_anchored_facet_cube_reconstruction.json", "sha256": "c329e06da2e2ad561c2f48f68fd11445acfb7053939d3a80e1acf480596b938d"},
+    {"path": "data/results/552_order_twenty_seven_triangle_cap.json", "sha256": "49868d1f0c45b67392a9d112ae05f62187e0070c11f5a6dd54ffb79e83b0aec7"},
+    {"path": "data/results/553_four_coordinate_missing_trace_tree.json", "sha256": "931140cb7a747a4ee191c245fe12832c7f017e67c24b2022e14a7ae810209fac"},
+    {"path": "data/results/554_coordinate_propagation_rigidity.json", "sha256": "7d753890ed84c291f19a8302187fd9a1a68a759dad2be5da11274c7bde5f1572"},
+    {"path": "data/latex/references.bib", "sha256": "40a778ac4e9f7a6539171ebc0c845263abf56e034c9d81f31c80a0764df3be89"},
+    {"path": "migration/coverage.json", "sha256": "d8ccb9aa6b55df3cf9d022aa4511405aa3afe4e8bb2dd066e67face8bf58a2f7"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "b87b7ef60c437483002a832e330a7012cde4eab4852d84b7f477829c995b6f2d"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1904 records.",
+    "website": "Normalized 1920 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 10 additional audited labels, raising the dismantlable-ample workspace from 212 to 222 of 683 and overall coverage from 643 to 653 of 1114 database-owned labels.",
+    "certificates": "The self-contained generator reproduces the archived report byte-for-byte: ranks one, two, and three have 1, 11, and 869 labelled irredundant covers and 1, 4, and 43 automorphism orbits.",
+    "proof_review": "The normalized records distinguish dimension-free corner and reconstruction laws from the finite rank-three catalogue and retain the exact hypotheses of the four-coordinate propagation criterion.",
+    "source_integrity": "All ten reviewed source blocks and the complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 461 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "The next source-order block begins with the intrinsic one-hole construction of cornerless ample families and its elementary pc-minor calculus.",
+    "Later minimum-order classification claims use the 48 local trace types recorded here and have additional computational certificates that remain to be imported."
+  ]
+}

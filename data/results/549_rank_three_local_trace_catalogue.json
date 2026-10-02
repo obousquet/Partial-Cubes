@@ -1,0 +1,17 @@
+{
+  "id": 549,
+  "short_name": "rank_three_local_trace_catalogue",
+  "name": "Complete Rank-Three Local Trace-Cover Catalogue",
+  "class_ids": [
+    "#classes/cornerless_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/maximal_cube_intersection_graph"
+  ],
+  "result_type": "algorithm",
+  "statement": "Up to coordinate permutations and reversals, the irredundant covers of $Q_r$ by nonempty proper subcubes have respectively 1, 4, and 43 orbits for $r=1,2,3$. The labelled cover counts are 1, 11, and 869; the proper-subcube counts are 2, 8, and 26; and the cover-size ranges are 2, 2--4, and 2--8. Hence local cornerlessness for every cube family of VC dimension at most three reduces to 48 fixed cover types.",
+  "status": "established",
+  "proof": "Encode a proper subcube by a nonempty set of fixed coordinates and their bits, giving $3^r-1$ candidates. The exhaustive verifier branches at the first uncovered cube vertex, retains exactly covers in which every member has a private vertex, and takes the lexicographically least image under all $2^r r!$ cube automorphisms. It reproduces all displayed counts and the archived canonical catalogue.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rank-three-local-trace-catalogue",
+  "comments": "The database-owned replay is migration/certificates/135_dismantlable_ample_rank_three_local_traces/explore_damp_local_maximal_cube_covers.py; its report digest without the digest field is c570301788f52c46a536d0905c627cc05dfcf530625afc3124f6971d7613e931."
+}

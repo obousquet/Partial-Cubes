@@ -5481,6 +5481,22 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-548" style="position:relative;">
+
+        <h3><a href="results/local_maximal_cube_trace_cover.html" class="table-title-link">Local Maximal-Cube Traces Cover Every Cornerless Cube</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Local Maximal-Cube Traces Cover Every Cornerless Cube</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $C$ be a maximal cube of a nonempty cube family $X$, and let $C_1,\ldots,C_k$ be the other maximal cubes meeting it. The corners of $X$ lying in $C$ are exactly $C\setminus\bigcup_i(C\cap C_i)$. Moreover $C_i$ meets $C_j$ exactly when their traces on $C$ meet. Thus in a cornerless family the nonempty proper traces $C\cap C_i$ cover $C$, their intersection graph is the neighbour graph of $C$, and deleting repetitions and redundant traces gives an irredundant proper-subcube cover.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A vertex of $C$ fails to be a corner exactly when another maximal cube contains it, proving the complement formula. If two neighbouring cubes meet each other, the three pairwise-intersecting hypercube subcubes $C,C_i,C_j$ have common intersection by Helly; the reverse implication is immediate. Cornerlessness makes the traces cover, and an inclusion-minimal covering subfamily is irredundant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-local-maximal-cube-trace-cover</p></div>
+
+        </div>
+    </div>
+
     <div class="table-card" id="math-327" style="position:relative;">
 
         <h3><a href="results/fibonacci_dimension_profile.html" class="table-title-link">Fibonacci-Dimension Formula, Bounds, and Product Laws</a></h3>
@@ -9047,6 +9063,151 @@
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-joint-switch-conflict</p></div>
 <p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/q4_joint_switch_partition_counterexample.html">Q4 Joint-Switch Equality-Partition Counterexample</a></li></ul></p>
 <strong>Comments:</strong><div class="text-field"><p>This limits gluing of prescribed orientation maps. The support is always the dismantlable hypercube $Q_5$, so it is not a forbidden-support example and does not rule out alternative parent maps.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-545" style="position:relative;">
+
+        <h3><a href="results/corners_are_unique_facet_traces.html" class="table-title-link">Corners Are Exactly Unique Facet Traces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corners Are Exactly Unique Facet Traces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be ample with shattered complex $\Sigma$. A concept $x\in H$ is a corner exactly when some facet $T$ of $\Sigma$ has trace $x|_T$ realized by no other member of $H$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting $x$ loses a shattered face precisely when its trace there was unique. The Sandwich inequalities and the ample corner-deletion criterion say that deletion is ample exactly when it loses one shattered face. Uniqueness propagates from a face to every shattered coface, so exactly one face is lost precisely when that face is a facet.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-corner-unique-facet-trace</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-546" style="position:relative;">
+
+        <h3><a href="results/simplicial_maximal_cube_exposes_corner.html" class="table-title-link">A Simplicial Maximal Cube Exposes a Corner</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Simplicial Maximal Cube Exposes a Corner</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/partial_cubes.html">Partial Cubes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be a nonempty cube family. If a maximal cube $C$ is a simplicial vertex of the maximal-cube intersection graph, then $C$ contains a vertex belonging to no other maximal cube, hence a corner. Consequently a cornerless cube family has a maximal-cube intersection graph with no simplicial vertex; that graph is nonchordal and contains an induced cycle of length at least four.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The neighbours of a simplicial cube $C$ meet pairwise, and subcubes of a hypercube have the Helly property, so they share a vertex $z$ of $C$. The antipode of $z$ in $C$ lies in none of their proper traces on $C$, and a nonneighbour is disjoint from $C$. Thus this antipode belongs only to $C$. Every finite chordal graph has a simplicial vertex, giving the final assertions.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-simplicial-maximal-cube-corner</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-547" style="position:relative;">
+
+        <h3><a href="results/square_free_edges_are_bridges_in_ample_families.html" class="table-title-link">Square-Free Edges of Ample Families Are Bridges</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Square-Free Edges of Ample Families Are Bridges</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Every cycle in the one-inclusion graph of an ample family, viewed as an edge chain over $\mathbb F_2$, is a sum of boundaries of contained squares. Consequently every edge that belongs to no contained square is a bridge.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct on the active coordinates. Pair the edges of a cycle in a chosen direction. The projected endpoints lie in the ample and therefore connected intersection of the two sections; paths between each pair lift to square ladders whose boundaries cancel those directional edges. What remains is a sum of cycles inside the two ample sections, handled inductively. An edge on a graph cycle has coefficient one in that cycle, while every square-boundary sum has coefficient zero on an edge lying in no square, proving the bridge claim.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-square-free-edge-bridge</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-549" style="position:relative;">
+
+        <h3><a href="results/rank_three_local_trace_catalogue.html" class="table-title-link">Complete Rank-Three Local Trace-Cover Catalogue</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complete Rank-Three Local Trace-Cover Catalogue</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/maximal_cube_intersection_graph.html">Maximal-Cube Intersection Graph</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Up to coordinate permutations and reversals, the irredundant covers of $Q_r$ by nonempty proper subcubes have respectively 1, 4, and 43 orbits for $r=1,2,3$. The labelled cover counts are 1, 11, and 869; the proper-subcube counts are 2, 8, and 26; and the cover-size ranges are 2, 2--4, and 2--8. Hence local cornerlessness for every cube family of VC dimension at most three reduces to 48 fixed cover types.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Encode a proper subcube by a nonempty set of fixed coordinates and their bits, giving $3^r-1$ candidates. The exhaustive verifier branches at the first uncovered cube vertex, retains exactly covers in which every member has a private vertex, and takes the lexicographically least image under all $2^r r!$ cube automorphisms. It reproduces all displayed counts and the archived canonical catalogue.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rank-three-local-trace-catalogue</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The database-owned replay is migration/certificates/135_dismantlable_ample_rank_three_local_traces/explore_damp_local_maximal_cube_covers.py; its report digest without the digest field is c570301788f52c46a536d0905c627cc05dfcf530625afc3124f6971d7613e931.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-550" style="position:relative;">
+
+        <h3><a href="results/vc_three_triangle_carrier_trees.html" class="table-title-link">Triangle Carriers Are Maximum Rank-One Trees in VC Dimension Three</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Triangle Carriers Are Maximum Rank-One Trees in VC Dimension Three</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/maximum.html">Maximum Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_E$ be ample of VC dimension at most three and fix a shattered pair $S$. For $L_S=\{e:S\cup\{e\}\in\operatorname{Sh}(H)\}$, the family of placements of contained $S$-cubes, after deleting constants, is a maximum VC-dimension-one class on $L_S$. Its one-inclusion graph is a tree on $|L_S|+1$ vertices with one edge in each direction. The edge in direction $e$ represents the unique cube on $S\cup\{e\}$; either endpoint is nonleaf exactly when its corresponding $S$-facet belongs to another maximal three-cube. For a maximum VC-three class the carrier tree has $|E|-1$ vertices and $|E|-2$ edges.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A support is shattered or strongly shattered by the carrier exactly when adjoining $S$ gives the corresponding property in $H$. Ampleness and the rank bound make its shattered complex the empty face plus the singletons in $L_S$, so it has $|L_S|+1$ members. Connectedness supplies a spanning tree; every active direction must occur, exhausting its $|L_S|$ edges and excluding additional edges. The definition of the carrier identifies directional edges with the unique three-cubes and adjacency at an endpoint with extension of that facet into another maximal cube.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-maximum-vc-three-carrier-trees</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-551" style="position:relative;">
+
+        <h3><a href="results/anchored_facet_cube_reconstruction.html" class="table-title-link">Anchored Facet Cubes Reconstruct Ample Families by One Cardinality Test</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Anchored Facet Cubes Reconstruct Ample Families by One Cardinality Test</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\mathcal F$ be a nonempty antichain in $2^E$, let $\Sigma$ be its downward closure, choose an affine cube $C_T\subseteq Q_E$ with support $T$ for each $T\in\mathcal F$, and put $H=\bigcup_T C_T$. Then $H$ is ample with shattered complex $\Sigma$ exactly when $|H|=|\Sigma|$. In that case the selected cubes are precisely the maximal cubes of $H$, and $H$ is cornerless exactly when no vertex belongs to exactly one selected cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The selected cubes strongly shatter every face of $\Sigma$, so the cardinality equality forces equality throughout the Sandwich inequalities and hence ampleness with the desired shadow. Conversely ampleness gives the equality. The carrier of a facet support has only the empty shattered face and therefore one placement, while the carrier of a nonfacet support is a nontrivial connected ample family, so every such cube extends. Thus exactly the selected facet cubes are maximal, and their incidence multiplicities give the corner test.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-facet-cube-reconstruction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-552" style="position:relative;">
+
+        <h3><a href="results/order_twenty_seven_triangle_cap.html" class="table-title-link">Triangle Cap for Rank-Three Ample Families of Order Twenty-Seven</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Triangle Cap for Rank-Three Ample Families of Order Twenty-Seven</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H$ be an irredundant ample family of VC dimension three and order 27 on $d$ active coordinates. The number of triangular faces in its shattered complex is at most 8 for $d=8$ and at most 7 for $d=9$ or $10$. Thus each candidate minimum-order profile is an anchored-cube union with at most eight maximal three-cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Writing $f_1,f_2$ for the edge and triangle counts, irredundancy and Sandwich equality give $27=1+d+f_1+f_2$. Kruskal--Katona forces at least ten pairs for eight or nine triples, and at least nine pairs for seven triples. Comparing these shadows with $f_1+f_2=26-d$ excludes nine triangles at $d=8$ and eight triangles at $d=9,10$. Anchored facet-cube reconstruction gives the final formulation.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#Kruskal63">[Kruskal63]</a> <a href="bibliography.html#Katona68">[Katona68]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-order-twenty-seven-triangle-cap</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-553" style="position:relative;">
+
+        <h3><a href="results/four_coordinate_missing_trace_tree.html" class="table-title-link">Missing Triple Traces Form a Tree on Four Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Missing Triple Traces Form a Tree on Four Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\Sigma$ be a two-dimensional simplicial complex with complete one-skeleton and at most two triangular faces on every four-set, and let an ample $H$ have shadow $\Sigma$. On any four-set $U$, represent each missing triple by the cube edge consisting of the two words extending its omitted trace. These edges have connected union. Hence two missing triples in $U$ have omitted traces agreeing on their overlap; if exactly three missing triples share a coordinate, all three omitted traces take the same value there.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If $t$ triangles occur in $U$, the projection has $11+t$ concepts, so its complement has $5-t$ vertices and is the union of the $4-t$ missing-triple edges. Their directions are distinct, making the union a forest. A forest with $m$ edges and $m+1$ vertices is connected. Intersecting cube edges have compatible prescribed traces, and connectivity propagates the shared-coordinate value.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-four-coordinate-forbidden-tree</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-554" style="position:relative;">
+
+        <h3><a href="results/coordinate_propagation_rigidity.html" class="table-title-link">Connected Coordinate Propagation Forces the Canonical Face Family</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Connected Coordinate Propagation Forces the Canonical Face Family</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $\Sigma$ be a two-dimensional simplicial complex with complete one-skeleton and at most two triangular faces on every four-set. For each coordinate $e$, join two minimal nonfaces containing $e$ when their four-coordinate missing-triple configuration forces their omitted traces to agree at $e$. If each resulting propagation graph is connected whenever nonempty, then every ample family with shattered complex $\Sigma$ is a cube translate of the canonical face family $\{\mathbf1_D:D\in\Sigma\}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Four-coordinate compatibility equates the omitted-trace values along every propagation edge. Connectivity therefore gives one bit $h_e$ shared by every minimal nonface containing $e$. The complete signing is the restriction of the word $h$ to each minimal nonface. Translating by $h+\mathbf1_F$ changes every omitted trace to all ones, whose avoidance family consists exactly of the indicator words of faces of $\Sigma$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-coordinate-propagation-rigidity</p></div>
 
         </div>
     </div>

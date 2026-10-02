@@ -1,0 +1,17 @@
+{
+  "id": 552,
+  "short_name": "order_twenty_seven_triangle_cap",
+  "name": "Triangle Cap for Rank-Three Ample Families of Order Twenty-Seven",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $H$ be an irredundant ample family of VC dimension three and order 27 on $d$ active coordinates. The number of triangular faces in its shattered complex is at most 8 for $d=8$ and at most 7 for $d=9$ or $10$. Thus each candidate minimum-order profile is an anchored-cube union with at most eight maximal three-cubes.",
+  "status": "established",
+  "proof": "Writing $f_1,f_2$ for the edge and triangle counts, irredundancy and Sandwich equality give $27=1+d+f_1+f_2$. Kruskal--Katona forces at least ten pairs for eight or nine triples, and at least nine pairs for seven triples. Comparing these shadows with $f_1+f_2=26-d$ excludes nine triangles at $d=8$ and eight triangles at $d=9,10$. Anchored facet-cube reconstruction gives the final formulation.",
+  "references": "\\cite{Kruskal63,Katona68}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-order-twenty-seven-triangle-cap"
+}

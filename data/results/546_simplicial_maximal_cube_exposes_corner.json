@@ -1,0 +1,17 @@
+{
+  "id": 546,
+  "short_name": "simplicial_maximal_cube_exposes_corner",
+  "name": "A Simplicial Maximal Cube Exposes a Corner",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/cornerless_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/maximal_cube_intersection_graph"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X$ be a nonempty cube family. If a maximal cube $C$ is a simplicial vertex of the maximal-cube intersection graph, then $C$ contains a vertex belonging to no other maximal cube, hence a corner. Consequently a cornerless cube family has a maximal-cube intersection graph with no simplicial vertex; that graph is nonchordal and contains an induced cycle of length at least four.",
+  "status": "established",
+  "proof": "The neighbours of a simplicial cube $C$ meet pairwise, and subcubes of a hypercube have the Helly property, so they share a vertex $z$ of $C$. The antipode of $z$ in $C$ lies in none of their proper traces on $C$, and a nonneighbour is disjoint from $C$. Thus this antipode belongs only to $C$. Every finite chordal graph has a simplicial vertex, giving the final assertions.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-simplicial-maximal-cube-corner"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 548,
+  "short_name": "local_maximal_cube_trace_cover",
+  "name": "Local Maximal-Cube Traces Cover Every Cornerless Cube",
+  "class_ids": [
+    "#classes/partial_cubes",
+    "#classes/cornerless_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/maximal_cube_intersection_graph"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $C$ be a maximal cube of a nonempty cube family $X$, and let $C_1,\\ldots,C_k$ be the other maximal cubes meeting it. The corners of $X$ lying in $C$ are exactly $C\\setminus\\bigcup_i(C\\cap C_i)$. Moreover $C_i$ meets $C_j$ exactly when their traces on $C$ meet. Thus in a cornerless family the nonempty proper traces $C\\cap C_i$ cover $C$, their intersection graph is the neighbour graph of $C$, and deleting repetitions and redundant traces gives an irredundant proper-subcube cover.",
+  "status": "established",
+  "proof": "A vertex of $C$ fails to be a corner exactly when another maximal cube contains it, proving the complement formula. If two neighbouring cubes meet each other, the three pairwise-intersecting hypercube subcubes $C,C_i,C_j$ have common intersection by Helly; the reverse implication is immediate. Cornerlessness makes the traces cover, and an inclusion-minimal covering subfamily is irredundant.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-local-maximal-cube-trace-cover"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 553,
+  "short_name": "four_coordinate_missing_trace_tree",
+  "name": "Missing Triple Traces Form a Tree on Four Coordinates",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\Sigma$ be a two-dimensional simplicial complex with complete one-skeleton and at most two triangular faces on every four-set, and let an ample $H$ have shadow $\\Sigma$. On any four-set $U$, represent each missing triple by the cube edge consisting of the two words extending its omitted trace. These edges have connected union. Hence two missing triples in $U$ have omitted traces agreeing on their overlap; if exactly three missing triples share a coordinate, all three omitted traces take the same value there.",
+  "status": "established",
+  "proof": "If $t$ triangles occur in $U$, the projection has $11+t$ concepts, so its complement has $5-t$ vertices and is the union of the $4-t$ missing-triple edges. Their directions are distinct, making the union a forest. A forest with $m$ edges and $m+1$ vertices is connected. Intersecting cube edges have compatible prescribed traces, and connectivity propagates the shared-coordinate value.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-four-coordinate-forbidden-tree"
+}

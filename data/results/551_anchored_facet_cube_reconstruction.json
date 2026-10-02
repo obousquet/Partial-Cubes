@@ -1,0 +1,17 @@
+{
+  "id": 551,
+  "short_name": "anchored_facet_cube_reconstruction",
+  "name": "Anchored Facet Cubes Reconstruct Ample Families by One Cardinality Test",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\mathcal F$ be a nonempty antichain in $2^E$, let $\\Sigma$ be its downward closure, choose an affine cube $C_T\\subseteq Q_E$ with support $T$ for each $T\\in\\mathcal F$, and put $H=\\bigcup_T C_T$. Then $H$ is ample with shattered complex $\\Sigma$ exactly when $|H|=|\\Sigma|$. In that case the selected cubes are precisely the maximal cubes of $H$, and $H$ is cornerless exactly when no vertex belongs to exactly one selected cube.",
+  "status": "established",
+  "proof": "The selected cubes strongly shatter every face of $\\Sigma$, so the cardinality equality forces equality throughout the Sandwich inequalities and hence ampleness with the desired shadow. Conversely ampleness gives the equality. The carrier of a facet support has only the empty shattered face and therefore one placement, while the carrier of a nonfacet support is a nontrivial connected ample family, so every such cube extends. Thus exactly the selected facet cubes are maximal, and their incidence multiplicities give the corner test.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-facet-cube-reconstruction"
+}

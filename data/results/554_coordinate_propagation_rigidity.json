@@ -1,0 +1,17 @@
+{
+  "id": 554,
+  "short_name": "coordinate_propagation_rigidity",
+  "name": "Connected Coordinate Propagation Forces the Canonical Face Family",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex",
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $\\Sigma$ be a two-dimensional simplicial complex with complete one-skeleton and at most two triangular faces on every four-set. For each coordinate $e$, join two minimal nonfaces containing $e$ when their four-coordinate missing-triple configuration forces their omitted traces to agree at $e$. If each resulting propagation graph is connected whenever nonempty, then every ample family with shattered complex $\\Sigma$ is a cube translate of the canonical face family $\\{\\mathbf1_D:D\\in\\Sigma\\}$.",
+  "status": "established",
+  "proof": "Four-coordinate compatibility equates the omitted-trace values along every propagation edge. Connectivity therefore gives one bit $h_e$ shared by every minimal nonface containing $e$. The complete signing is the restriction of the word $h$ to each minimal nonface. Translating by $h+\\mathbf1_F$ changes every omitted trace to all ones, whose avoidance family consists exactly of the indicator words of faces of $\\Sigma$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-coordinate-propagation-rigidity"
+}

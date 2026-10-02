@@ -1,0 +1,13 @@
+{
+  "id": 547,
+  "short_name": "square_free_edges_are_bridges_in_ample_families",
+  "name": "Square-Free Edges of Ample Families Are Bridges",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Every cycle in the one-inclusion graph of an ample family, viewed as an edge chain over $\\mathbb F_2$, is a sum of boundaries of contained squares. Consequently every edge that belongs to no contained square is a bridge.",
+  "status": "established",
+  "proof": "Induct on the active coordinates. Pair the edges of a cycle in a chosen direction. The projected endpoints lie in the ample and therefore connected intersection of the two sections; paths between each pair lift to square ladders whose boundaries cancel those directional edges. What remains is a sum of cycles inside the two ample sections, handled inductively. An edge on a graph cycle has coefficient one in that cycle, while every square-boundary sum has coefficient zero on an edge lying in no square, proving the bridge claim.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-square-free-edge-bridge"
+}
