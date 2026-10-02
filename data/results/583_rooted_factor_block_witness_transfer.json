@@ -1,0 +1,13 @@
+{
+  "id": 583,
+  "short_name": "rooted_factor_block_witness_transfer",
+  "name": "Rooted Factors and Frozen Missing-Cube Witnesses Survive Block Replacement",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/full_reduction", "#operations/conditioning", "#operations/projection"],
+  "result_type": "invariant_law",
+  "statement": "If $(A,0)$ is a rooted factor for the cut-vertex obstruction theorem and an active coordinate $z$ is replaced by a nonempty block $E$, then the constant lift of $0$ makes $W_E(A)$ a rooted factor. Suppose additionally that $0^{\\{z\\}}\\in A$ and that each nonroot $x\\in A$ has a missing-cube witness $J_x$ whose single-direction neighbours lie in $A$ and whose opposite word lies outside a fixed $C\\supseteq A$. Then every nonroot lift in $W_E(A)$ has such a witness missing from $W_E(C)$. In particular, if $0$ is the unique corner of $A$, its constant lift is the unique corner of $W_E(A)$.",
+  "status": "established",
+  "proof": "Block-relative transfer preserves ordinary root attainability and root failure. Root-preserving old-coordinate minors commute with replacement; a new-coordinate contraction is a product and a new-coordinate root restriction is a peripheral expansion of proper rooted minors, so rooted minimality persists. For a lift $v=(y,t)$ choose an old nonroot preimage $x=(y,s)$, using $0^{\\{z\\}}$ for a nonconstant root fibre. Replace the old witness by its old directions outside $z$ together with block coordinates that move $t$ toward the constant pole opposite the missing trace. Every required neighbour is present in $W_E(A)$, while the opposite vertex is the constant lift of $x^{J_x}\\notin C$. Applying this with $C=A$ protects every nonroot lift; the lifted old root cube certifies the remaining root corner.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-rooted-block-witness-transfer"
+}

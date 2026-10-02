@@ -1,0 +1,16 @@
+{
+  "id": 70,
+  "short_name": "protected_certificate_depth",
+  "name": "Protected-Certificate Depth",
+  "symbol": "d_{\\mathrm{prot}}",
+  "definition": "For a nonpeelable ample family $L$, a protected set is a subset $S$ with at least two vertices such that every $x\\in S$ has a coordinate set $J_x$ whose single-coordinate neighbours $x^{\\{e\\}}$, $e\\in J_x$, all lie in $S$, while $x^{J_x}\\notin L$. A corner-choice proof tree branches over every currently available corner deletion and may stop only when the remaining family contains a protected set. The protected-certificate depth $d_{\\mathrm{prot}}(L)$ is the minimum, over all such proof trees, of the maximum number of deletions on a branch.",
+  "status": "established",
+  "domain_class_id": "#classes/ample",
+  "codomain": "$\\mathbb N$",
+  "normalization": "The root counts zero deletions. The protected set may depend on the leaf. For a finite nonpeelable ample family the value is finite, because a maximal corner-deletion sequence ends at a nonempty cornerless family, which is protected.",
+  "category": "algorithmic",
+  "isomorphism_invariant": true,
+  "comments": "This measures a specific branching certificate based on protected missing cubes. It is not the minimum length of an arbitrary proof of nonpeelability.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-unbounded-protected-depth (definition preceding theorem)"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 581,
+  "short_name": "coordinate_block_relative_transfer",
+  "name": "Relative Peeling Is Preserved by Coordinate-Block Replacement",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/full_reduction", "#operations/conditioning"],
+  "result_type": "invariant_law",
+  "statement": "For nonempty ample $T\\subseteq H$ with marked coordinate $z$, $W_E(H)$ peels to $W_E(T)$ exactly when $H$ peels to $T$. If $H$ is an ample forbidden class, $|E|\\ge2$, and $e\\in E$, then the $e=b$ section of $W_E(H)$ peels to its $e$-reduction exactly when the old section $B_b$ peels to the old overlap $A=B_0\\cap B_1$. For every coordinate outside the replaced block, relative peelability of either section to its reduction is also unchanged.",
+  "status": "established",
+  "proof": "The corner-lifting construction for block replacement applies to any deletion prefix and can stop when $T$ remains. Conversely, reduce all but one block coordinate; the images of a relative corner sequence are ample and consecutive images either agree or differ by one concept, so removing repetitions gives a relative sequence from $H$ to $T$. For a new coordinate in a binary block, the deletable vertices are precisely the lifts of $B_b\\setminus A$, and their corner cubes correspond term by term to the old section corner cubes. Larger blocks reduce to this binary pair by replacement of the other coordinate. Old-coordinate sections and reductions commute with replacement, so the general equivalence applies directly.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-block-relative-transfer"
+}

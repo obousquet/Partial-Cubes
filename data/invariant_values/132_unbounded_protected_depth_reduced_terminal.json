@@ -1,0 +1,17 @@
+{
+  "id": 132,
+  "short_name": "unbounded_protected_depth_reduced_terminal",
+  "name": "Protected-Certificate Depth Remains Unbounded on Reduced Terminal Inputs",
+  "invariant_id": "#invariants/protected_certificate_depth",
+  "class_id": "#classes/ample",
+  "quantifier": "supremum",
+  "value_type": "unbounded",
+  "value": "+\\infty",
+  "parameters": "For every $m\\ge1$, the witness $L_m$ satisfies $d_{\\mathrm{prot}}(L_m)\\ge2^m$.",
+  "scope": "Ample pc-minimal obstructions to dismantlable ampleness whose every one-coordinate reduction peels, whose minimum graph degree is at least three, and whose signed minimal-nonface columns are distinct up to sign.",
+  "status": "established",
+  "proof": "The terminal construction again provides a $2^m-1$ tip-fibre deletion branch whose every stage has empty protected core. Frozen missing-cube witnesses exclude old-factor first moves, while the filled root cube controls mixed vertices and the root. The same family is reduction-terminal and fixed by graph-core and column-compression reductions, so these canonical simplifications do not bound the certificate depth.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-terminal-unbounded-protected-depth",
+  "verification": "migration/certificates/141_dismantlable_ample_protected_depth_and_block_transfer/research/terminal_protected_depth.py"
+}

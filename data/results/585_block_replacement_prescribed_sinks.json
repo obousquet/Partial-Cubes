@@ -1,0 +1,15 @@
+{
+  "id": 585,
+  "short_name": "block_replacement_prescribed_sinks",
+  "name": "Coordinate-Block Replacement Preserves All Prescribed Sinks",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/full_reduction", "#operations/peripheral_expansion", "#operations/cartesian_product", "#operations/pc_minor"],
+  "result_type": "invariant_law",
+  "statement": "If every vertex of a nonempty ample family $H$ is the sink of some acyclic unique-sink orientation, then the same is true of every coordinate-block replacement $W_E(H)$. If $H$ is an irredundant ample pc-minimal obstruction to dismantlable ampleness and every proper pc-minor of $H$ admits every prescribed sink, then $W_E(H)$ is also forbidden and all its proper pc-minors have that prescribed-sink property. Nevertheless, block replacement can create a forbidden expansion whose two positive sections both fail to peel relatively to their negative overlap.",
+  "status": "established",
+  "witness_ids": ["#examples/block_relative_failure_683"],
+  "proof": "Choose an old preimage $r$ of a desired lifted vertex. An order of $H$ ending at $r$ lifts relatively to the expanded singleton fibre, which is a punctured block cube; every vertex of a punctured cube is an attainable sink, so the order finishes at the chosen lift. For proper minors it is enough to split one coordinate at a time. Old-coordinate minors are replacements of proper minors of $H$. New-coordinate contractions are products, and new-coordinate restrictions are peripheral expansions of the old contraction and sections. Their inputs have every prescribed sink, so the product and rooted peripheral criteria transfer the property. Iteration treats every block size; forbiddenness follows from block replacement.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-block-all-sinks",
+  "comments": "The 683-concept witness shows that this strong proper-minor sink property does not make the one-relative-wing inverse rule exhaustive."
+}

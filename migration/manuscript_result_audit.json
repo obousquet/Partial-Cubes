@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1143,
     "label_occurrences": 1167,
-    "covered": 684,
-    "uncovered": 459,
-    "proof_source_records": 1823
+    "covered": 689,
+    "uncovered": 454,
+    "proof_source_records": 1834
   },
   "by_workspace": {
     "ample-corners": {
@@ -28,9 +28,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 250,
+      "covered": 255,
       "total": 683,
-      "uncovered": 433
+      "uncovered": 428
     },
     "gluing": {
       "covered": 20,
@@ -3671,7 +3671,7 @@
       "label": "cor:damp-block-all-sinks",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -3681,7 +3681,9 @@
           "line": 20264
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/585_block_replacement_prescribed_sinks.json"
+      ]
     },
     {
       "label": "cor:damp-blocked-active-root-depth-transfer",
@@ -8355,7 +8357,7 @@
       "label": "lem:damp-rooted-block-witness-transfer",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -8365,7 +8367,9 @@
           "line": 20062
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/583_rooted_factor_block_witness_transfer.json"
+      ]
     },
     {
       "label": "lem:damp-rooted-fiber-defect",
@@ -9060,7 +9064,7 @@
       "label": "prop:damp-block-relative-transfer",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -9070,7 +9074,9 @@
           "line": 19860
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/581_coordinate_block_relative_transfer.json"
+      ]
     },
     {
       "label": "prop:damp-block-row-completion",
@@ -14731,7 +14737,7 @@
       "label": "thm:damp-terminal-unbounded-protected-depth",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -14741,7 +14747,11 @@
           "line": 20118
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/167_reduced_terminal_protected_depth_family.json",
+        "data/invariant_values/132_unbounded_protected_depth_reduced_terminal.json",
+        "data/results/584_reduced_terminal_unbounded_protected_depth.json"
+      ]
     },
     {
       "label": "thm:damp-three-component-cornerless-obstruction",
@@ -14885,7 +14895,7 @@
       "label": "thm:damp-unbounded-protected-depth",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -14895,7 +14905,11 @@
           "line": 19936
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/166_block_protected_depth_family.json",
+        "data/invariant_values/131_unbounded_protected_depth_forbidden.json",
+        "data/results/582_unbounded_protected_certificate_depth.json"
+      ]
     },
     {
       "label": "thm:damp-universal-peelable-occurrence-row",

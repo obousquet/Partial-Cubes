@@ -1,0 +1,17 @@
+{
+  "id": 131,
+  "short_name": "unbounded_protected_depth_forbidden",
+  "name": "Protected-Certificate Depth Is Unbounded on Ample Forbidden Minors",
+  "invariant_id": "#invariants/protected_certificate_depth",
+  "class_id": "#classes/ample",
+  "quantifier": "supremum",
+  "value_type": "unbounded",
+  "value": "+\\infty",
+  "parameters": "For every $m\\ge1$, the witness $K_m$ satisfies $d_{\\mathrm{prot}}(K_m)\\ge2^m$.",
+  "scope": "Irredundantly embedded ample pc-minimal obstructions to dismantlable ampleness; the first family need not be reduction-terminal for $m>1$.",
+  "status": "established",
+  "proof": "The coordinate-block construction expands one removable tip into a fibre of $2^m-1$ successive corners above a negative base. Every stage peels relatively to a base with empty protected core and therefore also has empty protected core. A corner-choice tree must contain the entire fibre-deletion branch and still cannot stop at its endpoint, so its depth is at least $2^m$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-unbounded-protected-depth",
+  "verification": "migration/certificates/141_dismantlable_ample_protected_depth_and_block_transfer/research/protected_block_delay.py"
+}

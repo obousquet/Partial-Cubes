@@ -1,0 +1,15 @@
+{
+  "id": 582,
+  "short_name": "unbounded_protected_certificate_depth",
+  "name": "Protected-Certificate Depth Is Unbounded",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "invariant_ids": ["#invariants/protected_certificate_depth"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/full_reduction", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "For every $m\\ge1$ there is an ample pc-minimal obstruction $K_m$ to dismantlable ampleness with $|K_m|=560\\cdot2^m-493$, isometric dimension $m+23$, VC dimension $m+5$, empty protected core, and $d_{\\mathrm{prot}}(K_m)\\ge2^m$. The family is obtained by replacing one coordinate of a fixed $627$-concept obstruction by a block of size $m$. For $m>1$ it has negative coordinate reductions.",
+  "status": "established",
+  "witness_ids": ["#examples/block_protected_depth_family"],
+  "proof": "A fixed $626$-concept root-cube completion has empty protected core, certified by an ordering in which every vertex's later-neighbour directions span a cube in the original family. Adding one compatible tip and replacing a nonincident coordinate by $m$ coordinates expands that tip into a punctured fibre of $2^m-1$ vertices. Block-relative transfer peels this fibre back to the expanded base. Every intermediate family still peels relatively to a target with empty protected core, so it also has empty protected core. Every corner-choice proof tree contains this branch and cannot stop even at the base, giving depth at least $2^m$. Block replacement preserves forbiddenness, and its order, isometric-dimension, and VC-dimension formulas give the stated parameters.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-unbounded-protected-depth"
+}

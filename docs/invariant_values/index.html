@@ -2474,6 +2474,48 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-131" style="position:relative;">
+
+        <h3><a href="invariant_values/unbounded_protected_depth_forbidden.html" class="table-title-link">Protected-Certificate Depth Is Unbounded on Ample Forbidden Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Protected-Certificate Depth Is Unbounded on Ample Forbidden Minors</p>
+<p><strong>Invariant: </strong><a href="invariants/protected_certificate_depth.html">Protected-Certificate Depth</a></p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Quantifier:</strong> Supremum</p>
+<p><strong>Value Type:</strong> Unbounded</p>
+<p><strong>Value: </strong>+\infty</p>
+<strong>Parameters:</strong><div class="text-field"><p>For every $m\ge1$, the witness $K_m$ satisfies $d_{\mathrm{prot}}(K_m)\ge2^m$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Irredundantly embedded ample pc-minimal obstructions to dismantlable ampleness; the first family need not be reduction-terminal for $m>1$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The coordinate-block construction expands one removable tip into a fibre of $2^m-1$ successive corners above a negative base. Every stage peels relatively to a base with empty protected core and therefore also has empty protected core. A corner-choice tree must contain the entire fibre-deletion branch and still cannot stop at its endpoint, so its depth is at least $2^m$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-unbounded-protected-depth</p></div>
+<strong>Verification:</strong><div class="text-field"><p>migration/certificates/141_dismantlable_ample_protected_depth_and_block_transfer/research/protected_block_delay.py</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-132" style="position:relative;">
+
+        <h3><a href="invariant_values/unbounded_protected_depth_reduced_terminal.html" class="table-title-link">Protected-Certificate Depth Remains Unbounded on Reduced Terminal Inputs</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Protected-Certificate Depth Remains Unbounded on Reduced Terminal Inputs</p>
+<p><strong>Invariant: </strong><a href="invariants/protected_certificate_depth.html">Protected-Certificate Depth</a></p>
+<p><strong>Class: </strong><a href="classes/ample.html">Ample Classes</a></p>
+<p><strong>Quantifier:</strong> Supremum</p>
+<p><strong>Value Type:</strong> Unbounded</p>
+<p><strong>Value: </strong>+\infty</p>
+<strong>Parameters:</strong><div class="text-field"><p>For every $m\ge1$, the witness $L_m$ satisfies $d_{\mathrm{prot}}(L_m)\ge2^m$.</p></div>
+<strong>Scope:</strong><div class="text-field"><p>Ample pc-minimal obstructions to dismantlable ampleness whose every one-coordinate reduction peels, whose minimum graph degree is at least three, and whose signed minimal-nonface columns are distinct up to sign.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The terminal construction again provides a $2^m-1$ tip-fibre deletion branch whose every stage has empty protected core. Frozen missing-cube witnesses exclude old-factor first moves, while the filled root cube controls mixed vertices and the root. The same family is reduction-terminal and fixed by graph-core and column-compression reductions, so these canonical simplifications do not bound the certificate depth.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-terminal-unbounded-protected-depth</p></div>
+<strong>Verification:</strong><div class="text-field"><p>migration/certificates/141_dismantlable_ample_protected_depth_and_block_transfer/research/terminal_protected_depth.py</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
