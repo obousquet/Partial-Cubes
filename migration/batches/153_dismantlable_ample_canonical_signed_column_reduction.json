@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "batch_id": "153_dismantlable_ample_canonical_signed_column_reduction",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the canonical compression of repeated signed minimal-nonface columns and the exact parametrization by a reduced forbidden input and positive coordinate multiplicities.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-canonical-signed-column-reduction"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem removes all ambiguity caused by repeated signed-clause columns and upgrades coordinate-block replacement to a unique reduction-and-reconstruction parametrization.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The ampleness contradiction identifies every repeated-column class with a coordinate block, after which the existing block replacement and strong-descent results prove preservation, recovery, and uniqueness.",
+    "claim_block_sha256": {
+      "thm:damp-canonical-signed-column-reduction": "007992be6160efcd789ebe44ae0e2b324726a374b865dd629529583eb0696a6c"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the canonical signed-column reduction, its concise proof, and the exact multiplicity parametrization. LaTeX retains the expanded derivation, explicit computational controls, and discussion of the still-open classification of reduced inputs.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the source theorem byte-for-byte; earlier database batches preserve the coordinate-block replacement and strong-descent inputs used by the proof.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/611_canonical_signed_column_reduction.json",
+      "sha256": "753fd1b17ef82aa5ab5b31dc99b3d860c56376a95e07fb062883b2ba01c83493"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "d1a21152ceeb3db7592927e2e062fbea8e22e01969caff399638f06b99aff839"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "684e638acee56200de6454ed6e1148a101ba7ed6bb1e9d2fd4acbfa793c90fb1"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1993 records.",
+    "website": "Normalized 2009 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 711 to 712 of 1143 and dismantlable-ample coverage from 275 to 276 of 683.",
+    "certificates": "No new finite certificate is needed; the proof is structural and depends on previously normalized block replacement, strong descent, and closure of ampleness under face restriction.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 431 uncovered database-owned labels: 407 in dismantlable-ample and 24 in ample-corners.",
+    "The next theorem canonically alternates graph three-core reduction with signed-column reduction and bounds the number of phases.",
+    "The intrinsic classification of forbidden inputs fixed by both canonical reductions remains an open question and stays prose-owned in LaTeX."
+  ]
+}

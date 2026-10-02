@@ -10211,6 +10211,24 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-611" style="position:relative;">
+
+        <h3><a href="results/canonical_signed_column_reduction.html" class="table-title-link">Canonical Signed-Column Reduction and Multiplicity Parametrization</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canonical Signed-Column Reduction and Multiplicity Parametrization</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor. For every signed minimal nonface $I$, let the column $v_e(I)$ of coordinate $e$ be $0$ when $e\notin I$ and the signed incidence $2\sigma_I(e)-1$ when $e\in I$. Partition $F$ by $e\sim f$ when $v_e=\pm v_f$. Reorient each class so its columns agree, retain one representative from every class, and fully reduce all other coordinates. The resulting family $R$ is an irredundant ample forbidden pc-minor whose columns are pairwise distinct up to sign. The family $H$ is recovered from $R$ by coordinate-block replacement, using the equivalence-class sizes as positive multiplicities. The reduced family and multiplicities are unique up to coordinate renaming and reorientation, and every sequence of equal-column compressions reaches the same reduced family. Conversely, every such reduced forbidden family and every assignment of positive coordinate multiplicities produces an ample forbidden family and is recovered by this reduction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>After reorientation, every signed minimal-nonface clause either avoids an equal-column class $E$ or contains all of $E$ with one constant forbidden sign. If $B_0,B_1$ are the constant sections and $C$ is defined by the clauses avoiding $E$, then $B_0\cup B_1\subseteq C$. A word in the difference would induce the face $Q_E\setminus\{0_E,1_E\}$, which has $2^{|E|}-2$ concepts but $2^{|E|}-1$ shattered supports, contradicting closure of ampleness under face restriction. Thus $C=B_0\cup B_1$, exactly the coordinate-block pattern. Reducing all but one coordinate of $E$ therefore recovers a smaller ample nonpeelable family; the strong-descent theorem makes it an irredundant forbidden pc-minor. Compression bijects the signed clauses and leaves every other column unchanged, so distinct equivalence classes never merge. Induction proves canonicity and independence of representatives and compression order. Conversely, coordinate-block replacement preserves forbiddenness and simply repeats the selected signed-clause column; replacements commute, so compression recovers precisely the starting family and its multiplicities.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-canonical-signed-column-reduction</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This removes exactly the freedom caused by repeated signed-clause columns. It does not intrinsically characterize the reduced forbidden inputs whose columns are already pairwise distinct up to sign.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
