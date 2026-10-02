@@ -1,0 +1,20 @@
+{
+  "id": 693,
+  "short_name": "vc_three_third_companion_blocks_pair",
+  "name": "A Third Companion Blocks a Pair in VC Dimension Three",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $G$ be a nonempty cornerless ample family of VC dimension at most three. Suppose three distinct missing tips $c,u,v$ give ample individual extensions with the same three-coordinate acquired support $I$, and $u=c^{\\{i\\}}$, $v=c^{\\{j\\}}$. Then neither $G\\cup\\{c,u\\}$ nor $G\\cup\\{c,v\\}$ is dismantlable ample.",
+  "status": "established",
+  "proof": "The punctured cubes at $c,u$ complete the four-cube on $P=I\\cup\\{i\\}$ when both tips are added. The third punctured cube supplies an outside neighbor to every non-corner vertex on the $c$ side. Any old corner of the pair extension must lie in this completed four-cube and have no outside neighbor; the only possible first deletions therefore lie among its upper antipode and the three adjacent upper vertices. Deleting either new tip first leaves a one-corner extension and then the cornerless family, so it cannot start a full peeling. Once an old vertex is deleted, the support $P$ leaves the shadow, and every subsequent ample subfamily has VC dimension at most three. Degree and missing-square arguments protect all twelve vertices on the lower side, the two tips, and their three upper neighbors; only the four candidate upper vertices can ever be deleted. They cannot exhaust the family, so no peeling exists. Interchanging $u$ and $v$ gives the second conclusion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-vc-three-companion",
+  "comments": "The fixed VC-three control has 1,761 concepts and a complete 15-state negative certificate. A VC-four control isolates the step where the dimension bound is used but remains nonpeelable for an independent proper-minor reason."
+}

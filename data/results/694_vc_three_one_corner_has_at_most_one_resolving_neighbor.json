@@ -1,0 +1,22 @@
+{
+  "id": 694,
+  "short_name": "vc_three_one_corner_has_at_most_one_resolving_neighbor",
+  "name": "A VC-Three One-Corner Family Has at Most One Resolving Neighbor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $S\\subseteq Q_F$ be ample and nonpeelable with unique corner $c$, and let $I$ be the incident-coordinate set of $c$. If $\\operatorname{VCdim}(S)\\le3$, at most one missing neighbor $u$ of $c$ has $S\\cup\\{u\\}$ dismantlable ample. Hence the one-corner two-neighbor falsifier requires VC dimension at least four. Without a VC bound, if two resolving neighbors have three-coordinate acquired supports $J\\cup\\{i\\}$ and $K\\cup\\{j\\}$ with $J,K\\subseteq I$, then $J\\cup K\\subsetneq I$. In the adjacent same-support companion construction with VC dimension at most three, the specified companion is the only possible resolving neighbor; two distinct companions exclude every resolving neighbor.",
+  "status": "established",
+  "proof": "The predecessor $G=S\\setminus\\{c\\}$ is ample and nonpeelable, and adding $c$ acquires $I$. Low-rank invariance excludes resolving supports of size at most two. For two rank-three neighbors, the forced-deletion theorem gives two two-element sets $J,K$ and makes each peeling start with its associated first two old vertices. The only possible third deletion for the first repair uses some direction $r\\in I\\setminus J$ and forces a cube through an outside-$I$ neighbor. If $r\\in K$, that cube either violates the second repair's private-edge condition or gives its first deletion an outside neighbor. Thus $r\\notin J\\cup K$, proving $J\\cup K\\subsetneq I$. Under VC dimension three, the corner cube forces $|I|=3$. Two rank-three supports contradict the strict-union condition; a rank-three and rank-four pair are excluded by the companion form of the forced-deletion theorem. If both supports have size four, deleting $c$ leaves a cornerless predecessor and three same-support tips, contradicting the VC-three third-companion theorem. The specialized companion assertions follow by the same rank bounds and that theorem.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-vc-three-one-corner-neighbors; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-vc-three-companion-neighbors",
+  "witness_ids": [
+    "#examples/fixed_one_corner_source_with_disconnected_placement_fibre"
+  ],
+  "comments": "The theorem excludes all one-corner sources of VC dimension at most three. The existence of two resolving neighbors remains open in higher VC dimension."
+}

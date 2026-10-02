@@ -11646,6 +11646,61 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-692" style="position:relative;">
+
+        <h3><a href="results/three_tip_strong_projection_positivity.html" class="table-title-link">Strong-Projection Positivity under Adjacent Pair Completions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Strong-Projection Positivity under Adjacent Pair Completions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G\subseteq Q_F$ be nonempty and ample. Suppose three distinct missing tips $c,u,v$ give ample individual extensions with the same acquired three-coordinate support $I$, with $u=c^{\{i\}}$ and $v=c^{\{j\}}$. If both pair extensions $G\cup\{c,u\}$ and $G\cup\{c,v\}$ are dismantlable ample, then every nonempty strong reduction $G^D$, $\varnothing\ne D\subseteq F$, is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Put $S=G\cup\{c\}$. The additions of $u$ and $v$ to $S$ acquire respectively $I\cup\{i\}$ and $I\cup\{j\}$. If some nonempty $G^D$ were nonpeelable, the strong-projection formula and rank-two extension invariance would make $S^D$ nonpeelable as well. Positivity of both repaired families would then force $D\subseteq(I\cup\{i\})\cap(I\cup\{j\})=I$ and $4-|D|\ge3$, so $D=\{k\}$ for some $k\in I$. In that reduction, the projected tips $c_k,u_k$ remain distinct adjacent ample additions with the same acquired two-coordinate support $I\setminus\{k\}$, and their pair extension is the reduction of the positive family $G\cup\{c,u\}$. Square-pair invariance forces $G^{\{k\}}$ to peel, a contradiction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-three-tip-strong-projections</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The fixed verifier checks every coordinate subset in six controls and supplies twelve explicit one-coordinate overlap peelings of the certified 291-concept seed. This necessary projection condition does not by itself make the three-tip profile possible.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-693" style="position:relative;">
+
+        <h3><a href="results/vc_three_third_companion_blocks_pair.html" class="table-title-link">A Third Companion Blocks a Pair in VC Dimension Three</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Third Companion Blocks a Pair in VC Dimension Three</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G$ be a nonempty cornerless ample family of VC dimension at most three. Suppose three distinct missing tips $c,u,v$ give ample individual extensions with the same three-coordinate acquired support $I$, and $u=c^{\{i\}}$, $v=c^{\{j\}}$. Then neither $G\cup\{c,u\}$ nor $G\cup\{c,v\}$ is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The punctured cubes at $c,u$ complete the four-cube on $P=I\cup\{i\}$ when both tips are added. The third punctured cube supplies an outside neighbor to every non-corner vertex on the $c$ side. Any old corner of the pair extension must lie in this completed four-cube and have no outside neighbor; the only possible first deletions therefore lie among its upper antipode and the three adjacent upper vertices. Deleting either new tip first leaves a one-corner extension and then the cornerless family, so it cannot start a full peeling. Once an old vertex is deleted, the support $P$ leaves the shadow, and every subsequent ample subfamily has VC dimension at most three. Degree and missing-square arguments protect all twelve vertices on the lower side, the two tips, and their three upper neighbors; only the four candidate upper vertices can ever be deleted. They cannot exhaust the family, so no peeling exists. Interchanging $u$ and $v$ gives the second conclusion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-vc-three-companion</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The fixed VC-three control has 1,761 concepts and a complete 15-state negative certificate. A VC-four control isolates the step where the dimension bound is used but remains nonpeelable for an independent proper-minor reason.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-694" style="position:relative;">
+
+        <h3><a href="results/vc_three_one_corner_has_at_most_one_resolving_neighbor.html" class="table-title-link">A VC-Three One-Corner Family Has at Most One Resolving Neighbor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A VC-Three One-Corner Family Has at Most One Resolving Neighbor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\subseteq Q_F$ be ample and nonpeelable with unique corner $c$, and let $I$ be the incident-coordinate set of $c$. If $\operatorname{VCdim}(S)\le3$, at most one missing neighbor $u$ of $c$ has $S\cup\{u\}$ dismantlable ample. Hence the one-corner two-neighbor falsifier requires VC dimension at least four. Without a VC bound, if two resolving neighbors have three-coordinate acquired supports $J\cup\{i\}$ and $K\cup\{j\}$ with $J,K\subseteq I$, then $J\cup K\subsetneq I$. In the adjacent same-support companion construction with VC dimension at most three, the specified companion is the only possible resolving neighbor; two distinct companions exclude every resolving neighbor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The predecessor $G=S\setminus\{c\}$ is ample and nonpeelable, and adding $c$ acquires $I$. Low-rank invariance excludes resolving supports of size at most two. For two rank-three neighbors, the forced-deletion theorem gives two two-element sets $J,K$ and makes each peeling start with its associated first two old vertices. The only possible third deletion for the first repair uses some direction $r\in I\setminus J$ and forces a cube through an outside-$I$ neighbor. If $r\in K$, that cube either violates the second repair's private-edge condition or gives its first deletion an outside neighbor. Thus $r\notin J\cup K$, proving $J\cup K\subsetneq I$. Under VC dimension three, the corner cube forces $|I|=3$. Two rank-three supports contradict the strict-union condition; a rank-three and rank-four pair are excluded by the companion form of the forced-deletion theorem. If both supports have size four, deleting $c$ leaves a cornerless predecessor and three same-support tips, contradicting the VC-three third-companion theorem. The specialized companion assertions follow by the same rank bounds and that theorem.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-vc-three-one-corner-neighbors; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-vc-three-companion-neighbors</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/fixed_one_corner_source_with_disconnected_placement_fibre.html">Fixed One-Corner Source with a Disconnected Placement Fibre</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The theorem excludes all one-corner sources of VC dimension at most three. The existence of two resolving neighbors remains open in higher VC dimension.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
