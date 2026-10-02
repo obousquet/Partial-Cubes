@@ -8328,6 +8328,81 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-499" style="position:relative;">
+
+        <h3><a href="results/ample_one_vertex_tree_square_fan.html" class="table-title-link">An Ample One-Vertex Completion of a Tree Is a Square Fan</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Ample One-Vertex Completion of a Tree Is a Square Fan</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $B$ be ample, let $v\in B$, and suppose $T=G(B)-v$ is a nonempty tree. If $d=\deg_{G(B)}(v)$ and the square link $\Lambda_v$ has the $d$ directions incident with $v$ as vertices, adjacent exactly when their square through $v$ belongs to $B$, then $\Lambda_v$ is a tree. Every cube of dimension at least two is a square through $v$, $B$ has exactly $d-1$ squares, every direction not incident with $v$ labels one edge, and an incident direction $i$ labels $1+\deg_{\Lambda_v}(i)$ edges.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A square avoiding $v$ would be a cycle in $T$, and a cube of dimension at least three has a square face avoiding $v$. Connectedness of each coordinate carrier in an ample family gives the asserted edge multiplicities and makes the square link a forest: a link cycle would subdivide to a cycle in $T$. If $r$ is the number of active directions and $q=|E(\Lambda_v)|$, carrier counting gives $|E(G(B))|=r+2q$, while the tree completion gives $|E(G(B))|=|B|-2+d$. Ampleness and the absence of larger cubes give $|B|=1+r+q$. Hence $q=d-1$, so the forest on $d$ vertices is a tree.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-ample-one-vertex-tree-square-fan</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-500" style="position:relative;">
+
+        <h3><a href="results/ample_two_vertex_tree_square_complex.html" class="table-title-link">An Ample Two-Vertex Completion of a Tree Is a Two-Apex Square Complex</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Ample Two-Vertex Completion of a Tree Is a Two-Apex Square Complex</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/trees.html">Trees</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $B$ be ample and let distinct $u,v\in B$ satisfy that $G(B)-\{u,v\}$ is a nonempty tree. Every cube of dimension at least two is a square meeting $\{u,v\}$, no two squares have the same direction support, and the number of squares is $q(B)=\deg_B(u)+\deg_B(v)-\mathbf 1_{uv\in E(G(B))}-2$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A square avoiding both apices would be a cycle in the remaining tree. Every cube of dimension at least four has a square face avoiding two prescribed vertices; a three-cube either has an opposite square avoiding both or, when the apices are antipodal, leaves a six-cycle after their deletion. Thus only squares remain. The connected ample carrier of a fixed square support cannot contain two anchors, since consecutive anchors would create a three-cube, so supports are unique. With $r$ active directions, $n=|B|$, and $q$ squares, ampleness gives $n=1+r+q$ and the edge-shadow identity gives $|E(G(B))|=r+2q$. Restoring the apices to the $(n-2)$-vertex tree gives $|E(G(B))|=n-3+\deg(u)+\deg(v)-\mathbf 1_{uv\in E}$; substitution yields the formula.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-ample-two-vertex-tree-square-complex</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-501" style="position:relative;">
+
+        <h3><a href="results/ample_one_vertex_unicyclic_square_link.html" class="table-title-link">A One-Vertex Completion of a Unicyclic Graph Has a Controlled Square Link</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A One-Vertex Completion of a Unicyclic Graph Has a Controlled Square Link</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $B$ be ample, let $v\in B$, and suppose $T=G(B)-v$ is connected and unicyclic with at most one square. Write $q_0\in\{0,1\}$ for the number of squares in $T$, $d=\deg_B(v)$, and $\Lambda_v$ for the square link at $v$. Then $B$ has no cube of dimension at least three, every square support occurs once, and $B$ has exactly $d$ squares, of which $d-q_0$ contain $v$. If $q_0=0$, $\Lambda_v$ is connected and unicyclic; if $q_0=1$, the unique cycle of $T$ is that square and $\Lambda_v$ is a tree.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A three-cube avoiding $v$ leaves six squares in $T$, while one containing $v$ leaves three opposite square faces there, contradicting the hypothesis; connected support carriers then make square supports unique. If $r$ is the number of active directions, $q$ the number of squares, and $n=|B|$, ampleness gives $n=1+r+q$ and $|E(G(B))|=r+2q$. Since the unicyclic graph $T$ has $n-1$ edges and restoring $v$ adds $d$, one gets $q=d$ and $|E(\Lambda_v)|=d-q_0$. A cycle in the link subdivides to a cycle in $T$, so its cycle rank is at most one. The two possible edge counts then force respectively a connected unicyclic link or a tree.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-ample-one-vertex-unicyclic-square-link</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-502" style="position:relative;">
+
+        <h3><a href="results/eta_two_two_apex_normal_form.html" class="table-title-link">The Pure Two-Unit Holonomy Anomaly Has Two Square Apices</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Pure Two-Unit Holonomy Anomaly Has Two Square Apices</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In the small lower-family two-arm setting, suppose $|K|\le9$, a directed two-cycle has excess $\varepsilon=2$, the uncounted remainder is $\eta=2$, there are exactly two passive directions, every carrier-excess term vanishes, and both cycle shores have order two. Then the active slice has order one, $|K|=9$, and the two uncounted vertices $u,v$ satisfy $G(K)-\{u,v\}=P_7$, the path formed by attaching two pendant three-edge arms to the active vertex. All squares of $K$ are uniquely supported and meet an apex, with $q(K)=\deg_K(u)+\deg_K(v)-\mathbf1_{uv\in E(K)}-2$. At most one of the two terminal arm-support pairs is shattered by $K$, so at least one is acquired by the upper family.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Equality in every counted budget term forces disjoint active-edge shores, one passive direction and collar per shore, two pendant three-edge arms, and $|K|=|L|+8$. The shore-root lemma and $|K|\le9$ give $|L|=1$ and $|K|=9$, leaving exactly two apices outside the resulting $P_7$; the two-apex square-complex lemma gives the square structure and count. Any square on a terminal support must contain both apices, because deleting a single apex would leave a forbidden two-edge path in $P_7$. The two terminal directions are distinct, or convexity of their common semicube would identify the disjoint active shores. Thus the terminal supports are disjoint. Two such squares cannot both use the same apex pair, whether the apices are adjacent or opposite, so at most one terminal pair is shattered below; both are shattered above.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-eta-two-two-apex-normal-form</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-503" style="position:relative;">
+
+        <h3><a href="results/two_unit_holonomy_seven_profiles.html" class="table-title-link">The Two-Unit Holonomy Budget Has Exactly Seven Profiles</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Two-Unit Holonomy Budget Has Exactly Seven Profiles</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For a directed two-cycle with excess $\varepsilon=2$, and up to interchanging its shores $S_1,S_2$, exactly seven profiles occur: (1) $\eta=2$ with disjoint two-concept shores; (2) $\eta=1$ with two two-concept shores meeting once; (3) $\eta=1$ with disjoint shores of orders two and three; (4) $\eta=0$ with shores of orders two and three meeting once; (5) $\eta=0$ with disjoint shores of orders two and four; (6) $\eta=0$ with disjoint three-concept shores; or (7) $\eta=0$ with disjoint two-concept cycle shores and a third passive coordinate having a singleton shore disjoint from their union. In profiles 1--6 there are exactly two passive directions, each cycle shore has a unique representative, and all other passive shores are empty. Precisely profiles 1--3 have an uncounted lower vertex.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact excess identity writes $2$ as the sum of the nonnegative integers $\eta$, the cost of passive directions beyond two, the carrier-incidence excesses, and the two shore-size excesses. Extra passive directions cost at least two units, so there are at most three. Equality with three forces profile 7. With two directions, both cycle shores have unique representatives and the carrier excess equals $a=|S_1\cap S_2|$. Writing $x=|S_1|-2$ and $y=|S_2|-2$ reduces the identity to $\eta+a+x+y=2$. Enumerating its nonnegative solutions, excluding $a=2,x=y=0$ because the two shores must be distinct, gives profiles 1--6 and shows that exactly the first three have $\eta>0$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-unit-holonomy-seven-profiles</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

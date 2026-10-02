@@ -1,0 +1,14 @@
+{
+  "id": 499,
+  "short_name": "ample_one_vertex_tree_square_fan",
+  "name": "An Ample One-Vertex Completion of a Tree Is a Square Fan",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/trees"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $B$ be ample, let $v\\in B$, and suppose $T=G(B)-v$ is a nonempty tree. If $d=\\deg_{G(B)}(v)$ and the square link $\\Lambda_v$ has the $d$ directions incident with $v$ as vertices, adjacent exactly when their square through $v$ belongs to $B$, then $\\Lambda_v$ is a tree. Every cube of dimension at least two is a square through $v$, $B$ has exactly $d-1$ squares, every direction not incident with $v$ labels one edge, and an incident direction $i$ labels $1+\\deg_{\\Lambda_v}(i)$ edges.",
+  "status": "established",
+  "proof": "A square avoiding $v$ would be a cycle in $T$, and a cube of dimension at least three has a square face avoiding $v$. Connectedness of each coordinate carrier in an ample family gives the asserted edge multiplicities and makes the square link a forest: a link cycle would subdivide to a cycle in $T$. If $r$ is the number of active directions and $q=|E(\\Lambda_v)|$, carrier counting gives $|E(G(B))|=r+2q$, while the tree completion gives $|E(G(B))|=|B|-2+d$. Ampleness and the absence of larger cubes give $|B|=1+r+q$. Hence $q=d-1$, so the forest on $d$ vertices is a tree.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-ample-one-vertex-tree-square-fan"
+}

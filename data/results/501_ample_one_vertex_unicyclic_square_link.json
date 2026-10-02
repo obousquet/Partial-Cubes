@@ -1,0 +1,13 @@
+{
+  "id": 501,
+  "short_name": "ample_one_vertex_unicyclic_square_link",
+  "name": "A One-Vertex Completion of a Unicyclic Graph Has a Controlled Square Link",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $B$ be ample, let $v\\in B$, and suppose $T=G(B)-v$ is connected and unicyclic with at most one square. Write $q_0\\in\\{0,1\\}$ for the number of squares in $T$, $d=\\deg_B(v)$, and $\\Lambda_v$ for the square link at $v$. Then $B$ has no cube of dimension at least three, every square support occurs once, and $B$ has exactly $d$ squares, of which $d-q_0$ contain $v$. If $q_0=0$, $\\Lambda_v$ is connected and unicyclic; if $q_0=1$, the unique cycle of $T$ is that square and $\\Lambda_v$ is a tree.",
+  "status": "established",
+  "proof": "A three-cube avoiding $v$ leaves six squares in $T$, while one containing $v$ leaves three opposite square faces there, contradicting the hypothesis; connected support carriers then make square supports unique. If $r$ is the number of active directions, $q$ the number of squares, and $n=|B|$, ampleness gives $n=1+r+q$ and $|E(G(B))|=r+2q$. Since the unicyclic graph $T$ has $n-1$ edges and restoring $v$ adds $d$, one gets $q=d$ and $|E(\\Lambda_v)|=d-q_0$. A cycle in the link subdivides to a cycle in $T$, so its cycle rank is at most one. The two possible edge counts then force respectively a connected unicyclic link or a tree.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-ample-one-vertex-unicyclic-square-link"
+}
