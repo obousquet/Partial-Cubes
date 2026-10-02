@@ -9033,6 +9033,24 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-544" style="position:relative;">
+
+        <h3><a href="results/prescribed_lifts_require_partition_disjunction.html" class="table-title-link">Prescribed USO Lifts Can Require a Union of Equality Partitions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Prescribed USO Lifts Can Require a Union of Equality Partitions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/hypercubes.html">Hypercubes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For a fixed pair of acyclic unique-sink orientations on a contraction and its reduction, feasible upper-layer assignments need not be exactly the assignments constant on the blocks of one partition. This failure already occurs when both inputs are $Q_4$: every crossing edge can be individually compatible while a collection of crossings creates a directed cycle. In the explicit pair, the feasible set is the union of two equality-partition families and contains 96 of the 128 assignments allowed by the forced equalities.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two displayed orders pass the local cube test at every deletion and hence induce acyclic CCMW USOs. Individually incompatible crossings yield seven forced equality blocks. Exhausting their 128 bit assignments gives the exact condition that the central block agree with at least one of two other blocks. Merging it with either block yields a displayed topological order valid for every assignment in that branch. If it agrees with neither, two crossing edges add comparisons completing the directed cycle $1\to3\to14\to15\to1$. The two single-block indicators are feasible, while their mod-two sum is not; a single partition family would be closed under such sums.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-joint-switch-conflict</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/q4_joint_switch_partition_counterexample.html">Q4 Joint-Switch Equality-Partition Counterexample</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This limits gluing of prescribed orientation maps. The support is always the dismantlable hypercube $Q_5$, so it is not a forbidden-support example and does not rule out alternative parent maps.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

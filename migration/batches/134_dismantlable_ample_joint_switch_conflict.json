@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "batch_id": "134_dismantlable_ample_joint_switch_conflict",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact Q4 counterexample showing that feasible lifts of fixed acyclic USOs can require a union of equality-partition families, together with a self-contained exhaustive replay of every assignment allowed by the forced equalities.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-joint-switch-conflict"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The proposition is a finite counterexample about prescribed orientation maps, rather than an intrinsic forbidden support. Preserving the two input orders, forced blocks, all 128 assignment decisions, and cycle witness prevents that scope distinction from being lost in normalization.",
+    "outcome": "The statement-plus-proof block is byte-identical between supplemental snapshot 2026-10-02-b002 and the live manuscript. The database-owned replay reproduces the archived JSON report byte-for-byte and confirms 96 feasible assignments among the 128 assignments satisfying the forced equalities.",
+    "claim_block_sha256": {
+      "prop:damp-joint-switch-conflict": "b26cf944af3b1857ec4d6c391cd0aaa811d67af28391193de12d208d0c3a43a5"
+    }
+  },
+  "verification_packets": [
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/joint_switch_conflict.json", "sha256": "b0950caf7d0b80cf9c519a40758156fd672326baf5686af02bfe37d3ee2c986e"},
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/joint_switch_conflict.py", "sha256": "56f0b49fc1e8c35a7992243d094aad05fb29a36974881dfc05b565dc335ed7e3"},
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/joint_switch_conflict_source.json", "sha256": "b0950caf7d0b80cf9c519a40758156fd672326baf5686af02bfe37d3ee2c986e"},
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/joint_switch_conflict_source_legacy.py", "sha256": "8bf42b16436c99e7ef905ee21499c6b899b7b2e16d7bf3cc24ced7700381cf86"},
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/joint_switch_primitives.py", "sha256": "0638492dee9a195726e4711606f67ecea10968ba263647c9949c4e313da5ac30"},
+    {"path": "migration/certificates/134_dismantlable_ample_joint_switch_conflict/orientation_gluing_source_legacy.py", "sha256": "0f423edcb2c72d48c31962994add05ccb666831f0c9fc0c41563d32d6cb11cd4"}
+  ],
+  "source_preservation": {
+    "policy": "The database owns the normalized proposition, explicit witness, concise proof, checker, complete report, and minimal replay primitives. The manuscript retains the full orientation-gluing context and its relation to representation-map completion theory.",
+    "recoverability": "The exact manuscript is preserved in supplemental snapshot 2026-10-02-b002. The certificate directory preserves the original checker and helper module verbatim, the archived report, and a dependency-minimized checker whose output is byte-identical.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {"path": "data/examples/160_q4_joint_switch_partition_counterexample.json", "sha256": "0581ca54ead4d2f8eadefaba817454241c1810c04289da88f08cf4388b173d6c"},
+    {"path": "data/results/544_prescribed_lifts_require_partition_disjunction.json", "sha256": "4a737455a51128d445b2a014babdcfbd5a0f8072e3567ec1561e83a94aabb74b"},
+    {"path": "migration/coverage.json", "sha256": "4f34cf2c819209f1909fb6d1d9f3cb55877fbc05ba81066d235583394b1c6ac4"},
+    {"path": "migration/manuscript_result_audit.json", "sha256": "fa8b0dc8de45a0e9b4141d13877a67447fb69e423b2fdf0ab73eef90da7f5c03"}
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1894 records.",
+    "website": "Normalized 1910 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising the dismantlable-ample workspace from 211 to 212 of 683 and overall coverage from 642 to 643 of 1114 database-owned labels.",
+    "certificates": "The self-contained replay checks both input corner-peeling orders, derives the seven forced equality blocks, exhausts all 128 block assignments, verifies both sufficient partition branches, and reproduces the archived report byte-for-byte.",
+    "scope_review": "The record explicitly states that every support is Q5 and dismantlable; the counterexample concerns fixed prescribed maps and is not a forbidden-support witness.",
+    "source_integrity": "The reviewed source block and complete classification file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 471 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "The next uncovered source-order block begins with the unique-facet corner criterion and the rank-three local trace catalogue.",
+    "The local trace catalogue has its own exhaustive generator and report and should be imported as the next certificate-bearing batch."
+  ]
+}
