@@ -1,0 +1,21 @@
+{
+  "id": 632,
+  "short_name": "one_sided_relative_midpoint_core",
+  "name": "One-Sided Criterion for Empty Unique-Midpoint Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "algorithm",
+  "statement": "For nested ample families $A\\subseteq B$, let $\\kappa_A(B)$ be the largest $W\\subseteq B\\setminus A$ such that every $w\\in W$ roots a unique-midpoint constraint in $B$ whose two heads lie in $A\\cup W$. It is computed by pruning roots with no such witness while retaining $A$ and keeping the original constraint set fixed. Now split ample $H$ in an active coordinate into sections $B_0,B_1$ with overlap $A$. If both ordinary section cores are empty and $\\kappa_A(B_i)$ is empty for either side, then the ordinary unique-midpoint core of $H$ is empty. In particular this holds if either section corner-peels to $A$, equivalently if either inclusion $A\\subseteq B_i$ admits an $A$-relative ample chain.",
+  "status": "established",
+  "proof": "Unions of relative cores are relative cores, so the pruning procedure leaves their unique largest member. Assume $\\kappa_A(B_0)$ is empty and let $K$ be a core of $H$. A root in the exclusive zero wing has no vertical neighbour, so its witness is horizontal; projection would put it in $\\kappa_A(B_0)$, which is impossible. Any remaining zero-section root projects into $A$. A vertical witness for it would require a head in the excluded zero wing, so every witness is again horizontal; the zero section of $K$ would then be an ordinary core of $B_0$ and must be empty. The same argument makes the one section a core of $B_1$, hence empty. Finally, if $B$ corner-peels to $A$, the first deleted member of any nonempty relative core would still have both witness heads present and could not be a corner, a contradiction.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-sided-empty-core",
+  "comments": "One side suffices. The archived control has relative-core orders 52 and 0 over its two sections and empty global core, while an empty global core can also coexist with two nonempty relative cores."
+}

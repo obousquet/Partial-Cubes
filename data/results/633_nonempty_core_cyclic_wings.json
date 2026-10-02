@@ -1,0 +1,20 @@
+{
+  "id": 633,
+  "short_name": "nonempty_core_cyclic_wings",
+  "name": "Nonempty Cores Force Two Large Cyclic Wings",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H$ be an irredundantly embedded ample forbidden pc-minor for the dismantlable ample classes and suppose its unique-midpoint core is nonempty. At every active coordinate, both section cores relative to the overlap are nonempty, neither section admits a relative ample chain down to the overlap, and both induced wing graphs contain cycles. Each wing has at least nine concepts, so $|H|\\ge2|A|+18$. These conclusions hold whether or not the overlap $A$ is corner-peelable. If $A$ is nonpeelable, then $|H|\\ge2m_{\\mathrm{amp}}+18$, where $m_{\\mathrm{amp}}$ is the minimum order of an ample forbidden pc-minor.",
+  "status": "established",
+  "proof": "Both sections are proper pc-minors and therefore corner-peelable, so their ordinary unique-midpoint cores are empty. The one-sided criterion forces both relative cores to be nonempty and excludes a relative ample chain on either side. Irredundancy makes the overlap nonempty, and the gluing dichotomy makes it ample. The relative Yang modules are Cohen--Macaulay; the relative forest and eight-facet linear-quotient theorems would produce a relative ample chain if a wing were a forest or had at most eight concepts. Thus both wings contain cycles and have order at least nine. The section identity gives $|H|=2|A|+|D_0|+|D_1|$. If $A$ is nonpeelable, inherited overlap descent makes it an ample forbidden pc-minor, yielding $|A|\\ge m_{\\mathrm{amp}}$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-nonempty-core-wing-obstructions",
+  "comments": "The certificate replays both wing conditions at all coordinates of Hall's 299-concept family and its 300-concept extension. These are necessary conditions on a terminal counterexample with nonempty core, not a classification."
+}

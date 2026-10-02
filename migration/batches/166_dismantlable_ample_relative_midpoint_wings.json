@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "batch_id": "166_dismantlable_ample_relative_midpoint_wings",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the one-sided relative unique-midpoint pruning criterion and the resulting cyclic-wing and cardinality constraints on ample forbidden pc-minors with nonempty unique-midpoint core.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-sided-empty-core",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-nonempty-core-wing-obstructions"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims localize a nonempty global unique-midpoint core to both wings of every coordinate split and turn relative Yang results into uniform cycle and size constraints.",
+    "outcome": "Both statement-plus-proof blocks match the preserved manuscript. The archived standalone verifier reproduces its source report byte-for-byte, replays both wings of all coordinates in the two Hall controls, and records both the one-sided positive control and the two-sided nonconverse.",
+    "claim_block_sha256": {
+      "prop:damp-one-sided-empty-core": "89d6098e1d4a025acebc9bb1f8157c4c070c7551494aefba0252d27b84689c9f",
+      "cor:damp-nonempty-core-wing-obstructions": "e229a31ce0b4ad6749e1a73aa40ca621d6562ef9a0b8205ac4d0e9dfdf3e4935"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/verify_damp_relative_midpoint_wings.py",
+      "sha256": "8a3edf13151fe6ce8bca3f5f6a93e15da404d7056c8607176792b5ef22ad2c68"
+    },
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/damp_relative_midpoint_wings_verification.json",
+      "sha256": "b4b98d009d35ae2fc876124162617c5b2f75b322a3aaadf5aa1da0209fa5e9c2"
+    },
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/damp_empty_core_counterexample.json",
+      "sha256": "3e3b26bccd102450b1f2c92973dd9b4da25d8b21fb373f151c5c31e10da639ff"
+    },
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/verify_damp_layer_midpoint_cores.py",
+      "sha256": "8c9c4744262e18194cd908d1cbf3630768deaa6066f04378b4cf2ecacd4aa899"
+    },
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/computations/hall_corner_exchange/source_H.json",
+      "sha256": "f21c8d7a76371d67c230ac0049c66949e9a26dc6dca4beed6fdbf1c139400ca1"
+    },
+    {
+      "path": "migration/certificates/166_dismantlable_ample_relative_midpoint_wings/forbidden_pc_minor_campaign/computations/round765_peripheral_section_peelings.json",
+      "sha256": "92c1e1a634ade824fd9a6095406cf5346e10a666a9fc640df4feba1b90b55728"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the relative-core definition and pruning rule, one-sided implication, forbidden-family wing consequences, concise proofs, finite replay boundary, and citations. LaTeX retains the expanded projection argument, fixed-control narrative, and relation to the terminal layer-existence program.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both claims. The certificate directory contains the standalone verifier, helper, two fixed input packets, Hall source, peripheral peeling orders, and byte-identical report.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/632_one_sided_relative_midpoint_core.json",
+      "sha256": "fd7955bf7edb765a7443d2dbd055490aff407dc2b1173faac474554ee33e7e8f"
+    },
+    {
+      "path": "data/results/633_nonempty_core_cyclic_wings.json",
+      "sha256": "7047faa32b08a7fc539e17db8d1cac60787839e12c04f1a64a97581e82786f0a"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "b9a90e35d41245c78c06de6829252cd3a1728e95e506717b4de85e472de85c1e"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "13faa632d7bb2a7ecc44f3648d4ffc57c47427636eb02d3bf1fbcd3fc6be38c3"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2019 records.",
+    "website": "Normalized 2035 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 732 to 734 of 1143 and dismantlable-ample coverage from 296 to 298 of 683.",
+    "certificates": "The replay checks 24 nonempty-core coordinate splits and 48 cyclic wings, the empty-core example with relative-core orders 54 and 17 at coordinate zero, and a 224-concept one-sided control with relative-core orders 52 and 0.",
+    "source_integrity": "Both reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002; the regenerated report is byte-identical to its source copy."
+  },
+  "deferred": [
+    "The refreshed audit has 409 uncovered database-owned labels: 385 in dismantlable-ample and 24 in ample-corners.",
+    "The following certified theorem gives an ample forbidden pc-minor with empty unique-midpoint core and therefore shows the pruning obstruction is not complete.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
