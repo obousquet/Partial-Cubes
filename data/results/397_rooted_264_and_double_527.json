@@ -1,0 +1,12 @@
+{
+  "id": 397,
+  "short_name": "rooted_264_and_double_527",
+  "name": "A 264-Concept Rooted Input Gives a 527-Concept Cornerless Obstruction",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/one_point_amalgam", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "From the recorded 267-concept class $X\\subseteq Q_{12}$, put $A=(X\\setminus\\{236,492,1004,748\\})\\cup\\{220\\}$ and root it at $a=750$. Then $(A,a)$ is a rooted factor of order 264 with $a$ as its only corner and all twelve coordinates active. Every vertex of every nonempty proper pc-minor of $A$ is attainable as a peeling endpoint, so no proper minor is a rooted factor at any root. The double of $(A,a)$ is a cornerless ample pc-minimal obstruction of order 527 and dimension 24. More generally, the certified shrinking outputs give 24, 12, and 12 labeled rooted inputs of orders 266, 265, and 264; gluing any two roots gives a cornerless ample obstruction.",
+  "status": "established",
+  "proof": "A certified ample precursor has forced first vertices $1004,748,750$; deleting the first two leaves $A$ with unique corner $a$, so it is positive but cannot peel to its root. Independent certificates give root-ending orders for all 24 elementary root-preserving images, proving rooted minimality. A stronger replay checks every one of 5,637 endpoint choices in the 36 elementary proper pc-minors; endpoint minor closure propagates this to all deeper nonempty minors and excludes every smaller rooted factor. The same certificates cover all 48 labeled inputs. The cut-vertex theorem proves every pairwise gluing forbidden. No nonroot corner exists, and the identified root is not a corner because its two coordinate blocks have no mixed square, so all outputs are cornerless. The double's 72 elementary pc-minor orders are also explicitly certified.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-rooted264-double527"
+}

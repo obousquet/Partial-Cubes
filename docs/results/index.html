@@ -6544,6 +6544,122 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-391" style="position:relative;">
+
+        <h3><a href="results/positive_overlap_rooted_minimization.html" class="table-title-link">Positive Overlaps Survive Rooted Minor Minimization</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Overlaps Survive Rooted Minor Minimization</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>The following are equivalent: (i) some rooted factor has a degree-two corner root and, after possibly exchanging the root directions, one canonical side/opposite overlap peels to zero; (ii) some ample canonical degree-two presentation is ordinarily peelable, does not peel to its singleton root, has both new-coordinate contractions peeling to the root image, and has that overlap peeling to zero. Every presentation in (ii) has a rooted-factor minor obtained using only old-coordinate operations; its marked root remains a degree-two corner and the corresponding overlap remains root-positive. No old-coordinate minor tests are needed in (ii).</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The forward implication follows from the canonical section presentation of a rooted factor. Conversely, positive contractions force both side sections to peel to zero, so all four new-coordinate rooted images are positive. Commuting operations shows that every rooted minor using a new coordinate is positive; hence any root-negative minor retains both new coordinates. Repeatedly take root-negative elementary old-coordinate images until minimal. Ordinary peelability survives, so the terminal image is a rooted factor. Old-coordinate operations preserve the singleton root section and its two incident directions. They also preserve the identity between the image of the overlap and the intersection of the image sections: a new contraction intersection would create opposite square vertices without either intermediate vertex, contradicting isometry. Endpoint minor closure preserves root positivity of the overlap.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-positive-overlap-minimization</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/positive_overlap_rooted_factor_621.html">Positive-Overlap Rooted Factor of Order 621</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-392" style="position:relative;">
+
+        <h3><a href="results/root_section_filling_obstruction.html" class="table-title-link">Forced Overlap Prefixes Obstruct Filling a Singleton Root Section</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Forced Overlap Prefixes Obstruct Filling a Singleton Root Section</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H=(K\times\{00\})\cup(A\times\{01\})\cup(D\times\{10\})\cup(C\times\{11\})$ be ample, with $R=A\cap C$ and $S=D\cap C$. Suppose each overlap has a forced nonzero corner-deletion prefix leading to a residual family whose unique corner is zero. Let $I_R,I_S,I_K$ be the old directions incident with zero in those residual overlaps and in $K$. If $H$ peels to $(0,00)$, then $I_R\subseteq I_K$ or $I_S\subseteq I_K$. Consequently, in a degree-two singleton-root presentation, if both residual overlap incident sets have size at least two, no ample one-concept addition adjacent to the root can enable peeling to that root; this includes every adjacent degree-three corner addition.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>In a root-ending order, stop at the first deletion among the three nonroot copies of zero and project first-destroyed edge fibers in the appropriate adjacent face. These events form a corner-deletion prefix of the selected overlap, avoid zero, and must equal its forced prefix because the residual family has zero as its unique corner. Immediately before the selected deletion, every residual direction in $I_R$ or $I_S$ supplies an old neighbor of the deleted zero copy, while both new-coordinate neighbors also remain. Its corner cube therefore requires the corresponding word in the $00$ section, proving containment in $I_K$. A single added neighbor makes $|I_K|=1$, which cannot contain either residual incident set of size at least two.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-root-section-filling-obstruction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-393" style="position:relative;">
+
+        <h3><a href="results/paired_root_section_recovery.html" class="table-title-link">Paired Root Extensions Are Intrinsically Recoverable from Their Sections</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paired Root Extensions Are Intrinsically Recoverable from Their Sections</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample family have a marked degree-two corner root. Translate the root to zero and recover its three nontrivial sections $A,D,C$ in positions $01,10,11$. If $C\subseteq A,D$, both side differences have size at most one, and $C$ uses every remaining coordinate, then isometry forces $A\cap D=C$ and the exact shadow count forces $\operatorname{Sh}(A)\cap\operatorname{Sh}(D)=\operatorname{Sh}(C)$. Hence the paired-square endpoint theorem applies and all parameters are uniquely recovered up to exchanging the two root directions. Within this intrinsic type, rooted minimality is exactly rooted minimality of $(C,0)$ plus the two side endpoint-repair conditions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The root-fixed $00$ face is connected and contains the root as an isolated vertex, so it is the singleton section. The other sections are uniquely determined. If a word lay in both side sections outside $C$, the opposite side copies would have no intermediate vertex, contradicting isometry; thus their intersection is $C$. All sections and their union are ample. Substituting these facts into the exact four-section shadow formula and using $|\operatorname{Sh}(Z)|=|Z|$ forces the side-shadow intersection to equal $\operatorname{Sh}(C)$. The paired root-transfer criterion then gives recovery and the rooted-minimality equivalence.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-paired-root-recovery</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/paired_root_factor_879.html">Recovered Paired Root Factor with a Noncorner Core Root</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-394" style="position:relative;">
+
+        <h3><a href="results/terminal_cut_vertex_obstruction.html" class="table-title-link">Two Endpoint Repairs Produce a Terminal Cut-Vertex Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Endpoint Repairs Produce a Terminal Cut-Vertex Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(C,0)$ be an irredundantly embedded rooted factor whose only corner is $0$. Let $A=C\cup\{\alpha\}$ and $D=C\cup\{\delta\}$ be distinct ample one-concept extensions such that $A,D,A\cup D$ are ample, both extensions peel to $0$, and their shadows intersect in $\operatorname{Sh}(C)$. The paired square construction is a rooted factor $Y$ with exactly three corners: its root and the two repair tips. Deleting either nonroot corner destroys rooted minimality. Gluing $(Y,a)$ to a disjoint copy of $(C,0)$ gives a corner-descent-terminal ample pc-minimal obstruction $X$ with a cut vertex, exactly two corners, and $|X|=4|C|+2$. It has no nontrivial replicated common-seed presentation with resolving tips.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Paired-square transfer makes $Y$ a rooted factor and gives its exact corners after any subset of the two tips is deleted. Removing either tip turns one side section back into $C$; a new-coordinate restriction followed by contraction exposes the bad rooted minor $(C,0)$, so rooted minimality fails. The cut-vertex classification makes $X=Y\vee C$ ample and pc-minimal outside dismantlable ampleness. The glued root is no longer a corner, leaving exactly the two tips. After either tip deletion, a proper minor is the nonpeelable double $C\vee C$, proving terminality. Replicated common-seed constructions with resolving tips are two-connected, while $X$ has a cut vertex.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-terminal-cut-vertex</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/terminal_cut_vertex_obstruction_1158.html">Terminal Cut-Vertex Obstruction of Order 1158</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-395" style="position:relative;">
+
+        <h3><a href="results/rooted_minimality_along_ample_additions.html" class="table-title-link">Rooted Minimality Persists along Ample One-Concept Additions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Rooted Minimality Persists along Ample One-Concept Additions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(H,a)$ be a rooted factor irredundantly embedded on $F$, and let $K=H\cup\{c\}\subseteq Q_F$ be ample. Then either $K$ peels to $a$, or $(K,a)$ is again a rooted factor. More generally, along any chain of ample one-concept additions on the same coordinate set starting at $H$, if the final family does not peel to $a$, every intermediate rooted family is a rooted factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The added concept is a corner, so $K$ is ordinarily peelable. Every elementary root-preserving image of $H$ is a proper rooted minor and peels to the root image. The corresponding image of $K$ differs by at most one concept; if present, that concept is a nonroot corner and can be deleted before the rooted order of the image of $H$. Thus all proper rooted images of $K$ are positive. If $K$ itself is root-negative, it satisfies the rooted-factor conditions. Peeling to the old root persists after an ample one-concept addition by deleting the new corner first, so root-negativity of the final chain member forces it at every intermediate stage and induction applies.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-rooted-ample-additions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-396" style="position:relative;">
+
+        <h3><a href="results/forced_prefix_rooted_inputs.html" class="table-title-link">A Forced Prefix Produces Three Rooted Inputs and Six Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Forced Prefix Produces Three Rooted Inputs and Six Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the normalized 289-concept rooted factor $C\subseteq Q_{12}$, let $b=256$ and $H=C\setminus\{0\}$. Then $(H,b)$, $(C,0)$, and $(C,b)$ are rooted factors. The first two roots are degree-three corners and the third is a degree-four noncorner. The attainable peeling endpoints of both $C$ and $H$ are exactly $C\setminus\{0,b\}$, a set of 287 concepts. Pairwise one-point amalgams of these three rooted inputs, allowing repetition, give six pairwise nonisomorphic ample pc-minimal obstructions in dimension 24, of orders 575, 576, or 577 and with respectively 0, 0, 1, 0, 1, or 2 corners in the six unordered cases.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Direct corner calculation forces every peeling of $C$ to begin $0,b$, making $b$ the unique corner of $H$. Certificates verify an ordinary order and all 24 elementary rooted-minor orders for $(H,b)$; hence it is a rooted factor. The known $(C,0)$ factor and the ample one-concept addition lemma imply rooted minimality of $(C,b)$, since the forced prefix prevents a peeling ending at $b$. Explicit orders certify all 287 other endpoints for both families. The cut-vertex theorem then proves each amalgam forbidden and gives its order. Nonroot corners survive gluing, while the common root loses corner status; the resulting order/corner-count pairs distinguish all six outputs.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-forced-prefix-rooted-inputs</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-397" style="position:relative;">
+
+        <h3><a href="results/rooted_264_and_double_527.html" class="table-title-link">A 264-Concept Rooted Input Gives a 527-Concept Cornerless Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 264-Concept Rooted Input Gives a 527-Concept Cornerless Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>From the recorded 267-concept class $X\subseteq Q_{12}$, put $A=(X\setminus\{236,492,1004,748\})\cup\{220\}$ and root it at $a=750$. Then $(A,a)$ is a rooted factor of order 264 with $a$ as its only corner and all twelve coordinates active. Every vertex of every nonempty proper pc-minor of $A$ is attainable as a peeling endpoint, so no proper minor is a rooted factor at any root. The double of $(A,a)$ is a cornerless ample pc-minimal obstruction of order 527 and dimension 24. More generally, the certified shrinking outputs give 24, 12, and 12 labeled rooted inputs of orders 266, 265, and 264; gluing any two roots gives a cornerless ample obstruction.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A certified ample precursor has forced first vertices $1004,748,750$; deleting the first two leaves $A$ with unique corner $a$, so it is positive but cannot peel to its root. Independent certificates give root-ending orders for all 24 elementary root-preserving images, proving rooted minimality. A stronger replay checks every one of 5,637 endpoint choices in the 36 elementary proper pc-minors; endpoint minor closure propagates this to all deeper nonempty minors and excludes every smaller rooted factor. The same certificates cover all 48 labeled inputs. The cut-vertex theorem proves every pairwise gluing forbidden. No nonroot corner exists, and the identified root is not a corner because its two coordinate blocks have no mixed square, so all outputs are cornerless. The double's 72 elementary pc-minor orders are also explicitly certified.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-rooted264-double527</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

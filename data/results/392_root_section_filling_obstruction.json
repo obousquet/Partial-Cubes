@@ -1,0 +1,12 @@
+{
+  "id": 392,
+  "short_name": "root_section_filling_obstruction",
+  "name": "Forced Overlap Prefixes Obstruct Filling a Singleton Root Section",
+  "class_ids": ["#classes/ample"],
+  "operation_ids": ["#operations/coordinate_fiber_product", "#operations/concept_deletion"],
+  "result_type": "implication",
+  "statement": "Let $H=(K\\times\\{00\\})\\cup(A\\times\\{01\\})\\cup(D\\times\\{10\\})\\cup(C\\times\\{11\\})$ be ample, with $R=A\\cap C$ and $S=D\\cap C$. Suppose each overlap has a forced nonzero corner-deletion prefix leading to a residual family whose unique corner is zero. Let $I_R,I_S,I_K$ be the old directions incident with zero in those residual overlaps and in $K$. If $H$ peels to $(0,00)$, then $I_R\\subseteq I_K$ or $I_S\\subseteq I_K$. Consequently, in a degree-two singleton-root presentation, if both residual overlap incident sets have size at least two, no ample one-concept addition adjacent to the root can enable peeling to that root; this includes every adjacent degree-three corner addition.",
+  "status": "established",
+  "proof": "In a root-ending order, stop at the first deletion among the three nonroot copies of zero and project first-destroyed edge fibers in the appropriate adjacent face. These events form a corner-deletion prefix of the selected overlap, avoid zero, and must equal its forced prefix because the residual family has zero as its unique corner. Immediately before the selected deletion, every residual direction in $I_R$ or $I_S$ supplies an old neighbor of the deleted zero copy, while both new-coordinate neighbors also remain. Its corner cube therefore requires the corresponding word in the $00$ section, proving containment in $I_K$. A single added neighbor makes $|I_K|=1$, which cannot contain either residual incident set of size at least two.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-root-section-filling-obstruction"
+}

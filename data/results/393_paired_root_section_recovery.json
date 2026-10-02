@@ -1,0 +1,14 @@
+{
+  "id": 393,
+  "short_name": "paired_root_section_recovery",
+  "name": "Paired Root Extensions Are Intrinsically Recoverable from Their Sections",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "invariant_ids": ["#invariants/shattered_complex"],
+  "operation_ids": ["#operations/coordinate_fiber_product", "#operations/pc_minor"],
+  "result_type": "recognition",
+  "statement": "Let an ample family have a marked degree-two corner root. Translate the root to zero and recover its three nontrivial sections $A,D,C$ in positions $01,10,11$. If $C\\subseteq A,D$, both side differences have size at most one, and $C$ uses every remaining coordinate, then isometry forces $A\\cap D=C$ and the exact shadow count forces $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(D)=\\operatorname{Sh}(C)$. Hence the paired-square endpoint theorem applies and all parameters are uniquely recovered up to exchanging the two root directions. Within this intrinsic type, rooted minimality is exactly rooted minimality of $(C,0)$ plus the two side endpoint-repair conditions.",
+  "status": "established",
+  "witness_ids": ["#examples/paired_root_factor_879"],
+  "proof": "The root-fixed $00$ face is connected and contains the root as an isolated vertex, so it is the singleton section. The other sections are uniquely determined. If a word lay in both side sections outside $C$, the opposite side copies would have no intermediate vertex, contradicting isometry; thus their intersection is $C$. All sections and their union are ample. Substituting these facts into the exact four-section shadow formula and using $|\\operatorname{Sh}(Z)|=|Z|$ forces the side-shadow intersection to equal $\\operatorname{Sh}(C)$. The paired root-transfer criterion then gives recovery and the rooted-minimality equivalence.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-paired-root-recovery"
+}

@@ -1,0 +1,12 @@
+{
+  "id": 396,
+  "short_name": "forced_prefix_rooted_inputs",
+  "name": "A Forced Prefix Produces Three Rooted Inputs and Six Obstructions",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/one_point_amalgam", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "For the normalized 289-concept rooted factor $C\\subseteq Q_{12}$, let $b=256$ and $H=C\\setminus\\{0\\}$. Then $(H,b)$, $(C,0)$, and $(C,b)$ are rooted factors. The first two roots are degree-three corners and the third is a degree-four noncorner. The attainable peeling endpoints of both $C$ and $H$ are exactly $C\\setminus\\{0,b\\}$, a set of 287 concepts. Pairwise one-point amalgams of these three rooted inputs, allowing repetition, give six pairwise nonisomorphic ample pc-minimal obstructions in dimension 24, of orders 575, 576, or 577 and with respectively 0, 0, 1, 0, 1, or 2 corners in the six unordered cases.",
+  "status": "established",
+  "proof": "Direct corner calculation forces every peeling of $C$ to begin $0,b$, making $b$ the unique corner of $H$. Certificates verify an ordinary order and all 24 elementary rooted-minor orders for $(H,b)$; hence it is a rooted factor. The known $(C,0)$ factor and the ample one-concept addition lemma imply rooted minimality of $(C,b)$, since the forced prefix prevents a peeling ending at $b$. Explicit orders certify all 287 other endpoints for both families. The cut-vertex theorem then proves each amalgam forbidden and gives its order. Nonroot corners survive gluing, while the common root loses corner status; the resulting order/corner-count pairs distinguish all six outputs.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-forced-prefix-rooted-inputs"
+}

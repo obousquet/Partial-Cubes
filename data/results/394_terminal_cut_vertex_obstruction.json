@@ -1,0 +1,13 @@
+{
+  "id": 394,
+  "short_name": "terminal_cut_vertex_obstruction",
+  "name": "Two Endpoint Repairs Produce a Terminal Cut-Vertex Obstruction",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/coordinate_fiber_product", "#operations/one_point_amalgam", "#operations/concept_deletion", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "Let $(C,0)$ be an irredundantly embedded rooted factor whose only corner is $0$. Let $A=C\\cup\\{\\alpha\\}$ and $D=C\\cup\\{\\delta\\}$ be distinct ample one-concept extensions such that $A,D,A\\cup D$ are ample, both extensions peel to $0$, and their shadows intersect in $\\operatorname{Sh}(C)$. The paired square construction is a rooted factor $Y$ with exactly three corners: its root and the two repair tips. Deleting either nonroot corner destroys rooted minimality. Gluing $(Y,a)$ to a disjoint copy of $(C,0)$ gives a corner-descent-terminal ample pc-minimal obstruction $X$ with a cut vertex, exactly two corners, and $|X|=4|C|+2$. It has no nontrivial replicated common-seed presentation with resolving tips.",
+  "status": "established",
+  "witness_ids": ["#examples/terminal_cut_vertex_obstruction_1158"],
+  "proof": "Paired-square transfer makes $Y$ a rooted factor and gives its exact corners after any subset of the two tips is deleted. Removing either tip turns one side section back into $C$; a new-coordinate restriction followed by contraction exposes the bad rooted minor $(C,0)$, so rooted minimality fails. The cut-vertex classification makes $X=Y\\vee C$ ample and pc-minimal outside dismantlable ampleness. The glued root is no longer a corner, leaving exactly the two tips. After either tip deletion, a proper minor is the nonpeelable double $C\\vee C$, proving terminality. Replicated common-seed constructions with resolving tips are two-connected, while $X$ has a cut vertex.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-terminal-cut-vertex"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 391,
+  "short_name": "positive_overlap_rooted_minimization",
+  "name": "Positive Overlaps Survive Rooted Minor Minimization",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/coordinate_fiber_product", "#operations/pc_minor"],
+  "result_type": "recognition",
+  "statement": "The following are equivalent: (i) some rooted factor has a degree-two corner root and, after possibly exchanging the root directions, one canonical side/opposite overlap peels to zero; (ii) some ample canonical degree-two presentation is ordinarily peelable, does not peel to its singleton root, has both new-coordinate contractions peeling to the root image, and has that overlap peeling to zero. Every presentation in (ii) has a rooted-factor minor obtained using only old-coordinate operations; its marked root remains a degree-two corner and the corresponding overlap remains root-positive. No old-coordinate minor tests are needed in (ii).",
+  "status": "established",
+  "proof": "The forward implication follows from the canonical section presentation of a rooted factor. Conversely, positive contractions force both side sections to peel to zero, so all four new-coordinate rooted images are positive. Commuting operations shows that every rooted minor using a new coordinate is positive; hence any root-negative minor retains both new coordinates. Repeatedly take root-negative elementary old-coordinate images until minimal. Ordinary peelability survives, so the terminal image is a rooted factor. Old-coordinate operations preserve the singleton root section and its two incident directions. They also preserve the identity between the image of the overlap and the intersection of the image sections: a new contraction intersection would create opposite square vertices without either intermediate vertex, contradicting isometry. Endpoint minor closure preserves root positivity of the overlap.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-positive-overlap-minimization",
+  "witness_ids": ["#examples/positive_overlap_rooted_factor_621"]
+}

@@ -1,0 +1,12 @@
+{
+  "id": 395,
+  "short_name": "rooted_minimality_along_ample_additions",
+  "name": "Rooted Minimality Persists along Ample One-Concept Additions",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/pc_minor"],
+  "result_type": "implication",
+  "statement": "Let $(H,a)$ be a rooted factor irredundantly embedded on $F$, and let $K=H\\cup\\{c\\}\\subseteq Q_F$ be ample. Then either $K$ peels to $a$, or $(K,a)$ is again a rooted factor. More generally, along any chain of ample one-concept additions on the same coordinate set starting at $H$, if the final family does not peel to $a$, every intermediate rooted family is a rooted factor.",
+  "status": "established",
+  "proof": "The added concept is a corner, so $K$ is ordinarily peelable. Every elementary root-preserving image of $H$ is a proper rooted minor and peels to the root image. The corresponding image of $K$ differs by at most one concept; if present, that concept is a nonroot corner and can be deleted before the rooted order of the image of $H$. Thus all proper rooted images of $K$ are positive. If $K$ itself is root-negative, it satisfies the rooted-factor conditions. Peeling to the old root persists after an ample one-concept addition by deleting the new corner first, so root-negativity of the final chain member forces it at every intermediate stage and induction applies.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-rooted-ample-additions"
+}

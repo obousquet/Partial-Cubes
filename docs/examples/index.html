@@ -2373,6 +2373,85 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-114" style="position:relative;">
+
+        <h3><a href="examples/nonrelative_square_wing_test.html" class="table-title-link">Positive Nonrelative Square Wings Do Not Produce a Rooted Factor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Nonrelative Square Wings Do Not Produce a Rooted Factor</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>For the normalized 289-concept core $B$, let $P=B\cup\{4096,4098\}$ and $Q=\{0,2,4096,4098\}$. Use two copies of $P$ as the side sections of a degree-two presentation, identify their copies of $Q$, and place the four possible pointed and direction-ordered copies in all ten unordered pairs.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>Each presentation has 587 concepts; there are ten pointed assemblies.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$P$ is ample and peels to both $2$ and $4098$ but has no corner outside $Q$, so it cannot peel relatively to $Q$. All ten assemblies are ample, both overlaps and both side endpoints are positive, and neither side peels relatively to its overlap. Three assemblies peel to the singleton root; the other seven are not ordinarily peelable. None is a rooted factor. Thus positive sections alone do not recover the relative hypotheses of the two-overlap transfer theorem.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-positive-overlap-square-wings</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/root_cube_retention.py; PartialCubes:papers/dismantlable-ample/research/positive_overlap_recovery_probe.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-115" style="position:relative;">
+
+        <h3><a href="examples/positive_overlap_nonminimal.html" class="table-title-link">A Positive Overlap without Rooted Minimality</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Positive Overlap without Rooted Minimality</p>
+<p><strong>Object Type:</strong> Set Family</p>
+<strong>Definition:</strong><div class="text-field"><p>Use the 291-concept ample family $P=B\cup\{4096,4098\}$ and distinguish the degree-two corner $a=4096$, whose incident directions are $1$ and $12$.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$P$ is ordinarily peelable, both side endpoints in its canonical square presentation are attainable, and one side/opposite overlap is a singleton and hence root-positive. Nevertheless $P$ cannot peel to $4096$: its only initial corners are $4096,4098$, and deleting the latter leaves the root as the only corner. It is not a rooted factor because contraction of coordinate 12 exposes the already root-negative pair $(B,0)$. This shows why positive contractions cannot be omitted from the rooted-minimization criterion.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-positive-overlap-nonminimal</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_nonminimal_control.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-116" style="position:relative;">
+
+        <h3><a href="examples/terminal_cut_vertex_obstruction_1158.html" class="table-title-link">Terminal Cut-Vertex Obstruction of Order 1158</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Cut-Vertex Obstruction of Order 1158</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Translate the certified 289-concept rooted factor $B=(G\cup\{91\})\setminus\{61,125,93\}$ by its root 29 to obtain $C$. Use repairing tips $\alpha=128$ and $\delta=290$, form their paired square rooted factor $Y$, and glue $Y$ at its root to a disjoint copy of $C$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|Y|=870$ in dimension 14; the final class has 1158 concepts, isometric dimension 26, and VC dimension four.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The final family is an ample corner-descent-terminal pc-minimal obstruction to dismantlable ampleness. It has one cut vertex, exactly two degree-four corners, root degree five, and minimum degree four, so it is its own graph three-core. Deleting the cut vertex leaves components of orders 869 and 288. Either corner deletion has the cornerless 577-concept double $C\vee C$ as a proper minor.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-terminal-cut-vertex-1158</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_terminal_cut_vertex.py; PartialCubes:forbidden_pc_minor_campaign/damp_terminal_cut_vertex_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-117" style="position:relative;">
+
+        <h3><a href="examples/paired_root_factor_879.html" class="table-title-link">Recovered Paired Root Factor with a Noncorner Core Root</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Recovered Paired Root Factor with a Noncorner Core Root</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Take the 292-concept family $H$ rooted at its noncorner vertex 29, translate that root to zero to obtain $C$, and use the two one-concept extensions by 128 and 290 as the side repairs in the paired-square construction.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>The output has 879 concepts, dimension 14, VC dimension five, and eleven corners.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>The construction is a rooted factor even though the recovered core root is not a corner. Its sections and two repair concepts are intrinsically recovered from the marked degree-two root. The certificate checks all 24 rooted elementary orders of $C$, all 28 of the output, and a complete 704-state negative graph.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-paired-root-recovery</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:forbidden_pc_minor_campaign/verify_damp_paired_root_transfer.py; PartialCubes:forbidden_pc_minor_campaign/damp_paired_root_transfer_verification.json</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-118" style="position:relative;">
+
+        <h3><a href="examples/positive_overlap_rooted_factor_621.html" class="table-title-link">Positive-Overlap Rooted Factor of Order 621</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive-Overlap Rooted Factor of Order 621</p>
+<p><strong>Object Type:</strong> Construction</p>
+<strong>Definition:</strong><div class="text-field"><p>Recover the 621-concept block $K$ from the certified 909-concept cut-vertex obstruction as in the positive-overlap rooted-factor theorem, and mark its degree-two corner root $r$.</p></div>
+<strong>Parameters:</strong><div class="text-field"><p>$|K|=621$ and dimension 25; its canonical sections have orders 331, 149, and 140, with overlaps of orders 3 and 65.</p></div>
+<strong>Properties:</strong><div class="text-field"><p>$(K,r)$ is a rooted factor. All three sections and both overlaps peel to zero, but one side does not peel relatively to its three-concept overlap. It is the concrete witness that positive overlaps survive rooted minimization and that the four-relative-order construction is not exhaustive.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor</p></div>
+<strong>Verification:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/research/positive_overlap_rooted_factor.py</p></div>
+<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
