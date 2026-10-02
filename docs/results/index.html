@@ -9748,6 +9748,116 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-586" style="position:relative;">
+
+        <h3><a href="results/one_nonconstant_row_enlargement.html" class="table-title-link">Arbitrary Enlargement of One Nonconstant Row</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Arbitrary Enlargement of One Nonconstant Row</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $H\subseteq Q_{F\cup\{z\}}$ have sections $B_0,B_1$ and contraction $C$, and let ample $D\supseteq C$. The four-row family $V(H,D)=(B_0\times\{00\})\cup(D\times\{01\})\cup(C\times\{10\})\cup(B_1\times\{11\})$ is ample and has first-coordinate reduction $H$. It peels to its $D$-row exactly when $H$ peels, and it is dismantlable ample exactly when both $H$ and $D$ are. If $H$ has full support, then $V(H,D)$ is a pc-minimal obstruction exactly when $H$ is a pc-minimal obstruction and $D$ is dismantlable ample. Marked oriented rows uniquely recover $H$ and $D$; no relative peeling $D\searrow C$ is required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Shadow counting separates supports into those using neither, one, or both new coordinates and proves ampleness. Lift a peeling of $H$ while retaining $D$: when an old corner has its layer mate, delete its constant lift; otherwise delete its $10$ lift and then its constant lift. Reduction of any relative chain recovers a peeling of $H$, yielding the exact positivity criterion. For forbidden $H$, old-coordinate minors commute with the construction, and each new-coordinate image is a peripheral expansion of positive sections, contraction, or $D$. Conversely a forbidden output has positive $D$ face and negative reduction $H$; inherited-overlap descent makes $H$ forbidden.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-one-row-enlargement</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/one_row_nonrelative_obstruction_3348.html">A 3348-Concept Row Enlargement with No Relative First Move</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-587" style="position:relative;">
+
+        <h3><a href="results/simultaneous_nonconstant_row_enlargement.html" class="table-title-link">Closed Formula for Simultaneous Row Enlargements</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Closed Formula for Simultaneous Row Enlargements</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $H\subseteq D\subseteq Q_F$ and nonempty $K\subseteq F$. Replace each $i\in K$ by an ordered pair, using the row of $H$ when no pair is $01$ and the row of $D$ otherwise. The resulting $\mathcal V_K(H,D)$ is ample, independent of the order of one-row enlargements, and is dismantlable ample exactly when $H$ and every $\pi_iD$, $i\in K$, are. If $H$ has full support, the same equivalence holds for pc-minimal obstruction status with $H$ forbidden. Its order is $\sum_{S\subseteq K}(|\pi_SH|+(2^{|S|}-1)|\pi_SD|)$. The marked output recovers $H$ and every selected projection $\pi_iD$, which determine the output although they need not determine $D$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Ordinary simultaneous block replacement of $A$ is denoted $\mathcal W_J(A)$. After coordinates $J$ have been processed, enlarge the next $01$ row of $\mathcal V_J(H,D)$ to $\mathcal W_J(\pi_iD)$. The one-row theorem produces exactly the stated rows, regardless of order, and adds precisely the condition $\pi_iD\in\mathsf{Damp}$. Induction proves ampleness and both positivity and obstruction equivalences. Grouping rows by their set $S$ of nonconstant pairs gives one $H$ row and $2^{|S|}-1$ $D$ rows, proving the order formula. Full reduction recovers $H$, while fixing pair $i$ to $01$ and reducing the others recovers $\pi_iD$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-simultaneous-row-enlargement</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nonample_projection_hull_with_ample_completion.html">Ample Projection Data Whose Maximal Intersection Is Nonample</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-588" style="position:relative;">
+
+        <h3><a href="results/one_row_enlargement_without_relative_move.html" class="table-title-link">Positive Enlarged Rows Need Not Peel to the Old Contraction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Positive Enlarged Rows Need Not Peel to the Old Contraction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>There is a cornerless $3348$-concept ample pc-minimal obstruction to dismantlable ampleness of the form $V(H,D)$, with positive enlarged row $D$ and old contraction $C\subsetneq D$, such that every corner of $D$ lies in $C$. Hence no relative peeling $D\searrow C$ can begin. The output cannot be obtained from the ordinary block replacement of $H$ by a nonempty sequence of ample one-concept additions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Use the certified $42/22$ nested pair and its rectangular obstruction. Products make $D=P'\times P$ positive and give $\operatorname{Cor}(D)\subseteq P'\times O\subseteq C$, excluding a first relative deletion. The one-row theorem gives forbiddenness. The old block replacement is cornerless and every old vertex has a block neighbour. Enlarging the $01$ row cannot create an old corner because the necessary block mate of each new row word is absent; a new word could be a corner only in $\operatorname{Cor}(D)\setminus C$, which is empty. A nonempty one-concept extension sequence would leave its last word as a corner, a contradiction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#ex:damp-one-row-nonrelative</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/one_row_nonrelative_obstruction_3348.html">A 3348-Concept Row Enlargement with No Relative First Move</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-589" style="position:relative;">
+
+        <h3><a href="results/two_row_ampleness_and_transfer_obstruction.html" class="table-title-link">Two Enlarged Rows: Exact Ampleness and Failure of Positive Transfer</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Enlarged Rows: Exact Ampleness and Failure of Positive Transfer</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $H=(B_0,B_1)$ have contraction $C$, and let arbitrary $D_0,D_1\supseteq C$. The four-row assembly $V=(B_0,D_0,D_1,B_1)$ is ample exactly when the crossed two-layer family $K=(D_1,D_0)$ is ample and $D_0\cap D_1=C$. Then the first new coordinate has reduction $H$ and contraction $K$. Positivity does not transfer from these two images: a certified $267$-concept cornerless ample obstruction has such a presentation with $|H|=59$, $|K|=208$, and $|C|=48$, while both $H$ and $K$ are dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>If $V$ is ample then its contraction $K$ is ample, and any word in $(D_0\cap D_1)\setminus C$ exposes a two-vertex diagonal square face, so the intersection is exact. Conversely, section shadow identities for $H$ and $K$ show that the four-row shadow has $|K|+|C|+|B_0\cap B_1|=|K|+|H|=|V|$ faces, proving ampleness. Reading the labelled seed supplies the stated rows, and explicit corner orders certify positivity of $H$ and $K$ while the source certificate proves that the full seed is cornerless and forbidden.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-row-transfer-obstruction</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_transfer_obstruction_267.html">A 267-Concept Two-Row Transfer Obstruction</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-590" style="position:relative;">
+
+        <h3><a href="results/two_row_single_fiber_shrink_exclusion.html" class="table-title-link">Single-Row Coordinate-Fibre Shrinking Does Not Repair the 267-Concept Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Single-Row Coordinate-Fibre Shrinking Does Not Repair the 267-Concept Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>Across the six unordered two-row coordinate presentations of the labelled $267$-concept obstruction, keep the two constant rows fixed and delete from either enlarged row one nonempty coordinate-trace fibre disjoint from their intersection. The $7148$ distinct outputs, with between one and $56$ deleted words, are all nonample. Of these, $5886$ have a corner. Each output has an explicit support that is shattered but not strongly shattered.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The source enumeration canonicalizes every eligible single-row trace-fibre deletion across all six presentations. A first checker finds no ample output by shadow cardinality and records all corner counts. An independent verifier reconstructs each output and supplies a support that is shattered without being strongly shattered; for a set family this violates ampleness. A separate positivity pass agrees on all 7,148 cases.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-row-transfer-obstruction (following bounded shrinking test)</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_transfer_obstruction_267.html">A 267-Concept Two-Row Transfer Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This excludes the stated batch deletions only. It does not cover arbitrary deletions, simultaneous changes to both rows, or repairs by insertion; the unresolved order interval remains 64 through 267.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-591" style="position:relative;">
+
+        <h3><a href="results/two_row_corner_compatibility.html" class="table-title-link">Exact Corner Criterion for an Ample Two-Row Assembly</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Corner Criterion for an Ample Two-Row Assembly</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ with $C=B_0\cup B_1=D_0\cap D_1$, define $T_x$ as the intersection of the old sections containing $x$. Its corners are exactly: constant-row vertices $(x,b,b)$ where $(x,b)$ is a corner of $H=(B_0,B_1)$ incident with the layer coordinate; and nonconstant-row vertices $(x,1-b,b)$ where $(x,b)$ is a corner of $K=(D_1,D_0)$ and either $x\notin C$ or the old projection of its corner cube lies in $T_x$. Thus $V$ is cornerless exactly when the first set is empty and every corner of $K$ lies over $C$ but fails this cube-containment test.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A constant-row word has both new-coordinate neighbours, so its full incident cube exists precisely when its old section corner cube also lies in the opposite section, which is the stated incident corner of $H$. A nonconstant-row word outside $C$ has no new-coordinate neighbours, making its corner condition identical to that in $K$. Over $C$, the new neighbours occur in each old section containing the word, and the full incident cube exists precisely when the projected $K$ corner cube lies in their intersection $T_x$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-row-corner-compatibility</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_transfer_obstruction_267.html">A 267-Concept Two-Row Transfer Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is a first-corner criterion; it does not claim that every permitted corner extends to an acyclic unique-sink orientation.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

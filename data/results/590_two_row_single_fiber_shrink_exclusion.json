@@ -1,0 +1,15 @@
+{
+  "id": 590,
+  "short_name": "two_row_single_fiber_shrink_exclusion",
+  "name": "Single-Row Coordinate-Fibre Shrinking Does Not Repair the 267-Concept Obstruction",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/conditioning"],
+  "result_type": "other",
+  "statement": "Across the six unordered two-row coordinate presentations of the labelled $267$-concept obstruction, keep the two constant rows fixed and delete from either enlarged row one nonempty coordinate-trace fibre disjoint from their intersection. The $7148$ distinct outputs, with between one and $56$ deleted words, are all nonample. Of these, $5886$ have a corner. Each output has an explicit support that is shattered but not strongly shattered.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_transfer_obstruction_267"],
+  "proof": "The source enumeration canonicalizes every eligible single-row trace-fibre deletion across all six presentations. A first checker finds no ample output by shadow cardinality and records all corner counts. An independent verifier reconstructs each output and supplies a support that is shattered without being strongly shattered; for a set family this violates ampleness. A separate positivity pass agrees on all 7,148 cases.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-row-transfer-obstruction (following bounded shrinking test)",
+  "comments": "This excludes the stated batch deletions only. It does not cover arbitrary deletions, simultaneous changes to both rows, or repairs by insertion; the unresolved order interval remains 64 through 267."
+}

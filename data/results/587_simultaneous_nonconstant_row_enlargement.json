@@ -1,0 +1,14 @@
+{
+  "id": 587,
+  "short_name": "simultaneous_nonconstant_row_enlargement",
+  "name": "Closed Formula for Simultaneous Row Enlargements",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/nonconstant_row_enlargement", "#operations/coordinate_block_replacement", "#operations/projection", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "Let nonempty ample $H\\subseteq D\\subseteq Q_F$ and nonempty $K\\subseteq F$. Replace each $i\\in K$ by an ordered pair, using the row of $H$ when no pair is $01$ and the row of $D$ otherwise. The resulting $\\mathcal V_K(H,D)$ is ample, independent of the order of one-row enlargements, and is dismantlable ample exactly when $H$ and every $\\pi_iD$, $i\\in K$, are. If $H$ has full support, the same equivalence holds for pc-minimal obstruction status with $H$ forbidden. Its order is $\\sum_{S\\subseteq K}(|\\pi_SH|+(2^{|S|}-1)|\\pi_SD|)$. The marked output recovers $H$ and every selected projection $\\pi_iD$, which determine the output although they need not determine $D$.",
+  "status": "established",
+  "witness_ids": ["#examples/nonample_projection_hull_with_ample_completion"],
+  "proof": "Ordinary simultaneous block replacement of $A$ is denoted $\\mathcal W_J(A)$. After coordinates $J$ have been processed, enlarge the next $01$ row of $\\mathcal V_J(H,D)$ to $\\mathcal W_J(\\pi_iD)$. The one-row theorem produces exactly the stated rows, regardless of order, and adds precisely the condition $\\pi_iD\\in\\mathsf{Damp}$. Induction proves ampleness and both positivity and obstruction equivalences. Grouping rows by their set $S$ of nonconstant pairs gives one $H$ row and $2^{|S|}-1$ $D$ rows, proving the order formula. Full reduction recovers $H$, while fixing pair $i$ to $01$ and reducing the others recovers $\\pi_iD$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-simultaneous-row-enlargement"
+}

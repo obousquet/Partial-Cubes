@@ -1,0 +1,14 @@
+{
+  "id": 586,
+  "short_name": "one_nonconstant_row_enlargement",
+  "name": "Arbitrary Enlargement of One Nonconstant Row",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/nonconstant_row_enlargement", "#operations/full_reduction", "#operations/peripheral_expansion", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "Let nonempty ample $H\\subseteq Q_{F\\cup\\{z\\}}$ have sections $B_0,B_1$ and contraction $C$, and let ample $D\\supseteq C$. The four-row family $V(H,D)=(B_0\\times\\{00\\})\\cup(D\\times\\{01\\})\\cup(C\\times\\{10\\})\\cup(B_1\\times\\{11\\})$ is ample and has first-coordinate reduction $H$. It peels to its $D$-row exactly when $H$ peels, and it is dismantlable ample exactly when both $H$ and $D$ are. If $H$ has full support, then $V(H,D)$ is a pc-minimal obstruction exactly when $H$ is a pc-minimal obstruction and $D$ is dismantlable ample. Marked oriented rows uniquely recover $H$ and $D$; no relative peeling $D\\searrow C$ is required.",
+  "status": "established",
+  "witness_ids": ["#examples/one_row_nonrelative_obstruction_3348"],
+  "proof": "Shadow counting separates supports into those using neither, one, or both new coordinates and proves ampleness. Lift a peeling of $H$ while retaining $D$: when an old corner has its layer mate, delete its constant lift; otherwise delete its $10$ lift and then its constant lift. Reduction of any relative chain recovers a peeling of $H$, yielding the exact positivity criterion. For forbidden $H$, old-coordinate minors commute with the construction, and each new-coordinate image is a peripheral expansion of positive sections, contraction, or $D$. Conversely a forbidden output has positive $D$ face and negative reduction $H$; inherited-overlap descent makes $H$ forbidden.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-one-row-enlargement"
+}

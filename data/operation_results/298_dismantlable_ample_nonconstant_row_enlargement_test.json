@@ -1,0 +1,14 @@
+{
+  "id": 298,
+  "short_name": "dismantlable_ample_nonconstant_row_enlargement_test",
+  "name": "Exact Dismantlable-Ample Test for Nonconstant-Row Enlargement",
+  "class_id": "#classes/dismantlable_ample",
+  "operation_id": "#operations/nonconstant_row_enlargement",
+  "result_type": "preserves_between",
+  "target_class_id": "#classes/dismantlable_ample",
+  "status": "established",
+  "statement": "For nested ample input data, $V(H,D)$ is dismantlable ample exactly when both $H$ and $D$ are dismantlable ample. Moreover $V(H,D)$ peels relatively to its enlarged $D$-row exactly when $H$ peels.",
+  "proof": "Lift a peeling of $H$ while retaining the $D$-row: an old corner with a mate deletes one constant-row word, while a corner without a mate deletes its $10$ lift and then its constant lift. This leaves the $D$-row. Conversely reduction in the first new coordinate maps any such relative chain to a peeling of $H$. Appending a peeling of $D$ proves sufficiency, while the $D$ face and the $H$ reduction prove necessity.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-one-row-enlargement"
+}

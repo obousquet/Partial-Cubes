@@ -1,0 +1,14 @@
+{
+  "id": 588,
+  "short_name": "one_row_enlargement_without_relative_move",
+  "name": "Positive Enlarged Rows Need Not Peel to the Old Contraction",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/nonconstant_row_enlargement", "#operations/concept_deletion", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "There is a cornerless $3348$-concept ample pc-minimal obstruction to dismantlable ampleness of the form $V(H,D)$, with positive enlarged row $D$ and old contraction $C\\subsetneq D$, such that every corner of $D$ lies in $C$. Hence no relative peeling $D\\searrow C$ can begin. The output cannot be obtained from the ordinary block replacement of $H$ by a nonempty sequence of ample one-concept additions.",
+  "status": "established",
+  "witness_ids": ["#examples/one_row_nonrelative_obstruction_3348"],
+  "proof": "Use the certified $42/22$ nested pair and its rectangular obstruction. Products make $D=P'\\times P$ positive and give $\\operatorname{Cor}(D)\\subseteq P'\\times O\\subseteq C$, excluding a first relative deletion. The one-row theorem gives forbiddenness. The old block replacement is cornerless and every old vertex has a block neighbour. Enlarging the $01$ row cannot create an old corner because the necessary block mate of each new row word is absent; a new word could be a corner only in $\\operatorname{Cor}(D)\\setminus C$, which is empty. A nonempty one-concept extension sequence would leave its last word as a corner, a contradiction.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#ex:damp-one-row-nonrelative"
+}

@@ -1,0 +1,15 @@
+{
+  "id": 591,
+  "short_name": "two_row_corner_compatibility",
+  "name": "Exact Corner Criterion for an Ample Two-Row Assembly",
+  "class_ids": ["#classes/ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/conditioning", "#operations/full_reduction"],
+  "result_type": "recognition",
+  "statement": "In an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ with $C=B_0\\cup B_1=D_0\\cap D_1$, define $T_x$ as the intersection of the old sections containing $x$. Its corners are exactly: constant-row vertices $(x,b,b)$ where $(x,b)$ is a corner of $H=(B_0,B_1)$ incident with the layer coordinate; and nonconstant-row vertices $(x,1-b,b)$ where $(x,b)$ is a corner of $K=(D_1,D_0)$ and either $x\\notin C$ or the old projection of its corner cube lies in $T_x$. Thus $V$ is cornerless exactly when the first set is empty and every corner of $K$ lies over $C$ but fails this cube-containment test.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_transfer_obstruction_267"],
+  "proof": "A constant-row word has both new-coordinate neighbours, so its full incident cube exists precisely when its old section corner cube also lies in the opposite section, which is the stated incident corner of $H$. A nonconstant-row word outside $C$ has no new-coordinate neighbours, making its corner condition identical to that in $K$. Over $C$, the new neighbours occur in each old section containing the word, and the full incident cube exists precisely when the projected $K$ corner cube lies in their intersection $T_x$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-two-row-corner-compatibility",
+  "comments": "This is a first-corner criterion; it does not claim that every permitted corner extends to an acyclic unique-sink orientation."
+}

@@ -1,0 +1,14 @@
+{
+  "id": 589,
+  "short_name": "two_row_ampleness_and_transfer_obstruction",
+  "name": "Two Enlarged Rows: Exact Ampleness and Failure of Positive Transfer",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/full_reduction", "#operations/conditioning"],
+  "result_type": "recognition",
+  "statement": "Let ample $H=(B_0,B_1)$ have contraction $C$, and let arbitrary $D_0,D_1\\supseteq C$. The four-row assembly $V=(B_0,D_0,D_1,B_1)$ is ample exactly when the crossed two-layer family $K=(D_1,D_0)$ is ample and $D_0\\cap D_1=C$. Then the first new coordinate has reduction $H$ and contraction $K$. Positivity does not transfer from these two images: a certified $267$-concept cornerless ample obstruction has such a presentation with $|H|=59$, $|K|=208$, and $|C|=48$, while both $H$ and $K$ are dismantlable ample.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_transfer_obstruction_267"],
+  "proof": "If $V$ is ample then its contraction $K$ is ample, and any word in $(D_0\\cap D_1)\\setminus C$ exposes a two-vertex diagonal square face, so the intersection is exact. Conversely, section shadow identities for $H$ and $K$ show that the four-row shadow has $|K|+|C|+|B_0\\cap B_1|=|K|+|H|=|V|$ faces, proving ampleness. Reading the labelled seed supplies the stated rows, and explicit corner orders certify positivity of $H$ and $K$ while the source certificate proves that the full seed is cornerless and forbidden.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-two-row-transfer-obstruction"
+}

@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1143,
     "label_occurrences": 1167,
-    "covered": 689,
-    "uncovered": 454,
-    "proof_source_records": 1834
+    "covered": 694,
+    "uncovered": 449,
+    "proof_source_records": 1849
   },
   "by_workspace": {
     "ample-corners": {
@@ -28,9 +28,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 255,
+      "covered": 260,
       "total": 683,
-      "uncovered": 428
+      "uncovered": 423
     },
     "gluing": {
       "covered": 20,
@@ -5705,7 +5705,7 @@
       "label": "cor:damp-simultaneous-row-enlargement",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -5715,7 +5715,9 @@
           "line": 20440
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/587_simultaneous_nonconstant_row_enlargement.json"
+      ]
     },
     {
       "label": "cor:damp-six-coordinate-corner-bound",
@@ -6740,7 +6742,7 @@
       "label": "ex:damp-one-row-nonrelative",
       "prefix": "ex",
       "environment": "remark",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -6750,7 +6752,10 @@
           "line": 20570
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/170_one_row_nonrelative_obstruction_3348.json",
+        "data/results/588_one_row_enlargement_without_relative_move.json"
+      ]
     },
     {
       "label": "ex:damp-quadratic-score-contraction",
@@ -8681,7 +8686,7 @@
       "label": "lem:damp-two-row-corner-compatibility",
       "prefix": "lem",
       "environment": "lemma",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -8691,7 +8696,9 @@
           "line": 20688
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/591_two_row_corner_compatibility.json"
+      ]
     },
     {
       "label": "lem:damp-two-row-corner-deletion-factorization",
@@ -9075,6 +9082,7 @@
         }
       ],
       "covered_by": [
+        "data/operation_results/296_dismantlable_ample_coordinate_block_replacement_closed.json",
         "data/results/581_coordinate_block_relative_transfer.json"
       ]
     },
@@ -13004,7 +13012,7 @@
       "label": "prop:damp-two-row-transfer-obstruction",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -13014,7 +13022,10 @@
           "line": 20611
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/examples/171_two_row_transfer_obstruction_267.json",
+        "data/results/589_two_row_ampleness_and_transfer_obstruction.json"
+      ]
     },
     {
       "label": "prop:damp-two-sided-progressive-synchronization",
@@ -13623,6 +13634,8 @@
         }
       ],
       "covered_by": [
+        "data/operation_results/295_ample_coordinate_block_replacement_closed.json",
+        "data/operations/026_coordinate_block_replacement.json",
         "data/results/580_coordinate_block_replacement.json"
       ]
     },
@@ -14168,7 +14181,7 @@
       "label": "thm:damp-one-row-enlargement",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -14178,7 +14191,12 @@
           "line": 20330
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/operation_results/297_ample_nonconstant_row_enlargement_closed.json",
+        "data/operation_results/298_dismantlable_ample_nonconstant_row_enlargement_test.json",
+        "data/operations/027_nonconstant_row_enlargement.json",
+        "data/results/586_one_nonconstant_row_enlargement.json"
+      ]
     },
     {
       "label": "thm:damp-paired-one-hole-cornerless-gluing",

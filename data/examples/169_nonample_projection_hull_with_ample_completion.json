@@ -1,0 +1,12 @@
+{
+  "id": 169,
+  "short_name": "nonample_projection_hull_with_ample_completion",
+  "name": "Ample Projection Data Whose Maximal Intersection Is Nonample",
+  "object_type": "set_family",
+  "definition": "In integer-encoded $Q_4$ with coordinate zero least significant, take $D=Q_4\\setminus\\{0,1,3,7,15\\}$ and selected coordinates $K=\\{0,3\\}$.",
+  "parameters": "$D$ has $11$ concepts and shatters exactly the eleven supports of size at most two.",
+  "properties": "$D$ is ample. The largest family with the same selected one-coordinate projections is $\\bigcap_{i\\in K}\\pi_i^{-1}(\\pi_iD)=D\\cup\\{3\\}$, which has $12$ vertices but $13$ shattered supports and is therefore nonample. Thus ampleness of this maximal intersection is not a necessary test for the existence of an ample common completion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-simultaneous-row-enlargement (following recovery limitation)",
+  "verification": "migration/certificates/142_dismantlable_ample_row_enlargements/papers/dismantlable-ample/research/simultaneous_row_enlargement.py"
+}
