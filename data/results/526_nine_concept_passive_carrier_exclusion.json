@@ -1,0 +1,17 @@
+{
+  "id": 526,
+  "short_name": "nine_concept_passive_carrier_exclusion",
+  "name": "Nine-Concept Passive-Carrier Exclusion",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/relative_corner_threshold"
+  ],
+  "result_type": "invariant_law",
+  "statement": "There is no nonempty trapped inclusion $K\\subsetneq A$ of dismantlable ample families with $\\operatorname{Cor}(A)\\subseteq K$ and $|A\\setminus K|=9$. Consequently, $10\\le\\rho_{\\mathsf{Damp}}\\le12$.",
+  "status": "established",
+  "proof": "Choose a maximal proper dismantlable-ample intermediate family. Its nine residual concepts are doubly blocked, induce a connected cube graph of minimum degree two, and satisfy the local passive-carrier rules. Among 160 connected bipartite graph types of order nine, ten admit induced-cube embeddings and yield thirteen coordinate-coloured profiles. The degree-two isolated-marker and cross-carrier checks exclude ten, leaving only active profiles 5.1, 8.1, and 9.1. For each survivor, replace every actual passive support by its down-set in the nine-support inclusion preorder; this preserves exactly all inclusions and equalities needed by a relaxation encoding support distinctness, residual carrier depth, compatible full-cube carriers, isolated degree-two markers, and the degree-three two-shore dichotomy. All three CNFs are unsatisfiable. Their independently checked DRAT cores contain no RAT lemmas and have respectively 9,796,884, 6,854,743, and 7,636,141 resolution steps. Thus no genuine terminal interval realizes a surviving profile. The twelve-concept trapped interval supplies the upper bound.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-nine-concept-passive-carrier-exclusion; database certificate migration/certificates/131_dismantlable_ample_nine_concept_threshold/verify_damp_nine_passive_carrier_proofs.py",
+  "comments": "The verified CNFs have 6,366 variables and 71,937 clauses for profile 5.1, 6,615 variables and 76,490 clauses for profile 8.1, and 6,627 variables and 74,647 clauses for profile 9.1. The aggregate mathematical digest is 54b27131c083db9074d7c79ffcb303de8a8b36fe6d0c5de2ab6edd3c4f937d8b."
+}

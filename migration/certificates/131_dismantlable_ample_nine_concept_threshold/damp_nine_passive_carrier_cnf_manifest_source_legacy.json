@@ -1,0 +1,69 @@
+{
+  "claim": "The three coordinate-coloured nine-concept profiles surviving the degree-two carrier reduction admit no passive-coordinate support system satisfying double blocking, the mixed cross-carrier cube law, and the degree-three two-shore dichotomy.",
+  "local_certificates": {
+    "degree_three_dichotomy": {
+      "digest": "51a1cbfec7834c283c3a73e23c8df9f3cf7ce22852d0e9e8102665934cf86fc0",
+      "script": "verify_damp_degree_three_two_shore_dichotomy.py",
+      "script_sha256": "cb0ac7babbe0fc22f52886ce763c8bef1646c38ec4b0c2a13c29e1f5063c7975"
+    },
+    "degree_two_frontier": {
+      "digest": "e5ea4fb30cb6611290a6555182a2af36dbd1339598d921ba1b04f37356b114ea",
+      "script": "verify_damp_nine_degree_two_carrier_frontier.py",
+      "script_sha256": "6e0c4cc4b5815038e32cd7fc9453561d77bb1f83f33ee3936f7d19e9933a0d5f"
+    }
+  },
+  "profiles": [
+    {
+      "clauses": 71937,
+      "cnf": "damp_nine_passive_carrier_5_1.cnf",
+      "cnf_sha256": "6f3121bb6da139dae02ed6cbe01d9438887e0183c6f7a3452d4da093b3364f88",
+      "core_proof": "damp_nine_passive_carrier_5_1_core.drat",
+      "core_proof_bytes": 20159445,
+      "core_proof_sha256": "4eceb548869d4dab804451f7ec6e79ba4f88f72d09c51276e88b9a24cecd011f",
+      "generator_record": "damp_nine_passive_carrier_5_1.json",
+      "profile": "5.1",
+      "smt2_sha256": "ec70d0a7749a8dacae6d2d3466d405de658a46e53dde72f72d7ec4c26a714196",
+      "variables": 6366
+    },
+    {
+      "clauses": 76490,
+      "cnf": "damp_nine_passive_carrier_8_1.cnf",
+      "cnf_sha256": "f1a0cd29a047a980dce0c15eb0bede71d3f4eaa2ce03300f3717df40461554af",
+      "core_proof": "damp_nine_passive_carrier_8_1_core.drat",
+      "core_proof_bytes": 15081566,
+      "core_proof_sha256": "bffdf56936c7f8e21ed6cb02fd73b058609159f0b9417b017c82514468466c32",
+      "generator_record": "damp_nine_passive_carrier_8_1.json",
+      "profile": "8.1",
+      "smt2_sha256": "c88c41894ce3c2f2aa754586fbbb68427096f4d48845187de367e2a200a57182",
+      "variables": 6615
+    },
+    {
+      "clauses": 74647,
+      "cnf": "damp_nine_passive_carrier_9_1.cnf",
+      "cnf_sha256": "dc681f07df4af4568633272cfb7892323e81e0b366e70cd9496f2fe16e735d29",
+      "core_proof": "damp_nine_passive_carrier_9_1_core.drat",
+      "core_proof_bytes": 18314155,
+      "core_proof_sha256": "47f0124ac0aef9d6780365da3b6448512b5bcb291e9b1b43ff33e7be0f2d1290",
+      "generator_record": "damp_nine_passive_carrier_9_1.json",
+      "profile": "9.1",
+      "smt2_sha256": "cec322112239961c6c2461bb8967f52c77e357ce77d766547f453fa04759f953",
+      "variables": 6627
+    }
+  ],
+  "schema": "damp-nine-passive-carrier-cnf-v1",
+  "scope": "all passive-coordinate realizations of the thirteen coordinate-coloured connected induced-cube graphs on nine vertices with minimum residual degree two",
+  "sources": [
+    {
+      "file": "enumerate_damp_nine_relative_graphs.py",
+      "sha256": "a460c812b8f1d999e3153e626b93688daa237c86fe7704e2ef479a8332a89a6f"
+    },
+    {
+      "file": "enumerate_damp_nine_colored_embeddings.py",
+      "sha256": "35a7f51a5bc3686e0075e577b0ea1fdb9751281462052c21ffd61df9c3b6cba3"
+    },
+    {
+      "file": "solve_damp_nine_passive_carrier_cnf.py",
+      "sha256": "dcc3e3ac78bf01acf07f2ee872125ccb174bf85c6267eedf3dff7dd4e01987a5"
+    }
+  ]
+}

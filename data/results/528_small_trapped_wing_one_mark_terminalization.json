@@ -1,0 +1,14 @@
+{
+  "id": 528,
+  "short_name": "small_trapped_wing_one_mark_terminalization",
+  "name": "Small Trapped Wings Need at Most One Marked Synchronization",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $B\\subsetneq A$ be ample with $\\operatorname{Cor}(A)\\subseteq B$ and $|A\\setminus B|\\le11$, and suppose every ample intermediate family belongs to $\\mathsf{Damp}$. Then there is an ample $C$ with $B\\subseteq C\\subsetneq A$ and $|C\\setminus B|\\le1$ such that $R=A\\setminus C$ has order ten or eleven, every $r\\in R$ is blocked under both addition to $C$ and deletion from $A$, and the graph induced by $R$ is two-connected. Thus an order-ten trapped wing is terminal; an order-eleven wing is terminal or has a terminal ten-concept core above one marked ample addition.",
+  "status": "established",
+  "proof": "Choose $C$ maximal among proper ample intermediate families. Maximality blocks every one-concept addition $C\\cup\\{r\\}$, while an ample deletion $A\\setminus\\{r\\}$ would make $r$ a corner of $A$ outside $B$, so every residual concept is doubly blocked. Both endpoints lie in $\\mathsf{Damp}$ and form a trapped pair. The relative threshold gives $10\\le|R|\\le11$, hence $|C\\setminus B|\\le1$. The terminal cut-layer theorem through eleven then makes the residual graph two-connected.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-small-trapped-wing-one-mark-terminalization"
+}

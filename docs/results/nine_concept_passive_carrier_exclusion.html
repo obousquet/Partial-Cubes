@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-66" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-526" style="position:relative;">
 
-        <h3><a href="invariants/relative_corner_threshold.html" class="table-title-link">Dismantlable-Ample Relative Corner Threshold</a></h3>
+        <h3><a href="results/nine_concept_passive_carrier_exclusion.html" class="table-title-link">Nine-Concept Passive-Carrier Exclusion</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Dismantlable-Ample Relative Corner Threshold</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\rho_{\mathsf{Damp}}">
-            \[\rho_{\mathsf{Damp}}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>The minimum of $|A\setminus B|$ over nonempty proper inclusions $B\subsetneq A$ of dismantlable ample families for which every corner of $A$ lies in $B$. The value is $+\infty$ if no such pair exists.</p></div>
+        <p><strong>Name: </strong>Nine-Concept Passive-Carrier Exclusion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>There is no nonempty trapped inclusion $K\subsetneq A$ of dismantlable ample families with $\operatorname{Cor}(A)\subseteq K$ and $|A\setminus K|=9$. Consequently, $10\le\rho_{\mathsf{Damp}}\le12$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></p>
-<p><strong>Codomain: </strong>$\mathbb N\cup\{+\infty\}$</p>
-<strong>Normalization:</strong><div class="text-field"><p>The difference counts concepts; constant coordinates and displayed hypercube dimension do not affect the value.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>This is a class-level extremal threshold. It converts lower bounds for trapped dismantlable-ample intervals into lower bounds for cornerless ample families.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#eq:damp-relative-corner-threshold</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/relative_corner_threshold_upper_twelve.html'>Relative Corner Threshold Is at Most Twelve</a></li><li><a href='invariant_values/relative_corner_threshold_lower_ten.html'>Relative Corner Threshold Is at Least Ten</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/two_wing_relative_corner_bound.html'>Two-Wing Bound from the Relative Corner Threshold</a></li><li><a href='results/twelve_concept_trapped_interval.html'>A Twelve-Concept Trapped Dismantlable-Ample Interval</a></li><li><a href='results/octahedral_support_sphere_of_sharp_interval.html'>The Twelve-Concept Interval Has an Octahedral Support Sphere</a></li><li><a href='results/below_forty_two_arm_reduction.html'>Cornerless Ample Obstructions Below Forty Reduce to Two-Arm Holonomy</a></li><li><a href='results/nine_concept_passive_carrier_exclusion.html'>Nine-Concept Passive-Carrier Exclusion</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>Choose a maximal proper dismantlable-ample intermediate family. Its nine residual concepts are doubly blocked, induce a connected cube graph of minimum degree two, and satisfy the local passive-carrier rules. Among 160 connected bipartite graph types of order nine, ten admit induced-cube embeddings and yield thirteen coordinate-coloured profiles. The degree-two isolated-marker and cross-carrier checks exclude ten, leaving only active profiles 5.1, 8.1, and 9.1. For each survivor, replace every actual passive support by its down-set in the nine-support inclusion preorder; this preserves exactly all inclusions and equalities needed by a relaxation encoding support distinctness, residual carrier depth, compatible full-cube carriers, isolated degree-two markers, and the degree-three two-shore dichotomy. All three CNFs are unsatisfiable. Their independently checked DRAT cores contain no RAT lemmas and have respectively 9,796,884, 6,854,743, and 7,636,141 resolution steps. Thus no genuine terminal interval realizes a surviving profile. The twelve-concept trapped interval supplies the upper bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-nine-concept-passive-carrier-exclusion; database certificate migration/certificates/131_dismantlable_ample_nine_concept_threshold/verify_damp_nine_passive_carrier_proofs.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The verified CNFs have 6,366 variables and 71,937 clauses for profile 5.1, 6,615 variables and 76,490 clauses for profile 8.1, and 6,627 variables and 74,647 clauses for profile 9.1. The aggregate mathematical digest is 54b27131c083db9074d7c79ffcb303de8a8b36fe6d0c5de2ab6edd3c4f937d8b.</p></div>
 
         </div>
     </div>

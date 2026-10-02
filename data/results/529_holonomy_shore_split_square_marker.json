@@ -1,0 +1,16 @@
+{
+  "id": 529,
+  "short_name": "holonomy_shore_split_square_marker",
+  "name": "A Holonomy Shore Has a Contracted Split-Square Marker",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection"
+  ],
+  "result_type": "implication",
+  "statement": "Let $K\\subsetneq A$ be dismantlable ample, put $D=A\\setminus K$, suppose no concept of $D$ can be adjoined amply to $K$, and assume $|D|\\le11$. If coordinate $z$ is constant on $D$ and its shore $S_z=\\{d\\in D:d^{\\oplus z}\\in K\\}$ satisfies $2\\le|S_z|<|D|$, then after contracting $z$ some image of $u\\in D\\setminus S_z$ can be adjoined amply to $\\pi_zK$. It cannot lift to $K$; consequently an active edge $uu^{\\oplus f}$ crosses into $S_z$ and its opposite square is split, with $(u^{\\oplus f})^{\\oplus z}\\in K$ but $u^{\\oplus z}\\notin A$.",
+  "status": "established",
+  "proof": "Projection identifies the relative concepts of $\\pi_zK\\subsetneq\\pi_zA$ with the distinct images of $D\\setminus S_z$, whose number lies between one and nine. Both projected endpoints are dismantlable ample, so the sub-ten first-concept lemma supplies an addable projected root $u$. Its lift is blocked in $K$. The wrong-side witness theorem applies because the other member of its $z$-fibre lies neither in $D$, where $z$ is constant, nor in $K$. It yields a direction $f$ with $u^{\\oplus f}\\in D$ and $u^{\\oplus\\{z,f\\}}\\in K$, which is exactly the crossing edge and split square.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-holonomy-shore-split-square-marker"
+}

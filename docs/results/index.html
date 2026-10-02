@@ -8738,6 +8738,84 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-526" style="position:relative;">
+
+        <h3><a href="results/nine_concept_passive_carrier_exclusion.html" class="table-title-link">Nine-Concept Passive-Carrier Exclusion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nine-Concept Passive-Carrier Exclusion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/relative_corner_threshold.html">Dismantlable-Ample Relative Corner Threshold</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>There is no nonempty trapped inclusion $K\subsetneq A$ of dismantlable ample families with $\operatorname{Cor}(A)\subseteq K$ and $|A\setminus K|=9$. Consequently, $10\le\rho_{\mathsf{Damp}}\le12$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose a maximal proper dismantlable-ample intermediate family. Its nine residual concepts are doubly blocked, induce a connected cube graph of minimum degree two, and satisfy the local passive-carrier rules. Among 160 connected bipartite graph types of order nine, ten admit induced-cube embeddings and yield thirteen coordinate-coloured profiles. The degree-two isolated-marker and cross-carrier checks exclude ten, leaving only active profiles 5.1, 8.1, and 9.1. For each survivor, replace every actual passive support by its down-set in the nine-support inclusion preorder; this preserves exactly all inclusions and equalities needed by a relaxation encoding support distinctness, residual carrier depth, compatible full-cube carriers, isolated degree-two markers, and the degree-three two-shore dichotomy. All three CNFs are unsatisfiable. Their independently checked DRAT cores contain no RAT lemmas and have respectively 9,796,884, 6,854,743, and 7,636,141 resolution steps. Thus no genuine terminal interval realizes a surviving profile. The twelve-concept trapped interval supplies the upper bound.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-nine-concept-passive-carrier-exclusion; database certificate migration/certificates/131_dismantlable_ample_nine_concept_threshold/verify_damp_nine_passive_carrier_proofs.py</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The verified CNFs have 6,366 variables and 71,937 clauses for profile 5.1, 6,615 variables and 76,490 clauses for profile 8.1, and 6,627 variables and 74,647 clauses for profile 9.1. The aggregate mathematical digest is 54b27131c083db9074d7c79ffcb303de8a8b36fe6d0c5de2ab6edd3c4f937d8b.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-527" style="position:relative;">
+
+        <h3><a href="results/subten_interval_first_concept.html" class="table-title-link">Every Sub-Ten Dismantlable-Ample Interval Has a First Concept</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Sub-Ten Dismantlable-Ample Interval Has a First Concept</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If $C\subsetneq H$ are dismantlable ample and $|H\setminus C|\le9$, then some $h\in H\setminus C$ satisfies $C\cup\{h\}\in\mathsf{Damp}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Otherwise choose a dismantlable-ample $J$ inclusion-minimal with $C\subsetneq J\subseteq H$. No corner of $J$ can lie outside $C$: deleting such a corner either gives the forbidden first extension of $C$ or contradicts minimality of $J$. Hence $\operatorname{Cor}(J)\subseteq C$ and $1\le|J\setminus C|\le9$, producing a trapped pair below the established bound $\rho_{\mathsf{Damp}}\ge10$.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-subten-interval-first-concept</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-528" style="position:relative;">
+
+        <h3><a href="results/small_trapped_wing_one_mark_terminalization.html" class="table-title-link">Small Trapped Wings Need at Most One Marked Synchronization</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Small Trapped Wings Need at Most One Marked Synchronization</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $B\subsetneq A$ be ample with $\operatorname{Cor}(A)\subseteq B$ and $|A\setminus B|\le11$, and suppose every ample intermediate family belongs to $\mathsf{Damp}$. Then there is an ample $C$ with $B\subseteq C\subsetneq A$ and $|C\setminus B|\le1$ such that $R=A\setminus C$ has order ten or eleven, every $r\in R$ is blocked under both addition to $C$ and deletion from $A$, and the graph induced by $R$ is two-connected. Thus an order-ten trapped wing is terminal; an order-eleven wing is terminal or has a terminal ten-concept core above one marked ample addition.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Choose $C$ maximal among proper ample intermediate families. Maximality blocks every one-concept addition $C\cup\{r\}$, while an ample deletion $A\setminus\{r\}$ would make $r$ a corner of $A$ outside $B$, so every residual concept is doubly blocked. Both endpoints lie in $\mathsf{Damp}$ and form a trapped pair. The relative threshold gives $10\le|R|\le11$, hence $|C\setminus B|\le1$. The terminal cut-layer theorem through eleven then makes the residual graph two-connected.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-small-trapped-wing-one-mark-terminalization</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-529" style="position:relative;">
+
+        <h3><a href="results/holonomy_shore_split_square_marker.html" class="table-title-link">A Holonomy Shore Has a Contracted Split-Square Marker</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Holonomy Shore Has a Contracted Split-Square Marker</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K\subsetneq A$ be dismantlable ample, put $D=A\setminus K$, suppose no concept of $D$ can be adjoined amply to $K$, and assume $|D|\le11$. If coordinate $z$ is constant on $D$ and its shore $S_z=\{d\in D:d^{\oplus z}\in K\}$ satisfies $2\le|S_z|<|D|$, then after contracting $z$ some image of $u\in D\setminus S_z$ can be adjoined amply to $\pi_zK$. It cannot lift to $K$; consequently an active edge $uu^{\oplus f}$ crosses into $S_z$ and its opposite square is split, with $(u^{\oplus f})^{\oplus z}\in K$ but $u^{\oplus z}\notin A$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Projection identifies the relative concepts of $\pi_zK\subsetneq\pi_zA$ with the distinct images of $D\setminus S_z$, whose number lies between one and nine. Both projected endpoints are dismantlable ample, so the sub-ten first-concept lemma supplies an addable projected root $u$. Its lift is blocked in $K$. The wrong-side witness theorem applies because the other member of its $z$-fibre lies neither in $D$, where $z$ is constant, nor in $K$. It yields a direction $f$ with $u^{\oplus f}\in D$ and $u^{\oplus\{z,f\}}\in K$, which is exactly the crossing edge and split square.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-holonomy-shore-split-square-marker</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-530" style="position:relative;">
+
+        <h3><a href="results/lower_gate_holonomy_split_squares.html" class="table-title-link">Lower Gate Holonomy Is Carried by Split Squares</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Lower Gate Holonomy Is Carried by Split Squares</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>In a two-sided passive gate-holonomy system from a dismantlable-ample terminal interval of order at most eleven, every shore on a directed lower-gate cycle has at least two concepts and carries a split-square marker. Thus the residual obstruction is a cyclic system of oriented split squares rather than arbitrary boundary subsets.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a cyclic shore $S$, its predecessor shore has a lower root blocked by $S$. The shore-root lemma puts one lower root in $S$, while the common-owner theorem puts a distinct non-root owner there, so $|S|\ge2$. Such a shore is proper in the residual set by construction. The contracted split-square marker theorem therefore applies to every cyclic shore.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-lower-gate-holonomy-split-squares</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

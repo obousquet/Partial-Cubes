@@ -1,0 +1,24 @@
+{
+  "kind": "certificate_report_reconciliation",
+  "source_report": "damp_nine_passive_carrier_proof_verification_source_legacy.json",
+  "database_replay_report": "damp_nine_passive_carrier_proof_verification.json",
+  "mathematical_sha256": "54b27131c083db9074d7c79ffcb303de8a8b36fe6d0c5de2ab6edd3c4f937d8b",
+  "mathematics_equal_after_removing_runtime_seconds": true,
+  "source_environment": {
+    "manifest_sha256": "e1401fa2f791a21b838765e857c761cdd3a0464818a7fe95eec8adc5dc3ba232",
+    "checker_binary_sha256": "948323671a4d75637fd409579faec86758d65519d5e1a5b1e88c00c144fa627f"
+  },
+  "database_environment": {
+    "manifest_sha256": "c4a483dbf3b1fd2c79ce136bd16507cdd81bf67beb1f8bfc3c302355e220a592",
+    "checker_source": "drat-trim.c",
+    "checker_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+    "checker_binary_sha256": "44158a6f005ebb562c2c71d0c8190b485269caf0b7d918a8881c276aa51f0310"
+  },
+  "manifest_change": "The database copies two YangDim enumeration dependencies into the certificate directory and changes only the corresponding local import paths and source hashes. Original scripts and the original manifest are preserved with the source_legacy suffix.",
+  "verification": {
+    "profile_5_1": "VERIFIED",
+    "profile_8_1": "VERIFIED",
+    "profile_9_1": "VERIFIED",
+    "rat_lemmas": 0
+  }
+}

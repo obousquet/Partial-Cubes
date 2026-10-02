@@ -1,0 +1,13 @@
+{
+  "id": 527,
+  "short_name": "subten_interval_first_concept",
+  "name": "Every Sub-Ten Dismantlable-Ample Interval Has a First Concept",
+  "class_ids": [
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "implication",
+  "statement": "If $C\\subsetneq H$ are dismantlable ample and $|H\\setminus C|\\le9$, then some $h\\in H\\setminus C$ satisfies $C\\cup\\{h\\}\\in\\mathsf{Damp}$.",
+  "status": "established",
+  "proof": "Otherwise choose a dismantlable-ample $J$ inclusion-minimal with $C\\subsetneq J\\subseteq H$. No corner of $J$ can lie outside $C$: deleting such a corner either gives the forbidden first extension of $C$ or contradicts minimality of $J$. Hence $\\operatorname{Cor}(J)\\subseteq C$ and $1\\le|J\\setminus C|\\le9$, producing a trapped pair below the established bound $\\rho_{\\mathsf{Damp}}\\ge10$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-subten-interval-first-concept"
+}
