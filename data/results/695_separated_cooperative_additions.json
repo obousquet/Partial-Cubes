@@ -1,0 +1,25 @@
+{
+  "id": 695,
+  "short_name": "separated_cooperative_additions",
+  "name": "Separated Additions Can Cooperate",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For every integer $\\ell\\ge0$, there is a cornerless ample family $G_\\ell$ of order $597+\\ell$ and outside words $a_\\ell,b_\\ell$ such that $G_\\ell$ and both one-tip extensions are nonpeelable, while $G_\\ell\\cup\\{a_\\ell,b_\\ell\\}$ is dismantlable ample. All four families are ample. The additions acquire disjoint four-coordinate supports, and their completed cubes have Hamming distance $8+\\ell$. Each of the three nonpeelable families has Hall's cornerless obstruction as a proper pc-minor, so none is itself a forbidden pc-minor.",
+  "status": "established",
+  "proof": "Translate Hall's 299-concept cornerless family and a certified resolving tip so that the prescribed peeling of the repaired family ends at the attachment word zero. Take two copies on disjoint twelve-coordinate blocks and join their zero words by the monotone path $T_\\ell=\\{1^k0^{\\ell-k}:0\\le k\\le\\ell\\}$. No mixed pair of coordinates is shattered, so the shadow is the union of the two block shadows and the $\\ell$ bridge singletons. The Sandwich equality proves ampleness before and after either or both tips are added. Every old vertex remains a noncorner and every internal path vertex has two incident directions without a square, so the base is cornerless. Either one-tip extension retains the other Hall copy as a proper signed restriction and is nonpeelable. After both tips are added, peel each repaired Hall copy to its attachment and then peel the remaining path. The two completed four-cubes lie four steps from their respective attachments and differ across every bridge coordinate, giving distance $4+\\ell+4$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-separated-cooperative-additions",
+  "witness_ids": [
+    "#examples/separated_hall_cooperative_additions"
+  ],
+  "comments": "The fixed certificate checks bridge lengths zero and three, including all four shadow equalities, cornerlessness, both proper Hall restrictions, completed-cube distances, and combined peelings of lengths 599 and 602. This refutes geometric separation as a substitute for pc-minimality; cooperation over a cornerless forbidden pc-minor remains open."
+}

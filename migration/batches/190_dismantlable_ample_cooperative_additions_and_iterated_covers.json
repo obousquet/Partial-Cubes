@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "batch_id": "190_dismantlable_ample_cooperative_additions_and_iterated_covers",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the infinite separated-cooperation construction, classify terminal iterated common-seed covers as antipodal two-repair towers, and preserve the Hall path-row example that exercises the theorem beyond facet-partitioned inner rows.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-separated-cooperative-additions",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-iterated-common-seed-terminal",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-iterated-path-row",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_separated_cooperative_repairs.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_iterated_common_seed_covers.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "cooperative-and-iterated-cover-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_separated_cooperative_repairs.py,damp_separated_cooperative_repairs_verification.json,verify_damp_iterated_common_seed_covers.py,damp_iterated_common_seed_covers_verification.json,explore_damp_forced_layer_closure.py,verify_damp_facet_partition_repairs.py,verify_damp_singleton_recovery_implications.py,verify_damp_terminal_clause_recovery.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "a247dcdfca467c01cabd430bf2a78d0ea936de1a6f5062c552f5e7837c2f9b09",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The first result identifies the exact failure of separated repair inheritance when pc-minimality is absent. The second closes the iterated common-seed branch by flattening any terminal chain, while the path-row example confirms that the proof does not assume inner facet shells.",
+    "outcome": "Both theorem blocks and the example remark match the preserved manuscript. The database records the quantified constructions, concise proofs, hypothesis boundaries, finite controls, and named examples; the manuscript retains the expanded shadow, facet, clause, and peeling calculations.",
+    "claim_block_sha256": {
+      "prop:damp-separated-cooperative-additions": "28dc2709664a852e3917d14ae7999b3dab15d99dead33f7026d41e7682d4fa11",
+      "thm:damp-iterated-common-seed-terminal": "5bc7f002e5073ad015dbe3dee7773cc2ae728ae7f4632b5a19b997fc8293f2a1",
+      "rem:damp-iterated-path-row": "f46c814b9290592335770e1ea0b31bb2eb05bcfc87ac60e296e18c164f118a2a"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/verify_damp_separated_cooperative_repairs.py",
+      "sha256": "680083ef57be5296a6c6fd874fdb7a42766fdf25ba29a9e5fd023a23b5175893"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/damp_separated_cooperative_repairs_verification.json",
+      "sha256": "bca463d5e4949ba2824a4388838afb85a59ff1cfb6d4ac3d83677e0af317f549"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/source_damp_separated_cooperative_repairs_verification.json",
+      "sha256": "bca463d5e4949ba2824a4388838afb85a59ff1cfb6d4ac3d83677e0af317f549"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/verify_damp_iterated_common_seed_covers.py",
+      "sha256": "0b7f60c1e43afe7278ef57a4f723ed9060f39bccb043d3eb2fba89f0b6603ab0"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/damp_iterated_common_seed_covers_verification.json",
+      "sha256": "324721ffa713baa9f8285be8c7ba13a68eabe9a2893404b649c86896e58d597a"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/source_damp_iterated_common_seed_covers_verification.json",
+      "sha256": "324721ffa713baa9f8285be8c7ba13a68eabe9a2893404b649c86896e58d597a"
+    },
+    {
+      "path": "migration/certificates/190_dismantlable_ample_cooperative_additions_and_iterated_covers/source_packet_manifest.json",
+      "sha256": "a13014a6feb66c956b9b1071bb3e182393e9993d4fd0097d4a5632d4dd7dde5c"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the two theorem statements, concise proofs, two normalized examples, exact source locators, and compact replayable certificates. LaTeX retains the full block-shadow proof, arbitrary-row flattening argument, clause-degree calculations, and large explicit peeling orders.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves both proofs and the example remark. The ten-file computation packet at commit f304961 is path-hashed and byte-archived; both verifiers reproduce their tracked reports byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/695_separated_cooperative_additions.json",
+      "sha256": "adf639d8c8b212a296a816593316632db042e740b4600157a14a6fc004eed6a8"
+    },
+    {
+      "path": "data/results/696_iterated_common_seed_covers_are_antipodal_towers.json",
+      "sha256": "7ef5c6a4ba90f62b6feb24d63e911cfa1f943307094264f7b8fde0a49a7b5238"
+    },
+    {
+      "path": "data/examples/195_separated_hall_cooperative_additions.json",
+      "sha256": "a4cb7fd697e0abac19a412e0e014034b588b7e1d166da62816c5a2e7f20abe0e"
+    },
+    {
+      "path": "data/examples/196_hall_iterated_common_seed_cover_with_redundant_path_row.json",
+      "sha256": "c48aab430abade2539c4d8c2e42106261f764facf80b2b02c3990bac3fa6b289"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "cfc160b9d478c7183ed388602035f54669ed12a262fce8460f36d1c1ea8aa26a"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "18e37870bae0c29055d699c65f6b7b33de6941c7905ecd75cb8e90e0a964c6a6"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2102 records.",
+    "website": "Normalized 2118 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 2 additional audited labels, raising overall coverage from 795 to 797 of 1143 and dismantlable-ample coverage from 359 to 361 of 683.",
+    "certificates": "The cooperative-addition replay checks bridge lengths zero and three, eight exact Sandwich equalities, all mixed coordinate pairs, both proper Hall restrictions, and peelings of orders 599 and 602. The iterated-cover replay checks the 2410-concept inner family, its complete repair list and eight corners, both preserving predecessors, the 4822-concept flattened outer lift, and eight descent steps to the terminal 4814-concept tower.",
+    "source_integrity": "Both proof blocks and the example remark match supplemental snapshot 2026-10-02-b002, every archived computation input matches its manifest hash, and both regenerated reports are byte-identical to their tracked source reports."
+  },
+  "deferred": [
+    "The refreshed audit has 346 uncovered database-owned labels: 322 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block studies repair growth after extending a recovered obstruction and the consequences for terminal predecessors.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

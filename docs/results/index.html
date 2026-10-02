@@ -11701,6 +11701,44 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-695" style="position:relative;">
+
+        <h3><a href="results/separated_cooperative_additions.html" class="table-title-link">Separated Additions Can Cooperate</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Separated Additions Can Cooperate</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For every integer $\ell\ge0$, there is a cornerless ample family $G_\ell$ of order $597+\ell$ and outside words $a_\ell,b_\ell$ such that $G_\ell$ and both one-tip extensions are nonpeelable, while $G_\ell\cup\{a_\ell,b_\ell\}$ is dismantlable ample. All four families are ample. The additions acquire disjoint four-coordinate supports, and their completed cubes have Hamming distance $8+\ell$. Each of the three nonpeelable families has Hall's cornerless obstruction as a proper pc-minor, so none is itself a forbidden pc-minor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Translate Hall's 299-concept cornerless family and a certified resolving tip so that the prescribed peeling of the repaired family ends at the attachment word zero. Take two copies on disjoint twelve-coordinate blocks and join their zero words by the monotone path $T_\ell=\{1^k0^{\ell-k}:0\le k\le\ell\}$. No mixed pair of coordinates is shattered, so the shadow is the union of the two block shadows and the $\ell$ bridge singletons. The Sandwich equality proves ampleness before and after either or both tips are added. Every old vertex remains a noncorner and every internal path vertex has two incident directions without a square, so the base is cornerless. Either one-tip extension retains the other Hall copy as a proper signed restriction and is nonpeelable. After both tips are added, peel each repaired Hall copy to its attachment and then peel the remaining path. The two completed four-cubes lie four steps from their respective attachments and differ across every bridge coordinate, giving distance $4+\ell+4$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-separated-cooperative-additions</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/separated_hall_cooperative_additions.html">Separated Cooperative Additions from Two Hall Copies</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The fixed certificate checks bridge lengths zero and three, including all four shadow equalities, cornerlessness, both proper Hall restrictions, completed-cube distances, and combined peelings of lengths 599 and 602. This refutes geometric separation as a substitute for pc-minimality; cooperation over a cornerless forbidden pc-minor remains open.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-696" style="position:relative;">
+
+        <h3><a href="results/iterated_common_seed_covers_are_antipodal_towers.html" class="table-title-link">Terminal Iterated Common-Seed Covers Are Antipodal Two-Repair Towers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Iterated Common-Seed Covers Are Antipodal Two-Repair Towers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor. Let $S$ be a forbidden common-seed cover over $G$ on a nonempty layer set $D$, with distinct-support resolving tips and nonempty proper occurrence rows, and let $X$ be a second such cover over $S$ on a disjoint nonempty set $E$. If $X$ is corner-descent-terminal, then both stages have exactly two repair tips and antipodally punctured rows. For distinct tips $a,b$, words $u\in Q_D$ and $v\in Q_E$, one has $S=(G\times Q_D)\cup(\{a\}\times(Q_D\setminus\{u\}))\cup(\{b\}\times(Q_D\setminus\{\bar u\}))$ and $X=(G\times Q_{D\cup E})\cup(\{a\}\times(Q_{D\cup E}\setminus\{(u,v)\}))\cup(\{b\}\times(Q_{D\cup E}\setminus\{(\bar u,\bar v)\}))$. Thus $D\cup E$ is successful for $X$. A terminal chain of two or more such covers is a single antipodal two-repair tower over its initial seed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A resolving addition to the inner cover must change its full reduction along $D$, which equals the nonpeelable seed $G$. It must therefore fill the unique missing word of an occurrence row $R_a=Q_D\setminus\{u_a\}$; conversely each such completion peels by the common-seed criterion. Flatten the outer cover over $G$: a selected row becomes $(R_a\times Q_E)\cup(\{u_a\}\times T_a)$ and an unselected row becomes $R_a\times Q_E$. Every flattened row is nonempty, proper, and ample. Terminality forces these flattened rows to partition the signed facets of $D\cup E$. Reducing along $E$ recovers the inner rows and shows that they partition the signed facets of $D$; the outer rows likewise partition those of $E$. The nested-recovery theorem then forces two owners at each stage, opposite punctures, the displayed flattening, and success of $D\cup E$. Applying the two-stage argument repeatedly flattens any longer terminal chain.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-iterated-common-seed-terminal</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_iterated_common_seed_cover_with_redundant_path_row.html">Hall Iterated Common-Seed Cover with a Redundant Path Row</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The inner rows need not be facet shells and may have overlapping facet ownership. Applied to the canonical largest recovered layer set of a terminal obstruction, the theorem prevents a further nontrivial common-seed cover satisfying these hypotheses.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

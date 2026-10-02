@@ -1,0 +1,25 @@
+{
+  "id": 696,
+  "short_name": "iterated_common_seed_covers_are_antipodal_towers",
+  "name": "Terminal Iterated Common-Seed Covers Are Antipodal Two-Repair Towers",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $G\\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor. Let $S$ be a forbidden common-seed cover over $G$ on a nonempty layer set $D$, with distinct-support resolving tips and nonempty proper occurrence rows, and let $X$ be a second such cover over $S$ on a disjoint nonempty set $E$. If $X$ is corner-descent-terminal, then both stages have exactly two repair tips and antipodally punctured rows. For distinct tips $a,b$, words $u\\in Q_D$ and $v\\in Q_E$, one has $S=(G\\times Q_D)\\cup(\\{a\\}\\times(Q_D\\setminus\\{u\\}))\\cup(\\{b\\}\\times(Q_D\\setminus\\{\\bar u\\}))$ and $X=(G\\times Q_{D\\cup E})\\cup(\\{a\\}\\times(Q_{D\\cup E}\\setminus\\{(u,v)\\}))\\cup(\\{b\\}\\times(Q_{D\\cup E}\\setminus\\{(\\bar u,\\bar v)\\}))$. Thus $D\\cup E$ is successful for $X$. A terminal chain of two or more such covers is a single antipodal two-repair tower over its initial seed.",
+  "status": "established",
+  "proof": "A resolving addition to the inner cover must change its full reduction along $D$, which equals the nonpeelable seed $G$. It must therefore fill the unique missing word of an occurrence row $R_a=Q_D\\setminus\\{u_a\\}$; conversely each such completion peels by the common-seed criterion. Flatten the outer cover over $G$: a selected row becomes $(R_a\\times Q_E)\\cup(\\{u_a\\}\\times T_a)$ and an unselected row becomes $R_a\\times Q_E$. Every flattened row is nonempty, proper, and ample. Terminality forces these flattened rows to partition the signed facets of $D\\cup E$. Reducing along $E$ recovers the inner rows and shows that they partition the signed facets of $D$; the outer rows likewise partition those of $E$. The nested-recovery theorem then forces two owners at each stage, opposite punctures, the displayed flattening, and success of $D\\cup E$. Applying the two-stage argument repeatedly flattens any longer terminal chain.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-iterated-common-seed-terminal",
+  "witness_ids": [
+    "#examples/hall_iterated_common_seed_cover_with_redundant_path_row"
+  ],
+  "comments": "The inner rows need not be facet shells and may have overlapping facet ownership. Applied to the canonical largest recovered layer set of a terminal obstruction, the theorem prevents a further nontrivial common-seed cover satisfying these hypotheses."
+}

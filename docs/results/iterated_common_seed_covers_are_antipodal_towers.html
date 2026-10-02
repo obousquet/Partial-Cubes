@@ -1,0 +1,103 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-696" style="position:relative;">
+
+        <h3><a href="results/iterated_common_seed_covers_are_antipodal_towers.html" class="table-title-link">Terminal Iterated Common-Seed Covers Are Antipodal Two-Repair Towers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Terminal Iterated Common-Seed Covers Are Antipodal Two-Repair Towers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor. Let $S$ be a forbidden common-seed cover over $G$ on a nonempty layer set $D$, with distinct-support resolving tips and nonempty proper occurrence rows, and let $X$ be a second such cover over $S$ on a disjoint nonempty set $E$. If $X$ is corner-descent-terminal, then both stages have exactly two repair tips and antipodally punctured rows. For distinct tips $a,b$, words $u\in Q_D$ and $v\in Q_E$, one has $S=(G\times Q_D)\cup(\{a\}\times(Q_D\setminus\{u\}))\cup(\{b\}\times(Q_D\setminus\{\bar u\}))$ and $X=(G\times Q_{D\cup E})\cup(\{a\}\times(Q_{D\cup E}\setminus\{(u,v)\}))\cup(\{b\}\times(Q_{D\cup E}\setminus\{(\bar u,\bar v)\}))$. Thus $D\cup E$ is successful for $X$. A terminal chain of two or more such covers is a single antipodal two-repair tower over its initial seed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A resolving addition to the inner cover must change its full reduction along $D$, which equals the nonpeelable seed $G$. It must therefore fill the unique missing word of an occurrence row $R_a=Q_D\setminus\{u_a\}$; conversely each such completion peels by the common-seed criterion. Flatten the outer cover over $G$: a selected row becomes $(R_a\times Q_E)\cup(\{u_a\}\times T_a)$ and an unselected row becomes $R_a\times Q_E$. Every flattened row is nonempty, proper, and ample. Terminality forces these flattened rows to partition the signed facets of $D\cup E$. Reducing along $E$ recovers the inner rows and shows that they partition the signed facets of $D$; the outer rows likewise partition those of $E$. The nested-recovery theorem then forces two owners at each stage, opposite punctures, the displayed flattening, and success of $D\cup E$. Applying the two-stage argument repeatedly flattens any longer terminal chain.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-iterated-common-seed-terminal</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_iterated_common_seed_cover_with_redundant_path_row.html">Hall Iterated Common-Seed Cover with a Redundant Path Row</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The inner rows need not be facet shells and may have overlapping facet ownership. Applied to the canonical largest recovered layer set of a terminal obstruction, the theorem prevents a further nontrivial common-seed cover satisfying these hypotheses.</p></div>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>
