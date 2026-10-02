@@ -10861,6 +10861,57 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-648" style="position:relative;">
+
+        <h3><a href="results/resolving_additions_under_strong_projection.html" class="table-title-link">Resolving Additions under Strong Projection</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Resolving Additions under Strong Projection</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $S\subseteq Q_F$ have an ample one-concept extension $H=S\cup\{a\}$ with acquired support $I$. For $D\subseteq F$, write $a_D=a|_{F\setminus D}$. Then $H^D=S^D\cup\{a_D\}$ when $D\subseteq I$, while $H^D=S^D$ when $D\not\subseteq I$. In the first case $a_D$ is new and has acquired support $I\setminus D$; if $S^D$ is empty, the extension is a singleton and its support is empty. Consequently, if $H$ is dismantlable ample but $S^D$ is not, then $D\subseteq I$ and $|I\setminus D|\ge 3$. In particular, when $|I|=3$, every reduction of $S$ on a nonempty coordinate set is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Only the fibre through $a$ can become a new full $D$-fibre. If $D\subseteq I$, the punctured $I$-cube supplies all its other concepts, so its projection $a_D$ is newly present. If $D$ contains a coordinate outside $I$, the corresponding neighbour of $a$ is absent and the fibre remains incomplete. In the first case the surviving incident directions are exactly $I\setminus D$, giving the asserted acquired support. Strong projections preserve dismantlable ampleness by ordering full fibres according to their completion times in an ample-prefix order. Hence $H^D$ and $S^D$ must differ whenever the former peels and the latter does not, forcing $D\subseteq I$. Their difference is then a resolving one-concept addition, and rank-two extension invariance forces its support to have size at least three. A nonempty $D$ cannot satisfy this when $|I|=3$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-repair-strong-projections</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-649" style="position:relative;">
+
+        <h3><a href="results/adjacent_degree_three_corner_pair_descent.html" class="table-title-link">Adjacent Degree-Three Corner-Pair Descent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Degree-Three Corner-Pair Descent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor for the dismantlable ample classes. If $c,u$ are adjacent degree-three corners, then each of $H\setminus\{c\}$, $H\setminus\{u\}$, and $H\setminus\{c,u\}$ is again an ample forbidden pc-minor. Consequently, a degree-three corner of a corner-descent-terminal ample forbidden pc-minor has no corner as a neighbour.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Adjacent corners share their unique maximal three-cube. Deleting both leaves an ample irredundant family $G$, and re-adding either tip has the same acquired two-coordinate support. Adjacent square-completion invariance makes $G$ nonpeelable. For every elementary pc-minor, the image of $H$ equals the image of $G$, or is obtained from it by one addition of support at most two, or by an adjacent pair whose common individual support has size at most two. Rank-two one-concept invariance and adjacent-pair invariance therefore make every proper elementary image of $G$ peelable, proving that $G$ is forbidden. Either single deletion is nonpeelable because a peeling could be prefixed by the deleted corner to peel $H$; the one-concept obstruction atlas then makes both single deletions forbidden. Adjacent corners have the same maximal cube and degree, so the terminality assertion follows.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-degree-three-corner-pair-descent</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-650" style="position:relative;">
+
+        <h3><a href="results/same_shadow_punctured_face_exchange.html" class="table-title-link">Same-Shadow Exchange at a Punctured Face</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Same-Shadow Exchange at a Punctured Face</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be a cornerless ample forbidden pc-minor for the dismantlable ample classes, let $(a,I)$ be punctured-face data for $S$, and put $A=S\cup\{a\}$. Define $\mathcal E_S(a,I)$ to consist of the nontrivial $I$-flips $a^U$ that have no neighbour in $S$ in a direction outside $I$. Then the corners of $A$ are exactly the disjoint union of $\{a\}$ and $\mathcal E_S(a,I)$. For every exposed tip $c$, the exchange $T_c=(S\setminus\{c\})\cup\{a\}$ is ample and has the same shattered-set complex as $S$. The datum $(a,I)$ is peelable exactly when $T_c$ is dismantlable ample for some exposed tip $c$. No exposed tip is at Hamming distance one from $a$. If $|I|=2$, every $T_c$ is isomorphic to $S$, so the datum is obstruction-preserving; consequently every peelable punctured-face datum over a cornerless forbidden family has $|I|\ge 3$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The new tip $a$ is a corner of $A$ with completed $I$-cube as its unique maximal cube. Any other corner must have a maximal cube containing $a$, since otherwise it would already be a corner of the cornerless family $S$; this identifies it exactly with an exposed tip. Deleting such a corner removes the unique newly shattered support $I$, so the exchanged family is ample with the same shadow as $S$. A peeling of $A$ cannot start by deleting $a$, because that leaves nonpeelable $S$; its other possible first vertices are precisely the exposed tips, proving the exchange criterion. A distance-one exposed tip would already be a corner of $S$. For $|I|=2$, the only possible exposed tip is opposite $a$ in the completed square, and swapping the two opposite vertices is an automorphism of $A$, so every exchange is isomorphic to $S$ and cannot peel.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-same-shadow-corner-exchange</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,18 @@
+{
+  "id": 650,
+  "short_name": "same_shadow_punctured_face_exchange",
+  "name": "Same-Shadow Exchange at a Punctured Face",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $S$ be a cornerless ample forbidden pc-minor for the dismantlable ample classes, let $(a,I)$ be punctured-face data for $S$, and put $A=S\\cup\\{a\\}$. Define $\\mathcal E_S(a,I)$ to consist of the nontrivial $I$-flips $a^U$ that have no neighbour in $S$ in a direction outside $I$. Then the corners of $A$ are exactly the disjoint union of $\\{a\\}$ and $\\mathcal E_S(a,I)$. For every exposed tip $c$, the exchange $T_c=(S\\setminus\\{c\\})\\cup\\{a\\}$ is ample and has the same shattered-set complex as $S$. The datum $(a,I)$ is peelable exactly when $T_c$ is dismantlable ample for some exposed tip $c$. No exposed tip is at Hamming distance one from $a$. If $|I|=2$, every $T_c$ is isomorphic to $S$, so the datum is obstruction-preserving; consequently every peelable punctured-face datum over a cornerless forbidden family has $|I|\\ge 3$.",
+  "status": "established",
+  "proof": "The new tip $a$ is a corner of $A$ with completed $I$-cube as its unique maximal cube. Any other corner must have a maximal cube containing $a$, since otherwise it would already be a corner of the cornerless family $S$; this identifies it exactly with an exposed tip. Deleting such a corner removes the unique newly shattered support $I$, so the exchanged family is ample with the same shadow as $S$. A peeling of $A$ cannot start by deleting $a$, because that leaves nonpeelable $S$; its other possible first vertices are precisely the exposed tips, proving the exchange criterion. A distance-one exposed tip would already be a corner of $S$. For $|I|=2$, the only possible exposed tip is opposite $a$ in the completed square, and swapping the two opposite vertices is an automorphism of $A$, so every exchange is isomorphic to $S$ and cannot peel.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-same-shadow-corner-exchange"
+}

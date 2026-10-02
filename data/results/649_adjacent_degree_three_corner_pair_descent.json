@@ -1,0 +1,19 @@
+{
+  "id": 649,
+  "short_name": "adjacent_degree_three_corner_pair_descent",
+  "name": "Adjacent Degree-Three Corner-Pair Descent",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H\\subseteq Q_F$ be an irredundantly embedded ample forbidden pc-minor for the dismantlable ample classes. If $c,u$ are adjacent degree-three corners, then each of $H\\setminus\\{c\\}$, $H\\setminus\\{u\\}$, and $H\\setminus\\{c,u\\}$ is again an ample forbidden pc-minor. Consequently, a degree-three corner of a corner-descent-terminal ample forbidden pc-minor has no corner as a neighbour.",
+  "status": "established",
+  "proof": "Adjacent corners share their unique maximal three-cube. Deleting both leaves an ample irredundant family $G$, and re-adding either tip has the same acquired two-coordinate support. Adjacent square-completion invariance makes $G$ nonpeelable. For every elementary pc-minor, the image of $H$ equals the image of $G$, or is obtained from it by one addition of support at most two, or by an adjacent pair whose common individual support has size at most two. Rank-two one-concept invariance and adjacent-pair invariance therefore make every proper elementary image of $G$ peelable, proving that $G$ is forbidden. Either single deletion is nonpeelable because a peeling could be prefixed by the deleted corner to peel $H$; the one-concept obstruction atlas then makes both single deletions forbidden. Adjacent corners have the same maximal cube and degree, so the terminality assertion follows.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-degree-three-corner-pair-descent"
+}

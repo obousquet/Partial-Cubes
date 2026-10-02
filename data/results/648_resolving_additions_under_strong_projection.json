@@ -1,0 +1,19 @@
+{
+  "id": 648,
+  "short_name": "resolving_additions_under_strong_projection",
+  "name": "Resolving Additions under Strong Projection",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let nonempty ample $S\\subseteq Q_F$ have an ample one-concept extension $H=S\\cup\\{a\\}$ with acquired support $I$. For $D\\subseteq F$, write $a_D=a|_{F\\setminus D}$. Then $H^D=S^D\\cup\\{a_D\\}$ when $D\\subseteq I$, while $H^D=S^D$ when $D\\not\\subseteq I$. In the first case $a_D$ is new and has acquired support $I\\setminus D$; if $S^D$ is empty, the extension is a singleton and its support is empty. Consequently, if $H$ is dismantlable ample but $S^D$ is not, then $D\\subseteq I$ and $|I\\setminus D|\\ge 3$. In particular, when $|I|=3$, every reduction of $S$ on a nonempty coordinate set is dismantlable ample.",
+  "status": "established",
+  "proof": "Only the fibre through $a$ can become a new full $D$-fibre. If $D\\subseteq I$, the punctured $I$-cube supplies all its other concepts, so its projection $a_D$ is newly present. If $D$ contains a coordinate outside $I$, the corresponding neighbour of $a$ is absent and the fibre remains incomplete. In the first case the surviving incident directions are exactly $I\\setminus D$, giving the asserted acquired support. Strong projections preserve dismantlable ampleness by ordering full fibres according to their completion times in an ample-prefix order. Hence $H^D$ and $S^D$ must differ whenever the former peels and the latter does not, forcing $D\\subseteq I$. Their difference is then a resolving one-concept addition, and rank-two extension invariance forces its support to have size at least three. A nonempty $D$ cannot satisfy this when $|I|=3$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-repair-strong-projections"
+}
