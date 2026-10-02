@@ -1,0 +1,25 @@
+{
+  "id": 679,
+  "short_name": "terminal_common_seed_recovery_from_signed_clauses",
+  "name": "Terminal Common-Seed Recovery from Signed Clauses",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/pc_minor",
+    "#operations/projection"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X\\subseteq Q_V$ be nonempty and ample, and mark a nonempty coordinate set $E$. Let $\\mathcal J$ be the minimal nonfaces of $\\operatorname{Sh}(X)$ with missing traces $\\sigma_J$. Require every $e\\in E$ to occur in exactly two members of $\\mathcal J$, with opposite missing signs. Put $F=V\\setminus E$, let $C_E\\subseteq Q_F$ be the family satisfying all clauses supported inside $F$, and for each mixed clause put $P_J=J\\cap F$, $K_J=J\\cap E$, and $T_J=\\{x\\in C_E:x|_{P_J}=\\sigma_J|_{P_J}\\}$. Then $(X,E)$ has a common-seed presentation with a nonempty ample seed, pairwise distinct acquired repair supports, and occurrence rows forming a partition of the signed $E$-facets if and only if all $T_J$ are pairwise distinct singletons $\\{a_J\\}$. The presentation is unique: $C_E$ is the projection of $X$ onto $F$, the seed is $S_E=C_E\\setminus\\{a_J\\}=X^E$, the repair support is $P_J$, the owner support is $K_J$, and the owner signs are $1-\\sigma_J|_{K_J}$. The seed and every one-tip extension $S_E\\cup\\{a_J\\}$ are automatically ample. If $X$ is an irredundantly embedded ample forbidden pc-minor, then $S_E$ is a forbidden pc-minor and every one-tip extension is dismantlable ample; a cornerless recovered seed yields a terminal common-seed obstruction presentation.",
+  "status": "established",
+  "proof": "A given facet-partition presentation has one mixed clause per repair, and the missing old trace is supplied in the projection by that repair tip alone, so every trace fibre is its singleton. Conversely, the old clauses reconstruct the ample projection $C_E$. Distinct singleton fibres split it into tips and a seed, and the signed clauses reconstruct $X$ as the seed product together with rows that omit exactly one face on $K_J$; opposite two-clause incidence partitions all signed layer facets. Strong projection identifies the seed with $X^E$ and proves it ample and nonempty. Restricting to an owned facet recovers each ample one-tip extension. Minimal-nonface arguments force its acquired support to equal $P_J$ and make these supports distinct, proving uniqueness. For forbidden $X$, peel the punctured-cube rows down to $S_E\\times Q_E$; peelability of the seed would then peel $X$, so the seed is nonpeelable. Its intermediate reductions remain nonpeelable, and inherited descent makes it forbidden. A proper facet minor similarly proves every one-tip extension peelable.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-terminal-clause-recovery",
+  "witness_ids": [
+    "#examples/hall_thick_terminal_three_repair_obstruction"
+  ],
+  "comments": "This is an intrinsic recognition and uniqueness theorem for a marked layer set. It does not assert that every terminal forbidden pc-minor has a successful marked layer set. The certificates exhaust all families through dimension three and check fixed two-row and three-row controls, as well as the 1,203-concept Hall reconstruction."
+}

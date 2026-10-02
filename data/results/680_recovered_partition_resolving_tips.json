@@ -1,0 +1,25 @@
+{
+  "id": 680,
+  "short_name": "recovered_partition_resolving_tips",
+  "name": "One-Concept Repairs of a Recovered Facet Partition",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be an irredundantly embedded ample forbidden pc-minor with a successful recovered layer set $E$, seed $S$, tips $a_J$, repair supports $P_J$, owner supports $K_J$, and mixed missing traces $\\sigma_J$. Its one-concept extensions in the dismantlable ample class are exactly the words $(a_J,\\sigma_J|_E)$ for which $K_J=E$. Such an addition acquires support $P_J\\cup E=J$. Hence there are at most two resolving tips, and there are two exactly when the recovered presentation has two repair tips with oppositely punctured layer-cube rows. If the recovered seed itself has a nonempty successful layer set $D$, then both presentations have exactly two tips and flatten uniquely into one antipodally punctured two-repair presentation on $E\\cup D$ with seed $S^D$; in particular $E\\cup D$ is successful for $X$.",
+  "status": "established",
+  "proof": "If $X\\cup\\{z\\}$ peels, its reduction along $E$ must peel although $X^E=S$ does not, so the added word must complete a layer fibre. A single addition can do this only at a repair tip whose omitted face is a singleton, equivalently $K_J=E$, and the missing word is $(a_J,\\sigma_J|_E)$. Conversely, completing such a row joins it to the seed product; peel the other punctured rows and then use the certified peeling of $S\\cup\\{a_J\\}$ and the product test. The new word has all layer neighbours and precisely the old neighbours on $P_J$, so its acquired support is $J$. Each layer coordinate has two owners, so at most two blocks can equal $E$; two such blocks exhaust the partition and are antipodal. For nested successful presentations, the outer layer coordinates provide two repairs of the inner seed, forcing both levels to be antipodal two-row presentations. Substitution combines their missing words into the asserted presentation on $E\\cup D$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-recovered-partition-resolving-tips",
+  "witness_ids": [
+    "#examples/hall_terminal_obstruction_without_resolving_tip",
+    "#examples/hall_thick_terminal_three_repair_obstruction"
+  ],
+  "comments": "The archived verifier checks complete repair lists with zero, one, and two resolving tips and explicit peelings of every positive extension. The 2,410-concept example shows that a terminal obstruction need not itself have any resolving tip."
+}

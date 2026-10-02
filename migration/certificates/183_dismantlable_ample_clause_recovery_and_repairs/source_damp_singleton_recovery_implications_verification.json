@@ -1,0 +1,87 @@
+{
+  "scope": "Finite checks of the automatic conclusions in clause recovery.\n\nExhaust all families through Q_3, then check two fixed multiple-layer\nconstructions. This checks the recovery lemma, not obstruction minimality\nor the open assertion that every terminal obstruction admits recovery.",
+  "exhaustive": [
+    {
+      "dimension": 1,
+      "families": 3,
+      "ample": 3,
+      "candidate_layer_sets": 0,
+      "successful_layer_sets": 0
+    },
+    {
+      "dimension": 2,
+      "families": 15,
+      "ample": 13,
+      "candidate_layer_sets": 0,
+      "successful_layer_sets": 0
+    },
+    {
+      "dimension": 3,
+      "families": 255,
+      "ample": 127,
+      "candidate_layer_sets": 24,
+      "successful_layer_sets": 24
+    }
+  ],
+  "fixed_two_row_control": {
+    "candidates": 3,
+    "successes": [
+      {
+        "layers_mask": 12,
+        "seed_order": 1,
+        "tips": [
+          2,
+          1
+        ],
+        "supports": [
+          2,
+          1
+        ]
+      },
+      {
+        "layers_mask": 8,
+        "seed_order": 4,
+        "tips": [
+          2,
+          5
+        ],
+        "supports": [
+          6,
+          5
+        ]
+      },
+      {
+        "layers_mask": 4,
+        "seed_order": 4,
+        "tips": [
+          2,
+          9
+        ],
+        "supports": [
+          10,
+          9
+        ]
+      }
+    ]
+  },
+  "fixed_three_row_control": {
+    "candidates": 3,
+    "successes": [
+      {
+        "layers_mask": 24,
+        "seed_order": 1,
+        "tips": [
+          1,
+          4,
+          2
+        ],
+        "supports": [
+          1,
+          4,
+          2
+        ]
+      }
+    ]
+  },
+  "all_checks_passed": true
+}
