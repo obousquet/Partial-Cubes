@@ -1,0 +1,15 @@
+{
+  "id": 68,
+  "short_name": "missing_pattern_conflict_graph",
+  "name": "Missing-Pattern Conflict Graph",
+  "symbol": "\\Gamma_{\\mathcal R}(C)",
+  "definition": "For a binary class $C$, let $\\mathcal R(C)$ be its full clutter of minimally missing signed patterns. The missing-pattern conflict graph has vertex set $\\mathcal R(C)$ and joins two patterns when they prescribe opposite values at some common coordinate.",
+  "status": "established",
+  "codomain": "Finite simple graphs, considered up to signed-coordinate isomorphism",
+  "parameters": "The full minimally missing-pattern clutter; binary clauses are retained.",
+  "normalization": "Repeated descriptions of the same minimal signed pattern are identified. The empty family has the single empty missing pattern and no conflict edges.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "The graph records conflicts among all minimally missing patterns. Tests that retain only patterns of support at least three define different invariants.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-matching-route-realization"
+}

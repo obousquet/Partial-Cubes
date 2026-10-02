@@ -1,0 +1,14 @@
+{
+  "id": 538,
+  "short_name": "one_facet_attachment_algebraic_topological_form",
+  "name": "Algebraic and Topological Form of an Ample One-Facet Attachment",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $A=S\\cup\\{a\\}\\subseteq Q_F$ be ample and put $I=\\{e:a^{\\{e\\}}\\in S\\}$. For the complementary-literal generator $m_a$ and new Yang facet $F_a$, one has $J_S:m_a=(v_{e,a_e}:e\\in I)$ and $2^{F_a}\\cap\\Delta_S=\\partial2^{\\{v_{e,a_e}:e\\in I\\}}*2^{\\{v_{e,a_e}:e\\in F\\setminus I\\}}$. Equivalently, the intersection is the union of the ridges $F_a\\setminus\\{v_{e,a_e}\\}$ for $e\\in I$. If $S$ is an ample forbidden pc-minor for dismantlable ampleness, then $\\varnothing\\ne I\\subsetneq F$ and this intersection is a shellable $(|F|-2)$-ball.",
+  "status": "established",
+  "proof": "Every $a$--$x$ geodesic in the isometric extension starts in a direction $e\\in I$, so the monomial quotient for $x$ is divisible by $v_{e,a_e}$; the neighbour in direction $e$ gives the reverse divisibility and the colon formula. A face of $F_a$ lies in the old Yang complex exactly when it omits one of these literals, proving the ridge union. Connectedness gives $I\\ne\\varnothing$, while $I=F$ would make $S$ a punctured cube and hence corner-peelable. The displayed join is therefore a shellable ball.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-one-facet-attachment"
+}

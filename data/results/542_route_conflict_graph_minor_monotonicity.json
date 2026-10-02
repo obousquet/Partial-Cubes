@@ -1,0 +1,22 @@
+{
+  "id": 542,
+  "short_name": "route_conflict_graph_minor_monotonicity",
+  "name": "Missing-Pattern Conflict Graphs Are Monotone under Elementary Images",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/missing_pattern_conflict_graph"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a nonempty ample family, the full missing-pattern conflict graph of every projection, coordinate conditioning, or full reduction is isomorphic to a subgraph of the original conflict graph. Its maximum degree therefore cannot increase, and the degree-at-most-one realization criterion is preserved under these operations and their compositions.",
+  "status": "established",
+  "proof": "Use the exact signed-route formulas and choose one parent route for every surviving or trimmed image route. Distinct image routes have distinct parents because every parent has a unique trim. Any conflict at a visible coordinate was already a conflict between the chosen parents, giving an edge-preserving injection. Iteration handles compositions; an empty image has only the empty pattern and no edges.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-route-conflict-image"
+}

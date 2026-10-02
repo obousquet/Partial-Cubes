@@ -1,0 +1,22 @@
+{
+  "id": 539,
+  "short_name": "signed_route_elimination_and_minor_calculus",
+  "name": "Signed Route Elimination and Exact Elementary-Minor Calculus",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "A clutter $\\mathcal R$ of consistent literal sets is the full minimally missing-pattern clutter of an ample family exactly when every opposite-literal pair $P,Q\\in\\mathcal R$ admits $U\\in\\mathcal R$ contained in $(P\\cup Q)$ after deleting both literals of the conflicting coordinate. For an ample $H$, the complete route clutters of projection, conditioning, and full reduction in coordinate $e$ are respectively the routes avoiding both $e$-literals; the inclusion-minimal routes obtained after deleting the fixed literal from routes avoiding its opposite; and the inclusion-minimal routes obtained after deleting both $e$-literals. The formulas include constant coordinates and empty images.",
+  "status": "established",
+  "proof": "Lawrence's route-system theorem gives the signed elimination equivalence and agrees with cardinality admissibility of the signed minimal-nonface presentation. A visible pattern is missing from a projection exactly when it was already missing without using $e$, and is missing from a conditioning exactly when adjoining the fixed literal contains an old route. For reduction, erase the $e$-literal from every route and minimize. Signed elimination descends to this trimmed clutter, so Lawrence's sufficiency proves that it is the full route clutter of the reduction rather than merely an incomplete clause list.",
+  "references": "\\cite{Lawrence1983}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-signed-route-calculus"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 541,
+  "short_name": "matching_route_conflict_realization",
+  "name": "Matching Route Conflicts Give Arbitrary-Coefficient Realizations",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/missing_pattern_conflict_graph",
+    "#invariants/attainable_sink_set"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H$ be nonempty and ample. If its full missing-pattern conflict graph has maximum degree at most one, then for every choice of positive coefficients $\\lambda_{p,i}$ the signed forms $\\ell_p(z)=\\sum_i\\lambda_{p,i}(2p_i-1)z_i$ realize $H$ as the strict coordinate-sign class of a bounded open convex polyhedron cut out by a box and the inequalities $\\ell_p(z)<-\\varepsilon$. Consequently every vertex is the sink of an acyclic USO. Thus the conflict graph of every ample forbidden pc-minor or rooted obstruction factor has a vertex of degree at least two.",
+  "status": "established",
+  "proof": "Reflect a chosen allowed word to zero. A missing pattern with no pure value-one coordinate is paired with at most one conflict, and signed elimination shows that two conflicting patterns cannot both have this property. Increase one private weight for each uncovered pattern, then increase all pure-coordinate weights together; these changes make every signed form negative without undoing earlier inequalities. Repeating for every allowed word, scaling the finitely many witnesses, and adding a bounding box yields one polyhedron with exactly sign class $H$. The realizable endpoint theorem supplies every sink.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-matching-route-realization"
+}

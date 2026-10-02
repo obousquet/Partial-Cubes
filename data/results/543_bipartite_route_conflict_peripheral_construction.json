@@ -1,0 +1,23 @@
+{
+  "id": 543,
+  "short_name": "bipartite_route_conflict_peripheral_construction",
+  "name": "Bipartite Route Conflicts Give a Convex-Treelike Construction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cover_recursive_peripheral",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/missing_pattern_conflict_graph",
+    "#invariants/attainable_sink_set"
+  ],
+  "operation_ids": [
+    "#operations/peripheral_expansion"
+  ],
+  "result_type": "construction",
+  "statement": "If a nonempty ample family has a bipartite full missing-pattern conflict graph, then it is obtained recursively from singletons by peripheral expansions $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ with $\\varnothing\\ne S\\subseteq B$ and both children constructed by the same rule; constant coordinates may be added freely. Thus it is convex-treelike and every vertex is an attainable acyclic-USO sink. The recursion is recovered from the signed patterns by repeatedly choosing a coordinate at which at most one literal occurs. Consequently every ample forbidden pc-minor for either the convex-treelike or dismantlable ample class, and every rooted obstruction factor, has a nonbipartite conflict graph.",
+  "status": "established",
+  "proof": "In a bipartition, if both literal values occurred at every active coordinate, all routes in one part would restrict one common word and all routes in the other its opposite. Signed elimination of a conflicting pair would then produce a route properly contained in one parent, contradicting that routes form a clutter. Hence some coordinate uses at most one polarity, which makes one section contain the other. Conflict-graph monotonicity preserves bipartiteness in both sections, so induction gives the peripheral construction and every endpoint sink. Contraposition gives the obstruction statement.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-bipartite-route-peripheral",
+  "comments": "Bipartiteness is sufficient, not necessary: path graphs can have nonbipartite missing-pattern conflict graphs while remaining convex-treelike."
+}

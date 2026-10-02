@@ -1,0 +1,20 @@
+{
+  "id": 540,
+  "short_name": "large_missing_pattern_positive_filter",
+  "name": "Large Missing-Pattern Conditions Guarantee Every Prescribed Sink",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/realizable_ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/signed_minimal_nonface_presentation",
+    "#invariants/attainable_sink_set"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H\\ne\\varnothing$ be ample and retain its minimally missing patterns of support at least three. Every vertex of $H$ is the sink of an acyclic unique-sink orientation if there are at most two such patterns, or if every pair agrees wherever their supports overlap. Hence every ample forbidden pc-minor for dismantlable ampleness, and every rooted obstruction factor, has at least three large minimally missing patterns, with two disagreeing on a common coordinate. Binary missing patterns are unrestricted in both sufficient conditions.",
+  "status": "established",
+  "proof": "The two signed geometric criteria construct a bounded full-dimensional convex polytope whose strict coordinate-sign class is $H$. The coordinate hyperplanes on this polytope give the required realization, and the realizable prescribed-endpoint theorem supplies a peeling, hence an acyclic USO, to every selected vertex. Contraposition gives both necessary conditions for forbidden classes and rooted factors.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-large-pattern-positive-filter",
+  "comments": "The criteria are sufficient rather than necessary. Failure of both is not a negative certificate for dismantlable ampleness."
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,30 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-11" style="position:relative;">
+            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
+    <div class="table-card" id="math-68" style="position:relative;">
 
-        <h3><a href="operations/full_reduction.html" class="table-title-link">Full Reduction</a></h3>
+        <h3><a href="invariants/missing_pattern_conflict_graph.html" class="table-title-link">Missing-Pattern Conflict Graph</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Full Reduction</p>
+        <p><strong>Name: </strong>Missing-Pattern Conflict Graph</p>
 <strong>Symbol:</strong>
     <div class="table-display">
-        <div class="latex-equation" data-latex="\partial_i C">
-            \[\partial_i C\]
+        <div class="latex-equation" data-latex="\Gamma_{\mathcal R}(C)">
+            \[\Gamma_{\mathcal R}(C)\]
         </div>
     </div>
 
-<p><strong>Arity:</strong> 1</p>
-<strong>Definition:</strong><div class="text-field"><p>For a coordinate $i$, take the intersection of its two sections: $\partial_iC=C_{i=0}\cap C_{i=1}$, as a class on the remaining coordinates.</p></div>
-<p><strong>Category:</strong> Reduction</p>
-<strong>Comments:</strong><div class="text-field"><p>Only nonempty outputs enter closure statements for classes whose objects are required to be nonempty.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#prop:geometric-test-closure</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/realizable_ample_full_reduction_closed.html'>Realizable Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/universal_tests_full_reduction_closed.html'>Universal Tests Are Full-Reduction Closed</a></li><li><a href='operation_results/ample_full_reduction_closed.html'>Ample Classes Are Full-Reduction Closed</a></li><li><a href='operation_results/dismantlable_ample_full_reduction_closed.html'>Dismantlable Ample Classes Are Full-Reduction Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/dismantlable_ample_closure_laws.html'>Dismantlable-Ample Closure Laws</a></li><li><a href='results/asymptotic_parent_rate_operation_laws.html'>Operation Laws for the Asymptotic Parent Rate</a></li><li><a href='results/maximum_parent_power_rank_lower_bound.html'>Finite Parent-Rank Lower Bound for Cartesian Powers</a></li><li><a href='results/partial_trace_combinatorial_laws.html'>Combinatorial and Parent-Rank Laws for Partial Traces</a></li><li><a href='results/peripheral_corner_descent.html'>Cornerlessness Descends through Peripheral Coordinates</a></li><li><a href='results/intermediate_decomposition_class_hierarchy.html'>Intermediate Decomposition Classes Form Strict pc-Closed Hierarchies</a></li><li><a href='results/maximum_ancestry_neighbor_hierarchy.html'>Classes Immediately Below and Above Maximum Ancestry</a></li><li><a href='results/maximum_parent_decomposition_depth_hierarchy.html'>Maximum-Parent Decomposition Depth and Feasible Ranks</a></li><li><a href='results/compatible_face_avoidance_operator.html'>Face-Avoiding Maximum Predecessors Preserve Intersections</a></li><li><a href='results/complement_dismantlability_structure.html'>Structure of Dismantlable-Complement Ample Classes</a></li><li><a href='results/low_support_extension_relative_invariance.html'>Low-Support One-Concept Additions Preserve Every Relative Peeling</a></li><li><a href='results/terminal_edge_product_attachments.html'>Terminal Edge-Product Attachments Have an Exact Reduction Test</a></li><li><a href='results/ample_inclusion_minimal_cut_vertex_classes.html'>Ample-Inclusion-Minimal Negative Classes at a Cut Vertex</a></li><li><a href='results/inclusion_minimal_negative_527_528.html'>The 527- and 528-Concept Classes Are Minimal under Ample Inclusion</a></li><li><a href='results/eleven_vertex_edge_attachment_exclusion.html'>Edge Attachments Cannot Create Endpoint-Retention Failure on the Eleven-Vertex Core</a></li><li><a href='results/prescribed_endpoint_lost_under_reduction.html'>A Nonempty Reduction Can Lose a Prescribed Peeling Endpoint</a></li><li><a href='results/rooted_factor_opposite_section_obstruction.html'>Every Rooted Factor Has a Locked Opposite Section in Every Coordinate</a></li><li><a href='results/signed_route_elimination_and_minor_calculus.html'>Signed Route Elimination and Exact Elementary-Minor Calculus</a></li><li><a href='results/route_conflict_graph_minor_monotonicity.html'>Missing-Pattern Conflict Graphs Are Monotone under Elementary Images</a></li></ul></p></div>
+<strong>Definition:</strong><div class="text-field"><p>For a binary class $C$, let $\mathcal R(C)$ be its full clutter of minimally missing signed patterns. The missing-pattern conflict graph has vertex set $\mathcal R(C)$ and joins two patterns when they prescribe opposite values at some common coordinate.</p></div>
+<p><strong>Status:</strong> Established</p>
+<p><strong>Codomain: </strong>Finite simple graphs, considered up to signed-coordinate isomorphism</p>
+<strong>Parameters:</strong><div class="text-field"><p>The full minimally missing-pattern clutter; binary clauses are retained.</p></div>
+<strong>Normalization:</strong><div class="text-field"><p>Repeated descriptions of the same minimal signed pattern are identified. The empty family has the single empty missing pattern and no conflict edges.</p></div>
+<p><strong>Category:</strong> Combinatorial</p>
+<p><strong>Isomorphism Invariant:</strong> Yes</p>
+<strong>Comments:</strong><div class="text-field"><p>The graph records conflicts among all minimally missing patterns. Tests that retain only patterns of support at least three define different invariants.</p></div>
+<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-matching-route-realization</p></div>
+<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
+<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/matching_route_conflict_realization.html'>Matching Route Conflicts Give Arbitrary-Coefficient Realizations</a></li><li><a href='results/route_conflict_graph_minor_monotonicity.html'>Missing-Pattern Conflict Graphs Are Monotone under Elementary Images</a></li><li><a href='results/bipartite_route_conflict_peripheral_construction.html'>Bipartite Route Conflicts Give a Convex-Treelike Construction</a></li></ul></p></div>
 
         </div>
     </div>
