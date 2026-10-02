@@ -10656,6 +10656,75 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-636" style="position:relative;">
+
+        <h3><a href="results/yang_order_sphere_obstruction.html" class="table-title-link">Canonical Yang Order-Sphere Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Canonical Yang Order-Sphere Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ample family $H$ of order $m\ge2$, each latent Yang chart $B$ defines a failure poset $P_B$ and a failure region $\mathscr R_B$ in the order sphere $\mathscr O(H)$. The Yang complex is nonshellable exactly when $\mathscr U(H)=\bigcup_B\mathscr R_B$ fills $\mathscr O(H)$, exactly when $\widetilde H_{m-2}(\mathscr U(H);\mathbb F_2)\cong\mathbb F_2$; otherwise this top homology vanishes. For any nonempty chart set $\mathcal I$, generate a preorder from all its failure relations and contract its strongly connected classes to a poset $\overline P_{\mathcal I}$ with $k_{\mathcal I}$ elements. Then $\bigcap_{B\in\mathcal I}\mathscr R_B$ is the proper-ideal order complex of $\overline P_{\mathcal I}$, homotopy equivalent to $S^{k_{\mathcal I}-2}$ when the quotient is an antichain and contractible otherwise. The resulting augmented Mayer--Vietoris spectral sequence converges to the homology of $\mathscr U(H)$, and its only nonzero first-page summands are those one-dimensional antichain-quotient sphere classes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A chamber belongs to $\mathscr R_B$ precisely when its order is a linear extension of $P_B$, which is exactly failure of every allowed protector gate in chart $B$. Thus the failure regions cover all chambers exactly when no Yang shelling exists. Chamber adjacency connects the order sphere, so a proper subcomplex has no top-dimensional cycle, whereas the full sphere has its fundamental class. Common ideals of several failure posets are exactly unions of strongly connected classes and hence ideals of the quotient poset. Its proper-ideal complex is a Boolean sphere when the quotient is an antichain; otherwise its atoms have a proper join and the crosscut complex contracts. The standard augmented intersection double complex supplies the stated spectral sequence.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-order-sphere-obstruction</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-637" style="position:relative;">
+
+        <h3><a href="results/yang_balanced_circuit_carrier.html" class="table-title-link">Balanced Circuit Carriers of Yang Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Balanced Circuit Carriers of Yang Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample family $H$ is nonpeelable, some nonempty collection $\mathcal I$ of latent charts has every generating failure relation on a directed cycle and satisfies $|\mathcal I|+k_{\mathcal I}=|H|+1$, where $k_{\mathcal I}$ is the number of strongly connected classes of the generated preorder. If $r_{\mathcal I}$ concepts are incident with generating relations and these concepts form $c_{\mathcal I}$ nontrivial strongly connected components, the balance equation is equivalently $|\mathcal I|=r_{\mathcal I}-c_{\mathcal I}+1$. Such balanced circuit collections are necessary carriers of the global obstruction class; their existence alone is not asserted sufficient.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a nonpeelable family, the top order-sphere class survives the failure-cover spectral sequence. Some first-page summand of total degree $|H|-2$ supports it. A nonzero summand comes from an antichain strongly connected quotient, has bidegrees $p=|\mathcal I|-1$ and $q=k_{\mathcal I}-2$, and therefore gives the balance equation. An antichain condensation has no arc between distinct components, so every generating relation lies on a directed cycle. Counting the isolated concepts and nontrivial components gives $k_{\mathcal I}=|H|-r_{\mathcal I}+c_{\mathcal I}$ and the equivalent form.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-yang-balanced-circuit-carrier</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-638" style="position:relative;">
+
+        <h3><a href="results/yang_first_cancellation_cut_nerve.html" class="table-title-link">First Yang Cancellation Page Is Cut-Nerve Homology</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>First Yang Cancellation Page Is Cut-Nerve Homology</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a partition $\pi$ of an ample family $H$ into $k$ parts. Let $\mathcal A_\pi$ be the latent charts whose failure arcs stay within parts, and let $\mathcal N_\pi$ consist of chart sets that fail to make some part strongly connected. The row $q=k-2$ of the first differential of the Yang failure-cover spectral sequence is the direct sum, over all $k$-part partitions, of the relative chain complexes $C_\bullet(2^{\mathcal A_\pi},\mathcal N_\pi;\mathbb F_2)$. Hence $E^2_{p,k-2}\cong\bigoplus_{|\pi|=k}\widetilde H_{p-1}(\mathcal N_\pi;\mathbb F_2)$. Moreover $\mathcal N_\pi$ is homotopy equivalent to the nerve $\mathcal K_\pi$ of the canonical cover indexed by directed cuts within parts, where a cut simplex consists of charts having no arc leaving that cut. Consequently, if $H$ is nonpeelable, then for some $k$-part partition $\pi$, $\widetilde H_{|H|-k-1}(\mathcal K_\pi;\mathbb F_2)\ne0$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A first-page sphere summand belongs to partition $\pi$ exactly when all arcs stay within parts and strongly connect every part; these are precisely the faces of the simplex $2^{\mathcal A_\pi}$ outside $\mathcal N_\pi$. Removing a chart induces the identity in the same row when all parts remain strongly connected and zero there when a part splits, giving the relative simplicial boundary and the second-page formula. A directed graph is strongly connected exactly when every nontrivial cut has an outgoing arc, so $\mathcal N_\pi$ is the union of the displayed cut simplices. Their intersections are simplices, and the nerve lemma gives $\mathcal N_\pi\simeq\mathcal K_\pi$. A surviving class of total degree $|H|-2$ then yields the final necessary homology class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-yang-first-cancellation-cut-nerve</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-639" style="position:relative;">
+
+        <h3><a href="results/metric_and_colored_yang_obstructions_agree.html" class="table-title-link">Metric and Colored Yang Obstructions Agree</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Metric and Colored Yang Obstructions Agree</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/metric_yang_obstruction.html">Metric Yang Obstruction</a></li><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For every finite nonempty ample family $H$, $\omega_{\mathrm{met}}(H)=\omega_{\mathrm{ord}}(H)$. Their common value is zero exactly for dismantlable ample families and one exactly for nonpeelable ample families.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The metric Yang obstruction theorem identifies $\omega_{\mathrm{met}}(H)=1$ exactly with nonpeelability. The colored order-sphere obstruction theorem gives the same characterization for $\omega_{\mathrm{ord}}(H)$. Both invariants are binary, so they agree on every ample family; their singleton normalizations also agree.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-metric-obstruction-class; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-order-sphere-obstruction</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The values agree, but the two covers retain different local information: the metric cover uses distance-two intervals, while the colored cover retains latent-chart owner data.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

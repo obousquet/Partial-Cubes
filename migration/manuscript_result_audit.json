@@ -5,9 +5,9 @@
   "counts": {
     "unique_result_labels": 1143,
     "label_occurrences": 1167,
-    "covered": 736,
-    "uncovered": 407,
-    "proof_source_records": 1907
+    "covered": 739,
+    "uncovered": 404,
+    "proof_source_records": 1914
   },
   "by_workspace": {
     "ample-corners": {
@@ -28,9 +28,9 @@
       "total": 14
     },
     "dismantlable-ample": {
-      "covered": 300,
+      "covered": 303,
       "total": 683,
-      "uncovered": 383
+      "uncovered": 380
     },
     "gluing": {
       "covered": 20,
@@ -6608,7 +6608,7 @@
       "label": "cor:damp-yang-balanced-circuit-carrier",
       "prefix": "cor",
       "environment": "corollary",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -6618,7 +6618,9 @@
           "line": 24647
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/637_yang_balanced_circuit_carrier.json"
+      ]
     },
     {
       "label": "cor:damp-yang-protector-atlas",
@@ -13333,7 +13335,7 @@
       "label": "prop:damp-yang-first-cancellation-cut-nerve",
       "prefix": "prop",
       "environment": "proposition",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -13343,7 +13345,9 @@
           "line": 24690
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/results/638_yang_first_cancellation_cut_nerve.json"
+      ]
     },
     {
       "label": "prop:damp-yang-homology-ball",
@@ -15054,14 +15058,15 @@
         "data/invariant_values/133_metric_yang_obstruction_dismantlable.json",
         "data/invariant_values/134_metric_yang_obstruction_cornerless.json",
         "data/invariants/071_metric_yang_obstruction.json",
-        "data/results/629_metric_yang_obstruction_characterization.json"
+        "data/results/629_metric_yang_obstruction_characterization.json",
+        "data/results/639_metric_and_colored_yang_obstructions_agree.json"
       ]
     },
     {
       "label": "thm:damp-yang-order-sphere-obstruction",
       "prefix": "thm",
       "environment": "theorem",
-      "status": "uncovered",
+      "status": "covered",
       "workspaces": [
         "dismantlable-ample"
       ],
@@ -15071,7 +15076,13 @@
           "line": 24482
         }
       ],
-      "covered_by": []
+      "covered_by": [
+        "data/invariant_values/135_yang_order_sphere_obstruction_dismantlable.json",
+        "data/invariant_values/136_yang_order_sphere_obstruction_cornerless.json",
+        "data/invariants/072_yang_order_sphere_obstruction.json",
+        "data/results/636_yang_order_sphere_obstruction.json",
+        "data/results/639_metric_and_colored_yang_obstructions_agree.json"
+      ]
     },
     {
       "label": "cor:prescribed-first-facet",

@@ -1,0 +1,17 @@
+{
+  "id": 637,
+  "short_name": "yang_balanced_circuit_carrier",
+  "name": "Balanced Circuit Carriers of Yang Obstructions",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "implication",
+  "statement": "If an ample family $H$ is nonpeelable, some nonempty collection $\\mathcal I$ of latent charts has every generating failure relation on a directed cycle and satisfies $|\\mathcal I|+k_{\\mathcal I}=|H|+1$, where $k_{\\mathcal I}$ is the number of strongly connected classes of the generated preorder. If $r_{\\mathcal I}$ concepts are incident with generating relations and these concepts form $c_{\\mathcal I}$ nontrivial strongly connected components, the balance equation is equivalently $|\\mathcal I|=r_{\\mathcal I}-c_{\\mathcal I}+1$. Such balanced circuit collections are necessary carriers of the global obstruction class; their existence alone is not asserted sufficient.",
+  "status": "established",
+  "proof": "For a nonpeelable family, the top order-sphere class survives the failure-cover spectral sequence. Some first-page summand of total degree $|H|-2$ supports it. A nonzero summand comes from an antichain strongly connected quotient, has bidegrees $p=|\\mathcal I|-1$ and $q=k_{\\mathcal I}-2$, and therefore gives the balance equation. An antichain condensation has no arc between distinct components, so every generating relation lies on a directed cycle. Counting the isolated concepts and nontrivial components gives $k_{\\mathcal I}=|H|-r_{\\mathcal I}+c_{\\mathcal I}$ and the equivalent form.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-yang-balanced-circuit-carrier"
+}

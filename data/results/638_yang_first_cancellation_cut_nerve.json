@@ -1,0 +1,17 @@
+{
+  "id": 638,
+  "short_name": "yang_first_cancellation_cut_nerve",
+  "name": "First Yang Cancellation Page Is Cut-Nerve Homology",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Fix a partition $\\pi$ of an ample family $H$ into $k$ parts. Let $\\mathcal A_\\pi$ be the latent charts whose failure arcs stay within parts, and let $\\mathcal N_\\pi$ consist of chart sets that fail to make some part strongly connected. The row $q=k-2$ of the first differential of the Yang failure-cover spectral sequence is the direct sum, over all $k$-part partitions, of the relative chain complexes $C_\\bullet(2^{\\mathcal A_\\pi},\\mathcal N_\\pi;\\mathbb F_2)$. Hence $E^2_{p,k-2}\\cong\\bigoplus_{|\\pi|=k}\\widetilde H_{p-1}(\\mathcal N_\\pi;\\mathbb F_2)$. Moreover $\\mathcal N_\\pi$ is homotopy equivalent to the nerve $\\mathcal K_\\pi$ of the canonical cover indexed by directed cuts within parts, where a cut simplex consists of charts having no arc leaving that cut. Consequently, if $H$ is nonpeelable, then for some $k$-part partition $\\pi$, $\\widetilde H_{|H|-k-1}(\\mathcal K_\\pi;\\mathbb F_2)\\ne0$.",
+  "status": "established",
+  "proof": "A first-page sphere summand belongs to partition $\\pi$ exactly when all arcs stay within parts and strongly connect every part; these are precisely the faces of the simplex $2^{\\mathcal A_\\pi}$ outside $\\mathcal N_\\pi$. Removing a chart induces the identity in the same row when all parts remain strongly connected and zero there when a part splits, giving the relative simplicial boundary and the second-page formula. A directed graph is strongly connected exactly when every nontrivial cut has an outgoing arc, so $\\mathcal N_\\pi$ is the union of the displayed cut simplices. Their intersections are simplices, and the nerve lemma gives $\\mathcal N_\\pi\\simeq\\mathcal K_\\pi$. A surviving class of total degree $|H|-2$ then yields the final necessary homology class.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-yang-first-cancellation-cut-nerve"
+}

@@ -1,0 +1,18 @@
+{
+  "id": 636,
+  "short_name": "yang_order_sphere_obstruction",
+  "name": "Canonical Yang Order-Sphere Obstruction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "recognition",
+  "statement": "For an ample family $H$ of order $m\\ge2$, each latent Yang chart $B$ defines a failure poset $P_B$ and a failure region $\\mathscr R_B$ in the order sphere $\\mathscr O(H)$. The Yang complex is nonshellable exactly when $\\mathscr U(H)=\\bigcup_B\\mathscr R_B$ fills $\\mathscr O(H)$, exactly when $\\widetilde H_{m-2}(\\mathscr U(H);\\mathbb F_2)\\cong\\mathbb F_2$; otherwise this top homology vanishes. For any nonempty chart set $\\mathcal I$, generate a preorder from all its failure relations and contract its strongly connected classes to a poset $\\overline P_{\\mathcal I}$ with $k_{\\mathcal I}$ elements. Then $\\bigcap_{B\\in\\mathcal I}\\mathscr R_B$ is the proper-ideal order complex of $\\overline P_{\\mathcal I}$, homotopy equivalent to $S^{k_{\\mathcal I}-2}$ when the quotient is an antichain and contractible otherwise. The resulting augmented Mayer--Vietoris spectral sequence converges to the homology of $\\mathscr U(H)$, and its only nonzero first-page summands are those one-dimensional antichain-quotient sphere classes.",
+  "status": "established",
+  "proof": "A chamber belongs to $\\mathscr R_B$ precisely when its order is a linear extension of $P_B$, which is exactly failure of every allowed protector gate in chart $B$. Thus the failure regions cover all chambers exactly when no Yang shelling exists. Chamber adjacency connects the order sphere, so a proper subcomplex has no top-dimensional cycle, whereas the full sphere has its fundamental class. Common ideals of several failure posets are exactly unions of strongly connected classes and hence ideals of the quotient poset. Its proper-ideal complex is a Boolean sphere when the quotient is an antichain; otherwise its atoms have a proper join and the crosscut complex contracts. The standard augmented intersection double complex supplies the stated spectral sequence.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-yang-order-sphere-obstruction"
+}

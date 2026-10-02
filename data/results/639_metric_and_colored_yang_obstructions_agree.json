@@ -1,0 +1,19 @@
+{
+  "id": 639,
+  "short_name": "metric_and_colored_yang_obstructions_agree",
+  "name": "Metric and Colored Yang Obstructions Agree",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/metric_yang_obstruction",
+    "#invariants/yang_order_sphere_obstruction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For every finite nonempty ample family $H$, $\\omega_{\\mathrm{met}}(H)=\\omega_{\\mathrm{ord}}(H)$. Their common value is zero exactly for dismantlable ample families and one exactly for nonpeelable ample families.",
+  "status": "established",
+  "proof": "The metric Yang obstruction theorem identifies $\\omega_{\\mathrm{met}}(H)=1$ exactly with nonpeelability. The colored order-sphere obstruction theorem gives the same characterization for $\\omega_{\\mathrm{ord}}(H)$. Both invariants are binary, so they agree on every ample family; their singleton normalizations also agree.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-yang-metric-obstruction-class; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-yang-order-sphere-obstruction",
+  "comments": "The values agree, but the two covers retain different local information: the metric cover uses distance-two intervals, while the colored cover retains latent-chart owner data."
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,31 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-71" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-638" style="position:relative;">
 
-        <h3><a href="invariants/metric_yang_obstruction.html" class="table-title-link">Metric Yang Obstruction</a></h3>
+        <h3><a href="results/yang_first_cancellation_cut_nerve.html" class="table-title-link">First Yang Cancellation Page Is Cut-Nerve Homology</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Metric Yang Obstruction</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\omega_{\mathrm{met}}">
-            \[\omega_{\mathrm{met}}\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For an ample family $H$ of order $m\ge2$, let $\mathscr O(H)$ be the order sphere. For each distance-two pair $D=\{u,v\}$, form the poset that places every common neighbour of $u,v$ below both endpoints, and let $\mathscr R_D^{\mathrm{met}}$ be the order complex of its proper order ideals. If $\mathscr U_{\mathrm{met}}(H)$ is the union of these subcomplexes, define $\omega_{\mathrm{met}}(H)=\dim_{\mathbb F_2}\widetilde H_{m-2}(\mathscr U_{\mathrm{met}}(H);\mathbb F_2)$.</p></div>
+        <p><strong>Name: </strong>First Yang Cancellation Page Is Cut-Nerve Homology</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/yang_order_sphere_obstruction.html">Yang Order-Sphere Obstruction</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Fix a partition $\pi$ of an ample family $H$ into $k$ parts. Let $\mathcal A_\pi$ be the latent charts whose failure arcs stay within parts, and let $\mathcal N_\pi$ consist of chart sets that fail to make some part strongly connected. The row $q=k-2$ of the first differential of the Yang failure-cover spectral sequence is the direct sum, over all $k$-part partitions, of the relative chain complexes $C_\bullet(2^{\mathcal A_\pi},\mathcal N_\pi;\mathbb F_2)$. Hence $E^2_{p,k-2}\cong\bigoplus_{|\pi|=k}\widetilde H_{p-1}(\mathcal N_\pi;\mathbb F_2)$. Moreover $\mathcal N_\pi$ is homotopy equivalent to the nerve $\mathcal K_\pi$ of the canonical cover indexed by directed cuts within parts, where a cut simplex consists of charts having no arc leaving that cut. Consequently, if $H$ is nonpeelable, then for some $k$-part partition $\pi$, $\widetilde H_{|H|-k-1}(\mathcal K_\pi;\mathbb F_2)\ne0$.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Domain: </strong><a href="classes/ample.html">Ample Classes</a></p>
-<p><strong>Codomain: </strong>$\{0,1\}$</p>
-<strong>Normalization:</strong><div class="text-field"><p>Set $\omega_{\mathrm{met}}(H)=0$ for the one-concept ample family. For $m\ge2$, the degree is the top dimension $m-2$ of the order sphere and homology uses $\mathbb F_2$ coefficients.</p></div>
-<p><strong>Category:</strong> Topological</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>The definition uses only distance-two pairs and their common-neighbour sets in the concept graph. It equals one exactly when the family is not corner-peelable, so it is an exact recognition invariant rather than a generative parametrization.</p></div>
-<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#CoudertDucoffeNisseSoto18">[CoudertDucoffeNisseSoto18]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-yang-metric-obstruction-class</p></div>
-<div class="reference-field"><p><strong>Values:</strong><ul class='fields-list'><li><a href='invariant_values/metric_yang_obstruction_dismantlable.html'>Metric Yang Obstruction Vanishes on Dismantlable Ample Families</a></li><li><a href='invariant_values/metric_yang_obstruction_cornerless.html'>Metric Yang Obstruction of Cornerless Ample Families</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/metric_yang_obstruction_characterization.html'>Metric Yang Obstruction Characterizes Nonpeelability</a></li><li><a href='results/metric_and_colored_yang_obstructions_agree.html'>Metric and Colored Yang Obstructions Agree</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>A first-page sphere summand belongs to partition $\pi$ exactly when all arcs stay within parts and strongly connect every part; these are precisely the faces of the simplex $2^{\mathcal A_\pi}$ outside $\mathcal N_\pi$. Removing a chart induces the identity in the same row when all parts remain strongly connected and zero there when a part splits, giving the relative simplicial boundary and the second-page formula. A directed graph is strongly connected exactly when every nontrivial cut has an outgoing arc, so $\mathcal N_\pi$ is the union of the displayed cut simplices. Their intersections are simplices, and the nerve lemma gives $\mathcal N_\pi\simeq\mathcal K_\pi$. A surviving class of total degree $|H|-2$ then yields the final necessary homology class.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-yang-first-cancellation-cut-nerve</p></div>
 
         </div>
     </div>
