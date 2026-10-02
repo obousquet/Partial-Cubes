@@ -1,0 +1,26 @@
+{
+  "id": 602,
+  "short_name": "adjacent_square_relative_criterion",
+  "name": "Exact Relative Criterion for an Adjacent Square Hole",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/cartesian_product",
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $A$ be ample and corner-peelable with a marked edge, replace its edge coordinate by a binary block to obtain $P$ with root square $T$, choose a mixed hole $q$, and set $K=T\\setminus\\{q\\}$. Attach a rooted factor $B$ along $K$. The assembly is ample and is dismantlable ample exactly when $P$ peels to $K$. It is a forbidden pc-minor exactly when: $P$ does not peel to $K$; both marked sections and their contraction peel to the projected root; and after every zero restriction or contraction in an old unmarked coordinate, the corresponding block replacement peels to $K$. If $A$ has the projected root as its unique corner, the negative condition is automatic. The criterion is independent of the rooted factor $B$.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/punctured_square_attachment_2029"
+  ],
+  "proof": "The assembly is the relative product attachment $P_B(P,K)$, so the attachment theorem gives ampleness and the exact positivity equivalence. Its minimality theorem reduces forbiddenness to relative peeling after every elementary operation whose target image is nonempty. Old-coordinate operations give the stated block tests. Contracting a block coordinate is equivalent to a rooted order on the contraction of $A$. Restricting a block coordinate gives a peripheral two-row family, and relative peeling to its surviving edge or vertex is equivalent to rooted orders on the corresponding section and contraction. These are precisely the three input orders in the statement. A unique root corner of $A$ lifts to the unique corner of $P$ inside $K$, preventing a first relative deletion.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-adjacent-square-relative-criterion",
+  "comments": "This is an exact test for a specified first factor and marked edge. It does not intrinsically characterize which first factors satisfy the minorwise relative conditions."
+}

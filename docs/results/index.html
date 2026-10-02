@@ -10043,6 +10043,43 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-602" style="position:relative;">
+
+        <h3><a href="results/adjacent_square_relative_criterion.html" class="table-title-link">Exact Relative Criterion for an Adjacent Square Hole</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Relative Criterion for an Adjacent Square Hole</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A$ be ample and corner-peelable with a marked edge, replace its edge coordinate by a binary block to obtain $P$ with root square $T$, choose a mixed hole $q$, and set $K=T\setminus\{q\}$. Attach a rooted factor $B$ along $K$. The assembly is ample and is dismantlable ample exactly when $P$ peels to $K$. It is a forbidden pc-minor exactly when: $P$ does not peel to $K$; both marked sections and their contraction peel to the projected root; and after every zero restriction or contraction in an old unmarked coordinate, the corresponding block replacement peels to $K$. If $A$ has the projected root as its unique corner, the negative condition is automatic. The criterion is independent of the rooted factor $B$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The assembly is the relative product attachment $P_B(P,K)$, so the attachment theorem gives ampleness and the exact positivity equivalence. Its minimality theorem reduces forbiddenness to relative peeling after every elementary operation whose target image is nonempty. Old-coordinate operations give the stated block tests. Contracting a block coordinate is equivalent to a rooted order on the contraction of $A$. Restricting a block coordinate gives a peripheral two-row family, and relative peeling to its surviving edge or vertex is equivalent to rooted orders on the corresponding section and contraction. These are precisely the three input orders in the statement. A unique root corner of $A$ lifts to the unique corner of $P$ inside $K$, preventing a first relative deletion.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-adjacent-square-relative-criterion</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/punctured_square_attachment_2029.html">A 2029-Concept Attachment Showing the Punctured-Square Test Is Strictly Weaker</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This is an exact test for a specified first factor and marked edge. It does not intrinsically characterize which first factors satisfy the minorwise relative conditions.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-603" style="position:relative;">
+
+        <h3><a href="results/rooted_endpoint_square_generator.html" class="table-title-link">A Square Generator from Rooted Endpoints and Small Minor Wings</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Square Generator from Rooted Endpoints and Small Minor Wings</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let a rooted factor $A$ have unique corner $a_0=0$, mark an incident edge $a_0a_1$, and assume either that $a_1$ is an attainable endpoint or that $(A,a_1)$ is also a rooted factor. In every zero restriction or contraction in an unmarked coordinate, assume that at least one marked-coordinate section has every exclusive component a tree or of order at most eight. Then attaching any rooted factor along either mixed-punctured root square of the binary block replacement produces an ample forbidden pc-minor. No relative orders or output-minor tests are needed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Rooted minimality at $a_0$ supplies rooted orders on its marked section and contraction; endpoint attainability or rooted minimality at $a_1$ supplies the other section order. The same hypotheses make both endpoint images attainable in each private elementary minor. Its component condition and the relative forest/eight-facet theorem make one section peel to the overlap. One-wing mixed-puncture retention then supplies every block-relative test in the exact adjacent-square criterion. The unique corner makes the negative condition automatic.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-rooted-endpoint-square-generator</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This graph condition is sufficient. Failure does not imply failure of relative peeling; on the fixed 289-concept first factor it recognizes only 1 of 22 private elementary images.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

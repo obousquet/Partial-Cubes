@@ -1,0 +1,22 @@
+{
+  "id": 603,
+  "short_name": "rooted_endpoint_square_generator",
+  "name": "A Square Generator from Rooted Endpoints and Small Minor Wings",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/cartesian_product",
+    "#operations/conditioning",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "Let a rooted factor $A$ have unique corner $a_0=0$, mark an incident edge $a_0a_1$, and assume either that $a_1$ is an attainable endpoint or that $(A,a_1)$ is also a rooted factor. In every zero restriction or contraction in an unmarked coordinate, assume that at least one marked-coordinate section has every exclusive component a tree or of order at most eight. Then attaching any rooted factor along either mixed-punctured root square of the binary block replacement produces an ample forbidden pc-minor. No relative orders or output-minor tests are needed.",
+  "status": "established",
+  "proof": "Rooted minimality at $a_0$ supplies rooted orders on its marked section and contraction; endpoint attainability or rooted minimality at $a_1$ supplies the other section order. The same hypotheses make both endpoint images attainable in each private elementary minor. Its component condition and the relative forest/eight-facet theorem make one section peel to the overlap. One-wing mixed-puncture retention then supplies every block-relative test in the exact adjacent-square criterion. The unique corner makes the negative condition automatic.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-rooted-endpoint-square-generator",
+  "comments": "This graph condition is sufficient. Failure does not imply failure of relative peeling; on the fixed 289-concept first factor it recognizes only 1 of 22 private elementary images."
+}
