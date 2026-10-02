@@ -11100,6 +11100,57 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-662" style="position:relative;">
+
+        <h3><a href="results/equal_support_simultaneous_extension_criterion.html" class="table-title-link">Simultaneous Extensions Grouped by Acquired Support</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Simultaneous Extensions Grouped by Acquired Support</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $S\subseteq Q_F$ and let $U\subseteq Q_F\setminus S$ be finitely many tips such that every one-tip extension $S\cup\{a\}$ is ample, with acquired support $I_a$. For each occurring support $I$, put $U_I=\{a:I_a=I\}$ and $R_I=\{a|_{F\setminus I}:a\in U_I\}$, and let $X=S\cup U$. Then $X$ is ample exactly when every row $R_I$ is ample. Under these conditions, $X^I=R_I$ and $\operatorname{Sh}(X)=\operatorname{Sh}(S)\dot\cup\dot\bigcup_I\{I\cup J:J\in\operatorname{Sh}(R_I)\}$. Moreover, $X$ peels to $S$ exactly when every row $R_I$ is dismantlable ample. The empty tip set is allowed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>All tips in one group realize the unique trace of $I$ missing from $S$, and no tip from another group can realize that trace without acquiring $I$ as a second support. Thus the full $I$-fibres of $X$ occur exactly over $R_I$, proving $X^I=R_I$ and necessity by reduction closure. Conversely, each cube in $R_I$ lifts through the punctured $I$-fibres in $S$ to a full cube on $I$ together with its row support. Contributions from distinct acquired supports cannot contain one another and are disjoint. If all rows are ample, their shadow sizes sum with $|S|$ to $|X|$, so Sandwich equality proves ampleness and the exact shadow. A tip is a corner exactly when its row projection is a corner, even after arbitrary other tips have been deleted. Row peelings therefore lift and concatenate to a peeling down to $S$, while any relative peeling projects to complete peelings of every row.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-equal-support-extensions</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-663" style="position:relative;">
+
+        <h3><a href="results/simultaneous_tip_proper_minor_positivity.html" class="table-title-link">Proper-Minor Positivity for Simultaneous Initial Tips</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Proper-Minor Positivity for Simultaneous Initial Tips</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For an ample simultaneous extension $X=S\cup U$ grouped into row families $R_I$ by acquired support, every $R_I$ is a proper coordinate face of $X$. Hence if $X$ is dismantlable ample, or merely if all proper coordinate faces of $X$ are dismantlable ample, then $X$ peels to $S$. If $S$ is additionally an ample forbidden pc-minor using every ambient coordinate, the following are equivalent: every $R_I$ is dismantlable ample; $X$ peels to $S$; every nonempty proper pc-minor of $X$ is dismantlable ample; and $X$ is either dismantlable ample or a forbidden pc-minor. When $X$ is forbidden, every intermediate family in any relative peeling from $X$ to $S$ is also forbidden. Consequently, a corner-descent-terminal forbidden class cannot properly contain such a forbidden $S$ when all additional vertices are individually ample additions to $S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Fixing the acquired-support coordinates to their unique missing trace leaves precisely $R_I$, and the face is proper because nonempty $S$ realizes no vertex with that trace. Positivity of these faces makes every row peelable, so the simultaneous-extension theorem lifts their peelings to $S$. Over a forbidden seed, transporting a relative peeling through any elementary coordinate operation yields a relative peeling to the corresponding proper image of $S$, which is dismantlable ample because the seed uses every coordinate. This proves positivity of every proper minor and the equivalences. If an intermediate family were peelable, preceding corner deletions would peel $X$; transporting its remaining relative chain to elementary minors shows all of its proper minors are positive, so every intermediate family is forbidden.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-initial-tip-minor-positivity</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-664" style="position:relative;">
+
+        <h3><a href="results/common_seed_occurrence_cover_classification.html" class="table-title-link">Complete Common-Seed Occurrence-Cover Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Complete Common-Seed Occurrence-Cover Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be an irredundantly embedded ample forbidden pc-minor for the dismantlable ample classes. Choose finitely many distinct-support tips $a$ such that every one-tip repair $S\cup\{a\}$ is dismantlable ample, and assign each tip a nonempty proper ample occurrence row $R_a\subsetneq Q_E$ on nonempty layer coordinates. The replicated repair assembly $X(\mathbf R)$ is a forbidden pc-minor exactly when: (i) every $R_a$ is dismantlable ample; and (ii) every signed facet $\{t:t_e=i\}$ of the layer cube is contained in some occurrence row. No further old-coordinate condition is needed. The normalized marked sections recover $S$ and every labelled triple $(a,P_a,R_a)$, so the criterion is exact within the common-seed class over a fixed forbidden seed. It remains a relative classification because the seed is assumed and row peelability is a recognition condition.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The assembly is ample by the replicated-repair theorem and nonpeelable because strong projection along all proper rows gives the forbidden seed. If it is forbidden, each row is a proper coordinate face and hence peelable, while the layer-minimality theorem forces the signed-facet cover. Conversely, the facet cover makes every elementary layer restriction and contraction peelable. Under an old-coordinate operation, compatible repairs remain distinct and every surviving projected tip stays a corner after arbitrary other tips are removed. Lift a peeling of each occurrence row to remove its whole projected repair row, in any order, leaving the product of the proper seed image with the layer cube. Irredundancy makes that seed image a proper positive minor, and product closure finishes the peeling. Thus all elementary minors are dismantlable ample, while the full assembly is not, proving forbiddenness. Canonical recovery follows from intersecting and comparing the marked sections.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-common-seed-cover-classification</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

@@ -1,0 +1,21 @@
+{
+  "id": 664,
+  "short_name": "common_seed_occurrence_cover_classification",
+  "name": "Complete Common-Seed Occurrence-Cover Criterion",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be an irredundantly embedded ample forbidden pc-minor for the dismantlable ample classes. Choose finitely many distinct-support tips $a$ such that every one-tip repair $S\\cup\\{a\\}$ is dismantlable ample, and assign each tip a nonempty proper ample occurrence row $R_a\\subsetneq Q_E$ on nonempty layer coordinates. The replicated repair assembly $X(\\mathbf R)$ is a forbidden pc-minor exactly when: (i) every $R_a$ is dismantlable ample; and (ii) every signed facet $\\{t:t_e=i\\}$ of the layer cube is contained in some occurrence row. No further old-coordinate condition is needed. The normalized marked sections recover $S$ and every labelled triple $(a,P_a,R_a)$, so the criterion is exact within the common-seed class over a fixed forbidden seed. It remains a relative classification because the seed is assumed and row peelability is a recognition condition.",
+  "status": "established",
+  "proof": "The assembly is ample by the replicated-repair theorem and nonpeelable because strong projection along all proper rows gives the forbidden seed. If it is forbidden, each row is a proper coordinate face and hence peelable, while the layer-minimality theorem forces the signed-facet cover. Conversely, the facet cover makes every elementary layer restriction and contraction peelable. Under an old-coordinate operation, compatible repairs remain distinct and every surviving projected tip stays a corner after arbitrary other tips are removed. Lift a peeling of each occurrence row to remove its whole projected repair row, in any order, leaving the product of the proper seed image with the layer cube. Irredundancy makes that seed image a proper positive minor, and product closure finishes the peeling. Thus all elementary minors are dismantlable ample, while the full assembly is not, proving forbiddenness. Canonical recovery follows from intersecting and comparing the marked sections.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-common-seed-cover-classification"
+}

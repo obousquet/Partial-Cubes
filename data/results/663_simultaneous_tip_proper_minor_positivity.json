@@ -1,0 +1,20 @@
+{
+  "id": 663,
+  "short_name": "simultaneous_tip_proper_minor_positivity",
+  "name": "Proper-Minor Positivity for Simultaneous Initial Tips",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/pc_minor",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "For an ample simultaneous extension $X=S\\cup U$ grouped into row families $R_I$ by acquired support, every $R_I$ is a proper coordinate face of $X$. Hence if $X$ is dismantlable ample, or merely if all proper coordinate faces of $X$ are dismantlable ample, then $X$ peels to $S$. If $S$ is additionally an ample forbidden pc-minor using every ambient coordinate, the following are equivalent: every $R_I$ is dismantlable ample; $X$ peels to $S$; every nonempty proper pc-minor of $X$ is dismantlable ample; and $X$ is either dismantlable ample or a forbidden pc-minor. When $X$ is forbidden, every intermediate family in any relative peeling from $X$ to $S$ is also forbidden. Consequently, a corner-descent-terminal forbidden class cannot properly contain such a forbidden $S$ when all additional vertices are individually ample additions to $S$.",
+  "status": "established",
+  "proof": "Fixing the acquired-support coordinates to their unique missing trace leaves precisely $R_I$, and the face is proper because nonempty $S$ realizes no vertex with that trace. Positivity of these faces makes every row peelable, so the simultaneous-extension theorem lifts their peelings to $S$. Over a forbidden seed, transporting a relative peeling through any elementary coordinate operation yields a relative peeling to the corresponding proper image of $S$, which is dismantlable ample because the seed uses every coordinate. This proves positivity of every proper minor and the equivalences. If an intermediate family were peelable, preceding corner deletions would peel $X$; transporting its remaining relative chain to elementary minors shows all of its proper minors are positive, so every intermediate family is forbidden.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-initial-tip-minor-positivity"
+}

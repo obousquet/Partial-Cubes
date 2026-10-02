@@ -1,0 +1,19 @@
+{
+  "id": 662,
+  "short_name": "equal_support_simultaneous_extension_criterion",
+  "name": "Simultaneous Extensions Grouped by Acquired Support",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/full_reduction",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let nonempty ample $S\\subseteq Q_F$ and let $U\\subseteq Q_F\\setminus S$ be finitely many tips such that every one-tip extension $S\\cup\\{a\\}$ is ample, with acquired support $I_a$. For each occurring support $I$, put $U_I=\\{a:I_a=I\\}$ and $R_I=\\{a|_{F\\setminus I}:a\\in U_I\\}$, and let $X=S\\cup U$. Then $X$ is ample exactly when every row $R_I$ is ample. Under these conditions, $X^I=R_I$ and $\\operatorname{Sh}(X)=\\operatorname{Sh}(S)\\dot\\cup\\dot\\bigcup_I\\{I\\cup J:J\\in\\operatorname{Sh}(R_I)\\}$. Moreover, $X$ peels to $S$ exactly when every row $R_I$ is dismantlable ample. The empty tip set is allowed.",
+  "status": "established",
+  "proof": "All tips in one group realize the unique trace of $I$ missing from $S$, and no tip from another group can realize that trace without acquiring $I$ as a second support. Thus the full $I$-fibres of $X$ occur exactly over $R_I$, proving $X^I=R_I$ and necessity by reduction closure. Conversely, each cube in $R_I$ lifts through the punctured $I$-fibres in $S$ to a full cube on $I$ together with its row support. Contributions from distinct acquired supports cannot contain one another and are disjoint. If all rows are ample, their shadow sizes sum with $|S|$ to $|X|$, so Sandwich equality proves ampleness and the exact shadow. A tip is a corner exactly when its row projection is a corner, even after arbitrary other tips have been deleted. Row peelings therefore lift and concatenate to a peeling down to $S$, while any relative peeling projects to complete peelings of every row.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-equal-support-extensions"
+}
