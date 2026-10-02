@@ -11758,6 +11758,25 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-698" style="position:relative;">
+
+        <h3><a href="results/inherited_repair_fibre_descent.html" class="table-title-link">Inherited Repair Fibres Admit Complete Obstruction Descent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Inherited Repair Fibres Admit Complete Obstruction Descent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $G\subseteq Q_F$ be an irredundantly embedded cornerless ample forbidden pc-minor, and suppose $S=G\cup\{c\}$ is ample and nonpeelable. Let $\mathcal A$ be compatible resolving tips of $G$ whose acquired supports, together with the acquired support of $c$, are pairwise distinct. Assign the tips rows $R_a$ forming a partition of the signed facets of a nonempty layer cube $Q_E$, set $Y=(G\times Q_E)\cup\bigcup_{a\in\mathcal A}(\{a\}\times R_a)$, and put $X=Y\cup(\{c\}\times Q_E)$. Then $X$ is an ample forbidden pc-minor and admits $2^{|E|}$ obstruction-preserving corner deletions that remove exactly the full fibre $\{c\}\times Q_E$ and end at $Y$. Thus $X$ is not corner-descent terminal, although reduction along $E$ recovers the cornered seed $S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The signed-facet partition theorem makes $Y$ a terminal ample forbidden pc-minor. Choose a corner peeling of $Q_E$, with ample suffixes $T_0=Q_E,T_1,\ldots,T_m=\varnothing$. Compatible-repair union and the replicated-layer theorem make every $Y_i=Y\cup(\{c\}\times T_i)$ ample. Its strong reduction along $E$ is $S$ when $i=0$ and $G$ thereafter, so every $Y_i$ is nonpeelable. Traversed from $Y_m$ to $Y_0$, each step is an ample one-concept extension in the same irredundant ambient cube and remains nonpeelable; the one-concept atlas therefore makes every intermediate family a forbidden pc-minor. Reversing the sequence gives the required corner deletions. Since every $R_a$ is proper, $X^E=S$, and compatible-repair union preserves the distinct acquired supports, so the marked presentation is exactly the recovered-layer presentation claimed.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-inherited-repair-fibre-descent</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_maximal_recovery_with_cornered_seed.html">Hall Assembly with a Cornered Maximal Recovered Seed</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>For the certified Hall witness with one layer coordinate, the two fibre copies of the added seed corner delete successively from the 602-concept family and reach the terminal 600-concept two-repair lift. The general theorem supplies the full $2^{|E|}$ descent for arbitrary layer dimension.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

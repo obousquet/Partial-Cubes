@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "batch_id": "192_dismantlable_ample_inherited_repair_fibre_descent",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the general obstruction-preserving descent that removes a full inherited seed-extension fibre from a signed-facet assembly, while reusing the already archived Hall witness and its exact elementary-minor certificate.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-inherited-repair-fibre-descent",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-cornered-maximal-hall-seed",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_seed_corner_facet_deletion.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "seed-corner-deletion-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_seed_corner_facet_deletion.py,damp_seed_corner_facet_deletion_verification.json,verify_damp_facet_partition_repairs.py,verify_damp_terminal_clause_recovery.py,damp_cornered_hall_repair_signatures.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "7a333881c0335ce20ee0708e8896dcc42539a9f730825c31aeb7b82e5f674e76",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The existing Hall example records only the one-layer witness. This proposition owns the general $2^{|E|}$ obstruction-preserving descent and explains why the resulting recovered cornered-seed assembly cannot be terminal.",
+    "outcome": "The proposition and proof match the preserved manuscript. The database now owns its quantified construction, complete descent, strong-reduction argument, exact scope, and link to the certified Hall witness.",
+    "claim_block_sha256": {
+      "prop:damp-inherited-repair-fibre-descent": "9f5cc93f7f5e88b5b89c1dfb61a491a44a42f40aac8972cdf4f58027f0f2d8ba"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/verify_damp_seed_corner_facet_deletion.py",
+      "sha256": "b09b229b2467ce97bc9fcd07b0a111a4564ba0ae24cfce72f3a6534cdb028dc9"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/damp_seed_corner_facet_deletion_verification.json",
+      "sha256": "2c9e7efe3026219cf7a73ca1bf9c77b5305435256e4e57716517de0833b5a944"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/source_damp_seed_corner_facet_deletion_verification.json",
+      "sha256": "2c9e7efe3026219cf7a73ca1bf9c77b5305435256e4e57716517de0833b5a944"
+    },
+    {
+      "path": "migration/certificates/185_dismantlable_ample_maximal_recovery_and_seed_corner_deletion/source_packet_manifest.json",
+      "sha256": "1821b85de216250e81bbc6fa2c591c58cb89df18fd420ed5327c60188c2e2b1e"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the general theorem, concise proof, exact locator, and link to the normalized Hall witness. LaTeX retains the expanded suffix-family argument and discussion of the theorem's limits. The finite one-layer witness remains in its original immutable certificate packet.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the complete proposition and proof. Batch 185 preserves the Hall computation packet at commit f304961 and the byte-identical 505,092-byte verification report used here.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/698_inherited_repair_fibre_descent.json",
+      "sha256": "ac64799911b3f5b488155ad71711c1dd89f08ab1342e5b7d8d567e4a45988131"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "27d9a9b2f4591a2b6e62d89639c422b2f58adda67014751d7c1bf406874ede29"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "3a35c5c0cc45d8fafe9a1feb4232bfb1968368146c7c7a262a2da23e305b69f8"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2105 records.",
+    "website": "Normalized 2121 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 798 to 799 of 1143 and dismantlable-ample coverage from 362 to 363 of 683.",
+    "certificates": "The reused Hall replay checks the two positive seed-corner deletions from the 602-concept assembly, with explicit peelings for all 39 elementary images after each deletion, and reaches the terminal 600-concept lift. The general higher-layer descent is symbolic and database-owned.",
+    "source_integrity": "The proposition block matches supplemental snapshot 2026-10-02-b002, and every reused Batch 185 verifier and report hash remains unchanged."
+  },
+  "deferred": [
+    "The refreshed audit has 344 uncovered database-owned labels: 320 in dismantlable-ample and 24 in ample-corners.",
+    "The next source material records failure of layer-set union without the obstruction hypothesis and the exact six-concept control.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
