@@ -1,0 +1,18 @@
+{
+  "id": 656,
+  "short_name": "layer_system_trace_transport",
+  "name": "Trace Transport for a Binary Layer System",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $E,F$ be disjoint and choose an arbitrary section $H_t\\subseteq Q_F$ for each $t\\in Q_E$, forming $X=\\dot\\bigcup_{t\\in Q_E}(H_t\\times\\{t\\})$. For $L\\subseteq E$ and $r\\in Q_L$, put $H_{L,r}=\\bigcup_{t|_L=r}H_t$. Then for every $D\\subseteq F$, $q\\in Q_D$, one has $X[D\\cup L,(q,r)]=\\dot\\bigcup_{t|_L=r}(H_t[D,q]\\times\\{t\\})$. Consequently, $D\\cup L$ is shattered by $X$ exactly when $D$ belongs to $\\bigcap_{r\\in Q_L}\\operatorname{Sh}(H_{L,r})$. The marked layer coordinates recover every $H_t$ as the projected $t$-section, so this is an exact and canonically recoverable trace table for any finite binary layer system.",
+  "status": "established",
+  "proof": "A vertex $(x,t)$ has trace $(q,r)$ on $D\\cup L$ exactly when $x|_D=q$ and $t|_L=r$. Partitioning the trace fibre by the full layer word gives the disjoint-union identity. The support is shattered precisely when that fibre is nonempty for every pair $(q,r)$; for fixed $r$, this says exactly that the union $H_{L,r}$ shatters $D$. Sectioning on the marked coordinates gives the recovery statement.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-layer-system-trace-transport"
+}

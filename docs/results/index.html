@@ -11000,6 +11000,55 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-656" style="position:relative;">
+
+        <h3><a href="results/layer_system_trace_transport.html" class="table-title-link">Trace Transport for a Binary Layer System</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Trace Transport for a Binary Layer System</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $E,F$ be disjoint and choose an arbitrary section $H_t\subseteq Q_F$ for each $t\in Q_E$, forming $X=\dot\bigcup_{t\in Q_E}(H_t\times\{t\})$. For $L\subseteq E$ and $r\in Q_L$, put $H_{L,r}=\bigcup_{t|_L=r}H_t$. Then for every $D\subseteq F$, $q\in Q_D$, one has $X[D\cup L,(q,r)]=\dot\bigcup_{t|_L=r}(H_t[D,q]\times\{t\})$. Consequently, $D\cup L$ is shattered by $X$ exactly when $D$ belongs to $\bigcap_{r\in Q_L}\operatorname{Sh}(H_{L,r})$. The marked layer coordinates recover every $H_t$ as the projected $t$-section, so this is an exact and canonically recoverable trace table for any finite binary layer system.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A vertex $(x,t)$ has trace $(q,r)$ on $D\cup L$ exactly when $x|_D=q$ and $t|_L=r$. Partitioning the trace fibre by the full layer word gives the disjoint-union identity. The support is shattered precisely when that fibre is nonempty for every pair $(q,r)$; for fixed $r$, this says exactly that the union $H_{L,r}$ shatters $D$. Sectioning on the marked coordinates gives the recovery statement.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-layer-system-trace-transport</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-657" style="position:relative;">
+
+        <h3><a href="results/independent_repair_layer_criterion.html" class="table-title-link">Independent Repair-Layer Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Independent Repair-Layer Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty layer coordinates $E$ be disjoint from $F$, let $S\subseteq Q_F$ be ample, and choose pairwise distinct absent tips $a_t$ for $t$ in $T\subseteq Q_E$, each making $S\cup\{a_t\}$ ample with unique acquired support $P_t$. The assembly $X_T=(S\times Q_E)\cup\{(a_t,t):t\in T\}$ is ample exactly when $t\mapsto P_t$ is injective. Under this condition, if $\Sigma=\operatorname{Sh}(S)$ and $\Sigma^+=\Sigma\dot\cup\{P_t:t\in T\}$, then $\operatorname{Sh}(X_T)=\{D\cup L:D\in\Sigma,L\subseteq E\}\dot\cup\{P_t:t\in T\}$. Its minimal nonfaces are $\mathcal N(\Sigma^+)\dot\cup\{P_t\cup\{e\}:t\in T,e\in E\}$. Old-coordinate clauses have the signs of $S\cup\{a_t:t\in T\}$, while the clause on $P_t\cup\{e\}$ omits $(a_t|_{P_t},1-t_e)$. These clauses reconstruct the assembly. From the marked layers one recovers $S$ as the intersection of all sections, $T$ as the non-core sections, each singleton tip difference, and each $P_t$ from its neighbours in $S$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Distinct acquired supports give $|S|+|U|$ distinct strongly shattered supports in every union $S\cup\{a_t:t\in U\}$, so Sandwich equality makes each union ample with exactly the expected shadow. Trace transport then shows that a support using a nonempty layer set sees only the core shadow, while the old-coordinate projection gains the $P_t$, proving the formula and ampleness. If two tips share a support, a layer coordinate on which their words differ creates one additional mixed shattered support beyond the Sandwich bound, so the assembly is not ample. Minimality in the displayed shadow gives precisely the stated old and mixed nonfaces. The missing old trace for $P_t$ occurs only at tip $a_t$, so adjoining a layer coordinate changes its missing bit to $1-t_e$. Intersections and section differences give the inverse formulas.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-independent-repair-layers</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-658" style="position:relative;">
+
+        <h3><a href="results/replicated_repair_layer_criterion.html" class="table-title-link">Replicated Repair-Layer Criterion</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Replicated Repair-Layer Criterion</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\subseteq Q_F$ be ample, let $\mathcal A$ be finitely many absent tips whose ample one-concept extensions acquire pairwise distinct supports $P_a$, and give each tip a nonempty occurrence family $R_a\subseteq Q_E$ on nonempty disjoint layer coordinates. For $X(\mathbf R)=(S\times Q_E)\cup\bigcup_{a\in\mathcal A}(\{a\}\times R_a)$, one has $\operatorname{Sh}(X(\mathbf R))=\{D\cup L:D\in\operatorname{Sh}(S),L\subseteq E\}\dot\cup\dot\bigcup_{a\in\mathcal A}\{P_a\cup L:L\in\operatorname{Sh}(R_a)\}$. Hence $X(\mathbf R)$ is ample exactly when every occurrence family $R_a$ is ample. In that case, writing $\Sigma^+=\operatorname{Sh}(S)\dot\cup\{P_a\}$ and $\Gamma_a=\operatorname{Sh}(R_a)$, its minimal nonfaces are $\mathcal N(\Sigma^+)\dot\cup\dot\bigcup_a\{P_a\cup J:J\in\mathcal N(\Gamma_a)\}$; the corresponding mixed sign is $(a|_{P_a},\sigma_{R_a}(J))$, with old signs inherited from $S\cup\mathcal A$. Thus old repair clauses and layer clauses compose without another compatibility condition. If every $R_a$ is proper, all parameters are recovered from the marked sections; in general, absorbing every full occurrence row $R_a=Q_E$ into the common core gives the unique normalized presentation.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For each layer trace, the union of compatible sections is the core together with exactly those tips whose occurrence family realizes that trace. Distinct-support Sandwich equality says this union shatters $P_a$ exactly when it contains $a$. Trace transport therefore makes $P_a\cup L$ shattered exactly when $R_a$ shatters $L$, proving the shadow formula. The global Sandwich defect is the sum over $a$ of $|\operatorname{Sh}(R_a)|-|R_a|$, so it vanishes exactly when every occurrence family is ample. Minimal nonfaces then split into the old minimal nonfaces and a repair support joined to a minimal layer nonface. The unique old missing trace for $P_a$ occurs over precisely $R_a$, which gives the product sign. Proper rows are absent from some section and are separated from the common intersection; full rows lie in every section and are therefore absorbed uniquely into the normalized core.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-replicated-repair-layers</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

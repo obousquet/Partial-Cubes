@@ -1,0 +1,14 @@
+{
+  "id": 657,
+  "short_name": "independent_repair_layer_criterion",
+  "name": "Independent Repair-Layer Criterion",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "recognition",
+  "statement": "Let nonempty layer coordinates $E$ be disjoint from $F$, let $S\\subseteq Q_F$ be ample, and choose pairwise distinct absent tips $a_t$ for $t$ in $T\\subseteq Q_E$, each making $S\\cup\\{a_t\\}$ ample with unique acquired support $P_t$. The assembly $X_T=(S\\times Q_E)\\cup\\{(a_t,t):t\\in T\\}$ is ample exactly when $t\\mapsto P_t$ is injective. Under this condition, if $\\Sigma=\\operatorname{Sh}(S)$ and $\\Sigma^+=\\Sigma\\dot\\cup\\{P_t:t\\in T\\}$, then $\\operatorname{Sh}(X_T)=\\{D\\cup L:D\\in\\Sigma,L\\subseteq E\\}\\dot\\cup\\{P_t:t\\in T\\}$. Its minimal nonfaces are $\\mathcal N(\\Sigma^+)\\dot\\cup\\{P_t\\cup\\{e\\}:t\\in T,e\\in E\\}$. Old-coordinate clauses have the signs of $S\\cup\\{a_t:t\\in T\\}$, while the clause on $P_t\\cup\\{e\\}$ omits $(a_t|_{P_t},1-t_e)$. These clauses reconstruct the assembly. From the marked layers one recovers $S$ as the intersection of all sections, $T$ as the non-core sections, each singleton tip difference, and each $P_t$ from its neighbours in $S$.",
+  "status": "established",
+  "proof": "Distinct acquired supports give $|S|+|U|$ distinct strongly shattered supports in every union $S\\cup\\{a_t:t\\in U\\}$, so Sandwich equality makes each union ample with exactly the expected shadow. Trace transport then shows that a support using a nonempty layer set sees only the core shadow, while the old-coordinate projection gains the $P_t$, proving the formula and ampleness. If two tips share a support, a layer coordinate on which their words differ creates one additional mixed shattered support beyond the Sandwich bound, so the assembly is not ample. Minimality in the displayed shadow gives precisely the stated old and mixed nonfaces. The missing old trace for $P_t$ occurs only at tip $a_t$, so adjoining a layer coordinate changes its missing bit to $1-t_e$. Intersections and section differences give the inverse formulas.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-independent-repair-layers"
+}
