@@ -1,0 +1,16 @@
+{
+  "id": 64,
+  "short_name": "path_reduction_label_hypergraph",
+  "name": "Path-Reduction Label Hypergraph",
+  "symbol": "\\mathcal H(A,D)",
+  "definition": "Let $A$ be corner-peelable ample and let $D=\\{u,c,v\\}\\subseteq A$ induce the path $u-c-v$. For an acyclic USO $\\mathcal O$ of $A$, let $S_{\\mathcal O}$ be the vertices reachable from $D$, including $D$. If $K_1,\\ldots,K_k$ are the components of $A\\setminus D$, put $N_{\\mathcal O}(z)=\\{i:z\\text{ has a neighbour in }K_i\\cap S_{\\mathcal O}\\}$ for $z\\in\\{u,v\\}$. Then $\\mathcal H(A,D)$ is the hypergraph on $\\{1,\\ldots,k\\}$ consisting of every $N_{\\mathcal O}(u)$ and $N_{\\mathcal O}(v)$.",
+  "status": "established",
+  "domain_class_id": "#classes/dismantlable_ample",
+  "codomain": "Finite hypergraphs on the components of the complement of a marked three-vertex path",
+  "parameters": "A marked induced path $D=u-c-v$ in a displayed ample family $A$.",
+  "normalization": "The hyperedges range over all acyclic unique-sink orientations of $A$ and both endpoints of the marked path.",
+  "category": "combinatorial",
+  "isomorphism_invariant": true,
+  "comments": "A component two-colouring gives a nonpeelable ample expansion over $D$ exactly when it properly two-colours every hyperedge. Empty and singleton hyperedges therefore rule out negative labelings.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-reduction-reachability"
+}

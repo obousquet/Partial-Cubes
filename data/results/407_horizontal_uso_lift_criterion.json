@@ -1,0 +1,16 @@
+{
+  "id": 407,
+  "short_name": "horizontal_uso_lift_criterion",
+  "name": "Exact Criterion and Count for Horizontal USO Lifts",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be ample, let $e$ be active, write $A=\\pi_eX$ and $D=X^{\\{e\\}}$, and fix an acyclic USO $\\mathcal O$ of $A$. An acyclic USO of $X$ preserving the orientation of every old-direction edge exists exactly when the induced orientation $\\mathcal O|_D$ is a USO of $D$. If $s$ vertices $d\\in D$ have no outgoing neighbour in $A\\setminus D$, exactly $2^s$ such lifts exist. At every other $d$, the vertical edge is forced toward the lift label of its outgoing external neighbours; the remaining $s$ vertical directions are independent.",
+  "status": "established",
+  "proof": "Necessity follows from the outgoing-cube condition at the source of each vertical edge and from restriction to cubes of $D$. Conversely, the complement of an ample intersection inside any cube is connected, so all external outgoing neighbours of a doubled vertex lie in one labeled component. Direct the vertical edge toward that label, with a free choice when there is no external outgoing neighbour. The outgoing-cube and unique-sink conditions then hold on every cube, and a directed cycle would project to a directed closed walk in the acyclic base orientation. Reversing any forced vertical edge creates an outgoing pair with a missing opposite lift, proving exhaustiveness and the count.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-horizontal-uso-lifts"
+}

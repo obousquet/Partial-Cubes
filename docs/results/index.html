@@ -6809,6 +6809,88 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-407" style="position:relative;">
+
+        <h3><a href="results/horizontal_uso_lift_criterion.html" class="table-title-link">Exact Criterion and Count for Horizontal USO Lifts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Criterion and Count for Horizontal USO Lifts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample, let $e$ be active, write $A=\pi_eX$ and $D=X^{\{e\}}$, and fix an acyclic USO $\mathcal O$ of $A$. An acyclic USO of $X$ preserving the orientation of every old-direction edge exists exactly when the induced orientation $\mathcal O|_D$ is a USO of $D$. If $s$ vertices $d\in D$ have no outgoing neighbour in $A\setminus D$, exactly $2^s$ such lifts exist. At every other $d$, the vertical edge is forced toward the lift label of its outgoing external neighbours; the remaining $s$ vertical directions are independent.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Necessity follows from the outgoing-cube condition at the source of each vertical edge and from restriction to cubes of $D$. Conversely, the complement of an ample intersection inside any cube is connected, so all external outgoing neighbours of a doubled vertex lie in one labeled component. Direct the vertical edge toward that label, with a free choice when there is no external outgoing neighbour. The outgoing-cube and unique-sink conditions then hold on every cube, and a directed cycle would project to a directed closed walk in the acyclic base orientation. Reversing any forced vertical edge creates an outgoing pair with a missing opposite lift, proving exhaustiveness and the count.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-horizontal-uso-lifts</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-408" style="position:relative;">
+
+        <h3><a href="results/forced_fork_at_path_reduction.html" class="table-title-link">A Forbidden Path Reduction Forces Every Contraction USO to Fork</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Forbidden Path Reduction Forces Every Contraction USO to Fork</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>If an ample pc-minimal obstruction to dismantlable ampleness has a reduction $D=\{u,c,v\}$ inducing the path $u-c-v$, every acyclic USO of its contraction directs both path edges away from $c$. Equivalently, every corner peeling of the contraction deletes $c$ before both endpoints.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The contraction is corner-peelable. On a three-vertex path the only orientation violating the outgoing-cube condition is the fork with source at its middle vertex. Every other induced orientation is a USO of the reduction and would lift by the horizontal-lift criterion, contradicting nonpeelability of the expansion. The peeling–acyclic-USO correspondence translates the orientation statement into deletion order.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-path-reduction-forced-fork</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-409" style="position:relative;">
+
+        <h3><a href="results/horizontal_preservation_not_necessary_for_positivity.html" class="table-title-link">Horizontal USO Preservation Is Not Necessary for Positivity</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Horizontal USO Preservation Is Not Necessary for Positivity</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Failure of the horizontal-lift criterion for a prescribed contraction USO does not imply that an ample expansion is nonpeelable: the seven-vertex peripheral expansion of a square over a three-vertex path is corner-peelable although one natural square orientation has no horizontal lift. More strongly, there is a 292-concept ample path expansion that is corner-peelable even though no acyclic USO of its contraction admits an acyclic lift preserving all horizontal directions.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For the seven-vertex family, the displayed deletion sequence clears two square corners and a leaf before leaving a square. For the 292-concept control, the contraction has unique geometric corner zero, hence every acyclic USO has zero as its source and induces the forbidden fork orientation on the path reduction. Connectedness of the complement leaves only the two reflected peripheral expansions; deleting the two lifted path endpoints, then the lifted middle vertex, and then following the stored contraction order peels each one.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-path-reduction-forced-fork; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-no-common-horizontal-control</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/vertex_deleted_three_cube.html">Vertex-Deleted Three-Cube</a></li><li><a href="examples/positive_path_expansion_without_horizontal_lift.html">A Positive 292-Concept Path Expansion with No Horizontal USO Lift</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-410" style="position:relative;">
+
+        <h3><a href="results/path_reduction_component_label_criterion.html" class="table-title-link">Exact Component-Label Criterion for a Three-Vertex Path Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Component-Label Criterion for a Three-Vertex Path Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/path_reduction_label_hypergraph.html">Path-Reduction Label Hypergraph</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A$ be corner-peelable ample, let $D=\{u,c,v\}$ induce a path, and lift each component $K_i$ of $A\setminus D$ to layer $t_i$. The resulting ample expansion $X_t$ is corner-peelable exactly when some acyclic USO $\mathcal O$ of $A$ and some endpoint $z\in\{u,v\}$ make the labels on $N_{\mathcal O}(z)$ constant (with empty and singleton sets allowed). Equivalently, the nonpeelable labelings are precisely the proper two-colourings of every edge of $\mathcal H(A,D)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Given such an orientation and endpoint, first delete vertices outside the set reachable from $D$; those exclusive deletions lift. All surviving external neighbours of the selected endpoint then have one label, so its opposite lift is a corner. The remaining reduction is an edge convex in the contraction and hence peels. Conversely, in any peeling of the expansion, the first deletion over $D$ must occur at an endpoint. Earlier exclusive deletions project to a contraction prefix, which can be completed to an acyclic USO; vertices reachable from $D$ survive that prefix, and the corner test forces the relevant surviving component labels to be constant.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-path-reduction-reachability</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-411" style="position:relative;">
+
+        <h3><a href="results/star_reduction_endpoint_and_fibre_transfer.html" class="table-title-link">Star Reductions Preserve Positivity and Every Attainable Endpoint</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Star Reductions Preserve Positivity and Every Attainable Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample with active coordinate $e$ and suppose the reduction $D=X^{\{e\}}$ has a star as its one-inclusion graph, including a singleton or edge. Then $X$ is corner-peelable exactly when $\pi_eX$ is. For every $a\in X$, $X$ peels to $a$ exactly when the contraction peels to $\pi_ea$; for every $z\in D$, $X$ peels to the whole two-point fibre over $z$ exactly when the contraction peels to $z$. Consequently a coordinate edge with an attainable endpoint that cannot be retained has at least four edges, and equality forces a four-vertex-path reduction. No active reduction of an ample pc-minimal obstruction or rooted factor is a star.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct on the number of star edges. Exclusive contraction corners lift directly; a leaf corner can be cleared in the layer opposite its common external-component label. If the centre appears first, its corner cube separates all remaining complement components into a core and one-vertex attachments on disjoint coordinate blocks. A USO of the core selects a leaf whose attachments peel to it, after which one lift of that leaf can be removed and induction applies. The same induction while retaining a chosen fibre proves relative transfer. Endpoint transfer follows by gluing two copies at a hypothetical failing endpoint and applying ordinary star closure after contracting one copy. The size-four conclusion uses the classification of ample families on at most four vertices.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-star-reduction-positive; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-path-reduction-positive</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

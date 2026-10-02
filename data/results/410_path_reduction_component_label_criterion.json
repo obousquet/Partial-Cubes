@@ -1,0 +1,21 @@
+{
+  "id": 410,
+  "short_name": "path_reduction_component_label_criterion",
+  "name": "Exact Component-Label Criterion for a Three-Vertex Path Reduction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/path_reduction_label_hypergraph"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $A$ be corner-peelable ample, let $D=\\{u,c,v\\}$ induce a path, and lift each component $K_i$ of $A\\setminus D$ to layer $t_i$. The resulting ample expansion $X_t$ is corner-peelable exactly when some acyclic USO $\\mathcal O$ of $A$ and some endpoint $z\\in\\{u,v\\}$ make the labels on $N_{\\mathcal O}(z)$ constant (with empty and singleton sets allowed). Equivalently, the nonpeelable labelings are precisely the proper two-colourings of every edge of $\\mathcal H(A,D)$.",
+  "status": "established",
+  "proof": "Given such an orientation and endpoint, first delete vertices outside the set reachable from $D$; those exclusive deletions lift. All surviving external neighbours of the selected endpoint then have one label, so its opposite lift is a corner. The remaining reduction is an edge convex in the contraction and hence peels. Conversely, in any peeling of the expansion, the first deletion over $D$ must occur at an endpoint. Earlier exclusive deletions project to a contraction prefix, which can be completed to an acyclic USO; vertices reachable from $D$ survive that prefix, and the corner test forces the relevant surviving component labels to be constant.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-reduction-reachability"
+}

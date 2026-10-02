@@ -1,0 +1,18 @@
+{
+  "id": 408,
+  "short_name": "forced_fork_at_path_reduction",
+  "name": "A Forbidden Path Reduction Forces Every Contraction USO to Fork",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "implication",
+  "statement": "If an ample pc-minimal obstruction to dismantlable ampleness has a reduction $D=\\{u,c,v\\}$ inducing the path $u-c-v$, every acyclic USO of its contraction directs both path edges away from $c$. Equivalently, every corner peeling of the contraction deletes $c$ before both endpoints.",
+  "status": "established",
+  "proof": "The contraction is corner-peelable. On a three-vertex path the only orientation violating the outgoing-cube condition is the fork with source at its middle vertex. Every other induced orientation is a USO of the reduction and would lift by the horizontal-lift criterion, contradicting nonpeelability of the expansion. The peeling–acyclic-USO correspondence translates the orientation statement into deletion order.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-path-reduction-forced-fork"
+}

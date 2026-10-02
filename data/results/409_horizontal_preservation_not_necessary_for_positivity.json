@@ -1,0 +1,21 @@
+{
+  "id": 409,
+  "short_name": "horizontal_preservation_not_necessary_for_positivity",
+  "name": "Horizontal USO Preservation Is Not Necessary for Positivity",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "Failure of the horizontal-lift criterion for a prescribed contraction USO does not imply that an ample expansion is nonpeelable: the seven-vertex peripheral expansion of a square over a three-vertex path is corner-peelable although one natural square orientation has no horizontal lift. More strongly, there is a 292-concept ample path expansion that is corner-peelable even though no acyclic USO of its contraction admits an acyclic lift preserving all horizontal directions.",
+  "status": "established",
+  "witness_ids": [
+    "#examples/vertex_deleted_three_cube",
+    "#examples/positive_path_expansion_without_horizontal_lift"
+  ],
+  "proof": "For the seven-vertex family, the displayed deletion sequence clears two square corners and a leaf before leaving a square. For the 292-concept control, the contraction has unique geometric corner zero, hence every acyclic USO has zero as its source and induces the forbidden fork orientation on the path reduction. Connectedness of the complement leaves only the two reflected peripheral expansions; deleting the two lifted path endpoints, then the lifted middle vertex, and then following the stored contraction order peels each one.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-path-reduction-forced-fork; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-no-common-horizontal-control"
+}

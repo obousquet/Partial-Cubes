@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "batch_id": "107_dismantlable_ample_horizontal_path_and_star_lifts",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate the exact horizontal-USO lift criterion and count, its forced path orientation, positive countercontrols, the path-reduction component-label hypergraph, and star-reduction transfer of positivity, endpoints, and whole fibres.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-horizontal-uso-lifts",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-path-reduction-forced-fork",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-no-common-horizontal-control",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-reduction-reachability",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-star-reduction-positive",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-reduction-positive"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This block distinguishes exact horizontal orientation liftability from ordinary positivity, then gives complete path-label and star-reduction laws that delimit the first possible negative tree reduction.",
+    "outcome": "All five distinct source blocks, carrying six labels, are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "thm:damp-horizontal-uso-lifts": "b83eade2da03734325effdb30a25b9e08e86ce3a378fcba1fe449c50d0f1ba1d",
+      "cor:damp-path-reduction-forced-fork": "62144b7a675b0a8d2eaf7928ad824557c52a94677eb845b09a77d9cdab239121",
+      "rem:damp-no-common-horizontal-control": "bf4e585f1d1d3700668de362e82b85d61cc0ce567e58eff554e421455f5d5286",
+      "thm:damp-path-reduction-reachability": "0e69c70651c8a92e2a70426dec15f92a9fe9484ac77c439ac375dc7fca5afafb",
+      "thm:damp-star-reduction-positive": "ed379124ccedab93c252e30eba3ac017bb34d116aee8c4b7c0d2f8e630b5aefe",
+      "thm:damp-path-reduction-positive": "ed379124ccedab93c252e30eba3ac017bb34d116aee8c4b7c0d2f8e630b5aefe"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized lift criterion and count, forced-fork consequence, positive countercontrols, path-label hypergraph, star transfer laws, concise proofs, and source locators. The manuscript retains full component decompositions, USO and deletion-order derivations, fixed-input enumeration details, replay data, and the open general tree-lift problem.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact source bytes, is checked by migration-check, and every promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/invariants/064_path_reduction_label_hypergraph.json",
+      "sha256": "005ecd4160ebe5b070de151315a9cf12d05fd4c8b35225863092487d510dd8d9"
+    },
+    {
+      "path": "data/examples/122_positive_path_expansion_without_horizontal_lift.json",
+      "sha256": "d98a43a3a8d4c1815470d29394ca81bb55dcf299d61e1cb5c85e37431a1b6ae8"
+    },
+    {
+      "path": "data/results/407_horizontal_uso_lift_criterion.json",
+      "sha256": "85f012d14be2f35ae3ac0332609cf33890e4ddc6488695f443a1b679e7728146"
+    },
+    {
+      "path": "data/results/408_forced_fork_at_path_reduction.json",
+      "sha256": "70e44fc81a01e02984d9356ae87834802d20b3813046b603afaedd907d985a40"
+    },
+    {
+      "path": "data/results/409_horizontal_preservation_not_necessary_for_positivity.json",
+      "sha256": "2c2826a265ea72cfe58138ea2747018d09c50ca523d1a4286952bdf4b6eb8675"
+    },
+    {
+      "path": "data/results/410_path_reduction_component_label_criterion.json",
+      "sha256": "56c4abd41f17365d6fcf86d9681dc39e74eaa913db82e573ac65f03dddaa14d0"
+    },
+    {
+      "path": "data/results/411_star_reduction_endpoint_and_fibre_transfer.json",
+      "sha256": "b35b990e144b9b023ba350653fcd644a96c05877cd9ed7da8c52b75532628577"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "f3d6082dc677116768539e0def39c5d7a9dc1ee1f1ef26483d9a4c1329981f02"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "36f1b174162174cade84a03136f2c1ffb4299259e7f85f140e10f314aa79b7e4"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1715 records.",
+    "website": "Normalized 1731 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 5 additional audited labels, raising the dismantlable-ample workspace from 79 to 84 of 683 and overall coverage from 510 to 515 of 1114 database-owned labels. The no-common-horizontal-lift remark is also normalized outside the theorem-label denominator.",
+    "source_integrity": "The five reviewed blocks and the complete source file are byte-identical to the preserved supplemental snapshot."
+  },
+  "deferred": [
+    "The remaining 599 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Acyclic liftability for arbitrary tree reductions and intrinsic generation of negative component labelings remain open in the manuscript.",
+    "Full component partitions, orientation tables, peeling orders, and computational certificates remain preserved in the scholarly source tree and are summarized, not duplicated, in database records."
+  ]
+}

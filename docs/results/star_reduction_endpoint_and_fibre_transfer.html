@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,25 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-18" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-411" style="position:relative;">
 
-        <h3><a href="operations/one_point_amalgam.html" class="table-title-link">One-Point Amalgam</a></h3>
+        <h3><a href="results/star_reduction_endpoint_and_fibre_transfer.html" class="table-title-link">Star Reductions Preserve Positivity and Every Attainable Endpoint</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>One-Point Amalgam</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\vee">
-            \[\vee\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For classes $A\subseteq2^X$ and $B\subseteq2^Y$ on disjoint coordinates and selected concepts $a_0,b_0$, the one-point amalgam is $(A\times\{b_0\})\cup(\{a_0\}\times B)$; the two copies meet only at $(a_0,b_0)$.</p></div>
-<p><strong>Category:</strong> Gluing</p>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:partitionable_yang_complexes.tex?#def:one-point-amalgam</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/maximum_tree_amalgam_one_point_amalgam_closed.html'>Maximum Tree-Amalgams Are Closed under One-Point Amalgams</a></li><li><a href='operation_results/cover_recursive_one_point_amalgam_not_closed.html'>Cover-Recursive Peripheral Partial Cubes Are Not One-Point-Amalgam Closed</a></li><li><a href='operation_results/dismantlable_ample_one_point_amalgam_not_closed.html'>Exact One-Point-Amalgam Criterion for Dismantlable Ampleness</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/maximum_tree_amalgams_have_all_roots.html'>Maximum Tree-Amalgams Have Representation Maps at Every Root</a></li><li><a href='results/rooted_wedge_membership_and_minimality.html'>Rooted-Wedge Membership and Forbidden-Minor Classification</a></li><li><a href='results/polat_pointed_separation_construction.html'>Pointed Construction Separating Convex- and Faithful-Treelike Graphs</a></li><li><a href='results/root_critical_wedges_are_corner_peelable.html'>Root-Critical Wedges Are Corner-Peelable</a></li><li><a href='results/exact_root_gluing_width.html'>Exact Root-Gluing Width</a></li><li><a href='results/cut_vertex_dismantlable_ample_obstructions.html'>Cut-Vertex Obstructions Are Wedges of Two Root-Critical Factors</a></li><li><a href='results/cut_vertex_corner_descent.html'>Corner Descent Is Exact in the Cut-Vertex Obstruction Branch</a></li><li><a href='results/terminal_cut_vertex_obstruction.html'>Two Endpoint Repairs Produce a Terminal Cut-Vertex Obstruction</a></li><li><a href='results/forced_prefix_rooted_inputs.html'>A Forced Prefix Produces Three Rooted Inputs and Six Obstructions</a></li><li><a href='results/rooted_264_and_double_527.html'>A 264-Concept Rooted Input Gives a 527-Concept Cornerless Obstruction</a></li><li><a href='results/singleton_reduction_peeling_transfer.html'>Singleton Reductions Preserve Corner-Peelability Exactly</a></li><li><a href='results/star_reduction_endpoint_and_fibre_transfer.html'>Star Reductions Preserve Positivity and Every Attainable Endpoint</a></li></ul></p></div>
+        <p><strong>Name: </strong>Star Reductions Preserve Positivity and Every Attainable Endpoint</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be ample with active coordinate $e$ and suppose the reduction $D=X^{\{e\}}$ has a star as its one-inclusion graph, including a singleton or edge. Then $X$ is corner-peelable exactly when $\pi_eX$ is. For every $a\in X$, $X$ peels to $a$ exactly when the contraction peels to $\pi_ea$; for every $z\in D$, $X$ peels to the whole two-point fibre over $z$ exactly when the contraction peels to $z$. Consequently a coordinate edge with an attainable endpoint that cannot be retained has at least four edges, and equality forces a four-vertex-path reduction. No active reduction of an ample pc-minimal obstruction or rooted factor is a star.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Induct on the number of star edges. Exclusive contraction corners lift directly; a leaf corner can be cleared in the layer opposite its common external-component label. If the centre appears first, its corner cube separates all remaining complement components into a core and one-vertex attachments on disjoint coordinate blocks. A USO of the core selects a leaf whose attachments peel to it, after which one lift of that leaf can be removed and induction applies. The same induction while retaining a chosen fibre proves relative transfer. Endpoint transfer follows by gluing two copies at a hypothetical failing endpoint and applying ordinary star closure after contracting one copy. The size-four conclusion uses the classification of ample families on at most four vertices.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-star-reduction-positive; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-path-reduction-positive</p></div>
 
         </div>
     </div>

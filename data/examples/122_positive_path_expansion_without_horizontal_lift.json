@@ -1,0 +1,11 @@
+{
+  "id": 122,
+  "short_name": "positive_path_expansion_without_horizontal_lift",
+  "name": "A Positive 292-Concept Path Expansion with No Horizontal USO Lift",
+  "object_type": "construction",
+  "definition": "Let $A$ be the certified 289-concept rooted factor with unique corner $0$, take the path reduction $D=\\{0,2,4\\}$, and form either component expansion $(A\\times\\{0\\})\\cup(D\\times\\{1\\})$ or its reflection in the fresh coordinate.",
+  "parameters": "Each expansion has $292$ concepts. The complement $A\\setminus D$ is connected, so these are the only two component labelings.",
+  "properties": "Every acyclic USO of $A$ has unique source $0$ and directs both edges of $D$ away from its middle vertex, so its restriction to $D$ is not a USO and no acyclic USO of either expansion can preserve all horizontal directions from a contraction USO. Nevertheless both expansions are corner-peelable: delete the two upper leaves, then the upper middle vertex, and follow the recorded peeling of $A$.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-no-common-horizontal-control",
+  "verification": "PartialCubes:papers/dismantlable-ample/research/path_reduction_eligibility.py; PartialCubes:papers/dismantlable-ample/research/path_reduction_eligibility.json"
+}

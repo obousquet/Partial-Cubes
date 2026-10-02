@@ -1,0 +1,19 @@
+{
+  "id": 411,
+  "short_name": "star_reduction_endpoint_and_fibre_transfer",
+  "name": "Star Reductions Preserve Positivity and Every Attainable Endpoint",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/coordinate_fiber_product",
+    "#operations/one_point_amalgam"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X$ be ample with active coordinate $e$ and suppose the reduction $D=X^{\\{e\\}}$ has a star as its one-inclusion graph, including a singleton or edge. Then $X$ is corner-peelable exactly when $\\pi_eX$ is. For every $a\\in X$, $X$ peels to $a$ exactly when the contraction peels to $\\pi_ea$; for every $z\\in D$, $X$ peels to the whole two-point fibre over $z$ exactly when the contraction peels to $z$. Consequently a coordinate edge with an attainable endpoint that cannot be retained has at least four edges, and equality forces a four-vertex-path reduction. No active reduction of an ample pc-minimal obstruction or rooted factor is a star.",
+  "status": "established",
+  "proof": "Induct on the number of star edges. Exclusive contraction corners lift directly; a leaf corner can be cleared in the layer opposite its common external-component label. If the centre appears first, its corner cube separates all remaining complement components into a core and one-vertex attachments on disjoint coordinate blocks. A USO of the core selects a leaf whose attachments peel to it, after which one lift of that leaf can be removed and induction applies. The same induction while retaining a chosen fibre proves relative transfer. Endpoint transfer follows by gluing two copies at a hypothetical failing endpoint and applying ordinary star closure after contracting one copy. The size-four conclusion uses the classification of ample families on at most four vertices.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-star-reduction-positive; PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-path-reduction-positive"
+}
