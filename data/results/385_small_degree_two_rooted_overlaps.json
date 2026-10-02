@@ -1,0 +1,18 @@
+{
+  "id": 385,
+  "short_name": "small_degree_two_rooted_overlaps",
+  "name": "Degree-Two Rooted Factors Need Three-Word Overlaps and Eight Coordinates",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $(Y,a)$ be a rooted factor in the canonical degree-two-corner presentation with sections $A,D,C$ and overlaps $R=A\\cap C$, $S=D\\cap C$. Then $|R|,|S|\\ge3$. If either overlap has three concepts, its one-inclusion graph is a three-vertex path with zero at an endpoint. Every rooted factor whose distinguished root is a degree-two corner uses at least eight coordinates.",
+  "status": "established",
+  "proof": "The two new-coordinate reductions are the overlaps with a leaf attached at zero. Every coordinate reduction of a rooted factor has at least four edges, and the four-word extremal case is a four-vertex path, giving the overlap sizes and endpoint placement. If the whole factor used at most seven coordinates, its three old sections would use at most five. The five-coordinate relative-peeling theorem would supply all four relative overlap orders and root-ending orders for both overlaps and both sides. The two-overlap transfer theorem would then make $Y$ peel to its distinguished root, contradicting rooted failure.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-small-rooted-overlaps"
+}

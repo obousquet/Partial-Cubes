@@ -6411,6 +6411,105 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-383" style="position:relative;">
+
+        <h3><a href="results/paired_square_root_transfer.html" class="table-title-link">Paired Square Sections Have Exact Root and Endpoint Transfer</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Paired Square Sections Have Exact Root and Endpoint Transfer</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $C\subseteq A,D\subseteq Q_F$ contain $0$, with $|A\setminus C|,|D\setminus C|\le1$, $A\cap D=C$, $A\cup D$ ample, and $\operatorname{Sh}(A)\cap\operatorname{Sh}(D)=\operatorname{Sh}(C)$. For fresh $q,r$, set $Y=\{(0,00)\}\cup(A\times\{01\})\cup(D\times\{10\})\cup(C\times\{11\})$ and $a=(0,00)$. Then $Y$ is ample, $a$ is a degree-two corner, $Y$ is dismantlable ample exactly when $C$ is, and $Y$ peels to $a$ exactly when $C$ peels to $0$. If $C$ uses every old coordinate, $(Y,a)$ is a rooted factor exactly when $(C,0)$ is a rooted factor and both $A,D$ peel to $0$. When $C$ is dismantlable ample, attainable endpoints in the $01$, $10$, and $11$ sections are exactly the attainable endpoints of $A,D,C$, respectively. Thus a rooted-factor output has $a$ as its unique critical root, and its attainable sink set is nonisometric: it contains $(0,01),(0,10)$ but neither common cube neighbor $(0,00),(0,11)$. For $|C|>1$, its corners are $a$, the at most two side concepts outside $C$, and precisely those nonzero corner copies of $C$ in a side section that are not adjacent to that side's extra concept.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>A direct section count gives $\operatorname{Sh}(Y)=\operatorname{Sh}(A\cup D)\mathbin{\dot\cup}(\operatorname{Sh}(C)+q)\mathbin{\dot\cup}(\operatorname{Sh}(C)+r)\mathbin{\dot\cup}\{\{q,r\}\}$ and hence ampleness. Explicit layer orders transfer ordinary peelability and all nonroot endpoints. For the root converse, stop before the first deletion among the three nonroot copies of old zero; the surviving root square forces that copy's old section to be a singleton, and projecting the preceding broken fibers gives a peeling of $C$ to zero. Applying the same equivalence to every root-preserving old-coordinate image, and checking the two new restrictions and contractions explicitly, gives the rooted-factor criterion. Section restrictions prove necessity of the remaining endpoint formulas, while layer-by-layer constructions prove sufficiency. The unique-critical-root and nonisometric-sink conclusions follow from those formulas. Finally, inspecting which corner cubes survive across the four sections gives the stated corner list.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-paired-root-transfer</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-384" style="position:relative;">
+
+        <h3><a href="results/two_overlap_square_root_transfer.html" class="table-title-link">Two Section Overlaps Control Rooted Transfer without Containment</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Section Overlaps Control Rooted Transfer without Containment</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Use the canonical degree-two-corner presentation $Y=\{(0,00)\}\cup(A\times\{01\})\cup(D\times\{10\})\cup(C\times\{11\})$ and its four shadow conditions. Put $R=A\cap C$ and $S=D\cap C$. Suppose $R,S$ are dismantlable ample and that $A$ and $C$ peel relatively to $R$, while $D$ and $C$ peel relatively to $S$. Then $Y$ is dismantlable ample and peels to $a=(0,00)$ exactly when either $R$ and $D$ both peel to zero or $S$ and $A$ both peel to zero. Every endpoint in another section is attainable in $Y$ exactly when it is attainable in that section. If every old coordinate is active in $A\cup D\cup C$, then $(Y,a)$ is a rooted factor exactly when $A,D$ peel to zero, neither $R$ nor $S$ peels to zero, and every root-preserving elementary old-coordinate image makes at least one of the image overlaps root-positive. The root $a$ is then the unique critical root. If $(R,0)$ and $(S,0)$ are rooted factors using all old coordinates, the last condition is automatic; no containment of $C$ in either side is required.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The four shadow conditions give ampleness. Isometry rules out words in $(A\cap D)\setminus C$ and edges between the exclusive parts of adjacent sections, so the assumed relative orders remain valid in the unions. Clearing the appropriate exclusive pieces gives relative orders to each section and proves ordinary positivity and every nonroot endpoint formula. For a root-ending order, the first deleted nonroot copy of zero and a broken-fiber projection force either $R$ or $S$ to peel to zero, while explicit section-clearing orders prove both converse alternatives. Relative orders and intersections commute with root-preserving coordinate images. Applying the endpoint equivalence to each image yields the three rooted-minimality conditions; explicit orders handle the two new-coordinate restrictions and contractions. Any other unattainable vertex already fails in its proper section, proving uniqueness of the critical root.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-noncontained-relative-square</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-385" style="position:relative;">
+
+        <h3><a href="results/small_degree_two_rooted_overlaps.html" class="table-title-link">Degree-Two Rooted Factors Need Three-Word Overlaps and Eight Coordinates</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Degree-Two Rooted Factors Need Three-Word Overlaps and Eight Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(Y,a)$ be a rooted factor in the canonical degree-two-corner presentation with sections $A,D,C$ and overlaps $R=A\cap C$, $S=D\cap C$. Then $|R|,|S|\ge3$. If either overlap has three concepts, its one-inclusion graph is a three-vertex path with zero at an endpoint. Every rooted factor whose distinguished root is a degree-two corner uses at least eight coordinates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two new-coordinate reductions are the overlaps with a leaf attached at zero. Every coordinate reduction of a rooted factor has at least four edges, and the four-word extremal case is a four-vertex path, giving the overlap sizes and endpoint placement. If the whole factor used at most seven coordinates, its three old sections would use at most five. The five-coordinate relative-peeling theorem would supply all four relative overlap orders and root-ending orders for both overlaps and both sides. The two-overlap transfer theorem would then make $Y$ peel to its distinguished root, contradicting rooted failure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-small-rooted-overlaps</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-386" style="position:relative;">
+
+        <h3><a href="results/positive_overlap_rooted_factor.html" class="table-title-link">A 621-Concept Rooted Factor with Positive Overlaps</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A 621-Concept Rooted Factor with Positive Overlaps</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>There exists a rooted factor $(K,r)$ with $621$ concepts and dimension $25$ whose root is a degree-two corner. Its canonical sections have sizes $|A|=331$, $|D|=149$, $|C|=140$, with $R=A\cap C=\{0,4,5\}$ and $|S|=|D\cap C|=65$. All five families $A,D,C,R,S$ peel to zero; $R$ is a three-vertex path rooted at an endpoint and attains the minimum overlap bound. Nevertheless $A$ does not peel relatively to $R$. Thus neither root failure of both overlaps nor existence of all four relative overlap peelings is necessary for a degree-two rooted factor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Recover $K$ as one block of the established 909-concept cut-vertex obstruction, whose other block is the 289-concept rooted factor. The cut-vertex classification forces $(K,r)$ to be a rooted factor and gives its order and dimension. Reading its path-edge construction yields the displayed sections and a degree-two root. Stored orders prove root positivity of all five section families. If $A$ peeled to $R$, removing its attached leaf would make the underlying 330-concept edge piece peel relatively to its marked edge, contradicting its certified edge profile. Restricting the 909-concept proper-minor orders to the changed block supplies all 50 elementary rooted tests for $K$, agreeing with the structural cut-vertex argument.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-positive-overlap-rooted-factor</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-387" style="position:relative;">
+
+        <h3><a href="results/adjacent_degree_three_root_repair.html" class="table-title-link">An Adjacent Degree-Three Corner Minimally Repairs a Rooted Factor</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>An Adjacent Degree-Three Corner Minimally Repairs a Rooted Factor</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the 621-concept positive-overlap rooted factor $(K,r)$, adjoining one specified concept $v$ gives an ample family $W=K\cup\{v\}$ that peels to $r$. The adjacent vertices $r,v$ are both degree-three corners, while deleting $v$ restores the root-negative factor $K$. Degree three is therefore the least possible degree of a nonroot corner whose deletion can destroy a prescribed old endpoint. There is also a 621-concept positive partner $T=W\setminus\{z\}$ that peels to $r$ and has the same shattered complex as $K$; $K$ and $T$ form a two-square endpoint switch over a common 619-concept base.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-section shadow identity shows that $W$ is ample and gains exactly one triple support. Its enlarged vertical reduction is a specified convex five-vertex face of the contraction. Lifting the contraction's acyclic USO with sink at the old root and orienting the free vertical edge toward the upper copy gives a USO of $W$ ending at $r$. The relevant eight vertices form a three-cube, so $r$ and $v$ are adjacent degree-three corners. Deleting $v$ leaves $K$, while rank-at-most-two endpoint invariance rules out any analogous repair of degree below three. A third degree-three cube corner $z$ can start the recorded endpoint order; deleting it gives $T$. The two corner deletions remove the same triple support, so $K$ and $T$ have equal shadows and differ by the two claimed square attachments over their common base.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-adjacent-rank-three-repair</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-388" style="position:relative;">
+
+        <h3><a href="results/positive_overlap_factor_saturation.html" class="table-title-link">The Positive-Overlap Rooted Factor Has a Canonical Saturation</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Positive-Overlap Rooted Factor Has a Canonical Saturation</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the 621-concept rooted factor $K$ and its one-concept endpoint repair $v$, let $F=\{0,\ldots,11\}\cup\{24,\ldots,36\}$, $J=\{1,2,36\}$, and $A_J=\{x\in Q_F:x|_J\ne v|_J\}$. Then $A_J$ peels relatively to $K$. Thus failure of the canonical four-relative-order recovery for $K$ does not prevent saturation from its endpoint repair. Applying the two-overlap square construction to $K$, $K\cup\{v\}$, and $A_J$ after translating the root to zero produces a rooted factor of order $29,361,372$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Split the coordinates outside $J$ into the common direction and the two private blocks of the explicit factor. Every word of $K$ has one private block zero. The full private cube peels to the union of those two coordinate subcubes because the complement is a product of corner-peelable punctured cubes. Taking a product with the punctured three-cube on $J$ and the common edge gives a relative peeling from $A_J$ to an intermediate family $L$. A verified finite order supplies the remaining 63,877 deletions from $|L|=64,498$ to $K$. The repaired family $W=K\cup\{v\}$ peels to the root and relatively to $K$; its unique acquired support is $J$, giving the required shadow intersection and ample union with $A_J$. The two-overlap transfer theorem therefore yields the rooted factor, and the section cardinalities give the stated order.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-saturation-621</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

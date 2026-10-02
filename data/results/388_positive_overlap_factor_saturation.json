@@ -1,0 +1,18 @@
+{
+  "id": 388,
+  "short_name": "positive_overlap_factor_saturation",
+  "name": "The Positive-Overlap Rooted Factor Has a Canonical Saturation",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "For the 621-concept rooted factor $K$ and its one-concept endpoint repair $v$, let $F=\\{0,\\ldots,11\\}\\cup\\{24,\\ldots,36\\}$, $J=\\{1,2,36\\}$, and $A_J=\\{x\\in Q_F:x|_J\\ne v|_J\\}$. Then $A_J$ peels relatively to $K$. Thus failure of the canonical four-relative-order recovery for $K$ does not prevent saturation from its endpoint repair. Applying the two-overlap square construction to $K$, $K\\cup\\{v\\}$, and $A_J$ after translating the root to zero produces a rooted factor of order $29,361,372$.",
+  "status": "established",
+  "proof": "Split the coordinates outside $J$ into the common direction and the two private blocks of the explicit factor. Every word of $K$ has one private block zero. The full private cube peels to the union of those two coordinate subcubes because the complement is a product of corner-peelable punctured cubes. Taking a product with the punctured three-cube on $J$ and the common edge gives a relative peeling from $A_J$ to an intermediate family $L$. A verified finite order supplies the remaining 63,877 deletions from $|L|=64,498$ to $K$. The repaired family $W=K\\cup\\{v\\}$ peels to the root and relatively to $K$; its unique acquired support is $J$, giving the required shadow intersection and ample union with $A_J$. The two-overlap transfer theorem therefore yields the rooted factor, and the section cardinalities give the stated order.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-saturation-621"
+}

@@ -1,0 +1,19 @@
+{
+  "id": 386,
+  "short_name": "positive_overlap_rooted_factor",
+  "name": "A 621-Concept Rooted Factor with Positive Overlaps",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "other",
+  "statement": "There exists a rooted factor $(K,r)$ with $621$ concepts and dimension $25$ whose root is a degree-two corner. Its canonical sections have sizes $|A|=331$, $|D|=149$, $|C|=140$, with $R=A\\cap C=\\{0,4,5\\}$ and $|S|=|D\\cap C|=65$. All five families $A,D,C,R,S$ peel to zero; $R$ is a three-vertex path rooted at an endpoint and attains the minimum overlap bound. Nevertheless $A$ does not peel relatively to $R$. Thus neither root failure of both overlaps nor existence of all four relative overlap peelings is necessary for a degree-two rooted factor.",
+  "status": "established",
+  "proof": "Recover $K$ as one block of the established 909-concept cut-vertex obstruction, whose other block is the 289-concept rooted factor. The cut-vertex classification forces $(K,r)$ to be a rooted factor and gives its order and dimension. Reading its path-edge construction yields the displayed sections and a degree-two root. Stored orders prove root positivity of all five section families. If $A$ peeled to $R$, removing its attached leaf would make the underlying 330-concept edge piece peel relatively to its marked edge, contradicting its certified edge profile. Restricting the 909-concept proper-minor orders to the changed block supplies all 50 elementary rooted tests for $K$, agreeing with the structural cut-vertex argument.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-positive-overlap-rooted-factor"
+}

@@ -1,0 +1,21 @@
+{
+  "id": 387,
+  "short_name": "adjacent_degree_three_root_repair",
+  "name": "An Adjacent Degree-Three Corner Minimally Repairs a Rooted Factor",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "construction",
+  "statement": "For the 621-concept positive-overlap rooted factor $(K,r)$, adjoining one specified concept $v$ gives an ample family $W=K\\cup\\{v\\}$ that peels to $r$. The adjacent vertices $r,v$ are both degree-three corners, while deleting $v$ restores the root-negative factor $K$. Degree three is therefore the least possible degree of a nonroot corner whose deletion can destroy a prescribed old endpoint. There is also a 621-concept positive partner $T=W\\setminus\\{z\\}$ that peels to $r$ and has the same shattered complex as $K$; $K$ and $T$ form a two-square endpoint switch over a common 619-concept base.",
+  "status": "established",
+  "proof": "The two-section shadow identity shows that $W$ is ample and gains exactly one triple support. Its enlarged vertical reduction is a specified convex five-vertex face of the contraction. Lifting the contraction's acyclic USO with sink at the old root and orienting the free vertical edge toward the upper copy gives a USO of $W$ ending at $r$. The relevant eight vertices form a three-cube, so $r$ and $v$ are adjacent degree-three corners. Deleting $v$ leaves $K$, while rank-at-most-two endpoint invariance rules out any analogous repair of degree below three. A third degree-three cube corner $z$ can start the recorded endpoint order; deleting it gives $T$. The two corner deletions remove the same triple support, so $K$ and $T$ have equal shadows and differ by the two claimed square attachments over their common base.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-adjacent-rank-three-repair"
+}

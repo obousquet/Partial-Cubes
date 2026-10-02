@@ -1,0 +1,21 @@
+{
+  "id": 383,
+  "short_name": "paired_square_root_transfer",
+  "name": "Paired Square Sections Have Exact Root and Endpoint Transfer",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let ample $C\\subseteq A,D\\subseteq Q_F$ contain $0$, with $|A\\setminus C|,|D\\setminus C|\\le1$, $A\\cap D=C$, $A\\cup D$ ample, and $\\operatorname{Sh}(A)\\cap\\operatorname{Sh}(D)=\\operatorname{Sh}(C)$. For fresh $q,r$, set $Y=\\{(0,00)\\}\\cup(A\\times\\{01\\})\\cup(D\\times\\{10\\})\\cup(C\\times\\{11\\})$ and $a=(0,00)$. Then $Y$ is ample, $a$ is a degree-two corner, $Y$ is dismantlable ample exactly when $C$ is, and $Y$ peels to $a$ exactly when $C$ peels to $0$. If $C$ uses every old coordinate, $(Y,a)$ is a rooted factor exactly when $(C,0)$ is a rooted factor and both $A,D$ peel to $0$. When $C$ is dismantlable ample, attainable endpoints in the $01$, $10$, and $11$ sections are exactly the attainable endpoints of $A,D,C$, respectively. Thus a rooted-factor output has $a$ as its unique critical root, and its attainable sink set is nonisometric: it contains $(0,01),(0,10)$ but neither common cube neighbor $(0,00),(0,11)$. For $|C|>1$, its corners are $a$, the at most two side concepts outside $C$, and precisely those nonzero corner copies of $C$ in a side section that are not adjacent to that side's extra concept.",
+  "status": "established",
+  "proof": "A direct section count gives $\\operatorname{Sh}(Y)=\\operatorname{Sh}(A\\cup D)\\mathbin{\\dot\\cup}(\\operatorname{Sh}(C)+q)\\mathbin{\\dot\\cup}(\\operatorname{Sh}(C)+r)\\mathbin{\\dot\\cup}\\{\\{q,r\\}\\}$ and hence ampleness. Explicit layer orders transfer ordinary peelability and all nonroot endpoints. For the root converse, stop before the first deletion among the three nonroot copies of old zero; the surviving root square forces that copy's old section to be a singleton, and projecting the preceding broken fibers gives a peeling of $C$ to zero. Applying the same equivalence to every root-preserving old-coordinate image, and checking the two new restrictions and contractions explicitly, gives the rooted-factor criterion. Section restrictions prove necessity of the remaining endpoint formulas, while layer-by-layer constructions prove sufficiency. The unique-critical-root and nonisometric-sink conclusions follow from those formulas. Finally, inspecting which corner cubes survive across the four sections gives the stated corner list.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-paired-root-transfer"
+}

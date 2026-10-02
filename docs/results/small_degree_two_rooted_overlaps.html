@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Structural, algebraic, metric, topological, and geometric invariants - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,30 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="invariants/index.html">&larr; Back to Invariants Table</a></div>
-    <div class="table-card" id="math-62" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-385" style="position:relative;">
 
-        <h3><a href="invariants/shattered_complex.html" class="table-title-link">Shattered Complex</a></h3>
+        <h3><a href="results/small_degree_two_rooted_overlaps.html" class="table-title-link">Degree-Two Rooted Factors Need Three-Word Overlaps and Eight Coordinates</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Shattered Complex</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\operatorname{Sh}(C)">
-            \[\operatorname{Sh}(C)\]
-        </div>
-    </div>
-
-<strong>Definition:</strong><div class="text-field"><p>For a set family $C\subseteq\{0,1\}^F$, the shattered complex is the collection of coordinate sets $I\subseteq F$ for which every binary pattern on $I$ occurs as the restriction of some member of $C$. It is a simplicial complex because every subset of a shattered set is shattered.</p></div>
+        <p><strong>Name: </strong>Degree-Two Rooted Factors Need Three-Word Overlaps and Eight Coordinates</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(Y,a)$ be a rooted factor in the canonical degree-two-corner presentation with sections $A,D,C$ and overlaps $R=A\cap C$, $S=D\cap C$. Then $|R|,|S|\ge3$. If either overlap has three concepts, its one-inclusion graph is a three-vertex path with zero at an endpoint. Every rooted factor whose distinguished root is a degree-two corner uses at least eight coordinates.</p></div>
 <p><strong>Status:</strong> Established</p>
-<p><strong>Codomain: </strong>Finite simplicial complexes on the active coordinate set</p>
-<strong>Parameters:</strong><div class="text-field"><p>A displayed hypercube embedding, considered up to coordinate permutation and coordinate sign changes.</p></div>
-<strong>Normalization:</strong><div class="text-field"><p>Inactive coordinates may be retained in the ground set but occur only as isolated vertices outside the complex; comparisons in this database normally use active coordinates.</p></div>
-<p><strong>Category:</strong> Combinatorial</p>
-<p><strong>Isomorphism Invariant:</strong> Yes</p>
-<strong>Comments:</strong><div class="text-field"><p>For an ample family, the Sandwich equality gives |C|=|Sh(C)|. Its one-skeleton is the crossing graph of the associated partial cube, while higher faces retain strictly more cubical information.</p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-shadow-forced-corners</p></div>
-<div class="reference-field"><p><strong>Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/canonical_three_core_of_ample_obstruction.html'>Every Ample Obstruction Has a Canonical Graph Three-Core</a></li><li><a href='results/shadow_pattern_forces_corners.html'>A Shattered-Support Pattern Forces Exponentially Many Corners</a></li><li><a href='results/three_core_shadow_forces_corners.html'>A Forbidden Three-Core Whose Shattered Complex Forces Corners</a></li><li><a href='results/relative_small_support_peeling.html'>Small Shadow Gaps Admit Exact Relative Peelings</a></li><li><a href='results/square_attachment_interval_poset.html'>Square Attachments Have a Canonical Interval Poset</a></li><li><a href='results/square_attachment_data_recovery.html'>Finite Square-Attachment Data Construct and Recover Every Three-Core Extension</a></li><li><a href='results/degree_two_corner_section_shadow_criterion.html'>Four Shadow Conditions Characterize a Marked Degree-Two Corner</a></li><li><a href='results/degree_two_corner_opposite_support_bound.html'>Opposite Sections of a Degree-Two Corner Obey a Sharp Support Bound</a></li><li><a href='results/paired_square_root_transfer.html'>Paired Square Sections Have Exact Root and Endpoint Transfer</a></li><li><a href='results/two_overlap_square_root_transfer.html'>Two Section Overlaps Control Rooted Transfer without Containment</a></li><li><a href='results/adjacent_degree_three_root_repair.html'>An Adjacent Degree-Three Corner Minimally Repairs a Rooted Factor</a></li></ul></p></div>
+<strong>Proof:</strong><div class="text-field"><p>The two new-coordinate reductions are the overlaps with a leaf attached at zero. Every coordinate reduction of a rooted factor has at least four edges, and the four-word extremal case is a four-vertex path, giving the overlap sizes and endpoint placement. If the whole factor used at most seven coordinates, its three old sections would use at most five. The five-coordinate relative-peeling theorem would supply all four relative overlap orders and root-ending orders for both overlaps and both sides. The two-overlap transfer theorem would then make $Y$ peel to its distinguished root, contradicting rooted failure.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-small-rooted-overlaps</p></div>
 
         </div>
     </div>

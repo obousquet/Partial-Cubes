@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "batch_id": "103_dismantlable_ample_degree_two_rooted_factors",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Migrate exact paired and two-overlap endpoint transfer through a degree-two root square, the resulting overlap and dimension lower bounds, the positive-overlap 621-concept rooted factor, its least-degree adjacent repair, and its certified canonical saturation.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-paired-root-transfer",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-noncontained-relative-square",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-small-rooted-overlaps",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-positive-overlap-rooted-factor",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-adjacent-rank-three-repair",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-saturation-621"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These six results form the complete local endpoint-transfer and repair block for rooted factors whose distinguished root is a degree-two corner.",
+    "outcome": "All six statement-plus-proof blocks are byte-identical between supplemental snapshot 2026-10-02-b002 and the current live manuscript.",
+    "claim_block_sha256": {
+      "prop:damp-paired-root-transfer": "babad215782d1c9f8ee46ba4ca70729c6bedf2f5f1c70f67a77beb1a160fad17",
+      "thm:damp-noncontained-relative-square": "2e830d6304f92f122db8f7b791e7605f13ed5a4bd5e37b5cb98fae20e06a8056",
+      "cor:damp-small-rooted-overlaps": "7b27cf3311832db0751eaef96e4ccc92c0495aaece11608bc81cd7d0ea312063",
+      "thm:damp-positive-overlap-rooted-factor": "df7f67237793efb2baf4ceae6a4a28390aabd4e07694188db9fe68f273588f48",
+      "thm:damp-adjacent-rank-three-repair": "5d07c719d031fc7131dfd5a91721260ae7a04afb35c5c08076cc29872d30810e",
+      "prop:damp-saturation-621": "8ec400aef32d67ab1e5989c79ce411a93de612f1a419afd414c132fe40c1ab63"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized endpoint equivalences, rooted-factor recognition criteria, overlap bounds, explicit 621-concept factor and repair, saturation construction, concise proofs, and source locators. The manuscript retains full layer orders, word embeddings, USO certificates, replay files, failed-search history, and open exhaustiveness questions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the exact dirty source bytes, is checked by migration-check, and every promoted block has a reviewed digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/383_paired_square_root_transfer.json",
+      "sha256": "e227fde28b9c87adb048f34f4395345c5b2d91149e992ab0f254215967f67bee"
+    },
+    {
+      "path": "data/results/384_two_overlap_square_root_transfer.json",
+      "sha256": "c5083a8717559c5826c1911b71283cdab8ee604c560addfa404c3d7438c6feb1"
+    },
+    {
+      "path": "data/results/385_small_degree_two_rooted_overlaps.json",
+      "sha256": "32369393fc3dceb427ff819d59b9799105c816ba0a23139761e95804e965ce31"
+    },
+    {
+      "path": "data/results/386_positive_overlap_rooted_factor.json",
+      "sha256": "8dbbce248fc13ce973839b08e90b66394347af48f56a02aed861f9b4f4db0af1"
+    },
+    {
+      "path": "data/results/387_adjacent_degree_three_root_repair.json",
+      "sha256": "b478f6f943d2d0149585c67f316bf8d5cb6f85992b25955cc5152e795b1d91ab"
+    },
+    {
+      "path": "data/results/388_positive_overlap_factor_saturation.json",
+      "sha256": "38be0e0bf8e72d97f1856f3a5955925c4df75d453cd6e87bbdac5321fca6d572"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "a808e69dc5ce2c33d59010c2af00890024a7ae911aa2b02d9050c199839c0859"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "55675ceb093a0d2513b9d8ce42fb12567a3df8a65ca06d9729913acc3942869d"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1681 records.",
+    "website": "Normalized 1697 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 6 additional dismantlable-ample labels, raising that workspace from 56 to 62 of 683 and overall coverage from 487 to 493 of 1114 database-owned labels.",
+    "source_integrity": "The 93-file main snapshot and one-file supplemental reviewed snapshot are recoverable."
+  },
+  "deferred": [
+    "The remaining 621 uncovered database-owned labels are all in the dismantlable-ample workspace.",
+    "Open exhaustiveness and intrinsic-input questions remain prose-owned in LaTeX.",
+    "Explicit word sets, deletion schedules, and computational certificates remain preserved in the scholarly source tree and are summarized, not duplicated, in database records."
+  ]
+}
