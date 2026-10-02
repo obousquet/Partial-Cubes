@@ -10005,6 +10005,25 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-600" style="position:relative;">
+
+        <h3><a href="results/two_component_cube_code.html" class="table-title-link">Two Complementary Components Force Antipodal Cube Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two Complementary Components Force Antipodal Cube Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_block_replacement.html">Coordinate-Block Replacement</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $A\subseteq C$ be dismantlable ample, suppose $C\setminus A$ has exactly two connected components $K_0,K_1$, and assume the two-layer family $H=(A\times\{0,1\})\cup(K_0\times\{0\})\cup(K_1\times\{1\})$ is an ample forbidden pc-minor. For a nonempty new coordinate block $E$, form $Z$ by retaining every word over $A$ and deleting precisely $q_i\in Q_E$ over each word of $K_i$. Then $Z$ is forbidden exactly when $q_0,q_1$ are antipodal; in that case it is a coordinate-block replacement of $H$ up to reorientation and renaming. If $q_0=q_1$, then $Z$ is dismantlable ample. If they are distinct and nonantipodal, $Z$ has a nonpeelable proper coordinate-face restriction and is not forbidden.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For antipodal omitted words, reorient the block so they are $1_E,0_E$; the displayed family is exactly the coordinate-block replacement of $H$. For equal words, reorient their common value to $0_E$; the family becomes the block replacement of the peripheral family $(A,C)$, which is dismantlable ample. Otherwise choose block coordinates $e,f$ on which the omitted words respectively agree and disagree. Restrict to their common $e$-value and reduce every remaining block coordinate except $f$. The full fibre over $A$ survives, while the fibres over $K_0,K_1$ retain opposite $f$-values, producing $H$ up to reorientation. This active proper face has a negative reduction, so $Z$ cannot be forbidden.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-two-component-cube-code</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_component_square_code_and_sign_break_census.html">The 267-Seed Square-Code and Single-Sign-Break Census</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The classification assumes exactly two complementary components and the forbiddenness of the specified two-layer input; it is not a theorem about arbitrary cornerless forbidden classes.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
