@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,20 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-16" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-368" style="position:relative;">
 
-        <h3><a href="operations/coordinate_fiber_product.html" class="table-title-link">Coordinate Fiber Product</a></h3>
+        <h3><a href="results/peripheral_third_piece_obstructions.html" class="table-title-link">Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate Fiber Product</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\times_{\{0,1\}^X}">
-            \[\times_{\{0,1\}^X}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For $C\subseteq\{0,1\}^{X\sqcup Y}$ and $D\subseteq\{0,1\}^{X\sqcup Z}$ with pairwise disjoint $X,Y,Z$, their coordinate fiber product is $C\times_XD=\{(x,y,z):(x,y)\in C,\ (x,z)\in D\}$. Equivalently, duplicate the shared coordinates $X$ in the two factors and retain exactly the pairs whose two copies agree.</p></div>
-<p><strong>Category:</strong> Product</p>
-<strong>Comments:</strong><div class="text-field"><p>The output may be empty. For $|X|=1$ this is the one-coordinate product. For larger shared blocks, ampleness can fail even for maximum inputs; coordinate-tree projections and monotone path fibers provide positive special cases.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#sec:coordinate-product</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_one_coordinate_fiber_product_closed.html'>Ample Classes Are Closed Under One-Coordinate Fiber Products</a></li><li><a href='operation_results/maximum_generated_one_coordinate_fiber_product_closed.html'>Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</a></li><li><a href='operation_results/ample_arbitrary_coordinate_fiber_product_not_closed.html'>Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/coordinate_tree_fiber_product_formula.html'>Coordinate-Tree Fiber Products of Ample Classes</a></li><li><a href='results/opposite_consecutive_triple_parent.html'>Maximum Parent for Opposite Consecutive Triples</a></li><li><a href='results/cumulative_path_fiber_parents.html'>Consecutive Parents for Cumulative Path Fibers</a></li><li><a href='results/monotone_path_fiber_product_closure.html'>Maximum-Generated Closure for Monotone Path Fibers</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/cube_boundary_relative_obstructions.html'>Relative Peeling Obstructions at Cube Boundaries of Every Dimension</a></li><li><a href='results/repair_face_rooted_factor.html'>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></li><li><a href='results/peripheral_third_piece_obstructions.html'>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></li><li><a href='results/three_piece_trace_selector.html'>Exact Six-Component Trace Selector for the Three-Piece Obstruction</a></li><li><a href='results/minor_admissible_trace_nonaffinity.html'>Minor-Admissible Trace Positivity Is Disjunctive and Nonaffine</a></li></ul></p></div>
+        <p><strong>Name: </strong>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K,L$ be the fixed $330$- and $581$-concept edge pieces and let $Y=K\cup_D L$. Then $(Y,u)$ is a $909$-concept rooted factor. For any rooted factor $(R,0)$ on active coordinates $F$ and any nonempty ample $S\subseteq R$ peeling to $0$, put $P_{R,S}=(R\times\{0\})\cup(S\times\{1\})$ and glue it to $Y$ along the edge over $0$. The result is an ample pc-minimal obstruction of order $|R|+|S|+907$ and dimension $|F|+25$. Its edge deletion has three canonical components, with $P_{R,S}$ the unique piece having nested edge sections. Every nonempty-coordinate reduction is dismantlable ample, and the result is two-connected exactly when $|S|>1$. Taking the standard $289$-concept factor and an incident edge for $S$ gives a two-connected $1198$-concept example in dimension $37$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The profiles of $K$ and $L$ are compatible, so their union is positive, while the edge-context product has all four endpoint sink and leaf entries zero and cannot peel to $u$. A private minor makes its changed piece retain $D$, after which the unchanged piece supplies a sink-$u$ order; shared-coordinate images are rooted-positive one-point amalgams. Thus every proper rooted minor peels and $(Y,u)$ is a rooted factor. Rooted two-block completion applied to $(Y,u)$, $(R,0)$ and site $S$ gives the stated forbidden family and connectivity criterion. The three private blocks are disjoint and the complements of $D$ in all three pieces are connected, so they are exactly the edge-complement components. The peripheral piece has profile $(0,0,0,0,1)$ and is the only one with nested shores. Separator descent makes every nonempty-coordinate reduction positive. The order and dimension formulas follow by subtracting the two duplicated endpoints.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-three-piece-peripheral-input</p></div>
 
         </div>
     </div>

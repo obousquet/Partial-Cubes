@@ -1,0 +1,19 @@
+{
+  "id": 369,
+  "short_name": "three_piece_trace_selector",
+  "name": "Exact Six-Component Trace Selector for the Three-Piece Obstruction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/conditioning",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "other",
+  "statement": "For the $1237$-concept obstruction $X$, let $A=\\pi_0X$ and $C=X^0$. Then $|A|=870$, $|C|=367$, both are dismantlable ample, and the six components of $A\\setminus C$ have sizes $249,1,249,1,2,1$. For $t\\in\\{0,1\\}^6$, lift component $i$ to shore $t_i$ while retaining both shores over $C$, obtaining an ample family $X_t$. The label $001100$ is dismantlable ample while $100000$ and $001000$ are not, so the positive label set is not a union of equality spaces of partitions with at most one nonsingleton block. Within this fixed pair, pc-minimal obstructions satisfy the exact selector $t_0\\ne t_1$, $t_2\\ne t_3$, $t_4\\ne t_5$, and $t_1\\ne t_3$; its four outputs are all isomorphic to $X$.",
+  "status": "established",
+  "proof": "The component sizes are recovered from the three edge pieces. Explicit relative orders make $001100$ a union of peripheral positive expansions. For each negative control, a protected set of $155$ vertices has the property that every member retains two neighbors while the completing square vertex is absent, so the first protected deletion could not be a corner. If either of the first two component pairs has equal labels, its $330$-piece retains the common edge; if their singleton labels agree, a proper shore contains two rooted-failing $289$-pieces. Once those pairs are mixed, equality of the last pair similarly creates a proper negative rooted shore. These arguments prove necessity of all four inequalities. The four satisfying labels arise from the original obstruction by reversing the common coordinate and exchanging its first two private blocks, proving sufficiency and isomorphism. The three exhibited labels then rule out every proposed one-block equality-space union.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-obstruction-trace-blocks"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,26 +74,19 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-16" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-369" style="position:relative;">
 
-        <h3><a href="operations/coordinate_fiber_product.html" class="table-title-link">Coordinate Fiber Product</a></h3>
+        <h3><a href="results/three_piece_trace_selector.html" class="table-title-link">Exact Six-Component Trace Selector for the Three-Piece Obstruction</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Coordinate Fiber Product</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\times_{\{0,1\}^X}">
-            \[\times_{\{0,1\}^X}\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For $C\subseteq\{0,1\}^{X\sqcup Y}$ and $D\subseteq\{0,1\}^{X\sqcup Z}$ with pairwise disjoint $X,Y,Z$, their coordinate fiber product is $C\times_XD=\{(x,y,z):(x,y)\in C,\ (x,z)\in D\}$. Equivalently, duplicate the shared coordinates $X$ in the two factors and retain exactly the pairs whose two copies agree.</p></div>
-<p><strong>Category:</strong> Product</p>
-<strong>Comments:</strong><div class="text-field"><p>The output may be empty. For $|X|=1$ this is the one-coordinate product. For larger shared blocks, ampleness can fail even for maximum inputs; coordinate-tree projections and monotone path fibers provide positive special cases.</p></div>
-<strong>Source:</strong><div class="text-field"><p>CompressionSchemes:maximum_parent_methods.tex?#sec:coordinate-product</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_one_coordinate_fiber_product_closed.html'>Ample Classes Are Closed Under One-Coordinate Fiber Products</a></li><li><a href='operation_results/maximum_generated_one_coordinate_fiber_product_closed.html'>Maximum-Generated Classes Are Closed Under Nonempty One-Coordinate Fiber Products</a></li><li><a href='operation_results/ample_arbitrary_coordinate_fiber_product_not_closed.html'>Ample Classes Are Not Closed Under Arbitrary Coordinate Fiber Products</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/coordinate_tree_fiber_product_formula.html'>Coordinate-Tree Fiber Products of Ample Classes</a></li><li><a href='results/opposite_consecutive_triple_parent.html'>Maximum Parent for Opposite Consecutive Triples</a></li><li><a href='results/cumulative_path_fiber_parents.html'>Consecutive Parents for Cumulative Path Fibers</a></li><li><a href='results/monotone_path_fiber_product_closure.html'>Maximum-Generated Closure for Monotone Path Fibers</a></li><li><a href='results/rooted_failure_to_edge_boundary_transfer.html'>Rooted Failure Transfers to an Exact Edge Profile</a></li><li><a href='results/cube_boundary_relative_obstructions.html'>Relative Peeling Obstructions at Cube Boundaries of Every Dimension</a></li><li><a href='results/repair_face_rooted_factor.html'>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></li><li><a href='results/peripheral_third_piece_obstructions.html'>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></li><li><a href='results/three_piece_trace_selector.html'>Exact Six-Component Trace Selector for the Three-Piece Obstruction</a></li><li><a href='results/minor_admissible_trace_nonaffinity.html'>Minor-Admissible Trace Positivity Is Disjunctive and Nonaffine</a></li></ul></p></div>
+        <p><strong>Name: </strong>Exact Six-Component Trace Selector for the Three-Piece Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For the $1237$-concept obstruction $X$, let $A=\pi_0X$ and $C=X^0$. Then $|A|=870$, $|C|=367$, both are dismantlable ample, and the six components of $A\setminus C$ have sizes $249,1,249,1,2,1$. For $t\in\{0,1\}^6$, lift component $i$ to shore $t_i$ while retaining both shores over $C$, obtaining an ample family $X_t$. The label $001100$ is dismantlable ample while $100000$ and $001000$ are not, so the positive label set is not a union of equality spaces of partitions with at most one nonsingleton block. Within this fixed pair, pc-minimal obstructions satisfy the exact selector $t_0\ne t_1$, $t_2\ne t_3$, $t_4\ne t_5$, and $t_1\ne t_3$; its four outputs are all isomorphic to $X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The component sizes are recovered from the three edge pieces. Explicit relative orders make $001100$ a union of peripheral positive expansions. For each negative control, a protected set of $155$ vertices has the property that every member retains two neighbors while the completing square vertex is absent, so the first protected deletion could not be a corner. If either of the first two component pairs has equal labels, its $330$-piece retains the common edge; if their singleton labels agree, a proper shore contains two rooted-failing $289$-pieces. Once those pairs are mixed, equality of the last pair similarly creates a proper negative rooted shore. These arguments prove necessity of all four inequalities. The four satisfying labels arise from the original obstruction by reversing the common coordinate and exchanging its first two private blocks, proving sufficiency and isomorphism. The three exhibited labels then rule out every proposed one-block equality-space union.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-obstruction-trace-blocks</p></div>
 
         </div>
     </div>

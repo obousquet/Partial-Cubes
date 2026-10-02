@@ -1,0 +1,22 @@
+{
+  "id": 368,
+  "short_name": "peripheral_third_piece_obstructions",
+  "name": "Arbitrary Rooted Factors Occur as Peripheral Third Pieces",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_fiber_product",
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $K,L$ be the fixed $330$- and $581$-concept edge pieces and let $Y=K\\cup_D L$. Then $(Y,u)$ is a $909$-concept rooted factor. For any rooted factor $(R,0)$ on active coordinates $F$ and any nonempty ample $S\\subseteq R$ peeling to $0$, put $P_{R,S}=(R\\times\\{0\\})\\cup(S\\times\\{1\\})$ and glue it to $Y$ along the edge over $0$. The result is an ample pc-minimal obstruction of order $|R|+|S|+907$ and dimension $|F|+25$. Its edge deletion has three canonical components, with $P_{R,S}$ the unique piece having nested edge sections. Every nonempty-coordinate reduction is dismantlable ample, and the result is two-connected exactly when $|S|>1$. Taking the standard $289$-concept factor and an incident edge for $S$ gives a two-connected $1198$-concept example in dimension $37$.",
+  "status": "established",
+  "proof": "The profiles of $K$ and $L$ are compatible, so their union is positive, while the edge-context product has all four endpoint sink and leaf entries zero and cannot peel to $u$. A private minor makes its changed piece retain $D$, after which the unchanged piece supplies a sink-$u$ order; shared-coordinate images are rooted-positive one-point amalgams. Thus every proper rooted minor peels and $(Y,u)$ is a rooted factor. Rooted two-block completion applied to $(Y,u)$, $(R,0)$ and site $S$ gives the stated forbidden family and connectivity criterion. The three private blocks are disjoint and the complements of $D$ in all three pieces are connected, so they are exactly the edge-complement components. The peripheral piece has profile $(0,0,0,0,1)$ and is the only one with nested shores. Separator descent makes every nonempty-coordinate reduction positive. The order and dimension formulas follow by subtracting the two duplicated endpoints.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-three-piece-peripheral-input"
+}

@@ -6127,6 +6127,89 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-366" style="position:relative;">
+
+        <h3><a href="results/repair_face_rooted_factor.html" class="table-title-link">A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $(C,0)$ be a rooted factor on active coordinates, with $0$ its only corner. Suppose $c\notin C$ is a one-concept ample addition whose acquired cube lies in a proper root face $Q_J(0)$ and $C\cup\{c\}$ peels to $0$. Put $B=C\cap Q_J(0)$, $T=B\cup\{c\}$, $K=(T\times\{0\})\cup(C\times\{1\})$, and mark the edge $D$ over $0$. Then $K$ is ample and dismantlable ample, with $r_D=t_v=\ell_v=0$ and $\ell_u=1$. Every proper rooted pc-minor of $(K,u)$ peels to its root, and every proper old-coordinate elementary image retaining $D$ peels to $D$. Hence either $(K,u)$ is a rooted factor or $K$ has profile $(0,1,0,1,0)$. If the chosen face omits a neighbor of $0$ in $C$, the first alternative necessarily holds. The certified $289$-concept input gives a $308$-concept rooted factor of dimension $13$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The added concept contributes exactly its acquired support beyond the shadow of $B$, while the two section shadows meet in $\operatorname{Sh}(B)$; shadow counting proves ampleness. Delete the repaired lower concept, peel the remaining lower face to its root, delete $u$ as a leaf, and peel the upper copy of $C$, proving positivity and $\ell_u=1$. Any retention, upper-end sink, or upper-end leaf witness would restrict to a forbidden rooted peeling of the upper $C$, so the other three displayed entries vanish. Rooted minimality makes both images of $C$ and $B$ peel after every proper old-coordinate operation; any surviving repair is then a corner, yielding edge retention. The new-coordinate face and contraction are respectively $T$ and $C\cup\{c\}$ and peel to the root, proving all rooted-minor tests. If the face omits a root neighbor, the first deletion in the upper shore of a hypothetical sink-$u$ order must project to the unique corner $0$, but its vertical vertex then has an incomplete incident square with that omitted neighbor. Thus $u$ is not an attainable sink and the output is rooted-critical.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-repair-face-rooted-factor</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-367" style="position:relative;">
+
+        <h3><a href="results/three_piece_edge_obstruction_witness.html" class="table-title-link">A Certified Three-Piece Separating-Edge Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Certified Three-Piece Separating-Edge Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>For the fixed $289$-concept rooted factor $C$, repair $c=290$ inside the face on $J=\{1,2,5,6,7,8\}$ and form the marked two-layer piece $K$. Then $|T|=41$, $|K|=330$, $K\setminus D$ is connected, and the exact edge profile is $(0,1,0,1,0)$. Every proper old-coordinate elementary image retaining $D$ peels to $D$. Gluing $K$, an endpoint-reversed copy of $K$, and the fixed $581$-concept piece of profile $(0,1,1,0,0)$ along their common edge produces an ample pc-minimal obstruction to dismantlable ampleness with $1237$ concepts and isometric dimension $37$. Deleting the edge leaves exactly three components, and every nonempty-coordinate reduction is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The repaired-face theorem supplies ampleness, positivity, the three zero entries, $\ell_u=1$, and all private-minor retention tests. A stored complete corner order ending at $u$, independently certified by its nonclashing out-map, supplies $t_u=1$. Relative minimality forces $K\setminus D$ to be connected, since otherwise its proper convex pieces would each peel to $D$ and their orders would concatenate. The three profiles are pairwise compatible but all fail retention, so the exact three-piece separator construction gives a nonpeelable union whose every proper pc-minor peels. Counting the shared edge gives $330+330+581-4=1237$ and the disjoint private blocks give dimension $37$. Private-coordinate reductions are positive by closure; the common-edge reduction is a one-point amalgam of two rooted-positive copies of the repaired face and the positive core, so it is positive as well.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-three-piece-witness</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-368" style="position:relative;">
+
+        <h3><a href="results/peripheral_third_piece_obstructions.html" class="table-title-link">Arbitrary Rooted Factors Occur as Peripheral Third Pieces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Arbitrary Rooted Factors Occur as Peripheral Third Pieces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/edge_peeling_profile.html">Marked-Edge Peeling Profile</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li><li><a href="operations/common_section_gluing.html">Common-Section Gluing</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $K,L$ be the fixed $330$- and $581$-concept edge pieces and let $Y=K\cup_D L$. Then $(Y,u)$ is a $909$-concept rooted factor. For any rooted factor $(R,0)$ on active coordinates $F$ and any nonempty ample $S\subseteq R$ peeling to $0$, put $P_{R,S}=(R\times\{0\})\cup(S\times\{1\})$ and glue it to $Y$ along the edge over $0$. The result is an ample pc-minimal obstruction of order $|R|+|S|+907$ and dimension $|F|+25$. Its edge deletion has three canonical components, with $P_{R,S}$ the unique piece having nested edge sections. Every nonempty-coordinate reduction is dismantlable ample, and the result is two-connected exactly when $|S|>1$. Taking the standard $289$-concept factor and an incident edge for $S$ gives a two-connected $1198$-concept example in dimension $37$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The profiles of $K$ and $L$ are compatible, so their union is positive, while the edge-context product has all four endpoint sink and leaf entries zero and cannot peel to $u$. A private minor makes its changed piece retain $D$, after which the unchanged piece supplies a sink-$u$ order; shared-coordinate images are rooted-positive one-point amalgams. Thus every proper rooted minor peels and $(Y,u)$ is a rooted factor. Rooted two-block completion applied to $(Y,u)$, $(R,0)$ and site $S$ gives the stated forbidden family and connectivity criterion. The three private blocks are disjoint and the complements of $D$ in all three pieces are connected, so they are exactly the edge-complement components. The peripheral piece has profile $(0,0,0,0,1)$ and is the only one with nested shores. Separator descent makes every nonempty-coordinate reduction positive. The order and dimension formulas follow by subtracting the two duplicated endpoints.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-three-piece-peripheral-input</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-369" style="position:relative;">
+
+        <h3><a href="results/three_piece_trace_selector.html" class="table-title-link">Exact Six-Component Trace Selector for the Three-Piece Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Six-Component Trace Selector for the Three-Piece Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For the $1237$-concept obstruction $X$, let $A=\pi_0X$ and $C=X^0$. Then $|A|=870$, $|C|=367$, both are dismantlable ample, and the six components of $A\setminus C$ have sizes $249,1,249,1,2,1$. For $t\in\{0,1\}^6$, lift component $i$ to shore $t_i$ while retaining both shores over $C$, obtaining an ample family $X_t$. The label $001100$ is dismantlable ample while $100000$ and $001000$ are not, so the positive label set is not a union of equality spaces of partitions with at most one nonsingleton block. Within this fixed pair, pc-minimal obstructions satisfy the exact selector $t_0\ne t_1$, $t_2\ne t_3$, $t_4\ne t_5$, and $t_1\ne t_3$; its four outputs are all isomorphic to $X$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The component sizes are recovered from the three edge pieces. Explicit relative orders make $001100$ a union of peripheral positive expansions. For each negative control, a protected set of $155$ vertices has the property that every member retains two neighbors while the completing square vertex is absent, so the first protected deletion could not be a corner. If either of the first two component pairs has equal labels, its $330$-piece retains the common edge; if their singleton labels agree, a proper shore contains two rooted-failing $289$-pieces. Once those pairs are mixed, equality of the last pair similarly creates a proper negative rooted shore. These arguments prove necessity of all four inequalities. The four satisfying labels arise from the original obstruction by reversing the common coordinate and exchanging its first two private blocks, proving sufficiency and isomorphism. The three exhibited labels then rule out every proposed one-block equality-space union.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-obstruction-trace-blocks</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-370" style="position:relative;">
+
+        <h3><a href="results/minor_admissible_trace_nonaffinity.html" class="table-title-link">Minor-Admissible Trace Positivity Is Disjunctive and Nonaffine</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Minor-Admissible Trace Positivity Is Disjunctive and Nonaffine</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li><li><a href="operations/coordinate_fiber_product.html">Coordinate Fiber Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Other</p>
+<strong>Statement:</strong><div class="text-field"><p>For the fixed six-component pair $(A,C)$ from the three-piece trace selector, let $M$ be the labels whose every elementary proper pc-minor is dismantlable ample. No affine subspace $L\subseteq\mathbb F_2^6$ satisfies $X_t\in\mathsf{Damp}$ exactly when $t\in L$ for all $t\in M$; in particular no single partition-equality condition works on this domain. Instead, for $t\in M$, positivity is exactly $(t_0=t_1)\lor(t_2=t_3)\lor(t_4=t_5)\lor(t_1=t_3)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The positive labels $010000$, $111010$, $110000$, $000000$, and $111111$ all lie in $M$ by explicit orders and minor closure. Any affine classifier containing $000000$ is linear and, if it contains the other four, must also contain their sum $100101$, which is the original forbidden labeling and also lies in $M$. This contradiction proves nonaffinity. Every negative member of $M$ is pc-minimal by definition and minor closure, so negating the exact four-inequality forbidden selector yields the displayed four-equality disjunction.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-minor-domain-not-affine</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

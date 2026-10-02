@@ -1,0 +1,24 @@
+{
+  "id": 366,
+  "short_name": "repair_face_rooted_factor",
+  "name": "A Repair inside a Proper Face Produces a Rooted Factor or Mixed Edge Profile",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/coordinate_fiber_product",
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $(C,0)$ be a rooted factor on active coordinates, with $0$ its only corner. Suppose $c\\notin C$ is a one-concept ample addition whose acquired cube lies in a proper root face $Q_J(0)$ and $C\\cup\\{c\\}$ peels to $0$. Put $B=C\\cap Q_J(0)$, $T=B\\cup\\{c\\}$, $K=(T\\times\\{0\\})\\cup(C\\times\\{1\\})$, and mark the edge $D$ over $0$. Then $K$ is ample and dismantlable ample, with $r_D=t_v=\\ell_v=0$ and $\\ell_u=1$. Every proper rooted pc-minor of $(K,u)$ peels to its root, and every proper old-coordinate elementary image retaining $D$ peels to $D$. Hence either $(K,u)$ is a rooted factor or $K$ has profile $(0,1,0,1,0)$. If the chosen face omits a neighbor of $0$ in $C$, the first alternative necessarily holds. The certified $289$-concept input gives a $308$-concept rooted factor of dimension $13$.",
+  "status": "established",
+  "proof": "The added concept contributes exactly its acquired support beyond the shadow of $B$, while the two section shadows meet in $\\operatorname{Sh}(B)$; shadow counting proves ampleness. Delete the repaired lower concept, peel the remaining lower face to its root, delete $u$ as a leaf, and peel the upper copy of $C$, proving positivity and $\\ell_u=1$. Any retention, upper-end sink, or upper-end leaf witness would restrict to a forbidden rooted peeling of the upper $C$, so the other three displayed entries vanish. Rooted minimality makes both images of $C$ and $B$ peel after every proper old-coordinate operation; any surviving repair is then a corner, yielding edge retention. The new-coordinate face and contraction are respectively $T$ and $C\\cup\\{c\\}$ and peel to the root, proving all rooted-minor tests. If the face omits a root neighbor, the first deletion in the upper shore of a hypothetical sink-$u$ order must project to the unique corner $0$, but its vertical vertex then has an incomplete incident square with that omitted neighbor. Thus $u$ is not an attainable sink and the output is rooted-critical.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-repair-face-rooted-factor"
+}

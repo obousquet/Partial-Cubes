@@ -1,0 +1,21 @@
+{
+  "id": 367,
+  "short_name": "three_piece_edge_obstruction_witness",
+  "name": "A Certified Three-Piece Separating-Edge Obstruction",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/edge_peeling_profile"
+  ],
+  "operation_ids": [
+    "#operations/common_section_gluing",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "For the fixed $289$-concept rooted factor $C$, repair $c=290$ inside the face on $J=\\{1,2,5,6,7,8\\}$ and form the marked two-layer piece $K$. Then $|T|=41$, $|K|=330$, $K\\setminus D$ is connected, and the exact edge profile is $(0,1,0,1,0)$. Every proper old-coordinate elementary image retaining $D$ peels to $D$. Gluing $K$, an endpoint-reversed copy of $K$, and the fixed $581$-concept piece of profile $(0,1,1,0,0)$ along their common edge produces an ample pc-minimal obstruction to dismantlable ampleness with $1237$ concepts and isometric dimension $37$. Deleting the edge leaves exactly three components, and every nonempty-coordinate reduction is dismantlable ample.",
+  "status": "established",
+  "proof": "The repaired-face theorem supplies ampleness, positivity, the three zero entries, $\\ell_u=1$, and all private-minor retention tests. A stored complete corner order ending at $u$, independently certified by its nonclashing out-map, supplies $t_u=1$. Relative minimality forces $K\\setminus D$ to be connected, since otherwise its proper convex pieces would each peel to $D$ and their orders would concatenate. The three profiles are pairwise compatible but all fail retention, so the exact three-piece separator construction gives a nonpeelable union whose every proper pc-minor peels. Counting the shared edge gives $330+330+581-4=1237$ and the disjoint private blocks give dimension $37$. Private-coordinate reductions are positive by closure; the common-edge reduction is a one-point amalgam of two rooted-positive copies of the repaired face and the positive core, so it is positive as well.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-three-piece-witness"
+}

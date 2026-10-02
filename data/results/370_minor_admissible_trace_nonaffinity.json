@@ -1,0 +1,18 @@
+{
+  "id": 370,
+  "short_name": "minor_admissible_trace_nonaffinity",
+  "name": "Minor-Admissible Trace Positivity Is Disjunctive and Nonaffine",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/pc_minor",
+    "#operations/coordinate_fiber_product"
+  ],
+  "result_type": "other",
+  "statement": "For the fixed six-component pair $(A,C)$ from the three-piece trace selector, let $M$ be the labels whose every elementary proper pc-minor is dismantlable ample. No affine subspace $L\\subseteq\\mathbb F_2^6$ satisfies $X_t\\in\\mathsf{Damp}$ exactly when $t\\in L$ for all $t\\in M$; in particular no single partition-equality condition works on this domain. Instead, for $t\\in M$, positivity is exactly $(t_0=t_1)\\lor(t_2=t_3)\\lor(t_4=t_5)\\lor(t_1=t_3)$.",
+  "status": "established",
+  "proof": "The positive labels $010000$, $111010$, $110000$, $000000$, and $111111$ all lie in $M$ by explicit orders and minor closure. Any affine classifier containing $000000$ is linear and, if it contains the other four, must also contain their sum $100101$, which is the original forbidden labeling and also lies in $M$. This contradiction proves nonaffinity. Every negative member of $M$ is pc-minimal by definition and minor closure, so negating the exact four-inequality forbidden selector yields the displayed four-equality disjunction.",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-minor-domain-not-affine"
+}
