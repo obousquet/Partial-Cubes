@@ -1,0 +1,19 @@
+{
+  "id": 647,
+  "short_name": "adjacent_square_completion_invariance",
+  "name": "Adjacent Square Completions Preserve Dismantlability",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let nonempty ample $G\\subseteq Q_F$ have two absent adjacent concepts $c,u$ such that each individual addition is ample and acquires the same two-coordinate support. Then $H=G\\cup\\{c,u\\}$ is ample, and $H$ is dismantlable ample exactly when $G$ is dismantlable ample.",
+  "status": "established",
+  "proof": "The two punctured squares and one added tip form a punctured three-cube at the other tip, so the one-concept extension criterion makes the double addition ample. If $G$ peels, delete the two tips and continue in $G$. Conversely take a smallest counterexample and inspect the first deletion of a peeling of $H$. A deletion outside the local three-cube yields a smaller counterexample; a neighbouring local deletion factors the residual through two rank-two additions, which preserve peelability; opposite-face deletions either commute with the second deletion or leave a family isomorphic to $G$. The added tips themselves leave a nonpeelable rank-two completion. Every case contradicts minimality or the assumed peeling of $H$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-square-pair-invariance",
+  "comments": "The archived verifier exercises every reduction case on three nonminimal ample controls containing the certified 291-concept cornerless family as a proper restriction."
+}

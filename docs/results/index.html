@@ -10810,6 +10810,57 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-645" style="position:relative;">
+
+        <h3><a href="results/signed_minimal_nonface_exchange.html" class="table-title-link">Exchange Law for Signed Minimal Nonfaces</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exchange Law for Signed Minimal Nonfaces</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let ample $H=H(\Sigma,\boldsymbol\sigma)$ arise from an admissible signing of the minimal nonfaces of $\Sigma$. For $a\notin H$, let $\mathcal V_H(a)$ be the minimal nonfaces on which $a$ realizes the omitted signed trace. For $c\in H$, let $\mathcal R_H(a,c)$ be those minimal nonfaces on which $a$ and $c$ differ and $c$ is the unique old representative of its trace. Then $(H\setminus\{c\})\cup\{a\}$ is ample with shattered complex $\Sigma$ exactly when $\mathcal V_H(a)=\mathcal R_H(a,c)$. The new signing pivots each violated clause to $c$'s trace and leaves every other clause unchanged. Moreover $H\cup\{a\}$ is ample exactly when $|\mathcal V_H(a)|=1$; in that case its shattered complex is $\Sigma$ together with that unique newly shattered support.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>On each minimal nonface, the old projection omits exactly its signed trace. After exchanging $c$ for $a$, it still omits one trace precisely when either $a$ fills the old omission and $c$ was the sole representative of a different trace, or $a$ does not fill it and removing $c$ creates no second omission. Simultaneous validity is exactly the displayed set equality and gives the signing pivot. The exchanged family has $|\Sigma|$ concepts and shadow contained in $\Sigma$, so Sandwich equality forces ampleness and the exact shadow. For addition, every violated clause becomes shattered. Ampleness allows exactly one new support; conversely, if exactly one clause is violated, any newly shattered support must equal that minimal nonface, so the enlarged family again meets Sandwich equality.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-signed-clause-exchange</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-646" style="position:relative;">
+
+        <h3><a href="results/punctured_face_fiber_decomposition.html" class="table-title-link">Fiber Decomposition of Punctured-Face Data</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Fiber Decomposition of Punctured-Face Data</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be ample. Every minimal nonface $I$ of its shattered complex has a unique omitted trace $\sigma_I$. The punctured-face atlas of $S$ is the disjoint union over such $I$ of outside-assignment fibers: an assignment $y$ on $F\setminus I$ belongs to the $I$-fiber exactly when every nonempty flip of $\sigma_I$ within $I$, paired with $y$, lies in $S$, while the missing tip $(\sigma_I,y)$ has no neighbour in any coordinate outside $I$. Thus all punctured faces with support $I$ share the same missing $I$-trace; the outside assignment alone locates the punctured cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>For a punctured face $(a,I)$, all $I$-traces except possibly $a|_I$ occur, while nonshattering says some trace is absent. Hence $a|_I$ is the unique omitted trace $\sigma_I$. Its outside restriction $y$ satisfies the punctured-cube membership conditions, and equality between $I$ and the incident-direction set of $a$ excludes all outside neighbours. Conversely these two fiber conditions put the punctured $I$-cube around $(\sigma_I,y)$ inside $S$, keep its tip outside $S$, and make its incident-direction set exactly $I$, recovering a unique atlas entry.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-punctured-face-fibers</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-647" style="position:relative;">
+
+        <h3><a href="results/adjacent_square_completion_invariance.html" class="table-title-link">Adjacent Square Completions Preserve Dismantlability</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Adjacent Square Completions Preserve Dismantlability</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Let nonempty ample $G\subseteq Q_F$ have two absent adjacent concepts $c,u$ such that each individual addition is ample and acquires the same two-coordinate support. Then $H=G\cup\{c,u\}$ is ample, and $H$ is dismantlable ample exactly when $G$ is dismantlable ample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two punctured squares and one added tip form a punctured three-cube at the other tip, so the one-concept extension criterion makes the double addition ample. If $G$ peels, delete the two tips and continue in $G$. Conversely take a smallest counterexample and inspect the first deletion of a peeling of $H$. A deletion outside the local three-cube yields a smaller counterexample; a neighbouring local deletion factors the residual through two rank-two additions, which preserve peelability; opposite-face deletions either commute with the second deletion or leave a family isomorphic to $G$. The added tips themselves leave a nonpeelable rank-two completion. Every case contradicts minimality or the assumed peeling of $H$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-square-pair-invariance</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The archived verifier exercises every reduction case on three nonminimal ample controls containing the certified 291-concept cornerless family as a proper restriction.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

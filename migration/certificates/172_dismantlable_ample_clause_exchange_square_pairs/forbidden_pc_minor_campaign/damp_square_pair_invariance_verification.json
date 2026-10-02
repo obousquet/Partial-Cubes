@@ -1,0 +1,247 @@
+{
+  "scope": "Fixed local checks for adjacent square-completion invariance.\n\nAttach a certified cornerless nonpeelable class to a small punctured cube,\nleaving the base cornered. Check the first-deletion reductions, commuting\nsecond deletions, and opposite-edge isomorphism without a peeling search.\nThe attached class remains a proper pc-minor; these are not new forbidden\nwitnesses. The manuscript supplies the uniform induction proof.",
+  "source_file_sha256": "76040c76fa32fc3aeb732a532df7d4f7fee834626fbd1898a4fa29cc373bc74f",
+  "controls": [
+    {
+      "attachment": 1,
+      "outside_leaf": false,
+      "dimension": 15,
+      "base_order": 296,
+      "base_corners": [
+        2,
+        5,
+        6
+      ],
+      "reductions": [
+        {
+          "first": 0,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 2,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "first": 3,
+          "case": "opposite edge first",
+          "second_deletions": [
+            {
+              "second": 2,
+              "case": "commutes to first"
+            },
+            {
+              "second": 7,
+              "case": "isomorphic base"
+            }
+          ]
+        },
+        {
+          "first": 4,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 5,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 6,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 7,
+          "case": "opposite edge first",
+          "second_deletions": [
+            {
+              "second": 3,
+              "case": "isomorphic base"
+            },
+            {
+              "second": 5,
+              "case": "commutes to first"
+            },
+            {
+              "second": 6,
+              "case": "commutes to first"
+            }
+          ]
+        }
+      ],
+      "elementary_minor_images": {
+        "unchanged": 16,
+        "adjacent pair with common support 1": 2,
+        "one support-at-most-two addition": 3,
+        "adjacent pair with common support 2": 24
+      }
+    },
+    {
+      "attachment": 3,
+      "outside_leaf": false,
+      "dimension": 15,
+      "base_order": 296,
+      "base_corners": [
+        1,
+        2,
+        5,
+        6
+      ],
+      "reductions": [
+        {
+          "first": 0,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 1,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "first": 2,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            4,
+            0
+          ]
+        },
+        {
+          "first": 4,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 5,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 6,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 7,
+          "case": "opposite edge first",
+          "second_deletions": [
+            {
+              "second": 5,
+              "case": "commutes to first"
+            },
+            {
+              "second": 6,
+              "case": "commutes to first"
+            }
+          ]
+        }
+      ],
+      "elementary_minor_images": {
+        "unchanged": 16,
+        "adjacent pair with common support 1": 2,
+        "one support-at-most-two addition": 3,
+        "adjacent pair with common support 2": 24
+      }
+    },
+    {
+      "attachment": 1,
+      "outside_leaf": true,
+      "dimension": 16,
+      "base_order": 297,
+      "base_corners": [
+        5,
+        6,
+        10
+      ],
+      "reductions": [
+        {
+          "first": 0,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 3,
+          "case": "opposite edge first",
+          "second_deletions": [
+            {
+              "second": 7,
+              "case": "isomorphic base"
+            },
+            {
+              "second": 10,
+              "case": "commutes to first"
+            }
+          ]
+        },
+        {
+          "first": 4,
+          "case": "one square completion remains"
+        },
+        {
+          "first": 5,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 6,
+          "case": "two support-two additions after a common corner",
+          "addition_order": [
+            0,
+            4
+          ]
+        },
+        {
+          "first": 7,
+          "case": "opposite edge first",
+          "second_deletions": [
+            {
+              "second": 3,
+              "case": "isomorphic base"
+            },
+            {
+              "second": 5,
+              "case": "commutes to first"
+            },
+            {
+              "second": 6,
+              "case": "commutes to first"
+            },
+            {
+              "second": 10,
+              "case": "commutes to first"
+            }
+          ]
+        },
+        {
+          "first": 10,
+          "case": "smaller instance with unchanged punctured cubes"
+        }
+      ],
+      "elementary_minor_images": {
+        "unchanged": 17,
+        "adjacent pair with common support 1": 2,
+        "one support-at-most-two addition": 3,
+        "adjacent pair with common support 2": 26
+      }
+    }
+  ],
+  "all_checks_passed": true
+}

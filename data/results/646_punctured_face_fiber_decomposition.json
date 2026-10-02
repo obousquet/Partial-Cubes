@@ -1,0 +1,14 @@
+{
+  "id": 646,
+  "short_name": "punctured_face_fiber_decomposition",
+  "name": "Fiber Decomposition of Punctured-Face Data",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $S$ be ample. Every minimal nonface $I$ of its shattered complex has a unique omitted trace $\\sigma_I$. The punctured-face atlas of $S$ is the disjoint union over such $I$ of outside-assignment fibers: an assignment $y$ on $F\\setminus I$ belongs to the $I$-fiber exactly when every nonempty flip of $\\sigma_I$ within $I$, paired with $y$, lies in $S$, while the missing tip $(\\sigma_I,y)$ has no neighbour in any coordinate outside $I$. Thus all punctured faces with support $I$ share the same missing $I$-trace; the outside assignment alone locates the punctured cube.",
+  "status": "established",
+  "proof": "For a punctured face $(a,I)$, all $I$-traces except possibly $a|_I$ occur, while nonshattering says some trace is absent. Hence $a|_I$ is the unique omitted trace $\\sigma_I$. Its outside restriction $y$ satisfies the punctured-cube membership conditions, and equality between $I$ and the incident-direction set of $a$ excludes all outside neighbours. Conversely these two fiber conditions put the punctured $I$-cube around $(\\sigma_I,y)$ inside $S$, keep its tip outside $S$, and make its incident-direction set exactly $I$, recovering a unique atlas entry.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-punctured-face-fibers"
+}

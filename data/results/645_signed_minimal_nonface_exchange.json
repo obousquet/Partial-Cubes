@@ -1,0 +1,17 @@
+{
+  "id": 645,
+  "short_name": "signed_minimal_nonface_exchange",
+  "name": "Exchange Law for Signed Minimal Nonfaces",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let ample $H=H(\\Sigma,\\boldsymbol\\sigma)$ arise from an admissible signing of the minimal nonfaces of $\\Sigma$. For $a\\notin H$, let $\\mathcal V_H(a)$ be the minimal nonfaces on which $a$ realizes the omitted signed trace. For $c\\in H$, let $\\mathcal R_H(a,c)$ be those minimal nonfaces on which $a$ and $c$ differ and $c$ is the unique old representative of its trace. Then $(H\\setminus\\{c\\})\\cup\\{a\\}$ is ample with shattered complex $\\Sigma$ exactly when $\\mathcal V_H(a)=\\mathcal R_H(a,c)$. The new signing pivots each violated clause to $c$'s trace and leaves every other clause unchanged. Moreover $H\\cup\\{a\\}$ is ample exactly when $|\\mathcal V_H(a)|=1$; in that case its shattered complex is $\\Sigma$ together with that unique newly shattered support.",
+  "status": "established",
+  "proof": "On each minimal nonface, the old projection omits exactly its signed trace. After exchanging $c$ for $a$, it still omits one trace precisely when either $a$ fills the old omission and $c$ was the sole representative of a different trace, or $a$ does not fill it and removing $c$ creates no second omission. Simultaneous validity is exactly the displayed set equality and gives the signing pivot. The exchanged family has $|\\Sigma|$ concepts and shadow contained in $\\Sigma$, so Sandwich equality forces ampleness and the exact shadow. For addition, every violated clause becomes shattered. Ampleness allows exactly one new support; conversely, if exactly one clause is violated, any newly shattered support must equal that minimal nonface, so the enlarged family again meets Sandwich equality.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-signed-clause-exchange"
+}
