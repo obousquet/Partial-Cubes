@@ -11777,6 +11777,44 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-699" style="position:relative;">
+
+        <h3><a href="results/successful_layer_union_needs_obstruction_hypothesis.html" class="table-title-link">Successful Layer Sets Need Not Be Union-Closed for Peelable Ample Families</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Successful Layer Sets Need Not Be Union-Closed for Peelable Ample Families</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>The obstruction hypothesis in union closure of successful layer sets is necessary. The ample, corner-peelable family $X=\{0,1,2,3,7,8\}\subseteq Q_4$ has balanced-coordinate set $\mathcal B(X)=\{0,1\}$. Each singleton $\{0\}$ and $\{1\}$ is a successful layer set, but their union is not successful because two pairs of recovery fibres collide.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The family is a square with two pendant edges. Its shattered sets are the empty set, all four singletons, and $\{0,1\}$, so their number equals $|X|=6$ and the Sandwich equality proves ampleness. Its signed minimal nonfaces are $(12,12),(10,10),(9,9),(6,4),(5,4)$, which makes coordinates 0 and 1 balanced. Marking coordinate 0 produces the distinct singleton fibres $T_9=\{8\}$ and $T_5=\{6\}$; marking coordinate 1 produces $T_{10}=\{8\}$ and $T_6=\{5\}$. Thus both singleton markings recover valid presentations. Marking both gives $T_9=T_{10}=\{8\}$ and $T_5=T_6=\{4\}$, violating distinct-singleton recovery. A direct corner peeling shows that $X$ is dismantlable ample, so the obstruction theorem does not apply.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-layer-union-collision</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/six_concept_layer_union_collision.html">Six-Concept Layer-Union Collision</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>For irredundantly embedded ample forbidden pc-minors, successful layer sets remain union-closed and determine a unique largest recovered layer set. The certificate retains this six-word family as the negative control while checking the theorem on six Hall assemblies.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-700" style="position:relative;">
+
+        <h3><a href="results/hall_three_repair_unique_layer_recovery.html" class="table-title-link">Unique Layer Recovery in the Hall Three-Repair Assembly</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Unique Layer Recovery in the Hall Three-Repair Assembly</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>For the 1,203-concept terminal Hall assembly with three repair owners on layer coordinates $p,q$, one has $\mathcal B(X)=\{p,q\}$ and the only successful layer set is $\{p,q\}$. Starting the forced-enlargement procedure from either singleton forces the other coordinate and stops at the full pair, which recovers Hall's 299-concept seed and the three displayed repairs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Hall's shadow contains every support of size at most three. The three repairs add exactly their three four-coordinate supports, and no five-set has all its four-subsets among those additions. Hence the old minimal nonfaces are all four-sets except the three acquired supports; the mixed clauses replace precisely those three. Every old coordinate therefore occurs in 165 clauses, while each of $p,q$ occurs twice with opposite signs, giving the balanced set. If only $p$ is marked, the old part of the mixed clause owned by the positive-$p$ repair has two solutions in the recovery family, so its fibre is not a singleton; marking only $q$ fails symmetrically. Marking both coordinates gives three distinct singleton fibres, recovers Hall, and verifies success. These same collisions force the missing coordinate in each singleton-start closure.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a> <a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-thick-example-unique-layers</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_thick_terminal_three_repair_obstruction.html">Hall Thick Terminal Three-Repair Obstruction</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The fixed regression enumerates every candidate layer subset, checks both failed singleton recoveries and the full-pair recovery, and confirms the corresponding thick-coordinate, owner-count, and resolving-addition branch of the layer-recovery dichotomy.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

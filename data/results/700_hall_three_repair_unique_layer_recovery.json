@@ -1,0 +1,23 @@
+{
+  "id": 700,
+  "short_name": "hall_three_repair_unique_layer_recovery",
+  "name": "Unique Layer Recovery in the Hall Three-Repair Assembly",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "For the 1,203-concept terminal Hall assembly with three repair owners on layer coordinates $p,q$, one has $\\mathcal B(X)=\\{p,q\\}$ and the only successful layer set is $\\{p,q\\}$. Starting the forced-enlargement procedure from either singleton forces the other coordinate and stops at the full pair, which recovers Hall's 299-concept seed and the three displayed repairs.",
+  "status": "established",
+  "proof": "Hall's shadow contains every support of size at most three. The three repairs add exactly their three four-coordinate supports, and no five-set has all its four-subsets among those additions. Hence the old minimal nonfaces are all four-sets except the three acquired supports; the mixed clauses replace precisely those three. Every old coordinate therefore occurs in 165 clauses, while each of $p,q$ occurs twice with opposite signs, giving the balanced set. If only $p$ is marked, the old part of the mixed clause owned by the positive-$p$ repair has two solutions in the recovery family, so its fibre is not a singleton; marking only $q$ fails symmetrically. Marking both coordinates gives three distinct singleton fibres, recovers Hall, and verifies success. These same collisions force the missing coordinate in each singleton-start closure.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-thick-example-unique-layers",
+  "witness_ids": [
+    "#examples/hall_thick_terminal_three_repair_obstruction"
+  ],
+  "comments": "The fixed regression enumerates every candidate layer subset, checks both failed singleton recoveries and the full-pair recovery, and confirms the corresponding thick-coordinate, owner-count, and resolving-addition branch of the layer-recovery dichotomy."
+}

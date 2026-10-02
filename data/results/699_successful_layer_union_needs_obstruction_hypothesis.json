@@ -1,0 +1,23 @@
+{
+  "id": 699,
+  "short_name": "successful_layer_union_needs_obstruction_hypothesis",
+  "name": "Successful Layer Sets Need Not Be Union-Closed for Peelable Ample Families",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/projection",
+    "#operations/full_reduction"
+  ],
+  "result_type": "construction",
+  "statement": "The obstruction hypothesis in union closure of successful layer sets is necessary. The ample, corner-peelable family $X=\\{0,1,2,3,7,8\\}\\subseteq Q_4$ has balanced-coordinate set $\\mathcal B(X)=\\{0,1\\}$. Each singleton $\\{0\\}$ and $\\{1\\}$ is a successful layer set, but their union is not successful because two pairs of recovery fibres collide.",
+  "status": "established",
+  "proof": "The family is a square with two pendant edges. Its shattered sets are the empty set, all four singletons, and $\\{0,1\\}$, so their number equals $|X|=6$ and the Sandwich equality proves ampleness. Its signed minimal nonfaces are $(12,12),(10,10),(9,9),(6,4),(5,4)$, which makes coordinates 0 and 1 balanced. Marking coordinate 0 produces the distinct singleton fibres $T_9=\\{8\\}$ and $T_5=\\{6\\}$; marking coordinate 1 produces $T_{10}=\\{8\\}$ and $T_6=\\{5\\}$. Thus both singleton markings recover valid presentations. Marking both gives $T_9=T_{10}=\\{8\\}$ and $T_5=T_6=\\{4\\}$, violating distinct-singleton recovery. A direct corner peeling shows that $X$ is dismantlable ample, so the obstruction theorem does not apply.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-layer-union-collision",
+  "witness_ids": [
+    "#examples/six_concept_layer_union_collision"
+  ],
+  "comments": "For irredundantly embedded ample forbidden pc-minors, successful layer sets remain union-closed and determine a unique largest recovered layer set. The certificate retains this six-word family as the negative control while checking the theorem on six Hall assemblies."
+}
