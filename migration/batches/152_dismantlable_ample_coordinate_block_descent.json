@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "batch_id": "152_dismantlable_ample_coordinate_block_descent",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the exact strong-projection identities for coordinate-block replacement and the resulting arbitrarily large set of maximal nonpeelable descent supports and unbounded descent length.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-coordinate-block-descent"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This corollary upgrades the block operation from a closure construction to a complete law for all strong projections and settles uniqueness and bounded-length questions for nonpeelable descent supports.",
+    "outcome": "The statement-plus-proof block matches the preserved manuscript. The result is a formal consequence of the already normalized coordinate-block replacement theorem and relative peeling equivalence, so no new finite certificate is required.",
+    "claim_block_sha256": {
+      "cor:damp-coordinate-block-descent": "62706c914b5a6c87b32d4322b5c2a2d6d5cf4c3aa27b238a7e3bc421d428456e"
+    }
+  },
+  "verification_packets": [],
+  "source_preservation": {
+    "policy": "The database owns the exact projection formula, nonpeelability law, maximal-support count, descent-length conclusion, and concise proof. LaTeX retains the expanded derivation and surrounding discussion of terminal types.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the source theorem. Earlier batches preserve the coordinate-block construction and its replay inputs.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/610_coordinate_block_descent_supports.json",
+      "sha256": "61981e906cfc35cad6d1d45dff9f6639fd3dab03de37679e2311494699dcbb42"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "c105a6853bacbab9648ee2efec004be0f70bba3240dc4ba43fceb767c5732ffa"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "c9c26c3b8f3f382f3528a3fa444f1560e476f1ef19a5da9c7d16bed7dcbf8b39"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 1992 records.",
+    "website": "Normalized 2008 generated HTML files; 12 tables and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 710 to 711 of 1143 and dismantlable-ample coverage from 274 to 275 of 683.",
+    "certificates": "No new finite certificate is needed; the proof uses the previously established block shadow, projection commutation, and exact block peeling equivalence.",
+    "source_integrity": "The reviewed claim block and complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 432 uncovered database-owned labels: 408 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block gives canonical reduction and reconstruction for repeated signed-clause columns.",
+    "Subsequent claims study terminal reductions and uniqueness after graph and signed-column canonicalization."
+  ]
+}

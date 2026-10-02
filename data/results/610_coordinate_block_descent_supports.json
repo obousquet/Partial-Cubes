@@ -1,0 +1,20 @@
+{
+  "id": 610,
+  "short_name": "coordinate_block_descent_supports",
+  "name": "Coordinate Blocks Produce Arbitrarily Many Maximal Descent Supports",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/coordinate_block_replacement",
+    "#operations/full_reduction"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $W_E(H)$ replace a coordinate $z$ of $H$ by a nonempty coordinate block $E$, and let $D$ be a set of old coordinates and $T\\subseteq E$. If $T$ is proper in $E$, then the reduction on $D\\cup T$ is $W_{E\\setminus T}(H^D)$; if $T=E$, it is $H^{D\\cup\\{z\\}}$. Hence the reduction is nonpeelable exactly when the indicated reduction of $H$ is nonpeelable. In particular, if $H$ is an ample forbidden pc-minor whose every nonempty-coordinate reduction peels, then the nonpeelable reductions of $W_E(H)$ are exactly the proper subsets of $E$. For $|E|=m$, there are exactly $m$ maximal descent supports $E\\setminus\\{e\\}$, every maximal one-coordinate negative descent has length $m-1$, and every endpoint is $H$ with its marked coordinate renamed.",
+  "status": "established",
+  "proof": "Reduction in old coordinates commutes with block replacement. The only nontrivial section identity is $(B_0\\cup B_1)^D=B_0^D\\cup B_1^D$: any full $D$-cube in the union is shattered by one of the two sections and therefore lies wholly in it. Reducing a proper subset of block coordinates leaves the same constant and nonconstant fibre pattern on the remaining block; reducing all of them requires the old word to lie in the original reduction. The block peeling equivalence transfers nonpeelability. Under the terminal-reduction hypothesis on $H$, only $D=\\varnothing$ can remain negative in the proper-block case, while the full-block case is positive. The maximal proper subsets of an $m$-element block give the stated count, lengths, and endpoints.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-coordinate-block-descent",
+  "comments": "This disproves uniqueness of maximal descent support and any uniform bound on descent length for general forbidden three-cores with two-connected crossing graphs. It does not disprove uniqueness of the terminal isomorphism type."
+}
