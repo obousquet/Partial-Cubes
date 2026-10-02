@@ -1,0 +1,21 @@
+{
+  "id": 628,
+  "short_name": "first_contraction_overlap_deficit",
+  "name": "First Nonample Overlap Has One-Sided Deficit",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In an ample coordinate split with sections $B_0,B_1$, overlap $A$, and contraction $C$, let $x$ be a corner of $C$ that lies in $A$ but is not a corner of $A$. If $Q$ is the unique maximal cube of $C$ through $x$, with support $I$, there is a unique side $B_b$ containing $Q$. Deleting $x$ removes exactly $I$ from $\\operatorname{Sh}(B_b)$, changes neither $\\operatorname{Sh}(B_{1-b})$ nor $\\operatorname{Sh}(A)$, and removes exactly $I$ from the shadow of the lifted family. The owner side remains ample, while the other side, overlap, and lift each have deficit one. Their conditioning-minimal nonample faces agree: for every inclusion-minimal $T$ of size at least two with $x^T\\notin A$ and $x^U\\in A$ for all proper $U\\subset T$, both residuals meet the cube $Q_T(x)$ in $Q_T(x)\\setminus\\{x,x^T\\}$, where $x^T\\in B_b\\setminus A$; these and only these antipodally twice-punctured faces are conditioning-minimal nonample.",
+  "status": "established",
+  "proof": "The maximal cube $Q$ lies in at least one section and cannot lie in both, since that would make $x$ an overlap corner. In its unique owner side, $x$ is a corner; in the opposite side and the overlap, the local cube-support complexes at $x$ coincide and $x$ is a noncorner. Deleting a corner from an ample family loses its unique cube support, while deleting a noncorner loses no shattered support. The section-shadow union and two-layer shadow formulas then give the lifted shadow loss and all three unit deficits. The displayed supports $T$ are precisely the minimal nonfaces of the common local support complex. Each lies in $I$, putting $x^T$ in the owner wing, and yields the stated twice-punctured cube. Conversely, any nonample conditioning created by deleting $x$ must contain $x$ and contains such a minimal local nonface; minimality forces it to equal that face.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-first-contraction-deficit",
+  "comments": "For the certified cornerless 291-concept obstruction, all 24 first contraction corners have this form. A saved 224-step contraction peeling reaches lift deficit 14 before returning to zero; this is an observed profile, not an optimality claim. The same replay also records a 25-concept example showing that adjoining the entire contraction corner cube need not repair an ample overlap."
+}

@@ -1,0 +1,20 @@
+{
+  "id": 627,
+  "short_name": "contraction_section_deficit_balance",
+  "name": "Overlap and Section Deficit Balance",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Split an ample family $H$ in a coordinate into sections $B_0,B_1$, overlap $A=B_0\\cap B_1$, and contraction $C=B_0\\cup B_1$. Write $\\delta(X)=|\\operatorname{Sh}(X)|-|X|$. For every ample $K\\subseteq C$, put $B_b^K=B_b\\cap K$, $A^K=A\\cap K$, and let $H[K]$ be the lift of $K$ in $H$. On every coordinate set, the signed traces of $B_0^K$ and $B_1^K$ intersect exactly in the trace of $A^K$. Hence $\\operatorname{Sh}(K)=\\operatorname{Sh}(B_0^K)\\cup\\operatorname{Sh}(B_1^K)$, $\\operatorname{Sh}(A^K)=\\operatorname{Sh}(B_0^K)\\cap\\operatorname{Sh}(B_1^K)$, and $\\delta(H[K])=\\delta(B_0^K)+\\delta(B_1^K)=\\delta(A^K)$. Thus $H[K]$ is ample exactly when $A^K$ is ample. If a corner $x$ of $K$ is deleted and $L_0,L_1,L_A$ are the shattered supports lost from the two sections and overlap, then the lift-deficit change is $m(x)-|L_0|-|L_1|$: it is zero for $x\\notin A$ and is $1-|L_A|$ for $x\\in A$. Exterior deletions preserve both side deficits; overlap deletion raises the deficit by at most one and lowers it exactly when at least two overlap supports disappear.",
+  "status": "established",
+  "proof": "An isometric path inside $K$ between concepts in opposite wings must pass through $A^K$ without changing any coordinates on which its endpoints agree. This gives the exact trace intersection and therefore the shadow intersection. Every cube of $C$ lies in one section: its intersection with ample $A$ has connected complement when nonempty, and the two wings have no joining edge. Since $K$ is ample, every shattered support of $K$ is represented by a cube, giving the shadow union. The standard two-layer shadow formula, $|H[K]|=|K|+|A^K|$, and $|\\operatorname{Sh}(K)|=|K|$ yield the deficit balance and the ampleness equivalence. Finally, deleting $x$ removes $m(x)$ section concepts and exactly the supports in $L_0$ and $L_1$; subtracting the two balance identities gives the transition law. Comparing overlap deficits gives its two cases and the stated consequences.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-contraction-section-deficits",
+  "comments": "The formulas also cover the empty residual $K$. They account exactly for scalar shadow loss, but do not by themselves determine which overlap losses are simultaneously compatible. The exhaustive replay is archived with migration Batch 164."
+}

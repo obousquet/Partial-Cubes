@@ -10496,6 +10496,42 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-627" style="position:relative;">
+
+        <h3><a href="results/contraction_section_deficit_balance.html" class="table-title-link">Overlap and Section Deficit Balance</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Overlap and Section Deficit Balance</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>Split an ample family $H$ in a coordinate into sections $B_0,B_1$, overlap $A=B_0\cap B_1$, and contraction $C=B_0\cup B_1$. Write $\delta(X)=|\operatorname{Sh}(X)|-|X|$. For every ample $K\subseteq C$, put $B_b^K=B_b\cap K$, $A^K=A\cap K$, and let $H[K]$ be the lift of $K$ in $H$. On every coordinate set, the signed traces of $B_0^K$ and $B_1^K$ intersect exactly in the trace of $A^K$. Hence $\operatorname{Sh}(K)=\operatorname{Sh}(B_0^K)\cup\operatorname{Sh}(B_1^K)$, $\operatorname{Sh}(A^K)=\operatorname{Sh}(B_0^K)\cap\operatorname{Sh}(B_1^K)$, and $\delta(H[K])=\delta(B_0^K)+\delta(B_1^K)=\delta(A^K)$. Thus $H[K]$ is ample exactly when $A^K$ is ample. If a corner $x$ of $K$ is deleted and $L_0,L_1,L_A$ are the shattered supports lost from the two sections and overlap, then the lift-deficit change is $m(x)-|L_0|-|L_1|$: it is zero for $x\notin A$ and is $1-|L_A|$ for $x\in A$. Exterior deletions preserve both side deficits; overlap deletion raises the deficit by at most one and lowers it exactly when at least two overlap supports disappear.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>An isometric path inside $K$ between concepts in opposite wings must pass through $A^K$ without changing any coordinates on which its endpoints agree. This gives the exact trace intersection and therefore the shadow intersection. Every cube of $C$ lies in one section: its intersection with ample $A$ has connected complement when nonempty, and the two wings have no joining edge. Since $K$ is ample, every shattered support of $K$ is represented by a cube, giving the shadow union. The standard two-layer shadow formula, $|H[K]|=|K|+|A^K|$, and $|\operatorname{Sh}(K)|=|K|$ yield the deficit balance and the ampleness equivalence. Finally, deleting $x$ removes $m(x)$ section concepts and exactly the supports in $L_0$ and $L_1$; subtracting the two balance identities gives the transition law. Comparing overlap deficits gives its two cases and the stated consequences.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-contraction-section-deficits</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The formulas also cover the empty residual $K$. They account exactly for scalar shadow loss, but do not by themselves determine which overlap losses are simultaneously compatible. The exhaustive replay is archived with migration Batch 164.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-628" style="position:relative;">
+
+        <h3><a href="results/first_contraction_overlap_deficit.html" class="table-title-link">First Nonample Overlap Has One-Sided Deficit</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>First Nonample Overlap Has One-Sided Deficit</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In an ample coordinate split with sections $B_0,B_1$, overlap $A$, and contraction $C$, let $x$ be a corner of $C$ that lies in $A$ but is not a corner of $A$. If $Q$ is the unique maximal cube of $C$ through $x$, with support $I$, there is a unique side $B_b$ containing $Q$. Deleting $x$ removes exactly $I$ from $\operatorname{Sh}(B_b)$, changes neither $\operatorname{Sh}(B_{1-b})$ nor $\operatorname{Sh}(A)$, and removes exactly $I$ from the shadow of the lifted family. The owner side remains ample, while the other side, overlap, and lift each have deficit one. Their conditioning-minimal nonample faces agree: for every inclusion-minimal $T$ of size at least two with $x^T\notin A$ and $x^U\in A$ for all proper $U\subset T$, both residuals meet the cube $Q_T(x)$ in $Q_T(x)\setminus\{x,x^T\}$, where $x^T\in B_b\setminus A$; these and only these antipodally twice-punctured faces are conditioning-minimal nonample.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The maximal cube $Q$ lies in at least one section and cannot lie in both, since that would make $x$ an overlap corner. In its unique owner side, $x$ is a corner; in the opposite side and the overlap, the local cube-support complexes at $x$ coincide and $x$ is a noncorner. Deleting a corner from an ample family loses its unique cube support, while deleting a noncorner loses no shattered support. The section-shadow union and two-layer shadow formulas then give the lifted shadow loss and all three unit deficits. The displayed supports $T$ are precisely the minimal nonfaces of the common local support complex. Each lies in $I$, putting $x^T$ in the owner wing, and yields the stated twice-punctured cube. Conversely, any nonample conditioning created by deleting $x$ must contain $x$ and contains such a minimal local nonface; minimality forces it to equal that face.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-first-contraction-deficit</p></div>
+<strong>Comments:</strong><div class="text-field"><p>For the certified cornerless 291-concept obstruction, all 24 first contraction corners have this form. A saved 224-step contraction peeling reaches lift deficit 14 before returning to zero; this is an observed profile, not an optimality claim. The same replay also records a 25-concept example showing that adjoining the entire contraction corner cube need not repair an ample overlap.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>
