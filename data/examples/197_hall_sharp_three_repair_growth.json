@@ -1,0 +1,12 @@
+{
+  "id": 197,
+  "short_name": "hall_sharp_three_repair_growth",
+  "name": "Hall Sharp Three-Repair Growth Example",
+  "object_type": "construction",
+  "definition": "Let $K=C_H$ be Hall's 299-concept obstruction with compatible repairs $a=183$, $b=315$, and $d=1836$. On a new coordinate $p$, put $H=((K\\cup\\{b\\})\\times\\{0\\})\\cup((K\\cup\\{a\\})\\times\\{1\\})$, add $c=(d,0)$ to obtain $S$, and then form the opposite-layer lift $X=((S\\cup\\{(d,1)\\})\\times\\{0\\})\\cup((S\\cup\\{(b,1)\\})\\times\\{1\\})$ on a second coordinate $q$.",
+  "parameters": "$H$ has 600 concepts, $S$ has 601, and $X$ has 1,204. The obstruction-preserving corner deletion removes the second-layer copy of $c$ and leaves a terminal 1,203-concept Hall facet assembly.",
+  "properties": "$\\mathcal R(H)=\\{(a,0),(b,1)\\}$ while $\\mathcal R(S)=\\{(a,0),(b,1),(d,1)\\}$, so the new adjacent repair attains both repair-growth bounds. Every old coordinate of $S$ occurs in 165 minimal forbidden traces and $p$ occurs in three, so $S$ has no successful layer set. In $X$, $q$ is the unique successful layer and recovers the cornered seed $S$. Deleting the specified corner makes both $p$ and $q$ balanced and recovers Hall on the two-layer set; the resulting rows form a terminal signed-facet partition.",
+  "references": "\\cite{BousquetYangComplex26,ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-sharp-layered-repair-growth",
+  "verification": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/damp_layered_predecessor_repair_growth_verification.json"
+}

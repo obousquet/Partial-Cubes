@@ -11739,6 +11739,25 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-697" style="position:relative;">
+
+        <h3><a href="results/repair_growth_after_extending_recovered_obstruction.html" class="table-title-link">Repair Growth after Extending a Recovered Obstruction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Repair Growth after Extending a Recovered Obstruction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $H\subseteq Q_V$ be an irredundantly embedded ample forbidden pc-minor with a successful nonempty layer set $E$, and let $S=H\cup\{c\}$ be ample and nonpeelable. If $\mathcal R(Y)=\{a\notin Y:Y\cup\{a\}\text{ is dismantlable ample}\}$, then $\mathcal R(H)\subseteq\mathcal R(S)$, $|\mathcal R(S)\setminus\mathcal R(H)|\le1$, and $|\mathcal R(S)|\le3$. Every inherited repair is nonadjacent to $c$ and keeps its acquired support. A new repair, if present, has the same old-coordinate projection as $c$; their two missing layer words form an edge, so the new repair is adjacent to $c$. No signed-facet assembly over $S$ using compatible resolving tips is corner-descent terminal. Consequently, if a terminal facet assembly has a cornered seed, every obstruction-preserving corner deletion of that seed has no successful layer presentation.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Recover $H$ from its successful layer set, with nonpeelable seed $K=H^E$. Since $S$ is nonpeelable, adding $c$ completes no full $E$-fibre, so $S^E=K$ and the acquired support of $c$ does not contain $E$. Every old repair has a different support; compatible-repair union makes $H\cup\{a,c\}$ ample, and deleting $c$ leaves a peelable family, so it is a repair of $S$ with unchanged support and is nonadjacent to $c$. Any new repair of $S$ must change the nonpeelable strong $E$-projection and therefore complete an $E$-fibre. Its old projection must equal that of $c$, or it would already repair $H$. The original fibre has exactly these two missing words; the recovered-row geometry makes them an edge. Hence there is at most one new repair, while the recovered-obstruction theorem bounds the inherited set by two. Finally, for the seed corner $c$, exactly the inherited repairs satisfy the seed-corner deletion criterion. At most one owner is ineligible, whereas opposite signed facets require distinct owners, so every compatible facet assembly retains an obstruction-preserving copy of $c$ and cannot be terminal.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-layered-predecessor-repair-growth</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_sharp_three_repair_growth.html">Hall Sharp Three-Repair Growth Example</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The bound of three repairs and the single-new-repair bound are both sharp. The theorem also explains why a cornered seed inside a terminal facet assembly cannot itself arise by an obstruction-preserving corner extension from an obstruction with successful layers.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

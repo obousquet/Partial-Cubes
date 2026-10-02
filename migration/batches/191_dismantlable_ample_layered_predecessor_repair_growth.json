@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "batch_id": "191_dismantlable_ample_layered_predecessor_repair_growth",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the repair-growth theorem for a one-concept extension of a layer-recovered obstruction and the sharp Hall example attaining three repairs and descending to a terminal facet assembly.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-layered-predecessor-repair-growth",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-sharp-layered-repair-growth",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_layered_predecessor_repair_growth.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "layered-predecessor-repair-growth-control-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_layered_predecessor_repair_growth.py,damp_layered_predecessor_repair_growth_verification.json,verify_damp_facet_partition_repairs.py,verify_damp_terminal_clause_recovery.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "2cd3874dbb2dcc595ab47c4257b7cf661fcbafd961bd6709375a1d0626c4ed82",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This theorem bounds precisely how resolving additions change when one corner is added to an obstruction with successful layers, and turns the bound into a nonterminality criterion for all compatible facet assemblies over the enlarged seed.",
+    "outcome": "The theorem and sharp-example blocks match the preserved manuscript. The database records the three repair bounds, fibre and adjacency conclusions, terminality consequence, concise proof, and finite Hall witness.",
+    "claim_block_sha256": {
+      "thm:damp-layered-predecessor-repair-growth": "27704a4d6a40dc377e0d79313d8be7e4a9bb65ccc7ade1cdcb95c4d638c95388",
+      "rem:damp-sharp-layered-repair-growth": "84a17db63739894deae4f98ecbfc2f4d2b1d63e224a705695f0308b202788bed"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/verify_damp_layered_predecessor_repair_growth.py",
+      "sha256": "19abdd8846aa0bdb52a56235f1bcea08754234f0a4d0240a7ecb15a7fe8de79d"
+    },
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/damp_layered_predecessor_repair_growth_verification.json",
+      "sha256": "d00dc5bea80cd5035cf64aa3162eb92d34954ebcbd33f0adcac97873157d25c6"
+    },
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/source_damp_layered_predecessor_repair_growth_verification.json",
+      "sha256": "d00dc5bea80cd5035cf64aa3162eb92d34954ebcbd33f0adcac97873157d25c6"
+    },
+    {
+      "path": "migration/certificates/191_dismantlable_ample_layered_predecessor_repair_growth/source_packet_manifest.json",
+      "sha256": "9b4b7a8c247be676d443d689194c453bf88979028545d0bc5acde08efc1cbb75"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the theorem, concise proof, sharp normalized example, exact source locators, and replayable certificate. LaTeX retains the expanded strong-projection and seed-corner arguments and the large explicit repair peelings.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the proof and example. The six-file computation packet at commit f304961 is path-hashed and byte-archived; its verifier reproduces the tracked report byte-for-byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/697_repair_growth_after_extending_recovered_obstruction.json",
+      "sha256": "6bc601b933dbbbb35b034a6bcbb74bcf9dda68b0d64e3de30e61875c0a2e3a07"
+    },
+    {
+      "path": "data/examples/197_hall_sharp_three_repair_growth.json",
+      "sha256": "d8b2bdc0ec6e0adb3490f4bbf999cdbf59e3f51534cc744038b358606fbfc991"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "bc4bc86a2b8ab18e2f502b1088b8e5d04ef5fc8421eba218a83d4f2a6b255be9"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "b21252d178e163564502017ebec492e078804c6422e5d136a1ac005a1a169fdd"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2104 records.",
+    "website": "Normalized 2120 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 1 additional audited label, raising overall coverage from 797 to 798 of 1143 and dismantlable-ample coverage from 361 to 362 of 683.",
+    "certificates": "The replay checks the complete resolving-tip lists and explicit repair peelings for the 600- and 601-concept families, all acquired supports and clause degrees, the 1204-concept outer assembly, its obstruction-preserving corner deletion, and the terminal 1203-concept signed-facet endpoint.",
+    "source_integrity": "The theorem and example blocks match supplemental snapshot 2026-10-02-b002, all six archived computation inputs match the manifest, and the regenerated report is byte-identical to its tracked source report."
+  },
+  "deferred": [
+    "The refreshed audit has 345 uncovered database-owned labels: 321 in dismantlable-ample and 24 in ample-corners.",
+    "The next result removes an inherited seed extension throughout an entire layer cube by obstruction-preserving corner deletions.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
