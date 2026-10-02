@@ -9858,6 +9858,96 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-592" style="position:relative;">
+
+        <h3><a href="results/two_row_relative_enlargement_inverse.html" class="table-title-link">One Relative Enlarged Row Makes the Two-Row Inverse Sound</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>One Relative Enlarged Row Makes the Two-Row Inverse Sound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ have full-support forbidden reduction $H=(B_0,B_1)$, positive contraction $K=(D_1,D_0)$, and common intersection $C=B_0\cup B_1=D_0\cap D_1$. If either $D_0$ or $D_1$ peels to $C$, then $V$ is a pc-minimal obstruction to dismantlable ampleness. It suffices that every connected component of the graph $2$-core of one $G(D_i\setminus C)$ have at most eight vertices. Hence a counterexample must have a $2$-core component of order at least nine in both enlarged rows.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Delete a supplied relative row order inside its nonconstant row. Those words lie outside $C$, so they have no constant-row neighbours and retain exactly their row corner cubes. The remaining four rows form a one-row enlargement, up to exchanging the new coordinates, and hence form a forbidden family. The original and reduced outputs share the same negative reduction. Transporting the relative chain through each elementary operation, omitting repeated images, and appending a proper-minor peeling of the one-row output proves every proper minor positive. The forest/eight-facet relative theorem supplies the row peeling under the graph $2$-core condition.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-row-relative-enlargement</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_relative_extension_3480.html">A 3480-Concept Two-Row Relative Extension</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-593" style="position:relative;">
+
+        <h3><a href="results/product_completion_two_row_eligibility.html" class="table-title-link">A Product Completion Cannot Produce Two Eligible Failing Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Product Completion Cannot Produce Two Eligible Failing Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/cartesian_product.html">Cartesian Product</a></li><li><a href="operations/one_point_amalgam.html">One-Point Amalgam</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $0\in P\subseteq T$ both peel to $0$, and let positive ample $R$ have unique corner $0$ but fail to peel to $0$. Put $C=P\vee R$, $D_0=P\times R$, and $D_1=T\vee R$, with both factors nontrivial. Then $D_0$ never peels to $C$, but the crossed contraction $K=(D_1,D_0)$ is dismantlable ample exactly when $T$ peels to $P$, exactly when $D_1$ peels to $C$. Thus this product-completion template cannot have a positive contraction while both enlarged rows fail relatively.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Product corners satisfy $\operatorname{Cor}(D_0)=\operatorname{Cor}(P)\times\{0\}\subseteq C$, excluding a first relative deletion. Express $K$ as the relative attachment of $R$ to two peripheral families $L\subseteq B$. The exact attachment test makes $K$ positive precisely when $B$ peels to $L$. Projecting any such chain gives $T\searrow P$; conversely, a relative order $T\searrow P$ followed by $P\searrow\{0\}$ lifts to $B\searrow L$. Restriction to the zero face of $R$ and the reverse lifted construction show $D_1\searrow C$ is equivalent to the same condition.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#rem:damp-product-two-row-eligibility</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-594" style="position:relative;">
+
+        <h3><a href="results/two_row_corner_deletion_factorization.html" class="table-title-link">Corner Deletions Factor by Rows over a Cornerless Reduction</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Corner Deletions Factor by Rows over a Cornerless Reduction</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>In an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ with cornerless reduction $H=(B_0,B_1)$ and $C=B_0\cup B_1=D_0\cap D_1$, every corner lies in a nonconstant row outside $C$, and $\operatorname{Cor}(V)=((\operatorname{Cor}(D_0)\setminus C)\times\{01\})\cup((\operatorname{Cor}(D_1)\setminus C)\times\{10\})$. Every corner-deletion sequence is exactly an arbitrary interleaving of relative corner-deletion sequences in $D_0$ and $D_1$ retaining $C$. A maximal sequence ends precisely when neither remaining row has a corner outside $C$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-row corner criterion excludes constant-row corners because they would project to corners of $H$. A nonconstant-row corner over $C$ would have the same neighbour cube in every old section containing its word; according as the word lies in one or both sections, this would give a corner cube in one section or its product with the layer edge, again producing a corner of $H$. Outside $C$ there are no new-coordinate neighbours, so corners are exactly row corners. Each deletion preserves the same cornerless reduction and exact intersection, and deletions in the two rows do not change one another's old neighbours, proving the interleaving factorization by induction.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#lem:damp-two-row-corner-deletion-factorization</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_relative_extension_3480.html">A 3480-Concept Two-Row Relative Extension</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-595" style="position:relative;">
+
+        <h3><a href="results/nested_triple_two_row_construction.html" class="table-title-link">Nested Ample Triples Produce Two Nonrelative Enlarged Rows</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Nested Ample Triples Produce Two Nonrelative Enlarged Rows</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let full-support nonempty ample $H=(B_0,B_1)$ have contraction $C$, and choose ample $C\subseteq D\subseteq E$. Two successive one-row enlargements admit a marked two-row presentation $Z$ with rows $U_0=(B_0,C)$, $R_0=(D,D)$, $R_1=(E,C)$, and $U_1=(D,B_1)$. It is ample, has common row intersection $J=(D,C)$, and is forbidden exactly when $H$ is forbidden and $D,E$ are dismantlable ample. Its reduction is a copy of $V(H,D)$, its order is $|H|+2|C|+3|D|+|E|$, and $R_0\searrow J$ exactly when $D\searrow C$, while $R_1\searrow J$ exactly when $E\searrow D$. Hence two successive relative failures yield a forbidden two-row assembly with neither enlarged row peeling to the intersection.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>First form $X=V(H,D)$. Its contraction has sections $(C,D)$. Enlarge the corresponding row of $X$ to the peripheral family $(E,D)$. Reading the resulting eight rows in the other coordinate order gives exactly $Z$, proving ampleness and the marked identities. Applying the one-row obstruction criterion twice, followed by the peripheral positivity criterion, yields the exact forbiddenness equivalence. Row counting gives the order. Relative deletion in the appropriate product layer lifts $D\searrow C$ and $E\searrow D$; reduction or restriction of any reverse chain recovers the original relative order.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-nested-triple-two-row</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/nested_triple_two_row_8164.html">An 8164-Concept Two-Row Obstruction with Two Relative Failures</a></li></ul></p>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-596" style="position:relative;">
+
+        <h3><a href="results/fixed_3480_reduction_excludes_known_obstructions.html" class="table-title-link">The Fixed 3480-Concept Reduction Excludes Two Known Proper Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Fixed 3480-Concept Reduction Excludes Two Known Proper Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $Y$ be any ample family on fourteen active coordinates whose marked reduction is the fixed $3480$-concept input $H_*$, with both marked sections and contraction dismantlable ample. Then neither the labelled $267$-concept obstruction nor any of the $1364$-concept rectangular obstructions is a proper pc-minor of $Y$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Each target has twelve active coordinates. The inverse proper-obstruction reduction test would therefore identify one of its coordinate reductions with an image of $H_*$ under one or two old-coordinate elementary operations. The target reduction orders are $59$ and $472$. Exhausting the $39+\binom{13}{2}3^2=741$ labelled old-operation choices produces neither cardinality; a separate direct restriction/projection expression agrees with every successive-operation image. The conclusion depends only on the fixed reduction and positive marked images, so it applies to every eligible parent $Y$.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-nested-triple-two-row (following fixed-parent minor filter)</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_relative_extension_3480.html">A 3480-Concept Two-Row Relative Extension</a></li><li><a href="examples/nested_triple_two_row_8164.html">An 8164-Concept Two-Row Obstruction with Two Relative Failures</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>This excludes the two named known witness types only and does not prove the unrestricted two-row inverse sound.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

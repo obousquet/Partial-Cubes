@@ -1,0 +1,14 @@
+{
+  "id": 592,
+  "short_name": "two_row_relative_enlargement_inverse",
+  "name": "One Relative Enlarged Row Makes the Two-Row Inverse Sound",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/nonconstant_row_enlargement", "#operations/concept_deletion", "#operations/full_reduction", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "Let an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ have full-support forbidden reduction $H=(B_0,B_1)$, positive contraction $K=(D_1,D_0)$, and common intersection $C=B_0\\cup B_1=D_0\\cap D_1$. If either $D_0$ or $D_1$ peels to $C$, then $V$ is a pc-minimal obstruction to dismantlable ampleness. It suffices that every connected component of the graph $2$-core of one $G(D_i\\setminus C)$ have at most eight vertices. Hence a counterexample must have a $2$-core component of order at least nine in both enlarged rows.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_relative_extension_3480"],
+  "proof": "Delete a supplied relative row order inside its nonconstant row. Those words lie outside $C$, so they have no constant-row neighbours and retain exactly their row corner cubes. The remaining four rows form a one-row enlargement, up to exchanging the new coordinates, and hence form a forbidden family. The original and reduced outputs share the same negative reduction. Transporting the relative chain through each elementary operation, omitting repeated images, and appending a proper-minor peeling of the one-row output proves every proper minor positive. The forest/eight-facet relative theorem supplies the row peeling under the graph $2$-core condition.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-row-relative-enlargement"
+}

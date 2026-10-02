@@ -1,0 +1,14 @@
+{
+  "id": 594,
+  "short_name": "two_row_corner_deletion_factorization",
+  "name": "Corner Deletions Factor by Rows over a Cornerless Reduction",
+  "class_ids": ["#classes/ample"],
+  "operation_ids": ["#operations/concept_deletion", "#operations/full_reduction"],
+  "result_type": "recognition",
+  "statement": "In an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ with cornerless reduction $H=(B_0,B_1)$ and $C=B_0\\cup B_1=D_0\\cap D_1$, every corner lies in a nonconstant row outside $C$, and $\\operatorname{Cor}(V)=((\\operatorname{Cor}(D_0)\\setminus C)\\times\\{01\\})\\cup((\\operatorname{Cor}(D_1)\\setminus C)\\times\\{10\\})$. Every corner-deletion sequence is exactly an arbitrary interleaving of relative corner-deletion sequences in $D_0$ and $D_1$ retaining $C$. A maximal sequence ends precisely when neither remaining row has a corner outside $C$.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_relative_extension_3480"],
+  "proof": "The two-row corner criterion excludes constant-row corners because they would project to corners of $H$. A nonconstant-row corner over $C$ would have the same neighbour cube in every old section containing its word; according as the word lies in one or both sections, this would give a corner cube in one section or its product with the layer edge, again producing a corner of $H$. Outside $C$ there are no new-coordinate neighbours, so corners are exactly row corners. Each deletion preserves the same cornerless reduction and exact intersection, and deletions in the two rows do not change one another's old neighbours, proving the interleaving factorization by induction.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-two-row-corner-deletion-factorization"
+}

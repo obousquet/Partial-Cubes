@@ -1,0 +1,14 @@
+{
+  "id": 595,
+  "short_name": "nested_triple_two_row_construction",
+  "name": "Nested Ample Triples Produce Two Nonrelative Enlarged Rows",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/nonconstant_row_enlargement", "#operations/peripheral_expansion", "#operations/full_reduction", "#operations/pc_minor"],
+  "result_type": "construction",
+  "statement": "Let full-support nonempty ample $H=(B_0,B_1)$ have contraction $C$, and choose ample $C\\subseteq D\\subseteq E$. Two successive one-row enlargements admit a marked two-row presentation $Z$ with rows $U_0=(B_0,C)$, $R_0=(D,D)$, $R_1=(E,C)$, and $U_1=(D,B_1)$. It is ample, has common row intersection $J=(D,C)$, and is forbidden exactly when $H$ is forbidden and $D,E$ are dismantlable ample. Its reduction is a copy of $V(H,D)$, its order is $|H|+2|C|+3|D|+|E|$, and $R_0\\searrow J$ exactly when $D\\searrow C$, while $R_1\\searrow J$ exactly when $E\\searrow D$. Hence two successive relative failures yield a forbidden two-row assembly with neither enlarged row peeling to the intersection.",
+  "status": "established",
+  "witness_ids": ["#examples/nested_triple_two_row_8164"],
+  "proof": "First form $X=V(H,D)$. Its contraction has sections $(C,D)$. Enlarge the corresponding row of $X$ to the peripheral family $(E,D)$. Reading the resulting eight rows in the other coordinate order gives exactly $Z$, proving ampleness and the marked identities. Applying the one-row obstruction criterion twice, followed by the peripheral positivity criterion, yields the exact forbiddenness equivalence. Row counting gives the order. Relative deletion in the appropriate product layer lifts $D\\searrow C$ and $E\\searrow D$; reduction or restriction of any reverse chain recovers the original relative order.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-nested-triple-two-row"
+}

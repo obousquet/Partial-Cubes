@@ -1,0 +1,15 @@
+{
+  "id": 596,
+  "short_name": "fixed_3480_reduction_excludes_known_obstructions",
+  "name": "The Fixed 3480-Concept Reduction Excludes Two Known Proper Obstructions",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/full_reduction", "#operations/projection", "#operations/conditioning", "#operations/pc_minor"],
+  "result_type": "implication",
+  "statement": "Let $Y$ be any ample family on fourteen active coordinates whose marked reduction is the fixed $3480$-concept input $H_*$, with both marked sections and contraction dismantlable ample. Then neither the labelled $267$-concept obstruction nor any of the $1364$-concept rectangular obstructions is a proper pc-minor of $Y$.",
+  "status": "established",
+  "witness_ids": ["#examples/two_row_relative_extension_3480", "#examples/nested_triple_two_row_8164"],
+  "proof": "Each target has twelve active coordinates. The inverse proper-obstruction reduction test would therefore identify one of its coordinate reductions with an image of $H_*$ under one or two old-coordinate elementary operations. The target reduction orders are $59$ and $472$. Exhausting the $39+\\binom{13}{2}3^2=741$ labelled old-operation choices produces neither cardinality; a separate direct restriction/projection expression agrees with every successive-operation image. The conclusion depends only on the fixed reduction and positive marked images, so it applies to every eligible parent $Y$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-nested-triple-two-row (following fixed-parent minor filter)",
+  "comments": "This excludes the two named known witness types only and does not prove the unrestricted two-row inverse sound."
+}

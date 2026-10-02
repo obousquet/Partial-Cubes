@@ -1,0 +1,13 @@
+{
+  "id": 593,
+  "short_name": "product_completion_two_row_eligibility",
+  "name": "A Product Completion Cannot Produce Two Eligible Failing Rows",
+  "class_ids": ["#classes/ample", "#classes/dismantlable_ample"],
+  "operation_ids": ["#operations/cartesian_product", "#operations/one_point_amalgam", "#operations/peripheral_expansion", "#operations/concept_deletion"],
+  "result_type": "implication",
+  "statement": "Let $0\\in P\\subseteq T$ both peel to $0$, and let positive ample $R$ have unique corner $0$ but fail to peel to $0$. Put $C=P\\vee R$, $D_0=P\\times R$, and $D_1=T\\vee R$, with both factors nontrivial. Then $D_0$ never peels to $C$, but the crossed contraction $K=(D_1,D_0)$ is dismantlable ample exactly when $T$ peels to $P$, exactly when $D_1$ peels to $C$. Thus this product-completion template cannot have a positive contraction while both enlarged rows fail relatively.",
+  "status": "established",
+  "proof": "Product corners satisfy $\\operatorname{Cor}(D_0)=\\operatorname{Cor}(P)\\times\\{0\\}\\subseteq C$, excluding a first relative deletion. Express $K$ as the relative attachment of $R$ to two peripheral families $L\\subseteq B$. The exact attachment test makes $K$ positive precisely when $B$ peels to $L$. Projecting any such chain gives $T\\searrow P$; conversely, a relative order $T\\searrow P$ followed by $P\\searrow\\{0\\}$ lifts to $B\\searrow L$. Restriction to the zero face of $R$ and the reverse lifted construction show $D_1\\searrow C$ is equivalent to the same condition.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#rem:damp-product-two-row-eligibility"
+}

@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Operations on partial cubes, set families, and related structures - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Operations on partial cubes, set families, and related structures - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,27 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="operations/index.html">&larr; Back to Operations Table</a></div>
-    <div class="table-card" id="math-27" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-592" style="position:relative;">
 
-        <h3><a href="operations/nonconstant_row_enlargement.html" class="table-title-link">Nonconstant-Row Enlargement</a></h3>
+        <h3><a href="results/two_row_relative_enlargement_inverse.html" class="table-title-link">One Relative Enlarged Row Makes the Two-Row Inverse Sound</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Nonconstant-Row Enlargement</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="V(H,D)">
-            \[V(H,D)\]
-        </div>
-    </div>
-
-<p><strong>Arity:</strong> 2</p>
-<strong>Definition:</strong><div class="text-field"><p>For $H\subseteq Q_{F\cup\{z\}}$ with sections $B_0,B_1$ and contraction $C=B_0\cup B_1$, and for $D\supseteq C$ on $F$, replace $z$ by fresh coordinates $(e,f)$ and use the four rows $(B_0,D,C,B_1)$ indexed by $00,01,10,11$.</p></div>
-<p><strong>Category:</strong> Expansion</p>
-<strong>Comments:</strong><div class="text-field"><p>The ordinary binary coordinate-block replacement is the case $D=C$. Marking and orienting $(e,f)$ makes $H$ and $D$ uniquely recoverable.</p></div>
+        <p><strong>Name: </strong>One Relative Enlarged Row Makes the Two-Row Inverse Sound</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/nonconstant_row_enlargement.html">Nonconstant-Row Enlargement</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let an ample two-row assembly $V=(B_0,D_0,D_1,B_1)$ have full-support forbidden reduction $H=(B_0,B_1)$, positive contraction $K=(D_1,D_0)$, and common intersection $C=B_0\cup B_1=D_0\cap D_1$. If either $D_0$ or $D_1$ peels to $C$, then $V$ is a pc-minimal obstruction to dismantlable ampleness. It suffices that every connected component of the graph $2$-core of one $G(D_i\setminus C)$ have at most eight vertices. Hence a counterexample must have a $2$-core component of order at least nine in both enlarged rows.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Delete a supplied relative row order inside its nonconstant row. Those words lie outside $C$, so they have no constant-row neighbours and retain exactly their row corner cubes. The remaining four rows form a one-row enlargement, up to exchanging the new coordinates, and hence form a forbidden family. The original and reduced outputs share the same negative reduction. Transporting the relative chain through each elementary operation, omitting repeated images, and appending a proper-minor peeling of the one-row output proves every proper minor positive. The forest/eight-facet relative theorem supplies the row peeling under the graph $2$-core condition.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
-<strong>Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-one-row-enlargement</p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/ample_nonconstant_row_enlargement_closed.html'>Nested Nonconstant-Row Enlargement Preserves Ampleness</a></li><li><a href='operation_results/dismantlable_ample_nonconstant_row_enlargement_test.html'>Exact Dismantlable-Ample Test for Nonconstant-Row Enlargement</a></li></ul></p></div>
-<div class="reference-field"><p><strong>General Theorems:</strong><ul class='fields-list'><li><a href='results/one_nonconstant_row_enlargement.html'>Arbitrary Enlargement of One Nonconstant Row</a></li><li><a href='results/simultaneous_nonconstant_row_enlargement.html'>Closed Formula for Simultaneous Row Enlargements</a></li><li><a href='results/one_row_enlargement_without_relative_move.html'>Positive Enlarged Rows Need Not Peel to the Old Contraction</a></li><li><a href='results/two_row_relative_enlargement_inverse.html'>One Relative Enlarged Row Makes the Two-Row Inverse Sound</a></li><li><a href='results/nested_triple_two_row_construction.html'>Nested Ample Triples Produce Two Nonrelative Enlarged Rows</a></li></ul></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-row-relative-enlargement</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/two_row_relative_extension_3480.html">A 3480-Concept Two-Row Relative Extension</a></li></ul></p>
 
         </div>
     </div>
