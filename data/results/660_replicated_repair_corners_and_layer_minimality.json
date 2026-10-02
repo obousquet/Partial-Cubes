@@ -1,0 +1,21 @@
+{
+  "id": 660,
+  "short_name": "replicated_repair_corners_and_layer_minimality",
+  "name": "Corners and Layer-Minimality of a Replicated Repair Cover",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/full_reduction"
+  ],
+  "result_type": "recognition",
+  "statement": "In a replicated repair assembly with ample proper occurrence rows, put $C=S\\cup\\mathcal A$ and let $Q_a$ be the completed cube on the acquired support $P_a$. Then $Q_a$ is the unique maximal cube of $C$ through $a$, and the maximal cubes of the assembly through $(a,t)$ are exactly $Q_a\\times K$, where $K$ ranges over maximal cubes of $R_a$ through $t$. If $S$ is cornerless, the corner set is the disjoint union $\\dot\\bigcup_a(\\{a\\}\\times\\operatorname{Cor}(R_a))$. Suppose further that $S$ is nonpeelable, every one-tip repair $S\\cup\\{a\\}$ is dismantlable ample, and every $R_a$ is dismantlable ample. For a layer restriction or contraction $\\nu$, the image $\\nu X(\\mathbf R)$ is dismantlable ample exactly when some image row $\\nu R_a$ is the full remaining layer cube. Consequently, all elementary layer-coordinate pc-minors are dismantlable ample exactly when every signed facet $\\{t:t_e=i\\}$ of $Q_E$ is contained in at least one occurrence row.",
+  "status": "established",
+  "proof": "Every old-coordinate union obtained by retaining a subset of tips is ample, so each tip is a corner of $C$ with unique cube $Q_a$. A cube through $(a,t)$ projects inside $Q_a$ and uses a layer face contained in $R_a$; conversely the full product with any such layer cube is present, proving the product description. Properness prevents a base cube from extending through a tip in every layer, so a cornerless seed contributes no corners and the exact formula follows. For a layer minor with no full row, strong projection onto the remaining layer block gives the nonpeelable seed, so the image cannot peel. If some rows are full, absorb them into the core, peel all but one absorbed tip to a dismantlable one-tip repair, lift peelings of every remaining proper row, and finish with a Cartesian product. A restricted row is full exactly when its signed facet lies in the original row; either full restriction also makes the contraction full, giving the finite facet-cover test.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-replicated-repair-corners"
+}

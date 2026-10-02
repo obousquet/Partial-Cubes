@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "batch_id": "176_dismantlable_ample_repair_cover_minors_and_corners",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-02",
+  "scope": "Record the finite occurrence-cover calculus for layer-coordinate pc-minors, the exact corner and layer-minimality tests for replicated repairs, and the noncollision law for compatible distinct-support tips under old-coordinate maps.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-replicated-repair-layer-minors",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-replicated-repair-corners",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-compatible-repairs-do-not-collide"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "This block converts the general repair-layer formulas into exact pc-minor and corner tests and proves that distinct-support repairs remain separately controllable after every elementary old-coordinate map.",
+    "outcome": "All three statement-plus-proof blocks match the preserved manuscript. The database retains the restriction and contraction formulas with normalization, the product description of every tip cube, the exact corner set over a cornerless seed, the full-row and signed-facet minimality equivalences, and both injectivity and arbitrary-subset corner persistence for projected repair tips.",
+    "claim_block_sha256": {
+      "cor:damp-replicated-repair-layer-minors": "7ca2f392f62e7aa0bfb3440828e372da0d9c6792c0693d3d66d0fb4d43632860",
+      "prop:damp-replicated-repair-corners": "f2de6d3cb43f59d56c7c31fd6aff73646f029cb40ac553ba050ac551bbacb4d9",
+      "lem:damp-compatible-repairs-do-not-collide": "67715fd35c350555d58f6f1fc0414d37121dde92adf1f86c9ada204a8689faad"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the normalized pc-minor formulas, corner and maximal-cube laws, layer-minimality equivalences, noncollision lemma, concise proofs, and citation. LaTeX retains the expanded absorption and peeling constructions, equation-level notation, and transition to simultaneous equal-support extensions.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three claims and the preceding repair-layer definitions on which their notation depends. Each record has an exact source label and statement-plus-proof digest.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/659_replicated_repair_layer_minor_calculus.json",
+      "sha256": "f7c1094d78a556cc55c96e3ef45ee49511d34b69b7a89443d28f99f48591ebce"
+    },
+    {
+      "path": "data/results/660_replicated_repair_corners_and_layer_minimality.json",
+      "sha256": "0958c0e37e5ebb297f4367aea7c49a230569da65dfd4578bdff39d32de04d84f"
+    },
+    {
+      "path": "data/results/661_compatible_repairs_do_not_collide.json",
+      "sha256": "888d0d1071c8ae42d2846d97fb2c7d450a5133fd3f447edb2b2ced029af42e55"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "51f3a7e0202c063731cb61eb5b65a229c2d360c955aee32b26213406424e7dfc"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "a9f2ef84f5a6ffe0b535969778116479ad223b8482b19fd0f8c483494fa83576"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2055 records.",
+    "website": "Normalized 2071 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 755 to 758 of 1143 and dismantlable-ample coverage from 319 to 322 of 683.",
+    "source_integrity": "All three reviewed claim blocks and the complete source file match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 385 uncovered database-owned labels: 361 in dismantlable-ample and 24 in ample-corners.",
+    "The next block groups simultaneous tips by equal acquired support and derives ampleness, exact shadow, relative peeling, and proper-minor positivity from their row families.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": 659,
+  "short_name": "replicated_repair_layer_minor_calculus",
+  "name": "Layer-Minor Calculus for Replicated Repairs",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/pc_minor"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For a replicated repair assembly $X(\\mathbf R)=(S\\times Q_E)\\cup\\bigcup_a(\\{a\\}\\times R_a)$ and a layer coordinate $e\\in E$, restriction to $e=i$ replaces every occurrence row by $\\rho_e^iR_a=\\{t|_{E\\setminus\\{e\\}}:t\\in R_a,t_e=i\\}$, while contraction of $e$ replaces it by $\\pi_eR_a=\\{t|_{E\\setminus\\{e\\}}:t\\in R_a\\}$. Empty rows are discarded and full rows are absorbed into the common core. The normalized images are again replicated repair assemblies with the surviving acquired-support labels $P_a$. Thus all elementary pc-minors in marked layer coordinates are computed inside the finite labelled occurrence cover. In particular, if the assembly is a forbidden pc-minor for the dismantlable ample classes, all $3|E|$ normalized layer-coordinate images are dismantlable ample.",
+  "status": "established",
+  "proof": "A word survives the restriction $e=i$ exactly when its layer word has bit $i$ there, and suppressing the coordinate produces $\\rho_e^iR_a$. Coordinate contraction is the union of the two restricted sections, hence projects each row to $\\pi_eR_a$. The replicated-repair recovery theorem gives the stated normalization and preserves the surviving labels. The final assertion is the elementary-minor condition for forbidden pc-minors.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-replicated-repair-layer-minors"
+}

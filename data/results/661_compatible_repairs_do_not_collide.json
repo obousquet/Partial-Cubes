@@ -1,0 +1,19 @@
+{
+  "id": 661,
+  "short_name": "compatible_repairs_do_not_collide",
+  "name": "Compatible Repairs Do Not Collide",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $S\\subseteq Q_F$ be ample and let $\\mathcal A\\subseteq Q_F\\setminus S$ consist of individually ample one-concept extensions with pairwise distinct acquired supports. Then no two tips in $\\mathcal A$ are adjacent in the ambient cube. More generally, after restricting or contracting one old coordinate, discard tips that do not survive or whose images enter the image of $S$. The old-coordinate map is injective on all remaining tips. After any subset of those projected tips is retained, every retained tip is a corner of the resulting old-coordinate family.",
+  "status": "established",
+  "proof": "If two tips with distinct supports were adjacent in coordinate $f$, neither support would contain $f$. Their simultaneous extension is ample. Contracting $f$ would merge the two tips into one new word, increasing cardinality by one, while both distinct acquired supports survive and increase the shadow by at least two, contradicting cardinality-shadow equality for the ample contracted families. Restrictions are injective on surviving tips, and contractions can identify only adjacent tips, proving image injectivity. For any retained subset, the full and one-tip-deleted old-coordinate families are images of ample simultaneous extensions and differ by exactly that tip; the ample corner-deletion criterion makes it a corner independently of the subset.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#lem:damp-compatible-repairs-do-not-collide"
+}
