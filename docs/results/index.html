@@ -11998,6 +11998,61 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-711" style="position:relative;">
+
+        <h3><a href="results/prime_cornerless_core_reduction.html" class="table-title-link">Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/periphery_free_partial_cubes.html">Periphery-Free Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite ample non-corner-peelable cube family $X$ reduces to an ample, cornerless, periphery-free, Cartesian-prime, non-corner-peelable family $H$ by repeatedly deleting a corner, replacing a peripheral expansion $(B\times\{0\})\cup(S\times\{1\})$ by a nonempty nonpeelable member of $\{B,S\}$, or replacing a nontrivial Cartesian product by a nonpeelable factor. Every selected intermediate family remains ample and nonpeelable, and the process terminates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion preserves ampleness and nonpeelability: a peeling of the remainder preceded by the deleted corner would peel the original family. Delete corners until the family is cornerless. If a peripheral coordinate remains, the exact expansion test says that at least one nonempty projected section is nonpeelable; select it. If a nontrivial Cartesian factorization remains, the exact product test says that at least one ample factor is nonpeelable; select it. A section or factor selection strictly decreases isometric dimension, while a corner deletion decreases order without increasing dimension. Thus the lexicographically ordered pair (isometric dimension, order) decreases and the process stops at a cornerless family with neither a peripheral coordinate nor a nontrivial Cartesian factor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-prime-cornerless-seed-reduction</p></div>
+<strong>Comments:</strong><div class="text-field"><p>In the associated ideal language, the terminal family is a periphery-free Cartesian-prime member of the cornerless linear-ideal class in rank at most that of the input.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-712" style="position:relative;">
+
+        <h3><a href="results/hall_obstruction_first_exchanges.html" class="table-title-link">The Hall Obstruction and Its Four First Nonpeelable Exchanges</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Hall Obstruction and Its Four First Nonpeelable Exchanges</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/full_reduction.html">Full Reduction</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Hall's 299-concept maximum VC-dimension-three class $C_H\subseteq Q_{12}$ is an ample forbidden pc-minor for dismantlable ampleness. It has exactly 16 ample one-concept extensions: 12 are corner-peelable with four corners, while four are nonpeelable with exactly two corners. The latter have (adjoined concept, other corner) equal to $(373,1011)$, $(1105,192)$, $(1360,3120)$, and $(1525,252)$. For each pair $(a,c)$, both $C_H\cup\{a\}$ and $(C_H\setminus\{c\})\cup\{a\}$ are ample forbidden pc-minors; the exchanged 299-concept family is cornerless and has the same shattered complex as $C_H$. The four exchanged families are pairwise nonisomorphic and none is isomorphic to $C_H$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The cited construction makes $C_H$ maximum of VC dimension three and cornerless, hence ample and nonpeelable. Exact evaluation of its 24 signed restrictions and 12 contractions peels every elementary pc-minor, proving forbiddenness. Exhausting all 3,797 absent concepts and testing isometry, Sandwich equality, corners, and peelability gives exactly 16 ample extensions and the stated 12+4 split. The one-concept obstruction theorem makes each nonpeelable extension forbidden. In every exceptional extension, deleting the added corner returns $C_H$, so deleting its only other corner also remains nonpeelable; the same-shadow exchange criterion preserves the shattered complex. Direct corner and elementary-minor audits prove that each exchange is cornerless and forbidden, while canonicalization under coordinate permutations and independent reversals distinguishes all five source types.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-hall-first-exchanges</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_cornerless_class.html">Hall's Cornerless Maximum Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The archived source profile records all 16 extensions and the four exact exchanges. The radius-two audit contains 972 successful elementary-minor checks and distinct canonical hashes for the five source types.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-713" style="position:relative;">
+
+        <h3><a href="results/hall_carrier_paths.html" class="table-title-link">Every Rank-Two Carrier in Hall's Class Is an Eleven-Vertex Path</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Every Rank-Two Carrier in Hall's Class Is an Eleven-Vertex Path</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/maximum.html">Maximum Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>For each of the 66 coordinate pairs $S\subseteq[12]$, the carrier tree $\mathcal K_S(C_H)$ of Hall's maximum class is a path on 11 vertices with 10 edges, 8 of them internal. Among its 220 maximal three-cubes, exactly 36 are internal edges in one of their three carrier paths, 60 are internal in two, and 124 are internal in all three. Consequently every maximal cube is covered by two opposite square facets belonging to other maximal cubes.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The exact verifier reconstructs the unique maximal three-cube on each triple support. For every pair support, it forms the carrier graph whose vertices are pair-cube anchors and whose labeled edges are the containing three-cubes. All 66 graphs have 11 vertices, 10 edges, and degree sequence $(1,1,2,2,2,2,2,2,2,2,2)$, so each is a path with eight internal edges. Counting each triple according to the carrier paths in which its edge has no leaf endpoint gives the histogram $36,60,124$. An internal carrier edge is exactly a pair of opposite square facets of that maximal cube covered by neighboring maximal cubes.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a> <a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-hall-carrier-paths</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/hall_cornerless_class.html">Hall's Cornerless Maximum Class</a></li></ul></p>
+<strong>Comments:</strong><div class="text-field"><p>The archived carrier report has mathematical-profile digest 65c031beb26e738618488674026fd5308367c99c513773edf2793e09c2ba7dcf and includes every labeled carrier edge.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

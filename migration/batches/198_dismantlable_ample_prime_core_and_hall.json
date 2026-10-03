@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "batch_id": "198_dismantlable_ample_prime_core_and_hall",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-03",
+  "scope": "Record reduction to a periphery-free Cartesian-prime cornerless core, certify Hall's obstruction and its four first nonpeelable exchanges, and preserve the complete rank-two carrier-path profile of Hall's class.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-prime-cornerless-seed-reduction",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-hall-first-exchanges",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-hall-carrier-paths",
+    "PartialCubes:forbidden_pc_minor_campaign/explore_hall_corner_exchange_obstructions.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_hall_carrier_trees.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "hall-first-exchange-and-carrier-evidence-2026-10-03",
+      "repository": "PartialCubes",
+      "commit": "cdd3901896f167021e2ee8b21b809639bcb89602",
+      "path": "forbidden_pc_minor_campaign/{explore_hall_corner_exchange_obstructions.py,verify_damp_hall_carrier_trees.py,hall_corner_exchange_radius2_obstructions.json,damp_hall_carrier_trees.json,computations/hall_corner_exchange/source_H.json} and replay dependencies",
+      "sha256": "10e5ef51681eec835a29cf58a8689c5f29eef2f0da0056e960b53c5b8c2a974e",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/198_dismantlable_ample_prime_core_and_hall/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "The reduction theorem identifies the irreducible objects on which the later minimum-order analysis rests, while the adjacent Hall claims combine symbolic implications with exact finite classifications whose full reports must remain recoverable.",
+    "outcome": "All three proof blocks match the preserved manuscript. The database retains every reduction operation and termination measure, the exact sixteen-extension split and four exchange pairs, all forbiddenness and isomorphism conclusions, and the complete carrier-path and internal-ridge histogram.",
+    "claim_block_sha256": {
+      "thm:damp-prime-cornerless-seed-reduction": "d594bfa004675d4420ddd241a25cb4b3d01cd0c765c89739e6c006a61711a737",
+      "prop:damp-hall-first-exchanges": "17d96d582be167793e116b65c68fb2767e53420f9efa1d7caa374179ae0eeb00",
+      "prop:damp-hall-carrier-paths": "4dd7d7faba4002b59b4e8483dd5501a95a426b068707def461b52ccac320528e"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/198_dismantlable_ample_prime_core_and_hall/verify_archived_hall_core.py",
+      "sha256": "8cfb41f8becdaeb6f85f02ba4094171c3c27876634a78777698a96d7eb5a5845"
+    },
+    {
+      "path": "migration/certificates/198_dismantlable_ample_prime_core_and_hall/archived_hall_core_verification.json",
+      "sha256": "0d08bd87ff6a4b686fdd27e1c5808b5e6182a4a2b1bb5158947e1f93d88b8c99"
+    },
+    {
+      "path": "migration/certificates/198_dismantlable_ample_prime_core_and_hall/source_packet_manifest.json",
+      "sha256": "933de977085d9d6461563bb073a2bead58fb1889df0e1e549fd8766c341eab08"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the reduction theorem, normalized Hall classifications, concise proofs, citations, and exact source locators. LaTeX retains the expanded reduction argument and the narrative role of the Hall neighborhood. The finite packet preserves the reports, full labeled carrier edges, Hall bitset, generating scripts, and replay dependencies because these cannot be reconstructed from the normalized records.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves the three proof blocks. The new packet preserves nine clean source files from commit cdd3901 with a path-sensitive tree digest, and its independent verifier checks all promoted finite counts and witnesses from the archived reports.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/711_prime_cornerless_core_reduction.json",
+      "sha256": "ea905658aa576bd9b0f4d3fa9a3032f979a95958548029d27f8f6921ad215a7f"
+    },
+    {
+      "path": "data/results/712_hall_obstruction_first_exchanges.json",
+      "sha256": "c3852c0b58febde14346d2e86ba623bcd21172dfb22f73356b0b2bfd35f8221d"
+    },
+    {
+      "path": "data/results/713_hall_carrier_paths.json",
+      "sha256": "6de17ac37c9d46dc735daf0f45ff985666ebf9e8a7a86856798a9b2c9a860289"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "86fd3c381c8d536d42a89c56fd8fc5ae2673d29faa4a9d77c4ff3351c131fa89"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "3167b5a6f09461854054fe0287a3ffdc98051942662065acf612181316415135"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2122 records.",
+    "website": "Normalized 2138 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 810 to 813 of 1143 and dismantlable-ample coverage from 374 to 377 of 683.",
+    "certificates": "The archived Hall profiles verify all 3,797 candidate extensions, the exact 16=12+4 split and four exchange pairs, 972 elementary-minor audits with no failures, five distinct source types, all 66 carrier paths, and the 36/60/124 internal-ridge histogram.",
+    "source_integrity": "All three proof blocks match supplemental snapshot 2026-10-02-b002, and every archived source file matches the new packet manifest."
+  },
+  "deferred": [
+    "The refreshed audit has 330 uncovered database-owned labels: 306 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block develops the antipodal-double maximum-fibre theorem and its minimum-order consequences.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

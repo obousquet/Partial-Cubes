@@ -1,0 +1,27 @@
+{
+  "id": 712,
+  "short_name": "hall_obstruction_first_exchanges",
+  "name": "The Hall Obstruction and Its Four First Nonpeelable Exchanges",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/full_reduction",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Hall's 299-concept maximum VC-dimension-three class $C_H\\subseteq Q_{12}$ is an ample forbidden pc-minor for dismantlable ampleness. It has exactly 16 ample one-concept extensions: 12 are corner-peelable with four corners, while four are nonpeelable with exactly two corners. The latter have (adjoined concept, other corner) equal to $(373,1011)$, $(1105,192)$, $(1360,3120)$, and $(1525,252)$. For each pair $(a,c)$, both $C_H\\cup\\{a\\}$ and $(C_H\\setminus\\{c\\})\\cup\\{a\\}$ are ample forbidden pc-minors; the exchanged 299-concept family is cornerless and has the same shattered complex as $C_H$. The four exchanged families are pairwise nonisomorphic and none is isomorphic to $C_H$.",
+  "status": "established",
+  "proof": "The cited construction makes $C_H$ maximum of VC dimension three and cornerless, hence ample and nonpeelable. Exact evaluation of its 24 signed restrictions and 12 contractions peels every elementary pc-minor, proving forbiddenness. Exhausting all 3,797 absent concepts and testing isometry, Sandwich equality, corners, and peelability gives exactly 16 ample extensions and the stated 12+4 split. The one-concept obstruction theorem makes each nonpeelable extension forbidden. In every exceptional extension, deleting the added corner returns $C_H$, so deleting its only other corner also remains nonpeelable; the same-shadow exchange criterion preserves the shattered complex. Direct corner and elementary-minor audits prove that each exchange is cornerless and forbidden, while canonicalization under coordinate permutations and independent reversals distinguishes all five source types.",
+  "references": "\\cite{ChalopiChepoiMoran22,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-hall-first-exchanges",
+  "witness_ids": [
+    "#examples/hall_cornerless_class"
+  ],
+  "comments": "The archived source profile records all 16 extensions and the four exact exchanges. The radius-two audit contains 972 successful elementary-minor checks and distinct canonical hashes for the five source types."
+}

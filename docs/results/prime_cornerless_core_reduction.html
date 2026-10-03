@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <base href="https://obousquet.github.io/Partial-Cubes/">
-        <title>Canonical classes of partial cubes and related ambient objects - Partial Cubes</title>
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
         <link rel="stylesheet" href="styles.css">
 
     <style>
@@ -55,7 +55,7 @@
     </head>
     <body>
         <header>
-            <h1>Canonical classes of partial cubes and related ambient objects - Partial Cubes</h1>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
 
             <nav>
                 <a href="index.html">Home</a>
@@ -74,36 +74,21 @@
             </nav>
         </header>
         <main class="table-container">
-            <div class="back-link-light"><a href="classes/index.html">&larr; Back to Classes Table</a></div>
-    <div class="table-card" id="math-99" style="position:relative;">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-711" style="position:relative;">
 
-        <h3><a href="classes/periphery_free_partial_cubes.html" class="table-title-link">Periphery-Free Partial Cubes</a></h3>
+        <h3><a href="results/prime_cornerless_core_reduction.html" class="table-title-link">Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core</a></h3>
         <div class="table-details">
-        <p><strong>Name: </strong>Periphery-Free Partial Cubes</p>
-<strong>Symbol:</strong>
-    <div class="table-display">
-        <div class="latex-equation" data-latex="\mathcal P">
-            \[\mathcal P\]
-        </div>
-    </div>
-
-<strong>Summary:</strong><div class="text-field"><p>Finite nontrivial partial cubes having no peripheral Theta class.</p></div>
-<p><strong>Primary Characterization: </strong><a href="characterizations/no_peripheral_coordinate.html">No Peripheral Coordinate</a></p>
-<p><strong>Aliases:</strong><ul class='fields-list'><li>periphery-free classes</li></ul></p>
-<p><strong>Category:</strong> Expansion and Boundary</p>
-<p><strong>Ambient Scope:</strong> Partial Cubes</p>
-<p><strong>Parameterized:</strong> Unspecified</p>
-<p><strong>Projection Closure:</strong> Not Closed</p>
-<p><strong>Conditioning Closure:</strong> Not Closed</p>
-<p><strong>PC-Minor Closure:</strong> Not Closed</p>
-<strong>Comments:</strong><div class="text-field"><p>Nontrivial means that at least one coordinate is active. This class is the ambient obstruction family whose pc-minor-minimal members form the forbidden basis of the cover-recursive peripheral class.</p></div>
-<div class="reference-field"><p><strong>Characterizations:</strong><ul class='fields-list'><li><a href='characterizations/no_peripheral_coordinate.html'>No Peripheral Coordinate</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Outgoing Relations:</strong><ul class='fields-list'><li><a href='relations/periphery_free_strict_subset_partial_cubes.html'>Periphery-Free Partial Cubes Form a Proper Subclass</a></li><li><a href='relations/periphery_free_incomparable_ample.html'>Periphery-Free and Ample Classes Are Incomparable</a></li><li><a href='relations/periphery_free_incomparable_cover_recursive.html'>Periphery-Free and Cover-Recursive Peripheral Classes Are Disjoint</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Incoming Relations:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Operation Results:</strong><ul class='fields-list'><li><a href='operation_results/periphery_free_not_projection_closed.html'>Periphery-Free Partial Cubes Are Not Projection-Closed</a></li><li><a href='operation_results/periphery_free_not_conditioning_closed.html'>Periphery-Free Partial Cubes Are Not Conditioning-Closed</a></li><li><a href='operation_results/periphery_free_not_pc_minor_closed.html'>Periphery-Free Partial Cubes Are Not PC-Minor-Closed</a></li></ul></p></div>
-<div class="reference-field"><p><strong>Invariant Values:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Obstruction Bases:</strong> <em>None</em></p></div>
-<div class="reference-field"><p><strong>Theorems:</strong><ul class='fields-list'><li><a href='results/two_layer_periphery_criterion.html'>Exact Two-Layer Periphery Criterion</a></li><li><a href='results/prime_cornerless_core_reduction.html'>Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core</a></li></ul></p></div>
+        <p><strong>Name: </strong>Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li><li><a href="classes/periphery_free_partial_cubes.html">Periphery-Free Partial Cubes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/peripheral_expansion.html">Peripheral Expansion</a></li><li><a href="operations/cartesian_product.html">Cartesian Product</a></li></ul></p>
+<p><strong>Result Type:</strong> Algorithm</p>
+<strong>Statement:</strong><div class="text-field"><p>Every finite ample non-corner-peelable cube family $X$ reduces to an ample, cornerless, periphery-free, Cartesian-prime, non-corner-peelable family $H$ by repeatedly deleting a corner, replacing a peripheral expansion $(B\times\{0\})\cup(S\times\{1\})$ by a nonempty nonpeelable member of $\{B,S\}$, or replacing a nontrivial Cartesian product by a nonpeelable factor. Every selected intermediate family remains ample and nonpeelable, and the process terminates.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Corner deletion preserves ampleness and nonpeelability: a peeling of the remainder preceded by the deleted corner would peel the original family. Delete corners until the family is cornerless. If a peripheral coordinate remains, the exact expansion test says that at least one nonempty projected section is nonpeelable; select it. If a nontrivial Cartesian factorization remains, the exact product test says that at least one ample factor is nonpeelable; select it. A section or factor selection strictly decreases isometric dimension, while a corner deletion decreases order without increasing dimension. Thus the lexicographically ordered pair (isometric dimension, order) decreases and the process stops at a cornerless family with neither a peripheral coordinate nor a nontrivial Cartesian factor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-prime-cornerless-seed-reduction</p></div>
+<strong>Comments:</strong><div class="text-field"><p>In the associated ideal language, the terminal family is a periphery-free Cartesian-prime member of the cornerless linear-ideal class in rank at most that of the input.</p></div>
 
         </div>
     </div>

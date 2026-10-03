@@ -1,0 +1,20 @@
+{
+  "id": 713,
+  "short_name": "hall_carrier_paths",
+  "name": "Every Rank-Two Carrier in Hall's Class Is an Eleven-Vertex Path",
+  "class_ids": [
+    "#classes/maximum",
+    "#classes/ample",
+    "#classes/cornerless_ample"
+  ],
+  "result_type": "invariant_law",
+  "statement": "For each of the 66 coordinate pairs $S\\subseteq[12]$, the carrier tree $\\mathcal K_S(C_H)$ of Hall's maximum class is a path on 11 vertices with 10 edges, 8 of them internal. Among its 220 maximal three-cubes, exactly 36 are internal edges in one of their three carrier paths, 60 are internal in two, and 124 are internal in all three. Consequently every maximal cube is covered by two opposite square facets belonging to other maximal cubes.",
+  "status": "established",
+  "proof": "The exact verifier reconstructs the unique maximal three-cube on each triple support. For every pair support, it forms the carrier graph whose vertices are pair-cube anchors and whose labeled edges are the containing three-cubes. All 66 graphs have 11 vertices, 10 edges, and degree sequence $(1,1,2,2,2,2,2,2,2,2,2)$, so each is a path with eight internal edges. Counting each triple according to the carrier paths in which its edge has no leaf endpoint gives the histogram $36,60,124$. An internal carrier edge is exactly a pair of opposite square facets of that maximal cube covered by neighboring maximal cubes.",
+  "references": "\\cite{ChalopiChepoiMoran22,BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-hall-carrier-paths",
+  "witness_ids": [
+    "#examples/hall_cornerless_class"
+  ],
+  "comments": "The archived carrier report has mathematical-profile digest 65c031beb26e738618488674026fd5308367c99c513773edf2793e09c2ba7dcf and includes every labeled carrier edge."
+}

@@ -1,0 +1,23 @@
+{
+  "id": 711,
+  "short_name": "prime_cornerless_core_reduction",
+  "name": "Every Ample Nonpeelable Family Reduces to a Prime Cornerless Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample",
+    "#classes/periphery_free_partial_cubes"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/peripheral_expansion",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "algorithm",
+  "statement": "Every finite ample non-corner-peelable cube family $X$ reduces to an ample, cornerless, periphery-free, Cartesian-prime, non-corner-peelable family $H$ by repeatedly deleting a corner, replacing a peripheral expansion $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$ by a nonempty nonpeelable member of $\\{B,S\\}$, or replacing a nontrivial Cartesian product by a nonpeelable factor. Every selected intermediate family remains ample and nonpeelable, and the process terminates.",
+  "status": "established",
+  "proof": "Corner deletion preserves ampleness and nonpeelability: a peeling of the remainder preceded by the deleted corner would peel the original family. Delete corners until the family is cornerless. If a peripheral coordinate remains, the exact expansion test says that at least one nonempty projected section is nonpeelable; select it. If a nontrivial Cartesian factorization remains, the exact product test says that at least one ample factor is nonpeelable; select it. A section or factor selection strictly decreases isometric dimension, while a corner deletion decreases order without increasing dimension. Thus the lexicographically ordered pair (isometric dimension, order) decreases and the process stops at a cornerless family with neither a peripheral coordinate nor a nontrivial Cartesian factor.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-prime-cornerless-seed-reduction",
+  "comments": "In the associated ideal language, the terminal family is a periphery-free Cartesian-prime member of the cornerless linear-ideal class in rank at most that of the input."
+}
