@@ -1,0 +1,20 @@
+{
+  "id": 705,
+  "short_name": "terminal_thin_thick_dichotomy",
+  "name": "Thin–Thick Dichotomy for Cornered Terminal Obstructions",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "implication",
+  "statement": "Let $O$ be a corner-descent-terminal ample forbidden pc-minor with a corner. For each coordinate $e$, project its two sections and set $D_i(e)=H_i(e)\\setminus H_{1-i}(e)$. Exactly one alternative holds. In the thin branch, some coordinate has $|D_0(e)|=|D_1(e)|=1$ and canonically exposes an ample forbidden fragile kernel whose two one-tip extensions and two-tip union are dismantlable ample; the two exclusive concepts are corners, but neither corner deletion is a forbidden pc-minor. In the thick branch, every coordinate satisfies $|D_0(e)|,|D_1(e)|\\ge1$ and $|D_0(e)|+|D_1(e)|\\ge3$.",
+  "status": "established",
+  "proof": "Periphery-freeness prevents either projected section from containing the other, so both exclusive parts are nonempty in every coordinate. If both have order one, the fragile-kernel theorem applies. Its proof makes both exclusive concepts corners and shows that either deletion is a peripheral expansion over a nonpeelable duplicated site, hence remains outside the dismantlable-ample class; terminality excludes either deletion from being another forbidden pc-minor. If no coordinate has two singleton differences, the sum of the two positive section-difference orders cannot equal two and is therefore at least three everywhere.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-thin-thick-dichotomy",
+  "comments": "The archived layer-recovery regression contains both branches: antipodal two-owner towers are thin in every layer coordinate, while the fixed three-owner terminal assemblies are thick."
+}

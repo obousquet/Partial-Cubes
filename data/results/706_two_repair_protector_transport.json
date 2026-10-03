@@ -1,0 +1,18 @@
+{
+  "id": 706,
+  "short_name": "two_repair_protector_transport",
+  "name": "Protector-Incidence Transport Alphabet for Two-Repair Lifts",
+  "class_ids": [
+    "#classes/ample"
+  ],
+  "invariant_ids": [
+    "#invariants/signed_minimal_nonface_presentation"
+  ],
+  "result_type": "invariant_law",
+  "statement": "In any trace-carrier scheme on an ample two-repair lift, the complete precedence alphabet is read from signed trace transport. An old-support carrier takes same-trace predecessors and protector choices from the union of the corresponding fibres in both sections. If a carrier on $D\\cup\\{e\\}$ lies in layer $i$, all same-trace predecessors lie in layer $i$, while every trace on $D$ creates a protector demand in the corresponding opposite-layer fibre. Every directed trace circuit is therefore a finite word in old-support, same-layer, and cross-layer incidence types, and its number of cross-layer arcs is even.",
+  "status": "established",
+  "proof": "Carrier precedence and protector arcs depend only on membership in the relevant trace fibres. The old-support transport formula expresses each fibre as the union of its two section fibres. The vertical transport formula confines same-trace predecessors to the carrier's layer and identifies every opposite-layer protector fibre. These give the listed incidence types. Traversing a closed directed walk must return to its initial layer, so layer changes occur an even number of times.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-repair-protector-transport",
+  "comments": "This is a transport law for any chosen trace-carrier scheme. It does not assert acyclicity or the existence of a globally compatible carrier choice."
+}

@@ -11871,6 +11871,60 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-704" style="position:relative;">
+
+        <h3><a href="results/thin_coordinate_fragile_kernel.html" class="table-title-link">A Thin Coordinate Recovers a Two-Sided Fragile Kernel</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>A Thin Coordinate Recovers a Two-Sided Fragile Kernel</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/projection.html">Coordinate Projection</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X\subseteq Q_{F\mathbin{\dot\cup}\{e\}}$ be ample and nonpeelable, let $H_i=\rho_e^iX$, and put $K=H_0\cap H_1$. If each section has exactly one exclusive concept, say $H_0\setminus K=\{b\}$ and $H_1\setminus K=\{a\}$, then $K$, both one-tip extensions, and $C=K\cup\{a,b\}$ are ample, while $K$ is nonpeelable. The two extensions acquire distinct supports $P_a\ne P_b$, and $X=((K\cup\{b\})\times\{0\})\cup((K\cup\{a\})\times\{1\})$. Thus the marked pair $(X,e)$ canonically recovers $K,a,b,P_a,P_b$, up to reversing $e$. If $X$ is an ample forbidden pc-minor, then both one-tip extensions and $C$ are dismantlable ample, and $K$ is itself an ample forbidden pc-minor.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-section shattering formula splits $\operatorname{Sh}(X)$ into the shadow of $C$ and vertical copies of $\operatorname{Sh}(H_0)\cap\operatorname{Sh}(H_1)$. Since the latter contains $\operatorname{Sh}(K)$, Sauer's inequalities give $2|K|+2=|X|\ge|C|+|\operatorname{Sh}(K)|\ge2|K|+2$. Equality throughout makes $C$ and $K$ ample and forces the section-shadow intersection to equal $\operatorname{Sh}(K)$. The signed sections are ample, so their unique new supports exist and must be distinct. Deleting the upper exclusive concept and then the lower one are corner deletions leaving $K\square Q_1$; if $K$ peeled, so would $X$, a contradiction. When $X$ is forbidden, both sections and the contraction $C$ are proper pc-minors and therefore peel. The strong reduction $K=X^{\{e\}}$ is nonpeelable, and inherited overlap descent makes it an ample forbidden pc-minor.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#prop:damp-thin-coordinate-fragile-kernel</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The theorem is intrinsic: the kernel and both repair tips are recovered from the two marked sections without a prior common-seed presentation.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-705" style="position:relative;">
+
+        <h3><a href="results/terminal_thin_thick_dichotomy.html" class="table-title-link">Thin–Thick Dichotomy for Cornered Terminal Obstructions</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Thin–Thick Dichotomy for Cornered Terminal Obstructions</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $O$ be a corner-descent-terminal ample forbidden pc-minor with a corner. For each coordinate $e$, project its two sections and set $D_i(e)=H_i(e)\setminus H_{1-i}(e)$. Exactly one alternative holds. In the thin branch, some coordinate has $|D_0(e)|=|D_1(e)|=1$ and canonically exposes an ample forbidden fragile kernel whose two one-tip extensions and two-tip union are dismantlable ample; the two exclusive concepts are corners, but neither corner deletion is a forbidden pc-minor. In the thick branch, every coordinate satisfies $|D_0(e)|,|D_1(e)|\ge1$ and $|D_0(e)|+|D_1(e)|\ge3$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Periphery-freeness prevents either projected section from containing the other, so both exclusive parts are nonempty in every coordinate. If both have order one, the fragile-kernel theorem applies. Its proof makes both exclusive concepts corners and shows that either deletion is a peripheral expansion over a nonpeelable duplicated site, hence remains outside the dismantlable-ample class; terminality excludes either deletion from being another forbidden pc-minor. If no coordinate has two singleton differences, the sum of the two positive section-difference orders cannot equal two and is therefore at least three everywhere.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-terminal-thin-thick-dichotomy</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The archived layer-recovery regression contains both branches: antipodal two-owner towers are thin in every layer coordinate, while the fixed three-owner terminal assemblies are thick.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-706" style="position:relative;">
+
+        <h3><a href="results/two_repair_protector_transport.html" class="table-title-link">Protector-Incidence Transport Alphabet for Two-Repair Lifts</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Protector-Incidence Transport Alphabet for Two-Repair Lifts</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/signed_minimal_nonface_presentation.html">Signed Minimal-Nonface Presentation</a></li></ul></p>
+<p><strong>Result Type:</strong> Invariant Law</p>
+<strong>Statement:</strong><div class="text-field"><p>In any trace-carrier scheme on an ample two-repair lift, the complete precedence alphabet is read from signed trace transport. An old-support carrier takes same-trace predecessors and protector choices from the union of the corresponding fibres in both sections. If a carrier on $D\cup\{e\}$ lies in layer $i$, all same-trace predecessors lie in layer $i$, while every trace on $D$ creates a protector demand in the corresponding opposite-layer fibre. Every directed trace circuit is therefore a finite word in old-support, same-layer, and cross-layer incidence types, and its number of cross-layer arcs is even.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Carrier precedence and protector arcs depend only on membership in the relevant trace fibres. The old-support transport formula expresses each fibre as the union of its two section fibres. The vertical transport formula confines same-trace predecessors to the carrier's layer and identifies every opposite-layer protector fibre. These give the listed incidence types. Traversing a closed directed walk must return to its initial layer, so layer changes occur an even number of times.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-repair-protector-transport</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is a transport law for any chosen trace-carrier scheme. It does not assert acyclicity or the existence of a globally compatible carrier choice.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

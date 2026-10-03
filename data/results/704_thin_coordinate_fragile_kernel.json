@@ -1,0 +1,21 @@
+{
+  "id": 704,
+  "short_name": "thin_coordinate_fragile_kernel",
+  "name": "A Thin Coordinate Recovers a Two-Sided Fragile Kernel",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/projection",
+    "#operations/concept_deletion"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $X\\subseteq Q_{F\\mathbin{\\dot\\cup}\\{e\\}}$ be ample and nonpeelable, let $H_i=\\rho_e^iX$, and put $K=H_0\\cap H_1$. If each section has exactly one exclusive concept, say $H_0\\setminus K=\\{b\\}$ and $H_1\\setminus K=\\{a\\}$, then $K$, both one-tip extensions, and $C=K\\cup\\{a,b\\}$ are ample, while $K$ is nonpeelable. The two extensions acquire distinct supports $P_a\\ne P_b$, and $X=((K\\cup\\{b\\})\\times\\{0\\})\\cup((K\\cup\\{a\\})\\times\\{1\\})$. Thus the marked pair $(X,e)$ canonically recovers $K,a,b,P_a,P_b$, up to reversing $e$. If $X$ is an ample forbidden pc-minor, then both one-tip extensions and $C$ are dismantlable ample, and $K$ is itself an ample forbidden pc-minor.",
+  "status": "established",
+  "proof": "The two-section shattering formula splits $\\operatorname{Sh}(X)$ into the shadow of $C$ and vertical copies of $\\operatorname{Sh}(H_0)\\cap\\operatorname{Sh}(H_1)$. Since the latter contains $\\operatorname{Sh}(K)$, Sauer's inequalities give $2|K|+2=|X|\\ge|C|+|\\operatorname{Sh}(K)|\\ge2|K|+2$. Equality throughout makes $C$ and $K$ ample and forces the section-shadow intersection to equal $\\operatorname{Sh}(K)$. The signed sections are ample, so their unique new supports exist and must be distinct. Deleting the upper exclusive concept and then the lower one are corner deletions leaving $K\\square Q_1$; if $K$ peeled, so would $X$, a contradiction. When $X$ is forbidden, both sections and the contraction $C$ are proper pc-minors and therefore peel. The strong reduction $K=X^{\\{e\\}}$ is nonpeelable, and inherited overlap descent makes it an ample forbidden pc-minor.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-thin-coordinate-fragile-kernel",
+  "comments": "The theorem is intrinsic: the kernel and both repair tips are recovered from the two marked sections without a prior common-seed presentation."
+}

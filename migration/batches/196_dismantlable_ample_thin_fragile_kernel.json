@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "batch_id": "196_dismantlable_ample_thin_fragile_kernel",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-03",
+  "scope": "Record intrinsic recovery of a two-sided fragile kernel from any thin coordinate, the thin/thick dichotomy for cornered terminal obstructions, and the complete protector-incidence alphabet transported through a two-repair lift.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-thin-coordinate-fragile-kernel",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-terminal-thin-thick-dichotomy",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-repair-protector-transport",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_obstruction_layer_unions.py",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_repair_trace_transport.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "layer-union-controls-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_obstruction_layer_unions.py,damp_obstruction_layer_unions_verification.json,explore_damp_forced_layer_closure.py,verify_damp_singleton_recovery_implications.py,damp_terminal_clause_recovery_verification.json,computations/hall_corner_exchange/source_H.json}",
+      "sha256": "4e479d1633e312a566268178a789626065a7d3240d18229c27cd93d468bba3a5",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/193_dismantlable_ample_layer_union_controls/"
+    },
+    {
+      "id": "two-repair-trace-transport-regression-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_two_repair_trace_transport.py,damp_two_repair_trace_transport_regression.json,verify_signed_clutter_parametrization.py}; papers/cover-recursive/scripts/{explore_smallest_additional_peripheral_obstruction.py,explore_cover_recursive_peripheral.py}",
+      "sha256": "3544f38c8942ef5f3adc31f304c75576c02f124f3304e7bd717ccbbc54f31f2d",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These claims turn a visible two-singleton section profile into a canonical obstruction kernel, split terminal obstructions into thin and thick branches, and translate all carrier/protector incidence through the same two-section trace calculus.",
+    "outcome": "All three proof blocks match the preserved manuscript. The database records the equality argument forcing ampleness, canonical recovery, forbidden-kernel conclusion, terminal branch behavior, and the old-, same-, and cross-layer protector alphabet with its parity law.",
+    "claim_block_sha256": {
+      "prop:damp-thin-coordinate-fragile-kernel": "7011d742eee3497d00fcef03bdd022fa1b6c0ef39cfa8777795db916efa8e634",
+      "cor:damp-terminal-thin-thick-dichotomy": "4c5fc48c9de9f3afbc371aae2b6f1e284a5109910348d916e15c46aa056438c5",
+      "cor:damp-two-repair-protector-transport": "26cec6d7211829582086182b8360d94ef0979c5f2bdeb558a36415ca36312455"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/193_dismantlable_ample_layer_union_controls/damp_obstruction_layer_unions_verification.json",
+      "sha256": "b497c15d0d1ec4c53e2245099c93786a45e55d099ec7c0399d2c7a1325bb7a6f"
+    },
+    {
+      "path": "migration/certificates/193_dismantlable_ample_layer_union_controls/source_packet_manifest.json",
+      "sha256": "ecabbaf1ee4c3ea1167e1857d04a71ee809f79521773ba6c47cd40e72f1541c7"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/forbidden_pc_minor_campaign/damp_two_repair_trace_transport_regression.json",
+      "sha256": "b9474e7bb4a8554d27b63290c63e24a2ea807ddc87e7fa022a75dfc1c5b064db"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/source_packet_manifest.json",
+      "sha256": "16c56c75915b6f408c532fa573638318acd8f156082e54c77985d23b5e1637d4"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns all three symbolic facts, concise proofs, exact source locators, and finite-control scope. LaTeX retains the expanded equality chain, peripheral-expansion argument, and surrounding generative discussion. Existing exhaustive packets remain immutable and are referenced rather than copied.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all three proof blocks. Batches 193 and 195 preserve the thin/thick Hall controls and exhaustive two-repair trace transport at commit f304961.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/704_thin_coordinate_fragile_kernel.json",
+      "sha256": "dc1a1ab093b56194f84958af690332246e0c3b1eb5c18cbef4aab883761b41b1"
+    },
+    {
+      "path": "data/results/705_terminal_thin_thick_dichotomy.json",
+      "sha256": "37693139f1e82d720193f1eda9b70015de630bdf178b5441ba959f8225fb9c13"
+    },
+    {
+      "path": "data/results/706_two_repair_protector_transport.json",
+      "sha256": "97538a4efdc9a35dc2e1c2bd18f246a2d2280c60632da226fdade655945306c6"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "873e93e18a1bafffdcafa1a48df19afd2184bfb34fb32ddedff68d469fba81a7"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "e7597aded8c17aa1c1a95dfefed28bbbc707882f274f423e0db01a6b22604e5a"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2115 records.",
+    "website": "Normalized 2131 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 803 to 806 of 1143 and dismantlable-ample coverage from 367 to 370 of 683.",
+    "certificates": "The Hall regression realizes both thin two-owner and thick three-owner terminal branches across six fixed obstructions. The trace regression checks the exact fibre transport underlying every stated protector incidence over 63,160 distinct-support lifts and 3,929,800 trace fibres. The unbounded kernel and dichotomy proofs are symbolic and database-owned.",
+    "source_integrity": "All three proof blocks match supplemental snapshot 2026-10-02-b002, and every reused report and source-manifest hash remains unchanged."
+  },
+  "deferred": [
+    "The refreshed audit has 337 uncovered database-owned labels: 313 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block gives the exact two-extension lift theorem and its repair-graph and terminality corollaries.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}
