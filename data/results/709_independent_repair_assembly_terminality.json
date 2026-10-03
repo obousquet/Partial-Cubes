@@ -1,0 +1,21 @@
+{
+  "id": 709,
+  "short_name": "independent_repair_assembly_terminality",
+  "name": "Independent Repair Assemblies Are Minimal Only in Two Layers",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be a cornerless, irredundantly embedded ample forbidden pc-minor. For nonempty layer coordinates $E$, choose $T\\subseteq Q_E$ and a repair $a_t\\in\\mathcal R(S)$ in every selected layer, with pairwise distinct tips and acquired supports, and form $X_T=(S\\times Q_E)\\cup\\{(a_t,t):t\\in T\\}$. Then $X_T$ is a forbidden pc-minor exactly when $|E|=1$ and $T=Q_E$. Thus the opposite-layer two-extension lift is the only forbidden pc-minor among all independent one-tip-per-layer assemblies over a common seed.",
+  "status": "established",
+  "proof": "With one layer coordinate and both layers selected, the assembly is a two-extension lift with distinct supports and hence a forbidden pc-minor. If $T$ omits a layer word $v$, restricting all layer coordinates to $v$ produces the nonpeelable seed $S$ as a proper pc-minor, so the assembly is not minimal outside the dismantlable-ample class. If $T=Q_E$ and $|E|\\ge2$, fix all but one layer coordinate. The resulting proper pc-minor is a two-extension lift associated with the repairs at the endpoints of the chosen layer edge; their support labels are distinct, so that minor is itself forbidden. These cases exhaust the possibilities.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-independent-repair-terminality",
+  "comments": "In particular, neither three tips in three layers of a square nor one tip in every layer of any cube of dimension at least two gives a new minimal obstruction."
+}

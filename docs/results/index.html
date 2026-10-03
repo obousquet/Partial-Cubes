@@ -11925,6 +11925,79 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-707" style="position:relative;">
+
+        <h3><a href="results/two_extension_lift_obstruction.html" class="table-title-link">Two-Extension Lifts Are Ample Forbidden PC-Minors</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Extension Lifts Are Ample Forbidden PC-Minors</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Construction</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S\in\operatorname{Obs}(\mathcal D_{\mathrm{amp}})\cap\mathcal A$ be irredundantly embedded in $Q_F$, and let distinct absent concepts $a,b$ make $A=S\cup\{a\}$ and $B=S\cup\{b\}$ dismantlable ample. If their unique acquired supports $P_a$ and $P_b$ are distinct, then for a new coordinate $e$ the opposite-layer lift $X=(B\times\{0\})\cup(A\times\{1\})$ is an ample forbidden pc-minor for dismantlable ampleness. Moreover, if every old corner $z$ of $B$ has $Q_B(z)\nsubseteq A$ and every old corner $z$ of $A$ has $Q_A(z)\nsubseteq B$, then the only corners of $X$ are $(b,0)$ and $(a,1)$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The distinct-support criterion makes the two-tip union $S\cup\{a,b\}$ and the lift $X$ ample. The exclusive tips cannot be adjacent, since that would create a square face containing only its diagonal vertices. Each section peels to $S$ by deleting its added corner, so the one-relatively-peelable-wing inverse theorem makes $X$ a forbidden pc-minor. Each exclusive tip remains a corner because it has no vertical mate. For an old concept $z\in S$, its lower lift is a corner exactly when $z$ is a corner of $B$ and its unique maximal corner cube lies in the opposite section $A$; the upper criterion is symmetric. The two noncontainment hypotheses therefore exclude every additional corner.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-two-repair-lift</p></div>
+<strong>Comments:</strong><div class="text-field"><p>The forbidden-minor conclusion needs only distinct acquired supports. The corner-cube noncontainment conditions are used solely for the exact two-corner conclusion.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-708" style="position:relative;">
+
+        <h3><a href="results/cornerless_seed_repair_graph.html" class="table-title-link">The Repair Compatibility Graph of a Cornerless Seed Is Complete Multipartite</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>The Repair Compatibility Graph of a Cornerless Seed Is Complete Multipartite</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Invariants:</strong><ul class='fields-list'><li><a href="invariants/shattered_complex.html">Shattered Complex</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/graph_expansion.html">Graph Expansion</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be a cornerless, irredundantly embedded ample forbidden pc-minor, and let $\mathcal R(S)=\{a\notin S:S\cup\{a\}\text{ is dismantlable ample}\}$. Label each repair by its unique acquired support $P(a)=\{f:a^{\{f\}}\in S\}$. For distinct $a,b\in\mathcal R(S)$, the opposite-layer lift $X_{a,b}=((S\cup\{b\})\times\{0\})\cup((S\cup\{a\})\times\{1\})$ is ample exactly when $P(a)\ne P(b)$. Whenever it is ample, it is a forbidden pc-minor with exactly the corners $(b,0)$ and $(a,1)$. Hence repair compatibility is the complete multipartite graph whose parts are the nonempty fibres of $P$, computable from Hamming neighbours without pc-minor tests.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The two-repair ampleness criterion gives adjacency exactly when the support labels differ. If an old concept $z$ is a corner of $S\cup\{b\}$, its unique maximal cube must contain $b$: otherwise that cube lies in $S$ and contains every cube of $S$ through $z$, making $z$ a corner of the cornerless seed. Since $b\notin S\cup\{a\}$, this corner cube is not contained in the opposite section. The symmetric argument handles corners of $S\cup\{a\}$. Thus the no-reflected-corner conditions hold automatically, and the two-extension lift theorem gives forbiddenness and the exact corner set. Inequality of labels is precisely adjacency between different fibres, yielding the complete multipartite graph.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-cornerless-seed-repair-graph</p></div>
+<strong>Comments:</strong><div class="text-field"><p>Every edge of the compatibility graph certifies a forbidden pc-minor directly from the two local neighbour-direction signatures.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-709" style="position:relative;">
+
+        <h3><a href="results/independent_repair_assembly_terminality.html" class="table-title-link">Independent Repair Assemblies Are Minimal Only in Two Layers</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Independent Repair Assemblies Are Minimal Only in Two Layers</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/cornerless_ample.html">Cornerless Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Recognition</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $S$ be a cornerless, irredundantly embedded ample forbidden pc-minor. For nonempty layer coordinates $E$, choose $T\subseteq Q_E$ and a repair $a_t\in\mathcal R(S)$ in every selected layer, with pairwise distinct tips and acquired supports, and form $X_T=(S\times Q_E)\cup\{(a_t,t):t\in T\}$. Then $X_T$ is a forbidden pc-minor exactly when $|E|=1$ and $T=Q_E$. Thus the opposite-layer two-extension lift is the only forbidden pc-minor among all independent one-tip-per-layer assemblies over a common seed.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>With one layer coordinate and both layers selected, the assembly is a two-extension lift with distinct supports and hence a forbidden pc-minor. If $T$ omits a layer word $v$, restricting all layer coordinates to $v$ produces the nonpeelable seed $S$ as a proper pc-minor, so the assembly is not minimal outside the dismantlable-ample class. If $T=Q_E$ and $|E|\ge2$, fix all but one layer coordinate. The resulting proper pc-minor is a two-extension lift associated with the repairs at the endpoints of the chosen layer edge; their support labels are distinct, so that minor is itself forbidden. These cases exhaust the possibilities.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-independent-repair-terminality</p></div>
+<strong>Comments:</strong><div class="text-field"><p>In particular, neither three tips in three layers of a square nor one tip in every layer of any cube of dimension at least two gives a new minimal obstruction.</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-710" style="position:relative;">
+
+        <h3><a href="results/two_extension_lifts_refute_direct_corner_descent.html" class="table-title-link">Two-Extension Lifts Refute Direct Corner Descent</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Two-Extension Lifts Refute Direct Corner Descent</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/ample.html">Ample Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li></ul></p>
+<p><strong>Operations:</strong><ul class='fields-list'><li><a href="operations/concept_deletion.html">Concept Deletion</a></li><li><a href="operations/conditioning.html">Coordinate Conditioning</a></li><li><a href="operations/pc_minor.html">Partial-Cube Minor</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>Let $X$ be a two-extension lift satisfying the exact two-corner conclusion of the lift theorem. Then neither corner $c$ has $X\setminus\{c\}\in\operatorname{Obs}(\mathcal D_{\mathrm{amp}})$. Consequently, direct corner descent can fail even at an ample forbidden pc-minor having exactly two corners.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Deleting the upper exclusive corner produces $(B\times\{0\})\cup(S\times\{1\})$. The exact peripheral-expansion test shows that this family is not corner-peelable because its duplicated site $S$ is not corner-peelable. Its upper-semicube restriction is the proper pc-minor $S$, also outside the dismantlable-ample class, so the deletion is not pc-minimal and cannot be a forbidden pc-minor. Reversing the two layers gives the same conclusion after deleting the lower exclusive corner.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#cor:damp-two-repair-refutes-direct-descent</p></div>
+<strong>Comments:</strong><div class="text-field"><p>This is a failure of descent between minimal obstructions: both corner deletions remain nonpeelable but already contain the seed obstruction as a proper pc-minor.</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

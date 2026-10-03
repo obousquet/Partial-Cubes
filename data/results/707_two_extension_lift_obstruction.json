@@ -1,0 +1,21 @@
+{
+  "id": 707,
+  "short_name": "two_extension_lift_obstruction",
+  "name": "Two-Extension Lifts Are Ample Forbidden PC-Minors",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/concept_deletion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "construction",
+  "statement": "Let $S\\in\\operatorname{Obs}(\\mathcal D_{\\mathrm{amp}})\\cap\\mathcal A$ be irredundantly embedded in $Q_F$, and let distinct absent concepts $a,b$ make $A=S\\cup\\{a\\}$ and $B=S\\cup\\{b\\}$ dismantlable ample. If their unique acquired supports $P_a$ and $P_b$ are distinct, then for a new coordinate $e$ the opposite-layer lift $X=(B\\times\\{0\\})\\cup(A\\times\\{1\\})$ is an ample forbidden pc-minor for dismantlable ampleness. Moreover, if every old corner $z$ of $B$ has $Q_B(z)\\nsubseteq A$ and every old corner $z$ of $A$ has $Q_A(z)\\nsubseteq B$, then the only corners of $X$ are $(b,0)$ and $(a,1)$.",
+  "status": "established",
+  "proof": "The distinct-support criterion makes the two-tip union $S\\cup\\{a,b\\}$ and the lift $X$ ample. The exclusive tips cannot be adjacent, since that would create a square face containing only its diagonal vertices. Each section peels to $S$ by deleting its added corner, so the one-relatively-peelable-wing inverse theorem makes $X$ a forbidden pc-minor. Each exclusive tip remains a corner because it has no vertical mate. For an old concept $z\\in S$, its lower lift is a corner exactly when $z$ is a corner of $B$ and its unique maximal corner cube lies in the opposite section $A$; the upper criterion is symmetric. The two noncontainment hypotheses therefore exclude every additional corner.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-two-repair-lift",
+  "comments": "The forbidden-minor conclusion needs only distinct acquired supports. The corner-cube noncontainment conditions are used solely for the exact two-corner conclusion."
+}

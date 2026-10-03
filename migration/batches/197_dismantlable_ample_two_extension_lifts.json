@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "batch_id": "197_dismantlable_ample_two_extension_lifts",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-03",
+  "scope": "Record the two-extension lift obstruction theorem, the complete multipartite repair graph of a cornerless seed, terminality of the two-layer case among independent repair assemblies, and the resulting counterexamples to direct corner descent.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#thm:damp-two-repair-lift",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-cornerless-seed-repair-graph",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-independent-repair-terminality",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-repair-refutes-direct-descent",
+    "PartialCubes:forbidden_pc_minor_campaign/verify_damp_two_repair_trace_transport.py"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    },
+    {
+      "id": "two-repair-trace-transport-regression-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "f30496156cbec2bae29773fe0d6344675982a117",
+      "path": "forbidden_pc_minor_campaign/{verify_damp_two_repair_trace_transport.py,damp_two_repair_trace_transport_regression.json,verify_signed_clutter_parametrization.py}; papers/cover-recursive/scripts/{explore_smallest_additional_peripheral_obstruction.py,explore_cover_recursive_peripheral.py}",
+      "sha256": "3544f38c8942ef5f3adc31f304c75576c02f124f3304e7bd717ccbbc54f31f2d",
+      "git_state": "tracked and clean at capture",
+      "byte_archive": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These four consecutive claims turn the two-repair ampleness calculation into a minimal-obstruction construction, specialize it to a locally computable compatibility graph, delimit all independent multilayer variants, and identify the resulting obstruction to corner descent.",
+    "outcome": "All four statement-plus-proof blocks match the preserved manuscript. The records separate the hypotheses needed for forbiddenness from the extra corner-cube conditions needed for the exact two-corner conclusion, retain the automatic cornerless-seed specialization, and state both pc-minor witnesses that rule out larger independent assemblies and corner-deleted lifts.",
+    "claim_block_sha256": {
+      "thm:damp-two-repair-lift": "329779336433f4111e95ae6adf8a185ba7be6814ead3ea70335e9598bcd8f001",
+      "cor:damp-cornerless-seed-repair-graph": "5b97679d5f13372dbec66ea2c99ee8fb281257f391df1a7395498b2c4de75249",
+      "cor:damp-independent-repair-terminality": "538cbcfa7306e21f1c3212ececc1b7ffbda1ad709c157565d8f5605eb9f3dcc5",
+      "cor:damp-two-repair-refutes-direct-descent": "fb5cca419465b1dfa69e0c8b4732e8f4b82935ce623219ad234a7b12b3f73879"
+    }
+  },
+  "verification_packets": [
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/forbidden_pc_minor_campaign/damp_two_repair_trace_transport_regression.json",
+      "sha256": "b9474e7bb4a8554d27b63290c63e24a2ea807ddc87e7fa022a75dfc1c5b064db"
+    },
+    {
+      "path": "migration/certificates/195_dismantlable_ample_two_repair_trace_transport/source_packet_manifest.json",
+      "sha256": "16c56c75915b6f408c532fa573638318acd8f156082e54c77985d23b5e1637d4"
+    }
+  ],
+  "source_preservation": {
+    "policy": "The database owns the four normalized facts, their concise symbolic proofs, precise hypotheses, citations, and exact source locators. LaTeX retains the expanded corner-cube argument, displayed layer formulas, and surrounding discussion of generative obstruction mechanisms. The existing exhaustive two-repair packet remains immutable and is referenced rather than copied.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves all four proof blocks. Batch 195 preserves the exhaustive distinct-support ampleness and trace regression at commit f304961.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/707_two_extension_lift_obstruction.json",
+      "sha256": "82d34828b91ac60e6d5de430d68c051ae976118d4496c764d6f78abdcd50ade2"
+    },
+    {
+      "path": "data/results/708_cornerless_seed_repair_graph.json",
+      "sha256": "5b4082086c9334c3df1fa7650cc76f351aa7856787a5f7db1cef6be6f8cacddc"
+    },
+    {
+      "path": "data/results/709_independent_repair_assembly_terminality.json",
+      "sha256": "256b9b48a5c39b93b6b8d43616ffa5fb88297f7b3e84d7f358856c21748c29a9"
+    },
+    {
+      "path": "data/results/710_two_extension_lifts_refute_direct_corner_descent.json",
+      "sha256": "5227fa7f4f9ebf66cc1b82b3509937333d833c36508f4ffab5a5d8b6cd850daf"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "17bb104efa80e44af6ed1e7f4c5453fe9f992dc23514837c38f0a7b8ec7a55d7"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "30a6de4ad9bfead041ee2f2fad07513277df9fec5cf6b2b598317a06abb85d7f"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2119 records.",
+    "website": "Normalized 2135 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 4 additional audited labels, raising overall coverage from 806 to 810 of 1143 and dismantlable-ample coverage from 370 to 374 of 683.",
+    "certificates": "The exhaustive packet checks the distinct-support lift criterion on 63,160 positive ordered pairs through ambient dimension four. Forbiddenness, exact corners, multipartite compatibility, multilayer nonminimality, and corner-deletion nonminimality are established by the database-owned symbolic proofs.",
+    "source_integrity": "All four proof blocks match supplemental snapshot 2026-10-02-b002, and both reused certificate hashes remain unchanged."
+  },
+  "deferred": [
+    "The refreshed audit has 333 uncovered database-owned labels: 309 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block reduces every finite ample nonpeelable family to a periphery-free Cartesian-prime cornerless core and derives its first Hall exchange consequences.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

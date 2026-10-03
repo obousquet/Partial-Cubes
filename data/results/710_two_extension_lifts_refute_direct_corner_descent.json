@@ -1,0 +1,21 @@
+{
+  "id": 710,
+  "short_name": "two_extension_lifts_refute_direct_corner_descent",
+  "name": "Two-Extension Lifts Refute Direct Corner Descent",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample"
+  ],
+  "operation_ids": [
+    "#operations/concept_deletion",
+    "#operations/conditioning",
+    "#operations/pc_minor"
+  ],
+  "result_type": "implication",
+  "statement": "Let $X$ be a two-extension lift satisfying the exact two-corner conclusion of the lift theorem. Then neither corner $c$ has $X\\setminus\\{c\\}\\in\\operatorname{Obs}(\\mathcal D_{\\mathrm{amp}})$. Consequently, direct corner descent can fail even at an ample forbidden pc-minor having exactly two corners.",
+  "status": "established",
+  "proof": "Deleting the upper exclusive corner produces $(B\\times\\{0\\})\\cup(S\\times\\{1\\})$. The exact peripheral-expansion test shows that this family is not corner-peelable because its duplicated site $S$ is not corner-peelable. Its upper-semicube restriction is the proper pc-minor $S$, also outside the dismantlable-ample class, so the deletion is not pc-minimal and cannot be a forbidden pc-minor. Reversing the two layers gives the same conclusion after deleting the lower exclusive corner.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-two-repair-refutes-direct-descent",
+  "comments": "This is a failure of descent between minimal obstructions: both corner deletions remain nonpeelable but already contain the seed obstruction as a proper pc-minor."
+}

@@ -1,0 +1,24 @@
+{
+  "id": 708,
+  "short_name": "cornerless_seed_repair_graph",
+  "name": "The Repair Compatibility Graph of a Cornerless Seed Is Complete Multipartite",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/dismantlable_ample",
+    "#classes/cornerless_ample"
+  ],
+  "invariant_ids": [
+    "#invariants/shattered_complex"
+  ],
+  "operation_ids": [
+    "#operations/graph_expansion",
+    "#operations/pc_minor"
+  ],
+  "result_type": "recognition",
+  "statement": "Let $S$ be a cornerless, irredundantly embedded ample forbidden pc-minor, and let $\\mathcal R(S)=\\{a\\notin S:S\\cup\\{a\\}\\text{ is dismantlable ample}\\}$. Label each repair by its unique acquired support $P(a)=\\{f:a^{\\{f\\}}\\in S\\}$. For distinct $a,b\\in\\mathcal R(S)$, the opposite-layer lift $X_{a,b}=((S\\cup\\{b\\})\\times\\{0\\})\\cup((S\\cup\\{a\\})\\times\\{1\\})$ is ample exactly when $P(a)\\ne P(b)$. Whenever it is ample, it is a forbidden pc-minor with exactly the corners $(b,0)$ and $(a,1)$. Hence repair compatibility is the complete multipartite graph whose parts are the nonempty fibres of $P$, computable from Hamming neighbours without pc-minor tests.",
+  "status": "established",
+  "proof": "The two-repair ampleness criterion gives adjacency exactly when the support labels differ. If an old concept $z$ is a corner of $S\\cup\\{b\\}$, its unique maximal cube must contain $b$: otherwise that cube lies in $S$ and contains every cube of $S$ through $z$, making $z$ a corner of the cornerless seed. Since $b\\notin S\\cup\\{a\\}$, this corner cube is not contained in the opposite section. The symmetric argument handles corners of $S\\cup\\{a\\}$. Thus the no-reflected-corner conditions hold automatically, and the two-extension lift theorem gives forbiddenness and the exact corner set. Inequality of labels is precisely adjacency between different fibres, yielding the complete multipartite graph.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-cornerless-seed-repair-graph",
+  "comments": "Every edge of the compatibility graph certifies a forbidden pc-minor directly from the two local neighbour-direction signatures."
+}
