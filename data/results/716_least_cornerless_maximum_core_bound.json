@@ -1,0 +1,21 @@
+{
+  "id": 716,
+  "short_name": "least_cornerless_maximum_core_bound",
+  "name": "A Least Cornerless Ample Family Has a Maximum Core of Order at Most 99",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "implication",
+  "statement": "Let $H$ have minimum cardinality among all nonempty cornerless ample families, and suppose $|H|<299$. Then either $H$ is a pseudogeometric maximum class, or its antipodal-double maximum core is obtained from opposite conditionings on a set $R$ of size $r\\ge2$ and satisfies $(r+1)|A|+1\\le|H|$ and $|A|\\le\\lfloor297/(r+1)\\rfloor\\le99$.",
+  "status": "established",
+  "proof": "Assume the conditioning set is nonempty. Equality in the general bound would give $H=A\\times P$. If $A$ were cornerless it would be a smaller nonempty cornerless ample family; if it had a corner, pairing that corner with an endpoint of $P$ would give a corner of $H$. Both contradict the choice of $H$, so the bound is strict. When $r=1$, the only antipodal path is the whole one-cube and equality is automatic, hence $r\\ge2$. Finally $|H|\\le298$ gives $(r+1)|A|\\le297$ and therefore $|A|\\le99$.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-least-cornerless-maximum-core",
+  "comments": "This strengthens the general sub-Hall core bound by using cardinality minimality to exclude the equality product case and the one-coordinate case."
+}

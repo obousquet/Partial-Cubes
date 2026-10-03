@@ -1,0 +1,20 @@
+{
+  "id": 715,
+  "short_name": "subhall_maximum_core_dichotomy",
+  "name": "Cornerless Ample Families Below Hall's Order Have a Small Maximum Core",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum",
+    "#classes/cornerless_ample"
+  ],
+  "operation_ids": [
+    "#operations/conditioning"
+  ],
+  "result_type": "implication",
+  "statement": "If $H$ is cornerless and ample with $|H|<299$, then either $H$ is itself a pseudogeometric maximum class, or it has two opposite equal conditionings whose common value is a pseudogeometric maximum class $A$ satisfying $|A|\\le\\lfloor298/(|R|+1)\\rfloor\\le149$.",
+  "status": "established",
+  "proof": "Apply the antipodal-double maximum-fibre theorem. If its conditioning set $R$ is empty, the common maximum fibre is all of $H$. Otherwise $(|R|+1)|A|\\le|H|\\le298$ and $|R|+1\\ge2$, which gives both displayed bounds.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-subhall-maximum-core-dichotomy",
+  "comments": "The threshold 299 is Hall's cornerless maximum example; the conclusion does not assume that Hall's example is minimum."
+}

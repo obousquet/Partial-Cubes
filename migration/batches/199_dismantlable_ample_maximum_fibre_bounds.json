@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "batch_id": "199_dismantlable_ample_maximum_fibre_bounds",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-03",
+  "scope": "Record the maximum fibre forced inside every proper ample family by its antipodal double, the exact geodesic-product equality case, and the resulting maximum-core bounds below Hall's order and inside a least cornerless ample family.",
+  "source_refs": [
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-antipodal-double-maximum-fibre",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-subhall-maximum-core-dichotomy",
+    "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#cor:damp-least-cornerless-maximum-core"
+  ],
+  "source_packets": [
+    {
+      "id": "dismantlable-ample-classification-supplemental-2026-10-02",
+      "repository": "PartialCubes",
+      "commit": "7ea344598fa468ab29cf94c7220ffeb989267805",
+      "path": "papers/dismantlable-ample/sections/dismantlable_ample_classification.tex",
+      "sha256": "5c575ab2b35cfae192bdd218167477b8da30a6d3f7f195000a3bf98c9bd1647e",
+      "git_state": "modified at supplemental freeze",
+      "byte_archive": "migration/snapshots/2026-10-02-b002/PartialCubes/papers/dismantlable-ample/sections/dismantlable_ample_classification.tex"
+    }
+  ],
+  "focused_source_review": {
+    "reason": "These consecutive claims isolate the maximum-class core forced by antipodal doubling and convert its fibre geometry into the principal order reductions used in the minimum-cornerless-family analysis.",
+    "outcome": "All three statement-plus-proof blocks match the preserved manuscript. The database records the minimal-nonample conditioning, opposite equal fibres, pseudogeometric maximum conclusion, order inequality, exact common-geodesic equality case, and both numerical bounds with the strictness argument for a least cornerless family.",
+    "claim_block_sha256": {
+      "prop:damp-antipodal-double-maximum-fibre": "14c3d11923e9e19dd78e7e3fa92d7e1601d2a0f7a1bbe526559cf92bce111591",
+      "cor:damp-subhall-maximum-core-dichotomy": "25b143b143719525a017bbc401e6cc3b9d4aa6bf3076f4a003e4ff64b155373f",
+      "cor:damp-least-cornerless-maximum-core": "a17fffb73297f84031edda3fd9248e99ca71f558af4853c97dc6f1be416391fd"
+    }
+  },
+  "source_preservation": {
+    "policy": "The database owns the three normalized facts, all numerical bounds and equality conditions, concise proofs, citations, and exact source locators. LaTeX retains the expanded shattering count, the minimal-nonample classification discussion, and the coordinate-order argument showing that all equality-case paths coincide.",
+    "recoverability": "Supplemental snapshot 2026-10-02-b002 preserves every displayed inequality, equality condition, and all three proof blocks byte for byte.",
+    "mutation": "No source file in PartialCubes or another sibling repository was modified."
+  },
+  "records": [
+    {
+      "path": "data/results/714_antipodal_double_maximum_fibre.json",
+      "sha256": "5b1e2afdbc7a74aae5ffd8bdacb435683c5137d0283f0958e68e3f6483547e49"
+    },
+    {
+      "path": "data/results/715_subhall_maximum_core_dichotomy.json",
+      "sha256": "394f61ceab4226da70a701fa2aa8b60e24601f3515660f777e63f40753810cd6"
+    },
+    {
+      "path": "data/results/716_least_cornerless_maximum_core_bound.json",
+      "sha256": "c1dd318ae6ad4125d530464c7ae8fefcd41aab0e5a12b5ede4cea8884edd385b"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "396602effd44c3d9288b40f8b2c1baea6794e2e84b0c2089e58443ed8499b666"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "b32b7c34bb361c6e112510cf947ec75c44705cffaa30e3d9b34d67dbfb013661"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2125 records.",
+    "website": "Normalized 2141 generated HTML files; 12 tables, bibliography, and 2 graph views pass.",
+    "graphs": "184 Hasse covers represent 230 stored inclusions; all 22 minor-atlas Ample-family nodes remain covered; all 115 classes have an audited position relative to Partial Cubes; 235 closure-map arrows render.",
+    "migration": "This batch covers 3 additional audited labels, raising overall coverage from 813 to 816 of 1143 and dismantlable-ample coverage from 377 to 380 of 683.",
+    "source_integrity": "All three complete proof blocks and the manuscript source match supplemental snapshot 2026-10-02-b002."
+  },
+  "deferred": [
+    "The refreshed audit has 327 uncovered database-owned labels: 303 in dismantlable-ample and 24 in ample-corners.",
+    "The next source block quantifies the excess caused by disagreeing fibre geodesics and derives structural properties of a least cornerless ample family.",
+    "Questions and conjectures remain prose-owned in LaTeX."
+  ]
+}

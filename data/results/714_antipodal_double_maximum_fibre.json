@@ -1,0 +1,21 @@
+{
+  "id": 714,
+  "short_name": "antipodal_double_maximum_fibre",
+  "name": "Every Proper Ample Family Contains Opposite Equal Maximum Fibres",
+  "class_ids": [
+    "#classes/ample",
+    "#classes/maximum"
+  ],
+  "operation_ids": [
+    "#operations/cube_complement",
+    "#operations/conditioning",
+    "#operations/cartesian_product"
+  ],
+  "result_type": "invariant_law",
+  "statement": "Let $\\varnothing\\ne H\\subsetneq Q_E$ be ample and form its antipodal double $\\widehat H=(\\{0\\}\\times H)\\cup(\\{1\\}\\times\\overline H)$. There are $R\\subseteq E$ and $f\\in Q_R$ such that the opposite conditionings agree, $H_f=H_{\\overline f}=:A$, the common fibre $A$ is a pseudogeometric maximum class, and $(\\{0\\}\\times A)\\cup(\\{1\\}\\times\\overline A)$ is minimal nonample. One may take $R=\\varnothing$ exactly when $\\widehat H$ is minimal nonample. If $r=|R|>0$, then $(r+1)|A|\\le|H|$, with equality exactly when $H=A\\times P$ for one antipodal geodesic path $P\\subseteq Q_R$.",
+  "status": "established",
+  "proof": "A minimal nonface of the shattered complex of $H$ becomes shattered by $H\\cup\\overline H$, while every old shattered support occurs both with and without the new layer coordinate. Sauer's inequality therefore makes the antipodal double nonample. Choose a nonample conditioning with minimum remaining dimension. The layer coordinate cannot be fixed, because every conditioning of $H$ or its antipode is ample. The classification of minimal nonample families makes this conditioned double antipodally closed with maximum one-coordinate sections, giving opposite equal fibres $A$ and the pseudogeometric conclusion. For each $a\\in A$, its $R$-section in $H$ contains the antipodal words $f,\\overline f$ and, by isometry, at least a geodesic of $r+1$ vertices. Summing gives the order bound. Equality forces every such section to be a shortest antipodal path and leaves no vertices over words outside $A$. If two paths ordered some coordinate pair differently, their union would shatter that pair in addition to the $(r+1)|A|$ already forced supports, contradicting Sandwich equality. Hence all paths coincide and $H=A\\times P$; conversely this product is ample and attains equality.",
+  "references": "\\cite{BousquetYangComplex26}",
+  "proof_source": "PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex#prop:damp-antipodal-double-maximum-fibre",
+  "comments": "The equality characterization is global: ampleness forces the geodesic chosen above every word of the maximum core to be the same path."
+}
