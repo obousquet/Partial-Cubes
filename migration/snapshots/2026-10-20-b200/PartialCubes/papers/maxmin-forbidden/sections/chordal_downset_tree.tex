@@ -1,0 +1,498 @@
+\section{A tree of daisy cubes with exact positioned supports}
+\label{sec:maxmin-chordal-downset-tree}
+
+Simplicial-cube removal supplies a sequence of attachments. A tree description
+retains more of their simultaneous geometry: its pieces and overlaps are
+daisy cubes, and the same tree records every support in every
+coordinate face. This supplies the native pieces and interfaces. Choosing
+compatible maximum parents for their union is still a separate problem.
+The cube labels are equivalently the extentures of the complement of $H$.
+Their fixed literals and free coordinates are both retained in the certificate.
+
+A positioned cube $C$ fixes some coordinates and lets the coordinates in
+$d(C)$ vary freely. A coordinate face $P$ is also a positioned cube, including
+a vertex or the entire ambient cube. For a finite tree $T$ and a cube label
+$C$, let $T_C$ denote the nodes at which that label occurs, together with
+the tree edges between them. Unions of such subtrees below are unions of
+\emph{vertices and edges}: adjacent vertices do not supply an edge unless
+one of the subtrees contains that edge.
+
+\begin{theorem}[A positioned tree certificate for cube-chordal ample classes]
+\label{thm:maxmin-chordal-downset-tree}
+Let $\varnothing\ne H\subseteq\Q^X$. The following are equivalent.
+\begin{enumerate}
+\item $H$ is ample and its complete maximal-cube intersection graph
+      $\Gamma(H)$ is chordal.
+\item There is a finite inclusion-antichain $\mathcal C$ of positioned cubes
+      whose union is $H$, and a tree $T$ with nonempty bags
+      $\mathcal C_t\subseteq\mathcal C$, such that:
+      \begin{enumerate}
+      \item every label occurs, every bag has a common word $z_t$, and
+            each $T_C$ is connected;
+      \item any two intersecting labels occur together in a bag;
+      \item for every coordinate face $P$ and $S\subseteq d(P)$,
+            the following subcomplex of $T$ is connected or empty:
+            \[
+             T_{P,S}=\bigcup_{\substack{C\in\mathcal C:\
+                    C\cap P\ne\varnothing,\ S\subseteq d(C)}}T_C.
+            \]
+      \end{enumerate}
+\end{enumerate}
+In item~2, $\mathcal C$ is automatically the complete maximal-cube list
+of $H$. Put
+\[
+ D_t=\bigcup_{C\in\mathcal C_t}C,\qquad
+ F_{tu}=\bigcup_{C\in\mathcal C_t\cap\mathcal C_u}C\quad(tu\in E(T)).
+\]
+The tree may be chosen so its bags are the maximal cliques of $\Gamma(H)$.
+Its pieces $D_t$ are daisy cubes rooted at $z_t$.
+Each overlap $F_{tu}$ is nonempty and a daisy cube rooted at both
+$z_t,z_u$. If $J=\operatorname{Diff}(z_t,z_u)$, it factors as a full
+$J$-cube times a daisy cube on the remaining coordinates.
+
+For every nonempty connected subtree $U\subseteq T$, the union
+$H_U=\bigcup_{t\in U}D_t$ is ample and has exactly the cube labels occurring
+in $U$ as its maximal cubes. For an edge $tu$ splitting $U$ into $U_1,U_2$,
+and every coordinate face $P$,
+\begin{align}
+ H_{U_1}\cap H_{U_2}&=F_{tu},\label{eq:maxmin-tree-exact-overlap}\\
+ \Sh(H_{U_1}\cap P)\cap\Sh(H_{U_2}\cap P)
+     &=\Sh(F_{tu}\cap P).
+ \label{eq:maxmin-tree-positioned-shadows}
+\end{align}
+Empty traces have empty shattered families. Every prescribed positive
+canonical array realizes each nonempty piece and overlap. In particular,
+each has an actual maximum parent by the existing geometric conversion.
+If $V\subseteq U$ is a nonempty connected subtree, $H_U$ peels to $H_V$.
+Every supplied ordinary map on $H_V$ extends to $H_U$, with all boundary
+edges directed into $H_V$ and acyclic orientation outside it. The supplied
+map itself may be cyclic. The same assertions hold with an edge overlap
+$F_{tu}$ as retained target.
+\end{theorem}
+
+\begin{proof}
+We first explain the graph tree and the positioned-support condition.
+Then a counting identity proves the converse, including that no additional
+maximal cube has been silently omitted. Finally we recover all subunions
+and their overlaps.
+
+\emph{The graph tree.} A connected chordal graph has a perfect elimination
+order $v_1,\ldots,v_m$: the later neighbours $N_i$ of $v_i$ form a clique.
+This follows by repeatedly deleting a simplicial vertex, using
+\href{../dismantlable-ample/sections/classification/chordal_cube_retention.tex}
+{Lemma D.1 of the corner-peeling companion}.
+Deleting a simplicial vertex preserves connectivity of a graph with more
+than one vertex: replace a path through it by the edge between its two
+neighbours. Thus $N_i\ne\varnothing$ for $i<m$.
+
+Take bags $B_i=\{v_i\}\cup N_i$, and join $i$ to the least index $p(i)$
+in $N_i$. These edges form a tree rooted at $m$. Since $N_i$ is a clique,
+$N_i\subseteq B_{p(i)}$. If $v_j\in B_i$ with $i<j$, this inclusion
+carries $v_j$ along the increasing parent path until node $j$.
+Hence every graph vertex has a connected occurrence subtree. Every graph
+edge is covered by a bag, and bags are cliques. Adjacent contained bags
+can be contracted into the larger bag. This preserves the tree properties.
+If a remaining bag were properly contained in another, every vertex of
+the smaller bag would occur along the path to the larger one, so its first
+neighbour would also contain it. Thus after all such contractions the
+remaining bags are exactly the maximal cliques.
+
+For item~1 use the vertices of $\Gamma(H)$ as cube labels.
+The graph is connected: an edge of the connected ample class lies in a
+maximal cube, so a vertex path connects any two such cubes through
+intersecting maximal cubes. Cube Helly supplies a common word in each
+clique bag: their fixed literals are pairwise consistent.
+This establishes conditions~2(a,b).
+
+\emph{All positioned carriers use this same tree.} Fix $P,S$ as in~2(c).
+The graph induced on labels with $C\cap P\ne\varnothing$ and
+$S\subseteq d(C)$ is connected when nonempty.
+Indeed $H\cap P$ is ample. Its positioned $S$-cubes form an ample
+anchor family after the $S$-coordinates are removed, by the established
+\href{../dismantlable-ample/sections/classification/hall_examples.tex}
+{projected-cube carrier lemma} in the companion~\cite{Damp}.
+That family is connected; for $S=\varnothing$ use $H\cap P$ itself.
+Adjacent anchors lift to a full $(S\cup\{i\})$-cube in $H\cap P$.
+Choose a maximal cube of $H$ containing each such lift. Consecutive chosen
+cubes share the intervening $S$-cube. Connect each endpoint label to a
+chosen $S$-cube within its trace. This gives the required connected graph.
+Two adjacent labels in that graph have intersecting occurrence subtrees,
+because some bag contains both. Their union of subtrees is therefore
+connected, proving condition~2(c). Carrier ampleness is reused here;
+the additional conclusion is one tree valid simultaneously for every
+position and support.
+
+\emph{The counting converse.} Assume item~2. Two cubes occurring together
+intersect at the bag root, so label intersections are exactly intersections
+of their occurrence subtrees. The label graph is chordal. To see this
+directly, repeatedly remove a leaf of $T$. Labels occurring only at that
+leaf have all their neighbours in its clique bag and can be eliminated
+as simplicial vertices. Remove the leaf from all other occurrence subtrees
+and continue. At the last node the remaining labels form a clique.
+This produces a perfect elimination order. Such an order excludes an
+induced cycle of length at least four: its earliest vertex on that cycle
+would have two nonadjacent later neighbours.
+
+All labels containing any fixed word are pairwise intersecting, so their
+occurrence subtrees intersect pairwise. Connected subtrees of a tree have
+the Helly property. For completeness, root the tree, and take among the
+subtrees the one whose nearest node to the root is farthest from it.
+Pairwise intersections force that nearest node to lie in every subtree,
+by uniqueness of tree paths. Thus the bags containing the word form a
+connected subtree. Consequently, for every coordinate face $P$,
+\begin{equation}
+ |H\cap P|=\sum_t|D_t\cap P|-\sum_{tu\in E(T)}|F_{tu}\cap P|.
+ \label{eq:maxmin-tree-word-count}
+\end{equation}
+Here $D_t\cap D_u=F_{tu}$: if a cube in bag $t$ intersects one in bag
+$u$, their occurrence subtrees meet somewhere, and the path to that
+meeting node carries at least one of the two labels across edge $tu$.
+Every word in their intersection is therefore in a shared label.
+
+Each bag union is a daisy cube rooted at its common word. Its maximal
+cubes are exactly its labels: the top word of any cube relative to that
+root belongs to a label, and its entire lower cube belongs to the same
+label. A shared-label union has the same property at both roots.
+Their traces on $P$ are daisy cubes or empty, hence ample.
+Moreover $S\subseteq d(P)$ is shattered by $D_t\cap P$ exactly when
+some bag label meets $P$ and has $S\subseteq d(C)$.
+Condition~2(c) says that these support occurrences count a connected
+tree, with an edge present exactly when a shared label supplies that
+support. It follows that
+\begin{equation}
+ \left|\bigcup_t\Sh(D_t\cap P)\right|
+   =\sum_t|\Sh(D_t\cap P)|
+            -\sum_{tu\in E(T)}|\Sh(F_{tu}\cap P)|.
+ \label{eq:maxmin-tree-support-count}
+\end{equation}
+Equations~\eqref{eq:maxmin-tree-word-count} and
+\eqref{eq:maxmin-tree-support-count}, and ampleness of the individual
+traces, give
+\[
+ |H\cap P|=\left|\bigcup_t\Sh(D_t\cap P)\right|.
+\]
+Every support on the right has a positioned cube in one trace, so is
+strongly shattered by $H\cap P$. The lower Sandwich inequality forces
+equality and ampleness of $H\cap P$, with precisely that shattered family.
+Equality in either Sandwich inequality characterizes ampleness, as recalled
+in the shared ample-class setting \cite{Methods}.
+
+If $P$ is a cube contained in $H$, its entire free support is shattered
+by $H\cap P=P$. The last equality puts it in some $\Sh(D_t\cap P)$,
+which means $P\subseteq D_t$. The bag downset then puts $P$ inside a
+label. Thus there are no new maximal cubes of $H$, and the global label
+antichain is its exact maximal-cube list. Its already proved chordal
+intersection graph proves item~1.
+
+\emph{Subunions and interfaces.} Restricting to a connected subtree $U$
+preserves connected label and carrier subtrees by intersection with $U$.
+It also preserves edge coverage: two intersecting label subtrees meeting
+$U$ have a common node in $U$, by the Helly property applied to those
+two subtrees and $U$. The converse just proved therefore applies to every
+connected subunion, with its exact maximal-cube list.
+
+For an edge split, intersecting labels from opposite sides either include
+a separator label or meet in a bag on one side; the occurrence path then
+makes the label from the other side a separator label. This proves
+\eqref{eq:maxmin-tree-exact-overlap}. The connected carrier $T_{P,S}$
+meets both sides exactly when it includes the cut edge, exactly when a
+shared label supplies an $S$-cube meeting $P$.
+The shattered-family equality for subunions proves
+\eqref{eq:maxmin-tree-positioned-shadows}.
+
+Shared labels contain both bag roots. Every coordinate where the roots
+differ is consequently free in every shared label. Factoring these
+coordinates out gives the asserted full cube times daisy cube.
+Nonempty interfaces follow in the forward construction since adjacent
+clique bags in a connected graph have a shared label; in the converse,
+condition~2(c) for the whole cube and empty support makes their union
+cover every tree edge. Finally Proposition~\ref{prop:maxmin-all-arrays-cube-gluing}
+realizes every positive canonical array on each daisy cube, and
+the existing geometric conversion supplies its maximum parent.
+
+To retain a connected subtree $V$, remove a leaf bag outside $V$.
+Each of its labels absent from its neighbouring bag occurs only at that
+leaf, so all its remaining neighbours in the cube graph lie in the leaf
+clique. Remove its exclusive vertices by
+Lemma~\ref{lem:maxmin-simplicial-cube-remainder}. This preserves every
+retained label and gives an ample remainder with exactly the other labels.
+After all exclusive labels are removed, discard the leaf bag and repeat.
+A leaf with no exclusive label is discarded without deleting any word.
+The procedure ends at $H_V$, proving the relative peeling assertion.
+To retain $F_{tu}$, subdivide edge $tu$ by the shared-label bag.
+Every occurrence and carrier subtree meeting that edge acquires precisely
+its subdivision, so the certificate remains valid; retain the new single
+node. Finally the existing relative-peeling extension theorem
+\href{../dismantlable-ample/sections/classification/uso_dictionary.tex}
+{for ordinary maps} extends every prescribed target map by adding the
+deleted corners back as sources. This preserves the target, gives inward
+boundary, and places every directed cycle inside the target.
+\end{proof}
+
+\begin{remark}[Why positioned support connectivity is required]
+\label{rem:maxmin-tree-nonample-path}
+In coordinate order $(x_0,x_1,x_2)$, consider the induced path
+\[
+ 000-100-110-111-011.
+\]
+Its maximal cubes are its four edges, so their intersection graph is a
+chordal path. The two end edges both use coordinate $x_0$.
+Their support carrier is disconnected. The family has five words but
+six shattered supports: the empty set, the three singletons and the
+pairs $\{0,1\},\{0,2\}$. Thus it is not ample.
+The clique bags and their overlaps are individually daisy cubes;
+condition~2(c) detects the inconsistent reuse of the coordinate direction.
+The displayed embedding of the path is not isometric. The reconstruction
+theorem forces isometry in the prescribed coordinates through ampleness.
+\end{remark}
+
+\begin{remark}[The $27$-word control]
+\label{rem:maxmin-chordal27-downset-tree}
+Use the cube indices in the proof of
+Proposition~\ref{prop:maxmin-chordal-unit-array-obstruction}.
+One maximal-clique tree is the path $1-0-3-5$ with the following bags:
+\begin{center}
+\begin{tabular}{cclc}
+Node & Root & Cube indices & Piece order\\\hline
+$1$ & $4$ & $1,2,4,6$ & $17$\\
+$0$ & $0$ & $0,1,2,3,4,5$ & $23$\\
+$3$ & $32$ & $2,3,4,5,7$ & $21$\\
+$5$ & $40$ & $3,4,7,8,9$ & $16$
+\end{tabular}
+\end{center}
+The three overlaps have orders $16,20,14$; none is a full cube.
+In particular an overlap of order $16$ need not be a $4$-cube.
+The counting formula gives $17+23+21+16-16-20-14=27$.
+All pieces and overlaps admit every positive canonical array, while the
+whole class fails the unit array. Thus even on this tree the local
+all-array realizations do not justify copying one global array.
+The saved certificate and independent verifier check all $729$ coordinate
+faces, all $4096$ positioned support carriers, every cut identity, and all
+ten connected bag subunions of this example.
+\end{remark}
+
+This is a native reconstruction theorem, with exact positioned cubes and
+all face shadows. The separate existence of maximum parents for the charts
+and overlaps does not choose compatible parents of their union. The remaining
+operation is a leaf attachment with these exact face identities and with
+coefficient choices free. The $26\to27$ common-unit-guard obstruction of
+Proposition~\ref{prop:maxmin-chordal-unit-array-obstruction} remains a
+required control for such a construction. No complete forbidden basis or
+unrestricted chordal maximum-ancestry theorem is asserted here.
+
+\subsection{Extentures direct the clique tree towards an opposite root}
+\label{sec:maxmin-extenture-tree-directions}
+
+The root values may vary along the tree, but each forbidden pattern imposes
+a signed separation law. The law uses the actual positioned-support
+carriers, including their edges. In particular it applies independently of
+whether the class belongs to the peripheral family.
+
+\begin{proposition}[An opposite bag root for every extenture]
+\label{prop:maxmin-extenture-opposite-bag-root}
+Let $H$ be nonempty and ample with chordal $\Gamma(H)$, and choose a tree
+certificate from Theorem~\ref{thm:maxmin-chordal-downset-tree}. Choose any
+common word $z_t$ in each bag. For an extenture $R=(A,a)$ of $H$, set
+\[
+ U_i(R)=\bigcup_{C:\ A\setminus\{i\}\subseteq d(C)}T_C
+ \quad(i\in A),\qquad
+ M_t(R)=\{i\in A:(z_t)_i=a_i\}.
+\]
+Then each $U_i(R)$ is a nonempty connected subtree. If $M_t(R)$ is nonempty,
+all the subtrees $U_i(R)$, $i\in M_t(R)$, lie in the same component of
+$T\setminus\{t\}$. Direct $t$ towards the neighbour in that component.
+No edge receives both directions. Consequently every maximal directed path ends
+at a node $u$ with
+\[
+                     z_u|_A=\mathbf1_A-a.
+\]
+Thus the chosen bag roots, for \emph{every} choice of those roots, contain
+the full opposite trace of every extenture.
+\end{proposition}
+
+\begin{proof}
+We first justify the support carriers and their signs. The projection of
+an ample class onto an extenture support $A$ is the full $A$-cube with
+exactly the forbidden pattern $a$ deleted. Indeed minimality supplies all
+one-bit neighbours of $a$. The projection and its complement are ample;
+the complement is nonempty, connected, and has $a$ as an isolated vertex,
+so it is just $\{a\}$. Hence every $A\setminus\{i\}$ is shattered.
+A maximal cube freeing these coordinates must fix $i$ opposite to $a_i$:
+freeing $i$ as well, or fixing it to $a_i$, would realize $R$.
+The positioned carrier condition makes $U_i(R)$ connected and nonempty.
+It also proves that $t\notin U_i(R)$ whenever $i\in M_t(R)$.
+
+\emph{All matching literals point to one branch.}
+Suppose $i,j\in M_t(R)$ had carriers in different components after $t$
+is removed. The carrier for $A\setminus\{i,j\}$ contains both subtrees,
+so its connectedness puts $t$ in that carrier. There is therefore a cube
+in bag $t$ freeing $A\setminus\{i,j\}$. Since it avoids $R$, it fixes
+at least one of $i,j$ opposite to the corresponding forbidden bit.
+But it contains $z_t$, which matches both bits. This contradiction proves
+the common-branch assertion and makes the direction well defined.
+
+\emph{Opposite directions cannot occur.}
+Suppose $t$ points to its neighbour $u$ and $u$ points to $t$. Choose
+$i\in M_t(R)$ and $j\in M_u(R)$. The subtree $U_i(R)$ is on the $u$
+side of the edge and $U_j(R)$ on the $t$ side. They cannot be the same
+subtree, so $i\ne j$. The connected carrier for $A\setminus\{i,j\}$
+contains the edge $tu$. Because carriers retain edges, some cube label
+$C$ occurring in \emph{both} bags frees $A\setminus\{i,j\}$.
+It must fix $i$ or $j$ opposite to $a$. The first possibility contradicts
+$z_t\in C$ and $(z_t)_i=a_i$; the second contradicts $z_u\in C$ and
+$(z_u)_j=a_j$. No such edge exists.
+
+Every node with $M_t(R)\ne\varnothing$ has an outgoing edge. An infinite
+walk in a finite tree would repeat an edge in both directions, which was
+just excluded. Following the directions therefore terminates at a node
+with $M_u(R)=\varnothing$, giving the required opposite trace. For a
+singleton support all bag roots already have its opposite bit, and the
+same conclusion holds without any directed edge.
+\end{proof}
+
+For any positive coefficients on $R$, the sign vector of such an opposite
+root makes its guard strictly negative term by term. Different extentures
+may end at different nodes. The proposition supplies signed endpoints;
+it does not supply one common coefficient array, a negative value for every
+row at every root, or a maximum parent. The numerical compatibility between
+rows remains a separate question.
+
+For example, the four-word path $000,100,110,111$ has two maximal-clique
+bags, with forced roots $100$ and $110$. Its extentures are
+$(x_1,x_2)=(0,1)$, $(x_1,x_3)=(0,1)$ and $(x_2,x_3)=(0,1)$.
+For the first pattern the opposite trace occurs at $100$; for the last it
+occurs at $110$. Thus even this example needs different destinations for
+different extentures.
+
+\subsection{One coordinate can prescribe an arbitrary root pattern}
+\label{sec:maxmin-tree-arbitrary-root-patterns}
+
+A tree certificate does not make its coordinate data monotone along the
+tree. In particular, one cannot assume that the roots switch value in a
+given coordinate across at most one tree edge. The phenomenon already
+occurs for median classes with unit separator realizations and known
+maximum ancestry; it is not an obstruction to that ancestry. Here median
+means that the given one-inclusion graph is isometric and the
+coordinatewise majority of any three words belongs to the class.
+
+\begin{proposition}[Arbitrary root patterns on a unique clique tree]
+\label{prop:maxmin-arbitrary-clique-root-patterns}
+Let $T=(V,E)$ be any finite tree with $m\ge1$ edges, and let
+$\varepsilon:V\to\{0,1\}$ be arbitrary. There is an ample median class
+$H\subseteq\{0,1\}^{2m+2}$ with $3(m+1)$ words and VC dimension two,
+whose maximal-cube intersection graph is chordal, such that:
+\begin{enumerate}
+\item its maximal cliques have a unique clique tree, canonically
+      identified with $T$;
+\item the cubes in each clique indexed by $v$ have exactly one common
+      word $z_v$;
+\item in one distinguished coordinate $i$, one has
+      $(z_v)_i=\varepsilon(v)$ for every $v\in V$.
+\end{enumerate}
+Thus even the distinguished coordinate can change on every edge of a
+path of arbitrary length. Neither choosing different bag roots nor
+choosing a different maximal-clique tree removes those changes.
+\end{proposition}
+
+\begin{proof}
+Choose a root of $T$ and give its $m$ edges distinct coordinate names.
+Let $c_v\in\{0,1\}^E$ indicate the edges on the root-to-$v$ path.
+These words form an isometric copy $C_T$ of the tree: the coordinates
+where two labels differ are precisely the edges of their joining path.
+It is a maximum rank-one class on $E$.
+Add a coordinate $i$ and one fresh coordinate $p_v$ for each vertex.
+With every unmentioned pendant coordinate zero, put
+\[
+ H=(C_T\times\{0,1\}_i\times\{0\}^{V})
+     \ \cup\ \{(c_v,\varepsilon(v),\mathbf1_{\{v\}}):v\in V\}.
+\]
+Its graph is the prism $T\mathbin\square K_2$ with one pendant edge
+at $(c_v,\varepsilon(v))$ for each $v$. This gives $2m+2$ active
+coordinates and $3(m+1)$ distinct words. The prism of a tree is median,
+and adding pendant edges preserves medianity. More explicitly, if a
+pendant coordinate survives the coordinatewise majority of three words,
+that same pendant word occurred at least twice and is the majority.
+Otherwise all pendant coordinates vanish; the base majority lies in
+$C_T$, and either value of $i$ is present. The constructed graph is
+isometric, so this verifies the median assertion.
+
+The only shattered pairs are $\{e,i\}$ with $e\in E$. No base pair
+is shattered in the maximum tree, and a pendant coordinate at value
+one determines every other coordinate. No triple can be shattered,
+since each contains an unshattered pair. Hence
+\[
+ |\operatorname{Sh}(H)|=1+(2m+2)+m=3(m+1)=|H|,
+\]
+which proves ampleness and VC dimension two directly.
+
+There is one maximal square $Q_e$ for each base edge $e$, obtained by
+multiplying it by $\{0,1\}_i$, and one maximal pendant edge $L_v$ for
+each vertex. These are all the maximal cubes. There are no larger
+cubes by the preceding pair calculation, and every prism edge belongs
+to a square because every vertex of the nontrivial tree has an incident
+edge. A pendant edge belongs to no square.
+Two squares intersect exactly when their base edges share a vertex.
+The edge $L_v$ meets exactly the squares of the base edges incident
+with $v$, and distinct pendant edges are disjoint. Consequently the
+maximal cliques are exactly
+\[
+ \mathcal C_v=\{L_v\}\cup\{Q_e:e\text{ is incident with }v\}.
+\]
+Indeed pairwise incident edges of a tree have a common vertex, so any
+clique consisting only of squares is contained in one such clique.
+A clique containing $L_v$ is contained in $\mathcal C_v$ as well.
+Their clique tree is $T$: each $Q_{uv}$ occurs in precisely the two
+bags $\mathcal C_u,\mathcal C_v$, while each $L_v$ occurs only once.
+This proves the running-intersection property and hence chordality.
+It also proves uniqueness. Any clique tree must join the two bags
+containing $Q_{uv}$ directly, since no other bag contains that label.
+These $m$ forced edges already form the whole tree on $m+1$ bags.
+
+Finally, the common intersection of $\mathcal C_v$ is the single
+prism vertex $z_v=(c_v,\varepsilon(v),0)$. The pendant edge fixes
+its base and $i$ coordinates, while any incident square forces its
+pendant coordinate to zero. Thus the roots are forced and have the
+prescribed distinguished bits. Alternating $\varepsilon$ on a path
+proves the last assertion for every length.
+\end{proof}
+
+\paragraph{Established membership and explicit checks.}
+These classes lie in $\mathcal R_{\rm per}$ by existing operations:
+construct the tree by pendant peripheral expansions, duplicate the whole
+tree in coordinate $i$, and attach the remaining pendant edges by
+singleton peripheral expansions. In particular they are dismantlable.
+Their convex realizability and maximum ancestry also follow from the
+existing binary-pattern construction
+\cite[Theorem~\texttt{thm:two-large-patterns}]{Methods}; no new positive
+membership family is being claimed here.
+
+For an explicit certificate, their canonical extentures are the
+$\binom m2$ missing pairs of $C_T$, the $(m+1)^2$ pairs
+\[
+ \{p_v=1,\ x_j=1-(z_v)_j\}
+ \quad(v\in V,\ j\in E\sqcup\{i\}),
+\]
+and the $\binom{m+1}{2}$ pairs $\{p_u=1,p_v=1\}$ for $u\ne v$.
+These patterns define exactly the displayed class and are all minimal,
+since every coordinate is active. Their number is $q=2m^2+2m+1$.
+The old unit-row witness construction is particularly simple here.
+For an allowed word, reflect it to zero. A missing pair $01$ imposes
+an order on its two positive witness magnitudes. This implication digraph
+has no directed cycle: such a cycle would force its active coordinates
+to change together, contradicting an isometric path from zero.
+Give the coordinates weights $1,\ldots,2m+2$ in topological order.
+Their negatives strictly satisfy all the reflected binary inequalities;
+a missing $11$ row is automatically negative. Reflect back to obtain
+integer witnesses of absolute value at most $2m+2$ and unit-row slack
+at least one. The existing bounded-realization conversion gives a
+sufficient maximum-parent rank $2m+2$ and at most
+$q+2(2m+2)=2m^2+6m+5$ auxiliaries. These bounds are not claimed minimal.
+
+The independent replay checks a path and a branching tree with four
+edges, with prescribed root patterns, and the one-edge boundary case.
+It reconstructs all cubes, maximal cliques and their forced tree edges,
+checks majority closure and the full shattered family, and verifies every
+unit-row witness. The statement about arbitrary trees and patterns is
+proved symbolically. The additional structural conclusion is unrestricted
+coordinate variation on the clique tree; it does not supply compatible
+parents for a general chordal union or prove corner-addition closure.

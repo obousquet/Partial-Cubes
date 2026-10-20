@@ -1,0 +1,372 @@
+\section{Representations directed into a prescribed cube}
+\label{sec:maximum-cube-inward}
+
+A maximum parent can supply more than an unspecified representation of
+its marked section. It can supply a representation whose edges enter any
+chosen contained cube. This resolves ordinary-map compatibility for
+amalgams over a full common cube when all but at most one piece have
+maximum parents. The argument uses the literal extension theorem of
+Chalopin--Chepoi--Moran--Warmuth; it does not construct a maximum parent
+of the amalgam.
+
+Write $Q_S(a)=\{a^T:T\subseteq S\}$, where $a^T$ flips the coordinates
+of $T$ in $a$. All coordinate sets are finite. A representation map of
+an ample class $H$ is a bijection $r:H\to\operatorname{Sh}(H)$ such that
+\[
+ (u\mathbin\triangle v)\cap(r(u)\cup r(v))\ne\varnothing
+ \qquad(u\ne v).
+\]
+Here $u\mathbin\triangle v$ denotes the coordinates on which the words
+differ. We use the equivalent orientation description
+\cite[Theorem~6.8]{ChalopiChepoiMoran22}: $r(v)$ is the set of outgoing
+edge directions, the outgoing cube $Q_{r(v)}(v)$ is contained in $H$,
+and every contained cube has exactly one sink. Such orientations are
+called ordinary unique-sink orientations (USOs); directed cycles are allowed. The boundary at a
+contained cube $Q_S(a)$ is \emph{inward} if every edge between that cube
+and its complement points into the cube, equivalently
+$r(v)\subseteq S$ for every $v\in Q_S(a)$.
+
+\begin{theorem}[Inward representations from a maximum parent]
+\label{thm:maximum-cube-inward}
+Let $M\subseteq\{0,1\}^F$ be a nonempty maximum class and
+$Q_S(a)\subseteq M$. There is a representation map $r$ of $M$ with
+\begin{equation}
+ r(a^T)=T\qquad(T\subseteq S).
+ \label{eq:maximum-cube-inward-distance}
+\end{equation}
+Consequently its boundary at $Q_S(a)$ is inward.
+Moreover, one can fix the entire orientation outside $Q_S(a)$, including
+its boundary edges, so that every ordinary USO of that cube extends to
+an ordinary USO of $M$.
+
+The same conclusion about inward extension of every cube USO holds for
+any nonempty coordinate section $C=M[\tau]$ and any cube contained in
+$C$. The actual parent $M$, its rank, its auxiliary coordinates and its
+mark $\tau$ can all be retained. Here $M[\tau]$ means fixing an
+auxiliary coordinate set to $\tau$ and deleting those fixed coordinates.
+The representation of $M$ may be chosen anew.
+\end{theorem}
+
+The singleton-cube case is the established prescribed-root refinement of
+the maximum-class construction. The additional requirement here concerns
+all vertices of a positive-dimensional cube simultaneously. The proof
+selects its free directions first in the CCMW recursion. No corner
+order, geometric realization, or acyclic exterior is assumed.
+
+\begin{proof}
+We first recall the exact extension input
+\cite[Proposition~5.2]{ChalopiChepoiMoran22}. If $D\subseteq P$ are
+maximum classes on the same coordinate set, of ranks $d-1$ and $d$,
+then every representation map of $D$ extends literally to one of $P$.
+The extension assigns each word of $P\setminus D$ the support of its
+unique source cube. In particular, no label on $D$ changes.
+
+Here is the associated lifting step, including the full-rank boundary
+case. Fix a coordinate $e$, let $P=\pi_e M$ be the projection, and let
+$D=M^e$ be the reduction consisting of projected two-point fibers.
+If $M$ has rank $d$ with $1\le d<|F|$, the maximum reduction theorem
+gives ranks $d$ and $d-1$ for $P$ and $D$. Equivalently, their two
+Sauer bounds add to $|M|$ by Pascal's identity, so both bounds must be
+attained. If $d=|F|$, then $M$ is the full cube and $P=D$ is the full
+remaining cube.
+
+Given a map $q$ of $D$, extend it literally to a map $p$ of $P$ by
+Proposition~5.2, or set $p=q$ when $P=D$. For either bit $b$, define
+\begin{equation}
+ r(v)=p(\pi_e v)\cup
+ \begin{cases}
+  \{e\},&\pi_e v\in D\text{ and }v_e\ne b,\\
+  \varnothing,&\text{otherwise}.
+ \end{cases}
+ \label{eq:maximum-cube-inward-lift}
+\end{equation}
+This is the lift in the proof of
+\cite[Theorem~5.1]{ChalopiChepoiMoran22}, allowing either shore as the
+sink of every two-point fiber. For completeness, the labels avoiding
+$e$ occur once each: use the singleton lift over $P\setminus D$ and
+the $b$-lift over $D$. The labels containing $e$ occur once each on
+the opposite lifts over $D$. These are exactly the shattered supports
+of $M$. If two words have different projections, nonclashing of $p$
+separates them on a coordinate other than $e$. Otherwise they are the
+two lifts of a point of $D$, and one label contains $e$. Thus the lift
+is a representation map, also when $P=D$.
+
+We prove \eqref{eq:maximum-cube-inward-distance} by induction on $|F|$,
+handling the case $S=\varnothing$ within the same induction. If $M$
+has rank zero, it is the singleton $\{a\}$ and the empty label works.
+Otherwise, if $S=\varnothing$, choose an incident edge at $a$ in the
+connected one-inclusion graph of the nontrivial maximum class $M$;
+write $e$ for its direction. Then $\pi_e a\in D$. Induction supplies
+a map $q$ of $D$ with $q(\pi_e a)=\varnothing$. Take $b=a_e$ in
+\eqref{eq:maximum-cube-inward-lift}; its label at $a$ is empty.
+This proves the prescribed-root case, including full cubes.
+
+If $S\ne\varnothing$, choose $e\in S$. Both lifts of every word of
+$Q_{S\setminus\{e\}}(\pi_e a)$ belong to $M$, so this projected cube
+is contained in $D$. Induction gives a map $q$ of $D$ with
+\[
+ q((\pi_e a)^T)=T\qquad(T\subseteq S\setminus\{e\}).
+\]
+Extend to $P$ and lift with $b=a_e$. At $a^T$ the old label is
+$T\setminus\{e\}$, and the new coordinate is added exactly when
+$e\in T$. This proves the required formula for every $T\subseteq S$.
+
+We next justify replacing the cube orientation while keeping one fixed
+exterior. At a cube vertex every outgoing edge remains inside the cube,
+so any replacement USO supplies its outgoing cube. At outside vertices
+all outgoing sets remain unchanged. For the unique-sink condition,
+let $B\subseteq M$ be a contained cube meeting $Q_S(a)$. Their
+intersection $L$ is a face of both cubes. Its old unique sink is also
+a sink of $B$, since all edges from $B\setminus L$ into $L$ point
+inward. Thus every word of $B\setminus L$ had an outgoing edge within
+$B$ and still does after replacement. The new orientation on $L$ has
+one sink, also a sink of $B$. Cubes disjoint from $Q_S(a)$ are
+unchanged. This proves the replacement assertion.
+
+Finally, lift a cube $Q\subseteq C=M[\tau]$ to the cube with the same
+free coordinates and auxiliary values $\tau$ in $M$. Apply the proved
+maximum-class statement to that cube and restrict the resulting
+orientation to the marked coordinate face. Restriction of an ordinary
+USO to a coordinate-face intersection preserves both the outgoing-cube
+and unique-sink conditions: outgoing fixed directions are removed,
+and every cube of the section was a cube of the parent. Its boundary
+at $Q$ remains inward. The lifted cube and its ordinary orientations
+are naturally identical to $Q$, so every prescribed cube USO extends
+with one fixed section exterior. No parent or mark has changed.
+\end{proof}
+
+\begin{theorem}[Common-cube amalgams with one prescribed piece]
+\label{thm:maxmin-common-cube-map-selection}
+Let $S,F_1,\ldots,F_m$ be pairwise disjoint coordinate sets, and let
+$A_i\subseteq\{0,1\}^{S\sqcup F_i}$ be nonempty ample classes containing
+$Q_S\times\{0\}^{F_i}$. Embed each piece with all other exclusive
+blocks zero and put $H=\bigcup_i A_i$.
+If all pieces except possibly $A_j$ belong to $\mathsf{MaxMin}$ and
+$A_j$ has a supplied ordinary representation, then $H$ is ample and
+has an ordinary representation preserving every supplied out-set of
+$A_j$.
+
+If all pieces belong to $\mathsf{MaxMin}$, every ordinary USO on the
+common cube extends to $H$, with inward boundary there. One can keep
+the same exterior and boundary for all choices of this cube USO.
+\end{theorem}
+
+\begin{proof}
+Any support meeting two exclusive blocks is unshattered, because its
+pattern positive in both blocks is absent. On $S\sqcup F_i$ the other
+pieces add only patterns already realized by the common cube in $A_i$.
+Consequently
+\[
+ \operatorname{Sh}(H)=\bigcup_i\operatorname{Sh}(A_i),\qquad
+ \operatorname{Sh}(A_i)\cap\operatorname{Sh}(A_k)=2^S\quad(i\ne k).
+\]
+The pieces intersect pairwise in precisely $Q_S$, so
+$|H|=\sum_i|A_i|-(m-1)2^{|S|}=|\operatorname{Sh}(H)|$.
+The Sandwich equality proves ampleness.
+
+Restrict the supplied orientation of $A_j$ to the common cube, obtaining
+an ordinary cube USO $q$. For each $i\ne j$,
+Theorem~\ref{thm:maximum-cube-inward} supplies an orientation of $A_i$
+with inward boundary and cube orientation $q$. Orient the union by
+these agreeing edge orientations. Outside the common cube all neighbors
+belong to one piece. At a common-cube word, every outgoing exclusive
+direction comes from $A_j$, so its entire outgoing cube is precisely
+the outgoing cube supplied by that piece. All out-sets on $A_j$ are
+therefore preserved. Every contained cube belongs to a piece: varying
+two exclusive blocks would require a missing word positive in both,
+and a fixed nonzero exclusive coordinate forces the cube into its
+piece. Thus every contained cube has its unique sink in that piece.
+These are the two ordinary-USO conditions.
+
+When all pieces are maximum-generated, apply
+Theorem~\ref{thm:maximum-cube-inward} inwardly to every piece with the
+same prescribed cube orientation. Their fixed exteriors are independent
+of that choice, and the preceding gluing proof applies without any
+outgoing exclusive direction at the common cube. This proves the final
+assertion.
+\end{proof}
+
+For example, if a hypothetical ample forbidden pc-minor of
+$\mathsf{MaxMin}$ has such a decomposition with at least two nontrivial
+pieces, each piece is a proper coordinate-face minor and hence belongs
+to $\mathsf{MaxMin}$. The theorem represents this forbidden class.
+It does not exclude that class from the forbidden basis: ordinary
+representability is weaker than supplying an actual maximum parent.
+For a forbidden dismantlable-ample input, the same conclusion needs
+maximum ancestry of its pieces as an additional hypothesis; positivity
+of a proper minor alone does not provide it.
+
+\paragraph{A cyclic exterior is necessary in general.}
+The cornerless maximum class on twelve coordinates with $299$ words
+contains a three-cube. The constructor in
+\path{../maxmin-forbidden/research/maximum_cube_map_constructor.py} gives the representation
+in Theorem~\ref{thm:maximum-cube-inward} directly from its domain.
+With the monotone cube orientation its exterior is necessarily cyclic:
+a globally acyclic USO of a nonempty ample class has a source, whose
+outgoing cube would make it a corner. An inward boundary prevents a
+cycle from crossing the cube boundary, so with a monotone cube every
+cycle lies outside it. Thus ordinary inward extension is strictly
+more general than relative corner peeling to that cube.
+The solver-free replay checks this map, a $129$-word marked section of
+the same parent, replacement by a cyclic three-cube USO, and $555$- and
+$590$-word common-cube unions. These last unions certify map gluing;
+no forbiddenness or maximum ancestry of those unions is asserted.
+
+\subsection{Noncube coordinate faces and prescribed section maps}
+\label{sec:maximum-noncube-face-inward}
+
+The full-cube hypothesis can be removed when the retained set is an
+intersection with an ambient coordinate face. Two observations suffice.
+First, the CCMW lift can direct every edge in one chosen coordinate
+toward either shore. Second, replacement with inward boundary works for
+an arbitrary coordinate-face intersection, since its intersection with
+any contained cube is still a full face of that cube. The latter is
+also the case $E=T=\varnothing$ of the
+\href{../dismantlable-ample/sections/classification/coupled_face_replacement.tex}
+{face-replacement rule with fixed exceptional out-sets}.
+The additional step is to compose these facts along successive marked
+sections; no compatibility of different supplied parent maps is required.
+
+For $J\subseteq F$ and $\tau\in\{0,1\}^J$, write
+\[
+ H[\tau]=\{v\in H:v|_J=\tau\},
+\]
+retaining all original positions and constants in this subsection.
+A map on $H[\tau]$ has no outgoing direction in $J$. Its boundary in
+$H$ is inward when no edge from $H[\tau]$ to $H\setminus H[\tau]$
+points outwards. The set $H[\tau]$ need not be a full cube.
+
+\begin{theorem}[Prescribed maps on coordinate-face intersections]
+\label{thm:maxmin-coordinate-face-inward}
+Let $H=M[\alpha]$ be a nonempty marked section of a finite maximum
+class $M$, and let $D=H[\tau]$ be a nonempty further coordinate-face
+intersection. Every ordinary USO of $D$ extends to an ordinary USO
+of $H$ with inward boundary at $D$. One fixed exterior, including
+all boundary edges, works for every choice of the USO on $D$.
+
+More strongly, for any chain of nonempty coordinate-face intersections
+\[
+ M=H_0\supseteq H_1\supseteq\cdots\supseteq H_k=D,
+\]
+every prescribed ordinary USO on $D$ extends to one on the same $M$
+with inward boundary at every $H_i$. All out-sets outside $D$ can be
+fixed independently of the prescribed map. In particular every
+ordinary map on an actual marked section extends literally, with its
+supports embedded in the original coordinate set, to its original
+maximum parent. The parent, rank, auxiliaries and marks do not change.
+\end{theorem}
+
+\begin{proof}
+We establish the single-coordinate supply before composing it. Suppose
+$M$ has positive rank and choose any coordinate $e$ and either bit $b$.
+Its reduction $D_e=M^e$ is nonempty and maximum. Give $D_e$ any
+representation, extend it literally to $\pi_eM$, and use
+\eqref{eq:maximum-cube-inward-lift} with sink bit $b$. The proof already
+given covers both consecutive ranks and the full-cube identity case.
+For every two-point fiber, the only outgoing $e$-label is on the
+$(1-b)$-lift. Thus every $e$-edge points toward shore $b$.
+For a rank-zero parent the unique map suffices, and any nonempty marked
+section is that singleton.
+
+Restrict this orientation to any marked section $A=M[\beta]$ in which
+$e$ is not yet fixed. Coordinate-face restriction preserves ordinary
+USOs, as proved above. Therefore it supplies a USO of $A$ with inward
+boundary at $B=A[e=b]$, whenever $B$ is nonempty. This argument uses
+only the actual parent $M$, even though $A$ need not itself be maximum.
+
+We next verify the replacement statement needed for a noncube $B$.
+Let an ample class $A$ have an ordinary USO with inward boundary at
+$B=A[\gamma]\ne\varnothing$. Keep all exterior and boundary edges,
+and replace the induced orientation on $B$ by any ordinary USO of $B$.
+At a vertex of $B$, all outgoing directions remain internal and its
+new outgoing cube is supplied by that USO. All outside outgoing cubes
+are unchanged. A contained cube $L\subseteq A$ meeting $B$ intersects
+it in a full face $L\cap B$ of $L$, even if $B$ is not a cube.
+The old unique sink on that face was the unique sink of $L$, because
+its boundary in $L$ is inward. Every outside word of $L$ still has
+an outgoing edge within $L$ after replacement. The new face has one
+sink, again a sink of $L$. Cubes disjoint from $B$ are unchanged.
+This proves both ordinary-USO conditions with fixed exterior and boundary.
+
+Refine the displayed chain by fixing one additional coordinate at a
+time, retaining any constants and omitting duplicate fixed-coordinate
+instructions. Every intermediate class is a nonempty marked section
+of the same $M$. For each adjacent pair $A\supseteq B$, choose once
+and for all the single-coordinate inward orientation of $A$ just
+constructed. Start with the prescribed map on the final class $D$.
+Working backwards, replace the map on $B$ in the chosen orientation
+of $A$ by the map already obtained there. The replacement statement
+proves validity at every step. At every word of an inner retained
+class, its entire out-set stays the same when the next outer layer
+is attached: the boundary contributes no outgoing direction there.
+Hence all inward boundaries already obtained persist. All out-sets outside the final $D$ come from
+the initially chosen layer exteriors, so do not depend on its map.
+This proves the chain assertion and, by including $H$ in the chain,
+the first assertion as well.
+\end{proof}
+
+\begin{corollary}[Ordinary gluing over a noncube coordinate face]
+\label{cor:maxmin-noncube-face-gluing}
+Let $S,F_1,\ldots,F_m$ be pairwise disjoint, and let nonempty ample
+$A_i\subseteq\{0,1\}^{S\sqcup F_i}$ have the same nonempty section
+$D=A_i\cap(\{0,1\}^S\times\{0\}^{F_i})$. Embed the pieces with
+other exclusive blocks zero. Suppose $H=\bigcup_iA_i$ is ample.
+If all but at most one piece are maximum-generated and the remaining
+piece supplies any ordinary representation, then $H$ is represented,
+preserving all out-sets of that piece. If all pieces are maximum-generated,
+every ordinary USO on $D$ extends with inward boundary at $D$ and
+with one fixed exterior. The intersection $D$ need not be a full cube.
+\end{corollary}
+\begin{proof}
+The induced map of the exceptional piece on $D$ is an ordinary USO,
+since $D$ is its coordinate-face intersection. Apply
+Theorem~\ref{thm:maxmin-coordinate-face-inward} to choose each other
+piece map inward at $D$ with this induced map. All orientations agree
+on $D$, and at any word there outgoing exclusive directions belong
+to at most the exceptional piece. Its outgoing cube supplies the
+whole outgoing cube in the union. Outside $D$, all neighbors lie in
+one piece, and every contained cube of $H$ belongs to a piece, by
+the same exclusive-block argument as in
+Theorem~\ref{thm:maxmin-common-cube-map-selection}. Thus the union
+is an ordinary USO, with all exceptional out-sets fixed.
+With no exception, apply the theorem to every piece and the same
+arbitrary prescribed map on $D$. Fixed piece exteriors give a fixed
+union exterior. Ampleness is a hypothesis here: for a noncube $D$
+the common-shadow equality need not hold automatically.
+\end{proof}
+
+\begin{corollary}[Binary extentures and forbidden representations]
+\label{cor:maxmin-binary-forbidden-representation}
+Every hypothetical ample forbidden pc-minor of $\mathsf{MaxMin}$
+that has a binary extenture is ordinarily representable. Consequently
+any unrepresented ample forbidden MaxMin input shatters every pair of
+its active coordinates.
+An ample forbidden pc-minor of the dismantlable-ample class with a
+binary extenture is likewise represented if at least one of the two
+coordinate-face pieces of that cut is maximum-generated.
+\end{corollary}
+\begin{proof}
+For a binary extenture $\{x_i=b,x_j=c\}$, put
+$A=H[x_j=1-c]$ and $B=H[x_i=1-b]$. Then $H=A\cup B$ and
+$D=A\cap B=H[x_i=1-b,x_j=1-c]$ is nonempty. Indeed the missing
+pattern is minimal, so the projections realize the two patterns adjacent to the
+missing pattern; a shortest path in the ample class between such
+words must pass through the intersection, since the fourth pattern
+is absent. Both pieces are proper coordinate-face minors.
+They use the common block of all coordinates except $i,j$, with
+one exclusive coordinate each, after translating the retained bits
+to zero. The preceding corollary applies. For a forbidden MaxMin
+input both pieces are MaxMin. For a forbidden dismantlable-ample
+input both pieces are dismantlable and hence represented; the extra
+hypothesis makes one piece an inward supplier.
+\end{proof}
+
+The replay extends prescribed acyclic and cyclic maps on the noncube
+$129$-word section of the same $299$-word maximum parent. It also
+retains an inward chain through a $66$-word noncube face, with identical
+exteriors for the two target maps. A $195$-word amalgam over that face
+preserves every out-set of its prescribed prism piece. Original parent
+constants are retained. This does not give maximum ancestry of the
+amalgam or maximum ancestry of arbitrary positive dismantlable pieces.
+Simultaneous prescription on intersecting, nonnested faces is also
+outside the theorem's chain assertion.

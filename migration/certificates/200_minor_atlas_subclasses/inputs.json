@@ -1,0 +1,155 @@
+{
+  "cube_chordal_three_direction_path": {
+    "dimension": 3,
+    "words": [
+      0,
+      1,
+      3,
+      7
+    ],
+    "expected": {
+      "ample": true,
+      "cube_chordal": true,
+      "daisy": false,
+      "median": true,
+      "corner_peelable": true
+    }
+  },
+  "non_cube_chordal_dismantlable_ten_words": {
+    "dimension": 4,
+    "words": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "expected": {
+      "ample": true,
+      "cube_chordal": false,
+      "corner_peelable": true
+    }
+  },
+  "cube_chordal_projection_counterexample": {
+    "dimension": 5,
+    "words": [
+      0,
+      1,
+      2,
+      3,
+      6,
+      7,
+      8,
+      9,
+      16,
+      17,
+      18,
+      19,
+      21,
+      23,
+      24,
+      26
+    ],
+    "expected": {
+      "ample": true,
+      "cube_chordal": true,
+      "corner_peelable": true
+    }
+  },
+  "cube_chordal_path_square": {
+    "dimension": 6,
+    "words": [
+      0,
+      8,
+      24,
+      56,
+      1,
+      9,
+      25,
+      57,
+      3,
+      11,
+      27,
+      59,
+      7,
+      15,
+      31,
+      63
+    ],
+    "expected": {
+      "ample": true,
+      "cube_chordal": false,
+      "median": true,
+      "corner_peelable": true
+    }
+  },
+  "acc_non_cube_chordal_five_squares": {
+    "dimension": 6,
+    "words": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      10,
+      11,
+      16,
+      18,
+      33,
+      35
+    ],
+    "expected": {
+      "ample": true,
+      "cube_chordal": false,
+      "median": true,
+      "maximal_cube_join_tree": true,
+      "corner_peelable": true
+    }
+  },
+  "vertex_deleted_three_cube": {
+    "dimension": 3,
+    "words": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "expected": {
+      "ample": true,
+      "daisy": true,
+      "cube_chordal": true,
+      "maximal_cube_join_tree": false,
+      "corner_peelable": true
+    }
+  },
+  "median_three_by_three_grid": {
+    "dimension": 4,
+    "words": [
+      0,
+      1,
+      3,
+      4,
+      5,
+      7,
+      12,
+      13,
+      15
+    ],
+    "expected": {
+      "ample": true,
+      "median": true,
+      "cube_chordal": true,
+      "maximal_cube_join_tree": false,
+      "corner_peelable": true
+    }
+  }
+}

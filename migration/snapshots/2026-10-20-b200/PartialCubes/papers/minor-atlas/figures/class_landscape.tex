@@ -1,0 +1,92 @@
+\begin{figure}[p]
+\centering
+\resizebox{.96\textwidth}{!}{%
+\begin{tikzpicture}[>=Stealth,
+ box/.style={draw,rounded corners,align=center,minimum height=.85cm,
+             minimum width=1.9cm,font=\small,inner sep=4pt},
+ incl/.style={->,draw=black!60,thin},
+ strict/.style={->,draw=blue!65!black,line width=1.2pt},
+ open/.style={->,draw=black!55,thin,dashed},
+ nonincl/.style={->,draw=red!75!black,thick}]
+\node[box,fill=blue!8] (amp) at (5,12.7) {$\Amp$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (frac) at (5,11.1) {$\Frac$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (part) at (5,9.5) {$\Rep$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=orange!8] (ext) at (8,8) {$\mathsf{Ext}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!5] (codamp) at (-1.5,9.5) {$\mathsf{coDamp}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!8] (damp) at (2.5,6.5) {$\Damp$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!8] (uk) at (3.2,8) {$\mathsf U_k$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!8] (pk) at (1,11.1) {$\mathsf P_k$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=orange!10] (mm) at (8,6.5) {$\MaxMin$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=orange!5] (pd) at (5.5,4.8) {$\mathcal P_D$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!5] (d2) at (0,4.8) {$\mathcal D_2$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!5] (d1) at (0,3.3) {$\mathcal D_1$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!5] (both) at (3,3.3) {$\mathcal B$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (rp) at (1.5,1.8) {$\Rper$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (real) at (5.5,1.8) {$\RAmp$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=orange!5] (m2) at (10,4.8) {$\mathcal M_2$\\[-2pt]{\scriptsize\textsf{p+, c-}}};
+\node[box,fill=orange!5] (m1) at (10,3.3) {$\mathcal M_1$\\[-2pt]{\scriptsize\textsf{p+, c-}}};
+\node[box] (max) at (10,1.8) {$\Max=\mathcal M_0$\\[-2pt]{\scriptsize\textsf{p+, c-}}};
+\node[box] (med) at (2.8,-.2) {Median\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (daisy) at (0,-.2) {Daisy\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box,fill=green!8] (camp) at (-3,3.3) {$\mathsf{CAmp}$\\[-2pt]{\scriptsize\textsf{p-, c+}}};
+\node[box,fill=green!5] (bouq) at (-3,.7) {Signed bouquets\\$\mathsf{Bouq}^{\pm}$\quad{\scriptsize\textsf{pc+}}};
+\node[box] (ideals) at (6,-.2) {Convex-geometry ideals\\$\mathsf{Icg}$\quad{\scriptsize\textsf{pc+}}};
+\node[box] (learn) at (10,-.2) {Learning spaces\\[-2pt]{\scriptsize\textsf{p+, c-}}};
+\node[box] (acc) at (2.8,-1.8) {ACC\\[-2pt]{\scriptsize\textsf{pc+}}};
+\foreach \a/\b in {part/frac,frac/amp,mm/ext,ext/part,damp/uk,uk/part,uk/pk,pk/amp,pd/damp}
+ \draw[incl] (\a)--(\b);
+\foreach \a/\b in {rp/d1,rp/both,d1/d2,d2/damp,both/damp,real/pd,pd/mm,
+ max/m1,m1/m2,m2/mm,both/codamp,med/rp,med/real,daisy/rp,
+ daisy/real,learn/ideals,ideals/real,real/both,ideals/rp,acc/med}
+ \draw[strict] (\a)--(\b);
+\draw[strict] (codamp.north) -- (-1.5,12.7) -- (amp.west);
+\draw[strict] (both.east) -- (6.8,3.3) -- (6.8,8) -- (ext.west);
+\draw[strict] (daisy.west) -- (-1.15,-.2) -- (-1.15,3.3) -- (camp.east);
+\draw[strict] (camp.north) -- (-3,6.5) -- (damp.west);
+\draw[incl] (camp.north east) -- (-1.8,4.05) -- (3,4.05) -- (both.north);
+\draw[strict] (ideals.south) -- (6,-1.05) -- (-3,-1.05) -- (bouq.south);
+\draw[incl] (bouq.east) -- (-1.4,.7) -- (-1.4,2.55) -- (3,2.55) -- (both.south);
+\draw[open] (codamp)--node[above,font=\small,fill=white,inner sep=1pt] {open} (part);
+\draw[open] (damp)--node[above,font=\small] {open} (mm);
+\draw[open] (d1)--node[above,font=\small] {open} (both);
+\draw[nonincl] (codamp.south east) to[bend left=12]
+ node[midway,above,sloped,font=\small,fill=white,inner sep=1pt] {$\not\subseteq$} (damp.north west);
+\draw[nonincl] (damp.west) to[bend left=20]
+ node[midway,below,sloped,font=\small,fill=white,inner sep=1pt] {$\not\subseteq$} (codamp.south);
+\draw[nonincl] (mm.south west) .. controls +(-.8,-.7) and +(.8,-.7) ..
+ node[midway,below,font=\small,fill=white,inner sep=1pt] {$\not\subseteq$ (Hall)} (damp.south east);
+\draw[nonincl] (both.north west) .. controls +(-.4,.55) and +(.4,.55) ..
+ node[midway,above,font=\small,fill=white,inner sep=1pt] {$\not\subseteq$} (d1.north east);
+\draw[strict] (-2.6,-3)--(-1.9,-3);
+\node[anchor=west,font=\scriptsize] at (-1.8,-3) {strict $\subsetneq$};
+\draw[incl] (.4,-3)--(1.1,-3);
+\node[anchor=west,font=\scriptsize] at (1.2,-3) {inclusion $\subseteq$};
+\draw[open] (3.6,-3)--(4.3,-3);
+\node[anchor=west,font=\scriptsize] at (4.4,-3) {open $\subseteq\,?$};
+\draw[nonincl] (7.1,-3)--(7.8,-3);
+\node[anchor=west,font=\scriptsize] at (7.9,-3) {$\not\subseteq$};
+\node[font=\scriptsize,align=center] at (3.8,-3.8)
+ {\textsf{pc+}: projection- and conditioning-closed;\quad
+  \textsf{p+, c-}: projection-closed, not conditioning-closed;\\
+  \textsf{p-, c+}: conditioning-closed, not projection-closed.};
+\end{tikzpicture}}
+\caption{Selected structural subclasses of ample classes. Solid arrows are
+proved inclusions; thick arrows assert strictness, and dashed arrows mark
+open inclusions. Red labelled arrows assert noncontainment, not disjointness:
+all nodes contain a one-vertex class. An omitted arrow asserts nothing.
+Closure badges refer to nonempty minors; for $\mathcal M_k$ the original
+ambient coordinates, including constants, are retained.
+Here $\mathcal P_D$ means sections of dismantlable maximum parents.
+The width families ($k\ge1$) satisfy $\mathsf U_1=\mathsf P_1=\Damp$,
+$\bigcup_k\mathsf U_k=\Rep$, $\bigcup_k\mathsf P_k=\Amp$, and
+$\mathsf U_k\subseteq\mathsf P_k$.
+Allocation and whole-witness refinements appear separately in
+\cref{fig:allocation-refinements}. The signed-bouquet arrow into
+$\mathcal B$ uses the recent author-proved complementary completion;
+\cref{sec:signed-bouquets} records its source and review scope.
+The additional $\mathsf{CAmp}\subseteq\mathcal B$ arrow is the
+complementary completion theorem in
+\cref{prop:atlas-cube-chordal-complement}; it does not settle
+$\mathsf{CAmp}\subseteq\MaxMin$.}
+\label{fig:classes}
+\end{figure}

@@ -1,0 +1,14 @@
+{
+  "id": 719,
+  "short_name": "cube_chordal_exact_product_criterion",
+  "name": "Exact Product Criterion for Cube-Chordal Ample Classes",
+  "result_type": "implication",
+  "status": "established",
+  "class_ids": [
+    "#classes/cube_chordal_ample",
+    "#classes/daisy_cubes"
+  ],
+  "statement": "For nonempty ample H,K on disjoint coordinates, H times K is cube-chordal iff both factors are cube-chordal and at least one is a daisy cube.",
+  "proof": "The maximal-cube graph of a product is the strong product of the factor graphs. Both connected factors must be chordal; if neither is complete, induced three-vertex paths supply an induced four-cycle in the strong product. A complete factor instead replaces each vertex by a clique and preserves chordality. A complete maximal-cube graph is equivalent to a daisy orientation.",
+  "proof_source": "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:cube-chordal-product"
+}

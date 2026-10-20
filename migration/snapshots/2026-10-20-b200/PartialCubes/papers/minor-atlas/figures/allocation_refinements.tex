@@ -1,0 +1,58 @@
+\begin{figure}[p]
+\centering
+{\small (a) Complementary feasibility, coupling and filtered positivity}
+\par\medskip
+\resizebox{.87\textwidth}{!}{%
+\begin{tikzpicture}[>=Stealth,
+ box/.style={draw,rounded corners,align=center,minimum width=2cm,
+             minimum height=.85cm,font=\small,inner sep=4pt},
+ incl/.style={->,draw=black!65,thin}]
+\node[box] (amp) at (6,9) {$\Amp=\mathsf{Pos}_2$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (pos) at (6,7.5) {$\mathsf{Pos}_3$\\[-2pt]{\scriptsize\textsf{p+, c?}}};
+\node[box] (frac) at (6,6) {$\Frac$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (bf) at (2.3,4.5) {$\mathsf{BFrac}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (e1) at (9.8,4.5) {$\mathsf E_1$\\[-2pt]{\scriptsize\textsf{p?, c?}}};
+\node[box] (e2) at (9.8,3) {$\mathsf E_2$\\[-2pt]{\scriptsize\textsf{p?, c?}}};
+\node[box] (half) at (13.2,3) {$\mathsf{HalfFrac}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (rep) at (9.8,1.5) {$\Rep$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (mixed) at (6,0) {$\mathsf M$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (ext) at (2.3,-1.5) {$\mathsf{Ext}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (mm) at (6,-3) {$\MaxMin$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\foreach \a/\b in {mm/ext,ext/mixed,mixed/rep,mixed/bf,bf/frac,
+ rep/e2,e2/e1,e1/frac,rep/half,frac/pos,pos/amp}
+ \draw[incl] (\a)--(\b);
+\draw[incl] (half.north) -- (13.2,6) -- (frac.east);
+\node[font=\small] at (5.9,3.1) {$\mathsf M=\Rep\cap\mathsf{BFrac}$};
+\end{tikzpicture}}
+\par\medskip
+{\small (b) Whole-witness refinements}
+\par\medskip
+\resizebox{.89\textwidth}{!}{%
+\begin{tikzpicture}[>=Stealth,
+ box/.style={draw,rounded corners,align=center,minimum width=2cm,
+             minimum height=.85cm,font=\small,inner sep=4pt},
+ incl/.style={->,draw=black!65,thin}]
+\node[box] (mm) at (0,0) {$\MaxMin$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (camp) at (0,-1.5) {$\mathsf{CAmp}$\\[-2pt]{\scriptsize\textsf{p-, c+}}};
+\node[box] (inw) at (3.5,0) {Cube-inward\\$\mathsf{Inw}$\quad{\scriptsize\textsf{pc+}}};
+\node[box] (lat) at (7,0) {Full witness lattice\\$\mathsf{Lat}$\quad{\scriptsize\textsf{pc+}}};
+\node[box] (rep) at (10.5,0) {$\Rep$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\node[box] (ext) at (7,-1.5) {$\mathsf{Ext}$\\[-2pt]{\scriptsize\textsf{pc+}}};
+\foreach \a/\b in {mm/inw,camp/inw,inw/lat,lat/rep,camp/ext,ext/rep}
+ \draw[incl] (\a)--(\b);
+\end{tikzpicture}}
+\caption{Refinements omitted from the structural overview.
+Every arrow is a proved inclusion; no strictness is asserted.
+The original adjacent comparisons and the added adjacent comparisons
+remain undecided here. The symbol \textsf{?} means closure is not
+established in this audit, not a proved failure or an assertion of
+literature-wide openness. The classes in panel~(b) are defined in
+\cref{def:atlas-witness-properties}; their inclusions and closure,
+and the additional closure badges in panel~(a), are justified in
+\cref{prop:atlas-witness-refinements,prop:atlas-refinement-minor-closure}.
+No comparison of $\mathsf{Inw}$ or $\mathsf{Lat}$ with $\mathsf{Ext}$,
+or of $\mathsf{HalfFrac}$ with $\mathsf E_k$, is asserted.
+The $\mathsf{CAmp}\subseteq\mathsf{Ext}$ arrow follows from
+\cref{prop:atlas-cube-chordal-complement}.}
+\label{fig:allocation-refinements}
+\end{figure}

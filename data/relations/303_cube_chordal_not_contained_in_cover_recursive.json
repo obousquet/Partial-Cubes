@@ -1,0 +1,14 @@
+{
+  "id": 303,
+  "short_name": "cube_chordal_not_contained_in_cover_recursive",
+  "name": "Cube-Chordal Ample Classes Are Not Contained in Convex-Treelike Partial Cubes",
+  "subject_id": "#classes/cube_chordal_ample",
+  "object_id": "#classes/cover_recursive_peripheral",
+  "relation_type": "noncontainment",
+  "status": "established",
+  "scope": "Finite nonempty ample classes under the signed-coordinate and full ambient complement conventions; hierarchy parameters are held fixed.",
+  "statement": "Every member of Cube-Chordal Ample Classes belongs to Convex-Treelike Partial Cubes.",
+  "proof_source": "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#sec:cube-chordal",
+  "proof": "For m >= 4, put A_i={(i-1,i),(i+1,i)}, B_i={(i,i-1),(i,i+1)} and H_m=union_i 2^{A_i union A_{i+1}} union {A_i union B_i:i in Z_m}. This ample forbidden peripheral minor has a clique of core cubes and pairwise-disjoint simplicial leaf cubes, hence a chordal m-sun intersection graph.",
+  "comments": "The complete arbitrary-m proof is preserved from the peripheral companion, thm:rper-chordal-sun-obstructions; the atlas section explicitly imports this family."
+}

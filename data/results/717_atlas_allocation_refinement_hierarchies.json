@@ -1,0 +1,22 @@
+{
+  "id": 717,
+  "short_name": "atlas_allocation_refinement_hierarchies",
+  "name": "Allocation Refinement Hierarchies and Exact Endpoints",
+  "result_type": "implication",
+  "status": "established",
+  "class_ids": [
+    "#classes/mixed_complement_feasible_ample",
+    "#classes/both_fractionally_representable_ample",
+    "#classes/representation_map_ample",
+    "#classes/rooted_face_consistent_ample",
+    "#classes/rooted_edge_consistent_ample",
+    "#classes/rooted_square_consistent_ample",
+    "#classes/fractionally_representable_ample",
+    "#classes/filtered_positive_ample",
+    "#classes/cubic_positive_ample",
+    "#classes/half_integrally_representable_ample"
+  ],
+  "statement": "$\\mathsf M=\\mathsf{Rep}\\cap\\mathsf{BFrac}$. For k >= 0, $\\mathsf{Rep}\\subseteq\\mathsf E_{k+1}\\subseteq\\mathsf E_k\\subseteq\\mathsf{Frac}$, $\\mathsf E_0=\\mathsf{Frac}$, and $\\bigcap_k\\mathsf E_k=\\mathsf{Rep}$. Also $\\mathsf{Frac}\\subseteq\\mathsf{Pos}_{k+1}\\subseteq\\mathsf{Pos}_k\\subseteq\\mathsf{Amp}$, $\\bigcap_k\\mathsf{Pos}_k=\\mathsf{Frac}$ and the inherited author theorem gives $\\mathsf{Pos}_2=\\mathsf{Amp}$. If every actual cube has dimension at most k, E_k = Rep and Pos_k = Frac on those inputs.",
+  "proof": "The sample constraints and coefficient sign constraints strengthen with k. Once k reaches the finite largest cube dimension, all sample cube budgets are integral ordinary witnesses and all coefficients are constrained nonnegative, respectively. The level-zero coupling and level-two positivity endpoints are imported author results; no new independent review of those imported proofs is claimed.",
+  "proof_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-mixed-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-coupling-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-positivity-chain"
+}

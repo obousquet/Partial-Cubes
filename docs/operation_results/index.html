@@ -1055,8 +1055,8 @@
 <p><strong>Result Type:</strong> Closed Under</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate projection of a finite conditional-antimatroid graph class is again a conditional-antimatroid graph class.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Projection preserves ampleness and cannot increase Horn-renaming defect, because it retains exactly the minimal missing patterns supported on the surviving coordinates. Thus a projection of an ample class with $H=0$ is again ample with $H=0$.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="classes/bipartite_graphs.html">Bipartite Graphs</a>-general-operation-laws</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Choose a signed orientation that is intersection-closed. Projection commutes with intersection, and a nonempty coordinate section is intersection-closed. Both operations preserve ampleness. If the original root is lost, normalize the total intersection of the image family; newly constant coordinates cause no obstruction. Iterate for pc-minors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex?#prop:atlas-bouquet-characterization</p></div>
 
         </div>
     </div>
@@ -1071,8 +1071,8 @@
 <p><strong>Result Type:</strong> Closed Under</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>Every nonempty coordinate conditioning of a finite conditional-antimatroid graph class is again a conditional-antimatroid graph class.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Conditioning preserves ampleness. Each minimal missing pattern of the section injects into a minimal missing pattern of the original class with no smaller pair cost, so $H$ cannot increase. The zero characterization completes the proof.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="classes/bipartite_graphs.html">Bipartite Graphs</a>-general-operation-laws</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Choose a signed orientation that is intersection-closed. Projection commutes with intersection, and a nonempty coordinate section is intersection-closed. Both operations preserve ampleness. If the original root is lost, normalize the total intersection of the image family; newly constant coordinates cause no obstruction. Iterate for pc-minors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex?#prop:atlas-bouquet-characterization</p></div>
 
         </div>
     </div>
@@ -1087,8 +1087,8 @@
 <p><strong>Result Type:</strong> Closed Under</p>
 <p><strong>Status:</strong> Established</p>
 <strong>Statement:</strong><div class="text-field"><p>Every nonempty pc-minor of a finite conditional-antimatroid partial cube is again a conditional-antimatroid graph class.</p></div>
-<strong>Proof:</strong><div class="text-field"><p>Both elementary pc-minor operations preserve ampleness and do not increase Horn-renaming defect. Iterating them preserves the condition $H=0$.</p></div>
-<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md<a href="classes/bipartite_graphs.html">Bipartite Graphs</a>-general-operation-laws</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Choose a signed orientation that is intersection-closed. Projection commutes with intersection, and a nonempty coordinate section is intersection-closed. Both operations preserve ampleness. If the original root is lost, normalize the total intersection of the image family; newly constant coordinates cause no obstruction. Iterate for pc-minors.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex?#prop:atlas-bouquet-characterization</p></div>
 
         </div>
     </div>
@@ -5009,6 +5009,472 @@
 <strong>Proof:</strong><div class="text-field"><p>Lift a peeling of $H$ while retaining the $D$-row: an old corner with a mate deletes one constant-row word, while a corner without a mate deletes its $10$ lift and then its constant lift. This leaves the $D$-row. Conversely reduction in the first new coordinate maps any such relative chain to a peeling of $H$. Appending a peeling of $D$ proves sufficiency, while the $D$ face and the $H$ reduction prove necessity.</p></div>
 <strong>References:</strong><div class="text-field"><p><a href="bibliography.html#BousquetYangComplex26">[BousquetYangComplex26]</a></p></div>
 <strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/dismantlable-ample/sections/dismantlable_ample_classification.tex?#thm:damp-one-row-enlargement</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-299" style="position:relative;">
+
+        <h3><a href="operation_results/both_fractionally_representable_ample_projection_closure.html" class="table-title-link">Both Fractionally Representable Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Both Fractionally Representable Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/both_fractionally_representable_ample.html">Both-Shores Fractionally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-300" style="position:relative;">
+
+        <h3><a href="operation_results/both_fractionally_representable_ample_conditioning_closure.html" class="table-title-link">Both Fractionally Representable Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Both Fractionally Representable Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/both_fractionally_representable_ample.html">Both-Shores Fractionally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-301" style="position:relative;">
+
+        <h3><a href="operation_results/both_fractionally_representable_ample_pc_minor_closure.html" class="table-title-link">Both Fractionally Representable Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Both Fractionally Representable Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/both_fractionally_representable_ample.html">Both-Shores Fractionally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-302" style="position:relative;">
+
+        <h3><a href="operation_results/mixed_complement_feasible_ample_projection_closure.html" class="table-title-link">Mixed Complement Feasible Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Mixed Complement Feasible Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/mixed_complement_feasible_ample.html">Ordinary-Primal Fractional-Complement Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-303" style="position:relative;">
+
+        <h3><a href="operation_results/mixed_complement_feasible_ample_conditioning_closure.html" class="table-title-link">Mixed Complement Feasible Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Mixed Complement Feasible Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/mixed_complement_feasible_ample.html">Ordinary-Primal Fractional-Complement Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-304" style="position:relative;">
+
+        <h3><a href="operation_results/mixed_complement_feasible_ample_pc_minor_closure.html" class="table-title-link">Mixed Complement Feasible Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Mixed Complement Feasible Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/mixed_complement_feasible_ample.html">Ordinary-Primal Fractional-Complement Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-305" style="position:relative;">
+
+        <h3><a href="operation_results/half_integrally_representable_ample_projection_closure.html" class="table-title-link">Half Integrally Representable Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Half Integrally Representable Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/half_integrally_representable_ample.html">Half-Integrally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-306" style="position:relative;">
+
+        <h3><a href="operation_results/half_integrally_representable_ample_conditioning_closure.html" class="table-title-link">Half Integrally Representable Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Half Integrally Representable Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/half_integrally_representable_ample.html">Half-Integrally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-307" style="position:relative;">
+
+        <h3><a href="operation_results/half_integrally_representable_ample_pc_minor_closure.html" class="table-title-link">Half Integrally Representable Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Half Integrally Representable Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/half_integrally_representable_ample.html">Half-Integrally Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>The nonnegative integral native minor maps preserve fractional feasibility and the half-integer grid. Ordinary maps descend where required. Complementation commutes with conditioning, and the complement of a projection is the full reduction of the complement.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-308" style="position:relative;">
+
+        <h3><a href="operation_results/cube_inward_representable_ample_projection_closure.html" class="table-title-link">Cube Inward Representable Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Inward Representable Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_inward_representable_ample.html">Cube-Inward Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts an inward map. Every projected cube has a horizontal cube lift in the ample input; the ordinary projection chooses edge sinks and retains inwardness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-309" style="position:relative;">
+
+        <h3><a href="operation_results/cube_inward_representable_ample_conditioning_closure.html" class="table-title-link">Cube Inward Representable Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Inward Representable Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_inward_representable_ample.html">Cube-Inward Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts an inward map. Every projected cube has a horizontal cube lift in the ample input; the ordinary projection chooses edge sinks and retains inwardness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-310" style="position:relative;">
+
+        <h3><a href="operation_results/cube_inward_representable_ample_pc_minor_closure.html" class="table-title-link">Cube Inward Representable Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Inward Representable Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_inward_representable_ample.html">Cube-Inward Representable Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts an inward map. Every projected cube has a horizontal cube lift in the ample input; the ordinary projection chooses edge sinks and retains inwardness.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-311" style="position:relative;">
+
+        <h3><a href="operation_results/full_witness_lattice_ample_projection_closure.html" class="table-title-link">Full Witness Lattice Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full Witness Lattice Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/full_witness_lattice_ample.html">Full Witness-Lattice Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Native signed minor maps are integral surjections on homogeneous lattices and send each complete ordinary witness to a complete target witness. Thus integer generation descends.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-312" style="position:relative;">
+
+        <h3><a href="operation_results/full_witness_lattice_ample_conditioning_closure.html" class="table-title-link">Full Witness Lattice Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full Witness Lattice Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/full_witness_lattice_ample.html">Full Witness-Lattice Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Native signed minor maps are integral surjections on homogeneous lattices and send each complete ordinary witness to a complete target witness. Thus integer generation descends.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-313" style="position:relative;">
+
+        <h3><a href="operation_results/full_witness_lattice_ample_pc_minor_closure.html" class="table-title-link">Full Witness Lattice Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Full Witness Lattice Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/full_witness_lattice_ample.html">Full Witness-Lattice Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Native signed minor maps are integral surjections on homogeneous lattices and send each complete ordinary witness to a complete target witness. Thus integer generation descends.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-witness-refinements</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-314" style="position:relative;">
+
+        <h3><a href="operation_results/filtered_positive_ample_projection_closure.html" class="table-title-link">Filtered Positive Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Filtered Positive Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/filtered_positive_ample.html">Dimension-Filtered Positive Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projected signed coefficients are sums of the two horizontal source coefficients with the same support. This preserves nonnegativity on supports of size at most k and satisfies every projected cube equation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-315" style="position:relative;">
+
+        <h3><a href="operation_results/cubic_positive_ample_projection_closure.html" class="table-title-link">Cubic Positive Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cubic Positive Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/cubic_positive_ample.html">Third-Layer Positive Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projected signed coefficients are sums of the two horizontal source coefficients with the same support. This preserves nonnegativity on supports of size at most k and satisfies every projected cube equation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:atlas-refinement-minor-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-316" style="position:relative;">
+
+        <h3><a href="operation_results/cube_chordal_ample_projection_closure.html" class="table-title-link">Cube Chordal Ample Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Chordal Ample Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_chordal_ample.html">Cube-Chordal Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Membership fails under some projection.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cube_chordal_projection_counterexample.html">Sixteen-Word Cube-Chordal Projection Counterexample</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>For a face, retain maximal nonempty traces of old maximal cubes. Cube Helly makes their intersection graph induced and therefore chordal. The explicit sixteen-word V projects to the ten-word nonchordal D, proving failure of p and pc closure; see ex:cube-chordal-projection.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:cube-chordal-closures</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-317" style="position:relative;">
+
+        <h3><a href="operation_results/cube_chordal_ample_conditioning_closure.html" class="table-title-link">Cube Chordal Ample Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Chordal Ample Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_chordal_ample.html">Cube-Chordal Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>For a face, retain maximal nonempty traces of old maximal cubes. Cube Helly makes their intersection graph induced and therefore chordal. The explicit sixteen-word V projects to the ten-word nonchordal D, proving failure of p and pc closure; see ex:cube-chordal-projection.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:cube-chordal-closures</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-318" style="position:relative;">
+
+        <h3><a href="operation_results/cube_chordal_ample_pc_minor_closure.html" class="table-title-link">Cube Chordal Ample Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Cube Chordal Ample Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/cube_chordal_ample.html">Cube-Chordal Ample Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Not Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Membership fails under some pc minor.</p></div>
+<p><strong>Witnesses:</strong><ul class='fields-list'><li><a href="examples/cube_chordal_projection_counterexample.html">Sixteen-Word Cube-Chordal Projection Counterexample</a></li></ul></p>
+<strong>Proof:</strong><div class="text-field"><p>For a face, retain maximal nonempty traces of old maximal cubes. Cube Helly makes their intersection graph induced and therefore chordal. The explicit sixteen-word V projects to the ten-word nonchordal D, proving failure of p and pc closure; see ex:cube-chordal-projection.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:cube-chordal-closures</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-319" style="position:relative;">
+
+        <h3><a href="operation_results/representation_scc_width_k_projection_closure.html" class="table-title-link">Representation Scc Width K Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation Scc Width K Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/representation_scc_width_k.html">Representation SCC-Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts the representation orientation. Under projection, sink-selected lifts inject each target SCC into one source SCC via lifted directed paths, so its size cannot increase.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:width-minor-closed</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-320" style="position:relative;">
+
+        <h3><a href="operation_results/representation_scc_width_k_conditioning_closure.html" class="table-title-link">Representation Scc Width K Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation Scc Width K Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/representation_scc_width_k.html">Representation SCC-Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts the representation orientation. Under projection, sink-selected lifts inject each target SCC into one source SCC via lifted directed paths, so its size cannot increase.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:width-minor-closed</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-321" style="position:relative;">
+
+        <h3><a href="operation_results/representation_scc_width_k_pc_minor_closure.html" class="table-title-link">Representation Scc Width K Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Representation Scc Width K Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/representation_scc_width_k.html">Representation SCC-Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Conditioning restricts the representation orientation. Under projection, sink-selected lifts inject each target SCC into one source SCC via lifted directed paths, so its size cannot increase.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:width-minor-closed</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-322" style="position:relative;">
+
+        <h3><a href="operation_results/ample_chunk_width_k_projection_closure.html" class="table-title-link">Ample Chunk Width K Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Chunk Width K Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/ample_chunk_width_k.html">Ample Chunk-Peeling Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Intersect the nested ample sequence with a face or project every stage. Ampleness is preserved; each nonempty change removes no more images than the original chunk size. Omit unchanged stages.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#sec:uso-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-323" style="position:relative;">
+
+        <h3><a href="operation_results/ample_chunk_width_k_conditioning_closure.html" class="table-title-link">Ample Chunk Width K Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Chunk Width K Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/ample_chunk_width_k.html">Ample Chunk-Peeling Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Intersect the nested ample sequence with a face or project every stage. Ampleness is preserved; each nonempty change removes no more images than the original chunk size. Omit unchanged stages.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#sec:uso-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-324" style="position:relative;">
+
+        <h3><a href="operation_results/ample_chunk_width_k_pc_minor_closure.html" class="table-title-link">Ample Chunk Width K Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Ample Chunk Width K Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/ample_chunk_width_k.html">Ample Chunk-Peeling Width Classes</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Intersect the nested ample sequence with a face or project every stage. Ampleness is preserved; each nonempty change removes no more images than the original chunk size. Omit unchanged stages.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#sec:uso-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-325" style="position:relative;">
+
+        <h3><a href="operation_results/acc_graphs_projection_closure.html" class="table-title-link">Acc Graphs Projection Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acc Graphs Projection Closure</p>
+<p><strong>Class: </strong><a href="classes/acc_graphs.html">ACC Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/projection.html">Coordinate Projection</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty projection preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projection retains an induced chordal split-incompatibility graph. Conditioning retains an induced subgraph of the cubical thickening. Medianity is preserved, so the ACC characterizations apply in both cases.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:atlas-acc-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-326" style="position:relative;">
+
+        <h3><a href="operation_results/acc_graphs_conditioning_closure.html" class="table-title-link">Acc Graphs Conditioning Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acc Graphs Conditioning Closure</p>
+<p><strong>Class: </strong><a href="classes/acc_graphs.html">ACC Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/conditioning.html">Coordinate Conditioning</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty conditioning preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projection retains an induced chordal split-incompatibility graph. Conditioning retains an induced subgraph of the cubical thickening. Medianity is preserved, so the ACC characterizations apply in both cases.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:atlas-acc-closure</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-327" style="position:relative;">
+
+        <h3><a href="operation_results/acc_graphs_pc_minor_closure.html" class="table-title-link">Acc Graphs Pc Minor Closure</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Acc Graphs Pc Minor Closure</p>
+<p><strong>Class: </strong><a href="classes/acc_graphs.html">ACC Graphs</a></p>
+<p><strong>Operation: </strong><a href="operations/pc_minor.html">Partial-Cube Minor</a></p>
+<p><strong>Result Type:</strong> Closed Under</p>
+<p><strong>Status:</strong> Established</p>
+<strong>Statement:</strong><div class="text-field"><p>Every nonempty pc minor preserves membership.</p></div>
+<strong>Proof:</strong><div class="text-field"><p>Projection retains an induced chordal split-incompatibility graph. Conditioning retains an induced subgraph of the cubical thickening. Medianity is preserved, so the ACC characterizations apply in both cases.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:atlas-acc-closure</p></div>
 
         </div>
     </div>

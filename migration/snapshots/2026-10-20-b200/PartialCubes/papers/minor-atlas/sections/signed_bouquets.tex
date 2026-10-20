@@ -1,0 +1,213 @@
+\subsection{Intersection-closed ample classes and signed bouquets}
+\label{sec:signed-bouquets}
+
+Intersection closure singles out a classical family with explicit allocation
+maps. It is larger than the convex-geometry ideals already appearing in the
+atlas. This section consolidates that distinction and the relevant recent
+results; the longer operator proofs remain in their original notes.
+
+\begin{definition}[Bouquets and their signed version]
+\label{def:atlas-signed-bouquets}
+A \emph{bouquet of convex geometries} on a finite set $E$ is a family
+$C\subseteq2^E$ such that $\varnothing\in C$, $A\cap B\in C$ for all
+$A,B\in C$, and
+\[
+ A,B\in C,\quad A\subsetneq B
+ \quad\Longrightarrow\quad
+ A\cup\{e\}\in C\text{ for some }e\in B\setminus A.
+\]
+The last property is local one-element extendability. These are also called
+\emph{conditional antimatroids}. A bouquet containing $E$ is a convex
+geometry. Define
+\[
+ \mathsf{Bouq}^{\pm}
+ :=\{C\in\Amp:\text{some }C\mathbin\triangle r
+                  \text{ is intersection-closed}\},\qquad
+ C\mathbin\triangle r:=\{A\mathbin\triangle r:A\in C\}.
+\]
+The superscript records coordinate flips, not ambient cube complementation.
+\end{definition}
+
+\begin{proposition}[Characterization and minor closure]
+\label{prop:atlas-bouquet-characterization}
+For a nonempty intersection-closed family containing $\varnothing$,
+ampleness is equivalent to local one-element extendability. Consequently
+$\mathsf{Bouq}^{\pm}$ is exactly the signed-coordinate class of bouquets,
+with constant coordinates suppressed as usual. It is p-closed and c-closed,
+and hence pc-closed. For an ample $C$, equivalently
+\[
+ C\in\mathsf{Bouq}^{\pm}
+ \quad\Longleftrightarrow\quad
+ \exists r\in C\quad
+ \operatorname{maj}(u,v,r)\in C\quad(u,v\in C),
+\]
+where $\operatorname{maj}$ denotes coordinatewise majority.
+\end{proposition}
+\begin{proof}
+An ample class is isometric. A Hamming geodesic between comparable members
+adds their differing elements one at a time, giving local extendability.
+The converse is the classical ampleness theorem for conditional antimatroids
+\cite[\S3.2.4]{CCMW}; the equivalent bouquet axioms are
+\cite[\S2.5]{CCKGeometry}.
+
+For any nonempty intersection-closed family $H$, its total intersection
+$m=\bigcap H$ is a member. Flipping the coordinates of $m$, which are
+constant one on $H$, gives an intersection-closed family containing zero.
+Thus an initially arbitrary witnessing flip can be changed to an actual
+word $r\in C$. In the orientation with $r=0$, the displayed majority
+condition is precisely closure under intersection, proving the equivalence.
+
+Projection commutes with intersection. A conditioning is also
+intersection-closed: the meet of two words agreeing with the fixed pattern
+still agrees with it. Both operations preserve ampleness. Coordinate flips
+restrict to the remaining coordinates; newly constant one coordinates can
+be normalized by the total-intersection argument. This proves both closure
+claims, including conditionings that discard the original root.
+\end{proof}
+
+\begin{example}[Why the full ground set is not required]
+\label{ex:atlas-bouquet-star}
+On three coordinates, $\{\varnothing,\{1\},\{2\},\{3\}\}$ is a bouquet
+and a daisy cube, but is not a convex geometry on that ground set. It is
+nevertheless an ideal of the full Boolean convex geometry. Thus omission
+of the full set alone does not distinguish bouquets from convex-geometry
+ideals; \cref{prop:atlas-bouquet-position} gives a genuine separation.
+\end{example}
+
+\paragraph{Recognition by forbidden partial patterns.}
+A \emph{minimally missing pattern} $(S,a)$ has
+$a\notin C|_S$, while every proper restriction of $a$ occurs. For a proposed
+flip $r$, intersection closure is equivalent to
+\begin{equation}\label{eq:atlas-bouquet-horn}
+ \bigl|\{i\in S:r_i=a_i\}\bigr|\le1
+ \qquad\text{for every minimally missing }(S,a).
+\end{equation}
+Indeed, agreement at two positions lets two witnesses for the proper
+restrictions have a majority with $r$ realizing the missing pattern.
+Conversely, if $w=\operatorname{maj}(u,v,r)$ is absent, choose a minimally
+missing restriction of $w$. The nonempty sets of positions where $u$ and
+$v$ disagree with it are disjoint, and $r$ agrees with it on both sets,
+contradicting \eqref{eq:atlas-bouquet-horn}.
+The pairwise prohibitions are a 2-SAT formula in the bits of $r$. This is
+the classical \emph{renamable-Horn} condition, not a new recognition
+theorem; see \cite[\texttt{lem:horn-test}]{BouquetProjection}.
+The 2-SAT size is measured in the supplied minimally missing patterns,
+not in an unspecified implicit description of $C$.
+
+\paragraph{Explicit maps on both complementary classes.}
+Work in an intersection-closed orientation $H$ on the full original
+ground set $E$. Put
+\[
+ \begin{aligned}
+ \rho(v)&=\{i\in v:v\setminus\{i\}\in H\},&
+ \downarrow H&=\{a:a\subseteq v\text{ for some }v\in H\},\\
+ c(a)&=\bigcap\{v\in H:a\subseteq v\}
+       &&(a\in\downarrow H).
+ \end{aligned}
+\]
+The classical representation map is $v\mapsto\rho(v)$; its whole downward
+cube is present by intersection closure. Deleting words in decreasing
+cardinality gives the classical corner peeling
+\cite[Proposition~4.9]{CCMW}. The closure fibers satisfy
+\begin{equation}\label{eq:atlas-bouquet-fibers}
+ c^{-1}(v)=[\rho(v),v]
+ :=\{a:\rho(v)\subseteq a\subseteq v\}.
+\end{equation}
+If $c(a)=v$, omitting a removable element contradicts minimality of $c(a)$.
+Conversely, if $\rho(v)\subseteq a\subseteq v$ but $c(a)\subsetneq v$,
+a geodesic from $c(a)$ to $v$ ends at a lower neighbor $v\setminus\{i\}$,
+forcing $i\in\rho(v)\setminus c(a)$, a contradiction.
+
+The recent complementary construction in
+\cite[\texttt{thm:closure-completion}]{BouquetCompletion} assigns, on
+$K=2^E\setminus H$,
+\begin{equation}\label{eq:atlas-bouquet-complement}
+ r_K(a)=
+ \begin{cases}
+ E\setminus a,&a\notin\downarrow H,\\
+ (E\setminus c(a))\cup(a\setminus\rho(c(a))),
+       &a\in\downarrow H\setminus H.
+ \end{cases}
+\end{equation}
+It is an ordinary representation map made of actual whole cubes. More
+strongly, it is the remaining-neighbor map of a corner peeling: process
+closure fibers by increasing $|v|$, process each
+$[\rho(v),v]\setminus\{v\}$ by decreasing $|a|$, and finally process
+$2^E\setminus\downarrow H$ by increasing $|a|$.
+The cited proof verifies every selected cube and every omitted neighboring
+direction. It retains original constants and allows the empty complement.
+This is an author-proved recent result, with external priority unresolved;
+it is not attributed to the classical primal-map theorem.
+
+\begin{proposition}[Position in the atlas]
+\label{prop:atlas-bouquet-position}
+With the preceding complementary-completion input,
+\[
+ \mathsf{Icg}\subsetneq\mathsf{Bouq}^{\pm}
+ \subseteq\mathcal B\subsetneq\mathsf{Ext},\qquad
+ \mathsf{Bouq}^{\pm}\not\subseteq\RAmp.
+\]
+In particular, signed bouquets are corner-peelable and representable.
+\end{proposition}
+\begin{proof}
+An ideal of a convex geometry is closed under intersection, since the
+intersection is a closed set below either member of the ideal. It is ample
+by \cite[\S2.5]{CCKGeometry}, so signed ideals lie in
+$\mathsf{Bouq}^{\pm}$. The two peeling constructions give
+$\mathsf{Bouq}^{\pm}\subseteq\mathcal B$.
+The strict inclusion $\mathcal B\subsetneq\mathsf{Ext}$ is already proved
+in \cref{prop:maxmin-neighbors}.
+
+The 26-set bouquet of \cite{NonrealizableBouquet} has no affine-convex
+realization in any finite dimension. Every signed convex-geometry ideal
+is realizable by \cite[Theorem~26]{CCKGeometry}, and realizability is
+invariant under coordinate flips. This proves both the first strictness
+and the displayed noncontainment. That same bouquet has a certified
+maximum parent; it is not a non-$\MaxMin$ example.
+\end{proof}
+
+\paragraph{Attaching a cube without assuming a daisy intersection.}
+The complementary construction extends beyond a single bouquet.
+\begin{proposition}[A clamped cube on a signed bouquet]
+\label{prop:atlas-bouquet-cube-attachment}
+Let $B\in\mathsf{Bouq}^{\pm}$ be nonempty on the original frame $E$, and
+let $C=Q(z,S)$ be a positioned cube. Suppose its coordinate clamp
+\[
+ c_C(b)|_S=b|_S,\qquad c_C(b)|_{E\setminus S}=z|_{E\setminus S}
+\]
+satisfies $c_C(B)\subseteq B$. Then $B\cup C\in\mathsf{Ext}$.
+Every supplied ordinary representation map on $B$ extends to $B\cup C$
+without changing its old rooted-cube columns; an ordinary map on
+$(B\cup C)^c$ can be constructed simultaneously. Cyclic supplied maps
+are allowed. No chordality or daisy-intersection hypothesis is required.
+\end{proposition}
+\begin{proof}
+Flip coordinates to make $B$ intersection-closed. Clamps commute with
+this change of coordinates. The compatible-completion theorem
+\cite[\texttt{thm:horn-gluing}]{CubeComplementCompletion} constructs a full
+actual-cube basis, retains the supplied primal basis, and supplies the
+entire complementary basis. Translate its two maps back to the original
+frame, retaining all constants.
+\end{proof}
+The union need not itself be a signed bouquet. In particular this is an
+attachment theorem, not a closure law for $\mathsf{Bouq}^{\pm}$, nor an
+iteration rule for arbitrary unions of differently oriented bouquets.
+
+\paragraph{Operator characterization and remaining question.}
+For $g_0=(1,0)^t$ and $g_1=(1,-1)^t/\sqrt2$, let $P_C$ be the orthogonal
+projection onto the span of the tensors $\bigotimes_{i\in E}g_{v_i}$,
+$v\in C$. CP's author theorem
+\cite[\texttt{thm:classification}]{BouquetProjection} says, for isometric
+$C$, that $P_C$ is entrywise nonnegative in some real orthonormal product
+basis exactly when a flip makes $C$ intersection-closed. A product basis
+chooses an orthonormal basis separately at each coordinate. Entrywise
+nonnegativity is stronger than positive semidefiniteness. This is an
+algebraic characterization of the same family, not evidence that all ample
+classes admit such a basis. Its full spectral proof is not independently
+certified by this atlas consolidation.
+
+The question whether every signed bouquet has a finite maximum parent
+remains open in the campaign. The ideal subclass has such parents, and the
+nonrealizable 26-set example does too. Neither the explicit two-shore maps
+nor the operator characterization supplies parents for all bouquets.
+No comparison with all of $\Rper$ or all of $\mathsf{CAmp}$ is asserted.

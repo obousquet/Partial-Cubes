@@ -1,0 +1,99 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <base href="https://obousquet.github.io/Partial-Cubes/">
+        <title>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</title>
+        <link rel="stylesheet" href="styles.css">
+
+    <style>
+    .nav-menu { display:inline-block; position:relative; margin-left:1em; }
+    .menu-btn { background:none; border:none; font-size:1em; cursor:pointer; padding:0.2em 0.7em; color:#fff; }
+    .menu-list { position:absolute; left:0; top:100%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border:1px solid #444; min-width:120px; z-index:10; list-style:none; margin:0; padding:0; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+    .menu-list li a { display:block; padding:0.4em 1em; text-decoration:none; color:#fff; }
+    .menu-list li a:hover { background:#444; color:#fff; }
+    nav a { color:#fff; }
+    </style>
+    <script>
+    function toggleMenu(id) {
+        var menu = document.getElementById(id);
+        var isOpen = menu.style.display === 'block';
+        // Close all menus
+        document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        menu.style.display = isOpen ? 'none' : 'block';
+    }
+    // Close menus when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!e.target.classList.contains('menu-btn')) {
+            document.querySelectorAll('.menu-list').forEach(function(m) { m.style.display = 'none'; });
+        }
+    });
+    </script>
+
+
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']]
+                },
+                startup: {
+                    pageReady: function() {
+                        // Prepare database equation fields before the single
+                        // automatic typeset, including a cached/fast loader.
+                        document.querySelectorAll('.latex-equation[data-latex]').forEach(eq => {
+                            eq.textContent = '$$' + eq.getAttribute('data-latex') + '$$';
+                        });
+                        return MathJax.startup.defaultPageReady();
+                    }
+                }
+            };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Class theorems outside binary relations, operations, and characterization equivalences - Partial Cubes</h1>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="https://github.com/obousquet/Partial-Cubes/" target="_blank">About</a>
+                <a href="bibliography.html">Bibliography</a>
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('graphs-menu')" aria-haspopup="true" aria-expanded="false">Graphs ▼</button>
+            <ul id="graphs-menu" class="menu-list" style="display:none;"><li><a href="graphs/class-hierarchy.html">Class Hierarchy</a></li><li><a href="graphs/minor-closure.html">Minor and Closure Map</a></li></ul>
+        </div>
+
+        <div class="nav-menu">
+            <button class="menu-btn" onclick="toggleMenu('tables-menu')" aria-haspopup="true" aria-expanded="false">Tables ▼</button>
+            <ul id="tables-menu" class="menu-list" style="display:none;"><li><a href="characterization_equivalences/index.html">Characterization Equivalences</a></li><li><a href="characterizations/index.html">Characterizations</a></li><li><a href="relations/index.html">Class Relations</a></li><li><a href="classes/index.html">Classes</a></li><li><a href="examples/index.html">Examples</a></li><li><a href="invariant_values/index.html">Invariant Values</a></li><li><a href="invariants/index.html">Invariants</a></li><li><a href="obstruction_bases/index.html">Obstruction Bases</a></li><li><a href="obstruction_families/index.html">Obstruction Families</a></li><li><a href="operation_results/index.html">Operation Results</a></li><li><a href="operations/index.html">Operations</a></li><li><a href="results/index.html">Results</a></li></ul>
+        </div>
+
+            </nav>
+        </header>
+        <main class="table-container">
+            <div class="back-link-light"><a href="results/index.html">&larr; Back to Results Table</a></div>
+    <div class="table-card" id="math-717" style="position:relative;">
+
+        <h3><a href="results/atlas_allocation_refinement_hierarchies.html" class="table-title-link">Allocation Refinement Hierarchies and Exact Endpoints</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Allocation Refinement Hierarchies and Exact Endpoints</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/mixed_complement_feasible_ample.html">Ordinary-Primal Fractional-Complement Ample Classes</a></li><li><a href="classes/both_fractionally_representable_ample.html">Both-Shores Fractionally Representable Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li><li><a href="classes/rooted_face_consistent_ample.html">Rooted Face-Consistent Coupling Classes</a></li><li><a href="classes/rooted_edge_consistent_ample.html">Rooted Edge-Consistent Coupling Classes</a></li><li><a href="classes/rooted_square_consistent_ample.html">Rooted Square-Consistent Coupling Classes</a></li><li><a href="classes/fractionally_representable_ample.html">Fractionally Representable Ample Classes</a></li><li><a href="classes/filtered_positive_ample.html">Dimension-Filtered Positive Ample Classes</a></li><li><a href="classes/cubic_positive_ample.html">Third-Layer Positive Ample Classes</a></li><li><a href="classes/half_integrally_representable_ample.html">Half-Integrally Representable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>$\mathsf M=\mathsf{Rep}\cap\mathsf{BFrac}$. For k &gt;= 0, $\mathsf{Rep}\subseteq\mathsf E_{k+1}\subseteq\mathsf E_k\subseteq\mathsf{Frac}$, $\mathsf E_0=\mathsf{Frac}$, and $\bigcap_k\mathsf E_k=\mathsf{Rep}$. Also $\mathsf{Frac}\subseteq\mathsf{Pos}_{k+1}\subseteq\mathsf{Pos}_k\subseteq\mathsf{Amp}$, $\bigcap_k\mathsf{Pos}_k=\mathsf{Frac}$ and the inherited author theorem gives $\mathsf{Pos}_2=\mathsf{Amp}$. If every actual cube has dimension at most k, E_k = Rep and Pos_k = Frac on those inputs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The sample constraints and coefficient sign constraints strengthen with k. Once k reaches the finite largest cube dimension, all sample cube budgets are integral ordinary witnesses and all coefficients are constrained nonnegative, respectively. The level-zero coupling and level-two positivity endpoints are imported author results; no new independent review of those imported proofs is claimed.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-mixed-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-coupling-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-positivity-chain</p></div>
+
+        </div>
+    </div>
+
+        </main>
+        <footer>
+            <p>Generated from a source-backed mathematical catalogue</p>
+        </footer>
+
+    </body>
+    </html>

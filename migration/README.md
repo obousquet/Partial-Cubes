@@ -49,3 +49,20 @@ The ownership states are:
 Source papers remain scholarly artifacts in every state. Full proofs,
 paper-specific statements, narrative, notation, diagrams, and organization
 stay in the LaTeX repository.
+
+## Current minor-atlas updates
+
+Batch 200 reviews the atlas state of 20 October 2026 in the separate byte
+snapshot `snapshots/2026-10-20-b200/`. Its manifest records source commits,
+working-tree state and file hashes. `minor_atlas_graph_classes.json` points
+to that inventory: graph checks cover all 35 Ample-family rows, all 80
+relationships at their stated strength, and every affirmative or negative
+minor-closure cell. Signed bouquets reuse the existing conditional-antimatroid
+identity; ACC likewise reuses its existing class.
+
+The original 24-family seed inventory, numbered JSON locators, review queues
+and manuscript-label audit deliberately keep their historical frozen inputs.
+Replacing that inventory in place would change the meaning of earlier
+`#/relations/N` provenance. Consequently the seed audit's 37/37 minor-atlas
+labels do not assert coverage of every theorem in the current expanded paper.
+The current atlas graph coverage is checked independently by `make check`.

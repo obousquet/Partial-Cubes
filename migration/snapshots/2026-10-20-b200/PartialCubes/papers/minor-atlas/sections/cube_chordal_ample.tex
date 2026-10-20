@@ -1,0 +1,526 @@
+\subsection{Cube-chordal ample classes}
+\label{sec:cube-chordal}
+
+Chordality gives another sufficient condition for corner peeling, expressed
+in terms of the actual maximal cubes of a class. We collect its definition,
+structural descriptions and closure properties here. We introduce the name
+\emph{cube-chordal ample} for this class; \emph{daisy cube} is established
+terminology \cite{KlavzarMollardDaisy}.
+The relative peeling theorem is recalled from the dismantlable-ample
+companion, and the tree description from the maximum-ancestry companion.
+The product criterion and explicit examples make their consequences precise.
+The complementary completion theorem below also puts this class in
+$\mathcal B$, where both original ambient shores are corner-peelable.
+
+\begin{definition}[Cube-chordal ample classes]
+\label{def:cube-chordal}
+For nonempty $H\subseteq\bits^E$, a positioned cube is
+\[
+ C(p,S)=\{x\in\bits^E:x|_{E\setminus S}=p\},
+ \qquad S\subseteq E,\quad p\in\bits^{E\setminus S}.
+\]
+Its free coordinate set is $S$. Let $\mathcal M(H)$ be the family of
+\emph{all} inclusion-maximal positioned cubes contained in $H$.
+The maximal-cube intersection graph $\Gamma(H)$ has vertex set
+$\mathcal M(H)$; distinct cubes are adjacent exactly when their vertex
+sets intersect, including an intersection consisting of one word.
+We call $H$ \emph{cube-chordal ample} if $H$ is ample and $\Gamma(H)$
+is chordal, meaning that it has no induced cycle of length at least four.
+Write $\mathsf{CAmp}$ for this family, and use \emph{cube-chordal} as
+shorthand when ampleness is understood.
+\end{definition}
+
+The graph uses complete positioned cubes, rather than just their free
+coordinate sets or a selected cube cover. Equivalently its vertices are
+the extentures of $\bits^E\setminus H$: two such minimal forbidden
+patterns are adjacent when their fixed literals are compatible.
+Chordality here concerns $\Gamma(H)$, not the one-inclusion graph of $H$;
+even a full square has a nonchordal one-inclusion graph.
+
+A \emph{daisy cube rooted at $z$} means that
+$\{\operatorname{Diff}(z,x):x\in H\}$ is a downset in $2^E$,
+where $\operatorname{Diff}(z,x)=\{i\in E:z_i\ne x_i\}$.
+Equivalently, $H$ contains the full cube interval from $z$ to each of
+its words: $I(z,x)=\{y:\operatorname{Diff}(z,y)\subseteq
+\operatorname{Diff}(z,x)\}\subseteq H$ for every $x\in H$.
+Thus the root specifies the Boolean orientation of the established daisy
+cube notion recalled above. These classes are ample: if $S$ is shattered,
+a word differing from $z$ on all of $S$ supplies the entire rooted
+$S$-cube by downward closure.
+
+\begin{proposition}[The complete-graph case]
+\label{prop:cube-chordal-daisy}
+For a nonempty class $H$, $\Gamma(H)$ is complete if and only if $H$ is
+a daisy cube. Consequently
+\[
+ \mathsf{Daisy}\subsetneq\mathsf{CAmp}\subsetneq\Damp\subseteq\Rep.
+\]
+There is no bound on VC dimension in $\mathsf{CAmp}$.
+\end{proposition}
+\begin{proof}
+Positioned cubes have the Helly property: pairwise intersection says that
+no two fixed literals conflict, so all the fixed literals are jointly
+consistent. If $\Gamma(H)$ is complete, all maximal cubes therefore
+contain a common word $z$. Each is downward closed towards $z$, and so
+is their union $H$. Conversely the maximal cubes of a daisy cube all
+contain its root: the top word of any contained cube supplies its whole
+rooted lower cube. Thus their intersection graph is complete.
+
+The four-word path $000,100,110,111$ has three maximal edges and
+$\Gamma(H)=P_3$. It is ample, since its three directions are distinct,
+and is cube-chordal but not a daisy cube. The inclusion into $\Damp$
+is proved below, and its strictness by
+\cref{ex:cube-chordal-corner}. The last inclusion is the existing
+corner-peeling representation theorem. Full cubes give unbounded VC dimension.
+\end{proof}
+
+\subsubsection{Daisy pieces, cube attachments and prescribed endpoints}
+
+The following gives an exact construction in the original Boolean
+coordinates. It uses the complete extenture family, so no choice of a
+redundant forbidden-pattern presentation is implicit.
+
+\begin{proposition}[An incremental construction]
+\label{prop:cube-chordal-generator}
+Start from any one positioned cube. Given a previously constructed class
+$B$, attach $C=C(\delta,S)$, with $Y=E\setminus S$, subject to:
+\begin{enumerate}[label=(\roman*)]
+\item $C\not\subseteq B$, and $C$ contains no member of $\mathcal M(B)$;
+\item the clamp $c(b)=(b|_S,\delta|_Y)$ belongs to $B$ for every $b\in B$;
+\item the members of $\mathcal M(B)$ meeting $C$ intersect pairwise.
+\end{enumerate}
+The outputs are exactly $\mathsf{CAmp}$. Condition~(ii) is equivalent to
+\[
+ \pi_SB=\pi_S(B\cap C),
+\]
+and to the following extenture condition: every extenture of $B$ whose
+support meets $Y$ has a $Y$-literal opposite to $\delta$.
+The interface $F=B\cap C$ is a nonempty proper daisy cube inside $C$,
+rooted at a common word of $C$ and all its neighbours.
+It is gated in $B$, with gate $c(b)$: for every $b\in B$ and $f\in F$,
+\[
+ d(b,f)=d(b,c(b))+d(c(b),f).
+\]
+Here $d$ is Hamming distance, equal to graph distance on the ample pieces.
+\end{proposition}
+\begin{proof}
+First suppose $B$ is ample and (ii) holds. Every cube in $B\cup C$
+lies in one piece. Otherwise it contains a new word $v\in C\setminus B$
+and frees some $Y$-coordinate; flipping that coordinate at $v$ gives a
+word $b$ outside $C$, hence in $B$, with $c(b)=v$, a contradiction.
+Also every support shattered by $B\cup C$ that meets $Y$ is already
+shattered by $B$. To realize a prescribed trace whose $Y$-part agrees
+with $\delta$, first flip one of its prescribed $Y$-bits and realize that
+trace in the union. Its witness lies in $B$; clamping gives the desired
+trace in $B$. Traces not agreeing with $\delta$ already have witnesses
+in $B$. Thus
+\[
+ \Sh(B\cup C)=\Sh(B)\cup2^S.
+\]
+The same union describes strongly shattered supports by the cube assertion,
+so $B\cup C$ is ample. By (i) its maximal cubes are exactly
+$\mathcal M(B)\cup\{C\}$. Condition~(iii) makes the new graph vertex
+simplicial, preserving chordality. This proves soundness by induction.
+
+For the converse, use the \href{../maxmin-forbidden/sections/chordal_guard_coefficients.tex}
+{simplicial-cube remainder lemma} in the maximum-ancestry companion
+(label \nolinkurl{lem:maxmin-simplicial-cube-remainder}).
+It states that removing the exclusive words of a simplicial maximal cube
+from an ample class leaves an ample $B$ with exactly the other maximal
+cubes. Here is the removal argument: cube Helly supplies a common word
+$z$ of that cube and its neighbours. Their intersections form a proper
+daisy cube $F$ rooted at $z$. Delete the remaining words in decreasing
+support inclusion relative to $z$. Each is a corner, because it is maximal
+in the remaining downset inside $C$ and belongs to no other old cube.
+Every cube of $F$ lies in one neighbouring cube: its top word and $z$
+belong to that neighbour's face in $C$. This also proves the exact remaining
+maximal-cube list.
+
+For this remainder every cube of $B\cup C$ lies in a piece. Ampleness and
+the Sandwich equality $|A|=|\Sh(A)|$ for ample $A$ therefore give
+\[
+ |\Sh(B)\cap2^S|=|B|+|C|-|B\cup C|=|F|.
+\]
+Projection preserves ampleness, so $|\pi_SB|=|\Sh(B)\cap2^S|$.
+Since $\pi_SF\subseteq\pi_SB$ has $|F|$ words, the projections agree.
+This proves (ii); maximality and simpliciality give (i),(iii).
+A chordal graph has a simplicial vertex, and deleting it leaves a chordal
+graph. Repeat until one maximal cube remains, then reverse the steps.
+
+For the extenture equivalence, an extenture meeting $Y$ with every
+$Y$-literal equal to $\delta$ would, by minimality, have its $S$-part
+realized in $B$. Clamping that witness would realize the forbidden pattern.
+Conversely a clamp avoids every $S$-only extenture because its original
+word did, and avoids every other extenture by an opposite $Y$-literal.
+Helly and (iii) give the asserted common root and the daisy interface.
+It is nonempty by (ii), and proper by (i). Finally $b$ and $c(b)$ differ
+only on $Y$, whereas $c(b)$ and $f$ differ only on $S$; this proves the
+distance identity and gatedness. Uniqueness follows by putting $f=c(b)$
+in the corresponding identity for any proposed gate.
+\end{proof}
+
+The interface may be a union of faces rather than a single cube.
+For example, attach the three maximal squares of
+$\bits^3\setminus\{111\}$ in succession. The last interface is a
+three-word path, a daisy cube with two maximal edges. It is gated in the
+old host; it need not be gated in the incoming square.
+
+There is also an exact simultaneous tree description. The maximal cliques
+of $\Gamma(H)$ have a clique tree: every cube label occurs in a connected
+subtree, and intersecting labels occur together in a bag. Each bag union
+is a daisy cube rooted at its common word. Adjacent bag unions intersect
+in the union of their shared cube labels, a daisy cube rooted at both bag
+roots. These assertions, including a converse, are proved in
+\href{../maxmin-forbidden/sections/chordal_downset_tree.tex}
+{\nolinkurl{thm:maxmin-chordal-downset-tree}}.
+The converse requires one additional compatibility condition. Write $d(C)$
+for the free coordinate set of a positioned cube $C$. For every
+coordinate face $P$ and $S\subseteq d(P)$, the union of occurrence subtrees
+of labels $C$ with $C\cap P\ne\varnothing$ and $S\subseteq d(C)$ must
+be connected or empty. These are unions of tree vertices \emph{and edges};
+adjacent vertices alone do not supply an edge. An arbitrary tree of daisy
+cubes need not satisfy this condition and is not an equivalent definition.
+
+\begin{proposition}[Peeling to any contained cube]
+\label{prop:cube-chordal-peeling}
+If $H\in\mathsf{CAmp}$ and $Q\subseteq H$ is a nonempty positioned
+cube, there is a corner order from $H$ to $Q$ in which every remaining
+class is cube-chordal ample. Every supplied ordinary representation on $Q$
+extends to $H$, with boundary edges directed into $Q$ and no directed
+cycle outside $Q$. In particular every vertex can be the final word of
+a corner order and the sink of an acyclic ordinary representation of $H$.
+\end{proposition}
+\begin{proof}
+This is the cube-retention theorem
+\cite[\nolinkurl{thm:damp-chordal-cube-retention}]{AmpleCampaign}.
+We recall the argument to specify the strength of the statement.
+A chordal graph has a simplicial vertex outside any proper clique:
+a noncomplete chordal graph has two nonadjacent simplicial vertices,
+and every vertex of a complete graph is simplicial. Protect the clique
+of maximal cubes containing $Q$. If it is proper, choose a simplicial
+cube $C$ outside it. Let $z$ be a common word of $C$ and its neighbours,
+and $y$ its antipode in $C$. Every neighbouring face contains $z$ and
+excludes $y$, so $y$ has unique maximal cube $C$ and is a corner outside $Q$.
+If all maximal cubes contain $Q$ and $H\ne Q$, choose any such $C$,
+take $z\in Q$, and again its antipode $y\notin Q$ is a corner.
+
+Deleting $y$ replaces $C$ by its facets opposite $y$, discarding facets
+contained in unchanged cubes. The retained facets form a clique with
+exactly the old clique neighbourhood of $C$, since they all contain $z$.
+Each is simplicial, so chordality is preserved. Corner deletion preserves
+ampleness. Induction reaches $Q$.
+Reverse the order, adding each removed corner as a source. This extends
+an ordinary representation by the corner-extension theorem, preserves the
+map on $Q$, and makes its boundary inward. A directed cycle cannot use
+an added vertex: the last added vertex on that cycle would have only
+outgoing edges to earlier vertices. For a prescribed single-vertex target,
+its trivial map therefore extends acyclically with that vertex as sink.
+\end{proof}
+
+\begin{samepage}
+\subsubsection{Corner peelings on both ambient shores}
+
+\begin{proposition}[Complementary completion of cube-chordal classes]
+\label{prop:atlas-cube-chordal-complement}
+If $H\subseteq\bits^E$ is nonempty and cube-chordal ample, then both $H$
+and its full original ambient complement have corner peelings. Consequently
+\[
+ \mathsf{CAmp}\subseteq\mathcal B\subsetneq\mathsf{Ext}.
+\]
+There is no bound on VC dimension. Original constant coordinates are retained;
+an empty complement has the empty map and peeling order.
+\end{proposition}
+\end{samepage}
+\begin{proof}
+Apply the tree completion theorem
+\cite[\texttt{prop:leaf-root-alignment}, \texttt{thm:camp-ext}]{CubeComplementCompletion}.
+Its input is the positioned tree of daisy pieces recalled above: every
+connected subunion is ample, every cube is carried by a piece, word
+occurrences are connected, and each adjacent overlap is rooted at both
+piece roots. The theorem supplies a finite increasing sequence
+$H=H_0\subset\cdots\subset H_m=L$, where $L$ is one daisy cube.
+Each step attaches a cube $Q(z,S)$ whose clamp preserves $H_j$ and whose
+intersection with $H_j$ is a nonempty daisy rooted at $z$.
+The construction preserves the tree properties; it does not assume that
+intermediate maximal-cube graphs remain chordal.
+
+For completeness, such a step gives an explicit complementary peeling.
+The added words $A=Q(z,S)\setminus H_j$ form an up-set towards the corner
+opposite $z$. Remove them from $H_j^c$ in increasing distance from $z$.
+At the removal of $a$, put $D=\operatorname{Diff}(a,z)\subseteq S$.
+Rootward neighbors are old words or were removed earlier. The entire
+cube with directions $E\setminus D$ remains: its traces in $Q(z,S)$
+are later words of $A$, and all parallel outside words are absent from
+$H_j$ by clamp invariance. Thus $a$ is an actual corner with that support.
+The remaining class is $H_{j+1}^c$. After all steps, peel the up-set $L^c$
+in increasing distance from its daisy root. The primal peeling is
+\cref{prop:cube-chordal-peeling}. This proves membership in $\mathcal B$;
+$\mathcal B\subsetneq\mathsf{Ext}$ was established in
+\cref{prop:maxmin-neighbors}.
+\end{proof}
+
+Neither complementation nor projection must preserve cube chordality.
+The conclusion above concerns the two shores' corner peelings, not their
+maximal-cube graphs. It also does not supply maximum parents:
+$\mathsf{CAmp}\subseteq\MaxMin$ remains open.
+Conversely, if an ample $H$ is not corner-peelable, then neither $H$ nor
+$H^c$ is cube-chordal. Thus both maximal-cube intersection graphs contain
+an induced cycle of length at least four; this is a necessary condition,
+not a characterization of nondismantlability.
+
+\subsubsection{Closure properties and the exact product criterion}
+
+In the table, empty results may be adjoined formally. A full reduction on
+$I$ keeps exactly those words whose entire $I$-fiber is present:
+\[
+ H^I=\{x\in\bits^{E\setminus I}:\{x\}\times\bits^I\subseteq H\}.
+\]
+A rooted vertex wedge identifies specified vertices of two classes on
+disjoint coordinate blocks, keeping all coordinates of the other block
+fixed at that vertex in each piece.
+
+\begin{center}
+\begin{tabular}{@{}p{.72\linewidth}l@{}}
+\toprule
+Operation & Preserves $\mathsf{CAmp}$?\\
+\midrule
+Signed coordinate isometries; adding or suppressing constants & Yes\\
+Coordinate faces; geodesically convex subclasses & Yes\\
+Full coordinate reductions $H^I$ & Yes\\
+Rooted vertex wedges on disjoint blocks & Yes\\
+Product with any daisy cube & Yes\\
+Arbitrary Cartesian products & No\\
+Coordinate projections; arbitrary pc-minors & No\\
+Complementation in the specified ambient cube & No\\
+Arbitrary corner deletion or corner addition & No\\
+Gluing along a common cube, even a convex coordinate face & No\\
+Arbitrary ample subclasses & No\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{proposition}[Faces, reductions and vertex wedges]
+\label{prop:cube-chordal-closures}
+The affirmative closure assertions in the table hold.
+\end{proposition}
+\begin{proof}
+Signed isometries and constants preserve the maximal-cube graph.
+For a coordinate face $P$, its maximal cubes in $H\cap P$ are the maximal
+nonempty traces $C\cap P$ of old maximal cubes. Choose one old cube for
+each such trace. Two retained traces intersect if and only if their old
+representatives intersect: the reverse implication uses cube Helly on
+the two representatives and $P$. Thus $\Gamma(H\cap P)$ is isomorphic
+to an induced subgraph of $\Gamma(H)$ and is chordal. Faces preserve
+ampleness. Convex subclasses of a partial cube are intersections of its
+coordinate halfspaces, as recalled in the operations section, so are faces.
+
+For reduction, the maximal cubes of $H^I$ correspond exactly to the old
+maximal cubes freeing every coordinate of $I$, with $I$ removed.
+Indeed lift a reduction cube to its product with $\bits^I$ and extend it
+to a maximal cube of $H$; maximality on either side gives the converse.
+Intersections are preserved, so the graph is again induced. Full reductions
+preserve ampleness by iterating the usual ample two-sided reduction.
+
+Singleton wedge factors are neutral. Otherwise all maximal cubes come
+from one factor. Cubes from different factors meet exactly when both
+contain the identified root. The root-containing cubes of each factor
+form a clique. Glue the two chordal graphs to the complete graph on
+their combined root-containing cubes, along these two cliques.
+Clique gluing preserves chordality: an induced cycle visiting both sides
+of a clique separator would have a chord. Finally a shattered support
+cannot use a nonconstant coordinate from each private block, since the
+pattern opposite both roots is absent. Supports wholly in one block are
+shattered exactly when that factor shatters them, and are strongly
+shattered there. Thus the wedge is ample. Product closure with daisy cubes
+is the next proposition.
+\end{proof}
+
+\begin{proposition}[Exact product criterion]
+\label{prop:cube-chordal-product}
+For any nonempty ample $H,K$ on disjoint coordinate sets,
+\[
+ H\times K\in\mathsf{CAmp}
+ \quad\Longleftrightarrow\quad
+ H,K\in\mathsf{CAmp}\ \text{and at least one factor is a daisy cube}.
+\]
+\end{proposition}
+\begin{proof}
+Products of ample classes are ample: a support is shattered, or strongly
+shattered, exactly when its two factor supports are. The maximal cubes
+of a product are precisely the products of maximal cubes. Consequently
+$\Gamma(H\times K)=\Gamma(H)\boxtimes\Gamma(K)$, the strong graph
+product: two distinct pairs are adjacent when, in each coordinate, their
+entries are equal or adjacent. Fixing either graph entry gives the other
+graph as an induced subgraph, so both graphs must be chordal.
+
+These graphs are connected. Indeed an ample class is connected, and
+its vertex paths give overlap chains of maximal cubes. Any connected
+noncomplete graph contains an induced path on three vertices: use the
+first three vertices of a shortest path between nonadjacent vertices.
+If both factor graphs are noncomplete, choose such paths indexed $0,1,2$.
+The four pairs
+\[
+ (0,1),\ (1,0),\ (2,1),\ (1,2)
+\]
+form an induced four-cycle in their strong product. Thus at least one
+graph must be complete. Conversely, a strong product with a complete
+graph replaces each vertex of the other graph by a clique, giving all
+vertices in that clique the same outside neighbours. Replacing each
+vertex in a perfect elimination order by its whole clique gives a
+perfect elimination order of the product. Chordality is preserved.
+Apply \cref{prop:cube-chordal-daisy} to identify the complete factor.
+\end{proof}
+
+For instance the four-word path in
+\cref{prop:cube-chordal-daisy} is cube-chordal, whereas its product
+with itself is not. This product is median, hence in $\Rper$.
+Thus even median or recursively peripheral membership does not imply
+cube-chordality.
+
+\subsubsection{Explicit failures of closure}
+
+For compact examples, encode $x\in\bits^{\{0,\ldots,n-1\}}$ by
+$\sum_i2^ix_i$. Write $Q(a,s)$ for the cube whose free coordinates
+are the one-bits of $s$ and whose fixed one-bits are those of $a$;
+the two masks have disjoint one-bits. Thus its words are $a\mathbin{\mathrm{or}}t$
+for the submasks $t$ of $s$. All lists below are complete maximal-cube lists.
+
+\begin{example}[Corner changes and common-cube gluing]
+\label{ex:cube-chordal-corner}
+On four coordinates let
+\[
+ A=\{0,1,2,3,6,7,8,9,10\},\qquad D=A\cup\{5\},\qquad
+ U=D\cup\{4\}=\{0,1,\ldots,10\}.
+\]
+Their maximal cubes, listed as $(a,s)$, are
+\begin{align*}
+ \mathcal M(A)&:\ (0,3),(2,5),(0,9),(0,10),\\
+ \mathcal M(D)&:\ (0,3),(2,5),(1,6),(0,9),(0,10),\\
+ \mathcal M(U)&:\ (0,7),(0,9),(0,10).
+\end{align*}
+These lists follow by extending each edge and face in the displayed
+word sets. In $D$, the four cubes
+$(2,5),(1,6),(0,9),(0,10)$ form an induced four-cycle in that order;
+$(0,3)$ meets all four. Thus $\Gamma(D)$ is the wheel on five vertices,
+whereas $\Gamma(A)$ is a diamond and $\Gamma(U)$ is complete.
+
+The class $U$ is a daisy cube rooted at zero. The word $4$ is its corner
+with incident free mask $7$, so $D$ is ample and dismantlable.
+The word $5$ is a corner of $D$ with incident free mask $6$, leaving $A$.
+Hence $U\mapsto D$ disproves closure under corner deletion, and
+$A\mapsto D$ disproves closure under corner addition. The inclusion
+$D\subseteq\bits^4$ also disproves closure under ample subclasses.
+Since $D\in\Damp\setminus\mathsf{CAmp}$, the inclusion into $\Damp$
+is strict.
+
+Moreover $D$ is the union of the two daisy cubes
+\[
+ Z=\{0,1,2,3,5,6,7\},\qquad W=\{0,1,2,3,8,9,10\},
+\]
+rooted at $3$ and $0$, respectively. Their intersection is the full
+square $\{0,1,2,3\}$, a coordinate face and therefore convex in each.
+This disproves common-cube gluing closure even for daisy input pieces.
+\end{example}
+
+\begin{example}[Projection and complementation]
+\label{ex:cube-chordal-projection}
+On five coordinates put
+\[
+ V=\{0,1,2,3,6,7,8,9,16,17,18,19,21,23,24,26\}.
+\]
+Its maximal cubes are
+\[
+ (0,19),(2,5),(17,6),(0,9),(16,10),(3,20),(0,24).
+\]
+Their graph is the cone over two disjoint three-vertex paths and is
+chordal. Ampleness can be verified directly. At $x_2=x_3=0$ there is a
+full cube on coordinates $\{0,1,4\}$. At $x_2=1$ there is a four-word
+path on these coordinates using each direction once, and the same holds
+at $x_3=1$. No word has $x_2=x_3=1$. Consequently the shattered supports
+are the eight subsets of $\{0,1,4\}$, together with
+$\{\{j\}\}\cup\{\{j,i\}:i\in\{0,1,4\}\}$ for each $j=2,3$.
+Each is strongly shattered by the central cube, a vertical edge or a
+path-edge square. Hence $V$ is ample. Projecting away coordinate $4$
+gives exactly $D$ of \cref{ex:cube-chordal-corner}, proving failure
+of projection closure and therefore pc-minor closure.
+
+For complementation take the four-coordinate path
+$P=\{0,1,3,7,8\}$. Its four edge directions are distinct, so it is
+maximum of VC dimension one, with a path as maximal-cube graph.
+Its complement is ample by ample complement duality and has maximal cubes
+\[
+ (12,3),(10,5),(9,6),(4,9),(4,10),(2,12).
+\]
+The cubes $(10,5),(9,6),(4,9),(4,10)$ form an induced four-cycle in
+that order. This proves failure of complement closure.
+\end{example}
+
+\subsubsection{Comparison with ACC and maximum ancestry}
+
+Recall that an ACC class has a join tree on its individual maximal
+cubes, as defined before \cref{fig:classes}; see also the
+\href{../../../YangDim/yang_complex_dictionary.tex}{Yang-complex dictionary}.
+A clique tree of $\Gamma(H)$ instead has \emph{bags} of cubes as nodes.
+These two requirements are incomparable.
+
+\begin{example}[Neither ACC nor medianity characterizes cube-chordality]
+\label{ex:cube-chordal-acc}
+The daisy cube $\bits^3\setminus\{111\}$ is cube-chordal, but its three
+maximal squares admit no join tree. Each pair has a word belonging to
+just those two squares, forcing each of the three possible tree edges.
+Even medianity does not repair the implication: the $3$-by-$3$ grid is
+a median daisy cube with four maximal squares sharing its middle vertex,
+so $\Gamma=K_4$. Each of the four neighbours of that vertex belongs
+to just one cyclically consecutive pair of squares. Those four pairs
+would all have to be edges of a join tree, which is impossible.
+
+Conversely take a central square and attach a square along each of its
+four boundary edges, using a separate private coordinate for each leaf.
+The central square and its four leaves have a join tree given by the star.
+The class is isometric: within a leaf use square paths; between different
+leaves, turn off their distinct private coordinates and take a shortest
+path in the central square. It is also ample: its shattered supports are
+the empty set, six singletons and the five pairs supporting its squares,
+all strongly shattered. Thus it is ACC. Its four leaf squares meet in
+an induced four-cycle, so its maximal-cube graph is nonchordal.
+\end{example}
+
+\begin{proposition}[Minor closure of ACC]
+\label{prop:atlas-acc-closure}
+The ACC classes are closed under nonempty projections and conditionings.
+Their inclusion into Median is strict.
+\end{proposition}
+\begin{proof}
+Use the characterizations in
+\cite[Theorem~\textnormal{ACC characterizations}]{Survey}.
+For a median class the split-incompatibility graph has one vertex for
+each nonconstant coordinate, joining a pair exactly when it is shattered.
+Projection retains its induced graph on the remaining active coordinates.
+Chordality and medianity are preserved, proving projection closure.
+
+For conditioning, let $G^\Delta$ join two concepts whenever a contained
+cube contains both. If $F$ is a coordinate face, intersecting an old cube
+with $F$ shows that $(G\cap F)^\Delta$ is the induced subgraph
+$G^\Delta[V(G)\cap F]$. An ACC class has chordal $G^\Delta$;
+its induced subgraph is chordal as well. The nonempty coordinate face
+is median, so the same characterization proves it ACC.
+The median $3$-by-$3$ grid in \cref{ex:cube-chordal-acc} is not ACC,
+proving strictness.
+\end{proof}
+
+We have proved
+$\mathsf{Daisy}\subsetneq\mathsf{CAmp}\subsetneq\Damp$.
+The product of the four-word path with itself proves
+$\Rper\not\subseteq\mathsf{CAmp}$.
+For the other direction the peripheral companion's
+\href{../cover-recursive/research/rper_chordal_sun_obstructions.tex}
+{chordal sun family} has chordal maximal-cube graph and is forbidden for
+$\Rper$. Hence $\mathsf{CAmp}\not\subseteq\Rper$ as well.
+Those suns do have maximum parents, as shown in
+\href{../maxmin-forbidden/research/chordal_sun_parents.tex}
+{\nolinkurl{thm:maxmin-chordal-sun-parents}}.
+The unrestricted inclusion $\mathsf{CAmp}\subseteq\MaxMin$ remains open;
+neither a clique tree nor the local generator supplies compatible maximum
+parents for arbitrary daisy interfaces. The class is not pc-minor closed,
+so a forbidden-pc-minor basis cannot characterize membership in
+$\mathsf{CAmp}$ itself.

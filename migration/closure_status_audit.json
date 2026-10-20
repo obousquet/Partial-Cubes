@@ -36,9 +36,18 @@
     {
       "class_id": "#classes/acc_graphs",
       "primary_source": "PartialCubes:papers/survey/main.tex#thm:acc-characterizations",
-      "p_closure_status": "not_assessed",
-      "c_closure_status": "not_assessed",
-      "pc_closure_status": "not_assessed"
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/acc_graphs_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/acc_graphs_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/acc_graphs_pc_minor_closure"
+      ]
     },
     {
       "class_id": "#classes/almost_median_partial_cubes",
@@ -1494,6 +1503,175 @@
       "p_closure_status": "not_applicable",
       "c_closure_status": "not_applicable",
       "pc_closure_status": "not_applicable"
+    },
+    {
+      "class_id": "#classes/both_fractionally_representable_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-mixed",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/both_fractionally_representable_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/both_fractionally_representable_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/both_fractionally_representable_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/mixed_complement_feasible_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-mixed",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/mixed_complement_feasible_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/mixed_complement_feasible_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/mixed_complement_feasible_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/rooted_face_consistent_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-edge-coupling",
+      "p_closure_status": "not_assessed",
+      "c_closure_status": "not_assessed",
+      "pc_closure_status": "not_assessed"
+    },
+    {
+      "class_id": "#classes/rooted_edge_consistent_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-edge-coupling",
+      "p_closure_status": "not_assessed",
+      "c_closure_status": "not_assessed",
+      "pc_closure_status": "not_assessed"
+    },
+    {
+      "class_id": "#classes/rooted_square_consistent_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-edge-coupling",
+      "p_closure_status": "not_assessed",
+      "c_closure_status": "not_assessed",
+      "pc_closure_status": "not_assessed"
+    },
+    {
+      "class_id": "#classes/filtered_positive_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-positivity",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/filtered_positive_ample_projection_closure"
+      ],
+      "c_closure_status": "not_assessed",
+      "pc_closure_status": "not_assessed"
+    },
+    {
+      "class_id": "#classes/cubic_positive_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-positivity",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/cubic_positive_ample_projection_closure"
+      ],
+      "c_closure_status": "not_assessed",
+      "pc_closure_status": "not_assessed"
+    },
+    {
+      "class_id": "#classes/half_integrally_representable_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-half-integral",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/half_integrally_representable_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/half_integrally_representable_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/half_integrally_representable_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/cube_chordal_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#def:cube-chordal",
+      "p_closure_status": "not_closed",
+      "p_operation_result_ids": [
+        "#operation_results/cube_chordal_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/cube_chordal_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "not_closed",
+      "pc_operation_result_ids": [
+        "#operation_results/cube_chordal_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/cube_inward_representable_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:atlas-witness-properties",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/cube_inward_representable_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/cube_inward_representable_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/cube_inward_representable_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/full_witness_lattice_ample",
+      "primary_source": "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:atlas-witness-properties",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/full_witness_lattice_ample_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/full_witness_lattice_ample_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/full_witness_lattice_ample_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/representation_scc_width_k",
+      "primary_source": "PartialCubes:papers/minor-atlas/main.tex#eq:peeling-width",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/representation_scc_width_k_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/representation_scc_width_k_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/representation_scc_width_k_pc_minor_closure"
+      ]
+    },
+    {
+      "class_id": "#classes/ample_chunk_width_k",
+      "primary_source": "PartialCubes:papers/minor-atlas/main.tex#sec:uso-width",
+      "p_closure_status": "closed",
+      "p_operation_result_ids": [
+        "#operation_results/ample_chunk_width_k_projection_closure"
+      ],
+      "c_closure_status": "closed",
+      "c_operation_result_ids": [
+        "#operation_results/ample_chunk_width_k_conditioning_closure"
+      ],
+      "pc_closure_status": "closed",
+      "pc_operation_result_ids": [
+        "#operation_results/ample_chunk_width_k_pc_minor_closure"
+      ]
     }
   ]
 }

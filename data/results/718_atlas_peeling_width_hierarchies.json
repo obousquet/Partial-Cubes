@@ -1,0 +1,18 @@
+{
+  "id": 718,
+  "short_name": "atlas_peeling_width_hierarchies",
+  "name": "SCC and Chunk-Peeling Width Hierarchies",
+  "result_type": "implication",
+  "status": "established",
+  "class_ids": [
+    "#classes/representation_scc_width_k",
+    "#classes/ample_chunk_width_k",
+    "#classes/dismantlable_ample",
+    "#classes/representation_map_ample",
+    "#classes/ample"
+  ],
+  "statement": "For each integer k >= 1, $\\mathsf U_k\\subseteq\\mathsf U_{k+1}$, $\\mathsf P_k\\subseteq\\mathsf P_{k+1}$ and $\\mathsf U_k\\subseteq\\mathsf P_k$. Moreover $\\mathsf U_1=\\mathsf P_1=\\mathsf{Damp}$, $\\bigcup_k\\mathsf U_k=\\mathsf{Rep}$ and $\\bigcup_k\\mathsf P_k=\\mathsf{Amp}$.",
+  "proof": "Acyclic representations have singleton SCCs and characterize corner peeling. Every finite representation has finite SCC size; every finite ample class can be deleted as a single chunk. Deleting source components preserves ampleness, so each bounded-SCC representation supplies the corresponding chunk peeling.",
+  "references": "\\cite{ChalopiChepoiMoran22}",
+  "proof_source": "PartialCubes:papers/minor-atlas/main.tex#prop:peeling-width-ends; PartialCubes:papers/minor-atlas/main.tex#sec:uso-width"
+}

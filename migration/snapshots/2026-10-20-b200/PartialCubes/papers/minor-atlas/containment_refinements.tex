@@ -1,0 +1,378 @@
+\subsection{Refinements of the allocation-existence comparisons}
+\label{sec:allocation-refinements}
+
+The comparisons below isolate complementary feasibility, dependence between
+vertex choices, and positivity in small support dimensions. They concern
+existence of some witness, not preservation of a prescribed witness.
+All input classes are finite, nonempty and ample. Complements are taken in
+the full ambient cube $Q_X=\{0,1\}^X$, before suppressing constant coordinates.
+An empty complementary shore has its unique empty allocation and map.
+
+\paragraph{The complete cube equations.}
+For $v\in Q_X$ and $S\subseteq X$, let
+$Q(v,S)=\{w\in Q_X:w|_{X\setminus S}=v|_{X\setminus S}\}$.
+Write $\mathcal B(C)$ for the distinct positioned cubes contained in $C$,
+including vertices, and
+$I(C)=\{(v,S):v\in C,\ Q(v,S)\subseteq C\}$.
+The full native matrix and allocation set are
+\begin{align}
+ M_C(B,(v,S))&=\mathbf1\{v\in B,\ \operatorname{dir}(B)\subseteq S\},
+ \label{eq:refinement-native-matrix}\\
+ \mathcal A(C)&=\{\mu\in\mathbb R^{I(C)}:\mu\ge0,\ M_C\mu=\mathbf1\}.
+ \label{eq:refinement-allocation-set}
+\end{align}
+Here $\operatorname{dir}(B)$ is the free-coordinate set of $B$.
+The vertex equations make each row at a root a probability distribution,
+so $\mathcal A(C)$ is exactly the fractional formulation already used above.
+Integral points correspond to representation maps by the inherited native
+allocation dictionary. In particular $C\in\mathsf{Frac}$ means
+$\mathcal A(C)\ne\varnothing$.
+
+\begin{definition}[Complementary fractional and mixed feasibility]
+\label{def:refinement-mixed}
+For $D=Q_X\setminus C$, define
+\[
+ \begin{aligned}
+ \mathsf{BFrac}&=\{C:\mathcal A(C)\ne\varnothing,
+                         \ \mathcal A(D)\ne\varnothing\},\\
+ \mathsf M&=\{C:C\in\mathsf{Rep},\ \mathcal A(D)\ne\varnothing\}.
+ \end{aligned}
+\]
+The notation is retained from
+\href{../containment-bfrac/sections/complementary_pairs.tex}{the complementary-allocation note}.
+\end{definition}
+
+\begin{proposition}[The mixed comparison]
+\label{prop:refinement-mixed-chain}
+One has
+\[
+ \mathsf{Ext}\subseteq\mathsf M\subseteq\mathsf{Rep},\qquad
+ \mathsf M=\mathsf{Rep}\cap\mathsf{BFrac},\qquad
+ \mathsf M\subseteq\mathsf{BFrac}\subseteq\mathsf{Frac}.
+\]
+Thus $\mathsf{Ext}=\mathsf{Rep}$ is equivalent to the conjunction of
+$\mathsf{Ext}=\mathsf M$ and $\mathsf M=\mathsf{Rep}$.
+\end{proposition}
+\begin{proof}
+An ordinary map gives an integral allocation. Maps on both shores
+therefore imply the defining conditions of $\mathsf M$.
+A represented original shore is already fractionally feasible, so its
+mixed condition is precisely membership in $\mathsf{BFrac}$ as well.
+The remaining inclusions and the equality equivalence follow by sandwiching.
+\end{proof}
+
+\paragraph{Joint choices that are valid on small cubes.}
+A support selection $R$ assigns an actual support $R_v$ to every $v\in C$.
+Its owner count on an actual cube $B$ is
+\[
+ b_R(B)=|\{v\in B:\operatorname{dir}(B)\subseteq R_v\}|.
+\]
+It is rooted at $q\in C$ if $R_q=\varnothing$ and
+$R_v\cap\{x:v(x)\ne q(x)\}\ne\varnothing$ for every $v\ne q$.
+Following a direction in this intersection gives an actual edge decreasing
+Hamming distance to $q$. Hence each selection has a unique empty support
+and a geodesic route from every vertex to that root.
+Put $a_R(v,S)=\mathbf1\{R_v=S\}$.
+
+\begin{definition}[Rooted face-consistent coupling classes]
+\label{def:refinement-edge-coupling}
+For an integer $k\ge0$, let $\Omega_k(C)$ be the rooted support selections
+with $b_R(B)=1$ on every actual cube of dimension at most $k$, and put
+\[
+ \mathcal F_k(C)=\mathcal A(C)\cap
+              \operatorname{conv}\{a_R:R\in\Omega_k(C)\},
+ \qquad
+ \mathsf E_k=\{C:\mathcal F_k(C)\ne\varnothing\}.
+\]
+The convex hull of an empty set is empty. The notation $\Omega_k$ and
+$\mathcal F_k$ is retained from
+\href{../containment-rep-frac/sections/face_consistent_coupling.tex}{RF's face-consistency note};
+$\mathsf E_k$ names its class-level existence condition.
+\end{definition}
+
+Thus one joint law makes all $k$-dimensional and smaller budgets valid in
+each sample, while its mean satisfies \emph{every} cube equation. The root
+and mean may be chosen anew. In $\mathsf E_1$ every edge has exactly one
+outgoing endpoint in each sample; $\mathsf E_2$ also has one owner on every
+positioned square. These conditions are simultaneous, not separate local laws.
+
+\begin{proposition}[The coupling hierarchy]
+\label{prop:refinement-coupling-chain}
+For every $k\ge0$,
+\[
+ \mathsf{Rep}\subseteq\mathsf E_{k+1}\subseteq\mathsf E_k
+ \subseteq\mathsf{Frac}.
+\]
+The inherited common-root coupling theorem gives $\mathsf E_0=\mathsf{Frac}$.
+On classes with largest actual cube dimension at most $k$,
+$\mathsf E_k=\mathsf{Rep}$. Consequently
+$\bigcap_{k\ge0}\mathsf E_k=\mathsf{Rep}$.
+\end{proposition}
+\begin{proof}
+An ordinary allocation is a point-mass support selection and has one empty
+support by the ample Euler identity. Nonclashing with that root gives the
+rootward condition. It supplies a point in every $\mathcal F_k(C)$.
+The sets $\Omega_k(C)$ are decreasing in $k$, and each $\mathcal F_k(C)$
+lies in $\mathcal A(C)$, proving the inclusions.
+For level zero we use the inherited
+\href{../containment-rep-frac/sections/rooted_tree_transport.tex}{common-root whole-support coupling theorem}:
+every full allocation is the mean of rooted actual selections. Vertex
+budgets are automatic, so $\mathcal F_0(C)=\mathcal A(C)$.
+If $k$ reaches the largest cube dimension, every selection in $\Omega_k(C)$
+is a full integral allocation. Nonempty $\mathcal F_k(C)$ therefore supplies
+an ordinary map. Each finite class has a finite largest cube dimension,
+which also proves the intersection identity.
+\end{proof}
+
+\paragraph{Positivity of small-support coefficients.}
+The symbol $\mathsf P_k$ already denotes chunk-peeling width in the atlas.
+We use $\mathsf{Pos}_k$ for the following different hierarchy.
+
+\begin{definition}[Dimension-filtered positivity]
+\label{def:refinement-positivity}
+For $k\ge0$, let
+\[
+ \begin{aligned}
+ \mathcal Z_k(C)&=\{z\in\mathbb R^{I(C)}:M_Cz=\mathbf1,
+                   \ z(v,S)\ge0\text{ whenever }|S|\le k\},\\
+ \mathsf{Pos}_k&=\{C:\mathcal Z_k(C)\ne\varnothing\}.
+ \end{aligned}
+\]
+Coefficients on larger supports are unrestricted real numbers.
+These are signed full solutions, not partial systems obtained by deleting
+higher cube equations.
+\end{definition}
+
+\begin{proposition}[The positivity hierarchy and its known endpoint]
+\label{prop:refinement-positivity-chain}
+One has
+\[
+ \mathsf{Frac}\subseteq\mathsf{Pos}_{k+1}\subseteq\mathsf{Pos}_k
+ \subseteq\mathsf{Amp},\qquad
+ \bigcap_{k\ge0}\mathsf{Pos}_k=\mathsf{Frac}.
+\]
+The inherited nearest-edge comparison theorem gives
+$\mathsf{Pos}_2=\mathsf{Amp}$.
+On classes with largest actual cube dimension at most $k$,
+$\mathsf{Pos}_k=\mathsf{Frac}$.
+\end{proposition}
+\begin{proof}
+The sign constraints increase with $k$. When $k$ reaches the largest
+actual support dimension, they impose nonnegativity on every coefficient,
+which proves all assertions except the known level-two equality.
+For that equality we import Section~9 of
+\href{../minor-atlas/research/stationary_exclusion_attack.md}{the low-order comparison proof}:
+on every ample class it constructs a full signed solution nonnegative on
+all supports of size zero, one and two. Its higher coefficients may be
+negative. This is exactly $\mathcal Z_2(C)\ne\varnothing$.
+The equality is inherited author-proved mathematics; this definition does
+not supply an independent review or any higher-order positivity theorem.
+\end{proof}
+
+\begin{proposition}[Exact alternative for filtered positivity]
+\label{prop:refinement-positivity-dual}
+The set $\mathcal Z_k(C)$ is empty if and only if there are real prices
+$y_B$, one for every actual cube, satisfying
+\[
+ \begin{cases}
+ (M_C^{\mathsf T}y)(v,S)\ge0,& |S|\le k,\\
+ (M_C^{\mathsf T}y)(v,S)=0,& |S|>k,
+ \end{cases}
+ \qquad \sum_{B\in\mathcal B(C)}y_B<0.
+\]
+\end{proposition}
+\begin{proof}
+Split each unrestricted higher-support variable into a difference of two
+nonnegative variables. Farkas' alternative applied to the resulting
+nonnegative-variable system gives inequalities on the small-support
+columns and both opposite inequalities on every higher-support column.
+The latter are exactly zero. The right-hand side is $\mathbf1$, yielding
+the stated negative total. Conversely pairing such prices with any
+$z\in\mathcal Z_k(C)$ gives a nonnegative number equal to that negative
+total, a contradiction.
+\end{proof}
+
+In particular $\mathsf{Pos}_3=\mathsf{Amp}$ would give fractional
+feasibility for every ample class of VC dimension at most three, since
+ample shattering equals actual cube dimension. Failure of one fixed
+nearest-position construction does not show absence of a different
+$z\in\mathcal Z_3(C)$.
+
+\begin{definition}[Half-integral existence; a reserve comparison]
+\label{def:refinement-half-integral}
+Let $\mathsf{HalfFrac}$ consist of those $C$ with an allocation in
+$\mathcal A(C)$ whose coefficients belong to $\{0,\tfrac12,1\}$.
+Then $\mathsf{Rep}\subseteq\mathsf{HalfFrac}\subseteq\mathsf{Frac}$.
+\end{definition}
+These are coefficient masses, not only edge marginals. The existing
+half-integral support-face theory does not guarantee an integral point
+elsewhere in the full polytope. No campaign for this reserve comparison
+is initiated here, and no comparison with $\mathsf E_k$ is asserted.
+
+\paragraph{Two whole-witness properties.}
+The following notation names properties already used in the witness
+comparison results; it does not assert a new equality in the original chain.
+For an ample $C$ let $I(C)$ be its actual rooted columns and let
+\[
+ \Lambda_C=\{(N,z)\in\mathbb Z\times\mathbb Z^{I(C)}:
+                         M_Cz=N\mathbf1\},\qquad
+ W_C=\langle(1,\mu_r):r\text{ is a representation map of }C\rangle_{\mathbb Z},
+\]
+where $\mu_r(v,S)=\mathbf1_{\{r(v)=S\}}$.
+The signed counts in $\Lambda_C$ use every native row and column.
+
+\begin{definition}[Inward cube maps and full witness lattices]
+\label{def:atlas-witness-properties}
+Write $\mathsf{Inw}$ for the ample classes $C$ such that, for every
+contained positioned cube $Q(a,S)$, there is a representation map $r$
+of $C$ with $r(v)\subseteq S$ for every $v\in Q(a,S)$.
+Thus every boundary edge points into that cube, simultaneously.
+Write $\mathsf{Lat}=\{C\in\Amp:W_C=\Lambda_C\}$.
+No nonnegativity is required of the integer coefficients generating $W_C$.
+\end{definition}
+
+\begin{proposition}[Whole-witness refinements and minor closure]
+\label{prop:atlas-witness-refinements}
+One has
+\[
+ \MaxMin\subseteq\mathsf{Inw}\subseteq\mathsf{Lat}\subseteq\Rep,
+ \qquad \mathsf{CAmp}\subseteq\mathsf{Inw}.
+\]
+Both $\mathsf{Inw}$ and $\mathsf{Lat}$ are closed under nonempty
+projections and conditionings. No strictness or comparison of
+$\mathsf{Ext}$ with $\mathsf{Inw}$ or $\mathsf{Lat}$ is asserted.
+\end{proposition}
+\begin{proof}
+The maximum-parent inward theorem
+\href{../maxmin-forbidden/sections/cube_inward_representations.tex}
+{\nolinkurl{thm:maximum-cube-inward}} supplies the first inclusion,
+including marked sections. The cube-retaining peeling of
+\cref{prop:cube-chordal-peeling} supplies the $\mathsf{CAmp}$ inclusion:
+start with any map of the retained cube and reverse the peeling by
+literal corner extension.
+
+We spell out the implication to the integer lattice. The
+\href{research/native_exchange_lattice.md}{integer exchange basis}
+consists, for each actual cube $Q$ of directions $S$ and a spanning
+tree of its edges $v w$ of direction $i$, of
+\[
+ e_{(v,S)}-e_{(w,S)}
+ -e_{(v,S\setminus\{i\})}+e_{(w,S\setminus\{i\})}.
+\]
+These vectors form an integer basis of $\ker M_C$.
+An inward map at $Q$ permits replacing its entire cube map while
+keeping every outside column fixed: outside rows are unchanged,
+and inside rows receive precisely the new cube budgets.
+Inside $Q$, the distance map rooted opposite $v$ assigns $S$ to $v$
+and $S\setminus\{i\}$ to $w$. Swapping those two supports changes the
+array by the displayed kernel vector and retains nonnegative unit
+budgets. Hence every basis vector is a difference of two complete
+ordinary witnesses of $C$. One reference witness then generates the
+degree direction as well, so $W_C=\Lambda_C$.
+
+For completeness, $\Lambda_C$ always has a degree-one element.
+In owner coordinates,
+\[
+ w_{v,T}=\sum_{S\supseteq T}z(v,S),
+\]
+each actual positioned cube has
+the independent equation $\sum_{v\in Q}w_{v,\operatorname{dir}Q}=N$.
+Choose one owner per cube and invert these Boolean upper sums
+integrally. Thus $\mathsf{Lat}$ cannot have an empty ordinary witness
+set, proving $\mathsf{Lat}\subseteq\Rep$.
+
+Conditioning an inward map at a retained cube preserves inwardness.
+For projection, every actual cube of $\pi_i C$ has a horizontal copy
+in $C$: condition outside its directions and use strong shattering
+in that ample section. Choose an inward map at that copy.
+The ordinary projection selects the $i$-edge sink in every two-point
+fiber. On the selected copy these are its own vertices, and their
+projected supports remain inside the desired cube. This proves
+projection closure of $\mathsf{Inw}$.
+
+Finally the native conditioning and projection maps on homogeneous
+signed lattices are integral surjections and send whole witnesses to
+whole witnesses. Here is a direct check of the surjectivity used.
+Conditioning retains exactly the owner blocks of its face, and those
+blocks may be extended by arbitrary degree-$N$ owners on other cubes.
+For projection, let $\alpha$ be the prescribed owner vector of a
+projected cube. If it occurs in just one shore, assign $\alpha$ there.
+If it occurs in both, assign $\alpha$ to both horizontal copies and
+assign $\alpha$ on one endpoint shore and zero on the other for its
+vertical-prism owners. The projected owner vector is then
+$\alpha+\alpha-\alpha=\alpha$.
+Every source cube block has total $N$, and Boolean inversion is
+integral. These choices give a signed lift of every target.
+The formulas for the minor maps are the
+\href{../containment-campaigns/ALLOCATION_FUNCTORS.md}{native allocation minor maps}.
+If $W_C=\Lambda_C$, their surjectivity therefore expresses every target
+signed count as an integer combination of target whole witnesses.
+This proves minor closure of $\mathsf{Lat}$.
+\end{proof}
+
+The implication to $\mathsf{Lat}$ does not decompose an arbitrary
+nonnegative allocation into a probability law. Integer generation,
+positive decomposition of a prescribed mean, and existence of one
+ordinary map are different assertions. In particular the recent large
+torsion groups attached to a \emph{selected positive support} are not
+the full-witness defect $\Lambda_C/W_C$.
+
+\begin{proposition}[Closure information for the allocation refinements]
+\label{prop:atlas-refinement-minor-closure}
+The families $\mathsf{BFrac}$, $\mathsf M$ and
+$\mathsf{HalfFrac}$ are pc-minor closed.
+Every $\mathsf{Pos}_k$ is projection closed.
+No conditioning-closure assertion for $\mathsf{Pos}_k$, $k\ge3$, or
+minor-closure assertion for $\mathsf E_k$, $k\ge1$, is made here.
+\end{proposition}
+\begin{proof}
+Write $D=Q_X\setminus C$. Conditioning commutes with ambient
+complementation, while
+\[
+ (\pi_i C)^c=\partial_i D.
+\]
+Fractional allocations descend through projection, conditioning and
+full reduction; ordinary maps descend through projection and
+conditioning. These facts prove the claims for both shores of
+$\mathsf{BFrac}$ and for the ordinary/fractional requirements of
+$\mathsf M$, with the allowed empty complementary output.
+
+All those allocation maps sum source coefficients with nonnegative
+integer coefficients. They preserve the grid $\tfrac12\mathbb Z$.
+Nonnegative unit vertex budgets then bound each target coefficient
+by one, proving pc closure of $\mathsf{HalfFrac}$.
+
+For a signed solution $z$ on $C$, extend absent coefficients by zero.
+Its projection has
+\[
+ z'(u,S)=z((u,0),S)+z((u,1),S),\qquad i\notin S.
+\]
+It satisfies all projected cube rows. If $|S|\le k$, both summands
+are nonnegative for $z\in\mathcal Z_k(C)$.
+Thus $z'\in\mathcal Z_k(\pi_i C)$.
+Conditioning instead also uses coefficients on $S\cup\{i\}$;
+at $|S|=k$ their signs are unrestricted, so this argument makes
+no fixed-level conditioning claim.
+\end{proof}
+
+\paragraph{The refined existence map.}
+Combining the preceding statements gives
+\[
+ \begin{aligned}
+ \mathsf{MaxMin}&\subseteq\mathsf{Ext}\subseteq\mathsf M
+ \subseteq\mathsf{Rep}\subseteq\mathsf E_2\subseteq\mathsf E_1
+ \subseteq\mathsf{Frac},\\
+ \mathsf{Frac}&\subseteq\mathsf{Pos}_3\subseteq\mathsf{Pos}_2
+ =\mathsf{Amp}.
+ \end{aligned}
+\]
+None of these refinements is asserted strict. A bad prescribed law or
+signed construction does not separate the existential classes.
+For example a full cube has the ordinary distance allocation
+$r_q(v)=\{x:v(x)\ne q(x)\}$, and so lies in all the displayed families,
+even though other allocations on the same cube can be nonclassical.
+The independent mixed-complement, edge-coupling and cubic-positivity
+workspaces own their respective existence questions; the definitions here
+are a common notation contract, not three new closure theorems.
+
+\input{figures/allocation_refinements}

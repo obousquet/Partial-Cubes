@@ -12107,6 +12107,52 @@
         </div>
     </div>
 
+    <div class="table-card" id="math-717" style="position:relative;">
+
+        <h3><a href="results/atlas_allocation_refinement_hierarchies.html" class="table-title-link">Allocation Refinement Hierarchies and Exact Endpoints</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Allocation Refinement Hierarchies and Exact Endpoints</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/mixed_complement_feasible_ample.html">Ordinary-Primal Fractional-Complement Ample Classes</a></li><li><a href="classes/both_fractionally_representable_ample.html">Both-Shores Fractionally Representable Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li><li><a href="classes/rooted_face_consistent_ample.html">Rooted Face-Consistent Coupling Classes</a></li><li><a href="classes/rooted_edge_consistent_ample.html">Rooted Edge-Consistent Coupling Classes</a></li><li><a href="classes/rooted_square_consistent_ample.html">Rooted Square-Consistent Coupling Classes</a></li><li><a href="classes/fractionally_representable_ample.html">Fractionally Representable Ample Classes</a></li><li><a href="classes/filtered_positive_ample.html">Dimension-Filtered Positive Ample Classes</a></li><li><a href="classes/cubic_positive_ample.html">Third-Layer Positive Ample Classes</a></li><li><a href="classes/half_integrally_representable_ample.html">Half-Integrally Representable Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>$\mathsf M=\mathsf{Rep}\cap\mathsf{BFrac}$. For k &gt;= 0, $\mathsf{Rep}\subseteq\mathsf E_{k+1}\subseteq\mathsf E_k\subseteq\mathsf{Frac}$, $\mathsf E_0=\mathsf{Frac}$, and $\bigcap_k\mathsf E_k=\mathsf{Rep}$. Also $\mathsf{Frac}\subseteq\mathsf{Pos}_{k+1}\subseteq\mathsf{Pos}_k\subseteq\mathsf{Amp}$, $\bigcap_k\mathsf{Pos}_k=\mathsf{Frac}$ and the inherited author theorem gives $\mathsf{Pos}_2=\mathsf{Amp}$. If every actual cube has dimension at most k, E_k = Rep and Pos_k = Frac on those inputs.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The sample constraints and coefficient sign constraints strengthen with k. Once k reaches the finite largest cube dimension, all sample cube budgets are integral ordinary witnesses and all coefficients are constrained nonnegative, respectively. The level-zero coupling and level-two positivity endpoints are imported author results; no new independent review of those imported proofs is claimed.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-mixed-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-coupling-chain; PartialCubes:papers/minor-atlas/containment_refinements.tex?#prop:refinement-positivity-chain</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-718" style="position:relative;">
+
+        <h3><a href="results/atlas_peeling_width_hierarchies.html" class="table-title-link">SCC and Chunk-Peeling Width Hierarchies</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>SCC and Chunk-Peeling Width Hierarchies</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/representation_scc_width_k.html">Representation SCC-Width Classes</a></li><li><a href="classes/ample_chunk_width_k.html">Ample Chunk-Peeling Width Classes</a></li><li><a href="classes/dismantlable_ample.html">Dismantlable Ample Classes</a></li><li><a href="classes/representation_map_ample.html">Representation-Map Ample Classes</a></li><li><a href="classes/ample.html">Ample Classes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For each integer k &gt;= 1, $\mathsf U_k\subseteq\mathsf U_{k+1}$, $\mathsf P_k\subseteq\mathsf P_{k+1}$ and $\mathsf U_k\subseteq\mathsf P_k$. Moreover $\mathsf U_1=\mathsf P_1=\mathsf{Damp}$, $\bigcup_k\mathsf U_k=\mathsf{Rep}$ and $\bigcup_k\mathsf P_k=\mathsf{Amp}$.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>Acyclic representations have singleton SCCs and characterize corner peeling. Every finite representation has finite SCC size; every finite ample class can be deleted as a single chunk. Deleting source components preserves ampleness, so each bounded-SCC representation supplies the corresponding chunk peeling.</p></div>
+<strong>References:</strong><div class="text-field"><p><a href="bibliography.html#ChalopiChepoiMoran22">[ChalopiChepoiMoran22]</a></p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/main.tex?#prop:peeling-width-ends; PartialCubes:papers/minor-atlas/main.tex?#sec:uso-width</p></div>
+
+        </div>
+    </div>
+
+    <div class="table-card" id="math-719" style="position:relative;">
+
+        <h3><a href="results/cube_chordal_exact_product_criterion.html" class="table-title-link">Exact Product Criterion for Cube-Chordal Ample Classes</a></h3>
+        <div class="table-details">
+        <p><strong>Name: </strong>Exact Product Criterion for Cube-Chordal Ample Classes</p>
+<p><strong>Classes:</strong><ul class='fields-list'><li><a href="classes/cube_chordal_ample.html">Cube-Chordal Ample Classes</a></li><li><a href="classes/daisy_cubes.html">Daisy Cubes</a></li></ul></p>
+<p><strong>Result Type:</strong> Implication</p>
+<strong>Statement:</strong><div class="text-field"><p>For nonempty ample H,K on disjoint coordinates, H times K is cube-chordal iff both factors are cube-chordal and at least one is a daisy cube.</p></div>
+<p><strong>Status:</strong> Established</p>
+<strong>Proof:</strong><div class="text-field"><p>The maximal-cube graph of a product is the strong product of the factor graphs. Both connected factors must be chordal; if neither is complete, induced three-vertex paths supply an induced four-cycle in the strong product. A complete factor instead replaces each vertex by a clique and preserves chordality. A complete maximal-cube graph is equivalent to a daisy orientation.</p></div>
+<strong>Proof Source:</strong><div class="text-field"><p>PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex?#prop:cube-chordal-product</p></div>
+
+        </div>
+    </div>
+
             </div>
 
         </main>

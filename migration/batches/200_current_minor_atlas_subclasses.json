@@ -1,0 +1,680 @@
+{
+  "version": 1,
+  "batch_id": "200_current_minor_atlas_subclasses",
+  "phase": 2,
+  "status": "completed",
+  "completed_at": "2026-10-20",
+  "scope": "Reconcile the 37-family current minor atlas with the catalogue, preserving all 80 relationships, their strength and assessed minor closure. Add 13 missing identities; reuse signed bouquets as conditional_antimatroids and ACC as acc_graphs.",
+  "source_refs": [
+    "PartialCubes:papers/cover-recursive/research/rper_chordal_sun_obstructions.tex#thm:rper-chordal-sun-obstructions",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:atlas-witness-properties",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-edge-coupling",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-half-integral",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-mixed",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#def:refinement-positivity",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:atlas-refinement-minor-closure",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:atlas-witness-refinements",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-coupling-chain",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-mixed-chain",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#prop:refinement-positivity-chain",
+    "PartialCubes:papers/minor-atlas/containment_refinements.tex#sec:allocation-refinements",
+    "PartialCubes:papers/minor-atlas/main.tex#eq:peeling-width",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:peeling-width-ends",
+    "PartialCubes:papers/minor-atlas/main.tex#prop:width-minor-closed",
+    "PartialCubes:papers/minor-atlas/main.tex#sec:uso-width",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#def:cube-chordal",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#ex:cube-chordal-acc",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#ex:cube-chordal-corner",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#ex:cube-chordal-projection",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:atlas-acc-closure",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:atlas-cube-chordal-complement",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:cube-chordal-closures",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:cube-chordal-daisy",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:cube-chordal-product",
+    "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#sec:cube-chordal",
+    "PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex#prop:atlas-bouquet-characterization",
+    "PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex#prop:atlas-bouquet-position",
+    "PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex#sec:signed-bouquets",
+    "PartialCubes:papers/varchenko-ample/research/cube_preserving_elimination.tex#prop:closure-intervals",
+    "PartialCubes:papers/varchenko-ample/research/cube_preserving_elimination.tex#prop:leaf-root-alignment",
+    "PartialCubes:papers/varchenko-ample/research/cube_preserving_elimination.tex#thm:camp-ext",
+    "PartialCubes:papers/varchenko-ample/research/cube_preserving_elimination.tex#thm:closure-completion",
+    "ResearchWork:literature/math/chalopinchepoiknauer2025geometry/source.txt#section-2.5"
+  ],
+  "source_packets": [
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/inventory.json",
+      "sha256": "11d40a296c71fd70479cd8efae24cd2459e9cb9fa21d4f47779c6cfac32429db",
+      "size_bytes": 122925,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/inventory.json"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/main.tex",
+      "sha256": "32488f0503d5892ba0dfd052125517b6499f583a794b9e737e334c73ec72ac0c",
+      "size_bytes": 178901,
+      "git_state": "M papers/minor-atlas/main.tex",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/main.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/containment_refinements.tex",
+      "sha256": "5f8bbdf6b4d1c57688c0600acbe5ce0bca30c07e4337b3140e70af4d1c235e9f",
+      "size_bytes": 17167,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/containment_refinements.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/sections/cube_chordal_ample.tex",
+      "sha256": "fb2390ea0e4c20b30aca96e975d07ecdc7e16638e4262315a29626c54c3013b5",
+      "size_bytes": 26540,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/sections/cube_chordal_ample.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/sections/signed_bouquets.tex",
+      "sha256": "4927a5cf7228ecba4432e9a3f679c44e4296dcf6b89f7eca6ce8f3a0615a0104",
+      "size_bytes": 10324,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/sections/signed_bouquets.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/figures/class_landscape.tex",
+      "sha256": "e80afb4a08ad9c72404e558e0aca0b4677a50c6b6c4bea161c234adaebe589be",
+      "size_bytes": 6076,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/figures/class_landscape.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/figures/allocation_refinements.tex",
+      "sha256": "97b91128d60e657646215e9db62380e22ef1c335425798d2b051449effb75e9d",
+      "size_bytes": 3272,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/figures/allocation_refinements.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/varchenko-ample/research/cube_preserving_elimination.tex",
+      "sha256": "253bfd0dd69f7f9d4f5ee6895f161b6ce58b53d4a66a65ba70c57caea6513fc7",
+      "size_bytes": 74343,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/varchenko-ample/research/cube_preserving_elimination.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/cover-recursive/research/rper_chordal_sun_obstructions.tex",
+      "sha256": "016b8b1a99247ecdb92e0735ac97b62384a577c6880d212f8724db251375bf02",
+      "size_bytes": 12349,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/cover-recursive/research/rper_chordal_sun_obstructions.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/maxmin-forbidden/sections/cube_inward_representations.tex",
+      "sha256": "dcf85e29b6fc294c046dc3b2ecc77308f2317f0cac0aed3fbf5362d57877f734",
+      "size_bytes": 19948,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/maxmin-forbidden/sections/cube_inward_representations.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/maxmin-forbidden/sections/chordal_downset_tree.tex",
+      "sha256": "10845f867987d101489eaff66971845b5d22aeb2eb8624edc83ecfd30acc221c",
+      "size_bytes": 26616,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/maxmin-forbidden/sections/chordal_downset_tree.tex"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/minor-atlas/research/native_exchange_lattice.md",
+      "sha256": "0af4afd32f7d7dd385a7b0adf25a8cb563dcd25a9b4302f99343f8fedd5445f4",
+      "size_bytes": 10954,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/minor-atlas/research/native_exchange_lattice.md"
+    },
+    {
+      "repository": "PartialCubes",
+      "repository_head": "d382927c4acbc4fa2e96e8204e0528c3f5b527c5",
+      "path": "papers/containment-campaigns/ALLOCATION_FUNCTORS.md",
+      "sha256": "3d9b22a4a2aefa6d93c59f581b37b14fb474e5c9840ba2e72b952fd0473e98bf",
+      "size_bytes": 22428,
+      "git_state": "tracked clean",
+      "archive_path": "migration/snapshots/2026-10-20-b200/PartialCubes/papers/containment-campaigns/ALLOCATION_FUNCTORS.md"
+    }
+  ],
+  "snapshot_manifest": {
+    "path": "migration/snapshots/2026-10-20-b200/manifest.json",
+    "sha256": "86bfaee81b8fe8e04622c7bae59190d484f06021b32c16b3868e0db98d65d539"
+  },
+  "focused_source_review": {
+    "outcome": "Read the complete current atlas definitions and proofs, the complementary leaf-alignment/tree and closure-interval proofs, and the peripheral chordal-sun proof. New definitions preserve full actual-cube budgets, existential joint laws, fixed parameters, ambient constants and empty complementary shores.",
+    "identity_decisions": [
+      "Bouq± is the existing signed-coordinate conditional_antimatroid graph class, not a new node. A characterization and equivalence connect the new terminology to the existing primary definition.",
+      "ACC reuses acc_graphs; its p/c/pc closure is now established by the atlas proof.",
+      "Add parameterized E_k and Pos_k entries alongside the fixed E_1, E_2 and Pos_3 nodes, and separate U_k and chunk P_k from maximum-parent decomposition levels."
+    ],
+    "closest_existing_result": "The old graph map covered 22 Ample-family rows from the original 24-family atlas. The new reviewed map covers all 35 Ample-family rows of the current 37-family atlas and checks all 80 relationships, including noncontainment and strictness. Signed-ideal inclusion into bouquets is strengthened to strict inclusion using the already catalogued 26-set nonrealizable bouquet.",
+    "proof_block_hashes": "migration/certificates/200_minor_atlas_subclasses/proof_blocks.json"
+  },
+  "source_preservation": {
+    "policy": "Separate targeted current-atlas freeze. The original seed inventory, numbered JSON locators, source manifest and previous batch files remain unchanged. No LaTeX source or PDF is modified.",
+    "ownership": "The database owns the accepted normalized definitions, relationships and concise proofs. All paper formulations, full proofs, exposition and research state remain LaTeX-owned. No catalogue consumer is replaced.",
+    "historical_audit": "The original manuscript-label audit remains 816/1143 with minor-atlas 37/37 at its historical freeze; it does not claim full coverage of the expanded current atlas."
+  },
+  "certificate_packets": [
+    {
+      "path": "migration/certificates/200_minor_atlas_subclasses/manifest.json",
+      "sha256": "37f50afa03a202e4afc8f0ff05d3e2d8b16774707d7167c505c75e6cb3476989"
+    }
+  ],
+  "records": [
+    {
+      "path": "data/characterization_equivalences/043_signed_bouquet_conditional_antimatroid_equivalence.json",
+      "sha256": "234a4f4cf580f8976096503e953c54ee8921754f9c3d96e6df3a1e0e555b7133"
+    },
+    {
+      "path": "data/characterizations/199_both_fractionally_representable_ample_definition.json",
+      "sha256": "21fdb86258a7df7c4607206fadfb0cc2521ad27a5bb3df587d0e2250ee088ab1"
+    },
+    {
+      "path": "data/characterizations/200_mixed_complement_feasible_ample_definition.json",
+      "sha256": "947aa57ba48bc42c14dbcc0203f40e2bcab1c5c0fee03fbb5b6c76ad06339be6"
+    },
+    {
+      "path": "data/characterizations/201_rooted_face_consistent_ample_definition.json",
+      "sha256": "379b5267a5c5cd2876045f10cd1b7108579f08557793460cab043c6bf2923859"
+    },
+    {
+      "path": "data/characterizations/202_rooted_edge_consistent_ample_definition.json",
+      "sha256": "f3850ee8b01425cd1ec0b6b87747b5187d720f670b4768fe51f7efd7ab67898c"
+    },
+    {
+      "path": "data/characterizations/203_rooted_square_consistent_ample_definition.json",
+      "sha256": "94a5bb128dbfb313ad4ffc8f3323c19e283be2621a93b463b383a882f3624d6a"
+    },
+    {
+      "path": "data/characterizations/204_filtered_positive_ample_definition.json",
+      "sha256": "eb1f877aa78a43abcd45d015399d45fbc5213db78c22e19c684a0ded29418c05"
+    },
+    {
+      "path": "data/characterizations/205_cubic_positive_ample_definition.json",
+      "sha256": "e21f388b9d976a10c466d125fc2327ffbbd693f2d3006782b3e65a36abf92bb1"
+    },
+    {
+      "path": "data/characterizations/206_half_integrally_representable_ample_definition.json",
+      "sha256": "d0b19fc765b2a7b9e1a95fb4d667c7fcf5dbcefc083a75581db5b3bfb0a3eccf"
+    },
+    {
+      "path": "data/characterizations/207_cube_chordal_ample_definition.json",
+      "sha256": "c3258e57b589a53c48e2bd55eca160e7e1854876ce26060d5e264c7cedc547ed"
+    },
+    {
+      "path": "data/characterizations/208_cube_inward_representable_ample_definition.json",
+      "sha256": "ef344bccdf9d25c72644ea21831bbc8f56530786531177b0394c00afae725d4d"
+    },
+    {
+      "path": "data/characterizations/209_full_witness_lattice_ample_definition.json",
+      "sha256": "b341b65d8b542f376c464b7718a5dbab2e20e96ddb357f3e12d42d7fff35f72a"
+    },
+    {
+      "path": "data/characterizations/210_representation_scc_width_k_definition.json",
+      "sha256": "d63f9c02c2a48fbcdb6ff93e91b796530571c68076fffc3bdbbffcabf8b32301"
+    },
+    {
+      "path": "data/characterizations/211_ample_chunk_width_k_definition.json",
+      "sha256": "480662878d54b4d5546c786f921145a2fb97a842e1d333255a368380b6dc40fc"
+    },
+    {
+      "path": "data/characterizations/212_signed_bouquet_meet_orientation.json",
+      "sha256": "a127c2edac43df73b466fd821824dfa2bbfe719e44ac0606e248f71dba334b00"
+    },
+    {
+      "path": "data/classes/003_acc_graphs.json",
+      "sha256": "8112a251345ff529eb1af2deb81792b538fb7dd2add851759f99d806b0d4d9a1"
+    },
+    {
+      "path": "data/classes/021_conditional_antimatroids.json",
+      "sha256": "75a0de0fecbdd59c05ae2f6205cf476be2313724b4cdef006c0cc889c742713c"
+    },
+    {
+      "path": "data/classes/116_both_fractionally_representable_ample.json",
+      "sha256": "1c3c08f088ef00680ff56608fb6984204663fcc97b9aec95a60c7bd76a536a13"
+    },
+    {
+      "path": "data/classes/117_mixed_complement_feasible_ample.json",
+      "sha256": "ee5ce6be95bc1dff6f64d70d6d7a03cb6948a1e1aa791b7575615302087f3449"
+    },
+    {
+      "path": "data/classes/118_rooted_face_consistent_ample.json",
+      "sha256": "d91c4d6c71b570462f31262954740191c0f0c8176dba987e80780b01b6d8b5ac"
+    },
+    {
+      "path": "data/classes/119_rooted_edge_consistent_ample.json",
+      "sha256": "b58227da166bbc99a504642b1c12eba13ac17f35744b131ca58d7a00817e8a25"
+    },
+    {
+      "path": "data/classes/120_rooted_square_consistent_ample.json",
+      "sha256": "6e8d9af372033987b256e147d691a70e67f4fb0f41e46509e40c816888903d33"
+    },
+    {
+      "path": "data/classes/121_filtered_positive_ample.json",
+      "sha256": "1d9568266756df9887c174b9a41fe90497bdcd30b93b80a23afe8a1500f55986"
+    },
+    {
+      "path": "data/classes/122_cubic_positive_ample.json",
+      "sha256": "c08a2fbbeddb6f1bccc62d09ade9c2d47b04cbb795fb36d373a66c22a2ede9ec"
+    },
+    {
+      "path": "data/classes/123_half_integrally_representable_ample.json",
+      "sha256": "dfbcb0095e4ea64f6f597851b1588b2f0effa389aa2c893f53fe8f070fbf7729"
+    },
+    {
+      "path": "data/classes/124_cube_chordal_ample.json",
+      "sha256": "e2066dd8ceac73f1bf0ba19d90fbb924fdf23e52cc98d0580ad269fea8fb2b10"
+    },
+    {
+      "path": "data/classes/125_cube_inward_representable_ample.json",
+      "sha256": "e03423c24d1e359c3c7ed267effcd9f3e9c91237e9442562000f35ed54b6eb8a"
+    },
+    {
+      "path": "data/classes/126_full_witness_lattice_ample.json",
+      "sha256": "0309e18489916a9a329065c96850b252b56ed501cb9a1d5c946eb9276a8f749b"
+    },
+    {
+      "path": "data/classes/127_representation_scc_width_k.json",
+      "sha256": "d1d57ae590cfe76dbd0cc2328c2b33dae5621aa9ed020cc5a4a82811cf933bca"
+    },
+    {
+      "path": "data/classes/128_ample_chunk_width_k.json",
+      "sha256": "c03700e090ed1ddb497447f0dc33641b5a573243c4f49f04c82664bf114b921b"
+    },
+    {
+      "path": "data/examples/200_cube_chordal_three_direction_path.json",
+      "sha256": "538ab564feaf00e13509a9f151279cfb1e6f9744a4f8f565102f7789e1c65909"
+    },
+    {
+      "path": "data/examples/201_non_cube_chordal_dismantlable_ten_words.json",
+      "sha256": "fdd359467351c787e3be3e68166a4a9564875bb3638a376eec29d13d01d047cb"
+    },
+    {
+      "path": "data/examples/202_cube_chordal_projection_counterexample.json",
+      "sha256": "bc62a58734523654819db9746619e9de2ef6b7f20f2b3fa961a4a1308d932db4"
+    },
+    {
+      "path": "data/examples/203_cube_chordal_path_square.json",
+      "sha256": "1f081824ba58ac20084ef7c984cebe76909fabb719a2b9385984d6064b317834"
+    },
+    {
+      "path": "data/examples/204_acc_non_cube_chordal_five_squares.json",
+      "sha256": "8e667eb348c58a7757c104af60537e798b1ee6d82e204e0c86487afb3e9130d2"
+    },
+    {
+      "path": "data/operation_results/058_conditional_antimatroids_projection_closed.json",
+      "sha256": "256efd97407183066656208ad0be3a9bde744096d7cfb2b07f2887df008ecca5"
+    },
+    {
+      "path": "data/operation_results/059_conditional_antimatroids_conditioning_closed.json",
+      "sha256": "05bfe4331786996135e804d5869578ad65caba9d99f3ba21ed4fb6684c576c65"
+    },
+    {
+      "path": "data/operation_results/060_conditional_antimatroids_pc_minor_closed.json",
+      "sha256": "ca3f309c180df1be6df2faff49e1d8e1863cf777181a0e48b1c20d20b6b6cd1b"
+    },
+    {
+      "path": "data/operation_results/299_both_fractionally_representable_ample_projection_closure.json",
+      "sha256": "068073b809a62ae255fb2ba3f6a979f952c1bcf89564dbebad34fed8d0c36e22"
+    },
+    {
+      "path": "data/operation_results/300_both_fractionally_representable_ample_conditioning_closure.json",
+      "sha256": "dd0a5be9d7dc0f13bc2dbfd84762f8e88b5531e239895ad9e367227206cd831c"
+    },
+    {
+      "path": "data/operation_results/301_both_fractionally_representable_ample_pc_minor_closure.json",
+      "sha256": "d32502de276231b53afbad8724f781520d6b36495c77be3275911d1a5fa361b2"
+    },
+    {
+      "path": "data/operation_results/302_mixed_complement_feasible_ample_projection_closure.json",
+      "sha256": "d75b232e491ba198a800844b397fc89f8d0d9820111a2cc672b82ad544ddc8aa"
+    },
+    {
+      "path": "data/operation_results/303_mixed_complement_feasible_ample_conditioning_closure.json",
+      "sha256": "c49400e705e9f0426ffc376bf768a18e0d544eb5a40535cee1c914874da437e6"
+    },
+    {
+      "path": "data/operation_results/304_mixed_complement_feasible_ample_pc_minor_closure.json",
+      "sha256": "40903c6d420c75c00e2a4fefd17da731d015fd7db01b15d8f3fd5213fd1f6102"
+    },
+    {
+      "path": "data/operation_results/305_half_integrally_representable_ample_projection_closure.json",
+      "sha256": "7448c8a0389d761bcb6897f47a553adf42cec19472fd769bba2ecd22dafad243"
+    },
+    {
+      "path": "data/operation_results/306_half_integrally_representable_ample_conditioning_closure.json",
+      "sha256": "a651006e70830bd6d83c4ef0d5543ff9730c4f878ced0bdaaadf1d50c5ae9e94"
+    },
+    {
+      "path": "data/operation_results/307_half_integrally_representable_ample_pc_minor_closure.json",
+      "sha256": "9b90953dbf00387ec50e29e4872e34217c44d11cb6ef7d164e2aa24dd7114a60"
+    },
+    {
+      "path": "data/operation_results/308_cube_inward_representable_ample_projection_closure.json",
+      "sha256": "9175498d52928902526acf82f1ff1e4730106984a4a700b6360281607385196b"
+    },
+    {
+      "path": "data/operation_results/309_cube_inward_representable_ample_conditioning_closure.json",
+      "sha256": "3439ac80bac9240c24517584c3c4f8eb413bff1ce921b25046737325ab12d934"
+    },
+    {
+      "path": "data/operation_results/310_cube_inward_representable_ample_pc_minor_closure.json",
+      "sha256": "6f43733e9890fa65a3d70881fa1317c528c5c0b4fb76b9bc5867f48c2201fdf3"
+    },
+    {
+      "path": "data/operation_results/311_full_witness_lattice_ample_projection_closure.json",
+      "sha256": "054586802e811cdc1b8424514a83bd9d3a89fb00c7bb47eebf9e33c23aaec53a"
+    },
+    {
+      "path": "data/operation_results/312_full_witness_lattice_ample_conditioning_closure.json",
+      "sha256": "58949299958fe837c334a55546344481b9844de8316eb701bf397201513b4e68"
+    },
+    {
+      "path": "data/operation_results/313_full_witness_lattice_ample_pc_minor_closure.json",
+      "sha256": "59b7a6f282206f66aec751e6468d48b586f2af5c063c882deda706f764a89e36"
+    },
+    {
+      "path": "data/operation_results/314_filtered_positive_ample_projection_closure.json",
+      "sha256": "7c33f5e59632e11bc39a76b4a3a5254d12652ed2441586c275bf8b2099061c32"
+    },
+    {
+      "path": "data/operation_results/315_cubic_positive_ample_projection_closure.json",
+      "sha256": "8da1ce9817ea661ab003b86fc54252f903c4d0e177bbd699d68a8c8b3b23b438"
+    },
+    {
+      "path": "data/operation_results/316_cube_chordal_ample_projection_closure.json",
+      "sha256": "ca7b1fe89ccb3adabe30147e75f37c4a746d7429d6416b72274418a22d009cae"
+    },
+    {
+      "path": "data/operation_results/317_cube_chordal_ample_conditioning_closure.json",
+      "sha256": "627486370379a4c08251e365d7a24d81d907db66e9e834ae187483866070ae26"
+    },
+    {
+      "path": "data/operation_results/318_cube_chordal_ample_pc_minor_closure.json",
+      "sha256": "5c6dd0439844a283701c8953360e8b3a54db1d09e657492ea7381637ae2e1998"
+    },
+    {
+      "path": "data/operation_results/319_representation_scc_width_k_projection_closure.json",
+      "sha256": "d3c445d63482190059e200465ba35416c02be3d116241f44357499a6e3c785a5"
+    },
+    {
+      "path": "data/operation_results/320_representation_scc_width_k_conditioning_closure.json",
+      "sha256": "bc041368086f36f9516a135a7d8640620b276439f2ad0badd354e7f0771fb42d"
+    },
+    {
+      "path": "data/operation_results/321_representation_scc_width_k_pc_minor_closure.json",
+      "sha256": "640164ebe1fb50cf4b38b631955326891713b6039cd3869d5946ca922b376c04"
+    },
+    {
+      "path": "data/operation_results/322_ample_chunk_width_k_projection_closure.json",
+      "sha256": "c98536930f141b0110879a391be0c6c5afaaf1f72d66708f4636f46a990674ab"
+    },
+    {
+      "path": "data/operation_results/323_ample_chunk_width_k_conditioning_closure.json",
+      "sha256": "a85958b3b37ffdd39de4a91ad86b4f13d029fb6cfbdcb4e836a7a856d8667939"
+    },
+    {
+      "path": "data/operation_results/324_ample_chunk_width_k_pc_minor_closure.json",
+      "sha256": "bf8f3dfda0aad68b0e9ca439d7df02b812218d2b15c32f346b3e18b2461a8447"
+    },
+    {
+      "path": "data/operation_results/325_acc_graphs_projection_closure.json",
+      "sha256": "45f46225fbd3987b1fd2bc9757584d986a3a0ec73cae5c031038e7a64082d720"
+    },
+    {
+      "path": "data/operation_results/326_acc_graphs_conditioning_closure.json",
+      "sha256": "ab6dc1c5c4cc43b213adb5d2a9924ce0f7e08399fd628f613463cb8049cb4ae7"
+    },
+    {
+      "path": "data/operation_results/327_acc_graphs_pc_minor_closure.json",
+      "sha256": "d1a9a0c4c51fe65f78d9b835fa0cb5f42798781acda545566c68e385c88a1486"
+    },
+    {
+      "path": "data/relations/043_convex_geometry_ideals_subset_conditional_antimatroids.json",
+      "sha256": "e50aeb4cbdef462e075070c5c908487f633a806c72b92f4acfa7ffd44ac45706"
+    },
+    {
+      "path": "data/relations/201_acc_strict_subset_median.json",
+      "sha256": "86c600f9e4f44a8cfe83cf8031472446aa5e85c3d638ed311dcd98acb96e1cf7"
+    },
+    {
+      "path": "data/relations/272_universal_cube_extension_ample_subset_mixed_complement_feasible_ample.json",
+      "sha256": "6f85f92da857117ba798963722cb6c3bb1d3682213fa32822f01b2dbd9615acd"
+    },
+    {
+      "path": "data/relations/273_mixed_complement_feasible_ample_subset_representation_map_ample.json",
+      "sha256": "d2289331189b76912d92ed9278c46e6a0d857025b4fea50b7290b62b9cafde1e"
+    },
+    {
+      "path": "data/relations/274_mixed_complement_feasible_ample_subset_both_fractionally_representable_ample.json",
+      "sha256": "794daf2335937909b41be247d244e3be1d66f84662e5cc2d9b9fb4b0cdff27b3"
+    },
+    {
+      "path": "data/relations/275_both_fractionally_representable_ample_subset_fractionally_representable_ample.json",
+      "sha256": "a088656118de628ca031fd2ed85aff2770803ae36ade4522d2e364da38b41f41"
+    },
+    {
+      "path": "data/relations/276_representation_map_ample_subset_rooted_face_consistent_ample.json",
+      "sha256": "e217a58ada640dc05ef3e734e0db040778a380378021121caf8f79842c0b2c97"
+    },
+    {
+      "path": "data/relations/277_representation_map_ample_subset_rooted_square_consistent_ample.json",
+      "sha256": "269712e7174d216a633d711d65e835dfdd114515e9875ac86a6afa20d0f58553"
+    },
+    {
+      "path": "data/relations/278_rooted_square_consistent_ample_subset_rooted_edge_consistent_ample.json",
+      "sha256": "d739f6ee74ebc2dd85ec983349fd23eaab8d22d6d18ee567465007e165071127"
+    },
+    {
+      "path": "data/relations/279_rooted_edge_consistent_ample_subset_fractionally_representable_ample.json",
+      "sha256": "37f0076b8c69bd0e9befc1ae5659cf59043d8899dbdaf56b303a8dd9c47cad98"
+    },
+    {
+      "path": "data/relations/280_rooted_face_consistent_ample_subset_fractionally_representable_ample.json",
+      "sha256": "2ef184e9544cefc8d15a78b16ac9bb8435636d4c936e98d247e7901cf68a24de"
+    },
+    {
+      "path": "data/relations/281_rooted_face_consistent_ample_subset_rooted_edge_consistent_ample.json",
+      "sha256": "658cde195b7774fd1a68064b287f22510a89d1fc68b9c1d4d85a700da06c436d"
+    },
+    {
+      "path": "data/relations/282_fractionally_representable_ample_subset_filtered_positive_ample.json",
+      "sha256": "40a6bd283e8f995e94b34924839f5ac9c186b575a41d0d73e7f4f847ffc555c5"
+    },
+    {
+      "path": "data/relations/283_fractionally_representable_ample_subset_cubic_positive_ample.json",
+      "sha256": "03cc3898dab8e451cfb1a3175bf81acefe3f9e18e91f99953d9840b899438d42"
+    },
+    {
+      "path": "data/relations/284_cubic_positive_ample_subset_ample.json",
+      "sha256": "f7dba38b45d3522326abd0974d3b011a0f5a60314d5efdcd6e5446c87b9b588d"
+    },
+    {
+      "path": "data/relations/285_filtered_positive_ample_subset_ample.json",
+      "sha256": "3b084a112598ede4c2ba026dd114422b4bb8dfd7c17857d293feb05ecff80b98"
+    },
+    {
+      "path": "data/relations/286_representation_map_ample_subset_half_integrally_representable_ample.json",
+      "sha256": "c6d1e248324eacfebdbe54e22cc946dc15a9d4bbf5f52d18683fb51acb0468eb"
+    },
+    {
+      "path": "data/relations/287_half_integrally_representable_ample_subset_fractionally_representable_ample.json",
+      "sha256": "ca168d4dacd82b85183ddb111f4aaf7c54c820191744eb6e44b5c9995514ea6e"
+    },
+    {
+      "path": "data/relations/288_daisy_strict_subset_cube_chordal.json",
+      "sha256": "4a3c9b615a9d185e0b8e77af7782f6fd4038c025aa8868928cee8ddc43170d35"
+    },
+    {
+      "path": "data/relations/289_cube_chordal_strict_subset_dismantlable.json",
+      "sha256": "884297c76535b3457fb428c55819d719ca6e1c5ca67f34f5b997f1ff26575d54"
+    },
+    {
+      "path": "data/relations/290_cube_chordal_subset_both_sides_dismantlable.json",
+      "sha256": "7b5340a893271cee3cd5f9cc8aa0ee91d78f47562eae71638b1380c223e72647"
+    },
+    {
+      "path": "data/relations/291_signed_bouquets_subset_both_sides_dismantlable.json",
+      "sha256": "496ddb2ec2f5d2ffff9d7225c7b5858f902c485fd9b546df71bb95011a137616"
+    },
+    {
+      "path": "data/relations/292_maximum_generated_classes_subset_cube_inward_representable_ample.json",
+      "sha256": "ae1d9e7ff4d04bb77e45880ac17bdef93dc13bbd29dfa24a16e81fe3cc315e64"
+    },
+    {
+      "path": "data/relations/293_cube_chordal_ample_subset_cube_inward_representable_ample.json",
+      "sha256": "c1b022229a0b1a8b52a1060fe38ed74f3828b2fb930394e12765eeedb16ff73f"
+    },
+    {
+      "path": "data/relations/294_cube_inward_representable_ample_subset_full_witness_lattice_ample.json",
+      "sha256": "baec6588cd3ec06ae992a0fae3a5574adbf8d2f6bcab34fcd1f5a9890190a1bb"
+    },
+    {
+      "path": "data/relations/295_full_witness_lattice_ample_subset_representation_map_ample.json",
+      "sha256": "793b8a4085a40d4626fe3b59594761204e317a7d4058211d0ebd1d380826787d"
+    },
+    {
+      "path": "data/relations/296_dismantlable_ample_subset_representation_scc_width_k.json",
+      "sha256": "b4ca6c48fc8c42ac17ea03b17acd48b92d1cd04ccc4d6abf28c3a819b72d0ff4"
+    },
+    {
+      "path": "data/relations/297_representation_scc_width_k_subset_representation_map_ample.json",
+      "sha256": "70285cc2f08b0b039a8208461c43ae8e1e1f2bd487811f85b87403f57c5bc742"
+    },
+    {
+      "path": "data/relations/298_representation_scc_width_k_subset_ample_chunk_width_k.json",
+      "sha256": "0e514430923c73c9ce5f1002af8c0037017d9b802fb12f04c02c7d5d4312c2c4"
+    },
+    {
+      "path": "data/relations/299_ample_chunk_width_k_subset_ample.json",
+      "sha256": "b2a5faf73082a4170a0744f6744814e9b348cfebf47228cb0de3c0de8d525671"
+    },
+    {
+      "path": "data/relations/300_cube_chordal_not_contained_in_acc.json",
+      "sha256": "e4bad56a23205a7013787e80fcca7bdb928f337ebf07aaf2be05a629125da2b6"
+    },
+    {
+      "path": "data/relations/301_acc_not_contained_in_cube_chordal.json",
+      "sha256": "2a029a30076034e9d5b0217052c9dc629b4ab71be33ec7c1fd24dfe43a09b01c"
+    },
+    {
+      "path": "data/relations/302_cover_recursive_not_contained_in_cube_chordal.json",
+      "sha256": "4eac3fc5ba3219981b2f4c37a56b3c2a5806239b7394ae26d3144793569d4a71"
+    },
+    {
+      "path": "data/relations/303_cube_chordal_not_contained_in_cover_recursive.json",
+      "sha256": "7a288d31febae6bd02af6788c1f9fed3b72a0895a33e9cc7cdc400fb6551539d"
+    },
+    {
+      "path": "data/relations/304_cube_chordal_ample_open_comparison_maximum_generated_classes.json",
+      "sha256": "c31241d18dc0bf1d55fb287a529a712b50a2965e5541d68f9e47c087e90b463b"
+    },
+    {
+      "path": "data/relations/305_conditional_antimatroids_open_comparison_maximum_generated_classes.json",
+      "sha256": "b922032f9f4d0f27f4ce2899590e174469525c2754506a059931fc002df08287"
+    },
+    {
+      "path": "data/relations/306_mixed_complement_feasible_ample_open_comparison_representation_map_ample.json",
+      "sha256": "d4d08ac6231cf015222735d048ff06900c163a95d40b49a1f4e67ac86a299a1b"
+    },
+    {
+      "path": "data/relations/307_universal_cube_extension_ample_open_comparison_mixed_complement_feasible_ample.json",
+      "sha256": "5a2fab9fd3073860ba76293d64e532df1874c96b6a9955f8c1f2e7b7de663cc5"
+    },
+    {
+      "path": "data/relations/308_rooted_edge_consistent_ample_open_comparison_fractionally_representable_ample.json",
+      "sha256": "61a573dc8321f9463ec591aa878d6e3cc04acd19d535f09567166136b722800b"
+    },
+    {
+      "path": "data/relations/309_cubic_positive_ample_open_comparison_ample.json",
+      "sha256": "1c8a4bd0d0d09643dc409fe0b18947e48d2eefc188d0f8769be9bc5a1ef683c8"
+    },
+    {
+      "path": "data/relations/310_both_fractionally_representable_ample_open_comparison_fractionally_representable_ample.json",
+      "sha256": "6897cca70a043d7ba464eb723bcd60431c51c22e054f75be1f7b4ce0d09bc3e9"
+    },
+    {
+      "path": "data/relations/311_universal_cube_extension_ample_open_comparison_both_fractionally_representable_ample.json",
+      "sha256": "eb2b65165dd006b9aa7e265a891e5e08b36280ad57379b7b8fad87bf919c6a69"
+    },
+    {
+      "path": "data/results/717_atlas_allocation_refinement_hierarchies.json",
+      "sha256": "fd5b9c594824335aefb2116c808f276d018951170960a6d4406f2010f311d980"
+    },
+    {
+      "path": "data/results/718_atlas_peeling_width_hierarchies.json",
+      "sha256": "69486a65684406fe278cc8480c4dfb4f46be0032bd913673ab68ba2798720218"
+    },
+    {
+      "path": "data/results/719_cube_chordal_exact_product_criterion.json",
+      "sha256": "c634f889e12a8dad94427aa93de0ca1a7ee6bb19a1e041b3657e3d931b416ea7"
+    }
+  ],
+  "review_artifacts": [
+    {
+      "path": "migration/canonical_classes.json",
+      "sha256": "f9810bc046a6e93213b1ced2394de4b3470a44ef13403982c39930852a96fb96"
+    },
+    {
+      "path": "migration/minor_atlas_graph_classes.json",
+      "sha256": "21df105a6591273664b26954c39a9111fd2fd3c90007f4de16c7b3b1bf15942e"
+    },
+    {
+      "path": "migration/coverage.json",
+      "sha256": "bf8a3ca21a56c56614d97ac53dd49dbba5d8f47741b70b06491f0999c1a90a92"
+    },
+    {
+      "path": "migration/manuscript_result_audit.json",
+      "sha256": "634999ee91c01101b36c5358937e1598611af49ab90059557751fb2edc1e931e"
+    },
+    {
+      "path": "migration/closure_status_audit.json",
+      "sha256": "0649ad0892324002b2846a47901b67eaf5edd2600820c35dddafb5df9ecad5da"
+    },
+    {
+      "path": "migration/partial_cube_containment_audit.json",
+      "sha256": "72fc39ee6427f19a410ef0cddfcccb71cf1135c7ce39f21542b88d0e131b2652"
+    }
+  ],
+  "validation": {
+    "database": "Validated 12 schemas and 2230 records, including 128 classes. Added 105 records and updated seven existing records.",
+    "website": "Normalized 2246 generated HTML files; all 12 tables, bibliography and two graph views pass.",
+    "graphs": "205 Hasse covers represent 258 stored inclusions; all 35 current-atlas Ample-family nodes and 80 relationships covered; all 128 classes positioned relative to Partial Cubes; 268 closure-map arrows.",
+    "migration": "Historical extraction, source-recoverability, review-queue and generated-audit checks pass. Current atlas snapshot source hashes are additionally checked by make check.",
+    "finite_examples": "Seven fixed examples pass exact ampleness, cube-chordality, corner peeling, medianity, daisy and maximal-cube join-tree tests as applicable; the sixteen-word projection equals the recorded ten-word class.",
+    "negative_controls": "Removing E_2 -> E_1 and weakening Daisy strictly below CAmp to mere inclusion both cause the corresponding atlas relationship-strength checks to fail.",
+    "scope": "Recent complementary-completion claims retain their author-proof/receiving-review attribution. No independent spectral-proof review or field-wide priority claim is made."
+  },
+  "deferred": [
+    "The original dismantlable-ample migration remains at Batch 199 mathematics; its next three uncovered claims are unchanged.",
+    "All original equality/strictness decisions remain open. In particular CAmp subset MaxMin and general signed-bouquet maximum ancestry remain open.",
+    "Closure of E_k for k >= 1 and fixed-level conditioning closure of Pos_k for k >= 3 remain not assessed.",
+    "This batch covers the current atlas class and relationship landscape, not every theorem in the expanded atlas or the newer one-operation obstruction survey.",
+    "Historical sibling-source freshness issues in the atlas inventory remain visible; this batch does not silently recertify them."
+  ]
+}

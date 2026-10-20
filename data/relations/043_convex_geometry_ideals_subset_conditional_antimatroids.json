@@ -4,12 +4,15 @@
   "name": "Convex-Geometry Ideals Are Conditional Antimatroids",
   "subject_id": "#classes/convex_geometry_ideals",
   "object_id": "#classes/conditional_antimatroids",
-  "relation_type": "inclusion",
+  "relation_type": "strict_inclusion",
   "status": "established",
   "scope": "Finite one-inclusion graphs, up to signed-coordinate equivalence and suppression of constants.",
-  "statement": "Every lower ideal of a finite convex geometry is a bouquet of convex geometries and hence a conditional antimatroid.",
-  "proof": "The ideal contains the empty set and inherits intersection closure from the ambient convex geometry. If $Y\\subsetneq X$ belong to the ideal, the ambient convex-geometry extension axiom supplies a one-element extension of $Y$ inside $X$; downward closure keeps that extension in the ideal.",
+  "statement": "Signed convex-geometry ideals are a proper subclass of signed bouquets (conditional-antimatroid graph classes).",
+  "proof": "Ideals inherit intersection closure and ampleness. The existing 26-set bouquet is not affine-convex realizable, while every signed convex-geometry ideal is realizable, so it has no ideal presentation in any orientation.",
   "references": "\\cite{CCK2026}",
-  "proof_source": "ResearchWork:literature/math/chalopinchepoiknauer2025geometry/source.txt#section-2.5",
-  "comments": "CCK Proposition 4 proves strictness for oriented set families. This record does not strengthen that example to a signed-coordinate graph-class separation."
+  "proof_source": "ResearchWork:literature/math/chalopinchepoiknauer2025geometry/source.txt#section-2.5; PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex#prop:atlas-bouquet-position",
+  "comments": "The new nonrealizable witness establishes strictness for signed-coordinate graph classes, strengthening the older oriented-family inclusion.",
+  "witness_ids": [
+    "#examples/nonrealizable_bouquet"
+  ]
 }

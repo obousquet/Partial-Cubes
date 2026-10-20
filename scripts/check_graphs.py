@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import sys
 from collections import defaultdict
@@ -32,7 +33,7 @@ def main() -> int:
     parser.add_argument(
         "--minor-atlas-inventory",
         type=Path,
-        default=Path("migration/generated/minor_inventory.json"),
+        help="Override the frozen inventory named by the graph map",
     )
     parser.add_argument(
         "--minor-atlas-graph-map",
@@ -123,8 +124,21 @@ def main() -> int:
     # that is a subclass of Ample must have a real database node and an
     # established inclusion path to Ample.  The two excluded atlas rows are
     # explicitly outside that down-set.
-    inventory = json.loads(args.minor_atlas_inventory.read_text(encoding="utf-8"))
     graph_map = json.loads(args.minor_atlas_graph_map.read_text(encoding="utf-8"))
+    map_repository = args.minor_atlas_graph_map.resolve().parent.parent
+    inventory_path = args.minor_atlas_inventory or map_repository / graph_map["source"]
+    inventory_bytes = inventory_path.read_bytes()
+    inventory = json.loads(inventory_bytes)
+    if hashlib.sha256(inventory_bytes).hexdigest() != graph_map["source_sha256"]:
+        errors.append("minor-atlas inventory does not match its reviewed fingerprint")
+    # A current atlas freeze is separate from the historical seed extraction:
+    # old numbered JSON provenance must keep referring to its original bytes.
+    if graph_map.get("snapshot_manifest"):
+        manifest = json.loads((map_repository / graph_map["snapshot_manifest"]).read_text())
+        for entry in manifest["files"]:
+            archive = map_repository / entry["archive_path"]
+            if not archive.is_file() or hashlib.sha256(archive.read_bytes()).hexdigest() != entry["sha256"]:
+                errors.append(f"minor-atlas source snapshot is missing or corrupt: {entry['path']}")
     excluded_atlas_rows = {"minimal-nonample", "treelike"}
     expected_atlas_ids = {
         entry["id"] for entry in inventory["families"]
@@ -146,6 +160,48 @@ def main() -> int:
             errors.append(
                 f"minor-atlas Ample subclass lacks Hasse reachability to Ample: {mapping['source_id']}"
             )
+
+    # Check relationship strength as well as nodes. In particular an inclusion
+    # path alone cannot stand in for strictness or an opposing noncontainment.
+    atlas_aliases = {entry["source_id"]: aliases.get(entry["class_id"])
+                     for entry in graph_map["classes"]}
+    classes_by_ref = {f'#classes/{c["short_name"]}': c for c in classes}
+    for family in inventory["families"]:
+        entry = classes_by_ref.get(atlas_aliases.get(family["id"]))
+        if entry:
+            for operation in ("p", "c", "pc"):
+                expected = {"yes": "closed", "no": "not_closed"}.get(family[operation])
+                if expected and entry[f"{operation}_closure_status"] != expected:
+                    errors.append(f"minor-atlas closure disagrees with catalogue: {family['id']} {operation}")
+    strict_edges = [(aliases.get(r["subject_id"]), aliases.get(r["object_id"]))
+                    for r in established if r["relation_type"] == "strict_inclusion"]
+
+    def reaches(a: str, b: str) -> bool:
+        return a == b or has_path(a, b, adjacency)
+
+    for assertion in inventory["relations"]:
+        subject = atlas_aliases.get(assertion["source"])
+        object_ = atlas_aliases.get(assertion["target"])
+        if not subject or not object_:
+            errors.append(f"unmapped minor-atlas relation: {assertion}")
+            continue
+        direct = [r for r in relations if aliases.get(r["subject_id"]) == subject
+                  and aliases.get(r["object_id"]) == object_]
+        if assertion["status"] == "open":
+            covered = any(r["status"] == "open" and r["relation_type"] == "comparison" for r in direct)
+        elif assertion.get("relation") == "noncontainment":
+            covered = any(r["status"] == "established" and r["relation_type"] in {"noncontainment", "incomparable"}
+                          for r in direct)
+            covered = covered or any(r["status"] == "established" and r["relation_type"] == "incomparable"
+                                    and aliases.get(r["subject_id"]) == object_
+                                    and aliases.get(r["object_id"]) == subject for r in relations)
+        else:
+            covered = reaches(subject, object_)
+            if assertion.get("strict"):
+                covered = covered and any(reaches(subject, left) and reaches(right, object_)
+                                          for left, right in strict_edges)
+        if not covered:
+            errors.append(f"minor-atlas relationship is not represented at its stated strength: {assertion['source']} -> {assertion['target']}")
 
     # Every class must now have an explicit position relative to Partial Cubes:
     # below it, above it, or accompanied by an established negative comparison.
@@ -200,7 +256,7 @@ def main() -> int:
     print(
         f"Graph check passed: {len(cover_pairs)} Hasse covers represent "
         f"{len(established)} stored inclusions; {len(mapped_atlas_ids)} minor-atlas Ample-family "
-        f"nodes covered; all {positioned_relative_to_partial_cubes} classes positioned relative "
+        f"nodes and {len(inventory['relations'])} atlas relationships covered; all {positioned_relative_to_partial_cubes} classes positioned relative "
         f"to Partial Cubes; {len(closure['edges'])} closure-map arrows rendered."
     )
     return 0

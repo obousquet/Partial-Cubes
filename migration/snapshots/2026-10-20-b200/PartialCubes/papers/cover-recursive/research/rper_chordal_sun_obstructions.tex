@@ -1,0 +1,229 @@
+\section{Peripheral obstructions with chordal maximal-cube graphs}
+\label{sec:rper-chordal-sun-obstructions}
+
+The maximal-cube graph does not determine membership in $\Rper$, even
+among ample classes for which that graph is chordal. We construct an
+infinite forbidden family with this property. Its members nevertheless
+have explicit corner peelings and acyclic representation maps. Thus
+chordal maximal-cube graphs do not reduce the peripheral obstruction
+problem to corner-peeling obstructions.
+
+Here the graph has maximal positioned cubes as vertices, with edges for
+nonempty intersection. It differs from the shattered-pair graph, whose
+vertices are coordinates. The ACC criterion in the
+\href{../../../YangDim/yang_complex_dictionary.tex}{Yang-complex dictionary}
+requires medianity and chordality of that latter graph. Directly, ACC
+requires a join tree of maximal cubes, with connected occurrence nodes for
+each concept. A chordal intersection graph alone does not ensure such a
+tree: the ample downset $\{0,1\}^3\setminus\{111\}$ has three maximal
+squares with intersection graph $K_3$. Its three concepts of weight one
+each force a different pair of squares to be adjacent in a join tree,
+which would require all three edges. It is therefore not ACC.
+
+Fix $m\ge4$, with indices taken modulo $m$. The coordinate set is
+\[
+ E_m=\{(i,j):j=i-1\text{ or }i+1\},\qquad |E_m|=2m.
+\]
+We identify a word with its set of coordinates having value one. Define
+its two incoming and outgoing coordinate pairs by
+\[
+ A_i=\{(i-1,i),(i+1,i)\},\qquad
+ B_i=\{(i,i-1),(i,i+1)\},
+\]
+and put $S_i=A_i\cup A_{i+1}$ and $W_i=A_i\cup B_i$.
+For $J\subseteq\mathbb Z_m$, let
+\begin{equation}
+ D_m=\bigcup_{i\in\mathbb Z_m}2^{S_i},\qquad
+ H_{m,J}=D_m\cup\{W_i:i\in J\},\qquad H_m=H_{m,\mathbb Z_m}.
+ \label{eq:rper-sun-family}
+\end{equation}
+The indices in $E_m$ are coordinate names, not edges of the concept graph.
+The set $D_m$ is a Boolean downset and therefore belongs to $\Rper$.
+Each added word completes a square based at $A_i$, with free directions
+$B_i$.
+
+\begin{theorem}[An infinite chordal forbidden family]
+\label{thm:rper-chordal-sun-obstructions}
+For every $m\ge4$, the class $H_m$ is an ample forbidden pc-minor of
+$\Rper$, of isometric dimension $2m$, VC dimension four and order $13m+1$.
+Every proper subfamily $H_{m,J}$ with $J\subsetneq\mathbb Z_m$ belongs
+to $\Rper$.
+
+The complete maximal cubes of $H_m$ are
+\[
+ C_i=2^{S_i},\qquad
+ L_i=\{A_i\cup T:T\subseteq B_i\}\qquad(i\in\mathbb Z_m).
+\]
+The $C_i$ form a clique in their intersection graph. The $L_i$ are
+pairwise disjoint, and $L_i$ meets exactly $C_{i-1},C_i$.
+Thus this graph is an $m$-sun and is chordal: delete the simplicial
+vertices $L_i$, then the remaining clique.
+
+The graph of $H_m$ has no cut vertex. Deleting the words $W_i$ in any
+order, followed by the words of $D_m$ in decreasing cardinality, is a
+corner peeling. Its explicit acyclic ordinary representation is
+\begin{equation}
+ r(U)=U\quad(U\in D_m),\qquad r(W_i)=B_i.
+ \label{eq:rper-sun-representation}
+\end{equation}
+For every coordinate the two restrictions have orders $16$ and $13m-15$,
+and the contraction has order $13m-14$.
+\end{theorem}
+
+\paragraph{Proof strategy.}
+The downset has $12m+1$ words. Each $W_i$ adds precisely the shattered
+support $B_i$, and is a degree-two corner. Peripheral recursion fails
+only when all the extra words are present. If one is missing, choose a
+neighboring present index and use the coordinate directed from it toward
+the missing index. One section deletes that present word; the other is a
+downset with at most one pendant word. This argument works through the
+successive zero restrictions and supplies positivity of every proper
+subfamily. A contraction absorbs one of the added words into the downset,
+so it is the contraction of a proper positive subfamily.
+
+\begin{proof}
+\emph{The downset and the new supports.}
+The pairs $A_i$ partition $E_m$. Each $S_i$ consists of two consecutive
+pairs. The downset $D_m$ has $2m$ singletons, $5m$ pairs, $4m$ triples
+and $m$ four-sets, as well as the empty set. Indeed each $S_i$ contributes
+six pairs, and its one pair $A_i$ is also in $S_{i-1}$; these are the
+only repetitions of pairs between different cores. No triple or four-set
+is repeated. Hence $|D_m|=12m+1$.
+
+The two coordinates of $B_i$ have targets $i-1$ and $i+1$, which are not
+consecutive for $m\ge4$. Thus $B_i\notin D_m$ and $W_i\notin D_m$.
+For either $b\in B_i$, however, $W_i\setminus\{b\}$ lies in one of the
+cores $2^{S_{i-1}},2^{S_i}$. Removing an incoming coordinate from $W_i$
+leaves both coordinates of $B_i$, so does not give a word of $D_m$.
+Different $W_i$ have the same cardinality and are never neighbors.
+It follows that $W_i$ is a corner of degree two, with incident square
+$L_i$, in every $H_{m,J}$ containing it.
+
+For completeness, the exact shattering identity is
+\begin{equation}
+ \strc(H_{m,J})=D_m\ \dot\cup\ \{B_i:i\in J\}.
+ \label{eq:rper-sun-shadow}
+\end{equation}
+Consider a newly shattered support $T$. If every new word has its
+$T$-trace already present in $D_m$, no new trace appears. Otherwise some
+$W_i|_T$ was absent. Since removing either coordinate of $B_i$ from
+$W_i$ gives an old word, necessarily $B_i\subseteq T$.
+Only $W_i$ among all the words of $H_{m,J}$ contains both coordinates
+of $B_i$: for $j\ne i$, $W_j$ contains at most one of the two outgoing
+coordinates with source $i$. Consequently any additional coordinate
+of $T\setminus B_i$ has a forced value in the trace with $B_i=11$,
+so $T$ cannot be shattered. The new support must therefore be $B_i$,
+and its full square $L_i$ is present. All supports in $D_m$ have their
+cubes based at zero. This proves \eqref{eq:rper-sun-shadow} and ampleness,
+as well as $|H_{m,J}|=12m+1+|J|$ and VC dimension four.
+Every coordinate is active since all singletons belong to $D_m$.
+
+The maximal shattered supports in \eqref{eq:rper-sun-shadow} are exactly
+$S_i$ and the selected $B_i$. In an ample class, maximal cubes are the
+unique cubes on maximal shattered supports. To recall why, the anchors
+of cubes on a fixed support form an ample full reduction, hence are
+connected. A maximal cube's anchor cannot have a neighbor in that
+reduction, which would extend the cube. If its support were not maximal shattered, a larger strongly shattered
+cube would give at least two anchors in that full reduction, contradicting
+connectedness and the isolated anchor. Thus the support is maximal, with
+only one position; the converse follows immediately.
+This identifies the complete cube list as claimed.
+Every $C_i$ contains zero. A word of $L_i$ contains $A_i$, so $L_i$ can
+meet only $C_{i-1}$ and $C_i$. It meets both at the word $A_i$.
+For $j\ne i$, the set $A_j$ is not contained in $W_i$: at most one of
+its two coordinates has source $i$. Thus $L_i\cap L_j=\varnothing$.
+These observations give the asserted chordal intersection graph.
+Each core four-cube remains connected after deletion of any one vertex,
+and consecutive core intersections are four-vertex squares, which remain
+nonempty. Thus $D_m$ has no cut vertex. Every additional word has two
+neighbors in $D_m$, so adding them preserves the absence of cut vertices.
+The cubes just listed equivalently describe the complete extentures of
+$H_m^c$, not those of $H_m$: the core cubes fix zero outside $S_i$;
+the leaf cubes fix one on $A_i$ and zero outside $A_i\cup B_i$.
+
+\emph{A proper selected family has a peripheral recursion.}
+We prove the slightly stronger statement needed to iterate restrictions.
+Let $P\subseteq E_m$ be coordinates fixed to zero. The corresponding
+section of $H_{m,J}$ consists of the restricted downset and those $W_i$
+with $i\in J$ and $W_i\cap P=\varnothing$. Call these indices live.
+If the live set is proper, this section belongs to $\Rper$.
+Induct on the number of live indices. With none, the section is a downset.
+Otherwise choose adjacent indices $f,e$ with $f$ live and $e$ not live;
+this is possible because the cycle is connected. The coordinate
+$c=(f,e)$ is not in $P$, since $c\in W_f$.
+Among the added words, only $W_f,W_e$ contain $c$, and $W_e$ is absent.
+Lowering $c$ in $W_f$ gives a word of the downset. Therefore this
+coordinate is downward peripheral.
+
+In its zero section, $f$ ceases to be live, so induction applies.
+In its one section, the downset portion comes only from the two cores
+containing $A_e$, with $P\cup\{c\}$ removed; it is a downset after
+$c$ is suppressed. Its only additional word is $W_f\setminus\{c\}$.
+Write $h$ for the neighbor of $f$ other than $e$ and $t=(f,h)$.
+The coordinate $t$ occurs in neither of those two core supports: $h$ is
+neither $e$ nor a neighbor of $e$, since $m\ge4$.
+The extra word is $A_f\cup\{t\}$ and its neighbor $A_f$ lies in the
+core shared by $e,f$. None of these coordinates has been fixed to zero,
+because $f$ is live. Hence the one section is a downset with a single
+pendant word, attached in the previously constant coordinate $t$.
+It belongs to $\Rper$ by a singleton peripheral expansion of the
+downset. Both children are positive, completing the induction.
+Taking $P=\varnothing$ proves $H_{m,J}\in\Rper$ whenever $J$ is proper.
+
+\emph{Failure of peripherality and positivity of every proper minor.}
+For $c=(f,e)$, the leaf cube $L_e$ fixes $c=1$. Any core whose two target
+indices omit $e$ fixes $c=0$. These are maximal cubes.
+If the two coordinate sections were nested, a maximal cube fixed on
+the smaller side could be duplicated across that coordinate, contradicting
+maximality. Thus both fixed polarities exclude peripherality.
+There is such a core for every $m\ge4$, so $H_m$ has no peripheral
+coordinate and cannot belong to $\Rper$.
+
+For either prescribed bit of $c$, only a proper subset of the added
+words survives: exactly $W_f,W_e$ survive on the one side, and all the
+other $W_i$ survive on the zero side. Each restriction is therefore the
+same restriction of a proper $H_{m,J}$, and belongs to $\Rper$ by
+\cref{lem:pcminor-closure}.
+For contraction, $W_f\setminus\{c\}$ lies in the projected downset,
+because $c\in B_f$. Hence
+\[
+ \pi_c H_m=\pi_c H_{m,\mathbb Z_m\setminus\{f\}}\in\Rper.
+\]
+All elementary proper images are positive, and their further pc-minors
+remain positive by the same closure lemma. This proves forbiddenness.
+
+The one section has two core three-cubes sharing a one-cube, hence
+$8+8-2=14$ downset words, and the two distinct extra words give order16.
+The zero section has order $13m+1-16=13m-15$.
+Every downset word of the one section has its zero neighbor; among its
+two extra words, only $W_f$ has that neighbor. Thus there are15 double
+fibers, giving contraction order $13m+1-15=13m-14$.
+
+Finally the degree-two corners can be deleted in any order, leaving the
+downset. Removing downset words in decreasing cardinality finishes a
+corner peeling. Its outmap is precisely \eqref{eq:rper-sun-representation}:
+the added words point along $B_i$ into the downset, and the downset map
+removes its positive coordinates. Its labels are the support family in
+\eqref{eq:rper-sun-shadow}, each once. All edges point from one to zero,
+so the map is acyclic and every contained cube has its unique zeroward
+sink. Its outgoing cubes are $L_i$ and the lower cubes in $D_m$.
+This proves the representation assertion.
+\end{proof}
+
+\begin{remark}[The same abstract cube graph with opposite membership]
+\label{rem:rper-sun-graph-not-classifier}
+There is also an $\Rper$ class with this same $m$-sun as its complete
+maximal-cube graph. On coordinates $x_i,p_i$, take the downset generated
+by the pairs $\{x_i,x_{i+1}\}$ and add the pendant words $\{x_i,p_i\}$.
+The downset has $2m+1$ words and each pendant attachment is peripheral.
+Its $m$ core squares form a clique, and its $m$ pendant edges are disjoint,
+each meeting precisely its two neighboring core squares.
+Thus it has $3m+1$ words, VC dimension two, and the same cube graph as
+$H_m$, but belongs to $\Rper$.
+The abstract intersection graph forgets the cube supports and positions.
+The theorem is not an exhaustive characterization of all obstructions
+with chordal maximal-cube graphs, nor a maximum-parent theorem for them.
+The \href{../maxmin-forbidden/research/chordal_sun_parents.tex}
+{maximum-generated companion} supplies convex realizations and actual
+maximum parents for this entire particular family $H_m$, uniformly in $m$.
+\end{remark}

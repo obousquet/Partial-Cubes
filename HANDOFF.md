@@ -7,17 +7,28 @@ classes from `~/latex/PartialCubes` into a structured database and generated
 website in `~/code/Partial-Cubes`. The migration is incomplete and should
 continue in small, reviewed batches.
 
-At database commit `a5eb779` (`main`, synchronized with `origin/main`):
+The historical Batch 199 checkpoint was database commit `a5eb779`.
+Batch 200 additionally migrates the current minor-atlas subclass landscape:
 
-- the database contains 2,125 records across 12 tables;
+- the database contains 2,230 records across 12 tables, including 128 classes;
 - 816 of 1,143 audited manuscript claims are represented;
 - the main remaining source is `dismantlable-ample` (380/683 covered, 303
   uncovered), followed by `ample-corners` (29/53 covered);
-- all other audited workspaces are complete at this checkpoint;
-- Batch 199 is the latest ledger; the next natural claims are
+- all other workspaces are complete relative to the original frozen label audit;
+  this does not assert full theorem coverage of the expanded current atlas;
+- Batch 200 is the latest ledger; the next natural dismantlable-ample claims remain
   `prop:damp-geodesic-disagreement-tax`,
   `lem:damp-least-cornerless-cardinality-minimality`, and
   `prop:damp-least-cornerless-every-shift-dismantlable`.
+
+Batch 200 preserves a separate reviewed current-atlas snapshot in
+`migration/snapshots/2026-10-20-b200/`. The graph map now covers all 35
+Ample-family rows and all 80 atlas relationships, including strictness,
+noncontainments, open comparisons and assessed minor closure. Signed bouquets
+reuse `conditional_antimatroids`; 13 other class identities were added.
+The original seed inventory and its numbered JSON locators remain frozen.
+See `migration/README.md` for the distinction between current graph coverage
+and historical manuscript-label coverage.
 
 ## What each checkout contains
 

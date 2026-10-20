@@ -1,0 +1,1491 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}[theorem]{Question}
+\newcommand{\Sh}{\operatorname{Sh}}
+\title{Cube Bases and Complements of Cube-Chordal Ample Classes}
+\author{}
+\date{Research notes, 19 October 2026}
+\begin{document}
+\maketitle
+
+\section{The complementary existence problem}
+Let $E$ be a finite labelled coordinate set and $W=\{0,1\}^E$.
+All complements below are taken in $W$, retaining original constants.
+Write $D(u,v)=\{i:u_i\ne v_i\}$ and
+$Q(v,T)=\{w:w|_{E\setminus T}=v|_{E\setminus T}\}$.
+For $q_i\in(0,1)$ set
+\[
+ q_T=\prod_{i\in T}q_i,\qquad t_T=\prod_{i\in T}(1-q_i^2),
+ \qquad (G_H)_{uv}=q_{D(u,v)}\quad(u,v\in H).
+\]
+The actual rooted-cube column is
+\[
+ p_{v,T}(w)=\begin{cases}(-1)^{|D(v,w)|}q_{D(v,w)},&w\in Q(v,T),\\
+                    0,&w\notin Q(v,T),\end{cases}
+ \qquad Q(v,T)\subseteq H.
+\]
+An ordinary map chooses one such support $r(v)$ at each $v\in H$ and
+satisfies
+\begin{equation}\label{eq:ordinary}
+ \sum_{v\in Q}\mathbf1\{\operatorname{dir}(Q)\subseteq r(v)\}=1
+ \quad\text{for every positioned cube }Q\subseteq H.
+\end{equation}
+Cycles are permitted. A support $T$ is shattered if the projection onto
+$T$ is all of $\{0,1\}^T$; $\Sh(H)$ denotes the family of such supports.
+The class is ample if its shattered supports are
+exactly those supports of contained positioned cubes. The class is in
+$\mathrm{Ext}$ when both it and its original ambient complement have
+ordinary maps.
+We use the classical ample-class facts $|H|=|\Sh(H)|$, closure under
+conditioning, projection, reduction and ambient complementation, and
+isometry of nonempty classes. Counting and coordinate-closure proofs are
+recalled in the \href{../sections/ample_counts.tex}{first paper},
+\texttt{prop:sandwich}; the isometry formulation is also recorded in
+the \href{../../minor-atlas/research/ample_structure.md}{ample-structure module}.
+
+For a nonempty class, form the intersection graph of all inclusion-maximal
+positioned cubes, joining cubes even when their intersection is a single
+word. A class is in $\mathrm{CAmp}$ if it is ample and this graph is
+chordal, meaning it has no induced cycle of length at least four.
+A nonempty class $D$ is a daisy rooted at $z\in D$ if
+$Q(z,D(z,v))\subseteq D$ for every $v\in D$.
+For $v\in D$ put $N_D(v)=\{i:v\text{ with bit }i\text{ flipped lies in }D\}$.
+A corner is a word $v$ with $Q(v,N_D(v))\subseteq D$.
+A corner peeling is an order in which every word is a corner of the
+class remaining at its deletion; the final singleton may be retained.
+The empty class has the empty order.
+The main result below proves $\mathrm{CAmp}\subseteq\mathrm{Ext}$.
+In fact the full original ambient complement has a corner peeling.
+The primal corner peeling is already known and is reused. The new
+construction enlarges a tree of daisy pieces to one daisy by clamped
+cube attachments, then transfers complementary cube columns backwards.
+
+The atlas incremental construction supplies a cube $C=Q(z,S)$ attached to
+an old ample class $B$. Put $Y=E\setminus S$, $F=B\cap C$ and
+$A=C\setminus B$. Its clamp condition is
+\begin{equation}\label{eq:clamp}
+ c(b)=(b|_S,z|_Y)\in B\qquad(b\in B).
+\end{equation}
+The old maximal cubes meeting $C$ form a clique. Consequently $F$ is a
+nonempty proper daisy cube rooted at a common word $z$:
+$Q(z,D(z,f))\subseteq F$ for every $f\in F$.
+The original generator and its proof are in the
+\href{../../minor-atlas/sections/cube_chordal_ample.tex}{atlas module},
+\texttt{prop:cube-chordal-generator}. They are inputs, not new assertions here.
+
+The next section gives a relative integral congruence. It preserves the
+old vertex module, the attachment cube module and its subcubes containing
+$z$, and uses actual cube columns at every new root. It does not fix
+every singleton subspace: a nontrivial cube column necessarily has several
+nonzero vertex coefficients. The allowed support and root of each column
+remain part of the data throughout.
+
+\section{Canonical elimination across a daisy interface}
+\label{sec:relative}
+For this section $B$ need not be ample. Assume \eqref{eq:clamp}, assume
+$F$ is a nonempty daisy cube rooted at $z$, and put $H=B\cup C$.
+For each $a\in A$ set $T_a=D(z,a)\subseteq S$. Form a square matrix $R$
+on the vertex module of $H$: at old roots $b\in B$ its column is the
+singleton vector $\delta_b$, and at $a\in A$ its column is $p_{a,T_a}$.
+
+\begin{theorem}[Relative integral cube elimination]\label{thm:relative}
+With the same row and root ordering,
+\begin{equation}\label{eq:relative}
+ R^tG_HR=G_B\oplus\operatorname{diag}_{a\in A}t_{T_a},
+ \qquad \det R=1
+\end{equation}
+over $\mathbb Z[q_i:i\in E]$. Every column is an actual rooted-cube
+column. The map $R$ fixes the vertex module on $B$ pointwise and preserves
+the module on $C$ and on every $Q(z,T)$ with $T\subseteq S$.
+
+At interior parameters, Schur complementation on the old vertices gives
+\begin{equation}\label{eq:schur}
+ G_{AA}-G_{AB}G_B^{-1}G_{BA}
+   =G_{AA}-G_{AF}G_F^{-1}G_{FA}.
+\end{equation}
+Thus the conditional form of the new vertices is determined by the actual
+cube $C$ and its daisy interface $F$.
+\end{theorem}
+\begin{proof}
+Reflect bits so that $z$ is zero in $S$, solely for describing subset
+inclusion. The words of $F$ form a down-set in $2^S$, and the words of
+$A$ its complementary up-set in $C$. Each $p_{a,T_a}$ is supported on
+the full lower cube from $z$ to $a$, which is contained in $C$.
+
+On a full cube the columns $p_{a,D(z,a)}$, over all roots, are mutually
+$G_C$-orthogonal with squared norms $t_{D(z,a)}$, by tensoring the
+two-by-two identity. Moreover $(G_Cp_{a,T_a})(f)$ vanishes unless $f$
+agrees with $a$ on $T_a$. No $f\in F$ can have that agreement when
+$a\notin F$, by downward closure. Hence $G_{F,C}p_{a,T_a}=0$.
+
+For $b\in B$ and $v\in C$, coordinate separation gives
+\[
+ (G_H)_{bv}=q_{D(b,c(b))}(G_C)_{c(b),v}.
+\]
+The clamp belongs to $F$, so $G_{B,H}p_{a,T_a}=0$. The old columns
+have Gram matrix $G_B$, and the new columns are mutually orthogonal,
+proving the congruence in \eqref{eq:relative}.
+
+Order the roots of $A$ by increasing $|T_a|$. The $A,A$ block of $R$
+has nonzero entries only at lower subsets of its column root, and has
+diagonal one. It is triangular with determinant one. The $A,B$ block
+is zero and the $B,B$ block is identity, so $\det R=1$. This proof is
+polynomial; no inverse or interior specialization is needed for that claim.
+The same triangular argument on $C$, or on a lower cube $Q(z,T)$,
+shows that its vertex module is preserved. The inverse restrictions are
+polynomial because each corresponding determinant is one.
+
+For the Schur assertion, the same clamp factorization says, row by row,
+\[
+ G_{BF}G_F^{-1}G_{FA}=G_{BA}.
+\]
+Let $J$ inject the $F$-coordinates into the $B$-coordinates. Then
+$G_BJ=G_{BF}$, whence $G_B^{-1}G_{BA}=JG_F^{-1}G_{FA}$.
+Substitution proves \eqref{eq:schur}. The relevant principal matrices
+are positive definite at interior parameters.
+\end{proof}
+
+If $B$ is ample, the clamp condition makes $H$ ample by the atlas proof,
+even before its chordality hypotheses are imposed. Consequently any
+ordinary map on $B$ extends to $H$ by the fixed new supports $T_a$.
+Indeed substitute its selected cube matrix for the singleton old columns
+in \eqref{eq:relative}; all resulting columns are actual and orthogonal,
+so the selected-basis criterion in the
+\href{../main.pdf}{completed first paper} applies. The combinatorial
+extension was already available by deleting $A$ in decreasing subset order
+and reversing the corner order. Formula \eqref{eq:relative} makes the
+relative form and the preserved attachment modules explicit.
+
+\begin{corollary}[Inverse and trace under attachment]\label{cor:relative-trace}
+Under the assumptions of Theorem~\ref{thm:relative}, embed $G_B^{-1}$
+in the vertex module of $H$ by zero outside $B$. Then
+\begin{equation}\label{eq:inverse-update}
+ G_H^{-1}=\widetilde{G_B^{-1}}+
+          \sum_{a\in A}\frac{p_{a,T_a}p_{a,T_a}^{t}}{t_{T_a}}.
+\end{equation}
+In particular the inverse entries outside $C\times C$ are unchanged, and
+\begin{equation}\label{eq:trace-update}
+ \operatorname{tr}G_H^{-1}-\operatorname{tr}G_B^{-1}
+   =\sum_{a\in A}\prod_{i\in T_a}\frac{1+q_i^2}{1-q_i^2}.
+\end{equation}
+Neither assertion requires ampleness of $B$.
+\end{corollary}
+\begin{proof}
+Invert \eqref{eq:relative} to obtain
+$G_H^{-1}=R\operatorname{diag}(G_B^{-1},(t_{T_a}^{-1})_{a\in A})R^t$.
+The old columns of $R$ are singleton vectors, which gives
+\eqref{eq:inverse-update}. Every added column is supported in $C$.
+Its squared Euclidean norm is
+$\sum_{w\in Q(a,T_a)}q_{D(a,w)}^2=\prod_{i\in T_a}(1+q_i^2)$.
+Taking traces proves \eqref{eq:trace-update}.
+\end{proof}
+
+The trace increment depends only on the new supports $T_a$.
+The inverse update also retains their positions through the vectors
+$p_{a,T_a}$. This is the distinction needed when compatibility depends
+on where attachment cubes meet.
+
+\section{The dual product alphabet}
+\label{sec:dual}
+We now assume $B$ is ample. Work in the physical space
+$\mathcal V=(\mathbb R^2)^{\otimes E}$. In coordinate $i$ put
+\[
+ g_0=(1,0)^t,\quad g_1=(q_i,\sqrt{1-q_i^2})^t,
+ \quad e_{00}=g_0,\quad e_{10}=g_1,
+ \quad e_{01}=(\sqrt{1-q_i^2},-q_i)^t,\quad e_{11}=(0,1)^t.
+\]
+For a word $v$ and support $T$, set
+$g_v=\bigotimes_i g_{v_i}$ and
+$e_{v,T}=\bigotimes_i e_{v_i,\mathbf1\{i\in T\}}$.
+Let $V_D=\operatorname{span}\{g_v:v\in D\}$ for a binary class $D$.
+The full family $(g_v)_{v\in W}$ is a basis and has Gram matrix $G_W$.
+The first-paper dictionary gives
+\begin{equation}\label{eq:cube-dictionary}
+ \sum_w p_{v,T}(w)g_w=\sqrt{t_T}\,e_{v,T}.
+\end{equation}
+
+\begin{proposition}[Complementary product vectors]\label{prop:dual}
+For every binary class $D$, not necessarily ample,
+\begin{equation}\label{eq:admissible-dual}
+ e_{v,T}\in V_D^\perp
+ \quad\Longleftrightarrow\quad Q(v,E\setminus T)\subseteq D^c.
+\end{equation}
+There is an orthogonal involution $U$ on $\mathcal V$ with
+\begin{equation}\label{eq:dual-involution}
+ UV_{D^c}=V_D^\perp,\qquad
+ Ue_{v,T}=(-1)^{|v|}e_{v,E\setminus T}.
+\end{equation}
+Here $|v|$ counts one bits on the full original frame.
+\end{proposition}
+\begin{proof}
+In a coordinate of $T$, the inner product $\langle g_{h_i},e_{v_i,1}\rangle$
+is zero exactly when $h_i\ne v_i$. In other coordinates all local inner
+products are nonzero. Thus $\langle g_h,e_{v,T}\rangle\ne0$ precisely
+when $h|_T=v|_T$. There is no such $h\in D$ exactly when the cylinder
+$Q(v,E\setminus T)$ lies in $D^c$, proving \eqref{eq:admissible-dual}.
+
+Take $U=\bigotimes_i U_i$, where
+\[
+ U_i=\begin{pmatrix}\sqrt{1-q_i^2}&-q_i\\-q_i&-\sqrt{1-q_i^2}\end{pmatrix}.
+\]
+Each $U_i$ is an orthogonal involution and sends
+$e_{v_i,s}$ to $(-1)^{v_i}e_{v_i,1-s}$. Moreover
+$\langle g_u,Ug_v\rangle$ is zero unless $u=v$, when it equals
+$(-1)^{|v|}\sqrt{t_E}$. Hence $UV_{D^c}\subseteq V_D^\perp$;
+their dimensions are both $|D^c|$, proving equality.
+\end{proof}
+
+Thus complementary ordinary existence asks for an orthonormal basis of
+$V_H^\perp$ from the prescribed product alphabet, with each root of
+$H^c$ used once. Membership of these products is exactly actual cube
+membership by \eqref{eq:admissible-dual}, not generic tensor positivity.
+The involution uses square roots; we do not assert it is an integral
+polynomial congruence. The integral statement is \eqref{eq:relative}.
+
+\begin{proposition}[Clamps and commuting projections]\label{prop:commuting-clamp}
+Let $B\subseteq W$ be arbitrary and let $C=Q(z,S)$. Write $\Pi_D$
+for the orthogonal projection onto $V_D$. Then
+\[
+ \Pi_B\Pi_C=\Pi_C\Pi_B
+ \quad\Longleftrightarrow\quad c(B)\subseteq B,
+ \qquad c(b)=(b|_S,z|_{E\setminus S}).
+\]
+When these conditions hold, with $F=B\cap C$,
+\begin{equation}\label{eq:commuting-union}
+ \Pi_B\Pi_C=\Pi_F,\qquad
+ \Pi_{B\cup C}=\Pi_B+\Pi_C-\Pi_F,\qquad
+ I-\Pi_{B\cup C}=(I-\Pi_B)(I-\Pi_C).
+\end{equation}
+No ampleness or daisy assumption is needed.
+\end{proposition}
+\begin{proof}
+The tensor formula for projection onto $V_C$ gives
+$\Pi_Cg_b=q_{D(b,c(b))}g_{c(b)}$. Every coefficient is nonzero in
+the open parameter box. Since $(g_w)_{w\in W}$ is a basis,
+$\Pi_CV_B\subseteq V_B$ holds exactly when $c(B)\subseteq B$.
+For two orthogonal projections, invariance of one range under the other
+is equivalent to commutation: self-adjointness also makes the orthogonal
+complement invariant, giving a block diagonal operator.
+The product of commuting orthogonal projections projects onto the
+intersection of their ranges. The full vertex basis implies
+$V_B\cap V_C=V_{B\cap C}$. The sum and complementary product in
+\eqref{eq:commuting-union} follow from the simultaneous range/kernel
+decomposition of the two commuting projections.
+\end{proof}
+
+\section{A bijection with a prescribed old-complement fiber}
+\label{sec:excision}
+Put $K_0=B^c$ and $K=H^c=K_0\setminus A$.
+Both $K_0$ and $K$ are ample, by complement closure and
+the ample union assertion above; this does not assert ordinary existence.
+The clamp has a useful
+consequence: if an $S$-trace is absent from $F$, its entire $Y$-fiber
+is absent from $B$. Thus $A\times\{0,1\}^Y$, interpreted by its
+$S$-traces, lies in $K_0$. Since $A$ is an up-set relative to $z$,
+\begin{equation}\label{eq:pinned-cubes}
+ Q(a,E\setminus T_a)\subseteq K_0\qquad(a\in A).
+\end{equation}
+These are actual full original cubes, including all $Y$-directions.
+
+\begin{theorem}[Exact complementary excision fiber]\label{thm:excision}
+Ordinary maps on $K$ are in bijection with ordinary maps $r_0$ on $K_0$
+satisfying the simultaneous prescribed supports
+\begin{equation}\label{eq:pins}
+ r_0(a)=E\setminus T_a\qquad\text{for every }a\in A.
+\end{equation}
+The bijection retains every rooted-cube column at roots in $K$ and adds
+exactly the columns \eqref{eq:pinned-cubes} at the removed roots.
+In particular ordinary existence on $K$ is equivalent to nonemptiness of
+this one prescribed-map fiber on $K_0$.
+\end{theorem}
+\begin{proof}
+By \eqref{eq:relative} and \eqref{eq:cube-dictionary}, the unit vectors
+$e_{a,T_a}$ are mutually orthogonal and orthogonal to $V_B$. Their span
+is the orthogonal complement of $V_B$ inside $V_H$, by the dimension
+count $|H|-|B|=|A|$. Therefore
+\begin{equation}\label{eq:orthogonal-excision}
+ V_B^\perp=V_H^\perp\oplus
+                 \operatorname{span}\{e_{a,T_a}:a\in A\}.
+\end{equation}
+
+Let $r$ be an ordinary map on $K$. Its unit product vectors are an
+orthonormal basis of $V_K$. Apply $U$ and disregard rootwise signs to
+obtain an orthonormal basis of $V_H^\perp$. Add the vectors $e_{a,T_a}$
+in \eqref{eq:orthogonal-excision}. Applying $U$ back gives the unit
+product vectors selected at roots $K$ by $r$ and at roots $a\in A$ by
+\eqref{eq:pins}. All the latter cubes are actual by
+\eqref{eq:pinned-cubes}. The ordinary-map/orthogonal-basis equivalence
+on the ample class $K_0$ proves that this is an ordinary map there.
+
+Conversely take an ordinary $r_0$ on $K_0$ satisfying \eqref{eq:pins}.
+After applying $U$, its remaining product vectors span $V_H^\perp$ by
+\eqref{eq:orthogonal-excision}. Proposition~\ref{prop:dual} implies that
+each corresponding unchanged rooted cube is wholly in $K$. The remaining
+roots are exactly $K$, and their vectors are orthonormal. The same
+selected-basis equivalence on the ample class $K$ proves ordinariness.
+Both directions fix each column at each retained root, so are inverse.
+\end{proof}
+
+\begin{example}[A noncube interface with several removed roots]
+Take $S=\{1,2,3\}$, $Y=\{4\}$, and
+$F=\{000,100,010,001\}$ in the $S$-coordinates. Let
+$B=F\times\{0,1\}$ and $C=\{0,1\}^S\times\{0\}$, with root $z=0000$.
+The four roots in $A$ have $S$-supports $12,13,23,123$. The exact old
+complement supports prescribed by \eqref{eq:pins} are, respectively,
+$\{3,4\},\{2,4\},\{1,4\},\{4\}$. All four constraints must hold in
+one whole ordinary map. Separate feasibility of these actual columns
+does not establish simultaneous feasibility.
+\end{example}
+
+\begin{question}\label{qu:supply}
+For the simplicial-cube attachments in the atlas generator, can one
+supply an ordinary map on $B^c$ satisfying all of \eqref{eq:pins}?
+\end{question}
+Inductively supplying this fiber would prove $\mathrm{CAmp}\subseteq\mathrm{Ext}$.
+The relative congruence alone proves neither its nonemptiness nor preservation
+of an arbitrarily preselected old-complement map. The next section supplies
+an opposite by enlarging the whole class and using excision in the reverse
+direction. It does not require a preselected old-complement map to survive.
+
+\section{Completing a tree of daisies by cube attachments}
+\label{sec:tree-completion}
+The useful induction runs towards a larger class whose opposite is easy.
+Its pieces are allowed to change. We preserve a tree of rooted daisy
+pieces, rather than assume the enlarged class still has a chordal
+maximal-cube graph.
+
+Here is the precise tree input. Let $T$ be a finite tree with nonempty
+pieces $D_t\subseteq W$ and roots $z_t$. Require:
+\begin{enumerate}
+\item each $D_t$ is a daisy rooted at $z_t$;
+\item for every nonempty connected subtree $U$, the union
+      $H_U=\bigcup_{t\in U}D_t$ is ample, and every positioned cube in
+      $H_U$ is contained in a piece $D_t$ with $t\in U$;
+\item for each word $v\in H_T$, the nodes $\{t:v\in D_t\}$ form
+      a connected subtree;
+\item each adjacent overlap $F_{tu}=D_t\cap D_u$ is nonempty and
+      is a daisy rooted at both $z_t$ and $z_u$.
+\end{enumerate}
+Every nonempty cube-chordal ample class has such a tree. This is the
+forward, subtree and overlap part of the previously established
+\href{../../maxmin-forbidden/sections/chordal_downset_tree.tex}
+{positioned tree certificate},
+\texttt{thm:maxmin-chordal-downset-tree}; its complete proof is the
+input here, not an assertion of compatible opposite maps. Its pieces
+are unions of the maximal cubes in clique bags. A common word roots
+each bag; connected label occurrences give item~3 and the exact edge
+overlaps. Connected subunions retain ampleness and their exact cube
+labels by the simplicial-cube removal argument. The shared cube labels
+contain both adjacent roots, proving item~4. No maximum-parent or
+ordinary complementary existence claim from that theorem is used.
+
+\begin{proposition}[Aligning the root of a leaf piece]
+\label{prop:leaf-root-alignment}
+Suppose $B$ and $H=B\cup D$ are ample, $D$ is a nonempty daisy rooted
+at $z$, and $F=B\cap D$ is a nonempty daisy rooted at both $z$ and $w$.
+Suppose every positioned cube of $H$ is contained in $B$ or $D$.
+Set $J=D(z,w)$ and
+\[
+ D^+=\{x\in W:x|_{E\setminus J}\in\pi_{E\setminus J}D\}.
+\]
+Then $D^+$ is a daisy rooted at $w$, and
+\begin{equation}\label{eq:private-leaf-cylinder}
+                  D^+\cap B=F.
+\end{equation}
+There is a finite sequence from $H$ to $B\cup D^+$ consisting of
+clamp-preserving cube attachments with nonempty daisy interfaces.
+Every attachment root is $z$. Each intermediate class is ample and
+every newly created cube is contained in the cube just attached.
+\end{proposition}
+\begin{proof}
+First $F$ is invariant under changing arbitrary $J$-coordinates. To
+see this, flip coordinates so that $z=0$ and $w$ is the indicator of
+$J$. For $f\in F$, downward closure towards $z$ puts $f\setminus J$
+in $F$. The interval from $w$ to $f\setminus J$, contained in $F$
+by the other daisy orientation, contains every $J$-assignment with
+outside trace $f|_{E\setminus J}$. This proves the invariance.
+Also $D^+=\{0,1\}^J\times\pi_{E\setminus J}D$ is a daisy at every
+root with outside trace $z|_{E\setminus J}$, including $w$.
+
+We prove \eqref{eq:private-leaf-cylinder}. Take $b\in B\cap D^+$,
+and let $P$ be the full $J$-fiber through $b$. Some $d\in D$ lies in
+$P$. If $P$ already meets $F$, its whole fiber lies in $F$ by the
+invariance just proved. Otherwise $d\in D\setminus B$ and
+$b\in B\setminus D$. The nonempty conditioning $H\cap P$ is ample,
+hence connected. A vertex path from $d$ to $b$ must meet $F$:
+every edge of $H$ is contained in $B$ or $D$, so no edge can join
+$D\setminus B$ directly to $B\setminus D$. This contradiction proves
+$b\in F$. The reverse containment is immediate.
+
+For a rooted cube $C=Q(z,S)\subseteq D$, the clamp of $B$ into $C$
+lands in $F\cap C$. We give the needed compatibility argument.
+Cube carriage and ampleness imply
+\[
+ \Sh(H)=\Sh(B)\cup\Sh(D),\qquad
+ \Sh(B)\cap\Sh(D)=\Sh(F).
+\]
+For the second equality, its right side is contained in its left side,
+and the ample cardinalities and $|H|=|B|+|D|-|F|$ make their sizes
+equal. Since $2^S\subseteq\Sh(D)$, projection closure and the same
+cardinality identity give
+\[
+ |\pi_SB|=|\Sh(B)\cap2^S|=|\Sh(F)\cap2^S|=|\pi_SF|.
+\]
+The inclusion $\pi_SF\subseteq\pi_SB$ is therefore equality.
+Clamping a word of $F$ into $Q(z,S)$ stays in $F$, by downward closure
+towards $z$. Matching the $S$-trace proves the clamp assertion for $B$.
+
+List the finitely many maximal rooted cubes $C_i=Q(z,S_i)$ of $D$,
+and attach $C_i^+=Q(z,S_i\cup J)$ successively, skipping empty changes.
+Their union is $D^+$. For $b\in B$, its clamp into $C_i^+$ differs
+only in $J$ from its clamp into $C_i$, so lies in $F$.
+Clamping a word of $D$ into $C_i^+$ moves coordinates towards $z$,
+and therefore stays in $D$. The same is true of every previously
+attached $C_j^+$, which also contains $z$. Thus each current class
+is clamp-invariant for the next cube.
+Write $D_i=D\cup\bigcup_{j<i}C_j^+$, a daisy rooted at $z$.
+Equation~\eqref{eq:private-leaf-cylinder} gives
+\[
+ (B\cup D_i)\cap C_i^+=D_i\cap C_i^+,
+\]
+a nonempty daisy rooted at $z$. The ample-union and no-mixed-cube
+argument of the atlas clamp theorem now applies at every step.
+This proves all assertions, including the case $J=\varnothing$.
+\end{proof}
+
+\begin{theorem}[Complementary corner peelings for cube-chordal classes]
+\label{thm:camp-ext}
+Every nonempty cube-chordal ample class $H\subseteq W$ and its full
+original ambient complement have corner peelings. Empty complements
+use the empty order. In particular
+\[
+                         \mathrm{CAmp}\subseteq\mathrm{Ext}.
+\]
+More generally the conclusion holds for any union having the four
+tree-of-daisies properties above. An ordinary complementary map can be
+constructed using only the original bag roots: for every $a\in H^c$,
+\begin{equation}\label{eq:tree-opposite}
+                 r_{H^c}(a)=E\setminus D(a,z(a)),
+\end{equation}
+where $z(a)$ is selected by the finite completion below. It is not a
+first-eligible-root rule. Every original constant coordinate is retained.
+\end{theorem}
+\begin{proof}
+We first complete the union to a single daisy while preserving the tree
+properties. We then peel the complement by undoing the completion.
+
+\emph{Leaf alignment and the induction invariant.}
+Choose a leaf $t$ with parent $u$, set $D=D_t$ and
+$B=\bigcup_{v\ne t}D_v$. Word connectivity gives
+$D\cap B=D_t\cap D_u=F$. The connected-subtree assumption makes
+$B,H$ ample, and every cube of $H$ belongs to $B$ or $D$.
+Proposition~\ref{prop:leaf-root-alignment} applies with
+$z=z_t$, $w=z_u$. Expand $D$ to $D^+$ by its stated cube attachments,
+and replace $D_u$ by $D_u\cup D^+$, deleting leaf $t$.
+The new parent piece is a daisy rooted at $z_u$, since both terms
+are daisies with that root. Equation~\eqref{eq:private-leaf-cylinder}
+shows, for every other retained piece $D_v$,
+\[
+ (D_u\cup D^+)\cap D_v=D_u\cap D_v.
+\]
+All remaining adjacent overlaps are consequently unchanged, with
+their two original roots.
+
+Word connectivity also persists. An old word exclusive to $D_t$
+now occurs only at $u$. Any other old word occurring at $t$ already
+occurs at $u$, by connectivity; delete $t$ from its occurrence subtree.
+Every genuinely new word occurs only in the new parent piece, because
+$D^+\cap B=F$. All other occurrence subtrees are unchanged.
+
+It is necessary to check every connected subunion, not only the global
+one. A new subtree avoiding $u$ is unchanged. For a new connected
+subtree $U$ containing $u$, put $B_U=\bigcup_{v\in U}D_v$, using the
+old pieces. The old subtree $U\cup\{t\}$ is connected, so
+$B_U\cup D$ is ample and its cubes are carried by its pieces.
+In the proof of Proposition~\ref{prop:leaf-root-alignment}, every
+clamp of a word of $B$ into an expanded cube lies in $F$.
+Thus clamps of $B_U$ land in $F\subseteq D_u\subseteq B_U$.
+The same sequence of cube attachments is therefore valid on
+$B_U\cup D$. It preserves ampleness, and each new cube is carried
+by an expanded leaf cube, hence by the merged parent piece.
+Old cubes remain carried as well. This proves item~2 for the new tree.
+Items~1, 3 and 4 were verified above, so the entire induction invariant
+is preserved. Each merge strictly decreases the number of pieces.
+
+We obtain a finite increasing sequence
+\begin{equation}\label{eq:tree-completion-chain}
+ H=H_0\subset H_1\subset\cdots\subset H_m=L,
+\end{equation}
+where $L$ is one daisy rooted at a remaining original bag root $z_*$.
+Each strict step attaches a positioned cube with a nonempty daisy
+interface and a clamp preserving the old class. Denote its root by
+$z_j$ and its new words by $A_j=H_{j+1}\setminus H_j$.
+Every $z_j$ is an original bag root.
+
+\emph{The complementary order and its whole outgoing cubes.}
+For one step write $C=Q(z,S)$, $F=H_j\cap C$ and $A=C\setminus H_j$.
+Inside $C$, $A$ is an up-set relative to $z$.
+In $H_j^c$, remove $A$ in increasing $|D(z,a)|$, with arbitrary ties.
+At the deletion of $a$, its remaining incident directions are exactly
+\[
+                         E\setminus D(z,a).
+\]
+Indeed a direction in $D(z,a)\subseteq S$ moves to a smaller word of
+$C$, which is either in $F$ or was removed earlier. A direction in
+$S\setminus D(z,a)$ moves to a larger word of $A$, still present.
+Every direction outside $S$ leads outside $C$ and is also present:
+an old word there with the same $S$-trace would clamp to the missing
+word $a$, contradicting clamp invariance.
+The whole cube on those directions remains present. Each of its
+$S$-traces has difference support containing $D(z,a)$, so belongs to $A$;
+all parallel outside assignments
+are absent from $H_j$ by the same clamp argument. Points in $C$
+are still unremoved words of $A$, and points outside $C$ belong to
+$H_{j+1}^c$. Thus $a$ is a corner, not merely the owner of its edges.
+Removing this block leaves exactly $H_{j+1}^c$.
+
+Process $A_0,A_1,\ldots,A_{m-1}$ in that order. The remaining class
+is $L^c$, an up-set relative to $z_*$; it peels by increasing distance
+from $z_*$, with outgoing support $E\setminus D(a,z_*)$.
+This proves the complementary corner assertion and
+\eqref{eq:tree-opposite}, taking $z(a)=z_j$ on $A_j$ and $z_*$
+on $L^c$. A last surviving word may be retained rather than deleted.
+Equivalently, Theorem~\ref{thm:excision} transfers the canonical ordinary
+map on $L^c$ backwards across every step, retaining each completed
+column and supplying all new pins simultaneously.
+
+\emph{The primal order.}
+The primal peeling is the established tree peeling, whose short argument
+also applies to the four stated properties. In the original tree remove
+a leaf piece $D_t$ while retaining the other union $B$.
+Its exclusive words $D_t\setminus B$ form an up-set in the daisy
+$D_t$ relative to $z_t$, since the overlap is a daisy at $z_t$.
+Delete them in decreasing $|D(a,z_t)|$.
+Every edge at an exclusive word is carried by $D_t$; no cube in a
+different piece contains that word. Rootward neighbors and their full
+cube remain. Any opposite neighbor is another exclusive word of larger
+distance, already removed. Its incident cube is therefore exactly
+$Q(a,D(a,z_t))$. Delete the leaf and repeat, finally peeling the last
+daisy in decreasing distance from its root. This gives the primal
+ordinary map and completes both-shore existence.
+\end{proof}
+
+If the empty class is admitted into $\mathrm{CAmp}$ by convention,
+the same conclusion holds: its primal map is empty and its complement
+is the full cube with its standard corner order.
+
+\begin{corollary}[An integral actual-cube certificate of completion]
+\label{cor:tree-integral-completion}
+For the chain \eqref{eq:tree-completion-chain}, put $z(a)=z_j$
+when $a\in A_j$. On the vertex module of $L$, let $R$ have old columns
+$\delta_h$ for $h\in H$ and column $p_{a,D(a,z(a))}$ for
+$a\in L\setminus H$. Then
+\[
+ R^tG_LR=G_H\oplus
+       \operatorname{diag}_{a\in L\setminus H}t_{D(a,z(a))},
+ \qquad\det R=1.
+\]
+Every column is an actual rooted-cube column, and $R$ fixes the old
+vertex module pointwise. Replacing the old singleton bank by any
+supplied ordinary map on $H$ gives an ordinary cube basis on $L$.
+Together with the canonical complementary bank outside $L$, this also
+constructs a full ambient native basis extending that supplied primal
+map. Its polynomial actual-cube matrix is unimodular.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:relative} successively, extending each earlier
+matrix by identity at later roots. Every later matrix fixes the entire
+earlier vertex module, so all previously constructed actual columns
+remain literally unchanged. This gives the displayed matrix, congruence
+and determinant. Normalizing the added columns gives an orthonormal
+basis of $V_L\cap V_H^\perp$. Replace the old bank by the supplied
+orthonormal primal bank, and complete by the dual of the canonical
+ordinary bank on $L^c$. The selected-basis criterion on the full cube
+gives its polynomial unimodularity.
+\end{proof}
+
+Consequently Question~\ref{qu:supply} has an affirmative answer for
+every atlas cube-chordal attachment. Apply Theorem~\ref{thm:camp-ext}
+to the new class $B\cup C$ and then Theorem~\ref{thm:excision}:
+the constructed new-complement map supplies all canonical pins on $B^c$
+simultaneously. Any supplied old primal map can be retained by
+Theorem~\ref{thm:relative}. No independently chosen local bases are
+assumed to agree.
+
+The independent exact construction in \texttt{verify\_tree\_root\_alignment.py}
+checks four fixed existing inputs: a cube with original constants, the
+non-Horn atlas class $V$, the chordal sun, and the alternating-root path.
+It verifies all intermediate clamps and daisy interfaces, every connected
+subunion in these fixed trees, cube carriage, both final ordinary maps,
+and the complementary corner orders. There are 52,281 positioned-equation
+checks, 82 connected-subunion checks and 3,942 cube-carriage checks.
+The relative matrices are triangular with diagonal entries one, and all 65,896
+full ambient native-vector pairs are checked exactly.
+These tests support implementation correctness; the arbitrary-dimensional
+proof is the invariant and induction above. The tree certificate and
+primal peeling are old inputs. The additional step is leaf root alignment
+with private-cylinder overlap, followed by complementary excision.
+
+\section{Closure intervals give complementary cube bases}
+\label{sec:closure-completion}
+Suppose $H$ is nonempty, ample, and is closed under
+coordinatewise intersection. Identify words with subsets of $E$, and put
+\[
+ \rho(v)=\{i\in v:v\setminus\{i\}\in H\}\quad(v\in H),\qquad
+ \downarrow H=\{a:a\subseteq v\text{ for some }v\in H\}.
+\]
+For $a\in\downarrow H$ define its closure
+$c(a)=\bigcap\{v\in H:a\subseteq v\}$. The intersection is nonempty
+as a family, and belongs to $H$ by intersection closure.
+The map $\rho$ is the established ordinary map on an intersection-closed
+ample class. The construction below completes its native product basis
+and supplies an explicit complementary map. It does not assume a basis
+on the complement.
+
+\begin{proposition}[The closure fibers are intervals]\label{prop:closure-intervals}
+For every $v\in H$,
+\[
+ \{a\in\downarrow H:c(a)=v\}=[\rho(v),v].
+\]
+These intervals partition $\downarrow H$ and each contains exactly one
+word of $H$, namely its top $v$.
+\end{proposition}
+\begin{proof}
+If $c(a)=v$ and $i\in\rho(v)\setminus a$, the old word
+$v\setminus\{i\}$ contains $a$, contradicting minimality of $c(a)$.
+Thus $\rho(v)\subseteq a\subseteq v$.
+Conversely suppose these containments hold and $c(a)\ne v$.
+An ample class is isometric, so a Hamming geodesic from $c(a)$ to $v$
+stays between those comparable words. Its penultimate word is
+$v\setminus\{i\}\in H$ with $i\notin c(a)$. But then
+$i\in\rho(v)\subseteq a\subseteq c(a)$, a contradiction.
+Each $h\in H$ satisfies $c(h)=h$, proving the final assertion.
+\end{proof}
+
+For a convex geometry, the sets $\rho(v)$ are its extreme-point sets
+and the interval description is its familiar unique-generator property.
+The same proof works here without requiring either $\varnothing\in H$
+or $E\in H$.
+The published definitions of convex geometries and their bouquets are
+recalled in Sections~2.4--2.5 of
+\href{https://arxiv.org/abs/2405.12660}{Chalopin--Chepoi--Knauer,
+\emph{Geometry of convex geometries}}. We use the elementary argument
+above, not a new classification of that family.
+
+\begin{theorem}[Complementary completion from closure intervals]
+\label{thm:closure-completion}
+For $K=W\setminus H$, define
+\begin{equation}\label{eq:closure-complement-map}
+ r_K(a)=
+ \begin{cases}
+ E\setminus a,&a\notin\downarrow H,\\
+ (E\setminus c(a))\cup(a\setminus\rho(c(a))),&a\in\downarrow H\setminus H.
+ \end{cases}
+\end{equation}
+This is an ordinary map made of actual whole cubes on the full original
+complement. If the complement is nonempty, it has a corner peeling with the following order:
+first process closure fibers in increasing $|v|$, deleting
+$[\rho(v),v]\setminus\{v\}$ in decreasing word size; then delete
+$W\setminus\downarrow H$ in increasing word size. Equal-size ties may
+be broken arbitrarily. Its remaining incident directions at each deletion
+are exactly \eqref{eq:closure-complement-map}.
+Thus $H$ and its nonempty complement are corner-peelable, in particular $H$
+belongs to $\mathrm{Ext}$. The construction is invariant under translating
+the original coordinates and retains every original constant coordinate.
+An empty complement has its empty map and order.
+\end{theorem}
+\begin{proof}
+The whole $\rho(v)$-cube at $v$ lies in $H$: intersecting the lower
+neighbors $v\setminus\{i\}$ gives each of its vertices. In any contained
+cube its unique maximal word selects every free direction; each other
+word has a zero in some free direction and omits it. Thus $\rho$ is
+ordinary. Its normalized native vectors $e_{v,\rho(v)}$ form an
+orthonormal basis of $V_H$ by the selected-basis criterion.
+
+In the physical orthonormal coordinate basis from Section~\ref{sec:dual},
+the support of $e_{v,\rho(v)}$ is exactly $[\rho(v),v]$.
+Coordinates in $\rho(v)$ carry $(0,1)^t$, coordinates outside $v$ carry
+$(1,0)^t$, and coordinates in $M=v\setminus\rho(v)$ carry $g_1$.
+On this coordinate subspace use the full tensor basis obtained by choosing
+$g_1$ or its orthogonal partner $e_{01}$ independently in $M$.
+The all-$g_1$ vector is the existing primal vector. Each of the other
+vectors has a unique root $a\in[\rho(v),v]\setminus\{v\}$ and is
+\[
+ e_{a,\,\rho(v)\cup(v\setminus a)}.
+\]
+At each coordinate index $a\notin\downarrow H$, use the standard tensor
+vector $e_{a,a}$. Proposition~\ref{prop:closure-intervals} shows that
+these constructions fill disjoint coordinate subspaces and use each
+original root exactly once. They give an orthonormal basis of $V_H^\perp$
+with roots precisely $K$.
+
+Apply the orthogonal involution $U$ of Proposition~\ref{prop:dual}.
+The resulting vectors have exactly the supports
+\eqref{eq:closure-complement-map}. They span $V_K$, and
+\eqref{eq:admissible-dual} verifies actuality of every whole selected cube.
+Complement closure makes $K$ ample; the selected-basis criterion gives
+every positioned native budget. This proves the ordinary assertion.
+
+We verify the stronger peeling assertion directly. For $a$ of closure
+$v$, its selected cube keeps $\rho(v)$ fixed at one, keeps
+$v\setminus a$ fixed at zero, can remove bits of
+$a\setminus\rho(v)$, and can add bits outside $v$.
+With no outside bit added, all its other vertices are smaller words in
+the same closure fiber and are deleted later. If an outside bit is added,
+the closure, when defined, strictly contains $v$: for such a new word $w$,
+intersect a containing old word with $v$ to see that it must contain
+$c(w\cap v)=v$, since $w\cap v\in[\rho(v),v]$.
+Otherwise the word lies outside $\downarrow H$, also processed later.
+So the entire outgoing cube survives until $a$ is deleted.
+
+A neighboring word in a direction omitted by $r_K(a)$ is already gone
+or belongs to $H$. Removing $i\in\rho(v)$ gives a word with closure
+contained in $v\setminus\{i\}\in H$, hence a strictly earlier fiber.
+Adding $i\in v\setminus a$ gives a larger word in the same fiber,
+or the excluded word $v$ itself. These are all omitted directions.
+For $a\notin\downarrow H$, its remaining neighbors are exactly its
+upward neighbors, and their whole cube survives by upward closure.
+Thus every deleted word is a corner with the asserted incident cube.
+The last surviving word may be retained instead of deleted.
+
+The primal class peels by decreasing word size, as in the established
+intersection-closed construction. None of the argument requires the zero
+word. A translated intersection-closed class receives the construction
+in that orientation; translating back transports both maps and orders
+on the full original frame.
+\end{proof}
+
+The ordinary primal endpoint and Horn-renaming test are old. The relative
+matrix conclusion here is the explicit complementary native basis and
+its closure-fiber peeling order. Field-wide priority for this completion
+formula is not certified. It includes the guarded-tip formula below:
+there the nonsingleton closure fibers are exactly $[T_i,w_i]$.
+By the complete nonnegative-product-basis classification in
+\href{../../containment-cubic-positivity/research/local_nonnegative_projections.tex}
+{\emph{Local nonnegativity of Boolean tensor projections}},
+\texttt{thm:classification} and its parameter corollary, an ample class
+whose projection is entrywise nonnegative in some real orthonormal product
+basis has such an intersection-closed translate and therefore receives
+this completion. This is a sufficient operator hypothesis; its existence
+on arbitrary ample or cube-chordal classes is not assumed.
+
+\section{A clamped cube attached to an intersection-closed source}
+\label{sec:horn-gluing}
+The preceding completion can be made compatible with an entire new cube.
+The interface need not itself be a cube, or even a daisy. The construction
+retains an arbitrary supplied primal map and supplies a complementary map;
+it does not require a compatible old complementary map as input.
+
+For a nonempty intersection-closed ample class $D$ on a coordinate set $J$,
+write its full completion as
+\begin{equation}\label{eq:full-closure-map}
+ \Omega_D(x)=
+ \begin{cases}
+ \rho_D(c_D(x))\cup(c_D(x)\setminus x),&x\in\downarrow D,\\
+ x,&x\notin\downarrow D.
+ \end{cases}
+\end{equation}
+The proof of Theorem~\ref{thm:closure-completion} shows that
+$(e_{x,\Omega_D(x)})_{x\in\{0,1\}^J}$ is an orthonormal basis of
+the full physical space. At roots in $D$ it is the canonical primal
+basis, since $\Omega_D(v)=\rho_D(v)$. These definitions also apply
+when $J$ is empty: the nonempty class is then the singleton empty word.
+
+\begin{theorem}[Compatible completion across a clamped cube]
+\label{thm:horn-gluing}
+Let $B\subseteq W$ be nonempty, ample and intersection-closed, let
+$C=Q(z,S)$, and suppose the clamp into $C$ preserves $B$.
+Then $H=B\cup C$ belongs to $\mathrm{Ext}$. One can retain every
+column of any supplied ordinary map on $B$ and extend it to an ordinary
+map on $H$, while constructing an ordinary map on $H^c$.
+No daisy or chordality assumption is required.
+
+Here is an explicit construction before an optional replacement of the
+old primal map. Partition the original coordinates as
+\[
+ E=S\sqcup I\sqcup R,\qquad
+ I=\{j\notin S:z_j=1\},\quad R=\{j\notin S:z_j=0\}.
+\]
+For $a\in F=\pi_SB$, set
+\[
+ L_a=\{y\subseteq I:(a,y,\varnothing_R)\in B\}.
+\]
+Each $L_a$, and $F$ itself, is nonempty, ample and intersection-closed.
+With local supports embedded in their original coordinates, put
+\begin{equation}\label{eq:horn-glued-basis}
+ \Omega(x)=
+ \begin{cases}
+ \Omega_B(x),&x|_R\ne\varnothing,\\
+ \Omega_F(a)\cup\Omega_{L_a}(y),
+       &x=(a,y,\varnothing_R),\ a\in F,\\
+ \Omega_F(a)\cup(I\setminus y),
+       &x=(a,y,\varnothing_R),\ a\notin F.
+ \end{cases}
+\end{equation}
+The vectors $(e_{x,\Omega(x)})_{x\in W}$ form a full native orthonormal
+basis. The two ordinary
+maps are $r_H(h)=\Omega(h)$ and $r_{H^c}(k)=E\setminus\Omega(k)$.
+At every old root $b\in B$, $r_H(b)=\rho_B(b)$.
+At every complementary root having a nonzero $R$-trace, the old canonical
+complementary column is retained. Original constant coordinates remain
+in $E$. A global coordinate flip transports the entire assertion, so it
+also applies to any source having an intersection-closed orientation.
+\end{theorem}
+\begin{proof}
+The proof splits the physical space at $R=0$, factors the old source
+vectors there, and completes their remaining tensor factors.
+For $b\in B$, the clamp and intersection closure give
+\[
+ b\setminus R=b\cap(b|_S,I,\varnothing_R)\in B.
+\]
+Thus setting all $R$-bits to zero also preserves $B$.
+The old full basis \eqref{eq:full-closure-map} respects the physical
+coordinate face $R=0$. To check this, if $x|_R=0$ and $c_B(x)$ exists,
+zeroing $R$ in any old word above $x$ shows $c_B(x)|_R=0$.
+Its entire interval $[\rho_B(c_B(x)),c_B(x)]$ lies in that face.
+If $x|_R\ne0$ and $c_B(x)=v$, both $v\setminus R$ and $v$ belong
+to $B$. A Hamming geodesic between them ends by adding some $j\in R$;
+thus $j\in\rho_B(v)\subseteq x$. The full physical support interval
+of this basis vector has that $j$ fixed at one, so misses $R=0$.
+When closure does not exist the vector is the standard coordinate vector
+at $x$, with the same conclusion. Consequently all old vectors at
+roots with nonzero $R$-trace form a basis of the orthogonal complement
+of the physical $R=0$ face. We keep them unchanged.
+
+Projection closure of ampleness makes $F$ ample. Clamp invariance gives
+the exact identity
+\[
+ F=\{a:(a,I,\varnothing_R)\in B\}.
+\]
+For each $a\in F$, the class $L_a$ contains $I$ and is a coordinate
+section of $B$, so is ample. Projection and taking these sections
+preserve intersection closure. Thus all the completions used in
+\eqref{eq:horn-glued-basis} are defined, even if their classes omit zero.
+
+The old canonical source vectors in the $R=0$ face factor as
+\begin{equation}\label{eq:horn-source-factor}
+ e_{(a,y,0),\rho_B(a,y,0)}
+    = e_{a,\rho_F(a)}\otimes e_{y,\rho_{L_a}(y)}\otimes g_{0_R}.
+\end{equation}
+For an $S$-coordinate $j$, a lower neighbor $a\setminus\{j\}\in F$
+gives the old word $(a\setminus\{j\},I,0)$; intersecting it with
+$(a,y,0)$ gives that word's $j$-lower neighbor. Conversely, clamping
+a $j$-lower neighbor of $(a,y,0)$ proves
+$a\setminus\{j\}\in F$. Thus the $S$-part of $\rho_B$ is exactly
+$\rho_F(a)$. Its $I$-part is $\rho_{L_a}(y)$ by the section definition,
+and its $R$-part is empty, proving \eqref{eq:horn-source-factor}.
+
+On the full physical $R=0$ face use the full $S$-basis for $F$.
+Conditionally on its root $a\in F$, use the full $I$-basis for $L_a$.
+For $a\notin F$, use instead the full $I$-tensor basis with local factors
+$g_1$ at roots with bit one and $e_{01}$ at roots with bit zero.
+Different $S$-roots are orthogonal independently of their $I$-factors;
+at each fixed $S$-root the chosen $I$-vectors are a full orthonormal
+basis. This proves that \eqref{eq:horn-glued-basis}, together with the
+unchanged exterior, is a full orthonormal basis. Equation
+\eqref{eq:horn-source-factor} proves literal retention of all old primal
+vectors, including those outside $R=0$.
+
+The new roots are exactly $(a,I,0)$ with $a\notin F$.
+Their supports in \eqref{eq:horn-glued-basis} lie in $S$, so their
+whole selected cubes lie in $C$. The old and new primal vectors are
+therefore an orthonormal basis of $V_H$: they belong to that space
+by \eqref{eq:cube-dictionary}, and there are $|H|$ of them.
+All remaining vectors span $V_H^\perp$. Proposition~\ref{prop:dual}
+turns them into actual complementary cube vectors with supports
+$E\setminus\Omega(k)$. The old ample-union argument makes $H$ ample,
+and complement closure makes $H^c$ ample. The selected-basis criterion
+therefore pays every positioned cube equation on both shores.
+
+Finally any supplied ordinary source basis spans the same space $V_B$.
+Replace just the old canonical primal vectors by that basis, keeping
+all new and complementary vectors. Orthonormality, actuality and all
+conclusions persist. In particular cyclic supplied maps are allowed.
+\end{proof}
+
+\begin{corollary}[Simultaneous daisy pins with a marked source module]
+\label{cor:horn-gluing-pins}
+Under Theorem~\ref{thm:horn-gluing}, suppose in addition that $B\cap C$
+is a daisy rooted at $d\in C$. There is an ordinary map on $B^c$ with
+\[
+ r_0(a)=E\setminus D(d,a)\qquad(a\in C\setminus B),
+\]
+retaining the complementary columns constructed by that theorem at every
+root of $H^c$. The full basis before and after the attachment can be
+related by a unimodular transformation over $\mathbb Z[q_i:i\in E]$
+fixing the entire old vertex module on $B$ pointwise.
+\end{corollary}
+\begin{proof}
+The new canonical daisy columns of Theorem~\ref{thm:relative}, normalized
+by \eqref{eq:cube-dictionary}, form another orthonormal basis of
+$V_H\cap V_B^\perp$. Replace only the new primal vectors by this bank.
+Keep the entire old primal bank and every complementary vector.
+Theorem~\ref{thm:excision} then supplies all the stated pins at once.
+
+Before attachment use the full completion of $B$; after attachment use
+the full basis just constructed, with the complementary supports
+dualized back to kernel supports. Both are native bases of the full
+cube and therefore give polynomial actual-cube matrices $P_0,P_1$
+of determinant one, by the first-paper integral selected-basis theorem.
+They have identical columns at roots of $B$. Those columns form a
+unimodular basis of the vertex module on $B$, so
+$P_1P_0^{-1}$ fixes that module pointwise. If a different supplied primal
+map is retained, replace the old bank in both full bases first.
+\end{proof}
+
+The source need not remain intersection-closed after this operation.
+For example, the old atlas class $V$ in the next subsection is obtained by
+one such attachment to a Horn-oriented remainder, but neither shore of
+$V$ has a Horn orientation. Thus this theorem does not provide an
+iteration for arbitrary cube-chordal classes. It extends the earlier
+down-set attachment theorem to arbitrary intersection-closed ample sources,
+and supplies the full jointly prescribed bank rather than independently
+admissible columns. The existence domain of every particular example
+may already follow from other constructions; no field-wide priority
+claim is made for this gluing statement.
+
+The exact verifier \texttt{verify\_horn\_cube\_gluing.py} performs 4993
+positioned-equation checks in six fixed controls. They include the old atlas
+attachment, a five-pin noncube interface on six original coordinates,
+a non-daisy interface, a source omitting zero, a cyclic supplied source
+and an attachment adding no words. These are checks of the explicit
+formulas, not substitutes for the proof or a search for a separation.
+
+\subsection{Both shores can lack a nonnegative product basis}
+\label{sec:two-shore-horn-obstruction}
+Use the existing atlas class, in low-bit-first binary masks,
+\[
+ V=\{0,1,2,3,6,7,8,9,16,17,18,19,21,23,24,26\}\subseteq\{0,1\}^5.
+\]
+Its ampleness and chordal maximal-cube graph are proved in the atlas
+\href{../../minor-atlas/sections/cube_chordal_ample.tex}
+{example on projection and complementation}.
+For clarity its complete maximal cubes are
+\[
+ (0,19),(2,5),(17,6),(0,9),(16,10),(3,20),(0,24).
+\]
+The following prime missing patterns suffice to rule out Horn renaming
+on each shore; columns are support mask and missing-pattern mask:
+\[
+\begin{array}{c|cc}
+ S& V& W\setminus V\\\hline
+26&10&2\\
+22&4&0\\
+21&20&16\\
+25&25&17
+\end{array}
+\]
+In the established Horn test (\texttt{lem:horn-test} of that same original),
+the first two rows forbid respectively
+$(r_1,r_4)=(1,0)$ and $(0,0)$, forcing $r_4=1$.
+The last two forbid $(r_0,r_4)=(0,1)$ and $(1,1)$, forcing $r_4=0$.
+This contradiction applies to both pattern columns. Thus neither $V$
+nor its full complement has an intersection-closed coordinate translate.
+CP's classification therefore excludes entrywise nonnegativity of either
+projection in any real orthonormal product basis. This applies the received
+CP theorem to a smaller CAmp host; it is not a new spectral classification
+or a negative ordinary-map example.
+
+\section{Reselecting a complementary basis across a new interface}
+\label{sec:reselecting}
+The same class $V$ tests why the old complementary map must be allowed
+to change. It has four simplicial maximal cubes. For each, remove its
+private word $a$ and write $B=V\setminus\{a\}$. The interface is a
+three-word path with its unique daisy root $z$. Every such $B$ has
+intersection-closed coordinate translates. Nevertheless none of the
+canonical closure completions, over any of its possible centers, satisfies
+the one prescribed support needed to add that cube:
+\[
+\begin{array}{c|r|r|c|r|r}
+ C &a&z&\text{all centers of }B&r_{B^c}(a)&E\setminus D(z,a)\\\hline
+ (0,9)&9&0&17,19&6&22\\
+ (2,5)&6&3&16,18&10&26\\
+ (16,10)&26&16&2,3&5&21\\
+ (17,6)&21&19&0,1&9&25
+\end{array}
+\]
+The canonical values in the fifth column are the same at both listed
+centers. The complete finite check tests all original five-bit centers,
+not a chosen center. Thus even a Horn old host does not make its canonical
+closure completion compatible with an arbitrary simplicial attachment.
+The assertion concerns this canonical family, not all maps on $B^c$.
+
+\subsection{A standard phase move retains the old primal space}
+Let $p$ be any ordinary map on an ample $B$, and let $r$ be any ordinary
+map on its full complement. Their ambient outmap is
+\[
+ O(v)=p(v)\quad(v\in B),\qquad O(v)=E\setminus r(v)\quad(v\notin B).
+\]
+In the native product dictionary its vectors form an orthonormal basis
+of the full tensor space: the second bank is the $U$-image of the
+complementary bank and spans $V_B^\perp$. Hence $O$ is a full-cube USO.
+This is the established complementary paste, used with real supplied maps.
+
+Fix a coordinate $i$. Form a graph on the original words, joining $u,v$
+when $u_i\ne v_i$ and
+\begin{equation}\label{eq:phase-graph}
+ (D(u,v)\setminus\{i\})\cap(O(u)\mathbin\triangle O(v))=\varnothing.
+\end{equation}
+Its components are the endpoint sets of the standard $i$-phases.
+Toggling the $i$-bit of $O$ at every word of a component preserves
+orthogonality: a pair whose orthogonality relies only on $i$ is connected
+by \eqref{eq:phase-graph} and has both bits toggled; every other pair
+retains an orthogonal outside factor. Every component contains both
+endpoints of each of its $i$-edges. This is the classical phase-flip
+operation, not a new exchange primitive; see Definition~2.4 and
+Observation~2.1 of Borzechowski--Weber,
+\href{https://doi.org/10.1007/s00373-025-02929-2}
+{\emph{On Flipping Edge Sets in Unique Sink Orientations}}.
+
+If the component avoids $B$, all old primal vectors remain literal and
+still span $V_B$. Its other vectors therefore still span $V_B^\perp$.
+Applying $U$ back gives an ordinary map on $B^c$, with only those
+$i$-support bits changed and every selected cube still actual. This verifies
+the marked-space contract of the old phase move. It does not assert that
+a component avoiding $B$ is always available for a desired prescription.
+
+There is also an integral polynomial formulation. Let $P_O,P_{O'}$ be
+the full-cube matrices of unnormalized selected cube columns before and
+after the move. Both are unimodular over $\mathbb Z[\mathbf q]$ by the
+selected-basis theorem. Thus $P_{O'}P_O^{-1}$ is a polynomial unimodular
+operator carrying each old selected column to its new actual cube column.
+It fixes the entire vertex module on $B$ pointwise: the unchanged primal
+columns are already a polynomial unimodular basis of that module.
+This preserves the marked source module and the selected rooted-cube data;
+invariance of every other positioned-cube subspace is not asserted.
+
+For the four rows of the preceding table, choose respectively centers
+$17,16,2,0$. A single phase in coordinate $4$ avoids $B$ and repairs the
+prescription. Its endpoint sets are respectively
+\[
+ \{9,25\},\quad\{4,6,20,22\},\quad
+ \{10,26\},\quad\{4,5,20,21\}.
+\]
+Every old primal column and every complementary column outside that phase
+is retained. The repaired complement map restricts unchanged to $V^c$
+by Theorem~\ref{thm:excision}. This is an explicit source-preserving
+repair on the fixed example, not a universal phase-supply theorem.
+
+\subsection{Choosing between clique-bag roots}
+Another restricted alphabet comes from the
+\href{../../maxmin-forbidden/sections/chordal_downset_tree.tex}
+{positioned clique-tree theorem} and its proposition on opposite bag roots.
+Fix a root $z_t$ in every clique bag. For $a\in K=H^c$ let
+\[
+ A(a)=\{t:Q(a,E\setminus D(a,z_t))\subseteq K\}.
+\]
+Every $A(a)$ is nonempty. Indeed choose a minimally missing pattern
+matched by $a$; the opposite-root proposition supplies a bag root opposite
+its entire trace. The corresponding cube keeps that forbidden trace fixed.
+This is reuse of the complete positioned-support theorem, not a consequence
+of abstract graph chordality alone.
+
+Selecting $t(a)\in A(a)$ gives an ordinary map from these particular
+columns exactly when
+\begin{equation}\label{eq:chart-compatibility}
+ D(a,b)\setminus D(z_{t(a)},z_{t(b)})\ne\varnothing\qquad(a\ne b).
+\end{equation}
+To see this, two native factors with different root bits are orthogonal
+exactly when their support bits differ. For the displayed away-from-root
+supports, this happens precisely where the two bag roots agree. All other
+local overlaps are nonzero at interior parameters. Thus
+\eqref{eq:chart-compatibility} is exactly pairwise orthogonality; the
+selected-basis theorem gives the assertion on the ample class $K$.
+Nonempty domains alone do not give a simultaneous selection. This
+restricted alphabet is sufficient; Theorem~\ref{thm:camp-ext} now
+constructs a simultaneous selection by tree completion. Necessity of
+this particular alphabet is not asserted.
+
+For the fixed $V$, the four bag roots are $0,3,16,19$.
+One compatible selection uses the following root groups:
+\[
+\begin{array}{c|l}
+ z&\text{roots }a\in V^c\text{ using }z\\\hline
+0&25\\
+3&22\\
+16&10,11,27\\
+19&4,5,12,13,14,15,20,28,29,30,31
+\end{array}
+\]
+Each selected support is $E\setminus D(a,z)$.
+The actual cubes, condition \eqref{eq:chart-compatibility}, and all native
+rows are checked directly in the owned certificate. This is a positive
+example outside the two-shore Horn sufficient condition, not a new claim
+about its prior membership or a proof of the universal selection.
+
+A fixed priority of bag roots is insufficient even on a median example.
+Use the existing arbitrary-root-pattern construction on a four-node path,
+with distinguished bits $0,1,0,1$. Its twelve words on eight coordinates are
+\[
+ \{0,1,3,7,8,9,11,15,16,41,67,143\}.
+\]
+The companion's complete arbitrary-root-pattern theorem proves it is median
+and CAmp, with forced bag roots $0,9,3,15$ along its unique clique-tree path.
+If each complementary word takes its first eligible root in this order,
+word $64$ takes root $9$ and word $72$ takes root $0$.
+Their actual supports are $182$ and $183$. Neither includes direction
+mask $8$, so the actual edge $\{64,72\}$ has budget zero.
+The whole restricted alphabet still admits a map on this fixed example;
+the diagnostic only rejects the priority rule. The general compatible
+selection in Theorem~\ref{thm:camp-ext} uses the stages of tree completion,
+which are determined by joint geometry rather than individual eligibility.
+
+\section{Normalization along a monotone coordinate block}
+\label{sec:monotone-normalization}
+Here is a situation in which all the prescribed supports can be supplied
+at once, retaining the induced maps on the other parallel faces. Its
+ordinary construction is the established nested-coordinate lift, iterated
+over a block. The full original proof at
+\href{../../containment-ext-rep/sections/nested_coordinate.tex}{the nested-coordinate module},
+\texttt{thm:er-nested-selector}, supplies the one-coordinate predecessor.
+The additional description here is its action on the precise simultaneous
+prescriptions of Theorem~\ref{thm:excision}.
+
+Reflect the $Y$-bits so that $z|_Y=0$. Say that $B$ is downward closed
+in the block $Y$ if $(u,y)\in B$ implies $(u,y')\in B$ whenever
+$y'\subseteq y$. For $K_0=B^c$, let
+$(K_0)_y=\{u:(u,y)\in K_0\}$. These sections increase with $y$.
+
+\begin{proposition}[Idempotent normalization with prescribed supports]
+\label{prop:monotone-retraction}
+Assume $Y\ne\varnothing$, the hypotheses of Theorem~\ref{thm:excision},
+and downward closure of $B$ in $Y$. From any ordinary map $r_0$ of
+$K_0$, construct on $K=K_0\setminus C$ the map
+\begin{equation}\label{eq:monotone-new}
+ r(u,y)=\bigl(r_0(u,y)\cap S\bigr)
+               \cup\{j\in Y:y_j=0\},\qquad y\ne0.
+\end{equation}
+Append the supports $E\setminus T_a$ at $a\in A$.
+This gives an ordinary map $N(r_0)$ on $K_0$ satisfying every prescription
+in \eqref{eq:pins}. It retains the induced ordinary map on every parallel
+$S$-face with $y\ne0$, and $N^2=N$. Cycles in those face maps are retained.
+\end{proposition}
+\begin{proof}
+Conditioning $r_0$ gives an ordinary map $r_0(u,y)\cap S$ on each
+section $(K_0)_y$. Their whole cubes remain actual when $Y$-coordinates
+are increased, by upward closure of $K_0$ in $Y$. The additional
+directions in \eqref{eq:monotone-new} only increase zero bits and cannot
+reach $y=0$ from a nonzero $y$. Thus every selected cube lies in $K$.
+
+Write a positioned cube $Q\subseteq K$ as $Q_S\times Q_Y$.
+The coordinate orientation on $Y$ in \eqref{eq:monotone-new} has its
+unique budget owner at the minimum word $y_*$ of $Q_Y$. This word
+is nonzero, since otherwise $Q$ would meet the deleted face.
+The face $Q_S$ lies in $(K_0)_{y_*}$, where its ordinary conditioned
+map supplies exactly one owner. This checks every cube row of $K$.
+Theorem~\ref{thm:excision} supplies the appended map on $K_0$.
+Formula \eqref{eq:monotone-new} leaves each retained $S$-restriction
+unchanged and replaces only its $Y$-directions; a second application
+therefore has no further effect. The appended supports are fixed too.
+\end{proof}
+
+\section{Simultaneous prescribed supports above a down-set}
+\label{sec:guarded-tips}
+The next construction handles several attachments together even when
+the final host has no nested coordinate. It is a simultaneous application
+of the established full-collar filling construction, whose complete proof
+is \texttt{prop:damp-collar-independent-maps} in the
+\href{../../dismantlable-ample/sections/classification/local_extenture_shortening.tex}
+{local shortening module}. The distinction here is the explicit retained
+columns and all the canonical prescriptions, rather than a new generic
+filling operation or an unrestricted existence theorem.
+
+Identify words with subsets of $E$.
+
+\begin{theorem}[One cube attached to a down-set]\label{thm:downset-attachment}
+Let $D\subseteq2^E$ be a nonempty down-set, let $C=Q(z,S)$, and
+assume its clamp preserves $D$. Then $D\cup C\in\mathrm{CAmp}\cap\mathrm{Ext}$.
+More precisely choose $z|_S=0$ without changing $C$, and partition
+$Y=E\setminus S$ into $I=\{j:z_j=1\}$ and $R=\{j:z_j=0\}$.
+Put $F_S=\{u:(u,I,0_R)\in D\}$ and $A_S=2^S\setminus F_S$.
+On $D^c$ the following ordinary map satisfies all the canonical
+prescriptions at the new roots $a\in C\setminus D$:
+\begin{equation}\label{eq:downset-attachment-map}
+ r_0(v)=
+ \begin{cases}
+ (S\setminus v)\cup(v\cap I)\cup R,&v\cap R=\varnothing,\\
+ E\setminus v,&v\cap R\ne\varnothing.
+ \end{cases}
+\end{equation}
+Its unchanged restriction to $(D\cup C)^c$ is ordinary. In particular
+it retains every canonical upward column at roots with a nonzero $R$-bit.
+The interface $F_S$ may be any down-set, and the construction uses no
+chordality or bound on dimension.
+\end{theorem}
+\begin{proof}
+The clamp of the zero word belongs to $D$, so $F_S$ is nonempty and
+downward closed. Clamp invariance and downward closure give the exact
+identity
+\[
+ D[R=0]=F_S\times2^I.
+\]
+Indeed membership on the right follows by lowering the $I$-bits in a
+clamped word, and membership on the left implies its $S$-trace belongs
+to $F_S$ by clamping. Moreover any $S$-trace in $A_S$ is absent from
+$D$ at every $Y$-assignment, again by the clamp.
+
+Let $K_* = D^c[R\ne0]$. It is an up-set, so its canonical upward map
+is ordinary. The full $R$-collar over $A_S\times2^I$ lies in $K_*$.
+When $R\ne\varnothing$, apply the established collar filling to this
+seed and either of the two core classes
+\[
+ L_0=A_S\times2^I,\qquad
+ L=A_S\times(2^I\setminus\{I\}).
+\]
+Use the product of the upward map on the up-set $A_S$ and the downward
+map on the indicated $I$-class. Both are ordinary: in the punctured
+$I$-cube a proper subset remains proper when bits are lowered, and every
+contained face has its unique maximal owner. The filling adds all $R$
+directions and gives exactly \eqref{eq:downset-attachment-map}, first
+on $D^c$ and then on $(D\cup C)^c$. The columns on $K_*$ agree.
+If $R$ is empty, there is no seed and these same two product maps give
+the conclusion directly. If $I$ is empty, $L$ is empty and the new
+complement is just $K_*$, with its upward map. Empty cores use the
+empty-map convention; if $A_S$ is empty there is no change at all.
+
+For a new root $a=(u,I,0_R)$, the support in
+\eqref{eq:downset-attachment-map} is
+$(S\setminus u)\cup I\cup R=E\setminus D(z,a)$.
+The union is ample by the atlas clamp argument. The ordinary downward
+map on $D$ extends to it by Theorem~\ref{thm:relative} and the selected
+cube-basis criterion. Thus both required ordinary maps exist.
+For cube chordality, if $I$ is empty the union is still a down-set.
+Otherwise $C$ contains no old maximal cube, since every old maximal cube
+contains zero and $C$ does not. The old maximal-cube graph is complete,
+and the new cube is a simplicial vertex in it. The atlas generator gives
+cube chordality. The case $C\subseteq D$ makes no change.
+\end{proof}
+
+The operation in this proof is the previously established full-collar
+filling, with an explicit identification of its seed, two core classes
+and prescribed old-complement columns. The common interface $F_S$ need
+not be a cube, so it is not an application of a common-cube assembly
+theorem without this geometric verification. No external priority claim
+for this derived attachment criterion is made.
+Its ordinary existence also follows from the established nested-coordinate
+recursion: first split the $R$-coordinates, directed downward, whose one
+sections are down-sets. In the remaining $R=0$ face, split the
+$I$-coordinates, directed upward; a zero section is a product with $F_S$
+and the final all-one section is a full $S$-cube. Thus this construction
+does not enlarge that old existence domain. Its added contract is the
+explicit simultaneous prescriptions and retained exterior columns.
+
+Now let $D\subseteq2^E$ be a nonempty down-set, and choose finitely many
+distinct words $w_i$ and supports
+$T_i\subseteq w_i$ such that
+\begin{equation}\label{eq:guarded-conditions}
+ T_i\notin D,\qquad
+ \{v\subseteq w_i:T_i\nsubseteq v\}\subseteq D,\qquad
+ T_i\nsubseteq w_j\quad(i\ne j).
+\end{equation}
+Put $I_i=w_i\setminus T_i$, $O_i=[T_i,w_i]$ and
+$H=D\cup\{w_i:i\}$. The intervals $O_i$ are pairwise disjoint,
+and are wholly outside $D$.
+
+\begin{theorem}[Simultaneous local normalization]\label{thm:guarded-pins}
+The class $H$ is ample and has the ordinary map
+\[
+ r_H(v)=v\quad(v\in D),\qquad r_H(w_i)=T_i.
+\]
+On the old complement $D^c$ the formula
+\begin{equation}\label{eq:guarded-map}
+ r_0(v)=
+ \begin{cases}
+ (v\cap I_i)\cup(E\setminus w_i),&v\in O_i,\\
+ E\setminus v,&v\notin\bigcup_i O_i
+ \end{cases}
+\end{equation}
+is an ordinary map satisfying simultaneously
+$r_0(w_i)=E\setminus T_i$. It retains the canonical upward map at
+every root outside the displayed intervals. Its unchanged restriction
+to $H^c$ is ordinary. In particular $H\in\mathrm{Ext}$.
+\end{theorem}
+\begin{proof}
+For ampleness, add each cube $C_i=Q(w_i,T_i)$ in any order.
+It adds just $w_i$: every other word of $C_i$ is an old subset of
+$w_i$ missing part of $T_i$, hence belongs to $D$.
+Every old word has a proper $T_i$-trace, since $T_i\notin D$ and
+$T_i\nsubseteq w_j$ for $j\ne i$. Its clamp into $C_i$ therefore lies
+in $D$ by \eqref{eq:guarded-conditions}. The atlas ample-union argument
+applies at every step. Reversing these corner additions gives the
+displayed ordinary primal map, by the previously reviewed corner extension.
+
+For the opposite construction, first consider a root outside all $O_i$.
+Its upward cube stays outside $D$. It cannot contain a deleted word $w_i$:
+that would mean $v\subseteq w_i$, and exclusion from $D$ would then
+force $T_i\subseteq v$, placing $v$ in $O_i$.
+For $v\in O_i$, the cube in \eqref{eq:guarded-map} keeps $T_i$ fixed
+at one, decreases bits of $I_i$, and increases bits outside $w_i$.
+It avoids $D$ because $T_i\notin D$, and avoids every $w_j$ with
+$j\ne i$ because $T_i\nsubseteq w_j$. If $v\ne w_i$, some bit of
+$I_i$ is fixed at zero, so it also avoids $w_i$. This proves whole-column
+actuality both on $D^c$ and, after deletion, on $H^c$.
+
+We check every cube row on either host. If a cube meets no $O_i$,
+all its roots have the upward map, whose unique owner is its minimum word.
+Otherwise take $v\in Q\cap O_i$. No direction of $T_i$ is free in $Q$:
+flipping it at $v$ would give a subset of $w_i$ lacking $T_i$, hence a
+word of $D$. Thus $T_i$ is fixed at one throughout $Q$, which also
+prevents $Q$ from meeting any other $O_j$. Every fixed coordinate outside
+$w_i$ is zero. A root of $Q$ with a positive bit outside $w_i$ is therefore
+an unchanged root missing that free direction from its support, and cannot
+own $Q$. At outside bits zero, the remaining row is a face on $I_i$,
+with $T_i$ fixed at one. The map on this face selects its positive bits,
+so its unique owner is the maximum word of that face. On $H^c$ the face
+excludes the full word $I_i$; this orientation remains an actual ordinary
+map of that punctured cube. All outside directions belong to
+\eqref{eq:guarded-map}, so the same unique root owns the full row $Q$.
+Finally $r_0(w_i)=I_i\cup(E\setminus w_i)=E\setminus T_i$, as required.
+\end{proof}
+
+This entire existence domain already lies in the physical square-free
+shore domain stated in ER109, whose supplier is credited there to FA035.
+Indeed the $w_i$ form an inclusion antichain by
+\eqref{eq:guarded-conditions}. At any coordinate $c$, the exclusive
+one-shore consists exactly of $w_i\setminus\{c\}$ for those $c\in I_i$.
+It is again an antichain and contains no edge, hence no square.
+The difference supplied here is the explicit joint canonical pins and
+retention of all other upward columns, not first membership in that domain.
+
+\subsection{A chordal sun requires joint normalization}
+\label{sec:sun-normalization}
+We use the existing chordal sun family, not a new peripheral obstruction.
+Its complete original statement and proof are in
+\href{../../cover-recursive/research/rper_chordal_sun_obstructions.tex}
+{the peripheral companion}, \texttt{thm:rper-chordal-sun-obstructions}.
+For $m\ge4$, indices are cyclic and
+\[
+ E=\{(i,i-1),(i,i+1):i\in\mathbb Z_m\},\quad
+ A_i=\{(i-1,i),(i+1,i)\},\quad B_i=\{(i,i-1),(i,i+1)\},
+\]
+\[
+ D=\bigcup_i2^{A_i\cup A_{i+1}},\qquad
+ w_i=A_i\cup B_i,\qquad H=D\cup\{w_i:i\in\mathbb Z_m\}.
+\]
+The original proof shows $H\in\mathrm{CAmp}$, $|H|=13m+1$, VC dimension
+four and no peripheral coordinate. Its maximal cubes are the core
+four-cubes and the pairwise disjoint leaf squares $Q(w_i,B_i)$.
+The conditions \eqref{eq:guarded-conditions} hold with $T_i=B_i$ and
+$I_i=A_i$: missing either outgoing bit gives an old core word, while no
+other tip contains both outgoing bits. Thus Theorem~\ref{thm:guarded-pins}
+supplies all canonical supports $E\setminus B_i$ in one ordinary old
+complement map, and gives an explicit ordinary map on $H^c$.
+
+There is no new pointwise existence domain claimed for these suns.
+For a coordinate $c=(f,e)$, the physical exclusive shore
+$H[c=1]\setminus H[c=0]$ is the singleton $w_e\setminus\{c\}$.
+All old down-set words have their lower neighbor; among the two tips
+using $c$, only $w_e$ lacks it. Thus the family already satisfies the
+square-free physical shore hypothesis of
+\href{../../containment-ext-rep/research/ER109_SQUARE_FREE_PRIVATE_COMPLEMENTS.md}
+{ER109}, Theorem~4, whose existence supplier is credited there to FA035.
+We inspected the complete ER109 argument, retaining its AUTHOR status and
+its dependency scope. Our direct formula is a separate proof on this
+family with the additional explicit retained-column and simultaneous-pin
+contract. We do not receive its general supplier by checking these suns.
+
+This example also prevents a coordinate-wise commutation shortcut.
+Fix $i$ and take the actual attachment
+$B=H\setminus\{w_i\}$, $C=Q(w_i,B_i)$ with root $z=A_i$.
+The full clamp into $C$ preserves $B$. Nevertheless, for every coordinate
+$c\in E\setminus B_i$, clamping that coordinate alone toward $z_c$
+fails to preserve $B$. If $c\in A_i$, its target bit is one; add it
+to a core four-set not using target $i$. The result has five bits and
+is absent from $B$. Otherwise $c=(f,e)$ with $e\ne i$ and target bit
+zero. The retained word $w_e$ loses an incoming bit under this clamp;
+the result still contains $B_e$, so it is absent from $D$ and, having
+three bits, from every tip. These cases exhaust $E\setminus B_i$.
+Proposition~\ref{prop:commuting-clamp} therefore says that $\Pi_B$
+commutes with the whole $\Pi_C$, but with none of its one-coordinate
+factors. Independent coordinate normalization is not justified by the
+whole-cube commutation, even on a genuine atlas attachment.
+
+The general problem now asks for joint normalization across successive
+daisy interfaces with changing roots. The monotone-block and guarded-tip
+constructions pay this compatibility only at their stated hypotheses.
+
+\section{What summing the inverse diagonal forgets}
+\label{sec:rooted-trace}
+For an ample class $D$, put $x_i=q_i^2/(1-q_i^2)$ and
+$y_i=1+2x_i$. The first-paper inverse enumerator gives
+\begin{equation}\label{eq:rooted-diagonal}
+ (G_D^{-1})_{vv}=L_v(\mathbf x),\qquad
+ L_v(\mathbf x)=\sum_{T:Q(v,T)\subseteq D}x_T.
+\end{equation}
+Summing over roots gives
+$\operatorname{tr}G_D^{-1}=\sum_{T\in\Sh(D)}y_T$.
+The complete labelled trace therefore determines exactly the shattered
+family; the equal-parameter trace determines only its numbers in each size.
+These facts and their median, maximum and coordinate-product applications
+are proved in the
+\href{../main.pdf}{completed first paper}, in the sections on inverse
+enumeration and trace subclasses. They are reused here.
+
+The individual diagonal polynomials retain the positions lost by summation:
+the coefficient of $x_T$ in $L_v$ is exactly the indicator that $Q(v,T)$
+is an actual cube. Thus the family $(L_v)_{v\in D}$ recovers all actual
+positioned cubes. This is an immediate consequence of the existing inverse
+formula, not an independent existence theorem for cube bases.
+
+\begin{example}[The trace does not detect cube chordality]
+Let $P=\{000,100,110,111\}$ be a three-edge path and
+$Z=\{000,100,010,001\}$ a three-leaf star. Both are ample and have
+shattered family consisting of the empty support and the three singletons.
+On two disjoint triples of labelled coordinates, the ample classes
+$P\times P$ and $Z\times Z$ therefore have the identical trace
+\[
+ (1+y_1+y_2+y_3)(1+y_4+y_5+y_6).
+\]
+Every maximal cube of $Z\times Z$ is a product of two star edges and
+contains $(000,000)$. Its maximal-cube intersection graph is complete,
+so it is cube-chordal. Number the consecutive edges of $P$ by
+$E_0,E_1,E_2$. In $P\times P$ the four maximal squares
+\[
+ E_0\times E_1,\quad E_1\times E_0,\quad
+ E_2\times E_1,\quad E_1\times E_2
+\]
+form an induced four-cycle in that order: consecutive squares meet at
+one word, while each opposite pair is disjoint. Thus $P\times P$ is
+not cube-chordal. This is a trace application of the atlas product
+criterion, \texttt{prop:cube-chordal-product}; it is not a new
+classification of cube-chordal products and says nothing negative about
+ordinary complementary existence on either host.
+\end{example}
+
+For example, let $N_D(v)=\{i:v^{(i)}\in D\}$,
+where $v^{(i)}$ is $v$ with coordinate $i$ flipped. A vertex is a
+\emph{corner} if it belongs to a unique maximal positioned cube.
+Every rooted cube at $v$ uses directions in $N_D(v)$, so
+\begin{equation}\label{eq:corner-diagonal}
+ (G_D^{-1})_{vv}\le\prod_{i\in N_D(v)}(1+x_i)
+                   =\frac{1}{t_{N_D(v)}}.
+\end{equation}
+Equality at one interior parameter point holds exactly when $v$ is a corner.
+Indeed the difference is the positive sum of $x_T$ over the missing
+subsets of $N_D(v)$. Equality means the whole neighbor cube is actual,
+which contains every rooted cube at $v$ and is the unique maximal one.
+Conversely every neighbor edge extends to a maximal cube containing $v$;
+uniqueness forces all neighbor directions into that cube. This is the
+known corner criterion, expressed through a marked inverse entry.
+
+One can apply the test successively without inverting each smaller Gram
+matrix from scratch. Write $K=G_D^{-1}$ and $J=D\setminus\{v\}$. Then
+\[
+ G_J^{-1}=K_{JJ}-\frac{K_{Jv}K_{vJ}}{K_{vv}},
+\]
+by the block inverse identity. Corner deletion preserves ampleness, so the
+next marked diagonal test applies. A sequence of successful deletions down
+to one vertex certifies a corner peeling. We assert no completeness of an
+arbitrary greedy choice, and no implication from failure of this procedure
+to absence of an ordinary map. The full trace alone cannot determine
+corner peelability, as the first paper's same-shadow examples show.
+\end{document}

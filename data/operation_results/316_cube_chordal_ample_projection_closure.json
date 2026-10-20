@@ -1,0 +1,15 @@
+{
+  "id": 316,
+  "short_name": "cube_chordal_ample_projection_closure",
+  "name": "Cube Chordal Ample Projection Closure",
+  "class_id": "#classes/cube_chordal_ample",
+  "operation_id": "#operations/projection",
+  "result_type": "not_closed_under",
+  "status": "established",
+  "statement": "Membership fails under some projection.",
+  "proof": "For a face, retain maximal nonempty traces of old maximal cubes. Cube Helly makes their intersection graph induced and therefore chordal. The explicit sixteen-word V projects to the ten-word nonchordal D, proving failure of p and pc closure; see ex:cube-chordal-projection.",
+  "proof_source": "PartialCubes:papers/minor-atlas/sections/cube_chordal_ample.tex#prop:cube-chordal-closures",
+  "witness_ids": [
+    "#examples/cube_chordal_projection_counterexample"
+  ]
+}

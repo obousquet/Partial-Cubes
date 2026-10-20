@@ -7,6 +7,6 @@
   "result_type": "closed_under",
   "status": "established",
   "statement": "Every nonempty coordinate conditioning of a finite conditional-antimatroid graph class is again a conditional-antimatroid graph class.",
-  "proof": "Conditioning preserves ampleness. Each minimal missing pattern of the section injects into a minimal missing pattern of the original class with no smaller pair cost, so $H$ cannot increase. The zero characterization completes the proof.",
-  "proof_source": "PartialCubes:papers/structural-invariants/HORN_RENAMING_DEFECT.md#2-general-operation-laws"
+  "proof": "Choose a signed orientation that is intersection-closed. Projection commutes with intersection, and a nonempty coordinate section is intersection-closed. Both operations preserve ampleness. If the original root is lost, normalize the total intersection of the image family; newly constant coordinates cause no obstruction. Iterate for pc-minors.",
+  "proof_source": "PartialCubes:papers/minor-atlas/sections/signed_bouquets.tex#prop:atlas-bouquet-characterization"
 }
