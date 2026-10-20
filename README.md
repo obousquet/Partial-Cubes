@@ -78,4 +78,5 @@ python3 sync/generate_latex_catalog.py \
 Use `--check` to detect drift without writing the output.
 
 See [MIGRATION_PLAN.md](MIGRATION_PLAN.md) for the record-by-record migration,
-preservation checks, and two-repository handoff.
+preservation checks, and two-repository handoff. Agents continuing the current
+migration should start with [HANDOFF.md](HANDOFF.md).
